@@ -16,32 +16,17 @@ next:
 ---
 # Overview
 
-You can personalize the WhatsApp _Header_ and message _Body_ for every user based on specific user property or event property values. For more information on user profile properties and events (dynamic replacements), refer to [User Profiles](https://docs.clevertap.com/docs/user-profiles) and [Events](doc:events).
+You can personalize the WhatsApp *Header* and message *Body* for every user based on specific user property or event property values. For more information on user profile properties and events (dynamic replacements), refer to [User Profiles](https://docs.clevertap.com/docs/user-profiles) and [Events](doc:events).
 
 # Message Personalization
 
-To invoke the personalization menu, type the **@** symbol in the _Header_ or the text fields while creating the WhatsApp notification message.
+To invoke the personalization menu, type the **@** symbol in the *Header* or the text fields while creating the WhatsApp notification message.
 
 You can also add dynamic replacements in the WhatsApp title and body. Refer to the image below to check the available dynamic replacements for WhatsApp notifications.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f7d98fb-Whatsapp_personalization.png",
-        "Whatsapp message personalization",
-        2426
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Personalize WhatsApp Messages"
-    }
-  ]
-}
-[/block]
-
-
+<Image title="Whatsapp message personalization" alt={2426} align="center" border={true} src="https://files.readme.io/f7d98fb-Whatsapp_personalization.png">
+  Personalize WhatsApp Messages
+</Image>
 
 # Liquid Tags
 
@@ -53,100 +38,43 @@ The following use cases can explain using Liquid Tags:
 
 Consider you have an e-commerce template with specific placeholders in the body, as shown below. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b8ffaab-liquid_personalization_2.png",
-        "Sample E-commerce Template for Shipment Delivery",
-        760
-      ],
-      "align": "center",
-      "sizing": "smart",
-      "border": true,
-      "caption": "Sample Template for Shipment Delivery"
-    }
-  ]
-}
-[/block]
+<Image title="Sample E-commerce Template for Shipment Delivery" alt={760} align="center" width="smart" border={true} src="https://files.readme.io/b8ffaab-liquid_personalization_2.png">
+  Sample Template for Shipment Delivery
+</Image>
 
 You want to define different timelines for shipment delivery based on the customer membership. 
 
 In this case, you can personalize the template message placeholders based on profile and event properties. You can also add conditional logic using liquid tags, as shown below. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3ed6afa-use_case_1.png",
-        "Defining Conditional Logic based on customer type using Liquid Tags",
-        2154
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Defining Conditional Logic using Liquid Tags"
-    }
-  ]
-}
-[/block]
+<Image title="Defining Conditional Logic based on customer type using Liquid Tags" alt={2154} align="center" border={true} src="https://files.readme.io/3ed6afa-use_case_1.png">
+  Defining Conditional Logic using Liquid Tags
+</Image>
 
-
-
-In the above example, placeholder {{1}} is replaced with a custom profile Name property, and a conditional logic is defined for placeholder {{2}}. Per the conditional logic, users having _Prime_ membership will receive the shipment in two working days, and standard users will receive the shipment in seven-eight working days.
+In the above example, placeholder \{\{1}} is replaced with a custom profile Name property, and a conditional logic is defined for placeholder \{\{2}}. Per the conditional logic, users having *Prime* membership will receive the shipment in two working days, and standard users will receive the shipment in seven-eight working days.
 
 ### Sending Personalized Promo Codes to Users in Specific Cities
 
 Consider you have a promotional e-commerce template with certain placeholders in the message body, as shown below.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b0400b3-basic_ecommerce_template.png",
-        "Sample E-commerce Template for Promotions",
-        1046
-      ],
-      "align": "center",
-      "sizing": "80",
-      "border": true,
-      "caption": "Sample E-commerce Template for Promotions"
-    }
-  ]
-}
-[/block]
+<Image title="Sample E-commerce Template for Promotions" alt={1046} align="center" width="80%" border={true} src="https://files.readme.io/b0400b3-basic_ecommerce_template.png">
+  Sample E-commerce Template for Promotions
+</Image>
 
 You want to send personalized promo codes for users based on their city. 
 
 Similar to the previous use case, you can personalize the message template placeholders based on profile and event properties. You can define conditional logic, too, using liquid tags, as shown below:
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8ed3468-use_case_2.png",
-        "Defining Conditional Logic based on Geographies for Sending Promo codes",
-        2030
-      ],
-      "align": "center",
-      "sizing": "auto",
-      "border": true,
-      "caption": "Conditional logic using liquid tags"
-    }
-  ]
-}
-[/block]
+<Image title="Defining Conditional Logic based on Geographies for Sending Promo codes" alt={2030} align="center" width="auto" border={true} src="https://files.readme.io/8ed3468-use_case_2.png">
+  Conditional logic using liquid tags
+</Image>
 
 Defining a conditional logic will dynamically change the promo codes for different users. 
 
-In the above example, placeholder {{1}} is replaced with a custom profile Name property, and a conditional logic is defined for placeholder {{2}}. As per the conditional logic:
+In the above example, placeholder \{\{1}} is replaced with a custom profile Name property, and a conditional logic is defined for placeholder \{\{2}}. As per the conditional logic:
 
-- Customers from Mumbai receive - MUM50 as promo code.
-- Customers from Delhi receive - DEL50 as promo code.
-- By default, customers receive - IND50 as a promo code.
+* Customers from Mumbai receive - MUM50 as promo code.
+* Customers from Delhi receive - DEL50 as promo code.
+* By default, customers receive - IND50 as a promo code.
 
 For more information on using tags, refer to [Liquid Tags](doc:liquid-tags).
 
@@ -190,34 +118,17 @@ Use the coupon code (EXOTIC).These are the top 5 restaurants near you:          
 {% endif %}
 ```
 
-
-
 For more information, refer to [Linked Content](doc:linked-content#write-linked-content).
 
 # Catalog
 
 Click the ![Personlization](https://files.readme.io/b852e7f-Personalization_setting.png) icon in the editor to open personalization options.  Select a catalog from the list. 
 
-A _Catalog_ provides the ability to personalize campaigns with dynamic information in messages from product prices to inventory levels. You can create a new product catalog by uploading a file that contains one row for each item in your product catalog. A _Catalog_ can be uploaded directly on the CleverTap dashboard via a CSV file that is generated by your inventory management system. For more information on _Catalogs_, see [Catalogs](doc:catalog).
+A *Catalog* provides the ability to personalize campaigns with dynamic information in messages from product prices to inventory levels. You can create a new product catalog by uploading a file that contains one row for each item in your product catalog. A *Catalog* can be uploaded directly on the CleverTap dashboard via a CSV file that is generated by your inventory management system. For more information on *Catalogs*, see [Catalogs](doc:catalog).
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5077276-catalog_sample.png",
-        "Personalize Campaigns using Catalogs",
-        1560
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Personalize Campaigns using Catalogs"
-    }
-  ]
-}
-[/block]
-
-
+<Image title="Personalize Campaigns using Catalogs" alt={1560} align="center" border={true} src="https://files.readme.io/5077276-catalog_sample.png">
+  Personalize Campaigns using Catalogs
+</Image>
 
 # Recommendations
 
