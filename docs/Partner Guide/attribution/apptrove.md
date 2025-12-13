@@ -14,8 +14,8 @@ next:
 
 AppTrove, by Trackier,  is a comprehensive mobile marketing platform designed to monitor your app's expansion while facilitating seamless integration with various partners. By leveraging AppTrove, you can access a unified environment to collaborate with different partner networks and analyze their collective performance. This document provides essential details on integrating CleverTap and AppTrove. With this integration, you can track the following and also determine where a user was acquired from:
 
-- **Install events**: These events can be organic install events and inorganic install events.
-- **Custom events**: These can include any events (other than install events) that are provided by the attribution partner and tracked in the app. 
+* **Install events**: These events can be organic install events and inorganic install events.
+* **Custom events**: These can include any events (other than install events) that are provided by the attribution partner and tracked in the app. 
 
 To learn more about these events and their default attribution settings in the CleverTap dashboard, refer to [Types of Data](https://docs.clevertap.com/docs/attribution#types-of-data).
 
@@ -34,38 +34,27 @@ To integrate AppTrove with CleverTap:
 
 You must set up the AppTrove dashboard by adding CleverTap account details as follows:
 
-1. Navigate to _Partner Integration_ and search for _CleverTap_ under the _Not Integrated Partners_ section.
+1. Navigate to *Partner Integration* and search for *CleverTap* under the *Not Integrated Partners* section.
 
-   [block:image]{"images":[{"image":["https://files.readme.io/6e9f359-Integrate_CleverTap_with_AppTrove.png","","Integrate AppTrove with CleverTap"],"align":"center","border":true,"caption":"Integrate AppTrove with CleverTap"}]}[/block]
+   <Image alt="Integrate AppTrove with CleverTap" align="center" border={true} src="https://files.readme.io/6e9f359-Integrate_CleverTap_with_AppTrove.png">
+     Integrate AppTrove with CleverTap
+   </Image>
 2. Add the following CleverTap account details:
 
    <br />
 
-   [block:image]{"images":[{"image":["https://files.readme.io/1d8b53d-Enter_CleverTap_Account_Details.png","",""],"align":"center","border":true}]}[/block]
+   <Image align="center" className="border" border={true} src="https://files.readme.io/1d8b53d-Enter_CleverTap_Account_Details.png" />
 
-To get these details, navigate to _Settings_ > _Project_ from the CleverTap dashboard as follows:
+To get these details, navigate to *Settings* > *Project* from the CleverTap dashboard as follows:
 
-- **Account ID **: Access the CleverTap dashboard and locate the Project ID under _Settings > Project_.
-- **Account Token**: Access the CleverTap dashboard and locate the Project Token under _Settings > Project_.
-- **Account Passcode**: Access the CleverTap dashboard and locate Passcode under _Settings > Project_. To know more refer to [Account Passcode](https://developer.clevertap.com/docs/authentication#create-account-passcode).
-- **Region**: Access the CleverTap dashboard and locate Region for the API endpoint you want to select under _Settings > Project_. To find the API endpoint for your region, refer to [API endpoints based on your data center region](https://developer.clevertap.com/docs/idc#api).
+* **Account ID** : Access the CleverTap dashboard and locate the Project ID under *Settings > Project*.
+* **Account Token**: Access the CleverTap dashboard and locate the Project Token under *Settings > Project*.
+* **Account Passcode**: Access the CleverTap dashboard and locate Passcode under *Settings > Project*. To know more refer to [Account Passcode](https://developer.clevertap.com/docs/authentication#create-account-passcode).
+* **Region**: Access the CleverTap dashboard and locate Region for the API endpoint you want to select under *Settings > Project*. To find the API endpoint for your region, refer to [API endpoints based on your data center region](https://developer.clevertap.com/docs/idc#api).
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e2008a6-Screenshot_2024-08-06_at_3.32.51_PM.png",
-        "",
-        "CleverTap Account Details"
-      ],
-      "align": "center",
-      "caption": "CleverTap Account Details"
-    }
-  ]
-}
-[/block]
-
+<Image alt="CleverTap Account Details" align="center" src="https://files.readme.io/e2008a6-Screenshot_2024-08-06_at_3.32.51_PM.png">
+  CleverTap Account Details
+</Image>
 
 3. Click **Save**.
 
@@ -121,12 +110,12 @@ TrackierSDK.setUserAdditionalDetails("clevertap_uid", CTID);
 ```
 
 > 📘 Note
-> 
+>
 > The `setAdditionaldata` method always takes priority over `setUserId`.
 
 ### For iOS App
 
-To track attribution and event data in your iOS app, perform the steps listed in [AppTrove iOS SDK Integration Guide.](https://github.com/trackier/ios-sdk)  
+To track attribution and event data in your iOS app, perform the steps listed in [AppTrove iOS SDK Integration Guide.](https://github.com/trackier/ios-sdk)\
 Set the CleverTap ID value as the AppTrove Global Property. Add the below code to your iOS app code.
 
 ```swift Swift
@@ -140,125 +129,54 @@ TrackierSDK.initialize(config: config)
 
 ## Configure In-App Event Postback
 
-To send all events, select _Send all In-App event postback to partner_, And in case you want to send only selected events, select _Send only selected In-App Events postback to partner (At least one mapping is required)_  and choose _Event Name_ and _Event Identifier_, respectively. 
+To send all events, select *Send all In-App event postback to partner*, And in case you want to send only selected events, select *Send only selected In-App Events postback to partner (At least one mapping is required)*  and choose *Event Name* and *Event Identifier*, respectively. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/449035a-image-1400x900.jpg",
-        "",
-        "In-App Event Postback"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "In-App Event Postback"
-    }
-  ]
-}
-[/block]
-
+<Image alt="In-App Event Postback" align="center" border={true} src="https://files.readme.io/449035a-image-1400x900.jpg">
+  In-App Event Postback
+</Image>
 
 ## Setup for Organic Install and Custom Events
 
 After successful integration, AppTrove starts pushing inorganic install events data to CleverTap. To receive in-app events (custom events) in CleverTap from AppTrove, proceed as follows: 
 
-1. Navigate to _Settings_ > _Partners_ and scroll down to the _Attribution partners_ section.
+1. Navigate to *Settings* > *Partners* and scroll down to the *Attribution partners* section.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0ffe914-screencapture-sk1-dashboard-staging-6-dashboard-clevertap-W6W-797-865Z-account-setup-exports-partner-list-2024-08-05-14_48_11.png",
-        "",
-        "CeleverTap Attribution Partners"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "CeleverTap Attribution Partners"
-    }
-  ]
-}
-[/block]
+<Image alt="CeleverTap Attribution Partners" align="center" border={true} src="https://files.readme.io/0ffe914-screencapture-sk1-dashboard-staging-6-dashboard-clevertap-W6W-797-865Z-account-setup-exports-partner-list-2024-08-05-14_48_11.png">
+  CeleverTap Attribution Partners
+</Image>
 
+2. Click on the  *AppTrove* partner.\
+   On clicking, the *Attribution partner - AppTrove* popup appears on the right side of the screen.
 
-2. Click on the  _AppTrove_ partner.  
-   On clicking, the _Attribution partner - AppTrove_ popup appears on the right side of the screen.
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c4395e2-Screenshot_2024-08-06_at_3.34.59_PM.png",
-        "",
-        "AppTrove Partner Integration"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "AppTrove Partner Integration"
-    }
-  ]
-}
-[/block]
-
+<Image alt="AppTrove Partner Integration" align="center" border={true} src="https://files.readme.io/c4395e2-Screenshot_2024-08-06_at_3.34.59_PM.png">
+  AppTrove Partner Integration
+</Image>
 
 2. Select the required option from the options below. Selecting any of these options indicates that the CleverTap accepts event data when shared by the partner.
-   - Custom events
-   - Organic install events
+   * Custom events
+   * Organic install events
 
 > 🚧 Duplication of Events
-> 
-> If you select _Organic install events_ for more than one attribution partner, a warning for duplication of events displays, as shown in the following figure. We strongly recommend tracking the organic install events from only one attribution partner.
+>
+> If you select *Organic install events* for more than one attribution partner, a warning for duplication of events displays, as shown in the following figure. We strongly recommend tracking the organic install events from only one attribution partner.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ae820b8-screencapture-sk1-dashboard-staging-6-dashboard-clevertap-W6W-797-865Z-account-setup-exports-partner-list-2024-08-05-14_50_05.png",
-        "",
-        "Duplication of Events"
-      ],
-      "align": "center",
-      "sizing": "70% ",
-      "border": true,
-      "caption": "Duplication of Events"
-    }
-  ]
-}
-[/block]
+<Image alt="Duplication of Events" align="center" width="70% " border={true} src="https://files.readme.io/ae820b8-screencapture-sk1-dashboard-staging-6-dashboard-clevertap-W6W-797-865Z-account-setup-exports-partner-list-2024-08-05-14_50_05.png">
+  Duplication of Events
+</Image>
 
-
-4. Click **Save**. On clicking, the following message displays at the top of the screen: _Changes saved. Admins are notified of this via email_. 
+4. Click **Save**. On clicking, the following message displays at the top of the screen: *Changes saved. Admins are notified of this via email*. 
 
 # Viewing Data on Dashboard
 
 You can now view the event data on the CleverTap dashboard. To do so, proceed as follows:
 
-1. From the CleverTap dashboard, go to _Analytics > Events_.
+1. From the CleverTap dashboard, go to *Analytics > Events*.
 2. Apply the required filters for the selected event. The filters vary depending on the type of event.
 
-- **For Install Events**: All the install events are tracked under the _UTM Visited_ event.
+* **For Install Events**: All the install events are tracked under the *UTM Visited* event.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/fbf5eb7-Screenshot_2024-08-06_at_3.38.46_PM.png",
-        "",
-        "Install Events Filter"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Install Events Filter"
-    }
-  ]
-}
-[/block]
+<Image alt="Install Events Filter" align="center" border={true} src="https://files.readme.io/fbf5eb7-Screenshot_2024-08-06_at_3.38.46_PM.png">
+  Install Events Filter
+</Image>
 
-
-- **For Custom Events**: In-app revenue events received from AppTrove are prefixed with **AT** in CleverTap.
+* **For Custom Events**: In-app revenue events received from AppTrove are prefixed with **AT** in CleverTap.
