@@ -20,22 +20,9 @@ You can personalize the SMS title and message body for every user based on speci
 
 To invoke the personalization menu, type the @ symbol in the title or the text fields while creating the SMS message. It will allow you to add dynamic replacements in the SMS body. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7833739-SMS_personalisation.png",
-        "Use @ to Personalize the Message Content",
-        1708
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Personalization"
-    }
-  ]
-}
-[/block]
+<Image title="Use @ to Personalize the Message Content" alt={1708} align="center" border={true} src="https://files.readme.io/7833739-SMS_personalisation.png">
+  Personalization
+</Image>
 
 # Catalog
 
