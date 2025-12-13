@@ -3,12 +3,12 @@ title: Setup
 excerpt: Understand how to setup webhooks
 deprecated: false
 hidden: false
+link:
+  new_tab: false
 metadata:
   title: ''
   description: ''
   robots: index
-next:
-  description: ''
 ---
 # Set Up Webhooks
 
@@ -62,7 +62,7 @@ For more information about how to set up a webhook and create a CleverTap webhoo
 Webhook authorization on CleverTap ensures that only verified sources can send data through your Webhooks. It uses one of the following methods:
 
 * **No authentication**: Authenticate users by adding credentials such as a password or token via the *Headers* tab.
-* **Basic Authorization**: Authenticate using a username and password in the request headers to verify the sender’s identity.
+* **Basic Authorization**: Authenticate using a username and password in the request headers to verify the sender's identity.
 * **OAuth 2.0**: Authenticate requests by obtaining an access token from CleverTap and adding the token to the request headers to ensure that only authorized systems can send data.
 
 ## Basic Authentication
@@ -80,76 +80,6 @@ Basic Authentication is a simple authentication method where the client sends an
 
 
 When setting up a webhook with Basic Authentication, CleverTap includes an *Authorization* header in every HTTP request sent to your server. The header follows the format shown below:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## OAuth 2.0
 
@@ -174,125 +104,20 @@ CleverTap recommends using this method when you need a more secure and scalable 
      Configure OAuth 2.0
    </Image>
 
-   <Table align={["left","left"]}>
-     <thead>
-       <tr>
-         <th>
-           Field
-         </th>
+   | Field | Description |
+   |-------|-------------|
+   | Client ID | <ul><li>A unique identifier issued to the requesting application (here, CleverTap) when it registers with an authorization server.</li><li>It helps the authorization server recognize the application that makes the request and applies relevant authorization policies.</li></ul> |
+   | Secret | <ul><li>A confidential key issued to CleverTap during registration.</li><li>It is used to authenticate the identity of the client application (here, CleverTap) and must be kept secure.</li><li>It works alongside the Client ID to authenticate the identity of the requesting application and to prevent unauthorized parties from impersonating the requesting application.</li></ul> |
+   | Username* | <ul><li>A unique identifier issued to the resource owner, which is necessary when the OAuth flow requires a user's credentials.</li><li>It is required when you are using the *Password Credentials* grant type, where the application needs to directly authenticate the user.</li></ul> |
+   | Password* | <ul><li>It works alongside the username to authenticate the resource owner (user) directly when the OAuth flow requires a user's credentials.</li><li>It is required when you are using the *Password Credentials* grant type, where the application needs to directly authenticate the user.</li></ul> |
+   | Scopes | <ul><li>The parameters in OAuth that define the specific permissions requested by the client application.</li><li>They control what parts of a user's account the client (here, CleverTap) has access to, such as reading profile data and so on.</li></ul> |
+   | Access Token URL | The endpoint on the authorization server where a client application (CleverTap) sends a request to obtain an access token. |
+   | Refresh Token URL* | The endpoint on an authorization server where a client application sends a request to obtain a new access token using a refresh token. This field is available only when using *Password Credentials* grant type. |
+   | Client Authentication Type | <ul><li>The method used by a client application to prove its identity to the authorization server in OAuth 2.0 flows.</li><li>This ensures that only the authorized client can request tokens or access protected resources.</li><li>The following are the available options:<ul><li>*Send Basic Authentication in Header*: Include an Authorization header with encoded username and password.</li><li>*Send Bearer Authentication in Header*: Include an Authorization header with an access token obtained from OAuth.</li></ul></li></ul> |
 
-         <th>
-           Description
-         </th>
-       </tr>
-     </thead>
-
-     <tbody>
-       <tr>
-         <td>
-           Client ID
-         </td>
-
-         <td>
-           <ul><li> A unique identifier issued to the requesting application (here, CleverTap) when it registers with an authorization server.</li> <li> It helps the authorization server recognize the application that makes the request and applies relevant authorization policies.</li></ul>
-         </td>
-       </tr>
-
-       <tr>
-         <td>
-           Secret
-         </td>
-
-         <td>
-           <ul> <li>A confidential key issued to CleverTap during registration.</li><li>It is used to authenticate the identity of the client application (here, CleverTap) and must be kept secure.</li> <li> It works alongside the Client ID to authenticate the identity of the requesting application and to prevent unauthorized parties from impersonating the requesting application.</li></ul>
-         </td>
-       </tr>
-
-       <tr>
-         <td>
-           Username
-
-           \*
-         </td>
-
-         <td>
-           <ul> <li>A unique identifier issued to the resource owner, which is necessary when the OAuth flow requires a user’s credentials. </li> <li>It is required when you are using the *Password Credentials* grant type, where the application needs to directly authenticate the user. </li></ul>
-         </td>
-       </tr>
-
-       <tr>
-         <td>
-           Password
-
-           \*
-         </td>
-
-         <td>
-           <ul> <li>It works alongside the username to authenticate the resource owner (user) directly when the OAuth flow requires a user’s credentials.</li> <li>It is required when you are using the *Password Credentials* grant type, where the application needs to directly authenticate the user. </li></ul>
-         </td>
-       </tr>
-
-       <tr>
-         <td>
-           Scopes
-         </td>
-
-         <td>
-           <ul> <li> The parameters in OAuth that define the specific permissions requested by the client application.</li> <li> They control what parts of a user's account the client (here, CleverTap) has access to, such as reading profile data and so on.</li></ul>
-         </td>
-       </tr>
-
-       <tr>
-         <td>
-           Access Token URL
-         </td>
-
-         <td>
-           The endpoint on the authorization server where a client application (CleverTap) sends a request to obtain an access token.
-         </td>
-       </tr>
-
-       <tr>
-         <td>
-           Refresh Token URL
-
-           \*
-         </td>
-
-         <td>
-           The endpoint on an authorization server where a client application sends a request to obtain a new access token using a refresh token. This field is available only when using 
-
-           *Password Credentials*
-
-            grant type.
-         </td>
-       </tr>
-
-       <tr>
-         <td>
-           Client Authentication Type
-         </td>
-
-         <td>
-           <ul> 
-             <li>The method used by a client application to prove its identity to the authorization server in OAuth 2.0 flows. </li> 
-             <li> This ensures that only the authorized client can request tokens or access protected resources. </li> 
-             <li> The following are the available options:
-               <ul>
-                 <li> *Send Basic Authentication in Header*: Include an Authorization header with encoded username and password. </li>
-                 <li>*Send Bearer Authentication in Header*: Include an Authorization header with an access token obtained from OAuth.</li>
-               </ul>
-             </li>
-           </ul>
-         </td>
-       </tr>
-     </tbody>
-   </Table>
-
-   <br />
 > 📘 Note
 >
-> The fields indicated with \* indicate that those are required only when using *Password Credentials* Grant Type.
+> The fields indicated with * indicate that those are required only when using *Password Credentials* Grant Type.
 
 6. Click **Generate**. This creates the Access Token using the provided credentials, which are displayed below:
    1. Map the Access Token and Refresh Token (when using the Password Credentials grant type).
@@ -301,18 +126,6 @@ CleverTap recommends using this method when you need a more secure and scalable 
 The generated OAuth response includes a key with an expiry, which is not encoded.
 
 <Image alt="Select Expiry from Expiry Dropdown" align="center" width="65% " border={true} src="https://files.readme.io/d586260c10a6f55de0a73a0663819884a3d7107e00f3f77852fd19a0a88bedff-Select_Expiry_for_the_Token.png" /> Select Expiry from Expiry Dropdown
-
-
-
-
-
-
-
-
-
-
-
-{/***/}
 
 6. Click **+ Key-Value Pair** and enter the headers for the API.
 7. Click **Save** to create a webhook.
@@ -327,16 +140,6 @@ This method involves providing a username and password to obtain an access token
 
 <Image alt="Password Credentials Flow" align="center" width="75% " border={true} src="https://files.readme.io/6760c28e2bc0d386f4f8a0d674254d9c67b7ccc0478ec51bf16ca1a3b215791d-Password_Credentials.png" /> Password Credentials Flow
 
-
-
-
-
-
-
-
-
-
-
 1. *Provide User Credentials*: The user provides their credentials (username and password) to CleverTap.
 2. *Send Credentials to Authentication Server*: CleverTap sends the user credentials to the authorization server. This request must include the following in the request header: Client ID and Client Secret Key.
 3. *Receive Access Token*: If the user credentials are correct, the authorization tool responds with an access token.
@@ -347,16 +150,6 @@ This method involves providing a username and password to obtain an access token
 This method involves providing a client ID and client secret key to obtain an access token. This method does not require a username and password for the OAuth flow; instead, it relies on these credentials to authenticate the application and generate a token for secure interactions. Here are the detailed steps:
 
 <Image alt="Client Credentials Flow" align="center" width="75% " border={true} src="https://files.readme.io/0e139311bd9f0c65bbf95749855a9af4dc8c643d01b9c2fd3599e8eb34e494f9-Client_Credentials.png" />  Client Credentials Flow
-
-
-
-
-
-
-
-
-
-
 
 1. *Send Authorization Request to Authorization Server*: CleverTap makes an authorization request to the authorization server using the Client Credentials, such as Client ID and Secret Key.
 2. *Receive Access Token*: The authorization tool responds with an access token if the client credentials are accurate.
