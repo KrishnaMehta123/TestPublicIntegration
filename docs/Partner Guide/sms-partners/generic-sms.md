@@ -181,15 +181,16 @@ Here is another example without batching:
 
 ```json
 {
-  "seq": "$$seq",
-  "to": "$$To",
-  "uid": "$$MessageID",
-  "variables": "$$TemplateVariables",
-  "enc": "unicode",
-  "hid": "$$hid",
+  "hid": "$$hid",//Message Body Key-Value pair
   "tid": "$$TemplateID",
   "cid": "$$CampaignID",
-  "type": 1
+  "type": "template",
+  "seq": 1,
+  "to": "$$To",
+  "mid": "$$MessageID", //to be added for configuring callbacks
+  "uid": "$$uid",//Message Body Key-Value pair
+  "variables": "$$TemplateVariables",
+  "enc": "utf8"
 }
 ```
 
