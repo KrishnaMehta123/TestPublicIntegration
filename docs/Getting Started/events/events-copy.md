@@ -728,8 +728,7 @@ The following are the advantages of Charged event:
 You can personalize the message for customers who purchase multiple items in a single transaction. You can do so by using liquid tags from the CleverTap dashboard, as shown in the following sample codes:
 
 * **Using for Loops in Liquid Tags**
-  ```
-  ```
+  
 * **Using Manual Indexing in Liquid Tags**
   ```
   ```
