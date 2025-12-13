@@ -17,8 +17,8 @@ next:
 This document provides information about billing terminologies and calculations for CleverTap Essentials users. The billing is based on the Monthly Billable Users, derived from Monthly Active Users and the Data Points as explained in the following sections.
 
 > 📘 Annual Plan
-> 
-> The **CleverTap Essentials** plan also offers an annual plan option. To check if you are eligible, navigate to _Organization_ > _My Plan_ section.
+>
+> The **CleverTap Essentials** plan also offers an annual plan option. To check if you are eligible, navigate to *Organization* > *My Plan* section.
 
 # Billing Terminologies
 
@@ -36,12 +36,12 @@ The following is the list of system events included in the MAU calculations for 
 2. UTM Visited 
 3. Web Session Started
 
-The _Partner Sync_ system event and its properties are included in the Data Point calculation.
+The *Partner Sync* system event and its properties are included in the Data Point calculation.
 
 CleverTap has many more system events, which are not billable and hence excluded in the Data Point calculation. To know about those events, refer to [System Events](https://docs.clevertap.com/docs/events#system-events).
 
 > 📘 Manage UTM Visited and Web Session Started
-> 
+>
 > You can disable UTM Visited and Web Session Started. For more information, refer to [Configure System Events](doc:events#system-events).
 
 ## Data Point
@@ -49,17 +49,17 @@ CleverTap has many more system events, which are not billable and hence excluded
 An event, event property, or profile property update is a data point, a usage measure associated with MAU. A total of 10,000 data points are allowed per MAU.
 
 > 📘 Profile Property Update
-> 
+>
 > If the user updates more than one profile property at one time, it is counted as one data point.
 
 ## Monthly Billable Users (MBUs)
 
 Monthly Billable Users reflect the highest value amongst Selected MAU Tier or Actual MAU Usage. The Monthly Billable Users is calculated as follows:
 
-- **Actual MAU**: {\[All App, Web, and API users (including anonymous users of App and API)]  + (1/3 \* Web anonymous users)}.
-- **Selected MAU Tier**: The number of MAUs selected from the available MAU tiers.
+* **Actual MAU**: \{\[All App, Web, and API users (including anonymous users of App and API)]  + (1/3 \* Web anonymous users)}.
+* **Selected MAU Tier**: The number of MAUs selected from the available MAU tiers.
 
-To check your MBUs, the account administrators need to navigate to  _Organization_ > _Billing_ > _My Plan_ from your dashboard. It displays the estimated MBUs for the current month for all your organization's projects. 
+To check your MBUs, the account administrators need to navigate to  *Organization* > *Billing* > *My Plan* from your dashboard. It displays the estimated MBUs for the current month for all your organization's projects. 
 
 ## Data Upload Charges
 
