@@ -16,6 +16,6 @@ With this offering, startups can start using CleverTap from the beginning. There
 
 In the CleverTap for Startups Program, we work with the [CleverTap Leap](doc:plans-and-programs#leap-program) partner community, which consists of startup accelerators, incubators, venture capital firms, and the broader eco-system. Together, we offer special advantages and discounts on the CleverTap Essential Plan to their startup portfolio or network.
 
-Our partner program benefits both current and alumni-affiliated startups. You can find more details and check your eligibility for the Leap Program [here](https://clevertap.com/leap/?utm_source=C4S&utm_medium=doc&utm_campaign=KB).
+Our partner program benefits both current and alumni-affiliated startups. You can find more details and check your eligibility for the Leap Program [here](https://clevertap.com/leap/?utm_source=C4S\&utm_medium=doc\&utm_campaign=KB).
 
 CleverTap can be integrated into your website or app. It helps startups understand their customers and engage them to grow their businesses.
