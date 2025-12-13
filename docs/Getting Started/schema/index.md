@@ -338,13 +338,12 @@ You can select multiple user properties at a time and link a required event to i
 
 To create linked events in bulk:
 
-1. Select the user properties you want to link and click the ![](https://files.readme.io/9bd94d1-Bulk_Link.png) icon.  
+1. Select the user properties you want to link and click the ![](https://files.readme.io/9bd94d1-Bulk_Link.png) icon.
 
    <Image align="center" border={true} caption="Bulk Link Events" src="https://files.readme.io/6675b4f-Bulk_Link_Event.png" />
+2. Enter the events you want to link for each user property and click **Create**.  
 
- Bulk Link Events
-
-2. Enter the events you want to link for each user property and click **Create**.
+   <Image align="center" border={false} caption="Create Linked Events in Bulk" src="https://files.readme.io/7b5b7fd-Create_Linked_Events_in_Bulk.png" />
 
 ![](https://files.readme.io/7b5b7fd-Create_Linked_Events_in_Bulk.png) Create Linked Events in Bulk
 
