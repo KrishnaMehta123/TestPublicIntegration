@@ -15,37 +15,23 @@ Analytics Agent lets you generate advanced queries and visual reports simply by 
 Use this feature to quickly explore user behavior or product usage by entering a natural language prompt.
 
 > 📘 Private Beta
-> 
+>
 > Currently, this feature is a Private Beta Release. If you want access to this feature, contact your CSM or Account Manager.
 
-_Analytics Agent_ has three stages:
+*Analytics Agent* has three stages:
 
-1. **AskAI**  
-   Enter your prompt in the **AskAI** input box. For example: _"Show me active users trend for the past week."_
+1. **AskAI**\
+   Enter your prompt in the **AskAI** input box. For example: *"Show me active users trend for the past week."*
 
-2. **Query Builder**  
+2. **Query Builder**\
    The agent interprets your prompt and runs a structured query. You can edit this query to further customize filters, events, or metrics as required.
 
-3. **Analysis Output**  
-   The query analysis is available in the_ Analysis_ section. If you modified the query, click **View Analysis **to run it again. The output appears in the Analysis section.
+3. **Analysis Output**\
+   The query analysis is available in the *Analysis* section. If you modified the query, click **View Analysis** to run it again. The output appears in the Analysis section.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/bad38a738c048e519181618f281ecdf8f1149ea6fc2ac64586dd4ff262173213-image.png",
-        null,
-        "Visual for Analytics"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Visual for Analytics"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Visual for Analytics" align="center" border={true} src="https://files.readme.io/bad38a738c048e519181618f281ecdf8f1149ea6fc2ac64586dd4ff262173213-image.png">
+  Visual for Analytics
+</Image>
 
 # Generate Analytics Insights
 
@@ -53,64 +39,36 @@ To use Analytics Agent:
 
 1. Go to the **Analytics** and select the new Trends, Funnels, or Flows from the CleverTap dashboard. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/41e93af4dff81c8552b7905cc8cccb1ee91d0ad02509a727dcccc3164ba54c3e-2025-09-18_20-15-35.gif",
-        null,
-        "Generate Insights"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Generate Insights"
-    }
-  ]
-}
-[/block]
+<Image alt="Generate Insights" align="center" border={true} src="https://files.readme.io/41e93af4dff81c8552b7905cc8cccb1ee91d0ad02509a727dcccc3164ba54c3e-2025-09-18_20-15-35.gif">
+  Generate Insights
+</Image>
 
-
-2. Enter your question in the _AskAI_ input box. For Example: _"Show me active users trend for the past week_".
-3. The system will generate a query in the _Query Builder_. Edit the query to modify any fields, filters, or event parameters.
-4. View results in the _Analysis_ section.
+2. Enter your question in the *AskAI* input box. For Example: *"Show me active users trend for the past week*".
+3. The system will generate a query in the *Query Builder*. Edit the query to modify any fields, filters, or event parameters.
+4. View results in the *Analysis* section.
 5. To generate a new query, click the **New Thread** ![](https://files.readme.io/703c02ae3a62e289aef7a6348ee8da943a0ed61817a6b93d585296aa9da17874-allthreadsicon.png) icon. 
 
 You can refer to the previous threads by clicking the **All threads** ![](https://files.readme.io/695b5aa2683faac88af4d44d0a682ef585a7326ea7da29b3bef4148388b4a6df-allthreadicon.png) icon. It shows your past queries. Click the queries to show the results. You can also go back to the previous questions in this thread to view the results. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7ba040667071f1d6cbe95c0de44d1d6973d28822be2f16cce2c7f50ed2372b37-Previous_Thread_Analytics_prompt.gif",
-        "",
-        "Previous Threads and queries"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Previous Threads and queries"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Previous Threads and queries" align="center" border={true} src="https://files.readme.io/7ba040667071f1d6cbe95c0de44d1d6973d28822be2f16cce2c7f50ed2372b37-Previous_Thread_Analytics_prompt.gif">
+  Previous Threads and queries
+</Image>
 
 # Best Practices
 
 Follow these best practices to get the best results:
 
-- Use descriptive, focused prompts.  
-  _Do_: "Show monthly sign-ups by platform."  
-  _Avoid_: "Tell me everything about users."
-- Include time frames and event types for better precision.
-- Use domain-specific language familiar to your workspace.
+* Use descriptive, focused prompts.\
+  *Do*: "Show monthly sign-ups by platform."\
+  *Avoid*: "Tell me everything about users."
+* Include time frames and event types for better precision.
+* Use domain-specific language familiar to your workspace.
 
 # FAQs
 
 ### Can I edit the generated query?
 
-Yes. You can modify the filters, time range, and logic in the _Query Builder_ section.
+Yes. You can modify the filters, time range, and logic in the *Query Builder* section.
 
 ### What types of Analytics are supported?
 
