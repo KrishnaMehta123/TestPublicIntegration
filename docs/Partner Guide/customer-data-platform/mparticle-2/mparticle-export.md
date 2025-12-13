@@ -26,69 +26,24 @@ This process involves the following two steps:
 To find your project details:
 
 1. Log in to your mParticle account.
-2. Navigate to _Setup_ > _Inputs_ > _Feeds_.
-3. Click **Add Feed Input** and select _CleverTap_ from the dropdown list. The _Input: Feed Configuration_ popup opens.
+2. Navigate to *Setup* > *Inputs* > *Feeds*.
+3. Click **Add Feed Input** and select *CleverTap* from the dropdown list. The *Input: Feed Configuration* popup opens.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d09bae1-Add_Feed_Input.png",
-        "Click Add Feed Input",
-        2862
-      ],
-      "align": "center",
-      "sizing": "90% ",
-      "border": true,
-      "caption": "Click Add Feed Input"
-    }
-  ]
-}
-[/block]
+<Image title="Click Add Feed Input" alt={2862} align="center" width="90% " border={true} src="https://files.readme.io/d09bae1-Add_Feed_Input.png">
+  Click Add Feed Input
+</Image>
 
+4. Enter the *Configuration Name* and turn **ON** the *Feed Status* toggle. 
 
-4. Enter the _Configuration Name_ and turn **ON** the _Feed Status_ toggle. 
+<Image title="Enter Configuration Name and toggle ON Feed Status" alt={2818} align="center" width="90% " border={true} src="https://files.readme.io/1a0fc12-Feed_Config_popup.png">
+  Enter Configuration Name and Toggle ON Feed Status
+</Image>
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1a0fc12-Feed_Config_popup.png",
-        "Enter Configuration Name and toggle ON Feed Status",
-        2818
-      ],
-      "align": "center",
-      "sizing": "90% ",
-      "border": true,
-      "caption": "Enter Configuration Name and Toggle ON Feed Status"
-    }
-  ]
-}
-[/block]
+5. Click **Save**. The *Server to Server Key* and *Server to Server Secret* are displayed.
 
-
-5. Click **Save**. The _Server to Server Key_ and _Server to Server Secret_ are displayed.
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/af1581a-Key_and_Secret_Details.png",
-        "Copy Key and Secret for configuring the CleverTap dashboard",
-        2806
-      ],
-      "align": "center",
-      "sizing": "90% ",
-      "border": true,
-      "caption": "Copy Project Details"
-    }
-  ]
-}
-[/block]
-
+<Image title="Copy Key and Secret for configuring the CleverTap dashboard" alt={2806} align="center" width="90% " border={true} src="https://files.readme.io/af1581a-Key_and_Secret_Details.png">
+  Copy Project Details
+</Image>
 
 5. Copy the project details. You will need them when configuring the CleverTap dashboard.
 
@@ -96,71 +51,29 @@ To find your project details:
 
 To configure the CleverTap dashboard:
 
-1. Log in to your CleverTap account and navigate to the _Settings_ > _Partners_ > _Partner List_ page. Select _mParticle_ from the list.
+1. Log in to your CleverTap account and navigate to the *Settings* > *Partners* > *Partner List* page. Select *mParticle* from the list.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0f5a42d7706085839929e3d0438c808e6922d942e85057213e91ee10ebceed88-Amplitude_Partner_Page.png",
-        "",
-        "Navigating to the Partners Page"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Navigating to the Partners Page"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Navigating to the Partners Page" align="center" border={true} src="https://files.readme.io/0f5a42d7706085839929e3d0438c808e6922d942e85057213e91ee10ebceed88-Amplitude_Partner_Page.png">
+  Navigating to the Partners Page
+</Image>
 
 2. A popup opens on the right side of the screen. Enter the following details and click **Integrate**.
 
 | Field                  | Description                                                                                                                                                                                                              |
 | :--------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Partner Nickname       | Enter the _Nickname_ for your integration.                                                                                                                                                                               |
+| Partner Nickname       | Enter the *Nickname* for your integration.                                                                                                                                                                               |
 | API key and API secret | These are the unique codes passed to mParticle to verify your credentials. For more information about obtaining the key, refer to [Find mParticle Project Details](doc:mparticle-export#find-mparticle-project-details). |
 | Customer ID Mapping    | This is used as an identifier when sending event data to mParticle.                                                                                                                                                      |
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/00f9e5c-image.png",
-        null,
-        "Enter mParticle Project Details to Integrate"
-      ],
-      "align": "center",
-      "sizing": "70% ",
-      "border": true,
-      "caption": "Enter mParticle Project Details to Integrate"
-    }
-  ]
-}
-[/block]
+<Image alt="Enter mParticle Project Details to Integrate" align="center" width="70% " border={true} src="https://files.readme.io/00f9e5c-image.png">
+  Enter mParticle Project Details to Integrate
+</Image>
 
+After successful integration, navigate to the the *Export* tab on the *Partner List* page.
 
-After successful integration, navigate to the the _Export_ tab on the _Partner List_ page.
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3a1ff088b8dcf9b0546a982453df0a38ef2b7f9bce04da79b28c9bda3692fefe-mparticle_export.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "caption": "Create Export"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Create Export" align="center" src="https://files.readme.io/3a1ff088b8dcf9b0546a982453df0a38ef2b7f9bce04da79b28c9bda3692fefe-mparticle_export.png">
+  Create Export
+</Image>
 
 # Create New Export
 
@@ -169,94 +82,34 @@ To create a new export:
 1. Navigate to **Settings** > **Partners** > **Exports** from the CleverTap dashboard.
 2. Click **Create Export** and select **mParticle**.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c3c9fbc-CreatemParticleExport.jpg",
-        "Click + Export and select mParticle from the Partner dropdown",
-        2376
-      ],
-      "align": "center",
-      "sizing": "smart",
-      "border": true,
-      "caption": "Create Export"
-    }
-  ]
-}
-[/block]
-
+<Image title="Click + Export and select mParticle from the Partner dropdown" alt={2376} align="center" width="smart" border={true} src="https://files.readme.io/c3c9fbc-CreatemParticleExport.jpg">
+  Create Export
+</Image>
 
 The **Export to mParticle** pop-up displays.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2207974-mixpanel_live_streaming.png",
-        "",
-        "Enter Export Details"
-      ],
-      "align": "center",
-      "sizing": "80% ",
-      "border": true,
-      "caption": "Enter Export Details"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Enter Export Details" align="center" width="80% " border={true} src="https://files.readme.io/2207974-mixpanel_live_streaming.png">
+  Enter Export Details
+</Image>
 
 3. Configure the following settings:
-   - **Partner Nickname**: Nickname for the partner. To edit the nickname, go to **Partner List**. 
-   - **DATA TYPE & IDENTIFIER PRIORITY**: Select the type of data that you want to export from the available options. For more information, refer to [Export Details](doc:mparticle-export#export-details).
-   - **FREQUENCY**: Select from one of the following options:
-     - **One time**: A single export for the selected export type. You can export data up to the last 60 days. You create an export for a specific day, date range, previous month, current month, and more.  
-     - **Recurring**: Set up a recurring frequency to export all the new events/user properties captured in the last window. You can export event data as frequently as every 4 hours and up to once every 24 hours. You can export user properties only once every 24 hours. 
-     - **Date to export data**: The export starts at 12:00 a.m. on the specified date by default.
+   * **Partner Nickname**: Nickname for the partner. To edit the nickname, go to **Partner List**. 
+   * **DATA TYPE & IDENTIFIER PRIORITY**: Select the type of data that you want to export from the available options. For more information, refer to [Export Details](doc:mparticle-export#export-details).
+   * **FREQUENCY**: Select from one of the following options:
+     * **One time**: A single export for the selected export type. You can export data up to the last 60 days. You create an export for a specific day, date range, previous month, current month, and more.  
+     * **Recurring**: Set up a recurring frequency to export all the new events/user properties captured in the last window. You can export event data as frequently as every 4 hours and up to once every 24 hours. You can export user properties only once every 24 hours. 
+     * **Date to export data**: The export starts at 12:00 a.m. on the specified date by default.
 4. Click **Export**. The popup closes, and the following message displays at the top of the **Exports** page:
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/aefe720-mParticleExportCreated.jpg",
-        "mParticle export has initiated message displays at the top",
-        2284
-      ],
-      "align": "center",
-      "sizing": "90% ",
-      "border": true,
-      "caption": "mParticle Export Initiated"
-    }
-  ]
-}
-[/block]
-
+<Image title="mParticle export has initiated message displays at the top" alt={2284} align="center" width="90% " border={true} src="https://files.readme.io/aefe720-mParticleExportCreated.jpg">
+  mParticle Export Initiated
+</Image>
 
 CleverTap processes the export, and you can now see the newly created export for mParticle.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6618e18-mParticlePending.jpg",
-        "New mParticle export displays on Exports page after processing",
-        2372
-      ],
-      "align": "center",
-      "sizing": "90% ",
-      "border": true,
-      "caption": "New mParticle Export Displays on Exports Page"
-    }
-  ]
-}
-[/block]
-
+<Image title="New mParticle export displays on Exports page after processing" alt={2372} align="center" width="90% " border={true} src="https://files.readme.io/6618e18-mParticlePending.jpg">
+  New mParticle Export Displays on Exports Page
+</Image>
 
 The status for each export is displayed as **PENDING** as soon as the export is created. The status changes to **RUNNING** after the processing starts. It changes to **DONE** when the export is complete.
 
@@ -264,121 +117,45 @@ The status for each export is displayed as **PENDING** as soon as the export is 
 
 You can also stop the export that you have created. Hover over the export. Click the **Stop**  ![Stop export](https://files.readme.io/203208a-StopExport.jpg) button for the export request you want to stop.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0ffce76-mParticleExportStopButton.jpg",
-        "Click the Stop icon to stop the ongoing mParticle export",
-        2372
-      ],
-      "align": "center",
-      "sizing": "90% ",
-      "border": true,
-      "caption": "Stop mParticle Export"
-    }
-  ]
-}
-[/block]
-
+<Image title="Click the Stop icon to stop the ongoing mParticle export" alt={2372} align="center" width="90% " border={true} src="https://files.readme.io/0ffce76-mParticleExportStopButton.jpg">
+  Stop mParticle Export
+</Image>
 
 The **Stop export?** window appears. Click **Stop** to confirm your action.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7dcac67-StopMParticleButton.jpg",
-        "",
-        ""
-      ],
-      "align": "center",
-      "sizing": "60% ",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" className="border" width="60% " border={true} src="https://files.readme.io/7dcac67-StopMParticleButton.jpg" />
 
+You are navigated back to the **Exports** page, and the *mParticle data export stopped* message displays at the top. The status for the data export now displays as **STOPPED**.
 
-You are navigated back to the **Exports** page, and the _mParticle data export stopped_ message displays at the top. The status for the data export now displays as **STOPPED**.
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/afe1fb4-StoppedMParticle.jpg",
-        "mParticle export has initiated message displays at the top",
-        2340
-      ],
-      "align": "center",
-      "sizing": "90% ",
-      "border": true,
-      "caption": "mParticle Export Stopped"
-    }
-  ]
-}
-[/block]
-
+<Image title="mParticle export has initiated message displays at the top" alt={2340} align="center" width="90% " border={true} src="https://files.readme.io/afe1fb4-StoppedMParticle.jpg">
+  mParticle Export Stopped
+</Image>
 
 # Edit an Export
 
 You might need to modify an export to meet specific business requirements or while waiting for the next run. This section describes editing a Recurring export in the **RUNNING** and **PENDING** (awaiting next run) state. 
 
 > 📘 Points to Remember
-> 
-> - In the case of running exports, the new changes will apply to the next run.
-> - You cannot edit a One-time export, regardless its status (RUNNING, PENDING, DONE, or STOPPED).
-> - You cannot change the export from User Profile to Event and vice-versa.
-> - You cannot modify exports marked as **DONE** or **STOPPED**.
+>
+> * In the case of running exports, the new changes will apply to the next run.
+> * You cannot edit a One-time export, regardless its status (RUNNING, PENDING, DONE, or STOPPED).
+> * You cannot change the export from User Profile to Event and vice-versa.
+> * You cannot modify exports marked as **DONE** or **STOPPED**.
 
 To edit an export: 
 
 1. On the CleverTap dashboard, go to **Partners** > **Exports**.
 2. Hover over the required export. The **View**, **Edit**, and the **Stop** buttons appear.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a033c60-EditMParticle.jpg",
-        null,
-        "Click the Edit Export Icon"
-      ],
-      "align": "center",
-      "sizing": "90% ",
-      "border": true,
-      "caption": "Click the Edit Export Icon"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Click the Edit Export Icon" align="center" width="90% " border={true} src="https://files.readme.io/a033c60-EditMParticle.jpg">
+  Click the Edit Export Icon
+</Image>
 
 3. Click the **Edit** button. The **Export to mPartcile** section appears.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a23dd27-UpdateMPartcileExport.jpg",
-        null,
-        "Edit the Export"
-      ],
-      "align": "center",
-      "sizing": "90% ",
-      "border": true,
-      "caption": "Edit the Export"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Edit the Export" align="center" width="90% " border={true} src="https://files.readme.io/a23dd27-UpdateMPartcileExport.jpg">
+  Edit the Export
+</Image>
 
 4. Edit the export details and click **Update export**.
 
@@ -394,24 +171,9 @@ To filter by export details:
 2. You can filter exports by **Partner**, **Type**, **Format**, **Status**, or **Frequency**. 
 3. To clear the filter, click **Reset all**.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6499e90-FilterButton.jpg",
-        "",
-        "Filter Exports"
-      ],
-      "align": "center",
-      "sizing": "90% ",
-      "border": true,
-      "caption": "Filter Exports"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Filter Exports" align="center" width="90% " border={true} src="https://files.readme.io/6499e90-FilterButton.jpg">
+  Filter Exports
+</Image>
 
 ## Filter Exports by Date Range
 
@@ -420,29 +182,14 @@ You can also filter the exports based on the export date.
 To filter exports by export date range:
 
 1. Click the **Filter** button at the top right corner. 
-2. Click the **Exported on** button.  
+2. Click the **Exported on** button.\
    The **Calendar** widget appears. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/74ce34b-Amplitude_Exports_-_Calendar_Widget.png",
-        "",
-        "Calendar Widget"
-      ],
-      "align": "center",
-      "sizing": "90% ",
-      "border": true,
-      "caption": "Calendar Widget"
-    }
-  ]
-}
-[/block]
+<Image alt="Calendar Widget" align="center" width="90% " border={true} src="https://files.readme.io/74ce34b-Amplitude_Exports_-_Calendar_Widget.png">
+  Calendar Widget
+</Image>
 
-
-1. Choose the custom date range and click **Apply**.  
+1. Choose the custom date range and click **Apply**.\
    The exports are filtered accordingly.
 
 ## Filter Exports by Pagination
@@ -456,10 +203,10 @@ To choose how many export items you view per page:
 
 Select from one of the following options to export events from CleverTap to the mParticle dashboard:
 
-- [All system events](doc:mparticle-export#all-events)
-- [Selected events](doc:mparticle-export#selected-events)
-- [Engagement events](doc:mparticle-export#engagement-events)
-- [User properties](doc:mparticle-export#user-properties)
+* [All system events](doc:mparticle-export#all-events)
+* [Selected events](doc:mparticle-export#selected-events)
+* [Engagement events](doc:mparticle-export#engagement-events)
+* [User properties](doc:mparticle-export#user-properties)
 
 ## All System Events
 
@@ -497,25 +244,25 @@ With this option, you can select the specific system events (from those listed i
 
 When you select this option, the following engagement events are exported:
 
-- Notification Sent
-- Notification Viewed
-- Notification Clicked
-- Push Impressions
-- Notification Replied
-- Control Group
-- Channel Unsubscribed
-- Push Impressions
-- Notification Delivered
-- AB Experiment Rendered
-- AB Experiment Stopped
-- AB Experiment Rolled Out
-- Geocluster Entered
-- Geocluster Exited
-- Reply Sent
-- App Uninstalled
-- Webhook Delivered
-- State Transitioned
-- UTM Visited
+* Notification Sent
+* Notification Viewed
+* Notification Clicked
+* Push Impressions
+* Notification Replied
+* Control Group
+* Channel Unsubscribed
+* Push Impressions
+* Notification Delivered
+* AB Experiment Rendered
+* AB Experiment Stopped
+* AB Experiment Rolled Out
+* Geocluster Entered
+* Geocluster Exited
+* Reply Sent
+* App Uninstalled
+* Webhook Delivered
+* State Transitioned
+* UTM Visited
 
 For more information about these events, refer to [Events](doc:events).
 
@@ -531,7 +278,7 @@ When you select this option, the following user profile attributes are exported:
 | All communication preference | Flags that determine the communication preference of the user. |
 
 > 📘 Availability of Feature
-> 
+>
 > If you are a CleverTap for Enterprises user, contact your sales account manager to activate this feature at your end. In the case of CleverTap for Startups, it is available as a paid add-on.
 
 # FAQs
@@ -540,11 +287,11 @@ When you select this option, the following user profile attributes are exported:
 
 A. Yes, CleverTap data exports allow the following special characters:
 
-- CleverTap's export system supports Unicode (UTF-8)  character encoding. It facilitates the accurate representation of text in various languages and scripts. For example, Indian regional languages, Arabic, Korean, Russian, Japanese, Chinese, Spanish, Greek, Indonesian, etc.
-- It replaces the following characters with a hyphen to avoid issues in output file generation:
-  - Whitespace
-  - Tab
-  - Slash
-  - null (\\0)
-- Control characters are replaced with ?. For more information, refer to [Control Character](https://en.wikipedia.org/wiki/Control_character). 
-- Supports emoji characters; however, some emojis (UTF-16) may not render properly.
+* CleverTap's export system supports Unicode (UTF-8)  character encoding. It facilitates the accurate representation of text in various languages and scripts. For example, Indian regional languages, Arabic, Korean, Russian, Japanese, Chinese, Spanish, Greek, Indonesian, etc.
+* It replaces the following characters with a hyphen to avoid issues in output file generation:
+  * Whitespace
+  * Tab
+  * Slash
+  * null (\\0)
+* Control characters are replaced with ?. For more information, refer to [Control Character](https://en.wikipedia.org/wiki/Control_character). 
+* Supports emoji characters; however, some emojis (UTF-16) may not render properly.
