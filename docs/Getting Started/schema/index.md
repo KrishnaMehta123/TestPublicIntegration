@@ -1085,22 +1085,4 @@ You will not get any event data after discarding an event. We recommend you expo
 
 When the UTM Visited event is disabled from the schema, it is dropped at the processing layer, rendering it inaccessible for ingestion from any third-party medium.
 
-<HTMLBlock>{`
-<style>
-  .rm-Guides .content-body, .rm-Guides #content-head .col-xs-9 {
-      max-width: 100%;
-      width: 1000px;
-  }
-  .markdown-body summary {
-  font-size: 16px;
-  font-weight: bold; 
-  text-transform: camelcase;
-}
-  
-details .rdmd-table {
-   margin-bottom: 20px;
-}
-  details[open] summary { margin-bottom: 20px;
-  }
-</style>
-`}</HTMLBlock>
+<br />
