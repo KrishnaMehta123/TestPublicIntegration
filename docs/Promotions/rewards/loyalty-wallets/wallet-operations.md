@@ -18,61 +18,33 @@ This document helps you understand how to Filter, Search, and manage all transac
 
 ## Adjust Points
 
-The _Adjust Points_ button allows Admins to add (credit) or deduct (debit) points manually from a user's wallet. The following are some sample use cases where you might want to adjust points for a user's wallet:
+The *Adjust Points* button allows Admins to add (credit) or deduct (debit) points manually from a user's wallet. The following are some sample use cases where you might want to adjust points for a user's wallet:
 
-- Rewarding users manually for customer service resolutions or special scenarios.
-- Correcting points in cases where automated transactions fail or need manual intervention.
-- Deducting points in case of fraudulent activity or errors.
+* Rewarding users manually for customer service resolutions or special scenarios.
+* Correcting points in cases where automated transactions fail or need manual intervention.
+* Deducting points in case of fraudulent activity or errors.
 
 The following is an example of manually crediting points for a user who has submitted a social media review for your product:
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ccc5f339bbed64b2ac1d2158b7bbb7026eb55422ca364089582b58e5e9f381de-Adjust_Points.gif",
-        "",
-        "Adjust Points for a User"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Adjust Points for a User"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Adjust Points for a User" align="center" border={true} src="https://files.readme.io/ccc5f339bbed64b2ac1d2158b7bbb7026eb55422ca364089582b58e5e9f381de-Adjust_Points.gif">
+  Adjust Points for a User
+</Image>
 
 ### Error Cases
 
 The following errors may occur while manually adjusting points, preventing successful submission:
 
-- Attempting to debit more points than the user's current active balance results in an error.
-- Entering invalid or negative point values will trigger a validation error.
-- Missing required fields (identity or description) will not allow submission.
+* Attempting to debit more points than the user's current active balance results in an error.
+* Entering invalid or negative point values will trigger a validation error.
+* Missing required fields (identity or description) will not allow submission.
 
 ## Filter
 
 You can refine your transactions list view using the following filters:
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3828092f335cc3cf8d7d8e4e3cf4fe8e11ccd5baf2090ee92cefd2dafbe2299b-Transactions_Filters.gif",
-        null,
-        "Apply Filters on Transactions"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Apply Filters on Transactions"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Apply Filters on Transactions" align="center" border={true} src="https://files.readme.io/3828092f335cc3cf8d7d8e4e3cf4fe8e11ccd5baf2090ee92cefd2dafbe2299b-Transactions_Filters.gif">
+  Apply Filters on Transactions
+</Image>
 
 ### Time Period
 
@@ -82,21 +54,21 @@ Use the calendar widget to define a date range for which you want to filter the 
 
 You can filter the following transaction types:
 
-- **Credit**: Points added to a user's wallet.
-- **Debit**: Points used or deducted from a user's wallet.
-- **Promised**: Points transactions scheduled for future processing. For more information on the distribution of Promised points, refer to [Points Buckets](doc:wallet-operations#points-buckets).
-- **Expired**: Points that have expired.
+* **Credit**: Points added to a user's wallet.
+* **Debit**: Points used or deducted from a user's wallet.
+* **Promised**: Points transactions scheduled for future processing. For more information on the distribution of Promised points, refer to [Points Buckets](doc:wallet-operations#points-buckets).
+* **Expired**: Points that have expired.
 
 > 📘 Points Expiry Logic
-> 
+>
 > Points expire based on the expiry period defined in the system. The CleverTap system follows a FIFO (First-In-First-Out) logic to expire points, meaning older points expire first, followed by newer points.
 
 #### Points Buckets
 
 When points are credited to a user, they are stored in the following two buckets:
 
-- **Promised Points Bucket**: Holds points that are scheduled to be activated after a predefined duration. Points here are not usable by the end user until they move to the active bucket.
-- **Active Points Bucket**: Consists of points that are available for redemption and usage by the end user.
+* **Promised Points Bucket**: Holds points that are scheduled to be activated after a predefined duration. Points here are not usable by the end user until they move to the active bucket.
+* **Active Points Bucket**: Consists of points that are available for redemption and usage by the end user.
 
 Any points credited through a [Promo Campaign](doc:promo-campaigns) or [Credit API](https://developer.clevertap.com/docs/debitcredit-wallet) with a custom activation duration are first added to the Promised Points Bucket. After the activation duration is completed, the same points are moved to the Active Points Bucket. The users cannot use points from the promised bucket for redemption.
 
@@ -106,11 +78,11 @@ For example, a Food delivery app offers 10% cashback points to its users based o
 
 Filter transactions based on their origin:
 
-- **API**: Credit or debit transactions are initiated via the [Debit/Credit API](https://developer.clevertap.com/docs/debitcredit-wallet) calls.
-- **Campaign**: Transactions are triggered via Promo campaigns.
-- **Manual**: Points are adjusted manually by the Admin from the CleverTap dashboard. For more information, refer to [Adjust Points](doc:wallet-operations#adjust-points).
-- **System**: Transactions are automatically generated by the system for activities such as points expiry. For example, automatic deduction of expired points from the user's wallet.
-- **Cashback Coupon**: Points are credited to the user’s wallet when they redeem a cashback coupon.
+* **API**: Credit or debit transactions are initiated via the [Debit/Credit API](https://developer.clevertap.com/docs/debitcredit-wallet) calls.
+* **Campaign**: Transactions are triggered via Promo campaigns.
+* **Manual**: Points are adjusted manually by the Admin from the CleverTap dashboard. For more information, refer to [Adjust Points](doc:wallet-operations#adjust-points).
+* **System**: Transactions are automatically generated by the system for activities such as points expiry. For example, automatic deduction of expired points from the user's wallet.
+* **Cashback Coupon**: Points are credited to the user’s wallet when they redeem a cashback coupon.
 
 ### Points Range
 
@@ -118,34 +90,20 @@ Enter the **minimum** and **maximum** points to filter transactions within a spe
 
 ## Search
 
-The _Search_ bar allows you to quickly find specific transactions using either:
+The *Search* bar allows you to quickly find specific transactions using either:
 
-- Identity (the user’s unique identifier), or
-- Transaction ID (unique ID of the transaction)
+* Identity (the user’s unique identifier), or
+* Transaction ID (unique ID of the transaction)
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/838ca353fac29091b17b92da2c08532df930c0cfd995f501970a79e6e8db6a32-Search.png",
-        "",
-        "Search by Identity or Transaction ID"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Search by Identity or Transaction ID"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Search by Identity or Transaction ID" align="center" border={true} src="https://files.readme.io/838ca353fac29091b17b92da2c08532df930c0cfd995f501970a79e6e8db6a32-Search.png">
+  Search by Identity or Transaction ID
+</Image>
 
 # Best Practices
 
 Follow these best practices to manage Loyalty Wallets effectively, enhance user engagement, and maximize the impact of your rewards program.
 
-- **Define Clear Expiry Policies:** Encourage timely usage by setting appropriate expiry periods.
-- **Monitor Transactions Regularly:** Use reports to track points usage and prevent fraud.
-- **Segment Users for Personalization:** Deliver targeted wallet incentives to maximize engagement.
-- **A/B Test Wallet Campaigns:** Experiment with different point values and promotions to optimize results.
+* **Define Clear Expiry Policies:** Encourage timely usage by setting appropriate expiry periods.
+* **Monitor Transactions Regularly:** Use reports to track points usage and prevent fraud.
+* **Segment Users for Personalization:** Deliver targeted wallet incentives to maximize engagement.
+* **A/B Test Wallet Campaigns:** Experiment with different point values and promotions to optimize results.
