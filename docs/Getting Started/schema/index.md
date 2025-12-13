@@ -96,8 +96,6 @@ You must be careful before removing an event. If you ever need to remove an even
 
 <Image align="center" border={true} caption="Remove an Event" src="https://files.readme.io/b6033f7-Custom_Events.png" />
 
-Remove an Event
-
 After an event is removed:
 
 * The entire event row is removed from the schema.
@@ -108,7 +106,7 @@ After an event is removed:
 You can discard an active event from the schema. You can still see the event row in the schema; however, it will be marked as discarded.
 
 <Callout icon="❗️" theme="error">
-  When Discarding an Event
+  **When Discarding an Event**
 
   You can only discard an active event. Exercise extreme caution when discarding an event because this action cannot be undone. This action has an impact on your schema because it purges all data for the discarded event. It also drops any future incoming event with the same name.
 </Callout>
@@ -116,7 +114,7 @@ You can discard an active event from the schema. You can still see the event row
 1. Click the ellipsis menu on the event row.
 2. Click **Discard**.
 
-![](https://files.readme.io/6f94655-Discard_event.png "Click Discard from the Ellipsis Menu to Discard the Event")  Discard an Event
+<Image align="center" border={true} caption="Discard an Event" src="https://files.readme.io/6f94655-Discard_event.png" />
 
 ## Define Event
 
@@ -144,11 +142,13 @@ To publish the events, perform the following:
 | **Created on**         | The date when the user property was created.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | **Description**        | The description of the event property. You can set this from the ellipsis menu on the event property row. The property is optional, and the event is allowed even if it is received without the event property.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 
-> 📘 Effect of Changing the Data Type of an Event or User Property
->
-> * If you change the user or event property's data type, then all the incoming data will be validated as per the schema definition once you publish the changes.
-> * The values already present in the old data type will not change in the new data type.
-> * For the users who already have the value of the user/event property in the old data type, you will have to again pass the user/event property with the value that will have a new data type.
+<Callout icon="📘" theme="info">
+  **Effect of Changing the Data Type of an Event or User Property**
+
+  * If you change the user or event property's data type, then all the incoming data will be validated as per the schema definition once you publish the changes.
+  * The values already present in the old data type will not change in the new data type.
+  * For the users who already have the value of the user/event property in the old data type, you will have to again pass the user/event property with the value that will have a new data type.
+</Callout>
 
 ## Add Event Property
 
@@ -160,7 +160,7 @@ To add an event property:
 3. Enter a property name and choose the relevant property details.
 4. Select the checkmark.
 
-![](https://files.readme.io/9a45a27-Add_property.png "Click +Property to Add Event Property")  Add Event Property
+<Image align="center" border={true} caption="Add Event Property" src="https://files.readme.io/9a45a27-Add_property.png" />
 
 ## Edit Event Property
 
@@ -170,7 +170,7 @@ You can edit any column; however, you can only edit names for unpublished event 
 2. Edit the property name and any other appropriate property details.
 3. Click the checkmark.
 
-![](https://files.readme.io/804cbdc-Edit_Event_Property.png "Click the Edit Icon to Edit Event Property")  Edit Event Property
+<Image align="center" border={true} caption="Edit Event Property" src="https://files.readme.io/804cbdc-Edit_Event_Property.png" />
 
 ## Remove Event Property
 
