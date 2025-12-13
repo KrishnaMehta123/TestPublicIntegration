@@ -59,48 +59,27 @@ Refer to the table below to understand prompt fields:
 
 The following sample prompts can help you get started with Scribe quickly. You can experiment with more prompts to find a more suitable message tone and style. Browse the sample prompts by industry:
 
-<Cards columns={4}>
-  <Card
-    title="E-Commerce"
-    href="#e-commerce"
-    icon="fa-shopping-cart"
-  >
+<Cards columns={5}>
+  <Card title="E-Commerce" href="#e-commerce" icon="fa-shopping-cart">
     Personalization & Offers
   </Card>
 
-  <Card
-    title="OTT"
-    href="#ott"
-    icon="fa-tv"
-  >
+  <Card title="OTT" href="#ott" icon="fa-tv">
     Content & Engagement
   </Card>
 
-  <Card
-    title="Fintech"
-    href="#fintech"
-    icon="fa-wallet"
-  >
+  <Card title="Fintech" href="#fintech" icon="fa-wallet">
     Finance & Portfolios
   </Card>
 
-  <Card
-    title="Food Delivery"
-    href="#food-delivery"
-    icon="fa-utensils"
-  >
+  <Card title="Food Delivery" href="#food-delivery" icon="fa-utensils">
     Menu & Recommendations
   </Card>
 
-  <Card
-    title="Gaming"
-    href="#gaming"
-    icon="fa-gamepad"
-  >
+  <Card title="Gaming" href="#gaming" icon="fa-gamepad">
     Rewards & Items
   </Card>
 </Cards>
-
 
 ## E-Commerce
 
