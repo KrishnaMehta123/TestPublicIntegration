@@ -272,7 +272,9 @@ To add a user property from this page:
 2. Enter a property name and choose a data type.
 3. Click the checkmark.
 
-![](https://files.readme.io/fc5ba43-Add_User_Property.png "Enter a Property Name and Choose a Data Type to Add a User Property") Add User Property
+<Image align="center" border={false} caption="Add User Property" src="https://files.readme.io/fc5ba43-Add_User_Property.png" />
+
+<br />
 
 ## Edit User Property
 
