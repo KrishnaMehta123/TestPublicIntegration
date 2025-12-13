@@ -18,7 +18,7 @@ You can optimize the message content **[Scribe](https://docs.clevertap.com/docs/
 
 # What are Prompts?
 
-A prompt is a short sentence, phrase, or keyword that instructs _Scribe_ to use the OpenAI APIs to generate copywriting ideas. This section provides examples of writing effective prompts to get the best out of _Scribe_. 
+A prompt is a short sentence, phrase, or keyword that instructs *Scribe* to use the OpenAI APIs to generate copywriting ideas. This section provides examples of writing effective prompts to get the best out of *Scribe*. 
 
 # Prompt Examples
 
@@ -28,7 +28,7 @@ For more information on sample syntaxes to write the prompts, refer to the [Samp
 
 Following are some best practices you must follow while writing prompts for Scribe. 
 
-- Use the right keywords.
-- Write concise and clear prompts.
-- Provide clear context.
-- Avoid using profanity in the prompt.
+* Use the right keywords.
+* Write concise and clear prompts.
+* Provide clear context.
+* Avoid using profanity in the prompt.
