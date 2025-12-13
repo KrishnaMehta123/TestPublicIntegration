@@ -3,12 +3,12 @@ title: Metering Type - MAU with Unlimited Data Points (New)
 excerpt: Understand how the MAU with Unlimited Data Points metering works in CleverTap.
 deprecated: false
 hidden: true
+link:
+  new_tab: false
 metadata:
   title: ''
   description: ''
   robots: index
-next:
-  description: ''
 ---
 # Overview
 
@@ -71,7 +71,7 @@ Familiarizing yourself with the following billing terminologies is crucial to ma
       <td>
         The Monthly Billable Users (MBU) is the highest of either of the following:  
 
-         <li>**Actual MAU**: {&#123;[All App, Web, and API users (including anonymous users of App and API)]  + (1/3 * Web anonymous users)&#125;}. </li>
+         <li>**Actual MAU**: \{[All App, Web, and API users (including anonymous users of App and API)] + (1/3 * Web anonymous users)\}. </li>
          <li>**Contracted MAU tier**: The number of MAUs agreed upon in the contract.</li>
       </td>
     </tr>
