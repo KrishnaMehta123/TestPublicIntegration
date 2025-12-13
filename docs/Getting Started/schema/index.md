@@ -416,8 +416,6 @@ Currently, the [active %](https://docs.clevertap.com/docs/trends#section-active)
 
 <Image align="center" border={true} caption="Set Qualifying Event" src="https://files.readme.io/5d67342-set_qualifying.png" />
 
-<br />
-
 # Download Schema Data from Dashboard
 
 You can download the data for all events and user profiles from the CleverTap dashboard or via an API.
@@ -451,21 +449,21 @@ There are some specific validations when creating events and properties. For mor
 
 # FAQs
 
-#### Q. Can we get all past behavior data for an event after discarding it?
+### Can we get all past behavior data for an event after discarding it?
 
-A. No, we cannot get all past behavior data for an event after discarding it.
+No, we cannot get all past behavior data for an event after discarding it.
 
-#### Q. Does a discarded event appear under the user profile in the user's activity?
+### Does a discarded event appear under the user profile in the user's activity?
 
-A. No, a discarded event does not appear under the user profile in the user's activity.
+No, a discarded event does not appear under the user profile in the user's activity.
 
-#### Q. For how many days can I get the data of discarded events?
+### For how many days can I get the data of discarded events?
 
-A.  You will not get any event data after discarding an event. We recommend you export that event before you delete it.
+You will not get any event data after discarding an event. We recommend you export that event before you delete it.
 
-#### Q: If we disable the UTM Visited event from the schema, can it still be ingested through third-party mediums such as attribution tools like AppsFlyer or Customer Data Platforms (CDPs) like Segment?
+### If we disable the UTM Visited event from the schema, can it still be ingested through third-party mediums such as attribution tools like AppsFlyer or Customer Data Platforms (CDPs) like Segment?
 
-A: When the UTM Visited event is disabled from the schema, it is dropped at the processing layer, rendering it inaccessible for ingestion from any third-party medium.
+When the UTM Visited event is disabled from the schema, it is dropped at the processing layer, rendering it inaccessible for ingestion from any third-party medium.
 
 <HTMLBlock>{`
 <style>
