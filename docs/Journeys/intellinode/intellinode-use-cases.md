@@ -3,12 +3,12 @@ title: IntelliNODE Use Cases
 excerpt: Understand how to make the most of your IntelliNODE experiment.
 deprecated: false
 hidden: false
+link:
+  new_tab: false
 metadata:
   title: ''
   description: ''
   robots: index
-next:
-  description: ''
 ---
 # Overview
 
@@ -23,7 +23,7 @@ The Fintech industry has its own unique set of challenges with customer engageme
 Following are the use cases where you can test your approach:
 
 <details>
-  <summary><span class="bold"> High drop off during the know your customer (KYC) process.</span></summary>
+  <summary><span className="bold"> High drop off during the know your customer (KYC) process.</span></summary>
 
 ### High drop off during the *know your customer* (KYC) process
 
@@ -46,7 +46,7 @@ Use IntelliNODE to set up different experiments to engage users at different tim
 </details>
 
 <details>
-  <summary><span class="bold"> Best channel for sending coupon codes to incentivize users </span></summary>
+  <summary><span className="bold"> Best channel for sending coupon codes to incentivize users </span></summary>
 
 ### Coupon Codes for Users
 
@@ -73,7 +73,7 @@ Use IntelliNODE to experiment with a combination of two channels. Use the experi
 </details>
 
 <details>
-  <summary><span class="bold"> Select the order of messaging to inform a user about an account transaction </span></summary>
+  <summary><span className="bold"> Select the order of messaging to inform a user about an account transaction </span></summary>
 
 ### Select the order of the messaging channel
 
@@ -102,7 +102,7 @@ Create different paths with IntelliNODE and find the best messaging order betwee
 
 </details>
 <details>
-  <summary><span class="bold"> Send the right market news at the right time</span></summary>
+  <summary><span className="bold"> Send the right market news at the right time</span></summary>
 
 ### Schedule stock market news based on views
 
@@ -144,8 +144,7 @@ Create the following push paths:
 </details>
 
 <details>
-  <summary><span class="bold"> Best mode of communication to upload salary slips.</span>
-</summary>
+  <summary><span className="bold"> Best mode of communication to upload salary slips.</span></summary>
 
 ### The most preferred channel to upload salary slips
 
@@ -177,7 +176,7 @@ CleverTap has collated various use cases from players in this industry with simi
 Following are the use cases where you can test your approach:
 
 <details>
-  <summary><span class="bold"> Users drop-off after adding an item to cart.</span></summary>
+  <summary><span className="bold"> Users drop-off after adding an item to cart.</span></summary>
 
 ### Users drop off after adding to the cart
 
@@ -200,7 +199,7 @@ Set up different experiments to engage users at different delays. Set up multipl
 </details>
 
 <details>
-  <summary><span class="bold"> Track shipments from multiple messaging channels. </span></summary>
+  <summary><span className="bold"> Track shipments from multiple messaging channels. </span></summary>
 
 ### Track Product Shipment
 
@@ -228,7 +227,7 @@ For example, create three IntelliNODE paths:
 
 </details>
 <details>
-  <summary><span class="bold"> Find out the optimum number of nudges that can be sent to convert users.</span></summary>
+  <summary><span className="bold"> Find out the optimum number of nudges that can be sent to convert users.</span></summary>
 
 ### Find out the optimum number of nudges
 
@@ -257,7 +256,7 @@ Create an IntelliNODE experiment with different messaging frequencies for a chan
 </details>
 
 <details>
-  <summary><span class="bold">Inform users about the products that are back in stock</span></summary>
+  <summary><span className="bold">Inform users about the products that are back in stock</span></summary>
 
 ### Inform users about the products that are back in stock.
 
@@ -296,7 +295,7 @@ Create the following push paths:
 
 </details>
 <details>
-  <summary><span class="bold"> Remind users to pre-register for a product launch</span></summary>
+  <summary><span className="bold"> Remind users to pre-register for a product launch</span></summary>
 
 ### Remind users to pre-register for a product launch
 
@@ -332,7 +331,7 @@ The media industry can immensely benefit from better targeting, data-driven deci
 Following are the use cases where you can test your approach:
 
 <details>
-  <summary><span class="bold">Users do not engage with messages about new movie releases</span></summary>
+  <summary><span className="bold">Users do not engage with messages about new movie releases</span></summary>
 
 ### Users do not engage with messages about new movie releases
 
@@ -359,7 +358,7 @@ Create an IntelliNODE with paths that engage users at different times, such as:
 
 </details>
 <details>
-  <summary><span class="bold"> Users drop-off while watching the content. </span></summary>
+  <summary><span className="bold"> Users drop-off while watching the content. </span></summary>
 
 ### Users drop off while watching the content
 
@@ -390,8 +389,7 @@ Create different paths with IntelliNODE and find the best messaging order betwee
 </details>
 
 <details>
-  <summary><span class="bold"> Constantly nudging users to convert from AVOD to SVOD users may cause them to unsubscribe</span>
-</summary>
+  <summary><span className="bold"> Constantly nudging users to convert from AVOD to SVOD users may cause them to unsubscribe</span></summary>
 
 ### Constant nudges for SVOD cause user unsubscribes
 
@@ -419,8 +417,7 @@ Create an IntelliNODE experiment with different messaging frequencies for a chan
 
 </details>
 <details>
-  <summary><span class="bold"> Select the correct mix of channels to build anticipation</span>
-  </summary>
+  <summary><span className="bold"> Select the correct mix of channels to build anticipation</span></summary>
 
 ### The correct mix of channels to build anticipation
 
@@ -450,8 +447,7 @@ Create different paths with IntelliNODE and find the best messaging order betwee
 </details>
 
 <details>
-  <summary><span class="bold"> Suggest genre by time of day</span>
-  </summary>
+  <summary><span className="bold"> Suggest genre by time of day</span></summary>
 
 ### Suggest genre by the time of day
 
