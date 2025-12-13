@@ -209,9 +209,11 @@ Set a service provider as default so that the same provider is used for deliveri
 
 Before you can use inbox previews, you must enable them. Inbox previews with code analysis let you view an analysis of your HTML code. It also provides the capability to view previews across devices and inboxes before you send out a campaign.
 
-> 🚧 Account Specifications
->
-> Email previews are available only if you have opted for the email add-on from CleverTap.
+<Callout icon="🚧" theme="warn">
+  **Account Specifications**
+
+  Email previews are available only if you have opted for the email add-on from CleverTap.
+</Callout>
 
 ## Enable or Disable Inbox Previews
 
@@ -222,18 +224,22 @@ To enable or disable the inbox preview, perform the following steps:
 3. Select a client from the list.
 4. Click on the ellipsis and click **Enable** or **Disable**.
 
-> 📘 Multi-select
->
-> You can also select multiple clients, then enable or disable previews by clicking **Enable in inbox previews** or **Disable in inbox previews**.
+<Callout icon="📘" theme="info">
+  **Multi-select**
 
-  Enable or Disable Inbox Previews
+  You can also select multiple clients, then enable or disable previews by clicking **Enable in inbox previews** or **Disable in inbox previews**.
+</Callout>
+
+<Image align="center" border={true} caption="Enable or Disable Inbox Previews" src="https://files.readme.io/49e8f2d-Enable_an_inbox_preview.png" />
 
 The _Previews_ tab lists the available email inboxes. For example, a mobile device that runs Gmail on Android 8 or a computer that runs Apple Mail 10 on an OS X 10.10 operating system.
 
-> 🚧 Account Specifications
->
-> Email previews are available only if you have opted for the email add-on from CleverTap.  
-> This feature is not available for trial accounts.
+<Callout icon="🚧" theme="warn">
+  **Account Specifications**
+
+  Email previews are available only if you have opted for the email add-on from CleverTap.  
+  This feature is not available for trial accounts.
+</Callout>
 
 # Advanced Setup
 
