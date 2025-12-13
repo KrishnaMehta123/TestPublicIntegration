@@ -18,7 +18,7 @@ This section lists the email template designing platforms that can be used withi
 
 CleverTap supports integrations with popular email template design platforms for creating and customizing email templates. Select your email template provider from the following list:
 
-- [Alpaco](doc:alpaco)
-- [Email Love](doc:email-love)
-- [Stripo](doc:stripo)
-- [Taxi for Email](doc:taxi-for-email)
+* [Alpaco](doc:alpaco)
+* [Email Love](doc:email-love)
+* [Stripo](doc:stripo)
+* [Taxi for Email](doc:taxi-for-email)
