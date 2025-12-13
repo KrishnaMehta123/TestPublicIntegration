@@ -16,6 +16,6 @@ Enables automated offline engagement through personalized mailers like postcards
 
 CleverTap currently supports the following partner platforms:
 
-- [Inkit](doc:inkit)
-- [Optilyz](doc:optilyz)
-- [Poplar](doc:poplar)
+* [Inkit](doc:inkit)
+* [Optilyz](doc:optilyz)
+* [Poplar](doc:poplar)
