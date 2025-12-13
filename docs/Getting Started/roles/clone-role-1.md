@@ -18,25 +18,11 @@ This section covers how to clone a role.
 
 To clone a role, perform the following steps:
 
-1. From the dashboard, navigate to _Settings_ > _Roles_.
+1. From the dashboard, navigate to *Settings* > *Roles*.
 2. Click on the vertical ellipsis of the corresponding role. 
 3. Click on the collated page icon.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/bd6088a-Clone_a_role_1.png",
-        "Clone a role 1.png",
-        1409
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="Clone a role 1.png" alt={1409} align="center" className="border" border={true} src="https://files.readme.io/bd6088a-Clone_a_role_1.png" />
 
 4. Review the component access, then click **Save & Continue**.
 
