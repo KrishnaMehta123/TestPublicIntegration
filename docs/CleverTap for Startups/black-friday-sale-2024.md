@@ -32,16 +32,16 @@ The offer is available to **all new customers on the Essentials Plan**, regardle
 
 The following are the terms and conditions for new customers to avail of the offer:
 
-- For customers in INR, the conversion rate is **$1 = ₹80**.
-- The first $250 (INR 20,000) is automatically credited upon sign-up, while the additional $250 (INR 20,000) unlocks when your account reaches **100 MAUs (Monthly Active Users)** within 30 days of signing up.
-- With the promotional credits, you also get a 30-day free trial period. You can utilize the promotional credits only after the trial ends.
-- Promotional credits can be used only to pay the CleverTap invoices.
-- Promotional credits are non-refundable and cannot be exchanged for cash.
-- Promotional credits can not be carried over during account cancelation, migration, pause, or reactivation.
-- After utilizing the promotional credits, you will be billed as per the selected plan pricing.
-- The Black Friday offer cannot be combined with other offers, such as the [CleverTap Leap Program](https://clevertap.com/leap/).
-- Standard taxes and additional charges may apply as per your location.
-- CleverTap reserves the right to modify or withdraw the Black Friday offer at any time.
+* For customers in INR, the conversion rate is **$1 = ₹80**.
+* The first $250 (INR 20,000) is automatically credited upon sign-up, while the additional $250 (INR 20,000) unlocks when your account reaches **100 MAUs (Monthly Active Users)** within 30 days of signing up.
+* With the promotional credits, you also get a 30-day free trial period. You can utilize the promotional credits only after the trial ends.
+* Promotional credits can be used only to pay the CleverTap invoices.
+* Promotional credits are non-refundable and cannot be exchanged for cash.
+* Promotional credits can not be carried over during account cancelation, migration, pause, or reactivation.
+* After utilizing the promotional credits, you will be billed as per the selected plan pricing.
+* The Black Friday offer cannot be combined with other offers, such as the [CleverTap Leap Program](https://clevertap.com/leap/).
+* Standard taxes and additional charges may apply as per your location.
+* CleverTap reserves the right to modify or withdraw the Black Friday offer at any time.
 
 # FAQs
 
