@@ -26,8 +26,8 @@ CleverTap follows a structured approach to prevent duplicate voucher codes while
 
 CleverTap prevents duplicate codes within the same partner and list tag to avoid unintended voucher conflicts and redemption errors.
 
-- A voucher code cannot be uploaded again within the same voucher list (if the List Tag and Partner are the same).
-- A voucher code cannot be uploaded to another list under the same Partner if the List Tag already contains that code in any active voucher list.
+* A voucher code cannot be uploaded again within the same voucher list (if the List Tag and Partner are the same).
+* A voucher code cannot be uploaded to another list under the same Partner if the List Tag already contains that code in any active voucher list.
 
 The following table illustrates different scenarios of voucher code duplication across lists. The **Available Codes** column represents the existing codes in active voucher lists, helping you verify duplication before uploading new codes.
 
@@ -39,8 +39,8 @@ The following table illustrates different scenarios of voucher code duplication 
 
 In certain cases, CleverTap permits duplicate codes to enable cross-partner distribution and list reusability. This ensures businesses can manage vouchers effectively without unnecessary upload restrictions.
 
-- A voucher code can be uploaded under the same List Tag but with a different Partner, as each partner operates independently.
-- Once a voucher list is archived, its codes are no longer checked for duplication, allowing the same codes to be uploaded again.
+* A voucher code can be uploaded under the same List Tag but with a different Partner, as each partner operates independently.
+* Once a voucher list is archived, its codes are no longer checked for duplication, allowing the same codes to be uploaded again.
 
 The following table illustrates different scenarios of voucher code duplication across lists. The **Available Codes** column represents the existing codes in active voucher lists, helping you verify duplication before uploading new codes.
 
@@ -57,33 +57,86 @@ Consider a scenario where Customer X runs a New Year sale campaign and collabora
 
 As each partner controls their own redemption platform, CleverTap enforces duplication checks within the same partner but allows the same code across different partners.
 
-[block:parameters]
-{
-  "data": {
-    "h-0": "Scenario",
-    "h-1": "Action",
-    "h-2": "Allowed?",
-    "h-3": "Reason",
-    "0-0": "Uploading `Code 1` under different partners",
-    "0-1": "<li>Code1 is uploaded under Partner A (similar to List A).</li><li>Code1 is uploaded under Partner B (similar to List C).</li>  \n  \n<br />",
-    "0-2": "Yes",
-    "0-3": "Different partners operate independently, preventing redemption conflicts.",
-    "1-0": "Uploading `Code 1` again under the same partner",
-    "1-1": "<li>Code1 was already uploaded under Partner A (similar to List A).</li><li>Customer X attempts to upload Code1 again under Partner A in another active list (similar to List D).</li>  \n  \n<br />",
-    "1-2": "No",
-    "1-3": "Partner A already has an active list with `Code 1`. CleverTap prevents duplicates within the same partner across active lists.",
-    "2-0": "Re-uploading `Code 1` after archiving the original list",
-    "2-1": "<li>`Code 1` was in List A (archived).</li><li>Customer X attempts to re-upload `Code 1` under a new list (similar to List E).</li>  \n  \n<br />",
-    "2-2": "Yes",
-    "2-3": "Once a list is archived, its codes are no longer checked for duplication, allowing re-upload."
-  },
-  "cols": 4,
-  "rows": 3,
-  "align": [
-    "left",
-    "left",
-    "left",
-    "left"
-  ]
-}
-[/block]
+<Table align={["left","left","left","left"]}>
+  <thead>
+    <tr>
+      <th>
+        Scenario
+      </th>
+
+      <th>
+        Action
+      </th>
+
+      <th>
+        Allowed?
+      </th>
+
+      <th>
+        Reason
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        Uploading `Code 1` under different partners
+      </td>
+
+      <td>
+        <li>Code1 is uploaded under Partner A (similar to List A).</li><li>Code1 is uploaded under Partner B (similar to List C).</li>  
+          
+        <br />
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Different partners operate independently, preventing redemption conflicts.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Uploading `Code 1` again under the same partner
+      </td>
+
+      <td>
+        <li>Code1 was already uploaded under Partner A (similar to List A).</li><li>Customer X attempts to upload Code1 again under Partner A in another active list (similar to List D).</li>  
+          
+        <br />
+      </td>
+
+      <td>
+        No
+      </td>
+
+      <td>
+        Partner A already has an active list with `Code 1`. CleverTap prevents duplicates within the same partner across active lists.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Re-uploading `Code 1` after archiving the original list
+      </td>
+
+      <td>
+        <li>`Code 1` was in List A (archived).</li><li>Customer X attempts to re-upload `Code 1` under a new list (similar to List E).</li>  
+          
+        <br />
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Once a list is archived, its codes are no longer checked for duplication, allowing re-upload.
+      </td>
+    </tr>
+  </tbody>
+</Table>
