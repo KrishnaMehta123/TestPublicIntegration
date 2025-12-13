@@ -38,10 +38,10 @@ Here is a breakdown of what is accessible on the CleverTap dashboard during the 
 
 To ensure a smooth transition and minimize disruption during the maintenance, follow these recommendations:
 
-- **Prepare Campaigns in Advance**: Schedule all PBS and Live Action campaigns to run before or after the maintenance period.
-- **Pre-download Required Reports**: Extract any critical analytics or campaign performance data beforehand.
-- **Submit Data Early**: Complete data ingestion tasks through APIs, SDKs, or other endpoints before the maintenance begins.
-- **Notify Your Team**: Share this information with all relevant stakeholders to avoid confusion during the maintenance window.
+* **Prepare Campaigns in Advance**: Schedule all PBS and Live Action campaigns to run before or after the maintenance period.
+* **Pre-download Required Reports**: Extract any critical analytics or campaign performance data beforehand.
+* **Submit Data Early**: Complete data ingestion tasks through APIs, SDKs, or other endpoints before the maintenance begins.
+* **Notify Your Team**: Share this information with all relevant stakeholders to avoid confusion during the maintenance window.
 
 # Post Maintenance
 
