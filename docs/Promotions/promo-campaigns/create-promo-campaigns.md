@@ -496,9 +496,7 @@ The following configuration options are available when Coupons is selected:
   </tbody>
 </Table>
 
-<Image align="center" alt="Set Up Coupons in Rewards" border={true} src="https://files.readme.io/362ace8d3ea7a677c7c9a93f885bd75dbd8db80a5f74fc2fda32e1de4b2c66ca-image.png" className="border" />
-
-Set Up Coupons in Rewards
+<Image align="center" alt="Set Up Coupons in Rewards" border={true} caption="Set Up Coupons in Rewards" src="https://files.readme.io/362ace8d3ea7a677c7c9a93f885bd75dbd8db80a5f74fc2fda32e1de4b2c66ca-image.png" />
 
 ## Partner Vouchers
 
