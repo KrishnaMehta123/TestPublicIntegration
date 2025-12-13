@@ -33,7 +33,7 @@ The _Start Here_ section is where you choose how users will qualify for the rewa
 * **Past behavior/Custom list**: Target users based on actions performed in the past or a custom list uploaded to the CleverTap dashboard. For example, you can target users who have not done a transaction in the last 6 months, and offer them a 20% discount coupon.
 * **Live behavior**: Trigger rewards in real-time when a user performs or does not perform an event. For example, you can trigger a reward when a user adds items to their cart but does not complete the checkout process within a set timeframe.
 
- Define Qualification Criteria
+<Image align="center" border={true} caption="Define Qualification Criteria" src="https://files.readme.io/db8874c06fae7a9f98884e2d01a593742b44a052dc5bd6030f63527b1d42b607-image.png" />
 
 ## Select Target Segment
 
@@ -47,7 +47,7 @@ The _Who_ section allows you to define who should receive the reward using the r
   * Users who **have common interests** or share common behavioral traits or usage patterns, such as frequent shoppers or high-engagement users.
 * Option to enable **Constant event property**, which keeps event property values fixed during evaluation. It is useful when comparing multiple events with shared attributes. For example, you can lock the Product ID property across both events to find users who viewed and purchased the same product.
 
-![](https://files.readme.io/c0f72135336ae3b88597f99adb1a424fad8b23e8c8d814927a28548d3ef4853c-image.png) Select Target Segment
+<Image align="center" border={true} caption="Select Target Segment" src="https://files.readme.io/c0f72135336ae3b88597f99adb1a424fad8b23e8c8d814927a28548d3ef4853c-image.png" />
 
 ## Set Up Reward
 
@@ -70,8 +70,6 @@ When you select Past Behavior or Custom List Segment, the _When_ section shows t
 | ---------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
 | **Send Now**           | Launches the campaign immediately using the current timestamp and the **account timezone** (for example, GMT+05:30 Asia/Kolkata). | Run a flash-sale promotion as soon as it is configured.                             |
 | **Schedule for Later** | Let's you choose a **future start date and time**. You can also adjust the timezone if required.                                  | Schedule a promo to start at 6:00 PM on a Friday evening to capture higher traffic. |
-
-![](https://files.readme.io/f64c9ea54de2ed6ec5e1f42297e4005d60be73e4dd7e6e07dd3364c20127b795-image.png)  Set Delivery Preferences in Past Behavior/Custom List Segments
 
 ### For Live Behavior Segments
 
@@ -128,7 +126,7 @@ When you select Live Behavior Segment, the _When_ section shows the following op
   </tbody>
 </Table>
 
-![](https://files.readme.io/ac5f953cd43599b7d06b8532535fe1ae8871b5e900f4559687d0b0fa8bba8dfb-image.png)  Set Deliver Preference in Live Behavior Campaigns
+  Set Deliver Preference in Live Behavior Campaigns
 
 ## Publish Campaign
 
