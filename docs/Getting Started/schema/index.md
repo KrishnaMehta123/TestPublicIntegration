@@ -304,7 +304,7 @@ You can discard a published user property from the schema. You can still see the
 2. Click **Discard**, and a new window displays.
 3. Click **Discard** again.
 
-![](https://files.readme.io/d75580c-Discard_User_Property.png "Click Discard Button to Discard User Property") Discard User Property
+<Image align="center" border={false} caption="Discard User Property" src="https://files.readme.io/d75580c-Discard_User_Property.png" />
 
 <Callout icon="❗️" theme="error">
   **When Discarding a User Property**
