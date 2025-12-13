@@ -205,16 +205,20 @@ You can discard an active event from the schema. You can still see the event row
 
 You can restore a previously discarded event, event property, or user property from the schema. Once restored, it becomes available again across Campaigns, Journeys, Analytics, and other features that use the schema.
 
-> 🚧 Cooldown Period for Restore and Re-discard
->
-> * After you discard an item, you cannot restore it for the next 24 hours.
-> * After you restore an item, you cannot discard it again for the next 24 hours.
->
-> These measures prevent accidental or repeated changes to your schema.
+<Callout icon="🚧" theme="warn">
+  **Cooldown Period for Restore and Re-discard**
 
-> 📘 Private Beta
->
-> This feature is currently available in Private Beta for selected customers. To enable, contact your Customer Success Manager or raise a support ticket.
+  * After you discard an item, you cannot restore it for the next 24 hours.
+  * After you restore an item, you cannot discard it again for the next 24 hours.
+
+  These measures prevent accidental or repeated changes to your schema.
+</Callout>
+
+<Callout icon="📘" theme="info">
+  **Private Beta**
+
+  This feature is currently available in Private Beta for selected customers. To enable, contact your Customer Success Manager or raise a support ticket.
+</Callout>
 
 ### Restore a Single Item
 
@@ -234,9 +238,11 @@ You can restore a previously discarded event, event property, or user property f
 
 ![](https://files.readme.io/f3def79a65dda3e144e4a8711f3e4e0407dc1b61b35dbcb12699fbde4ba41230-image.png) Bulk Restore Discarded Items
 
-> 📘 Restore Access
->
-> Only admin users can restore the discarded events.
+<Callout icon="📘" theme="info">
+  **Restore Access**
+
+  Only admin users can restore the discarded events.
+</Callout>
 
 # User Properties
 
@@ -298,19 +304,23 @@ You can discard a published user property from the schema. You can still see the
 
 ![](https://files.readme.io/d75580c-Discard_User_Property.png "Click Discard Button to Discard User Property") Discard User Property
 
-> ❗️ Caution When Discarding a User Property
->
-> Exercise extreme caution when discarding a user property. This action cannot be undone. This action has an impact on your schema because it purges data for the discarded user property. It also drops any future incoming user property with the same name.
+<Callout icon="❗️" theme="error">
+  **When Discarding a User Property**
+
+  Exercise extreme caution when discarding a user property. This action cannot be undone. This action has an impact on your schema because it purges data for the discarded user property. It also drops any future incoming user property with the same name.
+</Callout>
 
 ## Create Linked Event for User Property
 
 You can link an event with a user property. This allows you to trigger campaigns, conversions, and exits based on changes in user properties. For example, a gaming app has a user property named `Game Level` that represents a user's progress in the game. You can link an event named `Game Level Upgraded` to the `Game Level` user property. By doing so, any change in this property to a higher level will activate a campaign. The campaign will congratulate the users and grant them a reward or a unique power corresponding to their achievement.
 
-> 📘 Key Points to Remember
->
-> * This feature is supported only for messaging channels such as Push, SMS, Email, In-App, Webhooks, and remarketing channels such as Google Ads and Facebook Audiences.
-> * For In-App, CleverTap SDK v7.0.0 or higher is required.
-> * User property updates via Journeys are not supported for this feature.
+<Callout icon="📘" theme="info">
+  **Key Points to Remember**
+
+  * This feature is supported only for messaging channels such as Push, SMS, Email, In-App, Webhooks, and remarketing channels such as Google Ads and Facebook Audiences.
+  * For In-App, CleverTap SDK v7.0.0 or higher is required.
+  * User property updates via Journeys are not supported for this feature.
+</Callout>
 
 To link an event with a user property:
 
@@ -345,17 +355,19 @@ To discard linked events:
 
 ![](https://files.readme.io/5980787-Discard_Linked_Event.gif) Discard a Linked Event
 
-> 📘 Key Points to Remember
->
-> The following are the key points to consider when creating linked events:
->
-> * You can link only one event with a user property.
-> * You can link events only on active properties.
-> * You cannot create a linked event with the same name as a system event.
-> * Discarding a linked event from the user property:
->   * Delinks the event and the user property.
->   * Stops receiving additional data associated with the user property.
->   * Does not delete any data.
+<Callout icon="📘" theme="info">
+  **Key Points to Remember**
+
+  The following are the key points to consider when creating linked events:
+
+  * You can link only one event with a user property.
+  * You can link events only on active properties.
+  * You cannot create a linked event with the same name as a system event.
+  * Discarding a linked event from the user property:
+    * Delinks the event and the user property.
+    * Stops receiving additional data associated with the user property.
+    * Does not delete any data.
+</Callout>
 
 # System Events
 
@@ -373,9 +385,11 @@ To configure the tracking of system events:
 
 Currently, you can enable or disable tracking for the following events from the CleverTap dashboard:
 
-> 📘 Configuring Other System Events
->
-> For the remaining system events, you can only change the DRP.
+<Callout icon="📘" theme="info">
+  **Configuring Other System Events**
+
+  For the remaining system events, you can only change the DRP.
+</Callout>
 
 # Conversion Event
 
