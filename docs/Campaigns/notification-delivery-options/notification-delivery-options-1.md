@@ -14,24 +14,9 @@ next:
 
 CleverTap provides the capability of delivering notifications in the user’s timezone while creating scheduled campaigns or journeys. This is a relevant feature for businesses having international users and who want to send time-sensitive notifications to their users. If you select this option, CleverTap staggers the delivery of notifications and qualifies users according to their time zone.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/10fa2dd-Timezone.png",
-        "Select timezone for scheduling campaign and journeys.",
-        1020
-      ],
-      "align": "center",
-      "sizing": "smart",
-      "border": true,
-      "caption": "Select Timezone"
-    }
-  ]
-}
-[/block]
-
+<Image title="Select timezone for scheduling campaign and journeys." alt={1020} align="center" width="smart" border={true} src="https://files.readme.io/10fa2dd-Timezone.png">
+  Select Timezone
+</Image>
 
 # Use Case
 
@@ -47,31 +32,17 @@ Set the users' timezone via the Tz key in the profile update push.
 
 To set up a campaign for message delivery in the user’s timezone:
 
-1. From the dashboard, navigate to _Campaigns_. 
+1. From the dashboard, navigate to *Campaigns*. 
 2. Click **+ Campaign**.
 3. Select a messaging channel.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5de46d2-2x_Create_a_campaign.png",
-        "Create a Campaign",
-        1571
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Create a Campaign"
-    }
-  ]
-}
-[/block]
+<Image title="Create a Campaign" alt={1571} align="center" border={true} src="https://files.readme.io/5de46d2-2x_Create_a_campaign.png">
+  Create a Campaign
+</Image>
 
-
-4. Navigate to _When_ > _Delivery preferences_.
-5. Select _Timezone_.
-6. Select a delivery option: _Drop the campaign_ or _Deliver the campaign the next day_.
+4. Navigate to *When* > *Delivery preferences*.
+5. Select *Timezone*.
+6. Select a delivery option: *Drop the campaign* or *Deliver the campaign the next day*.
 7. Click **Done**.
 
 ## How the Delivery Options Work
@@ -82,13 +53,13 @@ Since this campaign was initiated at 11:30 AM Central, it was already 12:30 PM E
 
 The campaign continues to deliver messages each timezone moving from East to West until it reaches the first timezone.
 
-If you select _Drop the campaign_, any user whose timezone has already passed when the campaign kicked off will not receive this campaign.
+If you select *Drop the campaign*, any user whose timezone has already passed when the campaign kicked off will not receive this campaign.
 
-If you selected _Deliver the campaign the next day_, then the campaign runs for timezones around the globe and eventually delivers the campaign to the East Coast users at noon (Eastern Time) the next day.
+If you selected *Deliver the campaign the next day*, then the campaign runs for timezones around the globe and eventually delivers the campaign to the East Coast users at noon (Eastern Time) the next day.
 
 > 📘 Critical Delivery Dates
-> 
-> If it is critical for a campaign to be delivered on a certain calendar day (e.g., an Easter campaign) and the message has to arrive on Easter Sunday or not at all, choose the _Drop the campaign_ option.
+>
+> If it is critical for a campaign to be delivered on a certain calendar day (e.g., an Easter campaign) and the message has to arrive on Easter Sunday or not at all, choose the *Drop the campaign* option.
 
 # Do Not Disturb Hours
 
@@ -97,54 +68,26 @@ CleverTap provides the option for setting the Do Not Disturb hours for notificat
 If a user qualifies for a notification in DND hours, you can decide to completely discard the notification or specify to deliver the notification to the user after the end of DND hours.
 
 > 📘 DND Timezone
-> 
+>
 > DND is set based on the respective timezone of every user by default. If the time zone is not available for any user, DND will be applied as per the account time zone.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d436c32-DND_doc.png",
-        "Select the DND timezone",
-        1766
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Select the DND Timezone"
-    }
-  ]
-}
-[/block]
-
+<Image title="Select the DND timezone" alt={1766} align="center" border={true} src="https://files.readme.io/d436c32-DND_doc.png">
+  Select the DND Timezone
+</Image>
 
 ## Set DND for Mobile Push, SMS, Email, Web Push, or WhatsApp
 
 To set DND for mobile push, SMS, email, web push, or WhatsApp campaigns, perform the following steps:
 
-1. From the new campaign page, navigate to _When_ > _Delivery preferences_. 
-2. Select the _Do Not Disturb (DND)_ checkbox to display the DND options. 
-3. Select the days and input the times you do not want to send campaign notifications. If you want to use the same time inactive period for each day, click the _Copy Time To All_ link.
+1. From the new campaign page, navigate to *When* > *Delivery preferences*. 
+2. Select the *Do Not Disturb (DND)* checkbox to display the DND options. 
+3. Select the days and input the times you do not want to send campaign notifications. If you want to use the same time inactive period for each day, click the *Copy Time To All* link.
 4. Select a message handling type.
 5. Click **Done**.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a1bd274-DND_Options.png",
-        "Select DND preferences",
-        446
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Select DND Preferences"
-    }
-  ]
-}
-[/block]
-
+<Image title="Select DND preferences" alt={446} align="center" border={true} src="https://files.readme.io/a1bd274-DND_Options.png">
+  Select DND Preferences
+</Image>
 
 # Campaign Frequency for Mobile In-App, Web Pop-up, and Web Inbox
 
@@ -152,58 +95,30 @@ Campaign frequency provides the ability to define when the user qualifies for a 
 
 To set campaign frequency for mobile In-App or web popup campaigns, perform the following steps: 
 
-1. Under _When_ select the **Set frequency** checkbox.
+1. Under *When* select the **Set frequency** checkbox.
 
 2. Select the days and input the times you do not want to send campaign notifications. If you want to use the same time inactive period for each day, click **Apply to all**.
 
 3. Select **Deliver how often** from the available options.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/fce5d09-Campaign_frequency.png",
-        "Set frequency to qualify users",
-        617
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Set Frequency to Qualify Users"
-    }
-  ]
-}
-[/block]
+<Image title="Set frequency to qualify users" alt={617} align="center" border={true} src="https://files.readme.io/fce5d09-Campaign_frequency.png">
+  Set Frequency to Qualify Users
+</Image>
 
-
-4. **Click **Done\*\*.
+4. **Click** Done\*\*.
 
 # Campaign Cut-off
 
-The campaign cut-off time ensures no notifications are sent after the specified time. This is useful if the campaign is time-sensitive and a later time makes the notification irrelevant.  
-Select the _Cut-off_ checkbox and specify the time to stop sending the notification when the number of target users is large, causing a significant delay in processing the user queue. This ensures that after the set time, there's no notification sent. 
+The campaign cut-off time ensures no notifications are sent after the specified time. This is useful if the campaign is time-sensitive and a later time makes the notification irrelevant.\
+Select the *Cut-off* checkbox and specify the time to stop sending the notification when the number of target users is large, causing a significant delay in processing the user queue. This ensures that after the set time, there's no notification sent. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9a38d84-Campaign_Cut_Off.png",
-        "Campaign Cut-Off Time",
-        472
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Campaign Cut-Off Time"
-    }
-  ]
-}
-[/block]
-
+<Image title="Campaign Cut-Off Time" alt={472} align="center" border={true} src="https://files.readme.io/9a38d84-Campaign_Cut_Off.png">
+  Campaign Cut-Off Time
+</Image>
 
 # TTL - Push Notification Delivery
 
-**Time to Live** is the notification's persistence sent to an end user. It regulates the time that the system monitors user device status to deliver a push notification. Whenever the user is online during the set TTL period, the notification is delivered. Any user not coming online will not receive the push notification, and there are no notifications attempted after the TTL period is over.  
+**Time to Live** is the notification's persistence sent to an end user. It regulates the time that the system monitors user device status to deliver a push notification. Whenever the user is online during the set TTL period, the notification is delivered. Any user not coming online will not receive the push notification, and there are no notifications attempted after the TTL period is over.\
 More information is available [here](https://docs.clevertap.com/docs/create-message-push).
 
 # Message Frequency Caps
@@ -212,25 +127,11 @@ If you have multiple marketing campaigns running simultaneously for any one chan
 
 Frequency is channel-specific. Frequency caps let you limit the total notifications received in a given timeframe for one delivery channel and not across all the channels as a whole.
 
-To set frequency caps, navigate to **Settings** > _Engage_ > **Setup** > **Campaign Limits**:
+To set frequency caps, navigate to **Settings** > *Engage* > **Setup** > **Campaign Limits**:
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/46812cc-small-Web_Inbox_Limits.png",
-        null,
-        "Set Campaign Limits"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Set Campaign Limits"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Set Campaign Limits" align="center" border={true} src="https://files.readme.io/46812cc-small-Web_Inbox_Limits.png">
+  Set Campaign Limits
+</Image>
 
 ## Error Reporting with Frequency Caps
 
@@ -251,35 +152,21 @@ Limits are available for live or recurring engagements, including those schedule
 
 To set up Limits, perform the following steps:
 
-1. For campaigns, go to _Delivery Preferences_ under the _When_ section on the new campaign page. For journeys, go to the _Delivery_ section in the journey engagement node.
+1. For campaigns, go to *Delivery Preferences* under the *When* section on the new campaign page. For journeys, go to the *Delivery* section in the journey engagement node.
 
 2. Select one of the following three options: 
-   - **Send the campaign each time the user qualifies**: The message is sent whenever the user meets the campaign conditions. For example, send an abandoned cart notification every time a user leaves items in their cart.
-   - **Send the campaigns up to N time(s) ever**: Define the maximum number of times a user can receive the campaign. Value must be between 1 and 250. For example, limit a discount campaign to 5 messages per user, even if they qualify more often.
-   - **Send multiple campaigns at an interval of**: Define an interval in minutes, hours, or days. For example, send a stock price alert once every 24 hours, even if the user qualifies multiple times daily.
-   In the case of journeys, if users who reach the defined limit proceed through the Failed path, they will be directed accordingly. They continue to move through the Failed path every time they qualify again within the configured limit interval. For example, if the limit is set to two days and the user qualifies again within that period, they will not receive the message, but will still progress through the failed path in the journey.
+   * **Send the campaign each time the user qualifies**: The message is sent whenever the user meets the campaign conditions. For example, send an abandoned cart notification every time a user leaves items in their cart.
+   * **Send the campaigns up to N time(s) ever**: Define the maximum number of times a user can receive the campaign. Value must be between 1 and 250. For example, limit a discount campaign to 5 messages per user, even if they qualify more often.
+   * **Send multiple campaigns at an interval of**: Define an interval in minutes, hours, or days. For example, send a stock price alert once every 24 hours, even if the user qualifies multiple times daily.\
+     In the case of journeys, if users who reach the defined limit proceed through the Failed path, they will be directed accordingly. They continue to move through the Failed path every time they qualify again within the configured limit interval. For example, if the limit is set to two days and the user qualifies again within that period, they will not receive the message, but will still progress through the failed path in the journey.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1e31613e32f295f5ec9038cad0b36d93f05e632465820a8b1570e07b61da5186-Entry_limits.png",
-        "",
-        "Limits"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Setting Up Limits for Engagements"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Limits" align="center" border={true} src="https://files.readme.io/1e31613e32f295f5ec9038cad0b36d93f05e632465820a8b1570e07b61da5186-Entry_limits.png">
+  Setting Up Limits for Engagements
+</Image>
 
 > 📘 Limits in Cloned Engagement
-> 
-> - When you clone an engagement, the limit configuration is copied from the original.
-> - Each user starts with a fresh allowance in the cloned engagement. For example, if a user has already reached the limit in the source engagement, they can still receive messages from the cloned engagement.
+>
+> * When you clone an engagement, the limit configuration is copied from the original.
+> * Each user starts with a fresh allowance in the cloned engagement. For example, if a user has already reached the limit in the source engagement, they can still receive messages from the cloned engagement.
 
 By setting the proper limits, you can maintain a positive user experience and ensure that engagements deliver value without overwhelming your audience.
