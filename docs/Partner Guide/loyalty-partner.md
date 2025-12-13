@@ -14,7 +14,7 @@ CleverTap integrates with leading coupon and loyalty partners to help you delive
 
 CleverTap currently supports the following partner platforms:
 
-- [Loyalty Lion](doc:loyalty-lion)
-- [Talon.One](doc:talonone)
-- [Voucherify](doc:voucherify)
-- [Yotpo](doc:yotpo)
+* [Loyalty Lion](doc:loyalty-lion)
+* [Talon.One](doc:talonone)
+* [Voucherify](doc:voucherify)
+* [Yotpo](doc:yotpo)
