@@ -19,7 +19,7 @@ Now that you are familiar with the basics of identity management, this section c
 CleverTap merges the profile when the same user logs in from different devices.
 
 > 👍 Example: Multiple Devices, One User
-> 
+>
 > Consider the scenario where a user logs in to their favorite TV streaming app via their mobile phone in the morning and then logs in to the same app via the tablet in the evening. In this case, the profile is merged.
 
 | Device ID  | User ID | CleverTap ID |
@@ -31,10 +31,10 @@ Here, the device IDs have a lower priority than user IDs.
 
 # Append a Profile [Assign Identities](doc:assign-identities)
 
-CleverTap appends the profile when two different _identities_ are pushed for the same CleverTap ID.
+CleverTap appends the profile when two different *identities* are pushed for the same CleverTap ID.
 
 > 👍 Example: One Device, Multiple Users
-> 
+>
 > Consider a scenario where two different users log in to a food delivery app using the same device. To keep these users separate, the profile is appended.
 
 For example, Bob performs the first event on the device, and CleverTap assigns the CleverTap ID 6. An Anonymous user performs another event from the same device. Bob may have logged out, but the event is assigned to Bob because he was the last known user. Now a new user, Adam logs in and performs a third event from the same device. This event is assigned a CleverTap ID 7 because Adam is a different user. Again, an anonymous user performs the next two events. CleverTap assigns them a CleverTap ID 7, as the last known user was Adam. The events are associated with Adam.
@@ -59,28 +59,15 @@ Before the identity reset, note down all the CleverTap IDs and identities associ
 
 ### Reset Identities
 
-1. From the dashboard, navigate to _Segments_ > _Find People_.
+1. From the dashboard, navigate to *Segments* > *Find People*.
 2. Search your user by identity or scroll down and click on the appropriate profile once you have identified it.
 3. Click **Reset Identities**.
 
 This option contains a number that indicates the number of identities associated with that profile.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3023eb1-small-Find_people.png",
-        null,
-        "Reset Identities"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Reset Identities"
-    }
-  ]
-}
-[/block]
+<Image alt="Reset Identities" align="center" border={true} src="https://files.readme.io/3023eb1-small-Find_people.png">
+  Reset Identities
+</Image>
 
 Through this identity reset, you create separate user profiles for each of the CleverTap IDs (devices), and none of the profiles will have any email or identity associated with it. All the events from the merged profiles are also logged under the user profile with CleverTap ID (device) from which the events were logged.
 
@@ -102,7 +89,7 @@ Before using the demerge API, perform the following:
 2. Identify the profiles where the identity or email is not set.
 3. Demerge these profiles in bulk using demerge API.
 
-To reset an identity using the demerge API, use the following URL: <https://api.clevertap.com/1/demerge/profiles.json>
+To reset an identity using the demerge API, use the following URL: [https://api.clevertap.com/1/demerge/profiles.json](https://api.clevertap.com/1/demerge/profiles.json)
 
 Following is a sample payload:
 
@@ -115,7 +102,7 @@ Following is a sample payload:
 The identities object must be a list. A maximum of 100 identities in one request is allowed.
 
 > 📘 Process Notices
-> 
+>
 > The process only runs between 4 am to 7 am during the account's timezone. A request can take up to a day to process it. In the case of millions of requests, it can take a few days since the processing stops after 7 am.
 
 Once the profile is demerged, all the device IDs associated with the profile will have their own profiles without any identities. Once the user logs in from the device, the identity will be assigned to the respective device ID, and the data will flow as expected.
@@ -128,9 +115,9 @@ When customers want to erase user data from the dashboard, they can use the dele
 
 Multiple reasons to delete the user profile include:
 
-- Bad merge 
-- Internal user
-- Security or business reasons 
+* Bad merge 
+* Internal user
+* Security or business reasons 
 
 If a deleted user comes back again, CleverTap treats them as a new user. 
 
@@ -146,24 +133,24 @@ For more information, refer to [Debug Events](https://docs.clevertap.com/docs/ev
 
 A bad merge is when two different identities for two different profiles are associated with a single profile.
 
-When a bad merge happens, CleverTap raises an event called _identity error_ into the user's profile. This event is typically raised when an existing identity is associated incorrectly with another identity. This may sometimes occur, particularly in test cases and test profiles, due to repeated uninstall/re-installs.
+When a bad merge happens, CleverTap raises an event called *identity error* into the user's profile. This event is typically raised when an existing identity is associated incorrectly with another identity. This may sometimes occur, particularly in test cases and test profiles, due to repeated uninstall/re-installs.
 
 In the case of a profile push, if you try to push another identity for the same profile, the profile will be badly merged. An immediate solution would be to reset these profiles and begin testing on the devices again.
 
 To avoid any merger, we recommend that the `onUserLogin` function must be called on every login or sign-up. For more information, refer to [Maintaining Multiple User Profiles on the Same Device](https://developer.clevertap.com/docs/concepts-user-profiles#section-maintaining-multiple-user-profiles-on-the-same-device).
 
 > 👍 Bad Merge Example
-> 
-> User A has abc@gmail.com and user B has xyz@gmail.com. 
-> 
+>
+> User A has [abc@gmail.com](mailto:abc@gmail.com) and user B has [xyz@gmail.com.](mailto:xyz@gmail.com.) 
+>
 > If both users used the same device and their profiles on CleverTap were merged, it is known as a bad merge. All the events performed by user A or user B would be considered in one single profile.
 
 ### Avoid Bad Merge
 
 To avoid the bad merge:
 
-- Check that the mapping of users in the application is correct and the correct data is sent to CleverTap. 
-- Maintain consistency in assigning a new identity.
+* Check that the mapping of users in the application is correct and the correct data is sent to CleverTap. 
+* Maintain consistency in assigning a new identity.
 
 ## Ghost Profile \<\<Saby should we mention ghost profiles in customer-facing docs?>>
 
