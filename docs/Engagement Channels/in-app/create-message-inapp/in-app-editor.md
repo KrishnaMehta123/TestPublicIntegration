@@ -12,35 +12,20 @@ next:
 ---
 # Overview
 
- The In-App editor enables you to add content to pre-built templates or customize and build them. You can select the ready-to-use template of your choice or create a custom HTML template as per your requirements. From the _What_ section in the In-App builder, select the _Message Type_ and click** Go to Editor.**
+ The In-App editor enables you to add content to pre-built templates or customize and build them. You can select the ready-to-use template of your choice or create a custom HTML template as per your requirements. From the *What* section in the In-App builder, select the *Message Type* and click **Go to Editor.**
 
 The In-App Editor tool displays.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0d4cd27-image_interstitial.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/0d4cd27-image_interstitial.png" />
 
 # In-App Templates
 
 The following are the four main types of In-App templates for creating engaging and personalized In-App campaigns:
 
-- [_Basic Templates_](doc:in-app-editor#basic-templates)
-- [_Ratings Templates_ ](doc:in-app-editor#ratings-template)
-- [_Lead Generation Templates_](doc:in-app-editor#lead-generation-template)
-- [_Custom HTML Templates_](doc:in-app-editor#custom-templates)
+* [*Basic Templates*](doc:in-app-editor#basic-templates)
+* [*Ratings Templates* ](doc:in-app-editor#ratings-template)
+* [*Lead Generation Templates*](doc:in-app-editor#lead-generation-template)
+* [*Custom HTML Templates*](doc:in-app-editor#custom-templates)
 
 ## Basic Templates:
 
@@ -48,16 +33,16 @@ Basic Templates are ready-to-use templates that enable you to send tailored and 
 
 Using basic templates, you can create the following two types of In-App messages:
 
-- [Content with Image notifications](doc:in-app-editor#content-with-image-notifications)
-- [Image-only notifications](doc:in-app-editor#image-only-notifications)
+* [Content with Image notifications](doc:in-app-editor#content-with-image-notifications)
+* [Image-only notifications](doc:in-app-editor#image-only-notifications)
 
 ### Content with Image notifications
 
-These templates allow you to use images in combination with text for effective messaging. You can choose from a range of templates such as _Cover_, _Half Interstitial_, _Interstitial_, _Header_, _Footer_, and _Alert_  based on your use case.
+These templates allow you to use images in combination with text for effective messaging. You can choose from a range of templates such as *Cover*, *Half Interstitial*, *Interstitial*, *Header*, *Footer*, and *Alert*  based on your use case.
 
 ### Image-only notifications
 
-These templates allow you to send visually engaging images that can quickly capture users' attention and encourage them to engage with the message when they launch the app. When selecting an _image only_ template, you can send a message containing only an image (without CTAs, title, or message).
+These templates allow you to send visually engaging images that can quickly capture users' attention and encourage them to engage with the message when they launch the app. When selecting an *image only* template, you can send a message containing only an image (without CTAs, title, or message).
 
 You can choose from the following four types of Image only notifications:
 
@@ -76,121 +61,284 @@ It is a center-aligned image notification template for driving better engagement
 #### Image Interstitial
 
 > 📘 Availability
-> 
+>
 > The **Image Interstitial** template is available only with CleverTap Advanced and Cutting Edge plans.
 
 This template helps craft personalized In-App messages that seamlessly match your app's aesthetics. You upload an image and elevate the experience by incorporating up to 10 interactive hotspots, each with its own unique actions. For example, you can use this template to create a rewarding offer for your gaming app users. The following image represents a sample In-App campaign for rewarding users using the Image Interstitial template:
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7da5c6a-Image_Interstitial_full.png",
-        "",
-        "Sample In-App Campaign using Image Interstitial Template"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Sample In-App Campaign using Image Interstitial Template"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Sample In-App Campaign using Image Interstitial Template" align="center" border={true} src="https://files.readme.io/7da5c6a-Image_Interstitial_full.png">
+  Sample In-App Campaign using Image Interstitial Template
+</Image>
 
 The Image Interstitial template primarily comprises the following three elements:
 
-- Overlay: This element is a middle layer between your In-App message and your app in the background. By default, it is transparent; however, you can select a color of your choice or upload an image to it. Using the Overlay configuration, you can:
-  - Opt for a semi-transparent color to softly mask the app in the background, drawing more attention to the in-app message in the foreground.
-  - Upload a patterned image to create a captivating, full-screen, layered in-app message experience.
-- Content: It is the core element of the template. Click in the center of a blank device or select the **Content** option from the _Element_ dropdown to activate it. Further, upload an image (JPG, PNG, or GIF) consisting of all In-App mes
-- sage elements such as background, text, and buttons.  
-  The editor fits the image within the Content container while preserving its aspect ratio without any cropping. By default, a 10% margin is applied to the Content container. However, you can change that from the _Margin_ field.
-- Buttons:  The Image Interstitial buttons are transparent regions that you can place over a Content layer. You can easily move and adjust their size to align with the button elements on the image. 
+* Overlay: This element is a middle layer between your In-App message and your app in the background. By default, it is transparent; however, you can select a color of your choice or upload an image to it. Using the Overlay configuration, you can:
+  * Opt for a semi-transparent color to softly mask the app in the background, drawing more attention to the in-app message in the foreground.
+  * Upload a patterned image to create a captivating, full-screen, layered in-app message experience.
+* Content: It is the core element of the template. Click in the center of a blank device or select the **Content** option from the *Element* dropdown to activate it. Further, upload an image (JPG, PNG, or GIF) consisting of all In-App mes
+* sage elements such as background, text, and buttons.\
+  The editor fits the image within the Content container while preserving its aspect ratio without any cropping. By default, a 10% margin is applied to the Content container. However, you can change that from the *Margin* field.
+* Buttons:  The Image Interstitial buttons are transparent regions that you can place over a Content layer. You can easily move and adjust their size to align with the button elements on the image. 
 
 The selection area within the Content Container automatically adapts to various device screen sizes, eliminating the need to create multiple versions for different devices. To see how the image and buttons scale across different aspect ratios, use the dropdown menu with different device viewport sizes located at the top for a preview.
 
 > 📘 Preview & Test
-> 
-> - The _Preview & Test_ feature for sending tests on the device is not available for iOS or Android SDK versions lower than **6.0.0** and Unity **3.0.0.** If you need to test on a device with a lower SDK version, send the campaign exclusively to the user first, and then recreate and send it to the intended audience.
+>
+> * The *Preview & Test* feature for sending tests on the device is not available for iOS or Android SDK versions lower than **6.0.0** and Unity **3.0.0.** If you need to test on a device with a lower SDK version, send the campaign exclusively to the user first, and then recreate and send it to the intended audience.
 
 ### Guidelines for Template Aspect Ratio and File Size
 
 The following tables include the guidelines that you must keep in mind when creating In-App messages:
 
-[block:parameters]
-{
-  "data": {
-    "h-0": "Canvas Type",
-    "h-1": "Canvas Aspect Ratio",
-    "h-2": "Sample Image Sizes",
-    "h-3": "Image Type Supported",
-    "h-4": "Image Sample",
-    "0-0": "Cover",
-    "0-1": "Full Screen",
-    "0-2": "Screen Resolution",
-    "0-3": "Image",
-    "0-4": "<ul>\n<li><a href=\"https://files.readme.io/c78e632fe9b547010a424ec3e302ef6e223f21fef9a05ba568a88d9d551d435b-image.png\" target=\"_blank\">Cover iPad</a></li>\n<li><a href=\"https://files.readme.io/83df2ce6164cf5661c328a7af509f264a22d622fff0548b5248bb15c39a829ab-image.png\" target=\"_blank\">Cover </a></li>\n</ul>",
-    "1-0": "Interstitial",
-    "1-1": "1.78:1",
-    "1-2": "16:9",
-    "1-3": "Image, gif, audio",
-    "1-4": "<ul>\n<li><a href=\"https://files.readme.io/ce2ad1abe590ace8a15544f43edde68db3dc776e4a515da77954404c31e652c6-image.png\" target=\"\\_blank\">Interstitial iPad Pro</a></li>\n<li><a href=\"https://files.readme.io/67dfb63f7ede49e0fe4bd6a76d8c7485c9bedeaf2225ea050fc1776d89af6d7d-image.png\" target=\"\\_blank\">Interstitial iPad</a></li>\n<li><a href=\"https://files.readme.io/7b16ea12877ce0e84db0c04adcfab015a4958ff016dfae0e38f12872c8464e9e-image.png\" target=\"\\_blank\">Interstitial</a> </li>\n</ul>",
-    "2-0": "Half Interstitial",
-    "2-1": "1.30:1",
-    "2-2": "3:4",
-    "2-3": "Image",
-    "2-4": "<ul>\n<li><a href=\"https://files.readme.io/bf9fa3515ee90cbc1b3a54a95ce4dd6b71914387159ac8edd6a3bca313ead010-image.png\" target=\"\\_blank\">Half Interstitial iPad Pro</a></li>\n<li><a href=\"https://files.readme.io/cc9b66978e7f24d593e640323c52cd0955f8a265ebc0f0cd7770628d9fe68659-image.png\" target=\"\\_blank\">Half Interstitial iPad</a></li>\n<li><a href=\"https://files.readme.io/521962b5be7903641d38f13b21cedadba796c6e5142d3fce7ee1f4d7c1eb8ac2-image.png\" target=\"\\_blank\">Half Interstitial</a> </li>\n</ul>",
-    "3-0": "Header",
-    "3-1": "Height: 1:1  \nWidth: Fit to screen",
-    "3-2": "N/A",
-    "3-3": "Logo Image",
-    "3-4": "Title :parameters]  \n{  \n, Message {  \n    \"h-0\": \"C\\* Title e\",  \n    \"h-1\": , Message pect Ratio\",  \n   Title : \"Sample Image, Message \\[75 Characters",
-    "4-0": "Footer",
-    "4-1": "Height: 1:1  \nWidth: Fit to screen",
-    "4-2": "N/A",
-    "4-3": "Logo Image",
-    "4-4": "",
-    "5-0": "Alert",
-    "5-1": "Native",
-    "5-2": "N/A",
-    "5-3": "N/A",
-    "5-4": "",
-    "6-0": "Image Only Cover",
-    "6-1": "",
-    "6-2": "",
-    "6-3": "",
-    "6-4": "",
-    "7-0": "Image Only Half Interstitial",
-    "7-1": "",
-    "7-2": "",
-    "7-3": "",
-    "7-4": "",
-    "8-0": "Image Only Interstitial",
-    "8-1": "",
-    "8-2": "",
-    "8-3": "",
-    "8-4": ""
-  },
-  "cols": 5,
-  "rows": 9,
-  "align": [
-    "left",
-    "left",
-    "left",
-    "left",
-    "left"
-  ]
-}
-[/block]
+<Table align={["left","left","left","left","left"]}>
+  <thead>
+    <tr>
+      <th>
+        Canvas Type
+      </th>
 
+      <th>
+        Canvas Aspect Ratio
+      </th>
+
+      <th>
+        Sample Image Sizes
+      </th>
+
+      <th>
+        Image Type Supported
+      </th>
+
+      <th>
+        Image Sample
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        Cover
+      </td>
+
+      <td>
+        Full Screen
+      </td>
+
+      <td>
+        Screen Resolution
+      </td>
+
+      <td>
+        Image
+      </td>
+
+      <td>
+        <ul>
+        <li><a href="https://files.readme.io/c78e632fe9b547010a424ec3e302ef6e223f21fef9a05ba568a88d9d551d435b-image.png" target="_blank">Cover iPad</a></li>
+        <li><a href="https://files.readme.io/83df2ce6164cf5661c328a7af509f264a22d622fff0548b5248bb15c39a829ab-image.png" target="_blank">Cover </a></li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Interstitial
+      </td>
+
+      <td>
+        1.78:1
+      </td>
+
+      <td>
+        16:9
+      </td>
+
+      <td>
+        Image, gif, audio
+      </td>
+
+      <td>
+        <ul>
+        <li><a href="https://files.readme.io/ce2ad1abe590ace8a15544f43edde68db3dc776e4a515da77954404c31e652c6-image.png" target="\_blank">Interstitial iPad Pro</a></li>
+        <li><a href="https://files.readme.io/67dfb63f7ede49e0fe4bd6a76d8c7485c9bedeaf2225ea050fc1776d89af6d7d-image.png" target="\_blank">Interstitial iPad</a></li>
+        <li><a href="https://files.readme.io/7b16ea12877ce0e84db0c04adcfab015a4958ff016dfae0e38f12872c8464e9e-image.png" target="\_blank">Interstitial</a> </li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Half Interstitial
+      </td>
+
+      <td>
+        1.30:1
+      </td>
+
+      <td>
+        3:4
+      </td>
+
+      <td>
+        Image
+      </td>
+
+      <td>
+        <ul>
+        <li><a href="https://files.readme.io/bf9fa3515ee90cbc1b3a54a95ce4dd6b71914387159ac8edd6a3bca313ead010-image.png" target="\_blank">Half Interstitial iPad Pro</a></li>
+        <li><a href="https://files.readme.io/cc9b66978e7f24d593e640323c52cd0955f8a265ebc0f0cd7770628d9fe68659-image.png" target="\_blank">Half Interstitial iPad</a></li>
+        <li><a href="https://files.readme.io/521962b5be7903641d38f13b21cedadba796c6e5142d3fce7ee1f4d7c1eb8ac2-image.png" target="\_blank">Half Interstitial</a> </li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Header
+      </td>
+
+      <td>
+        Height: 1:1\
+        Width: Fit to screen
+      </td>
+
+      <td>
+        N/A
+      </td>
+
+      <td>
+        Logo Image
+      </td>
+
+      <td>
+        Title :parameters]\
+        \{\
+        , Message \{\
+            "h-0": "C\* Title e",\
+            "h-1": , Message pect Ratio",\
+           Title : "Sample Image, Message \[75 Characters
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Footer
+      </td>
+
+      <td>
+        Height: 1:1\
+        Width: Fit to screen
+      </td>
+
+      <td>
+        N/A
+      </td>
+
+      <td>
+        Logo Image
+      </td>
+
+      <td>
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Alert
+      </td>
+
+      <td>
+        Native
+      </td>
+
+      <td>
+        N/A
+      </td>
+
+      <td>
+        N/A
+      </td>
+
+      <td>
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Image Only Cover
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Image Only Half Interstitial
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Image Only Interstitial
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 #### File Size Guidelines
 
-- **Image**: Less than 500 kb.
-- **Audio**: Less than 5 Mb.
-- **Video**: Less than 50 Mb.
+* **Image**: Less than 500 kb.
+* **Audio**: Less than 5 Mb.
+* **Video**: Less than 50 Mb.
 
 #### Message Character Limit
 
@@ -200,180 +348,77 @@ The following tables include the guidelines that you must keep in mind when crea
 | Chinese  | 9 (Approximate) | 38 (Approximate) |
 
 > 🚧 Image Cropping
-> 
-> Due to the multiple phone sizes on both Android and iOS, we will center crop images if the image does not fit the screen resolution.  
+>
+> Due to the multiple phone sizes on both Android and iOS, we will center crop images if the image does not fit the screen resolution.\
 > We scale the image uniformly (maintaining the image's aspect ratio) so that both dimensions (width and height) of the image will be equal to or larger than the corresponding dimension of the phone (minus padding). The image is then center-aligned.
-> 
+>
 > **Image Cropping does not apply for Image Interstitial template.**
 
 > 🚧 Video Messages
-> 
-> When adding video messages to In-App, ensure an audio track is always present.  
+>
+> When adding video messages to In-App, ensure an audio track is always present.\
 > If required, insert a blank audio track to the video.
 
 ## Ratings Template
 
-Marketers can now create feedback-related popups for their mobile app users using the _Ratings Template._  
+Marketers can now create feedback-related popups for their mobile app users using the *Ratings Template.*\
 They can now create two types of rating templates for gaining feedback from their customers:
 
-- User Rating Popup - It helps assess how happy your customers are with your services by taking feedback in the form of star ratings.
-- NPS Popup - It enables you to measure the loyalty of your customers by distinguishing them in three categories - **Promoters**, **Passives**, **Detractors**.  One can view the NPS performance by navigating to the [NPS board](doc:nps-board) available under the _Boards_ section.
+* User Rating Popup - It helps assess how happy your customers are with your services by taking feedback in the form of star ratings.
+* NPS Popup - It enables you to measure the loyalty of your customers by distinguishing them in three categories - **Promoters**, **Passives**, **Detractors**.  One can view the NPS performance by navigating to the [NPS board](doc:nps-board) available under the *Boards* section.
 
-The following images represent a sample _User Rating Popup_ and _NPS popup_ in a mobile app.
+The following images represent a sample *User Rating Popup* and *NPS popup* in a mobile app.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/cc3f275-inapp.png",
-        "Capture User Rating",
-        568
-      ],
-      "align": "center",
-      "sizing": "40% ",
-      "border": true,
-      "caption": "User Ratings Popup"
-    }
-  ]
-}
-[/block]
+<Image title="Capture User Rating" alt={568} align="center" width="40% " border={true} src="https://files.readme.io/cc3f275-inapp.png">
+  User Ratings Popup
+</Image>
 
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3d18243-in-app_nps.png",
-        "Capture NPS",
-        542
-      ],
-      "align": "center",
-      "sizing": "40% ",
-      "border": true,
-      "caption": "NPS Popup"
-    }
-  ]
-}
-[/block]
-
+<Image title="Capture NPS" alt={542} align="center" width="40% " border={true} src="https://files.readme.io/3d18243-in-app_nps.png">
+  NPS Popup
+</Image>
 
 Marketers get the complete flexibility to explicitly define the rating scale, style, shape (Star, Heart, Emojis), labels, and the overall content of the popup. One can also choose to add a comment box to get accurate user feedback/comments.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d76e790-in_app_styles.png",
-        "Style Rating Template Elements",
-        2044
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "In-App Editor Style"
-    }
-  ]
-}
-[/block]
-
+<Image title="Style Rating Template Elements" alt={2044} align="center" border={true} src="https://files.readme.io/d76e790-in_app_styles.png">
+  In-App Editor Style
+</Image>
 
 Besides, additional styling, such as configuring the color for the message, question, background, and rating scale is also possible from the editor, as shown in the image above. The In-App notification text fields shown below can be personalized for every user based on specific user property or event property values. To learn more about tracking and monitoring user rating data, refer to [Analysing User Rating](doc:user-ratings).
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ae7f02c-rate.png",
-        "Compose In-App Message for Ratings Template",
-        1694
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Compose In-App Message"
-    }
-  ]
-}
-[/block]
-
+<Image title="Compose In-App Message for Ratings Template" alt={1694} align="center" border={true} src="https://files.readme.io/ae7f02c-rate.png">
+  Compose In-App Message
+</Image>
 
 ### Follow-up Question Templates
 
 A follow-up question to your ratings can provide more insights about the user experience. CleverTap provides the following Follow-up Question templates:
 
-- NPS with Follow-up Question
-- User Ratings with Follow-up Question
+* NPS with Follow-up Question
+* User Ratings with Follow-up Question
 
-For example, after a user has submitted a rating on your app, you can ask follow-up questions such as _What did you like most about us?_ and provide reply choices such as Variety, Prices, Quality, Customer Service, Delivery Process, and Website Usability. This can help you get more specific feedback to improve your product and services. Following is an image from the in-app editor: 
+For example, after a user has submitted a rating on your app, you can ask follow-up questions such as *What did you like most about us?* and provide reply choices such as Variety, Prices, Quality, Customer Service, Delivery Process, and Website Usability. This can help you get more specific feedback to improve your product and services. Following is an image from the in-app editor: 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/4766cd8-inapp_followup_nps.jpg",
-        null,
-        "Short Keyword Choices"
-      ],
-      "align": "center",
-      "sizing": "50% ",
-      "border": true,
-      "caption": "Short Keyword-Based Choices"
-    }
-  ]
-}
-[/block]
+<Image alt="Short Keyword Choices" align="center" width="50% " border={true} src="https://files.readme.io/4766cd8-inapp_followup_nps.jpg">
+  Short Keyword-Based Choices
+</Image>
 
+You can also list descriptive choices such as, *I like the available options and variety*, *I like the quality and durability of the products*, and so on. Following is an image from the in-app editor:
 
-You can also list descriptive choices such as,_ I like the available options and variety_, _I like the quality and durability of the products_, and so on. Following is an image from the in-app editor:
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0decade-inapp_followup_qs_list.jpg",
-        null,
-        "Long Sentence Choices"
-      ],
-      "align": "center",
-      "sizing": "50% ",
-      "border": true,
-      "caption": "Descriptive Choices"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Long Sentence Choices" align="center" width="50% " border={true} src="https://files.readme.io/0decade-inapp_followup_qs_list.jpg">
+  Descriptive Choices
+</Image>
 
 You can configure the follow-up question from the Web Popup editor with a short keyword-based grid (up to six choices) or a longer sentence-based list (up to four choices).
 
-The label will be the text you want to display to your users. If you want to allow the user to select multiple choices, select _Allow multiple selections_.
+The label will be the text you want to display to your users. If you want to allow the user to select multiple choices, select *Allow multiple selections*.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/fd33f9a-image_18.png",
-        null,
-        "Configure Follow-up Popup"
-      ],
-      "align": "center",
-      "sizing": "80% ",
-      "border": true,
-      "caption": "Configure Follow-up Popup"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Configure Follow-up Popup" align="center" width="80% " border={true} src="https://files.readme.io/fd33f9a-image_18.png">
+  Configure Follow-up Popup
+</Image>
 
 > 📘 Note
-> 
-> In the case of the User Ratings template, the _Notification Clicked_ event is raised that records the user's clicks on the CTA buttons and the Close button
+>
+> In the case of the User Ratings template, the *Notification Clicked* event is raised that records the user's clicks on the CTA buttons and the Close button
 
 ## Lead Generation Template
 
@@ -381,50 +426,21 @@ We know that a significant number of App users may remain anonymous. This poses 
 
 Integrating a lead generation form into your App lets you get important customer details such as name, email address, phone number, etc. This information is helpful for further communication through channels such as SMS, Email, WhatsApp, and others. This post-visit communication helps stay connected with your audience and opens doors for future business opportunities. You can turn anonymous visitors into loyal customers with your App's CleverTap Lead Generation Template.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3658161-InApp_Lead_Gen_sample_window.png",
-        null,
-        "Sample Lead Generation Template"
-      ],
-      "align": "center",
-      "sizing": "40% ",
-      "border": true,
-      "caption": "Sample Lead Generation Template"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Sample Lead Generation Template" align="center" width="40% " border={true} src="https://files.readme.io/3658161-InApp_Lead_Gen_sample_window.png">
+  Sample Lead Generation Template
+</Image>
 
 ### Post Submit Actions
 
 When a user submits information on your Lead Generation template:
 
-- A _Notification Clicked_ event is raised that records the click on the CTA. 
+* A *Notification Clicked* event is raised that records the click on the CTA. 
 
-- A custom event named _Lead Submitted_ records the details submitted by the user as of event properties. Following is a sample form image:
+* A custom event named *Lead Submitted* records the details submitted by the user as of event properties. Following is a sample form image:
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0cae15f-Lead_Gen_Template_preview_with_fields.png",
-        null,
-        "Form Submit Actions"
-      ],
-      "align": "center",
-      "sizing": "50% ",
-      "caption": "Form Submit Actions"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Form Submit Actions" align="center" width="50% " src="https://files.readme.io/0cae15f-Lead_Gen_Template_preview_with_fields.png">
+  Form Submit Actions
+</Image>
 
 Following is a table that records the relevant properties for the fields displayed on the form:
 
@@ -435,176 +451,75 @@ Following is a table that records the relevant properties for the fields display
 | Email ID                   | [john@abc.com](mailto:john@abc.com) |
 | Phone Number               | \+11234567890                       |
 | Campaign ID                | 121110987654                        |
-| Variant                    | wzrk_default                        |
+| Variant                    | wzrk\_default                       |
 
-- The user profile is automatically updated with the submitted event properties. For example, the lead generation template can ask for additional details from an anonymous user, such as first name, last name, email, and phone number. His profile will be updated with these details, and now you can identify the user as _John Smith_.
+* The user profile is automatically updated with the submitted event properties. For example, the lead generation template can ask for additional details from an anonymous user, such as first name, last name, email, and phone number. His profile will be updated with these details, and now you can identify the user as *John Smith*.
 
 ### Lead Generation Template Variants
 
 The following are the two types of Lead Generation templates:
 
-- **Text**: You can create a text-only lead generation template to record user information. 
-- **Image on Top**: You can add an image on the top to the lead generation template. 
+* **Text**: You can create a text-only lead generation template to record user information. 
+* **Image on Top**: You can add an image on the top to the lead generation template. 
 
 Create the content to record information from your users. The following image displays a preview of the form:
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/035a137-lead_gen.png",
-        null,
-        "Create Lead Generation Template"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Create Lead Generation Template"
-    }
-  ]
-}
-[/block]
+<Image alt="Create Lead Generation Template" align="center" border={true} src="https://files.readme.io/035a137-lead_gen.png">
+  Create Lead Generation Template
+</Image>
 
+Select the button style and card positions from the *Style* tab.
 
-Select the button style and card positions from the _Style_ tab.
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/06cbbe4-In-App_Template_Lead_Gen_Content_Editor.png",
-        null,
-        "Style Lead Generation Elements"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Style Lead Generation Elements"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Style Lead Generation Elements" align="center" border={true} src="https://files.readme.io/06cbbe4-In-App_Template_Lead_Gen_Content_Editor.png">
+  Style Lead Generation Elements
+</Image>
 
 Enter all the required information. 
 
-- _Text_: Personalize the Title and Description. 
-- _Media_: Add the image URL or upload an image. 
-- _Input Fields_: You can add up to four input fields. Select input fields such as Name, Phone Number, Birthday, or Email Address for the template. 
+* *Text*: Personalize the Title and Description. 
+* *Media*: Add the image URL or upload an image. 
+* *Input Fields*: You can add up to four input fields. Select input fields such as Name, Phone Number, Birthday, or Email Address for the template. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6a87857-Lead_Gen_Template_Input_Fields.png",
-        "Lead Gen Template Input Fields.png",
-        1304
-      ],
-      "align": "center",
-      "sizing": "60% ",
-      "border": true,
-      "caption": "Upto Four Input Fields "
-    }
-  ]
-}
-[/block]
+<Image title="Lead Gen Template Input Fields.png" alt={1304} align="center" width="60% " border={true} src="https://files.readme.io/6a87857-Lead_Gen_Template_Input_Fields.png">
+  Upto Four Input Fields 
+</Image>
 
+* *Buttons*: The *Close* button is selected by default. Add a button name such as *Submit* or *Upload*. 
+* *Subtext*: Add subtext such as *privacy policy* to your lead generation template.
 
-- _Buttons_: The _Close_ button is selected by default. Add a button name such as _Submit_ or _Upload_. 
-- _Subtext_: Add subtext such as _privacy policy_ to your lead generation template.
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/bb6e1f2-Lead_Gen_Template_SubText_preview.png",
-        "Lead Gen Template SubText preview.png",
-        "Add Subtext"
-      ],
-      "align": "center",
-      "sizing": "55% ",
-      "border": true,
-      "caption": "Add Subtext"
-    }
-  ]
-}
-[/block]
-
+<Image title="Lead Gen Template SubText preview.png" alt="Add Subtext" align="center" width="55% " border={true} src="https://files.readme.io/bb6e1f2-Lead_Gen_Template_SubText_preview.png">
+  Add Subtext
+</Image>
 
 The hyperlinked part must be closed between two asterisks. Add the URL where the user will be directed. You can also add a checkbox for your subtext.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d740b86-Lead_Gen_Template_SubText.png",
-        "Lead Gen Template SubText.png",
-        "Subtext and redirect URL"
-      ],
-      "align": "center",
-      "sizing": "55% ",
-      "border": true,
-      "caption": "Subtext and redirect URL"
-    }
-  ]
-}
-[/block]
+<Image title="Lead Gen Template SubText.png" alt="Subtext and redirect URL" align="center" width="55% " border={true} src="https://files.readme.io/d740b86-Lead_Gen_Template_SubText.png">
+  Subtext and redirect URL
+</Image>
 
+* *Acknowledgement*: You can show appreciation to your user by adding an Acknowledgement popup. Select the auto-close timer for the popup.
 
-- _Acknowledgement_: You can show appreciation to your user by adding an Acknowledgement popup. Select the auto-close timer for the popup.
+Select the button style and card positions from the *Style* tab.
 
-Select the button style and card positions from the _Style_ tab.
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/92ac44f-In-App_Template_Types_Lead_Gen_Style.png",
-        null,
-        "Card Orientation"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Card Orientation"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Card Orientation" align="center" border={true} src="https://files.readme.io/92ac44f-In-App_Template_Types_Lead_Gen_Style.png">
+  Card Orientation
+</Image>
 
 ## Custom Templates
 
-You can use the Custom HTML templates in the In-App editor to add more customization to the In-App messages with Javascript.  
-Ensure that you select the _Include Javascript_ box to add your custom Javascript. 
+You can use the Custom HTML templates in the In-App editor to add more customization to the In-App messages with Javascript.\
+Ensure that you select the *Include Javascript* box to add your custom Javascript. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5638bd2-in-app_journey_custom_HTML.png",
-        "Custom Template with HTML and Javascript",
-        1108
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Custom HTML and Actions"
-    }
-  ]
-}
-[/block]
-
+<Image title="Custom Template with HTML and Javascript" alt={1108} align="center" border={true} src="https://files.readme.io/5638bd2-in-app_journey_custom_HTML.png">
+  Custom HTML and Actions
+</Image>
 
 > 📘 Create Interactive In-App Messages
-> 
+>
 > You can create interactive in-app campaigns such as scratch card campaigns and swipe interaction campaigns using JavaScript.
-> 
-> Using the _Custom HTML_ option, you can use Javascript in the HTML and create deep interactive in-app campaigns by adding the JavaScript code along with the HTML code. 
-> 
+>
+> Using the *Custom HTML* option, you can use Javascript in the HTML and create deep interactive in-app campaigns by adding the JavaScript code along with the HTML code. 
+>
 > JavaScript-based campaigns are available for versions 3.5.0 and above.
 
 ### In-App Gamification Templates
@@ -612,25 +527,25 @@ Ensure that you select the _Include Javascript_ box to add your custom Javascrip
 Use CleverTap's out-of-the-box (OOTB) **Scratch the Card** and **Spin the Wheel** In-App message templates to engage users through interactive rewards, and can be easily customized using editable HTML settings.
 
 > 📘 Private Beta
-> 
+>
 > Currently, this feature is a Private Beta Release. If you want access to this feature, contact your Account Manager.
 
 Gamification templates let you create interactive in-app experiences with minimal effort. With CleverTap, you can:
 
-- Increase engagement and conversions through game-like interfaces
-- Offer personalized rewards dynamically
-- Fully customize the look and feel using the _Custom HTML Templates_ tab
+* Increase engagement and conversions through game-like interfaces
+* Offer personalized rewards dynamically
+* Fully customize the look and feel using the *Custom HTML Templates* tab
 
 These templates include configurable variables for visuals, copy, animation, rewards, and behavior.
 
 **Using the Templates**
 
-1. Go to _Create In-App Message > Single Message_.
+1. Go to *Create In-App Message > Single Message*.
 2. Select the **Custom HTML Templates** tab.
 3. Select either:
 
-   - [Spin the Wheel](doc:in-app-editor#spin-the-wheel-template)
-   - [Scratch the Card](doc:in-app-editor#scratch-the-card-template)
+   * [Spin the Wheel](doc:in-app-editor#spin-the-wheel-template)
+   * [Scratch the Card](doc:in-app-editor#scratch-the-card-template)
 4. Edit the settings and the Custom HTML to publish.
 
 ### Spin the Wheel Template
@@ -639,27 +554,13 @@ This template adds a fun, gamified interaction to your In-App by letting users s
 
 #### Interactive Elements
 
-- Wheel animation with easing
-- Pointer interaction + spin trigger
-- Shimmer effect on reveal
+* Wheel animation with easing
+* Pointer interaction + spin trigger
+* Shimmer effect on reveal
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/bdfae57effccaa9fa2e956e102045ef43faf8762bbd7cced7826bd60c406f820-image.png",
-        null,
-        "Spin "
-      ],
-      "align": "center",
-      "sizing": "25% ",
-      "caption": "Spin the Wheel Template"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Spin " align="center" width="25% " src="https://files.readme.io/bdfae57effccaa9fa2e956e102045ef43faf8762bbd7cced7826bd60c406f820-image.png">
+  Spin the Wheel Template
+</Image>
 
 <details>
 
@@ -667,32 +568,32 @@ This template adds a fun, gamified interaction to your In-App by letting users s
 
 ### Use Case Examples
 
-- Drive conversions during sales events or festivals with spin-to-win deals.
-- Run promotional campaigns that reward users with random offers.
-- Re-engage dormant users with a playful incentive.
-- Launch loyalty or referral-based programs with interactive rewards.
+* Drive conversions during sales events or festivals with spin-to-win deals.
+* Run promotional campaigns that reward users with random offers.
+* Re-engage dormant users with a playful incentive.
+* Launch loyalty or referral-based programs with interactive rewards.
 
 ### Template Customization Variables
 
 This template allows you to tweak the appearance, messaging, and reward logic without the need to understand or modify the full code. Each setting explained here lets you control how the in-app experience looks and behaves, so you can launch high-converting, on-brand campaigns effortlessly. The following are the settings:
 
-- `includeDmissButton`: Show or hide the close (X) button.
-- `background`: Set the modal background color or gradient.
-- `enableConfettiOnWin `: Toggle confetti animation after a win.
-- `spinDurationSeconds`: Set how long the wheel spins (in seconds).
-- `spinButton`: Customize the spin button’s text, color, background, and visibility.
-- `claimButton`: Configure the claim button after spinning, text, color, background, and link (URL).
-- `mainTitle`: Set the main headline text, font size, and color.
-- `subtitle`: Set the subheading or description under the title, text, font size, and color.
-- `copyInstruction`: Define the message color before and after users copy a reward code.
-- `centerCircle`: Style the center hub of the wheel — color, border, and size.
-- `rewards`: Define each reward option with the following:
-  - `title`: Message shown on winning
-  - `text`: Reward label (shown on wheel)
-  - `value`: Copyable code
-  - `subtitle`: Description/details
-  - `probability`: Win chance
-  - `colour`: Slice background color
+* `includeDmissButton`: Show or hide the close (X) button.
+* `background`: Set the modal background color or gradient.
+* `enableConfettiOnWin `: Toggle confetti animation after a win.
+* `spinDurationSeconds`: Set how long the wheel spins (in seconds).
+* `spinButton`: Customize the spin button’s text, color, background, and visibility.
+* `claimButton`: Configure the claim button after spinning, text, color, background, and link (URL).
+* `mainTitle`: Set the main headline text, font size, and color.
+* `subtitle`: Set the subheading or description under the title, text, font size, and color.
+* `copyInstruction`: Define the message color before and after users copy a reward code.
+* `centerCircle`: Style the center hub of the wheel — color, border, and size.
+* `rewards`: Define each reward option with the following:
+  * `title`: Message shown on winning
+  * `text`: Reward label (shown on wheel)
+  * `value`: Copyable code
+  * `subtitle`: Description/details
+  * `probability`: Win chance
+  * `colour`: Slice background color
 
 ### Configurable Settings in Template Explained
 
@@ -837,31 +738,17 @@ rewards: [
 
 This interactive template is designed to gamify the user experience by letting users "scratch" to reveal a reward, such as a coupon, discount, or points. The surprise element boosts engagement and reactivation rates while offering a delightful experience.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/18e7bedad81f6ebb2df2ed18065f64f4e12e11a0c151fb59338b1b7fa60e19b3-image.png",
-        null,
-        "Scratch the Card Template"
-      ],
-      "align": "center",
-      "sizing": "25% ",
-      "caption": "Scratch the Card Template"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Scratch the Card Template" align="center" width="25% " src="https://files.readme.io/18e7bedad81f6ebb2df2ed18065f64f4e12e11a0c151fb59338b1b7fa60e19b3-image.png">
+  Scratch the Card Template
+</Image>
 
 ### Interactive Elements
 
-- Scratch-to-reveal animation
-- Shimmer effect on reward
-- Confetti animation post-reveal
-- Claim button redirect
-- Copy reward to clipboard
+* Scratch-to-reveal animation
+* Shimmer effect on reward
+* Confetti animation post-reveal
+* Claim button redirect
+* Copy reward to clipboard
 
 <details>
 
@@ -869,33 +756,33 @@ This interactive template is designed to gamify the user experience by letting u
 
 ### Use Case Examples
 
-- Engage users during festive or seasonal campaigns with surprise offers.
-- Reactivate dormant users by giving them a chance to win a reward.
-- Reward loyal customers with a fun, interactive coupon reveal.
-- Launch a limited-time “scratch-to-win” contest to drive urgency and clicks.
+* Engage users during festive or seasonal campaigns with surprise offers.
+* Reactivate dormant users by giving them a chance to win a reward.
+* Reward loyal customers with a fun, interactive coupon reveal.
+* Launch a limited-time “scratch-to-win” contest to drive urgency and clicks.
 
 ### Template Customization Variables
 
 This template allows you to tweak the appearance, messaging, and reward logic without the need to understand or modify the full code. Each setting explained here lets you control how the in-app experience looks and behaves, so you can launch high-converting, on-brand campaigns effortlessly. The following are the settings:
 
-- `imageUrl`: URL of the image displayed above the scratch card (e.g., treasure chest).
-- `includeDismissButton`: Toggle visibility of the close (X) button.
-- `background`: Initial background color or gradient.
-- `revealedBackground`: Background after scratching completes.
-- `enableConfettiOnReveal`: Show celebratory confetti after reveal.
-- `revealButton`: CTA before scratching. Customize text, color, and background.
-- `claimButton`: CTA after reveal. Customize text, color, background, and destination URL.
-- `mainTitle`: Controls headline text, color, font size, and optional text shadow.
-- `subtitle`: Supports descriptive text below the title. Customize color and size.
-- `rewards` – Define each potential reward with:
-  - `title`: Message shown after reveal
-  - `value`: Copyable code
-  - `subtext`: Description or redemption details
-  - `probability`: Chance of appearing
+* `imageUrl`: URL of the image displayed above the scratch card (e.g., treasure chest).
+* `includeDismissButton`: Toggle visibility of the close (X) button.
+* `background`: Initial background color or gradient.
+* `revealedBackground`: Background after scratching completes.
+* `enableConfettiOnReveal`: Show celebratory confetti after reveal.
+* `revealButton`: CTA before scratching. Customize text, color, and background.
+* `claimButton`: CTA after reveal. Customize text, color, background, and destination URL.
+* `mainTitle`: Controls headline text, color, font size, and optional text shadow.
+* `subtitle`: Supports descriptive text below the title. Customize color and size.
+* `rewards` – Define each potential reward with:
+  * `title`: Message shown after reveal
+  * `value`: Copyable code
+  * `subtext`: Description or redemption details
+  * `probability`: Chance of appearing
 
 #### Config Snippets Explained
 
-The following is a description of the customizable variables in CleverTap's _Scratch the Card_ gamification template.
+The following is a description of the customizable variables in CleverTap's *Scratch the Card* gamification template.
 
 #### imageUrl
 
@@ -1009,37 +896,23 @@ rewards: [
 
 ## Best Practices
 
-- Keep reward probabilities realistic; the total does **not** need to equal 1.
-- Use high-contrast text over bright gradients for readability.
-- Add expiration dates in reward subtext to create urgency.
-- Use consistent reward identifiers across campaigns for tracking.
+* Keep reward probabilities realistic; the total does **not** need to equal 1.
+* Use high-contrast text over bright gradients for readability.
+* Add expiration dates in reward subtext to create urgency.
+* Use consistent reward identifiers across campaigns for tracking.
 
 # Time to Live (TTL)
 
-You can configure the number of days (or hours) to keep the message on the user's device by setting the _time to live_.
+You can configure the number of days (or hours) to keep the message on the user's device by setting the *time to live*.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/35148df-in-app_time_to_live.png",
-        "Configure Time to Live for In-App Message",
-        630
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Time to Live for a Message"
-    }
-  ]
-}
-[/block]
-
+<Image title="Configure Time to Live for In-App Message" alt={630} align="center" border={true} src="https://files.readme.io/35148df-in-app_time_to_live.png">
+  Time to Live for a Message
+</Image>
 
 The TTL can range from 1 day to 365 days. The default value for TTL is two days. The message on the user's device stays there for the specified TTL, after which it is automatically removed.
 
 > 🚧 Choosing the Right TTL
-> 
+>
 > You should choose a TTL that resonates with the purpose of your campaign. Some messages need to stay on the user's device for a longer period (coupon codes which are valid for a month) while some should last for a day or two (weekend discount offers).
 
 # In-App Editor
@@ -1048,48 +921,33 @@ Use the In-App editor to craft your In-app campaign with the desired messaging a
 
 The elements of the editor vary based on the type of template you select for creating your In-App campaign.
 
-The following image represents the _Content with image notifications_ template editor. 
+The following image represents the *Content with image notifications* template editor. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6b590c3-in-app_editor.png",
-        "Basic Editor",
-        1206
-      ],
-      "align": "center",
-      "sizing": "80",
-      "border": true,
-      "caption": "In-App Editor for Content with Image notifications"
-    }
-  ]
-}
-[/block]
+<Image title="Basic Editor" alt={1206} align="center" width="80%" border={true} src="https://files.readme.io/6b590c3-in-app_editor.png">
+  In-App Editor for Content with Image notifications
+</Image>
 
-
-At a high level, the In-App editor has the following two primary sections: _Content_ and _Style_.
+At a high level, the In-App editor has the following two primary sections: *Content* and *Style*.
 
 ### Content
 
-The Content section allows you to define your In-App message's overall text and visual content. Use this section to create engaging, and personalized In-App messages by entering enticing Title and Message. To [personalize](https://docs.clevertap.com/docs/personalize-message-inapp) the message, click the **Personalization (@)**  icon in the _Title_ and _Description_ fields.
+The Content section allows you to define your In-App message's overall text and visual content. Use this section to create engaging, and personalized In-App messages by entering enticing Title and Message. To [personalize](https://docs.clevertap.com/docs/personalize-message-inapp) the message, click the **Personalization (@)**  icon in the *Title* and *Description* fields.
 
-Using the _Insert image_ option, you can upload the desired image to make your In-App campaign visually appealing when the app is in Portrait or Landscape mode.
+Using the *Insert image* option, you can upload the desired image to make your In-App campaign visually appealing when the app is in Portrait or Landscape mode.
 
 You can choose to add the same image with different form factors or completely different images to give a unique experience on portrait and landscape.
 
 Additionally, you can add up to two CTAs and configure their On Click Action as per your requirement. You can use the following three types of action buttons:
 
-- Close notification: It closes the notification after a tap. 
-- Open URL: A special type of CTA that enables the user to open a deep link for Android or iOS.
-- Custom key-value pairs: The key-value pairs send back custom data when a user clicks the in-app button
+* Close notification: It closes the notification after a tap. 
+* Open URL: A special type of CTA that enables the user to open a deep link for Android or iOS.
+* Custom key-value pairs: The key-value pairs send back custom data when a user clicks the in-app button
 
 You can also configure the number of days (or hours) to keep the In-App message on the user's device by setting the Message Time to Live field as per your use case. 
 
 > 📘 Image Interstitial Template Exception
-> 
-> The elements of the In-App editor for the _Image only notifications_ templates are similar to those of the  _Content with Image notifications_ templates except for the _Title_ and _Message_ fields.
+>
+> The elements of the In-App editor for the *Image only notifications* templates are similar to those of the  *Content with Image notifications* templates except for the *Title* and *Message* fields.
 
 ### Style
 
@@ -1097,27 +955,13 @@ The Style section enables you to customize the appearance of your In-App message
 
 Customize the overall In-App message elements as per your brand style guidelines to make them visually appealing.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c9edbb1-In-App_Message.png",
-        "Define Elements Style",
-        963
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Style Elements from Editor"
-    }
-  ]
-}
-[/block]
-
+<Image title="Define Elements Style" alt={963} align="center" border={true} src="https://files.readme.io/c9edbb1-In-App_Message.png">
+  Style Elements from Editor
+</Image>
 
 > 🚧 Typeform and Character Limit
-> 
+>
 > We do not currently support Typeform because its rendering requires access to local storage which is a security risk. CleverTap SDK WebView does not allow access to local storage.
-> 
-> The character limit for a message in English is 30 for the title and 128 for the message.  
+>
+> The character limit for a message in English is 30 for the title and 128 for the message.\
 > The character limit for a message in Chinese is 9 for the title and 38 for the message.
