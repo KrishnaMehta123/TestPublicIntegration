@@ -115,6 +115,9 @@ Basic Authentication is a simple authentication method where the client sends an
 
 
 When setting up a webhook with Basic Authentication, CleverTap includes an *Authorization* header in every HTTP request sent to your server. The header follows the format shown below:
+```css
+"Basic " + base64 encoding('YOUR_USERNAME:YOUR_PASSWORD')
+```
 
 ## OAuth 2.0
 
