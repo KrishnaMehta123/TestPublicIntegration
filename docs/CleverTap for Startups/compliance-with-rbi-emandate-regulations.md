@@ -22,8 +22,8 @@ With RBI eMandate regulations coming into effect from October 1, 2021, the proce
 
 The card issuer sends a pre-transaction notification to the customer at least 24 hours before the actual debit. At this point, if the amount is higher than Rs. 15000, it would require an additional AFA to pass through. The pre-transaction notification also provides the flexibility to withdraw the mandate. To know more about the new RBI guidelines, refer to the following press releases:
 
-- [Processing of e-mandate on cards for recurring transactions](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11668&Mode=0)
-- [Reserve Bank of India extends timeline for processing of recurring online transactions](https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=51353)
+* [Processing of e-mandate on cards for recurring transactions](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11668\&Mode=0)
+* [Reserve Bank of India extends timeline for processing of recurring online transactions](https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=51353)
 
 # How does it affect you?
 
@@ -33,11 +33,11 @@ If the payment does not go through, we recommend you pay for the pending invoice
 
 After successful re-registration, we would request you to approve any future recurring payments through the pre-transaction notification that you receive if the transaction amount is higher than Rs. 15000. This payment may take some time to go through, while the subscribed services remain unaffected.
 
-We have also added a new payment method _eMandate via NetBanking_ if you want to switch from card payment. For more information, refer to the [eMandate via NetBanking](https://docs.clevertap.com/docs/emandate-via-netbanking) section.
+We have also added a new payment method *eMandate via NetBanking* if you want to switch from card payment. For more information, refer to the [eMandate via NetBanking](https://docs.clevertap.com/docs/emandate-via-netbanking) section.
 
 # Saving Cards
 
-Starting June 30, 2022, per the new RBI guidelines for Indian-issued cards, only card issuers and networks can store credit/debit card details on their servers for transactions processed through payment service providers licensed by RBI. To comply with this regulation, payment aggregators must use network tokens to process payments instead of their actual card details.  
+Starting June 30, 2022, per the new RBI guidelines for Indian-issued cards, only card issuers and networks can store credit/debit card details on their servers for transactions processed through payment service providers licensed by RBI. To comply with this regulation, payment aggregators must use network tokens to process payments instead of their actual card details.\
 To know more about the new RBI guidelines, refer to [Restriction on storage of actual card data \[i.e. Card-on-File (CoF)\]](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=12211).
 
 ## How does it affect you?
