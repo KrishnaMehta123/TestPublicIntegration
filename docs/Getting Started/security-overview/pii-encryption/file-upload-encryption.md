@@ -22,35 +22,21 @@ File upload Encryption supports Pretty Good Privacy (PGP) encryption, adding an 
 
 File Upload Encryption is beneficial in the following scenarios:
 
-- **Preventing data leaks during transit**: It prevents interception of data files during upload.
-- **Addressing security concerns**: Offers stronger protection through encryption and complies with data privacy and security regulations.
-- **Preventing misuse**: Encrypted files remain unreadable to unauthorized users in the unlikely event of a breach.
+* **Preventing data leaks during transit**: It prevents interception of data files during upload.
+* **Addressing security concerns**: Offers stronger protection through encryption and complies with data privacy and security regulations.
+* **Preventing misuse**: Encrypted files remain unreadable to unauthorized users in the unlikely event of a breach.
 
 > 📘 Private Beta
-> 
+>
 > File Upload Encryption is available in Private Beta. To enable this feature, contact your Customer Success Manager or raise a support ticket.
 
 # Prerequisites
 
 A configured and connected SFTP client to CleverTap's SFTP server is the prerequisite for achieving File Upload Encryption.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/cc3c3ea314b2e0e72d7caaab4ad21ec03f5ecdd0b6f0364bb77d629e3330a671-image.png",
-        null,
-        "SFTP Export"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "File Upload Encryption"
-    }
-  ]
-}
-[/block]
-
+<Image alt="SFTP Export" align="center" border={true} src="https://files.readme.io/cc3c3ea314b2e0e72d7caaab4ad21ec03f5ecdd0b6f0364bb77d629e3330a671-image.png">
+  File Upload Encryption
+</Image>
 
 # Secure File Upload with PGP Encryption
 
@@ -71,18 +57,18 @@ CleverTap supports PGP encryption for secure file uploads via SFTP and other sup
 
 The following are the prerequisites for File Upload Encryption using PGP key generation: 
 
-- **Public key** -   Used by the user to encrypt `.csv` files.
-- **Private Key **- Used by CleverTap to decrypt uploaded files.
-- **Passphrase**- A secure password set by you that allows CleverTap to access the private key.
+* **Public key** -   Used by the user to encrypt `.csv` files.
+* **Private Key** - Used by CleverTap to decrypt uploaded files.
+* **Passphrase**- A secure password set by you that allows CleverTap to access the private key.
 
 > 📘 Sharing Private Keys
-> 
+>
 > The private key must be shared only with authorized individuals, as it provides access to sensitive and confidential data.
 
 You can generate a PGP key pair in one of two ways:
 
-- [Self-generated](doc:file-upload-encryption#self-generated-keys).
-- [CleverTap generated](doc:file-upload-encryption#clevertap-generated-keys).
+* [Self-generated](doc:file-upload-encryption#self-generated-keys).
+* [CleverTap generated](doc:file-upload-encryption#clevertap-generated-keys).
 
 ### Self-Generated Keys
 
@@ -144,9 +130,9 @@ Use the following command:
 gpg --export-secret-key -a "your-key-id" > private.key
 ```
 
-- `"your-key-id"` – Replace this with your public Key generated earlier. 
+* `"your-key-id"` – Replace this with your public Key generated earlier. 
 
-This is the **Public Key ** of the public/private key pair you generated using GPG. You can find it in the confirmation message after generating your keys.
+This is the **Public Key** of the public/private key pair you generated using GPG. You can find it in the confirmation message after generating your keys.
 
 For example,
 
@@ -156,11 +142,11 @@ For example,
 
 In this case, `1A7849F996BFD78569533B2CF55DEEE68995217D` is your Public key.
 
-- `private.key` – Name of the `.key` file that contains the exported private key.  
+* `private.key` – Name of the `.key` file that contains the exported private key.\
   This is the name you provide to the `.key` file when exporting your private key. It contains the key in a readable text format. CleverTap uses this file (along with the passphrase) to decrypt any data you upload in encrypted form.
 
 > 🚧 Security Tip
-> 
+>
 > Store the `private.key` file securely and share it only with authorized personnel or platforms. Anyone with access to this file and the passphrase can decrypt your data.
 
 #### Encrypt CSV File using PGP
@@ -174,7 +160,7 @@ gpg --encrypt --armor -r email@company.com --vv /Users/Desktop/filename.csv
 ```
 
 > 📘 Best Practice
-> 
+>
 > Ensure the `.csv` file is final and formatted properly before encryption. Once encrypted, you cannot modify its contents.
 
 The encrypted file has a `.asc` file, for example, `users_data.csv.asc`. It is ready for upload along with the corresponding manifest file via SFTP.
@@ -184,7 +170,7 @@ The encrypted file has a `.asc` file, for example, `users_data.csv.asc`. It is r
 CleverTap generates a PGP key pair for you and securely shares the public key, private key, and passphrase. It also provides a Key ID, a unique reference to identify the key set.
 
 > 📘 Request for Encryption Keys(Public & Private keys) and Key ID
-> 
+>
 > Reach out to your CSM or raise a support ticket to receive the required credentials.
 
 #### Key ID
@@ -193,25 +179,25 @@ CleverTap generates a KeyID, that you must include in your manifest file, after 
 
 **Sample IDs:**
 
-- Private Key ID: `1A7849F996BFD78569533B2CF55DEEE68995327F`
-- Key ID: `ec491319-9823-48cd-b6a1-6bb0bc666d75`
+* Private Key ID: `1A7849F996BFD78569533B2CF55DEEE68995327F`
+* Key ID: `ec491319-9823-48cd-b6a1-6bb0bc666d75`
 
 ## Receive the Key ID
 
 Share your encryption keys (public & private) and passphrase with CleverTap. 
 
 > 📘 Sharing keys & passphrase with CleverTap
-> 
+>
 > Reach out to your CSM or raise a support ticket with the encryption keys & passphrase to receive the Key ID.
 
 ## Create the Manifest File
 
 The manifest file contains metadata about your encrypted file, which conveys to CleverTap how to interpret the uploaded file. Ensure the `fileName` field uses the `.asc` extension. Create the manifest file in JSON/YAML format. The manifest file is critical for proper ingestion and mapping and holds the following information:
 
-- Reference to the encrypted .asc file path
-- The Key ID (provided by CleverTap) to indicate which key to use for decryption
-- Field mappings (for example, email → identity, timestamp → TS)
-- Data type (for example, profile or event)
+* Reference to the encrypted .asc file path
+* The Key ID (provided by CleverTap) to indicate which key to use for decryption
+* Field mappings (for example, email → identity, timestamp → TS)
+* Data type (for example, profile or event)
 
 The following is the sample manifest file:
 
@@ -234,7 +220,7 @@ The following is the sample manifest file:
 
 ## Upload Encrypted File and Manifest via SFTP
 
-Encrypt the .csv file using the public key before uploading vSFTP. The result is a ._asc_ file (for example, `users_data.csv.asc`) in PGP-encrypted format. This encrypted file is not readable without the private key.
+Encrypt the .csv file using the public key before uploading vSFTP. The result is a .*asc* file (for example, `users_data.csv.asc`) in PGP-encrypted format. This encrypted file is not readable without the private key.
 
 Connect to CleverTap's SFTP server using your private key:
 
@@ -245,18 +231,18 @@ Connect to CleverTap's SFTP server using your private key:
 `put file.manifest`
 
 > 🚧 File Size Limit
-> 
+>
 > Ensure the encrypted file is less than 1 GB. Split larger files into smaller parts.
 
 # Decryption and Ingestion by CleverTap
 
-CleverTap processes the uploaded data securely and integrates it into the platform.  
+CleverTap processes the uploaded data securely and integrates it into the platform.\
 CleverTap uses the provided Key ID to look up the following:
 
-- Private key
-- Passphrase
+* Private key
+* Passphrase
 
-The _.asc_ file is decrypted securely within CleverTap's environment.
+The *.asc* file is decrypted securely within CleverTap's environment.
 
 Once decrypted, the data is parsed using manifest mappings and ingested into user profiles or event streams.
 
@@ -264,13 +250,13 @@ Once decrypted, the data is parsed using manifest mappings and ingested into use
 
 You receive email notifications at the following stages of the File Upload Encryption process:
 
-- **File Pickup:** The system successfully picks up your file for processing.
-- **Successful Import:** The system uploads and processes your file successfully.
-- **Import Failure:** The system sends an email with error details, including the specific column affected and a clear description.
+* **File Pickup:** The system successfully picks up your file for processing.
+* **Successful Import:** The system uploads and processes your file successfully.
+* **Import Failure:** The system sends an email with error details, including the specific column affected and a clear description.
 
 # Additional Resources
 
-- For more information on File Upload Encryption, refer to the [Import via SFTP](https://developer.clevertap.com/docs/imports-via-sftp).
+* For more information on File Upload Encryption, refer to the [Import via SFTP](https://developer.clevertap.com/docs/imports-via-sftp).
 
 # FAQs
 
