@@ -84,7 +84,7 @@ For this specific use case, we will use the Webhook trigger to send real-time da
            }
            ```
          * Sample Payload for Sending Event Data (Capture Purchase Events)
-           ```json
+           ```json coffeescript
            //for pushing events 
            {
              "payload": {
