@@ -134,7 +134,7 @@ When you select Live Behavior Segment, the _When_ section shows the following op
 
 Once you define all the above sections, click **Publish Campaign** to activate or schedule the campaign.
 
-  Publish Campaign
+<Image align="center" border={true} caption="Publish Campaign" src="https://files.readme.io/208d31fed015df3703b4e35c6741ded52ecf1b99c62bfef9f5c085323a193ad1-image.png" />
 
 # Reward Types
 
@@ -365,10 +365,12 @@ The following configuration options are available when Loyalty Points is selecte
   </tbody>
 </Table>
 
-> 📘 Points to Consider
->
-> * Custom Activation does not check user behavior. It delays redemption so businesses can increase net profit on orders.
-> * Wallet must be pre-configured in your account.
+<Callout icon="📘" theme="info">
+  **Points to Consider**
+
+  * Custom Activation does not check user behavior. It delays redemption so businesses can increase net profit on orders.
+  * Wallet must be pre-configured in your account.
+</Callout>
 
 ![](https://files.readme.io/4d437eec9f1f394b546d51406d53ff000e37dfdcf458a6ec637b06d8f1ced0fb-image.png)  Set Up Loyalty Points in Rewards
 
