@@ -24,8 +24,25 @@ The advantage of this feature is that the marketers need not create multiple cam
 
 Refer to the following documents to understand how you can leverage CleverTap's Inbox channel to engage with your users:
 
-[block:html]
-{
-  "html": "<div class=\"two-col-container\">\n  <div class=\"link-content\">\n    <h4 class=\"custom-heading\">User Guide</h4>\n    <p><a class=\"links\" href=\"https://docs.clevertap.com/docs/create-inbox-message\" target=\"_blank\" rel=\"noopener noreferrer\">Create Inbox Message</a></p>\n   <p><a class=\"links\" href=\"https://docs.clevertap.com/docs/inbox-stats\" target=\"_blank\" rel=\"noopener noreferrer\">Inbox Campaign Stats</a></p>\n   <p><a class=\"links\" href=\"https://docs.clevertap.com/docs/personalize-inbox-message\" target=\"_blank\" rel=\"noopener noreferrer\">Personalize Inbox Message</a></p>\n\n  </div>\n  \n  <div class=\"link-content\">\n    <h4 class=\"custom-heading\">Inbox Campaign API</h4>\n    <p><a class=\"links\" href=\"https://developer.clevertap.com/docs/getmessages-api\" target=\"_blank\" rel=\"noopener noreferrer\">getMessages API\n      </a></p>\n    <p><a class=\"links\" href=\"https://developer.clevertap.com/docs/markmessagesasread-api\" target=\"_blank\" rel=\"noopener noreferrer\">markMessagesAsRead API\n</a></p>\n    <p><a class=\"links\" href=\"https://developer.clevertap.com/docs/markmessagesasclicked-api\" target=\"_blank\" rel=\"noopener noreferrer\">markMessagesAsClicked API\n</a></p>\n    <p><a class=\"links\" href=\"https://developer.clevertap.com/docs/inbox-api-errors\" target=\"_blank\" rel=\"noopener noreferrer\">Inbox API Errors\n</a></p>\n  </div>"
-}
-[/block]
+<HTMLBlock>{`
+<div class="two-col-container">
+  <div class="link-content">
+    <h4 class="custom-heading">User Guide</h4>
+    <p><a class="links" href="https://docs.clevertap.com/docs/create-inbox-message" target="_blank" rel="noopener noreferrer">Create Inbox Message</a></p>
+   <p><a class="links" href="https://docs.clevertap.com/docs/inbox-stats" target="_blank" rel="noopener noreferrer">Inbox Campaign Stats</a></p>
+   <p><a class="links" href="https://docs.clevertap.com/docs/personalize-inbox-message" target="_blank" rel="noopener noreferrer">Personalize Inbox Message</a></p>
+
+  </div>
+  
+  <div class="link-content">
+    <h4 class="custom-heading">Inbox Campaign API</h4>
+    <p><a class="links" href="https://developer.clevertap.com/docs/getmessages-api" target="_blank" rel="noopener noreferrer">getMessages API
+      </a></p>
+    <p><a class="links" href="https://developer.clevertap.com/docs/markmessagesasread-api" target="_blank" rel="noopener noreferrer">markMessagesAsRead API
+</a></p>
+    <p><a class="links" href="https://developer.clevertap.com/docs/markmessagesasclicked-api" target="_blank" rel="noopener noreferrer">markMessagesAsClicked API
+</a></p>
+    <p><a class="links" href="https://developer.clevertap.com/docs/inbox-api-errors" target="_blank" rel="noopener noreferrer">Inbox API Errors
+</a></p>
+  </div>
+`}</HTMLBlock>
