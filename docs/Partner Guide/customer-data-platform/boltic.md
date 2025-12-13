@@ -3,12 +3,12 @@ title: Boltic
 excerpt: Customer Data Platform
 deprecated: false
 hidden: false
+link:
+  new_tab: false
 metadata:
   title: ''
   description: ''
   robots: index
-next:
-  description: ''
 ---
 # Overview
 
@@ -74,7 +74,7 @@ For this specific use case, we will use the Webhook trigger to send real-time da
       1. Select the appropriate authentication type from the dropdown.
       2. Enter a test payload in JSON format per the use case. The following are sample JSON payloads for pushing data.
          * Sample Payload for Sending User Profile Data (Track New User Sign-ups)
-           ```coffeescript JSON
+           ```json
            //for pushing user profile
            {
              "payload": {
@@ -84,7 +84,7 @@ For this specific use case, we will use the Webhook trigger to send real-time da
            }
            ```
          * Sample Payload for Sending Event Data (Capture Purchase Events)
-           ```coffeescript JSON
+           ```json
            //for pushing events 
            {
              "payload": {
@@ -106,24 +106,15 @@ For this specific use case, we will use the Webhook trigger to send real-time da
    1. Drag the **API** block from the *Helpers*  panel on the left and drop it below the **Webhook** block in the workflow.
    2. Click **API** for configuration:
       1. Set the *HTTP Method* to *POST* to send the events and user profiles to CleverTap.
-      2. Enter the following *CleverTap API endpoint URL*, where you need to replace <region> with the region of your CleverTap account. To know the region of your account, refer to [API Quick Start Guide](https://developer.clevertap.com/docs/api-quickstart-guide).\
-         [https://<region>.api.clevertap.com/1/upload](https://\<region>.api.clevertap.com/1/upload)
+      2. Enter the following *CleverTap API endpoint URL*, where you need to replace `<region>` with the region of your CleverTap account. To know the region of your account, refer to [API Quick Start Guide](https://developer.clevertap.com/docs/api-quickstart-guide):
+         ```
+         https://<region>.api.clevertap.com/1/upload
+         ```
 
 <Image alt="Select the API Action" align="center" border={true} src="https://files.readme.io/7fa13b1de6b61af8a238de9f75a0599066559dd417f36c5997a962b336a6d1b0-bolt_api_.gif" />
-Select API Action
-
-
-
-
-
-
-
-
-
-
 
 5. Configure *Headers* to connect the CleverTap Account. To do so, perform the following steps:
-   1. Enter the required details in the headers to connect the CleverTap account.\
+   1. Enter the required details in the headers to connect the CleverTap account.
       Use the same passcode obtained during the [Create a Passcode on CleverTap Dashboard](doc:boltic#create-a-passcode-on-the-clevertap-dashboard) step.
    2. Add the following key-value pairs in the headers:
 
@@ -133,21 +124,11 @@ Select API Action
 | **X-CleverTap-Account-Id** | Your CleverTap Account ID |
 | **X-CleverTap-Passcode**   | Your CleverTap Passcode   |
 
-<Image alt="Configure Headers" align="center" border={true} src="https://files.readme.io/ec929b2cfeb58893c16e9e7795fa67aa9f21227c1325056b119340409e23bbf6-image.png" />  Configure Headers
-
-
-
-
-
-
-
-
-
-
+<Image alt="Configure Headers" align="center" border={true} src="https://files.readme.io/ec929b2cfeb58893c16e9e7795fa67aa9f21227c1325056b119340409e23bbf6-image.png" />
 
 6. **Configure the Request Body**. Based on your use case, you can send user profiles or events (custom/predefined). Use the following payload structure in the API body:
 
-```json Sending User Profiles
+```json
 {
   "d": [
     {
@@ -161,7 +142,8 @@ Select API Action
   ]
 }
 ```
-```json Send Events
+
+```json
 {
   "d": [
     {
@@ -180,35 +162,16 @@ Select API Action
 
 7. Click **Save** to save the API configuration.
 
-<Image alt="Save API configuration" align="center" border={true} src="https://files.readme.io/d933e5fa2afb27527ee712c9a5bf14c37cb246435aee13c110d0a489e8885826-image.png" />  Save API Configuration.
-
-
-
-
-
-
-
-
-
-
+<Image alt="Save API configuration" align="center" border={true} src="https://files.readme.io/d933e5fa2afb27527ee712c9a5bf14c37cb246435aee13c110d0a489e8885826-image.png" />
 
 8. Click **Test** to verify the workflow. Check the inputs, outputs, and logs to verify:
    * Successful API requests.
    * Data reflecting accurately in CleverTap.
 
-<Image alt="Test and Publish" align="center" border={true} src="https://files.readme.io/41578b61a7a03a6c636d925dd28786cc375ec2cf10b6010b6e08eccbb97580b2-done_boltic.gif" />  Test and Publish
-
-
-
-
-
-
-
-
-
-
+<Image alt="Test and Publish" align="center" border={true} src="https://files.readme.io/41578b61a7a03a6c636d925dd28786cc375ec2cf10b6010b6e08eccbb97580b2-done_boltic.gif" />
 
 9. Click **Publish** to activate the workflow after testing is successful.
+
 After publishing the workflow for updating user profiles or uploading events, a new user is created, an existing user is updated, or an event is uploaded to the CleverTap dashboard every time a trigger occurs. CleverTap uses the *Identity* field to determine whether the action applies to a new or existing user.
 
 ## Method 2: Data Hub Stream Integration
@@ -227,46 +190,16 @@ Setting up a data stream in Boltic allows you to collect, process, and forward d
 1. Go to your Boltic Dashboard and select *Data Hub* > *Streams* from the left navigation panel.
 2. Click **+ Create Stream** to start setting up a new data stream.
 
-<Image alt="Create Stream" align="center" border={true} src="https://files.readme.io/7a904e83231aa09949b3086151c011e6002d7613321b910bcfe15898d5485555-image.png" />  Create Stream
-
-
-
-
-
-
-
-
-
-
+<Image alt="Create Stream" align="center" border={true} src="https://files.readme.io/7a904e83231aa09949b3086151c011e6002d7613321b910bcfe15898d5485555-image.png" />
 
 3. Select the data source you want to connect from the *Select source* dropdown to create for stream.
 4. If the source is not yet configured, click **Add Source** and follow the setup instructions.
 
-<Image alt="Add Source" align="center" border={true} src="https://files.readme.io/8ef27bf0035e195fb31dfe0d8d00beb76b5977abf395ab871f2db3f21a2f69fa-image.png" />  Add Source
-
-
-
-
-
-
-
-
-
-
+<Image alt="Add Source" align="center" border={true} src="https://files.readme.io/8ef27bf0035e195fb31dfe0d8d00beb76b5977abf395ab871f2db3f21a2f69fa-image.png" />
 
 5. For this case, use the *Javascript* Source Integration.
 
-<Image alt="Select type of source" align="center" border={true} src="https://files.readme.io/25ffca6e719736b7ea8099f2dd5b1991caf350833f5ada7c003e8e302eaf7f4b-image.png" />  Select the type of source
-
-
-
-
-
-
-
-
-
-
+<Image alt="Select type of source" align="center" border={true} src="https://files.readme.io/25ffca6e719736b7ea8099f2dd5b1991caf350833f5ada7c003e8e302eaf7f4b-image.png" />
 
 ### Install and Verify Data Flow
 
@@ -274,81 +207,33 @@ Once your stream is configured, the next step is to install the stream snippet a
 
 1. From the *Destination* dropdown, select *CleverTap*.
 2. If CleverTap is not yet configured, click **Add Destination** and enter your CleverTap account details.
-<Image alt="Add Destination" align="center" border={true} src="https://files.readme.io/7b6a90bfe8f7fc36a7d8b908fee4fa22a308dd382fb32df70e29c7efc0453f5b-Screen_Recording_2025-02-19_at_12.02.45_PM_1.gif" />  Add Destination
 
-
-
-
-
-
-
-
-
-
+<Image alt="Add Destination" align="center" border={true} src="https://files.readme.io/7b6a90bfe8f7fc36a7d8b908fee4fa22a308dd382fb32df70e29c7efc0453f5b-Screen_Recording_2025-02-19_at_12.02.45_PM_1.gif" />
 
 3. Click **Test and Save** to validate the configuration.
 4. After selecting the Source and Destination, click **Create Stream**. The newly created stream will now be visible in the Streams list in Boltic.
 
-<Image alt="Stream" align="center" border={true} src="https://files.readme.io/0be998dc0e975bcd3830edc4c3aa681dc2c1f0d2a2739ccb411dd0282e2d6508-image.png" />  Create Stream
-
-
-
-
-
-
-
-
-
-
+<Image alt="Stream" align="center" border={true} src="https://files.readme.io/0be998dc0e975bcd3830edc4c3aa681dc2c1f0d2a2739ccb411dd0282e2d6508-image.png" />
 
 5. Open the stream you created and scroll down to find the *Install the stream snippet on your website* for your selected source. 
 6. Follow the installation instructions carefully, as steps vary depending on the source type.
 
-<Image alt="Install the stream snippet on your website" align="center" border={true} src="https://files.readme.io/b627ebfe560bb7edb9cbd12359347de3cd62505b8f8daa5ad080364f488760c6-image.png" />  Install Stream Snippet on your Website
-
-
-
-
-
-
-
-
-
-
+<Image alt="Install the stream snippet on your website" align="center" border={true} src="https://files.readme.io/b627ebfe560bb7edb9cbd12359347de3cd62505b8f8daa5ad080364f488760c6-image.png" />
 
 Once the stream snippet is installed, real-time event data flows from the source to CleverTap.
 
-<Image alt="Stream data" align="center" border={true} src="https://files.readme.io/2018f054d398b7736290e83aed403b782a8b5cf662a7e4a7ab4064e4347cc52f-image.png" />  Stream Data
-
-
-
-
-
-
-
-
-
-
+<Image alt="Stream data" align="center" border={true} src="https://files.readme.io/2018f054d398b7736290e83aed403b782a8b5cf662a7e4a7ab4064e4347cc52f-image.png" />
 
 7. To ensure the data is successfully reflected in CleverTap, go to the CleverTap Dashboard and check if the events and user profiles are updating as expected.
 
-<Image alt="Verify data uploaded in CleverTap " align="center" border={true} src="https://files.readme.io/6d945963834b4cb16e95cb30b30a04ade3ed6a2cf2cc3730d76a6665014a910f-Screen_Recording_2025-02-19_at_12.12.20_PM_1.gif" />  Verify Data Uploaded in CleverTap 
-
-
-
-
-
-
-
-
-
-
+<Image alt="Verify data uploaded in CleverTap " align="center" border={true} src="https://files.readme.io/6d945963834b4cb16e95cb30b30a04ade3ed6a2cf2cc3730d76a6665014a910f-Screen_Recording_2025-02-19_at_12.12.20_PM_1.gif" />
 
 This alternative integration method offers an automated and scalable way to sync user data and events between Boltic and CleverTap, enabling enhanced tracking and engagement workflows.
 
 # FAQs
 
 ### What are the key differences between API-based integration and Data Hub Stream integration?
+
 | Integration Type                       | Best For                                        | Pros                                                          | Con                                                                      |
 | -------------------------------------- | ----------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------------------ |
 | **API-based (Webhooks & API Actions)** | Real-time event-driven automation               | Provides instant updates and requires a simple setup          | Requires API familiarity and may need rate-limiting                      |
