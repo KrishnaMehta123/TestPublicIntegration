@@ -341,7 +341,7 @@ To create linked events in bulk:
 1. Select the user properties you want to link and click the ![](https://files.readme.io/9bd94d1-Bulk_Link.png) icon.
 
    <Image align="center" border={true} caption="Bulk Link Events" src="https://files.readme.io/6675b4f-Bulk_Link_Event.png" />
-2. Enter the events you want to link for each user property and click **Create**.  
+2. Enter the events you want to link for each user property and click **Create**.
 
    <Image align="center" border={false} caption="Create Linked Events in Bulk" src="https://files.readme.io/7b5b7fd-Create_Linked_Events_in_Bulk.png" />
 
@@ -354,7 +354,7 @@ To discard linked events:
 1. Click the ![](https://files.readme.io/01a6671-Ellipsis.png) icon of the user property.
 2. Select _Discard Linked Event_ and click **Discard**.
 
- Discard a Linked Event
+Discard a Linked Event
 
 <Callout icon="📘" theme="info">
   **Key Points to Remember**
@@ -382,7 +382,7 @@ To configure the tracking of system events:
 2. Select the event that you want to configure from the _System events_ tab.
 3. Click the ![](https://files.readme.io/fb90f6a-Ellipsis.png) icon and select _Enable/Disable_ from the list.
 
-![](https://files.readme.io/4454bcf-UTM_Tracking_Toggle_Off.gif)  Turn Off Toggle to Disable Tracking UTM Visited
+  Turn Off Toggle to Disable Tracking UTM Visited
 
 Currently, you can enable or disable tracking for the following events from the CleverTap dashboard:
 
