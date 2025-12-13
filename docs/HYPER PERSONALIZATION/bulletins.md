@@ -22,7 +22,7 @@ The following are examples of bulletin use cases:
 
 ### Example #1
 
-A movie streaming app has a new notification for users who watch a particular movie genre on a regular basis. As an app subscriber, the customer receives a push notification regarding the new season that was just released. The business event _episode_release_ is sent to the CleverTap system via an API. A published bulletin for the business event is dispatched when the business event occurs.
+A movie streaming app has a new notification for users who watch a particular movie genre on a regular basis. As an app subscriber, the customer receives a push notification regarding the new season that was just released. The business event *episode\_release* is sent to the CleverTap system via an API. A published bulletin for the business event is dispatched when the business event occurs.
 
 ### Example #2
 
@@ -30,329 +30,135 @@ A company creates 200 daily campaigns for their television shows. Each campaign 
 
 ### Example #3
 
-A music streaming app sends a new notification for users as soon as a new album for an artist is released. As an app subscriber, the customer receives a push notification regarding the new album that was just released if the customer has heard, downloaded, or favorited 10 or more songs from the artist recently. The business event _album_release_ is sent to the CleverTap system via an API. A published bulletin for the business event is dispatched when the business event occurs.
+A music streaming app sends a new notification for users as soon as a new album for an artist is released. As an app subscriber, the customer receives a push notification regarding the new album that was just released if the customer has heard, downloaded, or favorited 10 or more songs from the artist recently. The business event *album\_release* is sent to the CleverTap system via an API. A published bulletin for the business event is dispatched when the business event occurs.
 
 ## Create Business Events
 
-Before a bulletin can be published, define a business event which is the event performed by the business (e.g., episode releases, book launch, or weekly sales). The following instructions illustrate a business event named _episode_release_ which represents a new episode being released. 
+Before a bulletin can be published, define a business event which is the event performed by the business (e.g., episode releases, book launch, or weekly sales). The following instructions illustrate a business event named *episode\_release* which represents a new episode being released. 
 
-1. Select the _Bulletins_ option on the left navigation menu.
+1. Select the *Bulletins* option on the left navigation menu.
 2. Click **+ Business Event**. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ba9c478-2020-05-11_08-47-08_Define_business_event.png",
-        "2020-05-11_08-47-08_Define business event.png",
-        1808
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Create Business Event"
-    }
-  ]
-}
-[/block]
-
+<Image title="2020-05-11_08-47-08_Define business event.png" alt={1808} align="center" border={true} src="https://files.readme.io/ba9c478-2020-05-11_08-47-08_Define_business_event.png">
+  Create Business Event
+</Image>
 
 3. Enter the following information:
 
-- Business event name: This is the event performed by your business (e.g., episode releases, weekly sales).
-- Business event properties: These are the other identifiers related to a business event (e.g., movie title, genre, series, language).
-- Goal (optional): This is the desired outcome of the Bulletin (e.g., app launched, movie watched, series watched).
-- Value of user event property: This is the value of the user event property that should match the business event property (i.e., as a user I watched Show A and Show A is the business event property of the show being released).
+* Business event name: This is the event performed by your business (e.g., episode releases, weekly sales).
+* Business event properties: These are the other identifiers related to a business event (e.g., movie title, genre, series, language).
+* Goal (optional): This is the desired outcome of the Bulletin (e.g., app launched, movie watched, series watched).
+* Value of user event property: This is the value of the user event property that should match the business event property (i.e., as a user I watched Show A and Show A is the business event property of the show being released).
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/125bf9c-2020-05-11_08-57-53_Define_event_2.png",
-        "2020-05-11_08-57-53_Define event_2.png",
-        2590
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Define Business Event"
-    }
-  ]
-}
-[/block]
-
+<Image title="2020-05-11_08-57-53_Define event_2.png" alt={2590} align="center" border={true} src="https://files.readme.io/125bf9c-2020-05-11_08-57-53_Define_event_2.png">
+  Define Business Event
+</Image>
 
 4. Click **Save & Continue**. If you need to edit, click the **Edit** button to return to the previous screen.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6b6bb78-2020-05-11_09-09-10_Define_event_3.png",
-        "2020-05-11_09-09-10_Define event_3.png",
-        2650
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Save Business Event"
-    }
-  ]
-}
-[/block]
-
+<Image title="2020-05-11_09-09-10_Define event_3.png" alt={2650} align="center" border={true} src="https://files.readme.io/6b6bb78-2020-05-11_09-09-10_Define_event_3.png">
+  Save Business Event
+</Image>
 
 ## Create a Bulletin
 
 Once a business event is defined, click the **Create Bulletin** button and define an interest segment.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e696d12-1_and_4_Select_an_event_property.png",
-        "1 and 4 Select an event property.png",
-        2642
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Create a Bulletin"
-    }
-  ]
-}
-[/block]
-
+<Image title="1 and 4 Select an event property.png" alt={2642} align="center" border={true} src="https://files.readme.io/e696d12-1_and_4_Select_an_event_property.png">
+  Create a Bulletin
+</Image>
 
 1. Select a segment from the dropdown menu options (e.g., All Users or Engaged Users).
-2. Select one of the event properties defined earlier. (Refer to _Create Business Events_ above.)
-3. Select _User Event_ from the dropdown menu.
+2. Select one of the event properties defined earlier. (Refer to *Create Business Events* above.)
+3. Select *User Event* from the dropdown menu.
 4. Select an event property from the dropdown menu. The value of the property needs to match the business event property.
 
 > 🚧 String Data Type
-> 
+>
 > CleverTap only supports the string data type for mapped property values.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9a6bb90-1_and_4_Select_an_event_property.png",
-        "1 and 4 Select an event property.png",
-        2642
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Define Event Property"
-    }
-  ]
-}
-[/block]
+<Image title="1 and 4 Select an event property.png" alt={2642} align="center" border={true} src="https://files.readme.io/9a6bb90-1_and_4_Select_an_event_property.png">
+  Define Event Property
+</Image>
 
+5. Under the *Where* section, select *Count*, the type of count, and enter a quantity. Also, choose the value of property to match with a business event property.
 
-5. Under the _Where_ section, select _Count_, the type of count, and enter a quantity. Also, choose the value of property to match with a business event property.
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d1d38a4-Bulletins_new_count.png",
-        "Bulletins new count.png",
-        2736
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Select the Count Type"
-    }
-  ]
-}
-[/block]
-
+<Image title="Bulletins new count.png" alt={2736} align="center" border={true} src="https://files.readme.io/d1d38a4-Bulletins_new_count.png">
+  Select the Count Type
+</Image>
 
 6. Click **+ User Events** or  **+ User Properties** to add additional events or properties.
 7. Click **+ Filter by** to add additional properties to the event property.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6965e30-7_Filter_by_to_add_additional_properties.png",
-        "7 Filter by to add additional properties.png",
-        2738
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Add Events and Properties"
-    }
-  ]
-}
-[/block]
-
+<Image title="7 Filter by to add additional properties.png" alt={2738} align="center" border={true} src="https://files.readme.io/6965e30-7_Filter_by_to_add_additional_properties.png">
+  Add Events and Properties
+</Image>
 
 > 📘 NextGen Segment Builder in Bulletins
-> 
+>
 > Bulletins currently support only the legacy Segment Builder. Support for the Next-Gen Segment Builder is planned for future releases.
-> 
-> To publish a Bulletin, create and save your segment using the legacy segment builder under _Find People_, and then select that segment during Bulletin setup.
+>
+> To publish a Bulletin, create and save your segment using the legacy segment builder under *Find People*, and then select that segment during Bulletin setup.
 
 8. Click **Continue**.
 9. Select a channel for the bulletin and follow the onscreen instructions for the chosen method. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6741cc4-2020-05-27_17-17-15_Select_channel.png",
-        "2020-05-27_17-17-15_Select channel.png",
-        890
-      ],
-      "align": "center",
-      "sizing": "80% ",
-      "border": true,
-      "caption": "Select a Channel for Bulletin"
-    }
-  ]
-}
-[/block]
-
+<Image title="2020-05-27_17-17-15_Select channel.png" alt={890} align="center" width="80% " border={true} src="https://files.readme.io/6741cc4-2020-05-27_17-17-15_Select_channel.png">
+  Select a Channel for Bulletin
+</Image>
 
 The following is a sample notification:
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/cf7899e-2020-05-11_10-57-09_Notification_example.png",
-        "2020-05-11_10-57-09_Notification example.png",
-        1768
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Sample Notification"
-    }
-  ]
-}
-[/block]
-
+<Image title="2020-05-11_10-57-09_Notification example.png" alt={1768} align="center" border={true} src="https://files.readme.io/cf7899e-2020-05-11_10-57-09_Notification_example.png">
+  Sample Notification
+</Image>
 
 10. Apply a custom/campaign control group.
 11. Specify the push notification time to live.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2cee477-2020-05-11_11-37-48_control_groups.png",
-        "2020-05-11_11-37-48_control groups.png",
-        1583
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Control Groups"
-    }
-  ]
-}
-[/block]
-
+<Image title="2020-05-11_11-37-48_control groups.png" alt={1583} align="center" border={true} src="https://files.readme.io/2cee477-2020-05-11_11-37-48_control_groups.png">
+  Control Groups
+</Image>
 
 12. Click **Continue** to view the bulletin overview.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3fedc9c-2020-05-11_11-52-53_Bulletin_overview.png",
-        "2020-05-11_11-52-53_Bulletin overview.png",
-        1820
-      ],
-      "align": "center",
-      "caption": "Overview of the Bulletin"
-    }
-  ]
-}
-[/block]
+<Image title="2020-05-11_11-52-53_Bulletin overview.png" alt={1820} align="center" src="https://files.readme.io/3fedc9c-2020-05-11_11-52-53_Bulletin_overview.png">
+  Overview of the Bulletin
+</Image>
 
+13. Select *Publish* and name the bulletin.
 
-13. Select _Publish_ and name the bulletin.
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6896ae5-2020-05-11_11-56-55_Naming_bulletin.png",
-        "2020-05-11_11-56-55_Naming bulletin.png",
-        1831
-      ],
-      "align": "center",
-      "caption": "Publish the Bulletin"
-    }
-  ]
-}
-[/block]
-
+<Image title="2020-05-11_11-56-55_Naming bulletin.png" alt={1831} align="center" src="https://files.readme.io/6896ae5-2020-05-11_11-56-55_Naming_bulletin.png">
+  Publish the Bulletin
+</Image>
 
 14. Click **Publish**.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/60b84f2-2020-05-11_11-59-47_Done.png",
-        "2020-05-11_11-59-47_Done.png",
-        1837
-      ],
-      "align": "center",
-      "caption": "Published the Bulletin"
-    }
-  ]
-}
-[/block]
-
+<Image title="2020-05-11_11-59-47_Done.png" alt={1837} align="center" src="https://files.readme.io/60b84f2-2020-05-11_11-59-47_Done.png">
+  Published the Bulletin
+</Image>
 
 15. Click **Ok, Got It** to finish the bulletin setup.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/df160a7-2020-05-11_12-05-43_Done_2.png",
-        "2020-05-11_12-05-43_Done 2.png",
-        1801
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Complete the Bulletin"
-    }
-  ]
-}
-[/block]
-
+<Image title="2020-05-11_12-05-43_Done 2.png" alt={1801} align="center" border={true} src="https://files.readme.io/df160a7-2020-05-11_12-05-43_Done_2.png">
+  Complete the Bulletin
+</Image>
 
 ## Raise Business Event API
 
-To raise a business event, trigger the event's API as shown below by using the following link:  
-<https://location.api.clevertap.com/1/targets/trigger.json>
+To raise a business event, trigger the event's API as shown below by using the following link:\
+[https://location.api.clevertap.com/1/targets/trigger.json](https://location.api.clevertap.com/1/targets/trigger.json)
 
 > 📘 URLs for Your Specific Location
-> 
+>
 > Use the URL based on your location:
-> 
-> - India: `in1.api.clevertap.com`
-> - Singapore: `sg1.api.clevertap.com`
-> - U.S.: `us1.api.clevertap.com`
-> - Europe (EU): `api.clevertap.com`
-> - Indonesia: `aps3.api.clevertap.com`
-> - Middle East (UAE): `mec1.api.clevertap.com`
+>
+> * India: `in1.api.clevertap.com`
+> * Singapore: `sg1.api.clevertap.com`
+> * U.S.: `us1.api.clevertap.com`
+> * Europe (EU): `api.clevertap.com`
+> * Indonesia: `aps3.api.clevertap.com`
+> * Middle East (UAE): `mec1.api.clevertap.com`
 
 ```text
 {
@@ -371,90 +177,30 @@ For more information, refer to [Bulletins API](https://developer.clevertap.com/d
 
 ## Monitor Bulletin Performance
 
-CleverTap provides comprehensive monitoring for the performance of bulletins. The _Percentage of Users Converted_ graph displays the percentage of qualified users who were sent a bulletin. It also displays the users who viewed or clicked the bulletin. The graph shows the total number of technical and non-technical delivery errors.
+CleverTap provides comprehensive monitoring for the performance of bulletins. The *Percentage of Users Converted* graph displays the percentage of qualified users who were sent a bulletin. It also displays the users who viewed or clicked the bulletin. The graph shows the total number of technical and non-technical delivery errors.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c8c4884-2020-05-18_16-23-53_stats.png",
-        "2020-05-18_16-23-53_stats.png",
-        1245
-      ],
-      "align": "center",
-      "caption": "Monitor Bulletin Performance"
-    }
-  ]
-}
-[/block]
-
+<Image title="2020-05-18_16-23-53_stats.png" alt={1245} align="center" src="https://files.readme.io/c8c4884-2020-05-18_16-23-53_stats.png">
+  Monitor Bulletin Performance
+</Image>
 
 The technical errors can be analyzed further via the following table:
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/48298b6-2020-05-18_16-24-49_stats1.png",
-        "2020-05-18_16-24-49_stats1.png",
-        1183
-      ],
-      "align": "center",
-      "caption": "Technical and Non-Technical Errors"
-    }
-  ]
-}
-[/block]
-
+<Image title="2020-05-18_16-24-49_stats1.png" alt={1183} align="center" src="https://files.readme.io/48298b6-2020-05-18_16-24-49_stats1.png">
+  Technical and Non-Technical Errors
+</Image>
 
 This table displays a business activity log, the dispatched bulletins, the event time of the bulletins, the total number of bulletins sent, and the person who created the bulletin.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0cbd4b7-2020-05-18_16-25-46_stats2.png",
-        "2020-05-18_16-25-46_stats2.png",
-        1182
-      ],
-      "align": "center",
-      "caption": "Bulletin Activity Log"
-    }
-  ]
-}
-[/block]
-
+<Image title="2020-05-18_16-25-46_stats2.png" alt={1182} align="center" src="https://files.readme.io/0cbd4b7-2020-05-18_16-25-46_stats2.png">
+  Bulletin Activity Log
+</Image>
 
 # Video Tutorial
 
 For further information, you can watch the following video on bulletins:
 
-[block:embed]
-{
-  "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FW-sYhkNcyXs%3Flist%3DPLTXk2GzdxAChuuVW4i_H3VwQ9obTRs1L8&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DW-sYhkNcyXs&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FW-sYhkNcyXs%2Fhqdefault.jpg&key=f2aa6fc3595946d0afc3d76cbbd25dc3&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
-  "url": "https://www.youtube.com/watch?v=W-sYhkNcyXs&list=PLTXk2GzdxAChuuVW4i_H3VwQ9obTRs1L8&index=8",
-  "title": "Product Demo: Bulletins",
-  "favicon": "https://www.youtube.com/s/desktop/3a84d4c0/img/favicon.ico",
-  "image": "https://i.ytimg.com/vi/W-sYhkNcyXs/hqdefault.jpg",
-  "provider": "youtube.com",
-  "href": "https://www.youtube.com/watch?v=W-sYhkNcyXs&list=PLTXk2GzdxAChuuVW4i_H3VwQ9obTRs1L8&index=8"
-}
-[/block]
-
+<Embed url="https://www.youtube.com/watch?v=W-sYhkNcyXs&list=PLTXk2GzdxAChuuVW4i_H3VwQ9obTRs1L8&index=8" title="Product Demo: Bulletins" favicon="https://www.youtube.com/s/desktop/3a84d4c0/img/favicon.ico" image="https://i.ytimg.com/vi/W-sYhkNcyXs/hqdefault.jpg" provider="youtube.com" href="https://www.youtube.com/watch?v=W-sYhkNcyXs&list=PLTXk2GzdxAChuuVW4i_H3VwQ9obTRs1L8&index=8" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fwww.youtube.com%252Fembed%252FW-sYhkNcyXs%253Flist%253DPLTXk2GzdxAChuuVW4i_H3VwQ9obTRs1L8%26display_name%3DYouTube%26url%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DW-sYhkNcyXs%26image%3Dhttps%253A%252F%252Fi.ytimg.com%252Fvi%252FW-sYhkNcyXs%252Fhqdefault.jpg%26key%3Df2aa6fc3595946d0afc3d76cbbd25dc3%26type%3Dtext%252Fhtml%26schema%3Dyoutube%22%20width%3D%22854%22%20height%3D%22480%22%20scrolling%3D%22no%22%20title%3D%22YouTube%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" />
 
 For further information, you can watch the following video on bulletins:
 
-[block:embed]
-{
-  "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FW-sYhkNcyXs%3Flist%3DPLTXk2GzdxAChuuVW4i_H3VwQ9obTRs1L8&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DW-sYhkNcyXs&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FW-sYhkNcyXs%2Fhqdefault.jpg&key=f2aa6fc3595946d0afc3d76cbbd25dc3&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
-  "url": "https://www.youtube.com/watch?v=W-sYhkNcyXs&list=PLTXk2GzdxAChuuVW4i_H3VwQ9obTRs1L8&index=8",
-  "title": "Product Demo: Bulletins",
-  "favicon": "https://www.youtube.com/s/desktop/3a84d4c0/img/favicon.ico",
-  "image": "https://i.ytimg.com/vi/W-sYhkNcyXs/hqdefault.jpg",
-  "provider": "youtube.com",
-  "href": "https://www.youtube.com/watch?v=W-sYhkNcyXs&list=PLTXk2GzdxAChuuVW4i_H3VwQ9obTRs1L8&index=8"
-}
-[/block]
+<Embed url="https://www.youtube.com/watch?v=W-sYhkNcyXs&list=PLTXk2GzdxAChuuVW4i_H3VwQ9obTRs1L8&index=8" title="Product Demo: Bulletins" favicon="https://www.youtube.com/s/desktop/3a84d4c0/img/favicon.ico" image="https://i.ytimg.com/vi/W-sYhkNcyXs/hqdefault.jpg" provider="youtube.com" href="https://www.youtube.com/watch?v=W-sYhkNcyXs&list=PLTXk2GzdxAChuuVW4i_H3VwQ9obTRs1L8&index=8" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fwww.youtube.com%252Fembed%252FW-sYhkNcyXs%253Flist%253DPLTXk2GzdxAChuuVW4i_H3VwQ9obTRs1L8%26display_name%3DYouTube%26url%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DW-sYhkNcyXs%26image%3Dhttps%253A%252F%252Fi.ytimg.com%252Fvi%252FW-sYhkNcyXs%252Fhqdefault.jpg%26key%3Df2aa6fc3595946d0afc3d76cbbd25dc3%26type%3Dtext%252Fhtml%26schema%3Dyoutube%22%20width%3D%22854%22%20height%3D%22480%22%20scrolling%3D%22no%22%20title%3D%22YouTube%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" />
