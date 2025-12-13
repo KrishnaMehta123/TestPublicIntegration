@@ -25,23 +25,9 @@ To view engagement stats:
 1. Go to **Journeys**. Click the desired Journey and click **Engagement Stats**.
 2. Select the version from the Version dropdown to view the stats for the specific version of the Journey.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0695e07a69b4b1874f22fcef844ad3b9cfa2b57323547aa789b37a747ebac0cc-View_Engagement_Stats.png",
-        null,
-        "Engagement Stats"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Engagement Stats"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Engagement Stats" align="center" border={true} src="https://files.readme.io/0695e07a69b4b1874f22fcef844ad3b9cfa2b57323547aa789b37a747ebac0cc-View_Engagement_Stats.png">
+  Engagement Stats
+</Image>
 
 The following stats for each engagement node are displayed: 
 
@@ -56,23 +42,9 @@ The following stats for each engagement node are displayed:
 
 You can also view the campaign stats for each engagement node by hovering over the engagement and then clicking the ![](https://files.readme.io/ae4f09b7b09fc99539e01a77b22398ea2804e432ef51a052a5d491d9d3cba7b2-Screenshot_2025-07-02_at_1.13.57_PM.png)icon. To learn more about the stats of each messaging channel, refer to the Stats document for each channel.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a905ed06f6f180f2f88974da68b2aa66e741ba0a94e293aaabcee3c6ac5a47a3-Enagagement_Stats_-_Push_Message.png",
-        "",
-        "Campaign Stats"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Campaign Stats"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Campaign Stats" align="center" border={true} src="https://files.readme.io/a905ed06f6f180f2f88974da68b2aa66e741ba0a94e293aaabcee3c6ac5a47a3-Enagagement_Stats_-_Push_Message.png">
+  Campaign Stats
+</Image>
 
 # Manage Engagement Stats
 
@@ -82,51 +54,23 @@ This section provides steps for managing engagement statistics. It describes how
 
 You can filter the engagement stats by channel. Click the **Filters** button at the top right corner and select the required channel. To clear the filter, click **Reset all**.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6f244070021029f466db6eb3906e70a594fc1e2806c28d9b8bc9d5a28c816ab5-Filter_by_Channel.png",
-        null,
-        "Select the required channels"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Select the Required Channels"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Select the required channels" align="center" border={true} src="https://files.readme.io/6f244070021029f466db6eb3906e70a594fc1e2806c28d9b8bc9d5a28c816ab5-Filter_by_Channel.png">
+  Select the Required Channels
+</Image>
 
 ## Search Engagement Stats
 
 Enter the name or the node ID to search for a particular engagement in the search box.  (@amrita to change to a good image)
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/41654da889c7fad2db2a97f2277d5a89426aa7a8ea7d1ccb3e247eb4439ebdcd-Search_by_Node_ID.gif",
-        "",
-        "Search by Node ID"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Search by Node ID"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Search by Node ID" align="center" border={true} src="https://files.readme.io/41654da889c7fad2db2a97f2277d5a89426aa7a8ea7d1ccb3e247eb4439ebdcd-Search_by_Node_ID.gif">
+  Search by Node ID
+</Image>
 
 ## Edit Columns
 
 While the table layout is fixed by default, you can still sort and filter the data to focus on the metrics that matter most. To sort and manage the engagement data effectively, perform the following steps:
 
-1. Click ![](https://files.readme.io/f68f358198ebefc6d706e68c697e962b7e4467d00b47510ce0a8fdb8bae85781-Edit_Columns_icon.png) in the top right corner. The _Edit Columns_ popup opens.
+1. Click ![](https://files.readme.io/f68f358198ebefc6d706e68c697e962b7e4467d00b47510ce0a8fdb8bae85781-Edit_Columns_icon.png) in the top right corner. The *Edit Columns* popup opens.
 2. Toggle ON to show the required column on the Engagements tab page. 
 3. Drag and drop the columns to change their order. 
 4. Click **Apply Changes**. 
@@ -142,19 +86,6 @@ To download the engagement stats CSV:
 
 The CSV file downloads automatically. All the columns displayed on the screen are included in the CSV file.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7b03dca97f806f68ea1bffef88aa97fb133f2e351374fbb306f4ce4c14d4c1ec-Download_a_CSV.png",
-        null,
-        "CSV Download"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "CSV Download"
-    }
-  ]
-}
-[/block]
+<Image alt="CSV Download" align="center" border={true} src="https://files.readme.io/7b03dca97f806f68ea1bffef88aa97fb133f2e351374fbb306f4ce4c14d4c1ec-Download_a_CSV.png">
+  CSV Download
+</Image>
