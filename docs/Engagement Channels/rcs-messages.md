@@ -16,23 +16,9 @@ RCS (Rich Communication Services) is the next generation of mobile messaging tha
 
 CleverTap allows you to leverage RCS as a powerful engagement channel to deliver personalized, real-time communication to your users. You can also use RCS to automate journeys and integrate fallback to SMS for seamless message delivery.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/28ae404938093fd3ab993a60364a2143b5d6b0e3ac9c6c134093b11032ef2b8a-image.png",
-        null,
-        "RCS Messaging"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Sample RCS Message"
-    }
-  ]
-}
-[/block]
-
+<Image alt="RCS Messaging" align="center" border={true} src="https://files.readme.io/28ae404938093fd3ab993a60364a2143b5d6b0e3ac9c6c134093b11032ef2b8a-image.png">
+  Sample RCS Message
+</Image>
 
 ## RCS as a Channel
 
@@ -42,9 +28,9 @@ An RCS message can be created and sent like any other campaign in CleverTap, com
 
 Common use cases for RCS messaging include:
 
-- Sending utility updates such as order confirmations, delivery updates, or appointment reminders.
-- Promoting offers with rich cards, carousels, and CTAs to drive user action.
-- Re-engaging inactive users through visually engaging content.
-- Facilitating two-way conversations for support or feedback collection.
+* Sending utility updates such as order confirmations, delivery updates, or appointment reminders.
+* Promoting offers with rich cards, carousels, and CTAs to drive user action.
+* Re-engaging inactive users through visually engaging content.
+* Facilitating two-way conversations for support or feedback collection.
 
 To learn how to design impactful RCS campaigns, refer to our [RCS Messaging Guide](doc:rcs-setup) for best practices, template examples, and implementation strategies.
