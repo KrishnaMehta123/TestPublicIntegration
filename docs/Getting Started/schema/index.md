@@ -403,8 +403,6 @@ To set a conversion event:
 
 To track revenue, set the user conversion event and revenue property. This property must be a numeric value.
 
-  
-
 # Qualifying Event
 
 To set a qualifying event:
@@ -416,7 +414,9 @@ This event qualifies users as active if they have performed the event at least o
 
 Currently, the [active %](https://docs.clevertap.com/docs/trends#section-active) tab uses the qualifying event on the _Trends_ page.
 
-![](https://files.readme.io/5d67342-set_qualifying.png "Set Qualifying Event and Click Save")  Set Qualifying Event
+<Image align="center" border={true} caption="Set Qualifying Event" src="https://files.readme.io/5d67342-set_qualifying.png" />
+
+<br />
 
 # Download Schema Data from Dashboard
 
