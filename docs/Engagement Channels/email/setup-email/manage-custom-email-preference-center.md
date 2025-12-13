@@ -17,41 +17,27 @@ next:
 CleverTap's Email Preference Center feature allows you to customize user communication preferences. It also provides a ready-to-use preference management page, or you can create a custom Preference Center, empowering users to control their communication experience. This ensures they stay engaged with the content that matters most to them. Subscription groups allow users to select the content they want to receive, reducing unsubscription rates and fostering strong brand-user relationships. This approach enhances user satisfaction and builds a more personalized connection with your audience.
 
 > 📘 Private Beta
-> 
+>
 > Currently, this feature is released in Private Beta. If you want access to this feature, contact your Customer Success Manager.
 
 # Create Your Custom Email Preference Center
 
 You can modify CleverTap's default Email Preference Center and easily create a custom Email Preference Center using HTML, CSS, and JavaScript. It allows you to: 
 
-- Design a personalized subscription page tailored to your audience's preferences.
-- Instantly preview the content and refine your design.
-- Effortlessly integrate your custom Email Preference Center into your email campaigns.
+* Design a personalized subscription page tailored to your audience's preferences.
+* Instantly preview the content and refine your design.
+* Effortlessly integrate your custom Email Preference Center into your email campaigns.
 
 To create your custom Email Preference Center: 
 
-1. Go to _Settings_ > _Channel_ > _Email_ > _Advanced Setup_. 
-2. Expand the _Email Preference Center_ section and click **+ Preference Center**. The _New Preference Center_ page opens with the [CleverTap Preference Center](doc:manage-email-preferences) code pre-populated.
+1. Go to *Settings* > *Channel* > *Email* > *Advanced Setup*. 
+2. Expand the *Email Preference Center* section and click **+ Preference Center**. The *New Preference Center* page opens with the [CleverTap Preference Center](doc:manage-email-preferences) code pre-populated.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f663053-Click__Email_Preference_Center.png",
-        null,
-        "Create Custom Preference Center"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Create a Custom Preference Center"
-    }
-  ]
-}
-[/block]
+<Image alt="Create Custom Preference Center" align="center" border={true} src="https://files.readme.io/f663053-Click__Email_Preference_Center.png">
+  Create a Custom Preference Center
+</Image>
 
-
-The _New Preference Center_ page opens with the [CleverTap Preference Center](doc:manage-email-preferences) default HTML code pre-populated. This HTML includes the following CleverTap JavaScript (JS) code:
+The *New Preference Center* page opens with the [CleverTap Preference Center](doc:manage-email-preferences) default HTML code pre-populated. This HTML includes the following CleverTap JavaScript (JS) code:
 
 ```javascript India
 // Copy and paste the below code snippet inside the <head></head> section of your landing page
@@ -143,51 +129,37 @@ The _New Preference Center_ page opens with the [CleverTap Preference Center](do
 
 3. Replace the `region` value in the `clevertap` object with the correct region for your CleverTap account. To identify the region of your CleverTap account, refer to the following table:
 
-| Region                  | CleverTap Dashboard URL                             |
-| :---------------------- | :-------------------------------------------------- |
-| India                   | <https://in1.dashboard.clevertap.com/login.html#/>  |
-| Singapore               | <https://sg1.dashboard.clevertap.com/login.html#/>  |
-| United States           | <https://us1.dashboard.clevertap.com/login.html#/>  |
-| Indonesia               | <https://aps3.dashboard.clevertap.com/login.html#/> |
-| Middle East (UAE)       | <https://mec1.dashboard.clevertap.com/login.html#/> |
-| Europe (default region) | <https://eu1.dashboard.clevertap.com/login.html#/>  |
+| Region                  | CleverTap Dashboard URL                                                                                |
+| :---------------------- | :----------------------------------------------------------------------------------------------------- |
+| India                   | [https://in1.dashboard.clevertap.com/login.html#/](https://in1.dashboard.clevertap.com/login.html#/)   |
+| Singapore               | [https://sg1.dashboard.clevertap.com/login.html#/](https://sg1.dashboard.clevertap.com/login.html#/)   |
+| United States           | [https://us1.dashboard.clevertap.com/login.html#/](https://us1.dashboard.clevertap.com/login.html#/)   |
+| Indonesia               | [https://aps3.dashboard.clevertap.com/login.html#/](https://aps3.dashboard.clevertap.com/login.html#/) |
+| Middle East (UAE)       | [https://mec1.dashboard.clevertap.com/login.html#/](https://mec1.dashboard.clevertap.com/login.html#/) |
+| Europe (default region) | [https://eu1.dashboard.clevertap.com/login.html#/](https://eu1.dashboard.clevertap.com/login.html#/)   |
 
-3. Replace the default code with your custom code for unsubscribing in the editor on the left side of the _New preference center_ window. The right side of the window displays a preview of your subscription page. 
+3. Replace the default code with your custom code for unsubscribing in the editor on the left side of the *New preference center* window. The right side of the window displays a preview of your subscription page. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f2dab58-Add_Code_for_Custom_Preference.png",
-        null,
-        "Add Code for Custom Preference Center"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Add Code for Custom Preference Center"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Add Code for Custom Preference Center" align="center" border={true} src="https://files.readme.io/f2dab58-Add_Code_for_Custom_Preference.png">
+  Add Code for Custom Preference Center
+</Image>
 
 The CleverTap JS code provided above is essential to be able to use different methods for listing user's subscription groups, unsubscribing them, and so on. The following are some of CleverTap's functions that you can leverage when creating your custom preference center:
 
-- `$WZRK_WR.getEmail(false, withGroups)`  
+* `$WZRK_WR.getEmail(false, withGroups)`\
   Fetch data such as the user's email address, subscription groups, campaign ID, and identity.
-- `$WZRK_WR.setSubscriptionGroups(subscriptionGroups)`  
+* `$WZRK_WR.setSubscriptionGroups(subscriptionGroups)`\
   Once you get subscription groups via `$WZRK_WR.getEmail` method, you can use it to perform different operations, such as updating, retrieving, and displaying the user's subscription preferences.
-- `$WZRK_WR.getSubscriptionGroups()`  
+* `$WZRK_WR.getSubscriptionGroups()`\
   Retrieves the current subscription groups associated with a user's profile on the CleverTap dashboard.
 
 > 📘 Note
-> 
+>
 > You must call the `$WZRK_WR.setSubscriptionGroups(subscriptionGroups)` method before calling this method.
 
-- `$WZRK_WR.changeSubscriptionGroups(false, unsubcribeGroups)`  
+* `$WZRK_WR.changeSubscriptionGroups(false, unsubcribeGroups)`\
   Triggered when the user updates their subscription preferences. It sends this updated subscription information to CleverTap.
-- `$WZRK_WR.isGlobalUnsubscribe()`  
+* `$WZRK_WR.isGlobalUnsubscribe()`\
   Determines if the page is for unsubscribing from campaign-specific groups or for displaying the Email Preference Center.
 
 The following is a sample code for creating a preference center:
@@ -377,81 +349,38 @@ The following is a sample code for creating a preference center:
 
 4. Click **Save**.  The **Save Preference Center** dialog box appears. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a86d262-Save_Preference_Center.png",
-        null,
-        "Save Custom Preference Center"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Save Custom Preference Center"
-    }
-  ]
-}
-[/block]
+<Image alt="Save Custom Preference Center" align="center" border={true} src="https://files.readme.io/a86d262-Save_Preference_Center.png">
+  Save Custom Preference Center
+</Image>
 
+5. Enter the name of the preference center and click **Save**. The newly created custom email preference center is displayed under the *Email Preference Center* page. 
 
-5. Enter the name of the preference center and click **Save**. The newly created custom email preference center is displayed under the _Email Preference Center_ page. 
+<Image alt="Unpublished Preference Center" align="center" border={true} src="https://files.readme.io/dad40ae-Unpublished_Preference_Center.png">
+  Unpublished Email Preference Center
+</Image>
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/dad40ae-Unpublished_Preference_Center.png",
-        null,
-        "Unpublished Preference Center"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Unpublished Email Preference Center"
-    }
-  ]
-}
-[/block]
-
-
-When you save a custom email preference center, it is initially set to an **Unpublished** state. You must publish it to activate it. Once published, it is available in the _Email Preference Center_ dropdown when [configuring the email provider](doc:manage-email-preferences#configure-email-preference-center). 
+When you save a custom email preference center, it is initially set to an **Unpublished** state. You must publish it to activate it. Once published, it is available in the *Email Preference Center* dropdown when [configuring the email provider](doc:manage-email-preferences#configure-email-preference-center). 
 
 > 📘 Key Points to Remember
-> 
-> - You can create only one custom Preference Center page per account.
-> - After setting the Email Preference Center to a custom preference center from the _Provider Setup_, the new custom preference center is now visible for scheduled campaigns and will be used for future recurring campaign runs.
+>
+> * You can create only one custom Preference Center page per account.
+> * After setting the Email Preference Center to a custom preference center from the *Provider Setup*, the new custom preference center is now visible for scheduled campaigns and will be used for future recurring campaign runs.
 
 # Manage Your Custom Email Preference Center
 
 You can perform different actions on a custom preference center. To manage the custom email preference center: 
 
-1. Go to _Settings_ > _Channel_ > _Email_ > _Advanced Setup_.
+1. Go to *Settings* > *Channel* > *Email* > *Advanced Setup*.
 2. From the Email Preference Center page, click the  ![](https://files.readme.io/f870ff6-Ellipses.png) icon beside the custom email preference center. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3515281-Manage_Custom_Preference_Center.png",
-        null,
-        "Manage Custom Email Preference Center"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Manage Custom Email Preference Center"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Manage Custom Email Preference Center" align="center" border={true} src="https://files.readme.io/3515281-Manage_Custom_Preference_Center.png">
+  Manage Custom Email Preference Center
+</Image>
 
 3. Perform one of the following actions: 
-   - **Preview**: Allows you to preview the appearance and functionality of the custom preference center.
-   - **Publish**: Allows you to use the custom preference page when setting up the email provider. 
-   - **Edit**: Allows you to modify the content and layout of the custom page. When you edit an unpublished custom preference center, you need to save it and then publish it from the _Email Preference Center_. The changes are saved and published when you edit an already published customer preference center.  
-     <br />
+   * **Preview**: Allows you to preview the appearance and functionality of the custom preference center.
+   * **Publish**: Allows you to use the custom preference page when setting up the email provider. 
+   * **Edit**: Allows you to modify the content and layout of the custom page. When you edit an unpublished custom preference center, you need to save it and then publish it from the *Email Preference Center*. The changes are saved and published when you edit an already published customer preference center.\ <br />
      > 📘 Edit Published Custom Preference Center
-     > 
+     >
      > If you edit an already published custom preference center, the modifications reflect in the already sent campaigns, too.
