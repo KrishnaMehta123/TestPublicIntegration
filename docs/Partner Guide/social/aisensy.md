@@ -14,24 +14,24 @@ next:
 
 [AiSensy](https://www.aisensy.com/) offers a native integration with CleverTap that enables businesses to send WhatsApp broadcasts directly from the CleverTap dashboard. This integration allows you to:
 
-- Trigger campaigns using pre-approved WhatsApp templates.
-- Automate user engagement based on behavioral events.
-- Track delivery and response metrics using CleverTap analytics.
+* Trigger campaigns using pre-approved WhatsApp templates.
+* Automate user engagement based on behavioral events.
+* Track delivery and response metrics using CleverTap analytics.
 
 > 🚧 Support for Integration
-> 
+>
 > This integration is managed and continuously improved by AiSensy. The CleverTap and AiSensy integration has undergone stringent testing to ensure seamless functionality. For any questions or issues, contact [AiSensy](mailto:support@aisensy.com) for support and resolution.
 
 # Prerequisites for Integration
 
 Check that you have the following:
 
-- The WhatsApp Campaigns feature is enabled on your CleverTap account.
-- An active AiSensy account with WhatsApp Business API (WABA) access.
-- A provisioned WhatsApp number from AiSensy.
+* The WhatsApp Campaigns feature is enabled on your CleverTap account.
+* An active AiSensy account with WhatsApp Business API (WABA) access.
+* A provisioned WhatsApp number from AiSensy.
 
 > 📘 Enable the CleverTap add-on
-> 
+>
 > Check that you have enabled the CleverTap add-on in the AiSensy dashboard before proceeding with the integration.
 
 # Integrate AiSensy with CleverTap
@@ -50,86 +50,105 @@ CleverTap uses a header-based authentication model to authenticate requests to i
 
 To set up AiSensy as your WhatsApp provider from the CleverTap dashboard:
 
-1. Go to _Settings_ > _Channels_ > _WhatsApp_ > _WhatsApp Connect_.
+1. Go to *Settings* > *Channels* > *WhatsApp* > *WhatsApp Connect*.
 
-2. Click **+ Add Provider** and select _Generic (Other)_ from the Provider list.
+2. Click **+ Add Provider** and select *Generic (Other)* from the Provider list.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e451b36150e189f94b3d4082226e5ef5b9a8517791b6774746a9137ad43370e9-image.png",
-        null,
-        "Provider Setup"
-      ],
-      "align": "center",
-      "sizing": "60% ",
-      "border": true,
-      "caption": "Provider Setup"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Provider Setup" align="center" width="60% " border={true} src="https://files.readme.io/e451b36150e189f94b3d4082226e5ef5b9a8517791b6774746a9137ad43370e9-image.png">
+  Provider Setup
+</Image>
 
 3. Enter the following details:
 
-[block:parameters]
-{
-  "data": {
-    "h-0": "**Field**",
-    "h-1": "**Details**",
-    "0-0": "Nickname",
-    "0-1": "Enter the nickname as AiSensy_WA for easy reference.",
-    "1-0": "Mobile Number",
-    "1-1": "Add your WhatsApp Integrated number with country code (for example, +918889500122)",
-    "2-0": "Request Type",
-    "2-1": "Ensure the Request Type is _POST_.",
-    "3-0": "HTTP Endpoint",
-    "3-1": "Paste the following URL:`https://backend.aisensy.com/clever-tap/t1/messages`  \nCheck that the URL is in HTTPS format, that is, your URL must begin with https//",
-    "4-0": "Delivery Report Callback URL",
-    "4-1": "This URL is generated automatically in the CleverTap dashboard. Refer to [Set Up CleverTap Callbacks in AiSensy](doc:aisensy#set-up-callbacks-in-aisensy).",
-    "5-0": "Inbound Message Callback URL",
-    "5-1": "This URL is generated automatically in the CleverTap dashboard. Refer to [Set Up CleverTap Callbacks in AiSensy](doc:aisensy#set-up-callbacks-in-aisensy)."
-  },
-  "cols": 2,
-  "rows": 6,
-  "align": [
-    null,
-    null
-  ]
-}
-[/block]
+<Table>
+  <thead>
+    <tr>
+      <th>
+        **Field**
+      </th>
 
+      <th>
+        **Details**
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        Nickname
+      </td>
+
+      <td>
+        Enter the nickname as AiSensy\_WA for easy reference.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Mobile Number
+      </td>
+
+      <td>
+        Add your WhatsApp Integrated number with country code (for example, +918889500122)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Request Type
+      </td>
+
+      <td>
+        Ensure the Request Type is *POST*.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        HTTP Endpoint
+      </td>
+
+      <td>
+        Paste the following URL:`https://backend.aisensy.com/clever-tap/t1/messages`\
+        Check that the URL is in HTTPS format, that is, your URL must begin with https//
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Delivery Report Callback URL
+      </td>
+
+      <td>
+        This URL is generated automatically in the CleverTap dashboard. Refer to [Set Up CleverTap Callbacks in AiSensy](doc:aisensy#set-up-callbacks-in-aisensy).
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Inbound Message Callback URL
+      </td>
+
+      <td>
+        This URL is generated automatically in the CleverTap dashboard. Refer to [Set Up CleverTap Callbacks in AiSensy](doc:aisensy#set-up-callbacks-in-aisensy).
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 4. Add Headers from AiSensy. To do so, follow the steps to configure headers:
-   1. Go to _AiSensy Dashboard_ > _Integrations_ > _CleverTap_ > click **Regenerate Key**.
+   1. Go to *AiSensy Dashboard* > *Integrations* > *CleverTap* > click **Regenerate Key**.
    2. Copy the Authorization Headers.
    3. Paste the headers into the Header section in CleverTap.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0bdb0c80b88f1b3e9786dadf8dbc5219d4831ee6d9499066dc6aa6b73921b2bc-image.png",
-        null,
-        "Configure Headers"
-      ],
-      "align": "center",
-      "sizing": "65% ",
-      "border": true,
-      "caption": "Configure Headers"
-    }
-  ]
-}
-[/block]
+<Image alt="Configure Headers" align="center" width="65% " border={true} src="https://files.readme.io/0bdb0c80b88f1b3e9786dadf8dbc5219d4831ee6d9499066dc6aa6b73921b2bc-image.png">
+  Configure Headers
+</Image>
 
-
-5. (Optional) Select _Mark this as default_ to make the service provider the default provider for sending a WhatsApp message via AiSensy.
-6. (Optional) Select _Set auto-reply for users not tracked on CleverTap_ to automatically reply to users who message on WhatsApp but are not tracked on the CleverTap dashboard.
-7. (Optional) Set the _Maximum Concurrent API requests_ between 30 and 1000. Consider your requirements and the provider's limitations when defining this value.
+5. (Optional) Select *Mark this as default* to make the service provider the default provider for sending a WhatsApp message via AiSensy.
+6. (Optional) Select *Set auto-reply for users not tracked on CleverTap* to automatically reply to users who message on WhatsApp but are not tracked on the CleverTap dashboard.
+7. (Optional) Set the *Maximum Concurrent API requests* between 30 and 1000. Consider your requirements and the provider's limitations when defining this value.
 8. Test the integration and click **Save** to trigger a test message and automatically save your credentials.
 
 ## Set Up Callbacks in AiSensy
@@ -138,28 +157,13 @@ Callbacks ensure delivery reports and inbound user messages from WhatsApp are sy
 
 To set up CleverTap callbacks with AiSensy, follow the steps below:
 
-1. In the AiSensy dashboard, go to _Integrations_ > _CleverTap_.
-2. Click **Regenerate Key** under _CleverTap Header Key_.
-3. In the CleverTap dashboard, go to _Settings_ > _Channels_ > _WhatsApp_. The _Delivery Report Callback URL_ and _Inbound Message Callback URL_ are under the Provider Configuration page. Copy them.
+1. In the AiSensy dashboard, go to *Integrations* > *CleverTap*.
+2. Click **Regenerate Key** under *CleverTap Header Key*.
+3. In the CleverTap dashboard, go to *Settings* > *Channels* > *WhatsApp*. The *Delivery Report Callback URL* and *Inbound Message Callback URL* are under the Provider Configuration page. Copy them.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/931f649e1d2a8e6a9c805ef928b38b661294cc92d1d2597d120df3702259a820-image.png",
-        null,
-        "Callback URLs"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Callback URLs"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Callback URLs" align="center" width="45% " border={true} src="https://files.readme.io/931f649e1d2a8e6a9c805ef928b38b661294cc92d1d2597d120df3702259a820-image.png">
+  Callback URLs
+</Image>
 
 4. Paste both callback URLs in AiSensy and click **Submit**.
 
