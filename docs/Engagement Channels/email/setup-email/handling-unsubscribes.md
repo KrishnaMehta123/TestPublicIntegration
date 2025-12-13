@@ -158,7 +158,7 @@ var groupsExample = [
 Ensure that the original JavaScript functions are retained.
 
 1. Host that file on a publicly accessible server. The extension of the file could be anything, including PHP if you want to incorporate some of your backend logic.
-2. Integrate the CleverTap JavaScript (JS) embed code, which is optimized for integration on both desktop and mobile websites. Replace CLEVERTAP_ACCOUNT_ID with your actual Account ID in the JS. 
+2. Integrate the CleverTap JavaScript (JS) embed code, which is optimized for integration on both desktop and mobile websites. Replace CLEVERTAP\_ACCOUNT\_ID with your actual Account ID in the JS. 
 3. To enable the CleverTap region, add a `region` element to the `clevertap` object as shown in the following code (second line):
 
 ```javascript India
@@ -250,13 +250,13 @@ Ensure that the original JavaScript functions are retained.
 ```
 
 > 📘 Note
-> 
+>
 > Check that you have defined the correct region for your account. For more information on defining a region, see [configuring a region](https://developer.clevertap.com/docs/idc#section-web).
 
-4. Set up an email provider. To do so:  
-   a. Navigate to _Settings_ > _Channels_ > _Email_ from the CleverTap dashboard.  
-   b. Click **+Provider**.  
-   c. Select _Amazon SES/SMTP_. 
+4. Set up an email provider. To do so:\
+   a. Navigate to *Settings* > *Channels* > *Email* from the CleverTap dashboard.\
+   b. Click **+Provider**.\
+   c. Select *Amazon SES/SMTP*. 
 5. When you are composing the email in the body, put the unsubscribe link as shown below. CleverTap replaces \*|UNSUBSCRIBE|\* with the actual URL of the unsubscribe page at the time of sending out the email.
 
 ```html
@@ -267,7 +267,7 @@ Ensure that the original JavaScript functions are retained.
 
 1. When an email notification campaign is sent out, CleverTap will automatically replace the \*|UNSUBSCRIBE|\* link in the body of the email with the location of your page.
 2. When a user clicks on the unsubscribe link in your email, the user will be taken to the unsubscribe page. 
-3. After the body loads, call the $WZRK_WR.getEmail() method, which calls the wzrk_email_fetched(emailStr) method on that page when the email is fetched from the server.
+3. After the body loads, call the $WZRK\_WR.getEmail() method, which calls the wzrk\_email\_fetched(emailStr) method on that page when the email is fetched from the server.
 4. Call the unsubscribe() method when the user confirms they want to unsubscribe.
 5. You can call the resubscribe() method when the user wants to resubscribe to the email (this is only valid if the user first unsubscribed and is still on that page from the earlier link).
 
@@ -276,7 +276,7 @@ Ensure that the original JavaScript functions are retained.
 1. The unsubscription link will not work for test emails sent from the notification creation page.
 2. Make sure that when a user lands on the unsubscription page, the URL has these parameters:
 
-- e: This contains some metadata about the user.
-- wzrk_ex: This is a CleverTap internal parameter.
+* e: This contains some metadata about the user.
+* wzrk\_ex: This is a CleverTap internal parameter.
 
 3. The subscription is in effect at the account level. It means all the users linked to the email address are unsubscribed.
