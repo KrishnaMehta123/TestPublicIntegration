@@ -20,9 +20,9 @@ CleverTap supports sending emails through SendGrid.
 4. Provide a nickname for your integration.
 5. Enter the SendGrid API key. For more information on generating the key, see [Creating an API key in SendGrid](https://sendgrid.com/docs/ui/account-and-settings/api-keys/#creating-an-api-key).
    > 🚧 Note
-   > 
+   >
    > As of December 2020, SendGrid only requires an API key for authentication. Username and password are no longer needed.
-   > 
+   >
    > For any clarifications, contact your SendGrid Account Executive or SendGrid Support.
 6. From Address – This value is used as the sender's email address. Most people will not open an email unless they recognize the sender.
 7. Reply Address - This value is used as the reply address. You can receive replies to this address.
@@ -30,8 +30,8 @@ CleverTap supports sending emails through SendGrid.
 9. Finally, click Send a test email and fill in your details to test the configuration details you entered. Has it arrived in your inbox? If not, see the troubleshooting steps below.
 
 > 🚧 Note
-> 
-> If you are using SendGrid credentials with SMTP integration, then enter **apikey** as username and \<API_KEY_VALUE> as password.
+>
+> If you are using SendGrid credentials with SMTP integration, then enter **apikey** as username and \<API\_KEY\_VALUE> as password.
 
 # Set Up Email Delivery Status Callbacks
 
@@ -41,40 +41,28 @@ To set up callbacks for **Spam, Bounced, Dropped,** and **Unsubscribed** emails,
 
 To enable support for these, follow the steps:
 
-1. Navigate to _Settings_ > _Email_ Settings and enable Event Notification.
+1. Navigate to *Settings* > *Email* Settings and enable Event Notification.
 
 2. Navigate to Settings from within Event Notification.
 
-3. In the HTTP Post URL input box, add the _Callback URL_ from the CleverTap dashboard, which is found under _Settings_ > _Email_ > _Provider_ > _Sendgrid_.
+3. In the HTTP Post URL input box, add the *Callback URL* from the CleverTap dashboard, which is found under *Settings* > *Email* > *Provider* > *Sendgrid*.
 
-   [block:image]{"images":[{"image":["https://files.readme.io/39730b0-SendGrid_Email_Provider.png","","Add Callback URL"],"align":"center","border":true,"caption":"Add Callback URL"}]}[/block]
+   <Image alt="Add Callback URL" align="center" border={true} src="https://files.readme.io/39730b0-SendGrid_Email_Provider.png">
+     Add Callback URL
+   </Image>
 
-4. Check the following from the _Deliverability Data_ and _Engagement Data_ in the SendGrid Dashboard: Dropped, Bounced, Unsubscribed From, and  Marked as Spam.
+4. Check the following from the *Deliverability Data* and *Engagement Data* in the SendGrid Dashboard: Dropped, Bounced, Unsubscribed From, and  Marked as Spam.
 
 5. Save your settings.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c7c968d-Email_Sendgrid_Settings.png",
-        "Enable event notifications for emails via SendGrid",
-        669
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Enable Event Notifications for Emails via SendGrid"
-    }
-  ]
-}
-[/block]
-
+<Image title="Enable event notifications for emails via SendGrid" alt={669} align="center" border={true} src="https://files.readme.io/c7c968d-Email_Sendgrid_Settings.png">
+  Enable Event Notifications for Emails via SendGrid
+</Image>
 
 > 📘 Handling Inactive Email Addresses
-> 
-> - When an email bounces, drops, or the user unsubscribes, CleverTap marks the user’s email address as inactive.
-> - The count of email bounces is shown on the email report screen.
+>
+> * When an email bounces, drops, or the user unsubscribes, CleverTap marks the user’s email address as inactive.
+> * The count of email bounces is shown on the email report screen.
 
 # Troubleshooting
 
