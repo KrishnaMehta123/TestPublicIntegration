@@ -724,53 +724,50 @@ If there is an error in the SMS delivery, these error codes indicate the nature 
 The following is the acceptable sample payload:
 
 ```json
-[
-  {
-    "event": "delivered",
-    "data": [
-      {
-        "ts": 1435322805,
-        "meta": "9999999999.1200000000.165263328.20220606.0.wzrk_default.1.",
-        "description": "Delivered to handset"
-      }
+[{
+        "event": "failed", //in the case of errors in delivery 
+        "data": [{
+                "ts": 1654512921,
+                "meta": "9999999999.1200000000.165263328.20220606.0.wzrk_default.1.",
+                "code": "901",
+                "description": "DND Failure"
+            },
+            {
+                "ts": 1654512921,
+                "meta": "9999999999.1200000000.165263328.20220606.0.wzrk_default.1.",
+                "code": "902",
+                "description": "Failed spam detected"
+            }
+        ]
+    },
+ {
+        "event": "replied",
+        "data": [{
+            "ts": 1435322805,
+            "meta": "9999999999.1200000000.165263328.20220606.0.wzrk_default.1.",
+            "toPhone": "5555",
+      			"incomingText": "STOP"
+        }
     ]
-  },
-  {
-    "event": "clicked",
-    "data": [
-      {
-        "ts": 1435322805,
-        "meta": "9999999999.1200000000.165263328.20220606.0.wzrk_default.1.",
-        "url": "www.CleverTap.com",
-        "shorturl": "ct9.io/12345"
-      }
-    ]
-  },
-  {
-    "event": "replied",
-    "data": [
-      {
-        "ts": 1435322805,
-        "meta": "9999999999.1200000000.165263328.20220606.0.wzrk_default.1.",
-        "toPhone": "5555",
-        "incomingText": "This is the user's response(512 chars only)"
-      }
-    ]
-  },
-  {
-    "event": "failed",
-    "data": [
-      {
-        "ts": 1435322805,
-        "meta": "9999999999.1200000000.165263328.20220606.0.wzrk_default.1.",
-        "code": "901",
-        "description": "sender blocked by DLT"
-      }
-    ]
-  }
-]
+    },
+    {
+        "event": "delivered", //in the case of successful delivery. 
+        "data": [{
+            "ts": 1435322805,
+            "meta": "9999999999.1200000000.165263328.20220606.0.wzrk_default.1.",
+            "description": "Delivered to handset"
+        }]
+    },
+    {
+        "event": "clicked", //when the user clicks on the links in the SMS.
+        "data": [{
+            "ts": 1435322805,
+            "meta": "9999999999.1200000000.165263328.20220606.0.wzrk_default.1.",
+            "url": "www.CleverTap.com", //This is the original URL
+            "shortUrl": "https://bit.ly/3OjG22B" 
+        }]
+    }
 ```
-
 ## Incoming Payload Mapping to System Events
 
 CleverTap maps the following incoming payloads with their respective system events. You can view these on the CleverTap dashboard.
