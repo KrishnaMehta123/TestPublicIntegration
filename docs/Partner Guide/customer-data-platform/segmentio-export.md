@@ -25,254 +25,177 @@ This process involves the following two steps:
 
 To find your project details:
 
-1. From your workspace, navigate to _Connections_ > _Catalog_.
-2. Search for _CleverTap_ in the _Sources Catalog_, select _CleverTap_, and click **Add Source**.
-3. Enter a nickname for the _Source_ and configure any other required settings. The nickname is used as a label in the Segment app, and Segment creates a related schema name in your warehouse. The nickname can be anything, but Segment recommends using something that reflects the source itself and distinguishes amongst your environments (like CleverTap_Prod, CleverTap_Staging, or CleverTap_Dev).
+1. From your workspace, navigate to *Connections* > *Catalog*.
+2. Search for *CleverTap* in the *Sources Catalog*, select *CleverTap*, and click **Add Source**.
+3. Enter a nickname for the *Source* and configure any other required settings. The nickname is used as a label in the Segment app, and Segment creates a related schema name in your warehouse. The nickname can be anything, but Segment recommends using something that reflects the source itself and distinguishes amongst your environments (like CleverTap\_Prod, CleverTap\_Staging, or CleverTap\_Dev).
 4. Click **Add Source** to save your settings.
-5. Copy the _Write key_ from the Segment dashboard. You will need it when configuring the CleverTap dashboard.
+5. Copy the *Write key* from the Segment dashboard. You will need it when configuring the CleverTap dashboard.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a5dbbd2-Segment.io_export_setup.gif",
-        null,
-        "Find Segment.io Project Details "
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Find Segment.io Project Details "
-    }
-  ]
-}
-[/block]
+<Image alt="Find Segment.io Project Details " align="center" border={true} src="https://files.readme.io/a5dbbd2-Segment.io_export_setup.gif">
+  Find Segment.io Project Details 
+</Image>
 
 ## Configure CleverTap Dashboard
 
 To configure the CleverTap dashboard:
 
-1. Log in to your CleverTap account and navigate to the _Settings_ > _Partners_ page. 
+1. Log in to your CleverTap account and navigate to the *Settings* > *Partners* page. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/aa0c666-Navigating_to_Partners_page.png",
-        null,
-        "Navigating to Partners Page"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Navigating to Partners Page"
-    }
-  ]
-}
-[/block]
+<Image alt="Navigating to Partners Page" align="center" border={true} src="https://files.readme.io/aa0c666-Navigating_to_Partners_page.png">
+  Navigating to Partners Page
+</Image>
 
-2. Hover on the _Segment_ icon and click **Integrate**.
+2. Hover on the *Segment* icon and click **Integrate**.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/115f8f4-Integrate_Segment.png",
-        null,
-        "Integrate Segment"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Integrate Segment"
-    }
-  ]
-}
-[/block]
+<Image alt="Integrate Segment" align="center" border={true} src="https://files.readme.io/115f8f4-Integrate_Segment.png">
+  Integrate Segment
+</Image>
 
-   On clicking, _Integrate raw data partner - Segment_ popup opens on the right side of the screen.
+   On clicking, *Integrate raw data partner - Segment* popup opens on the right side of the screen.
 
 3. Enter the following details and click **Integrate**. 
 
-| Field            | Description                                                                                                                                                                                             |
-| :--------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Partner Nickname | Enter the _Nickname_ for your integration.                                                                                                                                                              |
-| Write Key        | Helps identify CleverTap as a unique data source on Segment. For more information about obtaining the key, refer to [Find Segment Project Details](doc:segmentcom-export#find-segment-project-details). |
-| Region           | <li> Enter the region of your Segment account. </li> <li>The following are the two options: <ul> <li> US Region (default) </li> <li> EU Region </li> </ul></li>                                         |
-| User ID          | Used as an identifier to track the user on Segment.                                                                                                                                                     |
-| Anonymous ID     | Used as an identifier to track anonymous user on Segment.                                                                                                                                               |
+<Table align={["left","left"]}>
+  <thead>
+    <tr>
+      <th>
+        Field
+      </th>
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/52a3e03-Enter_mParticle_Project_Details_to_Integrate.png",
-        null,
-        "Enter Segment Project Details to Integrate"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Enter Segment Project Details to Integrate"
-    }
-  ]
-}
-[/block]
+      <th>
+        Description
+      </th>
+    </tr>
+  </thead>
 
-   After successful integration, the _Integrated_ tag displays against _Segment_ on the _Partner List_ page.
+  <tbody>
+    <tr>
+      <td>
+        Partner Nickname
+      </td>
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/130f8fc-Segment_Integration_Successful.png",
-        null,
-        "Segment Integration Successful"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Segment Integration Successful"
-    }
-  ]
-}
-[/block]
+      <td>
+        Enter the 
+
+        *Nickname*
+
+         for your integration.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Write Key
+      </td>
+
+      <td>
+        Helps identify CleverTap as a unique data source on Segment. For more information about obtaining the key, refer to 
+
+        [Find Segment Project Details](doc:segmentcom-export#find-segment-project-details)
+
+        .
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Region
+      </td>
+
+      <td>
+        <li> Enter the region of your Segment account. </li> <li>The following are the two options: <ul> <li> US Region (default) </li> <li> EU Region </li> </ul></li>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        User ID
+      </td>
+
+      <td>
+        Used as an identifier to track the user on Segment.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Anonymous ID
+      </td>
+
+      <td>
+        Used as an identifier to track anonymous user on Segment.
+      </td>
+    </tr>
+  </tbody>
+</Table>
+
+<Image alt="Enter Segment Project Details to Integrate" align="center" border={true} src="https://files.readme.io/52a3e03-Enter_mParticle_Project_Details_to_Integrate.png">
+  Enter Segment Project Details to Integrate
+</Image>
+
+   After successful integration, the *Integrated* tag displays against *Segment* on the *Partner List* page.
+
+<Image alt="Segment Integration Successful" align="center" border={true} src="https://files.readme.io/130f8fc-Segment_Integration_Successful.png">
+  Segment Integration Successful
+</Image>
 
 # Create New Export
 
 To create a new export:
 
-1. Navigate to _Settings_ > _Partners_ > _Exports_ from the CleverTap dashboard.
-2. Click **+ Export** and select _Segment_ from the _Partners_ list.
+1. Navigate to *Settings* > *Partners* > *Exports* from the CleverTap dashboard.
+2. Click **+ Export** and select *Segment* from the *Partners* list.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3ed14f8-Create_Export.png",
-        null,
-        "Create Export"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Create Export"
-    }
-  ]
-}
-[/block]
+<Image alt="Create Export" align="center" border={true} src="https://files.readme.io/3ed14f8-Create_Export.png">
+  Create Export
+</Image>
 
-On clicking, the _Export to Segment_ pop-up displays on the right side of the screen.
+On clicking, the *Export to Segment* pop-up displays on the right side of the screen.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6329f3c-Enter_Export_Details.png",
-        null,
-        "Enter Export Details"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Enter Export Details"
-    }
-  ]
-}
-[/block]
+<Image alt="Enter Export Details" align="center" border={true} src="https://files.readme.io/6329f3c-Enter_Export_Details.png">
+  Enter Export Details
+</Image>
 
 3. Configure the following settings:
-   - **Type**: Select the type of data that you want to export from the available options. For more information, refer to [Export Details](doc:segmentcom-export#export-details).
-   - **Frequency**: Select from one of the following options:
-     - _Once only_: A single export for the selected export type. You can export data up to the last 60 days. You create an export for a specific day, date range, previous month, current month, and more.  
-     - _Recurring_: Set up a recurring frequency to export all the new events/user properties captured in the last window. You can export event data as frequently as every 4 hours and up to once every 24 hours. You can export user properties only once every 24 hours. 
-4. Click **Export**. The _Segment export has initiated_ message displays at the top of the _Exports_ page:
+   * **Type**: Select the type of data that you want to export from the available options. For more information, refer to [Export Details](doc:segmentcom-export#export-details).
+   * **Frequency**: Select from one of the following options:
+     * *Once only*: A single export for the selected export type. You can export data up to the last 60 days. You create an export for a specific day, date range, previous month, current month, and more.  
+     * *Recurring*: Set up a recurring frequency to export all the new events/user properties captured in the last window. You can export event data as frequently as every 4 hours and up to once every 24 hours. You can export user properties only once every 24 hours. 
+4. Click **Export**. The *Segment export has initiated* message displays at the top of the *Exports* page:
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/798a9f1-Segment_Export_Initiated.png",
-        null,
-        "Segment Export Initiated"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Segment Export Initiated"
-    }
-  ]
-}
-[/block]
+<Image alt="Segment Export Initiated" align="center" border={true} src="https://files.readme.io/798a9f1-Segment_Export_Initiated.png">
+  Segment Export Initiated
+</Image>
 
 CleverTap processes the export, and you can now see the newly-created export for Segment.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b054bdd-New_Segment_Export_Displays_on_Exports_Page.png",
-        null,
-        "New Segment Export Displays on Exports Page"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "New Segment Export Displays on Exports Page"
-    }
-  ]
-}
-[/block]
+<Image alt="New Segment Export Displays on Exports Page" align="center" border={true} src="https://files.readme.io/b054bdd-New_Segment_Export_Displays_on_Exports_Page.png">
+  New Segment Export Displays on Exports Page
+</Image>
 
-The status for each export is displayed as _Pending_ as soon as the export is created. The status changes to _Running_ after the processing starts. And it changes to _Done_ when the export is complete.
+The status for each export is displayed as *Pending* as soon as the export is created. The status changes to *Running* after the processing starts. And it changes to *Done* when the export is complete.
 
 # Stop Export
 
 You can also stop the export that you have created. To do so, click the ![Stop export](https://files.readme.io/437ad4c-Stop_export_icon.png) icon for the export request you want to stop and then click **Stop** to confirm your action.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8a00ffe-Stop_Segment_Export.png",
-        null,
-        "Stop Segment Export"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Stop Segment Export"
-    }
-  ]
-}
-[/block]
+<Image alt="Stop Segment Export" align="center" border={true} src="https://files.readme.io/8a00ffe-Stop_Segment_Export.png">
+  Stop Segment Export
+</Image>
 
-You are navigated back to the _Exports_ page, and the _Segment data export stopped_ message displays at the top. The status for the data export now displays as _Stopped_.
+You are navigated back to the *Exports* page, and the *Segment data export stopped* message displays at the top. The status for the data export now displays as *Stopped*.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/abcf4ff-Segment_Data_Export_Stopped.png",
-        null,
-        "Segment Export Stopped"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Segment Export Stopped"
-    }
-  ]
-}
-[/block]
+<Image alt="Segment Export Stopped" align="center" border={true} src="https://files.readme.io/abcf4ff-Segment_Data_Export_Stopped.png">
+  Segment Export Stopped
+</Image>
 
 # Export Details
 
 Select from one of the following options to export events from CleverTap to the Segment dashboard:
 
-- [All events](doc:segmentcom-export#all-events)
-- [Selected events](doc:segmentcom-export#selected-events)
-- [Engagement events](doc:segmentcom-export#engagement-events)
+* [All events](doc:segmentcom-export#all-events)
+* [Selected events](doc:segmentcom-export#selected-events)
+* [Engagement events](doc:segmentcom-export#engagement-events)
 
 ## All Events
 
@@ -310,24 +233,24 @@ With this option, you can select the specific system events (from those listed i
 
 When you select this option, the following engagement events are exported:
 
-- Notification Sent
-- Notification Viewed
-- Notification Clicked
-- Push Impressions
-- Notification Replied
-- Control Group
-- Channel Unsubscribed
-- Push Impressions
-- Notification Delivered
-- AB Experiment Rendered
-- AB Experiment Stopped
-- AB Experiment Rolled Out
-- Geocluster Entered
-- Geocluster Exited
-- Reply Sent
-- App Uninstalled
-- Webhook Delivered
-- State Transitioned
-- UTM Visited
+* Notification Sent
+* Notification Viewed
+* Notification Clicked
+* Push Impressions
+* Notification Replied
+* Control Group
+* Channel Unsubscribed
+* Push Impressions
+* Notification Delivered
+* AB Experiment Rendered
+* AB Experiment Stopped
+* AB Experiment Rolled Out
+* Geocluster Entered
+* Geocluster Exited
+* Reply Sent
+* App Uninstalled
+* Webhook Delivered
+* State Transitioned
+* UTM Visited
 
 For more information about these events, refer to [Events](doc:events).
