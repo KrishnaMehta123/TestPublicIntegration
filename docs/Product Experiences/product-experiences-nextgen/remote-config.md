@@ -22,17 +22,17 @@ Variables are the building blocks of the Remote Config feature. Any element or f
 
 Remote Config allows you to:
 
-- **Deliver customized in-app experiences** for specific segments of your user base. For example, highlight the registration section on your application's home screen for new users.
-- **Change elements of your app in real-time** without requiring an update to be pushed to the app stores. For example, switch on a special discount offer and specify the discount percentage for non-paying users (users who have not yet converted).
-- **Streamline your messaging campaigns with the in-app user experience** for maximum engagement. For example, switch on a special event in your game via Remote Config for a selected segment and notify the segment about the event via a push and an in-app campaign.
-- **Test & release new features securely** with the option to revert back in case of any issues.
+* **Deliver customized in-app experiences** for specific segments of your user base. For example, highlight the registration section on your application's home screen for new users.
+* **Change elements of your app in real-time** without requiring an update to be pushed to the app stores. For example, switch on a special discount offer and specify the discount percentage for non-paying users (users who have not yet converted).
+* **Streamline your messaging campaigns with the in-app user experience** for maximum engagement. For example, switch on a special event in your game via Remote Config for a selected segment and notify the segment about the event via a push and an in-app campaign.
+* **Test & release new features securely** with the option to revert back in case of any issues.
 
 # Create Remote Config Variables
 
 **CleverTap Remote Config** offers two ways to set up your variables:
 
-- Create them manually from the Dashboard
-- Define them in the code and sync them to the Dashboard
+* Create them manually from the Dashboard
+* Define them in the code and sync them to the Dashboard
 
 ## Create Variables from the Dashboard
 
@@ -40,52 +40,24 @@ Variables can be created from the **Add button** in the Remote Config page.
 
 Each variable requires the following information:
 
-- Name (required)
-- Description (optional)
-- Value (required)
+* Name (required)
+* Description (optional)
+* Value (required)
 
-Variables created through the interface do not have a _default value_ similar to the variables synced from code. This means that the value you set in the Dashboard is immediately applied to all users.
+Variables created through the interface do not have a *default value* similar to the variables synced from code. This means that the value you set in the Dashboard is immediately applied to all users.
 
-To create a Remote Config Variable, go to _Product Experiences > Remote Config_. Click **Add** to add a variable. 
+To create a Remote Config Variable, go to *Product Experiences > Remote Config*. Click **Add** to add a variable. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/4961653705d0f4bfcfb71a83afe577cfd204303492bc8412be4ccc728db2cc3b-Screenshot_2025-01-08_at_15.02.22.png",
-        "",
-        "Add Remote Config Variable"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Add Remote Config Variable"
-    }
-  ]
-}
-[/block]
+<Image alt="Add Remote Config Variable" align="center" border={true} src="https://files.readme.io/4961653705d0f4bfcfb71a83afe577cfd204303492bc8412be4ccc728db2cc3b-Screenshot_2025-01-08_at_15.02.22.png">
+  Add Remote Config Variable
+</Image>
 
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3f5fcfbacffe8059d79809bf2dded48468a810579d8f9abb0113caaaaf553faa-Screenshot_2025-01-08_at_15.03.09.png",
-        "",
-        "Create Remote Config Variable"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Create Remote Config Variable"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Create Remote Config Variable" align="center" border={true} src="https://files.readme.io/3f5fcfbacffe8059d79809bf2dded48468a810579d8f9abb0113caaaaf553faa-Screenshot_2025-01-08_at_15.03.09.png">
+  Create Remote Config Variable
+</Image>
 
 > 📘 Creating File Type Variables.
-> 
+>
 > Creating File type Variables are currently not supported to be created from the Dashboard. They must be  synced from the code.
 
 ## Define and Sync Variables from Code
@@ -94,16 +66,16 @@ To define which elements of your app you want to control, you need to integrate 
 
 CleverTap supports creating the following variable data types: 
 
-- Number
-- String
-- Boolean
-- File type
+* Number
+* String
+* Boolean
+* File type
 
 > 📘 Prerequisite
-> 
-> To get a complete view of your application’s variables, you must integrate the requried CleverTap’s SDK and sync your defined variables with the CleverTap dashboard. After the sync, you must publish the newly-created variables from the _Remote Config page_ of the CleverTap dashboard.
+>
+> To get a complete view of your application’s variables, you must integrate the requried CleverTap’s SDK and sync your defined variables with the CleverTap dashboard. After the sync, you must publish the newly-created variables from the *Remote Config page* of the CleverTap dashboard.
 
-In your app's code, any functionality defined as a variable has a default value or state. For instance, every time you add a new feature, it is initially always hidden with a visibility value of `false`. After syncing the variables to CleverTap, you can view these default values on the _Remote Config_ page. After the initial publish, you can decide whether to override the default values for an existing one or create a new segment and define a new variable value. 
+In your app's code, any functionality defined as a variable has a default value or state. For instance, every time you add a new feature, it is initially always hidden with a visibility value of `false`. After syncing the variables to CleverTap, you can view these default values on the *Remote Config* page. After the initial publish, you can decide whether to override the default values for an existing one or create a new segment and define a new variable value. 
 
 The following sections provide information about defining and updating a variable value for a particular segment
 
@@ -114,270 +86,110 @@ To override a variable value for a new segment:
 1. Search for the required variable from the search bar or select the required variable from the variable list displayed under the Remote Config page.
 2. Click **Override** dropdown and scroll down to the end of the list.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b46483b-small-New_segment_in_Remote_Config.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" className="border" border={true} src="https://files.readme.io/b46483b-small-New_segment_in_Remote_Config.png" />
 
+3. Select *New Segment* from the dropdown. The *Create New Segment* popup opens.
 
-3. Select _New Segment_ from the dropdown. The _Create New Segment_ popup opens.
+<Image alt="Segment Builder" align="center" border={true} src="https://files.readme.io/484e98b-small-Create_new_segment.png">
+  Segment Builder
+</Image>
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/484e98b-small-Create_new_segment.png",
-        null,
-        "Segment Builder"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Segment Builder"
-    }
-  ]
-}
-[/block]
+4. Enter the criteria for your target audience. Consider the example where your target audience would be users who reside in India and have performed the *Added to cart* event but did not charge (see figure below).
 
+<Image alt="Enter Segment Criteria" align="center" border={true} src="https://files.readme.io/af45e0a-small-Segment_with_Rules.png">
+  Enter Segment Criteria
+</Image>
 
-4. Enter the criteria for your target audience. Consider the example where your target audience would be users who reside in India and have performed the _Added to cart_ event but did not charge (see figure below).
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/af45e0a-small-Segment_with_Rules.png",
-        null,
-        "Enter Segment Criteria"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Enter Segment Criteria"
-    }
-  ]
-}
-[/block]
-
-
-5. Toggle ON _Save As_  if you want to save the segment for future use. Keeping the toggle off does not save the segment.
+5. Toggle ON *Save As*  if you want to save the segment for future use. Keeping the toggle off does not save the segment.
 6. Click **Apply** to save the segment. The newly-created segment is now visible under the list of segments on the right side of the screen.
 
    > 🚧 Remote Config Segments
-   > 
-   > The segments that are created and saved on the Remote Config page can only be seen and reused within that particular page. These segments will not be visible in other areas of the dashboard such as _Segments_ or _Campaigns_. Similarly, any user segments created in the _Segments_ section will not be visible in Remote Config. However, this is only a temporary limitation that will be removed in the future
-7. Edit the variable value for the selected segment in the right-side panel and click **Publish**. After you click **Publish**, the variable update is displayed under the _Live_ tab, as shown in the following figure:
+   >
+   > The segments that are created and saved on the Remote Config page can only be seen and reused within that particular page. These segments will not be visible in other areas of the dashboard such as *Segments* or *Campaigns*. Similarly, any user segments created in the *Segments* section will not be visible in Remote Config. However, this is only a temporary limitation that will be removed in the future
+7. Edit the variable value for the selected segment in the right-side panel and click **Publish**. After you click **Publish**, the variable update is displayed under the *Live* tab, as shown in the following figure:
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5f9a7a1-small-Published.png",
-        null,
-        "Variables in Published State"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Variables in Published State"
-    }
-  ]
-}
-[/block]
+<Image alt="Variables in Published State" align="center" border={true} src="https://files.readme.io/5f9a7a1-small-Published.png">
+  Variables in Published State
+</Image>
 
+All the changes you make to the *Remote Config page* are, by default, saved as a draft and are highlighted in light yellow color in the table, as shown in the following figure.  If you want to discard the current draft, click the **Discard** button.
 
-All the changes you make to the _Remote Config page_ are, by default, saved as a draft and are highlighted in light yellow color in the table, as shown in the following figure.  If you want to discard the current draft, click the **Discard** button.
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/eea0fc0-small-Draft_mode_in_remte_config.png",
-        null,
-        "Draft Mode in Remote Config."
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Draft Mode in Remote Config."
-    }
-  ]
-}
-[/block]
-
+<Image alt="Draft Mode in Remote Config." align="center" border={true} src="https://files.readme.io/eea0fc0-small-Draft_mode_in_remte_config.png">
+  Draft Mode in Remote Config.
+</Image>
 
 > 📘 Note
-> 
+>
 > The draft in the Remote Config page is shared with all the dashboard users within your app account for everyone to contribute. The changes you make are visible to the rest of the dashboard users. 
-> 
-> To avoid overriding or discarding someone else’s changes, verify who made the latest changes to an existing draft from the top right corner of the _Remote Config_ page.
+>
+> To avoid overriding or discarding someone else’s changes, verify who made the latest changes to an existing draft from the top right corner of the *Remote Config* page.
 
 # Override Variable Value for an Existing Segment
 
 To define the variable behavior for an existing segment:
 
-1. Search for the required variable from the search bar or select the required variable from the variable list displayed under the _Remote Config_ page.
+1. Search for the required variable from the search bar or select the required variable from the variable list displayed under the *Remote Config* page.
 2. Select an existing segment from the Override dropdown (for example, a segment of German users) and update the variable value to modify the behavior as required.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a6dd6a3-small-Users_in_Germany.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/a6dd6a3-small-Users_in_Germany.png" />
 
 3. Click **Publish** to make these changes live on your application.
 
-You can also test your application's variable behavior in the draft version using the _Preview & Test_ feature. For more information, refer to [Preview and Test Remote Config](https://docs.clevertap.com/docs/remote-config#preview-and-test-variables).
+You can also test your application's variable behavior in the draft version using the *Preview & Test* feature. For more information, refer to [Preview and Test Remote Config](https://docs.clevertap.com/docs/remote-config#preview-and-test-variables).
 
 > 📘 Key Points to Remember
-> 
-> - The change in variable behavior reflects in the live application only after the draft is published.
-> - During application startup, CleverTap verifies the user's eligibility for different segments and retrieve the corresponding variables. Later on during the session, it may be necessary to retrieve values if there are any signification milestones in the application where users are expected to transition between segments. For example, if there is a value override for certain variables for the _Paying users_ segment, it would be good to fetch them again at the time of purchase within the app.
+>
+> * The change in variable behavior reflects in the live application only after the draft is published.
+> * During application startup, CleverTap verifies the user's eligibility for different segments and retrieve the corresponding variables. Later on during the session, it may be necessary to retrieve values if there are any signification milestones in the application where users are expected to transition between segments. For example, if there is a value override for certain variables for the *Paying users* segment, it would be good to fetch them again at the time of purchase within the app.
 
 # User Profile Personalization
 
 User Profile Personalization is available only for variables of type **String**.
 
-Value personalization is based on **User Properties **and is supported for **String** Variables. This allows you to personalize the Variable Value that will be returned and used by your application based on your users' unique properties. 
+Value personalization is based on **User Properties** and is supported for **String** Variables. This allows you to personalize the Variable Value that will be returned and used by your application based on your users' unique properties. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a73244ac51a0d5dd34beb666d4c790f740326da085d6f9e178a83c0b4d6cefa9-Screenshot_2025-01-08_at_14.27.02.png",
-        "",
-        "Step 1"
-      ],
-      "align": "center",
-      "sizing": "400px",
-      "border": true,
-      "caption": "Select Personalized Value"
-    }
-  ]
-}
-[/block]
+<Image alt="Step 1" align="center" width="400px" border={true} src="https://files.readme.io/a73244ac51a0d5dd34beb666d4c790f740326da085d6f9e178a83c0b4d6cefa9-Screenshot_2025-01-08_at_14.27.02.png">
+  Select Personalized Value
+</Image>
 
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9c065baa43b5df8bc8e56cdd7bcb1c72a37b580cc72f7d6f38c73d067c14af73-Screenshot_2025-01-08_at_14.27.52.png",
-        "",
-        "Step 2"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Set the value from User Profile Property"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Step 2" align="center" border={true} src="https://files.readme.io/9c065baa43b5df8bc8e56cdd7bcb1c72a37b580cc72f7d6f38c73d067c14af73-Screenshot_2025-01-08_at_14.27.52.png">
+  Set the value from User Profile Property
+</Image>
 
 # Segment Prioritization
 
 When there are multiple segments, and a user meets the criteria for more than one segment, the default segment (All users) is assigned the lowest priority, and the segment that appears at the top of the list is given the highest priority. 
 
-Let us consider an example. If a user qualifies for two segments - _Paying Users_ and _All Users_, in this case, the user sees the variable value defined for the _New Users_ segment as shown below.
+Let us consider an example. If a user qualifies for two segments - *Paying Users* and *All Users*, in this case, the user sees the variable value defined for the *New Users* segment as shown below.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/43fb92befa991813c02c9ca366c43496ef5f3dea7cf37b8fb7743be881e466b3-image.png",
-        null,
-        "Multiple Segments"
-      ],
-      "align": "center",
-      "sizing": "60% ",
-      "border": true,
-      "caption": "Multiple Segments "
-    }
-  ]
-}
-[/block]
-
+<Image alt="Multiple Segments" align="center" width="60% " border={true} src="https://files.readme.io/43fb92befa991813c02c9ca366c43496ef5f3dea7cf37b8fb7743be881e466b3-image.png">
+  Multiple Segments 
+</Image>
 
 To change the priority, click **Prioritize** and drag and drop the segment to change the priority. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/51068366f3db442bc351b5a4c63968569727cb346535272d6668724e0ac9f363-image.png",
-        null,
-        "Change Segment Prioritization"
-      ],
-      "align": "center",
-      "sizing": "60% ",
-      "border": true,
-      "caption": "Change Segment Priority"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Change Segment Prioritization" align="center" width="60% " border={true} src="https://files.readme.io/51068366f3db442bc351b5a4c63968569727cb346535272d6668724e0ac9f363-image.png">
+  Change Segment Priority
+</Image>
 
 # Remote Config Version History
 
 After a Remote Config draft version is published, all the previous live versions are stored along with the following corresponding metadata: created by and the timestamp when the version was published. Each version can be restored when needed. To view the version history and restore a specific version:
 
-1. Navigate to _Published versions_.
+1. Navigate to *Published versions*.
 2. From the Published version history, select the version of your choice.
 3. Click **RESTORE** (see figure below).
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/976c144-Version_history_in_remote_config.gif",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/976c144-Version_history_in_remote_config.gif" />
 
 # Preview and Test Variables
 
-For all the variable updates made in the draft mode, you can test their behavior on a device using the _Preview & Test_ feature. By clicking _Preview & Test_, you enable the variable values from your unpublished draft for all profiles marked as test profiles for your app and the associated devices.
+For all the variable updates made in the draft mode, you can test their behavior on a device using the *Preview & Test* feature. By clicking *Preview & Test*, you enable the variable values from your unpublished draft for all profiles marked as test profiles for your app and the associated devices.
 
 > 🚧 Mark Test Profiles
-> 
+>
 > For testing the behavior of variables in draft mode, it is a prerequisite to [mark certain profiles as Test profile](doc:concepts-user-profiles#mark-a-user-profile-as-a-test-profile). It is also imperative for the test profiles to qualify for the specific segment to be able to view the variable changes.
-> 
+>
 > Let us consider the following example to understand this better:
-> 
+>
 > If you make changes to a variable value for a segment of Indian users and want to preview them on your test device, you need to log in to your app on your device with an Indian user profile that is marked as a test profile to qualify for the segment and view the specific changes. Logging in as a user in the US, for instance, will not allow you to see the changes you made.
