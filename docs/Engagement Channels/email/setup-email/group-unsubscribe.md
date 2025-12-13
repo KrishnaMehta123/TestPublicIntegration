@@ -24,107 +24,48 @@ You can group every marketing campaign or outgoing communication message into di
 
 Perform the following steps to create a Subscription Group from a particular campaign.
 
-1. From the CleverTap dashboard, select _Settings_ > _Engage_ > _Setup_ _Subscription Groups_.
-2. Enter the group's name, provide a brief description, and select the _Email_ channel.
+1. From the CleverTap dashboard, select *Settings* > *Engage* > *Setup* *Subscription Groups*.
+2. Enter the group's name, provide a brief description, and select the *Email* channel.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2c812d9-Email_subscription_group_setup.png",
-        "Create Email Subscription Group",
-        1027
-      ],
-      "align": "center",
-      "sizing": "smart",
-      "border": true,
-      "caption": "Create Subscription Group"
-    }
-  ]
-}
-[/block]
-
+<Image title="Create Email Subscription Group" alt={1027} align="center" width="smart" border={true} src="https://files.readme.io/2c812d9-Email_subscription_group_setup.png">
+  Create Subscription Group
+</Image>
 
 3. Click **Save**.
 
 > 📘 Active Subscription Groups
-> 
+>
 > Customers can set up 50 active groups. They can also archive groups to create new ones.
 
 ## Use Subscription Groups in Segments
 
-1. From the CleverTap dashboard, select  _Segments_  > _Find People_.
+1. From the CleverTap dashboard, select  *Segments*  > *Find People*.
 
-2. From _Display common properties such as_ section, click **+Properties.**
+2. From *Display common properties such as* section, click **+Properties.**
 
-3. Click **+Properties** and select _Subscription Groups_ from the dropdown menu.
+3. Click **+Properties** and select *Subscription Groups* from the dropdown menu.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/fca954f-Email_subscription_group_list.png",
-        "Use Subscription Groups in Segments",
-        929
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Use Subscription Groups in Segments"
-    }
-  ]
-}
-[/block]
+<Image title="Use Subscription Groups in Segments" alt={929} align="center" border={true} src="https://files.readme.io/fca954f-Email_subscription_group_list.png">
+  Use Subscription Groups in Segments
+</Image>
 
+4. Select the *Exclude/Include* parameter and accept the All default or select one or multiple options.
 
-4. Select the _Exclude/Include_ parameter and accept the All default or select one or multiple options.
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/4412785-Email_subscription_group_include_exclude.png",
-        "Include/Exclude Email Subscription Groups",
-        926
-      ],
-      "align": "center",
-      "sizing": "smart",
-      "border": true,
-      "caption": "Include/Exclude Subscription Groups"
-    }
-  ]
-}
-[/block]
-
+<Image title="Include/Exclude Email Subscription Groups" alt={926} align="center" width="smart" border={true} src="https://files.readme.io/4412785-Email_subscription_group_include_exclude.png">
+  Include/Exclude Subscription Groups
+</Image>
 
 ## Use Subscription Groups in Campaigns
 
 Subscription groups allow users to select the content they want to receive, reducing unsubscription rates and fostering strong brand-user relationships. This approach enhances user satisfaction and builds a more personalized connection with your audience.
 
-You can select the subscription group you want to include in your campaign from the _Select Subscription Groups_ list. This allows you to target users who have subscribed to all the groups you selected for the campaign. To do so:
+You can select the subscription group you want to include in your campaign from the *Select Subscription Groups* list. This allows you to target users who have subscribed to all the groups you selected for the campaign. To do so:
 
-1. From the CleverTap dashboard, select _Campaign_ and create an email campaign. Refer to [Create Email Campaign](https://docs.clevertap.com/docs/create-message-email).
-2. From the _Who_ > _Control group and targeting cap_ > _Send campaign only to users subscribed to all groups selected below_. 
-3. Select the groups you want to include in your campaign from the _Select subscription groups_ list.
+1. From the CleverTap dashboard, select *Campaign* and create an email campaign. Refer to [Create Email Campaign](https://docs.clevertap.com/docs/create-message-email).
+2. From the *Who* > *Control group and targeting cap* > *Send campaign only to users subscribed to all groups selected below*. 
+3. Select the groups you want to include in your campaign from the *Select subscription groups* list.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e0653d9-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/e0653d9-image.png" />
 
 4. Click **Done** and click **Continue**.
 5. Complete creating the email campaign.
@@ -135,22 +76,8 @@ Refer to [handling unsubscribes](https://docs.clevertap.com/docs/handling-unsubs
 
 ## Track Unsubscribes
 
-Whenever a user unsubscribes, CleverTap raises a system event called _Channel Unsubscribed_ which updates the user's property with the status of subscription for the group.
+Whenever a user unsubscribes, CleverTap raises a system event called *Channel Unsubscribed* which updates the user's property with the status of subscription for the group.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b1c9872-Unsubscribe_last_step.png",
-        "Track Unsubscribes",
-        1012
-      ],
-      "align": "center",
-      "sizing": "50% ",
-      "border": true,
-      "caption": "Track Subscription Groups"
-    }
-  ]
-}
-[/block]
+<Image title="Track Unsubscribes" alt={1012} align="center" width="50% " border={true} src="https://files.readme.io/b1c9872-Unsubscribe_last_step.png">
+  Track Subscription Groups
+</Image>
