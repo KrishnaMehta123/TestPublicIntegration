@@ -12,8 +12,8 @@ next:
 ---
 # Payment Methods
 
-Under the CleverTap Essential plan, CleverTap accepts all major credit or debit cards (for example, Visa, Mastercard, Discover, and JCB).  
-We also allow eNACH (eMandate via Net Banking) for Indian customers paying in INR. For more information about how it works, refer to the [eMandate via NetBanking](https://docs.clevertap.com/docs/emandate-via-netbanking?utm_source=C4S&utm_medium=doc&utm_id=KB).
+Under the CleverTap Essential plan, CleverTap accepts all major credit or debit cards (for example, Visa, Mastercard, Discover, and JCB).\
+We also allow eNACH (eMandate via Net Banking) for Indian customers paying in INR. For more information about how it works, refer to the [eMandate via NetBanking](https://docs.clevertap.com/docs/emandate-via-netbanking?utm_source=C4S\&utm_medium=doc\&utm_id=KB).
 
 ## Managing Payment Method
 
@@ -24,7 +24,7 @@ CleverTap provides the flexibility of having more than one payment method. One o
 If you are an organization member with billing permissions (Admins), you can update the billing and payment information by clicking **Organization** on the left navigation menu of the dashboard. Then, click **Payment Methods** to update the required details.
 
 > 📘 Billing Currency
-> 
+>
 > You cannot change the currency for billing.
 
 ## Payment Failure
@@ -34,8 +34,8 @@ In case your payment fails, we notify you right away. You must complete your pay
 During the grace period, the incoming data, data exports, and dashboard access are not affected. If the payment details are not updated within the grace period, your account access is locked. If you do not clear all outstanding payments within 14 days of the account lock, your account is canceled. After the account is canceled, you can no longer retrieve your account, and all the data is deleted permanently.
 
 > 📘 New RBI eMandate Regulations
-> 
-> For Indian Customers, with new Reserve Bank of India (RBI) e-mandate regulations coming into effect, there are high chances your payment may fail. This is because the processing of e-mandate on cards for recurring transactions requires an Additional Factor of Authentication (AFA). For more information, refer to [Compliance with RBI eMandate Regulations](https://docs.clevertap.com/docs/compliance-with-rbi-emandate-regulations?utm_source=C4S&utm_medium=doc&utm_id=KB).
+>
+> For Indian Customers, with new Reserve Bank of India (RBI) e-mandate regulations coming into effect, there are high chances your payment may fail. This is because the processing of e-mandate on cards for recurring transactions requires an Additional Factor of Authentication (AFA). For more information, refer to [Compliance with RBI eMandate Regulations](https://docs.clevertap.com/docs/compliance-with-rbi-emandate-regulations?utm_source=C4S\&utm_medium=doc\&utm_id=KB).
 
 ## Exceeding Plan Limits
 
@@ -45,80 +45,183 @@ If you exceed your plan limits, you can upgrade to a higher MAU tier before the 
 
 When your MAU usage exceeds the plan's MAU limit, you will be charged extra for each additional MAU. For the Essential Plan, the following rates apply for overages:
 
-- **Base Price**: $1.25 per 100 MAUs in USD and ₹100 in INR.
-- **Overage Rate**: Overage charges are calculated at 1.2 times the base price for each additional 100 MAU.
-- **Add-On Surcharge**: An additional 10% surcharge applies to the calculated overage for each add-on.
+* **Base Price**: $1.25 per 100 MAUs in USD and ₹100 in INR.
+* **Overage Rate**: Overage charges are calculated at 1.2 times the base price for each additional 100 MAU.
+* **Add-On Surcharge**: An additional 10% surcharge applies to the calculated overage for each add-on.
 
 The following example helps us understand the calculation of overage charges for a USD subscription with an MAU tier of 20,000, including add-ons:
 
-[block:parameters]
-{
-  "data": {
-    "h-0": "MAU Limit",
-    "h-1": "Monthly Billable Users",
-    "h-2": "Base Price",
-    "h-3": "Add-on Price",
-    "h-4": "Overage for MAU",
-    "h-5": "Overage for Add-on",
-    "h-6": "Billable Amount",
-    "0-0": "Up to 20,000",
-    "0-1": "\\<20,000 without add-ons",
-    "0-2": "$250",
-    "0-3": "$0",
-    "0-4": "$0",
-    "0-5": "$0",
-    "0-6": "$250",
-    "1-0": "Up to 20,000",
-    "1-1": "\\<20,000 with add-ons",
-    "1-2": "$250",
-    "1-3": "$25",
-    "1-4": "$0",
-    "1-5": "$0",
-    "1-6": "$275",
-    "2-0": "Up to 20,000",
-    "2-1": "22,000 (2,000 MAUs overage) without add-ons",
-    "2-2": "$250",
-    "2-3": "$0",
-    "2-4": "Overage [(2,000/100)x$1.25x1.2] = $30",
-    "2-5": "$0",
-    "2-6": "$280",
-    "3-0": "Up to 20,000",
-    "3-1": "22,000 (2,000 MAUs overage) with add-ons",
-    "3-2": "$250",
-    "3-3": "$25",
-    "3-4": "Overage [(2,000/100)x$1.25x1.2] = $30",
-    "3-5": "Overage  \n$30x10/100 = $3",
-    "3-6": "$308"
-  },
-  "cols": 7,
-  "rows": 4,
-  "align": [
-    "left",
-    "left",
-    "left",
-    "left",
-    "left",
-    "left",
-    "left"
-  ]
-}
-[/block]
+<Table align={["left","left","left","left","left","left","left"]}>
+  <thead>
+    <tr>
+      <th>
+        MAU Limit
+      </th>
 
+      <th>
+        Monthly Billable Users
+      </th>
+
+      <th>
+        Base Price
+      </th>
+
+      <th>
+        Add-on Price
+      </th>
+
+      <th>
+        Overage for MAU
+      </th>
+
+      <th>
+        Overage for Add-on
+      </th>
+
+      <th>
+        Billable Amount
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        Up to 20,000
+      </td>
+
+      <td>
+        \<20,000 without add-ons
+      </td>
+
+      <td>
+        $250
+      </td>
+
+      <td>
+        $0
+      </td>
+
+      <td>
+        $0
+      </td>
+
+      <td>
+        $0
+      </td>
+
+      <td>
+        $250
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Up to 20,000
+      </td>
+
+      <td>
+        \<20,000 with add-ons
+      </td>
+
+      <td>
+        $250
+      </td>
+
+      <td>
+        $25
+      </td>
+
+      <td>
+        $0
+      </td>
+
+      <td>
+        $0
+      </td>
+
+      <td>
+        $275
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Up to 20,000
+      </td>
+
+      <td>
+        22,000 (2,000 MAUs overage) without add-ons
+      </td>
+
+      <td>
+        $250
+      </td>
+
+      <td>
+        $0
+      </td>
+
+      <td>
+        Overage [(2,000/100)x$1.25x1.2] = $30
+      </td>
+
+      <td>
+        $0
+      </td>
+
+      <td>
+        $280
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Up to 20,000
+      </td>
+
+      <td>
+        22,000 (2,000 MAUs overage) with add-ons
+      </td>
+
+      <td>
+        $250
+      </td>
+
+      <td>
+        $25
+      </td>
+
+      <td>
+        Overage [(2,000/100)x$1.25x1.2] = $30
+      </td>
+
+      <td>
+        Overage\
+        $30x10/100 = $3
+      </td>
+
+      <td>
+        $308
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 \*Excluding applicable taxes.
 
 ### Monitor and Manage Overages
 
-You can monitor your plan’s estimated MAU usage and overages by navigating to _Organization_ > _My Plan >_ _Usage Summary_. Overage charges are calculated pro-rata from the start of the billing period for the month in which the overage occurred.
+You can monitor your plan’s estimated MAU usage and overages by navigating to *Organization* > *My Plan >* *Usage Summary*. Overage charges are calculated pro-rata from the start of the billing period for the month in which the overage occurred.
 
 To avoid overage charges, consider upgrading your subscription to a higher MAU tier.
 
 > 📘 MBU Usage over 300%
-> 
+>
 > You may lose access to your account for any MBU usage over 300%. There are no overage charges levied during the trial period.
 
 > 📘 Softlock for Annual Payments
-> 
+>
 > The softlock for annual payment happens at 120%. If your **Annual Billable Users** exceed 120% of the annual data point limit, then your account gets softlocked.
 
 ## Alert for Overages
@@ -137,7 +240,7 @@ If you do not upgrade by the next billing date (the 1st of each month), your acc
 
 ## View & Manage Invoices
 
-Whenever you purchase a CleverTap Essentials subscription, you can find your invoices under the Billing tab of your admin section. The invoice is sent on the first of every month only to the email added under the billing details section. For more details on changing the invoice recipient, refer to the [Change Invoice Recipients and Billing Details](https://docs.clevertap.com/docs/billing#section-change-invoice-recipients-and-billing-details?utm_source=C4Sdoc&utm_medium=doc&utm_campaign=KB) section.
+Whenever you purchase a CleverTap Essentials subscription, you can find your invoices under the Billing tab of your admin section. The invoice is sent on the first of every month only to the email added under the billing details section. For more details on changing the invoice recipient, refer to the [Change Invoice Recipients and Billing Details](https://docs.clevertap.com/docs/billing#section-change-invoice-recipients-and-billing-details?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB) section.
 
 To find your invoices:
 
@@ -146,21 +249,21 @@ To find your invoices:
 3. To view the entire invoice, click on an invoice number.
 
 > 📘 Invoice Access
-> 
+>
 > Only account admins can access and update invoices.
 
 # Tax Invoicing
 
-- **VAT (Value-Added Tax)**: A field is provided to USD customers for entering tax numbers, which is shown in the invoice for USD accounts.
-- **GST (Goods and Services Tax)**: CleverTap supports GST invoicing for customers in India. GST (Goods and Services Tax) is a mandatory levy for all Indian Rupee (INR) invoices as per regulatory requirements in India. Businesses registered in India can input their GSTIN (GST Identification Number) during the signup process.
-- **TDS (Tax Deducted at Source)**: Compliance with regards to the TDS or withholding taxes is required to be taken by the customer. To comply with the requirement, you must gross up the amount paid to CleverTap and accordingly calculate the TDS on the same.  
-  For example, If INR 14000 + GST is the monthly invoice and you need to withhold 2% TDS, then 2% of Rs.14000 or INR 280 becomes the withholding tax, and you have to expense it out at your end. Please check the terms and conditions mentioned on the online page related to TDS or withholding taxes. Please refer to [section 6.2](https://clevertap.com/terms-service?utm_source=C4Sdoc&utm_medium=doc&utm_campaign=KB) of the terms and conditions.
+* **VAT (Value-Added Tax)**: A field is provided to USD customers for entering tax numbers, which is shown in the invoice for USD accounts.
+* **GST (Goods and Services Tax)**: CleverTap supports GST invoicing for customers in India. GST (Goods and Services Tax) is a mandatory levy for all Indian Rupee (INR) invoices as per regulatory requirements in India. Businesses registered in India can input their GSTIN (GST Identification Number) during the signup process.
+* **TDS (Tax Deducted at Source)**: Compliance with regards to the TDS or withholding taxes is required to be taken by the customer. To comply with the requirement, you must gross up the amount paid to CleverTap and accordingly calculate the TDS on the same.\
+  For example, If INR 14000 + GST is the monthly invoice and you need to withhold 2% TDS, then 2% of Rs.14000 or INR 280 becomes the withholding tax, and you have to expense it out at your end. Please check the terms and conditions mentioned on the online page related to TDS or withholding taxes. Please refer to [section 6.2](https://clevertap.com/terms-service?utm_source=C4Sdoc\&utm_medium=doc\&utm_campaign=KB) of the terms and conditions.
 
 # Change Invoice Recipients and Billing Details
 
 To change the invoice recipient or update invoice details:
 
-1. Go to _Organization_ > _Billing_ > _Billing details_ > on the CleverTap dashboard.
+1. Go to *Organization* > *Billing* > *Billing details* > on the CleverTap dashboard.
 2. Make the required changes and click **Save** to apply your changes.
 
 Any changes made to these settings will be reflected on the next invoice. For more information on the billing details page, refer to [Add Billing Details](doc:project-setup#add-billing-details).
