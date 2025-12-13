@@ -22,7 +22,7 @@ To create keys:
 2. Click +Key to create a new key. 
 
 > 📘 Note
-> 
+>
 > The name of the key defined here must match the name of the key defined in the app. This name cannot be changed later. You can add up to 500 keys.
 
 3. Add the Key definition. 
@@ -31,23 +31,9 @@ Let us add some sample values:
 
 You can now activate or deactivate the dark mode based on the Keys. The default value that the app is expecting for this key is `3`.  These values are set in your app. Let us assume that the key value 3 means to activate the feature, and 4 means to deactivate the feature. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/eafa5c2-product_exp_keys.png",
-        "Add Key Details from CleverTap's Keys page",
-        2880
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Add Key Details"
-    }
-  ]
-}
-[/block]
-
+<Image title="Add Key Details from CleverTap's Keys page" alt={2880} align="center" border={true} src="https://files.readme.io/eafa5c2-product_exp_keys.png">
+  Add Key Details
+</Image>
 
 4. Click Save. The `dark_mode` key is now listed on the Manage Keys page. 
 
@@ -70,24 +56,9 @@ To define the segments:
 4. Create a segment by users who performed and/or did not perform an event.  You can also create segments for user properties such as demographics, geography, and so on. For our example, create a segment of iPhone users living in New York. 
 5. Save the segment. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/483d933-ProductExp_Segment_Create.png",
-        "Create segments who will receive app changes",
-        1182
-      ],
-      "align": "center",
-      "sizing": "100",
-      "border": true,
-      "caption": "Create Segments Who will Receive App Changes"
-    }
-  ]
-}
-[/block]
-
+<Image title="Create segments who will receive app changes" alt={1182} align="center" width="100%" border={true} src="https://files.readme.io/483d933-ProductExp_Segment_Create.png">
+  Create Segments Who will Receive App Changes
+</Image>
 
 ## Edit/Clone a Segment
 
@@ -96,49 +67,21 @@ To define the segments:
 
 # Create Goals
 
-Goals are used to evaluate the performance of an A/B test. It is an event and when a user performs this event, it is considered a conversion.  
+Goals are used to evaluate the performance of an A/B test. It is an event and when a user performs this event, it is considered a conversion.\
 Navigate to Product Experiences >  Goals. Create a goal and save it. This goal is now available for selection in Product Experiences.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8726071-AB_Goals.png",
-        "Create goals to evaluate the performance of A/B tests",
-        874
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Create Goals for A/B Tests"
-    }
-  ]
-}
-[/block]
-
+<Image title="Create goals to evaluate the performance of A/B tests" alt={874} align="center" border={true} src="https://files.readme.io/8726071-AB_Goals.png">
+  Create Goals for A/B Tests
+</Image>
 
 ## Archive Goals
 
-- Navigate to Product Experiences >  Goals.
-- Click the archive icon to archive a goal. 
+* Navigate to Product Experiences >  Goals.
+* Click the archive icon to archive a goal. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/169925e-AB_Segment_Goals_Archive.png",
-        "Archive goals for A/B tests",
-        879
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Archiving Goals for A/B Tests"
-    }
-  ]
-}
-[/block]
-
+<Image title="Archive goals for A/B tests" alt={879} align="center" border={true} src="https://files.readme.io/169925e-AB_Segment_Goals_Archive.png">
+  Archiving Goals for A/B Tests
+</Image>
 
 You can view all the archived Goals by selecting the show archived goals box at the bottom of the goals list.  If a goal is used in a product experience then it cannot be archived.
 
@@ -149,37 +92,12 @@ This is a global setting that is applicable only to A/B tests.  You can choose t
 1. Navigate to Product Experiences > Settings > Mutually exclusive A/B tests.
 2. Turn on the toggle.  These users will be included only in one A/B test at a time. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/463bdd2-AB_Settings_mutually_exclusive_users.png",
-        "Toggle ON the Mutually exclusive A/B tests options",
-        870
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Enabling Mutually exclusive A/B tests"
-    }
-  ]
-}
-[/block]
-
+<Image title="Toggle ON the Mutually exclusive A/B tests options" alt={870} align="center" border={true} src="https://files.readme.io/463bdd2-AB_Settings_mutually_exclusive_users.png">
+  Enabling Mutually exclusive A/B tests
+</Image>
 
 # Video Tutorial
 
 For further information, you can watch the following video on product configs and feature flags:
 
-[block:embed]
-{
-  "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FtfHhsvWvPxk%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DtfHhsvWvPxk&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FtfHhsvWvPxk%2Fhqdefault.jpg&key=7788cb384c9f4d5dbbdbeffd9fe4b92f&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
-  "url": "https://www.youtube.com/watch?v=tfHhsvWvPxk",
-  "title": "Product Demo: Product Configs & Feature Flags",
-  "favicon": "https://www.google.com/favicon.ico",
-  "image": "https://i.ytimg.com/vi/tfHhsvWvPxk/hqdefault.jpg",
-  "provider": "https://www.youtube.com/",
-  "href": "https://www.youtube.com/watch?v=tfHhsvWvPxk",
-  "typeOfEmbed": "default"
-}
-[/block]
+<Embed url="https://www.youtube.com/watch?v=tfHhsvWvPxk" title="Product Demo: Product Configs & Feature Flags" favicon="https://www.google.com/favicon.ico" image="https://i.ytimg.com/vi/tfHhsvWvPxk/hqdefault.jpg" provider="youtube.com" href="https://www.youtube.com/watch?v=tfHhsvWvPxk" typeOfEmbed="default" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fwww.youtube.com%252Fembed%252FtfHhsvWvPxk%253Ffeature%253Doembed%26display_name%3DYouTube%26url%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DtfHhsvWvPxk%26image%3Dhttps%253A%252F%252Fi.ytimg.com%252Fvi%252FtfHhsvWvPxk%252Fhqdefault.jpg%26key%3D7788cb384c9f4d5dbbdbeffd9fe4b92f%26type%3Dtext%252Fhtml%26schema%3Dyoutube%22%20width%3D%22854%22%20height%3D%22480%22%20scrolling%3D%22no%22%20title%3D%22YouTube%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%3B%20encrypted-media%3B%20picture-in-picture%3B%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" />
