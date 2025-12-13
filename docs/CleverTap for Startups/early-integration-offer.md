@@ -20,7 +20,7 @@ Read the following terms and conditions to know more:
 
 * You must have completed all the milestones in the Integration Checklist on any of your LIVE projects within 21 days of signing up.
 
-* This offer cannot be combined with any other offer, such as the [CleverTap Leap Program] (https://clevertap.com/leap/). For example, the credit will be discarded if you plan to move to the CleverTap Leap Program before receiving the $200 credit.
+* This offer cannot be combined with any other offer, such as the [CleverTap Leap Program] ([https://clevertap.com/leap/](https://clevertap.com/leap/)). For example, the credit will be discarded if you plan to move to the CleverTap Leap Program before receiving the $200 credit.
 
 * This credit can not be transferred or withdrawn. Once added to your account, it will automatically get applied to your future invoices within CleverTap.
 
