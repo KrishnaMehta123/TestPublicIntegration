@@ -16,15 +16,15 @@ This section covers various email tasks, including the integrations, and inbox p
 
 # Email Integrations
 
-Before you can create email campaigns, you must integrate an email service provider with CleverTap. 
+Before you can create email campaigns, you must integrate an email service provider with CleverTap.
 
 CleverTap supports integrations with popular email service providers. Select your email service provider from the following list:
 
-* [Mandrill](doc:mandrill) 
-* [Amazon Simple Email Service](doc:amazon-simple-email-service) 
-* [Postmark](doc:postmark) 
-* [SendGrid](doc:sendgrid) 
-* [Gmail/Google Apps](doc:gmail-google-apps) 
+* [Mandrill](doc:mandrill)
+* [Amazon Simple Email Service](doc:amazon-simple-email-service)
+* [Postmark](doc:postmark)
+* [SendGrid](doc:sendgrid)
+* [Gmail/Google Apps](doc:gmail-google-apps)
 
 For all other service providers, use [Generic SMTP](doc:generic-smtp).
 
@@ -34,12 +34,13 @@ Once you have integrated an email service provider with CleverTap, you can set u
 
 To add a provider, perform the following steps:
 
-1. From the dashboard, navigate to *Settings* > *Engage* > *Channels* > *Email*.
-2. Click **+ Provider** to add a provider. 
+1. From the dashboard, navigate to _Settings_ > _Engage_ > _Channels_ > _Email_.
+2. Click **+ Provider** to add a provider.
 
-<Image title="Click +Provider" alt={1162} align="center" border={true} src="https://files.readme.io/9206de0-Plus_provider.png" />  Add Provider
+  Add Provider
 
 3. Add the following provider details:
+
 <Table align={["left","left"]}>
   <thead>
     <tr>
@@ -60,15 +61,15 @@ To add a provider, perform the following steps:
       </td>
 
       <td>
-        Select your 
+        Select your
 
-        *Email Provider*
+        _Email Provider_
 
-         from the dropdown list. Select 
+        from the dropdown list. Select
 
-        *SMPT*
+        _SMPT_
 
-         if the provider is not listed
+        if the provider is not listed
       </td>
     </tr>
 
@@ -153,59 +154,61 @@ To add a provider, perform the following steps:
     </tr>
   </tbody>
 </Table>
+
 3. Click **Save**.
-4. Click *Send Test Email* to check if the provider has been set up correctly and can send emails.
+4. Click _Send Test Email_ to check if the provider has been set up correctly and can send emails.
 
 ## Provider Operations
 
 This section describes actions for the available email service providers.
 
-<Image title="Email Provider Operations" alt={736} align="center" border={true} src="https://files.readme.io/36c908a-Email_Operations.png" /> Provider Operations
+![](https://files.readme.io/36c908a-Email_Operations.png "Email Provider Operations") Provider Operations
 
 ### Archive Service Providers
 
-You can archive any of the current email service providers from the email settings. Archiving the email service provider stops any active *Campaigns* or *Journeys* for this provider. The archived provider will not be available for use in the future. However, it will still retain the provider stats. 
+You can archive any of the current email service providers from the email settings. Archiving the email service provider stops any active _Campaigns_ or _Journeys_ for this provider. The archived provider will not be available for use in the future. However, it will still retain the provider stats.
 
 Follow the steps to archive an email service provider:
 
-1. From the CleverTap dashboard, navigate to *Settings > Channels > Email > Providers* tab. 
-2. Click the ellipsis next to the provider. 
-3. Select *Archive* from the list. 
+1. From the CleverTap dashboard, navigate to _Settings > Channels > Email > Providers_ tab.
+2. Click the ellipsis next to the provider.
+3. Select _Archive_ from the list.
 
 ### Delete Service Providers
 
-You can delete any of the current email service providers from the email settings. Deleting the email service provider will remove all existing data from our system and stop any active *Campaigns* or *Journeys*. The deleted provider will not be available for use in the future, as well as the corresponding provider stats won't be retained.
+You can delete any of the current email service providers from the email settings. Deleting the email service provider will remove all existing data from our system and stop any active _Campaigns_ or _Journeys_. The deleted provider will not be available for use in the future, as well as the corresponding provider stats won't be retained.
 
 Follow the steps to delete an email service provider:
 
-1. From the CleverTap dashboard, navigate to *Settings > Channels > Email > Providers* tab. 
-2. Click the ellipsis next to the provider. 
-3. Select *Delete* from the list.
+1. From the CleverTap dashboard, navigate to _Settings > Channels > Email > Providers_ tab.
+2. Click the ellipsis next to the provider.
+3. Select _Delete_ from the list.
 
 ### Edit Settings
 
-Edit the email settings to change *Provider credentials*.
+Edit the email settings to change _Provider credentials_.
 
 Follow the steps to edit provider settings:
 
-1. From the CleverTap dashboard, navigate to *Settings > Channels > Email > Providers* tab. 
-2. Click the ellipsis next to the provider. 
-3. Select *Edit settings* from the list. The *Provider credentials* window displays.
-4. Change the required information. 
-5. Click **Send Test Email** to check that the provider is working correctly. 
+1. From the CleverTap dashboard, navigate to _Settings > Channels > Email > Providers_ tab.
+2. Click the ellipsis next to the provider.
+3. Select _Edit settings_ from the list. The _Provider credentials_ window displays.
+4. Change the required information.
+5. Click **Send Test Email** to check that the provider is working correctly.
 6. Click **Save**.
 
 ### Mark as Default
 
-Set a service provider as default so that the same provider is used for delivering your emails. 
+Set a service provider as default so that the same provider is used for delivering your emails.
 
 1. Follow the steps to set a default email service provider:
-2. From the CleverTap dashboard, navigate to *Settings > Channels > Email > Providers* tab. 
-3. Click the ellipsis next to the provider. 
-4. Select *Mark as Default* from the list.
+2. From the CleverTap dashboard, navigate to _Settings > Channels > Email > Providers_ tab.
+3. Click the ellipsis next to the provider.
+4. Select _Mark as Default_ from the list.
 
 # Inbox Previews
-Before you can use inbox previews, you must enable them. Inbox previews with code analysis let you view an analysis of your HTML code. It also provides the capability to view previews across devices and inboxes before you send out a campaign. 
+
+Before you can use inbox previews, you must enable them. Inbox previews with code analysis let you view an analysis of your HTML code. It also provides the capability to view previews across devices and inboxes before you send out a campaign.
 
 > 🚧 Account Specifications
 >
@@ -215,8 +218,8 @@ Before you can use inbox previews, you must enable them. Inbox previews with cod
 
 To enable or disable the inbox preview, perform the following steps:
 
-1. From the dashboard, navigate to *Settings* > *Engage* > *Channels* > *Email*.
-2. Select the *Previews* tab.
+1. From the dashboard, navigate to _Settings_ > _Engage_ > _Channels_ > _Email_.
+2. Select the _Previews_ tab.
 3. Select a client from the list.
 4. Click on the ellipsis and click **Enable** or **Disable**.
 
@@ -224,13 +227,13 @@ To enable or disable the inbox preview, perform the following steps:
 >
 > You can also select multiple clients, then enable or disable previews by clicking **Enable in inbox previews** or **Disable in inbox previews**.
 
-<Image title="Enable or Disable Inbox Preview" alt={1172} align="center" border={true} src="https://files.readme.io/49e8f2d-Enable_an_inbox_preview.png" />  Enable or Disable Inbox Previews
+![](https://files.readme.io/49e8f2d-Enable_an_inbox_preview.png "Enable or Disable Inbox Preview")  Enable or Disable Inbox Previews
 
-The *Previews* tab lists the available email inboxes. For example, a mobile device that runs Gmail on Android 8 or a computer that runs Apple Mail 10 on an OS X 10.10 operating system. 
+The _Previews_ tab lists the available email inboxes. For example, a mobile device that runs Gmail on Android 8 or a computer that runs Apple Mail 10 on an OS X 10.10 operating system.
 
 > 🚧 Account Specifications
 >
-> Email previews are available only if you have opted for the email add-on from CleverTap.\
+> Email previews are available only if you have opted for the email add-on from CleverTap.  
 > This feature is not available for trial accounts.
 
 # Advanced Setup
@@ -243,11 +246,12 @@ CleverTap automatically wraps all links in the email body to track clicks. When 
 
 The other option is to leverage the AppsFlyer OneLink with branded links. Doing so can provide your app users with the greatest experience possible as it directs them to a specific landing page, the app store, or in-app content. All this while, CleverTap tracks the click and assists in boosting conversion rates.
 
-<Image title="CleverTap + AppsFlyer Integration New Scenario" alt={3840} align="center" width="smart" border={true} src="https://files.readme.io/c7cedb7-CT_AF_Integration.png" />  AppsFlyer OneLink Integration
+![](https://files.readme.io/c7cedb7-CT_AF_Integration.png "CleverTap + AppsFlyer Integration New Scenario")  AppsFlyer OneLink Integration
 
 ### Set Up AppsFlyer OneLink(s)
 
 The following are the steps to enable this feature:
+
 #### 1. Set Up OneLink(s) in AppsFlyer
 
 To use the AppsFlyer OneLink feature on the CleverTap dashboard, you must first set up a Branded OneLink on your AppsFlyer account. To set up branded OneLink in AppsFlyer, refer to these [steps](https://support.appsflyer.com/hc/en-us/articles/7696943216145-CleverTap-ESP-integration-with-AppsFlyer#step-3-configure-links-for-your-email-campaigns?utm_source=clevertap_dashboard).
@@ -256,25 +260,25 @@ To use the AppsFlyer OneLink feature on the CleverTap dashboard, you must first 
 
 To set up OneLink on the CleverTap dashboard:
 
-a. Navigate to *Settings* > *Channel* > *Email* > *Advanced Setup* on the dashboard and click **AppsFlyer OneLink** dropdown.
+a. Navigate to _Settings_ > _Channel_ > _Email_ > _Advanced Setup_ on the dashboard and click **AppsFlyer OneLink** dropdown.
 
-<Image title="Click the Dropdown to Add AppsFlyer OneLink" alt="Advance Setup" align="center" border={true} src="https://files.readme.io/64cb245-Click_the_Dropdown_to_Add_AppsFlyer_OneLink.png" />  Advance Setup
+![](https://files.readme.io/64cb245-Click_the_Dropdown_to_Add_AppsFlyer_OneLink.png "Click the Dropdown to Add AppsFlyer OneLink")  Advance Setup
 
-  b. Enter your AppsFlyer OneLink domain or sub-domain and click **Add**.
+b. Enter your AppsFlyer OneLink domain or sub-domain and click **Add**.
 
-<Image title="Click Add to Add the OneLink" alt="Add AppsFlyer OneLink" align="center" border={true} src="https://files.readme.io/d6aba01-Click_Add_to_Add_the_OneLink.png" />  Add AppsFlyer OneLink
+![](https://files.readme.io/d6aba01-Click_Add_to_Add_the_OneLink.png "Click Add to Add the OneLink")  Add AppsFlyer OneLink
 
 > 🚧 Adding a Domain
 >
 > You can add a maximum of 20 valid domains or sub-domains.
 
-  c. Click **Save** to save the domain.
+c. Click **Save** to save the domain.
 
-<Image title="Click Save to Save the Added OneLink" alt="Save AppsFlyer OneLink" align="center" border={true} src="https://files.readme.io/ced9b07-Click_Save_to_Save_the_Added_OneLink.png" />  Save AppsFlyer OneLink
+![](https://files.readme.io/ced9b07-Click_Save_to_Save_the_Added_OneLink.png "Click Save to Save the Added OneLink")  Save AppsFlyer OneLink
 
-  The message *AppsFlyer domain deeplink successfully saved* displays at the top.
+The message _AppsFlyer domain deeplink successfully saved_ displays at the top.
 
-<Image title="AppsFlyer OneLink Saved Successfully" alt="AppsFlyer Domain Deeplink Success" align="center" border={true} src="https://files.readme.io/cb41781-AppsFlyer_OneLink_Saved_Successfully.png" />  AppsFlyer Domain Deeplink Success
+![](https://files.readme.io/cb41781-AppsFlyer_OneLink_Saved_Successfully.png "AppsFlyer OneLink Saved Successfully")  AppsFlyer Domain Deeplink Success
 
 ### Disable Tracking via AppsFlyer OneLink
 
@@ -293,7 +297,8 @@ AppsFlyer OneLink does not apply to links with this tag.
 > AppsFlyer does not send the click data for invalid OneLink URLs configured in an Email campaign to CleverTap.
 
 ## Font Manager
-This feature enables you to add and manage custom fonts and use them in your email campaigns. It simplifies font management across the *Drag & Drop* and *Rich Media* editors.
+
+This feature enables you to add and manage custom fonts and use them in your email campaigns. It simplifies font management across the _Drag & Drop_ and _Rich Media_ editors.
 
 > 📘 Feature Availability
 >
@@ -301,19 +306,20 @@ This feature enables you to add and manage custom fonts and use them in your ema
 
 ### Add Custom Font
 
-You can add custom fonts by navigating to  Settings *>\_Channel* > *Email* > *Advanced Setup* from the CleverTap dashboard. You can add **up to 100 custom fonts**. 
+You can add custom fonts by navigating to  Settings _>_Channel_ > _Email_ > _Advanced Setup_ from the CleverTap dashboard. You can add **up to 100 custom fonts**.
 
 The following are the steps to add a custom font:
 
-1. From the *Advanced Setup* page, click **Font Manager**.
+1. From the _Advanced Setup_ page, click **Font Manager**.
 
-<Image alt="Font Manager" align="center" border={true} src="https://files.readme.io/73b41e4-image.png" /> Font Manager
+![](https://files.readme.io/73b41e4-image.png) Font Manager
 
-2. Click **+ Custom Font**. The *Add Font* popup opens.
+2. Click **+ Custom Font**. The _Add Font_ popup opens.
 
-<Image alt="Add Custom Font" align="center" width="50% " border={true} src="https://files.readme.io/08ba774-Add_Font_Popup.png" /> Add Custom Font
+![](https://files.readme.io/08ba774-Add_Font_Popup.png) Add Custom Font
 
 3. Enter the following details:
+
 <Table align={["left","left"]}>
   <thead>
     <tr>
@@ -330,7 +336,7 @@ The following are the steps to add a custom font:
   <tbody>
     <tr>
       <td>
-         *Font Name*
+        _Font Name_
       </td>
 
       <td>
@@ -340,7 +346,7 @@ The following are the steps to add a custom font:
 
     <tr>
       <td>
-         *Font Family*
+        _Font Family_
       </td>
 
       <td>
@@ -350,23 +356,23 @@ The following are the steps to add a custom font:
 
     <tr>
       <td>
-        *Font URL*
+        _Font URL_
       </td>
 
       <td>
-        If the font is not on your local system, you can select this option to add the URL for the font you want to add. The URL must point to a CSS file.\
-        If your custom font is a public font available on the web, you can directly add the URL for the font.\
+        If the font is not on your local system, you can select this option to add the URL for the font you want to add. The URL must point to a CSS file.  
+        If your custom font is a public font available on the web, you can directly add the URL for the font.  
         If you upload the font to your private server, ensure that CORS is enabled on the server that provides the custom font file.
       </td>
     </tr>
 
     <tr>
       <td>
-        *Upload Font*
+        _Upload Font_
       </td>
 
       <td>
-        If you already have a font downloaded on your local system, choose *Upload Font*, and click **Upload** to upload the CSS file for your custom font. The file size should be a maximum of 1 MB.  
+        If you already have a font downloaded on your local system, choose _Upload Font_, and click **Upload** to upload the CSS file for your custom font. The file size should be a maximum of 1 MB.
 
         The custom font file must have the following header: `Access-Control-Allow-Origin: \*`. When defining font URLs in the src attribute, utilizing the `https` protocol is essential. Refer to the [sample CSS code](doc:setup-custom-font#sample-css-code).
       </td>
@@ -374,7 +380,7 @@ The following are the steps to add a custom font:
 
     <tr>
       <td>
-        * *Fallback Font*
+        * _Fallback Font_
       </td>
 
       <td>
@@ -385,7 +391,7 @@ The following are the steps to add a custom font:
   </tbody>
 </Table>
 
-\*The fields marked with asterisk sign are mandatory.
+*The fields marked with asterisk sign are mandatory.
 
 3. Click **Add** to add the custom font.
 
@@ -423,34 +429,34 @@ The following are the steps to add a custom font:
 
 ### Set Up Default Font
 
-You can also set up the system and custom fonts as the default font for your email campaigns. Select the font from the *Default font* dropdown to set up the default font for your email campaigns. 
+You can also set up the system and custom fonts as the default font for your email campaigns. Select the font from the _Default font_ dropdown to set up the default font for your email campaigns.
 
 The default font cannot be deleted. If you still want to delete it, change the default font and then delete the required font.
 
-<Image alt="Set Up Custom Font as Default Font" align="center" border={true} src="https://files.readme.io/0152270-Set_Up_Custom_Font_as_Default_font_.png" />  Set Up a Default Font
+![](https://files.readme.io/0152270-Set_Up_Custom_Font_as_Default_font_.png)  Set Up a Default Font
 
 ### Delete Custom Font
 
 You can delete one or multiple custom fonts to manage your custom font library. To delete a custom font
 
-1. Select one or multiple custom fonts you want to delete. 
-2. Click the ![](https://files.readme.io/16fa1cc-Ellipses_icon.png) icon and select *Delete*. The *Delete font?* popup opens, highlighting potential impacts on drafts and saved templates and prompting you to confirm your action.
-3. Select *Delete* to successfully delete the custom font(s). A confirmation message is displayed.\
-   Upon deleting the custom font, it is unavailable for use in both the *Drag & Drop* and Rich Media\_ editors.
+1. Select one or multiple custom fonts you want to delete.
+2. Click the ![](https://files.readme.io/16fa1cc-Ellipses_icon.png) icon and select _Delete_. The _Delete font?_ popup opens, highlighting potential impacts on drafts and saved templates and prompting you to confirm your action.
+3. Select _Delete_ to successfully delete the custom font(s). A confirmation message is displayed.  
+   Upon deleting the custom font, it is unavailable for use in both the _Drag & Drop_ and Rich Media_ editors.
 
-<Image alt="Delete Custom Font" align="center" border={true} src="https://files.readme.io/82551f4-Delete_Custom_Font.gif" />  Delete Custom Font
+![](https://files.readme.io/82551f4-Delete_Custom_Font.gif)  Delete Custom Font
 
 ### Edit Custom Font
 
 You can edit your custom font and update the font details.
 
 1. Select the custom fonts you want to edit.
-2. Click the ![](https://files.readme.io/3eec8d1-Ellipses_icon.png) icon and select *Edit*. The *Edit Font* popup opens.
-3. You can update the required fields related to the custom font and click *Save* to save the changes. 
+2. Click the ![](https://files.readme.io/3eec8d1-Ellipses_icon.png) icon and select _Edit_. The _Edit Font_ popup opens.
+3. You can update the required fields related to the custom font and click _Save_ to save the changes.
 
-<Image alt="Edit Custom Fonts" align="center" border={true} src="https://files.readme.io/328e95b-Edit_Custom_Font.gif" />  Edit Custom Fonts
+![](https://files.readme.io/328e95b-Edit_Custom_Font.gif)  Edit Custom Fonts
 
-The updated custom font is now available for both the *Drag & Drop* and \_Rich Media editors. When making changes to the custom font, an email alert is sent to the user updating the custom font and also to the account admin.
+The updated custom font is now available for both the _Drag & Drop_ and _Rich Media editors. When making changes to the custom font, an email alert is sent to the user updating the custom font and also to the account admin.
 
 > 🚧 Delete or Edit Custom Font
 >
