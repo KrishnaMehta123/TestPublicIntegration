@@ -15,7 +15,7 @@ next:
 Catalog send-time personalization provides the ability to personalize messages with external data pulled from an uploaded catalog at the time a campaign is sent. Automatically include dynamic information available in the catalog directly in a message such as product price, product category, available inventory levels, and more. 
 
 > 👍 E-commerce App Example
-> 
+>
 > A user adds a laptop to the cart, then exits. By providing additional details in the engagement message such as the image, size, latest price, and specifications of the laptop, the user can be nudged to purchase the item. Using catalog send-time personalization helps keep users engaged in a meaningful way.
 
 After you have uploaded the catalog, you can start using it in a campaign. For more information, refer to [Catalog](https://docs.clevertap.com/docs/catalog).
@@ -28,97 +28,38 @@ Follow the steps below to personalize a catalog by event property:
 
 2. Click the **Personalization** link to select a catalog. Once the personalization setup window displays, you can map the required catalog columns to event properties and user properties. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3a68d9c-Catalog_Send_Time_Personalization.png",
-        "Create Push Notification",
-        2878
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Create Push Notification"
-    }
-  ]
-}
-[/block]
-
+<Image title="Create Push Notification" alt={2878} align="center" border={true} src="https://files.readme.io/3a68d9c-Catalog_Send_Time_Personalization.png">
+  Create Push Notification
+</Image>
 
 3. Click the **Catalog** tab and select the required catalog from the list. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1266641-Catalog_Personalization.png",
-        "Select the Catalog",
-        1898
-      ],
-      "align": "center",
-      "sizing": "80",
-      "border": true,
-      "caption": "Select the Catalog"
-    }
-  ]
-}
-[/block]
-
+<Image title="Select the Catalog" alt={1898} align="center" width="80%" border={true} src="https://files.readme.io/1266641-Catalog_Personalization.png">
+  Select the Catalog
+</Image>
 
 4. Select the event. You can personalize your message based on the property values of this event. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/be98af1-Select_Catalog_Send-Time_Values.png",
-        "Select Catalog Send-Time Values",
-        1894
-      ],
-      "align": "center",
-      "sizing": "80",
-      "border": true,
-      "caption": "Select the Catalog Send-Time Values"
-    }
-  ]
-}
-[/block]
-
+<Image title="Select Catalog Send-Time Values" alt={1894} align="center" width="80%" border={true} src="https://files.readme.io/be98af1-Select_Catalog_Send-Time_Values.png">
+  Select the Catalog Send-Time Values
+</Image>
 
 > 📘 Recent Occurrence
-> 
+>
 > The most recent occurrence of the event is used to select the relevant item from the catalog. If the campaign is a triggered campaign, then the event that triggered the campaign is considered.
 
-5. Select the event property to map to the catalog column. This mapping is important to identify the catalog column that matches the event property. For example, we map _Product Name_, such as a laptop (from the _Viewed_ event) to the _Name_ column in the catalog. 
+5. Select the event property to map to the catalog column. This mapping is important to identify the catalog column that matches the event property. For example, we map *Product Name*, such as a laptop (from the *Viewed* event) to the *Name* column in the catalog. 
 
 Repeat this step to map more properties. 
 
 > 📘 Map Multiple Properties
-> 
-> - If required, map multiple properties. Every addition to the mapping is treated as an _and_ condition. For example, map the name, the color, and the brand to personalize the message for the user.  
-> - Catalog mapping is not supported for the items stored in the `Charged.Items` array.
+>
+> * If required, map multiple properties. Every addition to the mapping is treated as an *and* condition. For example, map the name, the color, and the brand to personalize the message for the user.  
+> * Catalog mapping is not supported for the items stored in the `Charged.Items` array.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/fad7eeb-Map_Catalog_Columns.png",
-        "Map Event to the Catalog Columns",
-        1896
-      ],
-      "align": "center",
-      "sizing": "80",
-      "border": true,
-      "caption": "Map Event to the Catalog Columns"
-    }
-  ]
-}
-[/block]
-
+<Image title="Map Event to the Catalog Columns" alt={1896} align="center" width="80%" border={true} src="https://files.readme.io/fad7eeb-Map_Catalog_Columns.png">
+  Map Event to the Catalog Columns
+</Image>
 
 6. Click **Save** to set up the personalization. 
 
@@ -131,23 +72,9 @@ In this example, the syntaxes for using different catalog columns are shown belo
 {{ Catalog.["Sample Catalog"].Amount | default: "0" }}
 ```
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3069384-catalog_personalization_liquid_message.png",
-        "Create Message using Liquid Tags",
-        1173
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Create Message using Liquid Tags"
-    }
-  ]
-}
-[/block]
-
+<Image title="Create Message using Liquid Tags" alt={1173} align="center" border={true} src="https://files.readme.io/3069384-catalog_personalization_liquid_message.png">
+  Create Message using Liquid Tags
+</Image>
 
 You can now use the latest amount for the last added to cart item, such as the laptop. 
 
@@ -158,69 +85,25 @@ Follow the steps below to personalize a catalog by user property:
 1. Create a [campaign](doc:intro-to-campaigns).
 2. Click the **Personalization** link to select a catalog. After the personalization setup window displays, you can map the required catalog columns to event properties and user properties. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2e5be68-Catalog_Send_Time_Personalization.png",
-        "Create a Push Notification",
-        2878
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Create a Push Notification"
-    }
-  ]
-}
-[/block]
-
+<Image title="Create a Push Notification" alt={2878} align="center" border={true} src="https://files.readme.io/2e5be68-Catalog_Send_Time_Personalization.png">
+  Create a Push Notification
+</Image>
 
 3. Click the **Catalog** tab and select the required catalog from the list. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/18b28fa-Catalog_Personalization.png",
-        "Select a Catalog",
-        1898
-      ],
-      "align": "center",
-      "sizing": "80",
-      "border": true,
-      "caption": "Select a Catalog"
-    }
-  ]
-}
-[/block]
+<Image title="Select a Catalog" alt={1898} align="center" width="80%" border={true} src="https://files.readme.io/18b28fa-Catalog_Personalization.png">
+  Select a Catalog
+</Image>
 
-
-4. Select the user property to map to the catalog column. For example, you can recommend the top restaurant in New York with rich details about the restaurant from the catalog to a user with the user property _City_ set as New York. 
+4. Select the user property to map to the catalog column. For example, you can recommend the top restaurant in New York with rich details about the restaurant from the catalog to a user with the user property *City* set as New York. 
 
 > 📘 Note
-> 
-> If required, map multiple properties. Every addition to the mapping is treated as an _and_ condition. For example, map the city, the top-rated restaurants, and the Chinese restaurants to personalize the message for the user.
+>
+> If required, map multiple properties. Every addition to the mapping is treated as an *and* condition. For example, map the city, the top-rated restaurants, and the Chinese restaurants to personalize the message for the user.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3f75e23-Map_Catalog_Columns_Event_Property.png",
-        "Map Catalog Columns to Event Property",
-        1900
-      ],
-      "align": "center",
-      "sizing": "80",
-      "border": true,
-      "caption": "Map Catalog Columns to Event Property"
-    }
-  ]
-}
-[/block]
-
+<Image title="Map Catalog Columns to Event Property" alt={1900} align="center" width="80%" border={true} src="https://files.readme.io/3f75e23-Map_Catalog_Columns_Event_Property.png">
+  Map Catalog Columns to Event Property
+</Image>
 
 5. Click **Apply** to set up the personalization. 
 6. Use [liquid tags](doc:liquid-tags) to create a personalized message for your target audience. 
@@ -231,41 +114,16 @@ In this example, the syntax for using a catalog column is shown below:
 {{ Catalog.Sample_Catalog.["City Restaurants"] | default:"New York Top Restaurant" }}
 ```
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/cc955ed-catalog_personalization_liquid_message_User_property.png",
-        "Create Message using Liquid Tag",
-        1081
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Create Message using Liquid Tag"
-    }
-  ]
-}
-[/block]
-
+<Image title="Create Message using Liquid Tag" alt={1081} align="center" border={true} src="https://files.readme.io/cc955ed-catalog_personalization_liquid_message_User_property.png">
+  Create Message using Liquid Tag
+</Image>
 
 > 📘 Map Multiple Properties
-> 
+>
 > Create personalization by combining catalog send-time personalization with [constant event property](https://docs.clevertap.com/docs/constant-property#section-advanced-constant-property-with-catalog-personalization).
 
 # Video Tutorial
 
 For further information, you can watch the following video on catalog send-time personalization:
 
-[block:embed]
-{
-  "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FTVltd1_rpG4%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DTVltd1_rpG4&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FTVltd1_rpG4%2Fhqdefault.jpg&key=7788cb384c9f4d5dbbdbeffd9fe4b92f&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
-  "url": "https://www.youtube.com/watch?v=TVltd1_rpG4",
-  "title": "Product Demo: Send-Time Personalization",
-  "favicon": "https://www.google.com/favicon.ico",
-  "image": "https://i.ytimg.com/vi/TVltd1_rpG4/hqdefault.jpg",
-  "provider": "youtube.com",
-  "href": "https://www.youtube.com/watch?v=TVltd1_rpG4",
-  "typeOfEmbed": "default"
-}
-[/block]
+<Embed url="https://www.youtube.com/watch?v=TVltd1_rpG4" title="Product Demo: Send-Time Personalization" favicon="https://www.google.com/favicon.ico" image="https://i.ytimg.com/vi/TVltd1_rpG4/hqdefault.jpg" provider="youtube.com" href="https://www.youtube.com/watch?v=TVltd1_rpG4" typeOfEmbed="default" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fwww.youtube.com%252Fembed%252FTVltd1_rpG4%253Ffeature%253Doembed%26display_name%3DYouTube%26url%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DTVltd1_rpG4%26image%3Dhttps%253A%252F%252Fi.ytimg.com%252Fvi%252FTVltd1_rpG4%252Fhqdefault.jpg%26key%3D7788cb384c9f4d5dbbdbeffd9fe4b92f%26type%3Dtext%252Fhtml%26schema%3Dyoutube%22%20width%3D%22854%22%20height%3D%22480%22%20scrolling%3D%22no%22%20title%3D%22YouTube%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%3B%20encrypted-media%3B%20picture-in-picture%3B%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" />
