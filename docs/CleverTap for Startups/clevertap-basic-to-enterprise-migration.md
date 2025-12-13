@@ -16,25 +16,10 @@ CleverTap Essentials users can easily migrate to the enterprise plan with a self
 
 # Migrate CleverTap Essentials Account to Enterprise
 
-You will receive an email from our Billing Team containing a link to initiate the migration process.  
+You will receive an email from our Billing Team containing a link to initiate the migration process.\
 On clicking, you will be shown the projects that will be moved to the new enterprise plan.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c249c76-Migrate_to_Enterprise_Plan.png",
-        "Migrate to Enterprise Plan.png",
-        1832
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image title="Migrate to Enterprise Plan.png" alt={1832} align="center" className="border" border={true} src="https://files.readme.io/c249c76-Migrate_to_Enterprise_Plan.png" />
 
 If you have pending payments or have incurred overages, you must clear them by adding a card.
 
