@@ -16,9 +16,9 @@ Psychographic Segmentation is a CleverTap feature that enables you to segment yo
 
 There are three types of psychographic segments provided by CleverTap:
 
-- Interest by Event Property
-- Interest by Time of the Day
-- Interest by Day of the Week
+* Interest by Event Property
+* Interest by Time of the Day
+* Interest by Day of the Week
 
 For example, you can use this feature to select only users who have **predominantly** purchased shoes out of their total purchases. Alternatively, you can use the **at least** option, which lets you select a percentage for the event you need. This means you can select only users who have purchased shoes for at least 30% of the items they have purchased. You can further segment these users by defining the **time of day** or **day of week** when the event happened.
 
@@ -28,46 +28,20 @@ For example, you can use this feature to select only users who have **predominan
 
 You can use the **Predominantly** option to select only users who have mostly purchased shoes out of their total purchases. In other words, the selected users may have purchased other items, but they have purchased shoes the most out of their total purchases.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/dfd660a-image4.png",
-        "Select Event Property and Predominantly Options",
-        842
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Interest by Event Property - Predominantly"
-    }
-  ]
-}
-[/block]
+<Image title="Select Event Property and Predominantly Options" alt={842} align="center" border={true} src="https://files.readme.io/dfd660a-image4.png">
+  Interest by Event Property - Predominantly
+</Image>
 
 ## At Least
 
 You can use the **At Least** option, which lets you select a percentage for the event you need. This means you can select only users where at least 30% of their searches have been for Harry Potter or Action.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/cfc3573-image3.png",
-        "Select Event Property and At Least Options",
-        846
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Interest by Event Property - At Least"
-    }
-  ]
-}
-[/block]
+<Image title="Select Event Property and At Least Options" alt={846} align="center" border={true} src="https://files.readme.io/cfc3573-image3.png">
+  Interest by Event Property - At Least
+</Image>
 
 > 📘 Predominantly vs. At Least
-> 
+>
 > The **Predominantly** option means the event property you select will only include users, where that event property is the most frequently occurring event property for the user. The **At Least** option lets you specify the specific percentage you need.
 
 # Interest by Time of Day
@@ -78,22 +52,9 @@ You can use the **Time of the Day** and **Predominantly** options to segment use
 
 This provides a set of users who have made most of their purchases between 6pm and 9pm. These users may have purchased during other times of the day, but most of their purchases have happened in this time slot.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/559a9ca-image2.png",
-        "Select the Time of the Day and Predominantly Options",
-        853
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Interest by Time of the Day - Predominantly"
-    }
-  ]
-}
-[/block]
+<Image title="Select the Time of the Day and Predominantly Options" alt={853} align="center" border={true} src="https://files.readme.io/559a9ca-image2.png">
+  Interest by Time of the Day - Predominantly
+</Image>
 
 # Interest by Day of Week
 
@@ -101,19 +62,6 @@ This provides a set of users who have made most of their purchases between 6pm a
 
 You can use the **Day of the Week** and **At Least** options to segment users where at least 30% of their purchases have been on Mondays and Tuesdays.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/54a1b0c-image1.png",
-        "Use the Day of the Week and At Least Options",
-        845
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Interest by Day of the Week - At Least"
-    }
-  ]
-}
-[/block]
+<Image title="Use the Day of the Week and At Least Options" alt={845} align="center" border={true} src="https://files.readme.io/54a1b0c-image1.png">
+  Interest by Day of the Week - At Least
+</Image>
