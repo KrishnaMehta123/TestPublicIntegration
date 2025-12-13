@@ -57,7 +57,7 @@ You can add an event from the _Custom events_ tab.
 2. Click the **+Event** button to add an event.
 3. Add the event name. This name must be unique in the schema.
 
-Add a Custom Event
+<Image align="center" border={true} caption="Add Custom Event" src="https://files.readme.io/6a62a19-Add_New_Event.png" />
 
 For more information, refer to [Event Property](doc:events#event-properties).
 
