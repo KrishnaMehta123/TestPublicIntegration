@@ -18,18 +18,18 @@ next:
 
 Here are some of the key benefits of this integration:
 
-- **Enhanced Cohort Management**: Leverage Amplitude's product analytics to create targeted cohorts (segments) in CleverTap for personalized messaging and engagement campaigns based on user behaviors and preferences captured in Amplitude.
-- **Comprehensive Event Tracking**: Capture and analyze user interactions within CleverTap, such as app installs, uninstallations, push notifications, and in-app messages, in Amplitude for a holistic view of user engagement across both platforms.
-- **Data-Driven Decision Making**: Make informed decisions and optimize your customer engagement strategies by leveraging the combined insights from CleverTap and Amplitude's powerful analytics engines.
-- **Personalized and Relevant Campaigns**: Deliver contextual and personalized messaging to your users based on their behaviors and preferences captured in Amplitude, leading to higher engagement and conversion rates.
-- **Streamlined Workflow**: Seamlessly push cohorts (segments) and system events between CleverTap and Amplitude with a simple and intuitive setup, saving you time and effort in managing your marketing campaigns.
+* **Enhanced Cohort Management**: Leverage Amplitude's product analytics to create targeted cohorts (segments) in CleverTap for personalized messaging and engagement campaigns based on user behaviors and preferences captured in Amplitude.
+* **Comprehensive Event Tracking**: Capture and analyze user interactions within CleverTap, such as app installs, uninstallations, push notifications, and in-app messages, in Amplitude for a holistic view of user engagement across both platforms.
+* **Data-Driven Decision Making**: Make informed decisions and optimize your customer engagement strategies by leveraging the combined insights from CleverTap and Amplitude's powerful analytics engines.
+* **Personalized and Relevant Campaigns**: Deliver contextual and personalized messaging to your users based on their behaviors and preferences captured in Amplitude, leading to higher engagement and conversion rates.
+* **Streamlined Workflow**: Seamlessly push cohorts (segments) and system events between CleverTap and Amplitude with a simple and intuitive setup, saving you time and effort in managing your marketing campaigns.
 
 # Prerequisites
 
 Before you begin the integration, ensure that you have:
 
-- Correctly map the Amplitude Cohorts (segments) to CleverTap Segments
-- The required permission to create cohorts (segments) in the Amplitude account
+* Correctly map the Amplitude Cohorts (segments) to CleverTap Segments
+* The required permission to create cohorts (segments) in the Amplitude account
 
 # Set Up
 
@@ -44,8 +44,8 @@ This procedure involves the following four major steps:
 
 Amplitude exports all users to CleverTap, including anonymous users. A common identifier is used to match users when syncing cohorts (segments) from Amplitude to CleverTap. The following are the key points to remember when setting up an identifier on the Amplitude dashboard:
 
-- Amplitude captures `User ID` and `Device ID` as an identifier for every profile. The `User ID` is for identified profiles, whereas the `Device ID` is for every profile.
-- CleverTap allows `identity`, `email` or `phone` as an identifier for the users. It captures `Device ID` as the CleverTap ID (Object ID) for every profile.
+* Amplitude captures `User ID` and `Device ID` as an identifier for every profile. The `User ID` is for identified profiles, whereas the `Device ID` is for every profile.
+* CleverTap allows `identity`, `email` or `phone` as an identifier for the users. It captures `Device ID` as the CleverTap ID (Object ID) for every profile.
 
 For more information about how users are identified, refer to the following section.
 
@@ -53,27 +53,14 @@ For more information about how users are identified, refer to the following sect
 
 The CleverTap User ID is a unique identifier assigned to the user in Amplitude. This identifier enables the mapping of user data between CleverTap and Amplitude, allowing for a more comprehensive understanding of user behavior and engagement across different channels. When importing cohorts (segments) from Amplitude, the user identity is matched in the following manner:
 
-- If the CleverTap User ID is present in Amplitude, it is matched with the identity value of all the users present in CleverTap. If a match is found, the profile becomes part of the segment.
-- If the CleverTap User ID is not present in Amplitude, the Device Id (Anonymous Id) value is used as CleverTap ID, and a new profile is created in CleverTap. This new profile becomes part of the segment.
+* If the CleverTap User ID is present in Amplitude, it is matched with the identity value of all the users present in CleverTap. If a match is found, the profile becomes part of the segment.
+* If the CleverTap User ID is not present in Amplitude, the Device Id (Anonymous Id) value is used as CleverTap ID, and a new profile is created in CleverTap. This new profile becomes part of the segment.
 
 To understand this better, refer to the following diagram:
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2299ef2-Amplitude_User_Identity_Mapping.png",
-        null,
-        "User Identity Mapping When Importing Cohorts (segments) to CleverTap"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "User Identity Mapping When Importing Cohorts (segments) to CleverTap"
-    }
-  ]
-}
-[/block]
+<Image alt="User Identity Mapping When Importing Cohorts (segments) to CleverTap" align="center" border={true} src="https://files.readme.io/2299ef2-Amplitude_User_Identity_Mapping.png">
+  User Identity Mapping When Importing Cohorts (segments) to CleverTap
+</Image>
 
 To understand how users are identified in different scenarios, read the following information:
 
@@ -81,19 +68,19 @@ To understand how users are identified in different scenarios, read the followin
 
 Consider a scenario where user A is assigned the CleverTap User ID `Clevertap1` in Amplitude, and the same user's identity is set as `clevertap1` in CleverTap.
 
-In this scenario, CleverTap raises a _Partner Sync_ event for the user in CleverTap and includes the user in the segment (cohort).
+In this scenario, CleverTap raises a *Partner Sync* event for the user in CleverTap and includes the user in the segment (cohort).
 
 **Scenario 2: When a user's identity is different in Amplitude and CleverTap**
 
 Consider a scenario where user A is assigned the CleverTap User ID `CleverTap1` in Amplitude, and the same user is identified with a different user identity in CleverTap, which is `CleverTap2`.
 
-In this case, the CleverTap creates a new profile for the same user with a new identity as `CleverTap1` and raises a _Partner Sync_ event to include the new profile in the segment (cohort).
+In this case, the CleverTap creates a new profile for the same user with a new identity as `CleverTap1` and raises a *Partner Sync* event to include the new profile in the segment (cohort).
 
-To avoid this scenario, CleverTap recommends you push the _CleverTap_Identity_ as the identity in Amplitude and use this identity when setting up CleverTap as a cohort (segment) destination. For more information, refer to [Set Up Common User Identifier](doc:amplitude-cohort-import#set-up-common-user-identifier-between-clevertap-and-amplitude).
+To avoid this scenario, CleverTap recommends you push the *CleverTap\_Identity* as the identity in Amplitude and use this identity when setting up CleverTap as a cohort (segment) destination. For more information, refer to [Set Up Common User Identifier](doc:amplitude-cohort-import#set-up-common-user-identifier-between-clevertap-and-amplitude).
 
 **Scenario 3: When User A with Device ID is not identified in Amplitude**
 
-Consider a scenario where a user with Device ID `543C-3455-4555-3SRD` is not identified in Amplitude. In this scenario, CleverTap captures this Device ID (`543C-3455-4555-3SRD`) as CleverTap ID (Object ID) and creates a new profile. After the new profile is created, CleverTap raises a _Partner Sync_ event for this profile and includes the user in the segment (cohort).
+Consider a scenario where a user with Device ID `543C-3455-4555-3SRD` is not identified in Amplitude. In this scenario, CleverTap captures this Device ID (`543C-3455-4555-3SRD`) as CleverTap ID (Object ID) and creates a new profile. After the new profile is created, CleverTap raises a *Partner Sync* event for this profile and includes the user in the segment (cohort).
 
 ### Set Up Common User Identifier between CleverTap and Amplitude
 
@@ -112,7 +99,7 @@ curl --location --request POST 'https://api2.amplitude.com/identify' \
 ```
 
 > 📘 Set Up Identity
-> 
+>
 > You must replace the value of `CleverTap_Identity` with the user identity value set in CleverTap for the profile. For example, `integrations@clevertap.com` is the identity set in CleverTap, so we must pass that value to Amplitude. If the value of the identity was `12345`, we must pass the value as `12345`.
 
 #### Using Amplitude SDKs
@@ -138,118 +125,65 @@ Amplitude.instance().identify(identify)
 
 Find the following project details to authorize the CleverTap integration in the Amplitude dashboard:
 
-- [Project ID](https://docs.clevertap.com/docs/amplitude-cohort-import#project-id)
-- [Passcode](https://docs.clevertap.com/docs/amplitude-cohort-import#passcode)
-- [Region](https://docs.clevertap.com/docs/amplitude-cohort-import#region)
+* [Project ID](https://docs.clevertap.com/docs/amplitude-cohort-import#project-id)
+* [Passcode](https://docs.clevertap.com/docs/amplitude-cohort-import#passcode)
+* [Region](https://docs.clevertap.com/docs/amplitude-cohort-import#region)
 
 > 📘 Project Details
-> 
+>
 > CleverTap suggests keeping the above details handy, as you will need them to configure the Amplitude dashboard.
 
 ### Project ID
 
-The Project ID can be obtained by navigating to the _Settings_ > _Project_ page of the CleverTap dashboard (see figure below):
+The Project ID can be obtained by navigating to the *Settings* > *Project* page of the CleverTap dashboard (see figure below):
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/4ca0240-Project_Details.png",
-        null,
-        "CleverTap Project Details"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "CleverTap Project Details"
-    }
-  ]
-}
-[/block]
+<Image alt="CleverTap Project Details" align="center" border={true} src="https://files.readme.io/4ca0240-Project_Details.png">
+  CleverTap Project Details
+</Image>
 
 ### Passcode
 
 To find the passcode for your Amplitude Import project, refer to [Account Passcode](https://developer.clevertap.com/docs/authentication#create-account-passcode).
 
 > 📘 Account Passcode
-> 
-> When generating account passcode, we recommend you set the expiry date for passcode as _Forever_.
+>
+> When generating account passcode, we recommend you set the expiry date for passcode as *Forever*.
 
 ### Region
 
  To identify the region for your account, refer to the following table:
 
-| Region                  | API Endpoint           | CleverTap Dashboard URL                                                                                                                              |
-| :---------------------- | :--------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Europe (Default region) | api.clevertap.com      | <https://eu1.dashboard.clevertap.com/login.html>                                                                                                     |
-| India                   | in1.api.clevertap.com  | <https://in1.dashboard.clevertap.com/login.html>                                                                                                     |
-| Indonesia               | aps3.api.clevertap.com | [https://aps3.dashboard.clevertap.com/login.html](https://aps3.dashboard.clevertap.com/login.html](https://aps3.dashboard.clevertap.com/login.html)) |
-| Middle East (UAE)       | mec1.api.clevertap.com | <https://mec1.dashboard.clevertap.com/login.html>                                                                                                    |
-| Singapore               | sg1.api.clevertap.com  | <https://sg1.dashboard.clevertap.com/login.html>                                                                                                     |
-| South Korea             | sk1.api.clevertap.com  | <https://sk1.dashboard.clevertap.com/login.html>                                                                                                     |
-| United States (USA)     | us1.api.clevertap.com  | <https://us1.dashboard.clevertap.com/login.html>                                                                                                     |
+| Region                  | API Endpoint           | CleverTap Dashboard URL                                                                                                                                |
+| :---------------------- | :--------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Europe (Default region) | api.clevertap.com      | [https://eu1.dashboard.clevertap.com/login.html](https://eu1.dashboard.clevertap.com/login.html)                                                       |
+| India                   | in1.api.clevertap.com  | [https://in1.dashboard.clevertap.com/login.html](https://in1.dashboard.clevertap.com/login.html)                                                       |
+| Indonesia               | aps3.api.clevertap.com | [https://aps3.dashboard.clevertap.com/login.html](https://aps3.dashboard.clevertap.com/login.html]\(https://aps3.dashboard.clevertap.com/login.html\)) |
+| Middle East (UAE)       | mec1.api.clevertap.com | [https://mec1.dashboard.clevertap.com/login.html](https://mec1.dashboard.clevertap.com/login.html)                                                     |
+| Singapore               | sg1.api.clevertap.com  | [https://sg1.dashboard.clevertap.com/login.html](https://sg1.dashboard.clevertap.com/login.html)                                                       |
+| South Korea             | sk1.api.clevertap.com  | [https://sk1.dashboard.clevertap.com/login.html](https://sk1.dashboard.clevertap.com/login.html)                                                       |
+| United States (USA)     | us1.api.clevertap.com  | [https://us1.dashboard.clevertap.com/login.html](https://us1.dashboard.clevertap.com/login.html)                                                       |
 
 ## Configure CleverTap as a Destination in Amplitude
 
 To configure the Amplitude dashboard:
 
-1. Navigate to _Destinations_ from the Amplitude dashboard and click **+ Add Destination**.
+1. Navigate to *Destinations* from the Amplitude dashboard and click **+ Add Destination**.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/4c7c17b-small-Add_Destination_Amplitude.png",
-        "Click Add Destination",
-        "Destinations in Amplitude Dashboard"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Destinations in Amplitude Dashboard"
-    }
-  ]
-}
-[/block]
+<Image title="Click Add Destination" alt="Destinations in Amplitude Dashboard" align="center" border={true} src="https://files.readme.io/4c7c17b-small-Add_Destination_Amplitude.png">
+  Destinations in Amplitude Dashboard
+</Image>
 
-2. Click **CleverTap** from the _MESSAGING DESTINATIONS_. 
+2. Click **CleverTap** from the *MESSAGING DESTINATIONS*. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/83ea665-small-CleverTap_Destination_Amplitude.png",
-        "Click CleverTap from Messaging Destinations",
-        "Messaging Destinations in Amplitude"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Messaging Destinations in Amplitude"
-    }
-  ]
-}
-[/block]
+<Image title="Click CleverTap from Messaging Destinations" alt="Messaging Destinations in Amplitude" align="center" border={true} src="https://files.readme.io/83ea665-small-CleverTap_Destination_Amplitude.png">
+  Messaging Destinations in Amplitude
+</Image>
 
-3. Enter the following details in the _Connect to CleverTap_ form:
+3. Enter the following details in the *Connect to CleverTap* form:
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/05dec70-small-Connect_to_CleverTap_Amplitude_Import.png",
-        null,
-        "Add Destination Details to Connect CleverTap"
-      ],
-      "align": "center",
-      "sizing": "60% ",
-      "border": true,
-      "caption": "Add Destination Details to Connect CleverTap"
-    }
-  ]
-}
-[/block]
+<Image alt="Add Destination Details to Connect CleverTap" align="center" width="60% " border={true} src="https://files.readme.io/05dec70-small-Connect_to_CleverTap_Amplitude_Import.png">
+  Add Destination Details to Connect CleverTap
+</Image>
 
 | Field                     | Description                                                                                                                                                                                                                                         |
 | :------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -257,196 +191,78 @@ To configure the Amplitude dashboard:
 | CleverTap Region          | Select the [Region](https://docs.clevertap.com/docs/amplitude-cohort-import#region) of your CleverTap account from the dropdown.                                                                                                                    |
 | Account ID                | Enter the [Project ID](https://docs.clevertap.com/docs/amplitude-cohort-import#project-id) of your CleverTap account.                                                                                                                               |
 | Account Passcode          | Enter the [Passcode](https://docs.clevertap.com/docs/amplitude-cohort-import#passcode) of your CleverTap account.                                                                                                                                   |
-| Anonymous ID Mapping      | Select _Device ID_ as an identity to map anonymous users in CleverTap. For more information, refer to [Map User Identity](https://docs.clevertap.com/docs/amplitude-cohort-import#map-user-identities-for-amplitude-cohorts-to-clevertap-segments). |
-| CleverTap User ID Mapping | Select _identity_ to map the identified users in CleverTap User ID. For more information, refer to [Map User Identity](https://docs.clevertap.com/docs/amplitude-cohort-import#map-user-identities-for-amplitude-cohorts-to-clevertap-segments).    |
+| Anonymous ID Mapping      | Select *Device ID* as an identity to map anonymous users in CleverTap. For more information, refer to [Map User Identity](https://docs.clevertap.com/docs/amplitude-cohort-import#map-user-identities-for-amplitude-cohorts-to-clevertap-segments). |
+| CleverTap User ID Mapping | Select *identity* to map the identified users in CleverTap User ID. For more information, refer to [Map User Identity](https://docs.clevertap.com/docs/amplitude-cohort-import#map-user-identities-for-amplitude-cohorts-to-clevertap-segments).    |
 
-4. Click **Save**. CleverTap is now displayed on the _Destinations_ page.
+4. Click **Save**. CleverTap is now displayed on the *Destinations* page.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f09006b-small-Destination_CleverTap_Amplitude.png",
-        "Click Save and View CleverTap as a Destination in Amplitude",
-        "Add CleverTap as a Destination in Amplitude"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Add CleverTap as a Destination in Amplitude"
-    }
-  ]
-}
-[/block]
+<Image title="Click Save and View CleverTap as a Destination in Amplitude" alt="Add CleverTap as a Destination in Amplitude" align="center" border={true} src="https://files.readme.io/f09006b-small-Destination_CleverTap_Amplitude.png">
+  Add CleverTap as a Destination in Amplitude
+</Image>
 
 ## Import Cohorts from Amplitude
 
 > 📘 Verify User Identifications
-> 
+>
 > To ensure that the user profiles imported from Amplitude are correctly identified in CleverTap, we recommend importing a smaller cohort (segment) before proceeding with larger cohorts.
 
 To import the cohorts (segments) from Amplitude to CleverTap:
 
-1. Navigate to _Cohorts_ from the Amplitude dashboard.
+1. Navigate to *Cohorts* from the Amplitude dashboard.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6684986-small-Cohorts_Amplitude_Import.png",
-        null,
-        "Cohorts Page in Amplitude Dashboard"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Cohorts Page in Amplitude Dashboard"
-    }
-  ]
-}
-[/block]
+<Image alt="Cohorts Page in Amplitude Dashboard" align="center" border={true} src="https://files.readme.io/6684986-small-Cohorts_Amplitude_Import.png">
+  Cohorts Page in Amplitude Dashboard
+</Image>
 
 2. Select the cohort (segment) you want to import and click **Sync**.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b68cfef-small-Cohort_Definition_Amplitude_Import.png",
-        null,
-        "Sync a Cohort (segment) from Amplitude Dashboard"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Sync a Cohort (segment) from Amplitude Dashboard"
-    }
-  ]
-}
-[/block]
+<Image alt="Sync a Cohort (segment) from Amplitude Dashboard" align="center" border={true} src="https://files.readme.io/b68cfef-small-Cohort_Definition_Amplitude_Import.png">
+  Sync a Cohort (segment) from Amplitude Dashboard
+</Image>
 
-3. Select the destination as _CleverTap_ and click **Next**.
+3. Select the destination as *CleverTap* and click **Next**.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a9e9a8c-small-Select_Destination_Amplitude.png",
-        "Select CleverTap as a Destination and Click Next",
-        "Select CleverTap as a Destination for Sync"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Select CleverTap as a Destination for Sync"
-    }
-  ]
-}
-[/block]
+<Image title="Select CleverTap as a Destination and Click Next" alt="Select CleverTap as a Destination for Sync" align="center" border={true} src="https://files.readme.io/a9e9a8c-small-Select_Destination_Amplitude.png">
+  Select CleverTap as a Destination for Sync
+</Image>
 
 4. Select the API target to sync to your CleverTap project and click **Next**.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/98d3af4-small-API_Target_Amplitude.png",
-        "Select API Target and Click Next",
-        "Select API Target as CleverTap"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Select API Target as CleverTap"
-    }
-  ]
-}
-[/block]
+<Image title="Select API Target and Click Next" alt="Select API Target as CleverTap" align="center" border={true} src="https://files.readme.io/98d3af4-small-API_Target_Amplitude.png">
+  Select API Target as CleverTap
+</Image>
 
 5. Select one of the sync types and click **Sync**.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3ad3d20-small-Define_Cadence_Amplitude.png",
-        "Select Scheduled Sync and Click Sync",
-        "Define the Cadence for Cohort Sync from Amplitude"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Define the Cadence for Cohort Sync from Amplitude"
-    }
-  ]
-}
-[/block]
+<Image title="Select Scheduled Sync and Click Sync" alt="Define the Cadence for Cohort Sync from Amplitude" align="center" border={true} src="https://files.readme.io/3ad3d20-small-Define_Cadence_Amplitude.png">
+  Define the Cadence for Cohort Sync from Amplitude
+</Image>
 
-- **One-time Sync**: In the case of one-time sync, Amplitude sends a one-time list of users who are currently part of the cohort to CleverTap.
-- **Scheduled Sync**: In the case of scheduled sync, Amplitude initiates sync between a cohort and CleverTap on an hourly or daily basis. The imported segment is updated as per the chosen sync type to reflect the most recent list of users in the segment.
-- **Real-Time**: In the case of real-time sync, Amplitude sends a list of users in the cohort every minute to CleverTap. The real-time sync feature is available on request. To avail of this feature, contact your Amplitude team to enable it for your account.
+* **One-time Sync**: In the case of one-time sync, Amplitude sends a one-time list of users who are currently part of the cohort to CleverTap.
+* **Scheduled Sync**: In the case of scheduled sync, Amplitude initiates sync between a cohort and CleverTap on an hourly or daily basis. The imported segment is updated as per the chosen sync type to reflect the most recent list of users in the segment.
+* **Real-Time**: In the case of real-time sync, Amplitude sends a list of users in the cohort every minute to CleverTap. The real-time sync feature is available on request. To avail of this feature, contact your Amplitude team to enable it for your account.
 
 > 📘 Amplitude Cohort Sync
-> 
+>
 > Every cohort sync from Amplitude includes only the users added or removed from the cohort after the last sync.
 
 # View Amplitude Cohorts in CleverTap
 
-The cohort name defined in the Amplitude dashboard appears as the segment under the _Segments_ list page of the CleverTap dashboard. The _Type_ column under the _Segments_ list page for the exported cohort is displayed as _Partner - Amplitude_.
+The cohort name defined in the Amplitude dashboard appears as the segment under the *Segments* list page of the CleverTap dashboard. The *Type* column under the *Segments* list page for the exported cohort is displayed as *Partner - Amplitude*.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/42f595b-small-Segments_List_Amplitude_Import.png",
-        null,
-        "View Synced Cohort in CleverTap"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "View Synced Cohort in CleverTap"
-    }
-  ]
-}
-[/block]
+<Image alt="View Synced Cohort in CleverTap" align="center" border={true} src="https://files.readme.io/42f595b-small-Segments_List_Amplitude_Import.png">
+  View Synced Cohort in CleverTap
+</Image>
 
 Click the segment to view the statistics for this segment, like any other segment on the CleverTap dashboard.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9ac966d-small-View_Segments_Amplitude_Import.png",
-        null,
-        "View Segment Details"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "View Segment Details"
-    }
-  ]
-}
-[/block]
+<Image alt="View Segment Details" align="center" border={true} src="https://files.readme.io/9ac966d-small-View_Segments_Amplitude_Import.png">
+  View Segment Details
+</Image>
 
 You can also validate a user profile ingested from Amplitude using the Partner Sync event.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f323e91-small-User_Profile_Amplitude_Import.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" className="border" border={true} src="https://files.readme.io/f323e91-small-User_Profile_Amplitude_Import.png" />
 
 # Engage with Amplitude Cohort on CleverTap
 
@@ -458,26 +274,13 @@ To select the segment:
 
 1. From the dashboard, select **Campaigns**. 
 2. Click **+ Campaign**.
-3. From the _Messaging Channels_ list, select the messaging channel.
-4. Click **Who** and filter the target audience by selecting _With user properties_ > _Segments_.
+3. From the *Messaging Channels* list, select the messaging channel.
+4. Click **Who** and filter the target audience by selecting *With user properties* > *Segments*.
 5. Select the imported user segment from the available list of segments.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e94d4dc-small-With_User_Properties_Past_Behavior.png",
-        null,
-        "Select the Imported Segment for Past Behavior Campaigns/Journeys"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Select the Imported Segment for Past Behavior Campaigns/Journeys"
-    }
-  ]
-}
-[/block]
+<Image alt="Select the Imported Segment for Past Behavior Campaigns/Journeys" align="center" border={true} src="https://files.readme.io/e94d4dc-small-With_User_Properties_Past_Behavior.png">
+  Select the Imported Segment for Past Behavior Campaigns/Journeys
+</Image>
 
 **Scenario: Customer wants to send an In-App Message campaign to the user from Bangalore city when they launch the mobile application.** 
 
@@ -485,9 +288,9 @@ In this case, the customer will create a cohort (segment) in the Amplitude dashb
 
 To create the campaign, the customer will navigate to In-App Campaign and select the segment under the **Who** segment section in the following way:
 
-1. Select **App Launched **event under _As soon as the user does_ section.
-2. Select _Filter on past behavior and user properties_ checkbox.
-3. Select _With user properties_ > _Segments_ and then select the segment name from the list.
+1. Select **App Launched** event under *As soon as the user does* section.
+2. Select *Filter on past behavior and user properties* checkbox.
+3. Select *With user properties* > *Segments* and then select the segment name from the list.
 
 ## For Live Campaigns/Journeys
 
@@ -495,93 +298,149 @@ To select the segment:
 
 1. From the dashboard, select **Campaigns**. 
 2. Click **+ Campaign**.
-3. From the _Messaging Channels_ list, select the messaging channel.
-4. Click **Who** and then select _Partner Sync_ event from the list.
-5. Click _Filter_ and then select _Event Property Action_ = Added.
+3. From the *Messaging Channels* list, select the messaging channel.
+4. Click **Who** and then select *Partner Sync* event from the list.
+5. Click *Filter* and then select *Event Property Action* = Added.
 
 > 📘 Partner Sync Event
-> 
-> The _Partner Sync_ event is raised every time CleverTap receives a cohort sync request from Amplitude.
+>
+> The *Partner Sync* event is raised every time CleverTap receives a cohort sync request from Amplitude.
 
-6. Filter the target audience by selecting **Segments** under _With User Properties_.
+6. Filter the target audience by selecting **Segments** under *With User Properties*.
 7. Select the imported user segment from the available list of segments.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6cdf46e-small-With_User_Properties_Live_Behavior.png",
-        null,
-        "Select the Imported Segment for Live Campaign/Journeys "
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Select the Imported Segment for Live Campaign/Journeys "
-    }
-  ]
-}
-[/block]
+<Image alt="Select the Imported Segment for Live Campaign/Journeys " align="center" border={true} src="https://files.readme.io/6cdf46e-small-With_User_Properties_Live_Behavior.png">
+  Select the Imported Segment for Live Campaign/Journeys 
+</Image>
 
-**Scenario: Customer wants to send a recurring Email campaign to the users that added an item to the cart but did not purchase the item.**  
+**Scenario: Customer wants to send a recurring Email campaign to the users that added an item to the cart but did not purchase the item.**\
 In this case, the customer will create a cohort (segment) in the Amplitude dashboard and initiate a recurring export to CleverTap for engagement activities. On the CleverTap dashboard, the customer will create a recurring Email campaign for this cohort of users. To create the campaign, the customer will navigate to Email Campaign and create the campaign in the following way:
 
-1. Select _Start here_ > _Live Behavior_.
-2. Select **Partner Sync** event under the _As soon as the user does_ section.
-3. Click _Filter_ and then select Event Property _Action_ = _Added_.
-4. Select _Filter on past behavior and user properties_ checkbox.
-5. Select _Segments_ under _With user properties_ and then select the segment name from the list.
+1. Select *Start here* > *Live Behavior*.
+2. Select **Partner Sync** event under the *As soon as the user does* section.
+3. Click *Filter* and then select Event Property *Action* = *Added*.
+4. Select *Filter on past behavior and user properties* checkbox.
+5. Select *Segments* under *With user properties* and then select the segment name from the list.
 
 ## Find Amplitude Cohort from CleverTap Dashboard
 
 To find the Amplitude cohort:
 
 1. Navigate to Segments > Find People from the CleverTap dashboard.
-2. Select the **Partner Sync** event from the _Users who did_ section.
-3. Select _Segments_ under _Display common properties such as_ and select the segment name from the list.
+2. Select the **Partner Sync** event from the *Users who did* section.
+3. Select *Segments* under *Display common properties such as* and select the segment name from the list.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/37604c0-small-Find_People_Amplitude_Import.png",
-        null,
-        "View the Imported Cohort from Find People"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "View the Imported Cohort from Find People"
-    }
-  ]
-}
-[/block]
+<Image alt="View the Imported Cohort from Find People" align="center" border={true} src="https://files.readme.io/37604c0-small-Find_People_Amplitude_Import.png">
+  View the Imported Cohort from Find People
+</Image>
 
 # Partner Sync Event
 
-The _Partner Sync_ event is raised for all the users who are part of different partner segments. The following table provides information about the event properties:
+The *Partner Sync* event is raised for all the users who are part of different partner segments. The following table provides information about the event properties:
 
-| <p>Property Name</p>        | <p>Description</p>                                                                                  | <p>Property Value/Example</p>           |
-| :-------------------------- | :-------------------------------------------------------------------------------------------------- | :-------------------------------------- |
-| <p>Partner Segment Name</p> | <p>Indicates the name of the cohort (segment) exported from Amplitude.</p>                          | <p>For example, Cart Drop off</p>       |
-| <p>Action</p>               | <p>Indicates if the user has been added or removed from the segment in the CleverTap dashboard.</p> | <ul><li>Added</li><li>Removed</li></ul> |
-| Partner Segment ID          | Indicates the Cohort ID in the Amplitude dashboard                                                  | For example, 1638361188                 |
-| CT Source                   | Indicates the source of the event.                                                                  | Amplitude                               |
-| Partner Name                | Indicates the name of the partner from where the segment was imported.                              | Amplitude                               |
+<Table align={["left","left","left"]}>
+  <thead>
+    <tr>
+      <th>
+        <p>Property Name</p>
+      </th>
+
+      <th>
+        <p>Description</p>
+      </th>
+
+      <th>
+        <p>Property Value/Example</p>
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        <p>Partner Segment Name</p>
+      </td>
+
+      <td>
+        <p>Indicates the name of the cohort (segment) exported from Amplitude.</p>
+      </td>
+
+      <td>
+        <p>For example, Cart Drop off</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>Action</p>
+      </td>
+
+      <td>
+        <p>Indicates if the user has been added or removed from the segment in the CleverTap dashboard.</p>
+      </td>
+
+      <td>
+        <ul><li>Added</li><li>Removed</li></ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Partner Segment ID
+      </td>
+
+      <td>
+        Indicates the Cohort ID in the Amplitude dashboard
+      </td>
+
+      <td>
+        For example, 1638361188
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        CT Source
+      </td>
+
+      <td>
+        Indicates the source of the event.
+      </td>
+
+      <td>
+        Amplitude
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Partner Name
+      </td>
+
+      <td>
+        Indicates the name of the partner from where the segment was imported.
+      </td>
+
+      <td>
+        Amplitude
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 > 📘 Campaign Exceptions for Partner Sync Event
-> 
-> The _Partner Sync_ event cannot be used as a trigger event to create the campaigns for the following channels as it is not an SDK event:
-> 
-> - In-App Messages
-> - Web Popup
-> - Web Exit Intent
-> - App Inbox
-> - Native Display
+>
+> The *Partner Sync* event cannot be used as a trigger event to create the campaigns for the following channels as it is not an SDK event:
+>
+> * In-App Messages
+> * Web Popup
+> * Web Exit Intent
+> * App Inbox
+> * Native Display
 
 > 📘 Contribution Towards Billing
-> 
-> The _Partner Sync_ event contributes to data points for _MAU Billing Type_ and as an event for _Container Billing Type_.
+>
+> The *Partner Sync* event contributes to data points for *MAU Billing Type* and as an event for *Container Billing Type*.
 
 # FAQs
 
