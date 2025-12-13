@@ -22,98 +22,375 @@ This document presents a comprehensive collection of predefined messaging templa
 
 The following table displays In-App templates available to engage users within any app environment:
 
-[block:parameters]
-{
-  "data": {
-    "h-0": "Template Types",
-    "h-1": "Sub-Type",
-    "h-2": "Template Name",
-    "0-0": "Basic",
-    "0-1": "",
-    "0-2": "",
-    "1-0": "",
-    "1-1": "Content with image notification",
-    "1-2": "",
-    "2-0": "",
-    "2-1": "",
-    "2-2": "[Cover](doc:messaging-templates#cover)  \n<a href=\"https://files.readme.io/2f2c7c1-Cover.png\" target=\"_blank\">Link Test</a>",
-    "3-0": "",
-    "3-1": "",
-    "3-2": "[Half-Interstitial](doc:messaging-templates#half-interstitial)",
-    "4-0": "",
-    "4-1": "",
-    "4-2": "[Interstitial](doc:messaging-templates#interstitial)",
-    "5-0": "",
-    "5-1": "",
-    "5-2": "[Header](doc:messaging-templates#header)",
-    "6-0": "",
-    "6-1": "",
-    "6-2": "[Footer](doc:messaging-templates#footer)",
-    "7-0": "",
-    "7-1": "",
-    "7-2": "[Alert](doc:messaging-templates#alert)",
-    "8-0": "",
-    "8-1": "Image only notification",
-    "8-2": "",
-    "9-0": "",
-    "9-1": "",
-    "9-2": "[Cover](doc:messaging-templates#cover-1)",
-    "10-0": "",
-    "10-1": "",
-    "10-2": "[Half-Interstitial](doc:messaging-templates#half-interstitial-1)",
-    "11-0": "",
-    "11-1": "",
-    "11-2": "[Interstitial](doc:messaging-templates#interstitial-1)",
-    "12-0": "",
-    "12-1": "",
-    "12-2": "",
-    "13-0": "Ratings Templates",
-    "13-1": "",
-    "13-2": "",
-    "14-0": "",
-    "14-1": "",
-    "14-2": "[NPS Ratings](doc:messaging-templates#nps-ratings)",
-    "15-0": "",
-    "15-1": "",
-    "15-2": "[User Ratings](doc:messaging-templates#user-ratings)",
-    "16-0": "Lead Generation Template",
-    "16-1": "",
-    "16-2": "",
-    "17-0": "",
-    "17-1": "",
-    "17-2": "[Text only](doc:messaging-templates#text-only)",
-    "18-0": "",
-    "18-1": "",
-    "18-2": "[Image on Top](doc:messaging-templates#image-on-top)",
-    "19-0": "Custom HTML Templates",
-    "19-1": "",
-    "19-2": "",
-    "20-0": "",
-    "20-1": "Content with image notifications",
-    "20-2": "[Cover](doc:messaging-templates#cover-2)",
-    "21-0": "",
-    "21-1": "",
-    "21-2": "[Half-Interstitial](doc:messaging-templates#half-interstitial-2)",
-    "22-0": "",
-    "22-1": "",
-    "22-2": "[Interstitial](doc:messaging-templates#interstitial-2)",
-    "23-0": "",
-    "23-1": "",
-    "23-2": "[Header](doc:messaging-templates#header-1)",
-    "24-0": "",
-    "24-1": "",
-    "24-2": "[Footer](doc:messaging-templates#footer-1)"
-  },
-  "cols": 3,
-  "rows": 25,
-  "align": [
-    "left",
-    "left",
-    "left"
-  ]
-}
-[/block]
+<Table align={["left","left","left"]}>
+  <thead>
+    <tr>
+      <th>
+        Template Types
+      </th>
 
+      <th>
+        Sub-Type
+      </th>
+
+      <th>
+        Template Name
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        Basic
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+
+      </td>
+
+      <td>
+        Content with image notification
+      </td>
+
+      <td>
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        [Cover](doc:messaging-templates#cover)\ <a href="https://files.readme.io/2f2c7c1-Cover.png" target="_blank">Link Test</a>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        [Half-Interstitial](doc:messaging-templates#half-interstitial)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        [Interstitial](doc:messaging-templates#interstitial)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        [Header](doc:messaging-templates#header)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        [Footer](doc:messaging-templates#footer)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        [Alert](doc:messaging-templates#alert)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+
+      </td>
+
+      <td>
+        Image only notification
+      </td>
+
+      <td>
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        [Cover](doc:messaging-templates#cover-1)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        [Half-Interstitial](doc:messaging-templates#half-interstitial-1)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        [Interstitial](doc:messaging-templates#interstitial-1)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Ratings Templates
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        [NPS Ratings](doc:messaging-templates#nps-ratings)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        [User Ratings](doc:messaging-templates#user-ratings)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Lead Generation Template
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        [Text only](doc:messaging-templates#text-only)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        [Image on Top](doc:messaging-templates#image-on-top)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Custom HTML Templates
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+
+      </td>
+
+      <td>
+        Content with image notifications
+      </td>
+
+      <td>
+        [Cover](doc:messaging-templates#cover-2)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        [Half-Interstitial](doc:messaging-templates#half-interstitial-2)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        [Interstitial](doc:messaging-templates#interstitial-2)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        [Header](doc:messaging-templates#header-1)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        [Footer](doc:messaging-templates#footer-1)
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 ## [App Inbox](https://staging.docs.user.clevertap.net/docs/app-inbox)
 
