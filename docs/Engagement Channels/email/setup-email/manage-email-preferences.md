@@ -5,12 +5,12 @@ excerpt: >-
   management page using CleverTap's Email Preference Center feature.
 deprecated: false
 hidden: false
+link:
+  new_tab: false
 metadata:
   title: ''
   description: ''
   robots: index
-next:
-  description: ''
 ---
 # Overview
 
@@ -30,11 +30,16 @@ To configure the Email Preference Center:
 2. Click **+ Provider** to add a provider and [enter all the provider details](doc:setup-email#setup-provider).
 3. Select *System* from the *Email Preference Center* dropdown to use a pre-built preference center with a sample preview. If you select the <img src="https://files.readme.io/6f15938-image.png" height="30px" width="30px" /> icon, a preview popup window opens. This displays the sample of how the *Email Preference Center* appears to the user. The [subscription groups](doc:group-unsubscribe#subscription-groups) within the Email Preference Center changes based on your preferences in case of an actual campaign.
 
-<Image alt="Set up Email Preference" align="center" border={true} src="https://files.readme.io/6952660-image.png"> Set Up Email Preferences
+<Image alt="Set up Email Preference" align="center" border={true} src="https://files.readme.io/6952660-image.png">
+  Set Up Email Preferences
+</Image>
 
 4. Click **Save** to save your provider configuration.
 
-<Image alt="Provider Configuration Added" align="center" border={true} src="https://files.readme.io/ce4ff5a-image.png"> Provider Configuration Added
+<Image alt="Provider Configuration Added" align="center" border={true} src="https://files.readme.io/ce4ff5a-image.png">
+  Provider Configuration Added
+</Image>
+
 > 📘 Advanced Setup
 >
 > You can also preview the *Email Preference Center*  by navigating to *Channels*> *Email*. Select the *Advanced Setup* tab.
@@ -182,7 +187,7 @@ If the issue persists, contact our Customer Success Team for further assistance.
 
 ### 404 error while trying to access Email Preference Center *OR* when clicking on the unsubscribe link
 
-If the issue persists, contact our Customer Support Team for further assistance.
+After some time, you can try clicking the unsubscribe link. If the issue persists, contact our Customer Support Team for further assistance.
 
 <HTMLBlock>{`
 <style>
@@ -252,72 +257,3 @@ If the issue persists, contact our Customer Support Team for further assistance.
   }
 </style>
 `}</HTMLBlock>
-
-After some time, you can try clicking the unsubscribe link. If the issue persists, contact our Customer Support Team for further assistance.
-<style>
- /* nav#hub-sidebar { display: none; }*/
-  .rm-Guides .content-body, .rm-Guides #content-head .col-xs-9 {
-      max-width: 100%;
-      width: 1000px;
-  }
-  .markdown-body img{
-  	margin-left: 0;
-  }
- /* .rm-Guides a.suggestEdits {
-    display: none;
-  }*/
-  @media (min-width: 769px) {
-    .rm-Guides .rm-Article {
-        max-width: 100%;
-    }
-  }
-  .markdown-body summary {
-  font-size: 20px;
-  font-weight: bold; 
-  text-transform: camelcase;
-}
-  .toc-children img {
-    display: none;
-  } 
-  #content {
-    padding-left: 80px 
-  }
-  .heading-3  {
-    margin-top: 50px !important;
-  }
-  .heading-2  {
-    margin-top: 35px !important;
-  }
-  .heading-3 .heading-text {
-    color: #384248;
-  }
-  details {
-    margin-top: 35px !important;
-  }
-  .field-description h3, .markdown-body h3{
-    font-size: 1.35em;
-  }
-  .markdown-body summary {
-    font-size: 20px;
-  }
-
-  .heading-2 + .heading-3  {
-    margin-top: 20px !important;
-  }
-  details .heading-4  {
-    margin-top: 30px !important;
-  }
-  details .heading-3  {
-    margin-top: 50px !important;
-  }
-  details h3{
-    font-size: 1.5em !important;
-  }
-  details  h4{
-    font-size: 1.35em !important;
-  }
-  .rm-Guides #content-head h1 {
-    font-size: 40px;
-  }
-</style>
-{/* `}</HTMLBlock> */}
