@@ -71,6 +71,8 @@ When you select Past Behavior or Custom List Segment, the _When_ section shows t
 | **Send Now**           | Launches the campaign immediately using the current timestamp and the **account timezone** (for example, GMT+05:30 Asia/Kolkata). | Run a flash-sale promotion as soon as it is configured.                             |
 | **Schedule for Later** | Let's you choose a **future start date and time**. You can also adjust the timezone if required.                                  | Schedule a promo to start at 6:00 PM on a Friday evening to capture higher traffic. |
 
+<Image align="center" border={true} caption="Set Delivery Preferences in Past Behavior/Custom List Segments" src="https://files.readme.io/f64c9ea54de2ed6ec5e1f42297e4005d60be73e4dd7e6e07dd3364c20127b795-image.png" />
+
 ### For Live Behavior Segments
 
 When you select Live Behavior Segment, the _When_ section shows the following options:
@@ -126,7 +128,7 @@ When you select Live Behavior Segment, the _When_ section shows the following op
   </tbody>
 </Table>
 
-  Set Deliver Preference in Live Behavior Campaigns
+<Image align="center" border={true} caption="Set Deliver Preference in Live Behavior Campaigns" src="https://files.readme.io/ac5f953cd43599b7d06b8532535fe1ae8871b5e900f4559687d0b0fa8bba8dfb-image.png" />
 
 ## Publish Campaign
 
