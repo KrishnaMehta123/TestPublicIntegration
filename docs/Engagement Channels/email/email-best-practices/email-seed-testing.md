@@ -18,23 +18,9 @@ Seed Testing for inbox placement involves sending emails to a predetermined list
 
 Measuring campaign performance and checking IP/domain reputation through free sources like Google Postmaster, Microsoft SNDS, and block lists can provide some insight into email delivery. However, the only way to measure Inbox placement accurately is through seed testing, which third-party companies offer.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/256bf41-Email_Seed_Listing.png",
-        "",
-        "Email Seed Listing"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Email Seed Listing"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Email Seed Listing" align="center" border={true} src="https://files.readme.io/256bf41-Email_Seed_Listing.png">
+  Email Seed Listing
+</Image>
 
 # Seed List
 
@@ -46,8 +32,8 @@ To send an email to a seed list, you must upload the list to CleverTap. You can 
 
 When uploading the seed list file to CleverTap:
 
-- **Include Email Address and Identity**: Each entry in the file must contain an email address and an identity field. This helps to uniquely identify the users on the CleverTap dashboard.
-- **Add Custom Property**: You can optionally include an additional custom property to further distinguish seed list users from regular users. This property can be any relevant identifier or attribute that aids segmentation and targeting.
+* **Include Email Address and Identity**: Each entry in the file must contain an email address and an identity field. This helps to uniquely identify the users on the CleverTap dashboard.
+* **Add Custom Property**: You can optionally include an additional custom property to further distinguish seed list users from regular users. This property can be any relevant identifier or attribute that aids segmentation and targeting.
 
 Once the upload is complete, you must target the list separately before deploying the campaign. This is to avoid skewing the metrics, as these accounts do not engage.
 
@@ -55,11 +41,11 @@ Once the upload is complete, you must target the list separately before deployin
 
 The following are the benefits of Seed Testing:
 
-- **Customization for Accuracy**: Customize the seed list to accurately reflect your user base. For example, if your user base does not extend to Russian or Chinese ISPs, you need not incorporate seeds from these providers. However, if your users are primarily in Europe, you must include seeds from popular local providers instead.
-- **Pre-Campaign Testing**: Utilize seed testing to pre-test each campaign by targeting the seed list first. This proactive approach provides insights into campaign performance beforehand.
-- **ISP Acceptance Speed**: Seed testing also allows you to assess the speed at which your emails are accepted across various ISPs. This information aids in optimizing delivery strategies for faster acceptance rates.
-- **Blockage Identification and Content Optimization**: Through seed testing, identify ISPs that may block your emails and determine which content and subject lines yield the best results. This helps refine email content and strategies for improved deliverability and engagement.
+* **Customization for Accuracy**: Customize the seed list to accurately reflect your user base. For example, if your user base does not extend to Russian or Chinese ISPs, you need not incorporate seeds from these providers. However, if your users are primarily in Europe, you must include seeds from popular local providers instead.
+* **Pre-Campaign Testing**: Utilize seed testing to pre-test each campaign by targeting the seed list first. This proactive approach provides insights into campaign performance beforehand.
+* **ISP Acceptance Speed**: Seed testing also allows you to assess the speed at which your emails are accepted across various ISPs. This information aids in optimizing delivery strategies for faster acceptance rates.
+* **Blockage Identification and Content Optimization**: Through seed testing, identify ISPs that may block your emails and determine which content and subject lines yield the best results. This helps refine email content and strategies for improved deliverability and engagement.
 
 > 📘 Contact Support
-> 
+>
 > If you need support with the file upload process or with optimizing inbox placement, contact [support@clevertap.com](mailto:support@clevertap.com).
