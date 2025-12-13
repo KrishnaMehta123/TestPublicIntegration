@@ -14,8 +14,61 @@ next:
 
 The Partners section provides an overview of the integrations that allow you to export CleverTap data to leading analytics and customer data platforms. This page highlights the purpose of each partner so you can select the right destination for product analytics, customer data management, or multi-system distribution.
 
-[block:html]
-{
-  "html": "<style>\n  .grid {\n    display: grid;\n    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));\n    gap: 1rem;\n    padding: 0 1rem;\n    max-width: 100%;\n    margin: 0 auto;\n  }\n\n  .integration-card {\n  display: flex;\n  align-items: center;\n  justify-content: flex-start;\n  padding: 1.5rem 1rem; /* add top & bottom padding */\n  min-height: 64px; /* ensures consistent tile height */\n  background: #fff;\n  border-radius: 12px;\n  border: 1px solid rgba(0, 0, 0, 0.08);\n  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);\n  transition: box-shadow 0.2s ease-in-out;\n  text-decoration: none;\n}\n\n  .integration-card:hover {\n    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);\n  }\n\n  .icon {\n    width: 24px;\n    height: 24px;\n    stroke: #2b2e33;\n    flex-shrink: 0;\n  }\n\n  .name {\n    font-size: 1rem;\n    font-weight: 600;\n    color: #2b2e33;\n  }\n</style>\n\n<div class=\"grid\">\n  <a href=\"https://docs.clevertap.com/docs/amplitude-export\" class=\"integration-card\">\n    <div class=\"name\">Amplitude</div>\n  </a>\n  <a href=\"https://docs.clevertap.com/docs/mparticle-export\" class=\"integration-card\">\n    <div class=\"name\">mParticle</div>\n  </a>\n<a href=\"https://docs.clevertap.com/docs/mixpanel-export\" class=\"integration-card\">\n    <div class=\"name\">Mixpanel</div>\n  </a>\n<a href=\"https://docs.clevertap.com/docs/segmentcom\" class=\"integration-card\">\n    <div class=\"name\">Segment</div>\n  </a>\n</div>"
+<HTMLBlock>{`
+<style>
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1rem;
+    padding: 0 1rem;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .integration-card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1.5rem 1rem; /* add top & bottom padding */
+  min-height: 64px; /* ensures consistent tile height */
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.2s ease-in-out;
+  text-decoration: none;
 }
-[/block]
+
+  .integration-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  }
+
+  .icon {
+    width: 24px;
+    height: 24px;
+    stroke: #2b2e33;
+    flex-shrink: 0;
+  }
+
+  .name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2b2e33;
+  }
+</style>
+
+<div class="grid">
+  <a href="https://docs.clevertap.com/docs/amplitude-export" class="integration-card">
+    <div class="name">Amplitude</div>
+  </a>
+  <a href="https://docs.clevertap.com/docs/mparticle-export" class="integration-card">
+    <div class="name">mParticle</div>
+  </a>
+<a href="https://docs.clevertap.com/docs/mixpanel-export" class="integration-card">
+    <div class="name">Mixpanel</div>
+  </a>
+<a href="https://docs.clevertap.com/docs/segmentcom" class="integration-card">
+    <div class="name">Segment</div>
+  </a>
+</div>
+`}</HTMLBlock>
