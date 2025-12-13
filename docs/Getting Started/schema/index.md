@@ -195,11 +195,13 @@ You can discard an active event from the schema. You can still see the event row
 1. Click the ellipsis menu on the event row.
 2. Click **Discard**.
 
-![](https://files.readme.io/6f94655-Discard_event.png "Click Discard from the Ellipsis Menu to Discard the Event") Discard an Event
+<Image align="center" border={true} caption="Discard an Event" src="https://files.readme.io/6f94655-Discard_event.png" />
 
-> 📘 Discard Access
->
-> Only admin users can discard events.
+<Callout icon="📘" theme="info">
+  **Discard Access**
+
+  Only admin users can discard events.
+</Callout>
 
 ## Restore Event
 
@@ -227,7 +229,7 @@ You can restore a previously discarded event, event property, or user property f
 3. Click the ![](https://files.readme.io/d1a1a29245a043e42fe9f768ccb6c41e50dc1693d8b3553ac09edd9cadcc8355-Restore_Icon.png) icon.
 4. In the confirmation window, click **Restore**.
 
-![](https://files.readme.io/b64c088b7f531e770b0e9b81441008e59bb5b099c0a00a2f8b0be2826e0b9568-image.png) Restore Custom Event
+<Image align="center" border={true} caption="Restore Custom Event" src="https://files.readme.io/b64c088b7f531e770b0e9b81441008e59bb5b099c0a00a2f8b0be2826e0b9568-image.png" />
 
 ### Restore Multiple Items
 
