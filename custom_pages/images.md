@@ -6,7 +6,7 @@ metadata:
   title: ''
   description: ''
 ---
-# Getting Started 
+# Getting Started
 
 # Behavioral Analytics
 
@@ -18,16 +18,16 @@ metadata:
 
 # Product Experiences
 
-# Segmentation 
+# Segmentation
 
-#. Individualization 
+# . Individualization 
 
 # Integration Guide
 
-#  Billing 
+# Billing
 
 # FAQs
 
-# Security and Compliance 
+# Security and Compliance
 
 # Campaign Redesign
