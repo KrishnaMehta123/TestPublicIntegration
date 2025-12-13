@@ -77,13 +77,15 @@ The data retention policy (DRP) retains an event for the specified time before d
 2. From the System Events tab, click the ellipsis on the event row and click **Set DRP**.
 3. Select _Custom_, then enter your specific time limit.
 
-> 📘 CleverTap Essentials Plan Limit
->
-> The default DRP for CleverTap Essentials Plan users is one year, which cannot be changed.
+<Callout icon="📘" theme="info">
+  **CleverTap Essentials Plan Limit**
+
+  The default DRP for CleverTap Essentials Plan users is one year, which cannot be changed.
+</Callout>
 
 4. Click **Save**.
 
-![](https://files.readme.io/ba7f979-SET_DRP.png "Select the Storage Time and Click Save")  Set Data Retention Policy (DRP)
+<Image align="center" border={true} caption="Set Data Retention Policy" src="https://files.readme.io/ba7f979-SET_DRP.png" />
 
 ## Remove Event
 
