@@ -16,20 +16,20 @@ next:
 
 With this integration, you can:
 
-- Design responsive [email templates](https://documentation.alpaco.email/template/base) in Alpaco and import them into CleverTap for personalized customer interactions.
-- Automate email delivery based on customer actions such as sign-ups, purchases, or abandoned carts.
-- Re-engage users with targeted campaigns using dynamic templates created in Alpaco.
+* Design responsive [email templates](https://documentation.alpaco.email/template/base) in Alpaco and import them into CleverTap for personalized customer interactions.
+* Automate email delivery based on customer actions such as sign-ups, purchases, or abandoned carts.
+* Re-engage users with targeted campaigns using dynamic templates created in Alpaco.
 
 > 🚧 Support For Integration
-> 
+>
 > This integration is managed and continuously improved by Alpaco. The CleverTap and Alpaco integration has undergone stringent testing to ensure seamless functionality. For any questions or issues, contact [Alpaco](mailto:hello@alpaco.email) for support and resolution.
 
 # Prerequisites for Integration
 
 The following are the prerequisites:
 
-- Ensure you have an Alpaco account.
-- Ensure you have a CleverTap account with valid **Account ID**, **Passcode**, and **Region**.
+* Ensure you have an Alpaco account.
+* Ensure you have a CleverTap account with valid **Account ID**, **Passcode**, and **Region**.
 
 # Integrate Alpaco with CleverTap
 
@@ -44,7 +44,7 @@ The integration process involves the following three steps:
 Add CleverTap credentials on the Alpaco dashboard:
 
 > 📘 Note
-> 
+>
 > Currently, only **[Alpaco Support](mailto:hello@alpaco.email)** can create new ESP connection.
 
 ### Request CleverTap Integration to Alpaco
@@ -53,54 +53,24 @@ To integrate CleverTap with Alpaco, send a request to the [Alpaco Support team](
 
 | Field            | Description                                                                                                                                                                                                                              |
 | :--------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Account ID       | Locate the Project ID under _Settings_ > _Project_ from the CleverTap dashboard.                                                                                                                                                         |
-| Account Passcode | Locate the Passcode under _Settings_ > _Project_ from the CleverTap dashboard. For more information, refer to [Account Passcode](https://developer.clevertap.com/docs/authentication#create-account-passcode).                           |
-| Region           | Locate _Region_ for the API endpoint you want to select under _Settings_ > _Project_. To find the API endpoint for your region, refer to [API endpoints based on your data center region](https://developer.clevertap.com/docs/idc#api). |
+| Account ID       | Locate the Project ID under *Settings* > *Project* from the CleverTap dashboard.                                                                                                                                                         |
+| Account Passcode | Locate the Passcode under *Settings* > *Project* from the CleverTap dashboard. For more information, refer to [Account Passcode](https://developer.clevertap.com/docs/authentication#create-account-passcode).                           |
+| Region           | Locate *Region* for the API endpoint you want to select under *Settings* > *Project*. To find the API endpoint for your region, refer to [API endpoints based on your data center region](https://developer.clevertap.com/docs/idc#api). |
 
 Once the Alpaco team adds the integration with your CleverTap credentials, proceed with the following steps to configure the connection in the Alpaco dashboard.
 
-1. Go to _the Integration_ card in the lower right corner and click the edit icon ![Edit Icon](https://files.readme.io/7b1f6d0b5bdb305c353eda57953fc8a0f214786b757d83a7ed5bd015e5715680-2025-02-18_00-34-22.png) next to the ESP connection that has been set up for you.
+1. Go to *the Integration* card in the lower right corner and click the edit icon ![Edit Icon](https://files.readme.io/7b1f6d0b5bdb305c353eda57953fc8a0f214786b757d83a7ed5bd015e5715680-2025-02-18_00-34-22.png) next to the ESP connection that has been set up for you.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/cd0cb25ed1158fb2276d2f8516340163b1d9a7744e64b6ff719decb64540f209-image.png",
-        null,
-        "ESP connection on Alpaco dashboard"
-      ],
-      "align": "center",
-      "sizing": "65% ",
-      "border": true,
-      "caption": "ESP Connection on Alpaco Dashboard"
-    }
-  ]
-}
-[/block]
+<Image alt="ESP connection on Alpaco dashboard" align="center" width="65% " border={true} src="https://files.readme.io/cd0cb25ed1158fb2276d2f8516340163b1d9a7744e64b6ff719decb64540f209-image.png">
+  ESP Connection on Alpaco Dashboard
+</Image>
 
-
-2. Select _CleverTap_ from the _ESP Integration_ dropdown.
+2. Select *CleverTap* from the *ESP Integration* dropdown.
 3. Enter the same CleverTap **Account ID**, **Passcode**, and **Region** details that were sent in the request to Alpaco Support (these must match the credentials you provided).
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/27a28127cacd5d98bd9481d340ad49ad96db16754b784ba18e318da647bfe78f-image.png",
-        null,
-        "Connect CleverTap to Alpaco"
-      ],
-      "align": "center",
-      "sizing": "65% ",
-      "border": true,
-      "caption": "Connect CleverTap to Alpaco"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Connect CleverTap to Alpaco" align="center" width="65% " border={true} src="https://files.readme.io/27a28127cacd5d98bd9481d340ad49ad96db16754b784ba18e318da647bfe78f-image.png">
+  Connect CleverTap to Alpaco
+</Image>
 
 4. Click **Save** to connect CleverTap as an ESP connection.
 
@@ -108,84 +78,39 @@ Once the Alpaco team adds the integration with your CleverTap credentials, proce
 
 CleverTap supports personalization using [Liquid tags](https://docs.clevertap.com/docs/personalize-message-all#liquid-tags). To use Liquid tags for personalization in CleverTap, you must first set up personalization in Alpaco. To do so, refer to [Alpaco Merge Tags](https://documentation.alpaco.email/account-settings/merge-tags).
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/545b0f726d1e24ee4a5dad7c72520f72dc25100b4d4178c9ff88b1ba9181360e-image.png",
-        null,
-        "Personalization using Liquid tags in Alpaco"
-      ],
-      "align": "center",
-      "sizing": "65% ",
-      "border": true,
-      "caption": "Personalization using Liquid tags in Alpaco"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Personalization using Liquid tags in Alpaco" align="center" width="65% " border={true} src="https://files.readme.io/545b0f726d1e24ee4a5dad7c72520f72dc25100b4d4178c9ff88b1ba9181360e-image.png">
+  Personalization using Liquid tags in Alpaco
+</Image>
 
 ## Export Email Template to CleverTap
 
 After [setting up the template](https://documentation.alpaco.email/template/base) on Alpaco, you can export the email templates to CleverTap:
 
-1. Click **Export** in the top navigation bar and select _CleverTap_ from the export options.
+1. Click **Export** in the top navigation bar and select *CleverTap* from the export options.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/55fea5bce91f3a6ba84344732783e4ca328c9cbff229206b9d7b3ff4be9c1090-image.png",
-        null,
-        "Export Email Template to CleverTap"
-      ],
-      "align": "center",
-      "sizing": "65% ",
-      "border": true,
-      "caption": "Export Email Template to CleverTap"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Export Email Template to CleverTap" align="center" width="65% " border={true} src="https://files.readme.io/55fea5bce91f3a6ba84344732783e4ca328c9cbff229206b9d7b3ff4be9c1090-image.png">
+  Export Email Template to CleverTap
+</Image>
 
 2. Select ESP connection as CleverTap.
-3. Click **Export ** to import the template in CleverTap.
+3. Click **Export** to import the template in CleverTap.
 
 ## Create a CleverTap Campaign Using Alpaco Template
 
 To create an email campaign on CleverTap using the Alpaco for Email template, follow these steps:
 
-1. Go to the _Campaigns_ page, click **+ Campaign**, and select _Email_ from the list of messaging channels.
-2. Click **Go to Editor** under the _What_ section and select _Saved Templates_.
+1. Go to the *Campaigns* page, click **+ Campaign**, and select *Email* from the list of messaging channels.
+2. Click **Go to Editor** under the *What* section and select *Saved Templates*.
 
 > 📘 Update Email Templates in CleverTap
-> 
-> If you make any changes to email templates in Alpaco, they will not automatically reflect in the _Saved Templates_ on the CleverTap dashboard. To update the template in CleverTap, you must re-export it from Alpaco into CleverTap.
+>
+> If you make any changes to email templates in Alpaco, they will not automatically reflect in the *Saved Templates* on the CleverTap dashboard. To update the template in CleverTap, you must re-export it from Alpaco into CleverTap.
 
 3. Select the template you imported from Alpaco.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/70cbf0aee337c1d307e61bdd4dd28eae4a3d2c0841f061bfe60065a8ceb3502d-image.png",
-        null,
-        "Email Template - Saved Template in Campaign"
-      ],
-      "align": "center",
-      "sizing": "65% ",
-      "border": true,
-      "caption": "CleverTap Saved Email Templates"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Email Template - Saved Template in Campaign" align="center" width="65% " border={true} src="https://files.readme.io/70cbf0aee337c1d307e61bdd4dd28eae4a3d2c0841f061bfe60065a8ceb3502d-image.png">
+  CleverTap Saved Email Templates
+</Image>
 
 Once you [create an email campaign](https://docs.clevertap.com/docs/create-message-email) on the CleverTap dashboard, publish the campaign.
 
