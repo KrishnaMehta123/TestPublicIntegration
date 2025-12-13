@@ -511,13 +511,15 @@ The following configuration options are available when Partner Vouchers is selec
 | **Max codes per user**     | Defines how many times the voucher can be rewarded to the same user. This does not control redemption. If a user-level redemption limit is 2 and the same voucher is rewarded twice, user can redeem 4 times total. | Selecting _Limit = 1_ means each user can only be rewarded the voucher once.                            | Live Behavior Segments only                        |
 | **Max codes per campaign** | Defines the total number of voucher codes that the campaign can distribute.                                                                                                                                         | Selecting _Limit = 1000_ means the campaign stops distributing vouchers after 1000 vouchers are issued. | Live Behavior Segments                             |
 
-  Set Up Partner Vouchers in Rewards
+<Image align="center" border={true} caption="Set Up Partner Vouchers in Rewards" src="https://files.readme.io/5ede864217cd7dc80e936bad3e1ea62efb4de25939eca23a041f1d8f2aa1126e-image.png" />
 
-> 📘 Note
->
-> * Only active, unexpired voucher lists are displayed.
-> * No preview of voucher details is available.
-> * System ensures each user receives a unique, unused code.
+<Callout icon="📘" theme="info">
+  **Note**
+
+  * Only active, unexpired voucher lists are displayed.
+  * No preview of voucher details is available.
+  * System ensures each user receives a unique, unused code.
+</Callout>
 
 ## Custom Rewards
 
@@ -839,20 +841,22 @@ The following configuration options are available when Custom Rewards is selecte
   </tbody>
 </Table>
 
-![](https://files.readme.io/539ebea5210050327666ff4ed929383317200eb806d0ab85a7d1fa1ccd95f621-image.png)  Set Up Reward in Custom Rewards
+<Image align="center" border={true} caption="Set Up Reward in Custom Rewards" src="https://files.readme.io/539ebea5210050327666ff4ed929383317200eb806d0ab85a7d1fa1ccd95f621-image.png" />
 
-> 📘 **Points to Consider**
->
-> Before you begin:
->
-> * Ensure you configure the webhook endpoint before creating the campaign.
-> * Verify that the endpoint can handle campaign volume, retries, and logging.
->
-> During setup:
->
-> * Physical & Digital Rewards and Self-managed Wallet Credits have separate configuration options; choose the appropriate type based on your use case.
-> * The reward payload is fully customizable and scales automatically with campaign volume.
-> * Custom Rewards give maximum flexibility but require your external system to handle issuance and redemption.
+<Callout icon="📘" theme="info">
+  **Points to Consider**
+
+  Before you begin:
+
+  * Ensure you configure the webhook endpoint before creating the campaign.
+  * Verify that the endpoint can handle campaign volume, retries, and logging.
+
+  During setup:
+
+  * Physical & Digital Rewards and Self-managed Wallet Credits have separate configuration options; choose the appropriate type based on your use case.
+  * The reward payload is fully customizable and scales automatically with campaign volume.
+  * Custom Rewards give maximum flexibility but require your external system to handle issuance and redemption.
+</Callout>
 
 ### JSON Payload for Custom Rewards
 
