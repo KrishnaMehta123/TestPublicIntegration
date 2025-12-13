@@ -24,25 +24,25 @@ If you're using **WhatsApp Connect** (via a third-party BSP), contact your provi
 
 Brands using MM Lite API benefit from:
 
-- **Better Delivery Performance**  
+* **Better Delivery Performance**\
   Meta’s AI optimizes message delivery, dynamically prioritizing users most likely to engage, leading to higher delivery rates for marketing campaigns.
 
-- **No Additional Setup**  
+* **No Additional Setup**\
   Continue using your existing [**Campaigns**](https://docs.clevertap.com/docs/campaigns) and [**Journeys**](https://docs.clevertap.com/docs/journeys). Once MM Lite is enabled, CleverTap automatically routes eligible marketing messages via MM Lite.
 
-- **Rich Analytics**  
+* **Rich Analytics**\
   Access granular insights such as reads, clicks, and conversions through [WhatsApp Manager](https://business.facebook.com/wa/manage) (for WhatsApp Direct users) or via your BSP dashboard (for WhatsApp Connect, if supported).
 
-- **TTL Control** _(Coming Soon)_  
+* **TTL Control** *(Coming Soon)*\
   Set Time-to-Live (TTL) values on marketing templates to ensure timely, relevant delivery based on campaign urgency.
 
 # Prerequisites
 
 Before enabling MM Lite API for a WhatsApp Business Account (WABA), ensure the following conditions are met:
 
-- The [**Facebook Business Manager**](https://www.facebook.com/business/help/1710077379203657) associated with your WABA is verified.
-- The **phone number is registered** via the [Cloud API](https://developers.facebook.com/docs/whatsapp/cloud-api/get-started).
-- At least **one marketing template** is approved via Meta’s [Message Templates](https://developers.facebook.com/docs/whatsapp/message-templates/guidelines).
+* The [**Facebook Business Manager**](https://www.facebook.com/business/help/1710077379203657) associated with your WABA is verified.
+* The **phone number is registered** via the [Cloud API](https://developers.facebook.com/docs/whatsapp/cloud-api/get-started).
+* At least **one marketing template** is approved via Meta’s [Message Templates](https://developers.facebook.com/docs/whatsapp/message-templates/guidelines).
 
 # Comparison: MM Lite API vs. Cloud API
 
@@ -61,72 +61,62 @@ The table below highlights how the two APIs differ across key functional and per
 
 You can enable MM Lite API only if your WABA meets all the following criteria:
 
-- Facebook Business Manager is verified.
-- WABA is registered via the Cloud API.
-- At least one approved marketing template exists.
+* Facebook Business Manager is verified.
+* WABA is registered via the Cloud API.
+* At least one approved marketing template exists.
 
 ## MM Lite API Status Indicators
 
 The MM Lite API status indicates the current eligibility or activation state of a WhatsApp Business Account (WABA) within CleverTap. It helps you identify whether a WABA is ready for onboarding, has already been onboarded, or does not yet meet the necessary criteria. To view the status:
 
-1. Go to _Settings > Channels > WhatsApp_.
-2. Click the **WhatsApp Direct** tab, and check the _MM Lite Status_ column in the WABA list.
+1. Go to *Settings > Channels > WhatsApp*.
+2. Click the **WhatsApp Direct** tab, and check the *MM Lite Status* column in the WABA list.
 
 The following table below describes the meaning of each status value:
 
 | Status         | Description                                 |
 | -------------- | ------------------------------------------- |
-| _Not Eligible_ | WABA does not meet the minimum requirements |
-| _Eligible_     | Ready for onboarding                        |
-| _Onboarded_    | MM Lite has been successfully enabled       |
+| *Not Eligible* | WABA does not meet the minimum requirements |
+| *Eligible*     | Ready for onboarding                        |
+| *Onboarded*    | MM Lite has been successfully enabled       |
 
 > 📘 Note
-> 
+>
 > MM Lite API status is maintained at the WABA level and applies across all CleverTap projects associated with that WABA. If the same WABA is used in multiple projects, onboarding is required only once, and the status is reflected in each project.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5483c1cdeed73e3825f5f1c6b1b007b226d357f2435aa31d0df5b9232b0d7603-MM_Lite_status.png",
-        "",
-        "MM Lite Status"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "MM Lite Status"
-    }
-  ]
-}
-[/block]
-
+<Image alt="MM Lite Status" align="center" border={true} src="https://files.readme.io/5483c1cdeed73e3825f5f1c6b1b007b226d357f2435aa31d0df5b9232b0d7603-MM_Lite_status.png">
+  MM Lite Status
+</Image>
 
 # Enable MM Lite API for Your WABA
 
 Once a WABA is eligible, you can start the onboarding process from within CleverTap:
 
-1. Go to _Settings > Channels > WhatsApp_.
+1. Go to *Settings > Channels > WhatsApp*.
 2. Select the **WhatsApp Direct** tab.
-3. In the _MM Lite Status_ column, find the WABA marked as _Eligible_. and click ![](https://files.readme.io/127ad2caa9f8ce7847485cc41635bd3e8e470b34712613e8dba704cc19c800cf-2025-06-25_11-28-30.png) next to the WABA.
+3. In the *MM Lite Status* column, find the WABA marked as *Eligible*. and click ![](https://files.readme.io/127ad2caa9f8ce7847485cc41635bd3e8e470b34712613e8dba704cc19c800cf-2025-06-25_11-28-30.png) next to the WABA.
 4. In the popup dialog, click **Enable & Continue** to proceed. 
 
-   [block:image]{"images":[{"image":["https://files.readme.io/d13df176d109e9bd41983a2b2a400e94da3c733c59bf660ec5d98fa5b08566fd-MM_Lite_API_enable_and_continue.png","","Enable and Continue"],"align":"center","border":true,"caption":"Enable and Continue"}]}[/block]
+   <Image alt="Enable and Continue" align="center" border={true} src="https://files.readme.io/d13df176d109e9bd41983a2b2a400e94da3c733c59bf660ec5d98fa5b08566fd-MM_Lite_API_enable_and_continue.png">
+     Enable and Continue
+   </Image>
 5. A Meta onboarding dialog will appear:
 
-   - Select your **Facebook Business Manager**.
-   - Review and **grant the required consents**.
+   * Select your **Facebook Business Manager**.
+   * Review and **grant the required consents**.
 
-     [block:image]{"images":[{"image":["https://files.readme.io/e2cd9d210ee3bb583eda63615ec0812b0dbc2edfb5e6f9748768f540e4891183-meta_onboarding.png","","Meta Onboarding"],"align":"center","sizing":"65% ","border":true,"caption":"Meta Onboarding"}]}[/block]
+     <Image alt="Meta Onboarding" align="center" width="65% " border={true} src="https://files.readme.io/e2cd9d210ee3bb583eda63615ec0812b0dbc2edfb5e6f9748768f540e4891183-meta_onboarding.png">
+       Meta Onboarding
+     </Image>
 
 Once complete, the MM Lite Status will update to **Onboarded**.
 
 > 📘 MM Lite Status
-> 
+>
 > After completing the onboarding flow, MM Lite API is enabled immediately from Meta and can be used for marketing campaigns. However, the **MM Lite Status** in the CleverTap dashboard may take up to **2–3 days** to reflect the updated state. This delay does not impact functionality—messages will be routed via MM Lite API as soon as onboarding is completed.
 
 > ⚠️ Note
-> 
+>
 > Onboarding is irreversible. After onboarding, all marketing messages will be sent via MM Lite API.
 
 # Click Tracking and Attribution
@@ -141,8 +131,8 @@ When [click tracking](doc:whatsapp-editor#track-clicks-in-whatsapp-campaigns) is
 2. Logs clicks and redirects users to the original URL
 3. Preserves all query parameters, including:
 
-- Meta’s **fbclid**
-- Any pre-existing **UTM parameters**
+* Meta’s **fbclid**
+* Any pre-existing **UTM parameters**
 
 #### Example: Query Parameter Flow
 
@@ -154,15 +144,15 @@ When [click tracking](doc:whatsapp-editor#track-clicks-in-whatsapp-campaigns) is
 | Final Redirect       | `https://yourbrand.com/offers?utm_source=whatsapp&fbclid=abc123` |
 
 > 📘 Note
-> 
+>
 > The `fbclid` parameter is appended by Meta only when the URL is placed in a button within the WhatsApp message. It is not added for plain text links. In some cases, the parameter may not appear due to limitations in Meta’s delivery logic, this is expected behavior and does not indicate an issue with the campaign setup.
 
 # Handling Special Scenarios
 
 The following scenarios explain how MM Lite API onboarding behaves in specific conditions across accounts, numbers, and system-level rollouts:
 
-- **WABA Shared Across Projects**: Onboarding occurs once per WABA and is reflected across all projects.
-- **New Numbers Under Onboarded WABA**: These inherit MM Lite access automatically.
+* **WABA Shared Across Projects**: Onboarding occurs once per WABA and is reflected across all projects.
+* **New Numbers Under Onboarded WABA**: These inherit MM Lite access automatically.
 
 # Frequently Asked Questions
 
@@ -178,7 +168,7 @@ No. MM Lite is used only for marketing messages. All other messages use the Clou
 
 ### Where can I check the eligibility of a WABA?
 
-You can check the eligibility of a WABA by navigating to _Settings > Channels > WhatsApp > WhatsApp Direct_ and reviewing the _MM Lite Status_ column for each number listed.
+You can check the eligibility of a WABA by navigating to *Settings > Channels > WhatsApp > WhatsApp Direct* and reviewing the *MM Lite Status* column for each number listed.
 
 ### Can I disable MM Lite API after enabling it?
 
