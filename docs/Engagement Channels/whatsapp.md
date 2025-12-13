@@ -18,23 +18,9 @@ WhatsApp is a popular messaging channel that enables secure and trustworthy comm
 
 CleverTap provides the capability to use WhatsApp as a channel to engage users in a reliable and secure way. Moreover, you can use CleverTap's [conversations](doc:conversations) to chat with your users on WhatsApp.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/347266b-sample_whatsapp_conversation.png",
-        "sample whatsapp conversation.png",
-        605
-      ],
-      "align": "center",
-      "sizing": "50",
-      "caption": "Sample WhatsApp Conversation"
-    }
-  ]
-}
-[/block]
-
+<Image title="sample whatsapp conversation.png" alt={605} align="center" width="50%" src="https://files.readme.io/347266b-sample_whatsapp_conversation.png">
+  Sample WhatsApp Conversation
+</Image>
 
 ## WhatsApp as a Channel
 
@@ -44,9 +30,9 @@ A WhatsApp message can be configured and sent like any other campaign on CleverT
 
 Below are some use case scenarios:
 
-- Send real-time notifications to customers regarding delivery alerts and booking confirmations.
-- Send personalized recommendations about new products, offers, and services through rich media sharing.
-- Delight your customers with reminders about their upcoming bookings.
-- Enable your customer support team to respond to customer queries instantly.
+* Send real-time notifications to customers regarding delivery alerts and booking confirmations.
+* Send personalized recommendations about new products, offers, and services through rich media sharing.
+* Delight your customers with reminders about their upcoming bookings.
+* Enable your customer support team to respond to customer queries instantly.
 
 To learn how to craft high-impact campaigns, explore our guide on[ WhatsApp Marketing](https://clevertap.com/blog/whatsapp-marketing/) for best practices, strategies, and real-world use cases.
