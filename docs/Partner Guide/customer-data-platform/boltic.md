@@ -74,7 +74,7 @@ For this specific use case, we will use the Webhook trigger to send real-time da
       1. Select the appropriate authentication type from the dropdown.
       2. Enter a test payload in JSON format per the use case. The following are sample JSON payloads for pushing data.
          * Sample Payload for Sending User Profile Data (Track New User Sign-ups)
-           ```json
+           ```json coffeescript
            //for pushing user profile
            {
              "payload": {
