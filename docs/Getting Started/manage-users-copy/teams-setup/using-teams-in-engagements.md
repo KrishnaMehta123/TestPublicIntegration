@@ -19,7 +19,7 @@ The [Teams](https://docs.clevertap.com/docs/teams-setup) feature in CleverTap in
 This document explains how Teams affects the creation, editing, and approval workflows, segment usage, and visibility of campaigns and journeys.
 
 > 📘 **Private Beta**
-> 
+>
 > This feature is released in Private Beta and is enabled for select customers only. To enable this feature, contact your Customer Success Manager or raise a support ticket.
 
 # Access and Roles
@@ -30,134 +30,64 @@ Teams work alongside Roles to define both **what users can do** (permissions) an
 
 The Campaigns and Journeys listing pages display a Team column that shows the team associated with each engagement. This helps maintain clarity of ownership and restricts access based on team membership.
 
-- Non-admin users see only campaigns and journeys from the team they are currently logged into.
-- Admins can view all engagements, but must use the team switcher to view and manage campaigns for a different team.
-- If you access a campaign or journey via a shared link and are not part of the associated team, a _Permission Denied_ error is displayed.
+* Non-admin users see only campaigns and journeys from the team they are currently logged into.
+* Admins can view all engagements, but must use the team switcher to view and manage campaigns for a different team.
+* If you access a campaign or journey via a shared link and are not part of the associated team, a *Permission Denied* error is displayed.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2a50adbf2833e1460d04d2e919522062048ccc4e8d2706ba8ef0daa5449104e5-screen.png",
-        "",
-        "View Assigned Team for Engagements"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "View Assigned Team for Engagements"
-    }
-  ]
-}
-[/block]
-
+<Image alt="View Assigned Team for Engagements" align="center" border={true} src="https://files.readme.io/2a50adbf2833e1460d04d2e919522062048ccc4e8d2706ba8ef0daa5449104e5-screen.png">
+  View Assigned Team for Engagements
+</Image>
 
 The filter only displays the current logged-in team, as each session is scoped to a single team. Users must switch teams using the team switcher in the top navigation bar to view engagements from another team.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f62e226cbc3431dda9b9d9d302fa502565ab4c7016135e731228e52d2c723880-Filter_Engagements_Basis_Current_Logged_In_Team.gif",
-        "",
-        "Engagements Filtered Basis Current Logged In Team"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Engagements Filtered Basis Current Logged In Team"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Engagements Filtered Basis Current Logged In Team" align="center" border={true} src="https://files.readme.io/f62e226cbc3431dda9b9d9d302fa502565ab4c7016135e731228e52d2c723880-Filter_Engagements_Basis_Current_Logged_In_Team.gif">
+  Engagements Filtered Basis Current Logged In Team
+</Image>
 
 The campaign and journey listing pages display a **Team** column to indicate the team to which the engagement is associated.
 
-- You can view only the campaigns or journeys that belong to your assigned teams.
-- Admins can view campaigns and journeys across all teams.
-- If you try to access a campaign or journey via a shared link belonging to a different team, the _Permission Denied_ error displays. 
+* You can view only the campaigns or journeys that belong to your assigned teams.
+* Admins can view campaigns and journeys across all teams.
+* If you try to access a campaign or journey via a shared link belonging to a different team, the *Permission Denied* error displays. 
 
 This view ensures that entity visibility aligns with the access rules defined through Teams.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/85c7d4a2d63eb0af415f725054200340ab2f662123298c247903c6c52196849d-Teams_in_Campaign.png",
-        "",
-        "Teams in Campaign Listing"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "View Assigned Team for Campaign"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Teams in Campaign Listing" align="center" border={true} src="https://files.readme.io/85c7d4a2d63eb0af415f725054200340ab2f662123298c247903c6c52196849d-Teams_in_Campaign.png">
+  View Assigned Team for Campaign
+</Image>
 
 # Engagement Creation within Team
 
 When a user creates a new campaign or journey, the team assignment step determines where that item will reside and who will be able to access it:
 
-- If the user is assigned to only one team, that team is automatically selected and locked. The user cannot change it.
-- Admins can create campaigns and journeys under any team, as they are implicitly part of all teams.
-- While they are implicitly part of all teams, they must still create each item from within a specific team context. This means the campaign will belong to the team they are currently logged into. 
-- Admins can switch teams using the team switcher to create an engagement for the required team.
+* If the user is assigned to only one team, that team is automatically selected and locked. The user cannot change it.
+* Admins can create campaigns and journeys under any team, as they are implicitly part of all teams.
+* While they are implicitly part of all teams, they must still create each item from within a specific team context. This means the campaign will belong to the team they are currently logged into. 
+* Admins can switch teams using the team switcher to create an engagement for the required team.
 
 This behavior ensures that all entities are always created within a valid team scope.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9959c03feb2b9fb9918dc6ca1ceb5503cd6c0129f62a3e1710e33cc2a6d5dfb0-Engagement_Creation_Within_Team.png",
-        "",
-        "Team Selection"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Team Selection for Campaigns"
-    }
-  ]
-}
-[/block]
+<Image alt="Team Selection" align="center" border={true} src="https://files.readme.io/9959c03feb2b9fb9918dc6ca1ceb5503cd6c0129f62a3e1710e33cc2a6d5dfb0-Engagement_Creation_Within_Team.png">
+  Team Selection for Campaigns
+</Image>
 
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/207976183656c4ab029e8950db82f0e2710967bc757dbe174907e83e3143d6bc-Team_Selection_for_Journeys.png",
-        "",
-        "Assign Journey to a Team"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Team Selection for Journeys"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Assign Journey to a Team" align="center" border={true} src="https://files.readme.io/207976183656c4ab029e8950db82f0e2710967bc757dbe174907e83e3143d6bc-Team_Selection_for_Journeys.png">
+  Team Selection for Journeys
+</Image>
 
 This selection ensures the engagement is created with the correct access rights.
 
 > 📘 **Default Team Behavior**
-> 
-> - When Teams is enabled, all existing campaigns and journeys created before teams are automatically assigned to the Default Team. Any new entity created without a selected team will also default to this team.
-> - The Default Team cannot be deleted or renamed, and its campaigns and journeys are visible only to users who belong to it or Admins.
+>
+> * When Teams is enabled, all existing campaigns and journeys created before teams are automatically assigned to the Default Team. Any new entity created without a selected team will also default to this team.
+> * The Default Team cannot be deleted or renamed, and its campaigns and journeys are visible only to users who belong to it or Admins.
 
 # Segmentation in Engagements
 
-During campaign or journey creation, only segments from the same team are available in the _Who_ section, and when configuring any segment-based node, such as Goals, Conditional Split, or IntelliNODE for journeys. This also applies to Include/Exclude segments.
+During campaign or journey creation, only segments from the same team are available in the *Who* section, and when configuring any segment-based node, such as Goals, Conditional Split, or IntelliNODE for journeys. This also applies to Include/Exclude segments.
 
 > 🚧 **Sharing Segments Across Teams**
-> 
+>
 > If you change the team in draft state, previously selected segments from a different team become invalid and must be replaced.
 
 # Event Access in Campaigns
@@ -165,7 +95,7 @@ During campaign or journey creation, only segments from the same team are availa
 CleverTap enforces team-scoped event visibility to ensure users only interact with event data relevant to their assigned team. This enables cleaner governance and safeguards cross-team access. 
 
 > 📘 **Note**
-> 
+>
 > Filtered event access applies only to custom events. System events are always visible to all users and cannot be restricted.
 
 When a team is assigned to a user, the events accessible in campaigns are scoped to that team’s configuration. For more information on setting up Events in Teams, refer to [Event Visibility in Teams](https://docs.clevertap.com/docs/teams-setup#event-visibility-in-teams).
@@ -203,8 +133,8 @@ CleverTap’s personalization features, including Liquid Tags, Linked Content, a
 
 When Teams is enabled, campaign approval requests are routed based on the team assigned to the engagement. The approval logic is as follows:
 
-- Admins receive all approval requests, regardless of the team under which the campaign or journey was created.
-- Approvers receive approval requests only for campaigns created within teams to which they are assigned.
+* Admins receive all approval requests, regardless of the team under which the campaign or journey was created.
+* Approvers receive approval requests only for campaigns created within teams to which they are assigned.
 
 The following table outlines how approval requests are routed based on the user’s role, team assignment, and the team under which the campaign was created:
 
@@ -221,7 +151,7 @@ Here are answers to common questions about using Teams with Campaigns and Journe
 
 ### Can a campaign or journey be moved to another team after publishing?
 
-No. The team reassignment is allowed only in the _Draft_ state.
+No. The team reassignment is allowed only in the *Draft* state.
 
 ### What happens if a user is removed from a team?
 
