@@ -22,44 +22,15 @@ To invoke the personalization menu, type the @ symbol in the title or the text f
 
 You can also add dynamic replacements in the Web Exit Intent title and body. Notice a preview of the available Web Exit Intent notification.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8e7c117-Screenshot_2021-10-19_at_4.57.26_PM.png",
-        "Screenshot 2021-10-19 at 4.57.26 PM.png",
-        2874
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Inline Personalization"
-    }
-  ]
-}
-[/block]
-
-
+<Image title="Screenshot 2021-10-19 at 4.57.26 PM.png" alt={2874} align="center" border={true} src="https://files.readme.io/8e7c117-Screenshot_2021-10-19_at_4.57.26_PM.png">
+  Inline Personalization
+</Image>
 
 In addition to the title, and the message body, you can also personalize media URLs, deep links, or button text. An **@** icon in a box indicates that it can be personalized.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f2d1808-web_exit_image_personalization.png",
-        "web exit image personalization.png",
-        1388
-      ],
-      "align": "center",
-      "caption": "Personalize Media"
-    }
-  ]
-}
-[/block]
-
-
+<Image title="web exit image personalization.png" alt={1388} align="center" src="https://files.readme.io/f2d1808-web_exit_image_personalization.png">
+  Personalize Media
+</Image>
 
 # Recommendations
 
