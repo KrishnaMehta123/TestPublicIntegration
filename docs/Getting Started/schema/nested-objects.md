@@ -19,65 +19,51 @@ Nested Objects allow you to represent rich, structured information about your us
 For more information on implementation, including schema definitions and JSON examples, refer to [Ingesting Nested Objects via CleverTap APIs](https://developer.clevertap.com/docs/ingesting-nested-objects-via-clevertap-apis).
 
 > 📘 Public Beta
-> 
+>
 > This feature is released in Public Beta. For more information about this feature, contact your Customer Success Manager or CleverTap Support.
 
 ## Advantages
 
 When you use Nested Objects in CleverTap, you can do the following:
 
-- **Model complex entities naturally:** Store structured data as it exists in your business system.  
+* **Model complex entities naturally:** Store structured data as it exists in your business system.\
   For example: Save multiple insurance policies owned by a single user under one parent user property.
 
-- **Target users more granularly:** Create segments based on nested attributes.  
+* **Target users more granularly:** Create segments based on nested attributes.\
   For example: Identify users who have at least one expired subscription plan.
 
-- **Reduce engineering effort:** Send structured JSON payloads directly through the API without flattening.  
+* **Reduce engineering effort:** Send structured JSON payloads directly through the API without flattening.\
   For example: Provide order details, such as product name, quantity, and delivery status, as nested JSON objects.
 
 ## Use Cases
 
 Businesses across industries use Nested Objects to personalize engagement:
 
-- **BFSI** Notify customers when key stakeholders, such as policy beneficiaries or account nominees, lack email addresses.
-- **E-commerce:** Offer discounts to users with a cart containing at least one product in the _Shoes _ category.
-- **Telecom:** Remind subscribers about broadband renewals using plan metadata such as plan name, validity, and renewal date.
-- **Media & Entertainment:** Personalize recommendations based on nested metadata such as show titles, genres, or episode preferences saved in the user property.
+* **BFSI** Notify customers when key stakeholders, such as policy beneficiaries or account nominees, lack email addresses.
+* **E-commerce:** Offer discounts to users with a cart containing at least one product in the *Shoes* category.
+* **Telecom:** Remind subscribers about broadband renewals using plan metadata such as plan name, validity, and renewal date.
+* **Media & Entertainment:** Personalize recommendations based on nested metadata such as show titles, genres, or episode preferences saved in the user property.
 
 # Manage Nested Objects Across Platforms
 
 You can view and manage Nested Objects anywhere you access profile and event data.
 
-- **Profile Page:** View structured objects stored in a user’s profile. Each nested user property is shown as a dot-separated field under the User Properties tab on the profile.
+* **Profile Page:** View structured objects stored in a user’s profile. Each nested user property is shown as a dot-separated field under the User Properties tab on the profile.
 
-- **Segmentation Builder:** Create conditions using nested attributes, such as `Policies.Beneficiaries.Email`. You can combine multiple nested conditions to create granular filters, for example, segmenting users with at least one policy where the premium is overdue or the beneficiary lacks contact information.
+* **Segmentation Builder:** Create conditions using nested attributes, such as `Policies.Beneficiaries.Email`. You can combine multiple nested conditions to create granular filters, for example, segmenting users with at least one policy where the premium is overdue or the beneficiary lacks contact information.
 
 The Segmentation Builder in the image shows how nested fields appear within profile data and can be used to create filters.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c5aeec5eff621d610e90bf75239fe8ef3369a52cff95bf00997f85291cc005d0-image.png",
-        null,
-        "Nested Objects in Segment Builder"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Nested Objects in Segment Builder"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Nested Objects in Segment Builder" align="center" border={true} src="https://files.readme.io/c5aeec5eff621d610e90bf75239fe8ef3369a52cff95bf00997f85291cc005d0-image.png">
+  Nested Objects in Segment Builder
+</Image>
 
 > 📘 Dashboard Limitations with Nested Properties Segments
-> 
+>
 > You may see this message in some areas of the Dashboard:
-> 
-> "_Nested user property queries aren’t supported yet. Choose a segment without nested properties to proceed._"
-> 
+>
+> "*Nested user property queries aren’t supported yet. Choose a segment without nested properties to proceed.*"
+>
 > Support for nested user properties has yet to be provided in areas such as Predictions and Bulletins. To continue, use or create a segment with only standard (non-nested) user properties in such Product areas.
 
 ## System Considerations
@@ -97,11 +83,11 @@ CleverTap drops extra elements or raises an error if a payload exceeds these lim
 
 Follow these practices to maintain data quality:
 
-- Use consistent schema definitions across integrations.
-- Send only valid objects; CleverTap drops null or empty objects automatically.
-- Monitor object size and array length to stay within system limits.
-- Start with a test schema before rolling out to production.
-- Use clear attribute names for easier targeting.
+* Use consistent schema definitions across integrations.
+* Send only valid objects; CleverTap drops null or empty objects automatically.
+* Monitor object size and array length to stay within system limits.
+* Start with a test schema before rolling out to production.
+* Use clear attribute names for easier targeting.
 
 # FAQs
 
