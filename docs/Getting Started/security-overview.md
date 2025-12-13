@@ -17,8 +17,8 @@ next:
 Protecting customer data is always a priority at CleverTap. Our success as a business relies on the security of customer data stored with us. We, as a company, use the CleverTap platform for user analytics and engagement.
 
 > 📘 CleverTap Trust Portal
-> 
-> Get access to CleverTap’s security posture, audit reports, policies and controls on our  
+>
+> Get access to CleverTap’s security posture, audit reports, policies and controls on our\
 >     [Trust Portal](https://security.clevertap.com/).
 
 This document highlights the security measures taken to ensure the privacy, and confidentiality of customer data.
@@ -53,7 +53,7 @@ CleverTap uses battle-tested, open-source software to power some parts of its ap
 
 # Data Center Security
 
-Amazon Web Services is our hosting provider. They maintain data­ centers that are fully compliant with a range of certifications that allow finance, healthcare, and government data to be stored in their data­centers. A complete list of compliance and more information along with certification is available at <https://aws.amazon.com/compliance/>.
+Amazon Web Services is our hosting provider. They maintain data­ centers that are fully compliant with a range of certifications that allow finance, healthcare, and government data to be stored in their data­centers. A complete list of compliance and more information along with certification is available at [https://aws.amazon.com/compliance/](https://aws.amazon.com/compliance/).
 
 Shared responsibility with Amazon means we focus on application and data security while they manage physical security.
 
@@ -65,13 +65,13 @@ The security and confidentiality of your data are core to our success as a busin
 
 # Important Links
 
-- [App Tracking Transparency (ATT)](doc:att)
-- [Compliance and Certifications](doc:compliance-certifications)
-- [General Data Protection Regulation (GDPR)](doc:gdpr)
-- [Manage Personal Information](doc:manage-personal-information)
-- [Two-Factor Authentication (2FA)](account-2fa)
-- [IP Whitelisting ](doc:ip-whitelisting)
-- [Single Sign On (SSO](single-sign-on-sso))
+* [App Tracking Transparency (ATT)](doc:att)
+* [Compliance and Certifications](doc:compliance-certifications)
+* [General Data Protection Regulation (GDPR)](doc:gdpr)
+* [Manage Personal Information](doc:manage-personal-information)
+* [Two-Factor Authentication (2FA)](account-2fa)
+* [IP Whitelisting ](doc:ip-whitelisting)
+* [Single Sign On (SSO](single-sign-on-sso))
 
 # FAQs
 
@@ -93,5 +93,5 @@ A. If you notice something unusual in your account, please raise a ticket from t
 
 A. Yes, an admin can filter and download audit logs based on user emails and actions. To filter or download the audit logs: 
 
-1. Navigate to _Settings_ > _Audit Logs_.
+1. Navigate to *Settings* > *Audit Logs*.
 2. Click **Download All Logs**.
