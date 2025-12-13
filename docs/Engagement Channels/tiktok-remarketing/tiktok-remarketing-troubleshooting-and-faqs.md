@@ -24,8 +24,8 @@ This error happens when we attempt to fetch the audience size from TikTok, but t
 
 There are a couple of reasons why the audience size might appear as zero:
 
-- **Audience Not Matched Yet:** If you've recently uploaded an audience, it may take 24-48 hours for the size to update on the Audiences page in TikTok’s Ads Manager.
-- **Matched User Count is Less Than 1000:** For privacy reasons, TikTok will show the audience size as 0 if the matched user count is below 1000.
+* **Audience Not Matched Yet:** If you've recently uploaded an audience, it may take 24-48 hours for the size to update on the Audiences page in TikTok’s Ads Manager.
+* **Matched User Count is Less Than 1000:** For privacy reasons, TikTok will show the audience size as 0 if the matched user count is below 1000.
 
 ### 4. How long does it take for uploaded audiences to reflect in TikTok Ads Manager?
 
