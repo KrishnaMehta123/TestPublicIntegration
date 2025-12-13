@@ -16,16 +16,16 @@ This section will help you with troubleshooting identity management issues.
 
 # Identity Lifecycle \<\<@saby, can we make a table out of this for our internal users on the KB ?>>> This already exists in the system events documentations-> Not needed here
 
-\-- Identity Set  
-Dropped History (true,false)  
-ID ( value of identity )  
-Source ( SDK, API)  
-Type ( New User, Merged, Appended )  
--- Identity Error  
-ID ( value of identity )  
-Source ( SDK, API)  
--- Identity Reset  
-ID ( value of identity )  
+\-- Identity Set\
+Dropped History (true,false)\
+ID ( value of identity )\
+Source ( SDK, API)\
+Type ( New User, Merged, Appended )\
+\-- Identity Error\
+ID ( value of identity )\
+Source ( SDK, API)\
+\-- Identity Reset\
+ID ( value of identity )\
 Source ( SDK, API)
 
 # Identity Protection
@@ -38,9 +38,9 @@ Source ( SDK, API)
 
 ## Marketer Audit \<\<@saby, should we add this to our identity management docs to check if the identity is indeed being pushed to the CT dashboard?>> In the this needs to be explained to the marketer it would be ideal if we can simplify and make it less verbose
 
-If you don't have access to the tools, you can simply leverage the CleverTap dashboard to perform the same  
-validation. Confirm with your tech team the identity that the identity is being pushed to CleverTap on Login/Registration.  
-It can be your database identity or an email address.  
+If you don't have access to the tools, you can simply leverage the CleverTap dashboard to perform the same\
+validation. Confirm with your tech team the identity that the identity is being pushed to CleverTap on Login/Registration.\
+It can be your database identity or an email address.\
 Simply login/register into the app. Now using the identity/email you can search for the user profile in the CleverTap dashboard to validate the events/user properties being pushed.
 
 ![](https://files.readme.io/035da46-5_Marketer_Audit1.png "5 Marketer Audit1.png")
@@ -49,7 +49,7 @@ It will load the User Profile.
 
 ![](https://files.readme.io/9d98815-5_Marketer_Audit2.png "5 Marketer Audit2.png")
 
-# Developer Audit \<\<@saby can we add this to the developer docs in Android profiles ?>> -No, this is already there. 
+# Developer Audit \<\<@saby can we add this to the developer docs in Android profiles ?>> -No, this is already there.
 
 This will require a developer audit for Android & iOS and then a test from the CleverTap dashboard.
 
@@ -57,16 +57,16 @@ This will require a developer audit for Android & iOS and then a test from the C
 
 Add the following code snippet to your Application/Delegate class :
 
-- Android - `CleverTapAPI.setDebugLevel(1277182231)`
+* Android - `CleverTapAPI.setDebugLevel(1277182231)`
 
 ### Android Debug Log
 
-For Android, the logs will be visible in the Android Studio Logcat.  
+For Android, the logs will be visible in the Android Studio Logcat.\
 After you run the application with the code snippet, the Logcat window of Android Studio will allow you to see all the events trigger in real-time.
 
 ![](https://files.readme.io/0748f90-2_android1.png "2 android1.png")
 
-To find the same profile in the CleverTap dashboard, you can simply fetch the "g"(CleverTap ID) value available in logs. Enter this CleverTap ID in the CleverTap dashboard under _Segment_ > _Find People_.
+To find the same profile in the CleverTap dashboard, you can simply fetch the "g"(CleverTap ID) value available in logs. Enter this CleverTap ID in the CleverTap dashboard under *Segment* > *Find People*.
 
 ![](https://files.readme.io/b9dd683-2_android2.png "2 android2.png")
 
@@ -74,7 +74,7 @@ To find the same profile in the CleverTap dashboard, you can simply fetch the "g
 
 Add the following code snippet to your Application/Delegate class:
 
-- iOS - `CleverTap.setDebugLevel(1277182231)`
+* iOS - `CleverTap.setDebugLevel(1277182231)`
 
 ### iOS Debug Area Logs
 
