@@ -18,17 +18,17 @@ Businesses often collaborate with brand partners to offer incentives, such as di
 
 Vouchers can be uploaded for a partner along with their metadata, such as code name, description, and expiry date. The uploaded vouchers can then be mapped to a Promo Campaign to distribute a unique voucher to your users based on the intended actions defined in the Campaign.
 
-When a user receives a voucher, the Promo engine triggers an event called _CT Partner Voucher Rewarded_ with its event metadata. Based on this event, you can create a live-action engagement campaign, and the event metadata can be used as Liquid Tags to send a communication message to the user upon receiving the reward.
+When a user receives a voucher, the Promo engine triggers an event called *CT Partner Voucher Rewarded* with its event metadata. Based on this event, you can create a live-action engagement campaign, and the event metadata can be used as Liquid Tags to send a communication message to the user upon receiving the reward.
 
 # Features
 
 The following are the features of Partner Vouchers:
 
-- **Voucher List Management**: Upload, manage, and distribute voucher codes.
-- **Status Tracking**: Track the current state of voucher lists (Active, Expired, Paused, Archived).
-- **Campaign Mapping**: Map voucher lists to one or multiple Promo Campaigns. Each campaign can define specific conditions for voucher distribution. You can also track which campaigns are linked to a voucher list directly from the voucher list page.
-- **Voucher Utilization Tracking**: Track the number of codes issued against the total number of codes uploaded for each voucher list.
-- **Top-up Codes**: Top up the voucher list with a new set of codes when used codes exceed a threshold limit.
+* **Voucher List Management**: Upload, manage, and distribute voucher codes.
+* **Status Tracking**: Track the current state of voucher lists (Active, Expired, Paused, Archived).
+* **Campaign Mapping**: Map voucher lists to one or multiple Promo Campaigns. Each campaign can define specific conditions for voucher distribution. You can also track which campaigns are linked to a voucher list directly from the voucher list page.
+* **Voucher Utilization Tracking**: Track the number of codes issued against the total number of codes uploaded for each voucher list.
+* **Top-up Codes**: Top up the voucher list with a new set of codes when used codes exceed a threshold limit.
 
 # Voucher Distribution Workflow
 
@@ -53,8 +53,21 @@ Voucher distribution and redemption involve multiple participants, each playing 
 
 Refer to the following documents to explore how Partner Vouchers can transform your voucher distribution strategy and elevate your engagement efforts to new levels:
 
-[block:html]
-{
-  "html": "<div class=\"two-col-container\">\n  <div class=\"link-content\">\n    <ul>\n      <li><a class=\"links\" href=\"https://docs.clevertap.com/docs/create-and-manage-voucher-lists\" target=\"_blank\" rel=\"noopener noreferrer\">Create and Manage Voucher Lists</a></li>\n      <li><a class=\"links\" href=\"https://docs.clevertap.com/docs/handle-duplicate-voucher-codes\" target=\"_blank\" rel=\"noopener noreferrer\">Handle Duplicate Voucher Codes</a></li>\n      \n    </ul>\n  </div>\n  \n  <div class=\"link-content\">\n    <ul>\n      <li><a class=\"links\" href=\"https://docs.clevertap.com/docs/use-partner-vouchers-in-campaigns\" target=\"_blank\" rel=\"noopener noreferrer\">Use Partner Vouchers in Campaigns</a></li>\n      <li><a class=\"links\" href=\"https://docs.clevertap.com/docs/troubleshooting-faqs\" target=\"_blank\" rel=\"noopener noreferrer\">Troubleshooting & FAQs</a></li>\n    </ul>\n  </div>\n</div>"
-}
-[/block]
+<HTMLBlock>{`
+<div class="two-col-container">
+  <div class="link-content">
+    <ul>
+      <li><a class="links" href="https://docs.clevertap.com/docs/create-and-manage-voucher-lists" target="_blank" rel="noopener noreferrer">Create and Manage Voucher Lists</a></li>
+      <li><a class="links" href="https://docs.clevertap.com/docs/handle-duplicate-voucher-codes" target="_blank" rel="noopener noreferrer">Handle Duplicate Voucher Codes</a></li>
+      
+    </ul>
+  </div>
+  
+  <div class="link-content">
+    <ul>
+      <li><a class="links" href="https://docs.clevertap.com/docs/use-partner-vouchers-in-campaigns" target="_blank" rel="noopener noreferrer">Use Partner Vouchers in Campaigns</a></li>
+      <li><a class="links" href="https://docs.clevertap.com/docs/troubleshooting-faqs" target="_blank" rel="noopener noreferrer">Troubleshooting & FAQs</a></li>
+    </ul>
+  </div>
+</div>
+`}</HTMLBlock>
