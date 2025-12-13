@@ -14,16 +14,16 @@ next:
 
 This document lists all system-triggered alert emails automatically sent by the CleverTap platform. Each email is categorized by the following:
 
-- Email Sender
-- Triggering Scenario
+* Email Sender
+* Triggering Scenario
 
 # Email Categorization by Sender
 
 System-generated emails from the CleverTap platform are triggered by specific senders, each associated with distinct events or operational contexts:
 
-- [Account Notification Email](doc:system-triggered-alert-emails#account-notification-email)
-- [Billing Alert Email](doc:system-triggered-alert-emails#billing-alert-email)
-- [Other System Alerts](doc:system-triggered-alert-emails#other-system-alerts)
+* [Account Notification Email](doc:system-triggered-alert-emails#account-notification-email)
+* [Billing Alert Email](doc:system-triggered-alert-emails#billing-alert-email)
+* [Other System Alerts](doc:system-triggered-alert-emails#other-system-alerts)
 
 ## Account Notification Email
 
@@ -39,8 +39,8 @@ These are automated alerts triggered by platform events related to account setup
 
 **Feature Mapping**
 
-- **Billing**: Payment Information Updates, Primary Plan Changes, Billing Information Updates, Conversion to Paid Account
-- **Add-Ons**: Add-On Activation, Add-On Modifications
+* **Billing**: Payment Information Updates, Primary Plan Changes, Billing Information Updates, Conversion to Paid Account
+* **Add-Ons**: Add-On Activation, Add-On Modifications
 
 ## Billing Alert Email
 
@@ -56,7 +56,7 @@ These emails are triggered by consumption-based events, such as Monthly Active U
 
 **Feature Mapping**
 
-- **Consumption**: MAU Usage Alerts (80%, 100%, >100%), Monthly Overage Reports, 509 Usage Alerts
+* **Consumption**: MAU Usage Alerts (80%, 100%, >100%), Monthly Overage Reports, 509 Usage Alerts
 
 ## Other System Alerts
 
