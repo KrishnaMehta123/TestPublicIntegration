@@ -16,7 +16,7 @@ CleverTap’s location integrations allow you to deliver hyper-personalized expe
 
 CleverTap currently supports the following partner platforms:
 
-- [AccuWeather](doc:accuweather)
-- [OpenWeather](doc:open-weather)
-- [Radar](doc:radar)
-- [Weather API](doc:weather-api)
+* [AccuWeather](doc:accuweather)
+* [OpenWeather](doc:open-weather)
+* [Radar](doc:radar)
+* [Weather API](doc:weather-api)
