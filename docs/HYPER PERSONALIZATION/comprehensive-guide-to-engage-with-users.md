@@ -14,10 +14,10 @@ next:
 
 This document is a comprehensive guide to effectively target and engage users. It provides an overview of the following key features in CleverTap and highlights specific scenarios where these features can be most effective:
 
-- [Bulletins](doc:comprehensive-guide-to-engage-with-users#bulletins)
-- [Create Campaign API](doc:comprehensive-guide-to-engage-with-users#create-campaign-api)
-- [External Trigger ](doc:comprehensive-guide-to-engage-with-users#external-trigger-campaign)
-- [Message via Identity API](doc:comprehensive-guide-to-engage-with-users#message-via-identity-api)
+* [Bulletins](doc:comprehensive-guide-to-engage-with-users#bulletins)
+* [Create Campaign API](doc:comprehensive-guide-to-engage-with-users#create-campaign-api)
+* [External Trigger ](doc:comprehensive-guide-to-engage-with-users#external-trigger-campaign)
+* [Message via Identity API](doc:comprehensive-guide-to-engage-with-users#message-via-identity-api)
 
 # Bulletins
 
@@ -27,9 +27,9 @@ Consider a music streaming app that wants to inform users about new album releas
 
 The following are some of the ideal scenarios where Bulletins become handy to engage with your users:
 
-- _New Season Releases_: Notify users about the release of a new season or episode based on their previously watched genres or previous show engagements.
-- _Product Updates_: Inform users about new product features or updates, ensuring they know about enhancements and improvements.
-- _Event Announcements_: Broadcast information about upcoming events or promotions, driving awareness and participation. 
+* *New Season Releases*: Notify users about the release of a new season or episode based on their previously watched genres or previous show engagements.
+* *Product Updates*: Inform users about new product features or updates, ensuring they know about enhancements and improvements.
+* *Event Announcements*: Broadcast information about upcoming events or promotions, driving awareness and participation. 
 
 ## Implementation
 
@@ -44,8 +44,8 @@ The following are the four major steps to use the Bulletins feature in the Cleve
 
 The following are the key differentiators of CleverTap's Bulletins feature:
 
-- _Event-Driven Notifications_: Send messages triggered by specific business events.
-- _Multi-Channel Reach_: Engage users across different channels, maximizing visibility.
+* *Event-Driven Notifications*: Send messages triggered by specific business events.
+* *Multi-Channel Reach*: Engage users across different channels, maximizing visibility.
 
 # Create Campaign API
 
@@ -55,9 +55,9 @@ Consider an e-commerce business that wants to automate sending campaigns from it
 
 The following are some of the ideal scenarios where Create Campaign API becomes handy to engage with your users:
 
-- _Dynamic Campaign Creation_: Automate campaign generation based on user behavior or external data insights.
-- _Workflow Integration_: Seamlessly incorporate CleverTap campaign functionalities into existing marketing workflows or CRM systems.
-- _Scalable Marketing Efforts_: Manage and execute large-scale campaigns with ease, adapting to real-time marketing needs.
+* *Dynamic Campaign Creation*: Automate campaign generation based on user behavior or external data insights.
+* *Workflow Integration*: Seamlessly incorporate CleverTap campaign functionalities into existing marketing workflows or CRM systems.
+* *Scalable Marketing Efforts*: Manage and execute large-scale campaigns with ease, adapting to real-time marketing needs.
 
 ## Implementation
 
@@ -72,8 +72,8 @@ The following are the four major steps to use the Create Campaign API feature in
 
 The following are the key differentiators of CleverTap's Create Campaign API feature:
 
-- _Seamless Integration_: Integrate with existing systems for streamlined marketing processes.
-- _Scalability_: Efficiently create and manage multiple campaigns, catering to diverse marketing goals.
+* *Seamless Integration*: Integrate with existing systems for streamlined marketing processes.
+* *Scalability*: Efficiently create and manage multiple campaigns, catering to diverse marketing goals.
 
 # External Trigger Campaign
 
@@ -85,9 +85,9 @@ External campaigns are tailored for non-promotional use cases, enabling the deli
 
 The following are some of the ideal scenarios where External Trigger Campaigns become handy to engage with your users:
 
-- _Subscription Purchases or Upgrades_: Automatically send a confirmation email or push notification when a user upgrades their subscription plan, ensuring they are aware of the new benefits.
-- _Fitness Milestones_: Celebrate user achievements by sending congratulatory messages or badges when they reach fitness goals, like walking 15,000 steps, encouraging continued app engagement.
-- _Order Confirmations_: Send detailed order confirmation messages immediately after a purchase is made on your e-commerce platform, improving customer satisfaction and clarity.
+* *Subscription Purchases or Upgrades*: Automatically send a confirmation email or push notification when a user upgrades their subscription plan, ensuring they are aware of the new benefits.
+* *Fitness Milestones*: Celebrate user achievements by sending congratulatory messages or badges when they reach fitness goals, like walking 15,000 steps, encouraging continued app engagement.
+* *Order Confirmations*: Send detailed order confirmation messages immediately after a purchase is made on your e-commerce platform, improving customer satisfaction and clarity.
 
 ## Implementation
 
@@ -102,9 +102,9 @@ The following are the four major steps to use the External Trigger feature in th
 
 The following are the key differentiators of CleverTap's External Trigger feature:
 
-- _Real-time Engagement_: Instantly respond to user actions.
-- _Removes Engineering Dependency_: Managing content editing directly from the dashboard eliminates the need for engineering intervention.
-- _Personalization_: Tailor messages based on the user's external activities and profile. Profile property personalization is available since the content is defined on the dashboard.
+* *Real-time Engagement*: Instantly respond to user actions.
+* *Removes Engineering Dependency*: Managing content editing directly from the dashboard eliminates the need for engineering intervention.
+* *Personalization*: Tailor messages based on the user's external activities and profile. Profile property personalization is available since the content is defined on the dashboard.
 
 # Message via Identity API
 
@@ -114,8 +114,8 @@ Consider a scenario where the business wants to target users based on their uniq
 
 The following are some of the ideal scenarios where the Message via Identity API feature becomes handy to engage with your users:
 
-- Targeted Notifications Using External Segmentation Systems: Trigger notifications to target specific users identified and grouped by an external tool or service based on certain criteria.
-- Notifications for Non-Promotional Use Cases: These notifications can be sent as general updates without requiring segmentation. They can be directed to specific individuals.
+* Targeted Notifications Using External Segmentation Systems: Trigger notifications to target specific users identified and grouped by an external tool or service based on certain criteria.
+* Notifications for Non-Promotional Use Cases: These notifications can be sent as general updates without requiring segmentation. They can be directed to specific individuals.
 
 ## Implementation
 
@@ -130,4 +130,4 @@ The following are the four major steps to use the Message via Identity API featu
 
 The following is the key differentiator of CleverTap's Message via Identity API feature:
 
-_Real-time Engagement_: Instantly respond to user actions.
+*Real-time Engagement*: Instantly respond to user actions.
