@@ -22,44 +22,16 @@ Funnels are useful to check the number of users that are progressing towards the
 
 # Event in Funnels or Flows
 
-Flows can have repeated steps because it provides the order of events performed by the user. For example, a user performed _App Launched_ event three times in quick succession and the _Product Viewed _ event two times, then the Flows are displayed as:
+Flows can have repeated steps because it provides the order of events performed by the user. For example, a user performed *App Launched* event three times in quick succession and the *Product Viewed* event two times, then the Flows are displayed as:
 
-_App Launched > App Launched > App Launched > Product Viewed > Product Viewed_
+*App Launched > App Launched > App Launched > Product Viewed > Product Viewed*
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b49f3c9-Flows_events.png",
-        "View Events in Funnels or Flows",
-        896
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "View Events in Funnels or Flows"
-    }
-  ]
-}
-[/block]
+<Image title="View Events in Funnels or Flows" alt={896} align="center" border={true} src="https://files.readme.io/b49f3c9-Flows_events.png">
+  View Events in Funnels or Flows
+</Image>
 
+Funnels display the movement of users. Therefore, a user event is counted only once even if it is repeated. For example, *App Launched* and *Product Viewed* will be two steps even if the user repeats one or both events.
 
-
-Funnels display the movement of users. Therefore, a user event is counted only once even if it is repeated. For example, _App Launched_ and _Product Viewed_ will be two steps even if the user repeats one or both events.
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1f24c87-Funnel_Dropoff.png",
-        "Select Percentage or Count to View Events",
-        1168
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "View Percentage or Count of Events"
-    }
-  ]
-}
-[/block]
+<Image title="Select Percentage or Count to View Events" alt={1168} align="center" border={true} src="https://files.readme.io/1f24c87-Funnel_Dropoff.png">
+  View Percentage or Count of Events
+</Image>
