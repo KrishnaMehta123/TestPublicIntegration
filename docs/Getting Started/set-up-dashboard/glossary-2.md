@@ -50,18 +50,18 @@ A collection of tactics designed to capture the attention of its targets through
 
 The type of communication to reach your users, including:
 
-- [Push Notifications](https://docs.clevertap.com/docs/push)
-- [In-App](doc:in-app)
-- [App Inbox](https://docs.clevertap.com/docs/app-inbox)
-- [Native Display](https://docs.clevertap.com/docs/native-display)
-- [Web Push](https://docs.clevertap.com/docs/web-push)
-- [Web Pop-up](https://docs.clevertap.com/docs/web-pop-ups)
-- [SMS](doc:sms-overview)
-- [Email](https://docs.clevertap.com/docs/email)
-- [Google Adwords](https://docs.clevertap.com/docs/google-adwords)
-- [Facebook Audiences](https://docs.clevertap.com/docs/facebook-audiences)
-- [WhatsApp](https://docs.clevertap.com/docs/whatsapp)
-- [Webhooks](https://developer.clevertap.com/docs/webhooks)
+* [Push Notifications](https://docs.clevertap.com/docs/push)
+* [In-App](doc:in-app)
+* [App Inbox](https://docs.clevertap.com/docs/app-inbox)
+* [Native Display](https://docs.clevertap.com/docs/native-display)
+* [Web Push](https://docs.clevertap.com/docs/web-push)
+* [Web Pop-up](https://docs.clevertap.com/docs/web-pop-ups)
+* [SMS](doc:sms-overview)
+* [Email](https://docs.clevertap.com/docs/email)
+* [Google Adwords](https://docs.clevertap.com/docs/google-adwords)
+* [Facebook Audiences](https://docs.clevertap.com/docs/facebook-audiences)
+* [WhatsApp](https://docs.clevertap.com/docs/whatsapp)
+* [Webhooks](https://developer.clevertap.com/docs/webhooks)
 
 ### Compliance & Certifications
 
