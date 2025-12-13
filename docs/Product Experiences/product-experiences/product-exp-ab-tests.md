@@ -20,11 +20,11 @@ For example, test your app for a better click-through rate. There are many ways 
 
 An A/B test has three components. 
 
-- Segment - The set of users that will see the different variants. For creating segments, see [Create Segments](https://docs.clevertap.com/docs/product-experiences-setup#section-create-segments).
+* Segment - The set of users that will see the different variants. For creating segments, see [Create Segments](https://docs.clevertap.com/docs/product-experiences-setup#section-create-segments).
 
-- Keys - These are the keys that you have defined in your app code. You can map these keys from the CleverTap dashboard and control your app's configuration. Keys allow you to define the variable and default value to be used in the test. Keys can be shared across multiple A/B tests. For more information about creating keys, see [Create Keys](https://docs.clevertap.com/docs/product-experiences-setup#section-create-keys). 
+* Keys - These are the keys that you have defined in your app code. You can map these keys from the CleverTap dashboard and control your app's configuration. Keys allow you to define the variable and default value to be used in the test. Keys can be shared across multiple A/B tests. For more information about creating keys, see [Create Keys](https://docs.clevertap.com/docs/product-experiences-setup#section-create-keys). 
 
-- Goals - This is the desired outcome of your test. They help evaluate the performance of an A/B test. It is an event and when a user performs this event, it is considered as a conversion. For more information on creating goals, see [Creating Goals](https://docs.clevertap.com/docs/product-experiences-setup#section-create-goals)
+* Goals - This is the desired outcome of your test. They help evaluate the performance of an A/B test. It is an event and when a user performs this event, it is considered as a conversion. For more information on creating goals, see [Creating Goals](https://docs.clevertap.com/docs/product-experiences-setup#section-create-goals)
 
 An A/B test consists of a default control variant and one or more test variants. For each variant, CleverTap enables you to quantify the impact on important metrics such as a conversion event or goal.
 
@@ -34,46 +34,18 @@ An A/B test consists of a default control variant and one or more test variants.
 2. Click the +A/B Tests button. The Create New page appears. 
 3. Add a name and meaningful description for the test. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/160bb9e-Define_AB_Tests.png",
-        null,
-        "Define A/B Test"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Define A/B Test"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Define A/B Test" align="center" border={true} src="https://files.readme.io/160bb9e-Define_AB_Tests.png">
+  Define A/B Test
+</Image>
 
 # Select Segment and Goals
 
 1. Select a Segment or a test group from the Segment. If you want to roll out the test partially, select the percentage of users in a segment that can see the test, using test group %.
 2. Select the goals. In our example, we select a single goal. It is a purchase event. For creating a goal, see [Set up Goals](https://docs.clevertap.com/docs/product-experiences-setup#section-goals). You can select a maximum of 5 goals.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e0ccaec-AB_Segment_Segments_Goals.png",
-        "Select segment and goals for your A/B Tests",
-        916
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Selecting Segments and Goals for A/B Tests"
-    }
-  ]
-}
-[/block]
-
+<Image title="Select segment and goals for your A/B Tests" alt={916} align="center" border={true} src="https://files.readme.io/e0ccaec-AB_Segment_Segments_Goals.png">
+  Selecting Segments and Goals for A/B Tests
+</Image>
 
 3. Make users exclusive for this test. From a qualifying segment, only unique users that are not part of any other test are selected. Also, such users are not included in any other test until the current test is stopped, rolled out, or the user is disqualified for some reason.  For more information, see [Setting mutually exclusive users](https://docs.clevertap.com/docs/product-experiences-setup#section-mutually-exclusive-a-b-tests)
 
@@ -81,53 +53,25 @@ An A/B test consists of a default control variant and one or more test variants.
 
 ## Create Variations
 
-1. Create different variations of the test. Select [Keys](https://docs.clevertap.com/docs/product-experiences-setup#section-create-keys) and enter values for the Test Variant. The Control Variant displays the default value defined for the key in the setup, which cannot be edited.  
+1. Create different variations of the test. Select [Keys](https://docs.clevertap.com/docs/product-experiences-setup#section-create-keys) and enter values for the Test Variant. The Control Variant displays the default value defined for the key in the setup, which cannot be edited.\
    You can have a maximum of 7 variants. 
 2. Click Next.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c55b1bb-Create_variations.png",
-        null,
-        "Creating Variations and Keys"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Creating Variations and Keys"
-    }
-  ]
-}
-[/block]
+<Image alt="Creating Variations and Keys" align="center" border={true} src="https://files.readme.io/c55b1bb-Create_variations.png">
+  Creating Variations and Keys
+</Image>
 
-
-> 📘 
-> 
+> 📘
+>
 > All identified users will always get the same variant across all devices. If some users choose not to identify, then they may see different variants on different devices.
 
 # Schedule AB Test
 
 Schedule the start and end time of your test. You can choose to start immediately or at a later date and time. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a31d8ed-AB_Test_Schedule.png",
-        "Scheduling A/B tests",
-        633
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Scheduling A/B Tests"
-    }
-  ]
-}
-[/block]
-
+<Image title="Scheduling A/B tests" alt={633} align="center" border={true} src="https://files.readme.io/a31d8ed-AB_Test_Schedule.png">
+  Scheduling A/B Tests
+</Image>
 
 # Publish AB Test
 
@@ -135,43 +79,15 @@ Publish the test to start receiving results.
 
 1. Save the test and review all the test information.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a5716f3-AB_Test_Publish_Summary.png",
-        "Review and edit variations for A/B Tests ",
-        864
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Reviewing A/B Test Variations"
-    }
-  ]
-}
-[/block]
-
+<Image title="Review and edit variations for A/B Tests " alt={864} align="center" border={true} src="https://files.readme.io/a5716f3-AB_Test_Publish_Summary.png">
+  Reviewing A/B Test Variations
+</Image>
 
 2. Publish the test. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b378cf2-AB_Experiment_Publish.png",
-        "Publish A/B Tests",
-        881
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Publishing A/B Tests "
-    }
-  ]
-}
-[/block]
-
+<Image title="Publish A/B Tests" alt={881} align="center" border={true} src="https://files.readme.io/b378cf2-AB_Experiment_Publish.png">
+  Publishing A/B Tests 
+</Image>
 
 # Manage Test
 
@@ -182,18 +98,18 @@ Publish the test to start receiving results.
 
 You can edit a published test. The following fields can be edited in a test - 
 
-- Change the description 
-- Change the test group % of the chosen segment
-- Add or delete goals 
-- Add or delete keys 
-- Change values of the keys 
+* Change the description 
+* Change the test group % of the chosen segment
+* Add or delete goals 
+* Add or delete keys 
+* Change values of the keys 
 
 1. Navigate to Product Experiences > A/B Tests. The A/B Tests page lists all the tests. 
 2. Click the required test from the list. 
 3. Click Setup.
 
 > 📘 Note
-> 
+>
 > For a Scheduled AB test, all components including segment can be edited.
 
 ### Version Control
@@ -204,45 +120,17 @@ A new version is created every time a published test is edited. The stats for ea
 2. Click the required test from the list.
 3. Click the View Version History link. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/55ef7bb-AB_Test_version_link.png",
-        "Click View version history link to view versions of the variations",
-        873
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Click View Version History"
-    }
-  ]
-}
-[/block]
-
+<Image title="Click View version history link to view versions of the variations" alt={873} align="center" border={true} src="https://files.readme.io/55ef7bb-AB_Test_version_link.png">
+  Click View Version History
+</Image>
 
 4. The Version History page appears. Click the required version to see the stats.
 
 You can revert to an earlier version anytime. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/64d3297-AB_Test_version_history.png",
-        "View version history details",
-        897
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Viewing Version History Details"
-    }
-  ]
-}
-[/block]
-
+<Image title="View version history details" alt={897} align="center" border={true} src="https://files.readme.io/64d3297-AB_Test_version_history.png">
+  Viewing Version History Details
+</Image>
 
 ## View Stats
 
@@ -256,23 +144,9 @@ You can view the test stats to determine the performance of the test. In our exa
 
 Statistical significance provides a measurable impact for your winning variant by eliminating any possibility of a chance winner. We use Welch's t-test to measure statistical significance. The formula for calculating the necessary confidence level for a variant to be declared as statistically significant is `100 - (5 / number of variants - 1)`. For more information on A/B testing, see [How to Identify and Mitigate Risk in A/B Testing](https://clevertap.com/blog/how-to-identify-and-mitigate-risk-in-a-b-testing/).
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/29d2015-AB_Exposure_event_Stats.png",
-        "View statistical significance of variations",
-        2336
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Viewing Statistical Significance of Variations"
-    }
-  ]
-}
-[/block]
-
+<Image title="View statistical significance of variations" alt={2336} align="center" border={true} src="https://files.readme.io/29d2015-AB_Exposure_event_Stats.png">
+  Viewing Statistical Significance of Variations
+</Image>
 
 ## Exposure Event
 
@@ -286,63 +160,21 @@ To set exposure events, follow these steps:
 2. Click the required test from the list. The Stats page appears by default. 
 3. Toggle the Test exposure event button. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2fe5828-AB_Exposure_event_toggle.png",
-        "Toggle ON the Test exposure event option",
-        2366
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Enable Exposure Events"
-    }
-  ]
-}
-[/block]
-
+<Image title="Toggle ON the Test exposure event option" alt={2366} align="center" border={true} src="https://files.readme.io/2fe5828-AB_Exposure_event_toggle.png">
+  Enable Exposure Events
+</Image>
 
 4. Select and save the exposure event
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8c40e29-AB_Exposure_event_set.png",
-        "Select and save exposure events",
-        908
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Selecting and Saving Exposure Events"
-    }
-  ]
-}
-[/block]
-
+<Image title="Select and save exposure events" alt={908} align="center" border={true} src="https://files.readme.io/8c40e29-AB_Exposure_event_set.png">
+  Selecting and Saving Exposure Events
+</Image>
 
 5. View Conversion Stats.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9b5c0b4-AB_Exposure_event_Stats.png",
-        "View conversion stats",
-        2336
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Viewing Conversion Stats"
-    }
-  ]
-}
-[/block]
-
+<Image title="View conversion stats" alt={2336} align="center" border={true} src="https://files.readme.io/9b5c0b4-AB_Exposure_event_Stats.png">
+  Viewing Conversion Stats
+</Image>
 
 ## Declare Winner
 
@@ -350,29 +182,14 @@ The best-performing variant can be declared a winner.
 
 1. Click the Declare Winner button to declare a variant as the winner. The Declare Winner window appears.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/28beebf-AB_Test_Declare_Winner.png",
-        "Declare the winning variant for A/B tests",
-        386
-      ],
-      "align": "center",
-      "sizing": "80",
-      "border": true,
-      "caption": "Declare the Winning Variant"
-    }
-  ]
-}
-[/block]
-
+<Image title="Declare the winning variant for A/B tests" alt={386} align="center" width="80%" border={true} src="https://files.readme.io/28beebf-AB_Test_Declare_Winner.png">
+  Declare the Winning Variant
+</Image>
 
 2. Select the Variant and click Declare to declare it as the winner. The stats page will now display the stats of the winning variant. 
 
 > 📘 Note
-> 
+>
 > The test is still active after declaring the winner. Declaring a winner does not affect the test. You can always change the winning variant later.
 
 ## Rollout Variant
@@ -381,24 +198,9 @@ After you are satisfied with the performance of a variant, you can roll it out t
 
 1. Click the Roll Out button from the test. The Roll out variant window appears.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3034673-AB_Test_Rollout_Variant.png",
-        "Roll out winning variant for A/B Tests",
-        392
-      ],
-      "align": "center",
-      "sizing": "80",
-      "border": true,
-      "caption": "Rolling Out Winning Variant"
-    }
-  ]
-}
-[/block]
-
+<Image title="Roll out winning variant for A/B Tests" alt={392} align="center" width="80%" border={true} src="https://files.readme.io/3034673-AB_Test_Rollout_Variant.png">
+  Rolling Out Winning Variant
+</Image>
 
 2. Select the variant
 3. Select the segment. 
@@ -417,23 +219,9 @@ To set priority, follow the steps:
 1. Navigate to Product Experiences > AB Tests. 
 2. Click the Priority Order Tab. The priority list appears.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/be865df-AB_Test_Priority.png",
-        "Define test priority if the users belong to multiple tests",
-        861
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Defining Test Priority for A/B Tests"
-    }
-  ]
-}
-[/block]
-
+<Image title="Define test priority if the users belong to multiple tests" alt={861} align="center" border={true} src="https://files.readme.io/be865df-AB_Test_Priority.png">
+  Defining Test Priority for A/B Tests
+</Image>
 
 3. Drag and drop the test to prioritize the test.
 
@@ -441,15 +229,4 @@ To set priority, follow the steps:
 
 For further information, you can watch the following video on product A/B tests:
 
-[block:embed]
-{
-  "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FlPCvSJzqTps%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DlPCvSJzqTps&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FlPCvSJzqTps%2Fhqdefault.jpg&key=7788cb384c9f4d5dbbdbeffd9fe4b92f&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
-  "url": "https://www.youtube.com/watch?v=lPCvSJzqTps",
-  "title": "Product Demo: New Product A/B Tests",
-  "favicon": "https://www.google.com/favicon.ico",
-  "image": "https://i.ytimg.com/vi/lPCvSJzqTps/hqdefault.jpg",
-  "provider": "https://www.youtube.com/",
-  "href": "https://www.youtube.com/watch?v=lPCvSJzqTps",
-  "typeOfEmbed": "default"
-}
-[/block]
+<Embed url="https://www.youtube.com/watch?v=lPCvSJzqTps" title="Product Demo: New Product A/B Tests" favicon="https://www.google.com/favicon.ico" image="https://i.ytimg.com/vi/lPCvSJzqTps/hqdefault.jpg" provider="youtube.com" href="https://www.youtube.com/watch?v=lPCvSJzqTps" typeOfEmbed="default" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fwww.youtube.com%252Fembed%252FlPCvSJzqTps%253Ffeature%253Doembed%26display_name%3DYouTube%26url%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DlPCvSJzqTps%26image%3Dhttps%253A%252F%252Fi.ytimg.com%252Fvi%252FlPCvSJzqTps%252Fhqdefault.jpg%26key%3D7788cb384c9f4d5dbbdbeffd9fe4b92f%26type%3Dtext%252Fhtml%26schema%3Dyoutube%22%20width%3D%22854%22%20height%3D%22480%22%20scrolling%3D%22no%22%20title%3D%22YouTube%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%3B%20encrypted-media%3B%20picture-in-picture%3B%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" />
