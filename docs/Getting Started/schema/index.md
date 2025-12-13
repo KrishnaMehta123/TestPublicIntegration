@@ -282,9 +282,7 @@ You can edit any column; however, you can only edit names for unpublished user p
 2. Edit the property name and the data type.
 3. Click the checkmark.
 
-<Image border={false} src="https://files.readme.io/0afe960-Edit_User_Property.png" />
-
- Edit User Property
+<Image align="center" border={true} caption="Edit User Property" src="https://files.readme.io/0afe960-Edit_User_Property.png" />
 
 ## Remove User Property
 
