@@ -28,9 +28,9 @@ The following are the steps that are part of the Marketer Go Live Checklist:
 
 You can define the achievable use cases and the related engagement channels in CleverTap. To achieve this, perform the following:
 
-1. Obtain _Creator_ access to the CleverTap dashboard. 
+1. Obtain *Creator* access to the CleverTap dashboard. 
 2. Create a Test project (if not already created).
-3. Navigate to the  <img src= "https://files.readme.io/7fa3fec-help-circle_1_2.png" height="30px" width="30px" >  icon on the CleverTap dashboard to see how CleverTap can help achieve the required use cases using the available resources.
+3. Navigate to the <img src="https://files.readme.io/7fa3fec-help-circle_1_2.png" height="30px" width="30px" /> icon on the CleverTap dashboard to see how CleverTap can help achieve the required use cases using the available resources.
 
 ## User Consent and Privacy
 
@@ -42,7 +42,6 @@ User consent and privacy are critical for marketers, particularly in light of ev
 ## Track Event and User Attributes
 
 You must track the necessary events and user attributes for your use cases. The specific attributes you track in CleverTap vary depending on your business needs and the type of user data you want to capture. CleverTap provides a flexible platform to define and customize attributes based on your unique requirements.
-
 The user and event attribute you track provides information about your users and their actions. User attributes are characteristics or properties associated with individual users, while event attributes capture specific details about user actions or events.
 
 1. Check with the Technical team on the data points you must send to CleverTap.
