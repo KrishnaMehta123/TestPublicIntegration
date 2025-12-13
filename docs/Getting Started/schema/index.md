@@ -304,7 +304,7 @@ You can discard a published user property from the schema. You can still see the
 2. Click **Discard**, and a new window displays.
 3. Click **Discard** again.
 
-<Image align="center" border={false} caption="Discard User Property" src="https://files.readme.io/d75580c-Discard_User_Property.png" />
+<Image align="center" border={true} caption="Discard User Property" src="https://files.readme.io/d75580c-Discard_User_Property.png" />
 
 <Callout icon="❗️" theme="error">
   **When Discarding a User Property**
@@ -330,7 +330,7 @@ To link an event with a user property:
 2. Click the ![](https://files.readme.io/01a6671-Ellipsis.png) icon and select _Create Linked Event_.
 3. Enter the _Event Name_ and click **Create Event**.
 
-![](https://files.readme.io/f3777e6-Create_Linked_Event_for_User_Property.gif) Create Linked Event
+ Create Linked Event
 
 ### Create Linked Events in Bulk
 
