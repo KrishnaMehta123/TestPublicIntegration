@@ -11,13 +11,13 @@ next:
   description: ''
 ---
 > 👍 CleverTap Business Service Provider (BSP)
-> 
+>
 > Introducing CleverTap BSP – an official WhatsApp Business API Provider from CleverTap! You can now set up WhatsApp as a communication channel in your dashboard in minutes without relying on external BSPs. 
-> 
+>
 > With CleverTap BSP, you can:
-> 
-> - Skip the cumbersome integration and testing process, and go live in minutes
-> - Simplify communication with your customers on WhatsApp and streamline your business
+>
+> * Skip the cumbersome integration and testing process, and go live in minutes
+> * Simplify communication with your customers on WhatsApp and streamline your business
 
 # Overview
 
@@ -25,8 +25,8 @@ CleverTap's WhatsApp add-ons provide businesses with a powerful set of tools to 
 
 CleverTap offers two add-ons for WhatsApp integration:
 
-- [WhatsApp Connect](https://docs.clevertap.com/docs/whatsapp-add-ons#whatsapp-connect)
-- [WhatsApp Direct](https://docs.clevertap.com/docs/whatsapp-add-ons#whatsapp-direct)
+* [WhatsApp Connect](https://docs.clevertap.com/docs/whatsapp-add-ons#whatsapp-connect)
+* [WhatsApp Direct](https://docs.clevertap.com/docs/whatsapp-add-ons#whatsapp-direct)
 
 Using these add-ons, CleverTap customers can now access the following features:
 
@@ -47,9 +47,9 @@ Customers can monitor the impact of WhatsApp notifications on overall user behav
 In addition to messaging and campaign tools, CleverTap's WhatsApp add-ons allow customers to build relationships with their end users. The Agent-chat feature allows for real-time user interactions, while the [auto-responder](https://docs.clevertap.com/docs/conversations#auto-responders) feature allows businesses to quickly and efficiently respond to customer inquiries.
 
 > 🚧 Note
-> 
-> - CleverTap allows you to set up and test WhatsApp configuration with both external WhatsApp providers and CleverTap BSP without purchasing any add-ons. However, you cannot create and publish WhatsApp campaigns or journeys.
-> - WhatsApp conversations such as FAQ, auto-reply, and agent chat also require an add-on purchase.
+>
+> * CleverTap allows you to set up and test WhatsApp configuration with both external WhatsApp providers and CleverTap BSP without purchasing any add-ons. However, you cannot create and publish WhatsApp campaigns or journeys.
+> * WhatsApp conversations such as FAQ, auto-reply, and agent chat also require an add-on purchase.
 
 The table below represents a list of features available in both the add-ons and the free version. After comparing the features, select the add-on that best meets your requirement.
 
@@ -66,9 +66,9 @@ The table below represents a list of features available in both the add-ons and 
 WhatsApp Connect is an add-on for customers using external WhatsApp providers with CleverTap. Using WhatsApp Connect, you cannot create or publish campaigns and journeys using the CleverTap BSP WhatsApp configuration. 
 
 > 🚧 Note
-> 
-> - WhatsApp notifications are not delivered if the WhatsApp add-on is disabled on your account.
-> - CleverTap currently supports only a limited number of external WhatsApp providers. We recommend you check the [list of supported partners](https://docs.clevertap.com/docs/generic-whatsapp#supported-business-service-providers) to ensure your partner is supported before purchasing WhatsApp Connect.
+>
+> * WhatsApp notifications are not delivered if the WhatsApp add-on is disabled on your account.
+> * CleverTap currently supports only a limited number of external WhatsApp providers. We recommend you check the [list of supported partners](https://docs.clevertap.com/docs/generic-whatsapp#supported-business-service-providers) to ensure your partner is supported before purchasing WhatsApp Connect.
 
 ## Billing Calculation
 
@@ -88,13 +88,13 @@ This helps ensures that businesses can budget accurately for their WhatsApp noti
 
 Consider the following example to understand the overage calculation better:
 
-- A business pays $30 for a monthly plan that includes 10,000 notifications. The overage is $0.0070 per notification.  
+* A business pays $30 for a monthly plan that includes 10,000 notifications. The overage is $0.0070 per notification.\
   The business sends 15,000 notifications that month. They pay an overage cost of $35 for the extra 5,000 notifications. 
 
 The overage is calculated as:
 
-- Overage = Number of additional notifications used \* Overage cost per notification
-- That is, 5000 \* 0.0070 = $35  
+* Overage = Number of additional notifications used \* Overage cost per notification
+* That is, 5000 \* 0.0070 = $35\
   Therefore, the total cost for the month is $65 ($30 base plan fee + $35 overage cost).
 
 # WhatsApp Direct
@@ -109,12 +109,12 @@ It is essential to estimate the number of monthly WhatsApp conversations accurat
 
 The billing for WhatsApp Direct add-on is based on two components:
 
-- WhatsApp Charges - The WhatsApp conversation is [billed by Meta ](https://developers.facebook.com/docs/whatsapp/pricing/) on a pay-as-you-go basis. You can verify your WhatsApp conversation charges from your WhatsApp Business Account (WABA).CleverTap will apply a service markup over the Meta charges.
-  - To check your WhatsApp billing amount from WABA:
+* WhatsApp Charges - The WhatsApp conversation is [billed by Meta ](https://developers.facebook.com/docs/whatsapp/pricing/) on a pay-as-you-go basis. You can verify your WhatsApp conversation charges from your WhatsApp Business Account (WABA).CleverTap will apply a service markup over the Meta charges.
+  * To check your WhatsApp billing amount from WABA:
     1. Go to Account Tools, Insights > WhatsApp Manager
     2. Select your WhatsApp Account
     3. Select the required conversation and date range. 
-- CleverTap Platform fee - CleverTap offers multiple conversation tiers, which include a base fee and consumption overage rates. Choosing the appropriate notification tier is important to avoid any unexpected overage charges.
+* CleverTap Platform fee - CleverTap offers multiple conversation tiers, which include a base fee and consumption overage rates. Choosing the appropriate notification tier is important to avoid any unexpected overage charges.
 
 Contact your sales or account manager for more information on choosing the right notification tier for your business. 
 
