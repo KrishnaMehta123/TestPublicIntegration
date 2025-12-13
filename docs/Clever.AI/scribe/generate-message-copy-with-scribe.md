@@ -5,18 +5,18 @@ excerpt: >-
   ready-to-use templates for common campaigns across industries.
 deprecated: false
 hidden: false
+link:
+  new_tab: false
 metadata:
   title: ''
   description: ''
   robots: index
-next:
-  description: ''
 ---
 # Overview
 
 You can optimize the message content that [Scribe](https://docs.clevertap.com/docs/scribe) generated with effective text prompts. A prompt is a short sentence, phrase, or keyword instructing Scribe to generate copywriting ideas. Scribe uses AI to help you generate relevant and engaging message suggestions.
 
-Key capabilities of Scribe’s AI:
+Key capabilities of Scribe's AI:
 
 * Speeds up production: Turns a short prompt into multiple copy options in seconds.
 * Optimizes emotion and tone: Ask for humour, urgency, celebratory, reassuring emotion, and so on, based on your specific use case.
@@ -36,7 +36,7 @@ Following are some best practices you must follow while writing prompts for Scri
 * **Guide the emotion**: Mention the feeling required for your campaign, such as playful, FOMO, trust-building, premium, friendly, and so on. 
   * *Example*: `Tone: Playful | Emotion: Surprise | Style: Bollywood jingle`
 * **Avoid sensitive words**: Avoid using profanity or sensitive words. 
-  * *Example*: Instead of “bet big on Diwali,” use “grab the best Diwali deal.”
+  * *Example*: Instead of "bet big on Diwali," use "grab the best Diwali deal."
 
 
 You can combine multiple fields (topic, language, style, and so on) in one prompt to get a more specific output.
@@ -47,234 +47,78 @@ Refer to the table below to understand prompt fields:
 
 | Field             | Example                                           | Sample line                                        |
 | ----------------- | ------------------------------------------------- | -------------------------------------------------- |
-| **Topic**         | “Air Conditioner 20% off”, “New theatre opening”  | `Topic: Air Conditioner with 20% off`              |
-| **Brand Name**    | “Basketball Blitz”, “GamePlay Central”            | `Brand: Cricket Dazzler`                           |
+| **Topic**         | "Air Conditioner 20% off", "New theatre opening"  | `Topic: Air Conditioner with 20% off`              |
+| **Brand Name**    | "Basketball Blitz", "GamePlay Central"            | `Brand: Cricket Dazzler`                           |
 | **Language**      | English, Hindi (mix), Spanish                     | `Language: Mix of Hindi and English`               |
 | **Font**          | Devanagari, English, Helvetica                    | `Font: Devanagari`                                 |
 | **Style**         | Bollywood jingles, Weather report, Rap, Clickbait | `Style: Rap Song`                                  |
-| **Include Words** | “delivery”, “cashback”, “finals”                  | `Include Words: cashback, weekend`                 |
-| **Exclude Words** | “offer”, “gambling”, “betting”                    | `Exclude Words: offer, betting`                    |
+| **Include Words** | "delivery", "cashback", "finals"                  | `Include Words: cashback, weekend`                 |
+| **Exclude Words** | "offer", "gambling", "betting"                    | `Exclude Words: offer, betting`                    |
 | **Format**        | Title 5 words, Body 20 words                      | `Format: Title (5 words max), Body (20 words max)` |
 
 # Sample Syntaxes to Write Prompts
 
 The following sample prompts can help you get started with Scribe quickly. You can experiment with more prompts to find a more suitable message tone and style. Browse the sample prompts by industry:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<style>
+<style>{`
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-</style>
-<div class="grid">
-  <a href="#e-commerce" class="integration-card">
-    <div class="logo-container">
-      <img src="https://img.icons8.com/fluency/48/shopping-cart-loaded.png" class="logo" alt="E-Commerce" />
+`}</style>
+
+<div className="grid">
+  <a href="#e-commerce" className="integration-card">
+    <div className="logo-container">
+      <img src="https://img.icons8.com/fluency/48/shopping-cart-loaded.png" className="logo" alt="E-Commerce" />
     </div>
-    <div class="content">
-      <div class="name">E-Commerce</div>
-      <div class="category">Personalization & Offers</div>
+    <div className="content">
+      <div className="name">E-Commerce</div>
+      <div className="category">Personalization & Offers</div>
     </div>
   </a>
 
-  <a href="#ott" class="integration-card">
-    <div class="logo-container">
-      <img src="https://img.icons8.com/color/48/tv.png" class="logo" alt="OTT" />
+  <a href="#ott" className="integration-card">
+    <div className="logo-container">
+      <img src="https://img.icons8.com/color/48/tv.png" className="logo" alt="OTT" />
     </div>
-    <div class="content">
-      <div class="name">OTT</div>
-      <div class="category">Content & Engagement</div>
-    </div>
-  </a>
-
-  <a href="#fintech" class="integration-card">
-    <div class="logo-container">
-      <img src="https://img.icons8.com/color/48/money-bag.png" class="logo" alt="Fintech" />
-    </div>
-    <div class="content">
-      <div class="name">Fintech</div>
-      <div class="category">Finance & Portfolios</div>
+    <div className="content">
+      <div className="name">OTT</div>
+      <div className="category">Content & Engagement</div>
     </div>
   </a>
 
-  <a href="#food-delivery" class="integration-card">
-    <div class="logo-container">
-      <img src="https://img.icons8.com/color/48/meal.png" class="logo" alt="Food Delivery" />
+  <a href="#fintech" className="integration-card">
+    <div className="logo-container">
+      <img src="https://img.icons8.com/color/48/money-bag.png" className="logo" alt="Fintech" />
     </div>
-    <div class="content">
-      <div class="name">Food Delivery</div>
-      <div class="category">Menu & Recommendations</div>
+    <div className="content">
+      <div className="name">Fintech</div>
+      <div className="category">Finance & Portfolios</div>
     </div>
   </a>
 
-  <a href="#gaming" class="integration-card">
-    <div class="logo-container">
-      <img src="https://img.icons8.com/color/48/controller.png" class="logo" alt="Gaming" />
+  <a href="#food-delivery" className="integration-card">
+    <div className="logo-container">
+      <img src="https://img.icons8.com/color/48/meal.png" className="logo" alt="Food Delivery" />
     </div>
-    <div class="content">
-      <div class="name">Gaming</div>
-      <div class="category">Rewards & Items</div>
+    <div className="content">
+      <div className="name">Food Delivery</div>
+      <div className="category">Menu & Recommendations</div>
+    </div>
+  </a>
+
+  <a href="#gaming" className="integration-card">
+    <div className="logo-container">
+      <img src="https://img.icons8.com/color/48/controller.png" className="logo" alt="Gaming" />
+    </div>
+    <div className="content">
+      <div className="name">Gaming</div>
+      <div className="category">Rewards & Items</div>
     </div>
   </a>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## E-Commerce
 
@@ -303,7 +147,7 @@ Format: Title (5 words), Body (20 words)
   <img src="https://files.readme.io/6ac0b15-S1EP1.jpg" style={{ maxWidth: "100%", border: "1px solid #eee", borderRadius: "8px" }} />
 <p></p>
 
-  <p><strong>Word Swap</strong> — Replace the word savings with something else: 🐰🌸 Hop into Easter savings with our sale! 🌸🐰 Don’t miss out on our limited time deals.</p>
+  <p><strong>Word Swap</strong> — Replace the word savings with something else: 🐰🌸 Hop into Easter savings with our sale! 🌸🐰 Don't miss out on our limited time deals.</p>
 <img src="https://files.readme.io/a9abc32-S5EP1.jpg" style={{ maxWidth: "100%", border: "1px solid #eee", borderRadius: "8px" }} />
 <p></p>
 
@@ -374,7 +218,7 @@ Format: Title (6 words), Body (20 words)
   <img src="https://files.readme.io/8a068ba-S5EP4.jpg" style={{ maxWidth: "100%", border: "1px solid #eee", borderRadius: "8px" }} />
   <p></p>
 
-  <p><strong>Title Limit</strong> — Give a 6-word Title message for: Unlock exclusive savings! Lower interest rates for Senior Citizens. Don’t miss out; act now.</p>
+  <p><strong>Title Limit</strong> — Give a 6-word Title message for: Unlock exclusive savings! Lower interest rates for Senior Citizens. Don't miss out; act now.</p>
   <img src="https://files.readme.io/b62fcef-S6EP4.jpg" style={{ maxWidth: "100%", border: "1px solid #eee", borderRadius: "8px" }} />
   <br />
 
@@ -388,239 +232,13 @@ Refer to the below sample prompts for menus, offers, and delivery promos across 
 
 #### Brand related offers
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+```
+Topic: Weekend pizza offer—buy 2 get 1 free
+Brand: PizzaExpress
+Tone: Fun, casual, mouth-watering
+Include Words: weekend, free pizza
+Format: Title (6 words), Body (25 words)
+```
 
 <Image align="center" className="border" width="100%" border={true} src="https://files.readme.io/4d7ee7d7897fd3828c674ec623c15023dfbd4441c4416148f6a091d3a9f7b6be-scribe.png" />
 <details>
@@ -666,7 +284,7 @@ Emoji: Yes
   <img src="https://files.readme.io/4bfb776-S1EP3A.jpg" style={{ maxWidth: "100%", border: "1px solid #eee", borderRadius: "8px" }} />
 <p></p>
 
-  <p><strong>Style (Rap)</strong> — Topic: Make your cricket team now with India’s leading gaming app and win big prizes · Style: Rap Song</p>
+  <p><strong>Style (Rap)</strong> — Topic: Make your cricket team now with India's leading gaming app and win big prizes · Style: Rap Song</p>
 <img src="https://files.readme.io/c7267c0-S1EP3B.jpg" style={{ maxWidth: "100%", border: "1px solid #eee", borderRadius: "8px" }} />
 <p></p>
 
