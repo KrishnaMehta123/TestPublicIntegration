@@ -18,42 +18,29 @@ To integrate your Facebook Ads account, perform the following steps:
 
 # Step 1: Get Your Facebook Ads Account ID
 
-- Log in to your [Facebook Ads account](https://www.facebook.com/ads/manage/home/).
-- Navigate to _Settings_, and copy the _Account ID_ visible under _Account Information_.
+* Log in to your [Facebook Ads account](https://www.facebook.com/ads/manage/home/).
+* Navigate to *Settings*, and copy the *Account ID* visible under *Account Information*.
 
 # Step 2: CleverTap Dashboard Steps
 
-- Log into your CleverTap Dashboard, and navigate to _Settings_ > _Channel_ > _Remarketing_. 
+* Log into your CleverTap Dashboard, and navigate to *Settings* > *Channel* > *Remarketing*. 
 
 > 📘 Users with Multiple CleverTap Accounts
-> 
+>
 > If you have multiple CleverTap accounts, make sure that you are using the correct one.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3849a5b-2d330c4-Facebook_remarketing_integration.png",
-        "Set up Facebook Audience",
-        1151
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Set Up Facebook Audience"
-    }
-  ]
-}
-[/block]
+<Image title="Set up Facebook Audience" alt={1151} align="center" border={true} src="https://files.readme.io/3849a5b-2d330c4-Facebook_remarketing_integration.png">
+  Set Up Facebook Audience
+</Image>
 
-- Paste the _Account ID_ you copied in Step #1, and click **Connect**.
-- Click **Okay** when prompted by Facebook to give access to CleverTap.
+* Paste the *Account ID* you copied in Step #1, and click **Connect**.
+* Click **Okay** when prompted by Facebook to give access to CleverTap.
 
 Once the connection is successful, the "Account connected successfully” message displays. The initial campaign data will display in two hours and is subsequently updated every two hours.
 
 # Additional Notes
 
-Ensure your Facebook Ad campaign links are tagged with the parameters below for them to show up in the _Campaign_ dashboard:
+Ensure your Facebook Ad campaign links are tagged with the parameters below for them to show up in the *Campaign* dashboard:
 
-- wzrk_source=facebook
-- wzrk_campaign=\<campaign_name>
+* wzrk\_source=facebook
+* wzrk\_campaign=\<campaign\_name>
