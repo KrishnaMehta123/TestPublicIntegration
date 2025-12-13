@@ -25,7 +25,7 @@ Following are the use cases where you can test your approach:
 <details>
   <summary><span class="bold"> High drop off during the know your customer (KYC) process.</span></summary>
 
-### High drop off during the _know your customer _(KYC) process
+### High drop off during the *know your customer* (KYC) process
 
 KYC is a mandatory step before the user can make any worthwhile transactions on the application.  A high drop-off at this stage means a wasted acquisition.  
 
@@ -41,26 +41,12 @@ Users are more likely to complete KYC registration if they are engaged at a spec
 
 Use IntelliNODE to set up different experiments to engage users at different times. If this is a weekday journey, create multiple paths to engage users based on before, during, and after office hours. Given that office hours are from 10.00 AM to 6:00 PM, create four different paths to send a push message at 8.30 AM, 2.30 PM, 6.30 PM, and 8.30 PM.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/15c948e-small-Complete_KYC_Process.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" className="border" border={true} src="https://files.readme.io/15c948e-small-Complete_KYC_Process.png" />
 
 </details>
+
 <details>
-  <summary><span class="bold"> Best channel for sending coupon codes to incentivize users </span>
-</summary>
+  <summary><span class="bold"> Best channel for sending coupon codes to incentivize users </span></summary>
 
 ### Coupon Codes for Users
 
@@ -78,31 +64,16 @@ Users are more likely to use coupon codes from WhatsApp. A reminder from Email o
 
 Use IntelliNODE to experiment with a combination of two channels. Use the experiments for a cost-benefit analysis of the channels. For example, create three IntelliNODE paths:
 
-- **Path A**: SMS + Email
-- **Path B**: WhatsApp + Email
-- **Path C**: SMS + WhatsApp
+* **Path A**: SMS + Email
+* **Path B**: WhatsApp + Email
+* **Path C**: SMS + WhatsApp
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/11c1e49-small-CouponCodeforHigherAppLaunch.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" className="border" border={true} src="https://files.readme.io/11c1e49-small-CouponCodeforHigherAppLaunch.png" />
 
 </details>
 
 <details>
-  <summary><span class="bold"> Select the order of messaging to inform a user about an account transaction </span>
-</summary>
+  <summary><span class="bold"> Select the order of messaging to inform a user about an account transaction </span></summary>
 
 ### Select the order of the messaging channel
 
@@ -120,34 +91,18 @@ The combination of messaging channels must have the highest reach.
 
 Create different paths with IntelliNODE and find the best messaging order between Push, SMS, and Email. For example, create six paths:
 
-- **Path A**: Push > Email > SMS
-- **Path B**: Push > SMS > Email
-- **Path C**: Email > Push > SMS
-- **Path D**: Email > SMS > Push
-- **Path E**: SMS > Push > Email
-- **Path F**: SMS > Email > Push
+* **Path A**: Push > Email > SMS
+* **Path B**: Push > SMS > Email
+* **Path C**: Email > Push > SMS
+* **Path D**: Email > SMS > Push
+* **Path E**: SMS > Push > Email
+* **Path F**: SMS > Email > Push
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c83e6ea-small-MessagingOrderforAccountDebit.jpg",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" className="border" border={true} src="https://files.readme.io/c83e6ea-small-MessagingOrderforAccountDebit.jpg" />
 
 </details>
-
 <details>
-  <summary><span class="bold"> Send the right market news at the right time</span>
-</summary>
+  <summary><span class="bold"> Send the right market news at the right time</span></summary>
 
 ### Schedule stock market news based on views
 
@@ -161,8 +116,8 @@ Select the time to engage your users.
 
 The following are the assumptions:
 
-- Articles about the long-term view of the market are most read after market hours.
-- News about global indices is read before market hours.
+* Articles about the long-term view of the market are most read after market hours.
+* News about global indices is read before market hours.
 
 #### Experiment
 
@@ -170,35 +125,21 @@ Create different journeys for different times of the day. You can also experimen
 
 Create the following push paths: 
 
-_IntelliNODE 1 (Runs on weekdays only)_
+*IntelliNODE 1 (Runs on weekdays only)*
 
-- 8.30 AM - Long-term view articles 
-- 8.30 AM - Global Indices News 
-- 7.30 PM - Long-term view articles
-- 7.30 PM - Global Indices
+* 8.30 AM - Long-term view articles 
+* 8.30 AM - Global Indices News 
+* 7.30 PM - Long-term view articles
+* 7.30 PM - Global Indices
 
-_IntelliNODE 2 (Runs on weekends only)_
+*IntelliNODE 2 (Runs on weekends only)*
 
-- 8.30 AM - Long-term view articles 
-- 8.30 AM - Global Indices News 
-- 7.30 PM - Long-term view articles
-- 7.30 PM - Global Indices
+* 8.30 AM - Long-term view articles 
+* 8.30 AM - Global Indices News 
+* 7.30 PM - Long-term view articles
+* 7.30 PM - Global Indices
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8fe39fd-Schedule_stock_market_.jpg",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" className="border" border={true} src="https://files.readme.io/8fe39fd-Schedule_stock_market_.jpg" />
 
 </details>
 
@@ -224,35 +165,19 @@ Create an IntelliNODE to find out the most preferred channel by customers but al
 
 Using IntelliNODE create a path for each, that is, Email and WhatsApp, to test your assumption. You can also add more channels to this mix. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5ed7fbe-small-SalarySlipUploaded.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" className="border" border={true} src="https://files.readme.io/5ed7fbe-small-SalarySlipUploaded.png" />
 
 </details>
 
 ## E-commerce
 
 While E-commerce is a buzzword today, it is also a challenging business to be in. The cost of customer acquisition and logistics, added to the high drop-off rates, is an interesting problem to solve. Customers today are more likely to buy from businesses that deliver a personalized experience.
-
 CleverTap has collated various use cases from players in this industry with similar challenges and how IntelliNODE is helping them win. 
 
 Following are the use cases where you can test your approach:
 
 <details>
-  <summary><span class="bold"> Users drop-off after adding an item to cart.</span>
-</summary>
+  <summary><span class="bold"> Users drop-off after adding an item to cart.</span></summary>
 
 ### Users drop off after adding to the cart
 
@@ -270,27 +195,12 @@ Users will likely purchase within two hours of adding an item to the cart.
 
 Set up different experiments to engage users at different delays. Set up multiple IntelliNODE paths to engage the user within the specified duration of the event. Set up paths for the first 15 minutes, 30 minutes, one hour, and two hours after the user abandons the cart. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/580166c-UserDropOff.jpg",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" className="border" border={true} src="https://files.readme.io/580166c-UserDropOff.jpg" />
 
 </details>
 
 <details>
-  <summary><span class="bold"> Track shipments from multiple messaging channels. </span>
-</summary>
+  <summary><span class="bold"> Track shipments from multiple messaging channels. </span></summary>
 
 ### Track Product Shipment
 
@@ -310,31 +220,15 @@ Use IntelliNODE to select a combination of two channels. Additionally, you can c
 
 For example, create three IntelliNODE paths:
 
-- **Path A**: SMS + Email
-- **Path B**: SMS + WhatsApp
-- **Path C**: Email + WhatsApp
+* **Path A**: SMS + Email
+* **Path B**: SMS + WhatsApp
+* **Path C**: Email + WhatsApp
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f8b7a22-small-TrackProductShipment.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" className="border" border={true} src="https://files.readme.io/f8b7a22-small-TrackProductShipment.png" />
 
 </details>
-
 <details>
-  <summary><span class="bold"> Find out the optimum number of nudges that can be sent to convert users.</span>
-</summary>
+  <summary><span class="bold"> Find out the optimum number of nudges that can be sent to convert users.</span></summary>
 
 ### Find out the optimum number of nudges
 
@@ -352,38 +246,23 @@ A user must be nudged three times to complete a purchase. However, if the user i
 
 Create an IntelliNODE experiment with different messaging frequencies for a channel. Create the following IntelliNODE paths for push messages over a period of 20 days:
 
-- **Path A**: Two push messages
-- **Path B**: Three push messages
-- **Path C**: Five push messages
-- **Path D**: Six push messages
-- **Path E**: Seven push messages
+* **Path A**: Two push messages
+* **Path B**: Three push messages
+* **Path C**: Five push messages
+* **Path D**: Six push messages
+* **Path E**: Seven push messages
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/79bb10e-small-AddToCart.jpg",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" className="border" border={true} src="https://files.readme.io/79bb10e-small-AddToCart.jpg" />
 
 </details>
 
 <details>
-  <summary><span class="bold">Inform users about the products that are back in stock</span>
-</summary>
+  <summary><span class="bold">Inform users about the products that are back in stock</span></summary>
 
 ### Inform users about the products that are back in stock.
 
-- Inform customers about products that were out of stock but are available now.
-- Find the time when users are most likely to purchase the items that went out of stock.
+* Inform customers about products that were out of stock but are available now.
+* Find the time when users are most likely to purchase the items that went out of stock.
 
 #### Purpose
 
@@ -399,41 +278,25 @@ Create different journeys for different times of the day. You can also experimen
 
 Create the following push paths:
 
-_IntelliNODE 1 (Runs on weekdays only)_
+*IntelliNODE 1 (Runs on weekdays only)*
 
-- 8.30 AM 
-- 10.30 AM 
-- 7.30 PM 
-- 8.30 PM 
+* 8.30 AM 
+* 10.30 AM 
+* 7.30 PM 
+* 8.30 PM 
 
-_IntelliNODE 2 (Runs on weekends only)_
+*IntelliNODE 2 (Runs on weekends only)*
 
-- 8.30 AM 
-- 10.30 AM 
-- 7.30 PM 
-- 8.30 PM 
+* 8.30 AM 
+* 10.30 AM 
+* 7.30 PM 
+* 8.30 PM 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2084255-ProductRestocked.jpg",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" className="border" border={true} src="https://files.readme.io/2084255-ProductRestocked.jpg" />
 
 </details>
-
 <details>
-  <summary><span class="bold"> Remind users to pre-register for a product launch</span>
-</summary>
+  <summary><span class="bold"> Remind users to pre-register for a product launch</span></summary>
 
 ### Remind users to pre-register for a product launch
 
@@ -451,28 +314,14 @@ Customers are more likely to enroll if they receive email reminders.
 
 Create different paths from IntelliNODE for each messaging channel. Use IntelliNODE to create multiple paths such as:
 
-- **Path A**: SMS reminders
-- **Path B**: Email reminders
-- **Path C**: WhatsApp reminders
-- **Path D**: Push reminders
-- **Path E**: App Inbox reminders
-- **Path F**: In-App reminders
+* **Path A**: SMS reminders
+* **Path B**: Email reminders
+* **Path C**: WhatsApp reminders
+* **Path D**: Push reminders
+* **Path E**: App Inbox reminders
+* **Path F**: In-App reminders
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/fcf9193-small-ProductLaunch.jpg",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" className="border" border={true} src="https://files.readme.io/fcf9193-small-ProductLaunch.jpg" />
 
 </details>
 
@@ -483,8 +332,7 @@ The media industry can immensely benefit from better targeting, data-driven deci
 Following are the use cases where you can test your approach:
 
 <details>
-  <summary><span class="bold">Users do not engage with messages about new movie releases</span>
-</summary>
+  <summary><span class="bold">Users do not engage with messages about new movie releases</span></summary>
 
 ### Users do not engage with messages about new movie releases
 
@@ -502,32 +350,16 @@ Sending push notifications during evening hours can increase conversion and help
 
 Create an IntelliNODE with paths that engage users at different times, such as:
 
-- **Path A**: 5.30 PM 
-- **Path B**: 6.30 AM 
-- **Path C**: 7.30 PM 
-- **Path D**: 8.30 PM 
+* **Path A**: 5.30 PM 
+* **Path B**: 6.30 AM 
+* **Path C**: 7.30 PM 
+* **Path D**: 8.30 PM 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7376e93-small-MovieReleaseDates.jpg",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" className="border" border={true} src="https://files.readme.io/7376e93-small-MovieReleaseDates.jpg" />
 
 </details>
-
 <details>
-  <summary><span class="bold"> Users drop-off while watching the content. </span>
-</summary>
+  <summary><span class="bold"> Users drop-off while watching the content. </span></summary>
 
 ### Users drop off while watching the content
 
@@ -543,31 +375,17 @@ The assumption is that the mobile Push, followed by Email and SMS, decreases the
 
 #### Experiment
 
-Use IntelliNODE to experiment to select the optimum combination of channels. Additionally, you can compare engagement costs for these channels too and drop the most expensive channel from the mix.  
+Use IntelliNODE to experiment to select the optimum combination of channels. Additionally, you can compare engagement costs for these channels too and drop the most expensive channel from the mix.\
 Create different paths with IntelliNODE and find the best messaging order between Push, SMS, and Email. For example, create six paths:
 
-- **Path A**: Push > Email > SMS
-- **Path B**: Push > SMS > Email
-- **Path C**: Email > Push > SMS
-- **Path D**: Email > SMS > Push
-- **Path E**: SMS > Push > Email
-- **Path F**: SMS > Email > Push
+* **Path A**: Push > Email > SMS
+* **Path B**: Push > SMS > Email
+* **Path C**: Email > Push > SMS
+* **Path D**: Email > SMS > Push
+* **Path E**: SMS > Push > Email
+* **Path F**: SMS > Email > Push
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b448e24-small-ResumeWatchingShows.jpg",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" className="border" border={true} src="https://files.readme.io/b448e24-small-ResumeWatchingShows.jpg" />
 
 </details>
 
@@ -591,33 +409,18 @@ Too many nudges will drive users to unsubscribe, and too few nudges will not dri
 
 Create an IntelliNODE experiment with different messaging frequencies for a channel. Create the following IntelliNODE paths for push messages over a period of 20 days:
 
-- **Path A**: Two push messages
-- **Path B**: Three push messages
-- **Path C**: Five push messages
-- **Path D**: Six push messages
-- **Path E**: Seven push messages
+* **Path A**: Two push messages
+* **Path B**: Three push messages
+* **Path C**: Five push messages
+* **Path D**: Six push messages
+* **Path E**: Seven push messages
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f6d0871-small-AVODtoSVOD.jpg",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" className="border" border={true} src="https://files.readme.io/f6d0871-small-AVODtoSVOD.jpg" />
 
 </details>
-
 <details>
   <summary><span class="bold"> Select the correct mix of channels to build anticipation</span>
-</summary>
+  </summary>
 
 ### The correct mix of channels to build anticipation
 
@@ -635,34 +438,20 @@ Messaging order influences the time to convert.
 
 Create different paths with IntelliNODE and find the best messaging order between Push, SMS, and Email. For example, create six paths:
 
-- **Path A**: Push > Email > SMS
-- **Path B**: Push > SMS > Email
-- **Path C**: Email > Push > SMS
-- **Path D**: Email > SMS > Push
-- **Path E**: SMS > Push > Email
-- **Path F**: SMS > Email > Push
+* **Path A**: Push > Email > SMS
+* **Path B**: Push > SMS > Email
+* **Path C**: Email > Push > SMS
+* **Path D**: Email > SMS > Push
+* **Path E**: SMS > Push > Email
+* **Path F**: SMS > Email > Push
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/757daa2-small-MessageingOrderforAnticipation.jpg",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" className="border" border={true} src="https://files.readme.io/757daa2-small-MessageingOrderforAnticipation.jpg" />
 
 </details>
 
 <details>
   <summary><span class="bold"> Suggest genre by time of day</span>
-</summary>
+  </summary>
 
 ### Suggest genre by the time of day
 
@@ -680,42 +469,35 @@ Sending the push notification at an optimum time can lead to an increase in conv
 
 Create different journeys for different times of the day. You can also experiment with different days of the week. For example, compare weekdays and weekends. Create the following push paths:
 
-_IntelliNODE 1 (Runs on weekdays only)_
+*IntelliNODE 1 (Runs on weekdays only)*
 
-- 8.30 AM 
-- 10.30 AM 
-- 7.30 PM 
-- 8.30 PM 
+* 8.30 AM 
+* 10.30 AM 
+* 7.30 PM 
+* 8.30 PM 
 
-_IntelliNODE 2 (Runs on weekends only)_
+*IntelliNODE 2 (Runs on weekends only)*
 
-- 8.30 AM 
-- 10.30 AM 
-- 7.30 PM 
-- 8.30 PM 
+* 8.30 AM 
+* 10.30 AM 
+* 7.30 PM 
+* 8.30 PM 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f7ce12a-VideoGenre.jpg",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" className="border" border={true} src="https://files.readme.io/f7ce12a-VideoGenre.jpg" />
 
 You can add more variations by using IntelliNODE. For example, send exercise video programs in the morning and thriller series at night. 
 
 </details>
 
-[block:html]
-{
-  "html": "<div></div>\n\n<style>\n  \ndetails[open] summary span{  display: none}\n\n  .bold {\n    color: blue\n  }\n</style>"
-}
-[/block]
+<HTMLBlock>{`
+<div></div>
+
+<style>
+  
+details[open] summary span{  display: none}
+
+  .bold {
+    color: blue
+  }
+</style>
+`}</HTMLBlock>
