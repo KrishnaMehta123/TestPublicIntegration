@@ -161,7 +161,7 @@ To add a provider, perform the following steps:
 
 This section describes actions for the available email service providers.
 
-![](https://files.readme.io/36c908a-Email_Operations.png "Email Provider Operations") Provider Operations
+ Provider Operations
 
 ### Archive Service Providers
 
