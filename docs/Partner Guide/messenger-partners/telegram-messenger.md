@@ -16,25 +16,25 @@ next:
 
 Integrating Telegram with CleverTap allows you to:
 
-- Send event-triggered messages to users via Telegram bots.
-- Personalize messages using user profile data.
-- Leverage CleverTap segmentation, journeys, and predictive capabilities for Telegram outreach.
+* Send event-triggered messages to users via Telegram bots.
+* Personalize messages using user profile data.
+* Leverage CleverTap segmentation, journeys, and predictive capabilities for Telegram outreach.
 
 # Prerequisites for Integration
 
 The following are the prerequisites for CleverTap and Telegram integration:
 
-- **Access to the CleverTap Dashboard**: You must have the necessary permissions to configure webhooks and campaigns.
-- **Telegram Bot**: You must create a Telegram bot, which provides a unique token for authentication. Learn more [here](https://core.telegram.org/bots/features#botfather).
-- **Channel Access Token**: Required to send messages to users who have added your Telegram bot.
-- **Telegram Chat IDs**: These are required to message users and must be stored in CleverTap as `telegram_chat_id`.
+* **Access to the CleverTap Dashboard**: You must have the necessary permissions to configure webhooks and campaigns.
+* **Telegram Bot**: You must create a Telegram bot, which provides a unique token for authentication. Learn more [here](https://core.telegram.org/bots/features#botfather).
+* **Channel Access Token**: Required to send messages to users who have added your Telegram bot.
+* **Telegram Chat IDs**: These are required to message users and must be stored in CleverTap as `telegram_chat_id`.
 
 > ⚠️ Messaging Eligibility Criteria
-> 
+>
 > You can only send messages to users who:
-> 
-> - Have added your Telegram bot.
-> - Have interacted with your bot (excluding those who blocked it).
+>
+> * Have added your Telegram bot.
+> * Have interacted with your bot (excluding those who blocked it).
 
 Ensure that user consent is collected before sending any messages.
 
@@ -56,24 +56,24 @@ Refer to the [Telegram API documentation](https://core.telegram.org/bots/api#ava
 
 Once collected, save the Chat IDs to user profiles in CleverTap as a custom user property named `telegram_chat_id`. You can do this:
 
-- Via [CSV upload](doc:csv-upload)
-- Via [CleverTap's APIs](https://developer.clevertap.com/docs/user-profile-object)
-- Or via [SFTP](doc:imports-via-sftp)
+* Via [CSV upload](doc:csv-upload)
+* Via [CleverTap's APIs](https://developer.clevertap.com/docs/user-profile-object)
+* Or via [SFTP](doc:imports-via-sftp)
 
 ## Set Up Webhook in CleverTap
 
 Set up a webhook to send messages from CleverTap to Telegram using your bot.
 
-1. Go to _Settings_ > _Channels_ > _Webhooks_ from the CleverTap dashboard.
+1. Go to *Settings* > *Channels* > *Webhooks* from the CleverTap dashboard.
 2. Click **+ Add Webhook** and provide a meaningful name for the webhook.
-3. Set the _HTTP_ Method to `POST` and enter the following Endpoint URL.
+3. Set the *HTTP* Method to `POST` and enter the following Endpoint URL.
 
 ```json
 https://api.telegram.org/bot<YOUR_BOT_TOKEN>/sendMessage
 ```
 
 > 📘 Note
-> 
+>
 > Learn how to create a bot token using [BotFather](https://core.telegram.org/bots/features#botfather).
 
 4. Add the following key-value pair under Headers:
@@ -88,34 +88,19 @@ https://api.telegram.org/bot<YOUR_BOT_TOKEN>/sendMessage
 
 Create a Webhook campaign to deliver Telegram messages triggered by user actions or segments.
 
-1. Go to _Campaigns_ on the CleverTap dashboard, click **+ Campaign** and select _Webhook_ from the list of messaging channels.
+1. Go to *Campaigns* on the CleverTap dashboard, click **+ Campaign** and select *Webhook* from the list of messaging channels.
 2. Configure the following campaign settings: target audience, schedule, and other basic settings.
-3. Perform the following steps under the _What_ section:
+3. Perform the following steps under the *What* section:
 
    1. Select the webhook created in [Set Up Webhook in CleverTap](doc:telegram-messenger#set-up-webhook-in-clevertap).
    2. Set Content Format to `JSON`.
-   3. Select _Custom Body_.
+   3. Select *Custom Body*.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8b0fc07b06e7eb830724731b27111799d57f1fa3fd1ce267189bdaf18888e668-image.png",
-        null,
-        "Webhook Content"
-      ],
-      "align": "center",
-      "sizing": "50% ",
-      "border": true,
-      "caption": "Webhook Content"
-    }
-  ]
-}
-[/block]
+<Image alt="Webhook Content" align="center" width="50% " border={true} src="https://files.readme.io/8b0fc07b06e7eb830724731b27111799d57f1fa3fd1ce267189bdaf18888e668-image.png">
+  Webhook Content
+</Image>
 
-
-4. Enter the payload under the _Custom Body_ section using [Liquid Tags](doc:personalize-message-all#liquid-tags):
+4. Enter the payload under the *Custom Body* section using [Liquid Tags](doc:personalize-message-all#liquid-tags):
 
 ```json
 {
@@ -128,69 +113,24 @@ Create a Webhook campaign to deliver Telegram messages triggered by user actions
 5. Click the variable selector (`@`, `{`, or `{{`) in the editor to personalize the campaign. You can dynamically reference user profile properties using [Liquid Tags](doc:personalize-message-all#liquid-tags).
 6. Select `parse_mode` as [HTML](https://core.telegram.org/bots/api#html-style), [Markdown](https://core.telegram.org/bots/api#markdown-style), or [MarkdownV2](https://core.telegram.org/bots/api#markdownv2-style) based on your formatting needs. In this example, we have used `parse_mode` as `HTML`.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c74c86849459fb9429c030c4ad300b30b5a22f2ec4f3be6a6074066bb44bf35f-image.png",
-        null,
-        "Parse mode Formatting"
-      ],
-      "align": "center",
-      "sizing": "65% ",
-      "border": true,
-      "caption": "Parse Mode Formatting"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Parse mode Formatting" align="center" width="65% " border={true} src="https://files.readme.io/c74c86849459fb9429c030c4ad300b30b5a22f2ec4f3be6a6074066bb44bf35f-image.png">
+  Parse Mode Formatting
+</Image>
 
 7. Click **Preview and Test** to validate the webhook request.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3550adbb37c5c2980ce77a107ffe061c768582e90f6d57a130bf7cbacf43e1c4-image.png",
-        null,
-        "Preview and Test"
-      ],
-      "align": "center",
-      "sizing": "65% ",
-      "border": true,
-      "caption": "Preview and Test"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Preview and Test" align="center" width="65% " border={true} src="https://files.readme.io/3550adbb37c5c2980ce77a107ffe061c768582e90f6d57a130bf7cbacf43e1c4-image.png">
+  Preview and Test
+</Image>
 
 8. Click **Publish** to the campaign to your targeted users.
 
 > 📘 Group and Channel Messaging
-> 
+>
 > To message groups or channels, store the channel/group ID as `telegram_chat_id`.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1c9400a648432c5ce4af29e87fb77524d4d858f8249df0f632db630dd358b21b-image.png",
-        null,
-        "Test Message"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Test Message"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Test Message" align="center" width="45% " border={true} src="https://files.readme.io/1c9400a648432c5ce4af29e87fb77524d4d858f8249df0f632db630dd358b21b-image.png">
+  Test Message
+</Image>
 
 With this integration, you can automate and personalize Telegram communications at scale, making your user engagement more immediate and effective.
