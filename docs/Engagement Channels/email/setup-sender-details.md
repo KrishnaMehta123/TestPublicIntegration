@@ -323,13 +323,12 @@ You can add custom fonts by navigating to  Settings _>_Channel_ > _Email_ > _Adv
 
 The following are the steps to add a custom font:
 
-1. From the _Advanced Setup_ page, click **Font Manager**.  
+1. From the _Advanced Setup_ page, click **Font Manager**.
 
    <Image align="center" border={true} caption="Font Manager" src="https://files.readme.io/73b41e4-image.png" />
-2. Click **+ Custom Font**. The _Add Font_ popup opens.
+2. Click **+ Custom Font**. The _Add Font_ popup opens.  
 
-<br />
-
+   <Image align="center" border={true} caption="Add Custom Font" src="https://files.readme.io/08ba774-Add_Font_Popup.png" width="65% " />
 3. Enter the following details:
 
 <Table align={["left","left"]}>
@@ -445,7 +444,7 @@ You can also set up the system and custom fonts as the default font for your ema
 
 The default font cannot be deleted. If you still want to delete it, change the default font and then delete the required font.
 
-![](https://files.readme.io/0152270-Set_Up_Custom_Font_as_Default_font_.png)  Set Up a Default Font
+  
 
 ### Delete Custom Font
 
