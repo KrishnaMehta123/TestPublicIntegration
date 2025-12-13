@@ -273,19 +273,21 @@ a. Navigate to _Settings_ > _Channel_ > _Email_ > _Advanced Setup_ on the dashbo
 
 b. Enter your AppsFlyer OneLink domain or sub-domain and click **Add**.
 
-Add AppsFlyer OneLink
+<Image align="center" border={true} caption="Add AppsFlyer OneLink" src="https://files.readme.io/d6aba01-Click_Add_to_Add_the_OneLink.png" />
 
-> 🚧 Adding a Domain
->
-> You can add a maximum of 20 valid domains or sub-domains.
+<Callout icon="🚧" theme="warn">
+  **Adding a Domain**
+
+  You can add a maximum of 20 valid domains or sub-domains.
+</Callout>
 
 c. Click **Save** to save the domain.
 
-  Save AppsFlyer OneLink
+Save AppsFlyer OneLink
 
 The message _AppsFlyer domain deeplink successfully saved_ displays at the top.
 
-![](https://files.readme.io/cb41781-AppsFlyer_OneLink_Saved_Successfully.png "AppsFlyer OneLink Saved Successfully")  AppsFlyer Domain Deeplink Success
+  AppsFlyer Domain Deeplink Success
 
 ### Disable Tracking via AppsFlyer OneLink
 
