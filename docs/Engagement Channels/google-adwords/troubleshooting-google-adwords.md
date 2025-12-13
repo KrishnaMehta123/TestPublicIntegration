@@ -18,5 +18,5 @@ next:
 
 To ‘Whitelist’ your Google Ads account, you need to directly contact your Google Ads support team as CleverTap has no access to this. In the meantime, you can refer to the [blog by Google Ad](https://support.google.com/adspolicy/answer/6299717), which mentions criteria to be met before you use ‘Customer Match’ as an upload option for remarketing.
 
-Google Developer Blog for ADVERTISER_NOT_WHITELISTED_FOR_USING_UPLOADED_DATA:  
-<https://ads-developers.googleblog.com/2018/11/update-to-customer-match-requirements.html>
+Google Developer Blog for ADVERTISER\_NOT\_WHITELISTED\_FOR\_USING\_UPLOADED\_DATA:\
+[https://ads-developers.googleblog.com/2018/11/update-to-customer-match-requirements.html](https://ads-developers.googleblog.com/2018/11/update-to-customer-match-requirements.html)
