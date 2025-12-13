@@ -18,175 +18,71 @@ This section covers how to analyze an event and its various components. Analyzin
 
 To analyze an event, perform the following steps:
 
-1. From the dashboard, navigate to _Analytics_ > _Events_. 
+1. From the dashboard, navigate to *Analytics* > *Events*. 
 2. Filter by segments and select the event. 
 3. If required, filter further by segment behavior. 
 4. Click **View details**.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6ee5724-Events_Analyze.png",
-        "View analytics for event data on CleverTap dashboard",
-        831
-      ],
-      "align": "center",
-      "sizing": "80",
-      "border": true,
-      "caption": "Event Analytics"
-    }
-  ]
-}
-[/block]
-
+<Image title="View analytics for event data on CleverTap dashboard" alt={831} align="center" width="80%" border={true} src="https://files.readme.io/6ee5724-Events_Analyze.png">
+  Event Analytics
+</Image>
 
 ## Quick View
 
-The _Quick View _ displays all the basic details such as the number of events, the number of profiles, demographics, and sample profiles.
+The *Quick View* displays all the basic details such as the number of events, the number of profiles, demographics, and sample profiles.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ea81958-Events_Analyze_Quick_View.png",
-        "Quick view of event analytics on CleverTap dashboard",
-        883
-      ],
-      "align": "center",
-      "sizing": "80",
-      "border": true,
-      "caption": "Quick View of Event Analytics"
-    }
-  ]
-}
-[/block]
-
+<Image title="Quick view of event analytics on CleverTap dashboard" alt={883} align="center" width="80%" border={true} src="https://files.readme.io/ea81958-Events_Analyze_Quick_View.png">
+  Quick View of Event Analytics
+</Image>
 
 ## Trends and Properties
 
-In the _Trend and Properties_ tab, you can analyze the events and people on a daily, weekly, and monthly duration.
+In the *Trend and Properties* tab, you can analyze the events and people on a daily, weekly, and monthly duration.
 
 In addition, you can further evaluate the selected event by its property and also view the frequency histogram chart for the same event.
 
 > 📘 Various Ways to View Event Property Information
-> 
+>
 > You can view the information for event property as a bar graph, trend, or table.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a6ba497-Events_Analyze_Trends_tab.png",
-        "View event trends and properties on bar graph, trend, or table",
-        878
-      ],
-      "align": "center",
-      "sizing": "80",
-      "border": true,
-      "caption": "Event Trends and Properties"
-    }
-  ]
-}
-[/block]
-
+<Image title="View event trends and properties on bar graph, trend, or table" alt={878} align="center" width="80%" border={true} src="https://files.readme.io/a6ba497-Events_Analyze_Trends_tab.png">
+  Event Trends and Properties
+</Image>
 
 ## Session
 
 We divide a 24-hour day cycle into 12 buckets of two hours each. The event is analyzed by the time of the day based on these two-hour divisions. 
 
-Here is an example of viewing Sessions for the _Charged_ event:
+Here is an example of viewing Sessions for the *Charged* event:
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/06aba6a-Events_Analyze_Sessions_Tab.png",
-        "View event session of CleverTap dashboard",
-        886
-      ],
-      "align": "center",
-      "sizing": "80",
-      "border": true,
-      "caption": "Event Sessions"
-    }
-  ]
-}
-[/block]
+<Image title="View event session of CleverTap dashboard" alt={886} align="center" width="80%" border={true} src="https://files.readme.io/06aba6a-Events_Analyze_Sessions_Tab.png">
+  Event Sessions
+</Image>
 
-
-- _By time of the day_: Displays the distribution of user events across different times of the day. For example, it can show the number of users active during morning hours, afternoon hours, or evening hours.
-- _By minutes before charged_: Displays the duration between the initiation of a user session and the moment they finalize a purchase or successfully complete a transaction. This metric can help businesses understand how long it takes for users to convert, which in turn can help them optimize their user experience and marketing strategies.
-- _Pages before charged_: Displays the number of pages a user visits before making a purchase or completing a transaction. This metric can help businesses understand the user journey on their app or website and identify any potential roadblocks or issues that may prevent users from converting.
+* *By time of the day*: Displays the distribution of user events across different times of the day. For example, it can show the number of users active during morning hours, afternoon hours, or evening hours.
+* *By minutes before charged*: Displays the duration between the initiation of a user session and the moment they finalize a purchase or successfully complete a transaction. This metric can help businesses understand how long it takes for users to convert, which in turn can help them optimize their user experience and marketing strategies.
+* *Pages before charged*: Displays the number of pages a user visits before making a purchase or completing a transaction. This metric can help businesses understand the user journey on their app or website and identify any potential roadblocks or issues that may prevent users from converting.
 
 ## Geography
 
 The event data is displayed by cities, regions, and countries.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8b322cb-Events_Analyze_Geography.png",
-        "Analyze event data based on Geography",
-        860
-      ],
-      "align": "center",
-      "sizing": "80",
-      "border": true,
-      "caption": "Event Data based on geography"
-    }
-  ]
-}
-[/block]
-
+<Image title="Analyze event data based on Geography" alt={860} align="center" width="80%" border={true} src="https://files.readme.io/8b322cb-Events_Analyze_Geography.png">
+  Event Data based on geography
+</Image>
 
 ## Technographics
 
-You can also analyze the event based on the browsers, operating systems, and devices. Select the relevant options from the _By app field_ list including OS version, app version, make, and model. 
+You can also analyze the event based on the browsers, operating systems, and devices. Select the relevant options from the *By app field* list including OS version, app version, make, and model. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/64423a1-Events_Analyze_Technographics.png",
-        "Analyze event data based on technographics",
-        908
-      ],
-      "align": "center",
-      "sizing": "80",
-      "border": true,
-      "caption": "Event Data based on Technographics"
-    }
-  ]
-}
-[/block]
-
+<Image title="Analyze event data based on technographics" alt={908} align="center" width="80%" border={true} src="https://files.readme.io/64423a1-Events_Analyze_Technographics.png">
+  Event Data based on Technographics
+</Image>
 
 ## People
 
 View sample user profiles that performed the selected event, the percentage of demographics of users (women, men, others, unknown), and user properties.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ee65192-Events_Analyze_People.png",
-        "Analyze event data based on people",
-        914
-      ],
-      "align": "center",
-      "sizing": "80",
-      "border": true,
-      "caption": "Event Data based on People"
-    }
-  ]
-}
-[/block]
+<Image title="Analyze event data based on people" alt={914} align="center" width="80%" border={true} src="https://files.readme.io/ee65192-Events_Analyze_People.png">
+  Event Data based on People
+</Image>
