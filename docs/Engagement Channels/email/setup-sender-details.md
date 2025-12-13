@@ -273,7 +273,7 @@ a. Navigate to _Settings_ > _Channel_ > _Email_ > _Advanced Setup_ on the dashbo
 
 b. Enter your AppsFlyer OneLink domain or sub-domain and click **Add**.
 
-![](https://files.readme.io/d6aba01-Click_Add_to_Add_the_OneLink.png "Click Add to Add the OneLink")  Add AppsFlyer OneLink
+Add AppsFlyer OneLink
 
 > 🚧 Adding a Domain
 >
@@ -281,7 +281,7 @@ b. Enter your AppsFlyer OneLink domain or sub-domain and click **Add**.
 
 c. Click **Save** to save the domain.
 
-![](https://files.readme.io/ced9b07-Click_Save_to_Save_the_Added_OneLink.png "Click Save to Save the Added OneLink")  Save AppsFlyer OneLink
+  Save AppsFlyer OneLink
 
 The message _AppsFlyer domain deeplink successfully saved_ displays at the top.
 
