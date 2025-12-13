@@ -24,36 +24,36 @@ Explore troubleshooting tips and FAQs for Push Notifications by expanding the se
 
 Rendering of the image in a push notification is dependent on three factors:
 
-- **Image Size**: The image size must be less than 40Kb.
-- **User's Internet Connection**: The OS (Android and iOS) tries to download the image for ~10 seconds. If it cannot download the image within this time, the push is rendered only with the title and message without the image.
-- **Content Delivery Network(CDN) Throughput**: Because the OS downloads the image every time a push is sent to a user, the CDN you use to host images must also be scalable. Let's say the notification is sent to 5 million users. The OS tries to download the image from the CDN for all these users. The CDN must be scalable for such a base.
+* **Image Size**: The image size must be less than 40Kb.
+* **User's Internet Connection**: The OS (Android and iOS) tries to download the image for \~10 seconds. If it cannot download the image within this time, the push is rendered only with the title and message without the image.
+* **Content Delivery Network(CDN) Throughput**: Because the OS downloads the image every time a push is sent to a user, the CDN you use to host images must also be scalable. Let's say the notification is sent to 5 million users. The OS tries to download the image from the CDN for all these users. The CDN must be scalable for such a base.
 
 ### Why does the image not render in push notifications for iOS?
 
-To render the image push notification for iOS, you must enable the rich media notification in iOS. You can enable _Rich Push Notifications_ using a notification service extension. This is a separate and distinct binary embedded in your app bundle. 
+To render the image push notification for iOS, you must enable the rich media notification in iOS. You can enable *Rich Push Notifications* using a notification service extension. This is a separate and distinct binary embedded in your app bundle. 
 
 For more information on enabling the notification service extension, refer to [UNNotificationServiceExtension](https://developer.apple.com/documentation/usernotifications/unnotificationserviceextension) in the Apple documentation.
 
 ### Why do images not render for the Push notifications? Primarily for  Chinese OEMs such as OnePlus?
 
-Chinese handsets have tweaked the OS to enhance battery life. Battery optimization is a vital in preventing image rendering in a push notification. This behavior is prominent across makes like Oppo, OnePlus, etc. Because of the battery optimization layer, the app sometimes kills the background services, preventing the notification from rendering. This behavior varies by user and device based on the app's usage pattern and device usage and timings. Additionally, if the notification is clicked as soon as received, the app might open irrespective of the settings. However, if the notifications stay in the user's tray for a specific time (the threshold varies from device to device), the app does not open upon clicking the notification.  
-Please find the further details as follows:  
+Chinese handsets have tweaked the OS to enhance battery life. Battery optimization is a vital in preventing image rendering in a push notification. This behavior is prominent across makes like Oppo, OnePlus, etc. Because of the battery optimization layer, the app sometimes kills the background services, preventing the notification from rendering. This behavior varies by user and device based on the app's usage pattern and device usage and timings. Additionally, if the notification is clicked as soon as received, the app might open irrespective of the settings. However, if the notifications stay in the user's tray for a specific time (the threshold varies from device to device), the app does not open upon clicking the notification.\
+Please find the further details as follows:\
 Based on our observations in OnePlus Devices: 
 
-- Under_Settings_ >_Recent App Management_, you have two options: Normal Clear_ and_Deep Clear_. Generally, if \_Deep clear\* is selected, clicking on a notification does not open the app.
-- Along with  _Recent App Management_, battery optimization has two options under_Advanced optimization_ >_Deep optimization_ &_Sleep standby optimization_.  
-  This option also prevents opening the app after clicking the notification.  
+* Under*Settings* >*Recent App Management*, you have two options: Normal Clear *and\_Deep Clear*. Generally, if \_Deep clear\* is selected, clicking on a notification does not open the app.
+* Along with  *Recent App Management*, battery optimization has two options under*Advanced optimization* >*Deep optimization* &*Sleep standby optimization*.\
+  This option also prevents opening the app after clicking the notification.\
   This behavior varies from user to user using a OnePlus device basis the app's usage pattern.
 
 ### Why am I receiving blank push notifications?
 
 This may happen if you custom hand or custom render the Push notifications, and have enabled uninstall tracking. Check for the following:
 
-- CleverTap SDK does not handle the Push notification and the handling is performed through your custom code. This custom code must read the payload defined by CleverTap and fetch the _Title_, _Message_, and other parameters using the keys mentioned in the payload.
+* CleverTap SDK does not handle the Push notification and the handling is performed through your custom code. This custom code must read the payload defined by CleverTap and fetch the *Title*, *Message*, and other parameters using the keys mentioned in the payload.
 
-- If the custom code is unable to understand the payload defined by CleverTap, then the Push notifications are displayed without a message.
+* If the custom code is unable to understand the payload defined by CleverTap, then the Push notifications are displayed without a message.
 
-- Below is a sample payload for Android that can help identify the keys and their respective values  for custom push rendering:
+* Below is a sample payload for Android that can help identify the keys and their respective values  for custom push rendering:
 
 ```json
 {
@@ -88,25 +88,25 @@ wzrk_st=subtitle //Subtitle text
 }
 ```
 
-- Also, CleverTap sends a silent Push notification (blank push) to track _App Uninstalls_ if _Uninstall_ tracking is enabled on the CleverTap dashboard. If you custom handle the Push notifications, you are parsing the payload yourself and rendering the notifications on the device using your own method. You must check for the `nm` or `nt` tags. These tags in the Push payload hold the title and message of the Push notification. If these tags are empty, then the Push must not be rendered. The code must identify the silent push notification and the normal push notification.
+* Also, CleverTap sends a silent Push notification (blank push) to track *App Uninstalls* if *Uninstall* tracking is enabled on the CleverTap dashboard. If you custom handle the Push notifications, you are parsing the payload yourself and rendering the notifications on the device using your own method. You must check for the `nm` or `nt` tags. These tags in the Push payload hold the title and message of the Push notification. If these tags are empty, then the Push must not be rendered. The code must identify the silent push notification and the normal push notification.
 
-- If the above is not implemented, then the users will get blank Push notifications around midnight when the _App Uninstall_ sweep runs on CleverTap.
+* If the above is not implemented, then the users will get blank Push notifications around midnight when the *App Uninstall* sweep runs on CleverTap.
 
 ### What is the recommended image dimension in push notifications with CTA?
 
 The following is the recommended image dimension in push notifications with CTA:
 
-- **Aspect ratio**: 16:9 and Recommended Size - 533.33 X 300 pixels minimum.
-- **Supported File Types**: PNG, JPG, JPEG
-- **Max Image Size**: 40Kb  
-  We recommend maintaining an aspect ratio of 16:9. Adjust the dimensions accordingly. You can calculate the aspect ratio from websites such as <https://calculateaspectratio.com>.
+* **Aspect ratio**: 16:9 and Recommended Size - 533.33 X 300 pixels minimum.
+* **Supported File Types**: PNG, JPG, JPEG
+* **Max Image Size**: 40Kb\
+  We recommend maintaining an aspect ratio of 16:9. Adjust the dimensions accordingly. You can calculate the aspect ratio from websites such as [https://calculateaspectratio.com](https://calculateaspectratio.com).
 
 ### Why do I receive the same message body twice in a push notification?
 
 If you are custom handling your push notifications and using `CleverTapAPI.createNotification()` and your own function (for example: `sendNotification()`) for displaying notifications in the custom message listener service, the message may be sent twice. Remove the `sendNotification()` method and use the `CleverTapAPI.createNotification()` method only. The `CleverTapAPI.createNotification()` method creates a notification that is handled via CleverTap.
 
 > 🚧 Note
-> 
+>
 > If you want to display the notification using your own function, then remove the call to the CleverTap SDK for displaying the notification. This ensures that multiple calls are not made to display a push.
 
 ### Why do push notifications with images truncate the text in the message?
@@ -117,20 +117,20 @@ When creating notifications, be careful about big text and a big image.
 
 If you want to see the full text (big text) or you want to add the text in multiple lines, then do either of the following:
 
-- Send the notification without an image (big image).
-- Custom handle the push notification at your end to support big text and a big image.
+* Send the notification without an image (big image).
+* Custom handle the push notification at your end to support big text and a big image.
 
 ### Why is my push notification campaign running slowly?
 
 If you feel that the push campaigns are executing slowly, then it could be due to either of the following reasons:
 
-- **Personalized Messages**: If personalization is used in the message, the push notifications will not be sent in batches containing multiple users because the push content differs for each user. The push request for each user is made separately, increasing the process time.
+* **Personalized Messages**: If personalization is used in the message, the push notifications will not be sent in batches containing multiple users because the push content differs for each user. The push request for each user is made separately, increasing the process time.
 
-- **Throttle**: The push campaign can execute slowly as it adheres to the throttle limit set for push notifications in the _Campaign Limits_ under _Account Settings_. The throttle limit specified from the dashboard during the campaign creation is considered throughout the campaign's lifetime. The throttle for existing campaigns is not updated when the global throttle is updated. The new throttle is considered only for the new campaigns.
+* **Throttle**: The push campaign can execute slowly as it adheres to the throttle limit set for push notifications in the *Campaign Limits* under *Account Settings*. The throttle limit specified from the dashboard during the campaign creation is considered throughout the campaign's lifetime. The throttle for existing campaigns is not updated when the global throttle is updated. The new throttle is considered only for the new campaigns.
 
-### Why does the word _modified_ display in the title for iOS push notifications?
+### Why does the word *modified* display in the title for iOS push notifications?
 
-The word _modified_ displays in push notifications if you enable the advanced option in a campaign. Implement the _Rich Push_ notifications in a future update to address this issue. If you are not using _Rich Push_, clear the advanced option you selected in the campaign.
+The word *modified* displays in push notifications if you enable the advanced option in a campaign. Implement the *Rich Push* notifications in a future update to address this issue. If you are not using *Rich Push*, clear the advanced option you selected in the campaign.
 
 </details>
 
@@ -142,31 +142,17 @@ The word _modified_ displays in push notifications if you enable the advanced op
 
 Check that the Push impression event is enabled with the following steps:
 
-1. Navigate to _Settings_ > _Schema_ > _Events_.
-2. Search _Push Impressions_ and click the vertical ellipsis.
+1. Navigate to *Settings* > *Schema* > *Events*.
+2. Search *Push Impressions* and click the vertical ellipsis.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ebf8ae7-Push_Impression_event_FAQ.png",
-        "Push Impression event FAQ.png",
-        "Setup Push Impressions"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Setup Push Impressions"
-    }
-  ]
-}
-[/block]
-
+<Image title="Push Impression event FAQ.png" alt="Setup Push Impressions" align="center" border={true} src="https://files.readme.io/ebf8ae7-Push_Impression_event_FAQ.png">
+  Setup Push Impressions
+</Image>
 
 3. Click **Setup push impressions**. A new window displays.
 4. Click **Save** to enable the option.
 
-If the steps above fail, check the SDK version used for Android and iOS. The _Push Impression_ event feature is available from the v3.5.1 SDK version for Android and from 3.7.1 for iOS.
+If the steps above fail, check the SDK version used for Android and iOS. The *Push Impression* event feature is available from the v3.5.1 SDK version for Android and from 3.7.1 for iOS.
 
 For iOS, you must also implement an API in your app. For more information, refer to [Rich Push Notifications](https://developer.clevertap.com/docs/rich-push-notifications). For Android, once your app is on SDK v3.5.1+, the push impression statistics will start showing for qualified users on a Push notification campaign because the feature is already enabled in your event settings.
 
@@ -174,47 +160,19 @@ For more information, refer to [Custom Android Push Notifications Handling](http
 
 ### How do I analyze the CTA button for a push campaign?
 
-To track the number of clicks on the Click-To-Action (CTA) buttons of the push notification, navigate to,  
-_Analytics_ > _Events_.  
-Search the _Notification Clicked_ event filtered by the campaign. 
+To track the number of clicks on the Click-To-Action (CTA) buttons of the push notification, navigate to,\
+*Analytics* > *Events*.\
+Search the *Notification Clicked* event filtered by the campaign. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a1eeb55-Analyze_CTA_1.png",
-        "Analyze the CTA Button",
-        1232
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Filter by Notification Clicked Event"
-    }
-  ]
-}
-[/block]
+<Image title="Analyze the CTA Button" alt={1232} align="center" border={true} src="https://files.readme.io/a1eeb55-Analyze_CTA_1.png">
+  Filter by Notification Clicked Event
+</Image>
 
+On the result, go to *Trend & Properties*. Scroll down to the *Event property* table and filter by *wzrk\_c2a* in the dropdown to view click distribution for campaign buttons.
 
-On the result, go to _Trend & Properties_. Scroll down to the _Event property_ table and filter by _wzrk_c2a_ in the dropdown to view click distribution for campaign buttons.
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9d5e8c1-Analyze_CTA_2.png",
-        "Clicks Across Various Buttons",
-        1046
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Analyze CTA"
-    }
-  ]
-}
-[/block]
-
+<Image title="Clicks Across Various Buttons" alt={1046} align="center" border={true} src="https://files.readme.io/9d5e8c1-Analyze_CTA_2.png">
+  Analyze CTA
+</Image>
 
 </details>
 
@@ -226,14 +184,14 @@ On the result, go to _Trend & Properties_. Scroll down to the _Event property_ t
 
 To optimize delivery rates of push notifications, perform the following:
 
-- Ensure that all users targeted in the campaign are using the Push Impression-enabled SDK v3.5.0.
-- If you are targeting Android or iOS: 
-  - **Android**: Android supports out-of-the-box impressions.
-  - **iOS**: Check whether the iOS implementation has been completed. For more information, refer to [iOS Push Impression](https://developer.clevertap.com/docs/push-notifications-ios#push-impressions). 
-- If the above-mentioned checks are passed, but the push impressions remain low, perform the following:
-  - Use Pull Notifications. For more information, refer to [Optimize Delivery](https://docs.clevertap.com/docs/push-optimize-delivery).  
+* Ensure that all users targeted in the campaign are using the Push Impression-enabled SDK v3.5.0.
+* If you are targeting Android or iOS: 
+  * **Android**: Android supports out-of-the-box impressions.
+  * **iOS**: Check whether the iOS implementation has been completed. For more information, refer to [iOS Push Impression](https://developer.clevertap.com/docs/push-notifications-ios#push-impressions). 
+* If the above-mentioned checks are passed, but the push impressions remain low, perform the following:
+  * Use Pull Notifications. For more information, refer to [Optimize Delivery](https://docs.clevertap.com/docs/push-optimize-delivery).\
                                                                        OR 
-  - Integrate with other push notification providers, such as [Xiaomi](https://developer.clevertap.com/docs/xiaomi-push-notifications), [Huawei](https://developer.clevertap.com/docs/clevertap-huawei-push-integration), or [Baidu](https://developer.clevertap.com/docs/baidu-push-notifications), to increase reach and deliverability.
+  * Integrate with other push notification providers, such as [Xiaomi](https://developer.clevertap.com/docs/xiaomi-push-notifications), [Huawei](https://developer.clevertap.com/docs/clevertap-huawei-push-integration), or [Baidu](https://developer.clevertap.com/docs/baidu-push-notifications), to increase reach and deliverability.
 
 ### What are the timeouts and retry limits for Push Notifications?
 
@@ -289,10 +247,10 @@ To set a custom notification icon (only for the small icon), add the following m
 
 If the small icon still does not appear, check the following in your Android project: 
 
-- Your app must have a small icon file in your drawable resources.
-- You are using a PNG file and not a JPEG file for the small icon. 
-- The background in your icon file is transparent. 
-- The small icon image must be monochrome without alpha channels (RGB colors) and with 60-70% opacity, such as white pixels on a transparent backdrop.
+* Your app must have a small icon file in your drawable resources.
+* You are using a PNG file and not a JPEG file for the small icon. 
+* The background in your icon file is transparent. 
+* The small icon image must be monochrome without alpha channels (RGB colors) and with 60-70% opacity, such as white pixels on a transparent backdrop.
 
 For more information, refer to [Set the Small Notification Icon](https://developer.clevertap.com/docs/android#section-set-the-small-notification-icon) and [Create App Icons with Image Asset Studio](https://developer.android.com/studio/write/image-asset-studio) in the Android documentation.
 
@@ -310,7 +268,7 @@ For more information, refer to [Set the Small Notification Icon](https://develop
 
 ### My application infrastructure can only support handling 100K users in a given time duration. How do I achieve this rate-limiting from CleverTap while sending push notifications?
 
-This can be achieved by throttling campaigns. The push campaign adheres to the throttle limit set for push notifications in the _Campaign Limits_ under _Account Settings_.  
+This can be achieved by throttling campaigns. The push campaign adheres to the throttle limit set for push notifications in the *Campaign Limits* under *Account Settings*.\
 This can then be enabled or disabled during the setup of campaign creation. For more information, refer to [Throttling](https://docs.clevertap.com/docs/setup-push-notification#push-campaign-throttling).
 
 ### Where can I update Xiaomi/Huawei credentials?
@@ -321,27 +279,13 @@ After you have an app secret and package name, you must update it on the CleverT
 2. Click **Channels** > **Mobile push**. The push notification setup page displays.
 3. Click **Huawei** or **Xiaomi** push notifications and add the App secret and package name/App ID.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/afab9c0-New_final_Previous_Campaigns_mobile_push_settings_xiaomi_huwaei.png",
-        "New final Previous Campaigns_mobile_push_settings_xiaomi_huwaei.png",
-        "Xiaomi/Huawei credentials"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Xiaomi/Huawei credentials"
-    }
-  ]
-}
-[/block]
-
+<Image title="New final Previous Campaigns_mobile_push_settings_xiaomi_huwaei.png" alt="Xiaomi/Huawei credentials" align="center" border={true} src="https://files.readme.io/afab9c0-New_final_Previous_Campaigns_mobile_push_settings_xiaomi_huwaei.png">
+  Xiaomi/Huawei credentials
+</Image>
 
 ### How can I redirect the users to MWeb when they click the push notification?
 
-To redirect users to MWeb, you can add the page URL as a deep link when creating a campaign. The users are redirected to the page specified in the deep link. For example, <https://clevertap.com/>.
+To redirect users to MWeb, you can add the page URL as a deep link when creating a campaign. The users are redirected to the page specified in the deep link. For example, [https://clevertap.com/](https://clevertap.com/).
 
 ### How do you resolve the popup for installing the HMS core app on non-Huawei devices?
 
@@ -351,23 +295,23 @@ This popup appears on non-Huawei devices after implementing Huawei push notifica
 
 The Xiaomi/Baidu/Huawei push notifications may show 0% on campaign stats if all the notifications are delivered through FCM. For a greater chance of delivery success, CleverTap sends a push notification through the Xiaomi/Baidu/Huawei Push and Firebase Cloud Messaging (FCM) push services. If a message is delivered through any one of these push services, then the notification from the other cloud services is suppressed. No priority is defined for the messaging service, and there are no changes to the current flow of FCM. This ensures the user receives the push notification only once.
 
-The services that are not integrated with CleverTap are shown as _N/A_.
+The services that are not integrated with CleverTap are shown as *N/A*.
 
 ### How do I disable IDFA tracking in iOS?
 
 To disable the IDFA tracking, follow the steps below:
 
 1. Check that you have not added the `CleverTapUseIFA` flag in the info.plist file.
-2. Remove the _AdSupport_ framework from your build if you add it to your linked libraries.
-3. When submitting your app to the app store, you are asked if your app supports IDFA. Select _No_.
+2. Remove the *AdSupport* framework from your build if you add it to your linked libraries.
+3. When submitting your app to the app store, you are asked if your app supports IDFA. Select *No*.
 
 > 📘 Note
-> 
+>
 > IDFA is not supported for iOS versions 14 and higher.
 
 ### Is there an action ID for iOS similar to Android?
 
-The iOS equivalent for action ID is _category_. These categories are static and must be shipped with the app. You can add the name of the category while creating a campaign. Each category must be registered with the app. This category is associated with actions that the user can perform when a notification of rich media type is delivered. Each category can have up to four actions associated with it. The actual number of actions actually displayed for the category depends on the type of notification delivered. Users can perform multiple actions for the notification. For example, a single media push notification can have two buttons such as, _Buy Now_ and _Save for Later_.
+The iOS equivalent for action ID is *category*. These categories are static and must be shipped with the app. You can add the name of the category while creating a campaign. Each category must be registered with the app. This category is associated with actions that the user can perform when a notification of rich media type is delivered. Each category can have up to four actions associated with it. The actual number of actions actually displayed for the category depends on the type of notification delivered. Users can perform multiple actions for the notification. For example, a single media push notification can have two buttons such as, *Buy Now* and *Save for Later*.
 
 For more information, refer to [Advanced iOS Push Notifications](https://developer.clevertap.com/docs/ios#section-advanced-ios-push-notifications).
 
@@ -414,30 +358,30 @@ This payload is received as bundle data, and the JSON is only for representation
 
 Following are the keys for the push notification:
 
-| Key           | Description                                                                                                     |
-| :------------ | :-------------------------------------------------------------------------------------------------------------- |
-| wzrk_acct_id  | CleverTap account ID                                                                                            |
-| custom key    | Any custom key the user can add                                                                                 |
-| wzrk_acts     | Action button payload                                                                                           |
-| nm            | Notification message                                                                                            |
-| nt            | Notification title                                                                                              |
-| ico           | Icon resource identifier for an action button                                                                   |
-| wzrk_pivot    | Variant A or B of A/B campaign                                                                                  |
-| wzrk_cid      | Notification channel ID                                                                                         |
-| wzrk_nms      | Summary text                                                                                                    |
-| wzrk_rnv      | A flag to raise notification viewed event. If present and not empty, it will raise a notification viewed event. |
-| wzrk_ttl      | Time to live (TTL)                                                                                              |
-| wzrk_push_amp | Push amp                                                                                                        |
-| wzrk_bc       | Badge count                                                                                                     |
-| wzrk_bi       | Badge icon                                                                                                      |
-| wzrk_bp       | Image URL                                                                                                       |
-| wzrk_ck       | Collapse key                                                                                                    |
-| wzrk_dl       | Deep link URL                                                                                                   |
-| wzrk_dt       | Service used to send the message (e.g. FIREBASE)                                                                |
-| wzrk_id       | Campaign ID                                                                                                     |
-| wzrk_pn       | Push notification. If present, this notification is sent from CleverTap.                                        |
-| wzrk_st       | Subtitle                                                                                                        |
-| wzrk_pid      | Refers to Campaign ID with the date of the campaign creation.                                                   |
+| Key             | Description                                                                                                     |
+| :-------------- | :-------------------------------------------------------------------------------------------------------------- |
+| wzrk\_acct\_id  | CleverTap account ID                                                                                            |
+| custom key      | Any custom key the user can add                                                                                 |
+| wzrk\_acts      | Action button payload                                                                                           |
+| nm              | Notification message                                                                                            |
+| nt              | Notification title                                                                                              |
+| ico             | Icon resource identifier for an action button                                                                   |
+| wzrk\_pivot     | Variant A or B of A/B campaign                                                                                  |
+| wzrk\_cid       | Notification channel ID                                                                                         |
+| wzrk\_nms       | Summary text                                                                                                    |
+| wzrk\_rnv       | A flag to raise notification viewed event. If present and not empty, it will raise a notification viewed event. |
+| wzrk\_ttl       | Time to live (TTL)                                                                                              |
+| wzrk\_push\_amp | Push amp                                                                                                        |
+| wzrk\_bc        | Badge count                                                                                                     |
+| wzrk\_bi        | Badge icon                                                                                                      |
+| wzrk\_bp        | Image URL                                                                                                       |
+| wzrk\_ck        | Collapse key                                                                                                    |
+| wzrk\_dl        | Deep link URL                                                                                                   |
+| wzrk\_dt        | Service used to send the message (e.g. FIREBASE)                                                                |
+| wzrk\_id        | Campaign ID                                                                                                     |
+| wzrk\_pn        | Push notification. If present, this notification is sent from CleverTap.                                        |
+| wzrk\_st        | Subtitle                                                                                                        |
+| wzrk\_pid       | Refers to Campaign ID with the date of the campaign creation.                                                   |
 
 ### What is an Action ID in Android?
 
@@ -451,7 +395,7 @@ You can handle the closing of the notification yourself at the code level, and o
 
 For more information on Android, refer to [Action Buttons](https://developer.clevertap.com/docs/android#section-action-buttons).
 
-**For iOS**: You must implement a category for iOS. You can enter the name of the category while creating the campaign. Each category must be registered with the app. Each category is associated with actions that the user can perform when a notification of rich media type is delivered. Each category can have up to four associated actions, although the number of actions displayed depends on the type of notification delivered. This enables users to take multiple actions for the notification. For example, a single media push notification can have two buttons such as, _Buy Now_ and _Save for Later_.
+**For iOS**: You must implement a category for iOS. You can enter the name of the category while creating the campaign. Each category must be registered with the app. Each category is associated with actions that the user can perform when a notification of rich media type is delivered. Each category can have up to four associated actions, although the number of actions displayed depends on the type of notification delivered. This enables users to take multiple actions for the notification. For example, a single media push notification can have two buttons such as, *Buy Now* and *Save for Later*.
 
 For more information on iOS, refer to [Advanced iOS Push Notifications](https://developer.clevertap.com/docs/ios#section-advanced-ios-push-notifications).
 
@@ -485,33 +429,33 @@ Following are the keys for the push notification:
 | Key             | Description                             |
 | :-------------- | :-------------------------------------- |
 | W$dt            | Notification service                    |
-| W$id            | Campaign ID_date                        |
+| W$id            | Campaign ID\_date                       |
 | W$pivot         | Variant                                 |
 | W$rnv           | Raises notification viewed              |
 | body            | Notification message                    |
 | title           | Notification title                      |
 | mutable-content | Value is 1 if enabled and 0 if disabled |
 | sound           | Notification sound (default is OS)      |
-| ct_mediaType    | Type of media                           |
-| ct_mediaUrl     | Media link                              |
-| wzrk_acct_id    | Account ID                              |
-| wzrk_dl         | Deeplink URL                            |
+| ct\_mediaType   | Type of media                           |
+| ct\_mediaUrl    | Media link                              |
+| wzrk\_acct\_id  | Account ID                              |
+| wzrk\_dl        | Deeplink URL                            |
 
 ### Why do I see an increase in the number of errors after migrating to the enhanced segment builder?
 
 After migrating to the enhanced segment builder, you may notice an increase in errors. This is due to a fundamental change in how user properties are evaluated.
 
-Previously, filters in the _Who_ section were evaluated during campaign user qualification in SB1.0. With the enhanced Segment Builder, this evaluation now happens during campaign dispatch in SB2.0. Here is how it works: 
+Previously, filters in the *Who* section were evaluated during campaign user qualification in SB1.0. With the enhanced Segment Builder, this evaluation now happens during campaign dispatch in SB2.0. Here is how it works: 
 
 Consider an example where a campaign is triggered on user action and includes filters such as region = India or gender = M.  
 
-- **During the qualification phase**, all user profiles performing the specified event qualify for the campaign, regardless of the user property. 
-- **During the dispatching phase**, the user properties are fetched for the qualifying profiles, which will be used for evaluation.
-  - Profiles without tokens are marked as unreachable, as their User Properties cannot be evaluated.
-  - Profiles with tokens are evaluated:
-    - Those matching the filters (for example, Region = India and Gender = M) receive the campaign notification.
-    - Those not matching the filters are silently dropped from the campaign.
-    - User properties won't be available for profiles without tokens, and hence they are marked as errors. These errors appear in the system for easier identification.
+* **During the qualification phase**, all user profiles performing the specified event qualify for the campaign, regardless of the user property. 
+* **During the dispatching phase**, the user properties are fetched for the qualifying profiles, which will be used for evaluation.
+  * Profiles without tokens are marked as unreachable, as their User Properties cannot be evaluated.
+  * Profiles with tokens are evaluated:
+    * Those matching the filters (for example, Region = India and Gender = M) receive the campaign notification.
+    * Those not matching the filters are silently dropped from the campaign.
+    * User properties won't be available for profiles without tokens, and hence they are marked as errors. These errors appear in the system for easier identification.
 
 While silently dropped profiles are of no direct interest to the campaign and thus excluded, they can still be identified using the [Find People/Segments](https://staging.docs.user.clevertap.net/docs/find-people) page from the CleverTap dashboard. For more information on user profile properties and events, refer to [User Profiles ](doc:user-profiles)and [Events](doc:events).
 
@@ -525,23 +469,23 @@ While silently dropped profiles are of no direct interest to the campaign and th
 
 ### APNS Device Token Does Not Match The Specified Topic
 
-_Apple Push Notification_ service (APNs) returns this when the device token does not match the specified topic.
+*Apple Push Notification* service (APNs) returns this when the device token does not match the specified topic.
 
 In the context of CleverTap, you get this error when you try to send the notification with the wrong certificate. Check that you are using a production certificate for the production environment to avoid unsatisfactory configurations.
 
-Check the provisioning profile used to deploy the app and send the device token to the CleverTap dashboard. To avoid this error, the provisioning profile's  _App Bundle ID_ and the CleverTap push certificate (p12 certificate) must match.
+Check the provisioning profile used to deploy the app and send the device token to the CleverTap dashboard. To avoid this error, the provisioning profile's  *App Bundle ID* and the CleverTap push certificate (p12 certificate) must match.
 
 ### APNS Unregistered
 
-The _Push_ notification delivery to the target has failed as the device token is inactive for the specified topic. If the device token is not valid/inactive,  the notification is not delivered unless the user installs the app again.
+The *Push* notification delivery to the target has failed as the device token is inactive for the specified topic. If the device token is not valid/inactive,  the notification is not delivered unless the user installs the app again.
 
 ### APNS Topic Disallowed
 
-The topic is currently the bundle identifier of the target application on an iOS device. The _APNS Topic Disallowed_ error appears when you specify the incorrect _App Bundle ID_ in the _Account Settings_. 
+The topic is currently the bundle identifier of the target application on an iOS device. The *APNS Topic Disallowed* error appears when you specify the incorrect *App Bundle ID* in the *Account Settings*. 
 
 For more information, refer to [Registering Your App with APNs](https://developer.apple.com/documentation/usernotifications/registering_your_app_with_apns) in the Apple documentation.
 
-To resolve this error, check the value of the _App Bundle ID_ and _APNs push mode_ that you have configured in the CleverTap Dashboard under _Push Settings_.
+To resolve this error, check the value of the *App Bundle ID* and *APNs push mode* that you have configured in the CleverTap Dashboard under *Push Settings*.
 
 ### APNS Temporarily Blacklisted
 
@@ -551,8 +495,8 @@ You are temporarily blacklisted from sending push notifications to the device be
 
 The notification to the device sent from CleverTap failed to deliver due to either of the following reasons:
 
-- The app was uninstalled, and the token is no longer valid.
-- You have sent too many notifications successively and quickly to the same device.
+* The app was uninstalled, and the token is no longer valid.
+* You have sent too many notifications successively and quickly to the same device.
 
 If the user has uninstalled the app, not much can be done to deliver the notification.
 
@@ -562,9 +506,9 @@ For more information, refer to [Handling Notification Responses from APNs](https
 
 The push notification delivery to the target device has failed due to an invalid token. The APNs bad device token error occurs when there is a mismatch between the APN push mode on your app and the CleverTap dashboard. 
 
-For example, you have set the APNs push mode in your app to the _development_ stage, and in the CleverTap dashboard, you have set up the APNs to the _production_ stage. 
+For example, you have set the APNs push mode in your app to the *development* stage, and in the CleverTap dashboard, you have set up the APNs to the *production* stage. 
 
-To check your CleverTap dashboard APNs push mode, navigate to _Settings_ > _Engage_ > _Channels_ > _Mobile Push_ > _iOS_.
+To check your CleverTap dashboard APNs push mode, navigate to *Settings* > *Engage* > *Channels* > *Mobile Push* > *iOS*.
 
 </details>
 
@@ -578,26 +522,12 @@ An invalid FCM API key error is displayed when the FCM API key in the CleverTap 
 
 Follow the steps to update the FCM API key:
 
-1. Navigate to _Settings_ > _Engage_ > _Channels_ > _Mobile Push_. 
+1. Navigate to *Settings* > *Engage* > *Channels* > *Mobile Push*. 
 2. Update the valid FCM API key as it is displayed in your Firebase project. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e19b51f0c6ba7545df72006184cc25d9ebc84098c934ea79d082b98043b36abf-FCM_Screenshot_Update.png",
-        "",
-        "Set FCM Credentials"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Set FCM Credentials"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Set FCM Credentials" align="center" border={true} src="https://files.readme.io/e19b51f0c6ba7545df72006184cc25d9ebc84098c934ea79d082b98043b36abf-FCM_Screenshot_Update.png">
+  Set FCM Credentials
+</Image>
 
 For more information, refer to [Find Your FCM Sender ID & FCM Server API Key](https://developer.clevertap.com/docs/find-your-fcm-sender-id-fcm-server-api-key).
 
@@ -613,28 +543,28 @@ This is a Firebase (Android) error. The FCM error is not part of the standard pu
 
 ### FCM Not Registered
 
-Most likely, the users have uninstalled the app from their devices. One of the common non-technical errors is _Undelivered due to App Uninstall_ in campaign reports. This error occurs when the users uninstall your app while you are trying to reach them via a push notification.
+Most likely, the users have uninstalled the app from their devices. One of the common non-technical errors is *Undelivered due to App Uninstall* in campaign reports. This error occurs when the users uninstall your app while you are trying to reach them via a push notification.
 
-The _FCM Not Registered_ error occurs in two scenarios:
+The *FCM Not Registered* error occurs in two scenarios:
 
-- When the users have uninstalled your app and you are trying to schedule a push notification for them.
-- When users have cleared the device cache memory, which in turn removes the token from the device.
+* When the users have uninstalled your app and you are trying to schedule a push notification for them.
+* When users have cleared the device cache memory, which in turn removes the token from the device.
 
 ### Wrong FCM API Key
 
-An FCM sender ID mismatch occurs when the sender ID entered in the CleverTap dashboard under _Push Notification_ settings does not match the sender ID in the FCM project for your app created on Firebase.
+An FCM sender ID mismatch occurs when the sender ID entered in the CleverTap dashboard under *Push Notification* settings does not match the sender ID in the FCM project for your app created on Firebase.
 
 You must match the sender ID/server keys at the following three locations:
 
-- App-level, which registers the token with the said FCM sender ID mentioned.
-- In the CleverTap dashboard.
-- FCM project.
+* App-level, which registers the token with the said FCM sender ID mentioned.
+* In the CleverTap dashboard.
+* FCM project.
 
 If you have checked the sender ID for mismatch and the error still persists, check the following: 
 
-- Does the app build and the CleverTap account contain mismatched sender IDs?
-- Do you have multiple Firebase projects?
-- Do you have multiple Platform IDs if your app uses two Firebase projects?
+* Does the app build and the CleverTap account contain mismatched sender IDs?
+* Do you have multiple Firebase projects?
+* Do you have multiple Platform IDs if your app uses two Firebase projects?
 
 ### FCM Legacy Push Discontinued
 
@@ -650,61 +580,32 @@ You must migrate to the new FCM V1 APIs to ensure uninterrupted delivery of the 
 
 ### Daily Limit Exceeded
 
-While creating a recurring push campaign, you can set the daily limit. For example, you can set a daily send limit to 10,000 per day, after which you get a _Daily limit Exceeded_ error. You can also set an overall cap limit to 1,00,000 users, after which the campaign stops.
+While creating a recurring push campaign, you can set the daily limit. For example, you can set a daily send limit to 10,000 per day, after which you get a *Daily limit Exceeded* error. You can also set an overall cap limit to 1,00,000 users, after which the campaign stops.
 
 You would generally set a daily limit in a triggered campaign where you are using a live segment. These campaigns are triggered based on an event and therefore, you would want a daily limit for your campaigns.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1f29c93-Daily_Limit_Exceeded_v2.png",
-        "Daily Limit Exceeded v2.png",
-        1386
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Daily Limit for Campaigns"
-    }
-  ]
-}
-[/block]
+<Image title="Daily Limit Exceeded v2.png" alt={1386} align="center" border={true} src="https://files.readme.io/1f29c93-Daily_Limit_Exceeded_v2.png">
+  Daily Limit for Campaigns
+</Image>
 
-
-You can set the campaign limits within the _Who_ section while creating the campaign.
+You can set the campaign limits within the *Who* section while creating the campaign.
 
 ### Per Run Limit Exceeded
 
-The _Per Run Limit_ is a limit enforced on the number of users who are sent in one campaign run. For example, you can set a maximum segment limit to 100,000 users, and the campaign stops running after the set limit for each run.
+The *Per Run Limit* is a limit enforced on the number of users who are sent in one campaign run. For example, you can set a maximum segment limit to 100,000 users, and the campaign stops running after the set limit for each run.
 
-The _Per Run Limit Exceeded_ error occurs when the campaign stops running after the number of qualified users exceeds the set limit.
+The *Per Run Limit Exceeded* error occurs when the campaign stops running after the number of qualified users exceeds the set limit.
 
 You would generally set a per-run limit for past behavior and custom list segments. This is because the campaign is sent to all the qualified users based on their past actions. Therefore, you would want a per-run limit for these campaigns.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f04bdde-New_final_Campaigns_per_run.png",
-        "New final Campaigns_per_run.png",
-        1388
-      ],
-      "align": "center",
-      "sizing": "100",
-      "border": true,
-      "caption": "Campaigns per Run"
-    }
-  ]
-}
-[/block]
+<Image title="New final Campaigns_per_run.png" alt={1388} align="center" width="100%" border={true} src="https://files.readme.io/f04bdde-New_final_Campaigns_per_run.png">
+  Campaigns per Run
+</Image>
 
-
-While creating the campaign, you can set the maximum segment size from the _Who_ section.
+While creating the campaign, you can set the maximum segment size from the *Who* section.
 
 ### FCM Rate Limit Exceeded
 
-Each Firebase project using the HTTP v1 APIs is strictly limited to a specific number of requests per minute. When your account's per-minute limit is reached, the FCM V1 API responds with 429 (Quota Exceeded). However, CleverTap attempts to resend the request up to three times before marking it as a failed delivery and raising the _FCM Rate limit exceeded_ error. To optimize this, you can use CleverTap's _Throttle_ feature under the _Campaign Limits_ section to help you stay within your allocated quota. For more information, refer to [HTTP v1 API Rate Limits](https://developer.clevertap.com/docs/android-push#http-v1-api-rate-limits).
+Each Firebase project using the HTTP v1 APIs is strictly limited to a specific number of requests per minute. When your account's per-minute limit is reached, the FCM V1 API responds with 429 (Quota Exceeded). However, CleverTap attempts to resend the request up to three times before marking it as a failed delivery and raising the *FCM Rate limit exceeded* error. To optimize this, you can use CleverTap's *Throttle* feature under the *Campaign Limits* section to help you stay within your allocated quota. For more information, refer to [HTTP v1 API Rate Limits](https://developer.clevertap.com/docs/android-push#http-v1-api-rate-limits).
 
 </details>
