@@ -16,27 +16,13 @@ next:
 
 The **Stats** tab provides a summary of the coupon performance, including redemptions, revenue impact, and user activity, over a selected time period.
 
-To access coupon stats, go to _Promotions_ > _Rewards_ > _Coupons_, click a coupon name to open its details page, and select the _Stats_ tab.
+To access coupon stats, go to *Promotions* > *Rewards* > *Coupons*, click a coupon name to open its details page, and select the *Stats* tab.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/610cbce06ffbf4c967d08bdb1a6a40473358fabd7b63fe0c8b4e4d1bda508383-image.png",
-        null,
-        "View Coupon Stats"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "View Coupon Stats"
-    }
-  ]
-}
-[/block]
+<Image alt="View Coupon Stats" align="center" border={true} src="https://files.readme.io/610cbce06ffbf4c967d08bdb1a6a40473358fabd7b63fe0c8b4e4d1bda508383-image.png">
+  View Coupon Stats
+</Image>
 
-
-The _Stats_ tab shows the following key metrics to help you assess coupon performance. Some metrics will appear only when applicable, based on the type of coupon.
+The *Stats* tab shows the following key metrics to help you assess coupon performance. Some metrics will appear only when applicable, based on the type of coupon.
 
 | Metric                       | Description                                                                                 | Applies To                                       |
 | ---------------------------- | ------------------------------------------------------------------------------------------- | ------------------------------------------------ |
@@ -51,19 +37,6 @@ The _Stats_ tab shows the following key metrics to help you assess coupon perfor
 
 You can use the calendar widget in the top-right corner to filter coupon stats by a custom date range.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/dee1ad24bce2658f1a6d8322cda21570399c35d0d3b0538420aad5659cd0cada-image.png",
-        null,
-        "Filter Stats with Calendar Widget"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Filter Stats by Custom Date Range"
-    }
-  ]
-}
-[/block]
+<Image alt="Filter Stats with Calendar Widget" align="center" border={true} src="https://files.readme.io/dee1ad24bce2658f1a6d8322cda21570399c35d0d3b0538420aad5659cd0cada-image.png">
+  Filter Stats by Custom Date Range
+</Image>
