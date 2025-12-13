@@ -16,26 +16,26 @@ You can copy engagement across projects to quickly duplicate your existing campa
 
 With this feature, you can:
 
-- **Reduce Campaign Creation Time**: You can save effort by instantly copying existing campaigns and journeys across projects instead of recreating them from scratch. For example, a FinTech marketer can duplicate a validated onboarding journey from a test project to the production project within minutes.
-- **Work Efficiently Across Projects**:  
+* **Reduce Campaign Creation Time**: You can save effort by instantly copying existing campaigns and journeys across projects instead of recreating them from scratch. For example, a FinTech marketer can duplicate a validated onboarding journey from a test project to the production project within minutes.
+* **Work Efficiently Across Projects**:\
   Reuse high-performing engagement campaigns across multiple production projects or business units. For example, a marketer from a global ECommerce company can copy a “Welcome Offer” campaign from the India project to the UAE and Singapore projects to ensure consistent onboarding experiences.
 
 # Copy Engagement Across Projects
 
 > 📘 Prerequisites
-> 
+>
 > Before you begin, ensure that you have access and write permissions for both the source and destination projects. And, the campaign or journey you want to copy is published in the source project.
 
 To copy an existing campaign or journey from one CleverTap project to another, perform the following steps:
 
 1. Go to the Campaigns or Journeys page from the CleverTap dashboard.
 2. Select the campaign or journey you want to copy.
-3. Click the ![](https://files.readme.io/95b4b611bf40ffcaaeace0bb9dc184cb8401f87e194fe61fce38dd8354a98aab-ellipses_icon.png) icon and select Clone from the available actions. The _Clone Campaign_ popup opens.
-4. Select _Current project_ to copy the engagement to the same project, or select Another project to copy the engagement to another project of your CleverTap dashboard. 
+3. Click the ![](https://files.readme.io/95b4b611bf40ffcaaeace0bb9dc184cb8401f87e194fe61fce38dd8354a98aab-ellipses_icon.png) icon and select Clone from the available actions. The *Clone Campaign* popup opens.
+4. Select *Current project* to copy the engagement to the same project, or select Another project to copy the engagement to another project of your CleverTap dashboard. 
 5. Select the project where you want to create a copy. The copied campaign or journey appears as a draft in the destination project. For more information, refer to [How Copy Engagement Works](doc:copy-engagements-across-projects#how-copy-engagement-works).
 
    > 📘 Note
-   > 
+   >
    > You can copy your engagements to one or more projects. CleverTap prefixes the name of the copied  engagement with "Copy" to help you identify duplicates. You can rename the engagement later.
 
 You can choose to open the cloned engagement in a new tab. If the destination project does not include required events, segments, or user properties, CleverTap flags them for review. You can fix them directly in the destination project and publish them.
@@ -46,26 +46,26 @@ When you copy a campaign or journey, CleverTap recreates the structure and logic
 
 The copy process involves the following three key steps:
 
-- **Access Validation**:  
+* **Access Validation**:\
   CleverTap first verifies that you have write access to the respective campaigns or journeys in both the source and destination projects.
-- **Copy Engagement**:  
+* **Copy Engagement**:\
   Once access is validated, CleverTap immediately copies the campaign or journey to the destination project. The copied engagement appears as a draft.
-- **Post-Copy Validation**:  
-  After creating the copy, CleverTap verifies that all required events, user properties, and event properties are present in the destination project.  
+* **Post-Copy Validation**:\
+  After creating the copy, CleverTap verifies that all required events, user properties, and event properties are present in the destination project.\
   If any dependencies are missing, the system displays validation messages highlighting the fields that must be updated before publishing.
 
 > 📘 Supported Channels
-> 
+>
 > You can copy engagements for the following five channels: Push Notifications, In-App Messages, Email, App Inbox, and Webhook.
 
 ## For Campaigns
 
-When you copy a campaign across projects, CleverTap carries over its core configuration, targeting, and personalization details from the source project to the destination.  
+When you copy a campaign across projects, CleverTap carries over its core configuration, targeting, and personalization details from the source project to the destination.\
 The following table explains how each campaign component behaves during the copy process, and what actions you may need to take before publishing.
 
 | Campaign Component                                        | Behavior in Copied Campaign                                                                                                       | Additional Notes                                                                        |
 | --------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| Campaign Name                                             | CleverTap prefixes the copied campaign name with _Clone of_ to help you identify duplicates. The name remains editable.           | This helps differentiate the copy from the original.                                    |
+| Campaign Name                                             | CleverTap prefixes the copied campaign name with *Clone of* to help you identify duplicates. The name remains editable.           | This helps differentiate the copy from the original.                                    |
 | Labels                                                    | All labels from the source are retained. If a label does not exist in the destination project, CleverTap adds it automatically.   | Ensures labeling consistency across projects.                                           |
 | Campaign Type                                             | Past Behavior Segment (PBS), External Trigger, and Live campaigns are copied exactly as in the source campaign.                   | If a trigger type is not supported in the destination, validation highlights the field. |
 | Conversion Event and Goal Settings                        | Conversion events and goals are **not copied**.                                                                                   | You must map or recreate the missing event before publishing.                           |
@@ -78,22 +78,22 @@ The following table explains how each campaign component behaves during the copy
 | Content, Deep Links, and Files                            | Files are not copied, but the Deep link and content are copied.                                                                   | Review all message assets after copying.                                                |
 | Personalization (Liquid, Catalog, Scribe, Recommendation) | Personalization rules are copied from the source. If any linked field or token is missing, CleverTap displays a validation error. | The copy cannot be published until all personalization tokens are resolved.             |
 | When (Delivery, Recurrence, DND, TTL)                     | Delivery, recurrence, and Do Not Disturb (DND) settings are copied from the source. Empty fields stay empty.                      | Fixed-time and best-time scheduling are retained; errors display if time has passed.    |
-| Cut-Off Time and Best Time Settings                       | Fixed time campaigns copy as-is. If _Best Time_ is enabled and unsupported in the destination, CleverTap reverts to fixed-time.   | Adjust the schedule before publishing.                                                  |
+| Cut-Off Time and Best Time Settings                       | Fixed time campaigns copy as-is. If *Best Time* is enabled and unsupported in the destination, CleverTap reverts to fixed-time.   | Adjust the schedule before publishing.                                                  |
 
 ## For Journeys
 
 When you copy a journey, CleverTap duplicates its flow structure, nodes, and entry criteria from the source project into the destination project.
 
 > 📘 Points to Consider
-> 
-> - You cannot copy a journey that includes either IntelliNODE or Conditional Split Node.
-> - Journeys that include engagement nodes for unsupported channels (such as SMS, WhatsApp, or Web Push) cannot be copied.
+>
+> * You cannot copy a journey that includes either IntelliNODE or Conditional Split Node.
+> * Journeys that include engagement nodes for unsupported channels (such as SMS, WhatsApp, or Web Push) cannot be copied.
 
 The following table describes how each journey component behaves, including which parts are retained, validated, or excluded from the copy:
 
 | Journey Component                                                            | Behavior in Copied Journey                                                                                       | Additional Notes                                                                          |
 | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-| Journey Name                                                                 | CleverTap prefixes the journey name with _Clone of_ to distinguish it from the original.                         | You can rename it any time.                                                               |
+| Journey Name                                                                 | CleverTap prefixes the journey name with *Clone of* to distinguish it from the original.                         | You can rename it any time.                                                               |
 | Entry Criteria                                                               | Nodes are copied, but the Who setup is not copied.                                                               | Includes entry events, triggers, and filters.                                             |
 | Entry and Goal Nodes                                                         | These nodes are **not copied** from the source project.                                                          | The journey cannot be published until all dependencies are resolved.                      |
 | Entry Date and Time Settings                                                 | Start and end entry conditions (publish date, specific date, recurring) are copied as configured.                | If the scheduled time has already passed in the destination, CleverTap displays an error. |
