@@ -52,8 +52,8 @@ You can register as a telemarketer or an enterprise on the DLT platform. If you 
 
 The two types of telemarketers include:
 
-- Telemarketer Aggregator: Not connected directly with the telecom operator. Can be an individual or company.
-- Telemarketer Delivery: Collects SMS/voice traffic from enterprises. Directly connected with telecom operators.
+* Telemarketer Aggregator: Not connected directly with the telecom operator. Can be an individual or company.
+* Telemarketer Delivery: Collects SMS/voice traffic from enterprises. Directly connected with telecom operators.
 
 Telemarketers are the main source of sales for many companies. The most common form of telemarketing is outbound sales where businesses communicate with customers through SMS or voice. Therefore, it is necessary to register on the DLT platform as a telemarketer to send promotional and transactional messages.
 
@@ -65,8 +65,8 @@ TRAI requires telemarketers and enterprises to register on the DLT platform. Reg
 
 Follow the steps below to register on the DLT platform:
 
-1. Select as a _Telemarketer_.
-2. Select the _Aggregator_ function. 
+1. Select as a *Telemarketer*.
+2. Select the *Aggregator* function. 
 3. Click **No** when asked if you have registered with any other mobile operator DLT network. 
 4. Enter your business PAN number. 
 5. Verify your OTP. 
@@ -79,8 +79,8 @@ Follow the steps below to register on the DLT platform:
 
 Follow the steps below to register as a telemarketer registration:
 
-1. Select as a _Telemarketer_.
-2. Select the _Aggregator_ function. 
+1. Select as a *Telemarketer*.
+2. Select the *Aggregator* function. 
 3. Click **No** when asked if you have registered with any other mobile operator DLT network. 
 4. Enter your business PAN number. 
 5. Verify your OTP. 
@@ -93,7 +93,7 @@ Follow the steps below to register as a telemarketer registration:
 
 Follow the steps below to register as an enterprise:
 
-1. Select as an _Enterprise_.
+1. Select as an *Enterprise*.
 2. Click **No** when asked if you have registered with any other mobile operator DLT network. 
 3. Enter your business PAN number. 
 4. Fill the form with the required details.
@@ -115,19 +115,19 @@ A unique registration number is provided on the first phase of DLT registration 
 
 The customer benefits include:
 
-- Elimination of spam and fraud.
-- Strong security using blockchain technology.
-- More transparency with a separate registration for telemarketers and enterprises.
-- Allow customers to consent before sending the SMS and also select time slots.
+* Elimination of spam and fraud.
+* Strong security using blockchain technology.
+* More transparency with a separate registration for telemarketers and enterprises.
+* Allow customers to consent before sending the SMS and also select time slots.
 
 ### Enterprise Benefits
 
 The enterprise benefits include:
 
-- More targeted outreach to the customers.
-- All headers and templates are registered on the platform.
-- Better communication with the customers who actually want to receive information from you.
-- Improved marketing practices to reach your target audience.
+* More targeted outreach to the customers.
+* All headers and templates are registered on the platform.
+* Better communication with the customers who actually want to receive information from you.
+* Improved marketing practices to reach your target audience.
 
 # URL Whitelisting for SMS Marketing Campaigns
 
@@ -139,8 +139,8 @@ Marketers using CleverTap's SMS service must ensure that all URLs in their campa
 
 Why Whitelisting Matters:
 
-- **Delivery Failures**: Messages with non-whitelisted URLs will be blocked by telecom operators, leading to high failure rates and reduced campaign effectiveness.
-- **Reputation Risk**: Non-compliance can damage your brand’s credibility and erode customer trust.  
+* **Delivery Failures**: Messages with non-whitelisted URLs will be blocked by telecom operators, leading to high failure rates and reduced campaign effectiveness.
+* **Reputation Risk**: Non-compliance can damage your brand’s credibility and erode customer trust.\
   By following the URL whitelisting process, marketers can ensure uninterrupted SMS delivery, build customer trust, and adhere to TRAI’s transparency and anti-fraud objectives.
 
 By following the whitelisting process, marketers can ensure uninterrupted campaign delivery and compliance with TRAI guidelines.
@@ -158,12 +158,14 @@ Below is a step-by-step guide to whitelisting short URLs used in SMS campaigns:
    4. Acknowledge and agree to TRAI’s declaration guidelines.
    5. Check the status of your request: Approved, Pending, or Rejected. 
 
-   [block:image]{"images":[{"image":["https://files.readme.io/f64e1c7bad223f6cf2c847d8064f02edc412616f23b960c5a0243f79f2fd248e-image-20241214-135907.png","","Example of a whitelisting on DLT Portal"],"align":"center","border":true,"caption":"Example of a whitelisting on DLT Portal"}]}[/block]
+   <Image alt="Example of a whitelisting on DLT Portal" align="center" border={true} src="https://files.readme.io/f64e1c7bad223f6cf2c847d8064f02edc412616f23b960c5a0243f79f2fd248e-image-20241214-135907.png">
+     Example of a whitelisting on DLT Portal
+   </Image>
 3. Once the short link is approved, contact your account manager to add your new URL schema (a short URL with your SMS header) to CleverTap’s short link configurations.
 4. Test the SMS using CleverTap’s link-shortening feature to confirm delivery before launching the campaign.
 
 > 📘 Custom URL Schema Support for SMS Click Tracking
-> 
+>
 > CleverTap now supports custom URL schemas. This feature enables customers to whitelist our domains and configure a custom URL schema for their account. For detailed instructions, refer to the [Click Tracking Documentation](https://docs.clevertap.com/docs/create-message-sms#click-tracking).
 
 ## Best Practices for Marketers
