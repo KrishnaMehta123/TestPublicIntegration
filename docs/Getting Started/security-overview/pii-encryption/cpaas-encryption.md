@@ -20,53 +20,89 @@ With CPaaS encryption enabled, CleverTap encrypts all engagement payloads before
 
 CPaaS encryption is currently supported for the following communication channels:
 
-- [Email](doc:cpaas-encryption#email-encryption-setup)
-- [SMS](doc:cpaas-encryption#sms-encryption-setup)
+* [Email](doc:cpaas-encryption#email-encryption-setup)
+* [SMS](doc:cpaas-encryption#sms-encryption-setup)
 
 CleverTap’s universal CPaaS encryption framework supports any HTTP-based CPaaS integration configured through the Generic HTTP API.
 
 ## Encryption Workflow
 
-CleverTap secures communication between its platform and CPaaS providers by encrypting outbound message payloads and decrypting inbound callbacks. This workflow ensures complete end-to-end encryption for all supported channels, _Email_ and _SMS_, throughout message delivery and reporting.
+CleverTap secures communication between its platform and CPaaS providers by encrypting outbound message payloads and decrypting inbound callbacks. This workflow ensures complete end-to-end encryption for all supported channels, *Email* and *SMS*, throughout message delivery and reporting.
 
 The process includes the following steps:
 
-1. **Encryption Keys**  
+1. **Encryption Keys**\
    CleverTap generates AES-256 encryption keys and securely shares them with CPaaS providers through a controlled key exchange process. Each key is versioned to ensure secure rotation and backward compatibility.
 
-2. **Outbound Encryption (CleverTap → CPaaS)**  
+2. **Outbound Encryption (CleverTap → CPaaS)**\
    CleverTap encrypts the entire outbound message payload before transmitting it to the CPaaS provider through the Generic HTTP API. Each encrypted payload includes the following:
 
-[block:parameters]
-{
-  "data": {
-    "h-0": "Field",
-    "h-1": "Description",
-    "h-2": "Data Type",
-    "0-0": "`ciphertext`",
-    "0-1": "Encrypted email content",
-    "0-2": "String",
-    "1-0": "`X-AES-IV`",
-    "1-1": "Initialization vector, sent as a request header",
-    "1-2": "String",
-    "2-0": "`X-AES-KEY-VERSION`",
-    "2-1": "Identifier for the key version used to encrypt  \nthe payload, sent as a request header",
-    "2-2": "String"
-  },
-  "cols": 3,
-  "rows": 3,
-  "align": [
-    null,
-    null,
-    "left"
-  ]
-}
-[/block]
+<Table align={[null,null,"left"]}>
+  <thead>
+    <tr>
+      <th>
+        Field
+      </th>
 
+      <th>
+        Description
+      </th>
 
-3. **Callback Encryption (CPaaS → CleverTap)**  
+      <th>
+        Data Type
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        `ciphertext`
+      </td>
+
+      <td>
+        Encrypted email content
+      </td>
+
+      <td>
+        String
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        `X-AES-IV`
+      </td>
+
+      <td>
+        Initialization vector, sent as a request header
+      </td>
+
+      <td>
+        String
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        `X-AES-KEY-VERSION`
+      </td>
+
+      <td>
+        Identifier for the key version used to encrypt\
+        the payload, sent as a request header
+      </td>
+
+      <td>
+        String
+      </td>
+    </tr>
+  </tbody>
+</Table>
+
+3. **Callback Encryption (CPaaS → CleverTap)**\
    The CPaaS provider encrypts callback payloads (such as delivery reports, bounce events, or engagement data) before sending them back to CleverTap. CleverTap decrypts these payloads using the key version and IV specified in the callback headers.
-4. **Decryption and Processing**  
+4. **Decryption and Processing**\
    CleverTap decrypts the callback data received, validates its integrity, and updates message delivery, engagement metrics, or status reports in real time.
 
 This unified workflow defines how encrypted data is exchanged in both directions, ensuring that all sensitive user and message information remains protected from transmission to reporting.
@@ -86,10 +122,10 @@ Before you enable CPaaS encryption, you must obtain encryption keys that secure 
 
 CleverTap manages this process by the following:
 
-- Generating and maintaining AES-256 encryption keys internally.
-- Assigning each key a unique UUID-based version identifier.
-- Sharing the keys securely with the CPaaS provider through an approved exchange process.
-- Ensuring CleverTap and the provider securely store the keys within their environments.
+* Generating and maintaining AES-256 encryption keys internally.
+* Assigning each key a unique UUID-based version identifier.
+* Sharing the keys securely with the CPaaS provider through an approved exchange process.
+* Ensuring CleverTap and the provider securely store the keys within their environments.
 
 ## Manage Keys
 
@@ -97,9 +133,9 @@ CleverTap manages the complete encryption key lifecycle to maintain continuous d
 
 The following are the essential key management practices:
 
-- Keys are stored using CleverTap’s enterprise-grade secret management systems.
-- Keys are securely shared with each CPaaS provider during setup.
-- Each encrypted payload includes a version identifier that allows CleverTap to fetch the correct key for decryption.
+* Keys are stored using CleverTap’s enterprise-grade secret management systems.
+* Keys are securely shared with each CPaaS provider during setup.
+* Each encrypted payload includes a version identifier that allows CleverTap to fetch the correct key for decryption.
 
 ### Key Rotation
 
@@ -115,7 +151,7 @@ The setup section of each channel outlines the configuration steps, encryption b
 
 ## Email Encryption Setup
 
-The Email Channel Setup page helps administrators configure authentication and encryption settings for email campaigns. Users can access it under _Settings > Channels > Email > Setup_, where they can define sender details, authentication type, and enable encryption for outbound email payloads.
+The Email Channel Setup page helps administrators configure authentication and encryption settings for email campaigns. Users can access it under *Settings > Channels > Email > Setup*, where they can define sender details, authentication type, and enable encryption for outbound email payloads.
 
 ### Authentication Configuration
 
@@ -123,37 +159,23 @@ Use this section to define sender details and enable encryption for outbound ema
 
 | Field                                   | Description                                                                              | Required/Optional |
 | --------------------------------------- | ---------------------------------------------------------------------------------------- | :---------------- |
-| Authentication Type                     | Choose between _No Authentication_ or _Basic Authentication_, depending on the provider. | Required          |
+| Authentication Type                     | Choose between *No Authentication* or *Basic Authentication*, depending on the provider. | Required          |
 | Default From Name                       | Display name visible to recipients.                                                      | Optional          |
 | Default From Email Address              | Sender’s email address (for example, `rg@clevertap.com`).                                | Required          |
 | Default Reply-to Email Address          | Address for replies (for example, `chinmay@clevertap.com`).                              | Optional          |
-| Email Preference Center                 | Select a preference center (for example, _CleverTap Preference Center_).                 | Optional          |
+| Email Preference Center                 | Select a preference center (for example, *CleverTap Preference Center*).                 | Optional          |
 | Add custom key–value pairs in campaigns | Include metadata or personalization fields.                                              | Optional          |
 | Enable encryption                       | Encrypts all outbound email payloads when selected.                                      | Required          |
 
 > 📘 Enabling Encryption for Email
-> 
+>
 > To ensure all outbound email payloads are securely encrypted, make sure to select the **Enable encryption** before saving your settings.
 
-The following image shows the _Email Setup_ page in the CleverTap dashboard, where users can enable encryption and define authentication settings for their email channel.
+The following image shows the *Email Setup* page in the CleverTap dashboard, where users can enable encryption and define authentication settings for their email channel.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/161f3cae1299cf36dc14d95a24c662ba0b854a5f62f338b1cc0fdcff2ef39810-image.png",
-        null,
-        "Enable Encryption in Email Setup"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Enable Encryption in Email Setup"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Enable Encryption in Email Setup" align="center" border={true} src="https://files.readme.io/161f3cae1299cf36dc14d95a24c662ba0b854a5f62f338b1cc0fdcff2ef39810-image.png">
+  Enable Encryption in Email Setup
+</Image>
 
 When encryption is enabled, CleverTap encrypts all outbound email payloads using AES-256 before sending them to the CPaaS provider. This ensures message and user data confidentiality.
 
@@ -180,8 +202,8 @@ When the CPaaS provider sends an encrypted callback to CleverTap:
 
 ## SMS Encryption Setup
 
-The SMS Channel Setup enables administrators to configure authentication and encryption for SMS campaigns.  
-Users can access this under _Settings > Channels > SMS > Setup_ where they define provider details, authentication type, and encryption preferences for outbound and callback payloads.
+The SMS Channel Setup enables administrators to configure authentication and encryption for SMS campaigns.\
+Users can access this under *Settings > Channels > SMS > Setup* where they define provider details, authentication type, and encryption preferences for outbound and callback payloads.
 
 ### Provider Configuration
 
@@ -189,44 +211,30 @@ The following table lists the various fields while configuring the provider:
 
 | Field                        | Description                                                   |
 | ---------------------------- | ------------------------------------------------------------- |
-| Provider                     | Select _Other (Generic)_.                                     |
-| Nickname                     | Enter a name for this configuration (for example, _encrypt_). |
+| Provider                     | Select *Other (Generic)*.                                     |
+| Nickname                     | Enter a name for this configuration (for example, *encrypt*). |
 | Delivery Report Callback URL | Endpoint for delivery status updates.                         |
 | Inbound Message Callback URL | Endpoint for inbound SMS messages (if applicable).            |
-| Request Type                 | Select _POST_.                                                |
+| Request Type                 | Select *POST*.                                                |
 | HTTP Endpoint                | Enter the CPaaS provider’s endpoint for outbound requests.    |
 
 ### Authentication Configuration
 
-Under the _Authentication_ tab, perform the steps below:
+Under the *Authentication* tab, perform the steps below:
 
-1. Choose the authentication type — _No Authentication_, _Basic Authentication_, or _OAuth 2.0._
-2. (Optional) Select _Custom Key–Value pairs in campaigns_ to include additional fields.
+1. Choose the authentication type — *No Authentication*, *Basic Authentication*, or *OAuth 2.0.*
+2. (Optional) Select *Custom Key–Value pairs in campaigns* to include additional fields.
 3. Select the **Enable encryption** to activate AES-256 for outbound requests and accept encrypted callbacks.
 
 > 📘 Enabling Encryption for SMS
-> 
+>
 > To ensure all outbound SMS payloads are securely encrypted, make sure to select the **Enable encryption** before saving your settings.
 
-The following image shows the _SMS Setup_ page in the CleverTap dashboard, where administrators can configure authentication and enable encryption for SMS campaigns.
+The following image shows the *SMS Setup* page in the CleverTap dashboard, where administrators can configure authentication and enable encryption for SMS campaigns.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/92e990e2854c12f76f0141c2822e032840f9fdb4c206fc33fd2f496dcb4bc9ef-image.png",
-        null,
-        "Enable Encryption in SMS Setup"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Enable Encryption in SMS Setup"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Enable Encryption in SMS Setup" align="center" border={true} src="https://files.readme.io/92e990e2854c12f76f0141c2822e032840f9fdb4c206fc33fd2f496dcb4bc9ef-image.png">
+  Enable Encryption in SMS Setup
+</Image>
 
 ### Payload Encryption
 
@@ -278,7 +286,7 @@ Each payload includes a key version. CleverTap retrieves the corresponding key a
 
 ### Can other channels use CPaaS encryption?
 
-Encryption is currently available for _Email_ and _SMS._
+Encryption is currently available for *Email* and *SMS.*
 
 ### Is there a UI to manage keys?
 
