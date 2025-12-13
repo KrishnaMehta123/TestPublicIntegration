@@ -887,35 +887,50 @@ The following is the payload structure sent by CleverTap to the providers upon r
 
 ```json
 {
-  "status": "success",
-  "message": "Callback processed successfully"
+	"status": "<success, partial, fail>",
+	"processed": "<count// should be sent as long int>",
+	"unprocessed": [{
+	"status": "fail",
+	"code": "<error code>",
+	"error": "<error description>",
+	"record": "<record>"
+	}]
 }
 ```
-
 The following is the sample success payload:
+
 
 ```json
 {
-  "status": "success",
-  "message": "Callback processed successfully",
-  "data": {
-    "processed_events": 4,
-    "timestamp": 1654512921
-  }
+    "status": "success",
+    "processed": 1,
+    "unprocessed": []
 }
-```
 
+```
 The following is the sample error payload:
 
 ```json
 {
-  "status": "error",
-  "message": "Bad request. Some mandatory parameter was missing.",
-  "error_code": 400,
-  "details": {
-    "missing_fields": ["meta", "event"],
-    "timestamp": 1654512921
-  }
+    "status": "fail",
+    "processed": 0,
+    "unprocessed": [
+        {
+            "status": "fail",
+            "code": 400,
+            "error": "Bad Request. Some mandatory parameter was missing",
+            "record": {
+                "event": "failed",
+                "data": [
+                    {
+                        "ts": 1686138005,
+                        "meta": "919632453300.1656678144.1686137940.20230607.0.wzrk_default.-1092441.",
+                        "description": "NDNCRejected"
+                    }
+                ]
+            }
+        }
+    ]
 }
 ```
 
