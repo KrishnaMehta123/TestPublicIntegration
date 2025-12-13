@@ -16,9 +16,9 @@ Journey reports provide detailed insights into how your users move through journ
 
 In the case of multiple journey versions, it also provides performance insights for each version of your journey. Whether you are analyzing a live journey or reviewing how an older version performed, the reports help you make data-driven decisions and track engagement trends over time. You can do the following:
 
-- Track metrics for the current published version in real time.
-- Access historical data for previously published versions.
-- Compare engagement, conversions, and goal completions across versions.
+* Track metrics for the current published version in real time.
+* Access historical data for previously published versions.
+* Compare engagement, conversions, and goal completions across versions.
 
 # Export Journey Reports
 
@@ -27,56 +27,44 @@ You can export Journey reports as CSV files directly from the dashboard. You can
 To export journey reports, perform the following steps:
 
 1. Select the period and the required Journeys from the Journeys list page.
-2. Click the ![](https://files.readme.io/6ebe7ff9d9fd0298735dcf535f24dda429e4460884bfd033578853cee22270db-Email_Report_icon.png) icon. The _Email Report_ popup opens.
+2. Click the ![](https://files.readme.io/6ebe7ff9d9fd0298735dcf535f24dda429e4460884bfd033578853cee22270db-Email_Report_icon.png) icon. The *Email Report* popup opens.
 
-   [block:image]{"images":[{"image":["https://files.readme.io/fc789f4084a159d5ff3888aede598c3ba1c497f262e159414a4f94187dfb1571-Email_Journey_Report.png","","Email Journey Reports"],"align":"center","border":true,"caption":"Email Journey Reports"}]}[/block]
-3. Choose _All versions_ or _Selected versions_ of the selected journeys.
-   - Choose to include only specific versions of the selected journeys when:
-     - You only want to review performance for the most recent version.
-     - You need data for a particular published version that was live during a specific campaign or test.
-   - Choose to include _All versions_ of the selected journey when:
-     - You want to analyze how the journey evolved over time.
-     - You are comparing performance trends across multiple published versions.
-     - You need a comprehensive dataset for audit, reporting, or analytics.
-     - You are exporting reports for long-running journeys edited and republished multiple times.  
+   <Image alt="Email Journey Reports" align="center" border={true} src="https://files.readme.io/fc789f4084a159d5ff3888aede598c3ba1c497f262e159414a4f94187dfb1571-Email_Journey_Report.png">
+     Email Journey Reports
+   </Image>
+3. Choose *All versions* or *Selected versions* of the selected journeys.
+   * Choose to include only specific versions of the selected journeys when:
+     * You only want to review performance for the most recent version.
+     * You need data for a particular published version that was live during a specific campaign or test.
+   * Choose to include *All versions* of the selected journey when:
+     * You want to analyze how the journey evolved over time.
+     * You are comparing performance trends across multiple published versions.
+     * You need a comprehensive dataset for audit, reporting, or analytics.
+     * You are exporting reports for long-running journeys edited and republished multiple times.\
        In this case, only active versions within the selected date range are available for export in the report.
-4. Select the report type: _Summary_ or _Node wise_.
+4. Select the report type: *Summary* or *Node wise*.
 5. Enter a report name.
 
 Once configured, the report is emailed to your registered email address.
 
 > 📘 Note
-> 
+>
 > You can email reports for up to 100 Journeys at a time from the dashboard.
 
 # Schedule Journey Exports
 
-You can choose to get daily or weekly reports for any Journeys with the _running_ status. You can choose the period and frequency from the reports section in Settings.  Go to _Settings_ > _Setup_ > _Reports_.
+You can choose to get daily or weekly reports for any Journeys with the *running* status. You can choose the period and frequency from the reports section in Settings.  Go to *Settings* > *Setup* > *Reports*.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/463b609-Journey-reports.jpg",
-        "Schedule Journey reports",
-        1000
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Schedule Journey Reports"
-    }
-  ]
-}
-[/block]
-
+<Image title="Schedule Journey reports" alt={1000} align="center" border={true} src="https://files.readme.io/463b609-Journey-reports.jpg">
+  Schedule Journey Reports
+</Image>
 
 # Types of Journey Reports
 
 There are two types of Journey Reports available:
 
-- Journey Summary Report
-- Journey Nodewise Report
+* Journey Summary Report
+* Journey Nodewise Report
 
 ## Journey Summary Report
 
@@ -144,7 +132,7 @@ If a journey includes multiple campaigns, variants, or connector paths, each var
 The data included in the Nodewise Report can be broadly categorized into: Journey Data, Node Data, Node User Data, and Campaign Data.
 
 > 📘 Multiple Values for Report Column
-> 
+>
 > The columns may contain multiple values separated by delimiters `|`, depending on the node configuration (for example, multiple variants, paths, or goal definitions). Such columns have been marked with \* in the tables included in the sections to follow.
 
 ### Journey Data
@@ -204,75 +192,190 @@ This section includes metrics for user movement through this node and outcomes r
 
 This section is available for engagement nodes and captures delivery and interaction metrics.
 
-[block:parameters]
-{
-  "data": {
-    "h-0": "Report Column",
-    "h-1": "Description",
-    "0-0": "**Campaign Type **",
-    "0-1": "Campaign configuration details.",
-    "1-0": "**Campaign Variant\\***",
-    "1-1": "Campaign configuration details.  \nIf multiple variants are tested (for example, A/B test), multiple variant IDs may be shown, though typically each row reflects one.",
-    "2-0": "**Campaign OS\\***",
-    "2-1": "Campaign configuration details. Lists targeted platforms, often shown as Android | iOS.",
-    "3-0": "**Global Campaign Limits Applied**",
-    "3-1": "Whether global send limits were applied.",
-    "4-0": "**Campaign Title / Message**",
-    "4-1": "Campaign title and message content.",
-    "5-0": "**Total Sent / Viewed / Clicked**",
-    "5-1": "Message delivery and interaction counts.",
-    "6-0": "**Total Delivered / Replied**",
-    "6-1": "Delivery confirmation and replies (where applicable).",
-    "7-0": "**Total Unsubscribes**",
-    "7-1": "Total users who unsubscribed via this campaign.",
-    "8-0": "**Conversion Event / Time**",
-    "8-1": "Event considered as conversion and the window duration.",
-    "9-0": "**Unique Sent / Viewed / Clicked / Converted within Conversion Time**",
-    "9-1": "Unique users counted within the conversion window.",
-    "10-0": "**Influenced Conversions / Revenue**",
-    "10-1": "Indirect conversions and attributed revenue.",
-    "11-0": "**Amplified by Push**",
-    "11-1": "Whether push messaging influenced engagement.",
-    "12-0": "**RenderMax Enabled**",
-    "12-1": "Indicates if RenderMax (rich content optimization) was used.",
-    "13-0": "**Template Name / Provider Name**",
-    "13-1": "Template and provider details for Email or SMS.",
-    "14-0": "**WABA Number**",
-    "14-1": "WhatsApp Business Account number in the case of the WhatsApp campaign.",
-    "15-0": "**Total HTML/AMP Viewed/Clicked/Unsubscribed\\***",
-    "15-1": "Email stats segmented by HTML and AMP versions. Values can include HTML and AMP email format subfields, often tracked in separate columns (for example, Total AMP Clicked)."
-  },
-  "cols": 2,
-  "rows": 16,
-  "align": [
-    null,
-    null
-  ]
-}
-[/block]
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Report Column
+      </th>
 
+      <th>
+        Description
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        **Campaign Type**
+      </td>
+
+      <td>
+        Campaign configuration details.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **Campaign Variant\***
+      </td>
+
+      <td>
+        Campaign configuration details.\
+        If multiple variants are tested (for example, A/B test), multiple variant IDs may be shown, though typically each row reflects one.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **Campaign OS\***
+      </td>
+
+      <td>
+        Campaign configuration details. Lists targeted platforms, often shown as Android | iOS.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **Global Campaign Limits Applied**
+      </td>
+
+      <td>
+        Whether global send limits were applied.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **Campaign Title / Message**
+      </td>
+
+      <td>
+        Campaign title and message content.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **Total Sent / Viewed / Clicked**
+      </td>
+
+      <td>
+        Message delivery and interaction counts.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **Total Delivered / Replied**
+      </td>
+
+      <td>
+        Delivery confirmation and replies (where applicable).
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **Total Unsubscribes**
+      </td>
+
+      <td>
+        Total users who unsubscribed via this campaign.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **Conversion Event / Time**
+      </td>
+
+      <td>
+        Event considered as conversion and the window duration.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **Unique Sent / Viewed / Clicked / Converted within Conversion Time**
+      </td>
+
+      <td>
+        Unique users counted within the conversion window.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **Influenced Conversions / Revenue**
+      </td>
+
+      <td>
+        Indirect conversions and attributed revenue.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **Amplified by Push**
+      </td>
+
+      <td>
+        Whether push messaging influenced engagement.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **RenderMax Enabled**
+      </td>
+
+      <td>
+        Indicates if RenderMax (rich content optimization) was used.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **Template Name / Provider Name**
+      </td>
+
+      <td>
+        Template and provider details for Email or SMS.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **WABA Number**
+      </td>
+
+      <td>
+        WhatsApp Business Account number in the case of the WhatsApp campaign.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **Total HTML/AMP Viewed/Clicked/Unsubscribed\***
+      </td>
+
+      <td>
+        Email stats segmented by HTML and AMP versions. Values can include HTML and AMP email format subfields, often tracked in separate columns (for example, Total AMP Clicked).
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 ### Conversion Stats for WhatsApp Nodes
 
-CleverTap BSP allows tracking clicks on the WhatsApp message. The stats for these clicks are available under the Campaigns > Stats page. If Click Tracking is enabled, the Journey Report will display the node stats for the _sent > delivered > viewed > clicked > converted_ funnel. However, if Click Tracking is not enabled, only the viewed data is reported for your campaign. Therefore, the funnel in this case is, _sent> delivered > viewed > converted_ . 
+CleverTap BSP allows tracking clicks on the WhatsApp message. The stats for these clicks are available under the Campaigns > Stats page. If Click Tracking is enabled, the Journey Report will display the node stats for the *sent > delivered > viewed > clicked > converted* funnel. However, if Click Tracking is not enabled, only the viewed data is reported for your campaign. Therefore, the funnel in this case is, *sent> delivered > viewed > converted* . 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b139aea-sent_delivered_funnel.jpg",
-        "",
-        "Click Tracking Funnel"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Click Tracking Funnel"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Click Tracking Funnel" align="center" border={true} src="https://files.readme.io/b139aea-sent_delivered_funnel.jpg">
+  Click Tracking Funnel
+</Image>
 
 | Campaign/Journey Data                   | Click Tracking Enabled                          | Click Tracking Disabled               |
 | :-------------------------------------- | :---------------------------------------------- | :------------------------------------ |
