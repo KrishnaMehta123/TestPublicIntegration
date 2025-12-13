@@ -36,11 +36,11 @@ Complete any other tests that influence the variable before creating a new test.
 
 ### Q. How can I target an A/B test exclusively to new users?
 
-To target new users specifically, go to the _Targets_ section and select _Behavioral_ > _First-time users_. By default, the targeting is _Sticky_, meaning new users who see the A/B test continue to be a part of the test beyond their first session. If you prefer new users only to experience the A/B test during their initial session, clear the [_Sticky_](doc:create-ab-tests#sticky-target) option to disable sticky targeting. 
+To target new users specifically, go to the *Targets* section and select *Behavioral* > *First-time users*. By default, the targeting is *Sticky*, meaning new users who see the A/B test continue to be a part of the test beyond their first session. If you prefer new users only to experience the A/B test during their initial session, clear the [*Sticky*](doc:create-ab-tests#sticky-target) option to disable sticky targeting. 
 
 ### Q. What happens when a user logs in to two devices and is a part of an A/B test?
 
-As long as we have identified this as the same user but with a different device, the user will continue to be part of the A/B Test.  
+As long as we have identified this as the same user but with a different device, the user will continue to be part of the A/B Test.\
 In case the A/B Test has device-level target rules, such as "OS = iOS" but the user has logged in from an Android device, then whether the user will remain in the test or exit depends on the [Sticky Target](doc:create-ab-tests#sticky-target) configuration of the A/B Test.
 
 ### Q. What happens to users in a variant if the percentage allocation changes?
