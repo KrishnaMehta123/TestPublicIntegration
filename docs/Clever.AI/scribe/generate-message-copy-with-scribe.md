@@ -126,12 +126,13 @@ Refer to the below sample prompts for retail offers, festive sales, and multilin
 
 #### Brand related offers
 
-```
-Topic: Nike running shoes—20% off for Christmas
-Brand: Nike
-Tone: Cheerful, gift-ready, FOMO
-Channel: Push
-Format: Title (5 words), Body (20 words)
+```text
+Topic: Assorted Dessert Box — 10% off (Diwali)
+Brand: <Your brand>
+Tone/Emotion: Festive, indulgent, gift-ready
+Language: English
+Include Words: Diwali, sweets, 10% off, order now
+Format: Title (5 words), Body (25 words)
 ```
 
 <Image align="center" className="border" width="100% " border={true} src="https://files.readme.io/0900b2dd053298faa3afe59f1bf16abc850b36e8eeb7db8b320e28ff4dbc6059-Scribe_message.png" />
