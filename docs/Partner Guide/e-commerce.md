@@ -11,4 +11,5 @@ next:
   description: ''
 ---
 CleverTap supports integrations with popular e-commerce platforms including:
-  * [Shopify](doc:shopify)
+
+* [Shopify](doc:shopify)
