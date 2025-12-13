@@ -20,7 +20,7 @@ In this document, you can explore concise troubleshooting tips and FAQs for In-A
 
 ### Is it possible to send a GIF in an in-app message?
 
-We do support GIFs within the interstitial in-apps for users whose CleverTap SDK version is above 3.3.0, and you can send the GIFs in the In-App campaigns by writing a custom HTML as well.  
+We do support GIFs within the interstitial in-apps for users whose CleverTap SDK version is above 3.3.0, and you can send the GIFs in the In-App campaigns by writing a custom HTML as well.\
  Refer to the [Aspect Ratio and Image Size Guide](https://docs.clevertap.com/docs/create-message-inapp).
 
 ### Does the in-app message support GIF files?
@@ -33,30 +33,15 @@ For more information, refer to [Template Aspect Ratio and Image Size Guide](http
 
 This is supported for CleverTap Android SDK version 3.6.1 and above and CleverTap iOS SDK version 3.7.1 and above. It works for the following templates:
 
-- Cover
-- Interstitial 
-- Half-interstitial
-- Header
-- Footer
+* Cover
+* Interstitial 
+* Half-interstitial
+* Header
+* Footer
 
-You can add the key-value pair for a button-click in the _What_ section of the campaign creation screen:
+You can add the key-value pair for a button-click in the *What* section of the campaign creation screen:
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d2a7f0b5291f4aae75ab6fb45cada14610b056aa5ba8be869642921299f6eb0a-In_App_Key_Value.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/d2a7f0b5291f4aae75ab6fb45cada14610b056aa5ba8be869642921299f6eb0a-In_App_Key_Value.png" />
 
 You must implement the button-click callback in your [iOS](https://developer.clevertap.com/docs/ios#section-in-app-notification-button-on-click-callbacks) and [Android](https://developer.clevertap.com/docs/android#section-in-app-notifications) apps where you can get these key-value pairs.
 
@@ -81,7 +66,7 @@ font-family: 'Oswald', sans-serif;
 ```
 
 > 📘 Note
-> 
+>
 > You must select custom HTML to use your custom font in the in-app campaign.
 
 </details>
@@ -92,63 +77,33 @@ font-family: 'Oswald', sans-serif;
 
 ### How do you analyze the CTA button for in-app campaigns?
 
-The data for a number of clicks on each CTA button is available under the _Analytics_ section in the dashboard. 
+The data for a number of clicks on each CTA button is available under the *Analytics* section in the dashboard. 
 
 Follow the steps below:
 
-1. In _Events_, query for the _Notification Clicked_ event filtered by the campaign ID, then in the result, navigate to _Trend & Properties_.
-2. Scroll down to the _Event property_ table and select the event property as "wzrk_c2a" from the dropdown to see a distribution of clicks across the various buttons on that respective email campaign.
+1. In *Events*, query for the *Notification Clicked* event filtered by the campaign ID, then in the result, navigate to *Trend & Properties*.
+2. Scroll down to the *Event property* table and select the event property as "wzrk\_c2a" from the dropdown to see a distribution of clicks across the various buttons on that respective email campaign.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9223cbd-New_final_CTA_Button_Analysis_2.png",
-        "New final CTA_Button_Analysis 2.png",
-        1163
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image title="New final CTA_Button_Analysis 2.png" alt={1163} align="center" className="border" border={true} src="https://files.readme.io/9223cbd-New_final_CTA_Button_Analysis_2.png" />
 
 ### How do I analyze the CTA button for in-app campaigns?
 
-To view the data for a number of clicks on each CTA button, navigate to _Analytics_ > _Events_ from the dashboard. Then, follow the steps below:
+To view the data for a number of clicks on each CTA button, navigate to *Analytics* > *Events* from the dashboard. Then, follow the steps below:
 
-1. Select the _Notification Clicked_ event and filter it by the campaign ID.  
+1. Select the *Notification Clicked* event and filter it by the campaign ID.\
    Click the **View Details** button. The event details page displays.
 2. Click the **Trend & Properties** tab.
-3. Scroll down to the _Event property_ table and select the event property as "wzrk_c2a" from the list. 
+3. Scroll down to the *Event property* table and select the event property as "wzrk\_c2a" from the list. 
 4. A distribution of clicks across the various buttons on that respective in-app, pop-up campaign displays.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ddcf857-CTA_Wzrk_property.png",
-        "CTA_Wzrk_property.png",
-        1439
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image title="CTA_Wzrk_property.png" alt={1439} align="center" className="border" border={true} src="https://files.readme.io/ddcf857-CTA_Wzrk_property.png" />
 
 ### My in-app shows 0 views even after qualifying multiple users. What could be wrong?
 
 The in-app notifications require SDK version 3.5.1 and above. The warm-up time for the campaign is three to five minutes. Check the following before scheduling an in-app campaign: 
 
-- In-apps require the app to be open and the event must be fired from the mobile SDK. Hence, the in-app campaigns do not work on an event that is triggered via an API. 
-- There cannot be multiple in-apps running on the same event. The in-app that was created first is displayed, and the other events show 0 views.
+* In-apps require the app to be open and the event must be fired from the mobile SDK. Hence, the in-app campaigns do not work on an event that is triggered via an API. 
+* There cannot be multiple in-apps running on the same event. The in-app that was created first is displayed, and the other events show 0 views.
 
 </details>
 
@@ -168,13 +123,13 @@ To resolve this error, you can first schedule a live campaign with this HTML for
 
 The in-app works for SDK events, such as events raised from the device. There can be delays in the APIs and by design, the in-app is meant to be sent in real-time to the user. Therefore, the in-apps must be triggered by a mobile SDK event.
 
-### Why can I not see the videos on _Interstitial_ in-app notifications?
+### Why can I not see the videos on *Interstitial* in-app notifications?
 
 The video must meet the following requirements:
 
-- The video must be in MP4 format.
-- The video size must be lower than 50MB.
-- The dependencies which are required to include audio/video in the in-app notification are included.
+* The video must be in MP4 format.
+* The video size must be lower than 50MB.
+* The dependencies which are required to include audio/video in the in-app notification are included.
 
 Add the following dependencies below in your application’s build.gradle file: 
 
@@ -218,9 +173,9 @@ Here is a sample link: wzrk://thisisadummylink
 
 ### How do I exclude in-app from the Android activity?
 
-If your application has a splash screen (for example, logo screen or loading page) displayed on app launch, then the in-app triggered on _App Launch_ would be attempted to be displayed on this screen. As soon as this screen is dismissed, the in-app will be dismissed too.
+If your application has a splash screen (for example, logo screen or loading page) displayed on app launch, then the in-app triggered on *App Launch* would be attempted to be displayed on this screen. As soon as this screen is dismissed, the in-app will be dismissed too.
 
-In these types of cases, the splash screen must be excluded. Mention the _Activities_ on which you do not want in-app notifications to show in the android:value of the metadata tag in the AndroidManifest.xml file.
+In these types of cases, the splash screen must be excluded. Mention the *Activities* on which you do not want in-app notifications to show in the android:value of the metadata tag in the AndroidManifest.xml file.
 
 ```xml
 <meta-data
@@ -268,7 +223,7 @@ Following is a sample code:
 
 ### Why do I receive a CleverTap push notification even after sending a test in-app?
 
-An in-app test is always sent like a push notification. The entry action (event) does not matter. When you click the _send a test notification_ option, this message, "Touch this notification to open your app and view your view your notification" is sent out as a push notification. When this notification is clicked, the app opens and displays your in-app notification. This is applicable only to a test notification. The live campaign will schedule as usual and show the in-app after a user qualifies (performing the entry event).
+An in-app test is always sent like a push notification. The entry action (event) does not matter. When you click the *send a test notification* option, this message, "Touch this notification to open your app and view your view your notification" is sent out as a push notification. When this notification is clicked, the app opens and displays your in-app notification. This is applicable only to a test notification. The live campaign will schedule as usual and show the in-app after a user qualifies (performing the entry event).
 
 ```groovy
 Dependencies {
