@@ -39,7 +39,42 @@ To set up your first CleverTap webhook:
 Select *[Authenticaton type](doc:setup-webhooks#authentication-type)*  from the *Authentication* tab.
 
 4. Click **Create**. CleverTap sends the following payload to your configured endpoint:
-
+```json
+{
+   "is_test":true,
+   "targetId":1234,
+   "key_values":{
+      "key":"value"
+   },
+   "profiles":[
+      {
+         "Identity":"UserId",
+         "Email":"User@user.com",
+         "push_token":"Token"
+      },
+      {
+         "Identity":"UserId",
+         "Email":"User@user.com",
+         "push_token":"Token"
+      },
+      {
+         "Identity":"UserId",
+         "Email":"User@user.com",
+         "push_token":"Token"
+      },
+      {
+         "Identity":"UserId",
+         "Email":"User@user.com",
+         "push_token":"Token"
+      },
+      {
+         "Identity":"UserId",
+         "Email":"User@user.com",
+         "push_token":"Token"
+      }
+   ]
+}
+```
 CleverTap saves the template if your endpoint responds with an **HTTP status 200 OK**
 
 <Image title="Sample Webhook Campaign Setup" alt={606} align="center" width="smart" border={true} src="https://files.readme.io/bff36a1-CreateWebhookTemplate.jpg" />  Sample Webhook Setup
