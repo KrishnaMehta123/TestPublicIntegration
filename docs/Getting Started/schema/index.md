@@ -272,9 +272,7 @@ To add a user property from this page:
 2. Enter a property name and choose a data type.
 3. Click the checkmark.
 
-<Image align="center" border={false} caption="Add User Property" src="https://files.readme.io/fc5ba43-Add_User_Property.png" />
-
-<br />
+<Image align="center" border={true} caption="Add User Property" src="https://files.readme.io/fc5ba43-Add_User_Property.png" />
 
 ## Edit User Property
 
@@ -284,7 +282,9 @@ You can edit any column; however, you can only edit names for unpublished user p
 2. Edit the property name and the data type.
 3. Click the checkmark.
 
-![](https://files.readme.io/0afe960-Edit_User_Property.png "Click the Edit Icon to Edit the Property Name and Data Type") Edit User Property
+<Image border={false} src="https://files.readme.io/0afe960-Edit_User_Property.png" />
+
+ Edit User Property
 
 ## Remove User Property
 
