@@ -5,12 +5,12 @@ excerpt: >-
   step-by-step campaign builder.
 deprecated: false
 hidden: false
+link:
+  new_tab: false
 metadata:
   title: ''
   description: ''
   robots: index
-next:
-  description: ''
 ---
 # Overview
 
@@ -111,8 +111,8 @@ When you select Live Behavior Segment, the *When* section shows the following op
       <td>
         Choose when the campaign should start.  
 
-        * \*Now\*\*: Launches the campaign immediately after publishing.  
-        * \*On a Date/Time\*\*: Launches the campaign at a scheduled date and time.
+        * **Now**: Launches the campaign immediately after publishing.  
+        * **On a Date/Time**: Launches the campaign at a scheduled date and time.
       </td>
 
       <td>
@@ -126,7 +126,7 @@ When you select Live Behavior Segment, the *When* section shows the following op
       </td>
 
       <td>
-        Choose when the campaign should stop.<ul><li>**Never**: Campaign keeps running until manually stopped.</li><li>**On a Date/Time**: Campaign automatically ends at a chosen date/time.</li>
+        Choose when the campaign should stop.<ul><li>**Never**: Campaign keeps running until manually stopped.</li><li>**On a Date/Time**: Campaign automatically ends at a chosen date/time.</li></ul>
       </td>
 
       <td>
@@ -220,22 +220,22 @@ The following configuration options are available when Loyalty Points is selecte
       <td>
         Define how points are calculated when users qualify. Options include:  
 
-        * \*Flat\*\*: A fixed number of points for each qualifying user.  
-        * \*Percentage\*\*: Points calculated as a percentage of an event property (for example, order amount).  
-        * \*Proportional\*\*: Points awarded per defined unit of an event property.  
-        * \*Random\*\*: Points assigned from a defined range; exposes Value Range + Distribution Bias controls.
+        * **Flat**: A fixed number of points for each qualifying user.  
+        * **Percentage**: Points calculated as a percentage of an event property (for example, order amount).  
+        * **Proportional**: Points awarded per defined unit of an event property.  
+        * **Random**: Points assigned from a defined range; exposes Value Range + Distribution Bias controls.
       </td>
 
       <td>
-        * \*Flat\*\*: Every eligible user earns 100 points regardless of order amount.  
-        * \*Percentage\*\*: If set to 10% of the amount, a ₹500 purchase earns 50 points.  
-        * \*Proportional\*\*: For every ₹100 spent, the user gets 10 points.  
-        * \*Random\*\*: Users earn between 10 and 50 points, with distribution bias favoring the average.
+        * **Flat**: Every eligible user earns 100 points regardless of order amount.  
+        * **Percentage**: If set to 10% of the amount, a ₹500 purchase earns 50 points.  
+        * **Proportional**: For every ₹100 spent, the user gets 10 points.  
+        * **Random**: Users earn between 10 and 50 points, with distribution bias favoring the average.
       </td>
 
       <td>
-        * \*Flat**and**Random\*\*: Available in both Past Behavior/Custom List and Live Behavior segments.  
-        * \*Percentage**and**Proportional\*\*: Available only in Live Behavior segments
+        * **Flat** and **Random**: Available in both Past Behavior/Custom List and Live Behavior segments.  
+        * **Percentage** and **Proportional**: Available only in Live Behavior segments
       </td>
     </tr>
 
@@ -247,42 +247,42 @@ The following configuration options are available when Loyalty Points is selecte
       <td>
         The input control for Points value changes based on the selected Points Earning Scheme:  
 
-        * \*Flat\*\*: Enter a single fixed value of points/credits awarded to each qualifying user.  
-        * \*Percentage\*\*: Define a percentage of a selected event property (for example, order amount) from the qualifying event (typically a Charged event).  
-        * \*Proportional\*\*: Define “points per unit” of a selected event property (for example, for every X units of the property, award Y points).  
-        * \*Random\*\*: Set a min–max range of points/credits; the system randomly selects a value within this range for each qualifying user (also supports Distribution Bias).
+        * **Flat**: Enter a single fixed value of points/credits awarded to each qualifying user.  
+        * **Percentage**: Define a percentage of a selected event property (for example, order amount) from the qualifying event (typically a Charged event).  
+        * **Proportional**: Define "points per unit" of a selected event property (for example, for every X units of the property, award Y points).  
+        * **Random**: Set a min–max range of points/credits; the system randomly selects a value within this range for each qualifying user (also supports Distribution Bias).
       </td>
 
       <td>
-        * \*Flat\*\*: Set to 100 means every qualifying user gets 100 credits.  
-        * \*Percentage\*\*: Set to 10% means a purchase of ₹500 (as per selected event property) gives 50 credits.  
-        * \*Proportional\*\*: Set to 10 credits for every Rs. 100 (per selected event property).  
-        * \*Random\*\*: Set to a range of 10–100 means each qualifying user gets a random value between 10 and 100.
+        * **Flat**: Set to 100 means every qualifying user gets 100 credits.  
+        * **Percentage**: Set to 10% means a purchase of ₹500 (as per selected event property) gives 50 credits.  
+        * **Proportional**: Set to 10 credits for every Rs. 100 (per selected event property).  
+        * **Random**: Set to a range of 10–100 means each qualifying user gets a random value between 10 and 100.
       </td>
 
       <td>
-        * \*Flat**and**Random\*\*: Available in both Past Behavior/Custom List and Live Behavior Segment.  
-        * \*Percentage**and**Proportional\*\*: Available only in Live Behavior campaigns.
+        * **Flat** and **Random**: Available in both Past Behavior/Custom List and Live Behavior Segment.  
+        * **Percentage** and **Proportional**: Available only in Live Behavior campaigns.
       </td>
     </tr>
 
     <tr>
       <td>
-        * \*Distribution bias\*\* (For Random scheme only)
+        **Distribution bias** (For Random scheme only)
       </td>
 
       <td>
         Control distribution pattern that allows you to select the following options:  
 
-        * \*Favor Min\*\*: Skews distribution toward the lower end of the range.  
-        * \*Favor Avg\*\*: Skews distribution toward the midpoint of the range.  
-        * \*Favor Max\*\*: Skews distribution toward the higher end of the range.
+        * **Favor Min**: Skews distribution toward the lower end of the range.  
+        * **Favor Avg**: Skews distribution toward the midpoint of the range.  
+        * **Favor Max**: Skews distribution toward the higher end of the range.
       </td>
 
       <td>
-        * \*Favor Min\*\*: For a range of 10–100 points, most users receive lower values (for example, 10–30), while fewer receive higher values.  
-        * \*Favor Avg\*\*: For a range of 10–100 points, most users receive values around the midpoint (for example, \~55), with fewer at the extremes.  
-        * \*Favor Max\*\*: For a range of 10–100 points, most users receive higher values (for example, 70–100), while fewer receive lower values.
+        * **Favor Min**: For a range of 10–100 points, most users receive lower values (for example, 10–30), while fewer receive higher values.  
+        * **Favor Avg**: For a range of 10–100 points, most users receive values around the midpoint (for example, ~55), with fewer at the extremes.  
+        * **Favor Max**: For a range of 10–100 points, most users receive higher values (for example, 70–100), while fewer receive lower values.
       </td>
 
       <td>
@@ -336,8 +336,8 @@ The following configuration options are available when Loyalty Points is selecte
       </td>
 
       <td>
-        * \*Activation\*\*: Immediate (points instantly usable) OR Custom delay (for example, activate after 7 days).  
-        * \*Expiry\*\*: Never, fixed date, or custom duration (for example, 30 days after activation).
+        * **Activation**: Immediate (points instantly usable) OR Custom delay (for example, activate after 7 days).  
+        * **Expiry**: Never, fixed date, or custom duration (for example, 30 days after activation).
       </td>
 
       <td>
@@ -353,8 +353,8 @@ The following configuration options are available when Loyalty Points is selecte
       <td>
         Define the budget to control how rewards are distributed. Budget can be set at two levels:  
 
-        * \*Per Campaign Budget\*\*: Caps the total rewards that the campaign can distribute.  
-        * \*Per User Budget\*\*: Caps the maximum rewards a single user can receive during the campaign.\
+        * **Per Campaign Budget**: Caps the total rewards that the campaign can distribute.  
+        * **Per User Budget**: Caps the maximum rewards a single user can receive during the campaign.\
           Once the defined limit is reached (per user or for the entire campaign), no further rewards are issued.
       </td>
 
@@ -376,12 +376,12 @@ The following configuration options are available when Loyalty Points is selecte
       <td>
         Add dynamic key–value pairs to pass additional data into the wallet points payload. Each row has two modes:  
 
-        * \*System Key\*\*: Select from predefined system keys.  
-        * \*Custom Key\*\*: Define your own key. <br />Duplicate keys are not allowed.
+        * **System Key**: Select from predefined system keys.  
+        * **Custom Key**: Define your own key. <br />Duplicate keys are not allowed.
       </td>
 
       <td>
-        Add `{ "orderId": "12345", "promoType": "festival" }` as custom metadata to track order-related rewards.
+        Add `{'{'}' "orderId": "12345", "promoType": "festival" {'}'}` as custom metadata to track order-related rewards.
       </td>
 
       <td>
@@ -446,8 +446,8 @@ The following configuration options are available when Coupons is selected:
       </td>
 
       <td>
-        * \*Single Code:\*\* A fixed 20% off coupon shared with all users.  
-        * \*Bulk Codes:\*\* Each user gets a unique 10% off coupon.
+        * **Single Code:** A fixed 20% off coupon shared with all users.  
+        * **Bulk Codes:** Each user gets a unique 10% off coupon.
       </td>
 
       <td>
@@ -519,8 +519,8 @@ The following configuration options are available when Coupons is selected:
       </td>
 
       <td>
-        * \*Immediate:\*\* Flash sale means redeem instantly.  
-        * \*Custom:\*\* Redeemable 48 hours after reward assignment.
+        * **Immediate:** Flash sale means redeem instantly.  
+        * **Custom:** Redeemable 48 hours after reward assignment.
       </td>
 
       <td>
@@ -632,7 +632,7 @@ The following configuration options are available when Custom Rewards is selecte
 
       <td>
         Physical & digital: Send a Bluetooth speaker as a gift.\
-        Self-managed: Credit ₹200 to a user’s wallet.
+        Self-managed: Credit ₹200 to a user's wallet.
       </td>
 
       <td>
@@ -650,7 +650,7 @@ The following configuration options are available when Custom Rewards is selecte
       </td>
 
       <td>
-        Select “Amazon Voucher” or “Smartwatch”.
+        Select "Amazon Voucher" or "Smartwatch".
       </td>
 
       <td>
@@ -696,28 +696,28 @@ The following configuration options are available when Custom Rewards is selecte
 
     <tr>
       <td>
-        * \*Credits earning scheme\*\* (only for Self-managed wallet credits)
+        **Credits earning scheme** (only for Self-managed wallet credits)
       </td>
 
       <td>
         Choose how to define wallet credits. Options include:  
 
-        * \*Flat\*\*: a fixed number of credits for each qualifying user.  
-        * \*Percentage\*\*: credits calculated as a percentage of an event property (for example, order amount).  
-        * \*Proportional\*\*: credits awarded per defined unit of an event property (for example, 10 credits per ₹100 spent).  
-        * \*Random\*\*: credits assigned from a defined range; exposes Value Range + Distribution Bias controls.
+        * **Flat**: a fixed number of credits for each qualifying user.  
+        * **Percentage**: credits calculated as a percentage of an event property (for example, order amount).  
+        * **Proportional**: credits awarded per defined unit of an event property (for example, 10 credits per ₹100 spent).  
+        * **Random**: credits assigned from a defined range; exposes Value Range + Distribution Bias controls.
       </td>
 
       <td>
-        * \*Flat\*\*: All qualifying users get 100 credits.  
-        * \*Percentage\*\*: 10% of ₹500 purchase, i.e., 50 credits.  
-        * \*Proportional\*\*: 10 credits for every ₹100 spent.  
-        * \*Random\*\*: Users get between 10–100 credits.
+        * **Flat**: All qualifying users get 100 credits.  
+        * **Percentage**: 10% of ₹500 purchase, i.e., 50 credits.  
+        * **Proportional**: 10 credits for every ₹100 spent.  
+        * **Random**: Users get between 10–100 credits.
       </td>
 
       <td>
-        * \*Flat**and**Random\*\*: Available in both Past Behavior/Custom List and Live Behavior segments.  
-        * \*Percentage**and**Proportional\*\*: Only available in Live Behavior campaigns (not supported in PBS).
+        * **Flat** and **Random**: Available in both Past Behavior/Custom List and Live Behavior segments.  
+        * **Percentage** and **Proportional**: Only available in Live Behavior campaigns (not supported in PBS).
       </td>
     </tr>
 
@@ -729,42 +729,42 @@ The following configuration options are available when Custom Rewards is selecte
       <td>
         The input control for the credits value changes based on the selected credits Earning Scheme:  
 
-        * \*Flat\*\*: Enter a single fixed value of credits awarded to each qualifying user.  
-        * \*Percentage\*\*: Define a percentage of a selected event property (for example, order amount) from the qualifying event (typically a Charged event).  
-        * \*Proportional\*\*: Define “credits per unit” of a selected event property (for example, for every X units of the property, award Y credits).  
-        * \*Random\*\*: Set a min–max range of credits; the system randomly selects a value within this range for each qualifying user (also supports Distribution Bias).
+        * **Flat**: Enter a single fixed value of credits awarded to each qualifying user.  
+        * **Percentage**: Define a percentage of a selected event property (for example, order amount) from the qualifying event (typically a Charged event).  
+        * **Proportional**: Define "credits per unit" of a selected event property (for example, for every X units of the property, award Y credits).  
+        * **Random**: Set a min–max range of credits; the system randomly selects a value within this range for each qualifying user (also supports Distribution Bias).
       </td>
 
       <td>
-        * \*Flat\*\*: Set to 100 means every qualifying user gets 100 credits.  
-        * \*Percentage\*\*: Set to 10% means a purchase of ₹500 (as per selected event property) gives 50 credits.  
-        * \*Proportional\*\*: Set to 10 credits for every ₹100 (as per selected event property).  
-        * \*Random\*\*: Set to a range of 10–100 means each qualifying user gets a random value between 10 and 100.
+        * **Flat**: Set to 100 means every qualifying user gets 100 credits.  
+        * **Percentage**: Set to 10% means a purchase of ₹500 (as per selected event property) gives 50 credits.  
+        * **Proportional**: Set to 10 credits for every ₹100 (as per selected event property).  
+        * **Random**: Set to a range of 10–100 means each qualifying user gets a random value between 10 and 100.
       </td>
 
       <td>
-        * \*Flat**and**Random\*\*: Available in both Past Behavior/Custom List and Live Behavior Segment.  
-        * \*Percentage**and**Proportional\*\*: Available only in Live Behavior campaigns.
+        * **Flat** and **Random**: Available in both Past Behavior/Custom List and Live Behavior Segment.  
+        * **Percentage** and **Proportional**: Available only in Live Behavior campaigns.
       </td>
     </tr>
 
     <tr>
       <td>
-        * \*Distribution bias\*\* (For Random scheme only)
+        **Distribution bias** (For Random scheme only)
       </td>
 
       <td>
         Control distribution pattern that allows you to select the following options:  
 
-        * \*Favor Min\*\*: skews distribution toward the lower end of the range.  
-        * \*Favor Avg\*\*: skews distribution toward the midpoint of the range.  
-        * \*Favor Max\*\*: skews distribution toward the higher end of the range.
+        * **Favor Min**: skews distribution toward the lower end of the range.  
+        * **Favor Avg**: skews distribution toward the midpoint of the range.  
+        * **Favor Max**: skews distribution toward the higher end of the range.
       </td>
 
       <td>
-        * \*Favor Min\*\*: For a range of 10–100 credits, most users receive lower values (for example, 10–30), while fewer receive higher values.  
-        * \*Favor Avg\*\*: For a range of 10–100 credits, most users receive values around the midpoint (for example, \~55), with fewer at the extremes.  
-        * \*Favor Max\*\*: For a range of 10–100 credits, most users receive higher values (for example, 70–100), while fewer receive lower values.
+        * **Favor Min**: For a range of 10–100 credits, most users receive lower values (for example, 10–30), while fewer receive higher values.  
+        * **Favor Avg**: For a range of 10–100 credits, most users receive values around the midpoint (for example, ~55), with fewer at the extremes.  
+        * **Favor Max**: For a range of 10–100 credits, most users receive higher values (for example, 70–100), while fewer receive lower values.
       </td>
 
       <td>
@@ -774,7 +774,7 @@ The following configuration options are available when Custom Rewards is selecte
 
     <tr>
       <td>
-        * \*Max credits per rewards\*\* (only for Percentage and Proportional schemes)
+        **Max credits per rewards** (only for Percentage and Proportional schemes)
       </td>
 
       <td>
@@ -816,22 +816,22 @@ The following configuration options are available when Custom Rewards is selecte
       <td>
         Defines how many rewards can be distributed.  
 
-        * \*Physical & digital rewards\*\*: Supports campaign-level and time-based limits.  
-        * \*Self-managed wallet credits\*\*: Supports per-campaign and per-user limits (varies by scheme).  
-        * \*Flat\*\*: Supports Per Campaign budget only.  
-        * \*Percentage\*\*: Supports both Per Campaign and Per User budgets.  
-        * \*Proportional\*\*: Supports both Per Campaign and Per User budgets.  
-        * \*Random\*\*: Supports both Per Campaign and Per User budgets.
+        * **Physical & digital rewards**: Supports campaign-level and time-based limits.  
+        * **Self-managed wallet credits**: Supports per-campaign and per-user limits (varies by scheme).  
+        * **Flat**: Supports Per Campaign budget only.  
+        * **Percentage**: Supports both Per Campaign and Per User budgets.  
+        * **Proportional**: Supports both Per Campaign and Per User budgets.  
+        * **Random**: Supports both Per Campaign and Per User budgets.
       </td>
 
       <td>
-        * \*Physical & digital rewards\*\*:\
+        * **Physical & digital rewards**:\
           Campaign limit = 5,000 vouchers; additionally, set 1,000 vouchers per month.  
-        * \*Self-managed  wallet credits\*\*:  
-        * \*Flat Credits\*\*: Campaign limit = 10,000 credits.  
-        * \*Percentage Credits\*\*: Campaign limit = 10,000 credits and per-user cap = 500 credits.  
-        * \*Proportional Credits\*\*: Campaign limit = 10,000 credits and per-user cap = 500 credits.  
-        * \*Random Credits\*\*: Campaign limit = 10,000 credits and per-user cap = 500 credits.
+        * **Self-managed  wallet credits**:  
+        * **Flat Credits**: Campaign limit = 10,000 credits.  
+        * **Percentage Credits**: Campaign limit = 10,000 credits and per-user cap = 500 credits.  
+        * **Proportional Credits**: Campaign limit = 10,000 credits and per-user cap = 500 credits.  
+        * **Random Credits**: Campaign limit = 10,000 credits and per-user cap = 500 credits.
       </td>
 
       <td>
@@ -845,11 +845,11 @@ The following configuration options are available when Custom Rewards is selecte
       </td>
 
       <td>
-        Map CleverTap’s default user identity fields (User ID, Email address, Phone number) to your webhook payload keys. Each field supports the following modes: System key (CleverTap’s default field names) or Custom key (specify your own key names).
+        Map CleverTap's default user identity fields (User ID, Email address, Phone number) to your webhook payload keys. Each field supports the following modes: System key (CleverTap's default field names) or Custom key (specify your own key names).
       </td>
 
       <td>
-        Map CleverTap’s identity field to your external system’s customerId or use default mapping for email and phone.
+        Map CleverTap's identity field to your external system's customerId or use default mapping for email and phone.
       </td>
 
       <td>
@@ -867,7 +867,7 @@ The following configuration options are available when Custom Rewards is selecte
       </td>
 
       <td>
-        Add `{ "orderType": "electronics", "promoType": "festival" }` as custom metadata to track order-related rewards.
+        Add `{'{'}' "orderType": "electronics", "promoType": "festival" {'}'}` as custom metadata to track order-related rewards.
       </td>
 
       <td>
@@ -919,7 +919,25 @@ The following configuration options are available when Custom Rewards is selecte
 > * The reward payload is fully customizable and scales automatically with campaign volume.
 > * Custom Rewards give maximum flexibility but require your external system to handle issuance and redemption.
 
-<JSONPayloadForCustomRewards />
+### JSON Payload for Custom Rewards
+
+```json
+{
+  "user": {
+    "userId": "12345",
+    "email": "user@example.com",
+    "phone": "+1234567890"
+  },
+  "reward": {
+    "type": "custom",
+    "value": 100,
+    "metadata": {
+      "orderType": "electronics",
+      "promoType": "festival"
+    }
+  }
+}
+```
 
 # Best Practices
 
