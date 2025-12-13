@@ -147,10 +147,8 @@ This configuration ensures that the correct variant is fetched based on the user
 
 5. Use the following Linked Content Liquid tag to extract the reward title from the LoyaltyLion Get Reward API's `JSON` response:
 
-```liquid
-{'{'}% for reward in response.content.data %{'}'}
-  {'{'}{ reward.data.attributes.title }{'}'}
-{'{'}% endfor %{'}'}
+```json
+{{ Linked["Loyaltly Lion get rewards"].json.rewards[0].title | default: "NULL" }}
 ```
 
 6. Configure the campaign's Title and Message using the retrieved reward title. For example:
