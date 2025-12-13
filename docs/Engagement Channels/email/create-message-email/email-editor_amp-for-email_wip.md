@@ -14,38 +14,24 @@ next:
 
 The Email Editor tool is a feature available when building an email message in CleverTap. It lets you add content to pre-built templates or customize and build your templates. After creating an email template, you can use it in the current campaign or save it for future campaigns.
 
-From the _What_ section in the Email builder, click **Go to Editor.**  
+From the *What* section in the Email builder, click **Go to Editor.**  
 
 The Email Editor tool displays.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/670c841-Email_editor_main.png",
-        "Email_editor_main.png",
-        1121
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="Email_editor_main.png" alt={1121} align="center" className="border" border={true} src="https://files.readme.io/670c841-Email_editor_main.png" />
 
 # Select a Template
 
 Decide which template you want and click **Select**.
 
-You can choose between pre-built templates or empty templates under _Basic Templates_. You can also save customized templates and view them under **Saved Templates**.
+You can choose between pre-built templates or empty templates under *Basic Templates*. You can also save customized templates and view them under **Saved Templates**.
 
 You can choose from the following types of templates:
 
-- Email with custom HTML - Add your custom HTML to create custom email messages. You can also add personalization by using the **@** and **{{}} **icons. For more information on personalization, see [Personalize Message](doc:personalize-message-email).
-- Email with rich media - Create a rich message with text and images by using the inbuilt email editor. You can also add personalization by using the **@** and **{{}} **icons. For more information on personalization, see [Personalize Message](doc:personalize-message-email).
-- Email with drag and drop - Drag and drop elements such as text, images, and buttons to create a beautiful email message. Convert to HTML to add further customization. 
-- Templates by use cases - These again drag and drop types of templates. Select from a list of ready templates to suit your purpose, such as a blog with photos, order confirmation, offers and deals, feedback forms, and so on.
+* Email with custom HTML - Add your custom HTML to create custom email messages. You can also add personalization by using the **@** and **\{\{}}** icons. For more information on personalization, see [Personalize Message](doc:personalize-message-email).
+* Email with rich media - Create a rich message with text and images by using the inbuilt email editor. You can also add personalization by using the **@** and **\{\{}}** icons. For more information on personalization, see [Personalize Message](doc:personalize-message-email).
+* Email with drag and drop - Drag and drop elements such as text, images, and buttons to create a beautiful email message. Convert to HTML to add further customization. 
+* Templates by use cases - These again drag and drop types of templates. Select from a list of ready templates to suit your purpose, such as a blog with photos, order confirmation, offers and deals, feedback forms, and so on.
 
 ## Custom HTML Template
 
@@ -53,61 +39,19 @@ The Custom HTML template helps you to create custom HTML templates of your choic
 
 1. Click **Email with custom HTML**.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9eb5ed9-Email_Campaign_select_templates.png",
-        "Email_Campaign_select_templates.png",
-        1140
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="Email_Campaign_select_templates.png" alt={1140} align="center" className="border" border={true} src="https://files.readme.io/9eb5ed9-Email_Campaign_select_templates.png" />
 
-2. Add your HTML into the box. You can also add personalization by using the **@** and **{{}} **icons. For more information on personalization, see [Personalize Message](doc:personalize-message-email). 
+2. Add your HTML into the box. You can also add personalization by using the **@** and **\{\{}}** icons. For more information on personalization, see [Personalize Message](doc:personalize-message-email). 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d38dd3b-Email_Campaign_template_custom_html.png",
-        "Email_Campaign_template_custom_html.png",
-        1140
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="Email_Campaign_template_custom_html.png" alt={1140} align="center" className="border" border={true} src="https://files.readme.io/d38dd3b-Email_Campaign_template_custom_html.png" />
 
 3. Name and save your template. This step is optional. You can choose to save a template for future use. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6890680-Email_Campaign_template_custom_html_Name.png",
-        "Email_Campaign_template_custom_html_Name.png",
-        1140
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="Email_Campaign_template_custom_html_Name.png" alt={1140} align="center" className="border" border={true} src="https://files.readme.io/6890680-Email_Campaign_template_custom_html_Name.png" />
 
 4. Click Save.
 
-Your customized template will now be saved to _Saved Templates_.
+Your customized template will now be saved to *Saved Templates*.
 
 ## Rich media Template
 
@@ -117,108 +61,38 @@ Create rich messages using rich text and images.
 2. Add your text. 
 3. Click the icon to insert images. 
 4. Click the icon to insert links. 
-5. Click the **@** and **{{}}** icon to add personalization. For more information on personalization, see [Personalize Message](doc:personalize-message-email). 
+5. Click the **@** and **\{\{}}** icon to add personalization. For more information on personalization, see [Personalize Message](doc:personalize-message-email). 
 
 ![](https://files.readme.io/b10e8da-Email_template_rich_media.png "Email_template_rich_media.png")
 
 ## Drag and Drop Template
 
-Learn how to use an _Email with drag and drop_ template. There are many edits you can make to this template. In this step, we will look at three of them: how to change an image, add a new block, and delete an element.
+Learn how to use an *Email with drag and drop* template. There are many edits you can make to this template. In this step, we will look at three of them: how to change an image, add a new block, and delete an element.
 
 ### Change an Image
 
 1. Click inside the box of the image you want to change.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f0237ec-Email_Campaign_Templates_select.png",
-        "Email_Campaign_Templates_select.png",
-        1053
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="Email_Campaign_Templates_select.png" alt={1053} align="center" className="border" border={true} src="https://files.readme.io/f0237ec-Email_Campaign_Templates_select.png" />
 
 2. Click the image.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/44d57b7-Email_Campaign_Templates_change_image1.png",
-        "Email_Campaign_Templates_change_image1.png",
-        1225
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="Email_Campaign_Templates_change_image1.png" alt={1225} align="center" className="border" border={true} src="https://files.readme.io/44d57b7-Email_Campaign_Templates_change_image1.png" />
 
-3. Click the **Change Image** button. The _File manager_ displays.
+3. Click the **Change Image** button. The *File manager* displays.
 4. Select an image from the gallery or upload a custom image. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3cd76ca-Email_Campaign_Templates_change_image_select.png",
-        "Email_Campaign_Templates_change_image_select.png",
-        1225
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="Email_Campaign_Templates_change_image_select.png" alt={1225} align="center" className="border" border={true} src="https://files.readme.io/3cd76ca-Email_Campaign_Templates_change_image_select.png" />
 
 5. Click Insert. Your new image will appear in the selected box.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e1e933f-Email_Campaign_Templates_image_inserted.png",
-        "Email_Campaign_Templates_image_inserted.png",
-        1305
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="Email_Campaign_Templates_image_inserted.png" alt={1305} align="center" className="border" border={true} src="https://files.readme.io/e1e933f-Email_Campaign_Templates_image_inserted.png" />
 
 ### Add a New Text Block
 
 1. Under the Content tab, find Text.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ceae7fa-Email_Campaign_add_new_text.gif",
-        "Email_Campaign_add_new_text.gif",
-        1324
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="Email_Campaign_add_new_text.gif" alt={1324} align="center" className="border" border={true} src="https://files.readme.io/ceae7fa-Email_Campaign_add_new_text.gif" />
 
 2. Drag the Text icon to the desired location.
 
@@ -230,21 +104,7 @@ Similarly, you can also drag other elements such as Images, Buttons, or Videos i
 
 1. Click the box of the element you want to delete.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7610436-Email_Editor_delete_element.gif",
-        "Email_Editor_delete_element.gif",
-        1324
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="Email_Editor_delete_element.gif" alt={1324} align="center" className="border" border={true} src="https://files.readme.io/7610436-Email_Editor_delete_element.gif" />
 
 2. Click the trashcan icon.
 
@@ -268,21 +128,7 @@ To save a row:
 1. Double click the row. 
 2. Click the ![folder](https://files.readme.io/54b1fcd-Email_save_icon.png) icon to save the row for future use.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/67215bf-email_editor_rows_edit_clone_delete.gif",
-        "email_editor_rows_edit_clone_delete.gif",
-        1164
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="email_editor_rows_edit_clone_delete.gif" alt={1164} align="center" className="border" border={true} src="https://files.readme.io/67215bf-email_editor_rows_edit_clone_delete.gif" />
 
 ### Delete Rows
 
@@ -291,41 +137,13 @@ To save a row:
 3. Select the saved row and click the ellipsis. 
 4. Click **Delete**. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/eeae8e5-email_editor_rows_delete.png",
-        "email_editor_rows_delete.png",
-        1306
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="email_editor_rows_delete.png" alt={1306} align="center" className="border" border={true} src="https://files.readme.io/eeae8e5-email_editor_rows_delete.png" />
 
 ## Mobile View
 
 You can switch between the mobile and desktop views of your message to view and edit content. You can check how the content will display on a mobile phone without going to Previews or sending a test message. Any changes made to the mobile view will be reflected on the desktop view as well. It is a What You See is What You Get (WYSIWYG) editor.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/bb4fe41-email_editor_mobile_view.gif",
-        "email_editor_mobile_view.gif",
-        1096
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="email_editor_mobile_view.gif" alt={1096} align="center" className="border" border={true} src="https://files.readme.io/bb4fe41-email_editor_mobile_view.gif" />
 
 ## Save A Template
 
@@ -333,59 +151,31 @@ This step is optional. You can choose to save a template for future use. Create 
 
 1. Click **Save template**.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/38aef42-Email_Editor_save_template.png",
-        "Email_Editor_save_template.png",
-        1324
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="Email_Editor_save_template.png" alt={1324} align="center" className="border" border={true} src="https://files.readme.io/38aef42-Email_Editor_save_template.png" />
 
 2. Name your template.
 3. Click Save.
 
-Your template will now be saved in _Saved_ templates.
+Your template will now be saved in *Saved* templates.
 
 # AMP for Email
 
 [AMP for Email](https://amp.dev/about/email/) are dynamic emails that allow a great amount of personalization. This personalization, coupled with CleverTap personalization, powers compelling emails that provide a fun and exciting experience. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b2ba70f-AMP_carousel.png",
-        "AMP carousel.png",
-        1024
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="AMP carousel.png" alt={1024} align="center" className="border" border={true} src="https://files.readme.io/b2ba70f-AMP_carousel.png" />
 
 AMP for Email is available via the following templates in the CleverTap Email Editor:
 
-- Custom HTML
-- Rich Media
-- Email with drag and drop
+* Custom HTML
+* Rich Media
+* Email with drag and drop
 
 ## Within Custom HTML template
 
-You can use all functionality of Email for AMP in this template, except surveys and advanced e-commerce cases.  
+You can use all functionality of Email for AMP in this template, except surveys and advanced e-commerce cases.\
 Follow the steps to create an email with AMP:
 
-1. Select the _Custom HTML_ template. 
+1. Select the *Custom HTML* template. 
 2. Create your HTML message. The HTML message is displayed if the email client does not support AMP for Email. in case the email client doesn't support AMP, HTML/Plain Text will be rendered by default
 3. Click the Sender details tab. 
 4. Add plain text, if required. The plain text message is displayed if the email client is unable to render AMP-HTML/HTML.
@@ -399,17 +189,17 @@ Follow the steps to create an email with AMP:
 
 Follow the steps to create an email with AMP:
 
-1. Select the \_Rich Media_template. 
+1. Select the \_Rich Media\_template. 
 2. Create your message.
 3. Click the Sender details tab. 
-4. Add plain text, if required. The plain text message is displayed if the email client is unable to render AMP-HTML/Rich Media.  
+4. Add plain text, if required. The plain text message is displayed if the email client is unable to render AMP-HTML/Rich Media.\
    \<\<@shloke to give screenshot depicting AMP HTML box in the editor>>
 5. Add the AMP HTML code in the AMP for Email HTML box. 
 6. You can preview and test the email before sending it. Select the compatible Email Service Provider to send the test email. 
 
 ## Within Email with drag and drop Template
 
-The _Email with drag and drop_ template allows you to create an image carousel.  
+The *Email with drag and drop* template allows you to create an image carousel.  
 
 Follow the steps to create an email with AMP:
 
@@ -417,7 +207,7 @@ Follow the steps to create an email with AMP:
 2. Create your message.
 3. Drag and drop the Carousel tile to the editor. 
 4. Add the carousel images and the time interval between each image. The first image is displayed if the email client is unable to render AMP content.
-5. You can preview and test the email before sending it. Select the compatible Email Service Provider to send the test email.  
+5. You can preview and test the email before sending it. Select the compatible Email Service Provider to send the test email.\
    \<\<@shloke/harsh to provide a screenshot for editor>>
 
 # Device Preview
@@ -427,71 +217,29 @@ Follow the steps to create an email with AMP:
 You can preview how your email displays in dark mode on a desktop or a mobile phone.
 
 > 📘 Note
-> 
-> Dark Mode is only available in the _Email with drag and drop_ editor.
+>
+> Dark Mode is only available in the *Email with drag and drop* editor.
 
 Follow the steps to preview your template in Dark Mode:
 
-1. Select the _Email with drag and drop_ editor.
+1. Select the *Email with drag and drop* editor.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/fc1d8a8-Select_the_template.png",
-        "Select the template.png",
-        2866
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="Select the template.png" alt={2866} align="center" className="border" border={true} src="https://files.readme.io/fc1d8a8-Select_the_template.png" />
 
 2. Draft your message.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2e30dbe-Create_message.png",
-        "Create message.png",
-        2880
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="Create message.png" alt={2880} align="center" className="border" border={true} src="https://files.readme.io/2e30dbe-Create_message.png" />
 
-3. Click the **Preview and Test** button. The _Preview and test_ window displays. You can preview how the email will look in dark mode by turning the _Dark Mode_ toggle ON.
+3. Click the **Preview and Test** button. The *Preview and test* window displays. You can preview how the email will look in dark mode by turning the *Dark Mode* toggle ON.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c6ed33f-Dark_Mode_Preview.gif",
-        "Dark Mode Preview.gif",
-        1440
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="Dark Mode Preview.gif" alt={1440} align="center" className="border" border={true} src="https://files.readme.io/c6ed33f-Dark_Mode_Preview.gif" />
 
 > 📘 Dark Mode Preview
-> 
+>
 > Dark Mode support varies across email clients and devices. Test the mails on an email client with dark mode enabled for best results. The Dark Mode preview generates a generic dark mode color scheme when enabled.
-> 
-> Refer to the links below for dark mode email design tips:  
-> [5 Tips for Dark Mode Email Design](https://emaildesign.beefree.io/5-tips-for-dark-mode-email-design/)  
+>
+> Refer to the links below for dark mode email design tips:\
+> [5 Tips for Dark Mode Email Design](https://emaildesign.beefree.io/5-tips-for-dark-mode-email-design/)\
 > [The Ultimate Guide to Dark Mode for Email Marketers](https://www.litmus.com/blog/the-ultimate-guide-to-dark-mode-for-email-marketers/)
 
 ## Inbox Previews with Code Analysis
@@ -502,67 +250,25 @@ Before we begin, check that you have enabled Inbox Previews. For enabling the In
 
 1. Select the template. 
 2. Create your message.
-3. Click the **Preview and Test** button.  The _Previews and test_ window displays.
+3. Click the **Preview and Test** button.  The *Previews and test* window displays.
 4. Click the **Inbox Previews** tab.
 5. Click the **Generate Report** button. The display may take some time if you have selected multiple inboxes. We will render the results and send you a notification email to know when the preview is ready. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9091e36-Screenshot_2021-07-12_at_7.07.10_PM.png",
-        "Screenshot 2021-07-12 at 7.07.10 PM.png",
-        1648
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="Screenshot 2021-07-12 at 7.07.10 PM.png" alt={1648} align="center" className="border" border={true} src="https://files.readme.io/9091e36-Screenshot_2021-07-12_at_7.07.10_PM.png" />
 
 6. Click **Inbox Previews** tab to view the preview report. The tests will display email previews across all the selected inboxes. It displays the errors, if any, for each inbox. For selecting inboxes, see [Enabling Previews](doc:enabling-previews). 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/439b55a-Screenshot_2021-07-12_at_7.08.00_PM.png",
-        "Screenshot 2021-07-12 at 7.08.00 PM.png",
-        1646
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="Screenshot 2021-07-12 at 7.08.00 PM.png" alt={1646} align="center" className="border" border={true} src="https://files.readme.io/439b55a-Screenshot_2021-07-12_at_7.08.00_PM.png" />
 
 7. The \_Code Analysis \_tab displays the error type and details. You can sort these errors by severity or property. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d94922b-Screenshot_2021-07-12_at_7.08.29_PM.png",
-        "Screenshot 2021-07-12 at 7.08.29 PM.png",
-        1644
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="Screenshot 2021-07-12 at 7.08.29 PM.png" alt={1644} align="center" className="border" border={true} src="https://files.readme.io/d94922b-Screenshot_2021-07-12_at_7.08.29_PM.png" />
 
 > 📘 Templates for Inbox Preview
-> 
+>
 > Code Analysis with Inbox Preview is available for the [Custom HTML template](https://docs.clevertap.com/docs/email-editor-templates#custom-html-template) and [Rich Media Template](https://docs.clevertap.com/docs/email-editor-templates#rich-media-template).
 
-8. Click the _Fix issues_ in the editor link to fix the issues. You are redirected to the email editor.  
+8. Click the *Fix issues* in the editor link to fix the issues. You are redirected to the email editor.\
    Rerun the preview tests to check that the previews are in order.
 
 ## Spam Report
@@ -573,22 +279,8 @@ Follow the steps to create an email campaign.
 
 1. Select the template. 
 2. Create your message.
-3. Click the **Preview and Test** button. The _Previews and test_ window displays.
+3. Click the **Preview and Test** button. The *Previews and test* window displays.
 4. Click the **Spam Report** tab.
 5. Click the **Generate Report** button. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9091e36-Screenshot_2021-07-12_at_7.07.10_PM.png",
-        "Screenshot 2021-07-12 at 7.07.10 PM.png",
-        1648
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="Screenshot 2021-07-12 at 7.07.10 PM.png" alt={1648} align="center" className="border" border={true} src="https://files.readme.io/9091e36-Screenshot_2021-07-12_at_7.07.10_PM.png" />
