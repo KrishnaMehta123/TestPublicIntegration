@@ -14,25 +14,10 @@ next:
 
 The flows tab within funnels visually displays the successive steps performed by the users for selected events. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6b5a6e4-Flows_tab.png",
-        "Click Flows Tab to View Flows",
-        1237
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "View Flows"
-    }
-  ]
-}
-[/block]
-
-
+<Image title="Click Flows Tab to View Flows" alt={1237} align="center" border={true} src="https://files.readme.io/6b5a6e4-Flows_tab.png">
+  View Flows
+</Image>
 
 # Example
 
-For example, if you create a funnel of _Added to cart \_and \_Charged_ events, the flows tab in _Funnels_ shows the number of times that the user performed _Added to cart_ and _Charged_ events based on the interaction depth selected.
+For example, if you create a funnel of *Added to cart\_and \_Charged* events, the flows tab in *Funnels* shows the number of times that the user performed *Added to cart* and *Charged* events based on the interaction depth selected.
