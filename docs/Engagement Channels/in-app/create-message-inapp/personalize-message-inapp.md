@@ -18,30 +18,15 @@ You can personalize the message for every user based on specific user property o
 
 # Inline Personalization
 
-To invoke the personalization menu, type the _@_ or the \_{{}} \_symbol in the title or the text fields while creating a message.
+To invoke the personalization menu, type the *@* or the \_\{\{}} \_symbol in the title or the text fields while creating a message.
 
 You can also add dynamic replacements in the title and body. Notice a preview as displayed below.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/281aede-campaign_push_personalization.png",
-        "Inline Personalization with @ and {{}}",
-        1095
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Inline Personalization"
-    }
-  ]
-}
-[/block]
+<Image title="Inline Personalization with @ and {{}}" alt={1095} align="center" border={true} src="https://files.readme.io/281aede-campaign_push_personalization.png">
+  Inline Personalization
+</Image>
 
-
-
-In addition to title, body, you can also personalize many other things such as media URLs, deep links, or button text. An _@ _ icon in a box indicates that it can be personalized. 
+In addition to title, body, you can also personalize many other things such as media URLs, deep links, or button text. An *@* icon in a box indicates that it can be personalized. 
 
 # Recommendations
 
@@ -49,19 +34,6 @@ Click the ![Personlization](https://files.readme.io/b852e7f-Personalization_sett
 
 After you have uploaded a catalog, you can display personalized recommendations to your customers. For example, you can have a sliding carousel displayed to your customers based on their personal likes!  For more information on recommendations, refer to [Recommendations](doc:recommendations).
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6264702-Recommendation_Sample.png",
-        "Map Catalog and Define Rules",
-        1752
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Create Recommendations"
-    }
-  ]
-}
-[/block]
+<Image title="Map Catalog and Define Rules" alt={1752} align="center" border={true} src="https://files.readme.io/6264702-Recommendation_Sample.png">
+  Create Recommendations
+</Image>
