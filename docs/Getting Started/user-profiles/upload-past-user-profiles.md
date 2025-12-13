@@ -20,24 +20,9 @@ When already identified users visit your app or website from another device or b
 
 These events are shown with a gray background on the user profile. Even though the profiles are merged together, they are stored in two separate memory locations in CleverTap.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/cebe9ee-1_Upload_Past_User_Profiles.png",
-        "Upload Past User Profiles",
-        837
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "View Already Identified Users"
-    }
-  ]
-}
-[/block]
-
-
+<Image title="Upload Past User Profiles" alt={837} align="center" border={true} src="https://files.readme.io/cebe9ee-1_Upload_Past_User_Profiles.png">
+  View Already Identified Users
+</Image>
 
 # Existing Profiles
 
@@ -45,4 +30,4 @@ If a user has an existing profile stored in your CleverTap account and if the us
 
 Once the user shares her identity (e.g., email, mobile phone number, or Google advertising ID) to the anonymous profile for example while login, then this profile gets merged with the user's original profile but the events captured before passing the identity are saved in an orphan profile with only a CleverTap ID and no email, mobile phone number, and other useful properties.
 
-In this case, there is no use in qualifying orphan profiles in campaigns or journeys. However, to keep clear data as to how many profiles have been created on the CleverTap dashboard, we include the orphan profiles in the _Find People_ count but these profiles are not included when downloaded.
+In this case, there is no use in qualifying orphan profiles in campaigns or journeys. However, to keep clear data as to how many profiles have been created on the CleverTap dashboard, we include the orphan profiles in the *Find People* count but these profiles are not included when downloaded.
