@@ -372,7 +372,7 @@ The following configuration options are available when Loyalty Points is selecte
   * Wallet must be pre-configured in your account.
 </Callout>
 
-![](https://files.readme.io/4d437eec9f1f394b546d51406d53ff000e37dfdcf458a6ec637b06d8f1ced0fb-image.png)  Set Up Loyalty Points in Rewards
+  Set Up Loyalty Points in Rewards
 
 ## Coupons
 
