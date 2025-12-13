@@ -21,116 +21,50 @@ This integration will enable you to easily run remarketing campaigns where you s
 1. Log in to your [Google Ads account](https://adwords.google.com/home/).
 2. Navigate to the settings section and copy the Customer ID listed under the Account Information of the Settings section of the Google Ads dashboard. For more information about finding your Ads Customer ID, refer to [Google Support](https://support.google.com/adwords/express/answer/6083253).
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/29fc1a6-image2.png",
-        "Copy Customer IF from Google Ads account",
-        215
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Copy Customer ID from Google Ads Account"
-    }
-  ]
-}
-[/block]
+<Image title="Copy Customer IF from Google Ads account" alt={215} align="center" border={true} src="https://files.readme.io/29fc1a6-image2.png">
+  Copy Customer ID from Google Ads Account
+</Image>
 
 # Step 2: Connect Google Ads Account
 
 The process involves adding Google Ads Customer ID to the CleverTap dashboard. To do so: 
 
 1. Log in to the [CleverTap Dashboard](https://dashboard.clevertap.com/). 
-2. Navigate to _Settings_ > _Channels_ > _Remarketing_.
-3. Enter the _Google ads account ID_, and then click **Connect**.
+2. Navigate to *Settings* > *Channels* > *Remarketing*.
+3. Enter the *Google ads account ID*, and then click **Connect**.
 4. (Optional) Enter your Manager account ID for a linked [Manager Account](https://ads.google.com/intl/en_in/home/tools/manager-accounts/).
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b74ffb0-google_ads_manager_id.png",
-        "Enter required details to integrate Google Ads account",
-        1600
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Integrate Google Ads Account"
-    }
-  ]
-}
-[/block]
+<Image title="Enter required details to integrate Google Ads account" alt={1600} align="center" border={true} src="https://files.readme.io/b74ffb0-google_ads_manager_id.png">
+  Integrate Google Ads Account
+</Image>
 
 > 📘 Admin User
-> 
+>
 > The user with Admin rights on the Google Ads Platform can integrate Google Ads and CleverTap accounts.
 
 5. Click **Continue** when prompted by Google to give access to CleverTap.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/944d50f-google_ads_allow_r.png",
-        "Click Continue to give access to CleverTap",
-        400
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Click Continue to Give Access to CleverTap"
-    }
-  ]
-}
-[/block]
+<Image title="Click Continue to give access to CleverTap" alt={400} align="center" border={true} src="https://files.readme.io/944d50f-google_ads_allow_r.png">
+  Click Continue to Give Access to CleverTap
+</Image>
 
 > 🚧 Verify Credentials
-> 
+>
 > If you have multiple CleverTap accounts, check that you are using the correct account. Similarly, if you have multiple Ads accounts, verify it is the correct account.
 
 # Step 3: Create a New Campaign for Ads Remarketing
 
 When you create a new campaign in CleverTap, you can select Google Ads as the channel of communication.
 
-Navigate to the _Campaigns_ page, click on **+ Campaign**, and then select Google Ads.
+Navigate to the *Campaigns* page, click on **+ Campaign**, and then select Google Ads.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5eb84f0-6d4ced6-campaign1.png",
-        "Navigate to Campaigns page and click + Campaign",
-        1042
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Click + Campaign to Create a Campaign"
-    }
-  ]
-}
-[/block]
+<Image title="Navigate to Campaigns page and click + Campaign" alt={1042} align="center" border={true} src="https://files.readme.io/5eb84f0-6d4ced6-campaign1.png">
+  Click + Campaign to Create a Campaign
+</Image>
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6141265-Campaigns_Channels.png",
-        "Select Google Ads from Messaging List",
-        1375
-      ],
-      "align": "center",
-      "sizing": "100",
-      "border": true,
-      "caption": "Select Google Ads from Messaging List"
-    }
-  ]
-}
-[/block]
+<Image title="Select Google Ads from Messaging List" alt={1375} align="center" width="100%" border={true} src="https://files.readme.io/6141265-Campaigns_Channels.png">
+  Select Google Ads from Messaging List
+</Image>
 
 After you select the segment of users you want to target, you can either add the selected segment to an existing Audience list from your Google Ads account or you can create a new one.  
 
@@ -138,14 +72,14 @@ Once you create this campaign in CleverTap, Google will update the audience list
 
 # Additional Notes about Google Ads Remarketing
 
-- Since it takes up to 48 hours for an Audience list to be populated with members, you will most likely see an "In Progress" status within the Google Ads UI when you update an audience list.
-- Email addresses must be associated with a Google account.
-- Only @gmail.com addresses can be used for targeting in Gmail.
-- For privacy purposes, the user list size will show as zero until the list has at least 1,000 members. After that, the size will be rounded to the two most significant digits.
-- Google matches the email/phone according to the process [mentioned here](https://support.google.com/adwords/answer/7474263). This means the number of people uploaded may be less than the number of people actually shown on your Google Ads account.
+* Since it takes up to 48 hours for an Audience list to be populated with members, you will most likely see an "In Progress" status within the Google Ads UI when you update an audience list.
+* Email addresses must be associated with a Google account.
+* Only @gmail.com addresses can be used for targeting in Gmail.
+* For privacy purposes, the user list size will show as zero until the list has at least 1,000 members. After that, the size will be rounded to the two most significant digits.
+* Google matches the email/phone according to the process [mentioned here](https://support.google.com/adwords/answer/7474263). This means the number of people uploaded may be less than the number of people actually shown on your Google Ads account.
 
 # Google Ads Help Center Links
 
-- [Customer Match](https://support.google.com/adwordspolicy/answer/6299717)
-- [Customer Matching Process](https://support.google.com/adwords/answer/7474263)
-- [Fix Customer Match Issues with List Upload](https://support.google.com/adwords/answer/7474166)
+* [Customer Match](https://support.google.com/adwordspolicy/answer/6299717)
+* [Customer Matching Process](https://support.google.com/adwords/answer/7474263)
+* [Fix Customer Match Issues with List Upload](https://support.google.com/adwords/answer/7474166)
