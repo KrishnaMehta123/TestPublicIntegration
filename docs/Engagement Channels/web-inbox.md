@@ -11,7 +11,7 @@ next:
   description: ''
 ---
 > 📘 Private Beta
-> 
+>
 > Currently, this feature is a Private Beta Release. If you want access to this feature, contact your Account Manager.
 
 # Overview
@@ -24,30 +24,29 @@ Web Inbox also allows users to engage with the notifications later in time from 
 
 Including the Web Inbox channel in your customer engagement strategy significantly increases engagement and conversion rates.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/cf0de35-Web_Inbox.png",
-        "A Sample Web Inbox Campaign",
-        4002
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Web Inbox "
-    }
-  ]
-}
-[/block]
-
+<Image title="A Sample Web Inbox Campaign" alt={4002} align="center" border={true} src="https://files.readme.io/cf0de35-Web_Inbox.png">
+  Web Inbox 
+</Image>
 
 ## Video Tutorial: Sample Web Inbox Campaign
 
 Refer to the short tutorial below to get started with Web Inbox campaigns.
 
-[block:html]
-{
-  "html": "<div\n              style=\"\n                position: relative;\n                padding-bottom: 56.25%;\n                height: 0;\n                border-radius: 0;\n                box-shadow: 0 15px 40px rgba(63,58,79,.3);\n                overflow: hidden;\n                min-width:320px\"><iframe\n              src=\"https://clevertap.portal.trainn.co/share/9S7Nosta695Z1cOkBgAx0w/embed?autoplay=false\"\n              frameborder=\"0\"\n              webkitallowfullscreen\n              mozallowfullscreen\n              allowfullscreen\n              allow=\"autoplay; fullscreen\"\n              style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%;\"></iframe></div>"
-}
-[/block]
+<HTMLBlock>{`
+<div
+              style="
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                border-radius: 0;
+                box-shadow: 0 15px 40px rgba(63,58,79,.3);
+                overflow: hidden;
+                min-width:320px"><iframe
+              src="https://clevertap.portal.trainn.co/share/9S7Nosta695Z1cOkBgAx0w/embed?autoplay=false"
+              frameborder="0"
+              webkitallowfullscreen
+              mozallowfullscreen
+              allowfullscreen
+              allow="autoplay; fullscreen"
+              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+`}</HTMLBlock>
