@@ -14,56 +14,28 @@ next:
 ---
 # Oveview
 
-The Promo _Campaigns_ list view allows you to manage, organize, and locate campaigns efficiently. It combines search, filters, and date selection tools to offer a seamless way to track campaign performance, take action on drafts or running campaigns, and review past efforts.
+The Promo *Campaigns* list view allows you to manage, organize, and locate campaigns efficiently. It combines search, filters, and date selection tools to offer a seamless way to track campaign performance, take action on drafts or running campaigns, and review past efforts.
 
 This document covers all the available operations and utilities to help you make the most of the Promo Campaigns dashboard.
 
 ## Search
 
-Use the _Search by ID/Name_ bar to instantly find campaigns:
+Use the *Search by ID/Name* bar to instantly find campaigns:
 
-- Search by Campaign ID
-- Search by Campaign Name
+* Search by Campaign ID
+* Search by Campaign Name
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/315cb8a4a45d5c66d293a82cde96ce6c7d9125c7f579c587f316102227bea1bb-image.png",
-        null,
-        "Searcy by Campaign ID or Name"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Searcy by Campaign ID or Name"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Searcy by Campaign ID or Name" align="center" border={true} src="https://files.readme.io/315cb8a4a45d5c66d293a82cde96ce6c7d9125c7f579c587f316102227bea1bb-image.png">
+  Searcy by Campaign ID or Name
+</Image>
 
 ## Date Filter
 
 Use the date picker in the top-right corner to filter campaigns by a specific date range based on their start time. This helps in analyzing campaign activity over time or during specific promotional windows.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/bb2e4527d6328f2492221df5ef8093a2e87c4be8080a1bf3600ed4fc63bba498-image.png",
-        null,
-        "Filter Campaigns by Creation or Start Date"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Filter Campaigns by Creation or Start Date"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Filter Campaigns by Creation or Start Date" align="center" border={true} src="https://files.readme.io/bb2e4527d6328f2492221df5ef8093a2e87c4be8080a1bf3600ed4fc63bba498-image.png">
+  Filter Campaigns by Creation or Start Date
+</Image>
 
 ## Status and Actions
 
@@ -85,7 +57,7 @@ To perform actions on a campaign, click the ![](https://files.readme.io/fd94389a
 
 | Action      | Effect                                                                                |
 | ----------- | ------------------------------------------------------------------------------------- |
-| **Edit**    | Opens the campaign for modification. Available only in _Draft_ or _Scheduled_ states. |
+| **Edit**    | Opens the campaign for modification. Available only in *Draft* or *Scheduled* states. |
 | **Stop**    | Manually ends the campaign permanently. It can not be resumed once stopped.           |
 | **Archive** | Permanently deletes a campaign.                                                       |
 
@@ -93,5 +65,5 @@ To perform actions on a campaign, click the ![](https://files.readme.io/fd94389a
 
 Follow these best practices to maintain campaign quality, control, and consistency:
 
-- **Use Drafts for Iteration**: Build campaigns in _Draft_ mode, review, and schedule when finalized.
-- **Monitor Status Regularly**: Use the status column on the list page to ensure campaigns are behaving as expected.
+* **Use Drafts for Iteration**: Build campaigns in *Draft* mode, review, and schedule when finalized.
+* **Monitor Status Regularly**: Use the status column on the list page to ensure campaigns are behaving as expected.
