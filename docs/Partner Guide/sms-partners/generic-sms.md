@@ -153,19 +153,20 @@ The following is an example of a configuration to better understand the setup:
 
 ```json
 {
-  "msgs": [
-    {
-      "seq": "$$seq",
-      "to": "$$To",
-      "uid": "$$MessageID",
-      "variables": "$$TemplateVariables",
-      "enc": "unicode"
-    }
-  ],
-  "hid": "$$hid",
+  "hid": "$$hid", //Global Key-Value pair
   "tid": "$$TemplateID",
   "cid": "$$CampaignID",
-  "type": 1
+  "type": "template",
+  "msgs": [
+    {
+      "seq": 1,
+      "to": "$$To",
+      "mid": "$$MessageID", //to be added for configuring callbacks
+      "uid": "$$uid", //Message Body Key-Value pair
+      "variables": "$$TemplateVariables",
+      "enc": "utf8"
+    }
+  ]
 }
 ```
 
