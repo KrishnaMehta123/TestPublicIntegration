@@ -12,32 +12,17 @@ next:
 ---
 ## Overview
 
-_App Inbox_ is a messaging channel that provides the ability to deliver rich, individually customized content to your users. Messages that are sent to _App Inbox_ are saved on the user's device. 
+*App Inbox* is a messaging channel that provides the ability to deliver rich, individually customized content to your users. Messages that are sent to *App Inbox* are saved on the user's device. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9906f6d-image.png",
-        null,
-        "App Inbox Notification"
-      ],
-      "align": "center",
-      "sizing": "40% ",
-      "border": true,
-      "caption": "App Inbox Notification"
-    }
-  ]
-}
-[/block]
-
+<Image alt="App Inbox Notification" align="center" width="40% " border={true} src="https://files.readme.io/9906f6d-image.png">
+  App Inbox Notification
+</Image>
 
 # App Inbox as a Channel
 
 Push notification and in-app campaigns are great for grabbing the app user's attention, but they are short-lived. Once swiped off, they lose their ability to engage the customer. If the user is not online or is busy, you lose the opportunity to engage with them forever.
 
-_App Inbox_ provides the ability to send lasting content directly to your app from the CleverTap dashboard. Moreover, the inbox messages are targetable to individual segments such as other messaging channels. Your inbox can look different from the inbox of another user; the possibilities are endless.
+*App Inbox* provides the ability to send lasting content directly to your app from the CleverTap dashboard. Moreover, the inbox messages are targetable to individual segments such as other messaging channels. Your inbox can look different from the inbox of another user; the possibilities are endless.
 
 ## Inbox Delivery Timing and Campaign Behavior
 
@@ -55,36 +40,20 @@ Here is what to expect in various scenarios:
 This behavior is by design and helps ensure Inbox messages are retrieved when the app is active.
 
 > 🚧 Trigger App Inbox Notifications via Journeys Only
-> 
-> To trigger an App Inbox notification via API, you must configure it through a Journey.  
+>
+> To trigger an App Inbox notification via API, you must configure it through a Journey.\
 > Campaigns do not support API-triggered App Inbox notifications.
-> 
+>
 > For assistance, contact your Customer Success Manager (CSM).
 
 # Examples
 
 ## Simple Message
 
-This type of Inbox message consists of only the Title and a Message in the App Inbox. It is an app inbox without the image.  
+This type of Inbox message consists of only the Title and a Message in the App Inbox. It is an app inbox without the image.\
 You can select this template from the WHAT section of the campaign. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/99159fa-app_inbox_simple_message_sample.png",
-        "Sample template for App-Inbox",
-        484
-      ],
-      "align": "center",
-      "sizing": "smart",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image title="Sample template for App-Inbox" alt={484} align="center" className="border" width="smart" border={true} src="https://files.readme.io/99159fa-app_inbox_simple_message_sample.png" />
 
 ### Usage Example
 
@@ -94,41 +63,9 @@ Get the app inbox message after you have placed the order stating that the order
 
 Carousel messages in push notifications show multiple images under one notification. It can be personalized according to the campaign run. For every carousel image, we can put a new personalized message, according to the content. You can also add a link for each carousel message to navigate the users to that particular page. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/017189e-2a_Carousel_message_with_Content.png",
-        "2a Carousel message with Content.png",
-        1080
-      ],
-      "align": "center",
-      "sizing": "smart",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="2a Carousel message with Content.png" alt={1080} align="center" className="border" width="smart" border={true} src="https://files.readme.io/017189e-2a_Carousel_message_with_Content.png" />
 
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a586da4-2b_Carousel_message_with_Content.png.png",
-        "2b Carousel message with Content.png.png",
-        1080
-      ],
-      "align": "center",
-      "sizing": "smart",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image title="2b Carousel message with Content.png.png" alt={1080} align="center" className="border" width="smart" border={true} src="https://files.readme.io/a586da4-2b_Carousel_message_with_Content.png.png" />
 
 ### Usage Example
 
@@ -142,18 +79,4 @@ Carousel messages without content can be made in an attractive way that can grab
 
 When you run a message with an icon app inbox campaign, unlike the “carousel with content” feature, here you cannot add multiple images. You can just add one single image in the given format along with any personalized or generic title and text that you would like to send to the users. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5f9780b-Message_with_Icon.png",
-        "Message with Icon.png",
-        246
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="Message with Icon.png" alt={246} align="center" className="border" border={true} src="https://files.readme.io/5f9780b-Message_with_Icon.png" />
