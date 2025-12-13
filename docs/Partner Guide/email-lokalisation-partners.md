@@ -14,5 +14,5 @@ CleverTap’s Localization Partners enable you to easily localize your content f
 
 Here are CleverTap's Localization Partners, enabling you to translate and optimize your content for a global audience effortlessly:
 
-- [Crowdin](https://docs.clevertap.com/docs/crowdin)
-- [Lokalise ](https://docs.clevertap.com/docs/lokalise)
+* [Crowdin](https://docs.clevertap.com/docs/crowdin)
+* [Lokalise ](https://docs.clevertap.com/docs/lokalise)
