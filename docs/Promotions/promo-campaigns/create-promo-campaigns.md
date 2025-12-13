@@ -134,7 +134,7 @@ When you select Live Behavior Segment, the _When_ section shows the following op
 
 Once you define all the above sections, click **Publish Campaign** to activate or schedule the campaign.
 
-![](https://files.readme.io/208d31fed015df3703b4e35c6741ded52ecf1b99c62bfef9f5c085323a193ad1-image.png)  Publish Campaign
+  Publish Campaign
 
 # Reward Types
 
