@@ -32,23 +32,7 @@ The SDK will fetch the newest ten messages only. Even though you have launched t
 
 Yes, special Unicode-encoded characters are supported.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/47b359e-Special_characters.png",
-        "Special characters.png",
-        634
-      ],
-      "align": "center",
-      "sizing": "smart",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image title="Special characters.png" alt={634} align="center" className="border" width="smart" border={true} src="https://files.readme.io/47b359e-Special_characters.png" />
 
 ### How can I view the notification count for a custom App Inbox?
 
