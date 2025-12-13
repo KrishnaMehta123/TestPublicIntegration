@@ -22,57 +22,29 @@ Engaging with users based on prediction results involves identifying and targeti
 
 ## From Predictions
 
-To create an engagement from the _Predictions_ page:
+To create an engagement from the *Predictions* page:
 
-1. Navigate to the _Predictions_ page on the CleverTap dashboard.
+1. Navigate to the *Predictions* page on the CleverTap dashboard.
 2. Select the prediction you want to use for engagement.
-3. Click **Engage** and select user segments categorized into _High_, _Medium_, and _Low_ likelihood groups.
-4. Click **Proceed**. The _Create engagement_ popup opens.
+3. Click **Engage** and select user segments categorized into *High*, *Medium*, and *Low* likelihood groups.
+4. Click **Proceed**. The *Create engagement* popup opens.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7aed5f3ed212abad718d70ae4cf23755553dc2706cc8b21aa17baa2a635bd72f-2024-12-12_15-20-04_1.gif",
-        null,
-        "Engage with Predictions Using an App Inbox Campaign"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Engage with Predictions Using an App Inbox Campaign"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Engage with Predictions Using an App Inbox Campaign" align="center" border={true} src="https://files.readme.io/7aed5f3ed212abad718d70ae4cf23755553dc2706cc8b21aa17baa2a635bd72f-2024-12-12_15-20-04_1.gif">
+  Engage with Predictions Using an App Inbox Campaign
+</Image>
 
 5. Select an appropriate channel from the available channel for reaching your target audience.
-6. Design the _Campaign_ or Journey with relevant, personalized messages and publish it.
+6. Design the *Campaign* or Journey with relevant, personalized messages and publish it.
 
 Once published, monitor your engagement's performance through the CleverTap dashboard. Track key metrics like open rates, conversion rates, and user engagement to evaluate their effectiveness.
 
 ## From Campaigns
 
-You can directly engage with your different likelihood groups from the _Campaigns_ page. To do this, follow the standard campaign creation process. In the _Who_ section, when defining your target audience, use the _User property_ section to filter users. For instance, if you want to target users within the _Predict Conversions_ prediction who have a _Low_ likelihood, you can do so by applying the filters shown in the following figure:
+You can directly engage with your different likelihood groups from the *Campaigns* page. To do this, follow the standard campaign creation process. In the *Who* section, when defining your target audience, use the *User property* section to filter users. For instance, if you want to target users within the *Predict Conversions* prediction who have a *Low* likelihood, you can do so by applying the filters shown in the following figure:
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/4d1cd8dbc58939bc84aaa4645eb7ed8d47ab0bd6379b149e17bc69968d675d49-image.png",
-        null,
-        "Engage with Target Audience from Campaigns Page"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Engage with Target Audience from Campaigns Page"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Engage with Target Audience from Campaigns Page" align="center" border={true} src="https://files.readme.io/4d1cd8dbc58939bc84aaa4645eb7ed8d47ab0bd6379b149e17bc69968d675d49-image.png">
+  Engage with Target Audience from Campaigns Page
+</Image>
 
 # Best Practices
 
@@ -80,18 +52,18 @@ To maximize the impact of your campaigns, consider the following strategies when
 
 ## High Likelihood Users
 
-- **Strategy**: Focus your marketing efforts on this group because these users have a High Likelihood of performing the goal event. Drive conversions with these users using personalized offers and timely reminders.
-- **Action**: Send targeted promotions, limited-time discounts, or exclusive offers to encourage immediate action.
+* **Strategy**: Focus your marketing efforts on this group because these users have a High Likelihood of performing the goal event. Drive conversions with these users using personalized offers and timely reminders.
+* **Action**: Send targeted promotions, limited-time discounts, or exclusive offers to encourage immediate action.
 
 ## Medium Likelihood Users
 
-- **Strategy**: These users have a Medium Likelihood of performing the goal event. Use additional incentives or reminders to increase their likelihood of performing the goal event.
-- **Action**: Implement follow-up campaigns, retargeting ads, or educational content to keep these users engaged.
+* **Strategy**: These users have a Medium Likelihood of performing the goal event. Use additional incentives or reminders to increase their likelihood of performing the goal event.
+* **Action**: Implement follow-up campaigns, retargeting ads, or educational content to keep these users engaged.
 
 ## Low Likelihood Users
 
-- **Strategy**: These users have a Low Likelihood of performing the goal event without intervention. Re-engagement strategies may be necessary to capture their attention.
-- **Action**: Consider using special incentives, such as loyalty rewards or personalized content, to re-engage these users.
+* **Strategy**: These users have a Low Likelihood of performing the goal event without intervention. Re-engagement strategies may be necessary to capture their attention.
+* **Action**: Consider using special incentives, such as loyalty rewards or personalized content, to re-engage these users.
 
 # FAQs
 
