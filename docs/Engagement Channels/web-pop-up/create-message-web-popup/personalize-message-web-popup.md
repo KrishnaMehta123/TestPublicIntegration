@@ -22,46 +22,17 @@ To invoke the personalization menu, type the @ symbol in the title or the text f
 
 You can also add dynamic replacements in the Web Popup title and body. Notice a preview of the available Web Popup notification as displayed below.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e810241-Web_Popup_Personalizatiom.png",
-        "Web Popup Personalizatiom.png",
-        2374
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Inline Personalization"
-    }
-  ]
-}
-[/block]
-
-
+<Image title="Web Popup Personalizatiom.png" alt={2374} align="center" border={true} src="https://files.readme.io/e810241-Web_Popup_Personalizatiom.png">
+  Inline Personalization
+</Image>
 
 In addition to the title, and the message body, you can also personalize media URLs, deep links, or button URLs. An **@** icon in a box indicates that it can be personalized.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5b5b5b1-Web_Popup_Image_Personalization.png",
-        "Web Popup Image Personalization.png",
-        1534
-      ],
-      "align": "center",
-      "caption": "Personalize Media"
-    }
-  ]
-}
-[/block]
-
-
+<Image title="Web Popup Image Personalization.png" alt={1534} align="center" src="https://files.readme.io/5b5b5b1-Web_Popup_Image_Personalization.png">
+  Personalize Media
+</Image>
 
 # Recommendations
 
-Click the ![Personalization](https://files.readme.io/b852e7f-Personalization_setting.png) icon in the editor to open personalization options.  
+Click the ![Personalization](https://files.readme.io/b852e7f-Personalization_setting.png) icon in the editor to open personalization options.\
 After you have uploaded a catalog, you can display personalized recommendations to your customers. Imagine having a rolling carousel displayed to your customers based on their personal likes!  For more information on recommendations, see [Recommendations](doc:recommendations).
