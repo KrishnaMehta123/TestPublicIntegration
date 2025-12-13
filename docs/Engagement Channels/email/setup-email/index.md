@@ -35,10 +35,9 @@ Once you have integrated an email service provider with CleverTap, you can set u
 To add a provider, perform the following steps:
 
 1. From the dashboard, navigate to _Settings_ > _Engage_ > _Channels_ > _Email_.
-2. Click **+ Provider** to add a provider.
+2. Click **+ Provider** to add a provider.  
 
-  Add Provider
-
+   <Image align="center" border={true} caption="Add Provider" src="https://files.readme.io/9206de0-Plus_provider.png" />
 3. Add the following provider details:
 
 <Table align={["left","left"]}>
