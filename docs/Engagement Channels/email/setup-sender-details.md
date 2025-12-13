@@ -3,12 +3,12 @@ title: Setup
 excerpt: Understand how to set up Email as a channel for your marketing campaigns.
 deprecated: false
 hidden: true
+link:
+  new_tab: false
 metadata:
   title: ''
   description: ''
   robots: index
-next:
-  description: ''
 ---
 # Overview
 
@@ -98,7 +98,7 @@ To add a provider, perform the following steps:
       </td>
 
       <td>
-        <li> This is a mandatory field. </li> <li> This is the address of the email server. In this case, it is the domain name (e.g., [http://smtp.sendgrid.com](http://smtp.sendgrid.com)) that directs to the server responsible for sending emails.
+        <li> This is a mandatory field. </li> <li> This is the address of the email server. In this case, it is the domain name (e.g., [http://smtp.sendgrid.com](http://smtp.sendgrid.com)) that directs to the server responsible for sending emails. </li>
       </td>
     </tr>
 
@@ -260,29 +260,9 @@ a. Navigate to *Settings* > *Channel* > *Email* > *Advanced Setup* on the dashbo
 
 <Image title="Click the Dropdown to Add AppsFlyer OneLink" alt="Advance Setup" align="center" border={true} src="https://files.readme.io/64cb245-Click_the_Dropdown_to_Add_AppsFlyer_OneLink.png" />  Advance Setup
 
-
-
-
-
-
-
-
-
-
-
   b. Enter your AppsFlyer OneLink domain or sub-domain and click **Add**.
 
 <Image title="Click Add to Add the OneLink" alt="Add AppsFlyer OneLink" align="center" border={true} src="https://files.readme.io/d6aba01-Click_Add_to_Add_the_OneLink.png" />  Add AppsFlyer OneLink
-
-
-
-
-
-
-
-
-
-
 
 > 🚧 Adding a Domain
 >
@@ -292,104 +272,15 @@ a. Navigate to *Settings* > *Channel* > *Email* > *Advanced Setup* on the dashbo
 
 <Image title="Click Save to Save the Added OneLink" alt="Save AppsFlyer OneLink" align="center" border={true} src="https://files.readme.io/ced9b07-Click_Save_to_Save_the_Added_OneLink.png" />  Save AppsFlyer OneLink
 
-
-
-
-
-
-
-
-
-
-
   The message *AppsFlyer domain deeplink successfully saved* displays at the top.
 
 <Image title="AppsFlyer OneLink Saved Successfully" alt="AppsFlyer Domain Deeplink Success" align="center" border={true} src="https://files.readme.io/cb41781-AppsFlyer_OneLink_Saved_Successfully.png" />  AppsFlyer Domain Deeplink Success
-
-
-
-
-
-
-
-
-
-
 
 ### Disable Tracking via AppsFlyer OneLink
 
 If you want to avoid click tracking via AppsFlyer OneLink, add the following tag for all the required links in your email:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+`data-ct-track="false"`
 
 AppsFlyer OneLink does not apply to links with this tag.
 
@@ -418,29 +309,9 @@ The following are the steps to add a custom font:
 
 <Image alt="Font Manager" align="center" border={true} src="https://files.readme.io/73b41e4-image.png" /> Font Manager
 
-
-
-
-
-
-
-
-
-
-
 2. Click **+ Custom Font**. The *Add Font* popup opens.
 
 <Image alt="Add Custom Font" align="center" width="50% " border={true} src="https://files.readme.io/08ba774-Add_Font_Popup.png" /> Add Custom Font
-
-
-
-
-
-
-
-
-
-
 
 3. Enter the following details:
 <Table align={["left","left"]}>
@@ -520,445 +391,35 @@ The following are the steps to add a custom font:
 
 ### Sample CSS code:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+```css
+@font-face {
+  font-family: 'Charis SIL';
+  src: url('https://files.readme.io/4a21a4b-CharisSIL-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Charis SIL';
+  src: url('https://files.readme.io/1aa9ad5-CharisSIL-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Charis SIL';
+  src: url('https://files.readme.io/5c11c12-CharisSIL-Italic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Charis SIL';
+  src: url('https://files.readme.io/9da06d0-CharisSIL-BoldItalic.woff2') format('woff2');
+  font-weight: bold;
+  font-style: italic;
+}
+```
 
 ### Set Up Default Font
 
@@ -967,16 +428,6 @@ You can also set up the system and custom fonts as the default font for your ema
 The default font cannot be deleted. If you still want to delete it, change the default font and then delete the required font.
 
 <Image alt="Set Up Custom Font as Default Font" align="center" border={true} src="https://files.readme.io/0152270-Set_Up_Custom_Font_as_Default_font_.png" />  Set Up a Default Font
-
-
-
-
-
-
-
-
-
-
 
 ### Delete Custom Font
 
@@ -989,16 +440,6 @@ You can delete one or multiple custom fonts to manage your custom font library. 
 
 <Image alt="Delete Custom Font" align="center" border={true} src="https://files.readme.io/82551f4-Delete_Custom_Font.gif" />  Delete Custom Font
 
-
-
-
-
-
-
-
-
-
-
 ### Edit Custom Font
 
 You can edit your custom font and update the font details.
@@ -1008,16 +449,6 @@ You can edit your custom font and update the font details.
 3. You can update the required fields related to the custom font and click *Save* to save the changes. 
 
 <Image alt="Edit Custom Fonts" align="center" border={true} src="https://files.readme.io/328e95b-Edit_Custom_Font.gif" />  Edit Custom Fonts
-
-
-
-
-
-
-
-
-
-
 
 The updated custom font is now available for both the *Drag & Drop* and \_Rich Media editors. When making changes to the custom font, an email alert is sent to the user updating the custom font and also to the account admin.
 
