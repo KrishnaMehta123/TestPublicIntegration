@@ -1,8 +1,92 @@
 ---
 name: Clickable Tiles for What's New
 ---
-[block:html]
-{
-  "html": "<style>\n    .card-container {\n        display: flex;\n        gap: 20px;\n    }\n\n    .card {\n        display: flex;\n        align-items: center;\n        gap: 15px;\n        border: 1px solid #B2B7B9;\n        border-radius: 10px;\n        padding: 20px 25px;\n        background-color: #fff;\n        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n        width: 300px;\n        transition: box-shadow 0.3s ease;\n        text-decoration: none;\n        color: inherit;\n    }\n\n    .card:hover {\n        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);\n        cursor: pointer;\n    }\n\n    .card-icon {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        width: 50px;\n        height: 50px;\n    }\n\n    .card-icon img {\n        width: 100%;\n        height: 100%;\n    }\n\n    .divider {\n        border-left: 1px solid #B2B7B9;\n        height: 40px;\n    }\n\n    .card-content {\n        display: flex;\n        flex-direction: column;\n        gap: 4px;\n    }\n\n    .card-title {\n        font-size: 15px;\n        font-weight: bold;\n        color: #222;\n    }\n\n    .card-description {\n        font-size: 14px;\n        color: #B2B7B9;\n    }\n</style>\n</head>\n<body>\n    <div class=\"card-container\">\n        <a href=\"https://docs.clevertap.com/docs/events-changelog\" class=\"card\" target=\"_blank\">\n            <div class=\"card-icon\">\n                <img src=\"https://files.readme.io/b2a942b44fb9852a74dd10f4d503100a127e6853ad209936d52bfb6e3ea61bd8-Schema.svg\" alt=\"Changelog Icon\">\n            </div>\n            <div class=\"divider\"></div>\n            <div class=\"card-content\">\n                <div class=\"card-title\">Events Changelog</div>\n                <div class=\"card-description\">System Event Additions & Updates</div>\n            </div>\n        </a>\n\n        <a href=\"https://developer.clevertap.com/docs/changelog\" class=\"card\" target=\"_blank\">\n            <div class=\"card-icon\">\n                <img src=\"https://files.readme.io/4d7a89d59bce8d11fe6851082a3db311e3f627e572530136edfa89ebb4d334d9-fi_16627473.svg\" alt=\"SDK Changelog Icon\">\n            </div>\n            <div class=\"divider\"></div>\n            <div class=\"card-content\">\n                <div class=\"card-title\">SDK Changelog</div>\n                <div class=\"card-description\">Platform SDK Changelog</div>\n            </div>\n        </a>\n    </div>\n</body>"
-}
-[/block]
+<HTMLBlock>{`
+<style>
+    .card-container {
+        display: flex;
+        gap: 20px;
+    }
+
+    .card {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        border: 1px solid #B2B7B9;
+        border-radius: 10px;
+        padding: 20px 25px;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        transition: box-shadow 0.3s ease;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .card:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+    }
+
+    .card-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+    }
+
+    .card-icon img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .divider {
+        border-left: 1px solid #B2B7B9;
+        height: 40px;
+    }
+
+    .card-content {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .card-title {
+        font-size: 15px;
+        font-weight: bold;
+        color: #222;
+    }
+
+    .card-description {
+        font-size: 14px;
+        color: #B2B7B9;
+    }
+</style>
+</head>
+<body>
+    <div class="card-container">
+        <a href="https://docs.clevertap.com/docs/events-changelog" class="card" target="_blank">
+            <div class="card-icon">
+                <img src="https://files.readme.io/b2a942b44fb9852a74dd10f4d503100a127e6853ad209936d52bfb6e3ea61bd8-Schema.svg" alt="Changelog Icon">
+            </div>
+            <div class="divider"></div>
+            <div class="card-content">
+                <div class="card-title">Events Changelog</div>
+                <div class="card-description">System Event Additions & Updates</div>
+            </div>
+        </a>
+
+        <a href="https://developer.clevertap.com/docs/changelog" class="card" target="_blank">
+            <div class="card-icon">
+                <img src="https://files.readme.io/4d7a89d59bce8d11fe6851082a3db311e3f627e572530136edfa89ebb4d334d9-fi_16627473.svg" alt="SDK Changelog Icon">
+            </div>
+            <div class="divider"></div>
+            <div class="card-content">
+                <div class="card-title">SDK Changelog</div>
+                <div class="card-description">Platform SDK Changelog</div>
+            </div>
+        </a>
+    </div>
+</body>
+`}</HTMLBlock>
