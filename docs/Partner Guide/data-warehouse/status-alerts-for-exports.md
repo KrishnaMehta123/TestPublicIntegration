@@ -17,7 +17,7 @@ CleverTap allows you to export data to third-party partners, such as Amazon Web 
 This feature allows you to monitor the status of your data exports via Webhook on your preferred systems. It provides alerts when an export is initiated or completed successfully. Status tracking allows for keeping track of your recurring exports and taking necessary decisions whenever required.
 
 > 📘 Supported Partners for Export Status
-> 
+>
 > Currently, we provide events export status for Amazon S3 and Google Cloud Platform (GCP) partners only.
 
 This document further explains the prerequisites, how to enable and disable export status alerts, and track and monitor them.
@@ -26,16 +26,16 @@ This document further explains the prerequisites, how to enable and disable expo
 
 Ensure you integrate with the preferred technology partners: 
 
-- [Amazon S3](https://docs.clevertap.com/docs/aws-s3-export)
-- [Google Cloud Platform (GCP)](https://docs.clevertap.com/docs/data-export-to-gcp)
-- [Microsoft Azure](doc:microsoft-azure)
+* [Amazon S3](https://docs.clevertap.com/docs/aws-s3-export)
+* [Google Cloud Platform (GCP)](https://docs.clevertap.com/docs/data-export-to-gcp)
+* [Microsoft Azure](doc:microsoft-azure)
 
 # Setup
 
 This procedure involves the following major steps:
 
 1. [Set up a Webhook](https://docs.clevertap.com/docs/setup-webhooks)
-2. [Enable Status Alerts for Exports on CleverTap Dashboard](doc:status-alerts-for-exports#enable-status-alerts-for-exports)  
+2. [Enable Status Alerts for Exports on CleverTap Dashboard](doc:status-alerts-for-exports#enable-status-alerts-for-exports)\
    OR
 3. [Add or Modify the Webhook](doc:status-alerts-for-exports#add-or-modify-the-webhook)
 
@@ -43,51 +43,21 @@ This procedure involves the following major steps:
 
 To enable status alerts for exports:
 
-1. On the CleverTap dashboard, go to _Settings_ > _Partners_ > _Exports center_. 
+1. On the CleverTap dashboard, go to *Settings* > *Partners* > *Exports center*. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/fa86e8d47bcd6a79e7e231bf6fd4833202cc60b759573e456f07a8aa63ba557b-image.png",
-        null,
-        "Exports center"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Exports center"
-    }
-  ]
-}
-[/block]
+<Image alt="Exports center" align="center" border={true} src="https://files.readme.io/fa86e8d47bcd6a79e7e231bf6fd4833202cc60b759573e456f07a8aa63ba557b-image.png">
+  Exports center
+</Image>
 
+2. Click the **Manage Status Alerts** button in the top right corner. The **Manage Status Alerts** window appears.
 
-2. Click the **Manage Status Alerts** button in the top right corner. The **Manage Status Alerts ** window appears.
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8037095-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "90% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="90% " border={true} src="https://files.readme.io/8037095-image.png" />
 
 2. Toggle on the **Enable the status to get notified about exports** switch to enable the status alerts. 
 3. Click **Save**.
 
 > 📘 Note
-> 
+>
 > Once enabled, the export status tracking is applied to both existing and new export creations.
 
 ## Disable Status Alerts for Exports
@@ -101,17 +71,17 @@ To disable status alerts for exports:
 
 If required, edit the Webhook as follows: 
 
-1. On the **Exports** page, Click the **Manage Status Alerts** button in the top right corner. The **Manage Status Alerts ** window appears.
-2. On the **Enable export status alerts **pane, you can either create a new URL or use the existing one. 
+1. On the **Exports** page, Click the **Manage Status Alerts** button in the top right corner. The **Manage Status Alerts** window appears.
+2. On the **Enable export status alerts** pane, you can either create a new URL or use the existing one. 
 
-- To use an existing Webhook URL, select one of the preferred Webhook URLs from the **Webhook name** drop-down list. 
-- If required, to create a new Webhook URL, click the **Add webhook** link.  
+* To use an existing Webhook URL, select one of the preferred Webhook URLs from the **Webhook name** drop-down list. 
+* If required, to create a new Webhook URL, click the **Add webhook** link.\
   For more information about creating Webhook URLs, refer to the [Webhooks](https://docs.clevertap.com/docs/setup-webhooks) documentation. Once you create a new Webhook, click the **Refresh** icon for the new Webhook to appear here.
 
 3. Click **Save**. 
 
 > 📘 Note
-> 
+>
 > We only support a POST Webhook.
 
 ## Sample Payload for Export Status
@@ -131,29 +101,80 @@ The JSON payload configured on the Webhook URL will be pushed to the user once t
 
 The JSON payload contains the following parameters: 
 
-[block:parameters]
-{
-  "data": {
-    "h-0": "Parameters",
-    "h-1": "Description",
-    "0-0": "`Export Request Id`",
-    "0-1": "Unique identifier of the export request. For example, 1690283492.",
-    "1-0": "`Partner`",
-    "1-1": "Name of the export partner. An example is Google Cloud Platform (GCP).",
-    "2-0": "`Type`",
-    "2-1": "Type of export. For example, events.",
-    "3-0": "`Status`",
-    "3-1": "Status of the export process. For example, Initiated or Completed.  \n  \n<li>**One-time**: a one-time export is initiated and completed just once.</li><li>**Recurring**: a recurring export is initiated and completed repeatedly at set intervals or schedules.</li>",
-    "4-0": "`Frequency`",
-    "4-1": "Interval at which the export operation occurs. For example, these intervals can be every 4, 8, 12, or 24 hours.",
-    "5-0": "`Date and Time`",
-    "5-1": "Date and time when the export operation is initiated or completed."
-  },
-  "cols": 2,
-  "rows": 6,
-  "align": [
-    "left",
-    "left"
-  ]
-}
-[/block]
+<Table align={["left","left"]}>
+  <thead>
+    <tr>
+      <th>
+        Parameters
+      </th>
+
+      <th>
+        Description
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        `Export Request Id`
+      </td>
+
+      <td>
+        Unique identifier of the export request. For example, 1690283492.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        `Partner`
+      </td>
+
+      <td>
+        Name of the export partner. An example is Google Cloud Platform (GCP).
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        `Type`
+      </td>
+
+      <td>
+        Type of export. For example, events.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        `Status`
+      </td>
+
+      <td>
+        Status of the export process. For example, Initiated or Completed.  
+
+        <li>**One-time**: a one-time export is initiated and completed just once.</li><li>**Recurring**: a recurring export is initiated and completed repeatedly at set intervals or schedules.</li>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        `Frequency`
+      </td>
+
+      <td>
+        Interval at which the export operation occurs. For example, these intervals can be every 4, 8, 12, or 24 hours.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        `Date and Time`
+      </td>
+
+      <td>
+        Date and time when the export operation is initiated or completed.
+      </td>
+    </tr>
+  </tbody>
+</Table>
