@@ -242,9 +242,8 @@ To ensure that the integration is successful, send a test SMS as follows:
    * *Country Code* and *Mobile Number*: Enter the country code and mobile number you want to send the message to.
    * *Message*: This is a test message.
 
-   <Image alt="Send a Test SMS" align="center" width="75%" border={true} src="https://files.readme.io/8543b05-Send_a_Test_SMS_.png" />
-     Send a Test SMS
-   </Image>
+   <Image alt="Send a Test SMS" align="center" width="75%" border={true} src="https://files.readme.io/8543b05-Send_a_Test_SMS_.png" caption="Send a Test SMS" />
+
 3. Click **Send Test** to send the test campaign.
 
 # Times Mobile Callbacks
