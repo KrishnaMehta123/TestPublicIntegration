@@ -251,7 +251,9 @@ CleverTap automatically wraps all links in the email body to track clicks. When 
 
 The other option is to leverage the AppsFlyer OneLink with branded links. Doing so can provide your app users with the greatest experience possible as it directs them to a specific landing page, the app store, or in-app content. All this while, CleverTap tracks the click and assists in boosting conversion rates.
 
-![](https://files.readme.io/c7cedb7-CT_AF_Integration.png "CleverTap + AppsFlyer Integration New Scenario")  AppsFlyer OneLink Integration
+<br />
+
+<Image align="center" border={true} caption="AppsFlyer OneLink Integration" src="https://files.readme.io/c7cedb7-CT_AF_Integration.png" />
 
 ### Set Up AppsFlyer OneLink(s)
 
