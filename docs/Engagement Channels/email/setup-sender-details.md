@@ -455,7 +455,7 @@ You can delete one or multiple custom fonts to manage your custom font library. 
 3. Select _Delete_ to successfully delete the custom font(s). A confirmation message is displayed.  
    Upon deleting the custom font, it is unavailable for use in both the _Drag & Drop_ and Rich Media_ editors.
 
-  Delete Custom Font
+<Image align="center" border={true} caption="Delete Custom Font" src="https://files.readme.io/82551f4-Delete_Custom_Font.gif" />
 
 ### Edit Custom Font
 
@@ -465,10 +465,12 @@ You can edit your custom font and update the font details.
 2. Click the ![](https://files.readme.io/3eec8d1-Ellipses_icon.png) icon and select _Edit_. The _Edit Font_ popup opens.
 3. You can update the required fields related to the custom font and click _Save_ to save the changes.
 
-![](https://files.readme.io/328e95b-Edit_Custom_Font.gif)  Edit Custom Fonts
+  Edit Custom Fonts
 
 The updated custom font is now available for both the _Drag & Drop_ and _Rich Media editors. When making changes to the custom font, an email alert is sent to the user updating the custom font and also to the account admin.
 
-> 🚧 Delete or Edit Custom Font
->
-> Editing or deleting custom fonts does not impact running, scheduled, and draft engagements. The modifications take effect for the campaigns created subsequent to your changes.
+<Callout icon="🚧" theme="warn">
+  **Delete or Edit Custom Font**
+
+  Editing or deleting custom fonts does not impact running, scheduled, and draft engagements. The modifications take effect for the campaigns created subsequent to your changes.
+</Callout>
