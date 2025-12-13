@@ -22,13 +22,13 @@ This section covers FAQs related to the SMS messaging channel.
 
 A. The [Subscribe API](https://developer.clevertap.com/docs/subscribe-api) allows you to subscribe or unsubscribe to a phone number. This is important so that you do not accidentally send an SMS to a phone number unless they have explicitly opted for it. 
 
-## What is a _Profile not reachable_ error?
+## What is a *Profile not reachable* error?
 
-A. The _Profile not reachable_ error occurs when the qualified device is not reachable via the selected communication channel.
+A. The *Profile not reachable* error occurs when the qualified device is not reachable via the selected communication channel.
 
 In the case of SMS, this error occurs if the profile does not have a phone number or the user has unsubscribed from SMS communication.
 
-## What is a _Duplicate Profile for the channel_ error?
+## What is a *Duplicate Profile for the channel* error?
 
 A. This error indicates two different profiles have the same credentials, such as a phone number, a push token, and an email (based on the communication channel). The engagement is sent to the first profile, and this error is sent to the second profile.
 
@@ -48,21 +48,21 @@ An SMS error is a common campaign error that occurs while scheduling the SMS cam
 
 The SMS error shows the following message: 
 
-_Error java.net.SocketTimeoutException: Read timed out for message_. It is referred to as the _SocketTimeoutException_ error.
+*Error java.net.SocketTimeoutException: Read timed out for message*. It is referred to as the *SocketTimeoutException* error.
 
-This SMS error occurs when CleverTap sends the SMS payload to the SMS provider’s endpoint, but there is no acknowledgment within 15 seconds. The SMS error appears under the _Technical Errors_ category. You can view the errors within the campaign reports under the _Error_ section. 
+This SMS error occurs when CleverTap sends the SMS payload to the SMS provider’s endpoint, but there is no acknowledgment within 15 seconds. The SMS error appears under the *Technical Errors* category. You can view the errors within the campaign reports under the *Error* section. 
 
 > 📘 Note
-> 
+>
 > The issue generally means a socket timeout exception. Sometimes, it can also mean a connection request exception.
 
 For other integrated vendors, we have the following equivalent errors: 
 
-- Exotel server error
-- Twilio server error
-- Gupshup server error
-- Netcore service error
-- Nexmo SMS error
+* Exotel server error
+* Twilio server error
+* Gupshup server error
+* Netcore service error
+* Nexmo SMS error
 
 ## What are the timeouts and retry limits for SMS?
 
