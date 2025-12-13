@@ -511,7 +511,7 @@ The following configuration options are available when Partner Vouchers is selec
 | **Max codes per user**     | Defines how many times the voucher can be rewarded to the same user. This does not control redemption. If a user-level redemption limit is 2 and the same voucher is rewarded twice, user can redeem 4 times total. | Selecting _Limit = 1_ means each user can only be rewarded the voucher once.                            | Live Behavior Segments only                        |
 | **Max codes per campaign** | Defines the total number of voucher codes that the campaign can distribute.                                                                                                                                         | Selecting _Limit = 1000_ means the campaign stops distributing vouchers after 1000 vouchers are issued. | Live Behavior Segments                             |
 
-![](https://files.readme.io/5ede864217cd7dc80e936bad3e1ea62efb4de25939eca23a041f1d8f2aa1126e-image.png)  Set Up Partner Vouchers in Rewards
+  Set Up Partner Vouchers in Rewards
 
 > 📘 Note
 >
