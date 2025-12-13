@@ -67,21 +67,18 @@ To push transactional data (like orders) to LoyaltyLion:
 
 ```json
 {
-  "merchant_id": "{{Profile.merchant_id}}",
-  "customer_id": "{{Profile.customer_id}}",
-  "customer_email": "{{Profile.email}}",
-  "guest": false,
-  "number": "{{Event.order_number}}",
-  "currency_code": "{{Event.currency}}",
-  "total": "{{Event.total_amount}}",
-  "total_shipping": "{{Event.shipping_cost}}",
-  "total_discounts": "{{Event.discount_amount}}",
-  "items": [
+  "merchant_id": "1212",
+  "merchant_number": "12",
+  "customer_id": {{ Profile.Identity | default: "0" }},
+  "customer_email": "{{ Profile.Email | default: "test@gmail.com" }}",
+  "total": "{{ Profile.Total | default: "0" }}",
+  "total_shipping": "{{ Profile.Total_Shipping | default: "0" }}",
+  "payment_status": "{{ Profile.Payment_Status | default: "Fail" }}",
+  "date": "{{ Profile.order_date | default: "0" }}",
+  "discount_codes": [
     {
-      "sku": "{{Event.sku}}",
-      "name": "{{Event.product_name}}",
-      "price": "{{Event.price}}",
-      "quantity": "{{Event.quantity}}"
+      "code": "{{ Profile.code-used | default: "0" }}",
+      "amount": "{{ Profile.amount | default: "0" }}"
     }
   ]
 }
