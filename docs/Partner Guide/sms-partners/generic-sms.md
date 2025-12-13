@@ -221,20 +221,15 @@ The following is a sample request payload structure with batching:
 
 ```json
 {
-  "msgs": [
-    {
-      "seq": 1,
-      "to": "9999999999",
-      "uid": "9999999999.1200000000.1654002362.20220531.0.wzrk_default.-1.",
-      "variables": ["John", "Doe"],
-      "enc": "unicode"
-    }
-  ],
-  "hid": "SM-CLTPSY",
-  "tid": "1107160016156755389",
-  "cid": "1652335518",
-  "type": 1
-}
+	"tid": "$$TemplateID",
+	"msgs": [{
+		"seq": 1,
+		"to": "$$To",
+    "mid": "$$MessageID",
+		"uid": "$$uid",
+		"body": "$$Body",
+		"enc": "utf8"
+	}]
 ```
 
 > 📘 Batch Size Limit
