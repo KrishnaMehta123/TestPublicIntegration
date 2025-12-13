@@ -16,11 +16,51 @@ next:
 
 You may encounter issues with voucher lists. In case you do, the following are some common problems and their solutions:
 
-| Issue                           | Resolution                                                                                                                                                                                                                                     |
-| :------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Unable to Activate Voucher List | Check if the expiration date is in the future. You cannot reactivate an expired voucher list without extending its validity.                                                                                                                   |
-| Error Uploading Codes           | <li>Ensure the file format is .CSV.</li> <li>Verify that all voucher codes are correctly formatted and do not contain invalid characters.</li>  <li>The file should contain only one column with voucher codes—no comma-separated values.</li> |
-| Missing Campaign Linkage        | If a voucher list is not linked to a campaign, review the campaign settings to ensure proper mapping.                                                                                                                                          |
+<Table align={["left","left"]}>
+  <thead>
+    <tr>
+      <th>
+        Issue
+      </th>
+
+      <th>
+        Resolution
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        Unable to Activate Voucher List
+      </td>
+
+      <td>
+        Check if the expiration date is in the future. You cannot reactivate an expired voucher list without extending its validity.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Error Uploading Codes
+      </td>
+
+      <td>
+        <li>Ensure the file format is .CSV.</li> <li>Verify that all voucher codes are correctly formatted and do not contain invalid characters.</li>  <li>The file should contain only one column with voucher codes—no comma-separated values.</li>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Missing Campaign Linkage
+      </td>
+
+      <td>
+        If a voucher list is not linked to a campaign, review the campaign settings to ensure proper mapping.
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 # FAQs
 
@@ -40,7 +80,7 @@ No, expired voucher lists cannot be used in campaigns. However, you can extend t
 
 ### Where can I see the number of issued voucher codes?
 
-Check the _Codes Issued_ column for real-time data on distributed voucher codes.
+Check the *Codes Issued* column for real-time data on distributed voucher codes.
 
 ### Can I delete a voucher list linked to an active campaign?
 
