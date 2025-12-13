@@ -12,7 +12,7 @@ next:
 ---
 # Overview
 
-Schema is a framework to maintain your data, organize, and structure it. It enforces rules to maintain data integrity, allowing you to avoid data quality issues later. Schema standardizes your data before you even begin using it. Since bad data leads to a high cost in effort and money, you can save a lot of manual effort on tracking your data in the long run.
+A Schema is a framework for maintaining, organizing, and structuring your data. It enforces rules to maintain data integrity, allowing you to avoid data quality issues later. Schema standardizes your data before you even begin using it. Since bad data incurs high costs in terms of effort and money, you can save a significant amount of manual effort in tracking your data over time.
 
 To preserve data sanity, the schema table stores event and user properties in a pre-defined order. It ensures better output because it enforces standardization of the incoming data and avoids duplication or corruption of data. Better input leads to a better outcome in your campaigns and journeys. It also provides more accurate insights into your data analytics.
 
@@ -387,630 +387,623 @@ To configure the tracking of system events:
 Currently, you can enable or disable tracking for the following events from the CleverTap dashboard:
 
 <Accordion title="Push Impressions">
-
-The Push Impression event is tracked when a push notification sent from CleverTap is delivered to a user’s device. After the toggle for Push Impressions is turned on, the CleverTap SDK starts recording an event whenever a push notification sent via CleverTap is delivered to the user’s device.
-
-The _Push Impression_ event has its own event properties and the users can configure these non-required event properties to optimize the cost.
-
-To do so:
-
-1. Navigate to _Settings_ > _Schema_ > _Events_ from the CleverTap dashboard.
-2. Select the _Push Impressions_ event from the _System events_ tab.
-3. Click the ![](https://files.readme.io/fb90f6a-Ellipsis.png) icon and select _Setup push impressions_ from the list.
-4. Turn ON the **Mobile Push** toggle and click **Save**. The _Push impressions tracking enables_ message displays on the screen.
-
-<Image align="center" border={true} caption="Disable Tracking Push Impressions Event" src="https://files.readme.io/94f4dcb-Turn_Off_Push_Impression_Tracking.gif" />
-
-### Disable Event Property Tracking
-
-The users can disable the tracking of some of the _Push Impression_ event properties from the CleverTap dashboard. However, there are a few Push Impression event properties for which you do not have the option to disable the tracking. These are listed as follows:
-
-<Table align={["left","left","left"]}>
-  <thead>
-    <tr>
-      <th>
-        Property
-      </th>
-
-      <th>
-        Property Description
-      </th>
-
-      <th>
-        Configurable
-      </th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr>
-      <td>
-        `wzrk_push_amp`
-      </td>
-
-      <td>
-        Indicates whether push amplification is enabled.
-      </td>
-
-      <td>
-        No
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_pn`
-      </td>
-
-      <td>
-        Indicates whether the push notification is sent from CleverTap.
-      </td>
-
-      <td>
-        No
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `CT Source`
-      </td>
-
-      <td>
-        Specifies the source of the CleverTap campaign.
-      </td>
-
-      <td>
-        No
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_id`
-      </td>
-
-      <td>
-        Specifies the CleverTap campaign ID associated with the notification.
-      </td>
-
-      <td>
-        No
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_pid`
-      </td>
-
-      <td>
-        Specifies the unique ID for the push notification.
-      </td>
-
-      <td>
-        No
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_pivot`
-      </td>
-
-      <td>
-        Indicates the variant used in the A/B test campaign.
-      </td>
-
-      <td>
-        No
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_acct_id`
-      </td>
-
-      <td>
-        Specifies the CleverTap Account ID.
-      </td>
-
-      <td>
-        No
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `CT App Version`
-      </td>
-
-      <td>
-        Indicates the version of the CleverTap App.
-      </td>
-
-      <td>
-        No
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_dt`
-      </td>
-
-      <td>
-        Specifies the delivery type for the notification.
-      </td>
-
-      <td>
-        No
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_acts`
-      </td>
-
-      <td>
-        Refers to the CTA button included in the notification.
-      </td>
-
-      <td>
-        No
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_pn_h`
-      </td>
-
-      <td>
-        Indicates the RenderMax health status of the push notification.
-      </td>
-
-      <td>
-        No
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_pn`
-      </td>
-
-      <td>
-        Indicates that the notification is sent from CleverTap, if present.
-      </td>
-
-      <td>
-        No
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_bp`
-      </td>
-
-      <td>
-        Displays an image in the notification if the URL is present.
-      </td>
-
-      <td>
-        Yes
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_sound`
-      </td>
-
-      <td>
-        Plays the default or custom Android notification sound if present.
-      </td>
-
-      <td>
-        Yes
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `nt`
-      </td>
-
-      <td>
-        Displays the notification title; defaults to app name if absent or empty.
-      </td>
-
-      <td>
-        Yes
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `nm`
-      </td>
-
-      <td>
-        Displays the notification body; ignores the notification if absent or empty.
-      </td>
-
-      <td>
-        Yes
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_dl`
-      </td>
-
-      <td>
-        Opens the specified deeplink when the notification is clicked, if present.
-      </td>
-
-      <td>
-        Yes
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_d`
-      </td>
-
-      <td>
-        Ignores the notification if this key is present.
-      </td>
-
-      <td>
-        No
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `ico`
-      </td>
-
-      <td>
-        Displays the small notification icon from the specified URL if present and not empty.
-      </td>
-
-      <td>
-        Yes
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_pivot`
-      </td>
-
-      <td>
-        Identifies the variant type in A/B testing if present and not empty..
-      </td>
-
-      <td>
-        Yes
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_rnv`
-      </td>
-
-      <td>
-        Raises the Push Impressions event if present and not empty.
-      </td>
-
-      <td>
-        No
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_nms`
-      </td>
-
-      <td>
-        Displays summary text with the image if present and not empty.
-      </td>
-
-      <td>
-        Yes
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_st`
-      </td>
-
-      <td>
-        Displays subtitle text next to the app name if present and not empty.
-      </td>
-
-      <td>
-        Yes
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_clr`
-      </td>
-
-      <td>
-        Applies the hex color to the small icon and app name (on Android versions below Pie) if present and not empty.
-      </td>
-
-      <td>
-        Yes
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_bpds`
-      </td>
-
-      <td>
-        Indicates the image rendering status with the following values:
-
-        <ul><li> NO_IMAGE- No image included</li>
-        <li>SUCCESS- Image downloaded successfully</li>
-        <li> NO_NETWORK- Image included but no network connectivity</li>
-        <li> DOWNLOAD_FAILED- Image download failed due to an external error</li></ul>
-      </td>
-
-      <td>
-        Yes
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_cid`
-      </td>
-
-      <td>
-        Refers to the channel ID used for the push notification.
-      </td>
-
-      <td>
-        Yes
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_mutable_content`
-      </td>
-
-      <td>
-        Enables rendering of rich push notification via extension class if set to true.
-      </td>
-
-      <td>
-        Yes
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_bi`
-      </td>
-
-      <td>
-        Specifies the badge icon to be displayed in the push notification.
-      </td>
-
-      <td>
-        Yes
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_bc`
-      </td>
-
-      <td>
-        Specifies the badge count to be shown on the app icon.
-      </td>
-
-      <td>
-        Yes
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `Campaign Type`
-      </td>
-
-      <td>
-        Indicates the campaign’s channel type (for example, Push, Email, SMS).
-      </td>
-
-      <td>
-        No
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_ttl`
-      </td>
-
-      <td>
-        Specifies the time to live (TTL) for the notification.
-      </td>
-
-      <td>
-        Yes
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_ttl_s`
-      </td>
-
-      <td>
-        Specifies the time to live for the notification in seconds.
-      </td>
-
-      <td>
-        Yes
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_cts`
-      </td>
-
-      <td>
-        Records the timestamp when the notification is clicked.
-      </td>
-
-      <td>
-        No
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_ck`
-      </td>
-
-      <td>
-        Defines the collapse key (typically a timestamp) for the notification.
-      </td>
-
-      <td>
-        Yes
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_collapsible`
-      </td>
-
-      <td>
-        Specifies whether the notification is collapsible.
-      </td>
-
-      <td>
-        Yes
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_category`
-      </td>
-
-      <td>
-        Specifies the notification category for APNS (iOS only).
-      </td>
-
-      <td>
-        Yes
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_interruption_level`
-      </td>
-
-      <td>
-        Sets the interruption level on APNS (iOS only).
-      </td>
-
-      <td>
-        No
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_relevance_score`
-      </td>
-
-      <td>
-        Assigns the relevance score on APNS (iOS only).
-      </td>
-
-      <td>
-        No
-      </td>
-    </tr>
-  </tbody>
-</Table>
-
-To disable the tracking of Push Impression event properties:
-
-1. From the _System events_ tab, click the _Properties_ hyperlink. The Push Impressions properties list opens.  
-
-   <Image align="center" border={true} caption="Push Impressions Properties List" src="https://files.readme.io/1dd0fc5-View_Push_Impressions_Properties.png" />
-2. Select the configurable property, click the ![](https://files.readme.io/fb90f6a-Ellipsis.png) icon, and select _Disable Property_ from the list. The _Enable property tracking_ popup opens.      
-
-   <Image align="center" border={true} caption="Disable Property Tracking" src="https://files.readme.io/479d1ac-Disable_a_Push_Impression_Property.gif" />
-3. Click **Disable** to confirm your action. The _Property tracking successfully disabled_ message displays on the screen. The status of the event property changes to _Active_. Once disabled, if you want to enable the tracking later, you can do so by clicking the ![](https://files.readme.io/fb90f6a-Ellipsis.png) icon and selecting **Enable Property** from the list.
-
-<Callout icon="📘" theme="info">
-  **Key Points to Remember**
-
-  The following are some of the points to consider when configuring the _Push Impressions_ event:
-
-  * The event property tracking feature is not available for required properties.
-  * The **Status** is always _Active_ for mandatory properties.
-  * The tracking of configurable properties is enabled by default for new (new users of CleverTap dashboard) or returning users (existing users who turned off push impression feature) of Push Impression feature.
-  * For existing users, the tracking of event properties remains as is, however, they have the additional capability to enable/disable tracking for the same.
-</Callout>
-
-
+  The Push Impression event is tracked when a push notification sent from CleverTap is delivered to a user’s device. After the toggle for Push Impressions is turned on, the CleverTap SDK starts recording an event whenever a push notification sent via CleverTap is delivered to the user’s device.
+
+  The *Push Impression* event has its own event properties and the users can configure these non-required event properties to optimize the cost.
+
+  To do so:
+
+  1. Navigate to *Settings* > *Schema* > *Events* from the CleverTap dashboard.
+  2. Select the *Push Impressions* event from the *System events* tab.
+  3. Click the ![](https://files.readme.io/fb90f6a-Ellipsis.png) icon and select *Setup push impressions* from the list.
+  4. Turn ON the **Mobile Push** toggle and click **Save**. The *Push impressions tracking enables* message displays on the screen.
+
+  <Image align="center" border={true} src="https://files.readme.io/94f4dcb-Turn_Off_Push_Impression_Tracking.gif" />
+
+  ### Disable Event Property Tracking
+
+  The users can disable the tracking of some of the *Push Impression* event properties from the CleverTap dashboard. However, there are a few Push Impression event properties for which you do not have the option to disable the tracking. These are listed as follows:
+
+  <Table align={["left","left","left"]}>
+    <thead>
+      <tr>
+        <th>
+          Property
+        </th>
+
+        <th>
+          Property Description
+        </th>
+
+        <th>
+          Configurable
+        </th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>
+          `wzrk_push_amp`
+        </td>
+
+        <td>
+          Indicates whether push amplification is enabled.
+        </td>
+
+        <td>
+          No
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_pn`
+        </td>
+
+        <td>
+          Indicates whether the push notification is sent from CleverTap.
+        </td>
+
+        <td>
+          No
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `CT Source`
+        </td>
+
+        <td>
+          Specifies the source of the CleverTap campaign.
+        </td>
+
+        <td>
+          No
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_id`
+        </td>
+
+        <td>
+          Specifies the CleverTap campaign ID associated with the notification.
+        </td>
+
+        <td>
+          No
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_pid`
+        </td>
+
+        <td>
+          Specifies the unique ID for the push notification.
+        </td>
+
+        <td>
+          No
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_pivot`
+        </td>
+
+        <td>
+          Indicates the variant used in the A/B test campaign.
+        </td>
+
+        <td>
+          No
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_acct_id`
+        </td>
+
+        <td>
+          Specifies the CleverTap Account ID.
+        </td>
+
+        <td>
+          No
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `CT App Version`
+        </td>
+
+        <td>
+          Indicates the version of the CleverTap App.
+        </td>
+
+        <td>
+          No
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_dt`
+        </td>
+
+        <td>
+          Specifies the delivery type for the notification.
+        </td>
+
+        <td>
+          No
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_acts`
+        </td>
+
+        <td>
+          Refers to the CTA button included in the notification.
+        </td>
+
+        <td>
+          No
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_pn_h`
+        </td>
+
+        <td>
+          Indicates the RenderMax health status of the push notification.
+        </td>
+
+        <td>
+          No
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_pn`
+        </td>
+
+        <td>
+          Indicates that the notification is sent from CleverTap, if present.
+        </td>
+
+        <td>
+          No
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_bp`
+        </td>
+
+        <td>
+          Displays an image in the notification if the URL is present.
+        </td>
+
+        <td>
+          Yes
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_sound`
+        </td>
+
+        <td>
+          Plays the default or custom Android notification sound if present.
+        </td>
+
+        <td>
+          Yes
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `nt`
+        </td>
+
+        <td>
+          Displays the notification title; defaults to app name if absent or empty.
+        </td>
+
+        <td>
+          Yes
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `nm`
+        </td>
+
+        <td>
+          Displays the notification body; ignores the notification if absent or empty.
+        </td>
+
+        <td>
+          Yes
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_dl`
+        </td>
+
+        <td>
+          Opens the specified deeplink when the notification is clicked, if present.
+        </td>
+
+        <td>
+          Yes
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_d`
+        </td>
+
+        <td>
+          Ignores the notification if this key is present.
+        </td>
+
+        <td>
+          No
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `ico`
+        </td>
+
+        <td>
+          Displays the small notification icon from the specified URL if present and not empty.
+        </td>
+
+        <td>
+          Yes
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_pivot`
+        </td>
+
+        <td>
+          Identifies the variant type in A/B testing if present and not empty..
+        </td>
+
+        <td>
+          Yes
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_rnv`
+        </td>
+
+        <td>
+          Raises the Push Impressions event if present and not empty.
+        </td>
+
+        <td>
+          No
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_nms`
+        </td>
+
+        <td>
+          Displays summary text with the image if present and not empty.
+        </td>
+
+        <td>
+          Yes
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_st`
+        </td>
+
+        <td>
+          Displays subtitle text next to the app name if present and not empty.
+        </td>
+
+        <td>
+          Yes
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_clr`
+        </td>
+
+        <td>
+          Applies the hex color to the small icon and app name (on Android versions below Pie) if present and not empty.
+        </td>
+
+        <td>
+          Yes
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_bpds`
+        </td>
+
+        <td>
+          Indicates the image rendering status with the following values:
+
+          <ul><li> NO\_IMAGE- No image included</li>
+          <li>SUCCESS- Image downloaded successfully</li>
+          <li> NO\_NETWORK- Image included but no network connectivity</li>
+          <li> DOWNLOAD\_FAILED- Image download failed due to an external error</li></ul>
+        </td>
+
+        <td>
+          Yes
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_cid`
+        </td>
+
+        <td>
+          Refers to the channel ID used for the push notification.
+        </td>
+
+        <td>
+          Yes
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_mutable_content`
+        </td>
+
+        <td>
+          Enables rendering of rich push notification via extension class if set to true.
+        </td>
+
+        <td>
+          Yes
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_bi`
+        </td>
+
+        <td>
+          Specifies the badge icon to be displayed in the push notification.
+        </td>
+
+        <td>
+          Yes
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_bc`
+        </td>
+
+        <td>
+          Specifies the badge count to be shown on the app icon.
+        </td>
+
+        <td>
+          Yes
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `Campaign Type`
+        </td>
+
+        <td>
+          Indicates the campaign’s channel type (for example, Push, Email, SMS).
+        </td>
+
+        <td>
+          No
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_ttl`
+        </td>
+
+        <td>
+          Specifies the time to live (TTL) for the notification.
+        </td>
+
+        <td>
+          Yes
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_ttl_s`
+        </td>
+
+        <td>
+          Specifies the time to live for the notification in seconds.
+        </td>
+
+        <td>
+          Yes
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_cts`
+        </td>
+
+        <td>
+          Records the timestamp when the notification is clicked.
+        </td>
+
+        <td>
+          No
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_ck`
+        </td>
+
+        <td>
+          Defines the collapse key (typically a timestamp) for the notification.
+        </td>
+
+        <td>
+          Yes
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_collapsible`
+        </td>
+
+        <td>
+          Specifies whether the notification is collapsible.
+        </td>
+
+        <td>
+          Yes
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_category`
+        </td>
+
+        <td>
+          Specifies the notification category for APNS (iOS only).
+        </td>
+
+        <td>
+          Yes
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_interruption_level`
+        </td>
+
+        <td>
+          Sets the interruption level on APNS (iOS only).
+        </td>
+
+        <td>
+          No
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_relevance_score`
+        </td>
+
+        <td>
+          Assigns the relevance score on APNS (iOS only).
+        </td>
+
+        <td>
+          No
+        </td>
+      </tr>
+    </tbody>
+  </Table>
+
+  To disable the tracking of Push Impression event properties:
+
+  1. From the *System events* tab, click the *Properties* hyperlink. The Push Impressions properties list opens.
+
+     <Image align="center" border={true} src="https://files.readme.io/1dd0fc5-View_Push_Impressions_Properties.png" />
+  2. Select the configurable property, click the ![](https://files.readme.io/fb90f6a-Ellipsis.png) icon, and select *Disable Property* from the list. The *Enable property tracking* popup opens.
+
+     <Image align="center" border={true} src="https://files.readme.io/479d1ac-Disable_a_Push_Impression_Property.gif" />
+  3. Click **Disable** to confirm your action. The *Property tracking successfully disabled* message displays on the screen. The status of the event property changes to *Active*. Once disabled, if you want to enable the tracking later, you can do so by clicking the ![](https://files.readme.io/fb90f6a-Ellipsis.png) icon and selecting **Enable Property** from the list.
+
+  <Callout icon="📘" theme="info">
+    **Key Points to Remember**
+
+    The following are some of the points to consider when configuring the *Push Impressions* event:
+
+    * The event property tracking feature is not available for required properties.
+    * The **Status** is always *Active* for mandatory properties.
+    * The tracking of configurable properties is enabled by default for new (new users of CleverTap dashboard) or returning users (existing users who turned off push impression feature) of Push Impression feature.
+    * For existing users, the tracking of event properties remains as is, however, they have the additional capability to enable/disable tracking for the same.
+  </Callout>
 </Accordion>
 
 <Accordion title="Web Session Started">
+  This is a web entry event similar to the App launched event. This event refers to the event triggered when a user starts a session or engages with your website. This event will be recorded in two cases:
 
-This is a web entry event similar to the App launched event. This event refers to the event triggered when a user starts a session or engages with your website. This event will be recorded in two cases:
+  * When a user opens a webpage.
+  * When a user reloads the browser after 20 minutes of inactivity.
 
-* When a user opens a webpage.
-* When a user reloads the browser after 20 minutes of inactivity.
+  <Callout icon="📘" theme="info">
+    **Default Behavior**
 
-<Callout icon="📘" theme="info">
-  **Default Behavior**
-
-  This event is disabled by default for all customers and can be configured by the customers. When enabled, it captures the unique visitors to the website in a particular session.
-</Callout>
-
+    This event is disabled by default for all customers and can be configured by the customers. When enabled, it captures the unique visitors to the website in a particular session.
+  </Callout>
 </Accordion>
 
 <Accordion title="UTM Visited">
+  The *UTM Visited* event is tracked when a user clicks on a link from a marketing campaign that has a UTM parameter defined on it. This event is also tracked when a CleverTap-integrated attribution platform, such as AppsFlyer or Branch, sends this information to CleverTap. This event is recorded for your marketing campaigns from external sources, such as Google Ads or Facebook.
 
-The _UTM Visited_ event is tracked when a user clicks on a link from a marketing campaign that has a UTM parameter defined on it. This event is also tracked when a CleverTap-integrated attribution platform, such as AppsFlyer or Branch, sends this information to CleverTap. This event is recorded for your marketing campaigns from external sources, such as Google Ads or Facebook.
+  <Callout icon="📘" theme="info">
+    **Default Behavior**
 
-<Callout icon="📘" theme="info">
-  **Default Behavior**
-
-  The UTM Visited tracking is ON for new customers by default. For existing customers, the tracking of UTM Visited remains as is. However, they have the capability to enable or disable the same.
-</Callout>
-
+    The UTM Visited tracking is ON for new customers by default. For existing customers, the tracking of UTM Visited remains as is. However, they have the capability to enable or disable the same.
+  </Callout>
 </Accordion>
 
 <Callout icon="📘" theme="info">
