@@ -16,26 +16,11 @@ You can personalize the message for every user based on specific user property o
 
 # Event and Profile Property Personalization
 
-To invoke the personalization menu, type the _@_ symbol in the _Values_ field while creating a message.
+To invoke the personalization menu, type the *@* symbol in the *Values* field while creating a message.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/33cf886-web_native_display_personalization.png",
-        "web native display personalization.png",
-        1850
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Event and Profile Property Personalization"
-    }
-  ]
-}
-[/block]
-
-
+<Image title="web native display personalization.png" alt={1850} align="center" border={true} src="https://files.readme.io/33cf886-web_native_display_personalization.png">
+  Event and Profile Property Personalization
+</Image>
 
 # Recommendations
 
@@ -43,19 +28,6 @@ Click the ![Personlization](https://files.readme.io/b852e7f-Personalization_sett
 
 After you have uploaded a catalog, you can display personalized recommendations to your customers. For example, you can display a sliding carousel to your customers based on their likes. For more information on recommendations, see [Recommendations](doc:recommendations).
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6264702-Recommendation_Sample.png",
-        "Recommendation_Sample.png",
-        1752
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Catalog Based Recommendation"
-    }
-  ]
-}
-[/block]
+<Image title="Recommendation_Sample.png" alt={1752} align="center" border={true} src="https://files.readme.io/6264702-Recommendation_Sample.png">
+  Catalog Based Recommendation
+</Image>
