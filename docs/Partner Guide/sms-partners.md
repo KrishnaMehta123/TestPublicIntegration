@@ -10,27 +10,27 @@ metadata:
 next:
   description: ''
 ---
-CleverTap supports sending SMS through a wide range of popular service providers.  
+CleverTap supports sending SMS through a wide range of popular service providers.\
 The following providers are fully integrated and available across Journeys, Campaigns, and other messaging workflows.
 
-- [8x8](doc:8x8-sms)
-- [BulkSMS](doc:bulksms)
-- [Exotel](doc:exotel)
-- [ICS Mobile](doc:ics-mobile)
-- [Infobip](https://docs.clevertap.com/docs/infobip-sms)
-- [Kaleyra](doc:kaleyra-sms)
-- [MSG91](doc:msg91)
-- [Netcore](doc:netcore)
-- [Nexmo/Voynage](doc:nexmo)
-- [Nimbus](doc:nimbus-sms)
-- [OneXtel](doc:onextel-sms)
-- [Plivo](doc:plivo)
-- [Route Mobile](doc:route-mobile-sms)
-- [Sinch](doc:sinch-sms)
-- [SMSINDIAHUB](doc:smsindiahub)
-- [TextLocal](doc:textlocal)
-- [Times Mobile](doc:times-mobile)
-- [Twilio](doc:twilio)
+* [8x8](doc:8x8-sms)
+* [BulkSMS](doc:bulksms)
+* [Exotel](doc:exotel)
+* [ICS Mobile](doc:ics-mobile)
+* [Infobip](https://docs.clevertap.com/docs/infobip-sms)
+* [Kaleyra](doc:kaleyra-sms)
+* [MSG91](doc:msg91)
+* [Netcore](doc:netcore)
+* [Nexmo/Voynage](doc:nexmo)
+* [Nimbus](doc:nimbus-sms)
+* [OneXtel](doc:onextel-sms)
+* [Plivo](doc:plivo)
+* [Route Mobile](doc:route-mobile-sms)
+* [Sinch](doc:sinch-sms)
+* [SMSINDIAHUB](doc:smsindiahub)
+* [TextLocal](doc:textlocal)
+* [Times Mobile](doc:times-mobile)
+* [Twilio](doc:twilio)
 
 For other providers, you can use our flexible [Generic SMS](doc:generic-sms) integration method.
 
