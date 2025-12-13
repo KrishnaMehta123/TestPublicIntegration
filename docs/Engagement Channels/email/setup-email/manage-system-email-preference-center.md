@@ -5,12 +5,12 @@ excerpt: >-
   unsubscribed page using CleverTap's Email Preference Center feature.
 deprecated: false
 hidden: false
+link:
+  new_tab: false
 metadata:
   title: ''
   description: ''
   robots: index
-next:
-  description: ''
 ---
 # Overview
 
@@ -26,17 +26,7 @@ To configure the Email Preference Center:
 2. Click **+ Provider** to add a provider and [enter all the provider details](doc:setup-email#setup-provider).
 3. Choose your preferred subscription setup option from the drop-down list in the *Provider credentials* > *Email Preference Center* field. 
 
-<Image alt="Set up Email Preference" align="center" width="85%" border={true} src="https://files.readme.io/6952660-image.png" />  Set Up Email Preferences
-
-
-
-
-
-
-
-
-
-
+<Image alt="Set up Email Preference" align="center" width="85%" border={true} src="https://files.readme.io/6952660-image.png" />
 
 The drop-down has the following options:
 <Table align={["left","left"]}>
@@ -88,25 +78,13 @@ The drop-down has the following options:
 
 4. Click **Save** to save your provider configuration. 
 
-<Image alt="Provider Configuration Added" align="center" width="90% " border={true} src="https://files.readme.io/ce4ff5a-image.png" />  Provider Configuration Added
-
-
-
-
-
-
-
-
-
-
+<Image alt="Provider Configuration Added" align="center" width="90% " border={true} src="https://files.readme.io/ce4ff5a-image.png" />
 
 > 📘 Advanced Setup
 >
 > You can also preview the *Email Preference Center*  by navigating to *Channels*> *Email*. Select the *Advanced Setup* tab.
 >
 > <Image alt="Email Preference Center" align="center" width="90% " border={true} src="https://files.readme.io/f4ae755-image.png" />
->   Email Preference Center
-> </Image>
 
 # Manage User Preferences for Email Campaigns
 
@@ -121,15 +99,11 @@ This enables users to opt out of the subscription groups associated with the spe
 
 When the user clicks on the unsubscribe link, they are unsubscribed from the subscription groups associated with the campaigns. If the users want to modify their preferences for subscription groups, they can do so by clicking the  [Manage Email Preference ](doc:manage-email-preferences#manage-preferences-from-the-email-center) link.
 
-<Image alt="Manage Group Unsubscribe" align="center" width="60% " border={true} src="https://files.readme.io/75ee439-Manage_Group_Unsubscribe_for_Configured_Subscription_Groups.png">
-  Manage Group Unsubscribe
-</Image>
+<Image alt="Manage Group Unsubscribe" align="center" width="60% " border={true} src="https://files.readme.io/75ee439-Manage_Group_Unsubscribe_for_Configured_Subscription_Groups.png" />
 
 After preferences are successfully saved, a success message appears: 
 
-<Image alt="Email Preferences Saved" align="center" width="60% " border={true} src="https://files.readme.io/35a8186-image.png">
-  Email Preferences Saved
-</Image>
+<Image alt="Email Preferences Saved" align="center" width="60% " border={true} src="https://files.readme.io/35a8186-image.png" />
 
 ### Manage Group Unsubscribe Without Subscription Groups
 
@@ -147,9 +121,7 @@ If you have not selected any subscription groups from the *When* section during 
 
 If your account has no subscription group created, users are directly unsubscribed from all communication when they click the *Group Unsubscribe* link from the email campaign. The users are directly unsubscribed from all your future email communications. Users also have the option to subscribe back to their communications using the *Resubscribe* link.
 
-<Image alt="Unsubscribe from Email" align="center" width="60% " border={true} src="https://files.readme.io/091b00f-image.png">
-  Unsubscribe from Email
-</Image>
+<Image alt="Unsubscribe from Email" align="center" width="60% " border={true} src="https://files.readme.io/091b00f-image.png" />
 
 > 📘 Note
 >
@@ -168,15 +140,11 @@ This option allows users to manage all their subscription group preferences and 
 
 When the user clicks the unsubscribe link, they are directed to the *Manage Email Preferences* page, showcasing their current email preferences for all subscription groups. Here, users can select or deselect the emails they want to receive. 
 
-<Image alt="Manage Email Preference" align="center" width="85% " border={true} src="https://files.readme.io/cc38488-image.png">
-  Manage Email Preferences
-</Image>
+<Image alt="Manage Email Preference" align="center" width="85% " border={true} src="https://files.readme.io/cc38488-image.png" />
 
 Users can opt out of all groups by setting the *All communication* toggle to *No*. When *All communication* toggle is set to *No*, all the other respective toggles are automatically set to *No*. After successfully saving their preferences, users are redirected to a success message page. This page includes an option to navigate back to the *Manage Email Preferences* page for further modifications.
 
-<Image alt="Email Preferences Saved" align="center" width="65% " border={true} src="https://files.readme.io/35a8186-image.png">
-  Saved Email Preference Successfully
-</Image>
+<Image alt="Email Preferences Saved" align="center" width="65% " border={true} src="https://files.readme.io/35a8186-image.png" />
 
 ### Manage Email Preferences Without Subscription Groups
 
@@ -211,9 +179,7 @@ To set up your email campaign, refer to [Create Email Message](doc:create-messag
 
   When using the *Email with rich media* template, you must add `*|CT_MANAGE_PREFERENCES|*` (for Email Preference Center) and `*|CT_GROUP_UNSUBSCRIBE|*`(for Group Unsubscribe).
 
-  <Image alt="Adding Links Using Email with Rich Media Template" align="center" border={true} src="https://files.readme.io/9a77a69-image.png">
-    Adding Links Using Email with Rich Media Template
-  </Image>
+  <Image alt="Adding Links Using Email with Rich Media Template" align="center" border={true} src="https://files.readme.io/9a77a69-image.png" />
 
 **Example**: As shown in the image above, the HTML code `<a href="*|CT_MANAGE_PREFERENCES|*">Manage My Preferences</a>` is for creating hyperlinks in an email campaign to manage preferences. `*|CT_MANAGE_PREFERENCES|*` is the mandatory tag for redirecting users to *Email Preference Center* to manage their preferences. 
 
@@ -222,9 +188,7 @@ To set up your email campaign, refer to [Create Email Message](doc:create-messag
   1. Select the text in the campaign to which you want to add links and click **More** after drafting your campaign message.
   2. Select the *Special links*> *Unsubscribe* option, and select either [Email Preference Center](doc:manage-email-preference#group-unsubscribe) or [Group Unsubscribe](doc:manage-email-preference#group-unsubscribe).
 
-  <Image alt="Add Special Links using Email Drag and Drop Template" align="center" border={true} src="https://files.readme.io/39ed807-Add_Special_Links_Using_Email_Drag_and_Drop_Template.gif">
-    Add Special Links using Email Drag and Drop Template
-  </Image>
+  <Image alt="Add Special Links using Email Drag and Drop Template" align="center" border={true} src="https://files.readme.io/39ed807-Add_Special_Links_Using_Email_Drag_and_Drop_Template.gif" />
 
 **Example**: As shown in the image above, *unsubscribe* is the text that is displayed as a clickable link. When the user clicks the text, it takes the user to the *Group Unsubscribe* page.
 
