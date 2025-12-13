@@ -344,17 +344,50 @@ The following table provides information about the key-value pair present in the
 To send callback events to CleverTap, customers must send a POST request to CleverTap's callback URL. The following is the acceptable callback payload structure:
 
 ```json
-[
-  {
-    "event": "delivered",
-    "data": [
-      {
-        "ts": 1435322805,
-        "meta": "9999999999.1200000000.165263328.20220606.0.wzrk_default.1.",
-        "description": "Delivered to handset"
-      }
+[{
+        "event": "failed", //in the case of errors in delivery
+        "data": [{
+                "ts": <10-digit Epoch Timstamp in seconds>,
+                "meta": "<replaced by value received in $$MessageID in the outbound SMS payload>",
+                "code": "<ErrorCode>",
+                "description": "<error description>"
+            },
+            {
+                "ts": <10-digit Epoch Timstamp in seconds>,
+                "meta": "<replaced by value received in $$MessageID in the outbound SMS payload>",
+                "code": "<ErrorCode>",
+                "description": "<error description>"
+            }
+        ]
+    },
+
+ {
+        "event": "replied", //in the case of response from the SMS recipient
+        "data": [{
+            "ts": <10-digit Epoch Timstamp in seconds>,
+            "meta": "<replaced by value received in $$MessageID in the outbound SMS payload>",
+            "toPhone": "<The number to which the user replied>",
+      			"incomingText": "<Reciepient's response text>"
+        }
     ]
-  }
+    },
+    {
+        "event": "delivered", //in the case of successful delivery. 
+        "data": [{
+            "ts": <10-digit Epoch Timstamp in seconds>,
+            "meta": "<replaced by value received in $$MessageID in the outbound SMS payload>",
+            "description": "Delivered to handset"
+        }]
+    },
+    {
+        "event": "clicked", //when the user clicks on the links in the SMS.
+        "data": [{
+            "ts": <10-digit Epoch Timstamp in seconds>,
+            "meta": "<replaced by value received in $$MessageID in the outbound SMS payload>",
+            "url": "www.CleverTap.com", //This is the original URL
+            "shortUrl": "<short URL from the provider shortened using URL Link shortener>" 
+        }]
+    }
 ]
 ```
 
