@@ -16,9 +16,9 @@ next:
 
 With this integration, you can:
 
-- Convert Figma email designs into HTML.
-- Embed your HTML directly into CleverTap campaigns.
-- Enhance campaigns with personalization and automation using CleverTap’s tools.
+* Convert Figma email designs into HTML.
+* Embed your HTML directly into CleverTap campaigns.
+* Enhance campaigns with personalization and automation using CleverTap’s tools.
 
 This document explains integrating Email Love with CleverTap and using exported HTML in CleverTap campaigns.
 
@@ -26,8 +26,8 @@ This document explains integrating Email Love with CleverTap and using exported 
 
 The following are the prerequisites for this integration:
 
-- An active Email Love account.
-- A CleverTap account with a valid Account ID and Passcode.
+* An active Email Love account.
+* A CleverTap account with a valid Account ID and Passcode.
 
 # Integrate Email Love with CleverTap
 
@@ -44,46 +44,16 @@ Start by creating your email with the Email Love plugin in Figma, then export it
 
 1. Open your Figma file, go to the Plugins menu, search for Email Love, and launch the plugin.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/75c117e179239c12cbd3ee1a7f2743c0bb952df99fda42b648264a2984351594-image.png",
-        null,
-        "Email love plugin"
-      ],
-      "align": "center",
-      "sizing": "50% ",
-      "border": true,
-      "caption": "Email Love plugin"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Email love plugin" align="center" width="50% " border={true} src="https://files.readme.io/75c117e179239c12cbd3ee1a7f2743c0bb952df99fda42b648264a2984351594-image.png">
+  Email Love plugin
+</Image>
 
 2. Create your email from scratch or use a pre-designed template.
 3. Click **Export HTML file** to download the code, or click **Copy HTML code** to copy it directly.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ed791445a9531f78392fefded251ddee6b15bb8305e40e8aba56f9613bea3590-image.png",
-        null,
-        "Copy HTML Code"
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "border": true,
-      "caption": "Copy HTML Code"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Copy HTML Code" align="center" width="75% " border={true} src="https://files.readme.io/ed791445a9531f78392fefded251ddee6b15bb8305e40e8aba56f9613bea3590-image.png">
+  Copy HTML Code
+</Image>
 
 Once exported, your HTML code can be embedded directly into a CleverTap email campaign for further personalization and delivery.
 
@@ -91,36 +61,21 @@ Once exported, your HTML code can be embedded directly into a CleverTap email ca
 
 Set up and personalize your email campaign in CleverTap using the exported HTML template from Email Love. To do so, perform the following steps:
 
-1. Go to the _Campaigns_ page, click **+ Campaign**, and select _Email_ from the list of messaging channels.
-2. Under the _What_ section, click **Go to Editor** and perform the following steps: 
-   1. Select a _Blank Template_.
+1. Go to the *Campaigns* page, click **+ Campaign**, and select *Email* from the list of messaging channels.
+2. Under the *What* section, click **Go to Editor** and perform the following steps: 
+   1. Select a *Blank Template*.
    2. Switch to **Source** mode in the email editor.
-   3. Paste the copied HTML code from _step 3_ of [Design Email in Email Love and Export HTML](doc:email-love#design-email-in-email-love-and-export-html) into the source editor.
+   3. Paste the copied HTML code from *step 3* of [Design Email in Email Love and Export HTML](doc:email-love#design-email-in-email-love-and-export-html) into the source editor.
 3. (Optional) Edit the HTML as needed. You can also add [Liquid tags](doc:personalize-message-all#liquid-tags) for personalization.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d751750363fa06ae8c4de1a5b59e6595624312571cc65baa6cdb67d9c0a2680b-2025-07-28_14-50-14_1.gif",
-        "",
-        "Configure Email Campaign"
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "border": true,
-      "caption": "Configure Email Campaign"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Configure Email Campaign" align="center" width="75% " border={true} src="https://files.readme.io/d751750363fa06ae8c4de1a5b59e6595624312571cc65baa6cdb67d9c0a2680b-2025-07-28_14-50-14_1.gif">
+  Configure Email Campaign
+</Image>
 
 4. Click **Preview & Test** to verify personalization and formatting.
 
 > 📘 Preview Campaign
-> 
+>
 > The preview in CleverTap may render colors differently than what you designed in Figma. The final email renders correctly to recipients.
 
 5. Once confirmed, click **Publish**.
