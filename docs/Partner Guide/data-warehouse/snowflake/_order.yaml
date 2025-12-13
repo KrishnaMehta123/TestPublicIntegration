@@ -3,3 +3,4 @@
 - create-snowflake-import
 - map-data-for-snowflake-import
 - schedule-snowflake-import
+- snowflake-import-listing-and-stats
