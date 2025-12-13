@@ -4,3 +4,4 @@
 - sendgrid-delivered
 - sendgrid
 - generic-http
+- generic-smtp
