@@ -14,77 +14,49 @@ next:
 
 After integrating our SDK, the platform creates a user profile for each person who launches your app or visits your website.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/fb9b378-1_User_Profile.png",
-        "View User Profile Details",
-        1423
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "User Profile"
-    }
-  ]
-}
-[/block]
-
+<Image title="View User Profile Details" alt={1423} align="center" border={true} src="https://files.readme.io/fb9b378-1_User_Profile.png">
+  User Profile
+</Image>
 
 A CleverTap user profile has a set of default fields, such as email, phone number, and language. You can also extend the default user profile by adding custom fields that are specific to your business. 
 
 > 👍 Custom Profile Field Example
-> 
+>
 > If you offer a subscription service in your app, you can create a custom profile field to track what type of plan the user purchased.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/908f59f-2_User_properties.png",
-        "View User Properties",
-        685
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "User Properties"
-    }
-  ]
-}
-[/block]
-
+<Image title="View User Properties" alt={685} align="center" border={true} src="https://files.readme.io/908f59f-2_User_properties.png">
+  User Properties
+</Image>
 
 The benefit of adding more information to a CleverTap user profile means the ability to:
 
-- Create a user segment for people who have a specific profile property you have defined, then build a campaign to engage with that segment. 
-- Personalize your campaign messaging with information. 
-- [Personalize your app](https://developer.clevertap.com/docs/app-personalization) based on information from that person's CleverTap user profile.
+* Create a user segment for people who have a specific profile property you have defined, then build a campaign to engage with that segment. 
+* Personalize your campaign messaging with information. 
+* [Personalize your app](https://developer.clevertap.com/docs/app-personalization) based on information from that person's CleverTap user profile.
 
 # User Profile Data Model
 
 A CleverTap user profile consists of three parts:
 
-- Identifiers: Each user profile is given a unique CleverTap ID. You can also add other identifiers to recognize the user including email, phone number, Facebook ID, or your own custom identifier.
-- Properties: This is information stored about the user such as age, gender, device, and location. You can also extend the default user profile by adding custom fields that are specific to your business. 
-- Events: This is a log of actions taken by a user in your app such as a product viewed, a video watched, or an item added to cart.
+* Identifiers: Each user profile is given a unique CleverTap ID. You can also add other identifiers to recognize the user including email, phone number, Facebook ID, or your own custom identifier.
+* Properties: This is information stored about the user such as age, gender, device, and location. You can also extend the default user profile by adding custom fields that are specific to your business. 
+* Events: This is a log of actions taken by a user in your app such as a product viewed, a video watched, or an item added to cart.
 
 ## User Profile Types
 
 The CleverTap user profile type changes automatically depending on the information set in them. A user profile can only belong to one type.
 
-- Anonymous: Anonymous profiles do not contain uniquely identifiable information about the user.
-- Identified: Identified user profiles (also referred to as addressable profiles) can be reached either via email or push notifications. They contain uniquely identifiable information such as email or user ID.
+* Anonymous: Anonymous profiles do not contain uniquely identifiable information about the user.
+* Identified: Identified user profiles (also referred to as addressable profiles) can be reached either via email or push notifications. They contain uniquely identifiable information such as email or user ID.
 
 ### User Scenarios for Anonymous Profiles
 
 When tracking anonymous profiles, CleverTap tries to retain guest events as much as possible. The following scenarios explain how anonymous profiles are logged in the system. 
 
-**Scenario 1**  
+**Scenario 1**\
 Anonymous user X performs event A from desktop A > Logs in > Performs event B.
 
-**Scenario 2**  
+**Scenario 2**\
 The same user now uses a separate browser and performs event A anonymously > Logs in (as the same user) > Performs event B. Event B will be mapped to this user X. 
 
 In scenario 2, all the events done before the user identifies themselves are mapped to an anonymous profile. All events post login is mapped to user X and is visible on the profile. As a best-case scenario, the platform shows all the events on the same user X except that any events done in an anonymous mode are shown in gray; these grayed-out events will not be considered for analytics or segmentation. The events before the login event will not be remapped to user X because they are done in an anonymous mode.
@@ -95,11 +67,11 @@ Since the user has performed the events anonymously, we consider this user as a 
 
 Adding user properties to your user profiles can help you enrich your user information, segment your audience better, and hyper-personalize your messages. CleverTap provides different methods to update user profile properties. By leveraging these methods, businesses can effectively engage with users and drive growth. The following are the different ways to update user profile properties on the CleverTap dashboard:
 
-- [Update User Profile via SDK](doc:user-profiles#update-user-profile-via-sdk)
-- [Update User Profile via API](doc:user-profiles#update-user-profile-via-api)
-- [Upload CSV File](doc:user-profiles#upload-csv-file) 
-- [Import User Profiles via SFTP](doc:user-profiles#import-user-profiles-via-sftp)
-- [Track an Event from the SDK](doc:user-profiles#track-an-event-from-sdk)
+* [Update User Profile via SDK](doc:user-profiles#update-user-profile-via-sdk)
+* [Update User Profile via API](doc:user-profiles#update-user-profile-via-api)
+* [Upload CSV File](doc:user-profiles#upload-csv-file) 
+* [Import User Profiles via SFTP](doc:user-profiles#import-user-profiles-via-sftp)
+* [Track an Event from the SDK](doc:user-profiles#track-an-event-from-sdk)
 
 ## Update User Profile via SDK
 
@@ -135,31 +107,17 @@ For more information, refer to [Update User Profile](https://developer.clevertap
 
 CleverTap provides a test user profile feature to update the user profile to a test profile. This feature helps with the following:
 
-- Test messages (including personalized messages) before sending them to the target audience
-- Test user segmentation
+* Test messages (including personalized messages) before sending them to the target audience
+* Test user segmentation
 
 To mark a particular user profile as a test profile:
 
-1. Select the required profile from the _Find People_ page.
-2. Select _Mark as test profile_ from the _Profile_ page.
+1. Select the required profile from the *Find People* page.
+2. Select *Mark as test profile* from the *Profile* page.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ede8cf9-Test_Profile.png",
-        "Mark a User Profile as a Test Profile",
-        "Mark as Test Profile"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Mark as Test Profile"
-    }
-  ]
-}
-[/block]
-
+<Image title="Mark a User Profile as a Test Profile" alt="Mark as Test Profile" align="center" border={true} src="https://files.readme.io/ede8cf9-Test_Profile.png">
+  Mark as Test Profile
+</Image>
 
 When we mark the user profile as a Test profile, the CleverTap server receives the event and updates the user profile with an additional property, `ct_is_test_user`, with the value `Yes`. The `ct_is_test_user` property is of type String.
 
@@ -170,89 +128,46 @@ You can exclude specific users from being placed into a control group by marking
 This setting ensures that the selected users are always included in campaigns and never placed in control groups for A/B tests or split delivery experiments.
 
 > 📘 Limit
-> 
+>
 > You can exclude up to 20 profiles using this setting.
 
 This feature ensures that certain high-priority users or test accounts receive all campaign variations without exclusion.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/592b966226b6bc53ffcfb96a69570c8b9cd3b51efd3466b287fd474ebaaf8f04-image.png",
-        null,
-        "Exclude Users from Control Groups"
-      ],
-      "align": "center",
-      "sizing": "50% ",
-      "border": true,
-      "caption": "Exclude Users from Control Groups"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Exclude Users from Control Groups" align="center" width="50% " border={true} src="https://files.readme.io/592b966226b6bc53ffcfb96a69570c8b9cd3b51efd3466b287fd474ebaaf8f04-image.png">
+  Exclude Users from Control Groups
+</Image>
 
 # System User Properties
 
 System user properties are derived from the user information received from your application after integrating CleverTap SDK.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/722dc07-Test_user_Segments.png",
-        "View System User Properties",
-        1188
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "System User Properties"
-    }
-  ]
-}
-[/block]
-
+<Image title="View System User Properties" alt={1188} align="center" border={true} src="https://files.readme.io/722dc07-Test_user_Segments.png">
+  System User Properties
+</Image>
 
 The following are the system user properties available in CleverTap:
 
-- Name
-- Email
-- Identity
-- Phone
-- Gender
-- DOB
-- Timezone
-- MSG-email
-- MSG-push
-- MSG-sms 
-- MSG-whatsapp
+* Name
+* Email
+* Identity
+* Phone
+* Gender
+* DOB
+* Timezone
+* MSG-email
+* MSG-push
+* MSG-sms 
+* MSG-whatsapp
 
 > 📘 Calculating Age
-> 
+>
 > If the `birthday` or `DOB`is available as a profile property, CleverTap automatically calculates the age for the user profile.
 
-Using _Age_ you can create and target segments, such as all users between 25 to 30 years.
+Using *Age* you can create and target segments, such as all users between 25 to 30 years.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/63927fe-Screenshot_2019-10-22_at_6.26.26_PM.png",
-        "Target User Properties and Click View Details",
-        1934
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Target User Properties"
-    }
-  ]
-}
-[/block]
-
+<Image title="Target User Properties and Click View Details" alt={1934} align="center" border={true} src="https://files.readme.io/63927fe-Screenshot_2019-10-22_at_6.26.26_PM.png">
+  Target User Properties
+</Image>
 
 # FAQs
 
@@ -268,7 +183,7 @@ A. These errors mean the following:
 
 ### Q. What is a Duplicate Platform ID error?
 
-A. The _Duplicate Platform ID_ error occurs in one of the following scenarios:
+A. The *Duplicate Platform ID* error occurs in one of the following scenarios:
 
-- When a single token is assigned to multiple profiles, both profiles qualify for the campaign. CleverTap sends the notification to the profile that qualifies first, and the other profile is marked as a _Duplicate Platform ID_.
-- When the same mobile number is assigned to multiple profiles, they qualify for the campaign. Only one profile receives the notification; the other profiles are marked as a _Duplicate Platform ID_.
+* When a single token is assigned to multiple profiles, both profiles qualify for the campaign. CleverTap sends the notification to the profile that qualifies first, and the other profile is marked as a *Duplicate Platform ID*.
+* When the same mobile number is assigned to multiple profiles, they qualify for the campaign. Only one profile receives the notification; the other profiles are marked as a *Duplicate Platform ID*.
