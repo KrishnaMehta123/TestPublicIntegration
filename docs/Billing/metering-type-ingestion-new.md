@@ -22,10 +22,10 @@ The billable system and custom events are calculated as follows:
 
 The following system events and their properties are included in the Data Point calculation:
 
-- Partner Sync
-- App Launched
-- Web Session Started
-- UTM Visited
+* Partner Sync
+* App Launched
+* Web Session Started
+* UTM Visited
 
 CleverTap has many more system events, which are not billable and hence excluded in the Data Point calculation. To know about those events, refer to [System Events](https://docs.clevertap.com/docs/events#system-events). 
 
@@ -35,7 +35,7 @@ All the custom events count towards MAU calculations. However, the following two
 
 ### Scenario 1: All the custom events and their custom properties are included in the Data Point calculation
 
-For example, the custom event _Add to Cart_ is triggered when a user adds a product to their shopping cart. You capture the product's name, quantity, and price as properties associated with this event.
+For example, the custom event *Add to Cart* is triggered when a user adds a product to their shopping cart. You capture the product's name, quantity, and price as properties associated with this event.
 
 In this case, data points are calculated as follows:
 
@@ -49,32 +49,32 @@ In this case, data points are calculated as follows:
 
 In CleverTap, every custom event captures some system event properties to provide additional context or information related to that specific system event.
 
-For example, suppose a custom event called _AppUpdateCompleted_ is raised when a user updates the app to a new version. This custom event captures custom event properties such as _UpdateStatus_, _DeviceInformation_, and system event properties such as _CT App version_, _CT Latitude_, _CT Longitude_, and _CT Source_.
+For example, suppose a custom event called *AppUpdateCompleted* is raised when a user updates the app to a new version. This custom event captures custom event properties such as *UpdateStatus*, *DeviceInformation*, and system event properties such as *CT App version*, *CT Latitude*, *CT Longitude*, and *CT Source*.
 
 In this case, data points are calculated as follows:
 
 **Data Point attributed to the event captured** = 1 data point
 
-**Data Point attributed to the custom event properties captured** = 2 data points (_UpdateStatus_ and _DeviceInformation_) 
+**Data Point attributed to the custom event properties captured** = 2 data points (*UpdateStatus* and *DeviceInformation*) 
 
 **Total data points for this event** = 1 (event tracking) + 2 (custom event properties) + 0 (system event properties) = 3 data points.
 
 > 📘 Exclusion of Certain System Event Properties from Billing Calculation
-> 
-> CleverTap calculates data points for both system and custom events. While custom events and their properties are included in data point calculations, the system event properties _CT App Version_, _CT Latitude_, _CT Longitude_, and _CT Source_ are included only in system event data point calculations and excluded from custom event data point calculations.
+>
+> CleverTap calculates data points for both system and custom events. While custom events and their properties are included in data point calculations, the system event properties *CT App Version*, *CT Latitude*, *CT Longitude*, and *CT Source* are included only in system event data point calculations and excluded from custom event data point calculations.
 
 For more information, refer to [Custom Events](https://docs.clevertap.com/docs/events#custom-events).
 
 > 🚧 Data Point Calculation for Messaging Channels
-> 
+>
 > For any messaging channel, CleverTap does not include the following events in the Data Point calculation:
-> 
-> - Notification Sent
-> - Notification Delivered
-> - Notification Viewed
-> - Notification Clicked
-> - Push Impressions
-> 
+>
+> * Notification Sent
+> * Notification Delivered
+> * Notification Viewed
+> * Notification Clicked
+> * Push Impressions
+>
 > This implies that businesses do not incur charges for the number of messages sent, viewed, or clicked when using CleverTap's messaging features. However, certain channels may have distinct billing policies and must be considered separately.
 
 # Overages
@@ -101,9 +101,9 @@ Datapoints are measured monthly as a rolling average for the billing period. Thi
 
 **Usage:**
 
-- **1st Month:** 1 million DPs
-- **2nd Month:** 1.4 million DPs
-- **3rd Month:** 1.6 million DPs
+* **1st Month:** 1 million DPs
+* **2nd Month:** 1.4 million DPs
+* **3rd Month:** 1.6 million DPs
 
 **Actual Usage:** 4 million DPs
 
@@ -112,13 +112,13 @@ Datapoints are measured monthly as a rolling average for the billing period. Thi
 **Calculation:** (3 million / 100K) x $1 + (1 million / 100K) x $1.2 = $42
 
 > 📘 Alerts for Overages
-> 
+>
 > All account admins receive alerts on their CleverTap dashboard and email every time the account consumption reaches 80%, 90%, 100%, 110% of your subscription plan.
 
 # Update Billing Information and Card Details
 
-Organization members with billing permissions (only Admins) can update the billing and payment information by navigating to _Organization_ > _Billling_ > _Billing details_ from the CleverTap dashboard.
+Organization members with billing permissions (only Admins) can update the billing and payment information by navigating to *Organization* > *Billling* > *Billing details* from the CleverTap dashboard.
 
 > 📘 Changing the Billing Currency
-> 
+>
 > The billing currency cannot be changed once set up.
