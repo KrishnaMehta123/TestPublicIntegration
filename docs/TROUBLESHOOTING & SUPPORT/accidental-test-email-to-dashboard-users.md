@@ -18,8 +18,8 @@ On October 8, 2024, at approximately 10:00 PM PST, test emails were accidentally
 
 # Who received the email?
 
-Only CleverTap project users who have logged in received the email.  
-For example, if your app BuyRobots has a CleverTap project called _BuyRobots-prod_. This project can be accessed by three users, User1, User2, and User3.  Only User1, User2, and User3 received the test emails. 
+Only CleverTap project users who have logged in received the email.\
+For example, if your app BuyRobots has a CleverTap project called *BuyRobots-prod*. This project can be accessed by three users, User1, User2, and User3.  Only User1, User2, and User3 received the test emails. 
 
 # Did my customers receive the test email?
 
