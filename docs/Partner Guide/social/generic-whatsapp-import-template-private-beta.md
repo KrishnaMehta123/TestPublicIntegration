@@ -15,23 +15,23 @@ next:
 CleverTap supports any WhatsApp provider via integration. CleverTap has recently made its WhatsApp API and standard callback formats accessible to WhatsApp service providers globally. Now, BSPs and customers are no longer required to rely on CleverTap to build the native WhatsApp integration. Instead, they can utilize these APIs to build the integration themselves independently.
 
 > 📘 For CleverTap Customers
-> 
+>
 > This feature is helpful to customers in the following ways:
-> 
-> - Customers can build middleware between CleverTap and BSP and create their own endpoint. They can start using WhatsApp functionality in CleverTap with the BSP of their choice. 
-> - Customers can request their BSPs to build the CleverTap integration. This will allow customers to use the provider with CleverTap without any development.
+>
+> * Customers can build middleware between CleverTap and BSP and create their own endpoint. They can start using WhatsApp functionality in CleverTap with the BSP of their choice. 
+> * Customers can request their BSPs to build the CleverTap integration. This will allow customers to use the provider with CleverTap without any development.
 
 > 📘 For WhatsApp BSPs
-> 
+>
 > Providers who wish to pursue the partnership must follow the integration steps outlined in this document and send an email to [integrations@clevertap.com](mailto:integrations@clevertap.com) or [partner-integrations@clevertap.com](partner-integrations@clevertap.com) to include their names in the supported provider's list.
 
 ## Supported Business Service Providers
 
 The following Business Service Providers have built ready-to-use WhatsApp integration with CleverTap using CleverTap's generic integration. 
 
-- [Exotel](https://docs.clevertap.com/docs/exotel-whatsapp)
-- [Haptik](https://docs.clevertap.com/docs/haptik)
-- [Kaleyra](https://docs.clevertap.com/docs/kaleyra)
+* [Exotel](https://docs.clevertap.com/docs/exotel-whatsapp)
+* [Haptik](https://docs.clevertap.com/docs/haptik)
+* [Kaleyra](https://docs.clevertap.com/docs/kaleyra)
 
 You can use this generic API documentation for other providers to establish an integration between CleverTap and your business service provider. Alternatively, you can ask your provider to create a ready-to-use integration with CleverTap based on this documentation.
 
@@ -39,32 +39,35 @@ You can use this generic API documentation for other providers to establish an i
 
 Any WhatsApp partner can integrate with our open APIs. However, to become a supported partner with CleverTap, they must share the following with CleverTap:
 
-- Production API endpoint for sending Template and Freeform notifications via a single endpoint.
-- Production API credentials for two test accounts so the CleverTap team can test the integration.
-- Providers must provide dashboard access so the CleverTap team can create or share approved templates to test the campaign flow.
-- Providers must add CleverTap's callback URL to the test accounts. This helps CleverTap check whether the callbacks are received in the correct format.
-- Providers are required to publish a CleverTap integration guide in their user documentation. This will enable CleverTap to cross-reference the integration guide from our documents.
-- Partners must provide the contact details of their dedicated support and product team so that CleverTap can contact them in case of any issues.
-- Providers must support a minimum of 1500 concurrent API requests for each customer using the integration.
-- Partners must test integration with a few customers at scale.
-- Partners are responsible for maintaining the integration and proactively resolving any issues.
+
+* Production API endpoint for sending Template and Freeform notifications via a single endpoint.
+* Production API credentials for two test accounts so the CleverTap team can test the integration.
+* Providers must provide dashboard access so the CleverTap team can create or share approved templates to test the campaign flow.
+* Providers must add CleverTap's callback URL to the test accounts. This helps CleverTap check whether the callbacks are received in the correct format.
+* Providers are required to publish a CleverTap integration guide in their user documentation. This will enable CleverTap to cross-reference the integration guide from our documents.
+* Partners must provide the contact details of their dedicated support and product team so that CleverTap can contact them in case of any issues.
+* Providers must support a minimum of 1500 concurrent API requests for each customer using the integration.
+* Partners must test integration with a few customers at scale.
+* Partners are responsible for maintaining the integration and proactively resolving any issues.
 
 # Test  Partner Integration
 
 Partners must test their integration in the CleverTap sandbox environment to validate message delivery, callbacks, and two-way communication. The following steps outline the required configuration and testing flow.
 
-- Any partner can request access to the CleverTap sandbox account by writing to our partnership teams.
-- Partners must develop the middleware connecting CleverTap and their platform. This should enable partners to receive message payloads (both freeform and template messages) from CleverTap and send the Delivery Receipts (DLRs) and Incoming Message Opt-Out (IMO)Callback per the payload structure published by CleverTap.
-- Partners must save their messaging endpoints in the CleverTap sandbox account and configure CleverTap DLR and incoming message [callback URLs](https://docs.clevertap.com/docs/generic-whatsapp#2-set-up-clevertap-callbacks-with-provider) at their end. This requires that partners accept our endpoint [validation payload](https://docs.clevertap.com/docs/generic-whatsapp#validation-payload-1) and return a [200 OK] success API response.
-- Partners must [save the template](https://docs.clevertap.com/docs/haptik#adding-message-template) and send a test notification to ensure template messages are delivered to the end user.
-- Once the messaging endpoints and templates have been saved and tested successfully, the partner can [create a WhatsApp campaign](https://docs.clevertap.com/docs/create-message-whatsapp).  The campaigns must target a large user base to scale-test the integration.
-- Once the Campaign has been published and completed successfully, check the [WhatsApp campaign stats](https://docs.clevertap.com/docs/whatsapp-stats) and ensure the following: 
-  - Sent, Delivered, and Viewed counts are captured successfully and match your platform count. 
-  - The campaign error count is per expectation, and errors are categorized correctly. 
-- Test campaigns for different combinations of templates, such as media headers, footers, CTA, quick replies, and so on. This test is required to ensure that all templates are working as expected.
-- Once the campaign has been tested successfully, go to [conversations](https://docs.clevertap.com/docs/conversations) and check whether incoming responses are being shown correctly for all the users who are replying. 
-- Respond to users from [agent chat](https://docs.clevertap.com/docs/conversations#role-based-access-agent-role) with different combinations ( text, media, location, documents, and so on) and check whether the messages are being delivered to end users correctly.
-- Similarly, to the previous step, send different types of messages from end-user devices on WhatsApp and check whether all messages are being captured and shown in CleverTap conversations.
+
+* Any partner can request access to the CleverTap sandbox account by writing to our partnership teams.
+* Partners must develop the middleware connecting CleverTap and their platform. This should enable partners to receive message payloads (both freeform and template messages) from CleverTap and send the Delivery Receipts (DLRs) and Incoming Message Opt-Out (IMO)Callback per the payload structure published by CleverTap.
+* Partners must save their messaging endpoints in the CleverTap sandbox account and configure CleverTap DLR and incoming message [callback URLs](https://docs.clevertap.com/docs/generic-whatsapp#2-set-up-clevertap-callbacks-with-provider) at their end. This requires that partners accept our endpoint [validation payload](https://docs.clevertap.com/docs/generic-whatsapp#validation-payload-1) and return a [200 OK] success API response.
+* Partners must [save the template](https://docs.clevertap.com/docs/haptik#adding-message-template) and send a test notification to ensure template messages are delivered to the end user.
+* Once the messaging endpoints and templates have been saved and tested successfully, the partner can [create a WhatsApp campaign](https://docs.clevertap.com/docs/create-message-whatsapp).  The campaigns must target a large user base to scale-test the integration.
+* Once the Campaign has been published and completed successfully, check the [WhatsApp campaign stats](https://docs.clevertap.com/docs/whatsapp-stats) and ensure the following: 
+  * Sent, Delivered, and Viewed counts are captured successfully and match your platform count. 
+  * The campaign error count is per expectation, and errors are categorized correctly. 
+* Test campaigns for different combinations of templates, such as media headers, footers, CTA, quick replies, and so on. This test is required to ensure that all templates are working as expected.
+* Once the campaign has been tested successfully, go to [conversations](https://docs.clevertap.com/docs/conversations) and check whether incoming responses are being shown correctly for all the users who are replying. 
+* Respond to users from [agent chat](https://docs.clevertap.com/docs/conversations#role-based-access-agent-role) with different combinations ( text, media, location, documents, and so on) and check whether the messages are being delivered to end users correctly.
+* Similarly, to the previous step, send different types of messages from end-user devices on WhatsApp and check whether all messages are being captured and shown in CleverTap conversations.
+
 
 # Troubleshooting and FAQs for Generic Integration
 
@@ -74,23 +77,7 @@ These are some of the frequent issues that partners usually face when testing th
 
 Whenever a provider setting is saved in the CleverTap dashboard, we send out a [dummy messaging payload](https://docs.clevertap.com/docs/generic-whatsapp#validation-payload-1) to verify that your endpoint is up and returning a success response. If we do not receive the expected success response within one second, we display an error showing the API request and response received from your endpoint.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3cda454-image.png",
-        null,
-        "Failed API response"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Failed API response"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Failed API response" align="center" border={true} src="https://files.readme.io/3cda454-image.png" /> Failed API response
 
 Partners can use the request shown in the above pop-up in Postman to debug the issue further.
 
@@ -98,44 +85,28 @@ Partners can use the request shown in the above pop-up in Postman to debug the i
 
 CleverTap validates the Template that is saved in the dashboard by trying to deliver the Template message to a dummy number. This is required to ensure that customers don't save the incorrect templates and run into issues later when creating an actual campaign. To validate the Templates, we send the payload according to the template saved to the message endpoint which is saved in provider settings. If we receive the success response from the partner's endpoint within a second, we save the templates else, we display an error showing the request body and the API response.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/29696e4-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/29696e4-image.png" />
 
 Partners can use the request body in Postman to debug the issue in detail at their end.
 
 ## Q. Why is the Template Message not being delivered to the end user ?
-
-CleverTap is only responsible for sending the messaging payloads to the partners. Final delivery is owned by partners. Check the messaging payload received at the partner's end & ask them to resolve the issue. Having mentioned this, there could be many issues for messaging not delivering to end users, such as Template mismatch, Template deleted, or paused by META, and so on. To eliminate this issue as a possible cause, try different templates.  
+CleverTap is only responsible for sending the messaging payloads to the partners. Final delivery is owned by partners. Check the messaging payload received at the partner's end & ask them to resolve the issue. Having mentioned this, there could be many issues for messaging not delivering to end users, such as Template mismatch, Template deleted, or paused by META, and so on. To eliminate this issue as a possible cause, try different templates.\
 If none of the templates are being delivered, then this might happen because of integration issues. Partners can get the template payload by[ testing the templates](https://docs.clevertap.com/docs/haptik#testing-a-message-template) and comparing the payload to find the mismatch and resolve the issue.
 
 ## Q. Getting lots of generic miscellaneous errors in the campaign
 
 Generic miscellaneous errors in the campaign come primarily for three reasons.
 
-- We received the error code **2004** in response to the messaging API request.
-- We received the error code **1009** in the status callback.
-- Messaging API requests timed out because we didn't receive the API success response within the defined timeout limits(15 seconds). This usually happens when Partner's API endpoint cannot support the concurrency limit at which CleverTap sends the messaging requests.
+* We received the error code **2004** in response to the messaging API request.
+* We received the error code **1009** in the status callback.
+* Messaging API requests timed out because we didn't receive the API success response within the defined timeout limits(15 seconds). This usually happens when Partner's API endpoint cannot support the concurrency limit at which CleverTap sends the messaging requests.
 
 ## Q. Why is the incoming response not recorded?
 
 Two issues can cause this: 
 
-- The phone number used to send the WhatsApp message has never been targeted via CleverTap's WhatsApp campaigns. Create a sample campaign for the number that sends incoming messages.
-- Incoming message callbacks are not coming in expected callback formats. Test with our [sample payload](https://docs.clevertap.com/docs/generic-whatsapp#api-payload-for-template-message).
+* The phone number used to send the WhatsApp message has never been targeted via CleverTap's WhatsApp campaigns. Create a sample campaign for the number that sends incoming messages.
+* Incoming message callbacks are not coming in expected callback formats. Test with our [sample payload](https://docs.clevertap.com/docs/generic-whatsapp#api-payload-for-template-message).
 
 ## Q. Why is the WhatsApp campaign not live?
 
@@ -145,32 +116,16 @@ CleverTap marks an account as dormant if the account does not receive any data i
 
 ## Q. Why don't I have access to WhatsApp campaigns & conversations?
 
+
 Enable the WhatsApp Connect Add-on and contact us at [partner-integrations@clevertap.com](mailto:partner-integrations@clevertap.com).
 
 ## Q. Why don't I have access to campaigns creation?
 
 Before creating a campaign to target users, you must have a few users already added to your CleverTap project. If there are no users added to your project, you will see the following screen when you try to access the campaigns:
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/602a7cf-image.png",
-        null,
-        "Campaigns First Time Screen"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Campaigns First Time Screen"
-    }
-  ]
-}
-[/block]
+<Image alt="Campaigns First Time Screen" align="center" border={true} src="https://files.readme.io/602a7cf-image.png" /> Campaigns First Time Screen
 
-
-There are multiple ways to add users to a CleverTap project. 
-
+There are multiple ways to add users to a CleverTap project.
 1. **Via CSV upload**: CSV uploads are easy way to add test users in a CleverTap Project. The following are the conditions for updating the flags:
 
    1. The objectId or identity must be the first column in the uploaded CSV file.
@@ -178,17 +133,17 @@ There are multiple ways to add users to a CleverTap project.
 
       Following is a table that displays the CSV columns:
 
-      | Identity                                            | Email                | Phone         | MSG-whatsapp | MSG-sms |
-      | :-------------------------------------------------- | :------------------- | :------------ | :----------- | :------ |
-      | [john.doe@johndoe.com](mailto:john.doe@johndoe.com) |                      | \+14155551234 | TRUE         | TRUE    |
-      | 14155551235                                         |                      |               | TRUE         | TRUE    |
-      | 14155551234                                         |                      | \+14155551234 | TRUE         | TRUE    |
-      | 234853412                                           | [mary@gmail.com](<>) | \+14155551234 | TRUE         | TRUE    |
+      | Identity                                            | Email              | Phone         | MSG-whatsapp | MSG-sms |
+      | :-------------------------------------------------- | :----------------- | :------------ | :----------- | :------ |
+      | [john.doe@johndoe.com](mailto:john.doe@johndoe.com) |                    | \+14155551234 | TRUE         | TRUE    |
+      | 14155551235                                         |                    |               | TRUE         | TRUE    |
+      | 14155551234                                         |                    | \+14155551234 | TRUE         | TRUE    |
+      | 234853412                                           | [mary@gmail.com]() | \+14155551234 | TRUE         | TRUE    |
 2. **Via User upload APIs** CleverTap offers APIs that enable you to send the values of subscription flags programmatically. This method is useful for automating the subscription management process and integrating CleverTap with your existing systems. For more information, see [upload user profiles](https://developer.clevertap.com/docs/upload-user-profiles-api). Following is an example of subscribing a user for WhatsApp messaging:
 
-   **Base URLs**  
-   Here is an example base URL for an account in the India region:  
-   <https://in1.api.clevertap.com/1/upload>
+   **Base URLs**\
+   Here is an example base URL for an account in the India region:\
+   [https://in1.api.clevertap.com/1/upload](https://in1.api.clevertap.com/1/upload)
 
    | Region                  | API Endpoint           |
    | :---------------------- | :--------------------- |
@@ -205,38 +160,511 @@ There are multiple ways to add users to a CleverTap project.
 
    The X-CleverTap-Account-Id and X-CleverTap-Passcode authenticate the request.
 
-   | Header                 | Description                                             | Type   | Example Value                        |
-   | :--------------------- | :------------------------------------------------------ | :----- | :----------------------------------- |
-   | X-CleverTap-Account-Id | Your CleverTap Account ID                               | string | "X-CleverTap-Account-Id: ACCOUNT_ID" |
-   | X-CleverTap-Passcode   | Your CleverTap Account Passcode.                        | string | "X-CleverTap-Passcode: PASSCODE"     |
-   | Content-Type           | Request content-type is always set to application/json. | string | "Content-Type: application/json"     |
+   | Header                 | Description                                             | Type   | Example Value                         |
+   | :--------------------- | :------------------------------------------------------ | :----- | :------------------------------------ |
+   | X-CleverTap-Account-Id | Your CleverTap Account ID                               | string | "X-CleverTap-Account-Id: ACCOUNT\_ID" |
+   | X-CleverTap-Passcode   | Your CleverTap Account Passcode.                        | string | "X-CleverTap-Passcode: PASSCODE"      |
+   | Content-Type           | Request content-type is always set to application/json. | string | "Content-Type: application/json"      |
 
    Refer to the [API Authentication](https://developer.clevertap.com/docs/authentication) to obtain the header values. To understand the common queries and concerns related to CleverTap APIs, refer to [API FAQs](https://developer.clevertap.com/docs/api-faqs).
 
    **Sample JSON Payload**
 
+
 Following is a sample JSON payload to upload a user profile:
 
-```json JSON
- {
-  "d": [
-    {
-      "identity": "1189549",       
-      "type": "profile",
-      "profileData": {
-        "Name": "Jack Montana",
-        "Email": "jack@gmail.com",
-        "Phone": "+14155551234",
-        "Gender": "M",
-        "MSG-sms": true,
-        "MSG-email":true,//called when email must be subscribed  
-        "MSG-whatsapp": true,
-       "Customer Type": "internal test user"
-      }
-    }
-  ]
-}
-```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
  To know more about user upload APIs, refer to [Upload User Profiles](https://developer.clevertap.com/docs/upload-user-profiles-api).
 
@@ -245,7 +673,7 @@ Following is a sample JSON payload to upload a user profile:
 CleverTap Customers must get endpoint and authentication details from their WhatsApp providers before starting the integrations.
 
 > 📘 Note
-> 
+>
 > 1. BSPs might have a dedicated endpoint (different from their standard endpoint) for CleverTap integration. Given this, you must get the API details for CleverTap integration from your provider.
 > 2. Please note that your WhatsApp providers are responsible for final message delivery and sending DLR and IMOs back to Clevertap. In case of any issue with these, You will have to ask your providers to resolve these issues.
 
@@ -255,100 +683,81 @@ This process involves the following  steps:
 
 To configure the CleverTap dashboard:
 
-1. Navigate to _Settings_ > _Channels_ > _WhatsApp_> _WhatsApp Connect_ from the CleverTap dashboard.
+1. Navigate to *Settings* > *Channels* > *WhatsApp*> *WhatsApp Connect* from the CleverTap dashboard.
 2. Click **+ Add Provider** and select Generic (Other) from the dropdown. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/29282ee-Whatsapp_Common_Provider_Setup.png",
-        null,
-        "Add a WhatsApp Provider"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Add a WhatsApp Provider"
-    }
-  ]
-}
-[/block]
+<Image alt="Add a WhatsApp Provider" align="center" border={true} src="https://files.readme.io/29282ee-Whatsapp_Common_Provider_Setup.png" />  Add a WhatsApp Provider
 
 
-3. Enter the following details: 
 
+
+
+
+
+
+
+
+
+3. Enter the following details:
 | Field                        | Description                                                                                                                                                 |
 | :--------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Provider                     | Select _Other (Generic)_ from the dropdown list.                                                                                                            |
+| Provider                     | Select *Other (Generic)* from the dropdown list.                                                                                                            |
 | Nickname                     | Enter the nickname \<10-digit phone number> for easy reference.                                                                                             |
 | Mobile Number                | Enter your phone number onboarded to WhatsApp API by your BSP.                                                                                              |
-| Request Type                 | Ensure the Request Type is _Post_.                                                                                                                          |
+| Request Type                 | Ensure the Request Type is *Post*.                                                                                                                          |
 | HTTP Endpoint                | Enter HTTP Endpoint as provided by your BSP.                                                                                                                |
-| Authentication               | Select _Basic Authentication_ and enter the _Username_ and _Password_ for the user.                                                                         |
+| Authentication               | Select *Basic Authentication* and enter the *Username* and *Password* for the user.                                                                         |
 | Delivery Report Callback URL | This URL is generated automatically. Share the URL with your BSP account manager. It is your BSP's responsibility to integrate this URL in their dashboard. |
 | Inbound Message Callback URL | This URL is generated automatically. Share the URL with your BSP account manager. It is your BSP's responsibility to integrate this URL in their dashboard. |
 
-4. (Optional) Select _Mark this as default_ to make this service provider the default provider to send a WhatsApp message.
-5. (Optional) Select _Set auto-reply for users not tracked on CleverTap_ to automatically reply to users who message on WhatsApp but are not tracked on the CleverTap dashboard. 
-6. (Optional) You can set the _Maximum Concurrent API requests_ anywhere between 30 to 1000 requests. Consider your requirements and the provider's limitations to define this value. 
+4. (Optional) Select *Mark this as default* to make this service provider the default provider to send a WhatsApp message.
+5. (Optional) Select *Set auto-reply for users not tracked on CleverTap* to automatically reply to users who message on WhatsApp but are not tracked on the CleverTap dashboard. 
+6. (Optional) You can set the *Maximum Concurrent API requests* anywhere between 30 to 1000 requests. Consider your requirements and the provider's limitations to define this value. 
 7. Send a Test WhatsApp notification: 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c384922-sendtest.png",
-        "Send a Test WhatsApp Message",
-        "Send a Test WhatsApp Message"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Send a Test WhatsApp Message"
-    }
-  ]
-}
-[/block]
+
+<Image title="Send a Test WhatsApp Message" alt="Send a Test WhatsApp Message" align="center" border={true} src="https://files.readme.io/c384922-sendtest.png" />  Send a Test WhatsApp Message
+
+
+
+
+
+
+
+
+
 
 
 8. Click **Save** to save the details.
 
 ## 2\. Set Up CleverTap Callbacks with Provider
 
-You can find the Callback URLs on the CleverTap dashboard under the Provider _Setup_ page. Naviagte to _Settings_ > _Channels_ > _WhatsApp_ .
+You can find the Callback URLs on the CleverTap dashboard under the Provider *Setup* page. Naviagte to *Settings* > *Channels* > *WhatsApp* .
 
 To set up the CleverTap callbacks, share the following with your BSP account manager:
 
-- Delivery Report Callback URL
-- Inbound Message Callback URL
-- The WhatsApp phone number that will be used in CleverTap 
+* Delivery Report Callback URL
+* Inbound Message Callback URL
+* The WhatsApp phone number that will be used in CleverTap 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b61e35f-Whatsapp_provider_credentials.png",
-        null,
-        "Callback URLs"
-      ],
-      "align": "center",
-      "sizing": "85% ",
-      "border": true,
-      "caption": "Callback URLs"
-    }
-  ]
-}
-[/block]
+<Image alt="Callback URLs" align="center" width="85% " border={true} src="https://files.readme.io/b61e35f-Whatsapp_provider_credentials.png" />  Callback URLs
+
+
+
+
+
+
+
+
+
 
 
 ## Adding Message Template
 
 To create WhatsApp campaigns, you must have pre-approved WhatsApp message templates saved in the CleverTap dashboard. To add the message templates:
 
-1. Navigate to _Settings_ > _Channels_ > _WhatsApp_ > _WhatsApp Connect_ >_Provider Nickname_ from the CleverTap dashboard. 
-2. Select the _Templates_ option, and click **+Template**.
+1. Navigate to *Settings* > *Channels* > *WhatsApp* > *WhatsApp Connect* >*Provider Nickname* from the CleverTap dashboard. 
+2. Select the *Templates* option, and click **+Template**.
 
 For more information, refer to adding a [generic message template](https://docs.clevertap.com/docs/haptik#adding-message-template)
 
@@ -359,33 +768,16 @@ The Import Template functionality allows importing WhatsApp message templates fr
 The import will be successful only if the vendor supports template import functionality. In such cases, the vendor will provide the required API endpoint, authentication credentials, and additional configuration details such as import limits and click-tracking domains.
 
 > 📘 Private Beta
-> 
+>
 > This feature is available only for Generic WhatsApp and is currently offered under a private beta release. To enable it, contact CleverTap support.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3687cd7cbba725b02a5dbe0753dc02dc11ebd53d4801e4df53197a75e2e0c0ec-2025-07-20_18-18-40.png",
-        "",
-        "Import Template"
-      ],
-      "align": "center",
-      "sizing": "65% ",
-      "border": true,
-      "caption": "Import Template"
-    }
-  ]
-}
-[/block]
-
-
+<Image alt="Import Template" align="center" width="65% " border={true} src="https://files.readme.io/3687cd7cbba725b02a5dbe0753dc02dc11ebd53d4801e4df53197a75e2e0c0ec-2025-07-20_18-18-40.png" />  Import Template
 Imported templates must follow [Meta’s template import format](https://developers.facebook.com/docs/whatsapp/business-management-api/message-templates/#best-practices-for-marketing-templates). To set up the import, configure the following fields:
 
-1. Select _Request Type_: Select **GET** from the _Request Type_ list. This is the supported method for importing templates via an external endpoint.
 
-2. Specify _HTTP Endpoint_: Enter the _HTTP endpoint_ URL provided by the vendor. This is the URL to which CleverTap will send the **GET** request to fetch the templates for import.  CleverTap expects the vendor to return a response that matches this structure exactly. The following is an example of the request and response formats:
+1. Select *Request Type*: Select **GET** from the *Request Type* list. This is the supported method for importing templates via an external endpoint.
+
+2. Specify *HTTP Endpoint*: Enter the *HTTP endpoint* URL provided by the vendor. This is the URL to which CleverTap will send the **GET** request to fetch the templates for import.  CleverTap expects the vendor to return a response that matches this structure exactly. The following is an example of the request and response formats:
 
    **API Call Example**:
 
@@ -637,19 +1029,20 @@ Imported templates must follow [Meta’s template import format](https://develop
    }
    ```
 
-3. Specify _Import Limits & Pagination_: Define the number of templates to retrieve in each request (recommended: 50 to 500) and configure how pagination is handled. Vendors may use page numbers, cursors, or tokens to return additional results. These values are provided by the vendor and must be configured accurately to ensure full template retrieval.
+3. Specify *Import Limits & Pagination*: Define the number of templates to retrieve in each request (recommended: 50 to 500) and configure how pagination is handled. Vendors may use page numbers, cursors, or tokens to return additional results. These values are provided by the vendor and must be configured accurately to ensure full template retrieval.
 
-4. Configure _Authentication_ (optional): Add the appropriate authentication headers if the vendor’s API requires authorization. CleverTap supports Basic Authentication and custom header-based tokens. For more details on authentication methods (including _Basic Authentication_), refer to the [Set Up Webhooks documentation](https://docs.clevertap.com/docs/setup-webhooks#basic-authentication).
+4. Configure *Authentication* (optional): Add the appropriate authentication headers if the vendor’s API requires authorization. CleverTap supports Basic Authentication and custom header-based tokens. For more details on authentication methods (including *Basic Authentication*), refer to the [Set Up Webhooks documentation](https://docs.clevertap.com/docs/setup-webhooks#basic-authentication).
 
-5. Set _Track Clicks_ (optional): This field enables click tracking on imported templates that contain buttons using a click-tracking domain. Since Meta does not natively support click tracking, vendors may implement it by using a dynamic button configured with a custom tracking domain.
+5. Set *Track Clicks* (optional): This field enables click tracking on imported templates that contain buttons using a click-tracking domain. Since Meta does not natively support click tracking, vendors may implement it by using a dynamic button configured with a custom tracking domain.
 
    If the vendor supports click tracking through such a solution, provide the relevant domain in this field. During import, CleverTap will identify templates containing this domain and tag the associated buttons for click tracking. For more information, refer to the [Click Tracking section in WhatsApp Stats](https://docs.clevertap.com/docs/whatsapp-stats#clicked).
 
-6. Once the configuration is complete and saved, navigate to the _Templates_ tab. 
+6. Once the configuration is complete and saved, navigate to the *Templates* tab. 
+
 
 ## 4\. Create a Campaign
 
-To create a WhatsApp campaign using your BSP as the provider, refer to [Create a WhatsApp Campaign](doc:whatsapp#section-creating-a-whatsapp-campaign) for detailed instructions. If your users reply to notifications sent from CleverTap, incoming messages appear under the _Conversation_ section of the dashboard. Businesses can reply to incoming messages by selecting the chat.
+To create a WhatsApp campaign using your BSP as the provider, refer to [Create a WhatsApp Campaign](doc:whatsapp#section-creating-a-whatsapp-campaign) for detailed instructions. If your users reply to notifications sent from CleverTap, incoming messages appear under the *Conversation* section of the dashboard. Businesses can reply to incoming messages by selecting the chat.
 
 ## 5\. Creating a Journey
 
@@ -681,6 +1074,7 @@ CleverTap has published the [Freeform Messsage payload formats](https://docs.cle
 
 CleverTap sends a [dummy message payload API endpoint](https://docs.clevertap.com/docs/generic-whatsapp#validation-payload-1), and credentials are configured in the CleverTap dashboard. This is required since at the time of saving provider in CleverTap doesn't have templates to test the credentials. 
 
+
 ## API Concurrency
 
 By default, CleverTap hits the generic messaging API endpoint at 1500 concurrency ie. 1500 concurrent messaging requests are sent to messaging endpoint whenever a campaign is created in the CleverTap dashboard.  
@@ -691,445 +1085,10586 @@ By default, CleverTap hits the generic messaging API endpoint at 1500 concurrenc
 
 CleverTap sends outbound message payloads into two categories: 
 
-- Templates messages: These are preapproved messages templates needed to initiate a conversation with conversation.
-- Freeform messages: These are free text messages that can be sent to end user in response to their incoming messages.
+* Templates messages: These are preapproved messages templates needed to initiate a conversation with conversation.
+* Freeform messages: These are free text messages that can be sent to end user in response to their incoming messages.
 
 CleverTap sends either of the payloads depending on the type of message sent by the dashboard user. CleverTap sends  the`isTemplate` key to helping BSPs understand whether this is a templatized message or a freeform message.
 
 > 📘 Single Endpoint
-> 
+>
 > CleverTap does not support different endpoints for different types of messages, so BSPs must provide just one endpoint to process freeform and template messages.
 
 ### API Payload for Template Message
 
-CleverTap sends this payload for sending the template message notification.  
+CleverTap sends this payload for sending the template message notification.\
 The outgoing template message payload can be broken down into the following three sections:
 
-- User & notification information
-- Template information includes template name, namespace, template language, and so on. 
-- Content information
+* User & notification information
+* Template information includes template name, namespace, template language, and so on. 
+* Content information
 
 > 📘 Payload Essentials
-> 
+>
 > The message payload is encoded into UTF-8 (Unicode Transformation Format) before being sent to the provider's endpoint. 
-> 
+>
 > Values with $$ ($$To,$$BusinessWabaNumber) are dynamic values and change for each request.
-> 
+>
 > CleverTap does not support templates with contacts currently, so contact objects are not sent with payload.
-> 
+>
 > CleverTap does not support Name, Address, or URL key in location object.
-> 
+>
 > `msg_id` is a unique parameter for each message sent from CleverTap and must be present in callbacks sent by BSP to CleverTap.
 
-```json Template Message Payload
-{
-    "payloadVersion": $$payloadVersion, // Sample: 0.1
-    "to": "$$to", // support numbers with "+"" and without "+" (eg. 91 and +91)
-    "wabaNumber": "$$businessWabaNumber", // WhatsApp mobile number saved in the Setup
-    "isTemplate": true,
-    "msgId": "i|campaignID|batchID|j|campaign_variant", // Notification identifier. This can be upto 60 characters long
-    "template": {
-        "namespace": "$$templateNamespace", // Template name saved in CleverTap Dashboard
-        "languageCode": "$$BSPsr-language-and-locale-code"
-    },
-    "components": [
-        { // available only in case of templates with text headers
-            "type": "header",
-            "header": {
-                "type": "text",
-                "text": {
-                    "text": "$headertext",
-                    "parameters": [
-                        {
-                            "type": "text",
-                            "text": "$$PlaceholderText1"
-                        }
-                    ]
-                }
-            }
-        },
-        { // available only in case of templates with Video headers
-            "type": "header",
-            "header": {
-                "type": "video",
-                "video": {
-                    "mediaURL": "$$mediaUrl" //URL to media File.
-                }
-            }
-        },
-        { // available only in case of templates with image headers
-            "type": "header",
-            "header": {
-                "type": "image",
-                "image": {
-                    "mediaURL": "$$mediaUrl"
-                }
-            }
-        },
-        { // available only in case of templates with document headers
-            "type": "header",
-            "header": {
-                "type": "file",
-                "file": {
-                    "mediaURL": "$$mediaUrl",
-                    "filename": "$$filename"
-                }
-            }
-        },
-        { // optional location header
-            "type": "header",
-            "header": {
-                "type": "location",
-                "location": {
-                    "longitude": "$$longitude",
-                    "latitude": "$$latitude",
-                    "name": "$$LocationName",
-                    "address": "$$LocationAddress"
-                }
-            }
-        },
-        // Limited-time offer component - available only if user selects LTO template
-        {
-            "type": "limited_time_offer",
-            "text": "$$LTO_Offer_Title",
-        "parameters": [
-                {
-                    "type": "limited_time_offer",
-                    "limited_time_offer": {
-                        "expiration_time_ms": $$EXPIRATION_TIME // Offer Exipry Timestamp in MS in Epoch.
-                    }
-                }
-            ]
-        },
-        {
-            "type": "body",
-            "body": {
-                "text": "$$Body",
-                "parameters": [
-                    {
-                        "type": "text",
-                        "text": "$$PlaceholderText1"
-                    },
-                    {
-                        "type": "text",
-                        "text": "$$PlaceholderText2"
-                    }
-                ]
-            }
-        },
-        {
-            "type": "carousel",
-            "cards": [
-                {
-                    "components": [
-                        {
-                            "type": "header",
-                            "header": {
-                                "type": "image/video",
-                                "image": {
-                                    "mediaURL": "$$MediaURL"
-                                }
-                            }
-                        },
-                        {
-                            "type": "body",
-                            "body": {
-                                "text": "$$text",
-                                "parameters": [
-                                    {
-                                        "type": "text",
-                                        "text": "$$PlaceholderText1"
-                                    },
-                                    {
-                                        "type": "text",
-                                        "text": "$$PlaceholderText1"
-                                    }
-                                ]
-                            }
-                        },
-                        {
-                            "type": "button",
-                            "index": $$buttonPosition,
-                            "buttonText": "$$buttonText",
-                            "subType": "dynamicUrl",
-                            "parameters": [
-                                {
-                                    "type": "text",
-                                    "text": "$$URLsuffix"
-                                }
-                            ]
-                        },
-                        {
-                            "type": "button",
-                            "index": $$buttonPosition,
-                            "buttonText": "$$buttonText",
-                            "subType": "dynamicUrl",
-                            "parameters": [
-                                {
-                                    "type": "text",
-                                    "text": "$$URLsuffix"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "components": [
-                        {
-                            "type": "header",
-                            "header": {
-                                "type": "image/video",
-                                "image": {
-                                    "mediaURL": "$$MediaURL"
-                                }
-                            }
-                        },
-                        {
-                            "type": "body",
-                            "body": {
-                                "text": "$$text",
-                                "parameters": [
-                                    {
-                                        "type": "text",
-                                        "text": "$$PlaceholderText1"
-                                    },
-                                    {
-                                        "type": "text",
-                                        "text": "$$PlaceholderText1"
-                                    }
-                                ]
-                            }
-                        },
-                        {
-                            "type": "button",
-                            "index": $$buttonPosition,
-                            "buttonText": "$$buttonText",
-                            "subType": "dynamicUrl",
-                            "parameters": [
-                                {
-                                    "type": "text",
-                                    "text": "$$URLsuffix"
-                                }
-                            ]
-                        },
-                        {
-                            "type": "button",
-                            "index": $$buttonPosition,
-                            "buttonText": "$$buttonText",
-                            "subType": "dynamicUrl",
-                            "parameters": [
-                                {
-                                    "type": "text",
-                                    "text": "$$URLsuffix"
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
-        }
-        { // available only in case of templates with footers
-            "type": "footer",
-            "footer": "$$footertext"
-        },
-        // new copy code button for LTO 
-        {
-            "type": "button",
-            "buttonText": "Copy offer code",
-            "sub_type": "copy_code",
-            "index": $$buttonPosition,
-            "parameters": [
-                {
-                    "type": "coupon_code",
-                    "coupon_code": "$$OfferCode"
-                }
-            ]
-        },
-        { // available only in case of templates with Dynamic CTA buttons
-            "type": "button",
-            "index": $$buttonPosition,
-            "subType": "dynamicUrl",
-            "buttonText": "$$cta_text",
-            "parameters": [
-                {
-                    "type": "text",
-                    "text": "$$URLsuffix" // Only the suffix of the URL
-                }
-            ]
-        },
-        { // available only in case of templates with Static CTA buttons
-            "type": "button",
-            "index": $$Buttonposition,
-            "buttonText": "cta_text",
-            "subType": "staticUrl",
-            "parameters": [
-                {
-                    "type": "text",
-                    "text": "$$ButtonURL"
-                }
-            ]
-        },
-        { // available only in case of templates with quick reply buttons
-            "type": "button",
-            "index": $$buttonPosition,
-            "subType": "quickReply",
-            "buttonText": "$$cta_text",
-            "parameters": [
-                {
-                    "type": "payload",
-                    "payload": "$$buttonPayload"
-                }
-            ]
-        },
-        { // available only in case of templates with Callphone CTA
-            "type": "button",
-            "index": $$buttonPosition,
-            "subType": "callPhone",
-            "buttonText": "$$cta_text",
-            "parameters": [
-                {
-                    "type": "text",
-                    "text": "$$phonenumber"
-                }
-            ]
-        },
-        {
-            "customProps": [
-                {
-                    "key1": "Value1"
-                },
-                {
-                    "Key2": "Value2"
-                }
-            ]
-        }
-    ]
-}
-```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #### Payload Description for Template Message
 
-[block:parameters]
-{
-  "data": {
-    "h-0": "Parameter",
-    "h-1": "Description",
-    "h-2": "Data Type",
-    "h-3": "Example Values",
-    "0-0": "payloadVersion",
-    "0-1": "Version of the payload being used.",
-    "0-2": "Float",
-    "0-3": "0.1",
-    "1-0": "to",
-    "1-1": "Recipient's phone number",
-    "1-2": "String",
-    "1-3": "\"919876543210\", \"+919876543210\"",
-    "2-0": "wabaNumber",
-    "2-1": "WhatsApp Business Account number",
-    "2-2": "String",
-    "2-3": "\"1234567890\"",
-    "3-0": "isTemplate",
-    "3-1": "Indicates if the message is a template",
-    "3-2": "Boolean",
-    "3-3": "TRUE",
-    "4-0": "msgId",
-    "4-1": "Unique identifier for the message",
-    "4-2": "String",
-    "4-3": "\"i|campaignID|batchID|j|campaign_variant\"",
-    "5-0": "template.namespace",
-    "5-1": "Identifier for the template in CleverTap Dashboard",
-    "5-2": "String",
-    "5-3": "\"my_template_namespace\"",
-    "6-0": "template.languageCode",
-    "6-1": "Language and locale code for the template",
-    "6-2": "String",
-    "6-3": "\"en_US\"",
-    "7-0": "components.type",
-    "7-1": "Type of component, like header, body, button, and so on.",
-    "7-2": "String",
-    "7-3": "\"header\", \"body\", \"button\"",
-    "8-0": "header.type",
-    "8-1": "Type of header like text, video, image, file, location",
-    "8-2": "String",
-    "8-3": "\"text\", \"video\", \"image\", \"file\", \"location\"",
-    "9-0": "header.text.text",
-    "9-1": "Text content for text header",
-    "9-2": "String",
-    "9-3": "\"Hello, World!\"",
-    "10-0": "header.video.mediaURL",
-    "10-1": "URL to the video media file",
-    "10-2": "String",
-    "10-3": "<http://example.com/video.mp4>",
-    "11-0": "header.image.mediaURL",
-    "11-1": "URL to the image media file",
-    "11-2": "String",
-    "11-3": "<http://example.com/image.jpg>",
-    "12-0": "header.file.mediaURL",
-    "12-1": "URL to the file media",
-    "12-2": "String",
-    "12-3": "<http://example.com/document.pdf>",
-    "13-0": "header.file.filename",
-    "13-1": "Filename for the file",
-    "13-2": "String",
-    "13-3": "\"document.pdf\"",
-    "14-0": "header.location.longitude",
-    "14-1": "Longitude for location header",
-    "14-2": "String",
-    "14-3": "\"74.0060\"",
-    "15-0": "header.location.latitude",
-    "15-1": "Latitude for location header",
-    "15-2": "String",
-    "15-3": "\"40.7128\"",
-    "16-0": "header.location.name",
-    "16-1": "Name for the location",
-    "16-2": "String",
-    "16-3": "\"Central Park\"",
-    "17-0": "header.location.address",
-    "17-1": "Address for the location",
-    "17-2": "String",
-    "17-3": "\"New York, NY 10024\"",
-    "18-0": "body.text",
-    "18-1": "Body text of the message",
-    "18-2": "String",
-    "18-3": "\"Your order is ready for pickup.\"",
-    "19-0": "footer",
-    "19-1": "Footer text for the message",
-    "19-2": "String",
-    "19-3": "\"Thank you for choosing us!\"",
-    "20-0": "button.subType",
-    "20-1": "Specific type of button like dynamicUrl, staticUrl, quickReply, callPhone",
-    "20-2": "String",
-    "20-3": "\"dynamicUrl\", \"staticUrl\"",
-    "21-0": "button.buttonText",
-    "21-1": "Text displayed on the button",
-    "21-2": "String",
-    "21-3": "\"Click Here\", \"Copy Offer Code\"",
-    "22-0": "button.index",
-    "22-1": "Position of the button",
-    "22-2": "Integer",
-    "22-3": "1, 2",
-    "23-0": "button.parameters",
-    "23-1": "Parameters for the button, like URL suffix, phone number, and so on.",
-    "23-2": "Array",
-    "23-3": "Depends on button.type",
-    "24-0": "customProps",
-    "24-1": "Custom key-value pairs defined at the time of creating campaigns",
-    "24-2": "Array",
-    "24-3": "[  \n        {  \n          \"key1\": \"Value1\"  \n        },  \n        {  \n          \"Key2\": \"Value2\"  \n        }  \n      ]"
-  },
-  "cols": 4,
-  "rows": 25,
-  "align": [
-    "left",
-    "left",
-    "left",
-    "left"
-  ]
-}
-[/block]
 
+<Table align={["left","left","left","left"]}>
+  <thead>
+    <tr>
+      <th>
+        Parameter
+      </th>
 
+      <th>
+        Description
+      </th>
+
+      <th>
+        Data Type
+      </th>
+
+      <th>
+        Example Values
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        payloadVersion
+      </td>
+
+      <td>
+        Version of the payload being used.
+      </td>
+
+      <td>
+        Float
+      </td>
+
+      <td>
+        0.1
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        to
+      </td>
+
+      <td>
+        Recipient's phone number
+      </td>
+
+      <td>
+        String
+      </td>
+
+      <td>
+        "919876543210", "+919876543210"
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        wabaNumber
+      </td>
+
+      <td>
+        WhatsApp Business Account number
+      </td>
+
+      <td>
+        String
+      </td>
+
+      <td>
+        "1234567890"
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        isTemplate
+      </td>
+
+      <td>
+        Indicates if the message is a template
+      </td>
+
+      <td>
+        Boolean
+      </td>
+
+      <td>
+        TRUE
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        msgId
+      </td>
+
+      <td>
+        Unique identifier for the message
+      </td>
+
+      <td>
+        String
+      </td>
+
+      <td>
+        "i|campaignID|batchID|j|campaign\_variant"
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        template.namespace
+      </td>
+
+      <td>
+        Identifier for the template in CleverTap Dashboard
+      </td>
+
+      <td>
+        String
+      </td>
+
+      <td>
+        "my\_template\_namespace"
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        template.languageCode
+      </td>
+
+      <td>
+        Language and locale code for the template
+      </td>
+
+      <td>
+        String
+      </td>
+
+      <td>
+        "en\_US"
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        components.type
+      </td>
+
+      <td>
+        Type of component, like header, body, button, and so on.
+      </td>
+
+      <td>
+        String
+      </td>
+
+      <td>
+        "header", "body", "button"
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        header.type
+      </td>
+
+      <td>
+        Type of header like text, video, image, file, location
+      </td>
+
+      <td>
+        String
+      </td>
+
+      <td>
+        "text", "video", "image", "file", "location"
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        header.text.text
+      </td>
+
+      <td>
+        Text content for text header
+      </td>
+
+      <td>
+        String
+      </td>
+
+      <td>
+        "Hello, World!"
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        header.video.mediaURL
+      </td>
+
+      <td>
+        URL to the video media file
+      </td>
+
+      <td>
+        String
+      </td>
+
+      <td>
+        [http://example.com/video.mp4](http://example.com/video.mp4)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        header.image.mediaURL
+      </td>
+
+      <td>
+        URL to the image media file
+      </td>
+
+      <td>
+        String
+      </td>
+
+      <td>
+        [http://example.com/image.jpg](http://example.com/image.jpg)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        header.file.mediaURL
+      </td>
+
+      <td>
+        URL to the file media
+      </td>
+
+      <td>
+        String
+      </td>
+
+      <td>
+        [http://example.com/document.pdf](http://example.com/document.pdf)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        header.file.filename
+      </td>
+
+      <td>
+        Filename for the file
+      </td>
+
+      <td>
+        String
+      </td>
+
+      <td>
+        "document.pdf"
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        header.location.longitude
+      </td>
+
+      <td>
+        Longitude for location header
+      </td>
+
+      <td>
+        String
+      </td>
+
+      <td>
+        "74.0060"
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        header.location.latitude
+      </td>
+
+      <td>
+        Latitude for location header
+      </td>
+
+      <td>
+        String
+      </td>
+
+      <td>
+        "40.7128"
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        header.location.name
+      </td>
+
+      <td>
+        Name for the location
+      </td>
+
+      <td>
+        String
+      </td>
+
+      <td>
+        "Central Park"
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        header.location.address
+      </td>
+
+      <td>
+        Address for the location
+      </td>
+
+      <td>
+        String
+      </td>
+
+      <td>
+        "New York, NY 10024"
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        body.text
+      </td>
+
+      <td>
+        Body text of the message
+      </td>
+
+      <td>
+        String
+      </td>
+
+      <td>
+        "Your order is ready for pickup."
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        footer
+      </td>
+
+      <td>
+        Footer text for the message
+      </td>
+
+      <td>
+        String
+      </td>
+
+      <td>
+        "Thank you for choosing us!"
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        button.subType
+      </td>
+
+      <td>
+        Specific type of button like dynamicUrl, staticUrl, quickReply, callPhone
+      </td>
+
+      <td>
+        String
+      </td>
+
+      <td>
+        "dynamicUrl", "staticUrl"
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        button.buttonText
+      </td>
+
+      <td>
+        Text displayed on the button
+      </td>
+
+      <td>
+        String
+      </td>
+
+      <td>
+        "Click Here", "Copy Offer Code"
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        button.index
+      </td>
+
+      <td>
+        Position of the button
+      </td>
+
+      <td>
+        Integer
+      </td>
+
+      <td>
+        1, 2
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        button.parameters
+      </td>
+
+      <td>
+        Parameters for the button, like URL suffix, phone number, and so on.
+      </td>
+
+      <td>
+        Array
+      </td>
+
+      <td>
+        Depends on button.type
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        customProps
+      </td>
+
+      <td>
+        Custom key-value pairs defined at the time of creating campaigns
+      </td>
+
+      <td>
+        Array
+      </td>
+
+      <td>
+        [  
+                {  
+                  "key1": "Value1"  
+                },  
+                {  
+                  "Key2": "Value2"  
+                }  
+              ]
+      </td>
+    </tr>
+  </tbody>
+</Table>
 #### Payload Samples for Template Message
+
 
 ```json Text Template with Footer
 {
@@ -1739,57 +12274,719 @@ The outgoing template message payload can be broken down into the following thre
 }
 ```
 
+
 ## API Payload for Freeform Message
 
-CleverTap will send this payload for sending the Freeform message notification.  
+CleverTap will send this payload for sending the Freeform message notification.\
 Freeform message API payload has the user information about the targetted users, media URLs, and text. 
 
 > 📘 Payload Essentials
-> 
-> - Values with $$ (for example $$To,$$BusinessWabaNumber) are dynamic values and change for each request.
-> 
->   - Dynamic Reply Button, interactive lists, and product catalog, contacts, and locations are not currently supported in the CleverTap platform. This is why these objects are not mentioned in the payload.
-> 
->   - CleverTap does not support Name, Address, or URL key in location object.
-> 
->   - `msg_id` is a unique parameter for each message sent from CleverTap and must be present in callbacks sent by BSP to CleverTap.
+>
+> * Values with $$ (for example $$To,$$BusinessWabaNumber) are dynamic values and change for each request.
+>
+>   * Dynamic Reply Button, interactive lists, and product catalog, contacts, and locations are not currently supported in the CleverTap platform. This is why these objects are not mentioned in the payload.
+>
+>   * CleverTap does not support Name, Address, or URL key in location object.
+>
+>   * `msg_id` is a unique parameter for each message sent from CleverTap and must be present in callbacks sent by BSP to CleverTap.
 
-```json Freeform Message Payload
-{
-    "payloadVersion": $$payloadversion,
-    "to": "$$To",
-    "wabaNumber": "$$BusinessWabaNumber",
-    "msgId": "i|campaignID|batchID|j",
-    "type": "text/audio/file/image/location/video",
-    "isTemplate": false,
-    //Optional 
-    "audio": {
-        "mediaURL": "$$mediaUrl"
-    },
-    //OR
-    "file": {
-        "mediaURL": "$$mediaUrl",
-        "caption": "$$body",
-        "filename": "$$filename"
-    },
-    //OR
-    "image": {
-        "mediaURL": "$$mediaUrl",
-        "caption": "$$body"
-    },
-    //OR
-    "text": {
-        "body": "$$Body"
-    },
-    //OR
-    "video": {
-        "mediaURL": "$$mediaUrl",
-        "caption": "$$body"
-    }
-}
-```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #### Payload Description for Freeform Message
+
 
 | Parameter        | Description                                                                              | Example Value                                                       |
 | :--------------- | :--------------------------------------------------------------------------------------- | :------------------------------------------------------------------ |
@@ -1797,15 +12994,16 @@ Freeform message API payload has the user information about the targetted users,
 | "payloadversion" | Version of the payload being sent to CleverTap                                           | 0.1                                                                 |
 | wabaNumber       | Business’s WABA number                                                                   | 9189XXXXXXXX                                                        |
 | isTemplate       | Used to highlight the whether the payload being sent is for templates or freeform        | true/false                                                          |
-| msgId            | Unique identifier for message being sent and expected to be present in callback payloads | 25596363\|1639561857\|20220227\|25596363                            |
+| msgId            | Unique identifier for message being sent and expected to be present in callback payloads | 25596363\\|1639561857\\|20220227\\|25596363                         |
 | audio.mediaURL   | Media URL of the file                                                                    | [www.example.com/audio.mp3](http://www.example.com/audio.mp3)       |
 | file.mediaURL    | Media URL of the file                                                                    | [www.example.com/document.pdf](http://www.example.com/document.pdf) |
 | file.caption     | Message body                                                                             | “This is message body”                                              |
-| file.filename    | Title of the file                                                                        | “sample_document.pdf”                                               |
+| file.filename    | Title of the file                                                                        | “sample\_document.pdf”                                              |
 | image.mediaURL   | Media URL of the file                                                                    | [www.example.com/image.png](http://www.example.com/image.png)       |
 | image.caption    | Message body                                                                             | “This is message body”                                              |
 | video.mediaURL   | Media URL of the file                                                                    | [www.example.com/video.mp4](http://www.example.com/video.mp4)       |
 | video.caption    | Message body                                                                             | “This is message body”                                              |
+
 
 #### Payload Samples For Freeform Message
 
@@ -1853,57 +13051,685 @@ Freeform message API payload has the user information about the targetted users,
 
 CleverTap sends the following payload to validate the Messaging endpoint and API credentials saved in the dashboard. We expect success response within a second to save the endpoint. 
 
-```json Validation Payload
-{
-  "payloadVersion": 0.1,
-  "wabaNumber": "$$Mobilenumber",
-  "to": "+919999999999",
-  "isTemplate": true,
-  "template": {
-    "namespace": "whatsapp:hsm:technology:generic:verify",
-    "languageCode": "en"
-  },
-  "components": [
-    {
-      "type": "body",
-      "body": {
-        "text": "1 code: 2.Valid for 3 minutes.",
-        "parameters": [
-          {
-            "type": "text",
-            "text": "1"
-          },
-          {
-            "type": "text",
-            "text": "2"
-          },
-          {
-            "type": "text",
-            "text": "3"
-          }
-        ]
-      }
-    }
-  ],
-  "msgId": "0|0|0|0"
-}
-```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 If the format is incorrect, we throw an error showing the API request and response we received from the endpoint.
 
 ### Error Objects
 
-CleverTap expects partners to return any of the following responses depending on whether the request was successful. CleverTap will read the response body if the API request status code is _200 OK_, so notification processing-related errors and codes can be sent in the response body. Read the following for expected error codes:
+CleverTap expects partners to return any of the following responses depending on whether the request was successful. CleverTap will read the response body if the API request status code is *200 OK*, so notification processing-related errors and codes can be sent in the response body. Read the following for expected error codes:
+
 
 > 📘 Error Object
-> 
+>
 > The error object for the following error code needs to be specified only if there are errors in the send message API request:
-> 
-> - 2000 → Invalid credentials
-> - 2001 → Invalid template parameters
-> - 2002 → Invalid phone number
-> - 2003 → Phone number not subscribed 
-> - 2004 → Other
+>
+> * 2000 → Invalid credentials
+> * 2001 → Invalid template parameters
+> * 2002 → Invalid phone number
+> * 2003 → Phone number not subscribed 
+> * 2004 → Other
 
 ### HTTPS Codes
 
@@ -1938,7 +13764,7 @@ CleverTap expects partners to return any of the following responses depending on
 
 ## WhatsApp Callbacks
 
-CleverTap automatically creates unique callback URLs for each customer. These callback URLs are available under the _Provider_ setup section. BSPs are expected to add these callbacks at their end and forward the incoming messages to CleverTap’s callback URL in the specified format. CleverTap creates separate callback URLs for message status and incoming messages. Both these callbacks must be configured at the BSP's end.
+CleverTap automatically creates unique callback URLs for each customer. These callback URLs are available under the *Provider* setup section. BSPs are expected to add these callbacks at their end and forward the incoming messages to CleverTap’s callback URL in the specified format. CleverTap creates separate callback URLs for message status and incoming messages. Both these callbacks must be configured at the BSP's end.
 
 ### Callback Authentication
 
@@ -1948,61 +13774,1691 @@ CleverTap creates unique callback URLs for each customer and does not need any a
 
 BSPs must add  CleverTap's incoming message callback URL at their end and forward the incoming message in the following format.
 
-```json Incoming message callback payload
-{
-    "payloadVersion": $$payloadversion,
-    "from": "$$phone",
-    "wabaNumber": "$$BusinessWabaNumber",
-    "timestamp": "$$receivedTS",
-    "type": "text/location/image/video/voice/file/button",
-    //Optional(Needs to be sent if user replies to previously sent message)
-    "context": {
-        "id": "$$msg_ID"
-    },
-    //Optional (will be needed if message received is text)
-    "text": {
-        "body": "$$incomingMessage"
-    },
-    //Optional (will be needed if message received is loaction)
-    "location": {
-        "address": "$$address",
-        "latitude": "$$latitude",
-        "longitude": "$$latitude",
-        "name": "$$addressTitle",
-        "url": "$$addressUrls"
-    },
-    //Optional (will be needed if message received is image)
-    "image": {
-        "mediaURL": "$$mediaUrl",
-        "mimeType": "$$mediaMimeType", // image/jpeg
-        "caption": "$$incomingmessage"
-    },
-    //Optional (will be needed if message received is file)
-    "file": {
-        "mediaURL": "$$mediaUrl",
-        "mimeType": "$$mediaMimeType",
-        "caption": "$$incomingmessage"
-    },
-    //Optional (will be needed if message received is audio)
-    "audio": {
-        "mediaURL": "$$mediaUrl",
-        "mimeType": "$$mediaMimeType"
-    },
-    //Optional (will be needed if message received is video)
-    "video": {
-        "mediaURL": "$$mediaUrl",
-        "mimeType": "$$mediaMimeType",
-        "caption": "$$incomingmessage"
-    },
-    //Optional (will be needed if the message received is video)
-    "button": {
-        "payload": "$$buttonPayload", // same as outgoing  message
-        "text": "$$buttonText"
-    }
-}
-```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #### Payload Description for Incoming Message Callbacks
+
 
 | Parameter          | Description                                                | Example Value                                                 |
 | :----------------- | :--------------------------------------------------------- | :------------------------------------------------------------ |
@@ -2011,7 +15467,7 @@ BSPs must add  CleverTap's incoming message callback URL at their end and forwar
 | wabaNumber         | Destination business WABA number to which message was sent | “9199XXXXXXXX”                                                |
 | timestamp          | Timestamp when the message was sent                        | “1647441774”                                                  |
 | type               | Type of incoming message                                   | “text/audio/video/image”                                      |
-| context.id         | `Msg_id` of the message to which the user has responded    | 25596363\|1639561857\|20220227\|25596363                      |
+| context.id         | `Msg_id` of the message to which the user has responded    | 25596363\\|1639561857\\|20220227\\|25596363                   |
 | text.body          | Text received from end user                                | “Hey, This is message”                                        |
 | location.lattitude | Latitude of the location shared                            | 2.457476548                                                   |
 | location.Longitude | Longitude of the location shared                           | 1.565867657                                                   |
@@ -2029,6 +15485,7 @@ BSPs must add  CleverTap's incoming message callback URL at their end and forwar
 | video.mediaURL     | Media File URL                                             | [www.example.com/image.png](http://www.example.com/image.png) |
 | video.mimetype     | Media file mime type                                       | .mp4                                                          |
 | video.caption      | Image caption                                              | “This is caption”                                             |
+
 
 #### Sample Payload for Incoming Message Callbacks
 
@@ -2074,8 +15531,9 @@ BSPs must add  CleverTap's incoming message callback URL at their end and forwar
 BSPs must add  CleverTap's message status callback URL at their end and forward the message statuses (DLR callback) in the following format. CleverTap uses these callbacks to populate the campaign statistics.
 
 > 📘 Provider Click Tracking
-> 
+>
 > Click-tracking data is accessible only when the **Provider Click Tracking** button is utilized in the campaign templates.
+
 
 ```json Sent Status Callback
 {
@@ -2146,16 +15604,18 @@ BSPs must add  CleverTap's message status callback URL at their end and forward 
 
 #### Payload Description for Message Status Callbacks
 
+
 | Parameter               | Description                                                                              | Example Value                                       |
 | :---------------------- | :--------------------------------------------------------------------------------------- | :-------------------------------------------------- |
 | payloadversion          | Version of the payload being sent to CleverTap                                           | 0.1                                                 |
 | statuses[X].status      | Notification status                                                                      | “sent/delivered/read/failed/clicked”                |
 | statuses[X].timestamp   | Timestamp of the event                                                                   | “1647441774”                                        |
-| statuses[X].msgId       | Unique identifier for message being sent and expected to be present in callback payloads | 25596363\|1639561857\|20220227\|25596363            |
+| statuses[X].msgId       | Unique identifier for message being sent and expected to be present in callback payloads | 25596363\\|1639561857\\|20220227\\|25596363         |
 | statuses[X].error.code  | Failure Error code                                                                       | 1001                                                |
 | statuses[X].error.title | Description of error                                                                     | Message specified does not match with any template. |
 
 #### Sample Payload for Message Status Callbacks
+
 
 ```json Successful Delivery Payload
 {
@@ -2199,52 +15659,53 @@ BSPs must add  CleverTap's message status callback URL at their end and forward 
 ### Callback Error Codes
 
 > 🚧 Callback Error Codes
-> 
+>
 > Listed below are the expected callback error codes:
-> 
-> - 1000 → Invalid credentials
-> - 1001  → Invalid template parameters
-> - 1002 → Invalid phone number
-> - 1003 → The phone number is no longer active
-> - 1004 → Too many send requests to phone numbers
-> - 1005 → The phone number is temporarily unavailable or not in the provider network
-> - 1006 → Phone number is blacklisted
-> - 1007 → User device can’t receive the message
-> - 1008 → This message is sent outside of the WhatsApp chat window
-> - 1009 →  Other
-> - 1010 → WhatsApp Message Blocked by Meta
+>
+> * 1000 → Invalid credentials
+> * 1001  → Invalid template parameters
+> * 1002 → Invalid phone number
+> * 1003 → The phone number is no longer active
+> * 1004 → Too many send requests to phone numbers
+> * 1005 → The phone number is temporarily unavailable or not in the provider network
+> * 1006 → Phone number is blacklisted
+> * 1007 → User device can’t receive the message
+> * 1008 → This message is sent outside of the WhatsApp chat window
+> * 1009 →  Other
+> * 1010 → WhatsApp Message Blocked by Meta
 
 # Creating/Uploading User Base
 
-You can upload a CSV file to upload a set of internal users by going to _Settings_ > _CSV uploads_. The following is the sample CSV format for uploading user data.
+You can upload a CSV file to upload a set of internal users by going to *Settings* > *CSV uploads*. The following is the sample CSV format for uploading user data.
 
-| Identity                                              | Name     | Email | Phone           | Gender | MSG-WhatsApp | Upload Name   |
-| :---------------------------------------------------- | :------- | :---- | :-------------- | :----- | :----------- | :------------ |
-| [johndoe@clevertap.com](mailto:johndoe@clevertap.com) | John Doe |       | \+9199**\***420 | M      | TRUE         | Sample Upload |
+| Identity                                              | Name     | Email | Phone                     | Gender | MSG-WhatsApp | Upload Name   |
+| :---------------------------------------------------- | :------- | :---- | :------------------------ | :----- | :----------- | :------------ |
+| [johndoe@clevertap.com](mailto:johndoe@clevertap.com) | John Doe |       | \+919&#x39;**\***&#x34;20 | M      | TRUE         | Sample Upload |
 
 ## Accepted Message Formats
 
+
 CleverTap currently has limitations on the types of WhatsApp messages supported on the dashboard. We are working on adding support for the new message types as soon as possible but for the time being, only the following message types are supported.
 
-**Freeform Messages**  
+**Freeform Messages**\
 This message type supports the following format:
 
-- Simple text
-- Audio
-- Video
-- Images
-- Document
+* Simple text
+* Audio
+* Video
+* Images
+* Document
 
-**Template messages**  
-The elements of the Template message include a header, footer, simple text, and buttons.  
+**Template messages**\
+The elements of the Template message include a header, footer, simple text, and buttons.\
 The header section supports the following formats:
 
-- Text
-- Image
-- Videos
-- Locations
-- Audios
-- Documents
+* Text
+* Image
+* Videos
+* Locations
+* Audios
+* Documents
 
 # FAQs
 
