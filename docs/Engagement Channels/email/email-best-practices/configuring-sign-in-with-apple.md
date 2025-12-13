@@ -22,26 +22,26 @@ To be able to send emails to Private Apple addresses, refer to the instructions 
 
 Before you begin, ensure you have the following accounts set up:
 
-- **Apple Developer Account**: An Apple Developer account is required. If you do not already have an Apple Developer account, follow the on-screen instructions to [create your account](https://appleid.apple.com/account?appId=632&returnUrl=https%3A%2F%2Fdeveloper.apple.com%2Faccount%2Fresources%2F).
-- **SendGrid Account**: Access to your SendGrid account is required, if you are not using the Advanced Email Add-on.
+* **Apple Developer Account**: An Apple Developer account is required. If you do not already have an Apple Developer account, follow the on-screen instructions to [create your account](https://appleid.apple.com/account?appId=632\&returnUrl=https%3A%2F%2Fdeveloper.apple.com%2Faccount%2Fresources%2F).
+* **SendGrid Account**: Access to your SendGrid account is required, if you are not using the Advanced Email Add-on.
 
 # Setting Up Sign in with Apple
 
 To integrate Sign in with Apple, follow the steps below to set up your Apple Developer account and configure the necessary email address(es) for authentication:
 
 1. Sign into your apple developer account. 
-2. After logging in to your Apple Developer account. Navigate to _Developer Resources > [Access to Certificates, Identifiers & Profiles.](https://developer.apple.com/account/resources)_
+2. After logging in to your Apple Developer account. Navigate to *Developer Resources >[Access to Certificates, Identifiers & Profiles.](https://developer.apple.com/account/resources)*
 3. Click on **More** in the sidebar and select **Configure Sign in with Apple**.
 4. Add email addresses under **Individual Email Addresses**. You will need unique email addresses from SendGrid to authenticate your sending domains. Follow the appropriate method based on your SendGrid setup: 
-   - If using the Advanced Email Add-on: Contact the CleverTap email team at [emailteam@clevertap.com](mailto:emailteam@clevertap.com) to receive the necessary email address(es).
-   - If using a Personal SendGrid Account: 
+   * If using the Advanced Email Add-on: Contact the CleverTap email team at [emailteam@clevertap.com](mailto:emailteam@clevertap.com) to receive the necessary email address(es).
+   * If using a Personal SendGrid Account: 
      1. Log into your SendGrid account.
      2. Navigate to **Settings**.
      3. Click on **Sender Authentication**.
-     4. Select your authenticated domain. Scroll to the bottom to find the _Sign In With Apple Address_ and click on **Show address**.  
+     4. Select your authenticated domain. Scroll to the bottom to find the *Sign In With Apple Address* and click on **Show address**.\
         If you have multiple authenticated domains, repeat these steps for each domain.
 5. Click **Register**.
 
 > 📘 Support
-> 
+>
 > For more information on the registration process, refer to the guide [here](https://www.twilio.com/docs/sendgrid/ui/account-and-settings/configuring-sign-in-with-apple#configuring-your-apple-developer-account). If you need further assistance with setting up Apple Sign-In, please contact Apple’s support team directly, as the setup within your Apple Developer account is managed independently of CleverTap and SendGrid.
