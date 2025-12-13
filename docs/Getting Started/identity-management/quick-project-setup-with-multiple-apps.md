@@ -12,61 +12,32 @@ next:
 ---
 Create a project quickly after you log on to CleverTap. You can choose from the following platforms:
 
-- [Android](doc:quick-project-setup#section-setup-your-android-app)
-- [iOS](doc:quick-project-setup#section-setup-your-i-os-app)
-- [Website](doc:quick-project-setup#section-setup-your-website)
-- [API](doc:quick-project-setup#section-setup-api)
+* [Android](doc:quick-project-setup#section-setup-your-android-app)
+* [iOS](doc:quick-project-setup#section-setup-your-i-os-app)
+* [Website](doc:quick-project-setup#section-setup-your-website)
+* [API](doc:quick-project-setup#section-setup-api)
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/bfe1a41-Online_Signup_project_create.png",
-        "Online_Signup_project_create.png",
-        578
-      ],
-      "align": "center",
-      "sizing": "80",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="Online_Signup_project_create.png" alt={578} align="center" className="border" width="80%" border={true} src="https://files.readme.io/bfe1a41-Online_Signup_project_create.png" />
 
-You can choose the platform for your app. Select _Native App_ for native Android and iOS apps. You can also select other hybrid platforms for iOS and Android, such as:
+You can choose the platform for your app. Select *Native App* for native Android and iOS apps. You can also select other hybrid platforms for iOS and Android, such as:
 
-- [Cordova](https://developer.clevertap.com/docs/cordova)
-- [Unity](https://developer.clevertap.com/docs/unity)
-- [Xamarin](https://developer.clevertap.com/docs/xamarin)
-- [React Native](https://developer.clevertap.com/docs/react-native)
-- [Flutter](https://developer.clevertap.com/docs/flutter-sdk)
+* [Cordova](https://developer.clevertap.com/docs/cordova)
+* [Unity](https://developer.clevertap.com/docs/unity)
+* [Xamarin](https://developer.clevertap.com/docs/xamarin)
+* [React Native](https://developer.clevertap.com/docs/react-native)
+* [Flutter](https://developer.clevertap.com/docs/flutter-sdk)
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/08183f3-Online_Signup_Account_Integration.png",
-        "Online_Signup_Account_Integration.png",
-        1189
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="Online_Signup_Account_Integration.png" alt={1189} align="center" className="border" border={true} src="https://files.readme.io/08183f3-Online_Signup_Account_Integration.png" />
 
 ## Set Up App
 
-You can set up the integration for your app from _Settings_ > _Project_. Alternatively, you can simply select the list from the dashboard top menu and click **Create New Project**.
+You can set up the integration for your app from *Settings* > *Project*. Alternatively, you can simply select the list from the dashboard top menu and click **Create New Project**.
 
 # Set Up Android App
 
 To set up your Android app:
 
-1. Enter the _PlayStore URL_ for your app. 
+1. Enter the *PlayStore URL* for your app. 
 2. Integrate the CleverTap SDK. For more information, refer to [SDK](https://developer.clevertap.com/docs/android-quickstart-guide#section-step-1-install-sdk).
 
 ```json
@@ -82,7 +53,7 @@ dependencies {
 apply plugin: 'com.google.gms.google-services'
 ```
 
-3. Implement CleverTap dependencies.  
+3. Implement CleverTap dependencies.\
    Add the following snippet within the tags in the `AndroidManifest.xml` file. For more information, refer to  [Android Manifest XML](https://developer.clevertap.com/docs/android-quickstart-guide#section-step-2-add-your-clever-tap-credentials-in-android-manifest-xml).
 
 ```xml
@@ -107,7 +78,7 @@ apply plugin: 'com.google.gms.google-services'
 CleverTapAPI clevertapDefaultInstance = CleverTapAPI.getDefaultInstance(getApplicationContext());
 ```
 
-4. Set up Firebase Cloud Messaging (FCM) to send push notifications using CleverTap.  
+4. Set up Firebase Cloud Messaging (FCM) to send push notifications using CleverTap.\
    Register the services inside the <application></application> tags of the Android manifest file. For more information, see [Using FCM version 18.00 and above](https://developer.clevertap.com/docs/using-fcm-version-1800-and-above). 
 
 ```xml
@@ -162,15 +133,15 @@ cleverTapAPI.onUserLogin(profileUpdate);
 
 To set up your iOS app:
 
-1. (Optional) Enter the _AppStore URL_ for your app.
-2. Install the CleverTap SDK.  
+1. (Optional) Enter the *AppStore URL* for your app.
+2. Install the CleverTap SDK.\
    To start integration, install CocoaPods. To integrate the app manually, see [manual integration](https://developer.clevertap.com/docs/ios-quickstart-guide#section-option-b-manual-install). Add the following snippet above in the Podfile and run the Pod install command to begin the installation of the CleverTap SDK.
 
 ```text
 pod "CleverTap-iOS-SDK"
 ```
 
-3. Integrate SDK. For more information, see [SDK Integration](https://developer.clevertap.com/docs/ios-quickstart-guide#section-step-4-sdk-integration)  
+3. Integrate SDK. For more information, see [SDK Integration](https://developer.clevertap.com/docs/ios-quickstart-guide#section-step-4-sdk-integration)\
    Import the CleverTap SDK to the AppDelegate.swift file. Now add `[CleverTap autoIntegrate]` within the application: `didFinishLaunchingWithOptions`: method. This allows the CleverTap class used to track app launches, receive In-App notifications, and enable deep link tracking.
 
 ```text
@@ -181,10 +152,10 @@ func application(application: UIApplication, didFinishLaunchingWithOptions launc
 }
 ```
 
-4. Set up push notifications.  
+4. Set up push notifications.\
    To integrate iOS push notifications and enable advanced settings, go to [mobile push channel setup](https://developer.clevertap.com/docs/ios#section-push-notifications).
 
-5. Test your integration.  
+5. Test your integration.\
    Paste the snippet in the viewDidLoad class to start testing events and user profiles:
 
 ```text Test Events
@@ -209,32 +180,17 @@ You can now have multiple apps under a single project. This allows you to use da
 
 To add an app:
 
-1. Click **Settings** > _Project_. The _Project_ page opens. 
-2. Select the _App_ tab. 
+1. Click **Settings** > *Project*. The *Project* page opens. 
+2. Select the *App* tab. 
 3. Click **+ Add App** to add an app. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/45b478d-Multiple_apps_add.png",
-        "Multiple_apps_add.png",
-        751
-      ],
-      "align": "center",
-      "sizing": "80",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="Multiple_apps_add.png" alt={751} align="center" className="border" width="80%" border={true} src="https://files.readme.io/45b478d-Multiple_apps_add.png" />
 
-4. Add the required details and click **Add App**. The _App ID_ is a combination of the _App name_ and _Account ID_. 
+4. Add the required details and click **Add App**. The *App ID* is a combination of the *App name* and *Account ID*. 
 
 5. Integrate your app with CleverTap. For more information, refer to [Set up App](https://docs.clevertap.com/docs/quick-project-setup#section-setup-app).
 
-The events raised for any of the apps will be received with the app name. For example, app_launched_gaming. This allows you to identify the app of origin for the system or custom event. You can now select the app from the app list during campaign creation. 
+The events raised for any of the apps will be received with the app name. For example, app\_launched\_gaming. This allows you to identify the app of origin for the system or custom event. You can now select the app from the app list during campaign creation. 
 
 You can select multiple apps for sending an App Inbox message. 
 
@@ -243,13 +199,13 @@ You can use multiple apps with the following engagement channels:
 ## Integrate with App
 
 1. Use the AppID available under Settings->Project->Apps as the Account ID when integrating your app with the CleverTap SDK.
-2. This will ensure that all events coming from the App and uniquely identifiable and can be attributed to the App.  
+2. This will ensure that all events coming from the App and uniquely identifiable and can be attributed to the App.\
    [Add Image and link to quick start guides]
 
 For more information on integrating your app see:
 
-- [Android Quickstart Guide](https://developer.clevertap.com/docs/android-quickstart-guide)
-- [iOS Quickstart Guide](https://developer.clevertap.com/docs/ios-quickstart-guide)
+* [Android Quickstart Guide](https://developer.clevertap.com/docs/android-quickstart-guide)
+* [iOS Quickstart Guide](https://developer.clevertap.com/docs/ios-quickstart-guide)
 
 # Channels
 
@@ -259,38 +215,23 @@ Once you have added the apps, profiles have been created, and events have starte
 
 Push notifications are brief messages you can send to your mobile app users. You can send the following campaigns:
 
-- [Past Behavior Campaigns](https://docs.clevertap.com/docs/quick-project-setup_multiple-apps#section-past-behaviour-campaigns)
-- [Live Campaigns](https://docs.clevertap.com/docs/quick-project-setup_multiple-apps#section-live-campaigns)
+* [Past Behavior Campaigns](https://docs.clevertap.com/docs/quick-project-setup_multiple-apps#section-past-behaviour-campaigns)
+* [Live Campaigns](https://docs.clevertap.com/docs/quick-project-setup_multiple-apps#section-live-campaigns)
 
 For more information on push campaigns, refer to [Mobile Push Notifications](https://docs.clevertap.com/docs/push).
 
 ### Past Behaviour Campaigns
 
-1. Under the _Who_ section, you can select your targeting criteria for users you want to send out the push to. Ensure that you use the Event Property "CT App Name" = "Your App" to identify and target users basis events in the respective app.
-2. Select the App you want to send this Push Campaign to from the _Select An App_ list.
+1. Under the *Who* section, you can select your targeting criteria for users you want to send out the push to. Ensure that you use the Event Property "CT App Name" = "Your App" to identify and target users basis events in the respective app.
+2. Select the App you want to send this Push Campaign to from the *Select An App* list.
 3. Schedule your notification, and the campaign is sent to the target user.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9524445-Campaigns_Who.png",
-        "Campaigns_Who.png",
-        1241
-      ],
-      "align": "center",
-      "sizing": "80",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="Campaigns_Who.png" alt={1241} align="center" className="border" width="80%" border={true} src="https://files.readme.io/9524445-Campaigns_Who.png" />
 
 ### Live Campaigns
 
-1. Under the _Who_ section, you can select your targeting criteria for users you want to send out the push to. Ensure that you use the Event Property "CT App Name" = "Your App" to identify and target users basis events from the respective app.
-2. You should select the App you want to send this Push Campaign to from the _Select An App_ list.
+1. Under the *Who* section, you can select your targeting criteria for users you want to send out the push to. Ensure that you use the Event Property "CT App Name" = "Your App" to identify and target users basis events from the respective app.
+2. You should select the App you want to send this Push Campaign to from the *Select An App* list.
 3. Schedule your notification, and the campaign will be sent to the target user.
 
 ![](https://files.readme.io/e2cef47-Screenshot_2020-11-24_at_11.04.19_AM.png "Screenshot 2020-11-24 at 11.04.19 AM.png")
@@ -299,25 +240,11 @@ For more information on push campaigns, refer to [Mobile Push Notifications](htt
 
 You can send  In-App messages with Images, GIFs, video, and audio.
 
-Under the _Who_ section, the Apps you add as targeting criteria for the event are the apps the InApp is eligible for delivery. After CleverTap receives the Target Event from any of the apps in the criteria, the In-App that has been scheduled is sent to the App the Target Event was received from.
+Under the *Who* section, the Apps you add as targeting criteria for the event are the apps the InApp is eligible for delivery. After CleverTap receives the Target Event from any of the apps in the criteria, the In-App that has been scheduled is sent to the App the Target Event was received from.
 
-If you select _Limit to users who do this event for the First Time_, CleverTap restricts the delivery to only the first App+Event that matches the targeting criteria only. In-App is only delivered once.
+If you select *Limit to users who do this event for the First Time*, CleverTap restricts the delivery to only the first App+Event that matches the targeting criteria only. In-App is only delivered once.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6670969-Campaigns_Who_Mobile_inapp.png",
-        "Campaigns_Who_Mobile_inapp.png",
-        1010
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="Campaigns_Who_Mobile_inapp.png" alt={1010} align="center" className="border" border={true} src="https://files.readme.io/6670969-Campaigns_Who_Mobile_inapp.png" />
 
 For more information, refer to [In-App Message](doc:inapp-campaigns).
 
@@ -328,21 +255,7 @@ SMS notifications are brief text messages you can send to your app or website us
 1. You can select the targeting criteria based on the Event + "CT App Name" filter.
 2. SMS will be sent to the mobile number on the profile if the targeting criteria are met.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d968a7a-Campaigns_Who_SMS.png",
-        "Campaigns_Who_SMS.png",
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="Campaigns_Who_SMS.png" align="center" className="border" border={true} src="https://files.readme.io/d968a7a-Campaigns_Who_SMS.png" />
 
 For more information on SMS messages, refer to [SMS](doc:sms).
 
@@ -350,96 +263,40 @@ For more information on SMS messages, refer to [SMS](doc:sms).
 
 App Inbox is a messaging channel that lets you deliver rich, individually customized content to your customers. You can send the following campaigns:
 
-- [Past Behavior Campaigns](doc:quick-project-setup_multiple-apps#section-past-behaviour-campaigns)
-- [Live Campaigns](doc:quick-project-setup_multiple-apps#section-live-campaigns)
+* [Past Behavior Campaigns](doc:quick-project-setup_multiple-apps#section-past-behaviour-campaigns)
+* [Live Campaigns](doc:quick-project-setup_multiple-apps#section-live-campaigns)
 
 For more information, refer to [App Inbox](doc:app-inbox).
 
 ### Past Behaviour Campaigns
 
-1. Define the targeting criteria under the _Who_ section.
+1. Define the targeting criteria under the *Who* section.
 2. Select the app to which the App Inbox message should be delivered. When the targeting criteria are met, the App Inbox campaign is delivered to the target app.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5aafa3e-Campaigns_Who_app_inbox.png",
-        "Campaigns_Who_app_inbox.png",
-        null
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="Campaigns_Who_app_inbox.png" align="center" className="border" border={true} src="https://files.readme.io/5aafa3e-Campaigns_Who_app_inbox.png" />
 
 ### Live Action Campaigns
 
-1. Under the _Who_ section, the Apps you add as targeting criteria for the event are the apps the App Inbox message is eligible for delivery.
+1. Under the *Who* section, the Apps you add as targeting criteria for the event are the apps the App Inbox message is eligible for delivery.
 2. After CleverTap receives the Target Event from any of the apps in the targeting criteria, the App Inbox message that has been scheduled is sent to the App the Target Event was received from.
-3. If you select _Limit to users who do this Event for the First Time_, CleverTap restricts the delivery to only the first App+Event that matches the targeting criteria only. In-App is only delivered once.
+3. If you select *Limit to users who do this Event for the First Time*, CleverTap restricts the delivery to only the first App+Event that matches the targeting criteria only. In-App is only delivered once.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/df3ff67-Screenshot_2020-11-24_at_11.06.15_AM.png",
-        "Screenshot 2020-11-24 at 11.06.15 AM.png",
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="Screenshot 2020-11-24 at 11.06.15 AM.png" align="center" className="border" border={true} src="https://files.readme.io/df3ff67-Screenshot_2020-11-24_at_11.06.15_AM.png" />
 
 ## Native Display
 
 1. Like Apps and App Inbox, define your targeting criteria and include "CT App Name" to target events from specific apps. Native Display is delivered to any of the apps added to the targeting criteria from which the event is received.
-2. If you select _Limit to Users who do this event for the First Time_, the Native Display campaign is only delivered to the first App from which the event is received that matches the targeting criteria
+2. If you select *Limit to Users who do this event for the First Time*, the Native Display campaign is only delivered to the first App from which the event is received that matches the targeting criteria
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/77cab4f-Campaigns_Who_Native_display.png",
-        "Campaigns_Who_Native_display.png",
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="Campaigns_Who_Native_display.png" align="center" className="border" border={true} src="https://files.readme.io/77cab4f-Campaigns_Who_Native_display.png" />
 
 For more information, refer to [Native Display](doc:native-display).
 
 ## Email
 
-1. Under the _Who_ section, you can define your targeting criteria using behavior and Events (with property CT App Name) to send emails based on the criteria. The email is sent to the emails linked to qualified user profiles
+1. Under the *Who* section, you can define your targeting criteria using behavior and Events (with property CT App Name) to send emails based on the criteria. The email is sent to the emails linked to qualified user profiles
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6f8c6af-Campaigns_Who_Email.png",
-        "Campaigns_Who_Email.png",
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="Campaigns_Who_Email.png" align="center" className="border" border={true} src="https://files.readme.io/6f8c6af-Campaigns_Who_Email.png" />
 
 For more information, refer to [Email](doc:email).
 
@@ -449,7 +306,7 @@ APIs only support Past behavior campaigns.
 
 ### Mobile Push and App Inbox
 
-1. To create a campaign via API in the payload, the only new parameter that you need to add is the _App Name_ to which the push notification must be sent.
+1. To create a campaign via API in the payload, the only new parameter that you need to add is the *App Name* to which the push notification must be sent.
 
 ```json
 {
@@ -485,15 +342,15 @@ APIs only support Past behavior campaigns.
 
 (@jash: add some introductory line.)
 
-- No Support for push campaigns in journeys.
-- Can support live campaigns for In-App, Email, SMS, and Native Display.
+* No Support for push campaigns in journeys.
+* Can support live campaigns for In-App, Email, SMS, and Native Display.
 
 # Set Up Website
 
-1. Add website URL.  
+1. Add website URL.\
    Enter the Website URL for your project.
 
-2. Integrate website.  
+2. Integrate website.\
    Paste the snippet in the <head></head> section of your website.
 
 ```javascript
@@ -514,10 +371,10 @@ clevertap.privacy.push({useIP: false}); //set the flag to true, if the user agre
 </script>
 ```
 
-3. Set up push notifications.  
+3. Set up push notifications.\
    To integrate and enable web push notifications, go to [web push channel setup](https://developer.clevertap.com/docs/web#section-web-push).
 
-4. Test integration.  
+4. Test integration.\
    Paste the following snippet in your browser’s console to start testing.
 
 ```text Test events
@@ -536,16 +393,16 @@ clevertap.profile.push({
 
 Set up your API to use events and user profiles. For more information on setting up API, refer to [API Quickstart Guide](https://developer.clevertap.com/docs/api-quickstart-guide).
 
-1. Upload to the API endpoint:  
-   <https://api.clevertap.com/1/upload>
+1. Upload to the API endpoint:\
+   [https://api.clevertap.com/1/upload](https://api.clevertap.com/1/upload)
 
 > 📘 Note
-> 
+>
 > Use the URL based on your location:
-> 
-> - India - in1.api.clevertap.com
-> - Singapore - sg1.api.clevertap.com
-> - U.S - us1.api.clevertap.com
+>
+> * India - in1.api.clevertap.com
+> * Singapore - sg1.api.clevertap.com
+> * U.S - us1.api.clevertap.com
 
 2. Use the JSON payload for events and user profiles.
 
@@ -621,5 +478,5 @@ Set up your API to use events and user profiles. For more information on setting
 //$delete applicable only to name and gender fields
 ```
 
-3. Test integration.  
+3. Test integration.\
    Send API request with payload to test integration.
