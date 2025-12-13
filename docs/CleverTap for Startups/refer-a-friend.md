@@ -28,18 +28,18 @@ Available to all new and existing customers on the **CleverTap Essentials Plan**
 
 **For Existing Essentials Customers (Referrers)**
 
-- Get **$100 in CleverTap credits** (₹8,000) for every successful referral.
-- Credits are credited once the referred lead performs the following:
-  - Signs up for a **30-day free trial**.
-  - Provides valid payment information in their Essentials account.
+* Get **$100 in CleverTap credits** (₹8,000) for every successful referral.
+* Credits are credited once the referred lead performs the following:
+  * Signs up for a **30-day free trial**.
+  * Provides valid payment information in their Essentials account.
 
 **For New Referred Leads**
 
-- Gets **$75 in CleverTap credits** (₹6,000) applied on their 30-day free trial.
+* Gets **$75 in CleverTap credits** (₹6,000) applied on their 30-day free trial.
 
 ## How to Refer
 
-**Referral Form:** Fill in the [form](https://form.typeform.com/to/yuG2JJCM?utm_source=CleverTap&utm_medium=Email&utm_campaign=Referral%2BProgram) with the referee's name, email, contact number, company name, and website. 
+**Referral Form:** Fill in the [form](https://form.typeform.com/to/yuG2JJCM?utm_source=CleverTap\&utm_medium=Email\&utm_campaign=Referral%2BProgram) with the referee's name, email, contact number, company name, and website. 
 
 **Email Notification:** Receive email notifications once your referral signs up and the credits are applied.
 
@@ -49,21 +49,21 @@ Available to all new and existing customers on the **CleverTap Essentials Plan**
 
 The eligibility criteria for the referrers are as follows:
 
-- For customers in INR, the conversion rate is $1 = ₹80.
-- The referred lead must be a new CleverTap customer with a valid business email and an active website or mobile app.
-- The referral scheme is valid only for users currently on the Essentials Plan (up to 100K MAUs).
-- Credits are non-transferable and cannot be redeemed for cash.
-- Credits apply automatically to future invoices once added.
-- Credits are not given if the referred customer is already enrolled in other CleverTap programs (for example, Leap, Early Integration Offer).
+* For customers in INR, the conversion rate is $1 = ₹80.
+* The referred lead must be a new CleverTap customer with a valid business email and an active website or mobile app.
+* The referral scheme is valid only for users currently on the Essentials Plan (up to 100K MAUs).
+* Credits are non-transferable and cannot be redeemed for cash.
+* Credits apply automatically to future invoices once added.
+* Credits are not given if the referred customer is already enrolled in other CleverTap programs (for example, Leap, Early Integration Offer).
 
 ### For Referred Leads (New Customers)
 
 The eligibility criteria for the referred leads are as follows:
 
-- Must be **new to CleverTap** and have never received any credits or discounts.
-- Must sign up through referral for the **Essentials Plan**.
-- Eligible only when added alone (not with other promotions, that is, annual payment discounts, Leap Program, etc.).
-- The $75 (₹6,000) credit is added automatically during the free trial period and cannot be transferred.
+* Must be **new to CleverTap** and have never received any credits or discounts.
+* Must sign up through referral for the **Essentials Plan**.
+* Eligible only when added alone (not with other promotions, that is, annual payment discounts, Leap Program, etc.).
+* The $75 (₹6,000) credit is added automatically during the free trial period and cannot be transferred.
 
 # FAQs
 
