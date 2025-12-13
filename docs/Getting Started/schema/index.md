@@ -986,7 +986,32 @@ To disable the tracking of Push Impression event properties:
 
 </Accordion>
 
-<br />
+<Accordion title="Web Session Started">
+
+This is a web entry event similar to the App launched event. This event refers to the event triggered when a user starts a session or engages with your website. This event will be recorded in two cases:
+
+* When a user opens a webpage.
+* When a user reloads the browser after 20 minutes of inactivity.
+
+<Callout icon="📘" theme="info">
+  **Default Behavior**
+
+  This event is disabled by default for all customers and can be configured by the customers. When enabled, it captures the unique visitors to the website in a particular session.
+</Callout>
+
+</Accordion>
+
+<Accordion title="UTM Visited">
+
+The _UTM Visited_ event is tracked when a user clicks on a link from a marketing campaign that has a UTM parameter defined on it. This event is also tracked when a CleverTap-integrated attribution platform, such as AppsFlyer or Branch, sends this information to CleverTap. This event is recorded for your marketing campaigns from external sources, such as Google Ads or Facebook.
+
+<Callout icon="📘" theme="info">
+  **Default Behavior**
+
+  The UTM Visited tracking is ON for new customers by default. For existing customers, the tracking of UTM Visited remains as is. However, they have the capability to enable or disable the same.
+</Callout>
+
+</Accordion>
 
 <Callout icon="📘" theme="info">
   **Configuring Other System Events**
