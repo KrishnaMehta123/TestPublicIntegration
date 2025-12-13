@@ -14,11 +14,11 @@ Identity management is how CleverTap attributes properties and events performed 
 
 This section covers the following topics in detail:
 
-- [Identity Management Overview](https://docs.clevertap.com/docs/identity-management-overview)
-- [Handling Identities](https://docs.clevertap.com/docs/handling-identities)
-- [Assigning Identities](https://docs.clevertap.com/docs/assigning-identities)
-- [Identifying Users](https://docs.clevertap.com/docs/identifying-users)
-- [Identification Methods](https://docs.clevertap.com/docs/identification-methods)
-- [Advanced Identity Management](https://docs.clevertap.com/docs/advanced-identity-management)
-- [Best Practices - Identity Management](https://docs.clevertap.com/docs/best-practices-identity-management)
-- [Troubleshooting Identity Management](https://docs.clevertap.com/docs/troubleshooting-identity-management)
+* [Identity Management Overview](https://docs.clevertap.com/docs/identity-management-overview)
+* [Handling Identities](https://docs.clevertap.com/docs/handling-identities)
+* [Assigning Identities](https://docs.clevertap.com/docs/assigning-identities)
+* [Identifying Users](https://docs.clevertap.com/docs/identifying-users)
+* [Identification Methods](https://docs.clevertap.com/docs/identification-methods)
+* [Advanced Identity Management](https://docs.clevertap.com/docs/advanced-identity-management)
+* [Best Practices - Identity Management](https://docs.clevertap.com/docs/best-practices-identity-management)
+* [Troubleshooting Identity Management](https://docs.clevertap.com/docs/troubleshooting-identity-management)
