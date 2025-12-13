@@ -18,9 +18,9 @@ This integration supports message delivery, tracking via DLR (Delivery Receipt),
 
 Here’s how businesses use Sinch with CleverTap:
 
-- _Send OTPs and Alerts_: Deliver real-time authentication and transaction confirmations.
-- _Promote Offers and Sales_: Target user segments with promotional SMS blasts.
-- _Re-engage Drop-Offs_: Remind users to complete transactions or renew subscriptions.
+* *Send OTPs and Alerts*: Deliver real-time authentication and transaction confirmations.
+* *Promote Offers and Sales*: Target user segments with promotional SMS blasts.
+* *Re-engage Drop-Offs*: Remind users to complete transactions or renew subscriptions.
 
 Integrate CleverTap’s segmentation and campaign engine with Sinch’s SMS delivery pipeline for high-engagement, context-driven messaging.
 
@@ -28,12 +28,12 @@ Integrate CleverTap’s segmentation and campaign engine with Sinch’s SMS deli
 
 To integrate Sinch with CleverTap, ensure the following:
 
-- You must have an active SMS account with Sinch (including username, password, and endpoint), provided by [Sinch India support](mailto:nam-ACL@sinch.com).
-- You must have a CleverTap account with SMS setup enabled.
-- If your account is registered in India, ensure all templates and headers are DLT-approved.
+* You must have an active SMS account with Sinch (including username, password, and endpoint), provided by [Sinch India support](mailto:nam-ACL@sinch.com).
+* You must have a CleverTap account with SMS setup enabled.
+* If your account is registered in India, ensure all templates and headers are DLT-approved.
 
 > 🚧 Support for Integration
-> 
+>
 > This integration is managed and continuously improved by Sinch India. The CleverTap and Sinch India integration has undergone stringent testing to ensure seamless functionality. For any questions or issues, contact [Sinch India](mailto:support.cm@sinch.com) for support and resolution.
 
 # Integrate Sinch with CleverTap
@@ -48,8 +48,8 @@ To integrate Sinch SMS with CleverTap, follow these three steps:
 
 CleverTap sends HTTPS POST requests to the Sinch API to initiate SMS delivery. The payload must follow the format below to ensure successful delivery and DLT compliance.
 
-- _API Endpoint_: `https://ap.awsigateway.com/v1/enterprises/messages.json`
-- _Sample Request Payload_:
+* *API Endpoint*: `https://ap.awsigateway.com/v1/enterprises/messages.json`
+* *Sample Request Payload*:
 
 ```json
 {
@@ -75,57 +75,94 @@ This payload includes the recipient details, message content, and DLT informatio
 
 Set up the CleverTap dashboard to connect and authenticate your Sinch SMS provider. To configure the CleverTap dashboard:
 
-1. Go to _Settings_ > _Engage_ > _Channels_ > _SMS_ in the CleverTap dashboard.
+1. Go to *Settings* > *Engage* > *Channels* > *SMS* in the CleverTap dashboard.
 2. Click **+ Add Provider**. The Add SMS provider page opens.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8ca98feff96deb7a4d4b6c4a0576f0b108f3d696f98dfbaa9b61faca58641cf2-image.png",
-        null,
-        "Add Provider"
-      ],
-      "align": "center",
-      "sizing": "65% ",
-      "border": true,
-      "caption": "Add Provider"
-    }
-  ]
-}
-[/block]
+<Image alt="Add Provider" align="center" width="65% " border={true} src="https://files.readme.io/8ca98feff96deb7a4d4b6c4a0576f0b108f3d696f98dfbaa9b61faca58641cf2-image.png">
+  Add Provider
+</Image>
 
+3. Under **Provider**, select *Other (Generic)* and enter the following details:
 
-3. Under **Provider**, select _Other (Generic)_ and enter the following details:
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Field
+      </th>
 
-[block:parameters]
-{
-  "data": {
-    "h-0": "Field",
-    "h-1": "Description",
-    "0-0": "Nickname",
-    "0-1": "Enter the nickname of the SMS provider to identify it uniquely. For example:`Sinch_India`.",
-    "1-0": "Callback URL",
-    "1-1": "Enter this URL in the Sinch platform to receive delivery status updates for your SMS messages. Refer to [Set Up SMS Callbacks](doc:sinch-sms#set-up-sms-callbacks).",
-    "2-0": "Request Type",
-    "2-1": "Select `POST`, then specify the Sinch API endpoint: `https://ap.awsigateway.com/v1/enterprises/messages.json`. Refer to [Sample Payload Structure (JSON)](doc:sinch-sms#sample-payload-structure-json).",
-    "3-0": "HTTP Endpoint",
-    "3-1": "Paste the URL received from Sinch India NAM team.  \nEnsure that the URL is in HTTPS format, that is, your URL must begin with `https://`.",
-    "4-0": "Authentication",
-    "4-1": "Under Authentication, select one of the following options:  \n  \n- No Authentication.\n- Basic Authentication: Enter the username and password.",
-    "5-0": "Headers",
-    "5-1": "Select Headers to include in the HTTP request sent to the API endpoint. These headers allow you to pass additional information, such as authentication tokens or content type."
-  },
-  "cols": 2,
-  "rows": 6,
-  "align": [
-    null,
-    null
-  ]
-}
-[/block]
+      <th>
+        Description
+      </th>
+    </tr>
+  </thead>
 
+  <tbody>
+    <tr>
+      <td>
+        Nickname
+      </td>
+
+      <td>
+        Enter the nickname of the SMS provider to identify it uniquely. For example:`Sinch_India`.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Callback URL
+      </td>
+
+      <td>
+        Enter this URL in the Sinch platform to receive delivery status updates for your SMS messages. Refer to [Set Up SMS Callbacks](doc:sinch-sms#set-up-sms-callbacks).
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Request Type
+      </td>
+
+      <td>
+        Select `POST`, then specify the Sinch API endpoint: `https://ap.awsigateway.com/v1/enterprises/messages.json`. Refer to [Sample Payload Structure (JSON)](doc:sinch-sms#sample-payload-structure-json).
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        HTTP Endpoint
+      </td>
+
+      <td>
+        Paste the URL received from Sinch India NAM team.\
+        Ensure that the URL is in HTTPS format, that is, your URL must begin with `https://`.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Authentication
+      </td>
+
+      <td>
+        Under Authentication, select one of the following options:  
+
+        * No Authentication.
+        * Basic Authentication: Enter the username and password.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Headers
+      </td>
+
+      <td>
+        Select Headers to include in the HTTP request sent to the API endpoint. These headers allow you to pass additional information, such as authentication tokens or content type.
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 #### Sample Payload Structure (JSON):
 
@@ -151,24 +188,9 @@ Use the following sample JSON payload when configuring the Sinch provider in Cle
 
 This structure ensures that message-specific data, such as recipient, sender, content, and a unique message ID is correctly passed to the Sinch API.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1721da1676d07d0f2e1066248cfb9ac194781f9c7c01d42de93bd6e9469865dc-image.png",
-        null,
-        "Provider Configuration"
-      ],
-      "align": "center",
-      "sizing": "65% ",
-      "border": true,
-      "caption": "Provider Configuration"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Provider Configuration" align="center" width="65% " border={true} src="https://files.readme.io/1721da1676d07d0f2e1066248cfb9ac194781f9c7c01d42de93bd6e9469865dc-image.png">
+  Provider Configuration
+</Image>
 
 #### System Dynamic Replacements
 
@@ -192,13 +214,13 @@ CleverTap replaces the following variables dynamically when sending SMS requests
 | `s`           | Enables URL shortening: `0` = disable, `1` = enable.                                        | Optional     |
 
 > 📘 Note
-> 
+>
 > `$$MessageID` is required for accurate DLR (Delivery Report) tracking. Sinch must return the same ID in the delivery callback.
 
 4. Select the Batch option to upload multiple SMS records in one go. Enter the required details for each record.
 
 > 📘 Single Batch Limit
-> 
+>
 > A single batch can have a maximum of 1,000 records.
 
 5. Click on **Save**. A pop-up box will appear, prompting you to [Send Test SMS](doc:sinch-sms#send-a-test-sms).
@@ -211,27 +233,12 @@ To validate your configuration:
 
 1. Click the **Send Test SMS** hyperlink before creating SMS campaigns and journeys.
 2. Enter the following details:
-   - _Country Code and Mobile Number_: Enter the country code and mobile number to which you want to send the message.
-   - _Message_: Enter sample text, such as _This is a test message powered by Sinch_.
+   * *Country Code and Mobile Number*: Enter the country code and mobile number to which you want to send the message.
+   * *Message*: Enter sample text, such as *This is a test message powered by Sinch*.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/440d338366857bc07cb488cff8ce0b667c10fe20e57ca880cb2b9e4689cdff65-image.png",
-        null,
-        "Send a Test SMS"
-      ],
-      "align": "center",
-      "sizing": "65% ",
-      "border": true,
-      "caption": "Send a Test SMS"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Send a Test SMS" align="center" width="65% " border={true} src="https://files.readme.io/440d338366857bc07cb488cff8ce0b667c10fe20e57ca880cb2b9e4689cdff65-image.png">
+  Send a Test SMS
+</Image>
 
 3. Click **Send Test**.
 
@@ -241,34 +248,19 @@ If the configuration is correct, the test message will be delivered, and Sinch w
 
 To track SMS requests, copy the Delivery report callback URL from the CleverTap dashboard and share it with the Sinch support team.
 
-1. You can find the Delivery report callback URL on the CleverTap dashboard under the Provider Setup page _Settings_ > _Channels_ > _SMS_ > _Provider Nickname_.
+1. You can find the Delivery report callback URL on the CleverTap dashboard under the Provider Setup page *Settings* > *Channels* > *SMS* > *Provider Nickname*.
 2. Share this URL with [Sinch India support](mailto:support.cm@sinch.com).
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6a0d89d8e39ddbb0e19894dd105695dd3605ef8ea3bb96670f0434de1c018573-image.png",
-        null,
-        "Set Up SMS Callbacks"
-      ],
-      "align": "center",
-      "sizing": "60% ",
-      "border": true,
-      "caption": "Set Up SMS Callbacks"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Set Up SMS Callbacks" align="center" width="60% " border={true} src="https://files.readme.io/6a0d89d8e39ddbb0e19894dd105695dd3605ef8ea3bb96670f0434de1c018573-image.png">
+  Set Up SMS Callbacks
+</Image>
 
 ### Verifying Successful Integration
 
 Your integration is considered successful when the following criteria are met:
 
-- The test SMS is delivered to the intended mobile number.
-- You receive a DLR (Delivery Report) callback from Sinch at the configured CleverTap callback URL, indicating delivery, failure, or queue status.
-- CleverTap logs show no errors related to authentication, payload structure, or message transmission.
+* The test SMS is delivered to the intended mobile number.
+* You receive a DLR (Delivery Report) callback from Sinch at the configured CleverTap callback URL, indicating delivery, failure, or queue status.
+* CleverTap logs show no errors related to authentication, payload structure, or message transmission.
 
 Once these conditions are met, you can proceed to build and launch [SMS campaigns](doc:create-message-sms) or set up [Journeys](doc:journeys) using Sinch Mobile as your SMS provider.
