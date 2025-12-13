@@ -18,54 +18,27 @@ Campaign ID personalization is a feature that associates distinct campaign IDs w
 
 The following are some of the use cases that this feature solves:
 
-- **When Campaign ID is associated with Deep Links**  
-  Associate campaign IDs with deep links to enable precise tracking of traffic sources when users click on these links. For instance, if you are running a campaign, you might have the following deep link: <https://demo.app.link/click?ctmessage=123456>, where 123456 represents the campaign ID.
+* **When Campaign ID is associated with Deep Links**\
+  Associate campaign IDs with deep links to enable precise tracking of traffic sources when users click on these links. For instance, if you are running a campaign, you might have the following deep link: [https://demo.app.link/click?ctmessage=123456](https://demo.app.link/click?ctmessage=123456), where 123456 represents the campaign ID.
 
   Now, when users click on the link and open it, you can track the traffic source with the help of the campaign ID parameter. This helps you determine which campaign drives the most engagement or conversions for your business.
-- **When Campaign ID is associated with Image URL**  
+* **When Campaign ID is associated with Image URL**\
   Consider an e-commerce company running multiple email marketing campaigns simultaneously. They use unique campaign IDs in the image URLs of the products featured in these campaigns. When a customer clicks on a product image in the campaign and makes a purchase, the campaign ID embedded in the image URL is captured. They can attribute each sale to the specific campaign and product that led to it, providing accurate data on which campaigns are most effective in driving conversions.
 
 # Create Campaigns Using Campaign ID Personalization
 
-You can personalize your campaigns using campaign ID. You can do so by using CleverTap's Liquid Tags feature in the Image URL or Deep link/Open URL fields under the _What_ section of the campaign creation page. 
+You can personalize your campaigns using campaign ID. You can do so by using CleverTap's Liquid Tags feature in the Image URL or Deep link/Open URL fields under the *What* section of the campaign creation page. 
 
-- **Using Deep link/Open URL Field**  
-  Consider the example where you want to track the traffic source within the attribution partner and analyze the behavior of the customers who interacted with the campaign. You can track the source of the traffic by adding Campaign ID to the _Deep link/Open URL_ field, as shown in the above image.
+* **Using Deep link/Open URL Field**\
+  Consider the example where you want to track the traffic source within the attribution partner and analyze the behavior of the customers who interacted with the campaign. You can track the source of the traffic by adding Campaign ID to the *Deep link/Open URL* field, as shown in the above image.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f2b3dda-Campaign_ID_Personalization_-_Deep_link_URL_field.gif",
-        null,
-        "Campaign ID Personalization Using Deep link/Open URL Field"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Campaign ID Personalization Using Deep link/Open URL Field"
-    }
-  ]
-}
-[/block]
+<Image alt="Campaign ID Personalization Using Deep link/Open URL Field" align="center" border={true} src="https://files.readme.io/f2b3dda-Campaign_ID_Personalization_-_Deep_link_URL_field.gif">
+  Campaign ID Personalization Using Deep link/Open URL Field
+</Image>
 
-
-- **Using Image URL Field**  
+* **Using Image URL Field**\
   Consider an example where XYZ Styles is launching their new spring fashion collection. They want to track and personalize their marketing efforts to drive traffic and sales, while also learning more about customer preferences. XYZ Styles assigns a unique campaign ID, say `SPR2023`, to the Spring Collection Launch campaign. For each product featured in their campaigns, they embed the campaign ID in the image URLs. When users click on these personalized image links, the XYZ Styles system records the campaign ID associated with each click, linking it back to the Spring Collection Launch campaign.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2e2eaa4-Campaign_ID_Personalization_-_Image_URL_field.gif",
-        "",
-        "Campaign ID Personalization Using Image URL"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Campaign ID Personalization Using Image URL"
-    }
-  ]
-}
-[/block]
+<Image alt="Campaign ID Personalization Using Image URL" align="center" border={true} src="https://files.readme.io/2e2eaa4-Campaign_ID_Personalization_-_Image_URL_field.gif">
+  Campaign ID Personalization Using Image URL
+</Image>
