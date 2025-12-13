@@ -18,110 +18,81 @@ To preserve data sanity, the schema table stores event and user properties in a 
 
 # Events
 
-You can see your events under *Settings* > *Schema Events*. On this page, you can view all the events you are working with, along with editing or discarding to searching and filtering them.
+You can see your events under _Settings_ > _Schema Events_. On this page, you can view all the events you are working with, along with editing or discarding to searching and filtering them.
 
-The *Events* schema has four parts: 
+The _Events_ schema has four parts:
 
-* [Custom events](https://docs.clevertap.com/docs/schema#section-custom-events) 
+* [Custom events](https://docs.clevertap.com/docs/schema#section-custom-events)
 * [System events](https://docs.clevertap.com/docs/schema#section-system-events)
-* [Conversion event](https://docs.clevertap.com/docs/schema#section-conversion-event) 
-* [Qualifying event](https://docs.clevertap.com/docs/schema#section-qualifying-event) 
+* [Conversion event](https://docs.clevertap.com/docs/schema#section-conversion-event)
+* [Qualifying event](https://docs.clevertap.com/docs/schema#section-qualifying-event)
 
 # Custom Events
 
-Custom events are events that you can define, edit, remove, and so on. These are your app events that you can fully control. 
+Custom events are events that you can define, edit, remove, and so on. These are your app events that you can fully control.
 
-1. Navigate to *Settings* > *Schema* > *Events*. 
-2. Click the **Custom events** tab. 
+1. Navigate to _Settings_ > _Schema_ > _Events_.
+2. Click the **Custom events** tab.
 
-If you have already defined your events, they are all present on this tab. 
+If you have already defined your events, they are all present on this tab.
 
-<Image title="Click Custom Events Tab" alt={1153} align="center" width="80%" border={true} src="https://files.readme.io/a13c357-Custom_Events.png" />  View Custom Events
+  View Custom Events
 
-| Event Detail | Description |
-|--------------|-------------|
-| **Event name** | The name of the event as it is displayed on the dashboard. |
-| **Type** | There are two types:<ul><li>**Defined:** Events that are part of your schema definition.</li><li>**Undefined:** Events that are not defined in the schema but passed to CleverTap.</li></ul> |
-| **Status** | An event can have any of the following statuses:<ul><li>**Active:** An event that has been passed to CleverTap.</li><li>**Inactive:** An event that has not yet been passed to CleverTap.</li><li>**Discarded:** An event for which all past data has been dropped. Any future data that is passed for the event with the same name will also be dropped.</li></ul> |
-| **DRP** | Data retention policy defines the length of time that the data is retained. |
-| **This month** | The number of occurrences of the event in the current month. |
-| **Last month** | The number of occurrences of the event in the previous month. |
-| **Count** | A count can be an event, event property, or a user property update. |
-| **Properties** | Attributes that provide additional context around the event. For more information, refer to [Event Property](doc:events#event-properties). |
+| Event Detail   | Description                                                                                                                                                                                                                                                                                                                                                         |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Event name** | The name of the event as it is displayed on the dashboard.                                                                                                                                                                                                                                                                                                          |
+| **Type**       | There are two types:<ul><li>**Defined:** Events that are part of your schema definition.</li><li>**Undefined:** Events that are not defined in the schema but passed to CleverTap.</li></ul>                                                                                                                                                                        |
+| **Status**     | An event can have any of the following statuses:<ul><li>**Active:** An event that has been passed to CleverTap.</li><li>**Inactive:** An event that has not yet been passed to CleverTap.</li><li>**Discarded:** An event for which all past data has been dropped. Any future data that is passed for the event with the same name will also be dropped.</li></ul> |
+| **DRP**        | Data retention policy defines the length of time that the data is retained.                                                                                                                                                                                                                                                                                         |
+| **This month** | The number of occurrences of the event in the current month.                                                                                                                                                                                                                                                                                                        |
+| **Last month** | The number of occurrences of the event in the previous month.                                                                                                                                                                                                                                                                                                       |
+| **Count**      | A count can be an event, event property, or a user property update.                                                                                                                                                                                                                                                                                                 |
+| **Properties** | Attributes that provide additional context around the event. For more information, refer to [Event Property](doc:events#event-properties).                                                                                                                                                                                                                          |
 
 ## Add Event
 
-You can add an event from the *Custom events* tab. 
+You can add an event from the _Custom events_ tab.
 
-1. Navigate to *Settings* > *Schema Events* > *Custom events*.
-2. Click the **+Event** button to add an event. 
+1. Navigate to _Settings_ > _Schema Events_ > _Custom events_.
+2. Click the **+Event** button to add an event.
 3. Add the event name. This name must be unique in the schema.
 
-<Image title="Click +Event. toAdd a Custom Event" alt="Add a Custom Event" align="center" border={true} src="https://files.readme.io/6a62a19-Add_New_Event.png" />  Add a Custom Event
-
-
-
-
-
-
-
-
-
-
+![](https://files.readme.io/6a62a19-Add_New_Event.png "Click +Event. toAdd a Custom Event")  Add a Custom Event
 
 For more information, refer to [Event Property](doc:events#event-properties).
 
 ## Edit Event
+
 The name cannot be changed after the event is published.
 
-1. Click the edit icon on the event row. 
+1. Click the edit icon on the event row.
 2. Edit the event name.
-3. Click the checkmark. 
+3. Click the checkmark.
 
 ## Set Data Retention Policy
 
-The data retention policy (DRP) retains an event for the specified time before discarding it automatically. Your subscription plan will decide the default DRP limit. 
+The data retention policy (DRP) retains an event for the specified time before discarding it automatically. Your subscription plan will decide the default DRP limit.
 
-1. Navigate to *Settings* > *Schema* > *Events*. 
-2. From the System Events tab, click the ellipsis on the event row and click **Set DRP**. 
-3. Select *Custom*, then enter your specific time limit. 
+1. Navigate to _Settings_ > _Schema_ > _Events_.
+2. From the System Events tab, click the ellipsis on the event row and click **Set DRP**.
+3. Select _Custom_, then enter your specific time limit.
 
 > 📘 CleverTap Essentials Plan Limit
 >
 > The default DRP for CleverTap Essentials Plan users is one year, which cannot be changed.
 
-4. Click **Save**. 
+4. Click **Save**.
 
-<Image title="Select the Storage Time and Click Save" alt={388} align="center" width="50%" border={true} src="https://files.readme.io/ba7f979-SET_DRP.png" />  Set Data Retention Policy (DRP)
-
-
-
-
-
-
-
-
-
-
+![](https://files.readme.io/ba7f979-SET_DRP.png "Select the Storage Time and Click Save")  Set Data Retention Policy (DRP)
 
 ## Remove Event
 
-You must be careful before removing an event. If you ever need to remove an event from the schema, remove it from the event row on the *Events* page. You can only remove an inactive event from your schema; however, the effects are minimal because the event is not active. This action does not drop another event coming in with the same name. 
+You must be careful before removing an event. If you ever need to remove an event from the schema, remove it from the event row on the _Events_ page. You can only remove an inactive event from your schema; however, the effects are minimal because the event is not active. This action does not drop another event coming in with the same name.
 
 1. Click the ellipsis menu on the event row.
-2. Click **Remove**. 
+2. Click **Remove**.
 
-<Image title="Click Remove from the Ellipsis Menu to Remove the Event" alt={1153} align="center" border={true} src="https://files.readme.io/b6033f7-Custom_Events.png" />  Remove an Event
-
-
-
-
-
-
-
-
-
-
+![](https://files.readme.io/b6033f7-Custom_Events.png "Click Remove from the Ellipsis Menu to Remove the Event")  Remove an Event
 
 After an event is removed:
 
@@ -130,53 +101,42 @@ After an event is removed:
 
 ## Discard Event
 
-You can discard an active event from the schema. You can still see the event row in the schema; however, it will be marked as discarded.  
+You can discard an active event from the schema. You can still see the event row in the schema; however, it will be marked as discarded.
 
 > ❗️ Caution When Discarding an Event
 >
 > You can only discard an active event. Exercise extreme caution when discarding an event because this action cannot be undone. This action has an impact on your schema because it purges all data for the discarded event. It also drops any future incoming event with the same name.
 
 1. Click the ellipsis menu on the event row.
-2. Click **Discard**. 
+2. Click **Discard**.
 
-<Image title="Click Discard from the Ellipsis Menu to Discard the Event" alt={1126} align="center" border={true} src="https://files.readme.io/6f94655-Discard_event.png" />  Discard an Event
-
-
-
-
-
-
-
-
-
-
+![](https://files.readme.io/6f94655-Discard_event.png "Click Discard from the Ellipsis Menu to Discard the Event")  Discard an Event
 
 ## Define Event
+
 The events that are passed to CleverTap but not defined are marked as undefined events. You can define these events from the event row. Defining an event marks it as a recognized event in the schema, and therefore, when the event is received, this will not cause any error.
 
-1. Click the ellipsis menu on the event row. 
-2. Select *Define Event*, and a new window displays.
-3. Click **Define & Save**. 
+1. Click the ellipsis menu on the event row.
+2. Select _Define Event_, and a new window displays.
+3. Click **Define & Save**.
 
 ## Publish Schema/Events
 
 To publish the events, perform the following:
 
-1. Check that you have all the required events. 
-2. Click the **Publish Events** button. 
+1. Check that you have all the required events.
+2. Click the **Publish Events** button.
 
-
-| Event Name | Description |
-|------------|-------------|
-| **Property name** | The name of the property. |
-| **Type** | The type of property:<ul><li>**Defined:** Properties that you have added to the schema.</li><li>**Undefined:** Properties that you have not added to the schema and are currently receiving data.</li></ul> |
-| **Status** | An event property can have any of the following statuses:<ul><li>**Active:** An event property that has been passed to CleverTap.</li><li>**Inactive:** An event property that has not yet been passed to CleverTap.</li><li>**Discarded:** An event property for which all past data has been dropped. Any future data passed for this user property with the same name will also be dropped.</li></ul> |
-| **Required** | Defines whether a property is mandatory for the event:<ul><li><p><strong>Yes:</strong> The property is mandatory. The event is dropped if it is received without the event property.<br /><em>Note:</em> Use with caution. If an event is received without the required property, the entire event is dropped. This helps keep data clean but may unintentionally drop valid events.</p></li><li><p><strong>No:</strong> The property is optional. The event is allowed even if it is received without the event property.</p></li></ul> |
-| **Data type** | Defines the data type of the event property:<ul><li>String</li><li>Integer</li><li>Float</li><li>Boolean</li><li>Mixed</li><li>List</li></ul> |
+| Event Name             | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Property name**      | The name of the property.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| **Type**               | The type of property:<ul><li>**Defined:** Properties that you have added to the schema.</li><li>**Undefined:** Properties that you have not added to the schema and are currently receiving data.</li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| **Status**             | An event property can have any of the following statuses:<ul><li>**Active:** An event property that has been passed to CleverTap.</li><li>**Inactive:** An event property that has not yet been passed to CleverTap.</li><li>**Discarded:** An event property for which all past data has been dropped. Any future data passed for this user property with the same name will also be dropped.</li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| **Required**           | Defines whether a property is mandatory for the event:<ul><li><p><strong>Yes:</strong> The property is mandatory. The event is dropped if it is received without the event property.<br /><em>Note:</em> Use with caution. If an event is received without the required property, the entire event is dropped. This helps keep data clean but may unintentionally drop valid events.</p></li><li><p><strong>No:</strong> The property is optional. The event is allowed even if it is received without the event property.</p></li></ul>                                                                                                                                                                                                                                                                                        |
+| **Data type**          | Defines the data type of the event property:<ul><li>String</li><li>Integer</li><li>Float</li><li>Boolean</li><li>Mixed</li><li>List</li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | **Data type fallback** | The fallback action if the event property is not in the defined format:<ul><li><strong>Drop event:</strong> Drops the incoming event if the data type does not match.<br /><em>Note:</em> This action cannot be undone and purges all past and future data for the event.</li><li><strong>Drop event property:</strong> Drops the incoming event property if the data type does not match.<br /><em>Note:</em> This action cannot be undone and purges all past and future data for the event property.</li><li><strong>Allow property:</strong> Allows the property even if the data type does not match.</li></ul>An error is reported for all actions. A <em>drop</em> has higher severity, while <em>allow</em> has lower severity. For more information, see [Error Stream](https://docs.clevertap.com/docs/error-stream). |
-| **Created on** | The date when the user property was created. |
-| **Description** | The description of the event property. You can set this from the ellipsis menu on the event property row. The property is optional, and the event is allowed even if it is received without the event property. |
-
+| **Created on**         | The date when the user property was created.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| **Description**        | The description of the event property. You can set this from the ellipsis menu on the event property row. The property is optional, and the event is allowed even if it is received without the event property.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 
 > 📘 Effect of Changing the Data Type of an Event or User Property
 >
@@ -186,31 +146,31 @@ To publish the events, perform the following:
 
 ## Add Event Property
 
-To add an event property: 
+To add an event property:
 
-1. Click the number of properties shown in the *Custom events* tab
-2. Click **+Property**, then click **Add new**.\
+1. Click the number of properties shown in the _Custom events_ tab
+2. Click **+Property**, then click **Add new**.  
    You can also add an event property from the catalog by clicking **Add from catalog**. For more information, refer to [Add Columns from a Catalog](doc:catalog-data-ingestion#add-columns-from-a-catalog).
 3. Enter a property name and choose the relevant property details.
-4. Select the checkmark. 
+4. Select the checkmark.
 
-<Image title="Click +Property to Add Event Property" alt={1144} align="center" border={true} src="https://files.readme.io/9a45a27-Add_property.png" />  Add Event Property
+![](https://files.readme.io/9a45a27-Add_property.png "Click +Property to Add Event Property")  Add Event Property
 
 ## Edit Event Property
 
-You can edit any column; however, you can only edit names for unpublished event properties. 
+You can edit any column; however, you can only edit names for unpublished event properties.
 
-1. Click the edit icon on the property row from the *Custom events* tab. 
+1. Click the edit icon on the property row from the _Custom events_ tab.
 2. Edit the property name and any other appropriate property details.
-3. Click the checkmark. 
+3. Click the checkmark.
 
-<Image title="Click the Edit Icon to Edit Event Property" alt={1184} align="center" border={true} src="https://files.readme.io/804cbdc-Edit_Event_Property.png" />  Edit Event Property
+![](https://files.readme.io/804cbdc-Edit_Event_Property.png "Click the Edit Icon to Edit Event Property")  Edit Event Property
 
 ## Remove Event Property
 
-You can remove an unpublished event property. 
+You can remove an unpublished event property.
 
-1. Click the ellipsis icon on the property row from the *Custom events* tab. 
+1. Click the ellipsis icon on the property row from the _Custom events_ tab.
 2. Click **Remove**.
 
 After an event property is removed:
@@ -221,6 +181,7 @@ After an event property is removed:
 ## Discard Event
 
 You can discard an active event from the schema. You can still see the event row in the schema; however, the event is marked as discarded. Post discarding, CleverTap removes the data after 16 days. However, you can choose to restore the discarded event after 24 hours. For more information, refer to [Restore Events](doc:schema#restore-event).
+
 > ❗️ Caution When Discarding an Event
 >
 > You can discard only an active event. Discarding an event purges all data for that event and drops any future incoming events with the same name. This action impacts your schema. A discarded event can be restored, but only after 24 hours.
@@ -228,7 +189,7 @@ You can discard an active event from the schema. You can still see the event row
 1. Click the ellipsis menu on the event row.
 2. Click **Discard**.
 
-<Image title="Click Discard from the Ellipsis Menu to Discard the Event" alt={1126} align="center" border={true} src="https://files.readme.io/6f94655-Discard_event.png" /> Discard an Event
+![](https://files.readme.io/6f94655-Discard_event.png "Click Discard from the Ellipsis Menu to Discard the Event") Discard an Event
 
 > 📘 Discard Access
 >
@@ -251,63 +212,53 @@ You can restore a previously discarded event, event property, or user property f
 
 ### Restore a Single Item
 
-1. Go to the *Custom events* page.
+1. Go to the _Custom events_ page.
 2. Locate the discarded event you want to restore.
 3. Click the ![](https://files.readme.io/d1a1a29245a043e42fe9f768ccb6c41e50dc1693d8b3553ac09edd9cadcc8355-Restore_Icon.png) icon.
 4. In the confirmation window, click **Restore**.
 
-<Image alt="Restore Custom Event" align="center" border={true} src="https://files.readme.io/b64c088b7f531e770b0e9b81441008e59bb5b099c0a00a2f8b0be2826e0b9568-image.png" /> Restore Custom Event
+![](https://files.readme.io/b64c088b7f531e770b0e9b81441008e59bb5b099c0a00a2f8b0be2826e0b9568-image.png) Restore Custom Event
 
 ### Restore Multiple Items
 
-1. Go to the Events, or Event Properties, or User Properties table on the *Custom events* page.
+1. Go to the Events, or Event Properties, or User Properties table on the _Custom events_ page.
 2. Select the discarded items you want to restore.
 3. Click the ![](https://files.readme.io/4f93c7fed376db11d7b36dd4e54539e1a2284761341d8dfc3e227322f366d3d5-Restore_Icon.png) icon from the toolbar.
 4. In the confirmation window, click **Restore**.
 
-<Image alt="Bulk Restore discarded items" align="center" border={true} src="https://files.readme.io/f3def79a65dda3e144e4a8711f3e4e0407dc1b61b35dbcb12699fbde4ba41230-image.png" /> Bulk Restore Discarded Items
+![](https://files.readme.io/f3def79a65dda3e144e4a8711f3e4e0407dc1b61b35dbcb12699fbde4ba41230-image.png) Bulk Restore Discarded Items
 
 > 📘 Restore Access
 >
 > Only admin users can restore the discarded events.
 
 # User Properties
+
 This section shows how to manage your user properties.
 
-1. Navigate to *Settings* > *Schema* > *User Properties*.  All the user properties are listed on this page.
+1. Navigate to _Settings_ > _Schema_ > _User Properties_.  All the user properties are listed on this page.
 2. Click any of the properties on the user property row to see the property details.
 
 From this page, you can also search and filter properties.
 
-| Property Detail | Description |
-|-----------------|-------------|
-| **Property name** | The name of the user property. |
-| **Type** | The type of property:<ul><li><strong>Defined:</strong> Properties that you have added to the schema.</li><li><strong>Undefined:</strong> Properties that you have not added to the schema and are currently receiving data.</li></ul> |
-| **Status** | A user property can have any of the following statuses:<ul><li><strong>Active:</strong> A user property that has been passed to CleverTap.</li><li><strong>Inactive:</strong> A user property that has not yet been passed to CleverTap.</li><li><strong>Discarded:</strong> A user property for which all past data has been dropped. Any future data passed for this user property with the same name will also be dropped.</li></ul> |
-| **Data type** | Defines the data type of the user property:<ul><li>String</li><li>Integer</li><li>Float</li><li>Boolean</li><li>Mixed</li><li>List</li></ul> |
+| Property Detail        | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Property name**      | The name of the user property.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| **Type**               | The type of property:<ul><li><strong>Defined:</strong> Properties that you have added to the schema.</li><li><strong>Undefined:</strong> Properties that you have not added to the schema and are currently receiving data.</li></ul>                                                                                                                                                                                                                                                                                                                                                                                             |
+| **Status**             | A user property can have any of the following statuses:<ul><li><strong>Active:</strong> A user property that has been passed to CleverTap.</li><li><strong>Inactive:</strong> A user property that has not yet been passed to CleverTap.</li><li><strong>Discarded:</strong> A user property for which all past data has been dropped. Any future data passed for this user property with the same name will also be dropped.</li></ul>                                                                                                                                                                                           |
+| **Data type**          | Defines the data type of the user property:<ul><li>String</li><li>Integer</li><li>Float</li><li>Boolean</li><li>Mixed</li><li>List</li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | **Data type fallback** | Includes the following actions:<ul><li><strong>Drop user property:</strong> Drops the incoming property if the data type does not match.<br /><em>Note:</em> Use with extreme caution. This action cannot be undone and purges all past and future data for the discarded user property.</li><li><strong>Allow property:</strong> Allows the property even if the data type does not match.<br />An error is reported for all actions. A <em>drop</em> has higher severity, while <em>allow</em> has lower severity. For more information, see <a href="https://docs.clevertap.com/docs/error-stream">Error Stream</a>.</li></ul> |
-| **Created on** | The date when the user property was created. |
+| **Created on**         | The date when the user property was created.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 
 ## Add User Property
 
-To add a user property from this page: 
-
+To add a user property from this page:
 
 1. Click the **+Property** button.
 2. Enter a property name and choose a data type.
 3. Click the checkmark.
 
-<Image title="Enter a Property Name and Choose a Data Type to Add a User Property" alt="Add User Property" align="center" border={true} src="https://files.readme.io/fc5ba43-Add_User_Property.png" /> Add User Property
-
-
-
-
-
-
-
-
-
-
+![](https://files.readme.io/fc5ba43-Add_User_Property.png "Enter a Property Name and Choose a Data Type to Add a User Property") Add User Property
 
 ## Edit User Property
 
@@ -317,17 +268,7 @@ You can edit any column; however, you can only edit names for unpublished user p
 2. Edit the property name and the data type.
 3. Click the checkmark.
 
-<Image title="Click the Edit Icon to Edit the Property Name and Data Type" alt={1109} align="center" width="80%" border={true} src="https://files.readme.io/0afe960-Edit_User_Property.png" /> Edit User Property
-
-
-
-
-
-
-
-
-
-
+![](https://files.readme.io/0afe960-Edit_User_Property.png "Click the Edit Icon to Edit the Property Name and Data Type") Edit User Property
 
 ## Remove User Property
 
@@ -349,23 +290,14 @@ You can discard a published user property from the schema. You can still see the
 2. Click **Discard**, and a new window displays.
 3. Click **Discard** again.
 
-<Image title="Click Discard Button to Discard User Property" alt={525} align="center" width="80%" border={true} src="https://files.readme.io/d75580c-Discard_User_Property.png" /> Discard User Property
-
-
-
-
-
-
-
-
-
-
+![](https://files.readme.io/d75580c-Discard_User_Property.png "Click Discard Button to Discard User Property") Discard User Property
 
 > ❗️ Caution When Discarding a User Property
 >
 > Exercise extreme caution when discarding a user property. This action cannot be undone. This action has an impact on your schema because it purges data for the discarded user property. It also drops any future incoming user property with the same name.
 
 ## Create Linked Event for User Property
+
 You can link an event with a user property. This allows you to trigger campaigns, conversions, and exits based on changes in user properties. For example, a gaming app has a user property named `Game Level` that represents a user's progress in the game. You can link an event named `Game Level Upgraded` to the `Game Level` user property. By doing so, any change in this property to a higher level will activate a campaign. The campaign will congratulate the users and grant them a reward or a unique power corresponding to their achievement.
 
 > 📘 Key Points to Remember
@@ -376,11 +308,11 @@ You can link an event with a user property. This allows you to trigger campaigns
 
 To link an event with a user property:
 
-1. Navigate to *Settings* > *Schema* > *User Property* from the CleverTap dashboard.
-2. Click the ![](https://files.readme.io/01a6671-Ellipsis.png) icon and select *Create Linked Event*.
-3. Enter the *Event Name* and click **Create Event**.
+1. Navigate to _Settings_ > _Schema_ > _User Property_ from the CleverTap dashboard.
+2. Click the ![](https://files.readme.io/01a6671-Ellipsis.png) icon and select _Create Linked Event_.
+3. Enter the _Event Name_ and click **Create Event**.
 
-<Image alt="Create Associated Event" align="center" border={true} src="https://files.readme.io/f3777e6-Create_Linked_Event_for_User_Property.gif" /> Create Linked Event
+![](https://files.readme.io/f3777e6-Create_Linked_Event_for_User_Property.gif) Create Linked Event
 
 ### Create Linked Events in Bulk
 
@@ -390,11 +322,11 @@ To create linked events in bulk:
 
 1. Select the user properties you want to link and click the ![](https://files.readme.io/9bd94d1-Bulk_Link.png) icon.
 
-<Image alt="Select User Properties in Bulk" align="center" border={true} src="https://files.readme.io/6675b4f-Bulk_Link_Event.png" /> Bulk Link Events
+![](https://files.readme.io/6675b4f-Bulk_Link_Event.png) Bulk Link Events
 
 2. Enter the events you want to link for each user property and click **Create**.
 
-<Image alt="Create Bulk Raise Events" align="center" border={true} src="https://files.readme.io/7b5b7fd-Create_Linked_Events_in_Bulk.png" /> Create Linked Events in Bulk
+![](https://files.readme.io/7b5b7fd-Create_Linked_Events_in_Bulk.png) Create Linked Events in Bulk
 
 ### Discard Linked Event
 
@@ -403,9 +335,10 @@ You can discard a linked event from the user property.
 To discard linked events:
 
 1. Click the ![](https://files.readme.io/01a6671-Ellipsis.png) icon of the user property.
-2. Select *Discard Linked Event* and click **Discard**.
+2. Select _Discard Linked Event_ and click **Discard**.
 
-<Image alt="Discard a Linked Event" align="center" border={true} src="https://files.readme.io/5980787-Discard_Linked_Event.gif" /> Discard a Linked Event
+![](https://files.readme.io/5980787-Discard_Linked_Event.gif) Discard a Linked Event
+
 > 📘 Key Points to Remember
 >
 > The following are the key points to consider when creating linked events:
@@ -420,30 +353,19 @@ To discard linked events:
 
 # System Events
 
-System events are tracked automatically. CleverTap offers the capability to configure system events, enabling businesses to monitor and analyze user actions in their applications. However, some businesses may not have an immediate need for certain system events, resulting in potentially avoidable expenses. CleverTap allows businesses to configure those unused system events, providing a seamless process to address this issue. 
+System events are tracked automatically. CleverTap offers the capability to configure system events, enabling businesses to monitor and analyze user actions in their applications. However, some businesses may not have an immediate need for certain system events, resulting in potentially avoidable expenses. CleverTap allows businesses to configure those unused system events, providing a seamless process to address this issue.
 
 ## Configure System Events
 
 To configure the tracking of system events:
 
-1. Navigate to *Settings* > *Schema* > *Events* from the CleverTap dashboard.
-2. Select the event that you want to configure from the *System events* tab.
-3. Click the ![](https://files.readme.io/fb90f6a-Ellipsis.png) icon and select *Enable/Disable* from the list.
+1. Navigate to _Settings_ > _Schema_ > _Events_ from the CleverTap dashboard.
+2. Select the event that you want to configure from the _System events_ tab.
+3. Click the ![](https://files.readme.io/fb90f6a-Ellipsis.png) icon and select _Enable/Disable_ from the list.
 
-<Image alt="Turn off Toggle to Disable Tracking UTM Visited" align="center" border={true} src="https://files.readme.io/4454bcf-UTM_Tracking_Toggle_Off.gif" />  Turn Off Toggle to Disable Tracking UTM Visited
-
-
-
-
-
-
-
-
-
-
+![](https://files.readme.io/4454bcf-UTM_Tracking_Toggle_Off.gif)  Turn Off Toggle to Disable Tracking UTM Visited
 
 Currently, you can enable or disable tracking for the following events from the CleverTap dashboard:
-
 
 > 📘 Configuring Other System Events
 >
@@ -451,67 +373,48 @@ Currently, you can enable or disable tracking for the following events from the 
 
 # Conversion Event
 
-The conversion event helps track conversion. 
+The conversion event helps track conversion.
 
 To set a conversion event:
 
-1. Navigate to *Settings* > *Schema* > *Events*. 
-2. Click the **Conversion event** tab. 
+1. Navigate to _Settings_ > _Schema_ > _Events_.
+2. Click the **Conversion event** tab.
 
-To track revenue, set the user conversion event and revenue property. This property must be a numeric value. 
+To track revenue, set the user conversion event and revenue property. This property must be a numeric value.
 
-<Image title="Set Conversion Event Details and Click Save" alt={1155} align="center" border={true} src="https://files.readme.io/5ba54c0-set_conversion.png" />  Set Up Conversion Event
-
-
-
-
-
-
-
-
-
-
+![](https://files.readme.io/5ba54c0-set_conversion.png "Set Conversion Event Details and Click Save")  Set Up Conversion Event
 
 # Qualifying Event
 
 To set a qualifying event:
 
-1. Navigate to *Settings* > *Schema* > *Events*. 
-2. Click the **Qualifying event** tab. 
+1. Navigate to _Settings_ > _Schema_ > _Events_.
+2. Click the **Qualifying event** tab.
 
 This event qualifies users as active if they have performed the event at least once in the defined time.
 
-Currently, the [active %](https://docs.clevertap.com/docs/trends#section-active) tab uses the qualifying event on the *Trends* page.
+Currently, the [active %](https://docs.clevertap.com/docs/trends#section-active) tab uses the qualifying event on the _Trends_ page.
 
-<Image title="Set Qualifying Event and Click Save" alt={1162} align="center" border={true} src="https://files.readme.io/5d67342-set_qualifying.png" />  Set Qualifying Event
-
-
-
-
-
-
-
-
-
-
+![](https://files.readme.io/5d67342-set_qualifying.png "Set Qualifying Event and Click Save")  Set Qualifying Event
 
 # Download Schema Data from Dashboard
-You can download the data for all events and user profiles from the CleverTap dashboard or via an API. 
+
+You can download the data for all events and user profiles from the CleverTap dashboard or via an API.
 
 ## Event Data
 
 To download event data from the CleverTap dashboard in CSV format:
 
-1. Navigate to *Settings* > *Schema* > *Events*. You can download event data from the *System events* tab or the *Custom event* tab. 
-2. Click the **Download as CSV** button, then the *Download CSV file* window displays. 
-3. Select to download *Events* or *Events with properties*.
+1. Navigate to _Settings_ > _Schema_ > _Events_. You can download event data from the _System events_ tab or the _Custom event_ tab.
+2. Click the **Download as CSV** button, then the _Download CSV file_ window displays.
+3. Select to download _Events_ or _Events with properties_.
 4. Click **Download**.
 
 ## User Profile data
 
 To download all event data from the CleverTap dashboard in CSV format:
 
-1. Navigate to *Settings* > *Schema* > *User Properties*.
+1. Navigate to _Settings_ > _Schema_ > _User Properties_.
 2. Click the **Download as CSV** button.
 
 ## Download with API
@@ -529,11 +432,11 @@ There are some specific validations when creating events and properties. For mor
 
 #### Q. Can we get all past behavior data for an event after discarding it?
 
-A. No, we cannot get all past behavior data for an event after discarding it. 
+A. No, we cannot get all past behavior data for an event after discarding it.
 
 #### Q. Does a discarded event appear under the user profile in the user's activity?
 
-A. No, a discarded event does not appear under the user profile in the user's activity. 
+A. No, a discarded event does not appear under the user profile in the user's activity.
 
 #### Q. For how many days can I get the data of discarded events?
 
@@ -542,10 +445,6 @@ A.  You will not get any event data after discarding an event. We recommend you 
 #### Q: If we disable the UTM Visited event from the schema, can it still be ingested through third-party mediums such as attribution tools like AppsFlyer or Customer Data Platforms (CDPs) like Segment?
 
 A: When the UTM Visited event is disabled from the schema, it is dropped at the processing layer, rendering it inaccessible for ingestion from any third-party medium.
-
-
-
-
 
 <HTMLBlock>{`
 <style>
