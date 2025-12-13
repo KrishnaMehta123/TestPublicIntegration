@@ -18,9 +18,9 @@ By integrating Kaleyra with CleverTap, you can manage SMS campaigns directly fro
 
 Here are a few ways businesses use Kaleyra with CleverTap:
 
-- _Transactional Alerts_: Deliver real-time OTPs, order confirmations, and payment updates.
-- _Promotional Campaigns_: Announce offers, discounts, or product launches to targeted user segments.
-- _Abandoned Cart Reminders_: Prompt users to complete their purchase with time-sensitive nudges.
+* *Transactional Alerts*: Deliver real-time OTPs, order confirmations, and payment updates.
+* *Promotional Campaigns*: Announce offers, discounts, or product launches to targeted user segments.
+* *Abandoned Cart Reminders*: Prompt users to complete their purchase with time-sensitive nudges.
 
 Integrate CleverTap’s segmentation engine with Kaleyra SMS to trigger context-aware messages and increase engagement.
 
@@ -28,13 +28,13 @@ Integrate CleverTap’s segmentation engine with Kaleyra SMS to trigger context-
 
 To integrate ICS with CleverTap, check the following:
 
-- You must have an active Kaleyra account with API access.
-- You must obtain the HTTP Endpoint, API Key, SID, and Kaleyra host URL from [Kaleyra support](https://www.kaleyra.com/contact-us/).
-- You must have a CleverTap account with SMS setup enabled.
-- If your account is based in India, ensure your message templates and sender IDs are registered with DLT.
+* You must have an active Kaleyra account with API access.
+* You must obtain the HTTP Endpoint, API Key, SID, and Kaleyra host URL from [Kaleyra support](https://www.kaleyra.com/contact-us/).
+* You must have a CleverTap account with SMS setup enabled.
+* If your account is based in India, ensure your message templates and sender IDs are registered with DLT.
 
 > 🚧 Support for Integration
-> 
+>
 > This integration is managed and continuously improved by Kaleyra. The CleverTap and Kaleyra integration has undergone stringent testing to ensure seamless functionality. For any questions or issues, contact [Kaleyra](https://developers.kaleyra.io/docs/support) for support and resolution.
 
 # Integrate Kaleyra with CleverTap
@@ -49,9 +49,9 @@ The integration includes three major steps:
 
 To complete the setup, gather the following details from your Kaleyra account or Kaleyra support:
 
-- [API Key](https://developers.kaleyra.io/docs/view-api-key-and-sid): Found under **API Settings** in your Kaleyra Customer Portal. Used in the `api-key` header.
-- [SID](https://developers.kaleyra.io/docs/view-api-key-and-sid): Sender ID linked to your Kaleyra account. Used in the `sid` header.
-- API Host Domain: The base URL used to send requests. Set this in the `kaleyra-host` header.
+* [API Key](https://developers.kaleyra.io/docs/view-api-key-and-sid): Found under **API Settings** in your Kaleyra Customer Portal. Used in the `api-key` header.
+* [SID](https://developers.kaleyra.io/docs/view-api-key-and-sid): Sender ID linked to your Kaleyra account. Used in the `sid` header.
+* API Host Domain: The base URL used to send requests. Set this in the `kaleyra-host` header.
 
 For more information on locating Kaleyra API credentials, refer to [View API Key and SID](https://developers.kaleyra.io/docs/view-api-key-and-sid)
 
@@ -59,57 +59,86 @@ For more information on locating Kaleyra API credentials, refer to [View API Key
 
 Set up the CleverTap dashboard to connect and authenticate your Kaleyra SMS provider. To configure the CleverTap dashboard:
 
-1. Go to _Settings_ > _Engage_ > _Channels_ > _SMS_ in the CleverTap dashboard.
+1. Go to *Settings* > *Engage* > *Channels* > *SMS* in the CleverTap dashboard.
 2. Click **+ Add Provider**. The Add SMS provider page opens.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8ca98feff96deb7a4d4b6c4a0576f0b108f3d696f98dfbaa9b61faca58641cf2-image.png",
-        null,
-        "Add Provider"
-      ],
-      "align": "center",
-      "sizing": "65% ",
-      "border": true,
-      "caption": "Add Provider"
-    }
-  ]
-}
-[/block]
+<Image alt="Add Provider" align="center" width="65% " border={true} src="https://files.readme.io/8ca98feff96deb7a4d4b6c4a0576f0b108f3d696f98dfbaa9b61faca58641cf2-image.png">
+  Add Provider
+</Image>
 
+3. Under **Provider**, select *Other (Generic)* and enter the following details:
 
-3. Under **Provider**, select _Other (Generic)_ and enter the following details:
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Field
+      </th>
 
-[block:parameters]
-{
-  "data": {
-    "h-0": "Field",
-    "h-1": "Description",
-    "0-0": "Nickname",
-    "0-1": "Enter the nickname of the SMS provider to identify it uniquely. For example:`Kaleyra_SMS`",
-    "1-0": "Callback URL",
-    "1-1": "Enter this URL in the Kaleyra platform to receive delivery status updates for your SMS messages. Refer to [Set Up SMS Callbacks](doc:kaleyra-sms#set-up-sms-callbacks).",
-    "2-0": "Request Type",
-    "2-1": "Select`POST`",
-    "3-0": "HTTP Endpoint",
-    "3-1": "Paste the URL received from Kaleyra team.  \nEnsure that the URL is in HTTPS format, that is, your URL must begin with `https://`.",
-    "4-0": "Authentication",
-    "4-1": "Under Authentication, select one of the following options:  \n  \n- No Authentication.\n- Basic Authentication: Enter the username and password."
-  },
-  "cols": 2,
-  "rows": 5,
-  "align": [
-    null,
-    null
-  ]
-}
-[/block]
+      <th>
+        Description
+      </th>
+    </tr>
+  </thead>
 
+  <tbody>
+    <tr>
+      <td>
+        Nickname
+      </td>
 
-4. Under _Headers_, enter the following Key/Value pair.
+      <td>
+        Enter the nickname of the SMS provider to identify it uniquely. For example:`Kaleyra_SMS`
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Callback URL
+      </td>
+
+      <td>
+        Enter this URL in the Kaleyra platform to receive delivery status updates for your SMS messages. Refer to [Set Up SMS Callbacks](doc:kaleyra-sms#set-up-sms-callbacks).
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Request Type
+      </td>
+
+      <td>
+        Select`POST`
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        HTTP Endpoint
+      </td>
+
+      <td>
+        Paste the URL received from Kaleyra team.\
+        Ensure that the URL is in HTTPS format, that is, your URL must begin with `https://`.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Authentication
+      </td>
+
+      <td>
+        Under Authentication, select one of the following options:  
+
+        * No Authentication.
+        * Basic Authentication: Enter the username and password.
+      </td>
+    </tr>
+  </tbody>
+</Table>
+
+4. Under *Headers*, enter the following Key/Value pair.
 
 | Key            | Value                   |
 | -------------- | ----------------------- |
@@ -118,29 +147,14 @@ Set up the CleverTap dashboard to connect and authenticate your Kaleyra SMS prov
 | `kaleyra-host` | API domain from Kaleyra |
 | `callback_url` | CleverTap callback URL  |
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5eb83c696b3e71eb60c613dd5c9453ae41865a13744db421c9f601f1f193dc17-image.png",
-        null,
-        "Provider Configuration"
-      ],
-      "align": "center",
-      "sizing": "60% ",
-      "border": true,
-      "caption": "Provider Configuration"
-    }
-  ]
-}
-[/block]
+<Image alt="Provider Configuration" align="center" width="60% " border={true} src="https://files.readme.io/5eb83c696b3e71eb60c613dd5c9453ae41865a13744db421c9f601f1f193dc17-image.png">
+  Provider Configuration
+</Image>
 
-
-5. In the _Parameters_ tab, set the _Type_ to `x-www-form-urlencoded`. Enter the following as a Key/Value pair:
-6. Under the _Parameters_ tab:
-   - Set _Type_ to `x-www-form-urlencoded`
-   - Add the following key-value pairs:
+5. In the *Parameters* tab, set the *Type* to `x-www-form-urlencoded`. Enter the following as a Key/Value pair:
+6. Under the *Parameters* tab:
+   * Set *Type* to `x-www-form-urlencoded`
+   * Add the following key-value pairs:
 
 | Key           | Value          | Description                                                    | Required |
 | ------------- | -------------- | -------------------------------------------------------------- | -------- |
@@ -154,27 +168,12 @@ Set up the CleverTap dashboard to connect and authenticate your Kaleyra SMS prov
 | `long_url`    | `$$LongURL`    | Long URL to shorten and insert into the message (if supported) | Optional |
 
 > 📘 Note
-> 
+>
 > `$$MessageID` is required for accurate DLR (Delivery Report) tracking. Kaleyra must return the same ID in the delivery callback.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/55bedfb8ee5b06a39b06aa171fb34d64d0fd2047d8baee4a0b2a5d644c2e5bc9-sssdfd.png",
-        null,
-        "Set Parameters"
-      ],
-      "align": "center",
-      "sizing": "60% ",
-      "border": true,
-      "caption": "Set Parameters"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Set Parameters" align="center" width="60% " border={true} src="https://files.readme.io/55bedfb8ee5b06a39b06aa171fb34d64d0fd2047d8baee4a0b2a5d644c2e5bc9-sssdfd.png">
+  Set Parameters
+</Image>
 
 7. Click on **Save**. A pop-up box will appear, prompting you to [Send Test SMS](doc:kaleyra-sms#send-a-test-sms).
 
@@ -186,29 +185,14 @@ To validate your configuration:
 
 1. Click the **Send Test SMS** hyperlink before creating SMS campaigns and journeys.
 2. Enter the following details:
-   - _Country Code and Mobile Number_: Enter the country code and mobile number to which you want to send the message.
-   - _Template ID_: (if applicable)
-   - _Message_: Enter sample text, such as _This is a test message powered by Kaleyra_.
-   - _Dynamic Fields_: If `sender`, `type`, or `long_url` are dynamic, provide those values as key-value pairs
+   * *Country Code and Mobile Number*: Enter the country code and mobile number to which you want to send the message.
+   * *Template ID*: (if applicable)
+   * *Message*: Enter sample text, such as *This is a test message powered by Kaleyra*.
+   * *Dynamic Fields*: If `sender`, `type`, or `long_url` are dynamic, provide those values as key-value pairs
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f671d6b824955a1b3f771626eea96544804220666b19ab82cebc93a2e9a73649-image.png",
-        null,
-        "Send a Test SMS"
-      ],
-      "align": "center",
-      "sizing": "65% ",
-      "border": true,
-      "caption": "Send a Test SMS"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Send a Test SMS" align="center" width="65% " border={true} src="https://files.readme.io/f671d6b824955a1b3f771626eea96544804220666b19ab82cebc93a2e9a73649-image.png">
+  Send a Test SMS
+</Image>
 
 3. Click **Send Test**.
 
@@ -218,34 +202,19 @@ If the configuration is correct, the test message will be delivered, and Kaleyra
 
 To track SMS requests, copy the Delivery report callback URL from the CleverTap dashboard and share it with the Kaleyra support team.
 
-1. You can find the Delivery report callback URL on the CleverTap dashboard under the Provider Setup page _Settings_ > _Channels_ > _SMS_ > _Provider Nickname_
-2. Share this URL with [Kaleyra support](<>).
+1. You can find the Delivery report callback URL on the CleverTap dashboard under the Provider Setup page *Settings* > *Channels* > *SMS* > *Provider Nickname*
+2. Share this URL with [Kaleyra support]().
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6a0d89d8e39ddbb0e19894dd105695dd3605ef8ea3bb96670f0434de1c018573-image.png",
-        null,
-        "Set Up SMS Callbacks"
-      ],
-      "align": "center",
-      "sizing": "60% ",
-      "border": true,
-      "caption": "Set Up SMS Callbacks"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Set Up SMS Callbacks" align="center" width="60% " border={true} src="https://files.readme.io/6a0d89d8e39ddbb0e19894dd105695dd3605ef8ea3bb96670f0434de1c018573-image.png">
+  Set Up SMS Callbacks
+</Image>
 
 ### Verifying Successful Integration
 
 Your integration is considered successful when the following criteria are met:
 
-- The test SMS is delivered to the intended mobile number.
-- You receive a DLR (Delivery Report) callback from Kaleyra at the configured CleverTap callback URL, indicating delivery, failure, or queue status.
-- CleverTap logs show no errors related to authentication, payload structure, or message transmission.
+* The test SMS is delivered to the intended mobile number.
+* You receive a DLR (Delivery Report) callback from Kaleyra at the configured CleverTap callback URL, indicating delivery, failure, or queue status.
+* CleverTap logs show no errors related to authentication, payload structure, or message transmission.
 
 Once these conditions are met, you can proceed to build and launch [SMS campaigns](doc:create-message-sms) or set up [Journeys](doc:journeys) using Kaleyra as your SMS provider.
