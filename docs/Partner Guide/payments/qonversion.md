@@ -18,20 +18,20 @@ Integrating CleverTap with Qonversion, you can launch user engagement campaigns,
 
 With this integration, you can:
 
-- Renewal Reminders: Automate personalized notifications for upcoming subscription renewals to minimize churn. 
-- Win-Back Opportunities: Reengage users who canceled subscriptions by offering tailored incentives to resubscribe.
-- Payment Issue Alerts: Instantly notify users about failed payments and guide them in updating billing details.
+* Renewal Reminders: Automate personalized notifications for upcoming subscription renewals to minimize churn. 
+* Win-Back Opportunities: Reengage users who canceled subscriptions by offering tailored incentives to resubscribe.
+* Payment Issue Alerts: Instantly notify users about failed payments and guide them in updating billing details.
 
 > 🚧 Support For Integration
-> 
+>
 > This integration is managed and continuously improved by Qonversion. The CleverTap and Qonversion integration has undergone stringent testing to ensure seamless functionality. For any questions or issues, contact [Qonversion](mailto:support@qonversion.io) for support and resolution.
 
 # Prerequisites for Integration
 
 The following are the prerequisites:
 
-- Ensure you have access to your Qonversion account.
-- Ensure you have a CleverTap account with valid **Account ID**, **Passcode**, and **Region**.
+* Ensure you have access to your Qonversion account.
+* Ensure you have a CleverTap account with valid **Account ID**, **Passcode**, and **Region**.
 
 # Integrate Qonversion with CleverTap
 
@@ -85,101 +85,45 @@ To connect Qonversion with the CleverTap dashboard, you need the following proje
 
 | Field            | Description                                                                                                                                                                                                                                                                 |
 | :--------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Account ID       | Access the CleverTap dashboard and locate the Project ID under _Settings_ > _Project_.                                                                                                                                                                                      |
-| Account Passcode | Access the CleverTap dashboard and locate the Passcode under _Settings_ > _Project_. For more information, refer to [Account Passcode](https://developer.clevertap.com/docs/authentication#create-account-passcode).                                                        |
-| Region           | Access the CleverTap dashboard and locate _Region_ for the API endpoint you want to select under _Settings_ > _Project_. To find the API endpoint for your region, refer to [API endpoints based on your data center region](https://developer.clevertap.com/docs/idc#api). |
+| Account ID       | Access the CleverTap dashboard and locate the Project ID under *Settings* > *Project*.                                                                                                                                                                                      |
+| Account Passcode | Access the CleverTap dashboard and locate the Passcode under *Settings* > *Project*. For more information, refer to [Account Passcode](https://developer.clevertap.com/docs/authentication#create-account-passcode).                                                        |
+| Region           | Access the CleverTap dashboard and locate *Region* for the API endpoint you want to select under *Settings* > *Project*. To find the API endpoint for your region, refer to [API endpoints based on your data center region](https://developer.clevertap.com/docs/idc#api). |
 
-You can find these details in the _Settings > Project_ section of the CleverTap dashboard:
+You can find these details in the *Settings > Project* section of the CleverTap dashboard:
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c15acc7-Project_Details.png",
-        null,
-        "CleverTap Project Details"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "CleverTap Project Details"
-    }
-  ]
-}
-[/block]
-
+<Image alt="CleverTap Project Details" align="center" border={true} src="https://files.readme.io/c15acc7-Project_Details.png">
+  CleverTap Project Details
+</Image>
 
 ## Set Up CleverTap in Qonversion Dashboard
 
 To set up CleverTap in Qonversion dashboard:
 
-1. Go to _Tools > Integrations_ from the Qonversion dashboard.
-2. Under _Email & Push Notification_, go to _CleverTap_.
-3. Choose a platform _iOS_ or _Android_.
-4. Under _Integration Details_, enter your CleverTap Project ID, Passcode and Region. Refer to [Find CleverTap Project Details](doc:qonversion#find-clevertap-project-details).
+1. Go to *Tools > Integrations* from the Qonversion dashboard.
+2. Under *Email & Push Notification*, go to *CleverTap*.
+3. Choose a platform *iOS* or *Android*.
+4. Under *Integration Details*, enter your CleverTap Project ID, Passcode and Region. Refer to [Find CleverTap Project Details](doc:qonversion#find-clevertap-project-details).
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0ec26febbc0135721cc640a9f78836427fc928226b15028d5f5e7b90b8ce130e-quenction.gif",
-        "",
-        "Integrations"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Integrations"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Integrations" align="center" border={true} src="https://files.readme.io/0ec26febbc0135721cc640a9f78836427fc928226b15028d5f5e7b90b8ce130e-quenction.gif">
+  Integrations
+</Image>
 
 5. Configure Global Event Preferences:
-   - **Send Revenue Properties**: Keep this enabled to send revenue values. Disable it only if you don't need revenue data.
-   - **Send Sales as Proceed**: Choose whether to send revenue values as net of App Stores' commission.
-   - **Send Sandbox Events**: Optionally, Enable to receive sandbox events during testing.
+   * **Send Revenue Properties**: Keep this enabled to send revenue values. Disable it only if you don't need revenue data.
+   * **Send Sales as Proceed**: Choose whether to send revenue values as net of App Stores' commission.
+   * **Send Sandbox Events**: Optionally, Enable to receive sandbox events during testing.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e4c57a66a7afad4bcd47ada808c31474bf09c20427f64062f34e671bd385cfcf-image.png",
-        null,
-        "Global Event Preferences"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Global Event Preferences"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Global Event Preferences" align="center" border={true} src="https://files.readme.io/e4c57a66a7afad4bcd47ada808c31474bf09c20427f64062f34e671bd385cfcf-image.png">
+  Global Event Preferences
+</Image>
 
 6. [Event Settings](https://documentation.qonversion.io/docs/integrations-overview#switching-between-subscriptions): For each event, click **More options** to configure specific settings:
-   - **Enable event**: Enable to include the event in this integration.
-   - **Send Revenue**: Enable or disable sending revenue for this specific event.
+   * **Enable event**: Enable to include the event in this integration.
+   * **Send Revenue**: Enable or disable sending revenue for this specific event.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/77089e10147facb6a94910d6ec54764ee526c1d0539a07fc2ffe3ba4aa213eae-image.png",
-        null,
-        "Event Settings"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Event Settings"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Event Settings" align="center" border={true} src="https://files.readme.io/77089e10147facb6a94910d6ec54764ee526c1d0539a07fc2ffe3ba4aa213eae-image.png">
+  Event Settings
+</Image>
 
 7. Click **Create +** to save integration details.
 
