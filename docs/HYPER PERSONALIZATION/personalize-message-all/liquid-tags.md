@@ -14,14 +14,14 @@ next:
 
 Liquid tags offer tremendous flexibility and personalization for your messages. You can create a 'write once use multiple times' message and add multiple variations to it. You can use Liquid tags with the following engagement channels:
 
-- Email
-- Mobile Push
-- SMS
-- Webhooks
-- App Inbox
-- In-App
-- Native Display
-- WhatsApp
+* Email
+* Mobile Push
+* SMS
+* Webhooks
+* App Inbox
+* In-App
+* Native Display
+* WhatsApp
 
 Here is a simple example of personalization with a liquid tag: 
 
@@ -51,23 +51,9 @@ You can personalize your messages for [Events](doc:events) and [User Profiles](d
 
 Let us create a Liquid tag in an email campaign. To create a tag, select the "New email with rich media" template when you create an [email campaign](https://docs.clevertap.com/docs/email#section-email-campaign-creation-steps). You can use Liquid Tags within this template. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/bc6d48d-Select_Rich_Media_Template.png",
-        "Select a Rich Media Template",
-        2878
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Select a Rich Media Template"
-    }
-  ]
-}
-[/block]
-
+<Image title="Select a Rich Media Template" alt={2878} align="center" border={true} src="https://files.readme.io/bc6d48d-Select_Rich_Media_Template.png">
+  Select a Rich Media Template
+</Image>
 
 The Liquid Tags work within the email editor. However, you can also combine the power of HTML with Liquid Tags.  You can paste your HTML code directly in the HTML editor by clicking the Source button and then personalize it with Liquid Tags. For more information, see [Liquid Tags with HTML](https://docs.clevertap.com/docs/liquid-tags#section-liquid-tags-with-htmll) 
 
@@ -77,13 +63,13 @@ The liquid terms are adapted from [shopify's documentation](https://shopify.gith
 
 You can start creating your message by declaring tags in the campaign editor. You can declare the tags in the following ways: 
 
-- For creating message conditions - Conditional tags can help you vary the message for each condition. For example, if your users make a purchase, then send them a coupon with an additional discount for their next purchase. You can create a conditional tag by enclosing the condition within curly braces and a % sign. Start by entering `{%` in the email editor. The closing tag is completed automatically. The syntax for these tags is: `{% if %} {% endif %}`
-- For displaying output from a variable - Output tags display the output of a variable. For example, if customer_type is a variable, display all the types of customers such as Platinum, Gold,  and Silver. Start by entering `{{` in the email editor. The closing tag is completed automatically. The syntax for these tags is: `{{customer_type}}`
+* For creating message conditions - Conditional tags can help you vary the message for each condition. For example, if your users make a purchase, then send them a coupon with an additional discount for their next purchase. You can create a conditional tag by enclosing the condition within curly braces and a % sign. Start by entering `{%` in the email editor. The closing tag is completed automatically. The syntax for these tags is: `{% if %} {% endif %}`
+* For displaying output from a variable - Output tags display the output of a variable. For example, if customer\_type is a variable, display all the types of customers such as Platinum, Gold,  and Silver. Start by entering `{{` in the email editor. The closing tag is completed automatically. The syntax for these tags is: `{{customer_type}}`
 
 You can use any of the Profile and Event properties within tags. Just enter `Profile.` or `Event.` in the editor and we will list all the corresponding properties automatically. 
 
 > 📘 Note
-> 
+>
 > When selecting properties, the "P" in profile and the "E" in Events must be capitalized and followed with a period ".". Profile properties are available for all segments. Liquid tags for Event properties are only available for live user segments. The "@" personalization is supported only outside the tags.
 
 ## Conditional Tags
@@ -92,20 +78,20 @@ You can use conditional tags for creating simple or complex conditional statemen
 
 Following are the conditional tags:
 
-- if
-- else
-- else-if
-- unless
-- switch case
-- for
-- break
-- split
-- continue
-- abort
-- limit
-- offset
-- tablerow
-- now
+* if
+* else
+* else-if
+* unless
+* switch case
+* for
+* break
+* split
+* continue
+* abort
+* limit
+* offset
+* tablerow
+* now
 
 ### If
 
@@ -177,8 +163,8 @@ Hello!
 
 ### Switch case
 
-You can switch a statement when a variable changes in value.  The `when` statements define the various conditions.  
-For example, you have three types of customers, namely "Gold", "Silver" and everyone else. They are represented by the profile property "customer_type".  You can change the displayed message based on the type of customers. 
+You can switch a statement when a variable changes in value.  The `when` statements define the various conditions.\
+For example, you have three types of customers, namely "Gold", "Silver" and everyone else. They are represented by the profile property "customer\_type".  You can change the displayed message based on the type of customers. 
 
 ```liquid Switch case Tag
 {% case Profile.customer_type %}
@@ -437,23 +423,9 @@ You can combine your HTML code with Liquid Tags to create beautiful and personal
 1. Open the message editor and paste your HTML code. 
 2. Click the ![](https://files.readme.io/651c228-Liquid_tag_icon.png) icon and add your Liquid Tags. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e7aa86c-Add_Liquid_tags.png",
-        "Add Liquid Tags",
-        2876
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Add Liquid Tags"
-    }
-  ]
-}
-[/block]
-
+<Image title="Add Liquid Tags" alt={2876} align="center" border={true} src="https://files.readme.io/e7aa86c-Add_Liquid_tags.png">
+  Add Liquid Tags
+</Image>
 
 # Linked Content and Liquid Tags in Drag and Drop Editor
 
@@ -463,83 +435,27 @@ Perform the following steps to personalize drag and drop editor templates with l
 
 1. Select a template.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0fc50d2-Select_Media_Template.png",
-        "Select Media Template",
-        2878
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Select Media Template"
-    }
-  ]
-}
-[/block]
+<Image title="Select Media Template" alt={2878} align="center" border={true} src="https://files.readme.io/0fc50d2-Select_Media_Template.png">
+  Select Media Template
+</Image>
 
+2. Click the Row item in *Preview*.
 
-2. Click the Row item in _Preview_.
+<Image title="Select the Row Tab" alt={1047} align="center" border={true} src="https://files.readme.io/b461f6b-2020-07-28_19-19-33_Select_row_item.png">
+  Select the Row Tab
+</Image>
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b461f6b-2020-07-28_19-19-33_Select_row_item.png",
-        "Select the Row Tab",
-        1047
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Select the Row Tab"
-    }
-  ]
-}
-[/block]
+3. Click *More* dropdown and select **Customize with Liquid Tags**. The *Personalize messages with Liquid tags and Linked Content* popup displays.
 
-
-3. Click _More_ dropdown and select **Customize with Liquid Tags**. The _Personalize messages with Liquid tags and Linked Content_ popup displays.
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6404ab8-Select_Customize_with_Liquid_Tags.png",
-        "Select Customize with Liquid Tags",
-        2862
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Customize with Liquid Tags"
-    }
-  ]
-}
-[/block]
-
+<Image title="Select Customize with Liquid Tags" alt={2862} align="center" border={true} src="https://files.readme.io/6404ab8-Select_Customize_with_Liquid_Tags.png">
+  Customize with Liquid Tags
+</Image>
 
 4. Add the liquid script inside the popup.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/57f0cf4-Add_liquid_script.png",
-        "Add Liquid Script",
-        2856
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Add Liquid Script"
-    }
-  ]
-}
-[/block]
-
+<Image title="Add Liquid Script" alt={2856} align="center" border={true} src="https://files.readme.io/57f0cf4-Add_liquid_script.png">
+  Add Liquid Script
+</Image>
 
 5. Click **Add**.
 
@@ -549,50 +465,35 @@ When creating a campaign message with Liquid tags, errors appear in real time if
 
 Here is an example of how to add Liquid Tags in the message editor:
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e7aa86c-Add_Liquid_tags.png",
-        null,
-        "Add Liquid Tags"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Message Editor"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Add Liquid Tags" align="center" border={true} src="https://files.readme.io/e7aa86c-Add_Liquid_tags.png">
+  Message Editor
+</Image>
 
 Here is an example of how CleverTap validates the Liquid Tag syntax from the campaign creation page:
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0f35bde51577891264842c57d7064bb06d2e0e4608e466c245cf8aa366912050-image.png",
-        null,
-        "Validating the Liquid Tag Syntax"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Validating the Liquid Tag Syntax"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Validating the Liquid Tag Syntax" align="center" border={true} src="https://files.readme.io/0f35bde51577891264842c57d7064bb06d2e0e4608e466c245cf8aa366912050-image.png">
+  Validating the Liquid Tag Syntax
+</Image>
 
 # Video Tutorial
 
 You can watch the following video to learn more about Liquid Tags personalization.
 
-[block:html]
-{
-  "html": "<div\n              style=\"\n                position: relative;\n                padding-bottom: 56.25%;\n                height: 0;\n                border-radius: 0;\n                box-shadow: 0 15px 40px rgba(63,58,79,.3);\n                overflow: hidden;\n                min-width:320px\"><iframe\n              src=\"https://clevertap.portal.trainn.co/share/9vrJTcuXpv8PGXDWIgM32w/embed?autoplay=false\"\n              frameborder=\"0\"\n              webkitallowfullscreen\n              mozallowfullscreen\n              allowfullscreen\n              allow=\"autoplay; fullscreen\"\n              style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%;\"></iframe></div>"
-}
-[/block]
+<HTMLBlock>{`
+<div
+              style="
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                border-radius: 0;
+                box-shadow: 0 15px 40px rgba(63,58,79,.3);
+                overflow: hidden;
+                min-width:320px"><iframe
+              src="https://clevertap.portal.trainn.co/share/9vrJTcuXpv8PGXDWIgM32w/embed?autoplay=false"
+              frameborder="0"
+              webkitallowfullscreen
+              mozallowfullscreen
+              allowfullscreen
+              allow="autoplay; fullscreen"
+              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+`}</HTMLBlock>
