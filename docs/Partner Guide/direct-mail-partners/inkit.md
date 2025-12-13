@@ -16,16 +16,16 @@ next:
 
 With the CleverTap Inkit integration, you can:
 
-- Send personalized Inkit mailers (postcards, letters) to users or segments from CleverTap.
-- Trigger document generation based on scheduled campaigns or qualifying user events.
-- Deliver paperless communication through automated workflows.
+* Send personalized Inkit mailers (postcards, letters) to users or segments from CleverTap.
+* Trigger document generation based on scheduled campaigns or qualifying user events.
+* Deliver paperless communication through automated workflows.
 
 # Prerequisites for Integration
 
 The following are the prerequisites for this integration:
 
-- You must have an Inkit [Account](https://app.inkit.io/), an [API token](https://docs.inkit.com/docs/authentication#how-to-find-the-api-key-or-token-in-the-app), and a [Template ID](https://docs.inkit.com/docs/inkit-postcards-api#api-token-and-template-id) to send requests from CleverTap using webhook.
-- You must have an account with CleverTap.
+* You must have an Inkit [Account](https://app.inkit.io/), an [API token](https://docs.inkit.com/docs/authentication#how-to-find-the-api-key-or-token-in-the-app), and a [Template ID](https://docs.inkit.com/docs/inkit-postcards-api#api-token-and-template-id) to send requests from CleverTap using webhook.
+* You must have an account with CleverTap.
 
 # Integrate Inkit with CleverTap
 
@@ -53,7 +53,7 @@ Refer to the [Inkit API documentation](https://docs.inkit.com/docs/api-endpoints
 
 Connect CleverTap with Inkit by setting up a webhook that sends user-specific data to Inkit's API. To do so, perform the following steps:
 
-1. Go to _Settings_ > _Channels_ > _Webhook_ in the CleverTap dashboard.
+1. Go to *Settings* > *Channels* > *Webhook* in the CleverTap dashboard.
 2. Click **+ Webhook** to add a new webhook.
 3. Enter the following configuration:
 
@@ -73,28 +73,13 @@ You can check out the [Inkit API documentation](https://docs.inkit.com/docs/api-
 
 Trigger Inkit document generation based on user activity by configuring a Webhook Campaign in CleverTap. To do so, perform the following steps:
 
-1. Go to _Campaigns_ > _+ Campaign_ > _Webhook_.
+1. Go to *Campaigns* > *+ Campaign* > *Webhook*.
 2. Select the Webhook configured in [Create Webhook in CleverTap](doc:inkit#create-webhook-in-clevertap).
-3. In the _What_ section, under the Webhook Content section, select the Content Format as `JSON` and click the **Custom body** option.
+3. In the *What* section, under the Webhook Content section, select the Content Format as `JSON` and click the **Custom body** option.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5ab0b354bf07f27edb8b2b69e846047973875036d02d27c478a4b3bd059a77b4-image.png",
-        null,
-        "Webhook Content"
-      ],
-      "align": "center",
-      "sizing": "65% ",
-      "border": true,
-      "caption": "Webhook Content"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Webhook Content" align="center" width="65% " border={true} src="https://files.readme.io/5ab0b354bf07f27edb8b2b69e846047973875036d02d27c478a4b3bd059a77b4-image.png">
+  Webhook Content
+</Image>
 
 4. Paste the following JSON payload:
 
@@ -114,45 +99,15 @@ Use the personalization toolbar `{`, `{{`, or `@` to dynamically populate user a
 
 5. Click **Preview and Test** to validate the setup.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3226d69648a7889c7e617a6169797aff8f060098d9e7170c7e7e7a7fb33be0b1-2d2e9f55aa0bf4ce79a939757630cae0c292d6de50bd2d83f2e223deedd59768-image.png",
-        null,
-        "Preview and Test"
-      ],
-      "align": "center",
-      "sizing": "65% ",
-      "border": true,
-      "caption": "Preview and Test"
-    }
-  ]
-}
-[/block]
+<Image alt="Preview and Test" align="center" width="65% " border={true} src="https://files.readme.io/3226d69648a7889c7e617a6169797aff8f060098d9e7170c7e7e7a7fb33be0b1-2d2e9f55aa0bf4ce79a939757630cae0c292d6de50bd2d83f2e223deedd59768-image.png">
+  Preview and Test
+</Image>
 
+6. Check the Inkit dashboard to confirm that the data has been received and processed under the *History* section.
 
-6. Check the Inkit dashboard to confirm that the data has been received and processed under the _History_ section.
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/dc0933d91ccd6ca65a6e40b22344708a266163162c21ded699488140121f2f86-inkits.png",
-        "",
-        "Verify the data on Inkit"
-      ],
-      "align": "center",
-      "sizing": "65% ",
-      "border": true,
-      "caption": "Verify the data on Inkit"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Verify the data on Inkit" align="center" width="65% " border={true} src="https://files.readme.io/dc0933d91ccd6ca65a6e40b22344708a266163162c21ded699488140121f2f86-inkits.png">
+  Verify the data on Inkit
+</Image>
 
 7. Once validated, click **Publish** in CleverTap.
 
