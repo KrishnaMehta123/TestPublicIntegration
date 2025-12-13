@@ -12,12 +12,15 @@ next:
 ---
 You can use the SMTP integration if you want to use your existing Gmail or Google Apps account to send emails.
 
-# Gmail Settings 
+# Gmail Settings
+
 You need to generate an App password with Google. To do so:
+
 1. Activate the 2-Step Verification process.
 2. Visit the *App passwords* page, follow the steps listed here, and save your generated password.
 
 # Integrate Gmail into CleverTap
+
 1. From the dashboard, navigate to *Settings* > *Channels* > *Email*.
 2. Click **+Provider**.
 3. Select *SMTP* from the *Provider* dropdown and *SMTPS* from the *Scheme* dropdown.
@@ -30,24 +33,47 @@ You need to generate an App password with Google. To do so:
 You can send a test email by clicking **Send Test Email**.
 
 # Understand Bounces
-When a recipient's email server rejects an email, it is called a bounce. 
+
+When a recipient's email server rejects an email, it is called a bounce.\
 There are two kinds of bounces:
-  * **Soft Bounces**: Soft bounces typically indicate a temporary delivery issue to an address. Some reasons for a soft bounce could be that the recipient's mailbox is full or the mail server is down. Campaign reports include soft bounces and do not mark the users as unsubscribed.
-  * **Hard Bounces**: A hard bounce indicates a permanent reason an email cannot be delivered. Campaign reports include hard bounces and mark the users as unsubscribed.
+
+* **Soft Bounces**: Soft bounces typically indicate a temporary delivery issue to an address. Some reasons for a soft bounce could be that the recipient's mailbox is full or the mail server is down. Campaign reports include soft bounces and do not mark the users as unsubscribed.
+* **Hard Bounces**: A hard bounce indicates a permanent reason an email cannot be delivered. Campaign reports include hard bounces and mark the users as unsubscribed.
 
 ## Processing Bounces
+
 To process bounced email messages, you need to make an HTTP request to the *Callback URL* specified in *Dashboard* > *Settings* > *Channel* > *Email* > *+Provider*.
 
 The request must be of the type HTTP POST with the payload in the following format:
-[block:code]
-{
-  "codes": [
+
+```json
+// if you're not sure of the time of the bounce, just set it to the current epoch
+[
     {
-      "code": "// if you're not sure of the time of the bounce, just set it to the current epoch\n[\n    {\n        \"event\": \"softbounce\",\n        \"data\": [\n            {\n                \"e\": \"email1@emailprovider.com\",  // email id that soft bounced\n                \"ts\": 1435322805                  // time of the bounce\n            },\n            {\n                \"e\": \"email2@emailprovider2.com\", // email id that soft bounced\n                \"ts\": 1435322805                  // time of the bounce\n            }\n        ]\n    },\n    {\n        \"event\": \"hardbounce\",\n        \"data\": [\n            {\n                \"e\": \"email3@emailprovider.com\",   // email id that hard bounced\n                \"ts\": 1435322805\n            }\n        ]\n    }\n]",
-      "language": "json"
+        "event": "softbounce",
+        "data": [
+            {
+                "e": "email1@emailprovider.com",  // email id that soft bounced
+                "ts": 1435322805                  // time of the bounce
+            },
+            {
+                "e": "email2@emailprovider2.com", // email id that soft bounced
+                "ts": 1435322805                  // time of the bounce
+            }
+        ]
+    },
+    {
+        "event": "hardbounce",
+        "data": [
+            {
+                "e": "email3@emailprovider.com",   // email id that hard bounced
+                "ts": 1435322805
+            }
+        ]
     }
-  ]
-}
-[/block]
+]
+```
+
 # Handling Unsubscriptions
+
 To handle unsubscription requests from users, you can follow the steps mentioned [here](doc:handling-unsubscribes).
