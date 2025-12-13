@@ -16,11 +16,11 @@ CleverTap integrates with leading workflow automation tools to streamline proces
 
 CleverTap currently supports the following partner platforms:
 
-- [Airtable](doc:airtable)
-- [Apxor](doc:apxor)
-- [DataChannel](doc:datachannel)
-- [n8n](doc:n8n)
-- [Pipedream](doc:pipedream)
-- [Sheetlabs](doc:sheetlabs)
-- [SheetDB](doc:sheetdb)
-- [Zapier](doc:zapier)
+* [Airtable](doc:airtable)
+* [Apxor](doc:apxor)
+* [DataChannel](doc:datachannel)
+* [n8n](doc:n8n)
+* [Pipedream](doc:pipedream)
+* [Sheetlabs](doc:sheetlabs)
+* [SheetDB](doc:sheetdb)
+* [Zapier](doc:zapier)
