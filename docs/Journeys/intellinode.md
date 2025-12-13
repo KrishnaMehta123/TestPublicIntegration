@@ -20,31 +20,29 @@ With IntelliNODE, you can compare up to seven paths for a journey. You can try d
 
 A simple example can be engaging a user who has abandoned a cart item. You can send a push message on the app informing the customer about the abandoned cart item and then a reminder message on a different channel such as SMS, Email, or WhatsApp to nudge the user.  Each channel may have a different reach and a different cost implication. Trying and comparing these different approaches can help determine the optimal way to reach the user.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/09d0055-Sample_IntelliNODE_experiment.png",
-        "Sample Journey flow using IntelliNODE",
-        2106
-      ],
-      "align": "center",
-      "sizing": "smart",
-      "border": true,
-      "caption": "Sample IntelliNODE Journey Flow"
-    }
-  ]
-}
-[/block]
-
+<Image title="Sample Journey flow using IntelliNODE" alt={2106} align="center" width="smart" border={true} src="https://files.readme.io/09d0055-Sample_IntelliNODE_experiment.png">
+  Sample IntelliNODE Journey Flow
+</Image>
 
 # IntelliNODE Journey Video Tutorial
 
 Discover the video tutorial for the IntelliNODE Journey.
 
-[block:html]
-{
-  "html": "<div\n              style=\"\n                position: relative;\n                padding-bottom: 56.25%;\n                height: 0;\n                border-radius: 0;\n                box-shadow: 0 15px 40px rgba(63,58,79,.3);\n                overflow: hidden;\n                min-width:320px\"><iframe\n              src=\"https://clevertap.portal.trainn.co/share/j5JATYcpDND9O0lnkeR8tQ/embed?autoplay=false\"\n              frameborder=\"0\"\n              webkitallowfullscreen\n              mozallowfullscreen\n              allowfullscreen\n              allow=\"autoplay; fullscreen\"\n              style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%;\"></iframe></div>"
-}
-[/block]
+<HTMLBlock>{`
+<div
+              style="
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                border-radius: 0;
+                box-shadow: 0 15px 40px rgba(63,58,79,.3);
+                overflow: hidden;
+                min-width:320px"><iframe
+              src="https://clevertap.portal.trainn.co/share/j5JATYcpDND9O0lnkeR8tQ/embed?autoplay=false"
+              frameborder="0"
+              webkitallowfullscreen
+              mozallowfullscreen
+              allowfullscreen
+              allow="autoplay; fullscreen"
+              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+`}</HTMLBlock>
