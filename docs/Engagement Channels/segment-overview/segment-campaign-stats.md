@@ -12,24 +12,10 @@ next:
 ---
 After the campaign is live, you can view the campaign stats from the dashboard by navigating to the Campaigns page and selecting the campaign of interest to view the following stats: Events Streamed, Errors, and Control Group.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/cffa3f47f172f79640c78841ff633a6b399434a31c6d3802c41bebf8c903e244-Screenshot_2024-11-12_at_12.13.31_PM.png",
-        "Segment Campaign Stats on the Dashboard",
-        2706
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "View Segment Campaign Stats"
-    }
-  ]
-}
-[/block]
+<Image title="Segment Campaign Stats on the Dashboard" alt={2706} align="center" border={true} src="https://files.readme.io/cffa3f47f172f79640c78841ff633a6b399434a31c6d3802c41bebf8c903e244-Screenshot_2024-11-12_at_12.13.31_PM.png">
+  View Segment Campaign Stats
+</Image>
 
-
-- **Events Streamed**: This indicates the count of events that were exported to Segment.
-- **Errors**: This indicates the counts of events that were not exported to Segment due to some error. The details of errors are described under the Errors section.
-- **Control group**: The number of times the user qualifies for the control group.
+* **Events Streamed**: This indicates the count of events that were exported to Segment.
+* **Errors**: This indicates the counts of events that were not exported to Segment due to some error. The details of errors are described under the Errors section.
+* **Control group**: The number of times the user qualifies for the control group.
