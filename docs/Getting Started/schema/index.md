@@ -36,7 +36,7 @@ Custom events are events that you can define, edit, remove, and so on. These are
 
 If you have already defined your events, they are all present on this tab.
 
-View Custom Events
+<Image align="center" border={true} caption="View Custom Events" src="https://files.readme.io/a13c357-Custom_Events.png" />
 
 | Event Detail   | Description                                                                                                                                                                                                                                                                                                                                                         |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -57,7 +57,7 @@ You can add an event from the _Custom events_ tab.
 2. Click the **+Event** button to add an event.
 3. Add the event name. This name must be unique in the schema.
 
-  Add a Custom Event
+Add a Custom Event
 
 For more information, refer to [Event Property](doc:events#event-properties).
 
