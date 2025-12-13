@@ -12,9 +12,9 @@ metadata:
 ---
 # Overview
 
-Events track what individual actions users perform in your app or website. Some examples of events include a user launching an app, viewing a product, listening to a song, sharing a photo, making a purchase, or favoriting an item. 
+Events track what individual actions users perform in your app or website. Some examples of events include a user launching an app, viewing a product, listening to a song, sharing a photo, making a purchase, or favoriting an item.
 
-By tracking events in your app, you can better understand what users are doing. In CleverTap, you can analyze these events in many different ways, such as getting aggregating metrics of a specific event or measuring how a specific event type trends over time. You can also engage with your users based on these events by creating campaigns in CleverTap that are triggered by them. 
+By tracking events in your app, you can better understand what users are doing. In CleverTap, you can analyze these events in many different ways, such as getting aggregating metrics of a specific event or measuring how a specific event type trends over time. You can also engage with your users based on these events by creating campaigns in CleverTap that are triggered by them.
 
 <Image align="center" border={true} caption="Events" src="https://files.readme.io/40b874a-events1.png" />
 
@@ -22,12 +22,12 @@ By tracking events in your app, you can better understand what users are doing. 
 
 CleverTap has two categories of events:
 
-* System events: Events recorded automatically after you integrate our SDK. 
+* System events: Events recorded automatically after you integrate our SDK.
 * Custom events: Events you define and track with our SDK or API.
 
 ## Event Properties
 
-Events have details that describe the action taking place called properties. 
+Events have details that describe the action taking place called properties.
 
 For example, while recording the _Product viewed_ event, you could also store event properties, such as product name, category, and price. Recording event properties will help you discover insights, such as which product category is more popular, and segment users based on which categories or price points they have viewed.
 
@@ -36,7 +36,7 @@ For example, while recording the _Product viewed_ event, you could also store ev
 <Callout icon="📘">
   **Events Changelog**
 
-  You can find information about the most recent changes to our existing system events or the introdu[tion of new ones in our [Events Changelog](doc:events-changelog).
+  You can find information about the most recent changes to our existing system events or the introduction of new ones in our [Events Changelog](doc:events-changelog).
 </Callout>
 
 System events are events recorded automatically after you integrate our SDK.
@@ -809,7 +809,7 @@ The following properties are tracked automatically on all events:
     </tr>
     <tr>
       <td>CT Network Carrier</td>
-      <td>The network carrier of the device.<br />For example, AT&amp;T, Vodafone.</td>
+      <td>The network carrier of the device.<br />For example, AT&T, Vodafone.</td>
     </tr>
     <tr>
       <td>CT Network Type</td>
