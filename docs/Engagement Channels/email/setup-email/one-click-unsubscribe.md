@@ -16,18 +16,18 @@ next:
 
 Starting February 2024, Gmail will require the following for senders who send 5,000 or more messages a day to Gmail or Yahoo accounts: 
 
-- Authenticate outgoing email, 
-- Avoid sending unwanted or unsolicited emails, and 
-- Simplify for recipients the process to unsubscribe.
+* Authenticate outgoing email, 
+* Avoid sending unwanted or unsolicited emails, and 
+* Simplify for recipients the process to unsubscribe.
 
 To comply with the above guidelines, all email senders must follow the rules listed below:
 
-- Set up SPF or DKIM email authentication for your domain. If you use an email provider, verify that your provider supports it, ensuring that your messages are not marked as spam.
-- Ensure that sending domains or IPs have valid forward and reverse DNS records, also referred to as PTR records.
-- Keep spam rates reported in Postmaster Tools below 0.3%.
-- Set up DMARC email authentication for your sending domain. Your DMARC enforcement policy can be set to none.
-- For direct mail, the domain in the sender’s "From" header must be aligned with either the SPF domain or the DKIM domain. This is required to pass DMARC alignment.
-- [Enable one-click unsubscribe](doc:one-click-unsubscribe#set-up-list-unsubscribe-header) for subscribed messages as per the [RFC 8058](https://support.google.com/a/answer/81126?sjid=8891808360542719029-AP&visit_id=638459311449008138-2006200939&rd=1#subscriptions&zippy=%2Crequirem) guidelines.
+* Set up SPF or DKIM email authentication for your domain. If you use an email provider, verify that your provider supports it, ensuring that your messages are not marked as spam.
+* Ensure that sending domains or IPs have valid forward and reverse DNS records, also referred to as PTR records.
+* Keep spam rates reported in Postmaster Tools below 0.3%.
+* Set up DMARC email authentication for your sending domain. Your DMARC enforcement policy can be set to none.
+* For direct mail, the domain in the sender’s "From" header must be aligned with either the SPF domain or the DKIM domain. This is required to pass DMARC alignment.
+* [Enable one-click unsubscribe](doc:one-click-unsubscribe#set-up-list-unsubscribe-header) for subscribed messages as per the [RFC 8058](https://support.google.com/a/answer/81126?sjid=8891808360542719029-AP\&visit_id=638459311449008138-2006200939\&rd=1#subscriptions\&zippy=%2Crequirem) guidelines.
 
 Bulk senders must implement one-click unsubscribe functionality in all commercial and promotional messages by June 1, 2024.
 
@@ -44,50 +44,20 @@ Using the One-Click Unsubscribe feature, you can add a List Unsubscribe header, 
 To set up the List Unsubscribe header:
 
 1. Navigate to Settings > Channels > Email from the CleverTap dashboard.
-2. Select _Advanced Setup_ and toggle ON _One-click Unsubscribe_. 
+2. Select *Advanced Setup* and toggle ON *One-click Unsubscribe*. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e050e58-Enable_One-click_Unsubscribe.gif",
-        "",
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" className="border" border={true} src="https://files.readme.io/e050e58-Enable_One-click_Unsubscribe.gif" />
 
+3. Click **Enable** to confirm your action. The *One-click Unsubscribe enabled* message displays. 
 
-3. Click **Enable** to confirm your action. The _One-click Unsubscribe enabled_ message displays. 
+<Image align="center" className="border" border={true} src="https://files.readme.io/a9e9da5-image.png" />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a9e9da5-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
-
-For recurring campaigns, the _Unsubscribe_ link will be visible for the subsequent campaign runs.
+For recurring campaigns, the *Unsubscribe* link will be visible for the subsequent campaign runs.
 
 > 📘 Note
-> 
-> - The One-Click Unsubscribe feature is enabled by default. If you have a custom setup with your ESP, you can disable it if needed.
-> - Once you toggle ON the _One-Click Unsubscribe_ option, the LIST unsubscribe header will reflect in email campaigns for the subsequent campaign runs.
+>
+> * The One-Click Unsubscribe feature is enabled by default. If you have a custom setup with your ESP, you can disable it if needed.
+> * Once you toggle ON the *One-Click Unsubscribe* option, the LIST unsubscribe header will reflect in email campaigns for the subsequent campaign runs.
 
 # Send Test Campaign
 
@@ -95,35 +65,25 @@ To ensure one-click unsubscribe URL is implemented successfully:
 
 1. Create a test email campaign.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3e8ae51-Sample_Email_Campaign.png",
-        null,
-        "Sample Email Campaign"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Sample Email Campaign"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Sample Email Campaign" align="center" border={true} src="https://files.readme.io/3e8ae51-Sample_Email_Campaign.png">
+  Sample Email Campaign
+</Image>
 
 2. Click **Preview & Test** to send a test campaign to any user profile or a Test profile.
 
-   [block:image]{"images":[{"image":["https://files.readme.io/a8afce1-image.png",null,"List Unsubscribe URL - Inbox Preview"],"align":"center","border":true,"caption":"List Unsubscribe URL - Inbox Preview"}]}[/block]
+   <Image alt="List Unsubscribe URL - Inbox Preview" align="center" border={true} src="https://files.readme.io/a8afce1-image.png">
+     List Unsubscribe URL - Inbox Preview
+   </Image>
 
-   [block:image]{"images":[{"image":["https://files.readme.io/529b2ff-image.png",null,"List Unsubscribe URL on Opening the Email Campaign "],"align":"center","border":true,"caption":"List Unsubscribe Header on Opening the Email Campaign "}]}[/block]
+   <Image alt="List Unsubscribe URL on Opening the Email Campaign " align="center" border={true} src="https://files.readme.io/529b2ff-image.png">
+     List Unsubscribe Header on Opening the Email Campaign 
+   </Image>
 
-   When the user clicks on the _Unsubscribe_ link, they are automatically removed from the specific subscription groups selected during the campaign creation process. This ensures that the user will not receive communications from those particular categories associated with the email they unsubscribed from going forward.
+   When the user clicks on the *Unsubscribe* link, they are automatically removed from the specific subscription groups selected during the campaign creation process. This ensures that the user will not receive communications from those particular categories associated with the email they unsubscribed from going forward.
 
 > 🚧 List Unsubscribe Header for Test Campaign
-> 
-> When you send a test campaign using the _Preview & Test_ option, clicking _Unsubscribe_ does not actually unsubscribe the user although it shows the same message as that of an actual email campaign.
+>
+> When you send a test campaign using the *Preview & Test* option, clicking *Unsubscribe* does not actually unsubscribe the user although it shows the same message as that of an actual email campaign.
 
 # FAQs
 
