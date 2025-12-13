@@ -16,15 +16,15 @@ Cohort analysis is a way to group users who are similarly based on who or what t
 
 Cohorts provide the capability to understand how people are using your applications and are commonly used to measure user retention and churn. You can use cohort analysis to answer questions, such as:
 
-- What is my 4th-week retention like for new users?
-- How many repeat buyers does my e-commerce application have?
-- How soon do new users uninstall my music application if they don't create playlists?
+* What is my 4th-week retention like for new users?
+* How many repeat buyers does my e-commerce application have?
+* How soon do new users uninstall my music application if they don't create playlists?
 
 You can also use cohorts for more nuanced use cases that involve different segments. For example, one use case of cohorts is to validate hypotheses where you have a video application. Your hypothesis could be, "People return to watch videos in my applications because of the recommendations section of my application."
 
 You can use cohorts to validate this hypothesis.
 
-Your _First event_ and _Return event_ would both be video watched and this would help you answer the question, "How many people who watched videos came back to watch videos on my application?" 
+Your *First event* and *Return event* would both be video watched and this would help you answer the question, "How many people who watched videos came back to watch videos on my application?" 
 
 You can view this cohort with two segments of users. In the advanced filter, you can first view your video watched cohort for people who have used the recommendations feature, then you can compare it to people who have not used the recommendations feature.
 
@@ -32,94 +32,50 @@ You can view this cohort with two segments of users. In the advanced filter, you
 
 To create a cohort, perform the following steps:
 
-1. Navigate to _Analytics_ > _Cohorts_.
+1. Navigate to *Analytics* > *Cohorts*.
 2. Select your desired first event and its properties. This is the event that users must perform to qualify for your analysis.
 3. Select your return event and its properties. Users who have performed the first event must perform the return event to be considered for cohorts.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/fe19aa1-1_Create_a_cohort.png",
-        "Create a Cohort",
-        518
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Create a Cohort"
-    }
-  ]
-}
-[/block]
-
+<Image title="Create a Cohort" alt={518} align="center" border={true} src="https://files.readme.io/fe19aa1-1_Create_a_cohort.png">
+  Create a Cohort
+</Image>
 
 ## Compare by User Properties
 
 While creating your cohort, you can compare your analysis by: 
 
-- Geography: User's last known country, region, and city.
-- Session details: UTM source/medium/campaign and session source/referrer for the first event.
-- Technographics: Browser/device/OS.
+* Geography: User's last known country, region, and city.
+* Session details: UTM source/medium/campaign and session source/referrer for the first event.
+* Technographics: Browser/device/OS.
 
 ## Compare by Segments
 
-You can also compare your retention across different segments. For example, compare the retention for _Charged_ to _Charged_ event across the _All Users_ segment and the _Frequent Buyers_ segment. The differences in the retention trends could reveal a difference in the behavior of your users in each segment providing you invaluable insights. You can then dig deeper into buyer behavior. 
+You can also compare your retention across different segments. For example, compare the retention for *Charged* to *Charged* event across the *All Users* segment and the *Frequent Buyers* segment. The differences in the retention trends could reveal a difference in the behavior of your users in each segment providing you invaluable insights. You can then dig deeper into buyer behavior. 
 
 To compare retention across segments, perform the following steps:
 
-1. Navigate to _Analytics_ > _Cohorts_.
+1. Navigate to *Analytics* > *Cohorts*.
 2. Select the first and return event to analyze and view the retention cohort. 
-3. Select the _Compare to another segment_ box. Select a segment from the list or create an adhoc segment. For more information, refer to [Segments](doc:segments).
+3. Select the *Compare to another segment* box. Select a segment from the list or create an adhoc segment. For more information, refer to [Segments](doc:segments).
 4. Click **View cohort**.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/613c811-2_Compare_to_another_segment.png",
-        "Select Compare to Another Segment Option and Click View Cohort",
-        1045
-      ],
-      "align": "center",
-      "sizing": "100",
-      "border": true,
-      "caption": "Compare Cohorts"
-    }
-  ]
-}
-[/block]
-
+<Image title="Select Compare to Another Segment Option and Click View Cohort" alt={1045} align="center" width="100%" border={true} src="https://files.readme.io/613c811-2_Compare_to_another_segment.png">
+  Compare Cohorts
+</Image>
 
 The results display.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d9c4cf5-Cohorts_Compare_Segments_Search_Results.png",
-        "View Cohort Results",
-        1171
-      ],
-      "align": "center",
-      "sizing": "100",
-      "border": true,
-      "caption": "View Cohort Results"
-    }
-  ]
-}
-[/block]
-
+<Image title="View Cohort Results" alt={1171} align="center" width="100%" border={true} src="https://files.readme.io/d9c4cf5-Cohorts_Compare_Segments_Search_Results.png">
+  View Cohort Results
+</Image>
 
 > 📘 Comparison Considerations
-> 
+>
 > When comparing, consider the following:
-> 
-> - You can compare by a saved or an ad-hoc segment.
-> - You can compare a maximum of five segments.
-> - You cannot simultaneously compare your retention by user property and segments.
+>
+> * You can compare by a saved or an ad-hoc segment.
+> * You can compare a maximum of five segments.
+> * You cannot simultaneously compare your retention by user property and segments.
 
 ## Retention Modes
 
@@ -127,57 +83,29 @@ CleverTap offers multiple retention modes. You can use our retention modes to tr
 
 ### Nth Day
 
-This mode shows user actions on specific days. For example, a user reads the news on _Week 2_ but not on _Week 1_ or _Week 3_. If you view a cohort for three weeks, you see the following:
+This mode shows user actions on specific days. For example, a user reads the news on *Week 2* but not on *Week 1* or *Week 3*. If you view a cohort for three weeks, you see the following:
 
 | Week 0 | Week 1 | Week 2 | Week 3 |
 | :----- | :----- | :----- | :----- |
 | 50%    | 0      | 75%    | 0      |
 
-_Week 0_ shows the first user action, such as _App Installed_ or _App Launched_. 
+*Week 0* shows the first user action, such as *App Installed* or *App Launched*. 
 
 In another example, you want to engage users who have installed your news app. You have managed to convince them to use the app but you want to ensure they are engaged.  Some of these users installed the app and have started reading the news regularly. However, some of these users may install the app and still not read the news. You need to identify the trend for these users because they are a churn risk.  
 
-We select the first user action as _App Installed_ and the second action (_Return event_) as _Read news_. 
+We select the first user action as *App Installed* and the second action (*Return event*) as *Read news*. 
 
-The _Week 0_ cohort tells you how many users installed your app in the past three weeks. Next, you can check the number of users who installed your app and actually read the news. The _Nth_ day cohort shows you user behavior for three weeks after the users have installed the app.
+The *Week 0* cohort tells you how many users installed your app in the past three weeks. Next, you can check the number of users who installed your app and actually read the news. The *Nth* day cohort shows you user behavior for three weeks after the users have installed the app.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f316676-Cohorts_retention_Nth_Chart.png",
-        "View Cohorts Retention Nth Chart",
-        1215
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Cohort Retention Nth Chart"
-    }
-  ]
-}
-[/block]
+<Image title="View Cohorts Retention Nth Chart" alt={1215} align="center" border={true} src="https://files.readme.io/f316676-Cohorts_retention_Nth_Chart.png">
+  Cohort Retention Nth Chart
+</Image>
 
+The table shows you the actual retention percentages. The *Week 0* is when the user qualified for the cohort.
 
-The table shows you the actual retention percentages. The _Week 0_ is when the user qualified for the cohort.
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/72f5afb-Cohots_retention_Nth_Table.png",
-        "View Cohort Table with Nth Table",
-        1190
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "View Cohort Table"
-    }
-  ]
-}
-[/block]
-
+<Image title="View Cohort Table with Nth Table" alt={1190} align="center" border={true} src="https://files.readme.io/72f5afb-Cohots_retention_Nth_Table.png">
+  View Cohort Table
+</Image>
 
 ### Power User
 
@@ -185,82 +113,38 @@ Power users are the cornerstone of a company’s success. These are the users wh
 
 You can use this retention mode to analyze the frequency of their return and gain insight into their behavior and experience. 
 
-For example, you want to see how many users play songs over a month. You can select the first event as _App Launched_. You can select the return event as _Song Listened_. Select a 30-day period and then click the **View cohort** button to analyze user behavior over a month.
+For example, you want to see how many users play songs over a month. You can select the first event as *App Launched*. You can select the return event as *Song Listened*. Select a 30-day period and then click the **View cohort** button to analyze user behavior over a month.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c26b706-Analytics_Cohorts_power_users_Create.png",
-        "Select Retention Mode as Power User and Click View Cohort",
-        810
-      ],
-      "align": "center",
-      "sizing": "80",
-      "border": true,
-      "caption": "Select Retention Mode"
-    }
-  ]
-}
-[/block]
-
+<Image title="Select Retention Mode as Power User and Click View Cohort" alt={810} align="center" width="80%" border={true} src="https://files.readme.io/c26b706-Analytics_Cohorts_power_users_Create.png">
+  Select Retention Mode
+</Image>
 
 An ideal power user curve is a smile curve that shows user engagement over a period. When more of your users return daily,  the smile will shift to the right. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1d73647-Analytics_Cohorts_power_users_result.png",
-        "View Weekly Cohort for Power Users",
-        810
-      ],
-      "align": "center",
-      "sizing": "80",
-      "border": true,
-      "caption": "Cohort for Power Users"
-    }
-  ]
-}
-[/block]
-
+<Image title="View Weekly Cohort for Power Users" alt={810} align="center" width="80%" border={true} src="https://files.readme.io/1d73647-Analytics_Cohorts_power_users_result.png">
+  Cohort for Power Users
+</Image>
 
 The point at which the curve bends is the inflection point in user behavior. You can cross-reference your app features or offering to the curve and see what value it brings to your power users. 
 
 > 📘 Testing Tip
-> 
+>
 > You can test your product features or offerings with [Product Experiences](https://docs.clevertap.com/docs/product-experiences), then come back to check the power user curve. This gives you a more comprehensive understanding of your user reactions before you roll them out to your most coveted users.
 
 ### Unbounded
 
 An unbounded retention cohort shows your user retention over a time period but more importantly, it measures if your users return after a given point in time. For example, you can find out if a user returns to the app after day 10. This retention is especially useful if your user engagement is spread out over a longer time period. Some of these users might be those who want to book vacations, buy/renew insurance, or credit their online wallet. These user actions do not have a fixed date for the return action; however, you want to know when they perform an action after a specified time period. Here, you can use the unbounded retention mode. 
 
-For example, you want to see how many users bought groceries after two weeks. You can select the first event as _Purchased_, then you can select the return event again as _Purchased_. Select a one-month period and then click the **View cohort** button to analyze user behavior over a month.
+For example, you want to see how many users bought groceries after two weeks. You can select the first event as *Purchased*, then you can select the return event again as *Purchased*. Select a one-month period and then click the **View cohort** button to analyze user behavior over a month.
 
 The cohort results tells you how many times your users are buying groceries after their first shopping experience. This result can give you insight into the user activity and point you to the period when there is a dip in shopping. You can use our engagement channels to engage and retain your users over this time period.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6fac0f2-Cohorts_retention_Unbounded_trend.png",
-        "View Unbounded Retention Cohort",
-        1203
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Unbounded Retention Cohort"
-    }
-  ]
-}
-[/block]
-
+<Image title="View Unbounded Retention Cohort" alt={1203} align="center" border={true} src="https://files.readme.io/6fac0f2-Cohorts_retention_Unbounded_trend.png">
+  Unbounded Retention Cohort
+</Image>
 
 > 📘 Note
-> 
+>
 > This feature is available in the insights add-on.
 
 ## Advanced Filtering
@@ -268,218 +152,90 @@ The cohort results tells you how many times your users are buying groceries afte
 Advanced filters restrict your analysis to a specific segment of users. Create a segment based on any combination of past behaviors in combination with any set of user properties. 
 
 > 📘 Feature Availabilities
-> 
+>
 > Advanced filters is a general feature available for all analytics features and most campaigns. Read more in [Segments](doc:segments).
 
 # Read Cohort Results
 
 The cohort result first gives you an overview of your result in the form of a trend graph. This graph plots the total percentage of users who came back to perform your return event after performing your first event.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/dcfa132-image2.png",
-        "Read Weekly Cohort Results",
-        1213
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Read Cohort Results"
-    }
-  ]
-}
-[/block]
-
+<Image title="Read Weekly Cohort Results" alt={1213} align="center" border={true} src="https://files.readme.io/dcfa132-image2.png">
+  Read Cohort Results
+</Image>
 
 The Y-axis shows the percentage of users who came back to perform your return event and the X-axis shows you the timeframe in which the return event was performed. 
 
 You can also see the details of the trend view in a tabular form in this analysis. The tabular view helps you track the performance of each cohort and also, easily compare it to other cohorts. 
 
-For example, in the image below, you can see that in the _Cohort of Aug 20_, a total of 44,431 users launched the application in _Week 0_ (the week of August 20). In _Week 1_, 12.2% of these users returned to perform the _Charged_ event.
+For example, in the image below, you can see that in the *Cohort of Aug 20*, a total of 44,431 users launched the application in *Week 0* (the week of August 20). In *Week 1*, 12.2% of these users returned to perform the *Charged* event.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a12b589-image5.png",
-        "View Cohort Table",
-        1214
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Cohort Table"
-    }
-  ]
-}
-[/block]
-
+<Image title="View Cohort Table" alt={1214} align="center" border={true} src="https://files.readme.io/a12b589-image5.png">
+  Cohort Table
+</Image>
 
 ## Retention Frequency
 
 You can choose from four frequencies for your cohort results:
 
-- Hourly: Useful for high engagement apps such as live sports scores, social media, and so on. You can view the users' behavior by the hour.
+* Hourly: Useful for high engagement apps such as live sports scores, social media, and so on. You can view the users' behavior by the hour.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/91c01e4-Cohorts_retention_Hourly.png",
-        "View Hourly Retention Cohort",
-        1178
-      ],
-      "align": "center",
-      "sizing": "100",
-      "border": true,
-      "caption": "Hourly Retention Cohort"
-    }
-  ]
-}
-[/block]
+<Image title="View Hourly Retention Cohort" alt={1178} align="center" width="100%" border={true} src="https://files.readme.io/91c01e4-Cohorts_retention_Hourly.png">
+  Hourly Retention Cohort
+</Image>
 
+* Daily: Useful for high engagement apps such as news, social media, productivity apps, and so on. You can view the users' behavior by the day.
 
-- Daily: Useful for high engagement apps such as news, social media, productivity apps, and so on. You can view the users' behavior by the day.
+<Image title="View Daily Retention Cohort" alt={1198} align="center" border={true} src="https://files.readme.io/63d1247-Segments_Cohorts_Daily.png">
+  Daily Retention Cohort
+</Image>
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/63d1247-Segments_Cohorts_Daily.png",
-        "View Daily Retention Cohort",
-        1198
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Daily Retention Cohort"
-    }
-  ]
-}
-[/block]
+* Weekly: Useful for high engagement apps such as music streaming, video streaming, fitness apps, and so on. You can view the users' behavior by the week.
 
+<Image title="View Weekly Retention Cohort" alt={1177} align="center" border={true} src="https://files.readme.io/2bf22b7-Segments_Cohorts_Weekly.png">
+  Weekly Retention Cohort
+</Image>
 
-- Weekly: Useful for high engagement apps such as music streaming, video streaming, fitness apps, and so on. You can view the users' behavior by the week.
+* Monthly: Useful for engagement apps such as grocery, e-commerce, and so on. You can view the users' behavior by the month.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2bf22b7-Segments_Cohorts_Weekly.png",
-        "View Weekly Retention Cohort",
-        1177
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Weekly Retention Cohort"
-    }
-  ]
-}
-[/block]
+<Image title="View Monthly Retention Cohort" alt={1192} align="center" border={true} src="https://files.readme.io/70c413f-Segments_Cohorts_Monthly.png">
+  Monthly Retention Cohort
+</Image>
 
+* Custom Bracket: You can define a custom criterion for your cohort. For example, you can see the retention for different time periods such as *Day 1*, *Week 1*, *Month 1*, *Month 2*, and *Month 3*. 
 
-- Monthly: Useful for engagement apps such as grocery, e-commerce, and so on. You can view the users' behavior by the month.
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/70c413f-Segments_Cohorts_Monthly.png",
-        "View Monthly Retention Cohort",
-        1192
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Monthly Retention Cohort"
-    }
-  ]
-}
-[/block]
-
-
-- Custom Bracket: You can define a custom criterion for your cohort. For example, you can see the retention for different time periods such as _Day 1_, _Week 1_, _Month 1_, _Month 2_, and _Month 3_. 
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5b14df2-Cohorts_retention_Custom_Bracket.png",
-        "View Cohort Retention Frequency for Custom Bracket",
-        1201
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Customized Retention Cohort"
-    }
-  ]
-}
-[/block]
-
+<Image title="View Cohort Retention Frequency for Custom Bracket" alt={1201} align="center" border={true} src="https://files.readme.io/5b14df2-Cohorts_retention_Custom_Bracket.png">
+  Customized Retention Cohort
+</Image>
 
 > 📘 Note
-> 
+>
 > This feature is available in the insights add-on.
 
 ## Retention Metric
 
 The default metric to view retention is by the percentage of users; however, you can view the retention metric in multiple ways:
 
-- Return Event (Total): You can view retention by the return event, such as the total number of videos streamed over an OTT app. 
-- Percentage of Users (Total): You can view the retention by the total percentage of users in the app. For example, this can be the total percentage of users who hailed a ride each week. This gives you an insight if there is a dip in a particular week of the month and remedy the dropoff with increased engagement during that week. 
+* Return Event (Total): You can view retention by the return event, such as the total number of videos streamed over an OTT app. 
+* Percentage of Users (Total): You can view the retention by the total percentage of users in the app. For example, this can be the total percentage of users who hailed a ride each week. This gives you an insight if there is a dip in a particular week of the month and remedy the dropoff with increased engagement during that week. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d805d6a-Cohorts_retention_metrics_percentage.png",
-        "Select Retention Metrics",
-        1184
-      ],
-      "align": "center",
-      "sizing": "100",
-      "border": true,
-      "caption": "Retention Metrics"
-    }
-  ]
-}
-[/block]
+<Image title="Select Retention Metrics" alt={1184} align="center" width="100%" border={true} src="https://files.readme.io/d805d6a-Cohorts_retention_metrics_percentage.png">
+  Retention Metrics
+</Image>
 
-
-- Events per User: You can view the retention by events for each user. For example, this can be the number of times a user listened to songs in week 2. 
-- Custom Metric: You can sum up by event property. For example, this can be the total revenue earned from all the users who purchased in week 7. 
+* Events per User: You can view the retention by events for each user. For example, this can be the number of times a user listened to songs in week 2. 
+* Custom Metric: You can sum up by event property. For example, this can be the total revenue earned from all the users who purchased in week 7. 
 
 > 📘 Note
-> 
+>
 > This feature is available in the insights add-on.
 
 ### Comparing Cohorts
 
 In the default view, you see a trend for all cohorts which is the average progression of all users across cohorts over time. You can choose to compare the performance of one or more cohorts with each other.  You can also compare cohorts for different user properties. For example, this can be the retention for Android vs. iOS users.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0fca254-image4.png",
-        "View Comparison of Cohorts",
-        1211
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Compare Cohorts"
-    }
-  ]
-}
-[/block]
-
+<Image title="View Comparison of Cohorts" alt={1211} align="center" border={true} src="https://files.readme.io/0fca254-image4.png">
+  Compare Cohorts
+</Image>
 
 # Re-enter Users
 
@@ -495,51 +251,67 @@ Bookmarks are convenient for recalling a specific analysis that you want to see 
 
 Cohorts retention is measured against the system control group. To see the impact of your engagement, perform the following steps:
 
-1. Navigate to _Analytics_ > _Cohorts_.
-2. Select events and _View cohort_. 
+1. Navigate to *Analytics* > *Cohorts*.
+2. Select events and *View cohort*. 
 3. Click the **Real Impact** tab.
 
 For example, if you send engagement campaigns to 100 users, the system control group is 5 percent which is 5 users. Since these 5 users do not receive any engagement, you want to check the boost in retention through your engagement efforts. 
 
-The _Real Impact_ results show that you have increased your retention rate by 14.3 % by taking timely action.
+The *Real Impact* results show that you have increased your retention rate by 14.3 % by taking timely action.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2766722-Analytics_Cohorts_Real_Impact.png",
-        "Click Real Impact to View Real Impact of Cohorts",
-        1212
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "View Real Impact of Cohorts"
-    }
-  ]
-}
-[/block]
-
+<Image title="Click Real Impact to View Real Impact of Cohorts" alt={1212} align="center" border={true} src="https://files.readme.io/2766722-Analytics_Cohorts_Real_Impact.png">
+  View Real Impact of Cohorts
+</Image>
 
 # Any Event
 
 This event is available as the first and return event in cohorts for analysis.
 
-| <p>Event Type</p> | <p>Description</p>                                               | <p>How Event is Tracked</p>                                                                                                                                                                                                                                                                                                                                                                                        |
-| :---------------- | :--------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <p>Any Event</p>  | <p>This event can track any user event performed on the app.</p> | <p>The event is tracked when the user performs any event on the app. Any event includes all the system and custom events except the following:</p><ul><li>Notification sent</li><li>Notification viewed</li><li>Push impressions</li><li>Experiment rendered</li><li>Identity set</li><li>Identity reset</li><li>Identity error</li><li>App uninstalled</li><li>App version changed</li><li>Reachable by</li></ul> |
+<Table align={["left","left","left"]}>
+  <thead>
+    <tr>
+      <th>
+        <p>Event Type</p>
+      </th>
+
+      <th>
+        <p>Description</p>
+      </th>
+
+      <th>
+        <p>How Event is Tracked</p>
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        <p>Any Event</p>
+      </td>
+
+      <td>
+        <p>This event can track any user event performed on the app.</p>
+      </td>
+
+      <td>
+        <p>The event is tracked when the user performs any event on the app. Any event includes all the system and custom events except the following:</p><ul><li>Notification sent</li><li>Notification viewed</li><li>Push impressions</li><li>Experiment rendered</li><li>Identity set</li><li>Identity reset</li><li>Identity error</li><li>App uninstalled</li><li>App version changed</li><li>Reachable by</li></ul>
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 > 📘 Consideration in Cohorts
-> 
-> Any event is not actionable in _Cohorts_. This feature is available in the insights add-on.
+>
+> Any event is not actionable in *Cohorts*. This feature is available in the insights add-on.
 
 ## Use Cases
 
-Following are scenarios where you may use _Any event_ in cohorts. 
+Following are scenarios where you may use *Any event* in cohorts. 
 
-For example, you want to calculate your revenue from users. You can create a cohort of all users who may perform _Any event_ in the first step and set the return event as _Charged_.
+For example, you want to calculate your revenue from users. You can create a cohort of all users who may perform *Any event* in the first step and set the return event as *Charged*.
 
-Another example can be checking whether users are returning to your app after placing an order. You can create a cohort of all users who performed the _Charged_ event in the first step and select _Any event_ as a return event. This resulting cohort shows all users who performed a purchase and are still active in the app.
+Another example can be checking whether users are returning to your app after placing an order. You can create a cohort of all users who performed the *Charged* event in the first step and select *Any event* as a return event. This resulting cohort shows all users who performed a purchase and are still active in the app.
 
 Cohort is a powerful tool for understanding user behavior over time. Learn about [Cohort analysis](https://clevertap.com/blog/cohort-analysis/) to further enhance your user retention.
 
