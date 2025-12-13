@@ -105,9 +105,11 @@ After an event is removed:
 
 You can discard an active event from the schema. You can still see the event row in the schema; however, it will be marked as discarded.
 
-> ❗️ Caution When Discarding an Event
->
-> You can only discard an active event. Exercise extreme caution when discarding an event because this action cannot be undone. This action has an impact on your schema because it purges all data for the discarded event. It also drops any future incoming event with the same name.
+<Callout icon="❗️" theme="error">
+  When Discarding an Event
+
+  You can only discard an active event. Exercise extreme caution when discarding an event because this action cannot be undone. This action has an impact on your schema because it purges all data for the discarded event. It also drops any future incoming event with the same name.
+</Callout>
 
 1. Click the ellipsis menu on the event row.
 2. Click **Discard**.
