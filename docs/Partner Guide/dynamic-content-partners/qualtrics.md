@@ -16,16 +16,16 @@ next:
 
 With this integration, you can:
 
-- Automatically trigger Qualtrics survey distributions based on CleverTap events.
-- Configure survey payloads using user-specific data via Liquid tags.
-- Track feedback loops directly tied to user behavior.
+* Automatically trigger Qualtrics survey distributions based on CleverTap events.
+* Configure survey payloads using user-specific data via Liquid tags.
+* Track feedback loops directly tied to user behavior.
 
 # Prerequisites for Integration
 
 The following are the prerequisites for Qualtrics:
 
-- A valid **Qualtrics API Key** and access to the **Qualtrics XM Directory**.
-- Access to the **CleverTap dashboard** with permission to configure Webhook campaigns.
+* A valid **Qualtrics API Key** and access to the **Qualtrics XM Directory**.
+* Access to the **CleverTap dashboard** with permission to configure Webhook campaigns.
 
 # Integrate Qualtrics with CleverTap
 
@@ -43,15 +43,15 @@ This integration is enabled using CleverTap’s Webhook Campaigns, which allow y
 Set up a Webhook in CleverTap to send POST requests to the Qualtrics API whenever a user triggers a defined event.
 
 > 🚧 Note
-> 
+>
 > Contact [CleverTap Support](https://help.clevertap.com/hc/en-us/requests/new) to enable the Webhook channel on your account before proceeding.
 
 To set up the Webhook:
 
-1. Go to _Settings_ > _Channels_ > _Webhook_ in the CleverTap dashboard. Click **+ Add Webhook**.
+1. Go to *Settings* > *Channels* > *Webhook* in the CleverTap dashboard. Click **+ Add Webhook**.
 2. Enter a name for the Webhook.
-3. Set the _HTTP method_ to `POST`.
-4. In the _Webhook URL_, enter:
+3. Set the *HTTP method* to `POST`.
+4. In the *Webhook URL*, enter:
 
    ```
    https://<yourdatacenterid>.qualtrics.com/API/v3/distributions
@@ -67,23 +67,7 @@ To set up the Webhook:
 
 6. Click **Save**.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8cd5b3f4eaf218399ab5bf05bc4c51ba3f0cffbe4d84f2cb726cb4430781bfa3-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/8cd5b3f4eaf218399ab5bf05bc4c51ba3f0cffbe4d84f2cb726cb4430781bfa3-image.png" />
 
 Refer to the [Qualtrics API documentation](https://api.qualtrics.com/573e3f0a94888-create-distribution) for more information.
 
@@ -91,29 +75,14 @@ Refer to the [Qualtrics API documentation](https://api.qualtrics.com/573e3f0a948
 
 Create a Webhook campaign to distribute personalized Qualtrics surveys based on real-time user actions captured in CleverTap. To do so, follow these steps:
 
-1. Go to the _Campaigns_ page, click **+ Campaign**, and select _Webhook_ from the list of messaging channels.
-2. Under the _What_ section, select the Webhook created in the [Configure Webhook in CleverTap](doc:qualtrics#configure-webhook-in-clevertap) section.
-   - Select **JSON** as the content format.
-   - Select **Custom Body**.
+1. Go to the *Campaigns* page, click **+ Campaign**, and select *Webhook* from the list of messaging channels.
+2. Under the *What* section, select the Webhook created in the [Configure Webhook in CleverTap](doc:qualtrics#configure-webhook-in-clevertap) section.
+   * Select **JSON** as the content format.
+   * Select **Custom Body**.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ecb2568f744869aad55de0a83e8464e50ff5a3440212253f0e2b01b582af2bdd-image.png",
-        null,
-        "Webhook Content"
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "border": true,
-      "caption": "Webhook Content"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Webhook Content" align="center" width="75% " border={true} src="https://files.readme.io/ecb2568f744869aad55de0a83e8464e50ff5a3440212253f0e2b01b582af2bdd-image.png">
+  Webhook Content
+</Image>
 
 3. In the **Webhook Content**, paste the following sample payload:
 
