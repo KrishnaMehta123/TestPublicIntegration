@@ -16,9 +16,9 @@ The demo account provides access to the CleverTap platform for testing purposes.
 
 You will accomplish this in three steps through the CleverTap dashboard:
 
-- Run a report to confirm if cart abandonment is a problem for your company.
-- Create a segment to identify users who abandoned their cart.
-- Build a campaign to email a discount code to users in that segment.
+* Run a report to confirm if cart abandonment is a problem for your company.
+* Create a segment to identify users who abandoned their cart.
+* Build a campaign to email a discount code to users in that segment.
 
 # CleverTap Demo Account
 
@@ -30,21 +30,7 @@ To access your CleverTap demo account:
 2. Click on your account name on the top left corner of the CleverTap dashboard.
 3. Click the **Demo - Ecommerce** button. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/04a0224-1_CleverTap_Demo_Account_.png",
-        "1 CleverTap Demo Account .png",
-        345
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="1 CleverTap Demo Account .png" alt={345} align="center" className="border" border={true} src="https://files.readme.io/04a0224-1_CleverTap_Demo_Account_.png" />
 
 Once logged into the demo account, analyze, and solve the cart abandonment issue.
 
@@ -52,155 +38,57 @@ Once logged into the demo account, analyze, and solve the cart abandonment issue
 
 As a data-driven marketer, before running a campaign to our users, we should first validate the issue. Our hypothesis is that more than 10% of users abandoned their cart. Using CleverTap, we can run a report to confirm if this hypothesis is true. 
 
-1. From the CleverTap dashboard, select _Analytics_, then click **Funnels**. 
+1. From the CleverTap dashboard, select *Analytics*, then click **Funnels**. 
 
 The funnel report in CleverTap provides the ability to view the drop-off between different stages that you have defined. In this case, we want to understand the drop-off between the number of users who add an item to their cart to the number of users who complete a purchase.
 
 2. Select the funnel steps:
 
-- Under _Step 1_, select _Product Viewed_. 
-- Click **+ Funnel Step**, then under _Step 2_, select _Added to Cart_. 
-- Click **+ Funnel Step**, then under _Step 3_, select _Charged_. 
+* Under *Step 1*, select *Product Viewed*. 
+* Click **+ Funnel Step**, then under *Step 2*, select *Added to Cart*. 
+* Click **+ Funnel Step**, then under *Step 3*, select *Charged*. 
 
-_Product Viewed,_ _Added to Cart_, and _Charged_ are events tracked by CleverTap. After you [integrate our SDK](https://clevertap-developer-docs.readme.io/v1.0/docs/getting-started) in your app, you can immediately start tracking and analyzing these events in the CleverTap dashboard.
+*Product Viewed,* *Added to Cart*, and *Charged* are events tracked by CleverTap. After you [integrate our SDK](https://clevertap-developer-docs.readme.io/v1.0/docs/getting-started) in your app, you can immediately start tracking and analyzing these events in the CleverTap dashboard.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0c00065-Run_a_Report_1_-_Funnels_steps.png",
-        "Run a Report 1 - Funnels steps.png",
-        1418
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="Run a Report 1 - Funnels steps.png" alt={1418} align="center" className="border" border={true} src="https://files.readme.io/0c00065-Run_a_Report_1_-_Funnels_steps.png" />
 
 Unfortunately, the cart abandonment problem is worse than expected. Only 47% of users who add an item to their cart complete a purchase which means the other 53% abandon their cart.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c43bceb-funnel2.png",
-        "funnel2.png",
-        1141
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="funnel2.png" alt={1141} align="center" className="border" border={true} src="https://files.readme.io/c43bceb-funnel2.png" />
 
 # Create a Segment
 
 A CleverTap segment is a group of users whose actions and profile properties match a set of criteria you have defined. Segments are created to identify users who added an item to their cart but then did not complete a purchase within five minutes.
 
-1. From the CleverTap dashboard, navigate to _Segments_, then click the **Segments** option.
+1. From the CleverTap dashboard, navigate to *Segments*, then click the **Segments** option.
 2. Click **+ Segment** to create a new segment.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/15eba62-Create_a_Segment_1_-__Segment.png",
-        "Create a Segment 1 - + Segment.png",
-        1354
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="Create a Segment 1 - + Segment.png" alt={1354} align="center" className="border" border={true} src="https://files.readme.io/15eba62-Create_a_Segment_1_-__Segment.png" />
 
-3. On the next page under _Live user segments_, select the _Inaction within time_ box.
+3. On the next page under *Live user segments*, select the *Inaction within time* box.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/50a8969-Create_a_Segment_3_-_Inaction_within_time_box.png",
-        "Create a Segment 3 - Inaction within time box.png",
-        1180
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="Create a Segment 3 - Inaction within time box.png" alt={1180} align="center" className="border" border={true} src="https://files.readme.io/50a8969-Create_a_Segment_3_-_Inaction_within_time_box.png" />
 
-4. Under the _As soon as user does_ section, select _Added to Cart_ which tracks when an item was added to a user's shopping cart in the app. 
-5. In the _And does not do_ section, enter five minutes for the time. 
+4. Under the *As soon as user does* section, select *Added to Cart* which tracks when an item was added to a user's shopping cart in the app. 
+5. In the *And does not do* section, enter five minutes for the time. 
 
 These settings create a continuously updated segment that identifies users who added an item to cart, but then did not complete a purchase within five minutes.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/85cd769-Create_a_Segment_2_-_Live_user_segment_-_Inaction_within_time_.png",
-        "Create a Segment 2 - Live user segment - Inaction within time .png",
-        685
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="Create a Segment 2 - Live user segment - Inaction within time .png" alt={685} align="center" className="border" border={true} src="https://files.readme.io/85cd769-Create_a_Segment_2_-_Live_user_segment_-_Inaction_within_time_.png" />
 
-6. Save the segment as _Added To Cart but did not Charge within 5 minutes_, then click **Save**.
+6. Save the segment as *Added To Cart but did not Charge within 5 minutes*, then click **Save**.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7e20fae-Create_a_Segment_4_-_new_segment_name.png",
-        "Create a Segment 4 - new segment name.png",
-        688
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="Create a Segment 4 - new segment name.png" alt={688} align="center" className="border" border={true} src="https://files.readme.io/7e20fae-Create_a_Segment_4_-_new_segment_name.png" />
 
 # Build a Campaign
 
 CleverTap offers nine different messaging channels enabling you to reach your users on the optimal channel, such as email, in-app notification, or push notification.
 
-1. Next to the _Added To Cart but did not Charge within 5 minutes_ segment, click **Engage** in the dropdown menu. 
+1. Next to the *Added To Cart but did not Charge within 5 minutes* segment, click **Engage** in the dropdown menu. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9712992-Build_a_Campaign_1_-_Create_campaign.png",
-        "Build a Campaign 1 - Create campaign.png",
-        1394
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="Build a Campaign 1 - Create campaign.png" alt={1394} align="center" className="border" border={true} src="https://files.readme.io/9712992-Build_a_Campaign_1_-_Create_campaign.png" />
 
-2. Under _Email channels_, select _Email_.
+2. Under *Email channels*, select *Email*.
 
 ![](https://files.readme.io/68c4600-Build_a_Campaign_1b_-_Select_email_channel.png "Build a Campaign 1b - Select email channel.png")
 
@@ -208,10 +96,10 @@ CleverTap offers nine different messaging channels enabling you to reach your us
 
 ![](https://files.readme.io/ef7d515-Build_a_Campaign_1c_-_Select_campaign_type.png "Build a Campaign 1c - Select campaign type.png")
 
-4. Name the campaign _Abandoned Cart Email_.
+4. Name the campaign *Abandoned Cart Email*.
 5. Select a start and end date/time. This keeps the campaign running until the time you specify. 
 
-Alternatively, you can keep the campaign running continuously by selecting _Never end_.
+Alternatively, you can keep the campaign running continuously by selecting *Never end*.
 
 ![](https://files.readme.io/70ea522-Build_a_Campaign_1d_-_Name_campaign_and_When_selection.png "Build a Campaign 1d - Name campaign and When selection.png")
 
@@ -220,24 +108,10 @@ On the next page, keep the default settings which is pre-populated based on the 
 6. Add a gap of 15 days, so a user does not receive a discount code again until after 15 days have passed.
 
 > 📘 Gap Range
-> 
+>
 > The gap range must be between 15 minutes and 40 days.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7f1329e-Build_a_Campaign_1e_-_Day_gap_and_Who_selection_NEW.png",
-        "Build a Campaign 1e - Day gap and Who selection NEW.png",
-        1626
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="Build a Campaign 1e - Day gap and Who selection NEW.png" alt={1626} align="center" className="border" border={true} src="https://files.readme.io/7f1329e-Build_a_Campaign_1e_-_Day_gap_and_Who_selection_NEW.png" />
 
 7. Select the type of message you want to send to your users, then enter text in the email body or you can click **Continue to Sender details** to proceed to the next step.
 
@@ -246,21 +120,7 @@ On the next page, keep the default settings which is pre-populated based on the 
 8. Fill out the email subject line and body. Using the @ symbol, you can make the email personalized for each user based on information from their profile properties. 
 9. Once you are done entering all the necessary information, click **Continue**.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/06d2ef1-Build_a_Campaign_1g_-_enter_What_content.png",
-        "Build a Campaign 1g - enter What content.png",
-        1612
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="Build a Campaign 1g - enter What content.png" alt={1612} align="center" className="border" border={true} src="https://files.readme.io/06d2ef1-Build_a_Campaign_1g_-_enter_What_content.png" />
 
 10. Review the setup page, then click **Continue**.
 
@@ -270,21 +130,7 @@ On the next page, keep the default settings which is pre-populated based on the 
 
 Since this a demo account, no emails will be sent. If you follow these same steps for your regular CleverTap account, each user in this segment will receive an email. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/69b59d4-Build_a_Campaign_1i_-_Schedule_notification.png",
-        "Build a Campaign 1i - Schedule notification.png",
-        1631
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="Build a Campaign 1i - Schedule notification.png" alt={1631} align="center" className="border" border={true} src="https://files.readme.io/69b59d4-Build_a_Campaign_1i_-_Schedule_notification.png" />
 
 # Next Steps
 
