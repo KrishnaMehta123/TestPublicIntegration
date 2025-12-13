@@ -345,8 +345,6 @@ To create linked events in bulk:
 
    <Image align="center" border={false} caption="Create Linked Events in Bulk" src="https://files.readme.io/7b5b7fd-Create_Linked_Events_in_Bulk.png" />
 
-![](https://files.readme.io/7b5b7fd-Create_Linked_Events_in_Bulk.png) Create Linked Events in Bulk
-
 ### Discard Linked Event
 
 You can discard a linked event from the user property.
@@ -356,7 +354,7 @@ To discard linked events:
 1. Click the ![](https://files.readme.io/01a6671-Ellipsis.png) icon of the user property.
 2. Select _Discard Linked Event_ and click **Discard**.
 
-![](https://files.readme.io/5980787-Discard_Linked_Event.gif) Discard a Linked Event
+ Discard a Linked Event
 
 <Callout icon="📘" theme="info">
   **Key Points to Remember**
