@@ -22,23 +22,10 @@ You can run this test for a few weeks and identify the CTA that delivers a highe
 
 # A/B Tests Dashboard
 
-The A/B Tests dashboard displays all your ongoing and previous A/B tests. It shows you whether the test is active or inactive and provides details such as its _Name_, _Status_, and _Created Time_, along with the names of the creators and the last person who edited the test.
+The A/B Tests dashboard displays all your ongoing and previous A/B tests. It shows you whether the test is active or inactive and provides details such as its *Name*, *Status*, and *Created Time*, along with the names of the creators and the last person who edited the test.
 
 You can locate your A/B tests by their Name or ID.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/57e8f49-B_Tests_1.png",
-        null,
-        "A/B Test Dashboard"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "A/B Test Dashboard"
-    }
-  ]
-}
-[/block]
+<Image alt="A/B Test Dashboard" align="center" border={true} src="https://files.readme.io/57e8f49-B_Tests_1.png">
+  A/B Test Dashboard
+</Image>
