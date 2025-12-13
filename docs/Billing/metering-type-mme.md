@@ -14,8 +14,8 @@ next:
 
 The Monthly Million Events (MME) metering is priced at monthly million events. The event data is stored for 12 months. 
 
-
 # Measurement and Limits
+
 The billable unit for this metering is events. You will get usage alerts on the dashboard and email reminders. 
 
 * Unit of measurement: Events.
@@ -30,19 +30,16 @@ If the usage limit reaches 110%, then the dashboard access is restricted. The re
 The restriction is removed automatically after upgrading the plan, even if the utilization is between 100 and 110%.
 
 # Alerts for Overages
+
 All account admins will receive alert emails when their account exceeds receive alerts on their CT dashboard and email inboxes every time the consumption exceeds 80%, 90%, 100%, 110%, and so on.
 
 # Update Billing Information and Card Details
 
-If you are an organization member with billing permissions (Admins), you can update the billing and payment information by clicking **Organization** on the left navigation menu of the dashboard. Then, click **Billing **to update the required details.
+If you are an organization member with billing permissions (Admins), you can update the billing and payment information by clicking **Organization** on the left navigation menu of the dashboard. Then, click **Billing** to update the required details.
 
-[block:callout]
-{
-  "type": "info",
-  "title": "Billing Currency",
-  "body": "You cannot change the currency for billing."
-}
-[/block]
+> 📘 Billing Currency
+>
+> You cannot change the currency for billing.
 
 # Customer History
 
