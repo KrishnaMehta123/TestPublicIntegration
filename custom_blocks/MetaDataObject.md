@@ -13,5 +13,5 @@ The `metadata` object allows you to include additional custom key-value pairs fo
 The `metadata` key-value pairs enhance the coupon validation logic by allowing custom attributes to be considered during the validation process. For example, a coupon could be applicable only for items of a specific color (Red) or size (Large) or a specific supplier (SupplierA). By including such metadata, the system validates the coupon based on these additional criteria, ensuring accurate coupon applicability.
 
 > 📘 Recommendation
-> 
+>
 > CleverTap recommends passing the `order` and `items` object details when calling this API on the checkout page. This displays the right coupons to the users in the coupon tray.
