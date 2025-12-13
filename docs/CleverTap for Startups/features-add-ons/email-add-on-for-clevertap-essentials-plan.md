@@ -61,59 +61,31 @@ The following are the key steps to enable the Email Add-on feature in your proje
 ## Purchase the Email Add-on
 
 1. Log in to your CleverTap dashboard.
-2. Navigate to _Organization >  Billing > My Plan > Manage Add-ons_.
-3. Locate the _CleverTap Email Add-on_ and click **Select**.
+2. Navigate to *Organization >  Billing > My Plan > Manage Add-ons*.
+3. Locate the *CleverTap Email Add-on* and click **Select**.
 4. Click **Pay & Update Plan** to confirm the purchase.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2410a02faf35ed8ad0b30971700e13d87ea5cbdfe1a986e7a6cb19a45982136f-2024-12-11_13-23-51_1.gif",
-        null,
-        "Purchase Email Add-on"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Purchase Email Add-on"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Purchase Email Add-on" align="center" border={true} src="https://files.readme.io/2410a02faf35ed8ad0b30971700e13d87ea5cbdfe1a986e7a6cb19a45982136f-2024-12-11_13-23-51_1.gif">
+  Purchase Email Add-on
+</Image>
 
 5. Submit the form and then wait for 72 hours. You will receive the API Key from CleverTap's onboarding team for the email configuration.
 
 > 📘 Email Configuration Process
-> 
+>
 > Currently, the configuration process is manual and will be completed within a 72-hour standard licensed agreement (SLA) after filling the form.
 
 ## Configure Email Settings
 
 After you receive the API Key from CleverTap's onboarding team:
 
-1. Navigate to _Settings > Email > Provider_.
-2. Select _CleverTap Email_ from the dropdown menu.
+1. Navigate to *Settings > Email > Provider*.
+2. Select *CleverTap Email* from the dropdown menu.
 3. Enter the provider details shared by CleverTap's onboarding team and click **Save**.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/bebe0bcff039e7f691edfd81ec278b7b61da3275a79539c41d44e0c8e479e961-Provider_Credentials.png",
-        null,
-        "Configure CleverTap Email Provider"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Configure CleverTap Email Provider"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Configure CleverTap Email Provider" align="center" border={true} src="https://files.readme.io/bebe0bcff039e7f691edfd81ec278b7b61da3275a79539c41d44e0c8e479e961-Provider_Credentials.png">
+  Configure CleverTap Email Provider
+</Image>
 
 For more information, refer to [Setup Provider](doc:sendgrid).
 
