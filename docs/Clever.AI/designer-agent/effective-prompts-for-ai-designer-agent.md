@@ -213,7 +213,7 @@ The following sample prompts show how detailed prompts improve image quality, to
 
 You can generate on-brand images in multiple ways depending on your campaign needs. The AI Image Generator supports creating new images, editing existing ones, or using a reference image to guide visual consistency.
 
-For more information on generating and editing images, along with step-by-step instructions, refer to [Designer Agent](doc:ai-image-generator).
+For more information on generating and editing images, along with step-by-step instructions, refer to [Designer Agent](doc:designer-agent).
 
 > 📘 **How Brand Kit and Prompts Work Together**
 >
@@ -223,11 +223,11 @@ For more information on generating and editing images, along with step-by-step i
 
 # Common Prompt Issues
 
-Refer to the following table for common prompt related issues, and how to fix them for best results:
+Refer to the following table for common prompt-related issues and how to fix them for the best results:
 
 | Common Prompt Issue                 | Why It Causes Issues                                                                                                                                                                                            | How to Fix                                                                                                                                                               |
 | ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Vague Prompt**                    | The AI Designer Agent lacks clear direction for layout, tone, or subject. Short, generic inputs like "banner" or "sale" don't provide enough detail for a meaningful image.                                     | Be specific about what you want to show. Example: "Create a festive banner for Diwali with red and gold tones and decorative lamps."                                     |
+| **Vague Prompt**                    | The AI Designer Agent lacks clear direction for layout, tone, or subject. Short, generic inputs like "banner" or "sale" do not provide enough detail for a meaningful image.                                    | Be specific about what you want to show. Example: "Create a festive banner for Diwali with red and gold tones and decorative lamps."                                     |
 | **Conflicting Brand or Tone**       | Opposite visual or emotional cues (for example, "vibrant yet minimal") or color requests that differ from your Brand Kit confuse the AI and result in mismatched visuals.                                       | Keep tone and brand cues consistent. Choose one style, for example, either "bold and expressive" or "clean and minimal." Ensure color choices align with your Brand Kit. |
 | **Using URLs**                      | The AI cannot interpret external links or embedded design references from tools like Figma.                                                                                                                     | Upload or attach the reference image directly within the generator instead of pasting URLs.                                                                              |
 | **Misunderstanding Text in Images** | The AI interprets your text as layout guidance, not literal copy. Only the text you explicitly include in your prompt will appear. If no text is given, the AI may auto-generate its own creative placeholders. | Specify exact words if you want them visible. Example: "Add the text 'Shop Now' at the bottom in a bold white font."                                                     |
