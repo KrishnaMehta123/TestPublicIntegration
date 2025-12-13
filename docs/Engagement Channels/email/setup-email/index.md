@@ -228,14 +228,16 @@ To enable or disable the inbox preview, perform the following steps:
   You can also select multiple clients, then enable or disable previews by clicking **Enable in inbox previews** or **Disable in inbox previews**.
 </Callout>
 
-  Enable or Disable Inbox Previews
+<Image align="center" border={true} caption="Enable or Disable Inbox Previews" src="https://files.readme.io/49e8f2d-Enable_an_inbox_preview.png" />
 
 The _Previews_ tab lists the available email inboxes. For example, a mobile device that runs Gmail on Android 8 or a computer that runs Apple Mail 10 on an OS X 10.10 operating system.
 
-> 🚧 Account Specifications
->
-> Email previews are available only if you have opted for the email add-on from CleverTap.  
-> This feature is not available for trial accounts.
+<Callout icon="🚧" theme="warn">
+  **Account Specifications**
+
+  Email previews are available only if you have opted for the email add-on from CleverTap.  
+  This feature is not available for trial accounts.
+</Callout>
 
 # Advanced Setup
 
