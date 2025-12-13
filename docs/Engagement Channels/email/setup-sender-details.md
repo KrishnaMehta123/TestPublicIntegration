@@ -269,7 +269,7 @@ To set up OneLink on the CleverTap dashboard:
 
 a. Navigate to _Settings_ > _Channel_ > _Email_ > _Advanced Setup_ on the dashboard and click **AppsFlyer OneLink** dropdown.
 
-![](https://files.readme.io/64cb245-Click_the_Dropdown_to_Add_AppsFlyer_OneLink.png "Click the Dropdown to Add AppsFlyer OneLink")  Advance Setup
+<Image align="center" border={true} caption="Advance Setup" src="https://files.readme.io/64cb245-Click_the_Dropdown_to_Add_AppsFlyer_OneLink.png" />
 
 b. Enter your AppsFlyer OneLink domain or sub-domain and click **Add**.
 
