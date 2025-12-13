@@ -3,12 +3,12 @@ title: Sendbird Business Messaging
 excerpt: Messenger Partner
 deprecated: false
 hidden: false
+link:
+  new_tab: false
 metadata:
   title: ''
   description: ''
   robots: index
-next:
-  description: ''
 ---
 # Overview
 
@@ -184,9 +184,8 @@ To set up CleverTap Dashboard:
       <td>
         Navigate to **Business Messaging > Integrations > CleverTap** on the Sendbird dashboard to select one of the following CleverTap integration endpoints:  
 
-        <li> single: Select this endpoint to send real-time notifications to users as soon as a specific event occurs. Sending a large batch of notifications at once through this endpoint could result in [rate limiting](https://sendbird.com/docs/chat/platform-api/v3/application/understanding-rate-limits/rate-limits#1-rate-limits). The endpoint is in the following format: [https://api-{app_id}.notifications.sendbird.com/clevertap/notifications/single](https://api-{app_id}.notifications.sendbird.com/clevertap/notifications/single) </li>
-        <li> multi: Select this endpoint to send notifications to a large group of users. Notifications are not sent in real-time but can be delivered to a significant number of target users simultaneously without encountering rate limit problems. The endpoint is in the following format:
-        [https://api-{app_id}.notifications.sendbird.com/clevertap/notifications/multi](https://api-{app_id}.notifications.sendbird.com/clevertap/notifications/mutli)
+        - **single**: Select this endpoint to send real-time notifications to users as soon as a specific event occurs. Sending a large batch of notifications at once through this endpoint could result in [rate limiting](https://sendbird.com/docs/chat/platform-api/v3/application/understanding-rate-limits/rate-limits#1-rate-limits). The endpoint is in the following format: `https://api-{'{app_id}'}.notifications.sendbird.com/clevertap/notifications/single`
+        - **multi**: Select this endpoint to send notifications to a large group of users. Notifications are not sent in real-time but can be delivered to a significant number of target users simultaneously without encountering rate limit problems. The endpoint is in the following format: `https://api-{'{app_id}'}.notifications.sendbird.com/clevertap/notifications/multi`
       </td>
     </tr>
 
@@ -249,7 +248,7 @@ You can do so by following the steps listed below:
    The following is a sample JSON payload of the callback:\ <br />
    ```json
    {
-     "evtName": "My First Campaign", // The Event name value you’ve set in Editor
+     "evtName": "My First Campaign", // The Event name value you've set in Editor
                                      // during the notification creation.
      "evtData": {
        "status": "READ",             // The status of a notification. Either SENT
