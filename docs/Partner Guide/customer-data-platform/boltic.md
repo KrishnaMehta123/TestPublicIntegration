@@ -74,7 +74,7 @@ For this specific use case, we will use the Webhook trigger to send real-time da
       1. Select the appropriate authentication type from the dropdown.
       2. Enter a test payload in JSON format per the use case. The following are sample JSON payloads for pushing data.
          * Sample Payload for Sending User Profile Data (Track New User Sign-ups)
-           ```json coffeescript
+           ```coffeescript json
            //for pushing user profile
            {
              "payload": {
@@ -84,7 +84,7 @@ For this specific use case, we will use the Webhook trigger to send real-time da
            }
            ```
          * Sample Payload for Sending Event Data (Capture Purchase Events)
-           ```json coffeescript
+           ```coffeescript json
            //for pushing events 
            {
              "payload": {
@@ -128,7 +128,7 @@ For this specific use case, we will use the Webhook trigger to send real-time da
 
 6. **Configure the Request Body**. Based on your use case, you can send user profiles or events (custom/predefined). Use the following payload structure in the API body:
 
-```json
+```json Sending User Profiles
 {
   "d": [
     {
@@ -143,7 +143,7 @@ For this specific use case, we will use the Webhook trigger to send real-time da
 }
 ```
 
-```json
+```json Send Events
 {
   "d": [
     {
