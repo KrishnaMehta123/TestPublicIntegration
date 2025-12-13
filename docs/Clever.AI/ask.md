@@ -20,7 +20,7 @@ next:
 
 Operating seamlessly as a chat interface, Ask simplifies your CleverTap experience, providing quick and informative responses. Whether you have questions about product features or need support, Ask is available 24/7 to deliver instant answers, ensuring you can get the information you need anytime, even outside traditional support hours.
 
-Ask streamlines your interaction with CleverTap by the _Clear Conversations_ feature that allows you to start fresh on new topics. This saves you time and enhances your productivity by resolving issues and gathering information without interruptions. Additionally, Ask encourages self-service support, empowering you to find solutions to common queries independently and reducing reliance on support tickets.
+Ask streamlines your interaction with CleverTap by the *Clear Conversations* feature that allows you to start fresh on new topics. This saves you time and enhances your productivity by resolving issues and gathering information without interruptions. Additionally, Ask encourages self-service support, empowering you to find solutions to common queries independently and reducing reliance on support tickets.
 
 # Getting Started
 
@@ -28,43 +28,15 @@ Ask operates similarly to a chat interface, and getting started with Ask is a br
 
 1. Click the ![](https://files.readme.io/d7ff6da-Ask_Icon.png) Ask icon from the CleverTap dashboard. Clicking this opens a chat interface.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2456731-Ask_Navigation.png",
-        "",
-        "Navigating to Ask"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Navigating to Ask"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Navigating to Ask" align="center" border={true} src="https://files.readme.io/2456731-Ask_Navigation.png">
+  Navigating to Ask
+</Image>
 
 2. Type your questions or requests, and it will provide you with quick, informative responses. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a3fa404-Interacting_with_Ask.gif",
-        "",
-        "Interacting with Ask"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Interacting with Ask"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Interacting with Ask" align="center" border={true} src="https://files.readme.io/a3fa404-Interacting_with_Ask.gif">
+  Interacting with Ask
+</Image>
 
 # Provide Feedback for Ask Responses
 
@@ -82,8 +54,8 @@ If a response is inaccurate or does not fully address your question, you can dow
 
 The following are the best practices for using Ask:
 
-- **Prompt Effectively**: Formulate queries with clear and concise questions for the best results. Avoid vague or ambiguous queries. For example, instead of asking, "How to integrate CleverTap SDK?" you should ask, "How to integrate CleverTap Android SDK?" to ensure specificity and accuracy.
-- **Interact with Ask**: Engage with Ask as you would in a regular chat, and do not hesitate to ask follow-up questions for deeper insights.
+* **Prompt Effectively**: Formulate queries with clear and concise questions for the best results. Avoid vague or ambiguous queries. For example, instead of asking, "How to integrate CleverTap SDK?" you should ask, "How to integrate CleverTap Android SDK?" to ensure specificity and accuracy.
+* **Interact with Ask**: Engage with Ask as you would in a regular chat, and do not hesitate to ask follow-up questions for deeper insights.
 
 # Limitations
 
