@@ -287,7 +287,7 @@ Save AppsFlyer OneLink
 
 The message _AppsFlyer domain deeplink successfully saved_ displays at the top.
 
-  AppsFlyer Domain Deeplink Success
+<Image align="center" border={true} caption="AppsFlyer Domain Deeplink Success" src="https://files.readme.io/cb41781-AppsFlyer_OneLink_Saved_Successfully.png" />
 
 ### Disable Tracking via AppsFlyer OneLink
 
@@ -297,13 +297,17 @@ If you want to avoid click tracking via AppsFlyer OneLink, add the following tag
 
 AppsFlyer OneLink does not apply to links with this tag.
 
-> 🚧 Note
->
-> Turn off click tracking from your email service provider's dashboard for one link redirection to function as intended. CleverTap will receive the click data directly from AppsFlyer.
+<Callout icon="🚧" theme="warn">
+  **Note**
 
-> ❗️ Invalid AppsFlyer Branded OneLink
->
-> AppsFlyer does not send the click data for invalid OneLink URLs configured in an Email campaign to CleverTap.
+  Turn off click tracking from your email service provider's dashboard for one link redirection to function as intended. CleverTap will receive the click data directly from AppsFlyer.
+</Callout>
+
+<Callout icon="❗️" theme="error">
+  **Invalid AppsFlyer Branded OneLink**
+
+  AppsFlyer does not send the click data for invalid OneLink URLs configured in an Email campaign to CleverTap.
+</Callout>
 
 ## Font Manager
 
@@ -321,7 +325,7 @@ The following are the steps to add a custom font:
 
 1. From the _Advanced Setup_ page, click **Font Manager**.
 
-![](https://files.readme.io/73b41e4-image.png) Font Manager
+ Font Manager
 
 2. Click **+ Custom Font**. The _Add Font_ popup opens.
 
