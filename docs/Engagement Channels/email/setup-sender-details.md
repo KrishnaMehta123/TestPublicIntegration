@@ -326,7 +326,7 @@ The following are the steps to add a custom font:
 1. From the _Advanced Setup_ page, click **Font Manager**.
 
    <Image align="center" border={true} caption="Font Manager" src="https://files.readme.io/73b41e4-image.png" />
-2. Click **+ Custom Font**. The _Add Font_ popup opens.  
+2. Click **+ Custom Font**. The _Add Font_ popup opens.
 
    <Image align="center" border={true} caption="Add Custom Font" src="https://files.readme.io/08ba774-Add_Font_Popup.png" width="65% " />
 3. Enter the following details:
@@ -444,7 +444,7 @@ You can also set up the system and custom fonts as the default font for your ema
 
 The default font cannot be deleted. If you still want to delete it, change the default font and then delete the required font.
 
-  
+<Image align="center" border={true} caption="Set Up Custom Font as Default Font" src="https://files.readme.io/0152270-Set_Up_Custom_Font_as_Default_font_.png" width="85% " />
 
 ### Delete Custom Font
 
@@ -455,7 +455,7 @@ You can delete one or multiple custom fonts to manage your custom font library. 
 3. Select _Delete_ to successfully delete the custom font(s). A confirmation message is displayed.  
    Upon deleting the custom font, it is unavailable for use in both the _Drag & Drop_ and Rich Media_ editors.
 
-![](https://files.readme.io/82551f4-Delete_Custom_Font.gif)  Delete Custom Font
+  Delete Custom Font
 
 ### Edit Custom Font
 
