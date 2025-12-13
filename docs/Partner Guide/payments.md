@@ -16,6 +16,6 @@ CleverTap supports direct integrations with In-App purchasing platforms, allowin
 
 CleverTap currently supports the following partner platforms:
 
-- [Purchasely](doc:purchasely)
-- [Qonversion](doc:qonversion)
-- [RevenueCat](doc:revenuecat)
+* [Purchasely](doc:purchasely)
+* [Qonversion](doc:qonversion)
+* [RevenueCat](doc:revenuecat)
