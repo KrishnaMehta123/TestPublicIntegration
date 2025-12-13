@@ -18,41 +18,27 @@ The [Teams](doc:teams-setup) feature helps organizations streamline access to Cl
 
 Whether operating across geographies or verticals, Teams ensures:
 
-- Users work with segments that align with their goals and responsibilities
-- Cross-team access to audiences is prevented by default.
-- Segment ownership remains clear and auditable
-- Collaboration across brands, regions, or pods is streamlined and secure
+* Users work with segments that align with their goals and responsibilities
+* Cross-team access to audiences is prevented by default.
+* Segment ownership remains clear and auditable
+* Collaboration across brands, regions, or pods is streamlined and secure
 
 Teams work alongside Roles to define both **what users can do** (permissions) and **what they can access** (team-scoped entities). For more information, refer to [User Roles and Access](doc:teams-setup#user-roles-and-access).
 
 > 📘 Private Beta
-> 
+>
 > This feature is released in Private Beta and enabled only for select customers. To enable this feature, contact your Customer Success Manager or raise a support ticket.
 
 # View and Filter Segments by Team
 
 The Segments listing page includes a **Teams** column that displays the associated team for each segment.
 
-- **Admins** can view segments for the team they are currently logged in with. They must switch to that team to view segments from another team.
-- **Non-admin users** can view and manage only the segments from your current (logged-in) team. If you are part of multiple teams, you must switch to a different team to view segments from that team.
+* **Admins** can view segments for the team they are currently logged in with. They must switch to that team to view segments from another team.
+* **Non-admin users** can view and manage only the segments from your current (logged-in) team. If you are part of multiple teams, you must switch to a different team to view segments from that team.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/29e173e2455ec570314e37515bd1e9fac1781162be8c61c797ec54ec3ad0d386-image.png",
-        null,
-        "View Assigned Team for Segment"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "View Assigned Team for Segment"
-    }
-  ]
-}
-[/block]
-
+<Image alt="View Assigned Team for Segment" align="center" border={true} src="https://files.readme.io/29e173e2455ec570314e37515bd1e9fac1781162be8c61c797ec54ec3ad0d386-image.png">
+  View Assigned Team for Segment
+</Image>
 
 # Segment Creation within Team
 
@@ -62,30 +48,16 @@ The selected team appears at the top of the segment builder.
 
 You cannot manually change or assign a team during segment creation. If you are part of multiple teams, switch to the relevant one before starting segment creation.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7cc115e77a856cded61c51c032505e7676f1b464322051e6188f3c66a3f3530b-image.png",
-        null,
-        "Teams in Create Segment"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Teams in Create Segment"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Teams in Create Segment" align="center" border={true} src="https://files.readme.io/7cc115e77a856cded61c51c032505e7676f1b464322051e6188f3c66a3f3530b-image.png">
+  Teams in Create Segment
+</Image>
 
 # Team Access for System Segments
 
 CleverTap includes a set of predefined segments, such as **All Users** and **Test Users**, which follow preset rules and are automatically assigned to the Default Team.
 
-- [Default team](doc:teams-setup#handle-existing-users-and-entities) includes these system segments by default.
-- Only Admins and users in the Default Team have access to these system segments.
+* [Default team](doc:teams-setup#handle-existing-users-and-entities) includes these system segments by default.
+* Only Admins and users in the Default Team have access to these system segments.
 
 # Event Access in Segmentation
 
@@ -101,7 +73,7 @@ The following table outlines how CleverTap enforces event-level visibility durin
 | View the Segments page                         | Only segments from your assigned teams are shown; **Team filter** is auto-selected. | Ensures a focused, team-specific view of segments.  | A user in Team B sees only 12 segments, while an admin sees all the segments.                                                                                                                       |
 
 > 📘 **Team Visibility on Legacy Feature Versions**
-> 
+>
 > On legacy versions of CleverTap features, segments from teams you are not part of are completely hidden, both on the dashboard and API responses. This ensures that segmentation data always reflects your active team context and prevents unintended data exposure.
 
 # Segments in Engagements
@@ -110,14 +82,14 @@ When Teams is enabled, each engagement automatically aligns with the user’s ac
 
 While creating a Campaign or Journey:
 
-- The Who section shows only segments linked to your current team, helping you target relevant audiences without cross-team overlap.
-- You continue working under the same team context until you log out and log in with another team.
-- Campaigns can only use segments from the assigned team. The validation ensures correct team alignment at publish time.
+* The Who section shows only segments linked to your current team, helping you target relevant audiences without cross-team overlap.
+* You continue working under the same team context until you log out and log in with another team.
+* Campaigns can only use segments from the assigned team. The validation ensures correct team alignment at publish time.
 
 For more information, refer to [Teams in Engagements](doc:using-teams-in-engagements).
 
 > 🚧 **Sharing Segments Across Teams**
-> 
+>
 > If you change the selected team while a campaign is in draft, any segments linked to a different team become invalid and must be replaced.
 
 # FAQs
