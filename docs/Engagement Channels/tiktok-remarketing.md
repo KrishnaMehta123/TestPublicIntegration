@@ -18,23 +18,9 @@ TikTok's algorithmic precision delivers personalized advertisements, ensuring th
 
 With CleverTap's advanced segmentation capabilities, you can create and export target audiences to TilkTok based on your business goals.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e98d07ca752945a479b31201e747dd1f97119495873d8b43f73fd8af387e2220-Tik_Tok_Remarketing-_Option_2.png",
-        "",
-        "TikTok Remarketing Use Cases"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "TikTok Remarketing Use Cases"
-    }
-  ]
-}
-[/block]
-
+<Image alt="TikTok Remarketing Use Cases" align="center" border={true} src="https://files.readme.io/e98d07ca752945a479b31201e747dd1f97119495873d8b43f73fd8af387e2220-Tik_Tok_Remarketing-_Option_2.png">
+  TikTok Remarketing Use Cases
+</Image>
 
 **Use Cases:**
 
