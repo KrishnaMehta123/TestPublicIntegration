@@ -20,12 +20,12 @@ CleverTap RenderMax improves mobile notification render rates significantly high
 
 This feature enables you to use the power of the following:
 
-- Pull Notifications
-- OEM Partnerships
-- RenderMax Push SDK
+* Pull Notifications
+* OEM Partnerships
+* RenderMax Push SDK
 
 > 📘 OS Support
-> 
+>
 > The RenderMax SDK is supported only for Android.
 
 # Improve Delivery via Pull Notifications
@@ -35,48 +35,20 @@ Mobile notifications are a great way to engage customers despite the issue of lo
 With Pull Notifications at your disposal, you can counter this challenge by optimizing the delivery of Mobile notifications to devices that missed receiving them.
 
 > 🚧 Toggle Pull Notifications
-> 
-> Pull notifications are enabled for all the Mobile Notification campaigns that are created _after_ toggling the Pull Notifications feature. Similarly, no new campaigns are enabled for notification delivery after you turn off the toggle.
+>
+> Pull notifications are enabled for all the Mobile Notification campaigns that are created *after* toggling the Pull Notifications feature. Similarly, no new campaigns are enabled for notification delivery after you turn off the toggle.
 
-To enable this feature, navigate to _Settings_ > _Engage_ > _Setup_ > _Pull Notifications_. Toggle \_Enable Pull Notification \_in the dashboard to activate the feature.
+To enable this feature, navigate to *Settings* > *Engage* > *Setup* > *Pull Notifications*. Toggle \_Enable Pull Notification \_in the dashboard to activate the feature.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/bba769e-pull_notifications_settings.png",
-        "Enhance Deliverability with Pull Notifications",
-        2872
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Enable Pull Notifications on Dashboard"
-    }
-  ]
-}
-[/block]
+<Image title="Enhance Deliverability with Pull Notifications" alt={2872} align="center" border={true} src="https://files.readme.io/bba769e-pull_notifications_settings.png">
+  Enable Pull Notifications on Dashboard
+</Image>
 
+After Pull Notification is enabled, your campaigns reach more users through notifications. You can check the boost in numbers in the *Impressions* and *Clicks* uplift on your campaign *Stats* tab.
 
-After Pull Notification is enabled, your campaigns reach more users through notifications. You can check the boost in numbers in the _Impressions_ and _Clicks_ uplift on your campaign _Stats_ tab.
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c9119f3-RenderMax_stats.png",
-        "Impressions and Clicks Uplift ",
-        2898
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Campaign Uplift"
-    }
-  ]
-}
-[/block]
-
+<Image title="Impressions and Clicks Uplift " alt={2898} align="center" border={true} src="https://files.readme.io/c9119f3-RenderMax_stats.png">
+  Campaign Uplift
+</Image>
 
 # Maximize Rendering with OEM Partnerships
 
@@ -98,30 +70,16 @@ The RenderMax SDK is supported only for Android Native and React Native. To inst
 
 ## Enable RenderMax
 
-When creating a Mobile Push Campaign, you can enable the RenderMax feature by navigating to _Android Advanced Settings _> _RenderMax_ from the _What_ section of the campaign on the CleverTap dashboard.
+When creating a Mobile Push Campaign, you can enable the RenderMax feature by navigating to *Android Advanced Settings* > *RenderMax* from the *What* section of the campaign on the CleverTap dashboard.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b96a4a4-RenderMax_campaign_UI.png",
-        "RenderMax Toggle in Campaign Editor",
-        2460
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Enable RenderMax"
-    }
-  ]
-}
-[/block]
-
+<Image title="RenderMax Toggle in Campaign Editor" alt={2460} align="center" border={true} src="https://files.readme.io/b96a4a4-RenderMax_campaign_UI.png">
+  Enable RenderMax
+</Image>
 
 > 🚧 Custom Handling Notifications
-> 
+>
 > RenderMax Push SDK attempts to render the notification for all campaigns with the feature enabled. The notification is rendered by the CleverTap SDK and any custom rendering done by the app is ignored for devices where the app is Device Optimized State.
-> 
+>
 > For more detail on the steps,  refer to the [RenderMax Push Integration](https://developer.clevertap.com/docs/enable-rendermax-with-android).
 
 After you send out the push campaign, you can check the uplift in your notification rendering from the [Push Campaign Stats](doc:push-campaign-stats) page. 
@@ -130,7 +88,7 @@ After you send out the push campaign, you can check the uplift in your notificat
 
 ### 1. What is the battery drain on RenderMax?
 
-The feature has shown negligible [<0.1%] battery usage over two months, with eight daily notifications sent per device.
+The feature has shown negligible \[\<0.1%] battery usage over two months, with eight daily notifications sent per device.
 
 ### 2. What is the increase in the SDK size?
 
@@ -144,5 +102,5 @@ The RenderMax SDK has higher level permission on the notification control hierar
 
 The RenderMax SDK is compatible with the following SDK versions on Android 12 and below:
 
-- Android v4.6.6 and above
-- React Native v0.9.3 and above
+* Android v4.6.6 and above
+* React Native v0.9.3 and above
