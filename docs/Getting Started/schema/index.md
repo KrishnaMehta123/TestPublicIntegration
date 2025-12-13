@@ -238,7 +238,7 @@ You can restore a previously discarded event, event property, or user property f
 3. Click the ![](https://files.readme.io/4f93c7fed376db11d7b36dd4e54539e1a2284761341d8dfc3e227322f366d3d5-Restore_Icon.png) icon from the toolbar.
 4. In the confirmation window, click **Restore**.
 
-![](https://files.readme.io/f3def79a65dda3e144e4a8711f3e4e0407dc1b61b35dbcb12699fbde4ba41230-image.png) Bulk Restore Discarded Items
+<Image align="center" border={true} caption="Bulk Restore Discarded Items" src="https://files.readme.io/f3def79a65dda3e144e4a8711f3e4e0407dc1b61b35dbcb12699fbde4ba41230-image.png" />
 
 <Callout icon="📘" theme="info">
   **Restore Access**
