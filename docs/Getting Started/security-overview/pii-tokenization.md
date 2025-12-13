@@ -23,42 +23,28 @@ Access to PII is controlled through a secure vault and is used only during messa
 
 Tokenization enables enterprises to utilize CleverTap for personalization, segmentation, and engagement without transferring or storing PII within CleverTap systems.
 
-- _Compliance with Regulations_: Many countries enforce strict rules regarding the storage and transfer of PII. With Tokenization, CleverTap never stores PII.
+* *Compliance with Regulations*: Many countries enforce strict rules regarding the storage and transfer of PII. With Tokenization, CleverTap never stores PII.
 
-- _Enterprise Security_: Sensitive data remains within your controlled systems, significantly reducing the risk of exposure.
+* *Enterprise Security*: Sensitive data remains within your controlled systems, significantly reducing the risk of exposure.
 
-- _Continued Engagement_: You can still personalize campaigns and journeys using tokens. For example, CleverTap can segment by _tokenized email domain_ or _ tokenized phone region_ without requiring PII.
+* *Continued Engagement*: You can still personalize campaigns and journeys using tokens. For example, CleverTap can segment by *tokenized email domain* or *tokenized phone region* without requiring PII.
 
-- _Layered Protection_: Tokenization can be used in conjunction with encryption to add a layer of security.
+* *Layered Protection*: Tokenization can be used in conjunction with encryption to add a layer of security.
 
 # Tokenization Framework
 
 The Tokenization framework includes the following components:
 
-- _Vault_: A secure token–PII mapping store (CT Vault or customer-managed), containing a protected token mapping table.
-- _Dispatcher_: A service that is either CleverTap-hosted or customer-hosted, resolves tokens into PII only at send time for message delivery. This removes the need for customers to build token resolution logic.
+* *Vault*: A secure token–PII mapping store (CT Vault or customer-managed), containing a protected token mapping table.
+* *Dispatcher*: A service that is either CleverTap-hosted or customer-hosted, resolves tokens into PII only at send time for message delivery. This removes the need for customers to build token resolution logic.
 
 Tokenization occurs only once, when the vault first receives PII and returns the corresponding tokens. Token resolution occurs only at message dispatch. Tokenization introduces additional latency as it requires network communication and vault lookups.
 
 The following image illustrates the PII tokenization workflow:
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2cfea272c169283a176554e63e275f50e14437079ef974c0685f5288fc33193d-image.png",
-        null,
-        "PII Tokenization Workflow"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "PII Tokenization Workflow"
-    }
-  ]
-}
-[/block]
-
+<Image alt="PII Tokenization Workflow" align="center" border={true} src="https://files.readme.io/2cfea272c169283a176554e63e275f50e14437079ef974c0685f5288fc33193d-image.png">
+  PII Tokenization Workflow
+</Image>
 
 ## Sample Tokenization Workflow
 
@@ -70,9 +56,9 @@ At send time, either CleverTap's Off-Prem Dispatch Server or the customer’s On
 
 You can tokenize the following data:
 
-- _Personally Identifiable Information (PII)_: Personal information such as email addresses and phone numbers.
-- _Protected Health Information (PHI)_: If operating in regulated healthcare industries.
-- _Other sensitive attributes_: Any information that must remain in your systems.
+* *Personally Identifiable Information (PII)*: Personal information such as email addresses and phone numbers.
+* *Protected Health Information (PHI)*: If operating in regulated healthcare industries.
+* *Other sensitive attributes*: Any information that must remain in your systems.
 
 Non-sensitive user or event attributes, such as city, device type, or engagement preferences, can still be stored directly in CleverTap for segmentation and reporting.
 
@@ -82,8 +68,8 @@ The tokenization workflow can be implemented using different deployment models, 
 
 The following are the two dispatch models supported:
 
-- _On-Prem Dispatch_: Dispatcher runs within the customer’s infrastructure. PII never leaves the customer environment.
-- _Off-Prem Dispatch_: Dispatcher runs within CleverTap. PII is resolved securely at the time of sending; however, CleverTap does not store it.
+* *On-Prem Dispatch*: Dispatcher runs within the customer’s infrastructure. PII never leaves the customer environment.
+* *Off-Prem Dispatch*: Dispatcher runs within CleverTap. PII is resolved securely at the time of sending; however, CleverTap does not store it.
 
 Customer data undergoes a single tokenization process; the dispatch model only changes where token resolution occurs.
 
@@ -98,7 +84,7 @@ In the Off-Prem model, CleverTap manages message dispatch while the customer ret
 5. CleverTap sends the final payload with resolved PII to the CPaaS provider for message delivery.
 
 > 📘 **Note**
-> 
+>
 > PII flows only transiently in memory during dispatch and is not stored, even during delays or retries.
 
 # On-Prem Message Dispatch
@@ -114,12 +100,12 @@ The On-Prem dispatch server resolves tokens via the token vault and delivers the
 
 This approach enables customers to achieve the following goals:
 
-- Maintain compliance with enterprise data policies.
-- Continue using CleverTap for Segments, Personalization, Campaigns, Journeys, and Reporting.
-- Ensure sensitive data is safeguarded within the customer’s environment.
+* Maintain compliance with enterprise data policies.
+* Continue using CleverTap for Segments, Personalization, Campaigns, Journeys, and Reporting.
+* Ensure sensitive data is safeguarded within the customer’s environment.
 
 > 📘 **Note**
-> 
+>
 > PII never leaves the customer’s infrastructure.
 
 # Tokenization Components
@@ -141,29 +127,29 @@ The [setup](doc:pii-tokenization#enable-tokenization) steps guide you through im
 
 To implement PII Tokenization successfully, check the following requirements:
 
-- **Token Vault Database**
+* **Token Vault Database**
 
-  - A secure vault deployed in your environment (Oracle, GCP, or equivalent).
-  - HTTPS (SSL, port 443) enabled; self-signed certificates are not supported.
+  * A secure vault deployed in your environment (Oracle, GCP, or equivalent).
+  * HTTPS (SSL, port 443) enabled; self-signed certificates are not supported.
 
-- **API Readiness**
+* **API Readiness**
 
-  - REST APIs must support at least 50 concurrent connections.
-  - Each API call must be able to resolve batches of up to 500 tokens per request.
-  - API responses must complete within 60 seconds.
-  - Support for retries with exponential backoff in case of transient failures.
+  * REST APIs must support at least 50 concurrent connections.
+  * Each API call must be able to resolve batches of up to 500 tokens per request.
+  * API responses must complete within 60 seconds.
+  * Support for retries with exponential backoff in case of transient failures.
 
-- **Authentication & Security**
+* **Authentication & Security**
 
-  - Vault APIs must use secure authentication (Keycloak).
-  - Subscriber key (or customer ID) must exist for each user profile.
-  - All logging must exclude raw PII and store only tokens or metadata.
+  * Vault APIs must use secure authentication (Keycloak).
+  * Subscriber key (or customer ID) must exist for each user profile.
+  * All logging must exclude raw PII and store only tokens or metadata.
 
-- **Operational Readiness**
+* **Operational Readiness**
 
-  - Infrastructure must be monitored for uptime and performance.
-  - STOP/Unsubscribe handling must work via tokens.
-  - Production connectivity must be tested with CleverTap dispatch servers (Off-Prem) or customer-managed On-Prem Dispatch Server.
+  * Infrastructure must be monitored for uptime and performance.
+  * STOP/Unsubscribe handling must work via tokens.
+  * Production connectivity must be tested with CleverTap dispatch servers (Off-Prem) or customer-managed On-Prem Dispatch Server.
 
 ## Enable Tokenization
 
@@ -178,39 +164,39 @@ The following steps outline the setup required to enable secure Tokenization wit
 
 Set up a secure foundation to store, manage, and audit all tokenized PII in your environment.
 
-- Deploy a secure Vault DB in your environment and enable logging and monitoring for token transactions.
-- Ensure logging and monitoring are enabled for all token transactions.
+* Deploy a secure Vault DB in your environment and enable logging and monitoring for token transactions.
+* Ensure logging and monitoring are enabled for all token transactions.
 
 ### Configure Message Dispatch
 
 Enable the dispatch layer to resolve tokens into PII during message delivery securely.
 
-- **Off-Prem Dispatch**
+* **Off-Prem Dispatch**
 
-  - Allow CleverTap’s dispatch server to securely call the [Get Value API](https://developer.clevertap.com/docs/get-value-api) during message delivery.
-  - Ensure network allowlisting is configured for CleverTap’s IP ranges.
+  * Allow CleverTap’s dispatch server to securely call the [Get Value API](https://developer.clevertap.com/docs/get-value-api) during message delivery.
+  * Ensure network allowlisting is configured for CleverTap’s IP ranges.
 
-- **On-Prem Dispatch**
+* **On-Prem Dispatch**
 
-  - Deploy and configure the On-Prem Dispatch Server to resolve tokens and deliver payloads to CPaaS providers.
-  - Check that it can access the Token Vault and resolve tokens into PII for CPaaS delivery.
+  * Deploy and configure the On-Prem Dispatch Server to resolve tokens and deliver payloads to CPaaS providers.
+  * Check that it can access the Token Vault and resolve tokens into PII for CPaaS delivery.
 
 #### Callback Process
 
 When messages are dispatched via CPaaS, the token vault or dispatch server must send asynchronous callbacks to CleverTap with delivery status updates.
 
-- Callbacks must contain message IDs, not PII.
-- Requests must be authenticated (API key or mTLS).
-- Failed callbacks must use retry logic with exponential backoff.
+* Callbacks must contain message IDs, not PII.
+* Requests must be authenticated (API key or mTLS).
+* Failed callbacks must use retry logic with exponential backoff.
 
 ### Test the Integration
 
 Run end-to-end tests covering the following:
 
-- Token creation
-- Token resolution
-- Campaign or journey execution
-- STOP/unsubscribe workflows
+* Token creation
+* Token resolution
+* Campaign or journey execution
+* STOP/unsubscribe workflows
 
 Verify that CleverTap stores only tokens and non-PII attributes.
 
@@ -218,13 +204,13 @@ Verify that CleverTap stores only tokens and non-PII attributes.
 
 Move to production with safeguards in place and continuous monitoring of token operations.
 
-- Enable Tokenization for production traffic.
-- Monitor the following continuously:
+* Enable Tokenization for production traffic.
+* Monitor the following continuously:
 
-  - Vault API latency and error rates
-  - Token creation/expiry/rotation logs
-  - Dispatch SLAs (delivery times, retries)
-- Establish incident handling processes for token resolution failures.
+  * Vault API latency and error rates
+  * Token creation/expiry/rotation logs
+  * Dispatch SLAs (delivery times, retries)
+* Establish incident handling processes for token resolution failures.
 
 ## PII-Based Engagement Workflow
 
@@ -251,18 +237,18 @@ CleverTap uses tokens and non-PII attributes stored on its platform to identify 
 
 Depending on your deployment model:
 
-- _Off-Prem_: CleverTap’s Message Dispatch Server requests PII values from your token vault using the [Get Value API](https://developer.clevertap.com/docs/get-value-api).
-- _On-Prem_: Your On-Prem Dispatch Server retrieves PII values directly from the token vault.
+* *Off-Prem*: CleverTap’s Message Dispatch Server requests PII values from your token vault using the [Get Value API](https://developer.clevertap.com/docs/get-value-api).
+* *On-Prem*: Your On-Prem Dispatch Server retrieves PII values directly from the token vault.
 
 #### Delivers the Dispatch Request to CPaaS
 
-- The resolved PII (for example, email address or mobile number) is combined with campaign content.
-- The complete payload is sent to your configured CPaaS provider (for example, SMS, Email, WhatsApp, Push).
+* The resolved PII (for example, email address or mobile number) is combined with campaign content.
+* The complete payload is sent to your configured CPaaS provider (for example, SMS, Email, WhatsApp, Push).
 
 #### Deletes Resolved PII Immediately
 
-- If Off-Prem dispatch is used, CleverTap processes the resolved PII only in-memory during message delivery and does not store it.
-- In the On-Prem model, CleverTap never accesses the resolved PII.
+* If Off-Prem dispatch is used, CleverTap processes the resolved PII only in-memory during message delivery and does not store it.
+* In the On-Prem model, CleverTap never accesses the resolved PII.
 
 #### Delivers the Message through CPaaS
 
@@ -270,9 +256,9 @@ The CPaaS provider delivers the message to the end customer.
 
 #### Receives Delivery Reports from CPaaS
 
-- The CPaaS provider returns delivery and engagement status data (for example, delivered, failed, read).
-- CleverTap maps this data back to the campaign using unique message IDs.
-- Any PII present in provider receipts is discarded; only anonymized delivery insights are stored in CleverTap.
+* The CPaaS provider returns delivery and engagement status data (for example, delivered, failed, read).
+* CleverTap maps this data back to the campaign using unique message IDs.
+* Any PII present in provider receipts is discarded; only anonymized delivery insights are stored in CleverTap.
 
 #### Updates Campaign Analytics
 
@@ -282,25 +268,41 @@ CleverTap updates campaign dashboards and reports with delivery metrics, convers
 
 To successfully implement Tokenization, both the customer and CleverTap have specific roles. The table below summarizes the division of responsibilities:
 
-[block:parameters]
-{
-  "data": {
-    "h-0": "**Party**",
-    "h-1": "**Responsibilities**",
-    "0-0": "Customer",
-    "0-1": "Tokenize all historic PII records.<br>- Call Get Token API before sending new PII into CleverTap.<br>- Provide and maintain infrastructure (Vault DB, On-Prem server if required, and network).<br>- Handle unsubscribe and STOP requests using tokens.<br>- Log request and response payloads for auditing and compliance.",
-    "1-0": "CleverTap",
-    "1-1": "Provide the Vault API for token exchange.<br>- Provide and support the On-Prem Dispatcher (if applicable).<br>- Ensure CleverTap processes and stores only tokens and non-PII data."
-  },
-  "cols": 2,
-  "rows": 2,
-  "align": [
-    null,
-    null
-  ]
-}
-[/block]
+<Table>
+  <thead>
+    <tr>
+      <th>
+        **Party**
+      </th>
 
+      <th>
+        **Responsibilities**
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        Customer
+      </td>
+
+      <td>
+        Tokenize all historic PII records.<br />- Call Get Token API before sending new PII into CleverTap.<br />- Provide and maintain infrastructure (Vault DB, On-Prem server if required, and network).<br />- Handle unsubscribe and STOP requests using tokens.<br />- Log request and response payloads for auditing and compliance.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        CleverTap
+      </td>
+
+      <td>
+        Provide the Vault API for token exchange.<br />- Provide and support the On-Prem Dispatcher (if applicable).<br />- Ensure CleverTap processes and stores only tokens and non-PII data.
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 # FAQs
 
