@@ -3,12 +3,12 @@ title: Apxor
 excerpt: Workflow Automation
 deprecated: false
 hidden: false
+link:
+  new_tab: false
 metadata:
   title: ''
   description: ''
   robots: index
-next:
-  description: ''
 ---
 # Overview
 
@@ -54,9 +54,7 @@ To send data to your Apxor account, set up a webhook in CleverTap:
 2. Click **Add Webhook** and provide a meaningful name for the webhook.
 3. In the *Create webhook template* popup, enter the following details:
 
-   <Image alt="Create Webhook" align="center" width="60% " border={true} src="https://files.readme.io/199136f60ef9126ef7335a1b29dbf260229ae1feb4defdf30beb972e0f3fad39-image.png">
-     Create Webhook
-   </Image>
+   <Image alt="Create Webhook" align="center" width="60% " border={true} src="https://files.readme.io/199136f60ef9126ef7335a1b29dbf260229ae1feb4defdf30beb972e0f3fad39-image.png" />
 
    <Table align={["left","left"]}>
      <thead>
@@ -98,9 +96,9 @@ To send data to your Apxor account, set up a webhook in CleverTap:
          </td>
 
          <td>
-           Enter the following destination URL: `<https://server.apxor.com/v1/track/external/clever-tap/sync/&lt;app-id&gt;>`  
+           Enter the following destination URL: `https://server.apxor.com/v1/track/external/clever-tap/sync/<app-id>`  
 
-           Replace &lt;app-id&gt; with your  Apxor App ID. For more information about your App ID, refer to  [Apxor Application Identifier](https://guides.apxor.com/getting-started-with-apxor/adding-a-new-app#step-5-copy-the-application-identifier).
+           Replace {'<app-id>'} with your  Apxor App ID. For more information about your App ID, refer to  [Apxor Application Identifier](https://guides.apxor.com/getting-started-with-apxor/adding-a-new-app#step-5-copy-the-application-identifier).
          </td>
        </tr>
      </tbody>
@@ -116,38 +114,19 @@ Once the webhook is ready, configure a campaign to send user data to Apxor.
 
 1. Go to *Campaigns* on the CleverTap dashboard, click **+ Campaign** and select *Webhook* from the list of messaging channels.
 
-<Image alt="Create Webhook Campaign" align="center" width="70% " border={true} src="https://files.readme.io/7385f799646e6e0bd1514d5f53cd2661f27b6c09e575a326990c9377a5f24e92-image.png">  Create Webhook Campaign
+<Image alt="Create Webhook Campaign" align="center" width="70% " border={true} src="https://files.readme.io/7385f799646e6e0bd1514d5f53cd2661f27b6c09e575a326990c9377a5f24e92-image.png" />
+
 2. Configure the following campaign settings: qualification criteria, target segment, and delivery preferences.
 3. Under the *What* section, select the webhook created in [Set Up Webhook in CleverTap](doc:apxor#set-up-webhook-in-clevertap).
 4. Click **Go to Editor**, select Custom Profile Attributes under the *Webhook Content* and enter the following details:
    * Key: `apx_cohort_name`
-   * Value: The name of the cohort in Apxor. You can also insert a dynamic variable (for example, `{{Cohort Name}}`) to send personalized cohort data.
+   * Value: The name of the cohort in Apxor. You can also insert a dynamic variable (for example, `{'{{Cohort Name}}'}`) to send personalized cohort data.
 
-<Image alt="Webhook Content" align="center" width="70% " border={true} src="https://files.readme.io/59c582a46fd495aa0bce988fe98ade7348351d12f55219a92109fc5a3711b525-image.png" /> Webhook Content
-
-
-
-
-
-
-
-
-
-
+<Image alt="Webhook Content" align="center" width="70% " border={true} src="https://files.readme.io/59c582a46fd495aa0bce988fe98ade7348351d12f55219a92109fc5a3711b525-image.png" />
 
 6. Click **Preview & Test** to validate that the data sync works correctly.
 7. Once verified, click **Publish**.
 
-<Image alt="Publish" align="center" width="70% " border={true} src="https://files.readme.io/fe0b1bc4f485eb6760fa965b93acec9c1fe00d55f360aeefe65ea099cc9a4caa-image.png" /> Publish
+<Image alt="Publish" align="center" width="70% " border={true} src="https://files.readme.io/fe0b1bc4f485eb6760fa965b93acec9c1fe00d55f360aeefe65ea099cc9a4caa-image.png" />
 
-
-
-
-
-
-
-
-
-
-
-A dynamic cohort appears in your Apxor dashboard, ready to be targeted for In-App experiences. Completing this integration establishes a seamless connection between CleverTap’s segmentation power and Apxor’s personalization capabilities. This helps deliver the right experience to the right user at the right time.
+A dynamic cohort appears in your Apxor dashboard, ready to be targeted for In-App experiences. Completing this integration establishes a seamless connection between CleverTap's segmentation power and Apxor's personalization capabilities. This helps deliver the right experience to the right user at the right time.
