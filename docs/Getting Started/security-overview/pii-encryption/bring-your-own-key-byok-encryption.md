@@ -22,8 +22,8 @@ This feature handles all key lifecycle operations, including generation, storage
 
 Before configuring BYOK, check that the following conditions are met:
 
-- The PII Encryption feature is enabled, as this is a paid add-on.
-- Customer KMS credentials and permissions for key generation and retrieval are available.
+* The PII Encryption feature is enabled, as this is a paid add-on.
+* Customer KMS credentials and permissions for key generation and retrieval are available.
 
 # BYOK Architecture
 
@@ -33,11 +33,11 @@ CleverTap’s BYOK encryption relies on a dedicated key management system that m
 
 The key management system performs the following functions in the BYOK workflow:
 
-- **Key Generation:** Generates encryption keys in the customer KMS. Each key has a name, version reference, and rotation frequency.
-- **Key Storage:** Optionally stores encrypted keys locally for a configurable Time-To-Live (TTL) period to reduce KMS request costs. The stored record includes the encrypted key.
-- **Key Rotation:** Supports both scheduled and manual rotations. Rotation frequency can be configured (for example, 365 days by default). Force rotation can be triggered on demand.
-- **Key Versioning:** Maintains key versions locally.
-- **Key Validation:** Validates the latest key version through various checks before making it available to internal services.
+* **Key Generation:** Generates encryption keys in the customer KMS. Each key has a name, version reference, and rotation frequency.
+* **Key Storage:** Optionally stores encrypted keys locally for a configurable Time-To-Live (TTL) period to reduce KMS request costs. The stored record includes the encrypted key.
+* **Key Rotation:** Supports both scheduled and manual rotations. Rotation frequency can be configured (for example, 365 days by default). Force rotation can be triggered on demand.
+* **Key Versioning:** Maintains key versions locally.
+* **Key Validation:** Validates the latest key version through various checks before making it available to internal services.
 
 # Setup
 
