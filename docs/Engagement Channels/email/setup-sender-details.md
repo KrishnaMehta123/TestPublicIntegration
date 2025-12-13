@@ -323,13 +323,12 @@ You can add custom fonts by navigating to  Settings _>_Channel_ > _Email_ > _Adv
 
 The following are the steps to add a custom font:
 
-1. From the _Advanced Setup_ page, click **Font Manager**.
+1. From the _Advanced Setup_ page, click **Font Manager**.  
 
- Font Manager
-
+   <Image align="center" border={true} caption="Font Manager" src="https://files.readme.io/73b41e4-image.png" />
 2. Click **+ Custom Font**. The _Add Font_ popup opens.
 
-![](https://files.readme.io/08ba774-Add_Font_Popup.png) Add Custom Font
+<br />
 
 3. Enter the following details:
 
