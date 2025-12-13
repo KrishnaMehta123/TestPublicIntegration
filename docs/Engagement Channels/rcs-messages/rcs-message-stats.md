@@ -17,7 +17,7 @@ Campaign stats for the RCS channel in CleverTap provide insights into the perfor
 Once submitted, the provider is responsible for delivering the message to the user via the RCS infrastructure.
 
 > 📘 Delivery to End User
-> 
+>
 > The RCS provider manages the final message delivery process to the user. CleverTap does not directly influence this delivery
 
 CleverTap captures Delivered, Viewed, Clicked, events separately for SMS and RCS, depending on the channel used to deliver the message. Additionally, we log error events to provide a complete view of how your users are engaging with the campaign.
@@ -30,44 +30,15 @@ Please note that any misconfiguration or technical issue in the callback setup m
 
 To view the statistics of your campaign, select the campaign from the campaign list page.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/94024e3f56a5b9f12ad0866deec3cf24081b6d1d101abc8ff6b246f68a4fc685-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/94024e3f56a5b9f12ad0866deec3cf24081b6d1d101abc8ff6b246f68a4fc685-image.png" />
 
 ## Campaign Filters
 
 Search for a campaign by applying the required filters.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/03aecae4bd84fca551914a265ee19f9e2f5f67a9b737d85fa8dab93925b5116d-image.png",
-        null,
-        "RCS Campaign Filters"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "RCS Campaign Filters"
-    }
-  ]
-}
-[/block]
-
+<Image alt="RCS Campaign Filters" align="center" border={true} src="https://files.readme.io/03aecae4bd84fca551914a265ee19f9e2f5f67a9b737d85fa8dab93925b5116d-image.png">
+  RCS Campaign Filters
+</Image>
 
 ## Understanding RCS Campaign Stats
 
@@ -115,69 +86,25 @@ For more details, refer to the [Control Groups documentation](https://docs.cleve
 
 This section displays trends for your RCS campaign messages—tracking metrics like Sent, Delivered, and Viewed across daily, weekly, and monthly intervals. It helps identify patterns and assess performance over time.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a7dfaff1ad5a5a2e7324f74f2e5911d60e259f217588ee01a5e9fb93de6e6fb7-image.png",
-        null,
-        "RCS Message Trend"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "RCS Message Trend"
-    }
-  ]
-}
-[/block]
-
+<Image alt="RCS Message Trend" align="center" border={true} src="https://files.readme.io/a7dfaff1ad5a5a2e7324f74f2e5911d60e259f217588ee01a5e9fb93de6e6fb7-image.png">
+  RCS Message Trend
+</Image>
 
 ## Conversion Performance
 
 This shows a side-by-side comparison of conversion rates between the Target Group (users who received the campaign) and the Control Group (users who were excluded). Use this to evaluate how effective your campaign was in driving conversions.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d4497ca366600f39e230be334e1df5360c42d56f0b9ad93903578a13986bb582-26eecaa-small-whatsapp_graph_conversion_performance.png",
-        null,
-        "Conversion Performance"
-      ],
-      "align": "center",
-      "sizing": "70% ",
-      "border": true,
-      "caption": "Conversion Performance"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Conversion Performance" align="center" width="70% " border={true} src="https://files.readme.io/d4497ca366600f39e230be334e1df5360c42d56f0b9ad93903578a13986bb582-26eecaa-small-whatsapp_graph_conversion_performance.png">
+  Conversion Performance
+</Image>
 
 For A/B Test, Split Delivery, and User Property-based campaigns, you can view performance breakdowns for each variant under the User Conversion Funnel.
 
 ## Revenue Performance
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1a1d97033abe618f2e5161921f1ccd8b3d6412f249f5ca02f559499bf0edcc69-12b9490-revenue_performance.png",
-        null,
-        "RCS Revenue Performance"
-      ],
-      "align": "center",
-      "sizing": "70% ",
-      "border": true,
-      "caption": "RCS Revenue Performance"
-    }
-  ]
-}
-[/block]
-
+<Image alt="RCS Revenue Performance" align="center" width="70% " border={true} src="https://files.readme.io/1a1d97033abe618f2e5161921f1ccd8b3d6412f249f5ca02f559499bf0edcc69-12b9490-revenue_performance.png">
+  RCS Revenue Performance
+</Image>
 
 Tracks the overall revenue impact of your campaign, including both the total uplift and incremental revenue generated. This helps quantify the business value of your RCS engagement efforts.
 
@@ -187,30 +114,16 @@ The conversion funnel visualizes the journey of users through key engagement sta
 
 You can toggle off Delivered and Viewed stages to isolate and focus on conversion performance specifically.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/103ccfea4cec5a5c83030f9603fe1587fb6939e211de55ee300b078b74b82ba7-583e4e2-funnel_conversion_whatsapp_stats.png",
-        null,
-        "RCS Campaign"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "RCS Users Conversion Funnel"
-    }
-  ]
-}
-[/block]
-
+<Image alt="RCS Campaign" align="center" border={true} src="https://files.readme.io/103ccfea4cec5a5c83030f9603fe1587fb6939e211de55ee300b078b74b82ba7-583e4e2-funnel_conversion_whatsapp_stats.png">
+  RCS Users Conversion Funnel
+</Image>
 
 > 📘 Key Points to Remember
-> 
+>
 > Conversion numbers for All Variants may sometimes be lower than the sum of individual variant conversions. This can occur because:
-> 
+>
 > **For Live Campaigns**, a single user might receive different variants on different devices or app installs, identified by separate GUIDs. The same user may be counted under multiple variants but only once in the combined view.
-> 
+>
 > **For Recurring Campaigns**, users may qualify multiple times under different message copies due to changes in their attributes (e.g., plan upgrades). In such cases, conversions may be recorded separately for each variant but counted only once in the overall tally.
 
 ## Split Of Clicks
@@ -219,23 +132,9 @@ CleverTap tracks clicks on all individual links included in your RCS message. Th
 
 For example, if your campaign includes links to "Watch Trailer," "Book Tickets," and "Read Reviews," the Split of Clicks shows how many users engaged with each link. These insights can guide you in optimizing your future messaging strategies.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a4aed4f6401e206a8b1470efbda4cd7bcc125b31c32c944b63e523d9082a3c46-8dc04dc-Email_Stats_Split_Clicks.png",
-        null,
-        "Split of Clicks"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Split of Clicks"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Split of Clicks" align="center" border={true} src="https://files.readme.io/a4aed4f6401e206a8b1470efbda4cd7bcc125b31c32c944b63e523d9082a3c46-8dc04dc-Email_Stats_Split_Clicks.png">
+  Split of Clicks
+</Image>
 
 ## User Details of Clicks
 
