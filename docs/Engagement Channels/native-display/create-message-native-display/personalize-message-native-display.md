@@ -18,29 +18,15 @@ You can personalize the message for every user based on specific user property o
 
 # Inline Personalization
 
-To invoke the personalization menu, type the _@_ or the \_{{}} \_symbol in the title or the text fields while creating a message.
+To invoke the personalization menu, type the *@* or the \_\{\{}} \_symbol in the title or the text fields while creating a message.
 
 You can also add dynamic replacements in the title and body. Notice a preview as displayed below.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/720126f-Native_Display_Personalization.png",
-        "Native Display Personalization.png",
-        1520
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Inline Personalization"
-    }
-  ]
-}
-[/block]
+<Image title="Native Display Personalization.png" alt={1520} align="center" border={true} src="https://files.readme.io/720126f-Native_Display_Personalization.png">
+  Inline Personalization
+</Image>
 
-
-In addition to the title, body, you can also personalize many other things, such as media URLs, deep links, or button text. An _@ _ icon in a box indicates that it can be personalized. 
+In addition to the title, body, you can also personalize many other things, such as media URLs, deep links, or button text. An *@* icon in a box indicates that it can be personalized. 
 
 # Recommendations
 
@@ -48,23 +34,9 @@ Click the ![](https://files.readme.io/b852e7f-Personalization_setting.png) icon 
 
 After you have uploaded a catalog, you can display personalized recommendations to your customers. For example, you can display a sliding carousel to your customers based on their likes!  For more information on recommendations, see [Recommendations](doc:recommendations).
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6264702-Recommendation_Sample.png",
-        "Recommendation_Sample.png",
-        1752
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Catalog Based Recommendation"
-    }
-  ]
-}
-[/block]
-
+<Image title="Recommendation_Sample.png" alt={1752} align="center" border={true} src="https://files.readme.io/6264702-Recommendation_Sample.png">
+  Catalog Based Recommendation
+</Image>
 
 # Linked Content
 
