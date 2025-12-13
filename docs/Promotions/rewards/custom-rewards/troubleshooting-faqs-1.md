@@ -28,8 +28,8 @@ CleverTap retries twice with a 3-second wait before marking as failed.
 
 ### Q. How are rewards tracked in system events?
 
-All Custom Rewards trigger a single system event named _Webhook Rewarded_. The event includes a property indicating the reward type (Physical & Digital Reward or Self-managed Wallet Credits).
+All Custom Rewards trigger a single system event named *Webhook Rewarded*. The event includes a property indicating the reward type (Physical & Digital Reward or Self-managed Wallet Credits).
 
 ### Can I specify the reward quantity (for example, two movie tickets)?
 
-Yes. Use the _Additional Parameters_ section when configuring the promo campaign. You can add a key-value pair such as `"quantity": "2"` in the setup to indicate multiple rewards (for example, two vouchers or two movie tickets).
+Yes. Use the *Additional Parameters* section when configuring the promo campaign. You can add a key-value pair such as `"quantity": "2"` in the setup to indicate multiple rewards (for example, two vouchers or two movie tickets).
