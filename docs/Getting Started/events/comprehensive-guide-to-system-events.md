@@ -17,7 +17,7 @@ next:
 This document provides a comprehensive overview of the system events tracked by CleverTap and their associated event properties. Understanding these events and properties will help you effectively analyze user interactions and optimize engagement strategies.
 
 > 📘 IMPORTANT
-> 
+>
 > The document currently includes details on three system events. We are continuously working to expand this document and will be adding more system events over time. Please check back regularly for updates.
 
 # Notification Delivered
@@ -29,8 +29,8 @@ The Notification Delivered event is raised when an Email, WhatsApp, or SMS provi
 | CT Source     | Indicates the source from where the event originated, for example, SendGrid.             |
 | Campaign id   | Indicates the ID of the campaign or Node ID of a Journey sent to the user.               |
 | Campaign type | Indicates the messaging channel. Possible values are Email, SMS, or WhatsApp.            |
-| wzrk_id       | Indicates the Campaign ID.                                                               |
-| wzrk_pivot    | Indicates the campaign variant, in the case of the A/B Test, which was sent to the user. |
+| wzrk\_id      | Indicates the Campaign ID.                                                               |
+| wzrk\_pivot   | Indicates the campaign variant, in the case of the A/B Test, which was sent to the user. |
 
 # Notification Failed
 
