@@ -94,9 +94,9 @@ You must be careful before removing an event. If you ever need to remove an even
 1. Click the ellipsis menu on the event row.
 2. Click **Remove**.
 
-<Image align="center" border={false} caption="Remove an Event" src="https://files.readme.io/b6033f7-Custom_Events.png" />
+<Image align="center" border={true} caption="Remove an Event" src="https://files.readme.io/b6033f7-Custom_Events.png" />
 
-  Remove an Event
+Remove an Event
 
 After an event is removed:
 
