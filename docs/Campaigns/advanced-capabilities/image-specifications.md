@@ -15,7 +15,7 @@ next:
 These are CleverTap recommendations to help you render your messages correctly. While we specify image sizes on the application window, these are recommendations for each channel to help your image find a sweet spot. 
 
 > 📘 Content Tip
-> 
+>
 > The content must always be center-heavy. If not, some devices may crop the images from the edges. The file size is available on the user interface.
 
 # Push Notifications
@@ -26,9 +26,9 @@ The supported file types are PNG, JPG, and GIF (only iOS).
 
 For Android, use the following guidelines:
 
-- Aspect ratio: 2:1
-- Maximum size: 40 KB
-- Supported types: PNG, JPG, and JPEG
+* Aspect ratio: 2:1
+* Maximum size: 40 KB
+* Supported types: PNG, JPG, and JPEG
 
 ## iOS Push Notifications
 
@@ -43,24 +43,9 @@ For iOS push notifications, use the following guidelines:
 
 The following media file sizes are supported by iOS: 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c91b4e2-Screenshot_2020-06-23_at_8.16.22_PM.png",
-        "Media file sizes supported by iOS",
-        792
-      ],
-      "align": "center",
-      "sizing": "100",
-      "border": true,
-      "caption": "Media File Sizes Supported by iOS"
-    }
-  ]
-}
-[/block]
-
+<Image title="Media file sizes supported by iOS" alt={792} align="center" width="100%" border={true} src="https://files.readme.io/c91b4e2-Screenshot_2020-06-23_at_8.16.22_PM.png">
+  Media File Sizes Supported by iOS
+</Image>
 
 ## In-App
 
@@ -76,8 +61,8 @@ For in-app, use the following guidelines:
 The supported file formats are JPG, JPEG, PNG, GIF, MP3, and MP4. PNGs convert to JPEG using selected background colors.
 
 > 📘 Video Messages
-> 
-> When adding video messages to In-App, ensure an audio track is always present.  
+>
+> When adding video messages to In-App, ensure an audio track is always present.\
 > If required, insert a blank audio track to the video.
 
 ### Covers
@@ -96,23 +81,9 @@ For Android covers, use the following guidelines:
 
 The following shows the Android devices' crop factor.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9cd213a-Image_Size_InApp_Cover_Android.png",
-        "Android devices' crop factor",
-        1035
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Android Devices' Crop Factor"
-    }
-  ]
-}
-[/block]
-
+<Image title="Android devices' crop factor" alt={1035} align="center" border={true} src="https://files.readme.io/9cd213a-Image_Size_InApp_Cover_Android.png">
+  Android Devices' Crop Factor
+</Image>
 
 #### iPhone
 
@@ -126,30 +97,16 @@ For iPhone covers, use the following guidelines:
 
 The following shows the iPhone devices' crop factor.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7818723-Image_Size_InApp_Cover_iOS.png",
-        "iPhone devices' crop factor",
-        1359
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "iPhone Devices' Crop Factor"
-    }
-  ]
-}
-[/block]
-
+<Image title="iPhone devices' crop factor" alt={1359} align="center" border={true} src="https://files.readme.io/7818723-Image_Size_InApp_Cover_iOS.png">
+  iPhone Devices' Crop Factor
+</Image>
 
 #### iPad Cover
 
 For iPad covers, use the following guidelines:
 
-- Aspect ratio: 1:1.3
-- Crop factor: None
+* Aspect ratio: 1:1.3
+* Crop factor: None
 
 ### Interstitial
 
@@ -159,23 +116,9 @@ The supported file types are video, audio, and GIF.
 
 The image aspect ratio is 1:1.7812.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d271eb4-Image_Size_InApp_Interstitial.png",
-        "Image Aspect Ration",
-        1049
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Image Aspect Ration"
-    }
-  ]
-}
-[/block]
-
+<Image title="Image Aspect Ration" alt={1049} align="center" border={true} src="https://files.readme.io/d271eb4-Image_Size_InApp_Interstitial.png">
+  Image Aspect Ration
+</Image>
 
 #### iPad Interstitial
 
@@ -185,8 +128,8 @@ The aspect ratio is 1:1.26.
 
 For an image with content, use the following guidelines:
 
-- Aspect ratio: 16:9
-- Supported file formats: JPG, JPEG, PNG, GIF, MP3, MP4
+* Aspect ratio: 16:9
+* Supported file formats: JPG, JPEG, PNG, GIF, MP3, MP4
 
 PNGs convert to JPEG using selected background colors.
 
@@ -238,7 +181,7 @@ More aspect ratios include:
 | Video     | 50 MB        |
 
 > 📘 Video Messages
-> 
+>
 > When adding video messages to App Inbox, ensure an audio track is always present. If required, insert a blank audio track to the video.
 
 ## Web Push
@@ -249,16 +192,16 @@ For web push, the aspect ratio is 2:1.
 
 We support the following browsers:
 
-- Chrome 
-- Firefox
-- Safari 
+* Chrome 
+* Firefox
+* Safari 
 
 ## Web Pop-up/Exit Intent
 
 For web pop-up and exit intent, use the following guidelines:
 
-- Aspect ratio: 1.12:1 
-- Maximum height: 400px 
+* Aspect ratio: 1.12:1 
+* Maximum height: 400px 
 
 The aspect ratio remains constant. While the image width is 80% of the overall container, the width adjusts automatically.
 
