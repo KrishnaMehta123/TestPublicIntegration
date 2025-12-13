@@ -27,11 +27,11 @@ Anonymous users do not have any other identity apart from the CleverTap ID on th
 
 There are three unique users in this table.
 
-Here, the first event was performed on _iPhone_. Because there was no previous record of this device, CleverTap assigned it a new CleverTap ID of 1.
+Here, the first event was performed on *iPhone*. Because there was no previous record of this device, CleverTap assigned it a new CleverTap ID of 1.
 
-The second event came from _Desktop_. Because there was no previous record of this device,  CleverTap assigned it a new CleverTap ID of 2.
+The second event came from *Desktop*. Because there was no previous record of this device,  CleverTap assigned it a new CleverTap ID of 2.
 
-The third event also came from _Desktop_, and because CleverTap already had a record of this device, it was assigned a CleverTap ID of 2. Similarly, an _Android phone_ is assigned a CleverTap ID of 3.  
+The third event also came from *Desktop*, and because CleverTap already had a record of this device, it was assigned a CleverTap ID of 2. Similarly, an *Android phone* is assigned a CleverTap ID of 3.  
 
 ## Identified User After Anonymous Log In
 
