@@ -14,7 +14,7 @@ Leveraging TikTok's audience can significantly enhance your remarketing efforts.
 
 To get started with TikTok remarketing in CleverTap, follow the resources below:
 
-- [Setup TikTok Remarketing in CleverTap](doc:setup-tiktok-remarketing-in-clevertap)
-- [Create Remarketing Campaign](doc:create-remarketing-campaign)
-- [TikTok Remarketing Campaign Metrics and Errors](doc:tiktok-remarketing-campaign-metrics-and-errors)
-- [TikTok Remarketing Troubleshooting and FAQs](doc:tiktok-remarketing-troubleshooting-and-faqs)
+* [Setup TikTok Remarketing in CleverTap](doc:setup-tiktok-remarketing-in-clevertap)
+* [Create Remarketing Campaign](doc:create-remarketing-campaign)
+* [TikTok Remarketing Campaign Metrics and Errors](doc:tiktok-remarketing-campaign-metrics-and-errors)
+* [TikTok Remarketing Troubleshooting and FAQs](doc:tiktok-remarketing-troubleshooting-and-faqs)
