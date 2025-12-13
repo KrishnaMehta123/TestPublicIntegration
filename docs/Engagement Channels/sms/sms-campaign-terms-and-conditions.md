@@ -10,7 +10,7 @@ metadata:
 next:
   description: ''
 ---
-<br>
+<br />
 
 # Introduction
 
@@ -26,11 +26,11 @@ You will receive messages based on the selected preferences. The frequency of me
 
 # How to Opt-Out
 
-You can cancel the SMS service at any time. Simply reply _STOP_ on the CleverTap number that sent you the SMS. After you send the SMS message _STOP_ to us, we will send you an SMS message to confirm that you have been unsubscribed. After this, you will no longer receive SMS messages from us.
+You can cancel the SMS service at any time. Simply reply *STOP* on the CleverTap number that sent you the SMS. After you send the SMS message *STOP* to us, we will send you an SMS message to confirm that you have been unsubscribed. After this, you will no longer receive SMS messages from us.
 
 # Support/Help
 
-For support or more information, text _HELP_ to CleverTap's number that sent you the SMS or email us at [support@clevertap.com.](mailto:support@clevertap.com.) You can also call our customer support at +919930079420.
+For support or more information, text *HELP* to CleverTap's number that sent you the SMS or email us at [support@clevertap.com.](mailto:support@clevertap.com.) You can also call our customer support at +919930079420.
 
 # Changes to Terms and Conditions
 
@@ -38,7 +38,7 @@ We reserve the right to modify these terms or any additional terms that apply to
 
 # Privacy Policy
 
-Your participation in this SMS campaign is also subject to our Privacy Policy. Please visit <https://clevertap.com/privacy-policy/> to review our practices concerning the handling of your personal information.
+Your participation in this SMS campaign is also subject to our Privacy Policy. Please visit [https://clevertap.com/privacy-policy/](https://clevertap.com/privacy-policy/) to review our practices concerning the handling of your personal information.
 
 # Contact Us
 
