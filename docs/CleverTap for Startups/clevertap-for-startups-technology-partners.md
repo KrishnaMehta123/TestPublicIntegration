@@ -14,11 +14,11 @@ next:
 
 ## Analytics
 
-| Partner Name     | Integrates with CleverTap | Included in the Essentials Plan | Add-on | Add-on Name  | Add-on Cost    | Integration process     |
-| :--------------- | :------------------------ | :------------------------------ | :----- | :----------- | :------------------- | :------------------------------------------ |
-| Amplitude Export | Yes                       | Yes                             | Paid   | Cloud Export | 10% of the Base Plan | [Amplitude Export](doc:amplitude-export)        |
-| AmplitudeMixpanel Import  | Yes                       | Yes                             | Free   | N/A          | N/A                  | [Mixpanel Import](doc:mixpanel-integration) |
-| Mixpanel Export  | Yes         | Paid   | Cloud Export | 10% of the Base Plan | [Mixpanel Export](doc:mixpanel-export)  |
+| Partner Name             | Integrates with CleverTap | Included in the Essentials Plan | Add-on       | Add-on Name          | Add-on Cost                            | Integration process                         |
+| :----------------------- | :------------------------ | :------------------------------ | :----------- | :------------------- | :------------------------------------- | :------------------------------------------ |
+| Amplitude Export         | Yes                       | Yes                             | Paid         | Cloud Export         | 10% of the Base Plan                   | [Amplitude Export](doc:amplitude-export)    |
+| AmplitudeMixpanel Import | Yes                       | Yes                             | Free         | N/A                  | N/A                                    | [Mixpanel Import](doc:mixpanel-integration) |
+| Mixpanel Export          | Yes                       | Paid                            | Cloud Export | 10% of the Base Plan | [Mixpanel Export](doc:mixpanel-export) |                                             |
 
 ## Attribution Provider
 
@@ -32,7 +32,7 @@ next:
 | Generic Attribution provider         | Yes                       | Yes                             | Free   | N/A         | [Generic Attribution Provider](https://docs.clevertap.com/docs/generic-attribution-partner) |
 
 > 📘 Deep Linking
-> 
+>
 > CleverTap supports deep linking that helps land the user on a particular part of your app. We have improved our [deep linking with Branch](doc:deeplinking-with-branch) for Email.
 
 ## Contextual Location
@@ -53,7 +53,7 @@ next:
 | :--------------- | :------------------------ | :------------------------------ | :----------- | :--------------- | :-------------------------------------------------------------- |
 | mParticle Export | Yes                       | Yes                             | Cloud Export | 10% of Base Plan | [mParticle Export ](doc:mparticle-export)                       |
 | RudderStack      | Yes                       | Yes                             | Free         | N/A              | [RudderStack](https://developer.clevertap.com/docs/rudderstack) |
-| Segment          | Yes                       | Yes                             | Cloud Export | 10% of Base Plan | [Segment](https://developer.clevertap.com/docs/segment)              |
+| Segment          | Yes                       | Yes                             | Cloud Export | 10% of Base Plan | [Segment](https://developer.clevertap.com/docs/segment)         |
 
 ## Data Warehouse
 
@@ -108,7 +108,7 @@ next:
 | CSV Upload       | Yes                       | Yes                             | Free   | N/A         | [CSV Upload](doc:csv-upload)                                              |
 
 > 📘 Data Import
-> 
+>
 > You can use CleverTap APIs to push and retrieve data. For more information, refer to [CleverTap APIs](https://developer.clevertap.com/docs/api-overview).
 
 ## Loyalty
@@ -178,91 +178,325 @@ next:
 
 You can check out the integration capabilities and features of CleverTap through the following list of supported platforms and technologies.
 
-[block:parameters]
-{
-  "data": {
-    "h-0": "Partner  \nName",
-    "h-1": "Integrates with CleverTap",
-    "h-2": "Included in the Essentials Plan",
-    "h-3": "Add-On",
-    "h-4": "Add-On Cost",
-    "h-5": "Integration Process",
-    "0-0": "iOS",
-    "0-1": "Yes",
-    "0-2": "Yes",
-    "0-3": "Free",
-    "0-4": "N/A",
-    "0-5": "[iOS SDK](https://developer.clevertap.com/docs/ios)",
-    "1-0": "Android",
-    "1-1": "Yes",
-    "1-2": "Yes",
-    "1-3": "Free",
-    "1-4": "N/A",
-    "1-5": "[Android SDK](https://developer.clevertap.com/docs/android)",
-    "2-0": "Cordova",
-    "2-1": "Yes",
-    "2-2": "Yes",
-    "2-3": "Free",
-    "2-4": "N/A",
-    "2-5": "[Cordova SDK](https://developer.clevertap.com/docs/cordova)",
-    "3-0": "Flutter",
-    "3-1": "Yes",
-    "3-2": "Yes",
-    "3-3": "Free",
-    "3-4": "N/A",
-    "3-5": "[Flutter SDK](https://developer.clevertap.com/docs/flutter-sdk)",
-    "4-0": "Geofencing",
-    "4-1": "Yes",
-    "4-2": "Yes",
-    "4-3": "Free",
-    "4-4": "N/A",
-    "4-5": "[Geofencing](https://developer.clevertap.com/docs/geofencing)",
-    "5-0": "React Native",
-    "5-1": "Yes",
-    "5-2": "Yes",
-    "5-3": "Free",
-    "5-4": "N/A",
-    "5-5": "[React Native](https://developer.clevertap.com/docs/react-native)",
-    "6-0": "Unity",
-    "6-1": "Yes",
-    "6-2": "Yes",
-    "6-3": "Free",
-    "6-4": "N/A",
-    "6-5": "[Unity](https://developer.clevertap.com/docs/unity)",
-    "7-0": "Xamarin",
-    "7-1": "Yes",
-    "7-2": "Yes",
-    "7-3": "Free",
-    "7-4": "N/A",
-    "7-5": "[Xamarin](https://developer.clevertap.com/docs/xamarin)",
-    "8-0": "KaiOS",
-    "8-1": "Yes",
-    "8-2": "Yes",
-    "8-3": "Free",
-    "8-4": "N/A",
-    "8-5": "[KaiOS](https://developer.clevertap.com/docs/kaios)",
-    "9-0": "Web",
-    "9-1": "Yes",
-    "9-2": "Yes",
-    "9-3": "Free",
-    "9-4": "N/A",
-    "9-5": "[Web SDK](https://developer.clevertap.com/docs/web-overview)",
-    "10-0": "Google Tag Manager",
-    "10-1": "Yes",
-    "10-2": "Yes",
-    "10-3": "Free",
-    "10-4": "N/A",
-    "10-5": "[Google Tag Manager](https://developer.clevertap.com/docs/google-tag-manager)"
-  },
-  "cols": 6,
-  "rows": 11,
-  "align": [
-    "left",
-    "left",
-    "left",
-    "left",
-    "left",
-    "left"
-  ]
-}
-[/block]
+<Table align={["left","left","left","left","left","left"]}>
+  <thead>
+    <tr>
+      <th>
+        Partner
+
+
+
+
+        Name
+      </th>
+
+      <th>
+        Integrates with CleverTap
+      </th>
+
+      <th>
+        Included in the Essentials Plan
+      </th>
+
+      <th>
+        Add-On
+      </th>
+
+      <th>
+        Add-On Cost
+      </th>
+
+      <th>
+        Integration Process
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        iOS
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Free
+      </td>
+
+      <td>
+        N/A
+      </td>
+
+      <td>
+        [iOS SDK](https://developer.clevertap.com/docs/ios)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Android
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Free
+      </td>
+
+      <td>
+        N/A
+      </td>
+
+      <td>
+        [Android SDK](https://developer.clevertap.com/docs/android)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Cordova
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Free
+      </td>
+
+      <td>
+        N/A
+      </td>
+
+      <td>
+        [Cordova SDK](https://developer.clevertap.com/docs/cordova)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Flutter
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Free
+      </td>
+
+      <td>
+        N/A
+      </td>
+
+      <td>
+        [Flutter SDK](https://developer.clevertap.com/docs/flutter-sdk)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Geofencing
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Free
+      </td>
+
+      <td>
+        N/A
+      </td>
+
+      <td>
+        [Geofencing](https://developer.clevertap.com/docs/geofencing)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        React Native
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Free
+      </td>
+
+      <td>
+        N/A
+      </td>
+
+      <td>
+        [React Native](https://developer.clevertap.com/docs/react-native)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Unity
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Free
+      </td>
+
+      <td>
+        N/A
+      </td>
+
+      <td>
+        [Unity](https://developer.clevertap.com/docs/unity)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Xamarin
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Free
+      </td>
+
+      <td>
+        N/A
+      </td>
+
+      <td>
+        [Xamarin](https://developer.clevertap.com/docs/xamarin)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        KaiOS
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Free
+      </td>
+
+      <td>
+        N/A
+      </td>
+
+      <td>
+        [KaiOS](https://developer.clevertap.com/docs/kaios)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Web
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Free
+      </td>
+
+      <td>
+        N/A
+      </td>
+
+      <td>
+        [Web SDK](https://developer.clevertap.com/docs/web-overview)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Google Tag Manager
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Free
+      </td>
+
+      <td>
+        N/A
+      </td>
+
+      <td>
+        [Google Tag Manager](https://developer.clevertap.com/docs/google-tag-manager)
+      </td>
+    </tr>
+  </tbody>
+</Table>
