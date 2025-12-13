@@ -19,7 +19,7 @@ CleverTap offers a wide range of email templates designed for a specific use cas
 This document provides an overview of each template category and use case and highlights the customizable components available, such as logos, banners, Call-to-Action (CTAs), product grids, and theme colors. This ensures easy editing and brand consistency across campaigns. Whether launching a birthday offer, confirming an order, or showcasing a flash sale, this document gives you the structure and flexibility to build visually appealing emails that drive action and engagement.
 
 > 📘 Private Beta
-> 
+>
 > The out-of-the-box HTML and AMP email templates are currently available in Private Beta. If you want access to this feature, contact your Customer Success Manager.
 
 # HTML Templates
@@ -28,44 +28,26 @@ This document provides an overview of each template category and use case and hi
 
 This HTML email template is designed to help you celebrate your user's special day with a warm, personalized message. It combines festive visuals with a clear Call-to-Action (CTA) that can drive engagement, such as redeeming a gift, exploring birthday-exclusive deals, or simply revisiting the app or website. The layout is simple, responsive, and fully customizable to suit your brand.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c10b08d8ad83425b7524026133a40ae478093f2d6444dc41bad5ae1b936b0738-Birthday_HTML.png",
-        "",
-        "Sample Birthday Template"
-      ],
-      "align": "center",
-      "sizing": "25% ",
-      "border": true,
-      "caption": "Sample Birthday Template"
-    }
-  ]
-}
-[/block]
-
-
+<Image alt="Sample Birthday Template" align="center" width="25%" border={true} src="https://files.readme.io/c10b08d8ad83425b7524026133a40ae478093f2d6444dc41bad5ae1b936b0738-Birthday_HTML.png" /> Sample Birthday Template
 <details>
 
 <summary><b>Expand to know more about the template.</b></summary>
 
 ### Use Case Examples
 
-- Send birthday wishes with a personalized message and special offer.
-- Deliver exclusive discount codes or gift coupons.
-- Encourage users to revisit your app, website, or store on their birthday.
-- Reinforce brand loyalty by showing you remember important moments.
+* Send birthday wishes with a personalized message and special offer.
+* Deliver exclusive discount codes or gift coupons.
+* Encourage users to revisit your app, website, or store on their birthday.
+* Reinforce brand loyalty by showing you remember important moments.
 
 ### Template Customization Options
 
-- [Replace Logo](doc:ootb-email-templates#replace-logo)
-- [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
-- [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-- [Update Links in Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-- [Change Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-- [Update Social Media and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+* [Replace Logo](doc:ootb-email-templates#replace-logo)
+* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
+* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+* [Update Links in Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+* [Change Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+* [Update Social Media and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
 
 ### Template Code
 
@@ -160,48 +142,31 @@ This HTML email template is designed to help you celebrate your user's special d
 
 </details>
 
+
 ## Feedback Template
 
 This HTML template is designed to collect user input after a purchase, interaction, or experience. It features a clean layout with a feedback prompt, rating icons, text inputs, and a CTA that directs users to a feedback form or survey page.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2dcb3c6cd637b64182faf1f138ccaf5b1d13a61431b6caccf32834f1a1a7d544-Feedback_Template_HTML.png",
-        "",
-        "Sample Feedback Template"
-      ],
-      "align": "center",
-      "sizing": "35% ",
-      "border": true,
-      "caption": "Sample Feedback Template"
-    }
-  ]
-}
-[/block]
-
-
+<Image alt="Sample Feedback Template" align="center" width="35%" border={true} src="https://files.readme.io/2dcb3c6cd637b64182faf1f138ccaf5b1d13a61431b6caccf32834f1a1a7d544-Feedback_Template_HTML.png" /> Sample Feedback Template
 <details>
 
 <summary><b>Expand to know more about the template.</b></summary>
 
 ### Use Case Example
 
-- Request feedback after a product purchase or delivery.
-- Gather user opinions following a customer support interaction.
-- Collect insights during a product beta or feature rollout.
-- Run CSAT or NPS to gauge loyalty.
+* Request feedback after a product purchase or delivery.
+* Gather user opinions following a customer support interaction.
+* Collect insights during a product beta or feature rollout.
+* Run CSAT or NPS to gauge loyalty.
 
 ### Template Customization Options
 
-- [Replace the Logo](doc:ootb-email-templates#replace-logo)
-- [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-- [Update Call-To-Actions](doc:ootb-email-templates#update-call-to-actions-ctas)
-- [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-- [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-- [Update Social Media and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+* [Replace the Logo](doc:ootb-email-templates#replace-logo)
+* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+* [Update Call-To-Actions](doc:ootb-email-templates#update-call-to-actions-ctas)
+* [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+* [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+* [Update Social Media and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
 
 ### Template Code
 
@@ -288,49 +253,32 @@ This HTML template is designed to collect user input after a purchase, interacti
 
 </details>
 
+
 ## First Purchase Incentive Template
 
 This HTML template is crafted to convert new users into paying customers by offering a compelling discount or reward on their first purchase. It combines welcoming language with a strong CTA, encouraging users to explore the catalog or complete their first transaction.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/13d1a813ccb1ef1a834b3415c855e2ea2d765b0b9574d47bddb6ad846522ba6a-First_Incentive_Template_HTML.png",
-        "",
-        "First Purchase Incentive Template"
-      ],
-      "align": "center",
-      "sizing": "25% ",
-      "border": true,
-      "caption": "Sample First Purchase Incentive Template"
-    }
-  ]
-}
-[/block]
-
-
+<Image alt="First Purchase Incentive Template" align="center" width="25% " border={true} src="https://files.readme.io/13d1a813ccb1ef1a834b3415c855e2ea2d765b0b9574d47bddb6ad846522ba6a-First_Incentive_Template_HTML.png" />  Sample First Purchase Incentive Template
 <details>
 
 <summary><b>Expand to know more about the template.</b></summary>
 
 ### Use Case Examples
 
-- Send a welcome discount, for example, 10% off, after sign-up or app install.
-- Offer free shipping or a gift on the first order to increase conversion.
-- Trigger this email as part of an onboarding journey for new users.
-- Reinforce a sense of exclusivity with limited-time first-order benefits.
+* Send a welcome discount, for example, 10% off, after sign-up or app install.
+* Offer free shipping or a gift on the first order to increase conversion.
+* Trigger this email as part of an onboarding journey for new users.
+* Reinforce a sense of exclusivity with limited-time first-order benefits.
 
 ### Template Customization Options
 
-- [Replace the Logo](doc:ootb-email-templates#replace-logo)
-- [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
-- [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-- [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-- [Update the Privacy Policy](doc:ootb-email-templates#update-privacy-policy)
-- [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+* [Replace the Logo](doc:ootb-email-templates#replace-logo)
+* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
+* [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+* [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+* [Update the Privacy Policy](doc:ootb-email-templates#update-privacy-policy)
+* [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
 
 ### Template Code
 
@@ -455,50 +403,33 @@ This HTML template is crafted to convert new users into paying customers by offe
 
 </details>
 
+
 ## Flash Sale Template
 
 The Flash Sale HTML template is optimized for high-conversion campaigns built around urgency. With clear messaging, a clear call-to-action, and support for a countdown timer, this template encourages users to take fast action during limited-time promotions or seasonal offers.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/368ed48afa3fcadaf3c5e530141a5bf6cae026b6b2a822284905ec3c9762602a-Flash_Sale_HTML.png",
-        "",
-        "Sample Flash Sale Template"
-      ],
-      "align": "center",
-      "sizing": "25% ",
-      "border": true,
-      "caption": "Sample Flash Sale Template"
-    }
-  ]
-}
-[/block]
-
-
+<Image alt="Sample Flash Sale Template" align="center" width="25%" border={true} src="https://files.readme.io/368ed48afa3fcadaf3c5e530141a5bf6cae026b6b2a822284905ec3c9762602a-Flash_Sale_HTML.png" /> Sample Flash Sale Template
 <details>
 
 <summary><b>Expand to know more about the template.</b></summary>
 
 ### Use Case Example
 
-- Promote time-bound sales events (for example, 24-hour, weekend-only).
-- Run end-of-season clearance or flash discounts.
-- Highlight limited inventory to boost FOMO-driven engagement.
-- Launch app-exclusive or email-only timed deals.
+* Promote time-bound sales events (for example, 24-hour, weekend-only).
+* Run end-of-season clearance or flash discounts.
+* Highlight limited inventory to boost FOMO-driven engagement.
+* Launch app-exclusive or email-only timed deals.
 
 ### Template Customization Options
 
-- [Replace the Logo](doc:ootb-email-templates#replace-logo)
-- [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
-- [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-- [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-- [Update the Privacy Policy](doc:ootb-email-templates#update-privacy-policy)
-- [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
-- [Configure the Countdown Timer](doc:ootb-email-templates#countdown-timer-flash-sale-only)
+* [Replace the Logo](doc:ootb-email-templates#replace-logo)
+* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
+* [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+* [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+* [Update the Privacy Policy](doc:ootb-email-templates#update-privacy-policy)
+* [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+* [Configure the Countdown Timer](doc:ootb-email-templates#countdown-timer-flash-sale-only)
 
 ### Template Code
 
@@ -743,48 +674,31 @@ The Flash Sale HTML template is optimized for high-conversion campaigns built ar
 
 </details>
 
+
 ## Cart Abandonment Template
 
 The Cart Abandonment HTML template is a re-engagement template designed to remind users about items they have added to their cart but have not purchased. It combines persuasive text, compelling visuals, and a CTA to recover potential lost revenue and guide users back to checkout.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/260c597f1463ea160bfdbb9c740f8b65957555a0500892a16c70fc1cd18c0348-Cart_Abandonment_HTML.png",
-        "",
-        "Sample Cart Abandonment Template "
-      ],
-      "align": "center",
-      "sizing": "25% ",
-      "border": true,
-      "caption": "Sample Cart Abandonment Template "
-    }
-  ]
-}
-[/block]
-
-
+<Image alt="Sample Cart Abandonment Template " align="center" width="25%" border={true} src="https://files.readme.io/260c597f1463ea160bfdbb9c740f8b65957555a0500892a16c70fc1cd18c0348-Cart_Abandonment_HTML.png" /> Sample Cart Abandonment Template
 <details>
 
 <summary><b>Expand to know more about the template.</b></summary>
 
 ### Use Case Examples
 
-- Re-engage users who left products in their cart without completing the purchase.
-- Offer limited-time discounts or free shipping to incentivize completion.
-- Showcase cart contents with dynamic product previews.
-- Trigger automated emails based on cart inactivity (for example, after 1 hour, 24 hours).
+* Re-engage users who left products in their cart without completing the purchase.
+* Offer limited-time discounts or free shipping to incentivize completion.
+* Showcase cart contents with dynamic product previews.
+* Trigger automated emails based on cart inactivity (for example, after 1 hour, 24 hours).
 
 ### Template Customization Options
 
-- [Replace the Logo](doc:ootb-email-templates#replace-logo)
-- [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
-- [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-- [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-- [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+* [Replace the Logo](doc:ootb-email-templates#replace-logo)
+* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
+* [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+* [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+* [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
 
 ### Template Code
 
@@ -1063,49 +977,32 @@ The Cart Abandonment HTML template is a re-engagement template designed to remin
 
 </details>
 
+
 ## Early Access to Sale Template
 
 The Access to Early Sales HTML template is designed to give a sense of exclusivity to loyal or high-value users by offering them early access to upcoming sales or product launches. The layout focuses on premium branding, urgency, and conversion, encouraging users to take advantage of their early access window before it opens to the public.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/52f0c237409986e177dee4c23a61d92a54f8c615dcad584d3e06ee04fb88015f-Early_Access_to_Sale_HTML.png",
-        "",
-        "Sample Early Access to Sale Template"
-      ],
-      "align": "center",
-      "sizing": "25% ",
-      "border": true,
-      "caption": "Sample Early Access to Sale Template"
-    }
-  ]
-}
-[/block]
-
-
+<Image alt="Sample Early Access to Sale Template" align="center" width="25%" border={true} src="https://files.readme.io/52f0c237409986e177dee4c23a61d92a54f8c615dcad584d3e06ee04fb88015f-Early_Access_to_Sale_HTML.png" /> Sample Early Access to Sale Template
 <details>
 
 <summary><b>Expand to know more about the template.</b></summary>
 
 ### Use Case Examples
 
-- Reward loyal customers with a 24-hour head start on sale events.
-- Launch new collections or limited-edition products with VIP previews.
-- Offer sneak peeks of seasonal drops or collaborations.
-- Boost conversions from high-intent segments (for example, waitlisted users or subscribers).
+* Reward loyal customers with a 24-hour head start on sale events.
+* Launch new collections or limited-edition products with VIP previews.
+* Offer sneak peeks of seasonal drops or collaborations.
+* Boost conversions from high-intent segments (for example, waitlisted users or subscribers).
 
 ### Template Customization Options
 
-- [Replace the Logo](doc:ootb-email-templates#replace-logo)
-- [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
-- [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-- [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-- [Update the Privacy Policy](doc:ootb-email-templates#update-privacy-policy)
-- [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+* [Replace the Logo](doc:ootb-email-templates#replace-logo)
+* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
+* [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+* [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+* [Update the Privacy Policy](doc:ootb-email-templates#update-privacy-policy)
+* [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
 
 ### Template Code
 
@@ -1360,49 +1257,32 @@ The Access to Early Sales HTML template is designed to give a sense of exclusivi
 
 </details>
 
+
 ## Email Verification Template
 
 A transactional HTML email template designed to verify user identity during account creation or to confirm secure actions such as login from a new device. It prioritizes clarity, trust, and accessibility to ensure users can complete verification quickly.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/4de714623cf3130b69168813bdf02546185d4568a4ef71a6c74b0d57f1e2fdaf-Email_Verification_HTML.png",
-        null,
-        "Sample Account Verification Template"
-      ],
-      "align": "center",
-      "sizing": "25% ",
-      "border": true,
-      "caption": "Sample Email Verification Template"
-    }
-  ]
-}
-[/block]
-
-
+<Image alt="Sample Account Verification Template" align="center" width="25%" border={true} src="https://files.readme.io/4de714623cf3130b69168813bdf02546185d4568a4ef71a6c74b0d57f1e2fdaf-Email_Verification_HTML.png" /> Sample Email Verification Template
 <details>
 
 <summary><b>Expand to know more about the template.</b></summary>
 
 ### Use Case Example
 
-- Send a One-Time Password (OTP) or verification link for new user sign-ups.
-- Confirm user identity during suspicious login attempts or password resets.
-- Verify email before allowing access to sensitive features or gated services.
-- Validate changes to account details such as email, phone number, or device login.
+* Send a One-Time Password (OTP) or verification link for new user sign-ups.
+* Confirm user identity during suspicious login attempts or password resets.
+* Verify email before allowing access to sensitive features or gated services.
+* Validate changes to account details such as email, phone number, or device login.
 
 ### Template Customization Options
 
-- [Replace the Logo](doc:ootb-email-templates#replace-logo)
-- [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
-- [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-- [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-- [Update the Privacy Policy](doc:ootb-email-templates#update-privacy-policy)
-- [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+* [Replace the Logo](doc:ootb-email-templates#replace-logo)
+* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
+* [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+* [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+* [Update the Privacy Policy](doc:ootb-email-templates#update-privacy-policy)
+* [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
 
 ### Template Code
 
@@ -1532,48 +1412,31 @@ A transactional HTML email template designed to verify user identity during acco
 
 </details>
 
+
 ## Anniversary Wish Template
 
 A relationship-nurturing HTML template designed to celebrate a customer’s anniversary with your brand, whether it is their sign-up, first purchase, or membership milestone.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f05b33c85a4f8bf90b9e0378cb52bfcaae386e2b1c1a049a22f24eaf6a7a93ba-Anniversary_Wish_Template_HTML.png",
-        "",
-        "Sample Anniversary Wish Template"
-      ],
-      "align": "center",
-      "sizing": "25% ",
-      "border": true,
-      "caption": "Sample Anniversary Wish Template"
-    }
-  ]
-}
-[/block]
-
-
+<Image alt="Sample Anniversary Wish Template" align="center" width="25%" border={true} src="https://files.readme.io/f05b33c85a4f8bf90b9e0378cb52bfcaae386e2b1c1a049a22f24eaf6a7a93ba-Anniversary_Wish_Template_HTML.png" /> Sample Anniversary Wish Template
 <details>
 
 <summary><b>Expand to know more about the template.</b></summary>
 
 ### Use Case Examples
 
-- Celebrate the anniversary of user sign-up, account creation, or first interaction.
-- Reinforce brand loyalty with personalized greetings and exclusive discounts.
-- Use dynamic content (such as user name, years with brand) to boost emotional connection.
-- Perfect for loyalty campaigns, long-term engagement, and reactivation efforts.
+* Celebrate the anniversary of user sign-up, account creation, or first interaction.
+* Reinforce brand loyalty with personalized greetings and exclusive discounts.
+* Use dynamic content (such as user name, years with brand) to boost emotional connection.
+* Perfect for loyalty campaigns, long-term engagement, and reactivation efforts.
 
 ### Template Customization Options
 
-- [Replace the Logo](doc:ootb-email-templates#replace-logo)
-- [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
-- [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-- [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-- [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+* [Replace the Logo](doc:ootb-email-templates#replace-logo)
+* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
+* [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+* [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+* [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
 
 ### Template Code
 
@@ -1677,48 +1540,31 @@ A relationship-nurturing HTML template designed to celebrate a customer’s anni
 
 </details>
 
+
 ## Informative Email Template
 
 A neutral, content-focused HTML template designed to communicate important updates without a promotional tone. Suitable for compliance notices, product changes, or business-wide announcements.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b929cb18516c6bd42b772107850b0b63c010e4a85df006fe6f215042d50a8910-Informative_Email_Template_HTML.png",
-        "",
-        "Sample Informative Email Template"
-      ],
-      "align": "center",
-      "sizing": "25% ",
-      "border": true,
-      "caption": "Sample Informative Email Template"
-    }
-  ]
-}
-[/block]
-
-
+<Image alt="Sample Informative Email Template" align="center" width="25%" border={true} src="https://files.readme.io/b929cb18516c6bd42b772107850b0b63c010e4a85df006fe6f215042d50a8910-Informative_Email_Template_HTML.png" /> Sample Informative Email Template
 <details>
 
 <summary><b>Expand to know more about the template.</b></summary>
 
 ### Use Case Examples
 
-- Announce policy updates or changes in terms of service.
-- Notify users about new features, UI enhancements, or release rollouts.
-- Share account-related communications such as billing reminders or operational changes.
-- Ideal for transactional or compliance-driven engagement.
+* Announce policy updates or changes in terms of service.
+* Notify users about new features, UI enhancements, or release rollouts.
+* Share account-related communications such as billing reminders or operational changes.
+* Ideal for transactional or compliance-driven engagement.
 
 ### Template Customization Options
 
-- [Replace the Logo](doc:ootb-email-templates#replace-logo)
-- [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
-- [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-- [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-- [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+* [Replace the Logo](doc:ootb-email-templates#replace-logo)
+* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
+* [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+* [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+* [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
 
 ### Template Code
 
@@ -2011,46 +1857,29 @@ A neutral, content-focused HTML template designed to communicate important updat
 
 </details>
 
+
 ## Loyalty Points Update Template
 
 These templates are designed to keep users informed about changes in their loyalty point balance, including newly earned and expiring points. This template plays a key role in driving continued engagement and redemption by providing timely, personalized updates.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a457c4956a48241012937ce59ab0e2d90559fd644fe14d7326d0fd8d345dcf6d-Loyalty_Points_Update_HTML.png",
-        "",
-        "Sample Loyalty Points Expiry & Loyalty Points Balance Template"
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "border": true,
-      "caption": "Sample Loyalty Points Expiry & Loyalty Points Balance Template"
-    }
-  ]
-}
-[/block]
-
-
+<Image alt="Sample Loyalty Points Expiry & Loyalty Points Balance Template" align="center" width="75%" border={true} src="https://files.readme.io/a457c4956a48241012937ce59ab0e2d90559fd644fe14d7326d0fd8d345dcf6d-Loyalty_Points_Update_HTML.png" /> Sample Loyalty Points Expiry & Loyalty Points Balance Template
 <details>
 
 <summary><b>Expand to know more about the template.</b></summary>
 
 ### Use Case Examples
 
-- Notify users when new points have been added to their account.
-- Alert users about points that are about to expire soon.
+* Notify users when new points have been added to their account.
+* Alert users about points that are about to expire soon.
 
 ### Template Customization Options
 
-- [Replace the Logo](doc:ootb-email-templates#replace-logo)
-- [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
-- [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-- [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-- [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+* [Replace the Logo](doc:ootb-email-templates#replace-logo)
+* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
+* [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+* [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+* [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
 
 ### Template Code
 
@@ -2295,47 +2124,30 @@ These templates are designed to keep users informed about changes in their loyal
 
 </details>
 
+
 ## Newsletter Template
 
 This recurring email template shares curated content such as blogs, product updates, or brand stories.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c9c1ca33c322799d0618933c8800ba0eef3fd29039ee56a4db8544d829feeee1-Newsletter_Template_HTML.png",
-        "",
-        "Sample Newstter Template"
-      ],
-      "align": "center",
-      "sizing": "25% ",
-      "border": true,
-      "caption": "Sample Newstter Template"
-    }
-  ]
-}
-[/block]
-
-
+<Image alt="Sample Newstter Template" align="center" width="25%" border={true} src="https://files.readme.io/c9c1ca33c322799d0618933c8800ba0eef3fd29039ee56a4db8544d829feeee1-Newsletter_Template_HTML.png" /> Sample Newstter Template
 <details>
 
 <summary><b>Expand to know more about the template.</b></summary>
 
 ### Use Case Examples
 
-- Keep users informed and engaged by providing valuable content in a consistent format. 
-- Ideal for sharing thought leadership articles, community highlights, or monthly wrap-ups without a sales-heavy tone.
+* Keep users informed and engaged by providing valuable content in a consistent format. 
+* Ideal for sharing thought leadership articles, community highlights, or monthly wrap-ups without a sales-heavy tone.
 
 ### Template Customization Options
 
-- [Replace the Logo](doc:ootb-email-templates#replace-logo)
-- [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
-- [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-- [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-- [Update the Privacy Policy](doc:ootb-email-templates#update-privacy-policy)
-- [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+* [Replace the Logo](doc:ootb-email-templates#replace-logo)
+* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
+* [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+* [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+* [Update the Privacy Policy](doc:ootb-email-templates#update-privacy-policy)
+* [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
 
 ### Template Code
 
@@ -2573,17 +2385,191 @@ This recurring email template shares curated content such as blogs, product upda
 
 </details>
 
+
 ## Order Lifecycle Updates Template
 
 A set of transactional templates that provide customers with timely updates across the whole order journey, from placing the order to final delivery.
 
-[block:html]
-{
-  "html": "<style>\n  .tabs {\n    max-width: 520px;\n    margin: 1rem auto;\n    font-family: sans-serif;\n    border: 1px solid #ddd; /* block outline */\n    border-radius: 6px;\n    background: #fff;\n  }\n\n  .tab-labels {\n    display: flex;\n    justify-content: center;\n    gap: 0.5rem;\n    margin: 1rem 0 0.5rem;\n    flex-wrap: wrap;\n  }\n\n  .tab-labels label {\n    padding: 0.4rem 1rem;\n    cursor: pointer;\n    background: #f9f9f9;\n    border-radius: 4px 4px 0 0;\n    border: 1px solid #ccc;\n    border-bottom: none;\n    font-size: 0.85rem;\n    font-weight: 600;\n  }\n\n  .tab-labels label:hover {\n    background: #e0e0e0;\n  }\n\n  input[type=\"radio\"] {\n    display: none;\n  }\n\n  .tab-content {\n    display: none;\n    padding: 0.75rem;\n    text-align: center;\n    background: #fff;\n    border-top: 1px solid #ddd;\n  }\n\n  input#tab1:checked ~ .tab-panels #content1,\n  input#tab2:checked ~ .tab-panels #content2,\n  input#tab3:checked ~ .tab-panels #content3 {\n    display: block;\n  }\n\n  .tab-panels img {\n    width: 50%;\n    height: auto;\n    margin: 0 auto;\n    border-radius: 4px;\n    border: 1px solid #ddd;\n    display: block;\n    cursor: pointer;\n  }\n\n  .image-caption {\n    font-size: 0.85rem;\n    color: #6b7c93;\n    font-style: italic;\n    margin-top: 0.4rem;\n    text-align: center;\n  }\n\n  @media (max-width: 600px) {\n    .tab-panels img {\n      width: 75%;\n    }\n  }\n\n  /* Lightbox modal styling */\n  .modal {\n    display: none;\n    position: fixed;\n    z-index: 100;\n    left: 0; top: 0;\n    width: 100%;\n    height: 100%;\n    background: rgba(0,0,0,0.85);\n  }\n\n  .modal:target {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n  }\n\n  .modal img {\n    max-width: 90%;\n    max-height: 80vh;\n    border-radius: 6px;\n    border: 3px solid white;\n  }\n\n  .modal:target::before {\n    content: \"✕\";\n    position: absolute;\n    top: 2rem;\n    right: 2rem;\n    font-size: 2rem;\n    color: white;\n    cursor: pointer;\n  }\n</style>\n\n<div class=\"tabs\">\n  <input type=\"radio\" name=\"tabs\" id=\"tab1\" checked>\n  <input type=\"radio\" name=\"tabs\" id=\"tab2\">\n  <input type=\"radio\" name=\"tabs\" id=\"tab3\">\n\n  <div class=\"tab-labels\">\n    <label for=\"tab1\">Order Confirmed</label>\n    <label for=\"tab2\">Order Shipped</label>\n    <label for=\"tab3\">Order Delivered</label>\n  </div>\n\n  <div class=\"tab-panels\">\n    <div id=\"content1\" class=\"tab-content\">\n      <a href=\"#img1\">\n        <img src=\"https://files.readme.io/0b3a7b4376e461cb0bf467bdfeb6c97e111f4b9c80eaa10fb7cb17e176356aaf-Order_Confirmed_HTML.png\" alt=\"Order Confirmed\">\n      </a>\n      <div class=\"image-caption\">Order Confirmed</div>\n    </div>\n\n    <div id=\"content2\" class=\"tab-content\">\n      <a href=\"#img2\">\n        <img src=\"https://files.readme.io/f1785a9a322e55a79f15e21844206cfb95dd3eea5420a0d5530f96320f5cea1a-Order_Shipped_HTML.png\" alt=\"Order Shipped\">\n      </a>\n      <div class=\"image-caption\">Order Shipped</div>\n    </div>\n\n    <div id=\"content3\" class=\"tab-content\">\n      <a href=\"#img3\">\n        <img src=\"https://files.readme.io/b5f7eee1c562f0d22e3694d0d6cf78c51240090d840a307bd2ca10019e66ecd9-Order_Delivered_HTML.png\" alt=\"Order Delivered\">\n      </a>\n      <div class=\"image-caption\">Order Delivered</div>\n    </div>\n  </div>\n</div>\n\n<!-- Lightbox Modals -->\n<div id=\"img1\" class=\"modal\">\n  <a href=\"#\"><img src=\"https://files.readme.io/0b3a7b4376e461cb0bf467bdfeb6c97e111f4b9c80eaa10fb7cb17e176356aaf-Order_Confirmed_HTML.png\" alt=\"Zoom Order Confirmed\"></a>\n</div>\n<div id=\"img2\" class=\"modal\">\n  <a href=\"#\"><img src=\"https://files.readme.io/f1785a9a322e55a79f15e21844206cfb95dd3eea5420a0d5530f96320f5cea1a-Order_Shipped_HTML.png\" alt=\"Zoom Order Shipped\"></a>\n</div>\n<div id=\"img3\" class=\"modal\">\n  <a href=\"#\"><img src=\"https://files.readme.io/b5f7eee1c562f0d22e3694d0d6cf78c51240090d840a307bd2ca10019e66ecd9-Order_Delivered_HTML.png\" alt=\"Zoom Order Delivered\"></a>\n</div>"
-}
-[/block]
+<HTMLBlock>{`
+<style>
+  .tabs {
+    max-width: 520px;
+    margin: 1rem auto;
+    font-family: sans-serif;
+    border: 1px solid #ddd; /* block outline */
+    border-radius: 6px;
+    background: #fff;
+  }
+
+  .tab-labels {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem 0 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .tab-labels label {
+    padding: 0.4rem 1rem;
+    cursor: pointer;
+    background: #f9f9f9;
+    border-radius: 4px 4px 0 0;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+
+  .tab-labels label:hover {
+    background: #e0e0e0;
+  }
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  .tab-content {
+    display: none;
+    padding: 0.75rem;
+    text-align: center;
+    background: #fff;
+    border-top: 1px solid #ddd;
+  }
+
+  input#tab1:checked ~ .tab-panels #content1,
+  input#tab2:checked ~ .tab-panels #content2,
+  input#tab3:checked ~ .tab-panels #content3 {
+    display: block;
+  }
+
+  .tab-panels img {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    display: block;
+    cursor: pointer;
+  }
+
+  .image-caption {
+    font-size: 0.85rem;
+    color: #6b7c93;
+    font-style: italic;
+    margin-top: 0.4rem;
+    text-align: center;
+  }
+
+  @media (max-width: 600px) {
+    .tab-panels img {
+      width: 75%;
+    }
+  }
+
+  /* Lightbox modal styling */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0; top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.85);
+  }
+
+  .modal:target {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal img {
+    max-width: 90%;
+    max-height: 80vh;
+    border-radius: 6px;
+    border: 3px solid white;
+  }
+
+  .modal:target::before {
+    content: "✕";
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+  }
+</style>
+`}
+<div class="tabs">
+  <input type="radio" name="tabs" id="tab1" checked />
+  <input type="radio" name="tabs" id="tab2" />
+  <input type="radio" name="tabs" id="tab3" />
+
+  <div class="tab-labels">
+    <label for="tab1">Order Confirmed</label>
+    <label for="tab2">Order Shipped</label>
+    <label for="tab3">Order Delivered</label>
+  </div>
+
+  <div class="tab-panels">
+    <div id="content1" class="tab-content">
+      <a href="#img1">
+        <img src="https://files.readme.io/0b3a7b4376e461cb0bf467bdfeb6c97e111f4b9c80eaa10fb7cb17e176356aaf-Order_Confirmed_HTML.png" alt="Order Confirmed" />
+      </a>
+      <div class="image-caption">Order Confirmed</div>
+    </div>
+
+    <div id="content2" class="tab-content">
+      <a href="#img2">
+        <img src="https://files.readme.io/f1785a9a322e55a79f15e21844206cfb95dd3eea5420a0d5530f96320f5cea1a-Order_Shipped_HTML.png" alt="Order Shipped" />
+      </a>
+      <div class="image-caption">Order Shipped</div>
+    </div>
+
+    <div id="content3" class="tab-content">
+      <a href="#img3">
+        <img src="https://files.readme.io/b5f7eee1c562f0d22e3694d0d6cf78c51240090d840a307bd2ca10019e66ecd9-Order_Delivered_HTML.png" alt="Order Delivered" />
+      </a>
+      <div class="image-caption">Order Delivered</div>
+    </div>
+  </div>
+</div>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="img1" class="modal">
+  <a href="#"><img src="https://files.readme.io/0b3a7b4376e461cb0bf467bdfeb6c97e111f4b9c80eaa10fb7cb17e176356aaf-Order_Confirmed_HTML.png" alt="Zoom Order Confirmed" /></a>
+</div>
+<div id="img2" class="modal">
+  <a href="#"><img src="https://files.readme.io/f1785a9a322e55a79f15e21844206cfb95dd3eea5420a0d5530f96320f5cea1a-Order_Shipped_HTML.png" alt="Zoom Order Shipped" /></a>
+</div>
+<div id="img3" class="modal">
+  <a href="#"><img src="https://files.readme.io/b5f7eee1c562f0d22e3694d0d6cf78c51240090d840a307bd2ca10019e66ecd9-Order_Delivered_HTML.png" alt="Zoom Order Delivered" /></a>
+</div>`}</HTMLBlock>
 <details>
 
 <summary><b>Expand to know more about the template.</b></summary>
@@ -2594,13 +2580,13 @@ Keeps customers informed and reassured throughout their post-purchase experience
 
 ### Template Customization Options
 
-- [Replace the Logo](doc:ootb-email-templates#replace-logo)
-- [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
-- [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-- [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-- [Update the Privacy Policy](doc:ootb-email-templates#update-privacy-policy)
-- [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+* [Replace the Logo](doc:ootb-email-templates#replace-logo)
+* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
+* [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+* [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+* [Update the Privacy Policy](doc:ootb-email-templates#update-privacy-policy)
+* [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
 
 ### Template Code
 
@@ -3257,29 +3243,12 @@ Keeps customers informed and reassured throughout their post-purchase experience
 
 </details>
 
+
 ## Password Reset Template
 
 A security-focused transactional email that helps users reset their passwords securely and quickly.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3866006424ffc74a98cae2a7ec5859b8c519df5937adbb62de028e39ce311072-Password_Reset_HTML.png",
-        "",
-        "Sample Password Reset Template"
-      ],
-      "align": "center",
-      "sizing": "25% ",
-      "border": true,
-      "caption": "Sample Password Reset Template"
-    }
-  ]
-}
-[/block]
-
-
+<Image alt="Sample Password Reset Template" align="center" width="25% " border={true} src="https://files.readme.io/3866006424ffc74a98cae2a7ec5859b8c519df5937adbb62de028e39ce311072-Password_Reset_HTML.png" /> Sample Password Reset Template
 <details>
 
 <summary><b>Expand to know more about the template.</b></summary>
@@ -3290,13 +3259,13 @@ Sends a reset password link to users who have forgotten or initiated a reset req
 
 ### Template Customization Options
 
-- [Replace the Logo](doc:ootb-email-templates#replace-logo)
-- [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#call-to-actions-ctas)
-- [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-- [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-- [Update the Privacy Policy](doc:ootb-email-templates#update-privacy-policy)
-- [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+* [Replace the Logo](doc:ootb-email-templates#replace-logo)
+* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#call-to-actions-ctas)
+* [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+* [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+* [Update the Privacy Policy](doc:ootb-email-templates#update-privacy-policy)
+* [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
 
 ### Template Code
 
@@ -3428,48 +3397,31 @@ Sends a reset password link to users who have forgotten or initiated a reset req
 
 </details>
 
+
 ## Promotional Template
 
 A high-impact marketing email used to announce ongoing deals, highlight product collections, or showcase limited-time offers.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/cf5f3dfc5d62e483db6d62e5d16182bf985ecbd41f621c31293191484681cb3b-Promotional_Email_HTML.png",
-        "",
-        "Sample Promotioanal Email Template"
-      ],
-      "align": "center",
-      "sizing": "25% ",
-      "border": true,
-      "caption": "Sample Promotional Email Template"
-    }
-  ]
-}
-[/block]
-
-
+<Image alt="Sample Promotioanal Email Template" align="center" width="25%" border={true} src="https://files.readme.io/cf5f3dfc5d62e483db6d62e5d16182bf985ecbd41f621c31293191484681cb3b-Promotional_Email_HTML.png" /> Sample Promotional Email Template
 <details>
 
 <summary><b>Expand to know more about the template.</b></summary>
 
 ### Use Case Examples
 
-- Announce a limited-time festive discount.
-- Promote newly launched products or collections.
-- Re-engage users with a category-specific deal.
+* Announce a limited-time festive discount.
+* Promote newly launched products or collections.
+* Re-engage users with a category-specific deal.
 
 ### Template Customization Options
 
-- [Replace the Logo](doc:ootb-email-templates#replace-logo)
-- [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#call-to-actions-ctas)
-- [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-- [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-- [Update the Privacy Policy](doc:ootb-email-templates#update-privacy-policy)
-- [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+* [Replace the Logo](doc:ootb-email-templates#replace-logo)
+* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#call-to-actions-ctas)
+* [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+* [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+* [Update the Privacy Policy](doc:ootb-email-templates#update-privacy-policy)
+* [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
 
 ### Template Code
 
@@ -3891,29 +3843,12 @@ A high-impact marketing email used to announce ongoing deals, highlight product 
 
 </details>
 
+
 ## Referral Template
 
 This growth marketing template is crafted to boost customer acquisition through referral programs.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a1f9bf30cfa2d42ad1601583469806bddb6ec51fadb9ffa91819893d8ab3b13d-Referral_HTML.png",
-        "",
-        "Sample Referral Email Template"
-      ],
-      "align": "center",
-      "sizing": "25% ",
-      "border": true,
-      "caption": "Sample Referral Email Template"
-    }
-  ]
-}
-[/block]
-
-
+<Image alt="Sample Referral Email Template" align="center" width="25%" border={true} src="https://files.readme.io/a1f9bf30cfa2d42ad1601583469806bddb6ec51fadb9ffa91819893d8ab3b13d-Referral_HTML.png" /> Sample Referral Email Template
 <details>
 
 <summary><b>Expand to know more about the template.</b></summary>
@@ -3924,12 +3859,12 @@ This growth marketing template is crafted to boost customer acquisition through 
 
 ### Template Customization Options
 
-- [Replace the Logo](doc:ootb-email-templates#replace-logo)
-- [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images) 
-- [Update Call-To-Actions (CTAs)](ddoc:ootb-email-templates#call-to-actions-ctas)
-- [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-- [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-- [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+* [Replace the Logo](doc:ootb-email-templates#replace-logo)
+* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images) 
+* [Update Call-To-Actions (CTAs)](ddoc:ootb-email-templates#call-to-actions-ctas)
+* [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+* [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+* [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
 
 ### Template Code
 
@@ -4112,51 +4047,34 @@ This growth marketing template is crafted to boost customer acquisition through 
 
 </details>
 
+
 ## Show Recommendations Template
 
 This personalized content email template is designed to showcase relevant video and music or suggest content based on user engagement and interests. It is available in both dark and light modes for aesthetic preference.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c4ccd5b6848ece16bb2e2967d9c264b7bf9d3766c87a1b4925a2046882751449-Show_Recommendations_-_White__Black.png",
-        "",
-        "Sample Show Recommendations - Light & Dark Background Template"
-      ],
-      "align": "center",
-      "sizing": "65% ",
-      "border": true,
-      "caption": "Sample Show Recommendations - Light & Dark Background Template"
-    }
-  ]
-}
-[/block]
-
-
+<Image alt="Sample Show Recommendations - Light & Dark Background Template" align="center" width="65% " border={true} src="https://files.readme.io/c4ccd5b6848ece16bb2e2967d9c264b7bf9d3766c87a1b4925a2046882751449-Show_Recommendations_-_White__Black.png" /> Sample Show Recommendations - Light & Dark Background Template
 <details>
 
 <summary><b>Expand to know more about the template.</b></summary>
 
 ### Use Case Examples
 
-- Suggest items based on browsing, cart, or purchase history 
-- Recommend articles, videos, or learning modules based on prior engagement or interests.
-- Promote complementary or premium products to increase average order value 
-- Engage users post-transaction with related product or content recommendations.
-- Bring users back by showcasing trending or personalized items based on past behavior.
-- Tailor deals or discounts based on recommended categories or affinity tags.
-- Delivers curated video, show, or episode suggestions to users to enhance discovery, engagement, and viewership based on recent behavior.
+* Suggest items based on browsing, cart, or purchase history 
+* Recommend articles, videos, or learning modules based on prior engagement or interests.
+* Promote complementary or premium products to increase average order value 
+* Engage users post-transaction with related product or content recommendations.
+* Bring users back by showcasing trending or personalized items based on past behavior.
+* Tailor deals or discounts based on recommended categories or affinity tags.
+* Delivers curated video, show, or episode suggestions to users to enhance discovery, engagement, and viewership based on recent behavior.
 
 ### Template Customization Options
 
-- [Replace the Logo](doc:ootb-email-templates#replace-logo)
-- [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#call-to-actions-ctas)
-- [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-- [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-- [Update Social Media Links and Download Links](doc:ootb#update-social-media-links-and-download-links)
+* [Replace the Logo](doc:ootb-email-templates#replace-logo)
+* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#call-to-actions-ctas)
+* [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+* [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+* [Update Social Media Links and Download Links](doc:ootb#update-social-media-links-and-download-links)
 
 ### Template
 
@@ -4699,48 +4617,31 @@ This personalized content email template is designed to showcase relevant video 
 
 </details>
 
+
 ## Product Listing Template
 
 This product-focused promotional template showcases productsby category —men, Women, and Kids—in a visual grid layout with distinct CTAs.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1e411d87dc1b962b681cf3cbb075653004921dad4926f132717fd5bc482c97fc-Product_Listing_HTML.png",
-        "",
-        "Sample Product Lkisting Template"
-      ],
-      "align": "center",
-      "sizing": "25% ",
-      "border": true,
-      "caption": "Sample Product Listing Template"
-    }
-  ]
-}
-[/block]
-
-
+<Image alt="Sample Product Lkisting Template" align="center" width="25%" border={true} src="https://files.readme.io/1e411d87dc1b962b681cf3cbb075653004921dad4926f132717fd5bc482c97fc-Product_Listing_HTML.png" /> Sample Product Listing Template
 <details>
 
 <summary><b>Expand to know more about the template.</b></summary>
 
 ### Use Case Examples
 
-- Promote seasonal or new arrivals across different product categories.
-- Highlight interest-based collections (for example, Men, Women, Kids, Pets).
-- Encourage exploration through curated visual sections such as Trending Now, Recommended for You, or Back in Stock.
+* Promote seasonal or new arrivals across different product categories.
+* Highlight interest-based collections (for example, Men, Women, Kids, Pets).
+* Encourage exploration through curated visual sections such as Trending Now, Recommended for You, or Back in Stock.
 
 ### Template Customization Options
 
-- [Replace the Logo](doc:ootb-email-templates#replace-logo)
-- [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](doc:ootb#call-to-actions-ctas)
-- [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-- [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-- [Update the Privacy Policy](doc:ootb-email-templates#update-privacy-policy)
-- [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+* [Replace the Logo](doc:ootb-email-templates#replace-logo)
+* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](doc:ootb#call-to-actions-ctas)
+* [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+* [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+* [Update the Privacy Policy](doc:ootb-email-templates#update-privacy-policy)
+* [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
 
 ### Template Code
 
@@ -4959,29 +4860,12 @@ This product-focused promotional template showcases productsby category —men, 
 
 </details>
 
+
 ## Winback Email Template
 
 This re-engagement email template is tailored to bring back inactive users who have not interacted recently with your brand or app.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5cb660d31245cc7ff0a9c2c11186ddc7fe3f00a8793c7d0d4282a893a75edfea-Winback_HTML.png",
-        "",
-        "Sample Winback Email Template"
-      ],
-      "align": "center",
-      "sizing": "25% ",
-      "border": true,
-      "caption": "Sample Winback Email Template"
-    }
-  ]
-}
-[/block]
-
-
+<Image alt="Sample Winback Email Template" align="center" width="25% " border={true} src="https://files.readme.io/5cb660d31245cc7ff0a9c2c11186ddc7fe3f00a8793c7d0d4282a893a75edfea-Winback_HTML.png" />  Sample Winback Email Template
 <details>
 
 <summary><b>Expand to know more about the template.</b></summary>
@@ -4992,13 +4876,13 @@ Encourages churned or inactive users to return by offering a compelling incentiv
 
 ### Template Customization Options
 
-- [Replace the Logo](doc:ootb-email-templates#replace-logo)
-- [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#call-to-actions-ctas)
-- [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-- [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-- [Update the Privacy Policy](doc:ootb-email-templates#update-privacy-policy)
-- [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+* [Replace the Logo](doc:ootb-email-templates#replace-logo)
+* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#call-to-actions-ctas)
+* [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+* [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+* [Update the Privacy Policy](doc:ootb-email-templates#update-privacy-policy)
+* [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
 
 ### Template Code
 
@@ -5214,29 +5098,12 @@ Encourages churned or inactive users to return by offering a compelling incentiv
 
 </details>
 
+
 ## Subscription Renewal Reminder Template
 
 This confirmation or promotional email template is used to acknowledge new subscriptions or upsell subscription-based services.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/49d165aab9c413c00f0ce66cdb32f0db944fc50676c79d291f99187be4c1a8b1-Subscription_Renewal_Email_Template.png",
-        "",
-        "Sample Subscription FRenewal Reminder Template"
-      ],
-      "align": "center",
-      "sizing": "25% ",
-      "border": true,
-      "caption": "Sample Subscription Renewal Reminder Template"
-    }
-  ]
-}
-[/block]
-
-
+<Image alt="Sample Subscription FRenewal Reminder Template" align="center" width="25%" border={true} src="https://files.readme.io/49d165aab9c413c00f0ce66cdb32f0db944fc50676c79d291f99187be4c1a8b1-Subscription_Renewal_Email_Template.png" /> Sample Subscription Renewal Reminder Template
 <details>
 
 <summary><b>Expand to know more about the template.</b></summary>
@@ -5247,12 +5114,12 @@ Confirms a successful subscription or entices users to upgrade by highlighting p
 
 ### Template Customization Options
 
-- [Replace the Logo](doc:ootb-email-templates#replace-logo)
-- [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#call-to-actions-ctas)
-- [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-- [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-- [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+* [Replace the Logo](doc:ootb-email-templates#replace-logo)
+* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#call-to-actions-ctas)
+* [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+* [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+* [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
 
 ### Template Code
 
@@ -5428,48 +5295,31 @@ Confirms a successful subscription or entices users to upgrade by highlighting p
 
 </details>
 
+
 ## Scratch Card Template
 
 This is an interactive email template designed to gamify the user experience by letting them "scratch" to reveal a reward, such as a coupon, discount, or points.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/24e9bc9f41472d95c1db40a20c5b28651cfce5332851f800232fcea0b779782e-Scratch_Card_HTML.png",
-        "",
-        "Sample Scratch Card Template"
-      ],
-      "align": "center",
-      "sizing": "25% ",
-      "border": true,
-      "caption": "Sample Scratch Card Template"
-    }
-  ]
-}
-[/block]
-
-
+<Image alt="Sample Scratch Card Template" align="center" width="25%" border={true} src="https://files.readme.io/24e9bc9f41472d95c1db40a20c5b28651cfce5332851f800232fcea0b779782e-Scratch_Card_HTML.png" /> Sample Scratch Card Template
 <details>
 
 <summary><b>Expand to know more about the template.</b></summary>
 
 ### Use Case Examples
 
-- Engage users during festive or seasonal campaigns with surprise offers.
-- Reactivate dormant users by giving them a chance to win a reward.
-- Reward loyal customers with a fun, interactive coupon reveal.
-- Launch a limited-time “scratch-to-win” contest to drive urgency and clicks.
+* Engage users during festive or seasonal campaigns with surprise offers.
+* Reactivate dormant users by giving them a chance to win a reward.
+* Reward loyal customers with a fun, interactive coupon reveal.
+* Launch a limited-time “scratch-to-win” contest to drive urgency and clicks.
 
 ### Template Customization Options
 
-- [Replace the Logo](doc:ootb-email-templates#replace-logo)
-- [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#call-to-actions-ctas)
-- [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-- [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-- [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+* [Replace the Logo](doc:ootb-email-templates#replace-logo)
+* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#call-to-actions-ctas)
+* [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+* [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+* [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
 
 ### Template Code
 
@@ -5537,47 +5387,30 @@ This is an interactive email template designed to gamify the user experience by 
 
 </details>
 
+
 ## Welcome Mailer Template
 
 A warm onboarding email template greets new users, introduces your brand, and guides them towards their first action or purchase. These templates highlight core benefits and offer a smooth entry into your product or service experience.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2e474cae87b50fdc4ee57e01a596acebbc0617e48be7f189ebc6013d79575f20-Welcome_Email_1__2_HTML.png",
-        "",
-        "Sample Welcome Mailer Tempaltes"
-      ],
-      "align": "center",
-      "sizing": "65% ",
-      "border": true,
-      "caption": "Sample Welcome Mailer Templates"
-    }
-  ]
-}
-[/block]
-
-
+<Image alt="Sample Welcome Mailer Tempaltes" align="center" width="65%" border={true} src="https://files.readme.io/2e474cae87b50fdc4ee57e01a596acebbc0617e48be7f189ebc6013d79575f20-Welcome_Email_1__2_HTML.png" /> Sample Welcome Mailer Templates
 <details>
 
 <summary><b>Expand to know more about the template.</b></summary>
 
 ### Use Case Examples
 
-- Introduces new subscribers to the brand 
-- Highlights key benefits of your product and encourages first engagement or purchases.
+* Introduces new subscribers to the brand 
+* Highlights key benefits of your product and encourages first engagement or purchases.
 
 ### Template Customization Options
 
-- [Replace the Logo](doc:ootb-email-templates#replace-logo)
-- [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#call-to-actions-ctas)
-- [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-- [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-- [Update the Privacy Policy](doc:ootb-email-templates#update-privacy-policy) 
-- [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+* [Replace the Logo](doc:ootb-email-templates#replace-logo)
+* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#call-to-actions-ctas)
+* [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+* [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+* [Update the Privacy Policy](doc:ootb-email-templates#update-privacy-policy) 
+* [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
 
 ### Template Code
 
@@ -5926,51 +5759,34 @@ A warm onboarding email template greets new users, introduces your brand, and gu
 
 </details>
 
+
 # AMP Templates
 
 ## Product Listing Template
 
 This AMP template is designed to promote a curated selection of new arrivals, trending products, or personalized recommendations — all within an interactive AMP-powered layout. With in-mail CTAs, users can explore your latest offerings directly from their inbox, creating a seamless browsing experience.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3b422b68a566885f81d76d61157af681abbe2dad80105ae3e64ac39af27731cd-Product_Listing_AMP.png",
-        "",
-        "Sample Product Listing Template"
-      ],
-      "align": "center",
-      "sizing": "25% ",
-      "border": true,
-      "caption": "Sample Product Listing Template"
-    }
-  ]
-}
-[/block]
-
-
+<Image alt="Sample Product Listing Template" align="center" width="25%" border={true} src="https://files.readme.io/3b422b68a566885f81d76d61157af681abbe2dad80105ae3e64ac39af27731cd-Product_Listing_AMP.png" /> Sample Product Listing Template
 <details>
 
 <summary><b>Expand to know more about the template.</b></summary>
 
 ### Use Case Examples
 
-- Highlight newly launched or trending products from your catalog.
-- Personalize the product showcase based on the user’s recent activity or preferences.
-- Run weekly or monthly What’s New campaigns for returning users.
-- Drive conversions by enabling users to click through to product pages without friction.
+* Highlight newly launched or trending products from your catalog.
+* Personalize the product showcase based on the user’s recent activity or preferences.
+* Run weekly or monthly What’s New campaigns for returning users.
+* Drive conversions by enabling users to click through to product pages without friction.
 
 ### Template Customization Options
 
-- [Replace Logo](doc:ootb-email-templates#replace-logo)
-- [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
-- [Update Links in Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-- [Change Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-- [Update Privacy Policy](doc:ootb-email-templates#update-privacy-policy)
-- [Update Social Media and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+* [Replace Logo](doc:ootb-email-templates#replace-logo)
+* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
+* [Update Links in Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+* [Change Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+* [Update Privacy Policy](doc:ootb-email-templates#update-privacy-policy)
+* [Update Social Media and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
 
 ### Template Code
 
@@ -6632,47 +6448,30 @@ Shop now
 
 </details>
 
+
 ## Cart Abandonment Template
 
 This AMP email template is designed to help recover lost sales by reminding users about the products left in their shopping carts. With interactive AMP elements, users can view product details, scroll through images, and proceed to checkout, all within the email.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/95c18a7f9796b0566237c22f74af769ad410f5296f3b67f7d67b720b672e82c3-Cart_Anandonment_AMP.png",
-        null,
-        "Sample Cart Abandonment Template"
-      ],
-      "align": "center",
-      "sizing": "25% ",
-      "border": true,
-      "caption": "Sample Cart Abandonment Template"
-    }
-  ]
-}
-[/block]
-
-
+<Image alt="Sample Cart Abandonment Template" align="center" width="25%" border={true} src="https://files.readme.io/95c18a7f9796b0566237c22f74af769ad410f5296f3b67f7d67b720b672e82c3-Cart_Anandonment_AMP.png" /> Sample Cart Abandonment Template
 <details>
 
 <summary><b>Expand to know more about the template.</b></summary>
 
 ### Use Case Examples
 
-- Recover lost revenue by reminding users about items left in their shopping cart.
-- Re-engage users with personalized product suggestions based on past purchases or browsing behavior.
-- Promote urgency with limited-time offers or low stock alerts tied to abandoned items.
-- Enhance the shopping experience by allowing users to interact with product carousels or resume checkout directly within the email
+* Recover lost revenue by reminding users about items left in their shopping cart.
+* Re-engage users with personalized product suggestions based on past purchases or browsing behavior.
+* Promote urgency with limited-time offers or low stock alerts tied to abandoned items.
+* Enhance the shopping experience by allowing users to interact with product carousels or resume checkout directly within the email
 
 ### Template Customization Options
 
-- [Replace Logo](doc:ootb-email-templates#replace-logo)
-- [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
-- [Update Links in Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-- [Change Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+* [Replace Logo](doc:ootb-email-templates#replace-logo)
+* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
+* [Update Links in Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+* [Change Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
 
 ### Template Code
 
@@ -8683,46 +8482,29 @@ html · 77 KB
 
 </details>
 
+
 ## Scratch Card for Discount Template
 
 This AMP template delivers a gamified experience within the email itself. It allows users to interact with a digital scratch card to reveal a hidden offer, discount, or reward, creating a sense of anticipation and delight. This interactive approach helps increase user engagement, click-through rates, and overall campaign excitement.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6c1580151c3f71e5c0e240e27b725ed9654d7fd990fbecae359e9c3217b6a57a-Scratch_Card_for_Discount_AMP.png",
-        "",
-        "Sample Scratch Card for Disvount Template"
-      ],
-      "align": "center",
-      "sizing": "35% ",
-      "border": true,
-      "caption": "Sample Scratch Card for Discount Template"
-    }
-  ]
-}
-[/block]
-
-
+<Image alt="Sample Scratch Card for Disvount Template" align="center" width="35%" border={true} src="https://files.readme.io/6c1580151c3f71e5c0e240e27b725ed9654d7fd990fbecae359e9c3217b6a57a-Scratch_Card_for_Discount_AMP.png" /> Sample Scratch Card for Discount Template
 <details>
 
 <summary><b>Expand to know more about the template.</b></summary>
 
 ### Use Case Examples
 
-- Launch surprise reward campaigns to boost conversions.
-- Drive festive or seasonal promotions with a gamified touch.
-- Encourage user engagement with loyalty program perks.
-- Re-engage inactive users with a “Scratch To Unlock” coupon or deal.
+* Launch surprise reward campaigns to boost conversions.
+* Drive festive or seasonal promotions with a gamified touch.
+* Encourage user engagement with loyalty program perks.
+* Re-engage inactive users with a “Scratch To Unlock” coupon or deal.
 
 ### Template Customization Options
 
-- [Replace Logo](doc:ootb-email-templates#replace-logo)
-- [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
-- [Update Links in Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+* [Replace Logo](doc:ootb-email-templates#replace-logo)
+* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
+* [Update Links in Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
 
 ### Template Code
 
@@ -8835,48 +8617,31 @@ You Won! 🎉
 
 </details>
 
+
 ## Spin and Win Template
 
 This AMP template adds a fun, gamified interaction to your email by letting users spin a virtual wheel to unlock a discount, reward, or surprise offer, directly within the email. This interactive format helps boost engagement and click-through rates while creating a sense of excitement and urgency.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/594d05fecaa9eed2dbcebb6afc6d2a4ccf4afc92200373f4a5f94e9c72c40e42-Spin_and_Win_AMP.png",
-        "",
-        "Sample Spin and Win Template"
-      ],
-      "align": "center",
-      "sizing": "35% ",
-      "border": true,
-      "caption": "Sample Spin and Win Template"
-    }
-  ]
-}
-[/block]
-
-
+<Image alt="Sample Spin and Win Template" align="center" width="35%" border={true} src="https://files.readme.io/594d05fecaa9eed2dbcebb6afc6d2a4ccf4afc92200373f4a5f94e9c72c40e42-Spin_and_Win_AMP.png" /> Sample Spin and Win Template
 <details>
 
 <summary><b>Expand to know more about the template.</b></summary>
 
 ### Use Case Examples
 
-- Drive conversions during sales events or festivals with spin-to-win deals.
-- Run promotional campaigns that reward users with random offers.
-- Re-engage dormant users with a playful incentive.
-- Launch loyalty or referral-based programs with interactive rewards.
+* Drive conversions during sales events or festivals with spin-to-win deals.
+* Run promotional campaigns that reward users with random offers.
+* Re-engage dormant users with a playful incentive.
+* Launch loyalty or referral-based programs with interactive rewards.
 
 ### Template Customization Options
 
-- [Replace Logo](doc:ootb-email-templates#replace-logo)
-- [Replace Background](doc:ootb-email-templates#replace-background) 
-- [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
-- [Update Links in Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-- [Update Social Media and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+* [Replace Logo](doc:ootb-email-templates#replace-logo)
+* [Replace Background](doc:ootb-email-templates#replace-background) 
+* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
+* [Update Links in Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+* [Update Social Media and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
 
 ### Template Code
 
@@ -9366,46 +9131,29 @@ style="color:#fe592c;font-weight:bold;text-decoration:none;">unsubscribe here</a
 
 </details>
 
+
 ## Quick Survey Form Template
 
 This AMP template collects valuable user information and preferences for a more personalized shopping experience. This template helps brands understand their audience better.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/73047359b602a87553b6b35c1c1a3431b7c98adfdd1a49a304c04ae15ec570d8-Customer_Survey_-1_AMP.png",
-        "",
-        "Sample Customer Survey Form Template"
-      ],
-      "align": "center",
-      "sizing": "25% ",
-      "border": true,
-      "caption": "Sample Customer Survey Form Template"
-    }
-  ]
-}
-[/block]
-
-
+<Image alt="Sample Customer Survey Form Template" align="center" width="25%" border={true} src="https://files.readme.io/73047359b602a87553b6b35c1c1a3431b7c98adfdd1a49a304c04ae15ec570d8-Customer_Survey_-1_AMP.png" /> Sample Customer Survey Form Template
 <details>
 
 <summary><b>Expand to know more about the template.</b></summary>
 
 ### Use Case Examples
 
-- Gather customer preferences (for example, gender, favorite clothing items) to drive personalized product recommendations.
-- Use this form post-sale or post-subscription to understand satisfaction and expectations.
+* Gather customer preferences (for example, gender, favorite clothing items) to drive personalized product recommendations.
+* Use this form post-sale or post-subscription to understand satisfaction and expectations.
 
 ### Template Customization Options
 
-- [Replace Logo](doc:ootb-email-templates#replace-logo)
-- [Replace Background](doc:ootb-email-templates#replace-background) 
-- [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
-- [Update Links in Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-- [Update Social Media and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+* [Replace Logo](doc:ootb-email-templates#replace-logo)
+* [Replace Background](doc:ootb-email-templates#replace-background) 
+* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
+* [Update Links in Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+* [Update Social Media and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
 
 ### Template Code
 
@@ -10733,48 +10481,31 @@ To opt out of promotional emails like this, <a href="https://google.com" style="
 
 </details>
 
+
 ## Feedback Form Template
 
 This AMP template enables you to collect user input directly within the email, allowing for quick interactions such as survey responses, feedback, or sign-ups. With AMP’s real-time interactivity, the form can be submitted without users needing to open a separate browser window, making the experience fast, seamless, and conversion-friendly.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6e23a38d585989d9dc98e056b2f634c33c347857892ef9e1ea7b3f35f934308e-Feedback_Form_AMP.png",
-        "",
-        "Sample Feedback Form Template"
-      ],
-      "align": "center",
-      "sizing": "25% ",
-      "border": true,
-      "caption": "Sample Feedback Form Template"
-    }
-  ]
-}
-[/block]
-
-
+<Image alt="Sample Feedback Form Template" align="center" width="25%" border={true} src="https://files.readme.io/6e23a38d585989d9dc98e056b2f634c33c347857892ef9e1ea7b3f35f934308e-Feedback_Form_AMP.png" /> Sample Feedback Form Template
 <details>
 
 <summary><b>Expand to know more about the template.</b></summary>
 
 ### Use Case Examples
 
-- Gather user feedback post-purchase or post-interaction.
-- Collect survey responses (for example, NPS survey, product ratings, and so on).
-- Enable newsletter or webinar sign-ups within the email.
-- Registration for events, contests, or loyalty programs.
+* Gather user feedback post-purchase or post-interaction.
+* Collect survey responses (for example, NPS survey, product ratings, and so on).
+* Enable newsletter or webinar sign-ups within the email.
+* Registration for events, contests, or loyalty programs.
 
 ### Template Customization Options
 
-- [Replace Logo](doc:ootb-email-templates#replace-logo)
-- [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
-- [Update Links in Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-- [Change Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-- [Update Social Media and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+* [Replace Logo](doc:ootb-email-templates#replace-logo)
+* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
+* [Update Links in Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+* [Change Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+* [Update Social Media and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
 
 ### Template Code
 
@@ -11266,48 +10997,31 @@ For assistance, connect with us on social media or reach out to our support team
 
 </details>
 
+
 ## EMI Calculator Template
 
 This AMP template offers users an embedded calculator directly within the email, allowing them to input loan details and instantly view their EMI (Equated Monthly Installment) amount, without needing to leave the inbox. This interactive feature enhances the user journey by making decision-making quicker, simpler, and more engaging.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/cdd5657aa21e673ad2539a78a33f8ee5641de418777efcfd80323826bbeab7e8-EMI_Calculator_AMP.png",
-        "",
-        "Sample EMI Calculator Template"
-      ],
-      "align": "center",
-      "sizing": "35% ",
-      "border": true,
-      "caption": "Sample EMI Calculator Template"
-    }
-  ]
-}
-[/block]
-
-
+<Image alt="Sample EMI Calculator Template" align="center" width="35%" border={true} src="https://files.readme.io/cdd5657aa21e673ad2539a78a33f8ee5641de418777efcfd80323826bbeab7e8-EMI_Calculator_AMP.png" /> Sample EMI Calculator Template
 <details>
 
 <summary><b>Expand to know more about the template.</b></summary>
 
 ### Use Case Examples
 
-- Promote new loan or credit products with an embedded EMI estimator.
-- Assist users in planning repayments based on tenure and interest rate.
-- Offer personalized finance tools in engagement campaigns.
-- Support comparison scenarios between multiple loan products.
+* Promote new loan or credit products with an embedded EMI estimator.
+* Assist users in planning repayments based on tenure and interest rate.
+* Offer personalized finance tools in engagement campaigns.
+* Support comparison scenarios between multiple loan products.
 
 ### Template Customization Options
 
-- [Replace Logo](doc:ootb-email-templates#replace-logo)
-- [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
-- [Update Links in Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-- [Change Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-- [Update Social Media and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+* [Replace Logo](doc:ootb-email-templates#replace-logo)
+* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
+* [Update Links in Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+* [Change Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+* [Update Social Media and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
 
 ### Template Code
 
@@ -11839,48 +11553,31 @@ style="color:#1E1E1E;font-weight:bold;text-decoration:none;">unsubscribe here</a
 
 </details>
 
+
 ## SIP Calculator Template
 
 This AMP template allows users to calculate the potential returns of their Systematic Investment Plan (SIP) right within the email. By entering basic investment details such as monthly contribution, duration, and expected return rate, users get instant projections, creating a smooth, informative experience that supports smarter financial decisions.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0bfead2af5fe6db82b947443e276b647d357044f2beda009bb8660e29536044c-SIP_Calculator_AMP.png",
-        "",
-        "Sample SIP Calculator Template"
-      ],
-      "align": "center",
-      "sizing": "35% ",
-      "border": true,
-      "caption": "Sample SIP Calculator Template"
-    }
-  ]
-}
-[/block]
-
-
+<Image alt="Sample SIP Calculator Template" align="center" width="35%" border={true} src="https://files.readme.io/0bfead2af5fe6db82b947443e276b647d357044f2beda009bb8660e29536044c-SIP_Calculator_AMP.png" /> Sample SIP Calculator Template
 <details>
 
 <summary><b>Expand to know more about the template.</b></summary>
 
 ### Use Case Examples
 
-- Educate users about SIP benefits while promoting mutual fund products.
-- Encourage investment planning by allowing quick in-email projections.
-- Enable financial goal-based marketing through interactive calculators.
-- Re-engage users by helping them visualize long-term returns.
+* Educate users about SIP benefits while promoting mutual fund products.
+* Encourage investment planning by allowing quick in-email projections.
+* Enable financial goal-based marketing through interactive calculators.
+* Re-engage users by helping them visualize long-term returns.
 
 ### Template Customization Options
 
-- [Replace Logo](doc:ootb-email-templates#replace-logo)
-- [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
-- [Update Links in Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-- [Change Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-- [Update Social Media and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+* [Replace Logo](doc:ootb-email-templates#replace-logo)
+* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
+* [Update Links in Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+* [Change Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+* [Update Social Media and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
 
 ### Template Code
 
@@ -12422,47 +12119,30 @@ style="color:#1E1E1E;font-weight:bold;text-decoration:none;">unsubscribe here</a
 
 </details>
 
+
 ## Insurance Premium Calculator Template
 
 This AMP template empowers users to estimate insurance premiums based on parameters such as coverage amount, age, and policy term right within their inbox. It also enables users to explore coverage options and assess affordability instantly, making the research and decision-making process much more convenient and personalized.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f95f0f21079c99d5fcff4395c0b5322e87a7bef9e74c8c4c6e0f127cc0381fe8-Insurance_Premium_Calculator.png",
-        "",
-        "Sample Premium Calculator Template"
-      ],
-      "align": "center",
-      "sizing": "35% ",
-      "border": true,
-      "caption": "Sample Premium Calculator Template"
-    }
-  ]
-}
-[/block]
-
-
+<Image alt="Sample Premium Calculator Template" align="center" width="35% " border={true} src="https://files.readme.io/f95f0f21079c99d5fcff4395c0b5322e87a7bef9e74c8c4c6e0f127cc0381fe8-Insurance_Premium_Calculator.png" />  Sample Premium Calculator Template
 <details>
 
 <summary>Expand to know more about the template.</summary>
 
 ### Use Case Examples
 
-- Promote insurance plans with embedded quote estimators.
-- Help users calculate premiums before applying for a policy.
-- Improve lead conversion by reducing drop-offs during research.
+* Promote insurance plans with embedded quote estimators.
+* Help users calculate premiums before applying for a policy.
+* Improve lead conversion by reducing drop-offs during research.
 
 ### Template Customization Options
 
-- [Replace Logo](doc:ootb-email-templates#replace-logo)
-- [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
-- [Update Links in Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-- [Change Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-- [Update Social Media and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+* [Replace Logo](doc:ootb-email-templates#replace-logo)
+* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
+* [Update Links in Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+* [Change Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+* [Update Social Media and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
 
 ### Template Code
 
@@ -12946,49 +12626,32 @@ style="color:#1E1E1E;font-weight:bold;text-decoration:none;">unsubscribe here</a
 
 </details>
 
+
 ## Product Recommendations Template
 
 This AMP template dynamically showcases relevant products based on a user’s past browsing or purchase behavior. It displays collections or personalized categories and allows users to apply filters and explore product grids without leaving the email. With built-in interactivity and clear CTAs such as Shop Now and See More, this template is designed to drive high engagement and product discovery.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/40e6d2bbef79979989ac846fb018ed1588439e65f7071c1781fc61d7001ebdb1-Product_Recommendations_AMP.png",
-        "",
-        "Sample Product Recommendations Template"
-      ],
-      "align": "center",
-      "sizing": "25% ",
-      "border": true,
-      "caption": "Sample Product Recommendations Template"
-    }
-  ]
-}
-[/block]
-
-
+<Image alt="Sample Product Recommendations Template" align="center" width="25%" border={true} src="https://files.readme.io/40e6d2bbef79979989ac846fb018ed1588439e65f7071c1781fc61d7001ebdb1-Product_Recommendations_AMP.png" /> Sample Product Recommendations Template
 <details>
 
 <summary>Expand to know more about the template.</summary>
 
 ### Use Case Examples
 
-- Recommend products personalized to users’ past interactions or preferences.
-- Launch seasonal or trending collections in an interactive format.
-- Encourage repeat purchases with dynamic product carousels and filters.
-- Promote gender- or category-specific catalogs (for example, Men/Women collections).
+* Recommend products personalized to users’ past interactions or preferences.
+* Launch seasonal or trending collections in an interactive format.
+* Encourage repeat purchases with dynamic product carousels and filters.
+* Promote gender- or category-specific catalogs (for example, Men/Women collections).
 
 ### Template Customization Options
 
-- [Replace Logo](doc:ootb-email-templates#replace-logo)
-- [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
-- [Update Links in Header/Footer](<>)
-- [Change Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-- [Update Social Media and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
-- [Add or Modify Filters](doc:ootb-email-templates#add-or-modify-filters) 
+* [Replace Logo](doc:ootb-email-templates#replace-logo)
+* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
+* [Update Links in Header/Footer]()
+* [Change Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+* [Update Social Media and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+* [Add or Modify Filters](doc:ootb-email-templates#add-or-modify-filters) 
 
 ### Template Code
 
@@ -13804,49 +13467,32 @@ here</a>
 
 </details>
 
+
 ## Show Recommendations
 
 This AMP template introduces users to personalized product suggestions using interactive email content. It can be used for onboarding new subscribers or re-engaging recent visitors by showcasing curated products tailored to their interests. This template typically includes featured products, category filters, and direct Shop Now CTAs, all rendered dynamically within the inbox.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a301d644acdc9ddb7700612e3a2276f9401438bec493ecc47c758a47889d5c4a-Show_Recommendations_1__2_AMP.png",
-        "",
-        "Sample Show Recommendations With and Without Notify Me CTA Templates"
-      ],
-      "align": "center",
-      "sizing": "65% ",
-      "border": true,
-      "caption": "Sample Show Recommendations With and Without Notify Me CTA Templates"
-    }
-  ]
-}
-[/block]
-
-
+<Image alt="Sample Show Recommendations With and Without Notify Me CTA Templates" align="center" width="65%" border={true} src="https://files.readme.io/a301d644acdc9ddb7700612e3a2276f9401438bec493ecc47c758a47889d5c4a-Show_Recommendations_1__2_AMP.png" />  Sample Show Recommendations With and Without Notify Me CTA Templates
 <details>
 
 <summary><b>Expand to know more about the template.</b></summary>
 
 ### Use Case Examples
 
-- Introduce new users to relevant collections based on browsing behavior.
-- Highlight bestsellers or staff picks to increase discovery.
-- Re-engage dormant users with personalized product nudges.
-- Encourage first purchases through category filters and CTAs.
+* Introduce new users to relevant collections based on browsing behavior.
+* Highlight bestsellers or staff picks to increase discovery.
+* Re-engage dormant users with personalized product nudges.
+* Encourage first purchases through category filters and CTAs.
 
 ### Template Customization Options
 
-- [Replace Logo](doc:ootb-email-templates#replace-logo)
-- [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
-- [Update Links in Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-- [Change Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-- [Update Social Media and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
-- [Add or Modify Filters](doc:ootb-email-templates#add-or-modify-filters)
+* [Replace Logo](doc:ootb-email-templates#replace-logo)
+* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
+* [Update Links in Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+* [Change Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+* [Update Social Media and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+* [Add or Modify Filters](doc:ootb-email-templates#add-or-modify-filters)
 
 ### Template Code
 
@@ -15050,49 +14696,32 @@ View All
 
 </details>
 
+
 ## Deals by Category Template
 
 This AMP template features a clickable tile-based layout where each tile reveals a contextual popup within the email. Originally themed around zodiac signs, this template is fully customizable — tiles can represent categories like product types, service plans, travel destinations, or user personas.
 
 When clicked, each tile displays an offer, message, or interactive form, enabling brands to deliver multiple personalized micro-experiences inside a single email.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c6b2e49e246d6a8d2fe8da10efbc2ee08a6b4f82823f4c561ab6c5aab588959c-Deals_by_Category_AMP.png",
-        "",
-        "Sample Deals by Category Template"
-      ],
-      "align": "center",
-      "sizing": "30% ",
-      "border": true,
-      "caption": "Sample Deals by Category Template"
-    }
-  ]
-}
-[/block]
-
-
+<Image alt="Sample Deals by Category Template" align="center" width="30%" border={true} src="https://files.readme.io/c6b2e49e246d6a8d2fe8da10efbc2ee08a6b4f82823f4c561ab6c5aab588959c-Deals_by_Category_AMP.png" /> Sample Deals by Category Template
 <details>
 
 <summary><b>Expand to know more about the template.</b></summary>
 
 ### Use Case Examples
 
-- Zodiac-based Offer Engagement: Display tailored offers by the user’s zodiac sign.
-- Product Category Showcases: Let users explore offers based on product types (for example, electronics, apparel, beauty).
-- Festival/Seasonal Gifting: Show different recommendations for occasions (for example, Diwali gifts, Summer picks).
-- User Personas or Interests: Target users with content that aligns with their interests (for example, Fitness, Fashion, Tech).
+* Zodiac-based Offer Engagement: Display tailored offers by the user’s zodiac sign.
+* Product Category Showcases: Let users explore offers based on product types (for example, electronics, apparel, beauty).
+* Festival/Seasonal Gifting: Show different recommendations for occasions (for example, Diwali gifts, Summer picks).
+* User Personas or Interests: Target users with content that aligns with their interests (for example, Fitness, Fashion, Tech).
 
 ### Template Customization Options
 
-- [Replace Logo](doc:ootb-email-templates#replace-logo)
-- [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
-- [Change Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-- [Update Social Media and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+* [Replace Logo](doc:ootb-email-templates#replace-logo)
+* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
+* [Change Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+* [Update Social Media and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
 
 ### Template Code
 
@@ -15619,47 +15248,30 @@ When clicked, each tile displays an offer, message, or interactive form, enablin
 
 </details>
 
+
 ## Click To Reveal
 
 This AMP template allows users to engage with an email by clicking on an image to reveal a surprise offer or discount. This interactive format helps create a fun, suspense-driven experience that encourages action and drives higher conversion rates.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/cb7e08c2ae7ea1224cf0ace234ed910ccaf65c29f80b935d20690747480e28d6-Click_to_Reveal_AMP.png",
-        "",
-        "Sample Click to Reveal Template"
-      ],
-      "align": "center",
-      "sizing": "35% ",
-      "border": true,
-      "caption": "Sample Click to Reveal Template"
-    }
-  ]
-}
-[/block]
-
-
+<Image alt="Sample Click to Reveal Template" align="center" width="35%" border={true} src="https://files.readme.io/cb7e08c2ae7ea1224cf0ace234ed910ccaf65c29f80b935d20690747480e28d6-Click_to_Reveal_AMP.png" /> Sample Click to Reveal Template
 <details>
 
 <summary><b>Expand to know more about the template.</b></summary>
 
 ### Use Case Examples
 
-- Unlock hidden discounts in flash sales or festival campaigns.
-- Gamify email experiences with “scratch-to-reveal” like formats.
-- Increase engagement during limited-time promotions.
-- Run surprise loyalty rewards or exclusive unlockable content.
+* Unlock hidden discounts in flash sales or festival campaigns.
+* Gamify email experiences with “scratch-to-reveal” like formats.
+* Increase engagement during limited-time promotions.
+* Run surprise loyalty rewards or exclusive unlockable content.
 
 ### Template Customization Options
 
-- [Replace Logo](doc:ootb-email-templates#replace-logo)
-- [Replace Background](doc:ootb-email-templates#replace-background)
-- [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
-- [Update Links in Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+* [Replace Logo](doc:ootb-email-templates#replace-logo)
+* [Replace Background](doc:ootb-email-templates#replace-background)
+* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
+* [Update Links in Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
 
 ### Template Code
 
@@ -15986,20 +15598,21 @@ Shop now
 
 </details>
 
+
 # Key Template Customization Options
 
 While the entire template is customizable, CleverTap highlights a set of key components you can easily tailor to match your brand and campaign needs. These include logos, banners, CTAs, and theme colors. This section outlines how to modify these core elements, along with reusable code snippets and step-by-step guidance to ensure consistency and ease across your email campaigns. The following are the ey key customization options:
 
-- [Replace Logo](doc:ootb-email-templates#replace-logo)
-- [Replace Background](doc:ootb-email-templates#replace-background)
-- [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
-- [Update Links in Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-- [Change Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-- [Update Privacy Policy](doc:ootb-email-templates#update-privacy-policy)
-- [Update Social Media and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
-- [Countdown Timer (Flash Sale Only)](doc:ootb-email-templates#countdown-timer-flash-sale-only)
-- [Add or Modify Filters](doc:ootb-email-templates#add-or-modify-filters)
+* [Replace Logo](doc:ootb-email-templates#replace-logo)
+* [Replace Background](doc:ootb-email-templates#replace-background)
+* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
+* [Update Links in Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+* [Change Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+* [Update Privacy Policy](doc:ootb-email-templates#update-privacy-policy)
+* [Update Social Media and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+* [Countdown Timer (Flash Sale Only)](doc:ootb-email-templates#countdown-timer-flash-sale-only)
+* [Add or Modify Filters](doc:ootb-email-templates#add-or-modify-filters)
 
 ## Replace Logo
 
@@ -16024,21 +15637,24 @@ Displays the brand logo at the top of the email, ensuring immediate brand recogn
    ```
 
 3. Optionally customize:
-   - `alt`: Add accessible text such as `"Your Brand Logo"`
-   - `width` and `height`: Adjust only if required (default is typically `127px × 58px`)
+   * `alt`: Add accessible text such as `"Your Brand Logo"`
+   * `width` and `height`: Adjust only if required (default is typically `127px × 58px`)
 
 ### Option 2: Using Visual Mode
 
-1. Select the required template in the CleverTap **Email Editor** (for example, under _Create Email > Single Message_).
+
+1. Select the required template in the CleverTap **Email Editor** (for example, under *Create Email > Single Message*).
 
 2. Locate and click the existing logo image in the top section of the email.
 
 3. Choose one of the following image replacement methods:
 
-   - **Upload** a new image file (recommended: PNG or SVG).
-   - **Paste the URL where image is hosted** in the **Image URL** field (if available).
+   * **Upload** a new image file (recommended: PNG or SVG).
+   * **Paste the URL where image is hosted** in the **Image URL** field (if available).
 
-   [block:image]{"images":[{"image":["https://files.readme.io/ee0f3f1e5b1c453e7e6c07b3a33d9a07aa9bb10d757c40d4ffca334a0ee12c86-Replace_Logo.png","","Replace Logo"],"align":"center","sizing":"75% ","border":true,"caption":"Replace Logo"}]}[/block]
+   <Image alt="Replace Logo" align="center" width="75% " border={true} src="https://files.readme.io/ee0f3f1e5b1c453e7e6c07b3a33d9a07aa9bb10d757c40d4ffca334a0ee12c86-Replace_Logo.png">
+     Replace Logo
+   </Image>
 
 4. Click Insert to add the image.
 
@@ -16047,7 +15663,7 @@ Displays the brand logo at the top of the email, ensuring immediate brand recogn
 6. Click **Add**  and click **Done** in the top-right corner of the editor and preview the email to ensure proper rendering.
 
 > 📘 Note
-> 
+>
 > Ensure to verify logo alignment, spacing, and sizing on both mobile and desktop previews after replacement.
 
 ## Replace Background
@@ -16074,6 +15690,7 @@ Visually highlights products, offers, or campaigns at the top of the email using
 
 ### Option 1: Using Source Mode
 
+
 1. Locate the banner `<img>` tag in your HTML template. For example:
    ```html
    <tr>
@@ -16090,10 +15707,10 @@ Visually highlights products, offers, or campaigns at the top of the email using
 3. Update the `alt` attribute to provide descriptive alternative text for accessibility and fallback scenarios.
 
 4. Ensure the image meets the following specifications:
-   - **Recommended size**: 600px (width) × 400px (height)
-   - **Aspect ratio**: 3:2
-   - **File formats**: `.jpg`, `.png`, `.gif`
-   - **Maximum file size**: Under 1MB
+   * **Recommended size**: 600px (width) × 400px (height)
+   * **Aspect ratio**: 3:2
+   * **File formats**: `.jpg`, `.png`, `.gif`
+   * **Maximum file size**: Under 1MB
 
 ### Option 2: Using Visual Mode
 
@@ -16101,27 +15718,30 @@ Visually highlights products, offers, or campaigns at the top of the email using
 2. Click on the existing banner image.
 3. Choose one of the following image replacement methods:
 
-   - **Upload** a new image file (recommended: PNG or SVG).
-   - **Paste the URL where image is hosted** in the **Image URL** field (if available).
+   * **Upload** a new image file (recommended: PNG or SVG).
+   * **Paste the URL where image is hosted** in the **Image URL** field (if available).
 
-   [block:image]{"images":[{"image":["https://files.readme.io/caddfba6fc321ec0d81c6b9028c1c9ad40c7b24616e8409ac25f18b079f6c024-Update_BannerProduct_Images.png","","Update Banner/Product Images.png"],"align":"center","sizing":"75% ","border":true,"caption":"Update Banner/Product Images.png"}]}[/block]
+   <Image alt="Update Banner/Product Images.png" align="center" width="75% " border={true} src="https://files.readme.io/caddfba6fc321ec0d81c6b9028c1c9ad40c7b24616e8409ac25f18b079f6c024-Update_BannerProduct_Images.png">
+     Update Banner/Product Images.png
+   </Image>
 4. Click Insert to add the image.
 5. Adjust the image size and alignment using the **styling and formatting options**—such as margins, width, and spacing.
 6. Click **Add**  and click **Done** in the top-right corner of the editor and preview the email to ensure proper rendering.
 
 > 📘 Note
-> 
+>
 > For templates using grid-based layouts or product tiles, ensure to match the original image dimensions and maintain consistent spacing to ensure the layout remains visually balanced and responsive.
 
 ## Update Call-To-Actions (CTAs)
 
 Guides the user to take specific actions within the email, such as clicking a button to redirect the user to a web page, completing a purchase, or viewing more details. You can customize the following elements:
 
-- **Text**: Modify the text within the anchor tag (e.g., "Discover More" → "Shop Now").
-- **URL**: Update the `href` attribute with the desired link (e.g., `href="https://your-domain.com"`)
-- **Styling**: Adjust the CSS properties to fit your design specifications (for example, background color, padding, text size).
+* **Text**: Modify the text within the anchor tag (e.g., "Discover More" → "Shop Now").
+* **URL**: Update the `href` attribute with the desired link (e.g., `href="https://your-domain.com"`)
+* **Styling**: Adjust the CSS properties to fit your design specifications (for example, background color, padding, text size).
 
 ### Option 1: Using Source Mode
+
 
 1. Locate the CTA section in your HTML template as shown below:
    ```html
@@ -16151,15 +15771,17 @@ Guides the user to take specific actions within the email, such as clicking a bu
 
 1. Open the template in the CleverTap **Email Editor**.
 2. Click on the existing CTA button in the email layout.
-3. Update the **Display Text** to match your new call to action (for example, _Learn More_, _Shop Now_, and so on).
+3. Update the **Display Text** to match your new call to action (for example, *Learn More*, *Shop Now*, and so on).
 
-   [block:image]{"images":[{"image":["https://files.readme.io/6f302e2b6f77f9058405ce8b2b1d8a08ab13bbffed52b3ce250ca2a919d9c9a9-Update_Call-to-Action.png","","Update CTAs"],"align":"center","sizing":"85% ","border":true,"caption":"Update CTAs"}]}[/block]
+   <Image alt="Update CTAs" align="center" width="85% " border={true} src="https://files.readme.io/6f302e2b6f77f9058405ce8b2b1d8a08ab13bbffed52b3ce250ca2a919d9c9a9-Update_Call-to-Action.png">
+     Update CTAs
+   </Image>
 4. Enter or update the **Link URL** to point to your desired destination.
 5. Click **Add**, then click **Done** in the top-right corner.
 6. Preview the email to confirm that the CTA appears and functions correctly across devices.
 
 > 📘 Best Practices
-> 
+>
 > Always make sure the CTAs are clear and actionable, and consider using verbs such as "Buy," "Get Started," "Learn More," or "Shop Now."
 
 ## Update Links in Header/Footer
@@ -16167,6 +15789,7 @@ Guides the user to take specific actions within the email, such as clicking a bu
 Updates the links in the header or footer sections of the email, such as Privacy Policy, Terms of Service, or any social media or download links, to ensure they direct to the correct URLs.
 
 ### Option 1: Using Source Mode
+
 
 1. **Locate the Header/Footer Section**: Search for the relevant section in your HTML code. The following is a sample code:
    ```html
@@ -16196,16 +15819,19 @@ Updates the links in the header or footer sections of the email, such as Privacy
 3. Update the **Display Text** to reflect your desired action or label.
 4. Enter or update the **Link URL** to point to the correct destination.
 
-   [block:image]{"images":[{"image":["https://files.readme.io/61f5096178dc9c464e937ded9a7a1b9ca0f2f71a7fa2435ae263bf1510b0505b-Update_Links_in_HeaderFooter.png","","Update Links in Header/Footer"],"align":"center","sizing":"75% ","border":true,"caption":"Update Links in Header/Footer"}]}[/block]
+   <Image alt="Update Links in Header/Footer" align="center" width="75% " border={true} src="https://files.readme.io/61f5096178dc9c464e937ded9a7a1b9ca0f2f71a7fa2435ae263bf1510b0505b-Update_Links_in_HeaderFooter.png">
+     Update Links in Header/Footer
+   </Image>
 5. Click **Apply**, then click **Done** in the top-right corner.
 6. Preview the email to confirm that the link appears and functions correctly across devices.
 
+
 > 📘 Header/Footer Links
-> 
-> - **Unsubscribe Link**: For compliance with regulations such as GDPR and CAN-SPAM, all templates that include an **Unsubscribe** link in the footer must ensure it directs to the correct unsubscribe mechanism.
-> - **Social Media Links**: Ensure all social media links, like those for Facebook, Instagram, etc., are up-to-date and lead to your current active profiles.
-> - **Dynamic Links**: Some templates, like **Referral** or **Cart Abandonment**, require dynamic links that change based on user activity. Make sure these URLs are generated dynamically by your platform or manually updated.
-> - **Call-to-Actions (CTAs)**: Some templates, especially those with **sales**, **product promotions**, or **loyalty rewards**, might have CTAs that need to be consistently checked and updated based on current offers or time-sensitive promotions.
+>
+> * **Unsubscribe Link**: For compliance with regulations such as GDPR and CAN-SPAM, all templates that include an **Unsubscribe** link in the footer must ensure it directs to the correct unsubscribe mechanism.
+> * **Social Media Links**: Ensure all social media links, like those for Facebook, Instagram, etc., are up-to-date and lead to your current active profiles.
+> * **Dynamic Links**: Some templates, like **Referral** or **Cart Abandonment**, require dynamic links that change based on user activity. Make sure these URLs are generated dynamically by your platform or manually updated.
+> * **Call-to-Actions (CTAs)**: Some templates, especially those with **sales**, **product promotions**, or **loyalty rewards**, might have CTAs that need to be consistently checked and updated based on current offers or time-sensitive promotions.
 
 ## Change Theme or Background Color
 
@@ -16218,7 +15844,7 @@ Modifies the background color or overall theme of the email to match your brandi
    <table style="border-collapse: collapse; width: 100%; max-width: 600px; margin: 0 auto; background: #ffffff;" width="100%" cellspacing="0" cellpadding="0" border="0">
    ```
 
-2. **Update the Background Color**:  
+2. **Update the Background Color**:\
    Replace the existing `background` attribute value with your desired color. For example:
    ```html
    background: #f0f0f0;
@@ -16232,13 +15858,14 @@ Ensures that the Privacy Policy link in the email template directs users to the 
 
 ### Option 1: Using Source Mode
 
-1. **Locate the Privacy Policy Link**:  
+
+1. **Locate the Privacy Policy Link**:\
    Search for the `<a>` tag associated with the Privacy Policy in the footer or header section of your template. The following is a sample code:
    ```html
    <a href="#" class="f-nav-link" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #939393 !important; text-decoration: none;">Privacy Policy</a>
    ```
 
-2. **Update the `href` URL**:  
+2. **Update the`href` URL**:\
    Replace the current `href="#"` with the correct URL for your Privacy Policy page. For example:
    ```html
    href="https://yourdomain.com/privacy-policy"
@@ -16256,7 +15883,9 @@ Ensures that the Privacy Policy link in the email template directs users to the 
 4. Update the **Link URL** to point to the correct Privacy Policy page.
 5. Optionally, update the **Display Text** if needed (for example, change "Privacy Policy" to "Terms & Conditions").
 
-   [block:image]{"images":[{"image":["https://files.readme.io/67f084852c6c76f39130ecea74d93a260c0b57d3d2d351614f8d5fe46352993c-Update_Privacy_Policy.png","","Update Privacy Policy"],"align":"center","sizing":"75% ","border":true,"caption":"Update Privacy Policy"}]}[/block]
+   <Image alt="Update Privacy Policy" align="center" width="75% " border={true} src="https://files.readme.io/67f084852c6c76f39130ecea74d93a260c0b57d3d2d351614f8d5fe46352993c-Update_Privacy_Policy.png">
+     Update Privacy Policy
+   </Image>
 6. Click **Add**, then click **Done** in the top-right corner of the editor.
 7. Preview the email to confirm the link is functional and renders correctly across devices.
 
@@ -16266,7 +15895,8 @@ Updates and ensures all social media and download links in your email template d
 
 ### Option 1: Using Source Mode
 
-1. **Locate the Social Media and Download Sections**:  
+
+1. **Locate the Social Media and Download Sections**:\
    Search for sections in the HTML code related to social media platforms (such as Facebook, Twitter, Instagram, etc.) and download buttons (such as Android or Apple store download links). You may see something like:
    ```html
    <a href="https://your-facebook-link" target="_blank">
@@ -16300,17 +15930,20 @@ Updates and ensures all social media and download links in your email template d
    </a>
    ```
 
-3. **Save and Preview**:  
+3. **Save and Preview**:\
    After updating the URLs for social media and download links, save the file and preview the email to ensure all links work properly.
 
 ### Option 2: Using Visual Mode
+
 
 1. Select the template from the CleverTap dashboard that fits your business requirement.
 2. In the footer section, click on a social media icon (such as Facebook, Instagram, or Twitter).
 3. Click the link you want to update and update the **Link URL** to point to your brand’s corresponding social media page.
 4. Repeat the process for each social media icon you want to update.
 
-   [block:image]{"images":[{"image":["https://files.readme.io/cbc9edf2828c12258b0c5a1da1ad2e0cf8ffbe4061b831de106ff9010c3d48cd-Update_Social_Media_and_Download_Links.png","","Update Social Media and Download Links"],"align":"center","sizing":"75% ","border":true,"caption":"Update Social Media and Download Links"}]}[/block]
+   <Image alt="Update Social Media and Download Links" align="center" width="75% " border={true} src="https://files.readme.io/cbc9edf2828c12258b0c5a1da1ad2e0cf8ffbe4061b831de106ff9010c3d48cd-Update_Social_Media_and_Download_Links.png">
+     Update Social Media and Download Links
+   </Image>
 5. Locate and click on the download link (for example, Android or iOS button) in the footer.
 6. Update the **Link URL** to the correct app store page (for example, Google Play Store or Apple App Store).
 7. Click **Add** and click **Done** in the top-right corner of the dashboard.
@@ -16320,11 +15953,88 @@ Updates and ensures all social media and download links in your email template d
 
 Adds urgency with a live or static countdown. Use a hosted GIF or PNG and replace the image attribute `src` with the required graphics.
 
-```html
-<img src="timer.gif" alt="Countdown Timer" style="width: 100%;" />
-```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Add or Modify Filters
+
 
 1. Add CTA for the Filter, for example, Kids
    ```html
@@ -16455,4 +16165,6 @@ Adds urgency with a live or static countdown. Use a hosted GIF or PNG and replac
 
    **Output**:
 
-   [block:image]{"images":[{"image":["https://files.readme.io/2568bab6a196e7d5593c99ef2d0a2ad9786717bea7519b0f81d93ff7b5f02e46-Output_for_Adding_New_Filter.png","","Output for Adding Filter"],"align":"center","sizing":"35% ","border":true,"caption":"Output for Adding Filter"}]}[/block]
+   <Image alt="Output for Adding Filter" align="center" width="35% " border={true} src="https://files.readme.io/2568bab6a196e7d5593c99ef2d0a2ad9786717bea7519b0f81d93ff7b5f02e46-Output_for_Adding_New_Filter.png">
+     Output for Adding Filter
+   </Image>
