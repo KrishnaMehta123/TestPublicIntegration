@@ -19,35 +19,21 @@ Field-Level at Rest Encryption protects Personally Identifiable Information (PII
 CleverTap’s encryption framework utilizes strong, industry-standard algorithms such as AES-256 to secure data without limiting teams from using the platform. Users who have the required [Role-Based Access Control (RBAC)](doc:role-based-access-control) permissions can continue to work seamlessly with encrypted fields across Segments, Analytics, and Campaigns, while the underlying PII remains protected from unauthorized access.
 
 > 📘 **Add-on Feature**
-> 
+>
 > This feature is available as a paid add-on. To enable Field-Level at Rest Encryption, contact your sales representative.
 
 Field-Level at Rest Encryption helps you perform the following:
 
-- Prevent unauthorized access across databases and backups.
-- Ensure secure long-term data retention.
-- Comply with global and local data protection regulations.
+* Prevent unauthorized access across databases and backups.
+* Ensure secure long-term data retention.
+* Comply with global and local data protection regulations.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c53d243286ca1a376aa10208d0dcb575bebd6e10edd70fcd3a171e3b793b3119-image.png",
-        null,
-        "PII Encryption"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "PII Encryption"
-    }
-  ]
-}
-[/block]
-
+<Image alt="PII Encryption" align="center" border={true} src="https://files.readme.io/c53d243286ca1a376aa10208d0dcb575bebd6e10edd70fcd3a171e3b793b3119-image.png">
+  PII Encryption
+</Image>
 
 > 📘 **Encryption is Irreversible**
-> 
+>
 > Encryption is irreversible only for event properties. You cannot revert an event property to an unencrypted state.
 
 # Encryption Framework
@@ -66,11 +52,11 @@ For more information, refer to [Bring Your Own Key (BYOK) Encryption](doc:bring-
 
 You can mark the following properties for encryption.
 
-- System user Properties
-  - Phone 
-  - Email
-- Custom user properties
-- Custom event properties
+* System user Properties
+  * Phone 
+  * Email
+* Custom user properties
+* Custom event properties
 
 Custom events are also supported for encryption. Once encryption is enabled for a custom property, new incoming data is encrypted automatically, while historical data remains unencrypted.
 
@@ -78,9 +64,9 @@ Custom events are also supported for encryption. Once encryption is enabled for 
 
 CleverTap automatically encrypts all stored data using secure, industry-standard methods:
 
-- AES-256 encryption for all databases, backups, and persistent storage  
-- Secure key management through a centralized key infrastructure  
-- Automated key rotation and audit logging  
+* AES-256 encryption for all databases, backups, and persistent storage  
+* Secure key management through a centralized key infrastructure  
+* Automated key rotation and audit logging  
 
 These controls ensure all PII stored in CleverTap remains protected and compliant with global regulations.
 
@@ -88,52 +74,24 @@ These controls ensure all PII stored in CleverTap remains protected and complian
 
 You can encrypt user or event properties either individually or in bulk.
 
-** Encrypt Single Property **
+**Encrypt Single Property**
 
 To encrypt an individual event property, follow the steps:
 
-1. Go to_ Settings > Schema > Events > Custom Events_.
+1. Go to *Settings > Schema > Events > Custom Events*.
 2. Click **Properties** for the required event.
 3. Click the ellipsis menu and select **Encrypt**.
 4. In the confirmation dialog, click **Encrypt**.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/243c2b2174e002539b50012bb92c9ddea518580dfc437c609e6f298d9c489d42-2025-07-17_13-47-26_1.gif",
-        "",
-        "Encrypt PII Values"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Encrypt PII Values"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Encrypt PII Values" align="center" border={true} src="https://files.readme.io/243c2b2174e002539b50012bb92c9ddea518580dfc437c609e6f298d9c489d42-2025-07-17_13-47-26_1.gif">
+  Encrypt PII Values
+</Image>
 
 The following image shows the encrypted PII properties:
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/fd5aeb3c96ab14bada82f33000502147d8d8985f199ef19f2ed13844eacd08f0-image.png",
-        null,
-        "Encrypted Properties"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Encrypted Properties"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Encrypted Properties" align="center" border={true} src="https://files.readme.io/fd5aeb3c96ab14bada82f33000502147d8d8985f199ef19f2ed13844eacd08f0-image.png">
+  Encrypted Properties
+</Image>
 
 ## Using Encrypted Data Across Platforms
 
@@ -145,74 +103,31 @@ Users who do not have decryption permissions see only the encrypted value instea
 
 Users without decryption permissions cannot view or query the encrypted property in the Segment Builder.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b2295177bba75adbf5e8c668a88a6c56ba136b7d4cc4a9cd05aedf90ea96ef14-image.png",
-        null,
-        "Encrypted Values in Segment Builder"
-      ],
-      "align": "center",
-      "sizing": "70",
-      "border": true,
-      "caption": "Encrypted Values in Segment Builder"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Encrypted Values in Segment Builder" align="center" width="70%" border={true} src="https://files.readme.io/b2295177bba75adbf5e8c668a88a6c56ba136b7d4cc4a9cd05aedf90ea96ef14-image.png">
+  Encrypted Values in Segment Builder
+</Image>
 
 ### Engagements
 
 Users without decryption permissions cannot access or use the encrypted properties in Campaigns and Journeys.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/326e6951f04c2924380f2bb76d30cd54dc484f355ee9cc2377abcf3283a66ba0-image.png",
-        null,
-        "Filter using Encrypted Values in Campaigns"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Filter using Encrypted Values in Campaigns"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Filter using Encrypted Values in Campaigns" align="center" border={true} src="https://files.readme.io/326e6951f04c2924380f2bb76d30cd54dc484f355ee9cc2377abcf3283a66ba0-image.png">
+  Filter using Encrypted Values in Campaigns
+</Image>
 
 ### Analytics
 
 Users without decryption permissions cannot view or query the encrypted properties in Analytics or reports.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3f77c0333db9af68ad1e1a6d62e35339ae3a6c74fa7a92ddcf8b507d78510d9e-image.png",
-        null,
-        "Query using Encrypted Values in Analytics"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Query using Encrypted Values in Analytics"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Query using Encrypted Values in Analytics" align="center" border={true} src="https://files.readme.io/3f77c0333db9af68ad1e1a6d62e35339ae3a6c74fa7a92ddcf8b507d78510d9e-image.png">
+  Query using Encrypted Values in Analytics
+</Image>
 
 > 📘 **Viewing Encrypted Values**
-> 
+>
 > Only Admins can encrypt field-level data at rest, and only authorized users can view the encrypted values.
-> 
-> The visibility of encrypted values on the _Segment _ and  _Analytics_ pages depends on your role. For roles without encryption access, these values remain hidden. Roles with encryption permissions can view and use the encrypted values for segmentation and analytics.
+>
+> The visibility of encrypted values on the *Segment* and  *Analytics* pages depends on your role. For roles without encryption access, these values remain hidden. Roles with encryption permissions can view and use the encrypted values for segmentation and analytics.
 
 # Frequently Asked Questions
 
