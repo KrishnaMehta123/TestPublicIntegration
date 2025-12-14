@@ -11638,29 +11638,30 @@ The outgoing template message payload can be broken down into the following thre
     </tr>
 
     <tr>
-      <td>
-        customProps
-      </td>
+  <td>customProps</td>
 
-      <td>
-        Custom key-value pairs defined at the time of creating campaigns
-      </td>
+  <td>
+    Custom key-value pairs defined at the time of creating campaigns
+  </td>
 
-      <td>
-        Array
-      </td>
+  <td>Array</td>
 
-      <td>
-        [  
-                {  
-                  "key1": "Value1"  
-                },  
-                {  
-                  "Key2": "Value2"  
-                }  
-              ]
-      </td>
-    </tr>
+  <td>
+    <pre>
+      <code>
+[
+  &#123;
+    "key1": "Value1"
+  &#125;,
+  &#123;
+    "Key2": "Value2"
+  &#125;
+]
+      </code>
+    </pre>
+  </td>
+</tr>
+
   </tbody>
 </Table>
 #### Payload Samples for Template Message
