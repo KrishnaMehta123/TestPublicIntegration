@@ -240,9 +240,9 @@ Follow the steps to preview your template in Dark Mode:
 
   Dark Mode support varies across email clients and devices. Test the mails on an email client with dark mode enabled for best results. The Dark Mode preview generates a generic dark mode color scheme when enabled.
 
-  Refer to the links below for dark mode email design tips:  
+  Refer to the links below for dark mode email design tips:
 
-  * [5 Tips for Dark Mode Email Design](https://emaildesign.beefree.io/5-tips-for-dark-mode-email-design/)  
+  * [5 Tips for Dark Mode Email Design](https://emaildesign.beefree.io/5-tips-for-dark-mode-email-design/)
   * [The Ultimate Guide to Dark Mode for Email Marketers](https://www.litmus.com/blog/the-ultimate-guide-to-dark-mode-for-email-marketers/)
 </Callout>
 
@@ -254,18 +254,22 @@ Before we begin, check that you have enabled Inbox Previews. To enable the Inbox
 
 1. Select the template.
 2. Create your message.
-3. Click **Preview & Test**.  The _Previews and test_ window displays.
-4. Go to the **Inbox Previews** tab. The tests will display email previews across all the selected inboxes. It displays the errors, if any, for each inbox. To select inboxes, refer to [Enabling Previews](doc:enabling-previews). The _Code Analysis_ tab displays the error type and details. You can sort these errors by severity or property.
+3. Click the **Preview and Test** button.  The _Previews and test_ window displays.
+4. Click the **Inbox Previews** tab.
+5. Click the **Generate Report** button. The display may take some time if you have selected multiple inboxes. We will render the results and send you a notification email to know when the preview is ready.
+   <Image align="center" alt={1648} border={true} caption="Generate Report of a Campaign" title="Generate Report of a Campaign" src="https://files.readme.io/9091e36-Screenshot_2021-07-12_at_7.07.10_PM.png" />
+   <br />
+6. Click **Inbox Previews** tab to view the preview report. The tests will display email previews across all the selected inboxes. It displays the errors, if any, for each inbox. For selecting inboxes, see [Enabling Previews](doc:enabling-previews).
+   <Image align="center" alt={1646} border={true} caption="View the Preview Report" title="View the Preview Report" src="https://files.readme.io/439b55a-Screenshot_2021-07-12_at_7.08.00_PM.png" />
+   The _Code Analysis_ tab displays the error type and details. You can sort these errors by severity or property.
+   <Image align="center" alt={1644} border={true} caption="View the Code Analysis" title="View the Code Analysis" src="https://files.readme.io/d94922b-Screenshot_2021-07-12_at_7.08.29_PM.png" />
+   <Callout icon="📘" theme="info">
+     **Templates for Inbox Preview**
 
-<Image align="center" alt={1646} border={true} caption="View the Preview Report" title="View the Preview Report" src="https://files.readme.io/439b55a-Screenshot_2021-07-12_at_7.08.00_PM.png" />
-
-<Callout icon="📘" theme="info">
-  **Templates for Inbox Preview**
-
-  Code Analysis with Inbox Preview is available for the [Custom HTML template](https://docs.clevertap.com/docs/email-editor-templates#custom-html-template) and [Rich Media Template](https://docs.clevertap.com/docs/email-editor-templates#rich-media-template).
-</Callout>
-
-5. Click _Fix issues_ in the editor link to fix the issues. You are redirected to the email editor.  
+     Code Analysis with Inbox Preview is available for the [Custom HTML template](https://docs.clevertap.com/docs/email-editor-templates#custom-html-template) and [Rich Media Template](https://docs.clevertap.com/docs/email-editor-templates#rich-media-template).
+   </Callout>
+   <br />
+7. Click the _Fix issues_ in the editor link to fix the issues. You are redirected to the email editor.  
    Rerun the preview tests to check that the previews are in order.
 
 ## Spam Report
