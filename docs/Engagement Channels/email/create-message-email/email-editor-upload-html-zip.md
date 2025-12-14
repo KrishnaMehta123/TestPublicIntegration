@@ -179,7 +179,7 @@ As an alternative to manually copy-pasting HTML to the editor, you can upload a 
 
 1. From the _What_ section of the Email campaigns, select the _Upload HTML_ option from the _Basic Templates_ tab. The Upload HTML Template popup opens.
 
-   <Image align="center" alt="Upload HTML Template Popup" border={true} caption="Upload HTML Template Popup" src="https://files.readme.io/f38e62d4dd7f6d12206b0d967f56dfc12c3503bf0bc646c44942136ede6f0585-Upload_Template_HTML.png" width="85% " />
+   <Image align="center" alt="Upload HTML Template Popup" border={true} caption="Upload HTML Template Popup" src="https://files.readme.io/f38e62d4dd7f6d12206b0d967f56dfc12c3503bf0bc646c44942136ede6f0585-Upload_Template_HTML.png" />
 
 2. Click **Upload File** or drag and drop to upload the required `.zip` file. You can download the sample zip file by clicking the _[Download sample file](https://d31lbcrrrnac8j.cloudfront.net/Sample-files/Sample-template.zip)_ link. The ZIP file must meet the following criteria:
 
@@ -219,19 +219,19 @@ You can perform basic template operations directly from the _Saved Templates_ ta
 
 * **Select View**: Switch between <img src="https://files.readme.io/ac80074-list_view_icon.jpg" height="30px" width="30px" /> list and card <img src="https://files.readme.io/40d9260-tile_view_icon.jpg" height="30px" width="30px" /> view for templates.
 
-  <Image align="center" alt="Select View" border={true} src="https://files.readme.io/6920d54391f6a75a315233af587b849aa4dc7db3b556735ded607e6509f9c43d-Select_View.gif" className="border" />
+  <Image align="center" alt="Select View" border={true} caption="Select View" src="https://files.readme.io/6920d54391f6a75a315233af587b849aa4dc7db3b556735ded607e6509f9c43d-Select_View.gif" />
 
 * **Filter Templates**: Filter templates based on the following criteria: Time Period, Created By, Labels, Editor Type, and Amp Type.
 
-  <Image align="center" alt="Filter Templates" border={true} src="https://files.readme.io/a77d3d62a1afa3bd6a68f8bb0723e3a008a4c400d5d0eec4563d447850f238d3-Filter_Templates.gif" className="border" />
+  <Image align="center" alt="Filter Templates" border={true} caption="Filter Templates" src="https://files.readme.io/a77d3d62a1afa3bd6a68f8bb0723e3a008a4c400d5d0eec4563d447850f238d3-Filter_Templates.gif" />
 
 * **Sort Templates**: Sort by template name, created date, and last modified date.
 
-  <Image align="center" alt="Sort Templates" border={true} src="https://files.readme.io/513563298d4655ecfff9d8bae8ae45aecb7c04e9f5efb5736cd7c6e8454703fb-Sort_Templates.gif" className="border" />
+  <Image align="center" alt="Sort Templates" border={true} caption="Sorted Templates" src="https://files.readme.io/513563298d4655ecfff9d8bae8ae45aecb7c04e9f5efb5736cd7c6e8454703fb-Sort_Templates.gif" />
 
 * **Delete Templates**: Deleted templates are permanently removed and cannot be recovered. Select multiple files and click the <img src="https://files.readme.io/70a339a-delete_all_icon.jpg" height="30px" width="30px" /> delete icon. Alternatively, enable _Selection Mode_ to delete templates in bulk.
 
-  <Image align="center" alt="Delete Template" border={true} src="https://files.readme.io/f479b42f813d39f3cfd7d885ede9d816ee5d822a5c22d2fc5fc427290d4df8e1-Delete_A_Template.png" className="border" />
+  <Image align="center" alt="Delete Template" border={true} caption="Delete Templates" src="https://files.readme.io/f479b42f813d39f3cfd7d885ede9d816ee5d822a5c22d2fc5fc427290d4df8e1-Delete_A_Template.png" />
 
 * Search Templates: Search a template by its name.
 
@@ -243,32 +243,36 @@ You can perform the following template operations by navigating to the _Content 
 
 You can preview how your email displays in dark mode on a desktop or a mobile phone.
 
-> 📘 Note
->
-> Dark Mode is only available in the _Email with drag and drop_ editor.
+<Callout icon="📘" theme="info">
+  **Note**
+
+  Dark Mode is only available in the _Email with drag and drop_ editor.
+</Callout>
 
 Follow the steps to preview your template in Dark Mode:
 
 1. Select the _Email with drag and drop_ editor.
 
-<Image align="center" alt={2866} border={true} src="https://files.readme.io/bf4a355-Email_Editor_Tool.png" title="Select the Email with Drag and Drop" className="border" />
+<Image align="center" alt={2866} border={true} caption="Select the Email with Drag and Drop" title="Select the Email with Drag and Drop" src="https://files.readme.io/bf4a355-Email_Editor_Tool.png" />
 
 2. Draft your message.
 
-<Image align="center" alt={2880} border={true} src="https://files.readme.io/2e30dbe-Create_message.png" title="Create the Email Content" className="border" />
+<Image align="center" alt={2880} border={true} caption="Create the Email Content" title="Create the Email Content" src="https://files.readme.io/2e30dbe-Create_message.png" />
 
 3. Click the **Preview and Test** button. The _Preview and test_ window displays. You can preview how the email will look in dark mode by turning the _Dark Mode_ toggle ON.
 
-<Image align="center" alt={1440} border={true} src="https://files.readme.io/c6ed33f-Dark_Mode_Preview.gif" title="Preview Content in Dark Mode" className="border" />
+<Image align="center" alt={1440} border={true} caption="Preview Content in Dark Mode" title="Preview Content in Dark Mode" src="https://files.readme.io/c6ed33f-Dark_Mode_Preview.gif" />
 
-> 📘 Dark Mode Preview
->
-> Dark Mode support varies across email clients and devices. Test the mails on an email client with dark mode enabled for best results. The Dark Mode preview generates a generic dark mode color scheme when enabled.
->
-> Refer to the links below for dark mode email design tips:
->
-> * [5 Tips for Dark Mode Email Design](https://emaildesign.beefree.io/5-tips-for-dark-mode-email-design/)
-> * [The Ultimate Guide to Dark Mode for Email Marketers](https://www.litmus.com/blog/the-ultimate-guide-to-dark-mode-for-email-marketers/)
+<Callout icon="📘" theme="info">
+  **Dark Mode Preview**
+
+  Dark Mode support varies across email clients and devices. Test the mails on an email client with dark mode enabled for best results. The Dark Mode preview generates a generic dark mode color scheme when enabled.
+
+  Refer to the links below for dark mode email design tips:
+
+  * [5 Tips for Dark Mode Email Design](https://emaildesign.beefree.io/5-tips-for-dark-mode-email-design/)
+  * [The Ultimate Guide to Dark Mode for Email Marketers](https://www.litmus.com/blog/the-ultimate-guide-to-dark-mode-for-email-marketers/)
+</Callout>
 
 ## Inbox Previews with Code Analysis
 
@@ -282,19 +286,21 @@ Before we begin, check that you have enabled Inbox Previews. For enabling the In
 4. Click the **Inbox Previews** tab.
 5. Click the **Generate Report** button. The display may take some time if you have selected multiple inboxes. We will render the results and send you a notification email to know when the preview is ready.
 
-<Image align="center" alt={1648} border={true} src="https://files.readme.io/9091e36-Screenshot_2021-07-12_at_7.07.10_PM.png" title="Generate Report of a Campaign" className="border" />
+<Image align="center" alt={1648} border={true} caption="Generate Report of a Campaign" title="Generate Report of a Campaign" src="https://files.readme.io/9091e36-Screenshot_2021-07-12_at_7.07.10_PM.png" />
 
 6. Click **Inbox Previews** tab to view the preview report. The tests will display email previews across all the selected inboxes. It displays the errors, if any, for each inbox. For selecting inboxes, see [Enabling Previews](doc:enabling-previews).
 
-<Image align="center" alt={1646} border={true} src="https://files.readme.io/439b55a-Screenshot_2021-07-12_at_7.08.00_PM.png" title="View the Preview Report" className="border" />
+<Image align="center" alt={1646} border={true} caption="View the Preview Report" title="View the Preview Report" src="https://files.readme.io/439b55a-Screenshot_2021-07-12_at_7.08.00_PM.png" />
 
-7. The _Code Analysis_ tab displays the error type and details. You can sort these errors by severity or property.
+The _Code Analysis_ tab displays the error type and details. You can sort these errors by severity or property.
 
-<Image align="center" alt={1644} border={true} src="https://files.readme.io/d94922b-Screenshot_2021-07-12_at_7.08.29_PM.png" title="View the Code Analysis" className="border" />
+<Image align="center" alt={1644} border={true} caption="View the Code Analysis" title="View the Code Analysis" src="https://files.readme.io/d94922b-Screenshot_2021-07-12_at_7.08.29_PM.png" />
 
-> 📘 Templates for Inbox Preview
->
-> Code Analysis with Inbox Preview is available for the [Custom HTML template](https://docs.clevertap.com/docs/email-editor-templates#custom-html-template) and [Rich Media Template](https://docs.clevertap.com/docs/email-editor-templates#rich-media-template).
+<Callout icon="📘" theme="info">
+  **Templates for Inbox Preview**
+
+  Code Analysis with Inbox Preview is available for the [Custom HTML template](https://docs.clevertap.com/docs/email-editor-templates#custom-html-template) and [Rich Media Template](https://docs.clevertap.com/docs/email-editor-templates#rich-media-template).
+</Callout>
 
 8. Click the _Fix issues_ in the editor link to fix the issues. You are redirected to the email editor.  
    Rerun the preview tests to check that the previews are in order.
@@ -311,4 +317,4 @@ Follow the steps to create an email campaign.
 4. Click the **Spam Report** tab.
 5. Click the **Generate Report** button.
 
-<Image align="center" alt={1648} border={true} src="https://files.readme.io/9091e36-Screenshot_2021-07-12_at_7.07.10_PM.png" title="Generate Spam Report" className="border" />
+<Image align="center" alt={1648} border={true} caption="Generate Spam Report" title="Generate Spam Report" src="https://files.readme.io/9091e36-Screenshot_2021-07-12_at_7.07.10_PM.png" />
