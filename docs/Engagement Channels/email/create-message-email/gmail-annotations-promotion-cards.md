@@ -20,18 +20,19 @@ metadata:
 
 With Deal Annotation, the deals and offers stand out prominently in the Promotions tab of your Gmail inbox, capturing your audience's attention and increasing the likelihood of conversions.
 
-<Image title="Annotated Email Promotion" alt={990} align="center" width="60%" border={true} src="https://files.readme.io/6fd6c27-Annotated_Email.png" />  Deal Annotation Email
+<Image align="center" border={true} caption="Deal Annotation Email" src="https://files.readme.io/6fd6c27-Annotated_Email.png" width="65% " />
 
 To annotate emails in an email campaign, perform the following steps:
 
-1. [Create an email campaign](https://docs.clevertap.com/docs/create-message-email). 
-2. [Define the message content](https://docs.clevertap.com/docs/create-message-email#define-the-message-content) from the Email Editor. 
-3. Click **Sender details**. 
+1. [Create an email campaign](https://docs.clevertap.com/docs/create-message-email).
+2. [Define the message content](https://docs.clevertap.com/docs/create-message-email#define-the-message-content) from the Email Editor.
+3. Click **Sender details**.
 4. To annotate your email, select **Highlight with Gmail promotional annotations**. The following options display:
 
-<Image title="Highlight the Gmail Promotional Annotations" alt={1136} align="center" border={true} src="https://files.readme.io/b9ccbce-Gmail_Promotional_Annotation_.png" />  Annotate Emails with Deal Annotation
+  Annotate Emails with Deal Annotation
 
 Add the required information.
+
 <Table align={["left","left","left"]}>
   <thead>
     <tr>
@@ -60,7 +61,7 @@ Add the required information.
       </td>
 
       <td>
-        This field is populated automatically using the *From* part of the *Sender Details*.
+        This field is populated automatically using the _From_ part of the _Sender Details_.
       </td>
     </tr>
 
@@ -74,7 +75,7 @@ Add the required information.
       </td>
 
       <td>
-        This field is populated automatically using the *Subject* part of the *Sender Details*.
+        This field is populated automatically using the _Subject_ part of the _Sender Details_.
       </td>
     </tr>
 
@@ -98,13 +99,13 @@ Add the required information.
       </td>
 
       <td>
-        Highlight any offerings such as *20% off* or *Free Shipping*. We recommend a 20-character limit for optimal rendering.
+        Highlight any offerings such as _20% off_ or _Free Shipping_. We recommend a 20-character limit for optimal rendering.
       </td>
 
       <td>
         • Avoid using more than four words or full sentences in this space, as it competes with your subject line. When your email text space is full, the offer title truncates (for example, "...").<br />
-        • Do not repurpose. Use promotional offerings to ensure clarity and simplicity. Do not utilize it for other actions such as *Open now*.<br />
-        • Do not use run-on sentences. Avoid saying things such as *25% off, unless you've already purchased from us, in which case other ...* Long sentences are truncated.
+        • Do not repurpose. Use promotional offerings to ensure clarity and simplicity. Do not utilize it for other actions such as _Open now_.<br />
+        • Do not use run-on sentences. Avoid saying things such as _25% off, unless you've already purchased from us, in which case other ..._ Long sentences are truncated.
       </td>
     </tr>
 
@@ -118,7 +119,7 @@ Add the required information.
       </td>
 
       <td>
-        Only use a discount code if it is featured in the email. Do not repurpose this space, as it always says *Code* before the text.
+        Only use a discount code if it is featured in the email. Do not repurpose this space, as it always says _Code_ before the text.
       </td>
     </tr>
 
@@ -135,12 +136,11 @@ Add the required information.
         Using this feature allows an email to be previewed twice at the top in a bundle:<br />
         • once when it is first sent.<br />
         • again within 3 days of the offer expiry.<br />
-        When personalizing *Offer period*, specify the time and timezone. For example, *2018-12-30T23:59:59-0700*.
+        When personalizing _Offer period_, specify the time and timezone. For example, _2018-12-30T23:59:59-0700_.
       </td>
     </tr>
   </tbody>
 </Table>
-
 
 5. Click **Preview & Test** to preview the annotated email message.
 
@@ -148,69 +148,30 @@ Add the required information.
 
 Adding Promotion Cards to your annotations enhances the impact of email marketing campaigns by introducing image previews, either as a single card or a carousel of cards. This helps amplify engagement and drive higher conversion rates. Each card can be configured with its own image, title, description, and target URL.
 
-<Image alt="Single Image Layout" align="center" width="50%" border={true} src="https://files.readme.io/4f32a4d939159fd3d44e0a3d4329515618705b4f0565f7464383812d17c14d1a-image.png" />  Single Image Layout
+![](https://files.readme.io/4f32a4d939159fd3d44e0a3d4329515618705b4f0565f7464383812d17c14d1a-image.png)  Single Image Layout
 
-
-
-
-
-
-
-
-
-
-
-<Image alt="Carousel Image Layout" align="center" border={true} src="https://files.readme.io/0dcfcde9bdbc05e3e8b476417628beb88bff3e3301683ef8fb8445148ac4da4d-Carousel_Image_Layout.png" />  Carousel Image Layout
-
-
-
-
-
-
-
-
-
-
+![](https://files.readme.io/0dcfcde9bdbc05e3e8b476417628beb88bff3e3301683ef8fb8445148ac4da4d-Carousel_Image_Layout.png)  Carousel Image Layout
 
 ## Prerequisites
 
 * Add the designated domains to the Google Allowlist by reaching out to [p-gmail-outreach@google.com](mailto:p-gmail-outreach@google.com).
-* Register the domain with [DMARC](https://support.google.com/a/answer/2466563?hl=en). 
+* Register the domain with [DMARC](https://support.google.com/a/answer/2466563?hl=en).
 
 ## Annotate Email with Promotion Cards
 
 To annotate an email campaign with promotional cards, perform the following steps:
 
-1. [Create an email campaign](https://docs.clevertap.com/docs/create-message-email). 
-2. [Define the message content](https://docs.clevertap.com/docs/create-message-email#define-the-message-content) from the Email Editor. 
-3. Select the *Sender details* tab. 
+1. [Create an email campaign](https://docs.clevertap.com/docs/create-message-email).
+2. [Define the message content](https://docs.clevertap.com/docs/create-message-email#define-the-message-content) from the Email Editor.
+3. Select the _Sender details_ tab.
 4. Select **Highlight with Gmail promotional annotations** and select **Promotion Cards**. A single promotion card (Single Image Layout) is displayed to the user by default. You can add more cards by clicking **Promotion Card** for Carousel Layout. The following options display for each promotion card:
 
-<Image alt="Annotate Email with Product Carousel Annotation" align="center" border={true} src="https://files.readme.io/ffda68725e844316f99a94057fc9e1dd4e190e94b8cbc90bf42b2aaa82d0c2fb-Annotate_Email_with_Promotion_Cards.png" />  Annotate Email With Product Carousel Using Image URL Option 
+![](https://files.readme.io/ffda68725e844316f99a94057fc9e1dd4e190e94b8cbc90bf42b2aaa82d0c2fb-Annotate_Email_with_Promotion_Cards.png)  Annotate Email With Product Carousel Using Image URL Option
 
-
-
-
-
-
-
-
-
-
-
-<Image alt="Annotate Email With Product Carousel Using Upload Image Option" align="center" border={true} src="https://files.readme.io/577d56ec16b072b5ca0d4b53a877e5f3889f3dca5314ab93ad07f404c226a7f4-Upload_Image_for_Product_Carousel.png" />  Annotate Email With Product Carousel Using Upload Image Option
-
-
-
-
-
-
-
-
-
-
+![](https://files.readme.io/577d56ec16b072b5ca0d4b53a877e5f3889f3dca5314ab93ad07f404c226a7f4-Upload_Image_for_Product_Carousel.png)  Annotate Email With Product Carousel Using Upload Image Option
 
 Add the required information.
+
 <Table align={["left","left","left"]}>
   <thead>
     <tr>
@@ -231,15 +192,15 @@ Add the required information.
   <tbody>
     <tr>
       <td>
-        *Image URL*
+        _Image URL_
       </td>
 
       <td>
         Provide the unique image URL. Supported formats include PNG and JPEG. The image must meet the aspect ratio requirements based on whether you are creating a single promotional card or a carousel.<br />
         • **For Single Image Layout**: Supported Aspect Ratio: 1.91:1 only.<br />
         • **For Carousel Layout**:<br />
-        &nbsp;&nbsp;&nbsp;• Supported Aspect Ratios: 4:5, 1:1, or 1.91:1.<br />
-        &nbsp;&nbsp;&nbsp;• All images in a carousel must use the same aspect ratio for compatibility. For additional guidelines, refer to the [Google Documentation](https://developers.google.com/gmail/promotab/overview#microdata_1).<br /><br />
+           • Supported Aspect Ratios: 4:5, 1:1, or 1.91:1.<br />
+           • All images in a carousel must use the same aspect ratio for compatibility. For additional guidelines, refer to the [Google Documentation](https://developers.google.com/gmail/promotab/overview#microdata_1).<br /><br />
         For more information, refer to [Image Specification for Promotion Cards](doc:gmail-annotations-promotion-cards#image-specification-for-promotion-cards).<br /><br />
         **NOTE**: Google recommends not using personalized elements or user-specific UTM parameters in carousel image URLs. Only static images must be used across all campaign users for annotations to render in the email.
       </td>
@@ -251,15 +212,15 @@ Add the required information.
 
     <tr>
       <td>
-        *Upload Image*
+        _Upload Image_
       </td>
 
       <td>
         You can upload images in PNG or JPEG format. The image must meet the aspect ratio requirements based on whether you are creating a single promotional card or a carousel. You can resize images using the cropper tool; the aspect ratio will be maintained based on the selected option.<br />
         • **For Single Image Layout**: Supported Aspect Ratio: 1.91:1 only.<br />
         • **For Carousel Layout**:<br />
-        &nbsp;&nbsp;&nbsp;• Supported Aspect Ratios: 4:5, 1:1, or 1.91:1.<br />
-        &nbsp;&nbsp;&nbsp;• All images in a carousel must use the same aspect ratio for compatibility. For additional guidelines, refer to the [Google Documentation](https://developers.google.com/gmail/promotab/overview#microdata_1).<br /><br />
+           • Supported Aspect Ratios: 4:5, 1:1, or 1.91:1.<br />
+           • All images in a carousel must use the same aspect ratio for compatibility. For additional guidelines, refer to the [Google Documentation](https://developers.google.com/gmail/promotab/overview#microdata_1).<br /><br />
         For more information, refer to [Image Specification for Promotion Cards](doc:gmail-annotations-promotion-cards#image-specification-for-promotion-cards).
       </td>
 
@@ -270,7 +231,7 @@ Add the required information.
 
     <tr>
       <td>
-        *Target URL*
+        _Target URL_
       </td>
 
       <td>
@@ -284,25 +245,11 @@ Add the required information.
 
     <tr>
       <td>
-        *Headline*
+        _Headline_
       </td>
 
       <td>
-        Provide a concise 1 to 2-line description accompanying the promotional card. 
-      </td>
-
-      <td>
-        No
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        *Currency*
-      </td>
-
-      <td>
-        Select the currency of the displayed price from the dropdown list. The supported currencies include USD, INR, AED, EUR, and SGD. This field appears when you select the *Price Tag* checkbox.
+        Provide a concise 1 to 2-line description accompanying the promotional card.
       </td>
 
       <td>
@@ -312,11 +259,11 @@ Add the required information.
 
     <tr>
       <td>
-        *Product Value*
+        _Currency_
       </td>
 
       <td>
-        Provide the numerical value representing the original price for the promotional product. This field appears when you select the *Price* checkbox.
+        Select the currency of the displayed price from the dropdown list. The supported currencies include USD, INR, AED, EUR, and SGD. This field appears when you select the _Price Tag_ checkbox.
       </td>
 
       <td>
@@ -326,11 +273,25 @@ Add the required information.
 
     <tr>
       <td>
-        *Discount Value*
+        _Product Value_
       </td>
 
       <td>
-        Provide the discount value, which represents the amount deducted from the original price. This field appears when you select the *Price* checkbox.<br />
+        Provide the numerical value representing the original price for the promotional product. This field appears when you select the _Price_ checkbox.
+      </td>
+
+      <td>
+        No
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        _Discount Value_
+      </td>
+
+      <td>
+        Provide the discount value, which represents the amount deducted from the original price. This field appears when you select the _Price_ checkbox.<br />
         For example, if the discount value is 25 and the original price is 100, the final price displayed will be $75.
       </td>
 
@@ -340,6 +301,7 @@ Add the required information.
     </tr>
   </tbody>
 </Table>
+
 5. Click **Preview & Test** to preview the annotated email message.
 
 > 📘 Supported Inboxes
@@ -367,7 +329,7 @@ To display promotion cards in an email, ensure that your images meet the followi
 
 # Test Annotation
 
-Create a unique Gmail testing account ending with [promotabtesting@gmail.com](mailto:promotabtesting@gmail.com) for your team. For example, *[mycompany.promotabtesting@gmail.com](mailto:mycompanypromotabtesting@gmail.com)*. This unique account will have a more aggressive email ranking and bundling to make testing easier and faster. 
+Create a unique Gmail testing account ending with [promotabtesting@gmail.com](mailto:promotabtesting@gmail.com) for your team. For example, _[mycompany.promotabtesting@gmail.com](mailto:mycompanypromotabtesting@gmail.com)_. This unique account will have a more aggressive email ranking and bundling to make testing easier and faster.
 
 > 📘 Testing Promotion Cards
 >
@@ -375,7 +337,7 @@ Create a unique Gmail testing account ending with [promotabtesting@gmail.com](ma
 
 # Troubleshooting
 
-Before troubleshooting a problem, check your account-level settings in your Gmail app. Check that you have enabled the following settings to test the latest experiences in the *Gmail promotions* tab. The following are the default settings: 
+Before troubleshooting a problem, check your account-level settings in your Gmail app. Check that you have enabled the following settings to test the latest experiences in the _Gmail promotions_ tab. The following are the default settings:
 
 * Images: Always show.
 * Conversation view: On.
@@ -391,10 +353,9 @@ To resolve this issue:
 * Try restarting your device.
 * If the issue is still not resolved, try viewing the bundle on another device. For example, a tablet may have a different Gmail version and show the bundle differently.
 
-
 > 📘 Email Held Up
 >
-> There is a chance your email could be in a holdback group. If none of the measures work, create a new account ending with *[promotabtesting@gmail.com](mailto:promotabtesting@gmail.com)*. For example, create *[mycompanypromotabtesting@gmail.com](mailto:mycompanypromotabtesting@gmail.com)* and use that new account for testing.
+> There is a chance your email could be in a holdback group. If none of the measures work, create a new account ending with _[promotabtesting@gmail.com](mailto:promotabtesting@gmail.com)_. For example, create _[mycompanypromotabtesting@gmail.com](mailto:mycompanypromotabtesting@gmail.com)_ and use that new account for testing.
 
 ### Email does not show up on the Promotions tab
 
@@ -403,7 +364,7 @@ To resolve this issue:
 * Check if the marketing email was sent from the usual subdomain. Sending from less recognized subdomains can confuse the Gmail tab classifier and prevent an email from being placed on the Promotions tab.
 * Check that your account has no email filters that send email to the primary tab because annotations are only visible on the Promotions tab.
 * Send from different sender subdomains to ensure the email ends up on the correct tab. For more details about the Gmail classifier, refer to [Bulk Senders Guidelines](https://support.google.com/mail/answer/81126).
-* If you are using a *[promotabtesting@gmail.com](mailto:promotabtesting@gmail.com)* account, the first email does not appear on the Promotions tab. Drag the email onto the Promotions tab, and send an email from the same sender address, with a different subject line, to the testing account.
+* If you are using a _[promotabtesting@gmail.com](mailto:promotabtesting@gmail.com)_ account, the first email does not appear on the Promotions tab. Drag the email onto the Promotions tab, and send an email from the same sender address, with a different subject line, to the testing account.
 
 ### Cannot see your brand's annotated email in a bundle
 
@@ -413,9 +374,9 @@ To resolve this issue:
 * Annotated emails are currently not available for Gmail for Business accounts. Ensure that you are testing on your personal Gmail address.
 * Check that the email was not opened or sent on the previous day.
 * An email does not populate in a bundle on another device after it is viewed on one device. You must send a new test email to preview.
-* Create multiple testing accounts if you want to visualize on multiple devices. One of your team members might open the email, thus making it unavailable in the bundle for the rest of the team. 
-* Check that the annotation is not past the expiration date. 
-* Check that you are using the latest version of the Gmail app. Try viewing on another device. For example, a tablet may have a different version of the Gmail app and show email differently. 
+* Create multiple testing accounts if you want to visualize on multiple devices. One of your team members might open the email, thus making it unavailable in the bundle for the rest of the team.
+* Check that the annotation is not past the expiration date.
+* Check that you are using the latest version of the Gmail app. Try viewing on another device. For example, a tablet may have a different version of the Gmail app and show email differently.
 * Refresh the Gmail app by pulling down the Gmail Promotions tab screen.
 * Check that you are not using sensitive categories in the Gmail Promotions tab. For example, adult content or debt collection.
 
@@ -423,13 +384,12 @@ To resolve this issue:
 
 To resolve this issue:
 
-
 * Check that you are viewing from the same email account.
 * If the email is opened on one device first, the ranking of the bundle may change on another device.
 
 # Best Practices
 
-Gmail recommends the following to optimize your email annotations. 
+Gmail recommends the following to optimize your email annotations.
 
 * **Leverage the Power of Visuals**  
   Gmail has observed improved results when emails feature captivating images that complement the message. Instead of text-only designs, focus on incorporating visually appealing elements. Avoid using images with text that gets cut off or reusing the same visuals across multiple campaigns.
@@ -448,7 +408,7 @@ Gmail decides when to show the product carousel, so not every person who gets th
 
 There are a few reasons why the product carousel might not appear in the Gmail Promotion Tab. Firstly, all the images in the promotion must be of good quality and have the correct aspect ratio. They should mostly be pictures of the product, without too much text or anything inappropriate.
 
-Moreover, Gmail limits the number of product carousels it shows in the *Promotion* tab. So, if a user receives a lot of emails with product carousels, Gmail might not show all of them.
+Moreover, Gmail limits the number of product carousels it shows in the _Promotion_ tab. So, if a user receives a lot of emails with product carousels, Gmail might not show all of them.
 
 ### What image guidelines should I follow for Email Carousel Annotations?
 
