@@ -186,10 +186,9 @@ CleverTap sends the following status codes and descriptions as a response to the
 The following is the sample response sent by CleverTap to the provider upon processing the callback payload successfully:
 
 ```json
-{
-  "status": "success",
-  "message": "Callback processed successfully"
-}
+    "TOTAL_EVENTS": 4,
+    "PROCESSED_EVENTS": 4,
+    "UNPROCESSED_EVENTS": []
 ```
 
 The following is the sample response sent by CleverTap to the providers upon partial processing of callback events:
