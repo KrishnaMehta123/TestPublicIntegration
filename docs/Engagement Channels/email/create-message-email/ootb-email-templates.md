@@ -5185,7 +5185,7 @@ A warm onboarding email template greets new users, introduces your brand, and gu
 
 ### Template Code
 
-```html
+```html Variant 1
 <!doctype html="">
 <html lang="en">
 
@@ -5341,6 +5341,192 @@ A warm onboarding email template greets new users, introduces your brand, and gu
 
 </html>
 ```
+```html Variant 2
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet" />
+    <style type="text/css">
+        * {             margin: 0;             padding: 0;         }          @media only screen and (max-width:480px) {             .title {                 font-size: 26px !important;                 line-height: 36px !important;                 margin-top: 25px !important;             }              .sub-title {                 margin-top: 10px !important;             }              .bg-wrap {                 padding-top: 40px !important;             }              .product-card {                 padding-bottom: 40px !important;             }         }
+    </style>
+</head>
+
+<body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" data-new-gr-c-s-loaded="14.1242.0" style="cursor: auto;">
+    <!-- Change Theme-->
+    <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%; max-width: 600px; margin: 0 auto; background: #ffffff;" width="100%">
+        <tbody>
+            <tr>
+                <td style=" padding: 17px 30px; border-bottom: 0.5px solid #979797; text-align: right;">
+                    <a class="btn" href="#" style="font-family:'Poppins', Arial, sans-serif; padding: 5px 15px; background: #1DBF73; border-radius: 10px; font-size: 12px; line-height: 24px; vertical-align: middle; color: #000 !important; text-decoration: none; display: inline-block; font-weight: 400;">Get 30% OFF →</a>
+                </td>
+            </tr>
+            <tr>
+                <!-- Header Section-->
+                <td style=" text-align: center; border-bottom: 0.5px solid #979797; position: relative;">
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tbody>
+                            <tr>
+                                <td style="width: 50%; vertical-align: middle;">
+                                    <div style="border-top: 1px solid #1DBF73;"> </div>
+                                </td>
+                                <td style="width: auto; text-align: center; vertical-align: middle;">
+                                    <!-- “Logo Image” --><img alt="Logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="display: inline-block; max-width: 146px; height: auto; background: #ffffff; padding: 0 10px; vertical-align: middle;"
+                                    />
+                                    <!-- “Logo Image” -->
+                                </td>
+                                <td style="width: 50%; vertical-align: middle;">
+                                    <div style="border-top: 1px solid #1DBF73;"> </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <!-- Header Section-->
+            </tr>
+            <tr>
+                <td>
+                    <h2 class="title" style=" font-family: 'Poppins', Arial, sans-serif; font-size: 36px; line-height: 45px; text-align: center; text-transform: uppercase; color: #000000; margin: 29px 30px 0;"><span class="cm-light" style="font-family: 'Poppins', Arial, sans-serif; font-weight: 300; display: block;">WELCOME!</span> WE&#39;RE EXCITED TO HAVE YOU WITH US</h2>
+
+                    <p class="sub-title" style="font-family: 'Poppins', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 32px; text-align: center; margin: 20px 30px 40px; color: #4F4F4F;">Get ready to discover what we have in store for you.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="bg-wrap" style="padding-top: 46px; background: #F0EEF6;">
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tbody>
+                            <tr>
+                                <td class="product-card" style="padding-bottom: 70px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <!-- First Product Image -->
+                                                <td class="product-image" style="width: 40%;"><img alt="product image pexels 1" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/pexels-1_1.png" style="width: 100%; height: 100%;" /></td>
+                                                <!-- First Product Image -->
+                                                <td class="product-detail" style="width: 60%; padding: 0 30px; vertical-align: middle;">
+                                                    <h3 class="product-name" style="font-family: 'Poppins', Arial, sans-serif; font-size: 24px; font-weight: 400; line-height: 35px; color: #0D0D0D; margin-bottom: 10px; text-transform: uppercase;">LET&#39;S GET STARTED!</h3>
+
+                                                    <p class="product-desc" style="font-family: 'Poppins', Arial, sans-serif; margin-bottom: 18px; font-size: 14px; font-weight: 400; line-height: 30px; color: #4f4f4f;">Welcome aboard! Your journey with us starts now, and we&#39;re here to make it count. Get started by exploring our website to know more about what we stand for. Stay on top of what&#39;s new, get access
+                                                        to exclusive deals, and much more.</p>
+
+                                                    <a class="btn" href="#" style="font-family:'Poppins', Arial, sans-serif; padding: 5px 15px; background: #1DBF73; border-radius: 10px; font-size: 12px; line-height: 24px; vertical-align: middle; color: #000 !important; text-decoration: none; display: inline-block; font-weight: 400;">Learn More</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="product-card" style="padding-bottom: 70px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td class="product-detail" style="width: 60%; padding: 0 30px; vertical-align: middle;">
+                                                    <h3 class="product-name" style="font-family: 'Poppins', Arial, sans-serif; font-size: 24px; font-weight: 400; line-height: 35px; color: #0D0D0D; margin-bottom: 10px; text-transform: uppercase;">WHAT YOU CAN EXPECT</h3>
+
+                                                    <p class="product-desc" style="font-family: 'Poppins', Arial, sans-serif; margin-bottom: 18px; font-size: 14px; font-weight: 400; line-height: 30px; color: #4f4f4f;">As a member of our community, you&#39;re on your way to unlocking a host of benefits tailored just for you. Expect personalized content, early access to new features, exclusive discounts, and expert
+                                                        insights that will help you stay ahead of the curve.</p>
+                                                    <!-- Add Links -->
+
+                                                    <a class="btn" href="#" style="font-family:'Poppins', Arial, sans-serif; padding: 5px 15px; background: #1DBF73; border-radius: 10px; font-size: 12px; line-height: 24px; vertical-align: middle; color: #000 !important; text-decoration: none; display: inline-block; font-weight: 400;">Learn More</a>
+                                                    <!-- Add Links -->
+                                                </td>
+                                                <!-- Second Product Image -->
+                                                <td class="product-image" style="text-align: right; width: 40%;"><img alt="product image pexels 2" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/pexels-2_1.png" style="width: 100%; height: 100%;" /></td>
+                                                <!-- Second Product Image -->
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-top: 54px;">
+                    <table border="0" cellpadding="0" cellspacing="0" class="footer" style="background: #F7F7F7;" width="100%">
+                        <tbody>
+                            <tr>
+                                <td colspan="5">
+                                    <h2 class="footer-title" style="font-family: 'Poppins', Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 32px; text-align: center; color: #0D0D0D; text-transform: uppercase; margin:20px 0;">DOWNLOAD OUR APP</h2>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 30%; vertical-align: middle; color: #979797">
+                                    <div style="border-top: 1px solid #979797;"> </div>
+                                </td>
+                                <!-- Download Andoid Section-->
+                                <td style="width: auto; text-align: center; vertical-align: middle;">
+                                    <a class="btn-link" href="#" style="margin: 0 10px;"><img alt="Download on Android" class="btn-img" src="https://d2xdgxd31vfz2r.cloudfront.net/1645780864/assets/6a5367d7266744b5a2b3f9d42a2d1757.png" style="background: #F7F7F7; position: relative; z-index: 1; height: 45px"
+                                        /></a>
+                                </td>
+                                <!-- Download Andoid Section-->
+                                <td style="width: 5%; vertical-align: middle;">
+                                    <div style="border-top: 1px solid #979797"> </div>
+                                </td>
+                                <!-- Download Apple Section-->
+                                <td style="width: auto; text-align: center; vertical-align: middle; color: #979797">
+                                    <a class="btn-link" href="#" style="margin: 0 10px;"><img alt="Download on Apple" class="btn-img" src="https://d2xdgxd31vfz2r.cloudfront.net/1645780864/assets/2b9962fdc2dc4ce5a20bde593965d5d4.png" style="background: #F7F7F7; position: relative; z-index: 1; height: 45px"
+                                        /></a>
+                                </td>
+                                <!-- Download Apple Section-->
+                                <td style="width: 30%; vertical-align: middle; color: #979797">
+                                    <div style="border-top: 1px solid #979797"> </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5">
+                                    <p class="f-desc" style="font-family:'Poppins', Arial, sans-serif; padding: 22px 0 33px; font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #939393; max-width: 80%; margin: 0 auto;">For assistance, reach out to our support team at support@example.com</p>
+                                </td>
+                            </tr>
+                            <!-- Footer Section-->
+                            <tr class="f-wrap">
+                                <td colspan="5">
+                                    <ul class="f-nav-list" style="padding: 19px 0; list-style: none; text-align: center; border-top: 1px solid #979797">
+                                        <li class="f-nav-item" style=" margin: 0 5px;display: inline-block;">
+                                            <!-- Contact Us-->
+                                            <a class="f-nav-link" href="#" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #939393 !important; text-decoration: none;">Contact Us</a>
+                                            <!-- Contact Us-->
+                                        </li>
+                                        <li class="f-nav-item" style=" margin: 0 5px; display: inline-block;">
+                                            <!-- Terms-->
+                                            <a class="f-nav-link" href="#" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #939393 !important; text-decoration: none;">Terms of Use</a>
+                                            <!-- Terms-->
+                                        </li>
+                                        <li class="f-nav-item" style=" margin: 0 5px; display: inline-block;">
+                                            <!-- Privacy Policy-->
+                                            <a class="f-nav-link" href="#" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px;  font-weight: 400; line-height: 24px; color: #939393 !important; text-decoration: none;">Privacy Policy</a>
+                                            <!-- Privacy Policy-->
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <!-- Footer Section-->
+                            <!-- Unsubscribe Section-->
+                            <tr class="f-wrap">
+                                <td colspan="5">
+                                    <hr style="border: none; border-top: 1px solid #939393; margin: 0 auto; max-width: 100%;" />
+                                    <p class="f-desc" style="font-family:'Poppins', Arial, sans-serif; padding: 22px 0 33px; font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #939393; max-width: 80%; margin: 0 auto;">To opt out of promotional emails like this,
+                                        <a href="#" style="color:#1DBF73;text-decoration:none;font-weight:bold">unsubscribe here</a>
+                                    </p>
+                                </td>
+                            </tr>
+                            <!-- Unsubscribe Section-->
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+
+</html>
+```
 
 </Accordion>
 
@@ -5352,684 +5538,684 @@ This AMP template is designed to promote a curated selection of new arrivals, tr
 
 <Image align="center" alt="Sample Product Listing Template" border={true} caption="Sample Product Listing Template" src="https://files.readme.io/3b422b68a566885f81d76d61157af681abbe2dad80105ae3e64ac39af27731cd-Product_Listing_AMP.png" width="25% " />
 
-<details>
-  <summary><b>Expand to know more about the template.</b></summary>
+<Accordion title="Expand to know more about the template.">
 
-  ### Use Case Examples
+### Use Case Examples
 
-  * Highlight newly launched or trending products from your catalog.
-  * Personalize the product showcase based on the user’s recent activity or preferences.
-  * Run weekly or monthly What’s New campaigns for returning users.
-  * Drive conversions by enabling users to click through to product pages without friction.
+* Highlight newly launched or trending products from your catalog.
+* Personalize the product showcase based on the user’s recent activity or preferences.
+* Run weekly or monthly What’s New campaigns for returning users.
+* Drive conversions by enabling users to click through to product pages without friction.
 
-  ### Template Customization Options
+### Template Customization Options
 
-  * [Replace Logo](doc:ootb-email-templates#replace-logo)
-  * [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-  * [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
-  * [Update Links in Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-  * [Change Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-  * [Update Privacy Policy](doc:ootb-email-templates#update-privacy-policy)
-  * [Update Social Media and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+* [Replace Logo](doc:ootb-email-templates#replace-logo)
+* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
+* [Update Links in Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+* [Change Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+* [Update Privacy Policy](doc:ootb-email-templates#update-privacy-policy)
+* [Update Social Media and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
 
-  ### Template Code
+### Template Code
 
-  ```html
-  <!doctype html>
-  <html ⚡4email data-css-strict>
-  <head>
-  <meta charset="utf-8">
-  <script async src="https://cdn.ampproject.org/v0.js"></script>
-  <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
-  <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
-  <style amp4email-boilerplate>body{visibility:hidden}</style>
-  <style amp-custom>
-  *{
-  margin: 0;
-  padding: 0;
-  }
-  body {
-  font-family: "Helvetica", arial, sans-serif;
-  font-weight: 400;
-  }
-  img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  }
-  .main {
-  width: 100%;
-  max-width: 600px;
-  overflow: hidden;
-  margin: 0 auto;
-  background: #FFFFFF;
-  }
-  @media only screen and (max-width: 400px) {
-  body .main {
-  max-width: 95%;
-  }
-  }
-  .logo-wrap{
-  padding: 17px 0;
-  }
-  .logo-wrap .img-wrap{
-  max-width: 159px;
-  max-height: 73px;
-  margin: 0 auto;
-  } 
-  .footer{
-  border-top: 0.5px solid #D66437;
-  }
-  .media-logo-list{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  gap: 16px;
-  margin: 39px 0 34px;
-  }
-  .media-logo-list .logo-item{
-  width: 34px;
-  height: 34px;
-  }
-  .media-logo-list .logo-item .logo-link{
-  width: 100%;
-  height: 100%;
-  display: inline-block;
-  } 
-  .f-desc{
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  color: #939393;
-  text-align: center; 
-  max-width: 80%;
-  margin: 0 auto 27px;
-  }
-  .f-nav-list{
-  padding: 27px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  border-top: 0.5px solid #979797;
-  }
-  .f-nav-list .f-nav-item {
-  margin: 0 5px;
-  }
-  .f-nav-list .f-nav-item .f-nav-link{
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  text-align: center;
-  color: #939393;
-  text-decoration: none; 
-  }
-  .banner {
-  background: #d66437; 
-  }
-  .banner .top-wrap{
-  padding: 38px 25px 25px;
-  }
-  .banner .title {
-  margin-bottom: 10px;
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 45px;
-  text-align: center;
-  color: #fff;
-  text-transform: uppercase;
-  }
-  .banner .desc {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 22px;
-  color: #fff;
-  text-align: center;
-  text-transform: none;
-  }
-  .banner .img-wrap {
-  max-height: 377px;
-  width: 100%;
-  }
-  .banner .cta-wrap {
-  padding: 15px 35px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
-  }
-  .banner .cta-desc {
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 20px;
-  color: #fff;
-  width: 50%;
-  }
-  .banner .cta-desc .cm-bold {
-  font-weight: 500;
-  }
-  .banner .cta-btn {
-  padding: 5px 35px;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 24px;
-  color: #000;
-  text-align: center;
-  text-transform: uppercase;
-  max-width: 125px;
-  background: #FFFFFF;
-  outline: none;
-  border: none;
-  text-decoration: none; 
-  }
-  .product-wrap {
-  padding: 40px 0 20px;
-  max-width: 85%;
-  margin: 0 auto;
-  }
-  .product-wrap .title {
-  color: #0d0d0d;
-  font-size: 32px;
-  font-weight: 400;
-  line-height: 52px;
-  text-align: center;
-  margin-bottom: 10px;
-  }
-  .product-wrap .desc {
-  color: #909090;
-  font-size: 10px;
-  font-weight: 400;
-  line-height: 20px;
-  text-transform: none;
-  text-align: center;
-  margin-bottom: 28px;
-  }
-  .product-category{
-  display: flex;
-  justify-content: space-between;
-  padding: 18px 0;
-  }
-  .category-wrap{
-  width: 60%;
-  }
-  .category-search{
-  text-align: right;
-  width: 40%;
-  }
-  .product-list {
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 15px;
-  flex-wrap: wrap;
-  list-style: none;
-  }
-  .product-list .product-item {
-  width: 48%;
-  margin-bottom: 15px;
-  }
-  .product-card .img-wrap {
-  max-width: 238px;
-  max-height: 238px;
-  margin-bottom: 10px;
-  }
-  .product-card .p-link {
-  font-size: 22px;
-  font-weight: 300;
-  line-height: 37px;
-  text-decoration: none;
-  color: #D66437;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 20px;
-  }
-  .product-card .p-link .icon {
-  width: 30px;
-  height: 14px;
-  }
-  .category-title{
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 24px;
-  text-align: left;
-  text-transform: uppercase;
-  }
-  .hide {
-  display: none;
-  }
-  .show {
-  display: block;
-  }
-  .custom-select{
-  padding: 5px 12px;
-  background: #FFFFFF;
-  border: 1px solid #252525;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  text-align: left;
-  }
-  .custom-select option{
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  text-align: left;
-  padding: 5px 11px;
-  }
-  .custom-select option:disabled{display: none;}
-  .custom-select option:hover,
-  .custom-select option:focus,
-  .custom-select option:active,
-  .custom-select option:checked{ 
-  color: #000000 ; background: #FFFFFF;
-  }
-  @media only screen and (max-width: 480px) {
-  .logo-wrap .img-wrap {
-  max-width: 130px;
-  max-height: 60px;
-  } 
-  .banner .top-wrap {
-  padding: 30px 25px 20px;
-  }
-  .banner .title {
-  font-size: 28px;
-  line-height: 38px;
-  }
-  .banner .cta-wrap {
-  padding: 15px 25px;
-  }
-  .banner .cta-btn {
-  padding: 5px 10px;
-  }
-  .product-list{
-  gap: 10px
-  }
-  .product-list .product-item{
-  margin-bottom: 20px;
-  }
-  .product-wrap{
-  max-width: 100%;
-  padding: 40px 10px 20px;
-  }
-  .product-wrap .title {
-  font-size: 22px;
-  line-height: 28px;
-  }
-  .product-wrap .desc{
-  margin-bottom: 20px;
-  }
-  .product-card .p-link {
-  font-size: 18px;
-  line-height: 28px;
-  gap: 10px;
-  }
-  .product-card .p-link .icon {
-  width: 20px;
-  height: 10px;
-  }
-  .media-logo-list {
-  gap: 12px;
-  margin: 29px 0 24px;
-  }
-  .f-nav-list {
-  padding: 20px 0;
-  }
-  .f-desc{
-  line-height: 20px;
-  }
-  }
-  @media only screen and (max-width: 300px) {
-  .product-wrap {
-  padding: 40px 5px 20px;
-  }
-  }
-  </style>
-  </head>
-  <body>
-  <amp-state id="selectedCategory">
-  <script type="application/json">
-  {
-  "value": "men"
-  }
-  </script>
-  </amp-state>
-  <div class="main">
-  <header>
-  <div class="logo-wrap">
-  <div class="img-wrap">
-  <!-- Change image src as per your requirements -->
-  <!-- Change image src as per your requirements -->
-  <amp-img layout="responsive" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" alt="Logo" width="159" height="73" />
-  </div>
-  </div>
-  </header>
-  <div class="banner">
-  <div class="top-wrap">
-  <h2 class="title">WHAT’S NEW IN STORE</h2>
-  <p class="desc">Shop from the latest styles and trends</p>
-  </div>
-  <div class="img-wrap">
-  <!-- Change image src as per your requirements -->
-  <!-- Change image src as per your requirements -->
-  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/banner-image.png" alt="Banner" width="600" height="377"></amp-img>
-  </div>
-  <div class="cta-wrap">
-  <p class="cta-desc">Get <span class="cm-bold">FREE Delivery</span> on all orders</p>
-  <div class="cta-"> </div>
-  <a href="https://www.google.co.in/" class="cta-btn">Shop Now</a>
-  </div>
-  </div>
-  <div class="container">
-  <div class="product-wrap">
-  <h3 class="title">NEW PRODUCTS LAUNCHED</h3>
-  <p class="desc">Explore newly launched products from our collection.</p>
-  <div class="product-category">
-  <div class="category-wrap">
-  <h2 class="category-title" [text]="selectedCategory.value">men</h2>
-  </div>
-  <div class="category-search">
-  <select class="custom-select" on="change:AMP.setState({selectedCategory: {value: event.value}})">
-  <option value="explore" disabled selected [selected]="selectedCategory == 'explore'">Explore</option>
-  <option value="men" [selected]="selectedCategory == 'men'">Men</option>
-  <option value="women" [selected]="selectedCategory == 'women'">Women</option>
-  <option value="kids" [selected]="selectedCategory == 'kids'">Kids</option>
-  </select>
-  </div>
-  </div>
-  <div class="category show" [class]="(selectedCategory.value == 'men') ? 'category show' : 'category hide'">
-  <ul class="product-list">
-  <li class="product-item">
-  <div class="product-card">
-  <div class="img-wrap">
-  <!-- Change image src as per your requirements -->
-  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/men-product-1.png" alt="Product Image" width="238" height="238"></amp-img>
-  </div>
-  <a href="https://www.google.co.in/" class="p-link">
-  Shop now 
-  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
-  </a>
-  </div>
-  </li>
-  <li class="product-item">
-  <div class="product-card">
-  <div class="img-wrap">
-  <!-- Change image src as per your requirements -->
-  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/men-product-2.png" alt="Product Image" width="238" height="238"></amp-img>
-  </div>
-  <a href="https://www.google.co.in/" class="p-link">
-  Shop now 
-  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
-  </a>
-  </div>
-  </li>
-  <li class="product-item">
-  <div class="product-card">
-  <div class="img-wrap">
-  <!-- Change image src as per your requirements -->
-  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/men-product-3.png" alt="Product Image" width="238" height="238"></amp-img>
-  </div>
-  <a href="https://www.google.co.in/" class="p-link">
-  Shop now 
-  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
-  </a>
-  </div>
-  </li>
-  <li class="product-item">
-  <div class="product-card">
-  <div class="img-wrap">
-  <!-- Change image src as per your requirements -->
-  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/men-product-4.png" alt="Product Image" width="238" height="238"></amp-img>
-  </div>
-  <a href="https://www.google.co.in/" class="p-link">
-  Shop now 
-  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
-  </a>
-  </div>
-  </li>
-  <li class="product-item">
-  <div class="product-card">
-  <div class="img-wrap">
-  <!-- Change image src as per your requirements -->
-  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/men-product-5.png" alt="Product Image" width="238" height="238"></amp-img>
-  </div>
-  <a href="https://www.google.co.in/" class="p-link">
-  Shop now 
-  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
-  </a>
-  </div>
-  </li>
-  <li class="product-item">
-  <div class="product-card">
-  <div class="img-wrap">
-  <!-- Change image src as per your requirements -->
-  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/men-product-6.png" alt="Product Image" width="238" height="238"></amp-img>
-  </div>
-  <a href="https://www.google.co.in/" class="p-link">
-  Shop now 
-  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
-  </a>
-  </div>
-  </li>
-  <li class="product-item">
-  <div class="product-card">
-  <div class="img-wrap">
-  <!-- Change image src as per your requirements -->
-  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/men-product-7.png" alt="Product Image" width="238" height="238"></amp-img>
-  </div>
-  <a href="https://www.google.co.in/" class="p-link">
-  Shop now 
-  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
-  </a>
-  </div>
-  </li>
-  <li class="product-item">
-  <div class="product-card">
-  <div class="img-wrap">
-  <!-- Change image src as per your requirements -->
-  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/men-product-8.png" alt="Product Image" width="238" height="238"></amp-img>
-  </div>
-  <a href="https://www.google.co.in/" class="p-link">
-  Shop now 
-  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
-  </a>
-  </div>
-  </li>
-  </ul>
-  </div>
-  <div class="category hide" [class]="(selectedCategory.value == 'women') ? 'category show' : 'category hide'">
-  <ul class="product-list">
-  <li class="product-item">
-  <div class="product-card">
-  <div class="img-wrap">
-  <!-- Change image src as per your requirements -->
-  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/women-product-1.png" alt="Product Image" width="238" height="238"></amp-img>
-  </div>
-  <a href="https://www.google.co.in/" class="p-link">
-  Shop now 
-  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
-  </a>
-  </div>
-  </li>
-  <li class="product-item">
-  <div class="product-card">
-  <div class="img-wrap">
-  <!-- Change image src as per your requirements -->
-  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/women-product-2.png" alt="Product Image" width="238" height="238"></amp-img>
-  </div>
-  <a href="https://www.google.co.in/" class="p-link">
-  Shop now 
-  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
-  </a>
-  </div>
-  </li>
-  <li class="product-item">
-  <div class="product-card">
-  <div class="img-wrap">
-  <!-- Change image src as per your requirements -->
-  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/women-product-3.png" alt="Product Image" width="238" height="238"></amp-img>
-  </div>
-  <a href="https://www.google.co.in/" class="p-link">
-  Shop now 
-  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
-  </a>
-  </div>
-  </li>
-  <li class="product-item">
-  <div class="product-card">
-  <div class="img-wrap">
-  <!-- Change image src as per your requirements -->
-  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/women-product-4.png" alt="Product Image" width="238" height="238"></amp-img>
-  </div>
-  <a href="https://www.google.co.in/" class="p-link">
-  Shop now 
-  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
-  </a>
-  </div>
-  </li>
-  <li class="product-item">
-  <div class="product-card">
-  <div class="img-wrap">
-  <!-- Change image src as per your requirements -->
-  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/women-product-5.png" alt="Product Image" width="238" height="238"></amp-img>
-  </div>
-  <a href="https://www.google.co.in/" class="p-link">
-  Shop now 
-  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
-  </a>
-  </div>
-  </li>
-  <li class="product-item">
-  <div class="product-card">
-  <div class="img-wrap">
-  <!-- Change image src as per your requirements -->
-  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/women-product-6.png" alt="Product Image" width="238" height="238"></amp-img>
-  </div>
-  <a href="https://www.google.co.in/" class="p-link">
-  Shop now 
-  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
-  </a>
-  </div>
-  </li>
-  <li class="product-item">
-  <div class="product-card">
-  <div class="img-wrap">
-  <!-- Change image src as per your requirements -->
-  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/women-product-7.png" alt="Product Image" width="238" height="238"></amp-img>
-  </div>
-  <a href="https://www.google.co.in/" class="p-link">
-  Shop now 
-  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
-  </a>
-  </div>
-  </li>
-  <li class="product-item">
-  <div class="product-card">
-  <div class="img-wrap">
-  <!-- Change image src as per your requirements -->
-  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/women-product-8.png" alt="Product Image" width="238" height="238"></amp-img>
-  </div>
-  <a href="https://www.google.co.in/" class="p-link">
-  Shop now 
-  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
-  </a>
-  </div>
-  </li>
-  </ul>
-  </div>
-  <div class="category hide" [class]="(selectedCategory.value == 'kids') ? 'category show' : 'category hide'">
-  <ul class="product-list">
-  <li class="product-item">
-  <div class="product-card">
-  <div class="img-wrap">
-  <!-- Change image src as per your requirements -->
-  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/kid-product-1.png" alt="Product Image" width="238" height="238"></amp-img>
-  </div>
-  <a href="https://www.google.co.in/" class="p-link">
-  Shop now 
-  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
-  </a>
-  </div>
-  </li>
-  <li class="product-item">
-  <div class="product-card">
-  <div class="img-wrap">
-  <!-- Change image src as per your requirements -->
-  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/kid-product-2.png" alt="Product Image" width="238" height="238"></amp-img>
-  </div>
-  <a href="https://www.google.co.in/" class="p-link">
-  Shop now 
-  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
-  </a>
-  </div>
-  </li>
-  <li class="product-item">
-  <div class="product-card">
-  <div class="img-wrap">
-  <!-- Change image src as per your requirements -->
-  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/kid-product-3.png" alt="Product Image" width="238" height="238"></amp-img>
-  </div>
-  <a href="https://www.google.co.in/" class="p-link">
-  Shop now 
-  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
-  </a>
-  </div>
-  </li>
-  <li class="product-item">
-  <div class="product-card">
-  <div class="img-wrap">
-  <!-- Change image src as per your requirements -->
-  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/kid-product-4.png" alt="Product Image" width="238" height="238"></amp-img>
-  </div>
-  <a href="https://www.google.co.in/" class="p-link">
-  Shop now 
-  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
-  </a>
-  </div>
-  </li>
-  </ul>
-  </div>
-  </div>
-  </div>
-  <footer class="footer">
-  <ul class="media-logo-list">
-  <li class="logo-item">
-  <a href="https://www.google.co.in/" class="logo-link">
-  <amp-img layout="responsive" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/31a2d71dbe3e4579bcfa0d74dfc3e34d.png" alt="instagram" class="media-logo" width="34" height="34"></amp-img>
-  </a>
-  </li>
-  <li class="logo-item">
-  <a href="https://www.google.co.in/" class="logo-link">
-  <amp-img layout="responsive" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/28b65b9647964152a2a5f6e816e50bf9.png" alt="facebook" class="media-logo" width="34" height="34"></amp-img>
-  </a>
-  </li>
-  <li class="logo-item">
-  <a href="https://www.google.co.in/" class="logo-link">
-  <amp-img layout="responsive" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/3ae087af1f3544b0885c0a3ec31c2419.png" alt="x" class="media-logo" width="34" height="34"></amp-img>
-  </a>
-  </li>
-  </ul>
-  <p class="f-desc">For assistance, connect with us on social media or reach out to our support team at support@example.com </p>
-  <ul class="f-nav-list">
-  <li class="f-nav-item">
-  <a href="https://www.google.co.in/" class="f-nav-link">Privacy</a>
-  </li>
-  <li class="f-nav-item">
-  <a href="https://www.google.co.in/" class="f-nav-link">Account</a>
-  </li>
-  <li class="f-nav-item">
-  <a href="https://www.google.co.in/" class="f-nav-link">Unsubscribe</a>
-  </li>
-  </ul>
-  <p class="f-desc">To opt out of promotional emails like this, <a href="https://google.com" style="text-decoration:none;color:#D66437;font-weight:bold">unsubscribe here</a></p>
-  </footer>
-  </div>
-  </body>
-  </html>
-  ```
-</details>
+```html
+<!doctype html>
+<html ⚡4email data-css-strict>
+<head>
+<meta charset="utf-8">
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+<script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+<script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+<style amp4email-boilerplate>body{visibility:hidden}</style>
+<style amp-custom>
+*{
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "Helvetica", arial, sans-serif;
+font-weight: 400;
+}
+img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+.main {
+width: 100%;
+max-width: 600px;
+overflow: hidden;
+margin: 0 auto;
+background: #FFFFFF;
+}
+@media only screen and (max-width: 400px) {
+body .main {
+max-width: 95%;
+}
+}
+.logo-wrap{
+padding: 17px 0;
+}
+.logo-wrap .img-wrap{
+max-width: 159px;
+max-height: 73px;
+margin: 0 auto;
+} 
+.footer{
+border-top: 0.5px solid #D66437;
+}
+.media-logo-list{
+display: flex;
+justify-content: center;
+align-items: center;
+list-style: none;
+gap: 16px;
+margin: 39px 0 34px;
+}
+.media-logo-list .logo-item{
+width: 34px;
+height: 34px;
+}
+.media-logo-list .logo-item .logo-link{
+width: 100%;
+height: 100%;
+display: inline-block;
+} 
+.f-desc{
+font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+color: #939393;
+text-align: center; 
+max-width: 80%;
+margin: 0 auto 27px;
+}
+.f-nav-list{
+padding: 27px 0;
+display: flex;
+justify-content: center;
+align-items: center;
+list-style: none;
+border-top: 0.5px solid #979797;
+}
+.f-nav-list .f-nav-item {
+margin: 0 5px;
+}
+.f-nav-list .f-nav-item .f-nav-link{
+font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+text-align: center;
+color: #939393;
+text-decoration: none; 
+}
+.banner {
+background: #d66437; 
+}
+.banner .top-wrap{
+padding: 38px 25px 25px;
+}
+.banner .title {
+margin-bottom: 10px;
+font-size: 36px;
+font-weight: 400;
+line-height: 45px;
+text-align: center;
+color: #fff;
+text-transform: uppercase;
+}
+.banner .desc {
+font-size: 14px;
+font-weight: 400;
+line-height: 22px;
+color: #fff;
+text-align: center;
+text-transform: none;
+}
+.banner .img-wrap {
+max-height: 377px;
+width: 100%;
+}
+.banner .cta-wrap {
+padding: 15px 35px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 10px;
+}
+.banner .cta-desc {
+font-size: 14px;
+font-weight: 300;
+line-height: 20px;
+color: #fff;
+width: 50%;
+}
+.banner .cta-desc .cm-bold {
+font-weight: 500;
+}
+.banner .cta-btn {
+padding: 5px 35px;
+font-size: 12px;
+font-weight: 400;
+line-height: 24px;
+color: #000;
+text-align: center;
+text-transform: uppercase;
+max-width: 125px;
+background: #FFFFFF;
+outline: none;
+border: none;
+text-decoration: none; 
+}
+.product-wrap {
+padding: 40px 0 20px;
+max-width: 85%;
+margin: 0 auto;
+}
+.product-wrap .title {
+color: #0d0d0d;
+font-size: 32px;
+font-weight: 400;
+line-height: 52px;
+text-align: center;
+margin-bottom: 10px;
+}
+.product-wrap .desc {
+color: #909090;
+font-size: 10px;
+font-weight: 400;
+line-height: 20px;
+text-transform: none;
+text-align: center;
+margin-bottom: 28px;
+}
+.product-category{
+display: flex;
+justify-content: space-between;
+padding: 18px 0;
+}
+.category-wrap{
+width: 60%;
+}
+.category-search{
+text-align: right;
+width: 40%;
+}
+.product-list {
+padding: 0;
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+gap: 15px;
+flex-wrap: wrap;
+list-style: none;
+}
+.product-list .product-item {
+width: 48%;
+margin-bottom: 15px;
+}
+.product-card .img-wrap {
+max-width: 238px;
+max-height: 238px;
+margin-bottom: 10px;
+}
+.product-card .p-link {
+font-size: 22px;
+font-weight: 300;
+line-height: 37px;
+text-decoration: none;
+color: #D66437;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+gap: 20px;
+}
+.product-card .p-link .icon {
+width: 30px;
+height: 14px;
+}
+.category-title{
+font-size: 20px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+text-transform: uppercase;
+}
+.hide {
+display: none;
+}
+.show {
+display: block;
+}
+.custom-select{
+padding: 5px 12px;
+background: #FFFFFF;
+border: 1px solid #252525;
+font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+}
+.custom-select option{
+font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+padding: 5px 11px;
+}
+.custom-select option:disabled{display: none;}
+.custom-select option:hover,
+.custom-select option:focus,
+.custom-select option:active,
+.custom-select option:checked{ 
+color: #000000 ; background: #FFFFFF;
+}
+@media only screen and (max-width: 480px) {
+.logo-wrap .img-wrap {
+max-width: 130px;
+max-height: 60px;
+} 
+.banner .top-wrap {
+padding: 30px 25px 20px;
+}
+.banner .title {
+font-size: 28px;
+line-height: 38px;
+}
+.banner .cta-wrap {
+padding: 15px 25px;
+}
+.banner .cta-btn {
+padding: 5px 10px;
+}
+.product-list{
+gap: 10px
+}
+.product-list .product-item{
+margin-bottom: 20px;
+}
+.product-wrap{
+max-width: 100%;
+padding: 40px 10px 20px;
+}
+.product-wrap .title {
+font-size: 22px;
+line-height: 28px;
+}
+.product-wrap .desc{
+margin-bottom: 20px;
+}
+.product-card .p-link {
+font-size: 18px;
+line-height: 28px;
+gap: 10px;
+}
+.product-card .p-link .icon {
+width: 20px;
+height: 10px;
+}
+.media-logo-list {
+gap: 12px;
+margin: 29px 0 24px;
+}
+.f-nav-list {
+padding: 20px 0;
+}
+.f-desc{
+line-height: 20px;
+}
+}
+@media only screen and (max-width: 300px) {
+.product-wrap {
+padding: 40px 5px 20px;
+}
+}
+</style>
+</head>
+<body>
+<amp-state id="selectedCategory">
+<script type="application/json">
+{
+"value": "men"
+}
+</script>
+</amp-state>
+<div class="main">
+<header>
+<div class="logo-wrap">
+<div class="img-wrap">
+<!-- Change image src as per your requirements -->
+<!-- Change image src as per your requirements -->
+<amp-img layout="responsive" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" alt="Logo" width="159" height="73" />
+</div>
+</div>
+</header>
+<div class="banner">
+<div class="top-wrap">
+<h2 class="title">WHAT’S NEW IN STORE</h2>
+<p class="desc">Shop from the latest styles and trends</p>
+</div>
+<div class="img-wrap">
+<!-- Change image src as per your requirements -->
+<!-- Change image src as per your requirements -->
+<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/banner-image.png" alt="Banner" width="600" height="377"></amp-img>
+</div>
+<div class="cta-wrap">
+<p class="cta-desc">Get <span class="cm-bold">FREE Delivery</span> on all orders</p>
+<div class="cta-"> </div>
+<a href="https://www.google.co.in/" class="cta-btn">Shop Now</a>
+</div>
+</div>
+<div class="container">
+<div class="product-wrap">
+<h3 class="title">NEW PRODUCTS LAUNCHED</h3>
+<p class="desc">Explore newly launched products from our collection.</p>
+<div class="product-category">
+<div class="category-wrap">
+<h2 class="category-title" [text]="selectedCategory.value">men</h2>
+</div>
+<div class="category-search">
+<select class="custom-select" on="change:AMP.setState({selectedCategory: {value: event.value}})">
+<option value="explore" disabled selected [selected]="selectedCategory == 'explore'">Explore</option>
+<option value="men" [selected]="selectedCategory == 'men'">Men</option>
+<option value="women" [selected]="selectedCategory == 'women'">Women</option>
+<option value="kids" [selected]="selectedCategory == 'kids'">Kids</option>
+</select>
+</div>
+</div>
+<div class="category show" [class]="(selectedCategory.value == 'men') ? 'category show' : 'category hide'">
+<ul class="product-list">
+<li class="product-item">
+<div class="product-card">
+<div class="img-wrap">
+<!-- Change image src as per your requirements -->
+<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/men-product-1.png" alt="Product Image" width="238" height="238"></amp-img>
+</div>
+<a href="https://www.google.co.in/" class="p-link">
+Shop now 
+<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
+</a>
+</div>
+</li>
+<li class="product-item">
+<div class="product-card">
+<div class="img-wrap">
+<!-- Change image src as per your requirements -->
+<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/men-product-2.png" alt="Product Image" width="238" height="238"></amp-img>
+</div>
+<a href="https://www.google.co.in/" class="p-link">
+Shop now 
+<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
+</a>
+</div>
+</li>
+<li class="product-item">
+<div class="product-card">
+<div class="img-wrap">
+<!-- Change image src as per your requirements -->
+<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/men-product-3.png" alt="Product Image" width="238" height="238"></amp-img>
+</div>
+<a href="https://www.google.co.in/" class="p-link">
+Shop now 
+<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
+</a>
+</div>
+</li>
+<li class="product-item">
+<div class="product-card">
+<div class="img-wrap">
+<!-- Change image src as per your requirements -->
+<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/men-product-4.png" alt="Product Image" width="238" height="238"></amp-img>
+</div>
+<a href="https://www.google.co.in/" class="p-link">
+Shop now 
+<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
+</a>
+</div>
+</li>
+<li class="product-item">
+<div class="product-card">
+<div class="img-wrap">
+<!-- Change image src as per your requirements -->
+<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/men-product-5.png" alt="Product Image" width="238" height="238"></amp-img>
+</div>
+<a href="https://www.google.co.in/" class="p-link">
+Shop now 
+<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
+</a>
+</div>
+</li>
+<li class="product-item">
+<div class="product-card">
+<div class="img-wrap">
+<!-- Change image src as per your requirements -->
+<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/men-product-6.png" alt="Product Image" width="238" height="238"></amp-img>
+</div>
+<a href="https://www.google.co.in/" class="p-link">
+Shop now 
+<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
+</a>
+</div>
+</li>
+<li class="product-item">
+<div class="product-card">
+<div class="img-wrap">
+<!-- Change image src as per your requirements -->
+<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/men-product-7.png" alt="Product Image" width="238" height="238"></amp-img>
+</div>
+<a href="https://www.google.co.in/" class="p-link">
+Shop now 
+<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
+</a>
+</div>
+</li>
+<li class="product-item">
+<div class="product-card">
+<div class="img-wrap">
+<!-- Change image src as per your requirements -->
+<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/men-product-8.png" alt="Product Image" width="238" height="238"></amp-img>
+</div>
+<a href="https://www.google.co.in/" class="p-link">
+Shop now 
+<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
+</a>
+</div>
+</li>
+</ul>
+</div>
+<div class="category hide" [class]="(selectedCategory.value == 'women') ? 'category show' : 'category hide'">
+<ul class="product-list">
+<li class="product-item">
+<div class="product-card">
+<div class="img-wrap">
+<!-- Change image src as per your requirements -->
+<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/women-product-1.png" alt="Product Image" width="238" height="238"></amp-img>
+</div>
+<a href="https://www.google.co.in/" class="p-link">
+Shop now 
+<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
+</a>
+</div>
+</li>
+<li class="product-item">
+<div class="product-card">
+<div class="img-wrap">
+<!-- Change image src as per your requirements -->
+<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/women-product-2.png" alt="Product Image" width="238" height="238"></amp-img>
+</div>
+<a href="https://www.google.co.in/" class="p-link">
+Shop now 
+<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
+</a>
+</div>
+</li>
+<li class="product-item">
+<div class="product-card">
+<div class="img-wrap">
+<!-- Change image src as per your requirements -->
+<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/women-product-3.png" alt="Product Image" width="238" height="238"></amp-img>
+</div>
+<a href="https://www.google.co.in/" class="p-link">
+Shop now 
+<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
+</a>
+</div>
+</li>
+<li class="product-item">
+<div class="product-card">
+<div class="img-wrap">
+<!-- Change image src as per your requirements -->
+<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/women-product-4.png" alt="Product Image" width="238" height="238"></amp-img>
+</div>
+<a href="https://www.google.co.in/" class="p-link">
+Shop now 
+<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
+</a>
+</div>
+</li>
+<li class="product-item">
+<div class="product-card">
+<div class="img-wrap">
+<!-- Change image src as per your requirements -->
+<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/women-product-5.png" alt="Product Image" width="238" height="238"></amp-img>
+</div>
+<a href="https://www.google.co.in/" class="p-link">
+Shop now 
+<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
+</a>
+</div>
+</li>
+<li class="product-item">
+<div class="product-card">
+<div class="img-wrap">
+<!-- Change image src as per your requirements -->
+<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/women-product-6.png" alt="Product Image" width="238" height="238"></amp-img>
+</div>
+<a href="https://www.google.co.in/" class="p-link">
+Shop now 
+<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
+</a>
+</div>
+</li>
+<li class="product-item">
+<div class="product-card">
+<div class="img-wrap">
+<!-- Change image src as per your requirements -->
+<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/women-product-7.png" alt="Product Image" width="238" height="238"></amp-img>
+</div>
+<a href="https://www.google.co.in/" class="p-link">
+Shop now 
+<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
+</a>
+</div>
+</li>
+<li class="product-item">
+<div class="product-card">
+<div class="img-wrap">
+<!-- Change image src as per your requirements -->
+<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/women-product-8.png" alt="Product Image" width="238" height="238"></amp-img>
+</div>
+<a href="https://www.google.co.in/" class="p-link">
+Shop now 
+<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
+</a>
+</div>
+</li>
+</ul>
+</div>
+<div class="category hide" [class]="(selectedCategory.value == 'kids') ? 'category show' : 'category hide'">
+<ul class="product-list">
+<li class="product-item">
+<div class="product-card">
+<div class="img-wrap">
+<!-- Change image src as per your requirements -->
+<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/kid-product-1.png" alt="Product Image" width="238" height="238"></amp-img>
+</div>
+<a href="https://www.google.co.in/" class="p-link">
+Shop now 
+<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
+</a>
+</div>
+</li>
+<li class="product-item">
+<div class="product-card">
+<div class="img-wrap">
+<!-- Change image src as per your requirements -->
+<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/kid-product-2.png" alt="Product Image" width="238" height="238"></amp-img>
+</div>
+<a href="https://www.google.co.in/" class="p-link">
+Shop now 
+<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
+</a>
+</div>
+</li>
+<li class="product-item">
+<div class="product-card">
+<div class="img-wrap">
+<!-- Change image src as per your requirements -->
+<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/kid-product-3.png" alt="Product Image" width="238" height="238"></amp-img>
+</div>
+<a href="https://www.google.co.in/" class="p-link">
+Shop now 
+<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
+</a>
+</div>
+</li>
+<li class="product-item">
+<div class="product-card">
+<div class="img-wrap">
+<!-- Change image src as per your requirements -->
+<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/kid-product-4.png" alt="Product Image" width="238" height="238"></amp-img>
+</div>
+<a href="https://www.google.co.in/" class="p-link">
+Shop now 
+<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
+</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<footer class="footer">
+<ul class="media-logo-list">
+<li class="logo-item">
+<a href="https://www.google.co.in/" class="logo-link">
+<amp-img layout="responsive" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/31a2d71dbe3e4579bcfa0d74dfc3e34d.png" alt="instagram" class="media-logo" width="34" height="34"></amp-img>
+</a>
+</li>
+<li class="logo-item">
+<a href="https://www.google.co.in/" class="logo-link">
+<amp-img layout="responsive" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/28b65b9647964152a2a5f6e816e50bf9.png" alt="facebook" class="media-logo" width="34" height="34"></amp-img>
+</a>
+</li>
+<li class="logo-item">
+<a href="https://www.google.co.in/" class="logo-link">
+<amp-img layout="responsive" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/3ae087af1f3544b0885c0a3ec31c2419.png" alt="x" class="media-logo" width="34" height="34"></amp-img>
+</a>
+</li>
+</ul>
+<p class="f-desc">For assistance, connect with us on social media or reach out to our support team at support@example.com </p>
+<ul class="f-nav-list">
+<li class="f-nav-item">
+<a href="https://www.google.co.in/" class="f-nav-link">Privacy</a>
+</li>
+<li class="f-nav-item">
+<a href="https://www.google.co.in/" class="f-nav-link">Account</a>
+</li>
+<li class="f-nav-item">
+<a href="https://www.google.co.in/" class="f-nav-link">Unsubscribe</a>
+</li>
+</ul>
+<p class="f-desc">To opt out of promotional emails like this, <a href="https://google.com" style="text-decoration:none;color:#D66437;font-weight:bold">unsubscribe here</a></p>
+</footer>
+</div>
+</body>
+</html>
+```
+
+</Accordion>
 
 ## Cart Abandonment Template
 
