@@ -2348,695 +2348,685 @@ A set of transactional templates that provide customers with timely updates acro
 
 <Tabs>
   <Tab title="Order Confirmed">
-
-<Image align="center" border={true} caption="Sample Order Cofirmed Template" src="https://files.readme.io/0b3a7b4376e461cb0bf467bdfeb6c97e111f4b9c80eaa10fb7cb17e176356aaf-Order_Confirmed_HTML.png" width="35% " />
-
+    <Image align="center" border={true} src="https://files.readme.io/0b3a7b4376e461cb0bf467bdfeb6c97e111f4b9c80eaa10fb7cb17e176356aaf-Order_Confirmed_HTML.png" width="35% " />
   </Tab>
 
-<Tab title="Order Shipped">
-
-<Image align="center" border={true} caption="Order Shipped" src="https://files.readme.io/f1785a9a322e55a79f15e21844206cfb95dd3eea5420a0d5530f96320f5cea1a-Order_Shipped_HTML.png" width="40% " />
-
-    
+  <Tab title="Order Shipped">
+    <Image align="center" border={true} src="https://files.readme.io/f1785a9a322e55a79f15e21844206cfb95dd3eea5420a0d5530f96320f5cea1a-Order_Shipped_HTML.png" width="40% " />
   </Tab>
 
   <Tab title="Order Delivered">
-
-<Image align="center" border={true} caption="Order Delivered" src="https://files.readme.io/b5f7eee1c562f0d22e3694d0d6cf78c51240090d840a307bd2ca10019e66ecd9-Order_Delivered_HTML.png" width="40% " />
-
+    <Image align="center" border={true} src="https://files.readme.io/b5f7eee1c562f0d22e3694d0d6cf78c51240090d840a307bd2ca10019e66ecd9-Order_Delivered_HTML.png" width="40% " />
   </Tab>
 </Tabs>
 
 <Accordion title="Expand to know more about the template.">
+  ### Use Case Examples
 
-### Use Case Examples
+  Keeps customers informed and reassured throughout their post-purchase experience. This includes order confirmation, shipment tracking, and successful delivery notifications to reduce uncertainty and improve satisfaction.
 
-Keeps customers informed and reassured throughout their post-purchase experience. This includes order confirmation, shipment tracking, and successful delivery notifications to reduce uncertainty and improve satisfaction.
+  ### Template Customization Options
 
-### Template Customization Options
+  * [Replace the Logo](doc:ootb-email-templates#replace-logo)
+  * [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+  * [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
+  * [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+  * [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+  * [Update the Privacy Policy](doc:ootb-email-templates#update-privacy-policy)
+  * [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
 
-* [Replace the Logo](doc:ootb-email-templates#replace-logo)
-* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
-* [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-* [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-* [Update the Privacy Policy](doc:ootb-email-templates#update-privacy-policy)
-* [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+  ### Template Code
 
-### Template Code
+  ```html Order Confirmed
+  <!DOCTYPE html>
+  <html lang="en">
 
-```html Order Confirmed
-<!DOCTYPE html>
-<html lang="en">
+  <head>
+      <title></title>
+      <style type="text/css">
+          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Light.ttf\') format(\'woff\');             font-style: normal;             font-weight: 300;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Regular.ttf\') format(\'woff\');             font-style: normal;             font-weight: 400;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Medium.ttf\') format(\'woff\');             font-style: normal;             font-weight: 500;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-SemiBold.ttf\') format(\'woff\');             font-style: normal;             font-weight: 600;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Bold.ttf\') format(\'woff\');             font-style: normal;             font-weight: 700;         }          @media screen and (max-width: 480px) {             .container {                 max-width: 100% !important;             }             .box-table{                 margin: 10px 15px !important;                 padding: 20px 0px !important;             }             .imgConfirmation{                 width: 50px !important;             }             .content-sec {                 padding: 0px 10px !important;                 margin-top: 10px !important;             }             .footer-content{                 padding: 0px 10px !important;             }             .expiry-para{                 padding: 0px 10px !important;                 margin: 10px 0px !important;             }             .main-heading{                 font-size: 24px !important;                 line-height: 30px !important;                 padding: 0px 10px !important;             }             .shipping{                 padding: 0px 20px !important;             }             .track-btn{                 max-width: auto !important;                 width: auto !important;                 font-size: 16px !important;                 line-height: 24px !important;                 padding: 5px 25px !important;             }             .order-detail {                 font-size: 16px !important;                 line-height: 20px !important;                 margin-bottom: 0px !important;             }             .quantity {                 font-size: 10px !important;             }         }
+      </style>
+  </head>
 
-<head>
-    <title></title>
-    <style type="text/css">
-        @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Light.ttf\') format(\'woff\');             font-style: normal;             font-weight: 300;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Regular.ttf\') format(\'woff\');             font-style: normal;             font-weight: 400;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Medium.ttf\') format(\'woff\');             font-style: normal;             font-weight: 500;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-SemiBold.ttf\') format(\'woff\');             font-style: normal;             font-weight: 600;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Bold.ttf\') format(\'woff\');             font-style: normal;             font-weight: 700;         }          @media screen and (max-width: 480px) {             .container {                 max-width: 100% !important;             }             .box-table{                 margin: 10px 15px !important;                 padding: 20px 0px !important;             }             .imgConfirmation{                 width: 50px !important;             }             .content-sec {                 padding: 0px 10px !important;                 margin-top: 10px !important;             }             .footer-content{                 padding: 0px 10px !important;             }             .expiry-para{                 padding: 0px 10px !important;                 margin: 10px 0px !important;             }             .main-heading{                 font-size: 24px !important;                 line-height: 30px !important;                 padding: 0px 10px !important;             }             .shipping{                 padding: 0px 20px !important;             }             .track-btn{                 max-width: auto !important;                 width: auto !important;                 font-size: 16px !important;                 line-height: 24px !important;                 padding: 5px 25px !important;             }             .order-detail {                 font-size: 16px !important;                 line-height: 20px !important;                 margin-bottom: 0px !important;             }             .quantity {                 font-size: 10px !important;             }         }
-    </style>
-</head>
+  <body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" data-new-gr-c-s-loaded="14.1242.0" style="font-family: Jost, Arial, sans-serif; font-weight: 400; margin: 0px; padding: 0px; cursor: auto;">
+      <table border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 600px; margin: 0 auto; background-color: #F0EEF6; padding: 30px 0px 0px;" width="100%">
+          <!-- header start-->
+          <tbody>
+              <tr>
+                  <td style="text-align: center; vertical-align: middle; padding: 20px; margin: 0px 30px; display: block;">
+                      <!-- Change image src as per your requirements --><img alt="Logo" class="logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="display: inline-block; width: 127px; height: 58px; object-fit: cover;" /></td>
+              </tr>
+              <!-- header end-->
+              <tr>
+                  <td>
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" class="box-table" role="presentation" style="padding: 50px 0px;box-shadow: 0px 1px 12px 0px #0000001A;margin: 0px 30px; display: block; background-color: #ffffff;;">
+                          <!-- Content section -->
+                          <tbody>
+                              <tr>
+                                  <td class="content-sec" style="background: #ffffff; padding: 0px 20px; text-align: center; display: block;margin-top: 30px;">
+                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                                          <tbody>
+                                              <tr>
+                                                  <td style="text-align: center;">
+                                                      <h4 class="main-heading" style="text-transform: none;font-family: 'Jost', Arial, sans-serif; font-size: 26px; font-weight: 600; line-height: 37px; margin: 0 auto; color:#40403B;">Order confirmed</h4>
 
-<body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" data-new-gr-c-s-loaded="14.1242.0" style="font-family: Jost, Arial, sans-serif; font-weight: 400; margin: 0px; padding: 0px; cursor: auto;">
-    <table border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 600px; margin: 0 auto; background-color: #F0EEF6; padding: 30px 0px 0px;" width="100%">
-        <!-- header start-->
-        <tbody>
-            <tr>
-                <td style="text-align: center; vertical-align: middle; padding: 20px; margin: 0px 30px; display: block;">
-                    <!-- Change image src as per your requirements --><img alt="Logo" class="logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="display: inline-block; width: 127px; height: 58px; object-fit: cover;" /></td>
-            </tr>
-            <!-- header end-->
-            <tr>
-                <td>
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" class="box-table" role="presentation" style="padding: 50px 0px;box-shadow: 0px 1px 12px 0px #0000001A;margin: 0px 30px; display: block; background-color: #ffffff;;">
-                        <!-- Content section -->
-                        <tbody>
-                            <tr>
-                                <td class="content-sec" style="background: #ffffff; padding: 0px 20px; text-align: center; display: block;margin-top: 30px;">
-                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                                        <tbody>
-                                            <tr>
-                                                <td style="text-align: center;">
-                                                    <h4 class="main-heading" style="text-transform: none;font-family: 'Jost', Arial, sans-serif; font-size: 26px; font-weight: 600; line-height: 37px; margin: 0 auto; color:#40403B;">Order confirmed</h4>
+                                                      <h4 class="main-heading" style="text-transform: none;font-family: 'Jost', Arial, sans-serif; font-size: 26px; font-weight: 400; line-height: 37px; margin: 0 auto; color:#40403B;">We hope you enjoyed shopping with us</h4>
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td class="content-sec" style="border-bottom: 1px solid #FFC645; background: #ffffff; padding: 0px 80px 20px; text-align: center; display: block;margin-top: 0px;">
+                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                                          <tbody>
+                                              <tr>
+                                                  <td style="text-align: center;">
+                                                      <p class="expiry-para" style="text-transform: none; color: #6f6f6f; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: center; ">We’re now working on getting your order ready.</p>
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td class="content-sec" style="background: #ffffff; padding: 0px 20px; text-align: center; display: block;margin-top: 30px;">
+                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                                          <tbody>
+                                              <tr>
+                                                  <td style="text-align: center;">
+                                                      <h2 class="main-heading" style="text-transform: none;font-family: 'Jost', Arial, sans-serif; font-size: 26px; font-weight: 600; line-height: 37px; margin: 0 auto; color:#40403B;">Estimated Delivery on <strong data-renderer-mark="true">Feb 15 2025</strong></h2>
 
-                                                    <h4 class="main-heading" style="text-transform: none;font-family: 'Jost', Arial, sans-serif; font-size: 26px; font-weight: 400; line-height: 37px; margin: 0 auto; color:#40403B;">We hope you enjoyed shopping with us</h4>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="content-sec" style="border-bottom: 1px solid #FFC645; background: #ffffff; padding: 0px 80px 20px; text-align: center; display: block;margin-top: 0px;">
-                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                                        <tbody>
-                                            <tr>
-                                                <td style="text-align: center;">
-                                                    <p class="expiry-para" style="text-transform: none; color: #6f6f6f; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: center; ">We’re now working on getting your order ready.</p>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="content-sec" style="background: #ffffff; padding: 0px 20px; text-align: center; display: block;margin-top: 30px;">
-                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                                        <tbody>
-                                            <tr>
-                                                <td style="text-align: center;">
-                                                    <h2 class="main-heading" style="text-transform: none;font-family: 'Jost', Arial, sans-serif; font-size: 26px; font-weight: 600; line-height: 37px; margin: 0 auto; color:#40403B;">Estimated Delivery on <strong data-renderer-mark="true">Feb 15 2025</strong></h2>
+                                                      <p class="expiry-para" style="margin-top: 10px;text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 28px; text-align: center; ">Your order ID is <span style="font-weight: 600;">898774</span></p>
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td class="content-sec" style="background: #ffffff; padding: 0px 80px; text-align: center; display: block;margin-top: 0px;">
+                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                                          <tbody>
+                                              <tr>
+                                                  <td style="text-align: center;">
+                                                      <p class="expiry-para" style="text-transform: none; color: #6f6f6f; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: center; ">You’ll receive another email with tracking details once your order is shipped. Click below to view and make changes to your order.</p>
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%;">
+                                          <tbody>
+                                              <tr>
+                                                  <td style="width: 100%; text-align: center; vertical-align: middle;">
+                                                      <a class="track-btn" display_text_og="View%20and%20Manage%20Order" href="#" href_og="%23" style="font-family: Jost, Arial, sans-serif; font-size: 20px; font-weight: 400; text-transform: none; line-height: 28px; text-decoration: none; background: rgb(255, 198, 69); padding: 12px 34px; display: inline-block; text-align: center; max-width: 80%; width: 100%; color: rgb(30, 30, 30) !important;">View and Manage Order</a>
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td class="content-sec" style="border-bottom: 1px solid #FFC645; background: #ffffff; padding: 0px 20px; text-align: center; display: block;margin-top: 30px;">
+                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                                          <tbody>
+                                              <tr>
+                                                  <td style="text-align: center;">
+                                                      <h4 class="expiry-para" style="margin: 10px 0px;text-transform: none; color: #40403B; font-family: 'Jost', Arial, sans-serif; font-size: 22px; font-weight: 600; line-height: 37px; text-align: left; ">Items in Order</h4>
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td class="content-sec" style="background: #ffffff; padding: 0px 20px; text-align: center; display: block;margin-top: 30px;">
+                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                                          <tbody>
+                                              <tr>
+                                                  <td style="width: 30%; vertical-align: top;"><img alt="look" class="imgConfirmation" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/order-placed/product.png" style="width:128px; height: 121px; object-fit: contain;" /></td>
+                                                  <td style="width: 60%; vertical-align: top;">
+                                                      <h4 class="order-detail" style="margin: 0px 0px 5px; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 500; line-height: 28px;text-align: left;">Nike sneakers</h4>
 
-                                                    <p class="expiry-para" style="margin-top: 10px;text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 28px; text-align: center; ">Your order ID is <span style="font-weight: 600;">898774</span></p>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="content-sec" style="background: #ffffff; padding: 0px 80px; text-align: center; display: block;margin-top: 0px;">
-                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                                        <tbody>
-                                            <tr>
-                                                <td style="text-align: center;">
-                                                    <p class="expiry-para" style="text-transform: none; color: #6f6f6f; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: center; ">You’ll receive another email with tracking details once your order is shipped. Click below to view and make changes to your order.</p>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%;">
-                                        <tbody>
-                                            <tr>
-                                                <td style="width: 100%; text-align: center; vertical-align: middle;">
-                                                    <a class="track-btn" display_text_og="View%20and%20Manage%20Order" href="#" href_og="%23" style="font-family: Jost, Arial, sans-serif; font-size: 20px; font-weight: 400; text-transform: none; line-height: 28px; text-decoration: none; background: rgb(255, 198, 69); padding: 12px 34px; display: inline-block; text-align: center; max-width: 80%; width: 100%; color: rgb(30, 30, 30) !important;">View and Manage Order</a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="content-sec" style="border-bottom: 1px solid #FFC645; background: #ffffff; padding: 0px 20px; text-align: center; display: block;margin-top: 30px;">
-                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                                        <tbody>
-                                            <tr>
-                                                <td style="text-align: center;">
-                                                    <h4 class="expiry-para" style="margin: 10px 0px;text-transform: none; color: #40403B; font-family: 'Jost', Arial, sans-serif; font-size: 22px; font-weight: 600; line-height: 37px; text-align: left; ">Items in Order</h4>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="content-sec" style="background: #ffffff; padding: 0px 20px; text-align: center; display: block;margin-top: 30px;">
-                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                                        <tbody>
-                                            <tr>
-                                                <td style="width: 30%; vertical-align: top;"><img alt="look" class="imgConfirmation" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/order-placed/product.png" style="width:128px; height: 121px; object-fit: contain;" /></td>
-                                                <td style="width: 60%; vertical-align: top;">
-                                                    <h4 class="order-detail" style="margin: 0px 0px 5px; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 500; line-height: 28px;text-align: left;">Nike sneakers</h4>
+                                                      <p style="margin:0; color: #6f6f6f; font-family: 'Jost', Arial, sans-serif; font-size: 14px;font-weight: 400; line-height: 22px; text-align: left;">Color: Black</p>
 
-                                                    <p style="margin:0; color: #6f6f6f; font-family: 'Jost', Arial, sans-serif; font-size: 14px;font-weight: 400; line-height: 22px; text-align: left;">Color: Black</p>
+                                                      <p style="margin:0; color: #6f6f6f; font-family: 'Jost', Arial, sans-serif; font-size: 14px;font-weight: 400; line-height: 22px; text-align: left;">Size: US M 10</p>
 
-                                                    <p style="margin:0; color: #6f6f6f; font-family: 'Jost', Arial, sans-serif; font-size: 14px;font-weight: 400; line-height: 22px; text-align: left;">Size: US M 10</p>
+                                                      <h4 class="order-detail" style="margin: 0px 0px 10px; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 28px;text-align: left;">$4000</h4>
+                                                  </td>
+                                                  <td style="width: 10%; vertical-align: top;">
+                                                      <p class="quantity" style="margin: 10px 0px;text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 22px; text-align: left; ">QTY 1</p>
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td class="content-sec" style="border-bottom: 1px solid #FFC645; background: #ffffff; padding: 0px 20px; text-align: center; display: block;margin-top: 10px;">
+                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                                          <tbody>
+                                              <tr>
+                                                  <td style="text-align: center;">
+                                                      <h4 class="expiry-para" style="margin: 10px 0px;text-transform: none; color: #40403B; font-family: 'Jost', Arial, sans-serif; font-size: 22px; font-weight: 600; line-height: 37px; text-align: left; ">Billing Summary</h4>
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td class="content-sec" style="border-bottom: 0.5px solid #969696; background: #ffffff; margin: 0px 20px; text-align: center; display: block;margin-top: 10px;">
+                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                                          <tbody>
+                                              <tr>
+                                                  <td style="width: 50%; vertical-align: middle;">
+                                                      <p class="expiry-para" style="margin: 10px 0px;text-transform: none; color: #6f6f6f; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: left; ">Sub total</p>
+                                                  </td>
+                                                  <td style="width: 50%; vertical-align: middle;">
+                                                      <h4 style="margin: 10px 0px; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 28px;text-align: right;">$4000</h4>
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td class="content-sec" style="border-bottom: 0.5px solid #969696; background: #ffffff; margin: 0px 20px; text-align: center; display: block;margin-top: 10px;">
+                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                                          <tbody>
+                                              <tr>
+                                                  <td style="width: 50%; vertical-align: middle;">
+                                                      <p class="expiry-para" style="margin: 10px 0px;text-transform: none; color: #6f6f6f; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: left; ">Tax</p>
+                                                  </td>
+                                                  <td style="width: 50%; vertical-align: middle;">
+                                                      <h4 style="margin: 10px 0px; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 28px;text-align: right;">$200</h4>
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td class="content-sec" style="border-bottom: 1px dashed #000000; background: #ffffff; padding: 0px 20px; text-align: center; display: block;margin-top: 10px;">
+                                      <table align="center" border="0" cellpadding="0" cellspacing="0" class="shipping" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                                          <tbody>
+                                              <tr>
+                                                  <td style="width: 50%; vertical-align: middle;">
+                                                      <p style="margin: 10px 0px;text-transform: none; color: #6f6f6f; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: left; ">Shipping charges</p>
+                                                  </td>
+                                                  <td style="width: 50%; vertical-align: middle;">
+                                                      <h4 style="margin: 10px 0px; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 28px;text-align: right;">$500</h4>
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td class="content-sec" style="background: #ffffff; padding: 0px 20px; text-align: center; display: block;margin-top: 10px;">
+                                      <table align="center" border="0" cellpadding="0" cellspacing="0" class="shipping" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                                          <tbody>
+                                              <tr>
+                                                  <td style="width: 50%; vertical-align: middle;">
+                                                      <p class="expiry-para" style="margin: 10px 0px;text-transform: uppercase; color: #6f6f6f; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: left; ">Total</p>
+                                                  </td>
+                                                  <td style="width: 50%; vertical-align: middle;">
+                                                      <h4 style="margin: 10px 0px; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 28px;text-align: right;">$4700</h4>
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </td>
+                              </tr>
+                              <!-- Content Point section -->
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <!-- footer start-->
+              <tr>
+                  <td align="center" colspan="2">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" class="box-table" role="presentation" style="box-shadow: 0px 1px 12px 0px #0000001A; margin: 30px 30px 30px; display: block; background: #ffffff; padding: 25px 0 25px;">
+                          <tbody>
+                              <tr>
+                                  <td style="padding: 0;">
+                                      <table align="center" cellpadding="0" cellspacing="0" style="text-align: center;" width="100%">
+                                          <tbody>
+                                              <tr>
+                                                  <td class="footer-content" style="padding:0px 100px">
+                                                      <p style="text-transform: none; color: #6f6f6f; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; text-align: center;">For assistance, connect with us on social media or reach out to our support team at
+                                                          <a data-renderer-mark="true" data-testid="link-with-safety" href="support@example.com" title="support@example.com">support@example.com</a>
+                                                      </p>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td style="padding: 15px 15px; display: inline-block;">
+                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 30px; height: 30px; ">
+                                                          <!-- Change image src as per your requirements --><img alt="instagram" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/be621c25343741b1ac5640833e3b34f7.png" style="width: 100%; height: 100%;" /></a>
+                                                  </td>
+                                                  <td style="padding: 15px 15px; display: inline-block; ">
+                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 30px; height: 30px;"><img alt="facebook" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/53caa3fd24c5413a91a6db136577fcf7.png" style="width: 100%; height: 100%;" /></a>
+                                                  </td>
+                                                  <td style="padding: 15px 15px; display: inline-block;">
+                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 30px; height: 30px;"><img alt="x" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/fa216fecba6741dea1d9d5452d498603.png" style="width: 100%; height: 100%;" /></a>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td class="content-sec" style="border-top: 1px solid #FFC645; background: #ffffff; padding: 20px 20px 0px; text-align: center; display: block;margin-top: 10px;">
+                                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                                                          <tbody>
+                                                              <tr>
+                                                                  <td style="padding: 0px 15px; display: inline-block;">
+                                                                      <a href="#" style="vertical-align: middle;display: inline-block; font-size: 14px; font-weight: 400; line-height: 24px; text-align: center;font-family: 'Jost', Arial, sans-serif;text-decoration: none;color:#1E1E1E; ">Privacy</a>
+                                                                  </td>
+                                                                  <td style="padding: 0px 15px; display: inline-block; ">
+                                                                      <a href="#" style="vertical-align: middle;display: inline-block; font-size: 14px; font-weight: 400; line-height: 24px; text-align: center;font-family: 'Jost', Arial, sans-serif;text-decoration: none;color:#1E1E1E;">Account</a>
+                                                                  </td>
+                                                              </tr>
+                                                          </tbody>
+                                                      </table>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td class="content-sec" style="border-top: 1px solid #FFC645; background: #ffffff; padding: 20px 20px 0px; text-align: center; display: block;margin-top: 20px;">
+                                                      <p style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #1E1E1E; padding-top:10px;">This is a system-generated email. Please do not reply.</p>
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <!-- footer end-->
+          </tbody>
+      </table>
+  </body>
+  <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
 
-                                                    <h4 class="order-detail" style="margin: 0px 0px 10px; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 28px;text-align: left;">$4000</h4>
-                                                </td>
-                                                <td style="width: 10%; vertical-align: top;">
-                                                    <p class="quantity" style="margin: 10px 0px;text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 22px; text-align: left; ">QTY 1</p>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="content-sec" style="border-bottom: 1px solid #FFC645; background: #ffffff; padding: 0px 20px; text-align: center; display: block;margin-top: 10px;">
-                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                                        <tbody>
-                                            <tr>
-                                                <td style="text-align: center;">
-                                                    <h4 class="expiry-para" style="margin: 10px 0px;text-transform: none; color: #40403B; font-family: 'Jost', Arial, sans-serif; font-size: 22px; font-weight: 600; line-height: 37px; text-align: left; ">Billing Summary</h4>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="content-sec" style="border-bottom: 0.5px solid #969696; background: #ffffff; margin: 0px 20px; text-align: center; display: block;margin-top: 10px;">
-                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                                        <tbody>
-                                            <tr>
-                                                <td style="width: 50%; vertical-align: middle;">
-                                                    <p class="expiry-para" style="margin: 10px 0px;text-transform: none; color: #6f6f6f; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: left; ">Sub total</p>
-                                                </td>
-                                                <td style="width: 50%; vertical-align: middle;">
-                                                    <h4 style="margin: 10px 0px; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 28px;text-align: right;">$4000</h4>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="content-sec" style="border-bottom: 0.5px solid #969696; background: #ffffff; margin: 0px 20px; text-align: center; display: block;margin-top: 10px;">
-                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                                        <tbody>
-                                            <tr>
-                                                <td style="width: 50%; vertical-align: middle;">
-                                                    <p class="expiry-para" style="margin: 10px 0px;text-transform: none; color: #6f6f6f; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: left; ">Tax</p>
-                                                </td>
-                                                <td style="width: 50%; vertical-align: middle;">
-                                                    <h4 style="margin: 10px 0px; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 28px;text-align: right;">$200</h4>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="content-sec" style="border-bottom: 1px dashed #000000; background: #ffffff; padding: 0px 20px; text-align: center; display: block;margin-top: 10px;">
-                                    <table align="center" border="0" cellpadding="0" cellspacing="0" class="shipping" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                                        <tbody>
-                                            <tr>
-                                                <td style="width: 50%; vertical-align: middle;">
-                                                    <p style="margin: 10px 0px;text-transform: none; color: #6f6f6f; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: left; ">Shipping charges</p>
-                                                </td>
-                                                <td style="width: 50%; vertical-align: middle;">
-                                                    <h4 style="margin: 10px 0px; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 28px;text-align: right;">$500</h4>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="content-sec" style="background: #ffffff; padding: 0px 20px; text-align: center; display: block;margin-top: 10px;">
-                                    <table align="center" border="0" cellpadding="0" cellspacing="0" class="shipping" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                                        <tbody>
-                                            <tr>
-                                                <td style="width: 50%; vertical-align: middle;">
-                                                    <p class="expiry-para" style="margin: 10px 0px;text-transform: uppercase; color: #6f6f6f; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: left; ">Total</p>
-                                                </td>
-                                                <td style="width: 50%; vertical-align: middle;">
-                                                    <h4 style="margin: 10px 0px; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 28px;text-align: right;">$4700</h4>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                            <!-- Content Point section -->
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <!-- footer start-->
-            <tr>
-                <td align="center" colspan="2">
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" class="box-table" role="presentation" style="box-shadow: 0px 1px 12px 0px #0000001A; margin: 30px 30px 30px; display: block; background: #ffffff; padding: 25px 0 25px;">
-                        <tbody>
-                            <tr>
-                                <td style="padding: 0;">
-                                    <table align="center" cellpadding="0" cellspacing="0" style="text-align: center;" width="100%">
-                                        <tbody>
-                                            <tr>
-                                                <td class="footer-content" style="padding:0px 100px">
-                                                    <p style="text-transform: none; color: #6f6f6f; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; text-align: center;">For assistance, connect with us on social media or reach out to our support team at
-                                                        <a data-renderer-mark="true" data-testid="link-with-safety" href="support@example.com" title="support@example.com">support@example.com</a>
-                                                    </p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="padding: 15px 15px; display: inline-block;">
-                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 30px; height: 30px; ">
-                                                        <!-- Change image src as per your requirements --><img alt="instagram" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/be621c25343741b1ac5640833e3b34f7.png" style="width: 100%; height: 100%;" /></a>
-                                                </td>
-                                                <td style="padding: 15px 15px; display: inline-block; ">
-                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 30px; height: 30px;"><img alt="facebook" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/53caa3fd24c5413a91a6db136577fcf7.png" style="width: 100%; height: 100%;" /></a>
-                                                </td>
-                                                <td style="padding: 15px 15px; display: inline-block;">
-                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 30px; height: 30px;"><img alt="x" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/fa216fecba6741dea1d9d5452d498603.png" style="width: 100%; height: 100%;" /></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="content-sec" style="border-top: 1px solid #FFC645; background: #ffffff; padding: 20px 20px 0px; text-align: center; display: block;margin-top: 10px;">
-                                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td style="padding: 0px 15px; display: inline-block;">
-                                                                    <a href="#" style="vertical-align: middle;display: inline-block; font-size: 14px; font-weight: 400; line-height: 24px; text-align: center;font-family: 'Jost', Arial, sans-serif;text-decoration: none;color:#1E1E1E; ">Privacy</a>
-                                                                </td>
-                                                                <td style="padding: 0px 15px; display: inline-block; ">
-                                                                    <a href="#" style="vertical-align: middle;display: inline-block; font-size: 14px; font-weight: 400; line-height: 24px; text-align: center;font-family: 'Jost', Arial, sans-serif;text-decoration: none;color:#1E1E1E;">Account</a>
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="content-sec" style="border-top: 1px solid #FFC645; background: #ffffff; padding: 20px 20px 0px; text-align: center; display: block;margin-top: 20px;">
-                                                    <p style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #1E1E1E; padding-top:10px;">This is a system-generated email. Please do not reply.</p>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <!-- footer end-->
-        </tbody>
-    </table>
-</body>
-<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+  </html>
+  ```
+  ```html Order Shipped
+  <!doctype html="">
+  <html lang="en">
 
-</html>
-```
-```html Order Shipped
-<!doctype html="">
-<html lang="en">
+  <head>
+      <title>Order Shipped</title>
+      <style type="text/css">
+          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Regular.ttf\') format(\'woff\');             font-style: normal;             font-weight: 400;         }         @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Medium.ttf\') format(\'woff\');             font-style: normal;             font-weight: 500;         }         @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-SemiBold.ttf\') format(\'woff\');             font-style: normal;             font-weight: 600;         }                  @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Bold.ttf\') format(\'woff\');             font-style: normal;             font-weight: 700;         }          @font-face {             font-family: 'Poppins', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Fonts/Poppins-Regular.woff\') format(\'woff\');             font-style: normal;             font-weight: 400;         }          @media screen and (max-width: 480px) {             .container {                margin-bottom: 20px !important;             }                         .logo{                 width: 145px !important; height: 55px !important;             }             .cta{                 padding: 10px 25px !important; margin: 30px 0 !important; font-size: 16px !important; line-height: 20px !important;             }             .content-wrap{                 max-width: 90% !important;             }             .title{                 font-size: 22px !important; line-height: 28px !important;             }             .border-line{                 width: 40% !important;             }             .desc{                 font-size: 12px !important; line-height: 18px !important; margin: 0 0 30px !important;             }         }
+      </style>
+  </head>
 
-<head>
-    <title>Order Shipped</title>
-    <style type="text/css">
-        @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Regular.ttf\') format(\'woff\');             font-style: normal;             font-weight: 400;         }         @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Medium.ttf\') format(\'woff\');             font-style: normal;             font-weight: 500;         }         @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-SemiBold.ttf\') format(\'woff\');             font-style: normal;             font-weight: 600;         }                  @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Bold.ttf\') format(\'woff\');             font-style: normal;             font-weight: 700;         }          @font-face {             font-family: 'Poppins', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Fonts/Poppins-Regular.woff\') format(\'woff\');             font-style: normal;             font-weight: 400;         }          @media screen and (max-width: 480px) {             .container {                margin-bottom: 20px !important;             }                         .logo{                 width: 145px !important; height: 55px !important;             }             .cta{                 padding: 10px 25px !important; margin: 30px 0 !important; font-size: 16px !important; line-height: 20px !important;             }             .content-wrap{                 max-width: 90% !important;             }             .title{                 font-size: 22px !important; line-height: 28px !important;             }             .border-line{                 width: 40% !important;             }             .desc{                 font-size: 12px !important; line-height: 18px !important; margin: 0 0 30px !important;             }         }
-    </style>
-</head>
+  <body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" data-new-gr-c-s-loaded="14.1242.0" style="font-family: Jost, Arial, sans-serif; font-weight: 400; margin: 0px; padding: 0px; cursor: auto;">
+      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 600px; margin: 0 auto; background-color: #F5F5F5;" width="100%">
+          <!-- header start-->
+          <tbody>
+              <tr>
+                  <td align="center" style="display: block; padding: 12px 0; max-width: 90%; margin: 0 auto;">
+                      <div class="logo-wrap">
+                          <!-- Change image src as per your requirements --><img alt="Logo" class="logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="width: 145px; height: 73px; object-fit: contain;" /></div>
+                  </td>
+              </tr>
+              <!-- header end-->
+              <tr>
+                  <td style="text-align: center;">
+                      <table border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 92%; margin: 0 auto 20px; background: #FFFFFF;" width="100%">
+                          <tbody>
+                              <tr>
+                                  <td align="center">
+                                      <div class="content-wrap" style="margin: 0 auto; max-width: 85%;">
+                                          <h2 class="title" style="font-family: 'Jost', Arial, sans-serif;font-size: 30px;font-weight: 500;line-height: 37px;text-align: center; color: #40403B; text-transform: none; margin: 43px 0 19px;">Order shipped</h2>
 
-<body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" data-new-gr-c-s-loaded="14.1242.0" style="font-family: Jost, Arial, sans-serif; font-weight: 400; margin: 0px; padding: 0px; cursor: auto;">
-    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 600px; margin: 0 auto; background-color: #F5F5F5;" width="100%">
-        <!-- header start-->
-        <tbody>
-            <tr>
-                <td align="center" style="display: block; padding: 12px 0; max-width: 90%; margin: 0 auto;">
-                    <div class="logo-wrap">
-                        <!-- Change image src as per your requirements --><img alt="Logo" class="logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="width: 145px; height: 73px; object-fit: contain;" /></div>
-                </td>
-            </tr>
-            <!-- header end-->
-            <tr>
-                <td style="text-align: center;">
-                    <table border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 92%; margin: 0 auto 20px; background: #FFFFFF;" width="100%">
-                        <tbody>
-                            <tr>
-                                <td align="center">
-                                    <div class="content-wrap" style="margin: 0 auto; max-width: 85%;">
-                                        <h2 class="title" style="font-family: 'Jost', Arial, sans-serif;font-size: 30px;font-weight: 500;line-height: 37px;text-align: center; color: #40403B; text-transform: none; margin: 43px 0 19px;">Order shipped</h2>
+                                          <p class="desc" style="color: #6F6F6F;font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: center; margin: 0 auto; text-transform: none; max-width: 85%;">Great news — your order is on its way! You can track your order through the button below.</p>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td align="center">
+                                      <table border="0" cellpadding="0" cellspacing="0" class="order-table" role="presentation" style="max-width: 92.4%; margin: 60px auto 25px;" width="100%">
+                                          <tbody>
+                                              <tr>
+                                                  <td align="center" style="width: 67px;vertical-align: top;">
+                                                      <div class="line" style="width: 100%; height: 1px; border-top: 1px dashed #FFFFFF; display: block; margin: 19px 0;"> </div>
+                                                  </td>
+                                                  <td align="center" style="vertical-align: top; width: 39px; height: 39px;"><img alt="icon-tick" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/order-shipped/icon-tick.png" style="width: 100%; height: 100%; object-fit: contain;" /></td>
+                                                  <td align="center" style="vertical-align: top; width: 67px;">
+                                                      <div class="line" style="width: 100%; height: 1px; border-top: 1px dashed #FFC645; display: block; margin: 19px 0;"> </div>
+                                                  </td>
+                                                  <td align="center" style="vertical-align: top; width: 67px;">
+                                                      <div class="line" style="width: 100%; height: 1px; border-top: 1px dashed #FFC645; display: block; margin: 19px 0;"> </div>
+                                                  </td>
+                                                  <td align="center" style="vertical-align: top; width: 39px; height: 39px;"><img alt="icon-tick" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/order-shipped/icon-tick.png" style="width: 100%; height: 100%; object-fit: contain;" /></td>
+                                                  <td align="center" style="vertical-align: top; width: 67px;">
+                                                      <div class="line" style="width: 100%; height: 1px; border-top: 1px dashed #B2B2B2; display: block; margin: 19px 0;"> </div>
+                                                  </td>
+                                                  <td align="center" style="vertical-align: top; width: 67px;">
+                                                      <div class="line" style="width: 100%; height: 1px; border-top: 1px dashed #B2B2B2; display: block; margin: 19px 0;"> </div>
+                                                  </td>
+                                                  <td align="center" style="vertical-align: top; width: 39px; height: 39px;"><img alt="icon-empty" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/order-shipped/icon-empty.png" style="width: 100%; height: 100%; object-fit: contain;" /></td>
+                                                  <td align="center" style="vertical-align: top; width: 67px;">
+                                                      <div class="line" style="width: 100%; border-top: 1px dashed #FFFFFF; display: block; margin: 19px 0;"> </div>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td align="center" colspan="3" style="vertical-align: top;">
+                                                      <h3 class="o-title" style="margin: 10px 0 5px; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 22px; text-transform: none;">Order confirmed</h3>
 
-                                        <p class="desc" style="color: #6F6F6F;font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: center; margin: 0 auto; text-transform: none; max-width: 85%;">Great news — your order is on its way! You can track your order through the button below.</p>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td align="center">
-                                    <table border="0" cellpadding="0" cellspacing="0" class="order-table" role="presentation" style="max-width: 92.4%; margin: 60px auto 25px;" width="100%">
-                                        <tbody>
-                                            <tr>
-                                                <td align="center" style="width: 67px;vertical-align: top;">
-                                                    <div class="line" style="width: 100%; height: 1px; border-top: 1px dashed #FFFFFF; display: block; margin: 19px 0;"> </div>
-                                                </td>
-                                                <td align="center" style="vertical-align: top; width: 39px; height: 39px;"><img alt="icon-tick" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/order-shipped/icon-tick.png" style="width: 100%; height: 100%; object-fit: contain;" /></td>
-                                                <td align="center" style="vertical-align: top; width: 67px;">
-                                                    <div class="line" style="width: 100%; height: 1px; border-top: 1px dashed #FFC645; display: block; margin: 19px 0;"> </div>
-                                                </td>
-                                                <td align="center" style="vertical-align: top; width: 67px;">
-                                                    <div class="line" style="width: 100%; height: 1px; border-top: 1px dashed #FFC645; display: block; margin: 19px 0;"> </div>
-                                                </td>
-                                                <td align="center" style="vertical-align: top; width: 39px; height: 39px;"><img alt="icon-tick" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/order-shipped/icon-tick.png" style="width: 100%; height: 100%; object-fit: contain;" /></td>
-                                                <td align="center" style="vertical-align: top; width: 67px;">
-                                                    <div class="line" style="width: 100%; height: 1px; border-top: 1px dashed #B2B2B2; display: block; margin: 19px 0;"> </div>
-                                                </td>
-                                                <td align="center" style="vertical-align: top; width: 67px;">
-                                                    <div class="line" style="width: 100%; height: 1px; border-top: 1px dashed #B2B2B2; display: block; margin: 19px 0;"> </div>
-                                                </td>
-                                                <td align="center" style="vertical-align: top; width: 39px; height: 39px;"><img alt="icon-empty" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/order-shipped/icon-empty.png" style="width: 100%; height: 100%; object-fit: contain;" /></td>
-                                                <td align="center" style="vertical-align: top; width: 67px;">
-                                                    <div class="line" style="width: 100%; border-top: 1px dashed #FFFFFF; display: block; margin: 19px 0;"> </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td align="center" colspan="3" style="vertical-align: top;">
-                                                    <h3 class="o-title" style="margin: 10px 0 5px; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 22px; text-transform: none;">Order confirmed</h3>
+                                                      <p class="o-date" style="font-family: Poppins, Arial, sans-serif; font-size: 14px; font-weight: 400; margin: 0; line-height: 22px; color: #6F6F6F;">13-05-2024</p>
+                                                  </td>
+                                                  <td align="center" colspan="3" style="vertical-align: top;">
+                                                      <h3 class="o-title" style="margin: 10px 0 5px; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 22px; text-transform: none;">Order shipped</h3>
 
-                                                    <p class="o-date" style="font-family: Poppins, Arial, sans-serif; font-size: 14px; font-weight: 400; margin: 0; line-height: 22px; color: #6F6F6F;">13-05-2024</p>
-                                                </td>
-                                                <td align="center" colspan="3" style="vertical-align: top;">
-                                                    <h3 class="o-title" style="margin: 10px 0 5px; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 22px; text-transform: none;">Order shipped</h3>
+                                                      <p class="o-date" style="font-family: Poppins, Arial, sans-serif; font-size: 14px; font-weight: 400; margin: 0; line-height: 22px; color: #6F6F6F;">15-05-2024</p>
+                                                  </td>
+                                                  <td align="center" colspan="3" style="vertical-align: top;">
+                                                      <h3 class="o-title" style="margin: 10px 0 5px; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 22px; text-transform: none;">Estimated delivery</h3>
 
-                                                    <p class="o-date" style="font-family: Poppins, Arial, sans-serif; font-size: 14px; font-weight: 400; margin: 0; line-height: 22px; color: #6F6F6F;">15-05-2024</p>
-                                                </td>
-                                                <td align="center" colspan="3" style="vertical-align: top;">
-                                                    <h3 class="o-title" style="margin: 10px 0 5px; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 22px; text-transform: none;">Estimated delivery</h3>
+                                                      <p class="o-date" style="font-family: Poppins, Arial, sans-serif; font-size: 14px; font-weight: 400; margin: 0; line-height: 22px; color: #6F6F6F;">17-05-2024</p>
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <table border="0" cellpadding="0" cellspacing="0" class="order-table" role="presentation" style="margin: 35px auto 0;" width="100%">
+                                          <tbody>
+                                              <tr>
+                                                  <td style=" text-align: left;">
+                                                      <h2 class="sec-title" style="padding: 0 20px 10px;margin: 0 0 28px; font-family: 'Jost', Arial, sans-serif; font-size: 22px; font-weight: 600; line-height: 37px; text-transform: none; color: #40403B; border-bottom: 1px solid #FFC645;">Items in Order</h2>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td>
+                                                      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style=" max-width: 95%; margin: 0 auto;" width="100%">
+                                                          <tbody>
+                                                              <tr>
+                                                                  <td style="width: 25%; vertical-align: top;"><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/order-shipped/product-1.png" style="width: 100%; height: 100%; object-fit: cover; border: 1px solid #FFC645;"
+                                                                      /></td>
+                                                                  <td style="width: 65%; vertical-align: top; padding: 0 15px;">
+                                                                      <h2 class="p-name" style="margin: 0 0 5px; text-transform: none; font-family: 'Jost',Arial, sans-serif; font-size: 20px; font-weight: 500; line-height: 28.9px; text-align: left; color: #000000;">Nike sneakers</h2>
 
-                                                    <p class="o-date" style="font-family: Poppins, Arial, sans-serif; font-size: 14px; font-weight: 400; margin: 0; line-height: 22px; color: #6F6F6F;">17-05-2024</p>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <table border="0" cellpadding="0" cellspacing="0" class="order-table" role="presentation" style="margin: 35px auto 0;" width="100%">
-                                        <tbody>
-                                            <tr>
-                                                <td style=" text-align: left;">
-                                                    <h2 class="sec-title" style="padding: 0 20px 10px;margin: 0 0 28px; font-family: 'Jost', Arial, sans-serif; font-size: 22px; font-weight: 600; line-height: 37px; text-transform: none; color: #40403B; border-bottom: 1px solid #FFC645;">Items in Order</h2>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style=" max-width: 95%; margin: 0 auto;" width="100%">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td style="width: 25%; vertical-align: top;"><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/order-shipped/product-1.png" style="width: 100%; height: 100%; object-fit: cover; border: 1px solid #FFC645;"
-                                                                    /></td>
-                                                                <td style="width: 65%; vertical-align: top; padding: 0 15px;">
-                                                                    <h2 class="p-name" style="margin: 0 0 5px; text-transform: none; font-family: 'Jost',Arial, sans-serif; font-size: 20px; font-weight: 500; line-height: 28.9px; text-align: left; color: #000000;">Nike sneakers</h2>
+                                                                      <p class="p-desc" style="margin: 0 0 5px; text-transform: none; font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: left; color: #6F6F6F;">Color: Black</p>
 
-                                                                    <p class="p-desc" style="margin: 0 0 5px; text-transform: none; font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: left; color: #6F6F6F;">Color: Black</p>
+                                                                      <p class="p-desc" style="margin: 0 0 5px; text-transform: none; font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: left; color: #6F6F6F;">Size: US M 10</p>
 
-                                                                    <p class="p-desc" style="margin: 0 0 5px; text-transform: none; font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: left; color: #6F6F6F;">Size: US M 10</p>
+                                                                      <p class="p-amt" style="margin: 0; font-family: 'Jost', Arial; font-size: 20px; font-weight: 400; line-height: 28.9px; text-align: left; color: #000000">$4000</p>
+                                                                  </td>
+                                                                  <td style="width: 10%; vertical-align: top;"><span class="qty" style="text-transform: uppercase; font-family: 'Jost', Arial, sans-serif; font-size: 16px;font-weight: 400; line-height: 22px; text-align: center; color: #000000;">Qty 1</span></td>
+                                                              </tr>
+                                                          </tbody>
+                                                      </table>
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <table border="0" cellpadding="0" cellspacing="0" class="order-table" role="presentation" style="margin: 35px auto 0;" width="100%">
+                                          <tbody>
+                                              <tr>
+                                                  <td style=" text-align: left;">
+                                                      <h2 class="sec-title" style="padding: 0 20px 10px;margin: 0; font-family: 'Jost', Arial, sans-serif; font-size: 22px; font-weight: 600; line-height: 37px; text-transform: none; color: #40403B; border-bottom: 1px solid #FFC645;">Billing Summary</h2>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td>
+                                                      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style=" max-width: 95%; margin: 0 auto;" width="100%">
+                                                          <tbody>
+                                                              <tr>
+                                                                  <td style="width: 50%; vertical-align: middle; text-align: left; border-bottom: 1px solid #969696;">
+                                                                      <p class="p-subtotal" style="margin: 0; font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; color: #6F6F6F; text-transform: none; padding: 16px 0;">Sub total</p>
+                                                                  </td>
+                                                                  <td style="width: 50%; vertical-align: middle; text-align: right; border-bottom: 1px solid #969696;">
+                                                                      <p class="p-amt" style="margin: 0; font-family: 'Jost', Arial, sans-serif;                                                     font-size: 20px; font-weight: 400; line-height: 28.9px; color: #000000; padding: 16px 0;">$4000</p>
+                                                                  </td>
+                                                              </tr>
+                                                              <tr>
+                                                                  <td style="width: 50%; vertical-align: middle; text-align: left; border-bottom: 1px solid #969696;">
+                                                                      <p class="p-subtotal" style="margin: 0; font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; color: #6F6F6F; text-transform: none; padding: 16px 0;">Tax</p>
+                                                                  </td>
+                                                                  <td style="width: 50%; vertical-align: middle; text-align: right; border-bottom: 1px solid #969696;">
+                                                                      <p class="p-amt" style="margin: 0; font-family: 'Jost', Arial, sans-serif;                                                     font-size: 20px; font-weight: 400; line-height: 28.9px; color: #000000; padding: 16px 0;">$200</p>
+                                                                  </td>
+                                                              </tr>
+                                                              <tr>
+                                                                  <td style="width: 50%; vertical-align: middle; text-align: left; border-bottom: 1px solid #000000;">
+                                                                      <p class="p-subtotal" style="margin: 0; font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; color: #6F6F6F; text-transform: none; padding: 16px 0;">Shipping charges</p>
+                                                                  </td>
+                                                                  <td style="width: 50%; vertical-align: middle; text-align: right; border-bottom: 1px solid #000000;">
+                                                                      <p class="p-amt" style="margin: 0; font-family: 'Jost', Arial, sans-serif;                                                     font-size: 20px; font-weight: 400; line-height: 28.9px; color: #000000; padding: 16px 0;">$500</p>
+                                                                  </td>
+                                                              </tr>
+                                                              <tr>
+                                                                  <td style="width: 50%; vertical-align: middle; text-align: left;">
+                                                                      <p class="p-subtotal" style="margin: 0; font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; color: #6F6F6F; text-transform: uppercase; padding: 16px 0;">Total</p>
+                                                                  </td>
+                                                                  <td style="width: 50%; vertical-align: middle; text-align: right;">
+                                                                      <p class="p-amt" style="margin: 0; font-family: 'Jost', Arial, sans-serif;                                                     font-size: 20px; font-weight: 400; line-height: 28.9px; color: #000000; padding: 16px 0;">$4700</p>
+                                                                  </td>
+                                                              </tr>
+                                                          </tbody>
+                                                      </table>
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <div class="order-details" style="margin: 55px auto 68px; max-width: 80%;">
+                                          <h3 class="o-title" style="margin: 0 0 10px; text-transform: none; color: #40403B; font-family: 'Jost'  Arial, sans-serif; font-size: 24px; font-weight: 600; line-height: 37px; text-align: center; ">Estimated Delivery on <strong data-renderer-mark="true">Feb 15 2025</strong></h3>
 
-                                                                    <p class="p-amt" style="margin: 0; font-family: 'Jost', Arial; font-size: 20px; font-weight: 400; line-height: 28.9px; text-align: left; color: #000000">$4000</p>
-                                                                </td>
-                                                                <td style="width: 10%; vertical-align: top;"><span class="qty" style="text-transform: uppercase; font-family: 'Jost', Arial, sans-serif; font-size: 16px;font-weight: 400; line-height: 22px; text-align: center; color: #000000;">Qty 1</span></td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <table border="0" cellpadding="0" cellspacing="0" class="order-table" role="presentation" style="margin: 35px auto 0;" width="100%">
-                                        <tbody>
-                                            <tr>
-                                                <td style=" text-align: left;">
-                                                    <h2 class="sec-title" style="padding: 0 20px 10px;margin: 0; font-family: 'Jost', Arial, sans-serif; font-size: 22px; font-weight: 600; line-height: 37px; text-transform: none; color: #40403B; border-bottom: 1px solid #FFC645;">Billing Summary</h2>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style=" max-width: 95%; margin: 0 auto;" width="100%">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td style="width: 50%; vertical-align: middle; text-align: left; border-bottom: 1px solid #969696;">
-                                                                    <p class="p-subtotal" style="margin: 0; font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; color: #6F6F6F; text-transform: none; padding: 16px 0;">Sub total</p>
-                                                                </td>
-                                                                <td style="width: 50%; vertical-align: middle; text-align: right; border-bottom: 1px solid #969696;">
-                                                                    <p class="p-amt" style="margin: 0; font-family: 'Jost', Arial, sans-serif;                                                     font-size: 20px; font-weight: 400; line-height: 28.9px; color: #000000; padding: 16px 0;">$4000</p>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td style="width: 50%; vertical-align: middle; text-align: left; border-bottom: 1px solid #969696;">
-                                                                    <p class="p-subtotal" style="margin: 0; font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; color: #6F6F6F; text-transform: none; padding: 16px 0;">Tax</p>
-                                                                </td>
-                                                                <td style="width: 50%; vertical-align: middle; text-align: right; border-bottom: 1px solid #969696;">
-                                                                    <p class="p-amt" style="margin: 0; font-family: 'Jost', Arial, sans-serif;                                                     font-size: 20px; font-weight: 400; line-height: 28.9px; color: #000000; padding: 16px 0;">$200</p>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td style="width: 50%; vertical-align: middle; text-align: left; border-bottom: 1px solid #000000;">
-                                                                    <p class="p-subtotal" style="margin: 0; font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; color: #6F6F6F; text-transform: none; padding: 16px 0;">Shipping charges</p>
-                                                                </td>
-                                                                <td style="width: 50%; vertical-align: middle; text-align: right; border-bottom: 1px solid #000000;">
-                                                                    <p class="p-amt" style="margin: 0; font-family: 'Jost', Arial, sans-serif;                                                     font-size: 20px; font-weight: 400; line-height: 28.9px; color: #000000; padding: 16px 0;">$500</p>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td style="width: 50%; vertical-align: middle; text-align: left;">
-                                                                    <p class="p-subtotal" style="margin: 0; font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; color: #6F6F6F; text-transform: uppercase; padding: 16px 0;">Total</p>
-                                                                </td>
-                                                                <td style="width: 50%; vertical-align: middle; text-align: right;">
-                                                                    <p class="p-amt" style="margin: 0; font-family: 'Jost', Arial, sans-serif;                                                     font-size: 20px; font-weight: 400; line-height: 28.9px; color: #000000; padding: 16px 0;">$4700</p>
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="order-details" style="margin: 55px auto 68px; max-width: 80%;">
-                                        <h3 class="o-title" style="margin: 0 0 10px; text-transform: none; color: #40403B; font-family: 'Jost'  Arial, sans-serif; font-size: 24px; font-weight: 600; line-height: 37px; text-align: center; ">Estimated Delivery on <strong data-renderer-mark="true">Feb 15 2025</strong></h3>
+                                          <p class="o-desc" style="font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 28.9px; color: #6F6F6F;">Your Order ID is <span style="color: #000000; text-align: center;">898774</span></p>
+                                          <button class="cta" style="background: #FFC645; border: 1px solid #FFC645; font-family: 'Jost', Arial, sans-serif; font-size: 20px;font-weight: 400;line-height: 28px;text-align: center; color: #1E1E1E !important; vertical-align: middle; width: 100%; padding: 12px; text-transform: none;">Track order</button>
+                                      </div>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <tr>
+                  <td style="text-align: center;">
+                      <table border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 92%; margin: 0 auto 30px; background: #FFFFFF;" width="100%">
+                          <tbody>
+                              <tr>
+                                  <td>
+                                      <p style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #6F6F6F; text-align: center; max-width: 70%; margin: 30px auto 26px; text-transform: none;">For assistance, connect with us on social media or reach out to our support team at
+                                          <a data-renderer-mark="true" data-testid="link-with-safety" href="support@example.com" title="support@example.com">support@example.com</a>
+                                      </p>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td style="padding: 0;">
+                                      <table align="center" cellpadding="0" cellspacing="0" style="text-align: center; padding-bottom: 52px; border-bottom: 1px solid #FFC645;" width="100%">
+                                          <tbody>
+                                              <tr>
+                                                  <td style="padding: 0 8px; display: inline-block;">
+                                                      <a href="#"><img alt="Social Icon" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/be621c25343741b1ac5640833e3b34f7.png" style="display: block; width: 34px; height: 34px;" /></a>
+                                                  </td>
+                                                  <td style="padding: 0 8px; display: inline-block;">
+                                                      <a href="#"><img alt="Social Icon" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/53caa3fd24c5413a91a6db136577fcf7.png" style="display: block; width: 34px; height: 34px;" /></a>
+                                                  </td>
+                                                  <td style="padding: 0 8px; display: inline-block;">
+                                                      <a href="#"><img alt="Social Icon" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/fa216fecba6741dea1d9d5452d498603.png" style="display: block; width: 34px; height: 34px;" /></a>
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <p style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: center; color: #909090; text-transform: none;">This is a system-generated email. Please do not reply.</p>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+      <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+  </body>
 
-                                        <p class="o-desc" style="font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 28.9px; color: #6F6F6F;">Your Order ID is <span style="color: #000000; text-align: center;">898774</span></p>
-                                        <button class="cta" style="background: #FFC645; border: 1px solid #FFC645; font-family: 'Jost', Arial, sans-serif; font-size: 20px;font-weight: 400;line-height: 28px;text-align: center; color: #1E1E1E !important; vertical-align: middle; width: 100%; padding: 12px; text-transform: none;">Track order</button>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td style="text-align: center;">
-                    <table border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 92%; margin: 0 auto 30px; background: #FFFFFF;" width="100%">
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <p style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #6F6F6F; text-align: center; max-width: 70%; margin: 30px auto 26px; text-transform: none;">For assistance, connect with us on social media or reach out to our support team at
-                                        <a data-renderer-mark="true" data-testid="link-with-safety" href="support@example.com" title="support@example.com">support@example.com</a>
-                                    </p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="padding: 0;">
-                                    <table align="center" cellpadding="0" cellspacing="0" style="text-align: center; padding-bottom: 52px; border-bottom: 1px solid #FFC645;" width="100%">
-                                        <tbody>
-                                            <tr>
-                                                <td style="padding: 0 8px; display: inline-block;">
-                                                    <a href="#"><img alt="Social Icon" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/be621c25343741b1ac5640833e3b34f7.png" style="display: block; width: 34px; height: 34px;" /></a>
-                                                </td>
-                                                <td style="padding: 0 8px; display: inline-block;">
-                                                    <a href="#"><img alt="Social Icon" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/53caa3fd24c5413a91a6db136577fcf7.png" style="display: block; width: 34px; height: 34px;" /></a>
-                                                </td>
-                                                <td style="padding: 0 8px; display: inline-block;">
-                                                    <a href="#"><img alt="Social Icon" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/fa216fecba6741dea1d9d5452d498603.png" style="display: block; width: 34px; height: 34px;" /></a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: center; color: #909090; text-transform: none;">This is a system-generated email. Please do not reply.</p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
-</body>
+  </html>
+  ```
+  ```html Order Delivered
+  <!doctype html="">
+  <html lang="en">
 
-</html>
-```
-```html Order Delivered
-<!doctype html="">
-<html lang="en">
+  <head>
+      <title>Order Delivered</title>
+      <style type="text/css">
+          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Regular.ttf\') format(\'woff\');             font-style: normal;             font-weight: 400;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-SemiBold.ttf\') format(\'woff\');             font-style: normal;             font-weight: 600;         }                  @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Bold.ttf\') format(\'woff\');             font-style: normal;             font-weight: 700;         }          @font-face {             font-family: \'Poppins\', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Fonts/Poppins-Regular.woff\') format(\'woff\');             font-style: normal;             font-weight: 400;         }          @media screen and (max-width: 480px) {             .container {                 max-width: 100% !important; margin-bottom: 20px !important;             }                         .logo{                 width: 145px !important; height: 55px !important;             }             .cta{                 padding: 10px 25px !important; margin: 30px 0 !important; font-size: 16px !important; line-height: 20px !important;             }             .content-wrap{                 max-width: 90% !important;             }             .title{                 font-size: 22px !important; line-height: 28px !important;             }             .border-line{                 width: 40% !important;             }             .desc{                 font-size: 12px !important; line-height: 18px !important; margin: 0 0 30px !important;             }         }
+      </style>
+  </head>
 
-<head>
-    <title>Order Delivered</title>
-    <style type="text/css">
-        @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Regular.ttf\') format(\'woff\');             font-style: normal;             font-weight: 400;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-SemiBold.ttf\') format(\'woff\');             font-style: normal;             font-weight: 600;         }                  @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Bold.ttf\') format(\'woff\');             font-style: normal;             font-weight: 700;         }          @font-face {             font-family: \'Poppins\', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Fonts/Poppins-Regular.woff\') format(\'woff\');             font-style: normal;             font-weight: 400;         }          @media screen and (max-width: 480px) {             .container {                 max-width: 100% !important; margin-bottom: 20px !important;             }                         .logo{                 width: 145px !important; height: 55px !important;             }             .cta{                 padding: 10px 25px !important; margin: 30px 0 !important; font-size: 16px !important; line-height: 20px !important;             }             .content-wrap{                 max-width: 90% !important;             }             .title{                 font-size: 22px !important; line-height: 28px !important;             }             .border-line{                 width: 40% !important;             }             .desc{                 font-size: 12px !important; line-height: 18px !important; margin: 0 0 30px !important;             }         }
-    </style>
-</head>
+  <body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1198.0" data-new-gr-c-s-loaded="14.1198.0" style="font-family: Jost, Arial, sans-serif; font-weight: 400; margin: 0px; padding: 0px; cursor: auto;">
+      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 600px; margin: 0 auto; background-color: #F5F5F5;" width="100%">
+          <!-- header start-->
+          <tbody>
+              <tr>
+                  <td align="center" style="display: block; padding: 12px 0; max-width: 90%; margin: 0 auto;">
+                      <div class="logo-wrap">
+                          <!-- Change image src as per your requirements --><img alt="Logo" class="logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="width: 145px; height: 73px; object-fit: contain;" /></div>
+                  </td>
+              </tr>
+              <!-- header end-->
+              <tr>
+                  <td style="text-align: center;">
+                      <table border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 92%; margin: 0 auto 20px; background: #FFFFFF; padding: 5px;" width="100%">
+                          <tbody>
+                              <tr>
+                                  <td>
+                                      <!-- Change image src as per your requirements --><img alt="banner" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/order-delivered/banner.png" style="width: 100%; height: 100%; object-fit: cover;" /></td>
+                              </tr>
+                              <tr>
+                                  <td align="center">
+                                      <div class="content-wrap" style="margin: 0 auto; max-width: 70%;">
+                                          <h2 class="title" style="font-family: 'Jost', Arial, sans-serif;font-size: 30px;font-weight: 600;line-height: 37px;text-align: center; color: #40403B; text-transform: none; margin: 29px 0 21px;">Order delivered<span class="border-line" style="display: block; width: 72%; height: 1px; background: #D3A94D; margin: 25px auto 0;"> </span></h2>
 
-<body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1198.0" data-new-gr-c-s-loaded="14.1198.0" style="font-family: Jost, Arial, sans-serif; font-weight: 400; margin: 0px; padding: 0px; cursor: auto;">
-    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 600px; margin: 0 auto; background-color: #F5F5F5;" width="100%">
-        <!-- header start-->
-        <tbody>
-            <tr>
-                <td align="center" style="display: block; padding: 12px 0; max-width: 90%; margin: 0 auto;">
-                    <div class="logo-wrap">
-                        <!-- Change image src as per your requirements --><img alt="Logo" class="logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="width: 145px; height: 73px; object-fit: contain;" /></div>
-                </td>
-            </tr>
-            <!-- header end-->
-            <tr>
-                <td style="text-align: center;">
-                    <table border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 92%; margin: 0 auto 20px; background: #FFFFFF; padding: 5px;" width="100%">
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <!-- Change image src as per your requirements --><img alt="banner" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/order-delivered/banner.png" style="width: 100%; height: 100%; object-fit: cover;" /></td>
-                            </tr>
-                            <tr>
-                                <td align="center">
-                                    <div class="content-wrap" style="margin: 0 auto; max-width: 70%;">
-                                        <h2 class="title" style="font-family: 'Jost', Arial, sans-serif;font-size: 30px;font-weight: 600;line-height: 37px;text-align: center; color: #40403B; text-transform: none; margin: 29px 0 21px;">Order delivered<span class="border-line" style="display: block; width: 72%; height: 1px; background: #D3A94D; margin: 25px auto 0;"> </span></h2>
+                                          <p class="desc" style="color: #6F6F6F;font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: center; margin: 0 0 40px; text-transform: none;">We hope you love your new items! Continue shopping to discover more of your favorites.</p>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td align="center">
+                                      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 92.4%; margin: 0 auto;" width="100%">
+                                          <tbody>
+                                              <tr>
+                                                  <td align="center" style="width: 67px;vertical-align: top;">
+                                                      <div class="line" style="width: 100%; height: 1px; border-top: 1px dashed #FFFFFF; display: block; margin: 19px 0;"> </div>
+                                                  </td>
+                                                  <td align="center" style="vertical-align: top; width: 39px; height: 39px;"><img alt="icon-tick" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/order-delivered/icon-tick.png" style="width: 100%; height: 100%; object-fit: contain;" /></td>
+                                                  <td align="center" style="vertical-align: top; width: 67px;">
+                                                      <div class="line" style="width: 100%; height: 1px; border-top: 1px dashed #FFC645; display: block; margin: 19px 0;"> </div>
+                                                  </td>
+                                                  <td align="center" style="vertical-align: top; width: 67px;">
+                                                      <div class="line" style="width: 100%; height: 1px; border-top: 1px dashed #FFC645; display: block; margin: 19px 0;"> </div>
+                                                  </td>
+                                                  <td align="center" style="vertical-align: top; width: 39px; height: 39px;"><img alt="icon-tick" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/order-delivered/icon-tick.png" style="width: 100%; height: 100%; object-fit: contain;" /></td>
+                                                  <td align="center" style="vertical-align: top; width: 67px;">
+                                                      <div class="line" style="width: 100%; height: 1px; border-top: 1px dashed #FFC645; display: block; margin: 19px 0;"> </div>
+                                                  </td>
+                                                  <td align="center" style="vertical-align: top; width: 67px;">
+                                                      <div class="line" style="width: 100%; height: 1px; border-top: 1px dashed #FFC645; display: block; margin: 19px 0;"> </div>
+                                                  </td>
+                                                  <td align="center" style="vertical-align: top; width: 39px; height: 39px;"><img alt="icon-tick" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/order-delivered/icon-tick.png" style="width: 100%; height: 100%; object-fit: contain;" /></td>
+                                                  <td align="center" style="vertical-align: top; width: 67px;">
+                                                      <div class="line" style="width: 100%; border-top: 1px dashed #FFFFFF; display: block; margin: 19px 0;"> </div>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td align="center" colspan="3" style="vertical-align: top;">
+                                                      <h3 class="o-title" style="margin: 10px 0 5px; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 22px; text-transform: none;">Order Confirmed</h3>
 
-                                        <p class="desc" style="color: #6F6F6F;font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: center; margin: 0 0 40px; text-transform: none;">We hope you love your new items! Continue shopping to discover more of your favorites.</p>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td align="center">
-                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 92.4%; margin: 0 auto;" width="100%">
-                                        <tbody>
-                                            <tr>
-                                                <td align="center" style="width: 67px;vertical-align: top;">
-                                                    <div class="line" style="width: 100%; height: 1px; border-top: 1px dashed #FFFFFF; display: block; margin: 19px 0;"> </div>
-                                                </td>
-                                                <td align="center" style="vertical-align: top; width: 39px; height: 39px;"><img alt="icon-tick" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/order-delivered/icon-tick.png" style="width: 100%; height: 100%; object-fit: contain;" /></td>
-                                                <td align="center" style="vertical-align: top; width: 67px;">
-                                                    <div class="line" style="width: 100%; height: 1px; border-top: 1px dashed #FFC645; display: block; margin: 19px 0;"> </div>
-                                                </td>
-                                                <td align="center" style="vertical-align: top; width: 67px;">
-                                                    <div class="line" style="width: 100%; height: 1px; border-top: 1px dashed #FFC645; display: block; margin: 19px 0;"> </div>
-                                                </td>
-                                                <td align="center" style="vertical-align: top; width: 39px; height: 39px;"><img alt="icon-tick" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/order-delivered/icon-tick.png" style="width: 100%; height: 100%; object-fit: contain;" /></td>
-                                                <td align="center" style="vertical-align: top; width: 67px;">
-                                                    <div class="line" style="width: 100%; height: 1px; border-top: 1px dashed #FFC645; display: block; margin: 19px 0;"> </div>
-                                                </td>
-                                                <td align="center" style="vertical-align: top; width: 67px;">
-                                                    <div class="line" style="width: 100%; height: 1px; border-top: 1px dashed #FFC645; display: block; margin: 19px 0;"> </div>
-                                                </td>
-                                                <td align="center" style="vertical-align: top; width: 39px; height: 39px;"><img alt="icon-tick" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/order-delivered/icon-tick.png" style="width: 100%; height: 100%; object-fit: contain;" /></td>
-                                                <td align="center" style="vertical-align: top; width: 67px;">
-                                                    <div class="line" style="width: 100%; border-top: 1px dashed #FFFFFF; display: block; margin: 19px 0;"> </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td align="center" colspan="3" style="vertical-align: top;">
-                                                    <h3 class="o-title" style="margin: 10px 0 5px; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 22px; text-transform: none;">Order Confirmed</h3>
+                                                      <p class="o-date" style="font-family: Poppins, Arial, sans-serif; font-size: 14px; font-weight: 400; margin: 0; line-height: 22px; color: #6F6F6F;">13-05-2024</p>
+                                                  </td>
+                                                  <td align="center" colspan="3" style="vertical-align: top;">
+                                                      <h3 class="o-title" style="margin: 10px 0 5px; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 22px; text-transform: none;">Order Shipped</h3>
 
-                                                    <p class="o-date" style="font-family: Poppins, Arial, sans-serif; font-size: 14px; font-weight: 400; margin: 0; line-height: 22px; color: #6F6F6F;">13-05-2024</p>
-                                                </td>
-                                                <td align="center" colspan="3" style="vertical-align: top;">
-                                                    <h3 class="o-title" style="margin: 10px 0 5px; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 22px; text-transform: none;">Order Shipped</h3>
+                                                      <p class="o-date" style="font-family: Poppins, Arial, sans-serif; font-size: 14px; font-weight: 400; margin: 0; line-height: 22px; color: #6F6F6F;">15-05-2024</p>
+                                                  </td>
+                                                  <td align="center" colspan="3" style="vertical-align: top;">
+                                                      <h3 class="o-title" style="margin: 10px 0 5px; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 22px; text-transform: none;">Order Delivered</h3>
 
-                                                    <p class="o-date" style="font-family: Poppins, Arial, sans-serif; font-size: 14px; font-weight: 400; margin: 0; line-height: 22px; color: #6F6F6F;">15-05-2024</p>
-                                                </td>
-                                                <td align="center" colspan="3" style="vertical-align: top;">
-                                                    <h3 class="o-title" style="margin: 10px 0 5px; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 22px; text-transform: none;">Order Delivered</h3>
+                                                      <p class="o-date" style="font-family: Poppins, Arial, sans-serif; font-size: 14px; font-weight: 400; margin: 0; line-height: 22px; color: #6F6F6F;">17-05-2024</p>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td align="center" colspan="9">
+                                                      <button class="cta" style="background: #FFC645; border: 1px solid #FFC645; font-family: 'Jost' Arial, sans-serif; font-size: 20px;font-weight: 400;line-height: 28px;text-align: center; color: #1E1E1E !important; vertical-align: middle; width: 100%; padding: 12px; text-transform: none; margin: 75px 0 45px;">Continue Shopping</button>
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <tr>
+                  <td style="text-align: center;">
+                      <table border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 92%; margin: 0 auto 30px; background: #FFFFFF;" width="100%">
+                          <tbody>
+                              <tr>
+                                  <td>
+                                      <p style="font-family: \'Poppins\', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #6F6F6F; text-align: center; max-width: 70%; margin: 30px auto 26px; text-transform: none;">For assistance, connect with us on social media or reach out to our support team at
+                                          <a data-renderer-mark="true" data-testid="link-with-safety" href="support@example.com" title="support@example.com">support@example.com</a>
+                                      </p>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td style="padding: 0;">
+                                      <table align="center" cellpadding="0" cellspacing="0" style="text-align: center; padding-bottom: 52px; border-bottom: 1px solid #FFC645;" width="100%">
+                                          <tbody>
+                                              <tr>
+                                                  <td style="padding: 0 8px; display: inline-block;">
+                                                      <a href="#"><img alt="Social Icon" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/be621c25343741b1ac5640833e3b34f7.png" style="display: block; width: 34px; height: 34px;" /></a>
+                                                  </td>
+                                                  <td style="padding: 0 8px; display: inline-block;">
+                                                      <a href="#"><img alt="Social Icon" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/53caa3fd24c5413a91a6db136577fcf7.png" style="display: block; width: 34px; height: 34px;" /></a>
+                                                  </td>
+                                                  <td style="padding: 0 8px; display: inline-block;">
+                                                      <a href="#"><img alt="Social Icon" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/fa216fecba6741dea1d9d5452d498603.png" style="display: block; width: 34px; height: 34px;" /></a>
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <p style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: center; color: #909090; text-transform: none;">This is a system-generated email. Please do not reply.</p>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+      <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+  </body>
 
-                                                    <p class="o-date" style="font-family: Poppins, Arial, sans-serif; font-size: 14px; font-weight: 400; margin: 0; line-height: 22px; color: #6F6F6F;">17-05-2024</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td align="center" colspan="9">
-                                                    <button class="cta" style="background: #FFC645; border: 1px solid #FFC645; font-family: 'Jost' Arial, sans-serif; font-size: 20px;font-weight: 400;line-height: 28px;text-align: center; color: #1E1E1E !important; vertical-align: middle; width: 100%; padding: 12px; text-transform: none; margin: 75px 0 45px;">Continue Shopping</button>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td style="text-align: center;">
-                    <table border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 92%; margin: 0 auto 30px; background: #FFFFFF;" width="100%">
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <p style="font-family: \'Poppins\', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #6F6F6F; text-align: center; max-width: 70%; margin: 30px auto 26px; text-transform: none;">For assistance, connect with us on social media or reach out to our support team at
-                                        <a data-renderer-mark="true" data-testid="link-with-safety" href="support@example.com" title="support@example.com">support@example.com</a>
-                                    </p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="padding: 0;">
-                                    <table align="center" cellpadding="0" cellspacing="0" style="text-align: center; padding-bottom: 52px; border-bottom: 1px solid #FFC645;" width="100%">
-                                        <tbody>
-                                            <tr>
-                                                <td style="padding: 0 8px; display: inline-block;">
-                                                    <a href="#"><img alt="Social Icon" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/be621c25343741b1ac5640833e3b34f7.png" style="display: block; width: 34px; height: 34px;" /></a>
-                                                </td>
-                                                <td style="padding: 0 8px; display: inline-block;">
-                                                    <a href="#"><img alt="Social Icon" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/53caa3fd24c5413a91a6db136577fcf7.png" style="display: block; width: 34px; height: 34px;" /></a>
-                                                </td>
-                                                <td style="padding: 0 8px; display: inline-block;">
-                                                    <a href="#"><img alt="Social Icon" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/fa216fecba6741dea1d9d5452d498603.png" style="display: block; width: 34px; height: 34px;" /></a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: center; color: #909090; text-transform: none;">This is a system-generated email. Please do not reply.</p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
-</body>
-
-</html>
-```
-
-  
+  </html>
+  ```
 </Accordion>
 
 ## Password Reset Template
@@ -3046,10 +3036,9 @@ A security-focused transactional email that helps users reset their passwords se
 <Image align="center" alt="Sample Password Reset Template" border={true} caption="Sample Password Reset Template" src="https://files.readme.io/3866006424ffc74a98cae2a7ec5859b8c519df5937adbb62de028e39ce311072-Password_Reset_HTML.png" width="25% " />
 
 <Accordion title="Expand to know more about the template.">
-  
-### Use Case Examples
+  ### Use Case Examples
 
-Sends a reset password link to users who have forgotten or initiated a reset request, ensuring account access is restored with minimal friction.
+  Sends a reset password link to users who have forgotten or initiated a reset request, ensuring account access is restored with minimal friction.
 
   ### Template Customization Options
 
@@ -3196,443 +3185,444 @@ A high-impact marketing email used to announce ongoing deals, highlight product 
 
 <Image align="center" alt="Sample Promotioanal Email Template" border={true} caption="Sample Promotional Email Template" src="https://files.readme.io/cf5f3dfc5d62e483db6d62e5d16182bf985ecbd41f621c31293191484681cb3b-Promotional_Email_HTML.png" width="25% " />
 
-<details>
-  <summary><b>Expand to know more about the template.</b></summary>
+<Accordion title="Expand to know more about the template.">
 
-  ### Use Case Examples
+### Use Case Examples
 
-  * Announce a limited-time festive discount.
-  * Promote newly launched products or collections.
-  * Re-engage users with a category-specific deal.
+* Announce a limited-time festive discount.
+* Promote newly launched products or collections.
+* Re-engage users with a category-specific deal.
 
-  ### Template Customization Options
+### Template Customization Options
 
-  * [Replace the Logo](doc:ootb-email-templates#replace-logo)
-  * [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-  * [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#call-to-actions-ctas)
-  * [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-  * [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-  * [Update the Privacy Policy](doc:ootb-email-templates#update-privacy-policy)
-  * [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+* [Replace the Logo](doc:ootb-email-templates#replace-logo)
+* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#call-to-actions-ctas)
+* [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+* [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+* [Update the Privacy Policy](doc:ootb-email-templates#update-privacy-policy)
+* [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
 
-  ### Template Code
+### Template Code
 
-  ```html
-  <!doctype html="">
-  <html lang="en">
+```html
+<!doctype html="">
+<html lang="en">
 
-  <head>
-      <title>Promotional</title>
-      <link href="https://fonts.googleapis.com" rel="preconnect" />
-      <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-      <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet" />
-      <style type="text/css">
-          @media screen and (max-width: 480px) {             .container {                 max-width: 100% !important;             }              .main {                 max-width: 90% !important;             }         }
-      </style>
-  </head>
+<head>
+    <title>Promotional</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet" />
+    <style type="text/css">
+        @media screen and (max-width: 480px) {             .container {                 max-width: 100% !important;             }              .main {                 max-width: 90% !important;             }         }
+    </style>
+</head>
 
-  <body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" data-new-gr-c-s-loaded="14.1242.0" style="font-family: Jost, Arial, sans-serif; font-weight: 400; margin: 0px; padding: 0px; cursor: auto;">
-      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 600px; margin: 0 auto; background-color: #FFFFFF;" width="100%">
-          <!-- header start-->
-          <tbody>
-              <tr>
-                  <td style="text-align: center; position: relative; padding: 30px 0;">
-                      <!-- Change Logo Image src as per your requirements --><img alt="Logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="display: inline-block; width: 159px; height: 73px; object-fit: cover;" />
-                      <!-- Change Logo Image src as per your requirements -->
-                  </td>
-              </tr>
-              <!-- header end-->
-              <tr>
-                  <td style="background: #DFDCD1; padding: 34px 0;">
-                      <table border="0" cellpadding="0" cellspacing="0" style="max-width: 88%; margin: 0 auto;" width="100%">
-                          <tbody>
-                              <tr>
-                                  <td>
-                                      <div class="img-wrap" style="max-width: 112px; max-height: 112px; margin: 0 auto 10px;"><img alt="category image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/category-1.png" style="width: 100%; height: 100%; object-fit: cover;" /></div>
+<body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" data-new-gr-c-s-loaded="14.1242.0" style="font-family: Jost, Arial, sans-serif; font-weight: 400; margin: 0px; padding: 0px; cursor: auto;">
+    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 600px; margin: 0 auto; background-color: #FFFFFF;" width="100%">
+        <!-- header start-->
+        <tbody>
+            <tr>
+                <td style="text-align: center; position: relative; padding: 30px 0;">
+                    <!-- Change Logo Image src as per your requirements --><img alt="Logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="display: inline-block; width: 159px; height: 73px; object-fit: cover;" />
+                    <!-- Change Logo Image src as per your requirements -->
+                </td>
+            </tr>
+            <!-- header end-->
+            <tr>
+                <td style="background: #DFDCD1; padding: 34px 0;">
+                    <table border="0" cellpadding="0" cellspacing="0" style="max-width: 88%; margin: 0 auto;" width="100%">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="img-wrap" style="max-width: 112px; max-height: 112px; margin: 0 auto 10px;"><img alt="category image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/category-1.png" style="width: 100%; height: 100%; object-fit: cover;" /></div>
 
-                                      <p style="font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 20px; text-align: center; text-transform: none; color: #464646; margin: 0;">Jackets</p>
-                                  </td>
-                                  <td>
-                                      <div class="img-wrap" style="max-width: 112px; max-height: 112px; margin: 0 auto 10px;"><img alt="category image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/category-2.png" style="width: 100%; height: 100%; object-fit: cover;" /></div>
+                                    <p style="font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 20px; text-align: center; text-transform: none; color: #464646; margin: 0;">Jackets</p>
+                                </td>
+                                <td>
+                                    <div class="img-wrap" style="max-width: 112px; max-height: 112px; margin: 0 auto 10px;"><img alt="category image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/category-2.png" style="width: 100%; height: 100%; object-fit: cover;" /></div>
 
-                                      <p style="font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 20px; text-align: center; text-transform: none; color: #464646; margin: 0;">Shirts</p>
-                                  </td>
-                                  <td>
-                                      <div class="img-wrap" style="max-width: 112px; max-height: 112px; margin: 0 auto 10px;"><img alt="category image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/category-3.png" style="width: 100%; height: 100%; object-fit: cover;" /></div>
+                                    <p style="font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 20px; text-align: center; text-transform: none; color: #464646; margin: 0;">Shirts</p>
+                                </td>
+                                <td>
+                                    <div class="img-wrap" style="max-width: 112px; max-height: 112px; margin: 0 auto 10px;"><img alt="category image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/category-3.png" style="width: 100%; height: 100%; object-fit: cover;" /></div>
 
-                                      <p style="font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 20px; text-align: center; text-transform: none; color: #464646; margin: 0;">Jeans</p>
-                                  </td>
-                                  <td>
-                                      <div class="img-wrap" style="max-width: 112px; max-height: 112px; margin: 0 auto 10px;"><img alt="category image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/category-4.png" style="width: 100%; height: 100%; object-fit: cover;" /></div>
+                                    <p style="font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 20px; text-align: center; text-transform: none; color: #464646; margin: 0;">Jeans</p>
+                                </td>
+                                <td>
+                                    <div class="img-wrap" style="max-width: 112px; max-height: 112px; margin: 0 auto 10px;"><img alt="category image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/category-4.png" style="width: 100%; height: 100%; object-fit: cover;" /></div>
 
-                                      <p style="font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 20px; text-align: center; text-transform: none; color: #464646; margin: 0;">T-shirts</p>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-              <!-- Banner Image -->
-              <tr>
-                  <td style="background: #FFFFFF;">
-                      <table border="0" cellpadding="0" cellspacing="0" style="max-width: 88%; margin: 0 auto;" width="100%">
-                          <tbody>
-                              <tr>
-                                  <td style="background: #DFDCD1"><img alt="banner image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/banner.png" style="width: 100%; height: 100%; max-height: 641px; object-fit: cover;" /></td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-              <!-- Banner Image -->
-              <tr>
-                  <td style="background: #DFDCD1; padding: 25px 0 36px;">
-                      <table border="0" cellpadding="0" cellspacing="0" style="max-width: 88%; margin: 0 auto;" width="100%">
-                          <tbody>
-                              <tr>
-                                  <td>
-                                      <h2 style="font-family: 'Jost', Arial, sans-serif; font-size: 32px; font-weight: 300; text-transform: uppercase; line-height: 52px; color: #000000; margin: 0; padding-bottom: 8px;">FLASH SALE LIVE — DON’T MISS OUT!</h2>
+                                    <p style="font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 20px; text-align: center; text-transform: none; color: #464646; margin: 0;">T-shirts</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- Banner Image -->
+            <tr>
+                <td style="background: #FFFFFF;">
+                    <table border="0" cellpadding="0" cellspacing="0" style="max-width: 88%; margin: 0 auto;" width="100%">
+                        <tbody>
+                            <tr>
+                                <td style="background: #DFDCD1"><img alt="banner image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/banner.png" style="width: 100%; height: 100%; max-height: 641px; object-fit: cover;" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- Banner Image -->
+            <tr>
+                <td style="background: #DFDCD1; padding: 25px 0 36px;">
+                    <table border="0" cellpadding="0" cellspacing="0" style="max-width: 88%; margin: 0 auto;" width="100%">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h2 style="font-family: 'Jost', Arial, sans-serif; font-size: 32px; font-weight: 300; text-transform: uppercase; line-height: 52px; color: #000000; margin: 0; padding-bottom: 8px;">FLASH SALE LIVE — DON’T MISS OUT!</h2>
 
-                                      <p style="margin: 0; padding-bottom: 10px; font-family: 'Jost', Arial, sans-serif; text-transform: none; color: #464646; font-size: 10px; line-height: 20px; font-weight: 400;">Our flash sale is live — here’s your chance to avail the best of style at up to 50% off! Browse through items from our exclusive collection, where every piece of clothing tells a story. Go ahead, make a purchase, and
-                                          make a proud statement wherever you go!</p>
+                                    <p style="margin: 0; padding-bottom: 10px; font-family: 'Jost', Arial, sans-serif; text-transform: none; color: #464646; font-size: 10px; line-height: 20px; font-weight: 400;">Our flash sale is live — here’s your chance to avail the best of style at up to 50% off! Browse through items from our exclusive collection, where every piece of clothing tells a story. Go ahead, make a purchase, and
+                                        make a proud statement wherever you go!</p>
 
-                                      <a href="#" style="font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; text-transform: uppercase; line-height: 28px; color: #000000 !important; text-decoration: none; border: 1px solid #000000; padding: 7px; display: block; text-align: center; width: 100%;">Shop now</a>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-              <!-- banner section -->
-              <!-- looks section -->
-              <tr>
-                  <td style="padding: 66px 0 0;">
-                      <table border="0" cellpadding="0" cellspacing="0" style="max-width: 88%; margin: 0 auto;" width="100%">
-                          <tbody>
-                              <tr>
-                                  <td style="width: 50%; padding: 8px;"><img alt="looks image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/look-1.png" style="width: 100%; height: 100%; object-fit: cover;" /></td>
-                                  <td style="width: 50%; padding: 8px;"><img alt="looks image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/look-2.png" style="width: 100%; height: 100%; object-fit: cover;" /></td>
-                              </tr>
-                              <tr>
-                                  <td style="width: 50%; padding: 8px;"><img alt="looks image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/look-3.png" style="width: 100%; height: 100%; object-fit: cover;" /></td>
-                                  <td style="width: 50%; padding: 8px;"><img alt="looks image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/look-4.png" style="width: 100%; height: 100%; object-fit: cover;" /></td>
-                              </tr>
-                              <tr>
-                                  <td colspan="2" style="text-align: right;">
-                                      <a href="#" style="font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; text-transform: uppercase; line-height: 28px; color: #000000 !important; text-decoration: none; border: 1px solid #000000; padding: 7px 22px; display: block; text-align: center; display: inline-block; margin:8px 8px 50px ; max-width: 153px;">Shop now</a>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-              <!-- looks section -->
-              <!-- product section -->
-              <tr>
-                  <td style=" background: #DFDCD1;">
-                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 90%; margin: 30px auto 50px; width: 100%;">
-                          <tbody>
-                              <tr>
-                                  <td colspan="3">
-                                      <h3 style="font-family: 'Jost', Arial, sans-serif;font-size: 32px;font-weight: 300;line-height: 52px; color: #000000; text-transform: uppercase; margin:0 0 10px;">PRODUCTS ON SALE</h3>
+                                    <a href="#" style="font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; text-transform: uppercase; line-height: 28px; color: #000000 !important; text-decoration: none; border: 1px solid #000000; padding: 7px; display: block; text-align: center; width: 100%;">Shop now</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- banner section -->
+            <!-- looks section -->
+            <tr>
+                <td style="padding: 66px 0 0;">
+                    <table border="0" cellpadding="0" cellspacing="0" style="max-width: 88%; margin: 0 auto;" width="100%">
+                        <tbody>
+                            <tr>
+                                <td style="width: 50%; padding: 8px;"><img alt="looks image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/look-1.png" style="width: 100%; height: 100%; object-fit: cover;" /></td>
+                                <td style="width: 50%; padding: 8px;"><img alt="looks image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/look-2.png" style="width: 100%; height: 100%; object-fit: cover;" /></td>
+                            </tr>
+                            <tr>
+                                <td style="width: 50%; padding: 8px;"><img alt="looks image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/look-3.png" style="width: 100%; height: 100%; object-fit: cover;" /></td>
+                                <td style="width: 50%; padding: 8px;"><img alt="looks image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/look-4.png" style="width: 100%; height: 100%; object-fit: cover;" /></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="text-align: right;">
+                                    <a href="#" style="font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; text-transform: uppercase; line-height: 28px; color: #000000 !important; text-decoration: none; border: 1px solid #000000; padding: 7px 22px; display: block; text-align: center; display: inline-block; margin:8px 8px 50px ; max-width: 153px;">Shop now</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- looks section -->
+            <!-- product section -->
+            <tr>
+                <td style=" background: #DFDCD1;">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 90%; margin: 30px auto 50px; width: 100%;">
+                        <tbody>
+                            <tr>
+                                <td colspan="3">
+                                    <h3 style="font-family: 'Jost', Arial, sans-serif;font-size: 32px;font-weight: 300;line-height: 52px; color: #000000; text-transform: uppercase; margin:0 0 10px;">PRODUCTS ON SALE</h3>
 
-                                      <p style="font-family: 'Jost', Arial, sans-serif;font-size: 10px;font-weight: 400;line-height: 20px; color: #464646; text-transform: none; margin: 0 0 30px;">Browse through items from our exclusive collection.</p>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td style="vertical-align: top; width: 30%;">
-                                      <!-- product card -->
-                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #FFFFFF; margin: 0 5px 10px; padding: 5px;">
-                                          <tbody>
-                                              <tr>
-                                                  <td colspan="2">
-                                                      <div class="img-wrap">
-                                                          <!-- Change image src as per your requirements --><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/product-1.png" /></div>
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <td style="width: 60%; margin-bottom: 2px; vertical-align: middle;">
-                                                      <h4 style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #252525; margin: 0;padding-right: 5px;">Elegent Bloom Top</h4>
-                                                  </td>
-                                                  <td style="width: 20%; vertical-align: middle;">
-                                                      <p style="margin:0; color: #252525; font-family: 'Jost', Arial, sans-serif; font-size: 10px;font-weight: 300; line-height: 15px; text-align: right; font-style: italic;"><span class="rupee-sign">$</span>1500</p>
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <td colspan="2">
-                                                      <p class="desc" style="font-family: 'Jost', Arial, sans-serif;text-transform: none; font-size: 8px; font-weight: 400; line-height: 13px; color: #909090; margin: 0; ">Flowy design perfect for casual outings or brunch dates.</p>
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <td colspan="2">
-                                                      <a class="btn-link" href="#" style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 27px; text-transform: none; color: #0B0B0B !important; text-decoration: none; display: block; text-align: right;">Shop now <img alt="arrow" class="margin-left: 10px; max-width: 17px" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/arrow.png" /></a>
-                                                  </td>
-                                              </tr>
-                                          </tbody>
-                                      </table>
-                                  </td>
-                                  <td style="vertical-align: middle; width: 30%;">
-                                      <!-- product card -->
-                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #FFFFFF; margin: 0 5px 10px; padding: 5px;">
-                                          <tbody>
-                                              <tr>
-                                                  <td colspan="2">
-                                                      <div class="img-wrap">
-                                                          <!-- Change image src as per your requirements --><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/product-2.png" /></div>
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <td style="width: 60%; margin-bottom: 2px; vertical-align: middle;">
-                                                      <h4 style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #252525; margin: 0;padding-right: 5px;">Luxe Slik Shirt</h4>
-                                                  </td>
-                                                  <td style="width: 20%; vertical-align: middle;">
-                                                      <p style="margin:0; color: #252525; font-family: 'Jost', Arial, sans-serif; font-size: 10px;font-weight: 300; line-height: 15px; text-align: right; font-style: italic;"><span class="rupee-sign">$</span>1500</p>
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <td colspan="2">
-                                                      <p class="desc" style="font-family: 'Jost', Arial, sans-serif;text-transform: none; font-size: 8px; font-weight: 400; line-height: 13px; color: #909090; margin: 0; ">Premium silk shirt for a polished and sophisticated look.</p>
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <td colspan="2">
-                                                      <a class="btn-link" href="#" style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 27px; text-transform: none; color: #0B0B0B !important; text-decoration: none; display: block; text-align: right;">Shop now <img alt="arrow" class="margin-left: 10px; max-width: 17px" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/arrow.png" /></a>
-                                                  </td>
-                                              </tr>
-                                          </tbody>
-                                      </table>
-                                  </td>
-                                  <td style="vertical-align: middle; width: 30%;">
-                                      <!-- product card -->
-                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #FFFFFF; margin: 0 5px 10px; padding: 5px;">
-                                          <tbody>
-                                              <tr>
-                                                  <td colspan="2">
-                                                      <div class="img-wrap">
-                                                          <!-- Change image src as per your requirements --><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/product-3.png" /></div>
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <td style="width: 60%; margin-bottom: 2px; vertical-align: middle;">
-                                                      <h4 style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #252525; margin: 0;padding-right: 5px;">Classic White Blouse</h4>
-                                                  </td>
-                                                  <td style="width: 20%; vertical-align: middle;">
-                                                      <p style="margin:0; color: #252525; font-family: 'Jost', Arial, sans-serif; font-size: 10px;font-weight: 300; line-height: 15px; text-align: right; font-style: italic;"><span class="rupee-sign">$</span>1500</p>
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <td colspan="2">
-                                                      <p class="desc" style="font-family: 'Jost', Arial, sans-serif;text-transform: none; font-size: 8px; font-weight: 400; line-height: 13px; color: #909090; margin: 0; ">Effortlessly chic, this is a versatile must-have for any occasion.</p>
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <td colspan="2">
-                                                      <a class="btn-link" href="#" style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 27px; text-transform: none; color: #0B0B0B !important; text-decoration: none; display: block; text-align: right;">Shop now <img alt="arrow" class="margin-left: 10px; max-width: 17px" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/arrow.png" /></a>
-                                                  </td>
-                                              </tr>
-                                          </tbody>
-                                      </table>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td colspan="3" style="text-align: right;">
-                                      <a display_text_og="VIEW%20ALL" href="#" href_og="%23" style="font-family: Jost, Arial, sans-serif; font-size: 14px; font-weight: 400; text-transform: uppercase; line-height: 20px; text-decoration: none; border: 1px solid rgb(0, 0, 0); padding: 4px 16px; display: inline-block; text-align: center; margin-top: 12px; color: rgb(0, 0, 0) !important;">VIEW ALL</a>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-              <!-- product section -->
-              <!-- review section -->
-              <tr>
-                  <td style=" background: #FFFFFF;">
-                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 90%; margin: 38px auto 0; width: 100%;">
-                          <tbody>
-                              <tr>
-                                  <td colspan="3">
-                                      <h3 style="font-family: 'Jost', Arial, sans-serif;font-size: 32px;font-weight: 300;line-height: 52px; color: #000000; text-transform: uppercase; margin:0 0 10px;">REVIEWS FROM CUSTOMERS</h3>
+                                    <p style="font-family: 'Jost', Arial, sans-serif;font-size: 10px;font-weight: 400;line-height: 20px; color: #464646; text-transform: none; margin: 0 0 30px;">Browse through items from our exclusive collection.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: top; width: 30%;">
+                                    <!-- product card -->
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #FFFFFF; margin: 0 5px 10px; padding: 5px;">
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <div class="img-wrap">
+                                                        <!-- Change image src as per your requirements --><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/product-1.png" /></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 60%; margin-bottom: 2px; vertical-align: middle;">
+                                                    <h4 style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #252525; margin: 0;padding-right: 5px;">Elegent Bloom Top</h4>
+                                                </td>
+                                                <td style="width: 20%; vertical-align: middle;">
+                                                    <p style="margin:0; color: #252525; font-family: 'Jost', Arial, sans-serif; font-size: 10px;font-weight: 300; line-height: 15px; text-align: right; font-style: italic;"><span class="rupee-sign">$</span>1500</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <p class="desc" style="font-family: 'Jost', Arial, sans-serif;text-transform: none; font-size: 8px; font-weight: 400; line-height: 13px; color: #909090; margin: 0; ">Flowy design perfect for casual outings or brunch dates.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <a class="btn-link" href="#" style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 27px; text-transform: none; color: #0B0B0B !important; text-decoration: none; display: block; text-align: right;">Shop now <img alt="arrow" class="margin-left: 10px; max-width: 17px" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/arrow.png" /></a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td style="vertical-align: middle; width: 30%;">
+                                    <!-- product card -->
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #FFFFFF; margin: 0 5px 10px; padding: 5px;">
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <div class="img-wrap">
+                                                        <!-- Change image src as per your requirements --><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/product-2.png" /></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 60%; margin-bottom: 2px; vertical-align: middle;">
+                                                    <h4 style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #252525; margin: 0;padding-right: 5px;">Luxe Slik Shirt</h4>
+                                                </td>
+                                                <td style="width: 20%; vertical-align: middle;">
+                                                    <p style="margin:0; color: #252525; font-family: 'Jost', Arial, sans-serif; font-size: 10px;font-weight: 300; line-height: 15px; text-align: right; font-style: italic;"><span class="rupee-sign">$</span>1500</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <p class="desc" style="font-family: 'Jost', Arial, sans-serif;text-transform: none; font-size: 8px; font-weight: 400; line-height: 13px; color: #909090; margin: 0; ">Premium silk shirt for a polished and sophisticated look.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <a class="btn-link" href="#" style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 27px; text-transform: none; color: #0B0B0B !important; text-decoration: none; display: block; text-align: right;">Shop now <img alt="arrow" class="margin-left: 10px; max-width: 17px" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/arrow.png" /></a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td style="vertical-align: middle; width: 30%;">
+                                    <!-- product card -->
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #FFFFFF; margin: 0 5px 10px; padding: 5px;">
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <div class="img-wrap">
+                                                        <!-- Change image src as per your requirements --><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/product-3.png" /></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 60%; margin-bottom: 2px; vertical-align: middle;">
+                                                    <h4 style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #252525; margin: 0;padding-right: 5px;">Classic White Blouse</h4>
+                                                </td>
+                                                <td style="width: 20%; vertical-align: middle;">
+                                                    <p style="margin:0; color: #252525; font-family: 'Jost', Arial, sans-serif; font-size: 10px;font-weight: 300; line-height: 15px; text-align: right; font-style: italic;"><span class="rupee-sign">$</span>1500</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <p class="desc" style="font-family: 'Jost', Arial, sans-serif;text-transform: none; font-size: 8px; font-weight: 400; line-height: 13px; color: #909090; margin: 0; ">Effortlessly chic, this is a versatile must-have for any occasion.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <a class="btn-link" href="#" style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 27px; text-transform: none; color: #0B0B0B !important; text-decoration: none; display: block; text-align: right;">Shop now <img alt="arrow" class="margin-left: 10px; max-width: 17px" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/arrow.png" /></a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" style="text-align: right;">
+                                    <a display_text_og="VIEW%20ALL" href="#" href_og="%23" style="font-family: Jost, Arial, sans-serif; font-size: 14px; font-weight: 400; text-transform: uppercase; line-height: 20px; text-decoration: none; border: 1px solid rgb(0, 0, 0); padding: 4px 16px; display: inline-block; text-align: center; margin-top: 12px; color: rgb(0, 0, 0) !important;">VIEW ALL</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- product section -->
+            <!-- review section -->
+            <tr>
+                <td style=" background: #FFFFFF;">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 90%; margin: 38px auto 0; width: 100%;">
+                        <tbody>
+                            <tr>
+                                <td colspan="3">
+                                    <h3 style="font-family: 'Jost', Arial, sans-serif;font-size: 32px;font-weight: 300;line-height: 52px; color: #000000; text-transform: uppercase; margin:0 0 10px;">REVIEWS FROM CUSTOMERS</h3>
 
-                                      <p style="font-family: 'Jost', Arial, sans-serif;font-size: 10px;font-weight: 400;line-height: 20px; color: #464646; text-transform: none; margin: 0 0 30px;">Hear what our customers have to say about our products</p>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td style="vertical-align: top; width: 30%; height: 100%;">
-                                      <!-- review card -->
-                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #DFDCD1; margin: 0 5px; padding: 10px;">
-                                          <tbody>
-                                              <tr>
-                                                  <td style="vertical-align: middle; width: 20%;"><img alt="client" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/client-1.png" style="object-fit: contain; border-radius: 50%;" /></td>
-                                                  <td style="vertical-align: middle; width: 80%;">
-                                                      <h4 style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; margin:0 0 0 8px; line-height: 24px; color: #252525;">Ramesh Joshi</h4>
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <td colspan="2">
-                                                      <ul style="list-style: none; margin:0 0 7px; padding: 0;">
-                                                          <li style="width: 16px; height: 16px; display: inline-block;"><img alt="full-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/full-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
-                                                          <li style="width: 16px; height: 16px; display: inline-block;"><img alt="full-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/full-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
-                                                          <li style="width: 16px; height: 16px; display: inline-block;"><img alt="full-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/full-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
-                                                          <li style="width: 16px; height: 16px; display: inline-block;"><img alt="full-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/full-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
-                                                          <li style="width: 16px; height: 16px; display: inline-block;"><img alt="empty-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/empty-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
-                                                      </ul>
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <td colspan="2">
-                                                      <p style="margin: 0 0 14px; color: #464646; font-family: 'Jost', Arial, sans-serif;                                         font-size: 10px;font-weight: 400;line-height: 15px;text-align: left; text-transform: none; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; min-height: 75px;">Absolutely love the quality! The fit is perfect, and the fabric feels amazing. I’ll definitely be shopping here again!</p>
-                                                  </td>
-                                              </tr>
-                                          </tbody>
-                                      </table>
-                                  </td>
-                                  <td style="vertical-align: top; width: 30%; height: 100%;">
-                                      <!-- review card -->
-                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #DFDCD1; margin: 0 5px; padding: 10px;">
-                                          <tbody>
-                                              <tr>
-                                                  <td style="vertical-align: middle; width: 20%;"><img alt="client" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/client-2.png" style="object-fit: contain; border-radius: 50%;" /></td>
-                                                  <td style="vertical-align: middle; width: 80%;">
-                                                      <h4 style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; margin:0 0 0 8px; line-height: 24px; color: #252525;">Rina Roy</h4>
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <td colspan="2">
-                                                      <ul style="list-style: none; margin:0 0 7px; padding: 0;">
-                                                          <li style="width: 16px; height: 16px; display: inline-block;"><img alt="full-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/full-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
-                                                          <li style="width: 16px; height: 16px; display: inline-block;"><img alt="full-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/full-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
-                                                          <li style="width: 16px; height: 16px; display: inline-block;"><img alt="full-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/full-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
-                                                          <li style="width: 16px; height: 16px; display: inline-block;"><img alt="empty-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/empty-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
-                                                          <li style="width: 16px; height: 16px; display: inline-block;"><img alt="empty-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/empty-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
-                                                      </ul>
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <td colspan="2">
-                                                      <p style="margin: 0 0 14px; color: #464646; font-family: 'Jost', Arial, sans-serif;                                         font-size: 10px;font-weight: 400;line-height: 15px;text-align: left; text-transform: none; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; min-height: 75px;">Great selection and super fast delivery. The clothes look exactly like the pictures and fit beautifully. Highly recommend this brand!</p>
-                                                  </td>
-                                              </tr>
-                                          </tbody>
-                                      </table>
-                                  </td>
-                                  <td style="vertical-align: top; width: 30%; height: 100%;">
-                                      <!-- review card -->
-                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #DFDCD1; margin: 0 5px; padding: 10px;">
-                                          <tbody>
-                                              <tr>
-                                                  <td style="vertical-align: middle; width: 20%;"><img alt="client" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/client-3.png" style="object-fit: contain; border-radius: 50%;" /></td>
-                                                  <td style="vertical-align: middle; width: 80%;">
-                                                      <h4 style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; margin:0 0 0 8px; line-height: 24px; color: #252525;">Ritika Joshi</h4>
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <td colspan="2">
-                                                      <ul style="list-style: none; margin:0 0 7px; padding: 0;">
-                                                          <li style="width: 16px; height: 16px; display: inline-block;"><img alt="full-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/full-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
-                                                          <li style="width: 16px; height: 16px; display: inline-block;"><img alt="full-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/full-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
-                                                          <li style="width: 16px; height: 16px; display: inline-block;"><img alt="full-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/full-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
-                                                          <li style="width: 16px; height: 16px; display: inline-block;"><img alt="full-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/full-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
-                                                          <li style="width: 16px; height: 16px; display: inline-block;"><img alt="full-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/full-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
-                                                      </ul>
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <td colspan="2">
-                                                      <p style="margin: 0 0 14px; color: #464646; font-family: 'Jost', Arial, sans-serif;                                         font-size: 10px;font-weight: 400;line-height: 15px;text-align: left; text-transform: none; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; min-height: 75px;">I’m so impressed with the customer service and the attention to detail in the packaging. The products exceeded my expectations!</p>
-                                                  </td>
-                                              </tr>
-                                          </tbody>
-                                      </table>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td colspan="3">
-                                      <p style="font-family: 'Jost', Arial, sans-serif;font-size: 12px;font-weight: 400;line-height: 20px; color: #464646; text-transform: none; margin: 33px 5px 30px;">Discover timeless style and exceptional quality with our exclusive collection, designed to inspire confidence and individuality. From chic everyday essentials to statement pieces, our collection blends comfort, elegance,
-                                          and versatility. Embrace fashion that fits your lifestyle and celebrates your unique personality — because you deserve to look and feel your best.</p>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-              <!-- review section -->
-              <!-- footer start-->
-              <tr>
-                  <td align="center">
-                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 90%; margin: 0 auto; background: #DFDCD1; padding: 25px 0 24px;">
-                          <tbody>
-                              <tr>
-                                  <td>
-                                      <p style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #1E1E1E; margin: 0 auto 26px; max-width: 70%;">For assistance, connect with us on social media or reach out to our support team at
-                                          <a data-renderer-mark="true" data-testid="link-with-safety" href="support@example.com" title="support@example.com">support@example.com</a>
-                                      </p>
-                                  </td>
-                              </tr>
-                              <!-- Privacy Policy -->
-                              <tr>
-                                  <td style="padding-bottom: 24px;">
-                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
-                                          <tbody>
-                                              <tr>
-                                                  <td style="padding: 0 5px;">
-                                                      <a href="#" style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #1E1E1E !important; text-decoration: none;">Privacy</a>
-                                                  </td>
-                                                  <td style="padding: 0 5px;">
-                                                      <a href="#" style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #1E1E1E !important; text-decoration: none;">Account</a>
-                                                  </td>
-                                                  <td style="padding: 0 5px;">
-                                                      <a href="#" style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #1E1E1E !important; text-decoration: none;">Unsubscribe</a>
-                                                  </td>
-                                              </tr>
-                                          </tbody>
-                                      </table>
-                                  </td>
-                              </tr>
-                              <!-- Privacy Policy -->
-                              <!-- Add Links -->
-                              <!-- Download Android Section -->
-                              <tr>
-                                  <td style="padding: 0;">
-                                      <table align="center" cellpadding="0" cellspacing="0" style="text-align: center;" width="100%">
-                                          <tbody>
-                                              <tr>
-                                                  <td style="padding: 7px 40px; display: inline-block; border: 1px solid #ffffff;">
-                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 20px; height: 20px; ">
-                                                          <!-- Change image src as per your requirements --><img alt="instagram" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/3c09a826b3cd4920aa1230c7df32f91b.png" style="width: 100%; height: 100%;" /></a>
-                                                  </td>
-                                                  <td style="padding: 7px 40px; display: inline-block; border: 1px solid #ffffff;">
-                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 20px; height: 20px;"><img alt="facebook" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/18c1b92ff17443f38388d771deef565a.png" style="width: 100%; height: 100%;" /></a>
-                                                  </td>
-                                                  <td style="padding: 7px 40px; display: inline-block; border: 1px solid #ffffff;">
-                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 20px; height: 20px;"><img alt="x" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/938da02c50734470bdcddd85a5217fc1.png" style="width: 100%; height: 100%;" /></a>
-                                                  </td>
-                                              </tr>
-                                          </tbody>
-                                      </table>
-                                  </td>
-                              </tr>
-                              <!-- Download Android Section -->
-                              <!-- Add Links -->
-                              <tr>
-                                  <td>
-                                      <p style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #1E1E1E; padding-top:10px;">To opt out of promotional emails like this,
-                                          <a href="#" style="color:#1E1E1E;font-weight:bold;text-decoration:none;">unsubscribe here</a>
-                                      </p>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-              <!-- footer end-->
-          </tbody>
-      </table>
-  </body>
-  <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+                                    <p style="font-family: 'Jost', Arial, sans-serif;font-size: 10px;font-weight: 400;line-height: 20px; color: #464646; text-transform: none; margin: 0 0 30px;">Hear what our customers have to say about our products</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: top; width: 30%; height: 100%;">
+                                    <!-- review card -->
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #DFDCD1; margin: 0 5px; padding: 10px;">
+                                        <tbody>
+                                            <tr>
+                                                <td style="vertical-align: middle; width: 20%;"><img alt="client" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/client-1.png" style="object-fit: contain; border-radius: 50%;" /></td>
+                                                <td style="vertical-align: middle; width: 80%;">
+                                                    <h4 style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; margin:0 0 0 8px; line-height: 24px; color: #252525;">Ramesh Joshi</h4>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <ul style="list-style: none; margin:0 0 7px; padding: 0;">
+                                                        <li style="width: 16px; height: 16px; display: inline-block;"><img alt="full-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/full-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
+                                                        <li style="width: 16px; height: 16px; display: inline-block;"><img alt="full-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/full-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
+                                                        <li style="width: 16px; height: 16px; display: inline-block;"><img alt="full-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/full-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
+                                                        <li style="width: 16px; height: 16px; display: inline-block;"><img alt="full-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/full-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
+                                                        <li style="width: 16px; height: 16px; display: inline-block;"><img alt="empty-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/empty-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <p style="margin: 0 0 14px; color: #464646; font-family: 'Jost', Arial, sans-serif;                                         font-size: 10px;font-weight: 400;line-height: 15px;text-align: left; text-transform: none; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; min-height: 75px;">Absolutely love the quality! The fit is perfect, and the fabric feels amazing. I’ll definitely be shopping here again!</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td style="vertical-align: top; width: 30%; height: 100%;">
+                                    <!-- review card -->
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #DFDCD1; margin: 0 5px; padding: 10px;">
+                                        <tbody>
+                                            <tr>
+                                                <td style="vertical-align: middle; width: 20%;"><img alt="client" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/client-2.png" style="object-fit: contain; border-radius: 50%;" /></td>
+                                                <td style="vertical-align: middle; width: 80%;">
+                                                    <h4 style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; margin:0 0 0 8px; line-height: 24px; color: #252525;">Rina Roy</h4>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <ul style="list-style: none; margin:0 0 7px; padding: 0;">
+                                                        <li style="width: 16px; height: 16px; display: inline-block;"><img alt="full-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/full-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
+                                                        <li style="width: 16px; height: 16px; display: inline-block;"><img alt="full-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/full-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
+                                                        <li style="width: 16px; height: 16px; display: inline-block;"><img alt="full-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/full-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
+                                                        <li style="width: 16px; height: 16px; display: inline-block;"><img alt="empty-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/empty-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
+                                                        <li style="width: 16px; height: 16px; display: inline-block;"><img alt="empty-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/empty-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <p style="margin: 0 0 14px; color: #464646; font-family: 'Jost', Arial, sans-serif;                                         font-size: 10px;font-weight: 400;line-height: 15px;text-align: left; text-transform: none; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; min-height: 75px;">Great selection and super fast delivery. The clothes look exactly like the pictures and fit beautifully. Highly recommend this brand!</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td style="vertical-align: top; width: 30%; height: 100%;">
+                                    <!-- review card -->
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #DFDCD1; margin: 0 5px; padding: 10px;">
+                                        <tbody>
+                                            <tr>
+                                                <td style="vertical-align: middle; width: 20%;"><img alt="client" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/client-3.png" style="object-fit: contain; border-radius: 50%;" /></td>
+                                                <td style="vertical-align: middle; width: 80%;">
+                                                    <h4 style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; margin:0 0 0 8px; line-height: 24px; color: #252525;">Ritika Joshi</h4>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <ul style="list-style: none; margin:0 0 7px; padding: 0;">
+                                                        <li style="width: 16px; height: 16px; display: inline-block;"><img alt="full-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/full-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
+                                                        <li style="width: 16px; height: 16px; display: inline-block;"><img alt="full-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/full-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
+                                                        <li style="width: 16px; height: 16px; display: inline-block;"><img alt="full-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/full-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
+                                                        <li style="width: 16px; height: 16px; display: inline-block;"><img alt="full-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/full-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
+                                                        <li style="width: 16px; height: 16px; display: inline-block;"><img alt="full-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/full-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <p style="margin: 0 0 14px; color: #464646; font-family: 'Jost', Arial, sans-serif;                                         font-size: 10px;font-weight: 400;line-height: 15px;text-align: left; text-transform: none; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; min-height: 75px;">I’m so impressed with the customer service and the attention to detail in the packaging. The products exceeded my expectations!</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <p style="font-family: 'Jost', Arial, sans-serif;font-size: 12px;font-weight: 400;line-height: 20px; color: #464646; text-transform: none; margin: 33px 5px 30px;">Discover timeless style and exceptional quality with our exclusive collection, designed to inspire confidence and individuality. From chic everyday essentials to statement pieces, our collection blends comfort, elegance,
+                                        and versatility. Embrace fashion that fits your lifestyle and celebrates your unique personality — because you deserve to look and feel your best.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- review section -->
+            <!-- footer start-->
+            <tr>
+                <td align="center">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 90%; margin: 0 auto; background: #DFDCD1; padding: 25px 0 24px;">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #1E1E1E; margin: 0 auto 26px; max-width: 70%;">For assistance, connect with us on social media or reach out to our support team at
+                                        <a data-renderer-mark="true" data-testid="link-with-safety" href="support@example.com" title="support@example.com">support@example.com</a>
+                                    </p>
+                                </td>
+                            </tr>
+                            <!-- Privacy Policy -->
+                            <tr>
+                                <td style="padding-bottom: 24px;">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding: 0 5px;">
+                                                    <a href="#" style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #1E1E1E !important; text-decoration: none;">Privacy</a>
+                                                </td>
+                                                <td style="padding: 0 5px;">
+                                                    <a href="#" style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #1E1E1E !important; text-decoration: none;">Account</a>
+                                                </td>
+                                                <td style="padding: 0 5px;">
+                                                    <a href="#" style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #1E1E1E !important; text-decoration: none;">Unsubscribe</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- Privacy Policy -->
+                            <!-- Add Links -->
+                            <!-- Download Android Section -->
+                            <tr>
+                                <td style="padding: 0;">
+                                    <table align="center" cellpadding="0" cellspacing="0" style="text-align: center;" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding: 7px 40px; display: inline-block; border: 1px solid #ffffff;">
+                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 20px; height: 20px; ">
+                                                        <!-- Change image src as per your requirements --><img alt="instagram" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/3c09a826b3cd4920aa1230c7df32f91b.png" style="width: 100%; height: 100%;" /></a>
+                                                </td>
+                                                <td style="padding: 7px 40px; display: inline-block; border: 1px solid #ffffff;">
+                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 20px; height: 20px;"><img alt="facebook" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/18c1b92ff17443f38388d771deef565a.png" style="width: 100%; height: 100%;" /></a>
+                                                </td>
+                                                <td style="padding: 7px 40px; display: inline-block; border: 1px solid #ffffff;">
+                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 20px; height: 20px;"><img alt="x" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/938da02c50734470bdcddd85a5217fc1.png" style="width: 100%; height: 100%;" /></a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- Download Android Section -->
+                            <!-- Add Links -->
+                            <tr>
+                                <td>
+                                    <p style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #1E1E1E; padding-top:10px;">To opt out of promotional emails like this,
+                                        <a href="#" style="color:#1E1E1E;font-weight:bold;text-decoration:none;">unsubscribe here</a>
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- footer end-->
+        </tbody>
+    </table>
+</body>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
 
-  </html>
-  ```
-</details>
+</html>
+```
+
+
+</Accordion>
 
 ## Referral Template
 
@@ -3640,203 +3630,202 @@ This growth marketing template is crafted to boost customer acquisition through 
 
 <Image align="center" alt="Sample Referral Email Template" border={true} caption="Sample Referral Email Template" src="https://files.readme.io/a1f9bf30cfa2d42ad1601583469806bddb6ec51fadb9ffa91819893d8ab3b13d-Referral_HTML.png" width="25% " />
 
-<details>
-  <summary><b>Expand to know more about the template.</b></summary>
+<Accordion title="Expand to know more about the template.">
 
-  ### Use Case Examples
+### Use Case Examples
 
-  Sends referral emails encouraging users to invite friends by offering incentives to referrers and referees.
+Sends referral emails encouraging users to invite friends by offering incentives to referrers and referees.
 
-  ### Template Customization Options
+### Template Customization Options
 
-  * [Replace the Logo](doc:ootb-email-templates#replace-logo)
-  * [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-  * [Update Call-To-Actions (CTAs)](ddoc:ootb-email-templates#call-to-actions-ctas)
-  * [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-  * [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-  * [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+* [Replace the Logo](doc:ootb-email-templates#replace-logo)
+* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](ddoc:ootb-email-templates#call-to-actions-ctas)
+* [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+* [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+* [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
 
-  (@amrita removed PP)
+### Template Code
 
-  ### Template Code
+```html
+<!doctype html="">
+<html lang="en">
 
-  ```html
-  <!doctype html="">
-  <html lang="en">
+<head>
+    <title>Referral</title>
+    <style type="text/css">
+        @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Regular.ttf\') format(\'woff\');             font-style: normal;             font-weight: 400;         }         @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Medium.ttf\') format(\'woff\');             font-style: normal;             font-weight: 500;         }          @font-face {             font-family: 'Poppins', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Fonts/Poppins-Regular.woff\') format(\'woff\');             font-style: normal;             font-weight: 400;         }          @media screen and (max-width: 480px) {             .container {                 max-width: 95% !important; margin-bottom: 20px !important; padding: 20px 10px !important;             }                         .logo{                 width: 145px !important; height: 55px !important;             }             .cta{                 padding: 10px 25px !important;             }             .sec-title{                 margin-bottom: 15px !important; font-size: 20px !important;              }             .b-desc{                 max-width: 100% !important;             }             .icon{                 width: 50px !important; height: 50px !important;             }             .content-wrap{                 margin-left: 10px !important;             }         }
+    </style>
+</head>
 
-  <head>
-      <title>Referral</title>
-      <style type="text/css">
-          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Regular.ttf\') format(\'woff\');             font-style: normal;             font-weight: 400;         }         @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Medium.ttf\') format(\'woff\');             font-style: normal;             font-weight: 500;         }          @font-face {             font-family: 'Poppins', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Fonts/Poppins-Regular.woff\') format(\'woff\');             font-style: normal;             font-weight: 400;         }          @media screen and (max-width: 480px) {             .container {                 max-width: 95% !important; margin-bottom: 20px !important; padding: 20px 10px !important;             }                         .logo{                 width: 145px !important; height: 55px !important;             }             .cta{                 padding: 10px 25px !important;             }             .sec-title{                 margin-bottom: 15px !important; font-size: 20px !important;              }             .b-desc{                 max-width: 100% !important;             }             .icon{                 width: 50px !important; height: 50px !important;             }             .content-wrap{                 margin-left: 10px !important;             }         }
-      </style>
-  </head>
+<body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" data-new-gr-c-s-loaded="14.1242.0" style="font-family: Jost, Arial, sans-serif; font-weight: 400; margin: 0px; padding: 0px; background: rgb(5, 19, 32); cursor: auto;">
+    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 600px; margin: 0 auto; background-color: #F5F5F5;" width="100%">
+        <!-- header start-->
+        <tbody>
+            <tr>
+                <td align="center" style="display: block; padding: 12px 0; max-width: 90%; margin: 0 auto;">
+                    <div class="logo-wrap">
+                        <!-- Change image src as per your requirements --><img alt="Logo" class="logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="width: 145px; height: 73px; object-fit: contain;" /></div>
+                </td>
+            </tr>
+            <!-- header end-->
+            <tr>
+                <td style="text-align: center;">
+                    <table border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 90%; margin: 0 auto 30px; background: #FFFFFF; padding: 20px;" width="100%">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <!-- Change image src as per your requirements --><img alt="banner" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/referral/banner.png" style="width: 100%; height: 100%; object-fit: cover;" /></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h2 style="font-family: Jost, Arial;font-size: 24px;font-weight: 300;line-height: 35px;text-align: center; color: #858585; text-transform: none; margin: 18px 0;"><span style="font-weight: 500; color: #0B848C; display: block;">REFER YOUR FRIENDS,</span> EARN REWARDS !</h2>
 
-  <body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" data-new-gr-c-s-loaded="14.1242.0" style="font-family: Jost, Arial, sans-serif; font-weight: 400; margin: 0px; padding: 0px; background: rgb(5, 19, 32); cursor: auto;">
-      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 600px; margin: 0 auto; background-color: #F5F5F5;" width="100%">
-          <!-- header start-->
-          <tbody>
-              <tr>
-                  <td align="center" style="display: block; padding: 12px 0; max-width: 90%; margin: 0 auto;">
-                      <div class="logo-wrap">
-                          <!-- Change image src as per your requirements --><img alt="Logo" class="logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="width: 145px; height: 73px; object-fit: contain;" /></div>
-                  </td>
-              </tr>
-              <!-- header end-->
-              <tr>
-                  <td style="text-align: center;">
-                      <table border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 90%; margin: 0 auto 30px; background: #FFFFFF; padding: 20px;" width="100%">
-                          <tbody>
-                              <tr>
-                                  <td>
-                                      <!-- Change image src as per your requirements --><img alt="banner" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/referral/banner.png" style="width: 100%; height: 100%; object-fit: cover;" /></td>
-                              </tr>
-                              <tr>
-                                  <td>
-                                      <h2 style="font-family: Jost, Arial;font-size: 24px;font-weight: 300;line-height: 35px;text-align: center; color: #858585; text-transform: none; margin: 18px 0;"><span style="font-weight: 500; color: #0B848C; display: block;">REFER YOUR FRIENDS,</span> EARN REWARDS !</h2>
+                                    <p style="color: #6F6F6F;font-family: 'Jost', Arial; font-size: 12px; font-weight: 400; line-height: 20.55px; text-align: center; margin: 0 0 18px;">Our referral program is simple. Invite your friends to sign up, and earn exciting rewards for every successful referral.</p>
+                                    <button class="cta" style="background: #0B848C; border: 0.82px solid #0B848C; font-family: 'Jost', Arial;                             font-size: 16px;font-weight: 400;line-height: 16.44px;text-align: center; color: #FFFFFF; vertical-align: middle; width: 100%; padding: 12px; border-radius: 5px; text-transform: none;">Refer Now</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 90%; margin: 0 auto 31px; background: #FFFFFF; padding: 30px 20px;" width="100%">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h3 class="sec-title" style="margin: 0 0 20px; font-family: 'Poppins', Arial;font-size: 22px;font-weight: 400;line-height: 16.44px; text-align: center; text-transform: none; color: #0B848C;">Here&#39;s What You Get</h3>
 
-                                      <p style="color: #6F6F6F;font-family: 'Jost', Arial; font-size: 12px; font-weight: 400; line-height: 20.55px; text-align: center; margin: 0 0 18px;">Our referral program is simple. Invite your friends to sign up, and earn exciting rewards for every successful referral.</p>
-                                      <button class="cta" style="background: #0B848C; border: 0.82px solid #0B848C; font-family: 'Jost', Arial;                             font-size: 16px;font-weight: 400;line-height: 16.44px;text-align: center; color: #FFFFFF; vertical-align: middle; width: 100%; padding: 12px; border-radius: 5px; text-transform: none;">Refer Now</button>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-              <tr>
-                  <td align="center">
-                      <table align="center" border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 90%; margin: 0 auto 31px; background: #FFFFFF; padding: 30px 20px;" width="100%">
-                          <tbody>
-                              <tr>
-                                  <td>
-                                      <h3 class="sec-title" style="margin: 0 0 20px; font-family: 'Poppins', Arial;font-size: 22px;font-weight: 400;line-height: 16.44px; text-align: center; text-transform: none; color: #0B848C;">Here&#39;s What You Get</h3>
+                                    <ul style="margin: 0; padding: 0; list-style: none;">
+                                        <li style="padding: 24px 0; border-bottom: 1px solid #7B7B7B;">
+                                            <div class="img-wrap" style="display: inline-block; width: 15%;"><img alt="ico1" class="icon" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/referral/benfit-1.png" style="width: 60px; height: 60px; object-fit: contain;" /></div>
 
-                                      <ul style="margin: 0; padding: 0; list-style: none;">
-                                          <li style="padding: 24px 0; border-bottom: 1px solid #7B7B7B;">
-                                              <div class="img-wrap" style="display: inline-block; width: 15%;"><img alt="ico1" class="icon" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/referral/benfit-1.png" style="width: 60px; height: 60px; object-fit: contain;" /></div>
+                                            <div class="content-wrap" style="display: inline-block; width: 80%;">
+                                                <h3 class="b-title" style="font-family: Jost, Arial; font-size: 16px; font-weight: 400; line-height: 22.19px; color: #1E1E1E; text-align: left; text-transform: none; margin: 0 0 2px;">FLAT 20% OFF</h3>
 
-                                              <div class="content-wrap" style="display: inline-block; width: 80%;">
-                                                  <h3 class="b-title" style="font-family: Jost, Arial; font-size: 16px; font-weight: 400; line-height: 22.19px; color: #1E1E1E; text-align: left; text-transform: none; margin: 0 0 2px;">FLAT 20% OFF</h3>
+                                                <p class="b-desc" style="font-family: Jost, Arial; font-size: 14px; font-weight: 400; line-height: 18.08px; text-align: left; color: #6F6F6F; margin: 0; max-width: 80%;">Both you and your friend will get a flat 20% discount code once they sign up.</p>
+                                            </div>
+                                        </li>
+                                        <li style="padding: 24px 0; border-bottom: 1px solid #7B7B7B;">
+                                            <div class="img-wrap" style="display: inline-block; width: 15%;"><img alt="ico1" class="icon" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/referral/benfit-2.png" style="width: 60px; height: 60px; object-fit: contain;" /></div>
 
-                                                  <p class="b-desc" style="font-family: Jost, Arial; font-size: 14px; font-weight: 400; line-height: 18.08px; text-align: left; color: #6F6F6F; margin: 0; max-width: 80%;">Both you and your friend will get a flat 20% discount code once they sign up.</p>
-                                              </div>
-                                          </li>
-                                          <li style="padding: 24px 0; border-bottom: 1px solid #7B7B7B;">
-                                              <div class="img-wrap" style="display: inline-block; width: 15%;"><img alt="ico1" class="icon" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/referral/benfit-2.png" style="width: 60px; height: 60px; object-fit: contain;" /></div>
+                                            <div class="content-wrap" style="display: inline-block; width: 80%;">
+                                                <h3 class="b-title" style="font-family: Jost, Arial; font-size: 16px; font-weight: 400; line-height: 22.19px; color: #1E1E1E; text-align: left; text-transform: none; margin: 0 0 2px;">SPECIAL ACCESS</h3>
 
-                                              <div class="content-wrap" style="display: inline-block; width: 80%;">
-                                                  <h3 class="b-title" style="font-family: Jost, Arial; font-size: 16px; font-weight: 400; line-height: 22.19px; color: #1E1E1E; text-align: left; text-transform: none; margin: 0 0 2px;">SPECIAL ACCESS</h3>
+                                                <p class="b-desc" style="font-family: Jost, Arial; font-size: 14px; font-weight: 400; line-height: 18.08px; text-align: left; color: #6F6F6F; margin: 0; max-width: 75%;">Unlock exclusive collections and limited-edition items with every successful referral.</p>
+                                            </div>
+                                        </li>
+                                        <li style="padding: 24px 0; border-bottom: 1px solid #7B7B7B;">
+                                            <div class="img-wrap" style="display: inline-block; width: 15%;"><img alt="ico1" class="icon" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/referral/benfit-3.png" style="width: 60px; height: 60px; object-fit: contain;" /></div>
 
-                                                  <p class="b-desc" style="font-family: Jost, Arial; font-size: 14px; font-weight: 400; line-height: 18.08px; text-align: left; color: #6F6F6F; margin: 0; max-width: 75%;">Unlock exclusive collections and limited-edition items with every successful referral.</p>
-                                              </div>
-                                          </li>
-                                          <li style="padding: 24px 0; border-bottom: 1px solid #7B7B7B;">
-                                              <div class="img-wrap" style="display: inline-block; width: 15%;"><img alt="ico1" class="icon" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/referral/benfit-3.png" style="width: 60px; height: 60px; object-fit: contain;" /></div>
+                                            <div class="content-wrap" style="display: inline-block; width: 80%;">
+                                                <h3 class="b-title" style="font-family: Jost, Arial; font-size: 16px; font-weight: 400; line-height: 22.19px; color: #1E1E1E; text-align: left; text-transform: none; margin: 0 0 2px;">REFERRAL CREDITS</h3>
 
-                                              <div class="content-wrap" style="display: inline-block; width: 80%;">
-                                                  <h3 class="b-title" style="font-family: Jost, Arial; font-size: 16px; font-weight: 400; line-height: 22.19px; color: #1E1E1E; text-align: left; text-transform: none; margin: 0 0 2px;">REFERRAL CREDITS</h3>
+                                                <p class="b-desc" style="font-family: Jost, Arial; font-size: 14px; font-weight: 400; line-height: 18.08px; text-align: left; color: #6F6F6F; margin: 0; max-width: 88%;">Earn credits with every successful referral. Redeem them to save on your next purchase.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- Referral copy link start-->
+            <tr>
+                <td align="center">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 90%; margin: 0 auto 31px; background: #FFFFFF; padding: 30px 20px;" width="100%">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h3 class="sec-title" style="margin: 0 0 26px; font-family: 'Poppins', Arial;font-size: 22px;font-weight: 400;line-height: 16.44px; text-align: center; text-transform: none; color: #0B848C;">Your Referral Link</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input disabled="disabled" style="border: 0.82px solid #0B848C; background-color: #F5F5F5; padding: 10px; font-family: 'Jost', Arial; border-radius: 5px; font-size: 16px; font-weight: 500; line-height: 22.19px; text-align: left; width: 95%; margin-bottom: 22px;"
+                                    value="CLOTH@6374722#" />
+                                    <button class="cta" style="background: #0B848C; border: 0.82px solid #0B848C; font-family: 'Jost', Arial;                             font-size: 16px;font-weight: 400;line-height: 16.44px;text-align: center; color: #FFFFFF; vertical-align: middle; width: 100%; padding: 12px; border-radius: 5px;"><img alt="logo" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/referral/icon-copy.png" style="width: 17px; height: 17px; object-fit: cover; margin-right: 5px;" /> Copy</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- Referral copy link end-->
+            <!-- start-->
+            <tr>
+                <td align="center">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 90%; margin: 0 auto 31px; background: #FFFFFF; padding: 30px 20px;" width="100%">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h3 class="sec-title" style="margin: 0 0 26px; font-family: 'Poppins', Arial;font-size: 22px;font-weight: 400;line-height: 16.44px; text-align: center; text-transform: none; color: #0B848C;">About Our Referral Program</h3>
 
-                                                  <p class="b-desc" style="font-family: Jost, Arial; font-size: 14px; font-weight: 400; line-height: 18.08px; text-align: left; color: #6F6F6F; margin: 0; max-width: 88%;">Earn credits with every successful referral. Redeem them to save on your next purchase.</p>
-                                              </div>
-                                          </li>
-                                      </ul>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-              <!-- Referral copy link start-->
-              <tr>
-                  <td align="center">
-                      <table align="center" border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 90%; margin: 0 auto 31px; background: #FFFFFF; padding: 30px 20px;" width="100%">
-                          <tbody>
-                              <tr>
-                                  <td>
-                                      <h3 class="sec-title" style="margin: 0 0 26px; font-family: 'Poppins', Arial;font-size: 22px;font-weight: 400;line-height: 16.44px; text-align: center; text-transform: none; color: #0B848C;">Your Referral Link</h3>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td>
-                                      <input disabled="disabled" style="border: 0.82px solid #0B848C; background-color: #F5F5F5; padding: 10px; font-family: 'Jost', Arial; border-radius: 5px; font-size: 16px; font-weight: 500; line-height: 22.19px; text-align: left; width: 95%; margin-bottom: 22px;"
-                                      value="CLOTH@6374722#" />
-                                      <button class="cta" style="background: #0B848C; border: 0.82px solid #0B848C; font-family: 'Jost', Arial;                             font-size: 16px;font-weight: 400;line-height: 16.44px;text-align: center; color: #FFFFFF; vertical-align: middle; width: 100%; padding: 12px; border-radius: 5px;"><img alt="logo" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/referral/icon-copy.png" style="width: 17px; height: 17px; object-fit: cover; margin-right: 5px;" /> Copy</button>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-              <!-- Referral copy link end-->
-              <!-- start-->
-              <tr>
-                  <td align="center">
-                      <table align="center" border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 90%; margin: 0 auto 31px; background: #FFFFFF; padding: 30px 20px;" width="100%">
-                          <tbody>
-                              <tr>
-                                  <td>
-                                      <h3 class="sec-title" style="margin: 0 0 26px; font-family: 'Poppins', Arial;font-size: 22px;font-weight: 400;line-height: 16.44px; text-align: center; text-transform: none; color: #0B848C;">About Our Referral Program</h3>
+                                    <p style="margin: 0; text-transform: none; color: #4F4F4F; font-family: 'Jost', Arial;                             font-size: 12px;font-weight: 400;line-height: 19px;text-align: center;">Our referral program is our way of saying thank you for spreading the word. Invite your friends to join us, and enjoy exclusive rewards for every successful referral. There’s no limit to how much you can earn, so go
+                                        ahead and start referring now!</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- end-->
+            <!-- footer start-->
+            <tr>
+                <td align="center">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 90%; margin: 0 auto 10px; background: #FFFFFF; padding: 30px 20px 33px;" width="100%">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h3 class="sec-title" style="margin: 0 0 26px; font-family: 'Poppins', Arial;font-size: 22px;font-weight: 400;line-height: 16.44px; text-align: center; text-transform: none; color: #0B848C;">Share Your Referral Link</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table align="center" cellpadding="0" cellspacing="0" style="text-align: center;" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td style="display: inline-block; width: 30%">
+                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 100%; height: 33px;">
+                                                        <!-- Change image src as per your requirements --><img alt="instagram" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/a6727b3615374d8b851ca91fe6b8b1ff.png" style="width: 100%; height: 100%; object-fit: contain;" /></a>
+                                                </td>
+                                                <td style="padding: 0 16px; display: inline-block; width: 30%">
+                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 100%; height: 33px;">
+                                                        <!-- Change image src as per your requirements --><img alt="facebook" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/5871f7fb88f74a9bbfb1f11b4100143a.png" style="width: 100%; height: 100%;object-fit: contain;" /></a>
+                                                </td>
+                                                <td style="padding: 0; display: inline-block; width: 30%">
+                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 100%; height: 33px;">
+                                                        <!-- Change image src as per your requirements --><img alt="x" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/3b10f8de61954c88a374ee2687beb7dd.png" style="width: 100%; height: 100%; object-fit: contain;" /></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #1E1E1E; padding-top:10px;">To opt out of promotional emails like this,
+                                                        <a href="#" style="color:#1E1E1E;font-weight:bold;text-decoration:none;">unsubscribe here</a>
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- footer end-->
+        </tbody>
+    </table>
+</body>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
 
-                                      <p style="margin: 0; text-transform: none; color: #4F4F4F; font-family: 'Jost', Arial;                             font-size: 12px;font-weight: 400;line-height: 19px;text-align: center;">Our referral program is our way of saying thank you for spreading the word. Invite your friends to join us, and enjoy exclusive rewards for every successful referral. There’s no limit to how much you can earn, so go
-                                          ahead and start referring now!</p>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-              <!-- end-->
-              <!-- footer start-->
-              <tr>
-                  <td align="center">
-                      <table align="center" border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 90%; margin: 0 auto 10px; background: #FFFFFF; padding: 30px 20px 33px;" width="100%">
-                          <tbody>
-                              <tr>
-                                  <td>
-                                      <h3 class="sec-title" style="margin: 0 0 26px; font-family: 'Poppins', Arial;font-size: 22px;font-weight: 400;line-height: 16.44px; text-align: center; text-transform: none; color: #0B848C;">Share Your Referral Link</h3>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td>
-                                      <table align="center" cellpadding="0" cellspacing="0" style="text-align: center;" width="100%">
-                                          <tbody>
-                                              <tr>
-                                                  <td style="display: inline-block; width: 30%">
-                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 100%; height: 33px;">
-                                                          <!-- Change image src as per your requirements --><img alt="instagram" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/a6727b3615374d8b851ca91fe6b8b1ff.png" style="width: 100%; height: 100%; object-fit: contain;" /></a>
-                                                  </td>
-                                                  <td style="padding: 0 16px; display: inline-block; width: 30%">
-                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 100%; height: 33px;">
-                                                          <!-- Change image src as per your requirements --><img alt="facebook" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/5871f7fb88f74a9bbfb1f11b4100143a.png" style="width: 100%; height: 100%;object-fit: contain;" /></a>
-                                                  </td>
-                                                  <td style="padding: 0; display: inline-block; width: 30%">
-                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 100%; height: 33px;">
-                                                          <!-- Change image src as per your requirements --><img alt="x" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/3b10f8de61954c88a374ee2687beb7dd.png" style="width: 100%; height: 100%; object-fit: contain;" /></a>
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <td>
-                                                      <p style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #1E1E1E; padding-top:10px;">To opt out of promotional emails like this,
-                                                          <a href="#" style="color:#1E1E1E;font-weight:bold;text-decoration:none;">unsubscribe here</a>
-                                                      </p>
-                                                  </td>
-                                              </tr>
-                                          </tbody>
-                                      </table>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-              <!-- footer end-->
-          </tbody>
-      </table>
-  </body>
-  <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+</html>
+```
 
-  </html>
-  ```
-</details>
+  
+</Accordion>
 
 ## Show Recommendations Template
 
@@ -3844,569 +3833,567 @@ This personalized content email template is designed to showcase relevant video 
 
 <Image align="center" alt="Sample Show Recommendations - Light & Dark Background Template" border={true} caption="Sample Show Recommendations - Light & Dark Background Template" src="https://files.readme.io/c4ccd5b6848ece16bb2e2967d9c264b7bf9d3766c87a1b4925a2046882751449-Show_Recommendations_-_White__Black.png" width="65% " />
 
-<details>
-  <summary><b>Expand to know more about the template.</b></summary>
+<Accordion title="Expand to know more about the template.">
 
-  ### Use Case Examples
+## Use Case Examples
 
-  * Suggest items based on browsing, cart, or purchase history
-  * Recommend articles, videos, or learning modules based on prior engagement or interests.
-  * Promote complementary or premium products to increase average order value
-  * Engage users post-transaction with related product or content recommendations.
-  * Bring users back by showcasing trending or personalized items based on past behavior.
-  * Tailor deals or discounts based on recommended categories or affinity tags.
-  * Delivers curated video, show, or episode suggestions to users to enhance discovery, engagement, and viewership based on recent behavior.
+* Suggest items based on browsing, cart, or purchase history
+* Recommend articles, videos, or learning modules based on prior engagement or interests.
+* Promote complementary or premium products to increase average order value
+* Engage users post-transaction with related product or content recommendations.
+* Bring users back by showcasing trending or personalized items based on past behavior.
+* Tailor deals or discounts based on recommended categories or affinity tags.
+* Delivers curated video, show, or episode suggestions to users to enhance discovery, engagement, and viewership based on recent behavior.
 
-  ### Template Customization Options
+### Template Customization Options
 
-  * [Replace the Logo](doc:ootb-email-templates#replace-logo)
-  * [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-  * [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#call-to-actions-ctas)
-  * [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-  * [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-  * [Update Social Media Links and Download Links](doc:ootb#update-social-media-links-and-download-links)
+* [Replace the Logo](doc:ootb-email-templates#replace-logo)
+* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#call-to-actions-ctas)
+* [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+* [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+* [Update Social Media Links and Download Links](doc:ootb#update-social-media-links-and-download-links)
 
-  (@amrita removed PP)
+### Template Code
 
-  ### Template
+```html Light Background
+<!doctype html="">
+<html lang="en">
 
-  ```html Dark Background
-  <!doctype html="">
-  <html lang="en">
+<head>
+    <title>Show Recommendation</title>
+    <style type="text/css">
+        @font-face {             font-family: 'Poppins';             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Fonts/Poppins-Light.woff\') format(\'woff\');             font-style: normal;             font-weight: 300;         }          @font-face {             font-family: 'Poppins';             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Fonts/Poppins-Regular.woff\') format(\'woff\');             font-style: normal;             font-weight: 400;         }          @font-face {             font-family: 'Poppins';             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Fonts/Poppins-Medium.woff\') format(\'woff\');             font-style: normal;             font-weight: 500;         }          @media screen and (max-width: 480px) {             .container {                 max-width: 100% !important;             } 			.heading h2{ 				font-size: 18px !important; 				line-height: 24px !important; 			}             .borderSpan {                 width: 20% !important;             }         }
+    </style>
+</head>
 
-  <head>
-      <title></title>
-      <style type="text/css">
-          @font-face {             font-family: 'Poppins', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Fonts/Poppins-Light.woff\') format(\'woff\');             font-style: normal;             font-weight: 300;         }          @font-face {             font-family: 'Poppins', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Fonts/Poppins-Regular.woff\') format(\'woff\');             font-style: normal;             font-weight: 400;         }          @font-face {             font-family: 'Poppins', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Fonts/Poppins-Medium.woff\') format(\'woff\');             font-style: normal;             font-weight: 500;         }          @media screen and (max-width: 480px) {             .container {                 max-width: 100% !important;             }    .heading h2{     font-size: 18px !important;     line-height: 24px !important;    }             .borderSpan {                 width: 20% !important;             }         }
-      </style>
-  </head>
+<body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" style="background: rgb(221, 221, 221); font-family: Poppins, Arial, sans-serif; font-weight: 400; margin: 0px; padding: 0px; cursor: auto;">
+    <table border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 600px; margin: 0 auto; background-color: #FFFFFF;" width="100%">
+        <!-- header start-->
+        <tbody>
+            <tr>
+                <td style="text-align: center; position: relative;">
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tbody>
+                            <tr>
+                                <td style="width: 50%; vertical-align: middle;">
+                                    <div style="border-top: 1px solid #F04444;"> </div>
+                                </td>
+                                <td style="text-align: center; vertical-align: middle; padding: 20px">
+                                    <!-- Change image src as per your requirements --><img alt="Logo" class="logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="display: inline-block; width: 127px; height: 58px; object-fit: cover;" /></td>
+                                <td style="width: 50%; vertical-align: middle;">
+                                    <div style="border-top: 1px solid #F04444;"> </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- header end-->
+            <!-- banner section -->
+            <tr>
+                <td><img alt="banner image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/show-recommendations/manager-running-from-detailed-group-employees.png" style="width: 100%; height: 100%; max-height: 361px; object-fit: cover;" /></td>
+            </tr>
+            <!-- banner section -->
+            <!-- new episod section -->
+            <tr>
+                <td class="info-sec" style="text-align: center; padding: 40px 0px 20px;">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                        <tbody>
+                            <tr>
+                                <td class="borderSpan" style="width: 15%; vertical-align: middle;">
+                                    <div style="border-top: 1px solid #F04444;"> </div>
+                                </td>
+                                <td class="heading" style="text-align: center;">
+                                    <h2 style="text-transform: uppercase; font-family: 'Poppins', Arial, sans-serif; font-size: 24px; font-weight: 400; line-height: 40px; margin: 0 auto;">CATCH UP WITH YOUR FAVORITES</h2>
+                                </td>
+                                <td class="borderSpan" style="width: 15%; vertical-align: middle;">
+                                    <div style="border-top: 1px solid #F04444;"> </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="info-sec" style="text-align: center;">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                        <tbody>
+                            <tr>
+                                <td style="width: 100%;padding: 0px 20px;">
+                                    <p style="margin: 0; text-transform: none; color: #6f6f6f; font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 25px; text-align: center; ">The wait is over! New episodes of <em data-renderer-mark="true">Black Mirror</em>, <em data-renderer-mark="true">Suits</em>, <em data-renderer-mark="true">Stranger Things</em>, and more are now streaming.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="info-sec" style="text-align: center;padding: 20px;">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                        <tbody>
+                            <tr>
+                                <td style="width: auto; text-align: center; vertical-align: middle;">
+                                    <a class="btn-link" href="#" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; text-transform: none; line-height: 25px; color: #FFFFFF; text-decoration: none; background: #F04444; padding: 6px 7px; display: inline-block; text-align: center; border-radius: 20px;"><img alt="youtube" class="btn-img" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/show-recommendations/youtube.png" style="vertical-align: middle;" /> View All</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- New Episod End-->
+            <!-- Weekly Recoomendatiom Start-->
+            <tr>
+                <td class="info-sec" style="text-align: center;padding: 40px 0px 20px;">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                        <tbody>
+                            <tr>
+                                <td class="borderSpan" style="width: 18%; vertical-align: middle;">
+                                    <div style="border-top: 1px solid #F04444;"> </div>
+                                </td>
+                                <td class="heading" style="text-align: center;">
+                                    <h2 style="text-transform: uppercase; font-family: 'Poppins', Arial, sans-serif; font-size: 24px; font-weight: 400; line-height: 40px; margin: 0 auto;">MORE SHOWS YOU’LL LIKE</h2>
+                                </td>
+                                <td class="borderSpan" style="width: 18%; vertical-align: middle;">
+                                    <div style="border-top: 1px solid #F04444;"> </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; margin-top: 20px;">
+                        <tbody>
+                            <tr>
+                                <td style="vertical-align: top; width: 50%;">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #FFFFFF; margin: 0px 0px 10px 10px; padding: 10px;">
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <div class="product-img-wrap" style="width:100%; "><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/show-recommendations/dragons-fantasy-artificial-intelligence-image.png" style="width: 100%; height: 100%; object-fit: cover;"
+                                                        /></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 100%; margin-bottom: 2px; vertical-align: middle;">
+                                                    <h4 class="p-title" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 15px; color: #000000; margin: 8px 0;padding-right: 5px;">Breaking Bad</h4>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <p class="desc" style="font-family: 'Poppins', Arial, sans-serif;text-transform: none; font-size: 10px; font-weight: 400; line-height: 15px; color: #6f6f6f; margin: 0; ">A teacher turns to crime in desperate times</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td style="vertical-align: top; width: 50%;">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #FFFFFF; margin: 0px 10px 10px 0px; padding: 10px;">
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <div class="product-img-wrap" style="width:100%; "><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/show-recommendations/view-soccer-player-before-match.png" style="width: 100%; height: 100%; object-fit: cover;" /></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 100%; margin-bottom: 2px; vertical-align: middle;">
+                                                    <h4 class="p-title" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 15px; color: #000000; margin: 5px 0;padding-right: 5px;">The Crown</h4>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <p class="desc" style="font-family: 'Poppins', Arial, sans-serif;text-transform: none; font-size: 10px; font-weight: 400; line-height: 15px; color: #6f6f6f; margin: 0; ">The life and reign of Queen Elizabeth II</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: top; width: 50%;">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #FFFFFF; margin: 0px 0px 10px 10px; padding: 10px;">
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <div class="product-img-wrap" style="width:100%; "><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/show-recommendations/door-leading-magical-world.png" style="width: 100%; height: 100%; object-fit: cover;" /></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 100%; margin-bottom: 2px; vertical-align: middle;">
+                                                    <h4 class="p-title" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 15px; color: #000000; margin: 8px 0;padding-right: 5px;">Brooklyn Nine-Nine</h4>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <p class="desc" style="font-family: 'Poppins', Arial, sans-serif;text-transform: none; font-size: 10px; font-weight: 400; line-height: 15px; color: #6f6f6f; margin: 0; ">Hilarious detectives solve crimes</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td style="vertical-align: top; width: 50%;">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #FFFFFF; margin: 0px 10px 10px 0px; padding: 10px;">
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <div class="product-img-wrap" style="width:100%; "><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/show-recommendations/door-leading-magical.png" style="width: 100%; height: 100%; object-fit: cover;" /></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 100%; margin-bottom: 2px; vertical-align: middle;">
+                                                    <h4 class="p-title" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 15px; color: #000000; margin: 5px 0;padding-right: 5px;">White Collar</h4>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <p class="desc" style="font-family: 'Poppins', Arial, sans-serif;text-transform: none; font-size: 10px; font-weight: 400; line-height: 15px; color: #6f6f6f; margin: 0; ">A con artist and FBI agent team up</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="info-btn" style="padding: 25px 20px 40px 20px; width:100%; text-align: center;">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                        <tbody>
+                            <tr>
+                                <td style="width: 100%; text-align: center; vertical-align: middle;">
+                                    <a class="btn-link" href="#" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; text-transform: none; line-height: 25px; color: #FFFFFF; text-decoration: none; background: #d33c3c; padding: 7px 33px; display: inline-block; text-align: center; border-radius: 20px;">View All</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- Weekly Recoomendatiom Start-->
+            <!-- footer start-->
+            <tr>
+                <td align="center" colspan="2">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%; background: #ffffff; padding: 25px 0 25px;">
+                        <tbody>
+                            <tr>
+                                <td style="padding: 30px 0px; border-top: 2px solid #d33c3c; border-bottom: 2px solid #d33c3c;">
+                                    <table align="center" cellpadding="0" cellspacing="0" style="text-align: center;" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding: 15px 15px; display: inline-block;">
+                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 30px; height: 30px; ">
+                                                        <!-- Change image src as per your requirements --><img alt="instagram" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/46e890761aa9484488a1d4b5b7e5e90a.png" style="width: 100%; height: 100%;" /></a>
+                                                </td>
+                                                <td style="padding: 15px 15px; display: inline-block; ">
+                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 30px; height: 30px;"><img alt="facebook" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/1ba99ae8ff9a4646a043bc4572c74c85.png" style="width: 100%; height: 100%;" /></a>
+                                                </td>
+                                                <td style="padding: 15px 15px; display: inline-block;">
+                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 30px; height: 30px;"><img alt="x" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/9fd609ff93f44ae98273362f7509d619.png" style="width: 100%; height: 100%;" /></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="footer-content" style="padding:0px 30px">
+                                                    <p style="text-transform: none; color: #4f4f4f; font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 25px; text-align: center; margin-bottom: 0px;">For assistance, connect with us on social media or reach out to our support team at
+                                                        <a data-renderer-mark="true" data-testid="link-with-safety" href="support@example.com" title="support@example.com">support@example.com</a>
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding:10px 10px 0px; text-align:center;">
+                                    <p style="font-family: 'Poppins', Arial, sans-serif; text-transform: none; font-size: 14px; font-weight: 400; line-height: 20px; color: #4f4f4f; margin: 0; ">To opt out of promotional emails like this,
+                                        <a href="#" style="font-weight:bold;text-decoration:none; color:#d33c3c; margin: 0;">unsubscribe here</a>
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- footer end-->
+        </tbody>
+    </table>
+</body>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
 
-  <body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" style="background: rgb(0, 0, 0); font-family: Poppins, Arial, sans-serif; font-weight: 400; margin: 0px; padding: 0px; cursor: auto;">
-      <table border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 600px; margin: 0 auto; background-color: #000;" width="100%">
-          <!-- header start-->
-          <tbody>
-              <tr>
-                  <td style="text-align: center; position: relative;">
-                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                          <tbody>
-                              <tr>
-                                  <td style="width: 50%; vertical-align: middle;">
-                                      <div style="border-top: 1px solid #F04444;"> </div>
-                                  </td>
-                                  <td style="text-align: center; vertical-align: middle; padding: 20px">
-                                      <!-- Change image src as per your requirements --><img alt="Logo" class="logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/6b88dce76ef74ca5b9b17cc0a1dfcd13.png" style="display: inline-block; width: 127px; height: 58px; object-fit: cover;" /></td>
-                                  <td style="width: 50%; vertical-align: middle;">
-                                      <div style="border-top: 1px solid #F04444;"> </div>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-              <!-- header end-->
-              <!-- banner section -->
-              <tr>
-                  <td><img alt="banner image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/show-recommendations/manager-running-from-detailed-group-employees.png" style="width: 100%; height: 100%; max-height: 361px; object-fit: cover;" /></td>
-              </tr>
-              <!-- banner section -->
-              <!-- new episod section -->
-              <tr>
-                  <td class="info-sec" style="text-align: center; padding: 40px 0px 20px;">
-                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                          <tbody>
-                              <tr>
-                                  <td class="borderSpan" style="width: 15%; vertical-align: middle;">
-                                      <div style="border-top: 1px solid #F04444;"> </div>
-                                  </td>
-                                  <td class="heading" style="text-align: center;">
-                                      <h2 style="color:#fff;text-transform: uppercase; font-family: 'Poppins', Arial, sans-serif; font-size: 24px; font-weight: 400; line-height: 40px; margin: 0 auto;">CATCH UP WITH YOUR FAVORITEs</h2>
-                                  </td>
-                                  <td class="borderSpan" style="width: 15%; vertical-align: middle;">
-                                      <div style="border-top: 1px solid #F04444;"> </div>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-              <tr>
-                  <td class="info-sec" style="text-align: center;">
-                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                          <tbody>
-                              <tr>
-                                  <td style="width: 100%;padding: 0px 20px;">
-                                      <p style="color:#fff;margin: 0; text-transform: none;  font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 25px; text-align: center; ">The wait is over! New episodes of <em data-renderer-mark="true">Black Mirror</em>, <em data-renderer-mark="true">Suits</em>, <em data-renderer-mark="true">Stranger Things</em>, and more are now streaming.</p>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-              <tr>
-                  <td class="info-sec" style="text-align: center;padding: 20px;">
-                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                          <tbody>
-                              <tr>
-                                  <td style="width: auto; text-align: center; vertical-align: middle;">
-                                      <a class="btn-link" href="#" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; text-transform: none; line-height: 25px; color: #FFFFFF; text-decoration: none; background: #F04444; padding: 6px 7px; display: inline-block; text-align: center; border-radius: 20px;"><img alt="youtube" class="btn-img" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/show-recommendations/youtube.png" style="vertical-align: middle;" /> View All</a>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-              <!-- New Episod End-->
-              <!-- Weekly Recoomendatiom Start-->
-              <tr>
-                  <td class="info-sec" style="text-align: center;padding: 40px 0px 20px;">
-                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                          <tbody>
-                              <tr>
-                                  <td class="borderSpan" style="width: 18%; vertical-align: middle;">
-                                      <div style="border-top: 1px solid #F04444;"> </div>
-                                  </td>
-                                  <td class="heading" style="text-align: center;">
-                                      <h2 style="color:#fff;text-transform: uppercase; font-family: 'Poppins', Arial, sans-serif; font-size: 24px; font-weight: 400; line-height: 40px; margin: 0 auto;">MORE SHOWS YOU’LL LIKE</h2>
-                                  </td>
-                                  <td class="borderSpan" style="width: 18%; vertical-align: middle;">
-                                      <div style="border-top: 1px solid #F04444;"> </div>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-              <tr>
-                  <td>
-                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; margin-top: 20px;">
-                          <tbody>
-                              <tr>
-                                  <td style="vertical-align: top; width: 50%;">
-                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #000; margin: 0px 0px 10px 10px; padding: 10px;">
-                                          <tbody>
-                                              <tr>
-                                                  <td colspan="2">
-                                                      <div class="product-img-wrap" style="width:100%; "><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/show-recommendations/dragons-fantasy-artificial-intelligence-image.png" style="width: 100%; height: 100%; object-fit: cover;"
-                                                          /></div>
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <td style="width: 100%; margin-bottom: 2px; vertical-align: middle;">
-                                                      <h4 class="p-title" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 15px; color: #fff; margin: 8px 0;padding-right: 5px;">Breaking Bad</h4>
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <td colspan="2">
-                                                      <p class="desc" style="font-family: 'Poppins', Arial, sans-serif;text-transform: none; font-size: 10px; font-weight: 400; line-height: 15px; color: #6f6f6f; margin: 0; ">A teacher turns to crime in desperate times</p>
-                                                  </td>
-                                              </tr>
-                                          </tbody>
-                                      </table>
-                                  </td>
-                                  <td style="vertical-align: top; width: 50%;">
-                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #000; margin: 0px 10px 10px 0px; padding: 10px;">
-                                          <tbody>
-                                              <tr>
-                                                  <td colspan="2">
-                                                      <div class="product-img-wrap" style="width:100%; "><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/show-recommendations/view-soccer-player-before-match.png" style="width: 100%; height: 100%; object-fit: cover;" /></div>
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <td style="width: 100%; margin-bottom: 2px; vertical-align: middle;">
-                                                      <h4 class="p-title" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 15px; color: #fff; margin: 5px 0;padding-right: 5px;">The Crown</h4>
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <td colspan="2">
-                                                      <p class="desc" style="font-family: 'Poppins', Arial, sans-serif;text-transform: none; font-size: 10px; font-weight: 400; line-height: 15px; color: #6f6f6f; margin: 0; ">The life and reign of Queen Elizabeth II</p>
-                                                  </td>
-                                              </tr>
-                                          </tbody>
-                                      </table>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td style="vertical-align: top; width: 50%;">
-                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #000; margin: 0px 0px 10px 10px; padding: 10px;">
-                                          <tbody>
-                                              <tr>
-                                                  <td colspan="2">
-                                                      <div class="product-img-wrap" style="width:100%; "><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/show-recommendations/door-leading-magical-world.png" style="width: 100%; height: 100%; object-fit: cover;" /></div>
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <td style="width: 100%; margin-bottom: 2px; vertical-align: middle;">
-                                                      <h4 class="p-title" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 15px; color: #fff; margin: 8px 0;padding-right: 5px;">Brooklyn Nine-Nine</h4>
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <td colspan="2">
-                                                      <p class="desc" style="font-family: 'Poppins', Arial, sans-serif;text-transform: none; font-size: 10px; font-weight: 400; line-height: 15px; color: #6f6f6f; margin: 0; ">Hilarious detectives solve crimes</p>
-                                                  </td>
-                                              </tr>
-                                          </tbody>
-                                      </table>
-                                  </td>
-                                  <td style="vertical-align: top; width: 50%;">
-                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #000; margin: 0px 10px 10px 0px; padding: 10px;">
-                                          <tbody>
-                                              <tr>
-                                                  <td colspan="2">
-                                                      <div class="product-img-wrap" style="width:100%; "><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/show-recommendations/door-leading-magical.png" style="width: 100%; height: 100%; object-fit: cover;" /></div>
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <td style="width: 100%; margin-bottom: 2px; vertical-align: middle;">
-                                                      <h4 class="p-title" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 15px; color: #fff; margin: 5px 0;padding-right: 5px;">White Collar</h4>
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <td colspan="2">
-                                                      <p class="desc" style="font-family: 'Poppins', Arial, sans-serif;text-transform: none; font-size: 10px; font-weight: 400; line-height: 15px; color: #6f6f6f; margin: 0; ">A con artist and FBI agent team up</p>
-                                                  </td>
-                                              </tr>
-                                          </tbody>
-                                      </table>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-              <tr>
-                  <td class="info-btn" style="padding: 25px 20px 40px 20px; width:100%; text-align: center;">
-                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                          <tbody>
-                              <tr>
-                                  <td style="width: 100%; text-align: center; vertical-align: middle;">
-                                      <a class="btn-link" href="#" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; text-transform: none; line-height: 25px; color: #FFFFFF; text-decoration: none; background: #d33c3c; padding: 7px 33px; display: inline-block; text-align: center; border-radius: 20px;">View All</a>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-              <!-- Weekly Recoomendatiom Start-->
-              <!-- footer start-->
-              <tr>
-                  <td align="center" colspan="2">
-                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%; background: #000; padding: 25px 0 25px;">
-                          <tbody>
-                              <tr>
-                                  <td style="padding: 30px 0px; border-top: 2px solid #fff; border-bottom: 2px solid #fff;">
-                                      <table align="center" cellpadding="0" cellspacing="0" style="text-align: center;" width="100%">
-                                          <tbody>
-                                              <tr>
-                                                  <td style="padding: 15px 15px; display: inline-block;">
-                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 30px; height: 30px; ">
-                                                          <!-- Change image src as per your requirements --><img alt="instagram" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/3c09a826b3cd4920aa1230c7df32f91b.png" style="width: 100%; height: 100%;" /></a>
-                                                  </td>
-                                                  <td style="padding: 15px 15px; display: inline-block; ">
-                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 30px; height: 30px;"><img alt="facebook" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/18c1b92ff17443f38388d771deef565a.png" style="width: 100%; height: 100%;" /></a>
-                                                  </td>
-                                                  <td style="padding: 15px 15px; display: inline-block;">
-                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 30px; height: 30px;"><img alt="x" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/c6684e1db05c4ce4b7783b6181e11c89.png" style="width: 100%; height: 100%;" /></a>
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <td class="footer-content" style="padding:0px 30px">
-                                                      <p style="text-transform: none; color: #fff; font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 25px; text-align: center; margin-bottom: 0px;">For assistance, connect with us on social media or reach out to our support team at
-                                                          <a data-renderer-mark="true" data-testid="link-with-safety" href="support@example.com" style="color: #FFFFFF" title="support@example.com">support@example.com</a>
-                                                      </p>
-                                                  </td>
-                                              </tr>
-                                          </tbody>
-                                      </table>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td style="padding:10px 10px 0px; text-align:center;">
-                                      <p style="font-family: 'Poppins', Arial, sans-serif; text-transform: none; font-size: 14px; font-weight: 400; line-height: 20px; color: #fff; margin: 0; ">To opt out of promotional emails like this,
-                                          <a href="#" style="font-weight:bold;text-decoration:none; color:#d33c3c; margin: 0;">unsubscribe here</a>
-                                      </p>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-              <!-- footer end-->
-          </tbody>
-      </table>
-  </body>
-  <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+</html>
+```
+```html Dark Background
+<!doctype html="">
+<html lang="en">
 
-  </html>
-  ```
-  ```html Light Background
-  <!doctype html="">
-  <html lang="en">
+<head>
+    <title></title>
+    <style type="text/css">
+        @font-face {             font-family: 'Poppins', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Fonts/Poppins-Light.woff\') format(\'woff\');             font-style: normal;             font-weight: 300;         }          @font-face {             font-family: 'Poppins', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Fonts/Poppins-Regular.woff\') format(\'woff\');             font-style: normal;             font-weight: 400;         }          @font-face {             font-family: 'Poppins', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Fonts/Poppins-Medium.woff\') format(\'woff\');             font-style: normal;             font-weight: 500;         }          @media screen and (max-width: 480px) {             .container {                 max-width: 100% !important;             }    .heading h2{     font-size: 18px !important;     line-height: 24px !important;    }             .borderSpan {                 width: 20% !important;             }         }
+    </style>
+</head>
 
-  <head>
-      <title>Show Recommendation</title>
-      <style type="text/css">
-          @font-face {             font-family: 'Poppins';             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Fonts/Poppins-Light.woff\') format(\'woff\');             font-style: normal;             font-weight: 300;         }          @font-face {             font-family: 'Poppins';             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Fonts/Poppins-Regular.woff\') format(\'woff\');             font-style: normal;             font-weight: 400;         }          @font-face {             font-family: 'Poppins';             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Fonts/Poppins-Medium.woff\') format(\'woff\');             font-style: normal;             font-weight: 500;         }          @media screen and (max-width: 480px) {             .container {                 max-width: 100% !important;             } 			.heading h2{ 				font-size: 18px !important; 				line-height: 24px !important; 			}             .borderSpan {                 width: 20% !important;             }         }
-      </style>
-  </head>
+<body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" style="background: rgb(0, 0, 0); font-family: Poppins, Arial, sans-serif; font-weight: 400; margin: 0px; padding: 0px; cursor: auto;">
+    <table border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 600px; margin: 0 auto; background-color: #000;" width="100%">
+        <!-- header start-->
+        <tbody>
+            <tr>
+                <td style="text-align: center; position: relative;">
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tbody>
+                            <tr>
+                                <td style="width: 50%; vertical-align: middle;">
+                                    <div style="border-top: 1px solid #F04444;"> </div>
+                                </td>
+                                <td style="text-align: center; vertical-align: middle; padding: 20px">
+                                    <!-- Change image src as per your requirements --><img alt="Logo" class="logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/6b88dce76ef74ca5b9b17cc0a1dfcd13.png" style="display: inline-block; width: 127px; height: 58px; object-fit: cover;" /></td>
+                                <td style="width: 50%; vertical-align: middle;">
+                                    <div style="border-top: 1px solid #F04444;"> </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- header end-->
+            <!-- banner section -->
+            <tr>
+                <td><img alt="banner image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/show-recommendations/manager-running-from-detailed-group-employees.png" style="width: 100%; height: 100%; max-height: 361px; object-fit: cover;" /></td>
+            </tr>
+            <!-- banner section -->
+            <!-- new episod section -->
+            <tr>
+                <td class="info-sec" style="text-align: center; padding: 40px 0px 20px;">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                        <tbody>
+                            <tr>
+                                <td class="borderSpan" style="width: 15%; vertical-align: middle;">
+                                    <div style="border-top: 1px solid #F04444;"> </div>
+                                </td>
+                                <td class="heading" style="text-align: center;">
+                                    <h2 style="color:#fff;text-transform: uppercase; font-family: 'Poppins', Arial, sans-serif; font-size: 24px; font-weight: 400; line-height: 40px; margin: 0 auto;">CATCH UP WITH YOUR FAVORITEs</h2>
+                                </td>
+                                <td class="borderSpan" style="width: 15%; vertical-align: middle;">
+                                    <div style="border-top: 1px solid #F04444;"> </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="info-sec" style="text-align: center;">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                        <tbody>
+                            <tr>
+                                <td style="width: 100%;padding: 0px 20px;">
+                                    <p style="color:#fff;margin: 0; text-transform: none;  font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 25px; text-align: center; ">The wait is over! New episodes of <em data-renderer-mark="true">Black Mirror</em>, <em data-renderer-mark="true">Suits</em>, <em data-renderer-mark="true">Stranger Things</em>, and more are now streaming.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="info-sec" style="text-align: center;padding: 20px;">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                        <tbody>
+                            <tr>
+                                <td style="width: auto; text-align: center; vertical-align: middle;">
+                                    <a class="btn-link" href="#" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; text-transform: none; line-height: 25px; color: #FFFFFF; text-decoration: none; background: #F04444; padding: 6px 7px; display: inline-block; text-align: center; border-radius: 20px;"><img alt="youtube" class="btn-img" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/show-recommendations/youtube.png" style="vertical-align: middle;" /> View All</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- New Episod End-->
+            <!-- Weekly Recoomendatiom Start-->
+            <tr>
+                <td class="info-sec" style="text-align: center;padding: 40px 0px 20px;">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                        <tbody>
+                            <tr>
+                                <td class="borderSpan" style="width: 18%; vertical-align: middle;">
+                                    <div style="border-top: 1px solid #F04444;"> </div>
+                                </td>
+                                <td class="heading" style="text-align: center;">
+                                    <h2 style="color:#fff;text-transform: uppercase; font-family: 'Poppins', Arial, sans-serif; font-size: 24px; font-weight: 400; line-height: 40px; margin: 0 auto;">MORE SHOWS YOU’LL LIKE</h2>
+                                </td>
+                                <td class="borderSpan" style="width: 18%; vertical-align: middle;">
+                                    <div style="border-top: 1px solid #F04444;"> </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; margin-top: 20px;">
+                        <tbody>
+                            <tr>
+                                <td style="vertical-align: top; width: 50%;">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #000; margin: 0px 0px 10px 10px; padding: 10px;">
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <div class="product-img-wrap" style="width:100%; "><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/show-recommendations/dragons-fantasy-artificial-intelligence-image.png" style="width: 100%; height: 100%; object-fit: cover;"
+                                                        /></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 100%; margin-bottom: 2px; vertical-align: middle;">
+                                                    <h4 class="p-title" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 15px; color: #fff; margin: 8px 0;padding-right: 5px;">Breaking Bad</h4>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <p class="desc" style="font-family: 'Poppins', Arial, sans-serif;text-transform: none; font-size: 10px; font-weight: 400; line-height: 15px; color: #6f6f6f; margin: 0; ">A teacher turns to crime in desperate times</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td style="vertical-align: top; width: 50%;">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #000; margin: 0px 10px 10px 0px; padding: 10px;">
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <div class="product-img-wrap" style="width:100%; "><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/show-recommendations/view-soccer-player-before-match.png" style="width: 100%; height: 100%; object-fit: cover;" /></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 100%; margin-bottom: 2px; vertical-align: middle;">
+                                                    <h4 class="p-title" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 15px; color: #fff; margin: 5px 0;padding-right: 5px;">The Crown</h4>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <p class="desc" style="font-family: 'Poppins', Arial, sans-serif;text-transform: none; font-size: 10px; font-weight: 400; line-height: 15px; color: #6f6f6f; margin: 0; ">The life and reign of Queen Elizabeth II</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: top; width: 50%;">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #000; margin: 0px 0px 10px 10px; padding: 10px;">
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <div class="product-img-wrap" style="width:100%; "><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/show-recommendations/door-leading-magical-world.png" style="width: 100%; height: 100%; object-fit: cover;" /></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 100%; margin-bottom: 2px; vertical-align: middle;">
+                                                    <h4 class="p-title" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 15px; color: #fff; margin: 8px 0;padding-right: 5px;">Brooklyn Nine-Nine</h4>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <p class="desc" style="font-family: 'Poppins', Arial, sans-serif;text-transform: none; font-size: 10px; font-weight: 400; line-height: 15px; color: #6f6f6f; margin: 0; ">Hilarious detectives solve crimes</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td style="vertical-align: top; width: 50%;">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #000; margin: 0px 10px 10px 0px; padding: 10px;">
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <div class="product-img-wrap" style="width:100%; "><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/show-recommendations/door-leading-magical.png" style="width: 100%; height: 100%; object-fit: cover;" /></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 100%; margin-bottom: 2px; vertical-align: middle;">
+                                                    <h4 class="p-title" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 15px; color: #fff; margin: 5px 0;padding-right: 5px;">White Collar</h4>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <p class="desc" style="font-family: 'Poppins', Arial, sans-serif;text-transform: none; font-size: 10px; font-weight: 400; line-height: 15px; color: #6f6f6f; margin: 0; ">A con artist and FBI agent team up</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="info-btn" style="padding: 25px 20px 40px 20px; width:100%; text-align: center;">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                        <tbody>
+                            <tr>
+                                <td style="width: 100%; text-align: center; vertical-align: middle;">
+                                    <a class="btn-link" href="#" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; text-transform: none; line-height: 25px; color: #FFFFFF; text-decoration: none; background: #d33c3c; padding: 7px 33px; display: inline-block; text-align: center; border-radius: 20px;">View All</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- Weekly Recoomendatiom Start-->
+            <!-- footer start-->
+            <tr>
+                <td align="center" colspan="2">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%; background: #000; padding: 25px 0 25px;">
+                        <tbody>
+                            <tr>
+                                <td style="padding: 30px 0px; border-top: 2px solid #fff; border-bottom: 2px solid #fff;">
+                                    <table align="center" cellpadding="0" cellspacing="0" style="text-align: center;" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding: 15px 15px; display: inline-block;">
+                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 30px; height: 30px; ">
+                                                        <!-- Change image src as per your requirements --><img alt="instagram" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/3c09a826b3cd4920aa1230c7df32f91b.png" style="width: 100%; height: 100%;" /></a>
+                                                </td>
+                                                <td style="padding: 15px 15px; display: inline-block; ">
+                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 30px; height: 30px;"><img alt="facebook" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/18c1b92ff17443f38388d771deef565a.png" style="width: 100%; height: 100%;" /></a>
+                                                </td>
+                                                <td style="padding: 15px 15px; display: inline-block;">
+                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 30px; height: 30px;"><img alt="x" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/c6684e1db05c4ce4b7783b6181e11c89.png" style="width: 100%; height: 100%;" /></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="footer-content" style="padding:0px 30px">
+                                                    <p style="text-transform: none; color: #fff; font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 25px; text-align: center; margin-bottom: 0px;">For assistance, connect with us on social media or reach out to our support team at
+                                                        <a data-renderer-mark="true" data-testid="link-with-safety" href="support@example.com" style="color: #FFFFFF" title="support@example.com">support@example.com</a>
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding:10px 10px 0px; text-align:center;">
+                                    <p style="font-family: 'Poppins', Arial, sans-serif; text-transform: none; font-size: 14px; font-weight: 400; line-height: 20px; color: #fff; margin: 0; ">To opt out of promotional emails like this,
+                                        <a href="#" style="font-weight:bold;text-decoration:none; color:#d33c3c; margin: 0;">unsubscribe here</a>
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- footer end-->
+        </tbody>
+    </table>
+</body>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+</html>
+```
 
-  <body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" style="background: rgb(221, 221, 221); font-family: Poppins, Arial, sans-serif; font-weight: 400; margin: 0px; padding: 0px; cursor: auto;">
-      <table border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 600px; margin: 0 auto; background-color: #FFFFFF;" width="100%">
-          <!-- header start-->
-          <tbody>
-              <tr>
-                  <td style="text-align: center; position: relative;">
-                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                          <tbody>
-                              <tr>
-                                  <td style="width: 50%; vertical-align: middle;">
-                                      <div style="border-top: 1px solid #F04444;"> </div>
-                                  </td>
-                                  <td style="text-align: center; vertical-align: middle; padding: 20px">
-                                      <!-- Change image src as per your requirements --><img alt="Logo" class="logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="display: inline-block; width: 127px; height: 58px; object-fit: cover;" /></td>
-                                  <td style="width: 50%; vertical-align: middle;">
-                                      <div style="border-top: 1px solid #F04444;"> </div>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-              <!-- header end-->
-              <!-- banner section -->
-              <tr>
-                  <td><img alt="banner image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/show-recommendations/manager-running-from-detailed-group-employees.png" style="width: 100%; height: 100%; max-height: 361px; object-fit: cover;" /></td>
-              </tr>
-              <!-- banner section -->
-              <!-- new episod section -->
-              <tr>
-                  <td class="info-sec" style="text-align: center; padding: 40px 0px 20px;">
-                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                          <tbody>
-                              <tr>
-                                  <td class="borderSpan" style="width: 15%; vertical-align: middle;">
-                                      <div style="border-top: 1px solid #F04444;"> </div>
-                                  </td>
-                                  <td class="heading" style="text-align: center;">
-                                      <h2 style="text-transform: uppercase; font-family: 'Poppins', Arial, sans-serif; font-size: 24px; font-weight: 400; line-height: 40px; margin: 0 auto;">CATCH UP WITH YOUR FAVORITES</h2>
-                                  </td>
-                                  <td class="borderSpan" style="width: 15%; vertical-align: middle;">
-                                      <div style="border-top: 1px solid #F04444;"> </div>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-              <tr>
-                  <td class="info-sec" style="text-align: center;">
-                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                          <tbody>
-                              <tr>
-                                  <td style="width: 100%;padding: 0px 20px;">
-                                      <p style="margin: 0; text-transform: none; color: #6f6f6f; font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 25px; text-align: center; ">The wait is over! New episodes of <em data-renderer-mark="true">Black Mirror</em>, <em data-renderer-mark="true">Suits</em>, <em data-renderer-mark="true">Stranger Things</em>, and more are now streaming.</p>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-              <tr>
-                  <td class="info-sec" style="text-align: center;padding: 20px;">
-                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                          <tbody>
-                              <tr>
-                                  <td style="width: auto; text-align: center; vertical-align: middle;">
-                                      <a class="btn-link" href="#" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; text-transform: none; line-height: 25px; color: #FFFFFF; text-decoration: none; background: #F04444; padding: 6px 7px; display: inline-block; text-align: center; border-radius: 20px;"><img alt="youtube" class="btn-img" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/show-recommendations/youtube.png" style="vertical-align: middle;" /> View All</a>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-              <!-- New Episod End-->
-              <!-- Weekly Recoomendatiom Start-->
-              <tr>
-                  <td class="info-sec" style="text-align: center;padding: 40px 0px 20px;">
-                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                          <tbody>
-                              <tr>
-                                  <td class="borderSpan" style="width: 18%; vertical-align: middle;">
-                                      <div style="border-top: 1px solid #F04444;"> </div>
-                                  </td>
-                                  <td class="heading" style="text-align: center;">
-                                      <h2 style="text-transform: uppercase; font-family: 'Poppins', Arial, sans-serif; font-size: 24px; font-weight: 400; line-height: 40px; margin: 0 auto;">MORE SHOWS YOU’LL LIKE</h2>
-                                  </td>
-                                  <td class="borderSpan" style="width: 18%; vertical-align: middle;">
-                                      <div style="border-top: 1px solid #F04444;"> </div>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-              <tr>
-                  <td>
-                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; margin-top: 20px;">
-                          <tbody>
-                              <tr>
-                                  <td style="vertical-align: top; width: 50%;">
-                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #FFFFFF; margin: 0px 0px 10px 10px; padding: 10px;">
-                                          <tbody>
-                                              <tr>
-                                                  <td colspan="2">
-                                                      <div class="product-img-wrap" style="width:100%; "><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/show-recommendations/dragons-fantasy-artificial-intelligence-image.png" style="width: 100%; height: 100%; object-fit: cover;"
-                                                          /></div>
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <td style="width: 100%; margin-bottom: 2px; vertical-align: middle;">
-                                                      <h4 class="p-title" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 15px; color: #000000; margin: 8px 0;padding-right: 5px;">Breaking Bad</h4>
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <td colspan="2">
-                                                      <p class="desc" style="font-family: 'Poppins', Arial, sans-serif;text-transform: none; font-size: 10px; font-weight: 400; line-height: 15px; color: #6f6f6f; margin: 0; ">A teacher turns to crime in desperate times</p>
-                                                  </td>
-                                              </tr>
-                                          </tbody>
-                                      </table>
-                                  </td>
-                                  <td style="vertical-align: top; width: 50%;">
-                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #FFFFFF; margin: 0px 10px 10px 0px; padding: 10px;">
-                                          <tbody>
-                                              <tr>
-                                                  <td colspan="2">
-                                                      <div class="product-img-wrap" style="width:100%; "><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/show-recommendations/view-soccer-player-before-match.png" style="width: 100%; height: 100%; object-fit: cover;" /></div>
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <td style="width: 100%; margin-bottom: 2px; vertical-align: middle;">
-                                                      <h4 class="p-title" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 15px; color: #000000; margin: 5px 0;padding-right: 5px;">The Crown</h4>
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <td colspan="2">
-                                                      <p class="desc" style="font-family: 'Poppins', Arial, sans-serif;text-transform: none; font-size: 10px; font-weight: 400; line-height: 15px; color: #6f6f6f; margin: 0; ">The life and reign of Queen Elizabeth II</p>
-                                                  </td>
-                                              </tr>
-                                          </tbody>
-                                      </table>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td style="vertical-align: top; width: 50%;">
-                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #FFFFFF; margin: 0px 0px 10px 10px; padding: 10px;">
-                                          <tbody>
-                                              <tr>
-                                                  <td colspan="2">
-                                                      <div class="product-img-wrap" style="width:100%; "><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/show-recommendations/door-leading-magical-world.png" style="width: 100%; height: 100%; object-fit: cover;" /></div>
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <td style="width: 100%; margin-bottom: 2px; vertical-align: middle;">
-                                                      <h4 class="p-title" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 15px; color: #000000; margin: 8px 0;padding-right: 5px;">Brooklyn Nine-Nine</h4>
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <td colspan="2">
-                                                      <p class="desc" style="font-family: 'Poppins', Arial, sans-serif;text-transform: none; font-size: 10px; font-weight: 400; line-height: 15px; color: #6f6f6f; margin: 0; ">Hilarious detectives solve crimes</p>
-                                                  </td>
-                                              </tr>
-                                          </tbody>
-                                      </table>
-                                  </td>
-                                  <td style="vertical-align: top; width: 50%;">
-                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #FFFFFF; margin: 0px 10px 10px 0px; padding: 10px;">
-                                          <tbody>
-                                              <tr>
-                                                  <td colspan="2">
-                                                      <div class="product-img-wrap" style="width:100%; "><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/show-recommendations/door-leading-magical.png" style="width: 100%; height: 100%; object-fit: cover;" /></div>
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <td style="width: 100%; margin-bottom: 2px; vertical-align: middle;">
-                                                      <h4 class="p-title" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 15px; color: #000000; margin: 5px 0;padding-right: 5px;">White Collar</h4>
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <td colspan="2">
-                                                      <p class="desc" style="font-family: 'Poppins', Arial, sans-serif;text-transform: none; font-size: 10px; font-weight: 400; line-height: 15px; color: #6f6f6f; margin: 0; ">A con artist and FBI agent team up</p>
-                                                  </td>
-                                              </tr>
-                                          </tbody>
-                                      </table>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-              <tr>
-                  <td class="info-btn" style="padding: 25px 20px 40px 20px; width:100%; text-align: center;">
-                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                          <tbody>
-                              <tr>
-                                  <td style="width: 100%; text-align: center; vertical-align: middle;">
-                                      <a class="btn-link" href="#" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; text-transform: none; line-height: 25px; color: #FFFFFF; text-decoration: none; background: #d33c3c; padding: 7px 33px; display: inline-block; text-align: center; border-radius: 20px;">View All</a>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-              <!-- Weekly Recoomendatiom Start-->
-              <!-- footer start-->
-              <tr>
-                  <td align="center" colspan="2">
-                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%; background: #ffffff; padding: 25px 0 25px;">
-                          <tbody>
-                              <tr>
-                                  <td style="padding: 30px 0px; border-top: 2px solid #d33c3c; border-bottom: 2px solid #d33c3c;">
-                                      <table align="center" cellpadding="0" cellspacing="0" style="text-align: center;" width="100%">
-                                          <tbody>
-                                              <tr>
-                                                  <td style="padding: 15px 15px; display: inline-block;">
-                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 30px; height: 30px; ">
-                                                          <!-- Change image src as per your requirements --><img alt="instagram" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/46e890761aa9484488a1d4b5b7e5e90a.png" style="width: 100%; height: 100%;" /></a>
-                                                  </td>
-                                                  <td style="padding: 15px 15px; display: inline-block; ">
-                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 30px; height: 30px;"><img alt="facebook" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/1ba99ae8ff9a4646a043bc4572c74c85.png" style="width: 100%; height: 100%;" /></a>
-                                                  </td>
-                                                  <td style="padding: 15px 15px; display: inline-block;">
-                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 30px; height: 30px;"><img alt="x" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/9fd609ff93f44ae98273362f7509d619.png" style="width: 100%; height: 100%;" /></a>
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <td class="footer-content" style="padding:0px 30px">
-                                                      <p style="text-transform: none; color: #4f4f4f; font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 25px; text-align: center; margin-bottom: 0px;">For assistance, connect with us on social media or reach out to our support team at
-                                                          <a data-renderer-mark="true" data-testid="link-with-safety" href="support@example.com" title="support@example.com">support@example.com</a>
-                                                      </p>
-                                                  </td>
-                                              </tr>
-                                          </tbody>
-                                      </table>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td style="padding:10px 10px 0px; text-align:center;">
-                                      <p style="font-family: 'Poppins', Arial, sans-serif; text-transform: none; font-size: 14px; font-weight: 400; line-height: 20px; color: #4f4f4f; margin: 0; ">To opt out of promotional emails like this,
-                                          <a href="#" style="font-weight:bold;text-decoration:none; color:#d33c3c; margin: 0;">unsubscribe here</a>
-                                      </p>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-              <!-- footer end-->
-          </tbody>
-      </table>
-  </body>
-  <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
 
-  </html>
-  ```
-</details>
+</Accordion>
 
 ## Product Listing Template
 
@@ -4414,240 +4401,242 @@ This product-focused promotional template showcases productsby category —men, 
 
 <Image align="center" alt="Sample Product Lkisting Template" border={true} caption="Sample Product Listing Template" src="https://files.readme.io/1e411d87dc1b962b681cf3cbb075653004921dad4926f132717fd5bc482c97fc-Product_Listing_HTML.png" width="25% " />
 
-<details>
-  <summary><b>Expand to know more about the template.</b></summary>
+<br />
 
-  ### Use Case Examples
+<Accordion title="Expand to know more about the template.">
 
-  * Promote seasonal or new arrivals across different product categories.
-  * Highlight interest-based collections (for example, Men, Women, Kids, Pets).
-  * Encourage exploration through curated visual sections such as Trending Now, Recommended for You, or Back in Stock.
+### Use Case Examples
 
-  ### Template Customization Options
+* Promote seasonal or new arrivals across different product categories.
+* Highlight interest-based collections (for example, Men, Women, Kids, Pets).
+* Encourage exploration through curated visual sections such as Trending Now, Recommended for You, or Back in Stock.
 
-  * [Replace the Logo](doc:ootb-email-templates#replace-logo)
-  * [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-  * [Update Call-To-Actions (CTAs)](doc:ootb#call-to-actions-ctas)
-  * [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-  * [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-  * [Update the Privacy Policy](doc:ootb-email-templates#update-privacy-policy)
-  * [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+### Template Customization Options
 
-  ### Template Code
+* [Replace the Logo](doc:ootb-email-templates#replace-logo)
+* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](doc:ootb#call-to-actions-ctas)
+* [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+* [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+* [Update the Privacy Policy](doc:ootb-email-templates#update-privacy-policy)
+* [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
 
-  ```html HTML
-  <!doctype html="">
-  <html lang="en">
+### Template Code
 
-  <head>
-      <title>What&#39;s in the store</title>
-      <link href="https://fonts.googleapis.com" rel="preconnect" />
-      <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-      <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet" />
-      <style type="text/css">
-          @media screen and (max-width: 480px) {             .main {                 max-width: 95% !important;                 margin: 0 auto 20px !important;             }             .product-title{                 margin: 0 10px 15px !important;             }             .shop-cta{                 padding: 5px 10px !important;             }             .order-wrap{                 padding: 15px 20px !important;             }         }
-      </style>
-  </head>
+```html
+<!doctype html="">
+<html lang="en">
 
-  <body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" style="margin: 0px; padding: 0px; font-family: Jost, Arial, sans-serif; background-color: rgb(119, 67, 67); cursor: auto;">
-      <table border="0" cellpadding="0" cellspacing="0" style="font-family:'Jost', Arial, sans-serif; max-width: 600px; margin: 0 auto; background: #FFFFFF;" width="100%">
-          <tbody>
-              <tr>
-                  <td align="center" style="padding: 17px 0;"><img alt="Logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="display: block; max-width: 159px; width: 100%; height: auto;" /></td>
-              </tr>
-              <tr>
-                  <td align="center" style="background-color: #d66437; padding: 38px 25px 25px;">
-                      <h2 style="margin: 0; font-size: 36px; font-weight: 400; line-height: 45px; color: #FFFFFF; text-transform: uppercase;">WHAT’S NEW IN STORE</h2>
+<head>
+    <title>What&#39;s in the store</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet" />
+    <style type="text/css">
+        @media screen and (max-width: 480px) {             .main {                 max-width: 95% !important;                 margin: 0 auto 20px !important;             }             .product-title{                 margin: 0 10px 15px !important;             }             .shop-cta{                 padding: 5px 10px !important;             }             .order-wrap{                 padding: 15px 20px !important;             }         }
+    </style>
+</head>
 
-                      <p style="margin: 10px 0 0; font-size: 14px; font-weight: 400; line-height: 22px; color: #FFFFFF; text-transform: none;">Shop from the latest styles and trends</p>
-                  </td>
-              </tr>
-              <tr>
-                  <td align="center" style="background-color: #d66437;"><img alt="Banner" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/banner-image.png" style="display: block; max-width: 600px; width: 100%; height: auto;" /></td>
-              </tr>
-              <tr>
-                  <td align="center" class="order-wrap" style="background-color: #d66437; padding: 15px 35px;">
-                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                          <tbody>
-                              <tr>
-                                  <td align="left" style="font-size: 14px; font-weight: 300; line-height: 20px; color: #FFFFFF;">Get <span style="font-weight: 500;">FREE Delivery</span> on all orders</td>
-                                  <td align="right">
-                                      <a class="shop-cta" href="#" style="max-width: 125px; display: inline-block; padding: 8px 30px; font-size: 12px; font-weight: 400; line-height: 24px; color: #000000; background-color: #FFFFFF; text-align: center; text-transform: uppercase; text-decoration: none;">Shop Now</a>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-              <!-- product section  -->
-              <tr>
-                  <td align="center" style="padding: 40px 0 34px;">
-                      <h3 style="margin: 0; font-size: 32px; font-weight: 400; line-height: 42px; color: #0d0d0d; text-transform: uppercase;">NEW PRODUCTS LAUNCHED</h3>
+<body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" style="margin: 0px; padding: 0px; font-family: Jost, Arial, sans-serif; background-color: rgb(119, 67, 67); cursor: auto;">
+    <table border="0" cellpadding="0" cellspacing="0" style="font-family:'Jost', Arial, sans-serif; max-width: 600px; margin: 0 auto; background: #FFFFFF;" width="100%">
+        <tbody>
+            <tr>
+                <td align="center" style="padding: 17px 0;"><img alt="Logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="display: block; max-width: 159px; width: 100%; height: auto;" /></td>
+            </tr>
+            <tr>
+                <td align="center" style="background-color: #d66437; padding: 38px 25px 25px;">
+                    <h2 style="margin: 0; font-size: 36px; font-weight: 400; line-height: 45px; color: #FFFFFF; text-transform: uppercase;">WHAT’S NEW IN STORE</h2>
 
-                      <p style="margin: 10px 0 0; font-size: 10px; font-weight: 400; line-height: 20px; color: #909090; text-transform: none;">Explore newly launched products from our collection.</p>
-                  </td>
-              </tr>
-              <!-- mens product -->
-              <tr>
-                  <td align="center">
-                      <table border="0" cellpadding="0" cellspacing="0" class="main" style="width: 100%; max-width: 85%; margin: 0 auto 30px;" width="100%">
-                          <tbody>
-                              <tr>
-                                  <td colspan="2">
-                                      <h2 class="product-title" style="margin: 0 10px 24px; font-family:'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 24px; color: #000000; text-transform: uppercase;">Men</h2>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td align="right" style="padding: 0 10px 29px;" width="50%"><img alt="Product Image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/men-product-1.png" style="display: block; max-width: 238px; width: 100%; height: auto;" />
-                                      <a href="#" style="font-size: 22px; font-weight: 300; line-height: 37px; color: #D66437; text-decoration: none; margin-top: 5px; display: inline-block;">Shop now <img alt="arrow" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/icon-arrow.png" style="max-width: 30px; height: 100%;" /></a>
-                                  </td>
-                                  <td align="right" style="padding: 0 10px 29px;" width="50%"><img alt="Product Image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/men-product-2.png" style="display: block; max-width: 238px; width: 100%; height: auto;" />
-                                      <a href="#" style="font-size: 22px; font-weight: 300; line-height: 37px; color: #D66437; text-decoration: none; margin-top: 5px; display: inline-block;">Shop now <img alt="arrow" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/icon-arrow.png" style="max-width: 30px; height: 100%;" /></a>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td align="right" style="padding: 0 10px 29px;" width="50%"><img alt="Product Image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/men-product-3.png" style="display: block; max-width: 238px; width: 100%; height: auto;" />
-                                      <a href="#" style="font-size: 22px; font-weight: 300; line-height: 37px; color: #D66437; text-decoration: none; margin-top: 5px; display: inline-block;">Shop now <img alt="arrow" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/icon-arrow.png" style="max-width: 30px; height: 100%;" /></a>
-                                  </td>
-                                  <td align="right" style="padding: 0 10px 29px;" width="50%"><img alt="Product Image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/men-product-4.png" style="display: block; max-width: 238px; width: 100%; height: auto;" />
-                                      <a href="#" style="font-size: 22px; font-weight: 300; line-height: 37px; color: #D66437; text-decoration: none; margin-top: 5px; display: inline-block;">Shop now <img alt="arrow" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/icon-arrow.png" style="max-width: 30px; height: 100%;" /></a>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-              <!-- mens product -->
-              <!-- women product -->
-              <tr>
-                  <td align="center">
-                      <table border="0" cellpadding="0" cellspacing="0" class="main" style="width: 100%; max-width: 85%; margin: 0 auto 30px;" width="100%">
-                          <tbody>
-                              <tr>
-                                  <td colspan="2">
-                                      <h2 class="product-title" style="margin: 0 10px 24px; font-family:'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 24px; color: #000000; text-transform: uppercase;">Women</h2>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td align="right" style="padding: 0 10px 29px;" width="50%"><img alt="Product Image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/women-product-1.png" style="display: block; max-width: 238px; width: 100%; height: auto;" />
-                                      <a href="#" style="font-size: 22px; font-weight: 300; line-height: 37px; color: #D66437; text-decoration: none; margin-top: 5px; display: inline-block;">Shop now <img alt="arrow" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/icon-arrow.png" style="max-width: 30px; height: 100%;" /></a>
-                                  </td>
-                                  <td align="right" style="padding: 0 10px 29px;" width="50%"><img alt="Product Image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/women-product-2.png" style="display: block; max-width: 238px; width: 100%; height: auto;" />
-                                      <a href="#" style="font-size: 22px; font-weight: 300; line-height: 37px; color: #D66437; text-decoration: none; margin-top: 5px; display: inline-block;">Shop now <img alt="arrow" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/icon-arrow.png" style="max-width: 30px; height: 100%;" /></a>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td align="right" style="padding: 0 10px 29px;" width="50%"><img alt="Product Image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/women-product-3.png" style="display: block; max-width: 238px; width: 100%; height: auto;" />
-                                      <a href="#" style="font-size: 22px; font-weight: 300; line-height: 37px; color: #D66437; text-decoration: none; margin-top: 5px; display: inline-block;">Shop now <img alt="arrow" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/icon-arrow.png" style="max-width: 30px; height: 100%;" /></a>
-                                  </td>
-                                  <td align="right" style="padding: 0 10px 29px;" width="50%"><img alt="Product Image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/women-product-4.png" style="display: block; max-width: 238px; width: 100%; height: auto;" />
-                                      <a href="#" style="font-size: 22px; font-weight: 300; line-height: 37px; color: #D66437; text-decoration: none; margin-top: 5px; display: inline-block;">Shop now <img alt="arrow" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/icon-arrow.png" style="max-width: 30px; height: 100%;" /></a>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-              <!-- women product -->
-              <!-- kids product -->
-              <tr>
-                  <td align="center">
-                      <table border="0" cellpadding="0" cellspacing="0" class="main" style="width: 100%; max-width: 85%; margin: 0 auto 30px;" width="100%">
-                          <tbody>
-                              <tr>
-                                  <td colspan="2">
-                                      <h2 class="product-title" style="margin: 0 10px 24px; font-family:'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 24px; color: #000000; text-transform: uppercase;">Kids</h2>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td align="right" style="padding: 0 10px 29px;" width="50%"><img alt="Product Image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/kid-product-1.png" style="display: block; max-width: 238px; width: 100%; height: auto;" />
-                                      <a href="#" style="font-size: 22px; font-weight: 300; line-height: 37px; color: #D66437; text-decoration: none; margin-top: 5px; display: inline-block;">Shop now <img alt="arrow" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/icon-arrow.png" style="max-width: 30px; height: 100%;" /></a>
-                                  </td>
-                                  <td align="right" style="padding: 0 10px 29px;" width="50%"><img alt="Product Image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/kid-product-2.png" style="display: block; max-width: 238px; width: 100%; height: auto;" />
-                                      <a href="#" style="font-size: 22px; font-weight: 300; line-height: 37px; color: #D66437; text-decoration: none; margin-top: 5px; display: inline-block;">Shop now <img alt="arrow" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/icon-arrow.png" style="max-width: 30px; height: 100%;" /></a>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td align="right" style="padding: 0 10px 29px;" width="50%"><img alt="Product Image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/kid-product-3.png" style="display: block; max-width: 238px; width: 100%; height: auto;" />
-                                      <a href="#" style="font-size: 22px; font-weight: 300; line-height: 37px; color: #D66437; text-decoration: none; margin-top: 5px; display: inline-block;">Shop now <img alt="arrow" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/icon-arrow.png" style="max-width: 30px; height: 100%;" /></a>
-                                  </td>
-                                  <td align="right" style="padding: 0 10px 29px;" width="50%"><img alt="Product Image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/kid-product-4.png" style="display: block; max-width: 238px; width: 100%; height: auto;" />
-                                      <a href="#" style="font-size: 22px; font-weight: 300; line-height: 37px; color: #D66437; text-decoration: none; margin-top: 5px; display: inline-block;">Shop now <img alt="arrow" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/icon-arrow.png" style="max-width: 30px; height: 100%;" /></a>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-              <!-- kids product -->
-              <!-- product section  -->
-              <!-- footer start  -->
-              <tr>
-                  <td align="center" style="border-top: 0.5px solid #D66437; padding: 39px 0; text-align: center;">
-                      <table align="center" border="0" cellpadding="0" cellspacing="0">
-                          <tbody>
-                              <tr>
-                                  <td style="padding: 0 8px; display: inline-block;">
-                                      <a href="#"><img alt="Social Icon" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/31a2d71dbe3e4579bcfa0d74dfc3e34d.png" style="display: block; width: 34px; height: 34px;" /></a>
-                                  </td>
-                                  <td style="padding: 0 8px; display: inline-block;">
-                                      <a href="#"><img alt="Social Icon" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/28b65b9647964152a2a5f6e816e50bf9.png" style="display: block; width: 34px; height: 34px;" /></a>
-                                  </td>
-                                  <td style="padding: 0 8px; display: inline-block;">
-                                      <a href="#"><img alt="Social Icon" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/3ae087af1f3544b0885c0a3ec31c2419.png" style="display: block; width: 34px; height: 34px;" /></a>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td colspan="3">
-                                      <p style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #939393; text-align: center; max-width: 80%; margin: 34px auto 27px;">For assistance, connect with us on social media or reach out to our support team at
-                                          <a data-renderer-mark="true" data-testid="link-with-safety" href="support@example.com" title="support@example.com">support@example.com</a>
-                                      </p>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td colspan="3" style="border-top: 0.5px solid #979797; padding-top: 24px;padding-bottom:24px;">
-                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
-                                          <tbody>
-                                              <tr>
-                                                  <td style="padding: 0 5px;">
-                                                      <a href="#" style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #939393 !important; text-decoration: none;">Privacy</a>
-                                                  </td>
-                                                  <td style="padding: 0 5px;">
-                                                      <a href="#" style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #939393 !important; text-decoration: none;">Account</a>
-                                                  </td>
-                                              </tr>
-                                          </tbody>
-                                      </table>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td colspan="3" style="border-top: 0.5px solid #979797; padding-top: 24px;">
-                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
-                                          <tbody>
-                                              <tr>
-                                                  <td style="padding: 0 5px;">
-                                                      <p class="f-desc" style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #939393; max-width: 80%; margin: 0 auto;">To opt out of promotional emails like this,
-                                                          <a href="#" style="color:#939393;text-decoration:none;font-weight:bold">unsubscribe here</a>
-                                                      </p>
-                                                  </td>
-                                              </tr>
-                                          </tbody>
-                                      </table>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-          </tbody>
-      </table>
-      <!-- footer end  -->
-  </body>
-  <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+                    <p style="margin: 10px 0 0; font-size: 14px; font-weight: 400; line-height: 22px; color: #FFFFFF; text-transform: none;">Shop from the latest styles and trends</p>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" style="background-color: #d66437;"><img alt="Banner" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/banner-image.png" style="display: block; max-width: 600px; width: 100%; height: auto;" /></td>
+            </tr>
+            <tr>
+                <td align="center" class="order-wrap" style="background-color: #d66437; padding: 15px 35px;">
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tbody>
+                            <tr>
+                                <td align="left" style="font-size: 14px; font-weight: 300; line-height: 20px; color: #FFFFFF;">Get <span style="font-weight: 500;">FREE Delivery</span> on all orders</td>
+                                <td align="right">
+                                    <a class="shop-cta" href="#" style="max-width: 125px; display: inline-block; padding: 8px 30px; font-size: 12px; font-weight: 400; line-height: 24px; color: #000000; background-color: #FFFFFF; text-align: center; text-transform: uppercase; text-decoration: none;">Shop Now</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- product section  -->
+            <tr>
+                <td align="center" style="padding: 40px 0 34px;">
+                    <h3 style="margin: 0; font-size: 32px; font-weight: 400; line-height: 42px; color: #0d0d0d; text-transform: uppercase;">NEW PRODUCTS LAUNCHED</h3>
 
-  </html>
-  ```
-</details>
+                    <p style="margin: 10px 0 0; font-size: 10px; font-weight: 400; line-height: 20px; color: #909090; text-transform: none;">Explore newly launched products from our collection.</p>
+                </td>
+            </tr>
+            <!-- mens product -->
+            <tr>
+                <td align="center">
+                    <table border="0" cellpadding="0" cellspacing="0" class="main" style="width: 100%; max-width: 85%; margin: 0 auto 30px;" width="100%">
+                        <tbody>
+                            <tr>
+                                <td colspan="2">
+                                    <h2 class="product-title" style="margin: 0 10px 24px; font-family:'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 24px; color: #000000; text-transform: uppercase;">Men</h2>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right" style="padding: 0 10px 29px;" width="50%"><img alt="Product Image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/men-product-1.png" style="display: block; max-width: 238px; width: 100%; height: auto;" />
+                                    <a href="#" style="font-size: 22px; font-weight: 300; line-height: 37px; color: #D66437; text-decoration: none; margin-top: 5px; display: inline-block;">Shop now <img alt="arrow" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/icon-arrow.png" style="max-width: 30px; height: 100%;" /></a>
+                                </td>
+                                <td align="right" style="padding: 0 10px 29px;" width="50%"><img alt="Product Image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/men-product-2.png" style="display: block; max-width: 238px; width: 100%; height: auto;" />
+                                    <a href="#" style="font-size: 22px; font-weight: 300; line-height: 37px; color: #D66437; text-decoration: none; margin-top: 5px; display: inline-block;">Shop now <img alt="arrow" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/icon-arrow.png" style="max-width: 30px; height: 100%;" /></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right" style="padding: 0 10px 29px;" width="50%"><img alt="Product Image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/men-product-3.png" style="display: block; max-width: 238px; width: 100%; height: auto;" />
+                                    <a href="#" style="font-size: 22px; font-weight: 300; line-height: 37px; color: #D66437; text-decoration: none; margin-top: 5px; display: inline-block;">Shop now <img alt="arrow" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/icon-arrow.png" style="max-width: 30px; height: 100%;" /></a>
+                                </td>
+                                <td align="right" style="padding: 0 10px 29px;" width="50%"><img alt="Product Image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/men-product-4.png" style="display: block; max-width: 238px; width: 100%; height: auto;" />
+                                    <a href="#" style="font-size: 22px; font-weight: 300; line-height: 37px; color: #D66437; text-decoration: none; margin-top: 5px; display: inline-block;">Shop now <img alt="arrow" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/icon-arrow.png" style="max-width: 30px; height: 100%;" /></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- mens product -->
+            <!-- women product -->
+            <tr>
+                <td align="center">
+                    <table border="0" cellpadding="0" cellspacing="0" class="main" style="width: 100%; max-width: 85%; margin: 0 auto 30px;" width="100%">
+                        <tbody>
+                            <tr>
+                                <td colspan="2">
+                                    <h2 class="product-title" style="margin: 0 10px 24px; font-family:'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 24px; color: #000000; text-transform: uppercase;">Women</h2>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right" style="padding: 0 10px 29px;" width="50%"><img alt="Product Image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/women-product-1.png" style="display: block; max-width: 238px; width: 100%; height: auto;" />
+                                    <a href="#" style="font-size: 22px; font-weight: 300; line-height: 37px; color: #D66437; text-decoration: none; margin-top: 5px; display: inline-block;">Shop now <img alt="arrow" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/icon-arrow.png" style="max-width: 30px; height: 100%;" /></a>
+                                </td>
+                                <td align="right" style="padding: 0 10px 29px;" width="50%"><img alt="Product Image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/women-product-2.png" style="display: block; max-width: 238px; width: 100%; height: auto;" />
+                                    <a href="#" style="font-size: 22px; font-weight: 300; line-height: 37px; color: #D66437; text-decoration: none; margin-top: 5px; display: inline-block;">Shop now <img alt="arrow" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/icon-arrow.png" style="max-width: 30px; height: 100%;" /></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right" style="padding: 0 10px 29px;" width="50%"><img alt="Product Image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/women-product-3.png" style="display: block; max-width: 238px; width: 100%; height: auto;" />
+                                    <a href="#" style="font-size: 22px; font-weight: 300; line-height: 37px; color: #D66437; text-decoration: none; margin-top: 5px; display: inline-block;">Shop now <img alt="arrow" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/icon-arrow.png" style="max-width: 30px; height: 100%;" /></a>
+                                </td>
+                                <td align="right" style="padding: 0 10px 29px;" width="50%"><img alt="Product Image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/women-product-4.png" style="display: block; max-width: 238px; width: 100%; height: auto;" />
+                                    <a href="#" style="font-size: 22px; font-weight: 300; line-height: 37px; color: #D66437; text-decoration: none; margin-top: 5px; display: inline-block;">Shop now <img alt="arrow" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/icon-arrow.png" style="max-width: 30px; height: 100%;" /></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- women product -->
+            <!-- kids product -->
+            <tr>
+                <td align="center">
+                    <table border="0" cellpadding="0" cellspacing="0" class="main" style="width: 100%; max-width: 85%; margin: 0 auto 30px;" width="100%">
+                        <tbody>
+                            <tr>
+                                <td colspan="2">
+                                    <h2 class="product-title" style="margin: 0 10px 24px; font-family:'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 24px; color: #000000; text-transform: uppercase;">Kids</h2>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right" style="padding: 0 10px 29px;" width="50%"><img alt="Product Image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/kid-product-1.png" style="display: block; max-width: 238px; width: 100%; height: auto;" />
+                                    <a href="#" style="font-size: 22px; font-weight: 300; line-height: 37px; color: #D66437; text-decoration: none; margin-top: 5px; display: inline-block;">Shop now <img alt="arrow" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/icon-arrow.png" style="max-width: 30px; height: 100%;" /></a>
+                                </td>
+                                <td align="right" style="padding: 0 10px 29px;" width="50%"><img alt="Product Image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/kid-product-2.png" style="display: block; max-width: 238px; width: 100%; height: auto;" />
+                                    <a href="#" style="font-size: 22px; font-weight: 300; line-height: 37px; color: #D66437; text-decoration: none; margin-top: 5px; display: inline-block;">Shop now <img alt="arrow" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/icon-arrow.png" style="max-width: 30px; height: 100%;" /></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right" style="padding: 0 10px 29px;" width="50%"><img alt="Product Image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/kid-product-3.png" style="display: block; max-width: 238px; width: 100%; height: auto;" />
+                                    <a href="#" style="font-size: 22px; font-weight: 300; line-height: 37px; color: #D66437; text-decoration: none; margin-top: 5px; display: inline-block;">Shop now <img alt="arrow" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/icon-arrow.png" style="max-width: 30px; height: 100%;" /></a>
+                                </td>
+                                <td align="right" style="padding: 0 10px 29px;" width="50%"><img alt="Product Image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/kid-product-4.png" style="display: block; max-width: 238px; width: 100%; height: auto;" />
+                                    <a href="#" style="font-size: 22px; font-weight: 300; line-height: 37px; color: #D66437; text-decoration: none; margin-top: 5px; display: inline-block;">Shop now <img alt="arrow" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/icon-arrow.png" style="max-width: 30px; height: 100%;" /></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- kids product -->
+            <!-- product section  -->
+            <!-- footer start  -->
+            <tr>
+                <td align="center" style="border-top: 0.5px solid #D66437; padding: 39px 0; text-align: center;">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td style="padding: 0 8px; display: inline-block;">
+                                    <a href="#"><img alt="Social Icon" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/31a2d71dbe3e4579bcfa0d74dfc3e34d.png" style="display: block; width: 34px; height: 34px;" /></a>
+                                </td>
+                                <td style="padding: 0 8px; display: inline-block;">
+                                    <a href="#"><img alt="Social Icon" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/28b65b9647964152a2a5f6e816e50bf9.png" style="display: block; width: 34px; height: 34px;" /></a>
+                                </td>
+                                <td style="padding: 0 8px; display: inline-block;">
+                                    <a href="#"><img alt="Social Icon" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/3ae087af1f3544b0885c0a3ec31c2419.png" style="display: block; width: 34px; height: 34px;" /></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <p style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #939393; text-align: center; max-width: 80%; margin: 34px auto 27px;">For assistance, connect with us on social media or reach out to our support team at
+                                        <a data-renderer-mark="true" data-testid="link-with-safety" href="support@example.com" title="support@example.com">support@example.com</a>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" style="border-top: 0.5px solid #979797; padding-top: 24px;padding-bottom:24px;">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding: 0 5px;">
+                                                    <a href="#" style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #939393 !important; text-decoration: none;">Privacy</a>
+                                                </td>
+                                                <td style="padding: 0 5px;">
+                                                    <a href="#" style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #939393 !important; text-decoration: none;">Account</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" style="border-top: 0.5px solid #979797; padding-top: 24px;">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding: 0 5px;">
+                                                    <p class="f-desc" style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #939393; max-width: 80%; margin: 0 auto;">To opt out of promotional emails like this,
+                                                        <a href="#" style="color:#939393;text-decoration:none;font-weight:bold">unsubscribe here</a>
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- footer end  -->
+</body>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+
+</html>
+```
+
+</Accordion>
 
 ## Winback Email Template
 
@@ -4655,235 +4644,236 @@ This re-engagement email template is tailored to bring back inactive users who h
 
 <Image align="center" alt="Sample Winback Email Template" border={true} caption="Sample Winback Email Template" src="https://files.readme.io/5cb660d31245cc7ff0a9c2c11186ddc7fe3f00a8793c7d0d4282a893a75edfea-Winback_HTML.png" width="25% " />
 
-<details>
-  <summary><b>Expand to know more about the template.</b></summary>
+<Accordion title="Expand to know more about the template.">
 
-  ### Use Case Examples
 
-  Encourages churned or inactive users to return by offering a compelling incentive such as a discount or limited-time offer, paired with personalized product recommendations.
+### Use Case Examples
 
-  ### Template Customization Options
+Encourages churned or inactive users to return by offering a compelling incentive such as a discount or limited-time offer, paired with personalized product recommendations.
 
-  * [Replace the Logo](doc:ootb-email-templates#replace-logo)
-  * [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-  * [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#call-to-actions-ctas)
-  * [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-  * [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-  * [Update the Privacy Policy](doc:ootb-email-templates#update-privacy-policy)
-  * [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+### Template Customization Options
 
-  ### Template Code
+* [Replace the Logo](doc:ootb-email-templates#replace-logo)
+* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#call-to-actions-ctas)
+* [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+* [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+* [Update the Privacy Policy](doc:ootb-email-templates#update-privacy-policy)
+* [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
 
-  ```html HTML
-  <!doctype html="">
-  <html lang="en">
+### Template Code
 
-  <head>
-      <title>WinBack</title>
-      <link href="https://fonts.googleapis.com" rel="preconnect" />
-      <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-      <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet" />
-      <style type="text/css">
-          @media screen and (max-width: 480px) {             .container {                 max-width: 100% !important;             }              .content {                 max-width: 90% !important;             }         }
-      </style>
-  </head>
+```html
+<!doctype html="">
+<html lang="en">
 
-  <body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" data-new-gr-c-s-loaded="14.1242.0" style="font-family: Jost, Arial, sans-serif; font-weight: 400; margin: 0px; padding: 0px; background: rgb(221, 221, 221); cursor: auto;">
-      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 600px; margin: 0 auto; background-color: #ffffff;" width="100%">
-          <!-- header start-->
-          <tbody>
-              <tr>
-                  <td align="center" style="display: block; padding: 26px 0; max-width: 78%; margin: 0 auto;border-bottom: 1px solid #DDB67C;">
-                      <div class="logo-wrap">
-                          <!-- Change image src as per your requirements --><img alt="Logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="width: 159px; height: 73px; object-fit: cover;" /></div>
-                  </td>
-              </tr>
-              <!-- header end-->
-              <tr>
-                  <td style="text-align: center;">
-                      <h1 class="banner-title" style="font-family: Jost, Arial; font-size: 50px; font-weight: 400; line-height: 70px; color: #525C46; text-transform: uppercase; margin: 25px 0 28px;">WE MISS YOU!</h1>
+<head>
+    <title>WinBack</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet" />
+    <style type="text/css">
+        @media screen and (max-width: 480px) {             .container {                 max-width: 100% !important;             }              .content {                 max-width: 90% !important;             }         }
+    </style>
+</head>
 
-                      <div class="banner-img">
-                          <!-- Change image src as per your requirements --><img alt="banner" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Winback/product-banner.png" style="width: 100%; height: 100%; max-height: 663px; object-fit: cover;" /></div>
-                  </td>
-              </tr>
-              <tr>
-                  <td align="center" style="display: block; padding: 30px 0 64px; max-width: 78%; margin: 0 auto;">
-                      <h3 style="color: #525C46; font-family: 'Jost', Arial, sans-serif; font-size: 60px; font-weight: 400; line-height: 86px; text-transform: uppercase; margin: 0 0 17px;">30% OFF ON ALL PRODUCTS!</h3>
+<body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" data-new-gr-c-s-loaded="14.1242.0" style="font-family: Jost, Arial, sans-serif; font-weight: 400; margin: 0px; padding: 0px; background: rgb(221, 221, 221); cursor: auto;">
+    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 600px; margin: 0 auto; background-color: #ffffff;" width="100%">
+        <!-- header start-->
+        <tbody>
+            <tr>
+                <td align="center" style="display: block; padding: 26px 0; max-width: 78%; margin: 0 auto;border-bottom: 1px solid #DDB67C;">
+                    <div class="logo-wrap">
+                        <!-- Change image src as per your requirements --><img alt="Logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="width: 159px; height: 73px; object-fit: cover;" /></div>
+                </td>
+            </tr>
+            <!-- header end-->
+            <tr>
+                <td style="text-align: center;">
+                    <h1 class="banner-title" style="font-family: Jost, Arial; font-size: 50px; font-weight: 400; line-height: 70px; color: #525C46; text-transform: uppercase; margin: 25px 0 28px;">WE MISS YOU!</h1>
 
-                      <p style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 20px;color:#909090; text-align: center; margin: 0; margin-bottom: 31px;">Take advantage of this exclusive offer just for you and enjoy 30% off your next purchase. It’s the perfect time to treat yourself to something special!</p>
+                    <div class="banner-img">
+                        <!-- Change image src as per your requirements --><img alt="banner" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Winback/product-banner.png" style="width: 100%; height: 100%; max-height: 663px; object-fit: cover;" /></div>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" style="display: block; padding: 30px 0 64px; max-width: 78%; margin: 0 auto;">
+                    <h3 style="color: #525C46; font-family: 'Jost', Arial, sans-serif; font-size: 60px; font-weight: 400; line-height: 86px; text-transform: uppercase; margin: 0 0 17px;">30% OFF ON ALL PRODUCTS!</h3>
 
-                      <a display_text_og="Shop%20Now" href="#" href_og="%23" style="background-color: rgb(172, 135, 99); font-family: Jost, Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 20px; text-align: center; text-transform: none; border-radius: 20px; text-decoration: none; max-width: 171px; padding: 10px 40px; color: rgb(255, 255, 255) !important;">Shop Now</a>
-                  </td>
-              </tr>
-              <tr>
-                  <td>
-                      <div style="margin: 0 auto; width: 100%;">
-                          <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
-                              <tbody>
-                                  <tr>
-                                      <td style="width: 33%; vertical-align: top;">
-                                          <!-- product card -->
-                                          <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="margin-bottom: 15px; padding: 0 5px;">
-                                              <tbody>
-                                                  <tr>
-                                                      <td colspan="2">
-                                                          <div class="img-wrap">
-                                                              <!-- Change image src as per your requirements --><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Winback/product-1.png" style="width: -webkit-fill-available" /></div>
-                                                      </td>
-                                                  </tr>
-                                                  <tr>
-                                                      <td style="width: 60%; margin-bottom: 2px; vertical-align: top;">
-                                                          <h4 style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #252525; margin: 0;padding-right: 5px;">Radiance Boost Serum</h4>
-                                                      </td>
-                                                      <td style="width: 20%; vertical-align: top;">
-                                                          <p style="margin:0; color: #252525; font-family: 'Jost', Arial, sans-serif; font-size: 12px;font-weight: 300; line-height: 24px; text-align: right;"><span class="rupee-sign">$</span>1500</p>
-                                                      </td>
-                                                  </tr>
-                                                  <tr>
-                                                      <td colspan="2">
-                                                          <p class="desc" style="font-family: 'Jost', Arial, sans-serif;text-transform: none; font-size: 8px; font-weight: 400; line-height: 13px; color: #909090; margin: 0; ">Brighten and hydrate your skin with this powerful, glow-enhancing serum.</p>
-                                                      </td>
-                                                  </tr>
-                                              </tbody>
-                                          </table>
-                                      </td>
-                                      <td style="width: 33%; vertical-align: top;">
-                                          <!-- product card -->
-                                          <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="margin-bottom: 15px; padding: 0 5px;">
-                                              <tbody>
-                                                  <tr>
-                                                      <td colspan="2">
-                                                          <div class="img-wrap">
-                                                              <!-- Change image src as per your requirements --><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Winback/product-1.png" style="width: -webkit-fill-available" /></div>
-                                                      </td>
-                                                  </tr>
-                                                  <tr>
-                                                      <td style="width: 60%; margin-bottom: 2px; vertical-align: top;">
-                                                          <h4 style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #252525; margin: 0;padding-right: 5px;">Nourishing Repair Creeam</h4>
-                                                      </td>
-                                                      <td style="width: 20%; vertical-align: top;">
-                                                          <p style="margin:0; color: #252525; font-family: 'Jost', Arial, sans-serif; font-size: 12px;font-weight: 300; line-height: 24px; text-align: right;"><span class="rupee-sign">$</span>1500</p>
-                                                      </td>
-                                                  </tr>
-                                                  <tr>
-                                                      <td colspan="2">
-                                                          <p class="desc" style="font-family: 'Jost', Arial, sans-serif;text-transform: none; font-size: 8px; font-weight: 400; line-height: 13px; color: #909090; margin: 0; ">Rejuvenate and repair your skin with this rich, soothing cream.</p>
-                                                      </td>
-                                                  </tr>
-                                              </tbody>
-                                          </table>
-                                      </td>
-                                      <td style="width: 33%; vertical-align: top;">
-                                          <!-- product card -->
-                                          <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="margin-bottom: 15px; padding: 0 5px;">
-                                              <tbody>
-                                                  <tr>
-                                                      <td colspan="2">
-                                                          <div class="img-wrap">
-                                                              <!-- Change image src as per your requirements --><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Winback/product-1.png" style="width: -webkit-fill-available" /></div>
-                                                      </td>
-                                                  </tr>
-                                                  <tr>
-                                                      <td style="width: 60%; margin-bottom: 2px; vertical-align: top;">
-                                                          <h4 style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #252525; margin: 0;padding-right: 5px;">Pure Glow Face Mask</h4>
-                                                      </td>
-                                                      <td style="width: 20%; vertical-align: top;">
-                                                          <p style="margin:0; color: #252525; font-family: 'Jost', Arial, sans-serif; font-size: 12px;font-weight: 300; line-height: 24px; text-align: right;"><span class="rupee-sign">$</span>1500</p>
-                                                      </td>
-                                                  </tr>
-                                                  <tr>
-                                                      <td colspan="2">
-                                                          <p class="desc" style="font-family: 'Jost', Arial, sans-serif;text-transform: none; font-size: 8px; font-weight: 400; line-height: 13px; color: #909090; margin: 0; ">Deep cleanse and refresh with this revitalizing, skin-loving face mask.</p>
-                                                      </td>
-                                                  </tr>
-                                              </tbody>
-                                          </table>
-                                      </td>
-                                  </tr>
-                              </tbody>
-                          </table>
-                      </div>
-                  </td>
-              </tr>
-              <tr>
-                  <td>
-                      <div style="max-width: 90%; margin: 0 auto; width: 100%; text-align: right;">
-                          <a class="btn-link" display_text_og="View%20All" href="#" href_og="%23" style="font-family: Jost, Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 15px; text-transform: none; text-decoration: none; color: rgb(172, 135, 99) !important;">View All</a>
-                      </div>
-                  </td>
-              </tr>
-              <!-- footer start-->
-              <tr>
-                  <td align="center" style="padding: 30px 0;">
-                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style=" max-width: 78%; margin: 0 auto;">
-                          <tbody>
-                              <tr>
-                                  <td style="border-top: 1px solid #DDB67C; padding: 19px 0;">
-                                      <table align="center" cellpadding="0" cellspacing="0" style="text-align: center;" width="100%">
-                                          <tbody>
-                                              <tr>
-                                                  <td style="padding: 0 8px; display: inline-block;">
-                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 34px; height: 34px;">
-                                                          <!-- Change image src as per your requirements --><img alt="instagram" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/9bd25df479a646f7bdbc487361af4e73.png" style="width: 100%; height: 100%;" /></a>
-                                                  </td>
-                                                  <td style="padding: 0 8px; display: inline-block;">
-                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 34px; height: 34px;"><img alt="facebook" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/4caf5891eb8a4831a41d4894a47af5da.png" style="width: 100%; height: 100%;" /></a>
-                                                  </td>
-                                                  <td style="padding: 0 8px; display: inline-block;">
-                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 34px; height: 34px;"><img alt="x" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/5f782083c6c446ba832acd09adecb140.png" style="width: 100%; height: 100%;" /></a>
-                                                  </td>
-                                              </tr>
-                                          </tbody>
-                                      </table>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td style="border-top: 1px solid #DDB67C;">
-                                      <p style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #909090; margin: 19px 0 21px;">For assistance, connect with us on social media or reach out to our support team at
-                                          <a data-renderer-mark="true" data-testid="link-with-safety" href="support@example.com" title="support@example.com">support@example.com</a>
-                                      </p>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td>
-                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
-                                          <tbody>
-                                              <tr>
-                                                  <td style="padding: 0 5px;">
-                                                      <a href="#" style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #1E1E1E !important; text-decoration: none;">Privacy</a>
-                                                  </td>
-                                                  <td style="padding: 0 5px;">
-                                                      <a href="#" style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #1E1E1E !important; text-decoration: none;">Account</a>
-                                                  </td>
-                                                  <td style="padding: 0 5px;">
-                                                      <a href="#" style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #1E1E1E !important; text-decoration: none;">Unsubscribe</a>
-                                                  </td>
-                                              </tr>
-                                          </tbody>
-                                      </table>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td style="border-top: 1px solid #DDB67C;">
-                                      <p style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #1E1E1E; padding-top:10px;">To opt out of promotional emails like this,
-                                          <a href="#" style="color:#1E1E1E;font-weight:bold;text-decoration:none;">unsubscribe here</a>
-                                      </p>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-              <!-- footer end-->
-          </tbody>
-      </table>
-  </body>
-  <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+                    <p style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 20px;color:#909090; text-align: center; margin: 0; margin-bottom: 31px;">Take advantage of this exclusive offer just for you and enjoy 30% off your next purchase. It’s the perfect time to treat yourself to something special!</p>
 
-  </html>
-  ```
-</details>
+                    <a display_text_og="Shop%20Now" href="#" href_og="%23" style="background-color: rgb(172, 135, 99); font-family: Jost, Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 20px; text-align: center; text-transform: none; border-radius: 20px; text-decoration: none; max-width: 171px; padding: 10px 40px; color: rgb(255, 255, 255) !important;">Shop Now</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="margin: 0 auto; width: 100%;">
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                            <tbody>
+                                <tr>
+                                    <td style="width: 33%; vertical-align: top;">
+                                        <!-- product card -->
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="margin-bottom: 15px; padding: 0 5px;">
+                                            <tbody>
+                                                <tr>
+                                                    <td colspan="2">
+                                                        <div class="img-wrap">
+                                                            <!-- Change image src as per your requirements --><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Winback/product-1.png" style="width: -webkit-fill-available" /></div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 60%; margin-bottom: 2px; vertical-align: top;">
+                                                        <h4 style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #252525; margin: 0;padding-right: 5px;">Radiance Boost Serum</h4>
+                                                    </td>
+                                                    <td style="width: 20%; vertical-align: top;">
+                                                        <p style="margin:0; color: #252525; font-family: 'Jost', Arial, sans-serif; font-size: 12px;font-weight: 300; line-height: 24px; text-align: right;"><span class="rupee-sign">$</span>1500</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">
+                                                        <p class="desc" style="font-family: 'Jost', Arial, sans-serif;text-transform: none; font-size: 8px; font-weight: 400; line-height: 13px; color: #909090; margin: 0; ">Brighten and hydrate your skin with this powerful, glow-enhancing serum.</p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td style="width: 33%; vertical-align: top;">
+                                        <!-- product card -->
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="margin-bottom: 15px; padding: 0 5px;">
+                                            <tbody>
+                                                <tr>
+                                                    <td colspan="2">
+                                                        <div class="img-wrap">
+                                                            <!-- Change image src as per your requirements --><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Winback/product-1.png" style="width: -webkit-fill-available" /></div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 60%; margin-bottom: 2px; vertical-align: top;">
+                                                        <h4 style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #252525; margin: 0;padding-right: 5px;">Nourishing Repair Creeam</h4>
+                                                    </td>
+                                                    <td style="width: 20%; vertical-align: top;">
+                                                        <p style="margin:0; color: #252525; font-family: 'Jost', Arial, sans-serif; font-size: 12px;font-weight: 300; line-height: 24px; text-align: right;"><span class="rupee-sign">$</span>1500</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">
+                                                        <p class="desc" style="font-family: 'Jost', Arial, sans-serif;text-transform: none; font-size: 8px; font-weight: 400; line-height: 13px; color: #909090; margin: 0; ">Rejuvenate and repair your skin with this rich, soothing cream.</p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td style="width: 33%; vertical-align: top;">
+                                        <!-- product card -->
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="margin-bottom: 15px; padding: 0 5px;">
+                                            <tbody>
+                                                <tr>
+                                                    <td colspan="2">
+                                                        <div class="img-wrap">
+                                                            <!-- Change image src as per your requirements --><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Winback/product-1.png" style="width: -webkit-fill-available" /></div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 60%; margin-bottom: 2px; vertical-align: top;">
+                                                        <h4 style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #252525; margin: 0;padding-right: 5px;">Pure Glow Face Mask</h4>
+                                                    </td>
+                                                    <td style="width: 20%; vertical-align: top;">
+                                                        <p style="margin:0; color: #252525; font-family: 'Jost', Arial, sans-serif; font-size: 12px;font-weight: 300; line-height: 24px; text-align: right;"><span class="rupee-sign">$</span>1500</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">
+                                                        <p class="desc" style="font-family: 'Jost', Arial, sans-serif;text-transform: none; font-size: 8px; font-weight: 400; line-height: 13px; color: #909090; margin: 0; ">Deep cleanse and refresh with this revitalizing, skin-loving face mask.</p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="max-width: 90%; margin: 0 auto; width: 100%; text-align: right;">
+                        <a class="btn-link" display_text_og="View%20All" href="#" href_og="%23" style="font-family: Jost, Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 15px; text-transform: none; text-decoration: none; color: rgb(172, 135, 99) !important;">View All</a>
+                    </div>
+                </td>
+            </tr>
+            <!-- footer start-->
+            <tr>
+                <td align="center" style="padding: 30px 0;">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style=" max-width: 78%; margin: 0 auto;">
+                        <tbody>
+                            <tr>
+                                <td style="border-top: 1px solid #DDB67C; padding: 19px 0;">
+                                    <table align="center" cellpadding="0" cellspacing="0" style="text-align: center;" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding: 0 8px; display: inline-block;">
+                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 34px; height: 34px;">
+                                                        <!-- Change image src as per your requirements --><img alt="instagram" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/9bd25df479a646f7bdbc487361af4e73.png" style="width: 100%; height: 100%;" /></a>
+                                                </td>
+                                                <td style="padding: 0 8px; display: inline-block;">
+                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 34px; height: 34px;"><img alt="facebook" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/4caf5891eb8a4831a41d4894a47af5da.png" style="width: 100%; height: 100%;" /></a>
+                                                </td>
+                                                <td style="padding: 0 8px; display: inline-block;">
+                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 34px; height: 34px;"><img alt="x" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/5f782083c6c446ba832acd09adecb140.png" style="width: 100%; height: 100%;" /></a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border-top: 1px solid #DDB67C;">
+                                    <p style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #909090; margin: 19px 0 21px;">For assistance, connect with us on social media or reach out to our support team at
+                                        <a data-renderer-mark="true" data-testid="link-with-safety" href="support@example.com" title="support@example.com">support@example.com</a>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding: 0 5px;">
+                                                    <a href="#" style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #1E1E1E !important; text-decoration: none;">Privacy</a>
+                                                </td>
+                                                <td style="padding: 0 5px;">
+                                                    <a href="#" style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #1E1E1E !important; text-decoration: none;">Account</a>
+                                                </td>
+                                                <td style="padding: 0 5px;">
+                                                    <a href="#" style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #1E1E1E !important; text-decoration: none;">Unsubscribe</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border-top: 1px solid #DDB67C;">
+                                    <p style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #1E1E1E; padding-top:10px;">To opt out of promotional emails like this,
+                                        <a href="#" style="color:#1E1E1E;font-weight:bold;text-decoration:none;">unsubscribe here</a>
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- footer end-->
+        </tbody>
+    </table>
+</body>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+
+</html>
+```
+
+</Accordion>
 
 ## Subscription Renewal Reminder Template
 
@@ -4891,194 +4881,194 @@ This confirmation or promotional email template is used to acknowledge new subsc
 
 <Image align="center" alt="Sample Subscription FRenewal Reminder Template" border={true} caption="Sample Subscription Renewal Reminder Template" src="https://files.readme.io/49d165aab9c413c00f0ce66cdb32f0db944fc50676c79d291f99187be4c1a8b1-Subscription_Renewal_Email_Template.png" width="25% " />
 
-<details>
-  <summary><b>Expand to know more about the template.</b></summary>
+<Accordion title="My Accordion Title">
 
-  ### Use Case Examples
+### Use Case Examples
 
-  Confirms a successful subscription or entices users to upgrade by highlighting plan benefits and encouraging exploration of exclusive features.
+Confirms a successful subscription or entices users to upgrade by highlighting plan benefits and encouraging exploration of exclusive features.
 
-  ### Template Customization Options
+### Template Customization Options
 
-  * [Replace the Logo](doc:ootb-email-templates#replace-logo)
-  * [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-  * [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#call-to-actions-ctas)
-  * [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-  * [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-  * [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+* [Replace the Logo](doc:ootb-email-templates#replace-logo)
+* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#call-to-actions-ctas)
+* [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+* [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+* [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
 
-  ### Template Code
+### Template Code
 
-  ```html
-  <!doctype html="">
-  <html lang="en">
+```html
+<!doctype html="">
+<html lang="en">
 
-  <head>
-      <title>Subscription Renewal</title>
-      <style type="text/css">
-          @font-face {             font-family: 'Jost', Arial;             src: url(\\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Light.ttf\\') format(\\'woff\\');             font-style: normal;             font-weight: 300;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Regular.ttf\\') format(\\'woff\\');             font-style: normal;             font-weight: 400;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Medium.ttf\\') format(\\'woff\\');             font-style: normal;             font-weight: 500;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-SemiBold.ttf\\') format(\\'woff\\');             font-style: normal;             font-weight: 600;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Bold.ttf\\') format(\\'woff\\');             font-style: normal;             font-weight: 700;         }                  @media screen and (max-width: 480px) {             .main {                 max-width: 100% !important;             }                        .header-wrap{                 padding: 15px 0 !important;             }             .logo {                 width: 130px !important;                 height: 50px !important;             }             .benefit-wrap{                 max-width: 100% !important;                 padding: 30px 10px !important;             }             .banner-title{                 font-size: 28px !important;                 line-height: 30px !important;             }             .banner-subtitle{                 font-size: 32px !important;                 line-height: 36px !important;                 margin: 15px 0 !important;             }             .banner-desc{                 line-height: 20px !important;             }             .amt{                 font-size: 22px !important;                 line-height: 24px !important;             }             .no-year{                 font-size: 13px !important;                 line-height: 16px !important;             }             .list{                 font-size: 12px !important;                 line-height: 18px !important;             }             .sec-title{                 margin: 0 0 30px !important;                 font-size: 18px !important;             }             .line{                 width: 26% !important;             }             .link{                 font-size: 8px !important;                 line-height: 12px !important;             }             .link img{                 width: 5px !important;                 height: 5px !important;             }             .cta{                 padding: 7px 14px !important;                 font-size: 12px !important;                 line-height: 18px !important;             }             .content-spacing{                 padding: 30px 25px 50px !important;             }         }          @media screen and (max-width: 360px) {             .line{                 width: 18% !important;             }         }
-      </style>
-  </head>
+<head>
+    <title>Subscription Renewal</title>
+    <style type="text/css">
+        @font-face {             font-family: 'Jost', Arial;             src: url(\\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Light.ttf\\') format(\\'woff\\');             font-style: normal;             font-weight: 300;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Regular.ttf\\') format(\\'woff\\');             font-style: normal;             font-weight: 400;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Medium.ttf\\') format(\\'woff\\');             font-style: normal;             font-weight: 500;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-SemiBold.ttf\\') format(\\'woff\\');             font-style: normal;             font-weight: 600;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Bold.ttf\\') format(\\'woff\\');             font-style: normal;             font-weight: 700;         }                  @media screen and (max-width: 480px) {             .main {                 max-width: 100% !important;             }                        .header-wrap{                 padding: 15px 0 !important;             }             .logo {                 width: 130px !important;                 height: 50px !important;             }             .benefit-wrap{                 max-width: 100% !important;                 padding: 30px 10px !important;             }             .banner-title{                 font-size: 28px !important;                 line-height: 30px !important;             }             .banner-subtitle{                 font-size: 32px !important;                 line-height: 36px !important;                 margin: 15px 0 !important;             }             .banner-desc{                 line-height: 20px !important;             }             .amt{                 font-size: 22px !important;                 line-height: 24px !important;             }             .no-year{                 font-size: 13px !important;                 line-height: 16px !important;             }             .list{                 font-size: 12px !important;                 line-height: 18px !important;             }             .sec-title{                 margin: 0 0 30px !important;                 font-size: 18px !important;             }             .line{                 width: 26% !important;             }             .link{                 font-size: 8px !important;                 line-height: 12px !important;             }             .link img{                 width: 5px !important;                 height: 5px !important;             }             .cta{                 padding: 7px 14px !important;                 font-size: 12px !important;                 line-height: 18px !important;             }             .content-spacing{                 padding: 30px 25px 50px !important;             }         }          @media screen and (max-width: 360px) {             .line{                 width: 18% !important;             }         }
+    </style>
+</head>
 
-  <body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" data-new-gr-c-s-loaded="14.1242.0" style="margin: 0px; padding: 0px; cursor: auto;">
-      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 600px; margin: 0 auto; background-color: #FFFFFF; font-family: 'Jost', Arial, sans-serif; font-weight: 400;" width="100%">
-          <!-- header start-->
-          <tbody>
-              <tr>
-                  <td class="header-wrap" style="text-align: center; position: relative; padding: 20px 0;">
-                      <!-- Change image src as per your requirements --><img alt="Logo" class="logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="display: inline-block; width: 150px; height: 80px; object-fit: contain;" /></td>
-              </tr>
-              <!-- header end-->
-              <!-- banner section -->
-              <tr>
-                  <td style=" background: #FF5252;"><img alt="banner image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Subscription/banner.png" style="width: 100%; height: 100%; object-fit: cover;" /></td>
-              </tr>
-              <tr>
-                  <td style="background: #FF5252; padding: 5px 20px 10px;">
-                      <h3 style="margin:0; font-family: 'Jost', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 27px; text-align: center; color: #FFFFFF; text-transform: uppercase;">YOUR PLAN ENDS ON FEB 15 2025</h3>
-                  </td>
-              </tr>
-              <!-- banner section -->
-              <tr>
-                  <td>
-                      <table border="0" cellpadding="0" cellspacing="0" class="main" style="max-width: 95%; margin: 0 auto;" width="100%">
-                          <tbody>
-                              <tr>
-                                  <td class="content-spacing" style="background: #FFFFFF; padding: 30px 36px 50px; text-align: center;">
-                                      <h2 class="banner-title" style="margin:0; font-size: 30px;font-weight: 600;line-height: 34px; text-transform: none;color: #000000;">Hi Emily,</h2>
+<body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" data-new-gr-c-s-loaded="14.1242.0" style="margin: 0px; padding: 0px; cursor: auto;">
+    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 600px; margin: 0 auto; background-color: #FFFFFF; font-family: 'Jost', Arial, sans-serif; font-weight: 400;" width="100%">
+        <!-- header start-->
+        <tbody>
+            <tr>
+                <td class="header-wrap" style="text-align: center; position: relative; padding: 20px 0;">
+                    <!-- Change image src as per your requirements --><img alt="Logo" class="logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="display: inline-block; width: 150px; height: 80px; object-fit: contain;" /></td>
+            </tr>
+            <!-- header end-->
+            <!-- banner section -->
+            <tr>
+                <td style=" background: #FF5252;"><img alt="banner image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Subscription/banner.png" style="width: 100%; height: 100%; object-fit: cover;" /></td>
+            </tr>
+            <tr>
+                <td style="background: #FF5252; padding: 5px 20px 10px;">
+                    <h3 style="margin:0; font-family: 'Jost', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 27px; text-align: center; color: #FFFFFF; text-transform: uppercase;">YOUR PLAN ENDS ON FEB 15 2025</h3>
+                </td>
+            </tr>
+            <!-- banner section -->
+            <tr>
+                <td>
+                    <table border="0" cellpadding="0" cellspacing="0" class="main" style="max-width: 95%; margin: 0 auto;" width="100%">
+                        <tbody>
+                            <tr>
+                                <td class="content-spacing" style="background: #FFFFFF; padding: 30px 36px 50px; text-align: center;">
+                                    <h2 class="banner-title" style="margin:0; font-size: 30px;font-weight: 600;line-height: 34px; text-transform: none;color: #000000;">Hi Emily,</h2>
 
-                                      <h3 class="banner-subtitle" style="color: #5F5F5F;  font-size: 40px; font-weight: 400; line-height: 58px; margin: 0 0 13px;">Renew your subscription</h3>
+                                    <h3 class="banner-subtitle" style="color: #5F5F5F;  font-size: 40px; font-weight: 400; line-height: 58px; margin: 0 0 13px;">Renew your subscription</h3>
 
-                                      <p class="banner-desc" style="color: #4F4F4F; text-transform: none; font-size: 14px;font-weight: 400;line-height: 27px;">Don’t let your plan expire! Continue enjoying uninterrupted access to free delivery and priority support. Renew your subscription now!</p>
+                                    <p class="banner-desc" style="color: #4F4F4F; text-transform: none; font-size: 14px;font-weight: 400;line-height: 27px;">Don’t let your plan expire! Continue enjoying uninterrupted access to free delivery and priority support. Renew your subscription now!</p>
 
-                                      <a class="cta" href="#" style="display: inline-block; text-transform: uppercase; text-decoration: none; padding: 7px 20px; background: #FF5252;font-size: 14px; font-weight: 400; line-height: 27px; text-align: center; color: #FFFFFF !important; box-shadow: 0px 4px 4px 0px #00000040;">Renew now</a>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-              <tr>
-                  <td>
-                      <table border="0" cellpadding="0" cellspacing="0" class="main" style="max-width: 95%; margin: 0 auto; background: #FFFFFF;" width="100%">
-                          <tbody>
-                              <tr>
-                                  <td><img alt="banner image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Subscription/benifit-img.png" style="width: 100%; height: 100%; object-fit: cover;" /></td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-              <tr>
-                  <td>
-                      <table border="0" cellpadding="0" cellspacing="0" class="benefit-wrap" style="max-width:95%; margin: 0 auto 40px; background: #FFFFFF; padding: 50px 0  60px;" width="100%">
-                          <tbody>
-                              <tr>
-                                  <td colspan="3">
-                                      <h2 class="sec-title" style="text-transform: uppercase; color: #000000; margin: 0 0 50px; font-size: 20px; font-weight: 400;  line-height: 20px; text-align: center;">want to switch plans?</h2>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td class="card" style="padding: 0 10px; width: 33%;">
-                                      <h3 class="amt" style="font-size: 28px; font-weight: 500; line-height: 27px; color: rgb(0, 0, 0); margin: 0px 0px 10px;">$99/ month</h3>
+                                    <a class="cta" href="#" style="display: inline-block; text-transform: uppercase; text-decoration: none; padding: 7px 20px; background: #FF5252;font-size: 14px; font-weight: 400; line-height: 27px; text-align: center; color: #FFFFFF !important; box-shadow: 0px 4px 4px 0px #00000040;">Renew now</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table border="0" cellpadding="0" cellspacing="0" class="main" style="max-width: 95%; margin: 0 auto; background: #FFFFFF;" width="100%">
+                        <tbody>
+                            <tr>
+                                <td><img alt="banner image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Subscription/benifit-img.png" style="width: 100%; height: 100%; object-fit: cover;" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table border="0" cellpadding="0" cellspacing="0" class="benefit-wrap" style="max-width:95%; margin: 0 auto 40px; background: #FFFFFF; padding: 50px 0  60px;" width="100%">
+                        <tbody>
+                            <tr>
+                                <td colspan="3">
+                                    <h2 class="sec-title" style="text-transform: uppercase; color: #000000; margin: 0 0 50px; font-size: 20px; font-weight: 400;  line-height: 20px; text-align: center;">want to switch plans?</h2>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="card" style="padding: 0 10px; width: 33%;">
+                                    <h3 class="amt" style="font-size: 28px; font-weight: 500; line-height: 27px; color: rgb(0, 0, 0); margin: 0px 0px 10px;">$99/ month</h3>
 
-                                      <p class="no-year" style="font-size: 18px; font-weight: 400; line-height: 27px; color: #000000; text-transform: uppercase;">silver</p>
+                                    <p class="no-year" style="font-size: 18px; font-weight: 400; line-height: 27px; color: #000000; text-transform: uppercase;">silver</p>
 
-                                      <ul class="list" style="list-style: none; margin: 0; padding: 0; color: #6F6C6C; font-size: 14px; font-weight: 400; line-height: 27px;">
-                                          <li class="item" style="margin-bottom: 5px;">- Free delivery on orders above $50</li>
-                                          <li class="item" style="margin-bottom: 5px;">- Early access to sales</li>
-                                          <li class="item" style="margin-bottom: 5px;">- Flat 10% off</li>
-                                      </ul>
+                                    <ul class="list" style="list-style: none; margin: 0; padding: 0; color: #6F6C6C; font-size: 14px; font-weight: 400; line-height: 27px;">
+                                        <li class="item" style="margin-bottom: 5px;">- Free delivery on orders above $50</li>
+                                        <li class="item" style="margin-bottom: 5px;">- Early access to sales</li>
+                                        <li class="item" style="margin-bottom: 5px;">- Flat 10% off</li>
+                                    </ul>
 
-                                      <a class="link" href="#" style="font-size: 14px; font-weight: 400; line-height: 20px; text-transform: uppercase; color: #FF5252 !important; text-decoration: none; margin-top: 10px;display: inline-block;">Renew now <img src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Subscription/arrow.png" style="width: 15px; height: 10px;" /></a>
-                                  </td>
-                                  <td class="card" style="padding: 0 10px; width: 33%;">
-                                      <h2 class="amt" style="font-size: 28px; font-weight: 500; line-height: 27px;color: #000000; margin: 0 0 10px;">$199/ month</h2>
+                                    <a class="link" href="#" style="font-size: 14px; font-weight: 400; line-height: 20px; text-transform: uppercase; color: #FF5252 !important; text-decoration: none; margin-top: 10px;display: inline-block;">Renew now <img src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Subscription/arrow.png" style="width: 15px; height: 10px;" /></a>
+                                </td>
+                                <td class="card" style="padding: 0 10px; width: 33%;">
+                                    <h2 class="amt" style="font-size: 28px; font-weight: 500; line-height: 27px;color: #000000; margin: 0 0 10px;">$199/ month</h2>
 
-                                      <p class="no-year" style="font-size: 18px; font-weight: 400; line-height: 27px; color: #000000; text-transform: uppercase;">gold</p>
+                                    <p class="no-year" style="font-size: 18px; font-weight: 400; line-height: 27px; color: #000000; text-transform: uppercase;">gold</p>
 
-                                      <ul class="list" style="list-style: none; margin: 0; padding: 0; color: #6F6C6C; font-size: 14px; font-weight: 400; line-height: 27px;">
-                                          <li class="item" style="margin-bottom: 5px;">- Free delivery on orders above $25</li>
-                                          <li class="item" style="margin-bottom: 5px;">- Early access to sales</li>
-                                          <li class="item" style="margin-bottom: 5px;">- Flat 15% off</li>
-                                      </ul>
+                                    <ul class="list" style="list-style: none; margin: 0; padding: 0; color: #6F6C6C; font-size: 14px; font-weight: 400; line-height: 27px;">
+                                        <li class="item" style="margin-bottom: 5px;">- Free delivery on orders above $25</li>
+                                        <li class="item" style="margin-bottom: 5px;">- Early access to sales</li>
+                                        <li class="item" style="margin-bottom: 5px;">- Flat 15% off</li>
+                                    </ul>
 
-                                      <a class="link" href="#" style="font-size: 14px; font-weight: 400; line-height: 20px; text-transform: uppercase; color: #FF5252 !important; text-decoration: none; margin-top: 10px;display: inline-block;">REnew now <img src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Subscription/arrow.png" style="width: 15px; height: 10px;" /></a>
-                                  </td>
-                                  <td class="card" style="padding: 0 10px; width: 33%;">
-                                      <h2 class="amt" style="font-size: 28px; font-weight: 500; line-height: 27px;color: #000000; margin: 0 0 10px;">$299/ month</h2>
+                                    <a class="link" href="#" style="font-size: 14px; font-weight: 400; line-height: 20px; text-transform: uppercase; color: #FF5252 !important; text-decoration: none; margin-top: 10px;display: inline-block;">REnew now <img src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Subscription/arrow.png" style="width: 15px; height: 10px;" /></a>
+                                </td>
+                                <td class="card" style="padding: 0 10px; width: 33%;">
+                                    <h2 class="amt" style="font-size: 28px; font-weight: 500; line-height: 27px;color: #000000; margin: 0 0 10px;">$299/ month</h2>
 
-                                      <p class="no-year" style="font-size: 18px; font-weight: 400; line-height: 27px; color: #000000; text-transform: uppercase;">premium</p>
+                                    <p class="no-year" style="font-size: 18px; font-weight: 400; line-height: 27px; color: #000000; text-transform: uppercase;">premium</p>
 
-                                      <ul class="list" style="list-style: none; margin: 0; padding: 0; color: #6F6C6C; font-size: 14px; font-weight: 400; line-height: 27px;">
-                                          <li class="item" style="margin-bottom: 5px;">- Free delivery on all orders</li>
-                                          <li class="item" style="margin-bottom: 5px;">- Free one-day delivery</li>
-                                          <li class="item" style="margin-bottom: 5px;">- Flat 30% off</li>
-                                      </ul>
+                                    <ul class="list" style="list-style: none; margin: 0; padding: 0; color: #6F6C6C; font-size: 14px; font-weight: 400; line-height: 27px;">
+                                        <li class="item" style="margin-bottom: 5px;">- Free delivery on all orders</li>
+                                        <li class="item" style="margin-bottom: 5px;">- Free one-day delivery</li>
+                                        <li class="item" style="margin-bottom: 5px;">- Flat 30% off</li>
+                                    </ul>
 
-                                      <a class="link" display_text_og="RENIVEW%20NOW" href="#" href_og="%23" style="font-size: 14px; font-weight: 400; line-height: 20px; text-transform: uppercase; text-decoration: none; margin-top: 10px; display: inline-block; color: rgb(255, 82, 82) !important;">RENEW NOW</a>
+                                    <a class="link" display_text_og="RENIVEW%20NOW" href="#" href_og="%23" style="font-size: 14px; font-weight: 400; line-height: 20px; text-transform: uppercase; text-decoration: none; margin-top: 10px; display: inline-block; color: rgb(255, 82, 82) !important;">RENEW NOW</a>
 
-                                      <a class="link" href="#" style="font-size: 14px; font-weight: 400; line-height: 20px; text-transform: uppercase; color: #FF5252 !important; text-decoration: none; margin-top: 10px;display: inline-block;"><img src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Subscription/arrow.png" style="width: 15px; height: 10px;" /></a>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-              <!-- footer start-->
-              <tr>
-                  <td align="center" style="border-top: 9px solid #FF5252; padding-top: 40px;">
-                      <table align="center" border="0" cellpadding="0" cellspacing="0" class="footer-conatiner" role="presentation" style="max-width: 95%; margin: 0 auto; background: #FF5252; padding: 37px 0 39px; ">
-                          <tbody>
-                              <tr>
-                                  <td style="padding: 0;">
-                                      <table align="center" border="0" cellpadding="0" cellspacing="0" style="text-align: center;" width="100%">
-                                          <tbody>
-                                              <tr>
-                                                  <td class="line" style="width: 35%; height: 1px; background: #FFFFFF; display: inline-block; vertical-align: middle;"> </td>
-                                                  <td style="padding: 0 14px; display: inline-block;">
-                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 25px; height: 25px; ">
-                                                          <!-- Change image src as per your requirements --><img alt="instagram" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/3c09a826b3cd4920aa1230c7df32f91b.png" style="width: 100%; height: 100%;" /></a>
-                                                  </td>
-                                                  <td style="padding: 0 14px; display: inline-block;">
-                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 25px; height: 25px;"><img alt="facebook" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/18c1b92ff17443f38388d771deef565a.png" style="width: 100%; height: 100%;" /></a>
-                                                  </td>
-                                                  <td style="padding: 0 14px; display: inline-block;">
-                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 25px; height: 25px;"><img alt="x" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/a971a978e8544cbfb0a0f3456c21463e.png" style="width: 100%; height: 100%;" /></a>
-                                                  </td>
-                                                  <td class="line" style="width: 35%; height: 1px; background: #FFFFFF; display: inline-block; vertical-align: middle;"> </td>
-                                              </tr>
-                                          </tbody>
-                                      </table>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td>
-                                      <p style="font-size: 14px; font-weight: 400; line-height: 27px; text-align: center; color: #FFFFFF; margin: 31px auto 0; max-width: 73%; text-transform: none;">For assistance, connect with us on social media or reach out to our support team at
-                                          <a data-renderer-mark="true" data-testid="link-with-safety" href="support@example.com" style="color: #FFFFFF;" title="support@example.com">support@example.com</a>
-                                      </p>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td>
-                                      <p style="font-size: 14px; font-weight: 400; line-height: 27px; text-align: center; color: #FFFFFF; margin: 31px auto 0; max-width: 73%; text-transform: none;">To opt out of promotional emails like this,
-                                          <a href="#" style="color:#fff;font-weight:bold;text-decoration:none;">unsubscribe here</a>
-                                      </p>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-              <!-- footer end-->
-          </tbody>
-      </table>
-  </body>
-  <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+                                    <a class="link" href="#" style="font-size: 14px; font-weight: 400; line-height: 20px; text-transform: uppercase; color: #FF5252 !important; text-decoration: none; margin-top: 10px;display: inline-block;"><img src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Subscription/arrow.png" style="width: 15px; height: 10px;" /></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- footer start-->
+            <tr>
+                <td align="center" style="border-top: 9px solid #FF5252; padding-top: 40px;">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" class="footer-conatiner" role="presentation" style="max-width: 95%; margin: 0 auto; background: #FF5252; padding: 37px 0 39px; ">
+                        <tbody>
+                            <tr>
+                                <td style="padding: 0;">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" style="text-align: center;" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td class="line" style="width: 35%; height: 1px; background: #FFFFFF; display: inline-block; vertical-align: middle;"> </td>
+                                                <td style="padding: 0 14px; display: inline-block;">
+                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 25px; height: 25px; ">
+                                                        <!-- Change image src as per your requirements --><img alt="instagram" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/3c09a826b3cd4920aa1230c7df32f91b.png" style="width: 100%; height: 100%;" /></a>
+                                                </td>
+                                                <td style="padding: 0 14px; display: inline-block;">
+                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 25px; height: 25px;"><img alt="facebook" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/18c1b92ff17443f38388d771deef565a.png" style="width: 100%; height: 100%;" /></a>
+                                                </td>
+                                                <td style="padding: 0 14px; display: inline-block;">
+                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 25px; height: 25px;"><img alt="x" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/a971a978e8544cbfb0a0f3456c21463e.png" style="width: 100%; height: 100%;" /></a>
+                                                </td>
+                                                <td class="line" style="width: 35%; height: 1px; background: #FFFFFF; display: inline-block; vertical-align: middle;"> </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p style="font-size: 14px; font-weight: 400; line-height: 27px; text-align: center; color: #FFFFFF; margin: 31px auto 0; max-width: 73%; text-transform: none;">For assistance, connect with us on social media or reach out to our support team at
+                                        <a data-renderer-mark="true" data-testid="link-with-safety" href="support@example.com" style="color: #FFFFFF;" title="support@example.com">support@example.com</a>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p style="font-size: 14px; font-weight: 400; line-height: 27px; text-align: center; color: #FFFFFF; margin: 31px auto 0; max-width: 73%; text-transform: none;">To opt out of promotional emails like this,
+                                        <a href="#" style="color:#fff;font-weight:bold;text-decoration:none;">unsubscribe here</a>
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- footer end-->
+        </tbody>
+    </table>
+</body>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
 
-  </html>
-  ```
-</details>
+</html>
+```
+
+</Accordion>
 
 ## Scratch Card Template
 
@@ -5086,89 +5076,89 @@ This is an interactive email template designed to gamify the user experience by 
 
 <Image align="center" alt="Sample Scratch Card Template" border={true} caption="Sample Scratch Card Template" src="https://files.readme.io/24e9bc9f41472d95c1db40a20c5b28651cfce5332851f800232fcea0b779782e-Scratch_Card_HTML.png" width="25% " />
 
-<details>
-  <summary><b>Expand to know more about the template.</b></summary>
+<Accordion title="Expand to know more about the template.">
 
-  ### Use Case Examples
+### Use Case Examples
 
-  * Engage users during festive or seasonal campaigns with surprise offers.
-  * Reactivate dormant users by giving them a chance to win a reward.
-  * Reward loyal customers with a fun, interactive coupon reveal.
-  * Launch a limited-time “scratch-to-win” contest to drive urgency and clicks.
+* Engage users during festive or seasonal campaigns with surprise offers.
+* Reactivate dormant users by giving them a chance to win a reward.
+* Reward loyal customers with a fun, interactive coupon reveal.
+* Launch a limited-time “scratch-to-win” contest to drive urgency and clicks.
 
-  ### Template Customization Options
+### Template Customization Options
 
-  * [Replace the Logo](doc:ootb-email-templates#replace-logo)
-  * [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-  * [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#call-to-actions-ctas)
-  * [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-  * [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-  * [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+* [Replace the Logo](doc:ootb-email-templates#replace-logo)
+* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#call-to-actions-ctas)
+* [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+* [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+* [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
 
-  ### Template Code
+### Template Code
 
-  ```html
-  <!doctype html="">
-  <html lang="en">
+```html
+<!doctype html="">
+<html lang="en">
 
-  <head>
-      <title>Scratch Card</title>
-      <link href="https://fonts.googleapis.com" rel="preconnect" />
-      <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet" />
-      <style type="text/css">
-          @media screen and (max-width: 480px) {             .container {                 max-width: 100% !important;             }             .heading{                 font-size: 38px !important;                 line-height: 60px !important;             }             .coupon{                 font-size: 24px !important;                 line-height: 60px !important;             }             .coupon-code{                 font-size: 32px !important;                 line-height: 46px !important;             }         }
-      </style>
-  </head>
+<head>
+    <title>Scratch Card</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet" />
+    <style type="text/css">
+        @media screen and (max-width: 480px) {             .container {                 max-width: 100% !important;             }             .heading{                 font-size: 38px !important;                 line-height: 60px !important;             }             .coupon{                 font-size: 24px !important;                 line-height: 60px !important;             }             .coupon-code{                 font-size: 32px !important;                 line-height: 46px !important;             }         }
+    </style>
+</head>
 
-  <body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" data-new-gr-c-s-loaded="14.1242.0" style="font-family: 'Poppins', Arial, sans-serif; font-weight: 400; margin: 0; padding: 0;">
-      <table border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 600px; margin: 0 auto; background: url(https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Scratch%20Card/bg.png);background-repeat: no-repeat; background-position: center; "
-      width="100%">
-          <!-- header start-->
-          <tbody>
-              <tr>
-                  <td style="text-align: center; vertical-align: middle; padding: 40px;">
-                      <!-- Change image src as per your requirements -->
-                      <div class="logo" style="background: url(https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Scratch%20Card/logobg.png);background-repeat: no-repeat; background-position: center;"><img alt="Logo" class="logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="display: inline-block; width: 127px; height: 58px; object-fit: cover;" /></div>
-                  </td>
-              </tr>
-              <!-- header end-->
-              <!-- scrtach card start-->
-              <tr>
-                  <td class="product-sec" style="text-align: center; padding:0px 40px 40px 40px; display: block;">
-                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; width: 100%;">
-                          <tbody>
-                              <tr>
-                                  <td style="text-align: center;">
-                                      <h2 class="heading" style="color:#ffffff; font-family: 'Poppins', Arial, sans-serif; font-size: 45px; font-weight: 700; line-height: 68px; margin: 0 auto; padding-bottom: 20px;">Mid-Season Sale</h2>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td style="padding:0px 10px;"><img alt="banner image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Scratch%20Card/offer.png" style="width: 100%; height: 100%; object-fit: cover;" /></td>
-                              </tr>
-                              <tr>
-                                  <td style="text-align: center;">
-                                      <p class="coupon" style="color:#ffffff; font-family: 'Poppins', Arial, sans-serif; font-size: 34px; font-weight: 600; line-height: 80px; margin: 0 auto; text-transform: uppercase; line-height: 44px;">Scratch to see code</p>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td style="text-align: center; padding-top: 20px;">
-                                      <a href="https://in1.dashboard.clevertap.com/redirect-to-login.html" style="display: inline-block; max-width: 90%; max-height: 150px; margin: 0 auto;"><img alt="Scratch card" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Scratch%20Card/Property%201%3DComponent%2068.png" style="width: 100%; height: 100%; object-fit: contain;" /></a>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-              <!-- scrtach card end-->
-          </tbody>
-      </table>
-  </body>
-  <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+<body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" data-new-gr-c-s-loaded="14.1242.0" style="font-family: 'Poppins', Arial, sans-serif; font-weight: 400; margin: 0; padding: 0;">
+    <table border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 600px; margin: 0 auto; background: url(https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Scratch%20Card/bg.png);background-repeat: no-repeat; background-position: center; "
+    width="100%">
+        <!-- header start-->
+        <tbody>
+            <tr>
+                <td style="text-align: center; vertical-align: middle; padding: 40px;">
+                    <!-- Change image src as per your requirements -->
+                    <div class="logo" style="background: url(https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Scratch%20Card/logobg.png);background-repeat: no-repeat; background-position: center;"><img alt="Logo" class="logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="display: inline-block; width: 127px; height: 58px; object-fit: cover;" /></div>
+                </td>
+            </tr>
+            <!-- header end-->
+            <!-- scrtach card start-->
+            <tr>
+                <td class="product-sec" style="text-align: center; padding:0px 40px 40px 40px; display: block;">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; width: 100%;">
+                        <tbody>
+                            <tr>
+                                <td style="text-align: center;">
+                                    <h2 class="heading" style="color:#ffffff; font-family: 'Poppins', Arial, sans-serif; font-size: 45px; font-weight: 700; line-height: 68px; margin: 0 auto; padding-bottom: 20px;">Mid-Season Sale</h2>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding:0px 10px;"><img alt="banner image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Scratch%20Card/offer.png" style="width: 100%; height: 100%; object-fit: cover;" /></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;">
+                                    <p class="coupon" style="color:#ffffff; font-family: 'Poppins', Arial, sans-serif; font-size: 34px; font-weight: 600; line-height: 80px; margin: 0 auto; text-transform: uppercase; line-height: 44px;">Scratch to see code</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center; padding-top: 20px;">
+                                    <a href="https://in1.dashboard.clevertap.com/redirect-to-login.html" style="display: inline-block; max-width: 90%; max-height: 150px; margin: 0 auto;"><img alt="Scratch card" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Scratch%20Card/Property%201%3DComponent%2068.png" style="width: 100%; height: 100%; object-fit: contain;" /></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- scrtach card end-->
+        </tbody>
+    </table>
+</body>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
 
-  </html>
-  ```
-</details>
+</html>
+```
+
+</Accordion>
 
 ## Welcome Mailer Template
 
@@ -5176,369 +5166,183 @@ A warm onboarding email template greets new users, introduces your brand, and gu
 
 <Image align="center" alt="Sample Welcome Mailer Tempaltes" border={true} caption="Sample Welcome Mailer Templates" src="https://files.readme.io/2e474cae87b50fdc4ee57e01a596acebbc0617e48be7f189ebc6013d79575f20-Welcome_Email_1__2_HTML.png" width="65% " />
 
-<details>
-  <summary><b>Expand to know more about the template.</b></summary>
+<Accordion title="My Accordion Title" icon="fa-info-circle">
 
-  ### Use Case Examples
+### Use Case Examples
 
-  * Introduces new subscribers to the brand
-  * Highlights key benefits of your product and encourages first engagement or purchases.
+* Introduces new subscribers to the brand
+* Highlights key benefits of your product and encourages first engagement or purchases.
 
-  ### Template Customization Options
+### Template Customization Options
 
-  * [Replace the Logo](doc:ootb-email-templates#replace-logo)
-  * [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-  * [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#call-to-actions-ctas)
-  * [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-  * [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-  * [Update the Privacy Policy](doc:ootb-email-templates#update-privacy-policy)
-  * [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+* [Replace the Logo](doc:ootb-email-templates#replace-logo)
+* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#call-to-actions-ctas)
+* [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+* [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+* [Update the Privacy Policy](doc:ootb-email-templates#update-privacy-policy)
+* [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
 
-  ### Template Code
+### Template Code
 
-  ```html Variant 1
-  <!doctype html="">
-  <html lang="en">
+```html
+<!doctype html="">
+<html lang="en">
 
-  <head>
-      <title></title>
-      <link href="https://fonts.googleapis.com" rel="preconnect" />
-      <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet" />
-      <style type="text/css">
-          * { 			margin: 0; 			padding: 0; 		}  		@media only screen and (max-width:480px) { 			.title { 				font-size: 26px !important; 				line-height: 36px !important; 				margin-top: 25px !important; 			}  			.sub-title { 				margin-top: 10px !important; 			}  			.f-desc { 				line-height: 20px; 			}  			.detail-block .d-desc { 				max-width: 90% !important; 			} 		}
-      </style>
-  </head>
+<head>
+    <title></title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet" />
+    <style type="text/css">
+        * { 			margin: 0; 			padding: 0; 		}  		@media only screen and (max-width:480px) { 			.title { 				font-size: 26px !important; 				line-height: 36px !important; 				margin-top: 25px !important; 			}  			.sub-title { 				margin-top: 10px !important; 			}  			.f-desc { 				line-height: 20px; 			}  			.detail-block .d-desc { 				max-width: 90% !important; 			} 		}
+    </style>
+</head>
 
-  <body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" data-new-gr-c-s-loaded="14.1242.0" style="cursor: auto;">
-      <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%; max-width: 600px; margin: 0 auto; background: #ffffff;" width="100%">
-          <tbody>
-              <tr>
-                  <td style=" padding: 17px 30px; border-bottom: 0.5px solid #979797; text-align: right;">
-                      <a class="btn" href="#" style="font-family:Poppins, Arial, sans-serif; padding: 5px 15px; background: #1DBF73; border-radius: 10px; font-size: 12px; line-height: 24px; vertical-align: middle; color: #000 !important; text-decoration: none; display: inline-block; font-weight: 400;">Get 30% OFF →</a>
-                  </td>
-              </tr>
-              <tr>
-                  <td style=" text-align: center; border-bottom: 0.5px solid #979797; position: relative;">
-                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                          <tbody>
-                              <tr>
-                                  <td style="width: 50%; vertical-align: middle;">
-                                      <div style="border-top: 1px solid #1DBF73;"> </div>
-                                  </td>
-                                  <td style="width: auto; text-align: center; vertical-align: middle;">
-                                      <!-- Change Logo Image src as per your requirements --><img alt="Logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="display: inline-block; max-width: 146px; height: auto; background: #ffffff; padding: 0 10px; vertical-align: middle;"
-                                      />
-                                      <!-- Change Logo Image src as per your requirements -->
-                                  </td>
-                                  <td style="width: 50%; vertical-align: middle;">
-                                      <div style="border-top: 1px solid #1DBF73;"> </div>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-              <tr>
-                  <td>
-                      <h2 class="title" style=" font-family: Poppins, Arial, sans-serif; font-size: 36px; line-height: 45px; text-align: center; text-transform: uppercase; color: #000000; margin: 29px 30px 0;"><span class="cm-light" style="font-family: Poppins, Arial, sans-serif; font-weight: 300; display: block;">WELCOME!</span> WE’RE EXCITED TO HAVE YOU WITH US</h2>
+<body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" data-new-gr-c-s-loaded="14.1242.0" style="cursor: auto;">
+    <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%; max-width: 600px; margin: 0 auto; background: #ffffff;" width="100%">
+        <tbody>
+            <tr>
+                <td style=" padding: 17px 30px; border-bottom: 0.5px solid #979797; text-align: right;">
+                    <a class="btn" href="#" style="font-family:Poppins, Arial, sans-serif; padding: 5px 15px; background: #1DBF73; border-radius: 10px; font-size: 12px; line-height: 24px; vertical-align: middle; color: #000 !important; text-decoration: none; display: inline-block; font-weight: 400;">Get 30% OFF →</a>
+                </td>
+            </tr>
+            <tr>
+                <td style=" text-align: center; border-bottom: 0.5px solid #979797; position: relative;">
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tbody>
+                            <tr>
+                                <td style="width: 50%; vertical-align: middle;">
+                                    <div style="border-top: 1px solid #1DBF73;"> </div>
+                                </td>
+                                <td style="width: auto; text-align: center; vertical-align: middle;">
+                                    <!-- Change Logo Image src as per your requirements --><img alt="Logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="display: inline-block; max-width: 146px; height: auto; background: #ffffff; padding: 0 10px; vertical-align: middle;"
+                                    />
+                                    <!-- Change Logo Image src as per your requirements -->
+                                </td>
+                                <td style="width: 50%; vertical-align: middle;">
+                                    <div style="border-top: 1px solid #1DBF73;"> </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2 class="title" style=" font-family: Poppins, Arial, sans-serif; font-size: 36px; line-height: 45px; text-align: center; text-transform: uppercase; color: #000000; margin: 29px 30px 0;"><span class="cm-light" style="font-family: Poppins, Arial, sans-serif; font-weight: 300; display: block;">WELCOME!</span> WE’RE EXCITED TO HAVE YOU WITH US</h2>
 
-                      <p class="sub-title" style="font-family: Poppins, Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 32px; text-align: center; margin: 20px 30px 40px; color: #4F4F4F;">Get ready to discover what we have in store for you.</p>
-                  </td>
-              </tr>
-              <tr>
-                  <td style="text-align: center;">
-                      <div class="banner-img-wrap">
-                          <!-- Change Banner Image src as per your requirements --><img alt="banner" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Screenshot%202024-09-03%20at%2011.54.02%E2%80%AFPM.png" style="width: 100%; height:100%;" />
-                          <!-- Change Banner Image src as per your requirements -->
-                      </div>
-                  </td>
-              </tr>
-              <tr>
-                  <td class="detail-block" style="padding: 70px 20px 30px; margin-bottom: 30px; text-align: center; background-color: #ffffff;">
-                      <h3 class="d-title" style="font-family:Poppins, Arial, sans-serif; font-size: 32px; font-weight: 400; line-height: 52px; text-align: center; margin-bottom: 18px; text-transform: uppercase; color: #0D0D0D;">LET’S GET STARTED</h3>
+                    <p class="sub-title" style="font-family: Poppins, Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 32px; text-align: center; margin: 20px 30px 40px; color: #4F4F4F;">Get ready to discover what we have in store for you.</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">
+                    <div class="banner-img-wrap">
+                        <!-- Change Banner Image src as per your requirements --><img alt="banner" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Screenshot%202024-09-03%20at%2011.54.02%E2%80%AFPM.png" style="width: 100%; height:100%;" />
+                        <!-- Change Banner Image src as per your requirements -->
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="detail-block" style="padding: 70px 20px 30px; margin-bottom: 30px; text-align: center; background-color: #ffffff;">
+                    <h3 class="d-title" style="font-family:Poppins, Arial, sans-serif; font-size: 32px; font-weight: 400; line-height: 52px; text-align: center; margin-bottom: 18px; text-transform: uppercase; color: #0D0D0D;">LET’S GET STARTED</h3>
 
-                      <p class="d-desc" style="font-family:Poppins, Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 30px; text-align: center; margin: 0 auto 24px; max-width: 70%; color: #4F4F4F;">Welcome aboard! Your journey with us starts now, and we&#39;re here to make it count. Get started by exploring our website to know more about what we stand for. Stay on top of what’s new, get access to exclusive deals, and much more.</p>
+                    <p class="d-desc" style="font-family:Poppins, Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 30px; text-align: center; margin: 0 auto 24px; max-width: 70%; color: #4F4F4F;">Welcome aboard! Your journey with us starts now, and we&#39;re here to make it count. Get started by exploring our website to know more about what we stand for. Stay on top of what’s new, get access to exclusive deals, and much more.</p>
 
-                      <a class="btn-cta" display_text_og="Learn%20More" href="#" href_og="%23" style="padding: 7px 43px; max-width: 182px; font-family: Poppins, Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 20px; text-align: center; background: rgb(29, 191, 115); outline: none; border: none; text-decoration: none; color: rgb(13, 13, 13) !important;">Learn More</a>
+                    <a class="btn-cta" display_text_og="Learn%20More" href="#" href_og="%23" style="padding: 7px 43px; max-width: 182px; font-family: Poppins, Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 20px; text-align: center; background: rgb(29, 191, 115); outline: none; border: none; text-decoration: none; color: rgb(13, 13, 13) !important;">Learn More</a>
 
-                      <div class="img-wrap" style="max-height: 368px; border-radius: 20px; margin-top: 50px;">
-                          <!-- Change image src as per your requirements --><img alt="product img" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/pro-1.png" style="border-radius: 20px;" /></div>
-                  </td>
-              </tr>
-              <tr>
-                  <td class="detail-block" style="padding: 70px 20px 30px; margin-bottom: 30px; text-align: center; background-color: #F0EEF6;">
-                      <h3 class="d-title" poppins="" style="font-family:">WHAT YOU CAN EXPECT</h3>
+                    <div class="img-wrap" style="max-height: 368px; border-radius: 20px; margin-top: 50px;">
+                        <!-- Change image src as per your requirements --><img alt="product img" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/pro-1.png" style="border-radius: 20px;" /></div>
+                </td>
+            </tr>
+            <tr>
+                <td class="detail-block" style="padding: 70px 20px 30px; margin-bottom: 30px; text-align: center; background-color: #F0EEF6;">
+                    <h3 class="d-title" poppins="" style="font-family:">WHAT YOU CAN EXPECT</h3>
 
-                      <p class="d-desc" style="font-family:Poppins, Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 30px; text-align: center; margin: 0 auto 24px; max-width: 70%; color: #4F4F4F;">As a member of our community, you&#39;re on your way to unlocking a host of benefits tailored just for you. Expect personalized content, early access to new features, exclusive discounts, and expert insights that will help you stay
-                          ahead of the curve.</p>
+                    <p class="d-desc" style="font-family:Poppins, Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 30px; text-align: center; margin: 0 auto 24px; max-width: 70%; color: #4F4F4F;">As a member of our community, you&#39;re on your way to unlocking a host of benefits tailored just for you. Expect personalized content, early access to new features, exclusive discounts, and expert insights that will help you stay
+                        ahead of the curve.</p>
 
-                      <a class="btn-cta" display_text_og="Learn%20More" href="#" href_og="%23" style="padding: 7px 43px; max-width: 182px; font-family: Poppins, Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 20px; text-align: center; background: rgb(29, 191, 115); outline: none; border: none; text-decoration: none; color: rgb(13, 13, 13) !important;">Learn More</a>
+                    <a class="btn-cta" display_text_og="Learn%20More" href="#" href_og="%23" style="padding: 7px 43px; max-width: 182px; font-family: Poppins, Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 20px; text-align: center; background: rgb(29, 191, 115); outline: none; border: none; text-decoration: none; color: rgb(13, 13, 13) !important;">Learn More</a>
 
-                      <div class="img-wrap" style="max-height: 368px; border-radius: 20px; margin-top: 50px;">
-                          <!-- Change image src as per your requirements --><img alt="product img" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/pro-2.png" style="border-radius: 20px;" /></div>
-                  </td>
-              </tr>
-              <tr>
-                  <td style="padding-top: 36px;">
-                      <table border="0" cellpadding="0" cellspacing="0" class="footer" style="background: #F7F7F7;" width="100%">
-                          <tbody>
-                              <tr>
-                                  <td colspan="5">
-                                      <h2 class="footer-title" style="font-family: Poppins, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 32px; text-align: center; color: #0D0D0D; text-transform: uppercase; margin:20px 0;">download OUR APP</h2>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td style="width: 30%; vertical-align: center; color: #979797">
-                                      <div style="border-top: 1px solid #979797;"> </div>
-                                  </td>
-                                  <td style="width: auto; text-align: center; vertical-align: bottom;">
-                                      <a class="btn-link" href="#" style="margin: 0 10px;">
-                                          <!-- Change image src as per your requirements --><img alt="Download on Android" class="btn-img" src="https://d2xdgxd31vfz2r.cloudfront.net/1645780864/assets/6a5367d7266744b5a2b3f9d42a2d1757.png" style="background: #F7F7F7; position: relative; z-index: 1; height: 45px"
-                                          /></a>
-                                  </td>
-                                  <td style="width: 5%; vertical-align: center;">
-                                      <div style="border-top: 1px solid #979797"> </div>
-                                  </td>
-                                  <td style="width: auto; text-align: center; vertical-align: bottom; color: #979797">
-                                      <a class="btn-link" href="#" style="margin: 0 10px;">
-                                          <!-- Change image src as per your requirements --><img alt="Download on Apple" class="btn-img" src="https://d2xdgxd31vfz2r.cloudfront.net/1645780864/assets/2b9962fdc2dc4ce5a20bde593965d5d4.png" style="background: #F7F7F7; position: relative; z-index: 1; height: 45px"
-                                          /></a>
-                                  </td>
-                                  <td style="width: 30%; vertical-align: center; color: #979797">
-                                      <div style="border-top: 1px solid #979797"> </div>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td colspan="5">
-                                      <p class="f-desc" style="font-family:Poppins, Arial, sans-serif; padding: 22px 0 33px; font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #939393; max-width: 80%; margin: 0 auto;">For assistance, reach out to our support team at
-                                          <a data-renderer-mark="true" data-testid="link-with-safety" href="support@example.com" title="support@example.com">support@example.com</a>
-                                      </p>
-                                  </td>
-                              </tr>
-                              <tr class="f-wrap">
-                                  <td colspan="5">
-                                      <ul class="f-nav-list" style="padding: 19px 0; list-style: none; text-align: center; border-top: 1px solid #979797">
-                                          <li class="f-nav-item" style=" margin: 0 5px;display: inline-block;">
-                                              <a class="f-nav-link" href="#" style="font-family: Poppins, Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #939393 !important; text-decoration: none;">Contact Us</a>
-                                          </li>
-                                          <li class="f-nav-item" style=" margin: 0 5px; display: inline-block;">
-                                              <a class="f-nav-link" href="#" style="font-family: Poppins, Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #939393 !important; text-decoration: none;">Terms of Use</a>
-                                          </li>
-                                          <li class="f-nav-item" style=" margin: 0 5px; display: inline-block;">
-                                              <a class="f-nav-link" href="#" style="font-family: Poppins, Arial, sans-serif; font-size: 14px;  font-weight: 400; line-height: 24px; color: #939393 !important; text-decoration: none;">Privacy Policy</a>
-                                          </li>
-                                      </ul>
-                                  </td>
-                              </tr>
-                              <!-- Unsubscribe Section-->
-                              <tr class="f-wrap">
-                                  <td colspan="5">
-                                      <hr style="border: none; border-top: 1px solid #939393; margin: 0 auto; max-width: 100%;" />
-                                      <p class="f-desc" style="font-family:Poppins, Arial, sans-serif; padding: 22px 0 33px; font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #939393; max-width: 80%; margin: 0 auto;">To opt out of promotional emails like this,
-                                          <a href="#" style="color:#1DBF73;text-decoration:none;font-weight:bold">unsubscribe here</a>
-                                      </p>
-                                  </td>
-                              </tr>
-                              <!-- Unsubscribe Section-->
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-          </tbody>
-      </table>
-      <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
-  </body>
+                    <div class="img-wrap" style="max-height: 368px; border-radius: 20px; margin-top: 50px;">
+                        <!-- Change image src as per your requirements --><img alt="product img" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/pro-2.png" style="border-radius: 20px;" /></div>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-top: 36px;">
+                    <table border="0" cellpadding="0" cellspacing="0" class="footer" style="background: #F7F7F7;" width="100%">
+                        <tbody>
+                            <tr>
+                                <td colspan="5">
+                                    <h2 class="footer-title" style="font-family: Poppins, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 32px; text-align: center; color: #0D0D0D; text-transform: uppercase; margin:20px 0;">download OUR APP</h2>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 30%; vertical-align: center; color: #979797">
+                                    <div style="border-top: 1px solid #979797;"> </div>
+                                </td>
+                                <td style="width: auto; text-align: center; vertical-align: bottom;">
+                                    <a class="btn-link" href="#" style="margin: 0 10px;">
+                                        <!-- Change image src as per your requirements --><img alt="Download on Android" class="btn-img" src="https://d2xdgxd31vfz2r.cloudfront.net/1645780864/assets/6a5367d7266744b5a2b3f9d42a2d1757.png" style="background: #F7F7F7; position: relative; z-index: 1; height: 45px"
+                                        /></a>
+                                </td>
+                                <td style="width: 5%; vertical-align: center;">
+                                    <div style="border-top: 1px solid #979797"> </div>
+                                </td>
+                                <td style="width: auto; text-align: center; vertical-align: bottom; color: #979797">
+                                    <a class="btn-link" href="#" style="margin: 0 10px;">
+                                        <!-- Change image src as per your requirements --><img alt="Download on Apple" class="btn-img" src="https://d2xdgxd31vfz2r.cloudfront.net/1645780864/assets/2b9962fdc2dc4ce5a20bde593965d5d4.png" style="background: #F7F7F7; position: relative; z-index: 1; height: 45px"
+                                        /></a>
+                                </td>
+                                <td style="width: 30%; vertical-align: center; color: #979797">
+                                    <div style="border-top: 1px solid #979797"> </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5">
+                                    <p class="f-desc" style="font-family:Poppins, Arial, sans-serif; padding: 22px 0 33px; font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #939393; max-width: 80%; margin: 0 auto;">For assistance, reach out to our support team at
+                                        <a data-renderer-mark="true" data-testid="link-with-safety" href="support@example.com" title="support@example.com">support@example.com</a>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="f-wrap">
+                                <td colspan="5">
+                                    <ul class="f-nav-list" style="padding: 19px 0; list-style: none; text-align: center; border-top: 1px solid #979797">
+                                        <li class="f-nav-item" style=" margin: 0 5px;display: inline-block;">
+                                            <a class="f-nav-link" href="#" style="font-family: Poppins, Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #939393 !important; text-decoration: none;">Contact Us</a>
+                                        </li>
+                                        <li class="f-nav-item" style=" margin: 0 5px; display: inline-block;">
+                                            <a class="f-nav-link" href="#" style="font-family: Poppins, Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #939393 !important; text-decoration: none;">Terms of Use</a>
+                                        </li>
+                                        <li class="f-nav-item" style=" margin: 0 5px; display: inline-block;">
+                                            <a class="f-nav-link" href="#" style="font-family: Poppins, Arial, sans-serif; font-size: 14px;  font-weight: 400; line-height: 24px; color: #939393 !important; text-decoration: none;">Privacy Policy</a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <!-- Unsubscribe Section-->
+                            <tr class="f-wrap">
+                                <td colspan="5">
+                                    <hr style="border: none; border-top: 1px solid #939393; margin: 0 auto; max-width: 100%;" />
+                                    <p class="f-desc" style="font-family:Poppins, Arial, sans-serif; padding: 22px 0 33px; font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #939393; max-width: 80%; margin: 0 auto;">To opt out of promotional emails like this,
+                                        <a href="#" style="color:#1DBF73;text-decoration:none;font-weight:bold">unsubscribe here</a>
+                                    </p>
+                                </td>
+                            </tr>
+                            <!-- Unsubscribe Section-->
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+</body>
 
-  </html>
-  ```
-  ```html Variant 2
-  <!DOCTYPE html>
-  <html lang="en">
+</html>
+```
 
-  <head>
-      <title></title>
-      <link href="https://fonts.googleapis.com" rel="preconnect" />
-      <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet" />
-      <style type="text/css">
-          * {             margin: 0;             padding: 0;         }          @media only screen and (max-width:480px) {             .title {                 font-size: 26px !important;                 line-height: 36px !important;                 margin-top: 25px !important;             }              .sub-title {                 margin-top: 10px !important;             }              .bg-wrap {                 padding-top: 40px !important;             }              .product-card {                 padding-bottom: 40px !important;             }         }
-      </style>
-  </head>
-
-  <body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" data-new-gr-c-s-loaded="14.1242.0" style="cursor: auto;">
-      <!-- Change Theme-->
-      <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%; max-width: 600px; margin: 0 auto; background: #ffffff;" width="100%">
-          <tbody>
-              <tr>
-                  <td style=" padding: 17px 30px; border-bottom: 0.5px solid #979797; text-align: right;">
-                      <a class="btn" href="#" style="font-family:'Poppins', Arial, sans-serif; padding: 5px 15px; background: #1DBF73; border-radius: 10px; font-size: 12px; line-height: 24px; vertical-align: middle; color: #000 !important; text-decoration: none; display: inline-block; font-weight: 400;">Get 30% OFF →</a>
-                  </td>
-              </tr>
-              <tr>
-                  <!-- Header Section-->
-                  <td style=" text-align: center; border-bottom: 0.5px solid #979797; position: relative;">
-                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                          <tbody>
-                              <tr>
-                                  <td style="width: 50%; vertical-align: middle;">
-                                      <div style="border-top: 1px solid #1DBF73;"> </div>
-                                  </td>
-                                  <td style="width: auto; text-align: center; vertical-align: middle;">
-                                      <!-- “Logo Image” --><img alt="Logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="display: inline-block; max-width: 146px; height: auto; background: #ffffff; padding: 0 10px; vertical-align: middle;"
-                                      />
-                                      <!-- “Logo Image” -->
-                                  </td>
-                                  <td style="width: 50%; vertical-align: middle;">
-                                      <div style="border-top: 1px solid #1DBF73;"> </div>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-                  <!-- Header Section-->
-              </tr>
-              <tr>
-                  <td>
-                      <h2 class="title" style=" font-family: 'Poppins', Arial, sans-serif; font-size: 36px; line-height: 45px; text-align: center; text-transform: uppercase; color: #000000; margin: 29px 30px 0;"><span class="cm-light" style="font-family: 'Poppins', Arial, sans-serif; font-weight: 300; display: block;">WELCOME!</span> WE&#39;RE EXCITED TO HAVE YOU WITH US</h2>
-
-                      <p class="sub-title" style="font-family: 'Poppins', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 32px; text-align: center; margin: 20px 30px 40px; color: #4F4F4F;">Get ready to discover what we have in store for you.</p>
-                  </td>
-              </tr>
-              <tr>
-                  <td class="bg-wrap" style="padding-top: 46px; background: #F0EEF6;">
-                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                          <tbody>
-                              <tr>
-                                  <td class="product-card" style="padding-bottom: 70px;">
-                                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                                          <tbody>
-                                              <tr>
-                                                  <!-- First Product Image -->
-                                                  <td class="product-image" style="width: 40%;"><img alt="product image pexels 1" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/pexels-1_1.png" style="width: 100%; height: 100%;" /></td>
-                                                  <!-- First Product Image -->
-                                                  <td class="product-detail" style="width: 60%; padding: 0 30px; vertical-align: middle;">
-                                                      <h3 class="product-name" style="font-family: 'Poppins', Arial, sans-serif; font-size: 24px; font-weight: 400; line-height: 35px; color: #0D0D0D; margin-bottom: 10px; text-transform: uppercase;">LET&#39;S GET STARTED!</h3>
-
-                                                      <p class="product-desc" style="font-family: 'Poppins', Arial, sans-serif; margin-bottom: 18px; font-size: 14px; font-weight: 400; line-height: 30px; color: #4f4f4f;">Welcome aboard! Your journey with us starts now, and we&#39;re here to make it count. Get started by exploring our website to know more about what we stand for. Stay on top of what&#39;s new, get access
-                                                          to exclusive deals, and much more.</p>
-
-                                                      <a class="btn" href="#" style="font-family:'Poppins', Arial, sans-serif; padding: 5px 15px; background: #1DBF73; border-radius: 10px; font-size: 12px; line-height: 24px; vertical-align: middle; color: #000 !important; text-decoration: none; display: inline-block; font-weight: 400;">Learn More</a>
-                                                  </td>
-                                              </tr>
-                                          </tbody>
-                                      </table>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td class="product-card" style="padding-bottom: 70px;">
-                                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                                          <tbody>
-                                              <tr>
-                                                  <td class="product-detail" style="width: 60%; padding: 0 30px; vertical-align: middle;">
-                                                      <h3 class="product-name" style="font-family: 'Poppins', Arial, sans-serif; font-size: 24px; font-weight: 400; line-height: 35px; color: #0D0D0D; margin-bottom: 10px; text-transform: uppercase;">WHAT YOU CAN EXPECT</h3>
-
-                                                      <p class="product-desc" style="font-family: 'Poppins', Arial, sans-serif; margin-bottom: 18px; font-size: 14px; font-weight: 400; line-height: 30px; color: #4f4f4f;">As a member of our community, you&#39;re on your way to unlocking a host of benefits tailored just for you. Expect personalized content, early access to new features, exclusive discounts, and expert
-                                                          insights that will help you stay ahead of the curve.</p>
-                                                      <!-- Add Links -->
-
-                                                      <a class="btn" href="#" style="font-family:'Poppins', Arial, sans-serif; padding: 5px 15px; background: #1DBF73; border-radius: 10px; font-size: 12px; line-height: 24px; vertical-align: middle; color: #000 !important; text-decoration: none; display: inline-block; font-weight: 400;">Learn More</a>
-                                                      <!-- Add Links -->
-                                                  </td>
-                                                  <!-- Second Product Image -->
-                                                  <td class="product-image" style="text-align: right; width: 40%;"><img alt="product image pexels 2" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/pexels-2_1.png" style="width: 100%; height: 100%;" /></td>
-                                                  <!-- Second Product Image -->
-                                              </tr>
-                                          </tbody>
-                                      </table>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-              <tr>
-                  <td style="padding-top: 54px;">
-                      <table border="0" cellpadding="0" cellspacing="0" class="footer" style="background: #F7F7F7;" width="100%">
-                          <tbody>
-                              <tr>
-                                  <td colspan="5">
-                                      <h2 class="footer-title" style="font-family: 'Poppins', Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 32px; text-align: center; color: #0D0D0D; text-transform: uppercase; margin:20px 0;">DOWNLOAD OUR APP</h2>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td style="width: 30%; vertical-align: middle; color: #979797">
-                                      <div style="border-top: 1px solid #979797;"> </div>
-                                  </td>
-                                  <!-- Download Andoid Section-->
-                                  <td style="width: auto; text-align: center; vertical-align: middle;">
-                                      <a class="btn-link" href="#" style="margin: 0 10px;"><img alt="Download on Android" class="btn-img" src="https://d2xdgxd31vfz2r.cloudfront.net/1645780864/assets/6a5367d7266744b5a2b3f9d42a2d1757.png" style="background: #F7F7F7; position: relative; z-index: 1; height: 45px"
-                                          /></a>
-                                  </td>
-                                  <!-- Download Andoid Section-->
-                                  <td style="width: 5%; vertical-align: middle;">
-                                      <div style="border-top: 1px solid #979797"> </div>
-                                  </td>
-                                  <!-- Download Apple Section-->
-                                  <td style="width: auto; text-align: center; vertical-align: middle; color: #979797">
-                                      <a class="btn-link" href="#" style="margin: 0 10px;"><img alt="Download on Apple" class="btn-img" src="https://d2xdgxd31vfz2r.cloudfront.net/1645780864/assets/2b9962fdc2dc4ce5a20bde593965d5d4.png" style="background: #F7F7F7; position: relative; z-index: 1; height: 45px"
-                                          /></a>
-                                  </td>
-                                  <!-- Download Apple Section-->
-                                  <td style="width: 30%; vertical-align: middle; color: #979797">
-                                      <div style="border-top: 1px solid #979797"> </div>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td colspan="5">
-                                      <p class="f-desc" style="font-family:'Poppins', Arial, sans-serif; padding: 22px 0 33px; font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #939393; max-width: 80%; margin: 0 auto;">For assistance, reach out to our support team at support@example.com</p>
-                                  </td>
-                              </tr>
-                              <!-- Footer Section-->
-                              <tr class="f-wrap">
-                                  <td colspan="5">
-                                      <ul class="f-nav-list" style="padding: 19px 0; list-style: none; text-align: center; border-top: 1px solid #979797">
-                                          <li class="f-nav-item" style=" margin: 0 5px;display: inline-block;">
-                                              <!-- Contact Us-->
-                                              <a class="f-nav-link" href="#" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #939393 !important; text-decoration: none;">Contact Us</a>
-                                              <!-- Contact Us-->
-                                          </li>
-                                          <li class="f-nav-item" style=" margin: 0 5px; display: inline-block;">
-                                              <!-- Terms-->
-                                              <a class="f-nav-link" href="#" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #939393 !important; text-decoration: none;">Terms of Use</a>
-                                              <!-- Terms-->
-                                          </li>
-                                          <li class="f-nav-item" style=" margin: 0 5px; display: inline-block;">
-                                              <!-- Privacy Policy-->
-                                              <a class="f-nav-link" href="#" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px;  font-weight: 400; line-height: 24px; color: #939393 !important; text-decoration: none;">Privacy Policy</a>
-                                              <!-- Privacy Policy-->
-                                          </li>
-                                      </ul>
-                                  </td>
-                              </tr>
-                              <!-- Footer Section-->
-                              <!-- Unsubscribe Section-->
-                              <tr class="f-wrap">
-                                  <td colspan="5">
-                                      <hr style="border: none; border-top: 1px solid #939393; margin: 0 auto; max-width: 100%;" />
-                                      <p class="f-desc" style="font-family:'Poppins', Arial, sans-serif; padding: 22px 0 33px; font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #939393; max-width: 80%; margin: 0 auto;">To opt out of promotional emails like this,
-                                          <a href="#" style="color:#1DBF73;text-decoration:none;font-weight:bold">unsubscribe here</a>
-                                      </p>
-                                  </td>
-                              </tr>
-                              <!-- Unsubscribe Section-->
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-          </tbody>
-      </table>
-  </body>
-  <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
-
-  </html>
-  ```
-</details>
+</Accordion>
 
 # AMP Templates
 
