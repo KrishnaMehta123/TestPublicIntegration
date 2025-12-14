@@ -33,11 +33,9 @@ For example, while recording the _Product viewed_ event, you could also store ev
 
 # System Events
 
-<Callout icon="📘" theme="info">
-  Events Changelog
-
-  You can find information about the most recent changes to our existing system events or the introduction of new ones in our [Events Changelog](doc:events-changelog).
-</Callout>
+> 📘 Events Changelog
+>
+> You can find information about the most recent changes to our existing system events or the introduction of new ones in our [Events Changelog](doc:events-changelog).
 
 System events are events recorded automatically after you integrate our SDK.
 
