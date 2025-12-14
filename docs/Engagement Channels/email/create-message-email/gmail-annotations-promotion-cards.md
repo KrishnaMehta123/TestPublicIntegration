@@ -27,7 +27,7 @@ To annotate emails in an email campaign, perform the following steps:
 1. [Create an email campaign](https://docs.clevertap.com/docs/create-message-email).
 2. [Define the message content](https://docs.clevertap.com/docs/create-message-email#define-the-message-content) from the Email Editor.
 3. Click **Sender details**.
-4. To annotate your email, select **Highlight with Gmail promotional annotations**. The following options display:  
+4. To annotate your email, select **Highlight with Gmail promotional annotations**. The following options display:
 
    <Image align="center" border={true} caption="Annotate Emails with Deal Annotation" src="https://files.readme.io/b9ccbce-Gmail_Promotional_Annotation_.png" />
 5. Add the required information.
@@ -147,9 +147,9 @@ To annotate emails in an email campaign, perform the following steps:
 
 Adding Promotion Cards to your annotations enhances the impact of email marketing campaigns by introducing image previews, either as a single card or a carousel of cards. This helps amplify engagement and drive higher conversion rates. Each card can be configured with its own image, title, description, and target URL.
 
-  Single Image Layout
+<Image align="center" border={true} caption="Single Image Layout" src="https://files.readme.io/4f32a4d939159fd3d44e0a3d4329515618705b4f0565f7464383812d17c14d1a-image.png" width="65% " />
 
-![](https://files.readme.io/0dcfcde9bdbc05e3e8b476417628beb88bff3e3301683ef8fb8445148ac4da4d-Carousel_Image_Layout.png)  Carousel Image Layout
+<Image align="center" border={true} caption="Carousel Image Layout" src="https://files.readme.io/0dcfcde9bdbc05e3e8b476417628beb88bff3e3301683ef8fb8445148ac4da4d-Carousel_Image_Layout.png" />
 
 ## Prerequisites
 
