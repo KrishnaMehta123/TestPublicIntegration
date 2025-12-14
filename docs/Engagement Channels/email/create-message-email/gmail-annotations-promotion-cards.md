@@ -165,7 +165,7 @@ To annotate an email campaign with promotional cards, perform the following step
 3. Select the _Sender details_ tab.
 4. Select **Highlight with Gmail promotional annotations** and select **Promotion Cards**. A single promotion card (Single Image Layout) is displayed to the user by default. You can add more cards by clicking **Promotion Card** for Carousel Layout. The following options display for each promotion card:
 
-![](https://files.readme.io/ffda68725e844316f99a94057fc9e1dd4e190e94b8cbc90bf42b2aaa82d0c2fb-Annotate_Email_with_Promotion_Cards.png)  Annotate Email With Product Carousel Using Image URL Option
+  Annotate Email With Product Carousel Using Image URL Option
 
 ![](https://files.readme.io/577d56ec16b072b5ca0d4b53a877e5f3889f3dca5314ab93ad07f404c226a7f4-Upload_Image_for_Product_Carousel.png)  Annotate Email With Product Carousel Using Upload Image Option
 
