@@ -302,7 +302,7 @@ The _Code Analysis_ tab displays the error type and details. You can sort these 
   Code Analysis with Inbox Preview is available for the [Custom HTML template](https://docs.clevertap.com/docs/email-editor-templates#custom-html-template) and [Rich Media Template](https://docs.clevertap.com/docs/email-editor-templates#rich-media-template).
 </Callout>
 
-8. Click the _Fix issues_ in the editor link to fix the issues. You are redirected to the email editor.  
+7. Click the _Fix issues_ in the editor link to fix the issues. You are redirected to the email editor.  
    Rerun the preview tests to check that the previews are in order.
 
 ## Spam Report
