@@ -5519,7 +5519,6 @@ This AMP template is designed to promote a curated selection of new arrivals, tr
 <Image align="center" alt="Sample Product Listing Template" border={true} caption="Sample Product Listing Template" src="https://files.readme.io/3b422b68a566885f81d76d61157af681abbe2dad80105ae3e64ac39af27731cd-Product_Listing_AMP.png" width="25% " />
 
 <Accordion title="Expand to know more about the template.">
-
   ### Use Case Examples
 
   * Highlight newly launched or trending products from your catalog.
@@ -7757,7 +7756,7 @@ This AMP template delivers a gamified experience within the email itself. It all
 
 <Image align="center" alt="Sample Scratch Card for Disvount Template" border={true} caption="Sample Scratch Card for Discount Template" src="https://files.readme.io/6c1580151c3f71e5c0e240e27b725ed9654d7fd990fbecae359e9c3217b6a57a-Scratch_Card_for_Discount_AMP.png" width="35% " />
 
-<Accordion title="My Accordion Title" icon="fa-info-circle">
+<Accordion title="Expand to know more about the template.">
   ### Use Case Examples
 
   * Launch surprise reward campaigns to boost conversions.
@@ -7908,485 +7907,485 @@ This AMP template adds a fun, gamified interaction to your email by letting user
   ### Template Code
 
   ```html
-  <html ⚡4email data-css-strict>
+  <!DOCTYPE html>
+<html ⚡4email data-css-strict>
 
-    <head>
-    <meta charset="utf-8" />
-    <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
-    <style amp4email-boilerplate>
-    body {
-    visibility: hidden;
-    }
-    </style>
-    <style amp-custom>
-    * {
-    margin: 0;
-    padding: 0;
-    }
+<head>
+<meta charset="utf-8" />
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+<script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+<style amp4email-boilerplate>
+body {
+visibility: hidden;
+}
+</style>
+<style amp-custom>
+* {
+margin: 0;
+padding: 0;
+}
 
-    body {
-    font-family: arial, sans-serif;
-    font-weight: 400;
-    margin: 0;
-    padding: 0;
-    background: #939393;
-    }
+body {
+font-family: arial, sans-serif;
+font-weight: 400;
+margin: 0;
+padding: 0;
+background: #939393;
+}
 
-    img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    }
+img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
 
-    .main {
-    font-family: Arial, sans-serif;
-    max-width: 600px;
-    margin: 0 auto;
-    background: #fe592c;
-    }
+.main {
+font-family: Arial, sans-serif;
+max-width: 600px;
+margin: 0 auto;
+background: #fe592c;
+}
 
-    @media only screen and (max-width: 400px) {
-    .main {
-    max-width: 95%;
-    }
-    }
+@media only screen and (max-width: 400px) {
+.main {
+max-width: 95%;
+}
+}
 
-    .header-container {
-    background: transparent url(https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/spinn/header-design.png);
-    background-size: contain;
-    background-repeat: repeat-x;
-    background-position: bottom;
-    padding-bottom: 18px;
-    }
+.header-container {
+background: transparent url(https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/spinn/header-design.png);
+background-size: contain;
+background-repeat: repeat-x;
+background-position: bottom;
+padding-bottom: 18px;
+}
 
-    .logo-wrap {
-    background-color: #ffffff;
-    padding: 20px 0;
-    }
+.logo-wrap {
+background-color: #ffffff;
+padding: 20px 0;
+}
 
-    .logo-wrap .img-wrap {
-    width: 100%;
-    max-width: 145px;
-    max-height: 74px;
-    margin: 0 auto;
-    }
+.logo-wrap .img-wrap {
+width: 100%;
+max-width: 145px;
+max-height: 74px;
+margin: 0 auto;
+}
 
-    .container,
-    .wrapper {
-    position: relative;
-    }
+.container,
+.wrapper {
+position: relative;
+}
 
-    .main-content {
-    position: relative;
-    }
+.main-content {
+position: relative;
+}
 
-    .common-wrap .orange-triangle {
-    width: 100%;
-    height: 360px;
-    background: #f34626;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transform: rotate(180deg);
-    }
+.common-wrap .orange-triangle {
+width: 100%;
+height: 360px;
+background: #f34626;
+position: absolute;
+bottom: 0;
+left: 0;
+transform: rotate(180deg);
+}
 
-    .common-wrap .content-wrap {
-    max-width: 85%;
-    margin: 90px auto 0;
-    padding-bottom: 120px;
-    }
+.common-wrap .content-wrap {
+max-width: 85%;
+margin: 90px auto 0;
+padding-bottom: 120px;
+}
 
-    .top-content .title {
-    font-family: Arial, sans-serif;
-    font-size: 42px;
-    font-weight: 500;
-    color: #ffffff;
-    line-height: 46px;
-    text-align: center;
-    text-transform: none;
-    margin-bottom: 22px;
-    }
+.top-content .title {
+font-family: Arial, sans-serif;
+font-size: 42px;
+font-weight: 500;
+color: #ffffff;
+line-height: 46px;
+text-align: center;
+text-transform: none;
+margin-bottom: 22px;
+}
 
-    .top-content .sub-title {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 22px;
-    text-align: center;
-    color: #ffffff;
-    text-transform: none;
-    margin-bottom: 11px;
-    }
+.top-content .sub-title {
+font-family: Arial, sans-serif;
+font-size: 16px;
+font-weight: 500;
+line-height: 22px;
+text-align: center;
+color: #ffffff;
+text-transform: none;
+margin-bottom: 11px;
+}
 
-    .top-content .desc {
-    font-family: Arial, sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 18px;
-    text-align: center;
-    text-transform: none;
-    color: #ffffff;
-    max-width: 70%;
-    margin: 0 auto 55px;
-    }
+.top-content .desc {
+font-family: Arial, sans-serif;
+font-size: 12px;
+font-weight: 400;
+line-height: 18px;
+text-align: center;
+text-transform: none;
+color: #ffffff;
+max-width: 70%;
+margin: 0 auto 55px;
+}
 
-    .wheel-spin-gif-box,
-    .wheel-spin-box {
-    max-width: 450px;
-    max-height: 450px;
-    position: relative;
-    overflow: hidden;
-    margin: 0 auto;
-    }
+.wheel-spin-gif-box,
+.wheel-spin-box {
+max-width: 450px;
+max-height: 450px;
+position: relative;
+overflow: hidden;
+margin: 0 auto;
+}
 
-    .ticker {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 0;
-    z-index: 2;
-    }
+.ticker {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+right: 0;
+z-index: 2;
+}
 
-    .btn-wrap {
-    text-align: center;
-    position: relative;
-    }
+.btn-wrap {
+text-align: center;
+position: relative;
+}
 
-    .spin-btn {
-    margin-top: -80px;
-    background: #ffffff;
-    box-shadow: 0px 3.29px 3.29px 0px #00000040;
-    width: 100%;
-    max-width: 242px;
-    height: auto;
-    max-height: 52px;
-    display: inline-block;
-    border-radius: 50px;
-    padding: 18px 20px;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 20px;
-    text-align: center;
-    text-decoration: none;
-    text-transform: none;
-    color: #ffae97;
-    border: 0;
-    outline: none;
-    cursor: pointer;
-    position: absolute;
-    top: -25px;
-    left: 50%;
-    transform: translateX(-50%);
-    }
+.spin-btn {
+margin-top: -80px;
+background: #ffffff;
+box-shadow: 0px 3.29px 3.29px 0px #00000040;
+width: 100%;
+max-width: 242px;
+height: auto;
+max-height: 52px;
+display: inline-block;
+border-radius: 50px;
+padding: 18px 20px;
+font-size: 18px;
+font-weight: 400;
+line-height: 20px;
+text-align: center;
+text-decoration: none;
+text-transform: none;
+color: #ffae97;
+border: 0;
+outline: none;
+cursor: pointer;
+position: absolute;
+top: -25px;
+left: 50%;
+transform: translateX(-50%);
+}
 
-    @media (max-width: 768px) {
-    .spin-btn {
-    max-width: 200px;
+@media (max-width: 768px) {
+.spin-btn {
+max-width: 200px;
 
-    font-size: 16px;
+font-size: 16px;
 
-    padding: 16px 18px;
+padding: 16px 18px;
 
-    }
-    }
+}
+}
 
-    @media (max-width: 480px) {
-    .spin-btn {
-    max-width: 150px;
+@media (max-width: 480px) {
+.spin-btn {
+max-width: 150px;
 
-    font-size: 14px;
+font-size: 14px;
 
-    padding: 12px 15px;
+padding: 12px 15px;
 
-    margin-top: -40px;
+margin-top: -40px;
 
-    }
-    }
+}
+}
 
-    @media (max-width: 320px) {
-    .spin-btn {
+@media (max-width: 320px) {
+.spin-btn {
 
-    max-width: 120px;
+max-width: 120px;
 
-    font-size: 12px;
+font-size: 12px;
 
-    padding: 10px 12px;
+padding: 10px 12px;
 
-    }
-    }
+}
+}
 
 
-    .spin-btn.typ-2 {
-    color: #FE592C;
-    }
+.spin-btn.typ-2 {
+color: #FE592C;
+}
 
-    .img-wrap {
-    width: 73px;
-    height: 93px;
-    }
+.img-wrap {
+width: 73px;
+height: 93px;
+}
 
-    .hidden {
-    display: none;
-    }
+.hidden {
+display: none;
+}
 
-    .yellow-wrap {
-    max-width: 401px;
-    min-height: 300px;
-    margin: 0 auto 14px;
-    }
+.yellow-wrap {
+max-width: 401px;
+min-height: 300px;
+margin: 0 auto 14px;
+}
 
-    .result-content {
-    font-size: 28px;
-    font-weight: 400;
-    line-height: 38px;
-    text-align: center;
-    color: #ffffff;
-    text-transform: none;
-    position: relative;
-    z-index: 1;
-    }
+.result-content {
+font-size: 28px;
+font-weight: 400;
+line-height: 38px;
+text-align: center;
+color: #ffffff;
+text-transform: none;
+position: relative;
+z-index: 1;
+}
 
-    .cm-bold {
-    font-weight: 700;
-    display: block;
-    }
+.cm-bold {
+font-weight: 700;
+display: block;
+}
 
-    .footer {
-    border-top: 0.5px solid #ffff;
-    background: #ffff;
-    }
+.footer {
+border-top: 0.5px solid #ffff;
+background: #ffff;
+}
 
-    .media-logo-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    gap: 23px;
-    margin: 65px 0 17px;
-    }
+.media-logo-list {
+display: flex;
+justify-content: center;
+align-items: center;
+list-style: none;
+gap: 23px;
+margin: 65px 0 17px;
+}
 
-    .media-logo-list .logo-item {
-    width: 20px;
-    height: 20px;
-    }
+.media-logo-list .logo-item {
+width: 20px;
+height: 20px;
+}
 
-    .media-logo-list .logo-item .logo-link {
-    width: 100%;
-    height: 100%;
-    display: inline-block;
-    }
+.media-logo-list .logo-item .logo-link {
+width: 100%;
+height: 100%;
+display: inline-block;
+}
 
-    .f-desc {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    color: #939393;
-    text-align: center;
-    max-width: 80%;
-    margin: 0 auto;
-    padding-bottom: 27px;
-    text-transform: none;
-    }
+.f-desc {
+font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+color: #939393;
+text-align: center;
+max-width: 80%;
+margin: 0 auto;
+padding-bottom: 27px;
+text-transform: none;
+}
 
-    .f-nav-list {
-    padding: 27px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    border-top: 0.5px solid #979797;
-    }
+.f-nav-list {
+padding: 27px 0;
+display: flex;
+justify-content: center;
+align-items: center;
+list-style: none;
+border-top: 0.5px solid #979797;
+}
 
-    .f-nav-list .f-nav-item {
-    margin: 0 5px;
-    }
+.f-nav-list .f-nav-item {
+margin: 0 5px;
+}
 
-    .f-nav-list .f-nav-item .f-nav-link {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: center;
-    color: #939393;
-    text-decoration: none;
-    }
+.f-nav-list .f-nav-item .f-nav-link {
+font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+text-align: center;
+color: #939393;
+text-decoration: none;
+}
 
-    @media only screen and (max-width: 480px) {
-    .logo-wrap {
-    padding: 25px 0;
-    }
+@media only screen and (max-width: 480px) {
+.logo-wrap {
+padding: 25px 0;
+}
 
-    .spin-btn {
-    max-width: 200px;
-    font-size: 14px;
-    line-height: 18px;
-    }
+.spin-btn {
+max-width: 200px;
+font-size: 14px;
+line-height: 18px;
+}
 
-    .top-content .desc {
-    margin: 0 auto 40px;
-    max-width: 80%;
-    }
+.top-content .desc {
+margin: 0 auto 40px;
+max-width: 80%;
+}
 
-    .header-container {
-    background-size: auto;
-    }
+.header-container {
+background-size: auto;
+}
 
-    .common-wrap .content-wrap {
-    max-width: 90%;
-    margin: 60px auto 0;
-    padding-bottom: 80px;
-    }
+.common-wrap .content-wrap {
+max-width: 90%;
+margin: 60px auto 0;
+padding-bottom: 80px;
+}
 
-    .top-content .title {
-    font-size: 30px;
-    line-height: 40px;
-    margin-bottom: 10px;
-    }
+.top-content .title {
+font-size: 30px;
+line-height: 40px;
+margin-bottom: 10px;
+}
 
-    .f-desc {
-    line-height: 20px;
-    }
+.f-desc {
+line-height: 20px;
+}
 
-    .logo-wrap .img-wrap {
-    width: 100%;
-    max-width: 130px;
-    max-height: 60px;
-    margin: 0 auto;
-    }
-    }
-    </style>
-    </head>
+.logo-wrap .img-wrap {
+width: 100%;
+max-width: 130px;
+max-height: 60px;
+margin: 0 auto;
+}
+}
+</style>
+</head>
 
-    <body>
-    <amp-state id="step">
-    <script type="application/json">
-    {
-    "step": 1
-    }
-    </script>
-    </amp-state>
-    <div class="main">
-    <!-- header section -->
-    <header>
-    <div class="header-container">
-    <div class="logo-wrap">
-    <div class="img-wrap">
-    <amp-img layout="responsive"
-    src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" alt="Logo"
-    width="159" height="73" />
-    </div>
-    </div>
-    </div>
-    </header>
-    <!-- header section -->
-    <!-- main content section -->
-    <div class="main-content">
-    <div class="common-wrap">
-    <div class="orange-triangle"></div>
-    <div class="content-wrap">
-    <div class="top-content">
-    <h1 class="title">SPIN AND WIN</h1>
-    <h2 class="sub-title">Try your luck and grab an exclusive reward!</h2>
-    <p class="desc">
-    We’ve loaded up the wheel with rewards you’ll love — all you have to do is spin.
-    </p>
-    </div>
-    <div class="bottom-content">
-    <div class="wrapper">
-    <!--<div class="ticker">
-    <amp-img
-    layout="fixed"
-    src="./images/icon-arrow.png"
-    alt="ticker"
-    class="ticker-icon"
-    width="80"
-    height="50">
-    </amp-img>
-    </div> -->
-    <div class="step-1" [hidden]="step != 1">
-    <div class="wheel-spin-box">
-    <amp-img src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/spinn/wheel-start.png"
-    layout="responsive" width="450" height="450" role="button" tabindex="0" layout="responsive">
-    </amp-img>
-    </div>
-    </div>
-    <div class="step-2" hidden [hidden]="step != 2">
-    <div class="wheel-spin-gif-box">
-    <amp-img src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/spinn/spin-wheel.gif"
-    layout="responsive" width="450" height="450" role="button" tabindex="0" layout="responsive">
-    </amp-img>
-    </div>
-    </div>
-    <div class="step-3" hidden [hidden]="step != 3">
-    <div class="wheel-spin-box">
-    <amp-img src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/spinn/wheel-win.png"
-    layout="responsive" width="450" height="450" role="button" tabindex="0" layout="responsive">
-    </amp-img>
-    </div>
-    </div>
-    </div>
+<body>
+<amp-state id="step">
+<script type="application/json">
+{
+"step": 1
+}
+</script>
+</amp-state>
+<div class="main">
+<!-- header section -->
+<header>
+<div class="header-container">
+<div class="logo-wrap">
+<div class="img-wrap">
+<amp-img layout="responsive"
+src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" alt="Logo"
+width="159" height="73" />
+</div>
+</div>
+</div>
+</header>
+<!-- header section -->
+<!-- main content section -->
+<div class="main-content">
+<div class="common-wrap">
+<div class="orange-triangle"></div>
+<div class="content-wrap">
+<div class="top-content">
+<h1 class="title">SPIN AND WIN</h1>
+<h2 class="sub-title">Try your luck and grab an exclusive reward!</h2>
+<p class="desc">
+We’ve loaded up the wheel with rewards you’ll love — all you have to do is spin.
+</p>
+</div>
+<div class="bottom-content">
+<div class="wrapper">
+<!--<div class="ticker">
+<amp-img
+layout="fixed"
+src="./images/icon-arrow.png"
+alt="ticker"
+class="ticker-icon"
+width="80"
+height="50">
+</amp-img>
+</div> -->
+<div class="step-1" [hidden]="step != 1">
+<div class="wheel-spin-box">
+<amp-img src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/spinn/wheel-start.png"
+layout="responsive" width="450" height="450" role="button" tabindex="0" layout="responsive">
+</amp-img>
+</div>
+</div>
+<div class="step-2" hidden [hidden]="step != 2">
+<div class="wheel-spin-gif-box">
+<amp-img src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/spinn/spin-wheel.gif"
+layout="responsive" width="450" height="450" role="button" tabindex="0" layout="responsive">
+</amp-img>
+</div>
+</div>
+<div class="step-3" hidden [hidden]="step != 3">
+<div class="wheel-spin-box">
+<amp-img src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/spinn/wheel-win.png"
+layout="responsive" width="450" height="450" role="button" tabindex="0" layout="responsive">
+</amp-img>
+</div>
+</div>
+</div>
 
-    <!-- Result Section -->
-    <div class="result-wrapper step-4" hidden [hidden]="step != 4">
-    <div class="yellow-wrap">
-    <amp-img src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/spinn/result-tshirt.png"
-    width="490" height="350" layout="responsive" alt="result image">
-    </amp-img>
-    </div>
-    <h2 class="result-content">
-    Congratulations, you win
-    <span class="cm-bold">A Half white T-Shirt!</span>
-    </h2>
-    </div>
-    </div>
-    </div>
-    </div>
-    <div class="btn-wrap">
-    <button class="spin-btn typ-2" [hidden]="step != 1" on="tap:AMP.setState({ step: 2 })"> Spin the Wheel </button>
-    <button class="spin-btn typ-2" hidden [hidden]="step != 2" on="tap:AMP.setState({ step: 3 })">Stop the
-    Wheel</button>
-    <button class="spin-btn typ-2" hidden [hidden]="step != 3" on="tap:AMP.setState({ step: 4 })">Get now</button>
-    <a href="https://www.google.com" class="spin-btn typ-2" hidden [hidden]="step != 4"
-    on="tap:AMP.setState({ step: 4 })">Shop now</a>
-    </div>
-    </div>
-    <!-- main content section -->
-    <!-- footer start -->
-    <footer class="footer">
-    <ul class="media-logo-list">
-    <li class="logo-item">
-    <a href="https://www.google.co.in/" class="logo-link">
-    <amp-img layout="fixed" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/5c06fdefb77c4f6c94c17f953b0e98e4.png"
-    alt="instagram" class="media-logo" width="20" height="20"></amp-img>
-    </a>
-    </li>
-    <li class="logo-item">
-    <a href="https://www.google.co.in/" class="logo-link">
-    <amp-img layout="fixed"
-    src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/afb3cd0c5d954fca8702c0401e1bf97b.png" alt="facebook"
-    class="media-logo" width="20" height="20"></amp-img>
-    </a>
-    </li>
-    <li class="logo-item">
-    <a href="https://www.google.co.in/" class="logo-link">
-    <amp-img layout="fixed" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/8b474f3170b346318eade16ae1fc3f63.png"
-    alt="x" class="media-logo" width="20" height="20"></amp-img>
-    </a>
-    </li>
-    </ul>
-    <p class="f-desc">
-    For assistance, connect with us on social media or reach out to our support team at 
-    <a href="https://google.com" style="color: #939393">support@example.com</a>
-    </p>
-    <p class="f-desc">
-    To opt out of promotional emails like this, <a href="https://google.com"
-    style="color:#fe592c;font-weight:bold;text-decoration:none;">unsubscribe here</a>
-    </p>
-    </footer>
-    <!-- footer end -->
-    </div>
-    </body>
-
+<!-- Result Section -->
+<div class="result-wrapper step-4" hidden [hidden]="step != 4">
+<div class="yellow-wrap">
+<amp-img src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/spinn/result-tshirt.png"
+width="490" height="350" layout="responsive" alt="result image">
+</amp-img>
+</div>
+<h2 class="result-content">
+Congratulations, you win
+<span class="cm-bold">A Half white T-Shirt!</span>
+</h2>
+</div>
+</div>
+</div>
+</div>
+<div class="btn-wrap">
+<button class="spin-btn typ-2" [hidden]="step != 1" on="tap:AMP.setState({ step: 2 })"> Spin the Wheel </button>
+<button class="spin-btn typ-2" hidden [hidden]="step != 2" on="tap:AMP.setState({ step: 3 })">Stop the
+Wheel</button>
+<button class="spin-btn typ-2" hidden [hidden]="step != 3" on="tap:AMP.setState({ step: 4 })">Get now</button>
+<a href="https://www.google.com" class="spin-btn typ-2" hidden [hidden]="step != 4"
+on="tap:AMP.setState({ step: 4 })">Shop now</a>
+</div>
+</div>
+<!-- main content section -->
+<!-- footer start -->
+<footer class="footer">
+<ul class="media-logo-list">
+<li class="logo-item">
+<a href="https://www.google.co.in/" class="logo-link">
+<amp-img layout="fixed" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/5c06fdefb77c4f6c94c17f953b0e98e4.png"
+alt="instagram" class="media-logo" width="20" height="20"></amp-img>
+</a>
+</li>
+<li class="logo-item">
+<a href="https://www.google.co.in/" class="logo-link">
+<amp-img layout="fixed"
+src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/afb3cd0c5d954fca8702c0401e1bf97b.png" alt="facebook"
+class="media-logo" width="20" height="20"></amp-img>
+</a>
+</li>
+<li class="logo-item">
+<a href="https://www.google.co.in/" class="logo-link">
+<amp-img layout="fixed" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/8b474f3170b346318eade16ae1fc3f63.png"
+alt="x" class="media-logo" width="20" height="20"></amp-img>
+</a>
+</li>
+</ul>
+<p class="f-desc">
+For assistance, connect with us on social media or reach out to our support team at 
+<a href="https://google.com" style="color: #939393">support@example.com</a>
+</p>
+<p class="f-desc">
+To opt out of promotional emails like this, <a href="https://google.com"
+style="color:#fe592c;font-weight:bold;text-decoration:none;">unsubscribe here</a>
+</p>
+</footer>
+<!-- footer end -->
+</div>
+</body>
     </html>
   ```
 </Accordion>
