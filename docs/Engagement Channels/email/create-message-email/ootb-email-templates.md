@@ -5519,6 +5519,7 @@ This AMP template is designed to promote a curated selection of new arrivals, tr
 <Image align="center" alt="Sample Product Listing Template" border={true} caption="Sample Product Listing Template" src="https://files.readme.io/3b422b68a566885f81d76d61157af681abbe2dad80105ae3e64ac39af27731cd-Product_Listing_AMP.png" width="25% " />
 
 <Accordion title="Expand to know more about the template.">
+
   ### Use Case Examples
 
   * Highlight newly launched or trending products from your catalog.
@@ -6201,1555 +6202,1553 @@ This AMP email template is designed to help recover lost sales by reminding user
 
 <Image align="center" alt="Sample Cart Abandonment Template" border={true} caption="Sample Cart Abandonment Template" src="https://files.readme.io/95c18a7f9796b0566237c22f74af769ad410f5296f3b67f7d67b720b672e82c3-Cart_Anandonment_AMP.png" width="25% " />
 
-<Accordion title="My Accordion Title" icon="fa-info-circle">
+<Accordion title="Expand to know more about the template.">
+  ### Use Case Examples
 
-### Use Case Examples
+  * Recover lost revenue by reminding users about items left in their shopping cart.
+  * Re-engage users with personalized product suggestions based on past purchases or browsing behavior.
+  * Promote urgency with limited-time offers or low stock alerts tied to abandoned items.
+  * Enhance the shopping experience by allowing users to interact with product carousels or resume checkout directly within the email
 
-* Recover lost revenue by reminding users about items left in their shopping cart.
-* Re-engage users with personalized product suggestions based on past purchases or browsing behavior.
-* Promote urgency with limited-time offers or low stock alerts tied to abandoned items.
-* Enhance the shopping experience by allowing users to interact with product carousels or resume checkout directly within the email
+  ### Template Customization Options
 
-### Template Customization Options
+  * [Replace Logo](doc:ootb-email-templates#replace-logo)
+  * [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+  * [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
+  * [Update Links in Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+  * [Change Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
 
-* [Replace Logo](doc:ootb-email-templates#replace-logo)
-* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
-* [Update Links in Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-* [Change Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+  ### Template Code
 
-### Template Code
-
-```html
-<!doctype html>
-<html ⚡4email>
-<head>
-    <meta charset="utf-8">
-    <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
-    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
-    <style amp4email-boilerplate>
-        body {
-            visibility: hidden
-        }
-    </style>
-    <style amp-custom>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        ul,
-        li {
-            list-style: none;
-        }
-        /* Change Theme */
-        body {
-            font-family: "Helvetica", arial, sans-serif;
-            font-weight: 400;
-            background-color: rgb(248, 250, 252);
-        }
-        /* Change Theme */
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-        }
-        amp-img {
-            position: relative;
-        }
-        .main {
-            position: relative;
-            width: 100%;
-            max-width: 600px;
-            overflow: hidden;
-            margin: 0 auto;
-            background: #FFFFFF;
-        }
-        .container {
-            max-width: 85%;
-            margin: 0 auto;
-        }
-        @media only screen and (max-width: 400px) {
-            .container,
-            .main {
-                max-width: 95%;
-            }
-        }
-        .cp-header {
-            padding: 0 30px;
-        }
-        .cp-header.typ-shadow {
-            box-shadow: 0px 4px 4px 0px #00000040;
-        }
-        .logo-wrap {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logo-wrap .img-wrap {
-            width: 127px;
-            height: 58px;
-            margin: 8.5px 0;
-        }
-        .nav-list {
-            list-style: none;
-            display: flex;
-            align-items: center;
-        }
-        .nav-list .nav-item {
-            padding: 25px 19px;
-            border-left: 0.5px solid #919191;
-            display: flex;
-            align-items: center;
-        }
-        .nav-list .nav-item:last-child {
-            padding-right: 0;
-        }
-        .cart-icon {
-            border: 0;
-            outline: 0;
-            position: relative;
-            background-color: transparent;
-        }
-        .cart-icon.active .dot {
-            display: inline-block;
-        }
-        .dot {
-            width: 6px;
-            height: 6px;
-            background: #FF533F;
-            border-radius: 50%;
-            display: none;
-            position: absolute;
-            top: 2px;
-            right: 0px;
-            z-index: 1;
-        }
-        .call-icon {
-            width: 20px;
-            height: 20px;
-            margin-right: 5px;
-        }
-        .icon-text {
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 24px;
-            text-align: center;
-            color: #464646;
-        }
-        .cp-banner {
-            width: 100%;
-            max-height: 361px;
-            margin-bottom: 22px;
-        }
-        .cp-footer {
-            margin-top: 50px;
-            background: #1E1E1E;
-            padding: 32px 0 34px;
-        }
-        .media-logo-list {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-        .media-logo-list .logo-item {
-            padding: 6px 32px;
-            border: 1px solid #FFFFFF;
-        }
-        .media-logo-list .logo-item .logo-link {
-            display: inline-block;
-        }
-        .media-logo {
-            width: 20px;
-            height: 20px;
-            display: inline-block;
-        }
-        .f-desc {
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 20px;
-            text-align: center;
-            color: #FFFFFF;
-            margin: 0 auto;
-            max-width: 84%;
-            text-transform: capitalize;
-        }
-        .bs-sec {
-            padding: 28px 0;
-        }
-        .bs-sec.typ-product {
-            background: #F1F1F1;
-        }
-        .bs-sec .sec-title {
-            padding: 0 26px 12px;
-            text-transform: capitalize;
-            font-size: 20px;
-            font-weight: 400;
-            line-height: 24px;
-            text-align: center;
-            position: relative;
-            width: max-content;
-            margin: 0 auto;
-        }
-        .bs-sec .sec-title.typ-2 {
-            margin: 0;
-            padding: 0 0 2px;
-        }
-        /* .bs-sec .sec-title.typ-2:after{
-            display: none;
-        } */
-        .lyt-grid {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            gap: 15px;
-            margin-top: 20px;
-        }
-        .lyt-grid .grid-item {
-            width: 33%;
-        }
-        .product-card {
-            padding: 5px;
-            position: relative;
-            background: #FFFFFF;
-        }
-        .product-card .img-wrap {
-            max-height: 177px;
-            max-width: 150px;
-            margin: 0 auto;
-            overflow: hidden;
-        }
-        .product-card .p-cart-icon {
-            background: #FFFFFF;
-            padding: 3px 5px;
-            border: 0;
-            outline: 0;
-            position: absolute;
-            top: 5px;
-            right: 5px;
-            cursor: pointer;
-        }
-        .product-card .p-wrap {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin: 5px 0;
-        }
-        .product-card .p-title {
-            width: 60%;
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 18px;
-            color: #252525;
-            padding-right: 5px;
-        }
-        .product-card .p-amt {
-            color: #252525;
-            font-size: 12px;
-            font-weight: 300;
-            line-height: 15px;
-            text-align: right;
-            font-style: italic;
-        }
-        .product-card .rupee-sign {
-            font-size: 10px;
-        }
-        .product-card .p-desc {
-            text-transform: capitalize;
-            font-size: 8px;
-            font-weight: 400;
-            line-height: 13px;
-            color: #909090;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            -webkit-line-clamp: 2;
-            display: -webkit-box;
-            -webkit-box-orient: vertical;
-        }
-        .btn-wrap {
-            text-align: right;
-        }
-        .shop-cta {
-            font-size: 12px;
-            font-weight: 400;
-            text-transform: capitalize;
-            line-height: 15px;
-            color: #000000;
-            text-decoration: none;
-            display: inline-block;
-            text-align: center;
-            margin-top: 15px;
-        }
-        .catalog-card {
-            margin-top: 30px;
-        }
-        .catalog-card .catalog-img {
-            max-width: 506px;
-            max-height: 316px;
-            position: relative;
-        }
-        .catalog-card .offer-band {
-            background: #1e1e1e;
-            text-align: center;
-            padding: 7px 20px;
-            font-size: 12px;
-            font-weight: 400;
-            line-height: 13px;
-            letter-spacing: 0.25em;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 1;
-            width: 92%;
-            color: #fff;
-        }
-        .catalog-card .cart-wrap {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            padding: 8px 10px;
-            background: #fff;
-            z-index: 1;
-        }
-        .catalog-card .cart-wrap .count {
-            position: absolute;
-            top: 8px;
-            right: 8px;
-            width: 11px;
-            height: 11px;
-            background: #FF533F;
-            border-radius: 50%;
-            color: #FFFFFF;
-            font-size: 7px;
-            font-weight: 400;
-            line-height: 11px;
-            text-align: center;
-            z-index: 1;
-        }
-        .catalog-card .catalog-body {
-            background: #f1f1f1;
-            padding: 12px 14px 10px;
-        }
-        .catalog-card .c-wrap {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-        }
-        .catalog-card .c-title {
-            margin-bottom: 5px;
-            font-size: 20px;
-            font-weight: 400;
-            line-height: 24px;
-            color: #252525;
-            width: 50%;
-        }
-        .catalog-card .c-amt {
-            font-size: 22px;
-            font-style: italic;
-            font-weight: 400;
-            line-height: 15px;
-            text-align: right;
-        }
-        .catalog-card .rupee-sign {
-            font-size: 10px;
-        }
-        .catalog-card .c-desc {
-            font-size: 10px;
-            font-weight: 400;
-            line-height: 13px;
-            color: #545454;
-            width: 40%;
-            text-transform: capitalize;
-        }
-        .catalog-card .btn-wrap {
-            width: 60%;
-            display: flex;
-            justify-content: flex-end;
-        }
-        .catalog-card .catalog-cta {
-            font-size: 14px;
-            font-weight: 400;
-            text-transform: uppercase;
-            line-height: 20px;
-            color: #FFFFFF;
-            text-decoration: none;
-            background: #000000;
-            padding: 4px 34px;
-            display: inline-block;
-            text-align: center;
-            max-width: 167px;
-            border: none;
-            margin-left: 10px;
-            cursor: pointer;
-        }
-        .product-count {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 6px;
-            background: #FFF;
-            width: 60px;
-        }
-        .product-count .product-count-sign {
-            background: transparent;
-            border: 0;
-            outline: none;
-            cursor: pointer;
-        }
-        .product-count-value {
-            font-size: 12px;
-            font-weight: 400;
-            line-height: 15px;
-            text-align: center;
-        }
-        .input {
-            border: 0.5px solid #000000;
-            padding: 7px 10px;
-            font-family: "Helvetica", arial, sans-serif;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 24px;
-            color: #000000;
-            width: -webkit-fill-available;
-        }
-        .input::-webkit-input-placeholder,
-        .input::-moz-placeholder,
-        .input:-ms-input-placeholder,
-        .input:-moz-placeholder {
-            color: #919191;
-        }
-        @media only screen and (max-width: 480px) {
-            .cp-header {
-                max-width: 100%;
-                padding: 0 10px;
-            }
-            .logo-wrap .img-wrap {
-                width: 101px;
-                height: 48px;
-                margin: 5.5px 0;
-            }
-            .nav-list .nav-item {
-                padding: 15px 10px;
-            }
-            .call-icon {
-                width: 18px;
-                height: 18px;
-            }
-            .icon-text {
-                font-size: 12px;
-                line-height: 20px;
-            }
-            .lyt-grid {
-                gap: 5px;
-            }
-            .product-card .p-title {
-                font-size: 12px;
-                line-height: 16px;
-            }
-            .product-card .p-amt {
-                font-size: 10px;
-                line-height: 16px;
-            }
-            .bs-sec .sec-title {
-                padding: 0 20px 12px;
-                font-size: 18px;
-                line-height: 20px;
-            }
-            .catalog-card .catalog-cta {
-                font-size: 10px;
-                line-height: 14px;
-                padding: 5px;
-            }
-        }
-        .form-list {
-            margin-top: 20px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            gap: 10px;
-        }
-        .form-item {
-            width: 49%;
-            position: relative;
-            padding-bottom: 20px;
-        }
-        .form-item.typ-full {
-            width: 100%;
-        }
-        [visible-when-invalid]{
-            display: block;
-        }
-        .error-msg{
-            font-size: 10px;  
-            display: none;   
-            position: absolute;
-            bottom: 0; left: 0;       
-        }
-        .error-msg.visible{
-            display: block;   
-        }
-        .field-wrap {
-            display: block;
-            position: relative;
-            padding-left: 25px;
-            margin-bottom: 10px;
-            cursor: pointer;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 24px;
-        }
-        .field-wrap input {
-            position: absolute;
-            opacity: 0;
-            cursor: pointer;
-        }
-        .checkmark {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            left: 0;
-            height: 17px;
-            width: 17px;
-            background-color: #0B0B0B;
-            border-radius: 50%;
-        }
-        .field-wrap input:checked~.checkmark {
-            background-color: #0B0B0B;
-        }
-        .checkmark:after {
-            content: "";
-            position: absolute;            
-            display: block;
-        }
-        .field-wrap input:checked~.checkmark:after {
-           display: none;
-        }
-        .field-wrap .checkmark:after {
-            top: 2px;
-            left: 2px;
-            width: 13px;
-            height: 13px;
-            border-radius: 50%;
-            background: #FFFFFF;
-        }
-        .mt-32 {
-            margin-top: 32px;
-        }
-        .form-btn {
-            font-size: 20px;
-            font-weight: 400;
-            line-height: 24px;
-            text-align: center;
-            width: 100%;
-            background: #252525;
-            border: 0;
-            outline: none;
-            color: #FFF;
-            padding: 10px;
-            cursor: pointer;
-        }
-        .tab-3 {
-            position: relative;
-        }
-        .modal-overlay {
-            width: 100%;
-            height: 100%;
-            background-color: #000000;
-            padding: 100px 0;
-        }
-        .modal {
-            width: 75%;
-            margin: 40px auto;
-            z-index: 12;
-            background: #FFF;
-            padding: 70px 30px;
-            position: relative;
-        }
-        .close {
-            width: 27px;
-            height: 27px;
-            display: inline-block;
-            text-align: center;
-            background: #000000;
-            font-size: 13px;
-            color: #FFFFFF;
-            line-height: 27px;
-            border-radius: 50%;
-            position: absolute;
-            top: 6px;
-            right: 6px;
-            cursor: pointer;
-        }
-        .m-title {
-            font-size: 20px;
-            font-weight: 400;
-            line-height: 24px;
-            text-align: center;
-            margin-bottom: 20px;
-            color: #000000;
-            text-transform: uppercase;
-        }
-        .m-desc {
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 20px;
-            text-align: center;
-            color: #545454;
-            text-transform: capitalize;
-            max-width: 70%;
-            margin: 0 auto;
-        }
-        .product-list {
-            margin: 16px 0;
-        }
-        .product-list .product-item {
-            display: flex;
-            justify-content: space-between;
-            padding: 16px 0;
-            border-bottom: 1px solid #919191;
-        }
-        .product-list .product-item:last-child {
-            border: 0;
-            padding-bottom: 0;
-        }
-        .lhs {
-            width: 80%;
-        }
-        .rhs {
-            width: 20%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: flex-end;
-        }
-        .product-item .p-name {
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 24px;
-            color: #000000;
-            margin-bottom: 6px;
-        }
-        .product-item .p-desc {
-            font-size: 10px;
-            font-weight: 400;
-            line-height: 13px;
-            color: #545454;
-            margin-bottom: 6px;
-        }
-        .product-item .p-quality {
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 24px;
-            color: #000000;
-        }
-        .product-item .delete-icon {
-            background: transparent;
-            outline: none;
-            border: 0;
-        }
-        .product-item .p-amt {
-            font-size: 22px;
-            font-style: italic;
-            font-weight: 300;
-            line-height: 24px;
-            color: #000000;
-        }
-        .product-item .p-total {
-            font-size: 20px;
-            font-weight: 400;
-            line-height: 24px;
-            color: #000000;
-        }
-        .typ-bottom-padding-zero {
-            padding-bottom: 0;
-        }
-        .disabled {
-            pointer-events: none;
-            cursor: not-allowed;
-            opacity: 0.7;
-        }
-        @media only screen and (max-width: 480px) {
-            .catalog-card .offer-band {
-                padding: 7px;
-                font-size: 10px;
-                line-height: 10px;
-                width: 96%;
-            }
-            .catalog-card .c-title {
-                font-size: 16px;
-                line-height: 18px;
-            }
-            .catalog-card .c-amt {
-                font-size: 18px;
-                line-height: 20px;
-            }
-            .catalog-card .c-desc {
-                margin-bottom: 7px;
-            }
-            .catalog-card .c-wrap {
-                flex-wrap: wrap;
-            }
-            .catalog-card .btn-wrap,
-            .catalog-card .c-desc {
-                width: 100%;
-            }
-            .form-item {
-                width: 100%;
-            }
-            .lhs,
-            .rhs {
-                width: 50%;
-            }
-            .product-item .p-total,
-            .product-item .p-amt {
-                font-size: 18px;
-                line-height: 20px;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="main">
-        <div id="ProductCatalogform" on="tap:AMP.setState({productCatalog01: {fuuid: 01 }})" role="tab" tabindex="1"
-            class="amp-html-block widget-container">
-            <form class="form-container" method="post" id="productCatalog01Form" enctype="multipart/form-data"
-                action-xhr="https://example.com" custom-validation-reporting="show-all-on-submit" on="submit:AMP.setState({
-                    productCatalog01: {
-                        currentStep: productCatalog01.currentStep == 2 : productCatalog01.currentStep + 1, 
-                        submitting: true,
-                        editAddress: false
-                    }
-                });
-                submit-success:AMP.setState({
-                    productCatalog01: {
-                        submitting: false, 
-                        paymentUrl: productCatalog01.paymentUrl || event.response.url
-                    }
-                });">
-                <input hidden id="fuuid" name="fuuid" [value]="01" />
-                <input hidden name="catalogType" value="STATIC" />
-                <input hidden name="discountCouponCode" value="" />
-                <amp-state id="productCatalog01">
-                    <script type="application/json">
-                        {
-                            "first_name": "",
-                            "last_name": "",
-                            "address": "",
-                            "landmark": "",
-                            "city": "",
-                            "country": "",
-                            "pincode": "",
-                            "phoneNumber": "",
-                            "email": "",
-                            "payment_mode": "",
-                            "isFirstNameValid": false,
-                            "isLastNameValid": false,
-                            "isPhoneNumberValid": false,
-                            "isEmailValid": false,
-                            "isPincodeValid": false,
-                            "isCityValid": false,
-                            "editAddress": false,        
-                            "paymentUrl": "",
-                            "product1": {
-                                "id": 1,
-                                "qty": 0,
-                                "title": "Mystic Elixir",
-                                "price": 1500,
-                                "selectedVariantId": 0,
-                                "addedToCart": false,
-                                "variantId": 101,
-                                "variantTitle": "Default Title",
-                                "comparePrice": "null",
-                                "variants": {
-                                    "101": {
-                                        "id": 101,
-                                        "price": 1500,
-                                        "title": "Default Title",
-                                        "comparePrice": "null"
-                                    }
-                                }
-                            },
-                            "product2": {
-                                "id": 2,
-                                "qty": 0,
-                                "title": "Opulent Essence",
-                                "price": 1500,
-                                "selectedVariantId": 0,
-                                "addedToCart": false,
-                                "variantId": 102,
-                                "variantTitle": "Default Title",
-                                "comparePrice": "null",
-                                "variants": {
-                                    "102": {
-                                        "id": 102,
-                                        "price": 1500,
-                                        "title": "Default Title",
-                                        "comparePrice": "null"
-                                    }
-                                }
-                            },
-                            "product3": {
-                                "id": 3,
-                                "qty": 0,
-                                "title": "Product Name 3",
-                                "price": 1500,
-                                "selectedVariantId": 0,
-                                "addedToCart": false,
-                                "variantId": 103,
-                                "variantTitle": "Default Title",
-                                "comparePrice": "null",
-                                "variants": {
-                                    "103": {
-                                        "id": 103,
-                                        "price": 1500,
-                                        "title": "Default Title",
-                                        "comparePrice": "null"
-                                    }
-                                }
-                            },
-                            "product4": {
-                                "id": 4,
-                                "qty": 0,
-                                "title": "Product Name 4",
-                                "price": 1500,
-                                "selectedVariantId": 0,
-                                "addedToCart": false,
-                                "variantId": 104,
-                                "variantTitle": "Default Title",
-                                "comparePrice": "null",
-                                "variants": {
-                                    "104": {
-                                        "id": 104,
-                                        "price": 1500,
-                                        "title": "Default Title",
-                                        "comparePrice": "null"
-                                    }
-                                }
-                            },
-                            "product5": {
-                                "id": 5,
-                                "qty": 0,
-                                "title": "Product Name 5",
-                                "price": 1500,
-                                "selectedVariantId": 0,
-                                "addedToCart": false,
-                                "variantId": 105,
-                                "variantTitle": "Default Title",
-                                "comparePrice": "null",
-                                "variants": {
-                                    "105": {
-                                        "id": 105,
-                                        "price": 1500,
-                                        "title": "Default Title",
-                                        "comparePrice": "null"
-                                    }
-                                }
-                            },
-                            "currentStep": 1
-                        }
-                    </script>
-                </amp-state>
-                <!-- <h1 [text]="productCatalog01.currentStep"></h1> -->
-                <header class="cp-header typ-shadow" [hidden]="productCatalog01.currentStep == 3">
-                    <div class="logo-wrap">
-                        <div class="img-wrap">
-                            <!-- Change Logo -->
-                            <amp-img layout="responsive"
-                                src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Cart-Abandonment-HTML/logo.png"
-                                alt="Logo" width="127" height="58" />
-                            <!-- Change Logo -->
-                        </div>
-                        <ul class="nav-list">
-                            <li class="nav-item">
-                                <div class="cart-icon checkout-button"
-                                    [class]="productCatalog01.currentStep == 2 ? 'cart-icon active' : 'cart-icon'"
-                                    on="tap:AMP.setState({
-                                        productCatalog01 : {
-                                        currentStep:  2 ,
-                                        editAddress: true,
-                                        }
-                                    })"
-                                    >
-                                    <amp-img layout="fixed"
-                                        src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/icon-cart.png"
-                                        alt="cart-icon" class="icon" width="22" height="22" />
-                                    <span class="dot"></span>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <span class="icon-wrap">
-                                    <amp-img class="call-icon" layout="responsive"
-                                        src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Cart-Abandonment-HTML/call-icon.png"
-                                        alt="call icon" width="20" height="20" />
-                                </span>
-                                <p class="icon-text">9878725637</p>
-                            </li>
-                        </ul>
-                    </div>
-                </header>
-                <div class="step1" [hidden]="productCatalog01.currentStep != 1">
-                    <div class="bs-sec typ-look">
-                        <div class="sec-head">
-                            <h3 class="sec-title">PRODUCTS</h3>
-                        </div>
-                        <div class="sec-body">
-                            <div class="container">
-                                <div class="catalog-card">
-                                    <div class="catalog-img">
-                                        <h3 class="offer-band">Get 20% off for your first purchase.</h3>
-                                        <!-- Change Product Image -->
-                                        <amp-img
-                                            src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Cart-Abandonment-HTML/look-1.png"
-                                            layout="responsive" alt="look" width="506" height="316" />
-                                        <!-- Change Product Image -->
-                                        <span class="cart-wrap">
-                                            <span class="count" hidden [hidden]="productCatalog01.product1.qty <= 0"
-                                                [text]="productCatalog01.product1.qty"></span>
-                                            <amp-img layout="fixed"
-                                                src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/icon-cart.png"
-                                                alt="cart-icon" class="icon" width="27" height="27" />
-                                        </span>
-                                    </div>
-                                    <div class="catalog-body">
-                                        <div class="c-wrap">
-                                            <h3 class="c-title">Mystic Elixir</h3>
-                                            <p class="c-amt">
-                                                <span class="rupee-sign">₹</span>
-                                                <span class="amount"
-                                                    [text]="(productCatalog01.product1.qty*productCatalog01.product1.price).toFixed(2)">1500.00</span>
-                                            </p>
-                                            <input hidden name='101'
-                                                [value]="productCatalog01.product1.variantId == 101 ? productCatalog01.product1.qty:1" />
-                                        </div>
-                                        <div class="c-wrap">
-                                            <p class="c-desc">is simply dummy text of the new age fashion industry.</p>
-                                            <div class="btn-wrap">
-                                                <div class="product-count">
-                                                    <div class="product-count-sign" tabindex="1" role on="tap:AMP.setState({
-                                                        productCatalog01 : {
-                                                            product1: {
-                                                                qty: productCatalog01.product1.qty > 0 ? productCatalog01.product1.qty - 1 : 0
-                                                            }
-                                                        }
-                                                    })">
-                                                        <amp-img layout="fixed"
-                                                            src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/minsu-icon.png"
-                                                            alt="minus-icon" class="icon" width="13" height="13" />
-                                                    </div>
-                                                    <div class="product-count-value"
-                                                        [text]="productCatalog01.product1.qty">0</div>
-                                                    <div class="product-count-sign" tabindex="1" on="tap:AMP.setState({
-                                                            productCatalog01 :{
-                                                                product1: {
-                                                                    qty: productCatalog01.product1.qty < 5 ? productCatalog01.product1.qty + 1 : 5
-                                                                }
-                                                            }
-                                                        })">
-                                                        <amp-img layout="fixed"
-                                                            src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/plus-icon.png"
-                                                            alt="plus-icon" class="icon" width="13" height="13" />
-                                                    </div>
-                                                </div>
-                                                <!-- Change CTA -->
-                                                <button type="button" class="catalog-cta"
-                                                    on="tap:AMP.setState({productCatalog01 :{product1: {addedToCart:true}}})">
-                                                    ADD TO CART
-                                                </button>
-                                                          <!-- Change CTA -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Second product card -->
-                                <div class="catalog-card">
-                                    <div class="catalog-img">
-                                        <h3 class="offer-band">Get 20% off for your first purchase.</h3>
-                                        <amp-img
-                                            src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Cart-Abandonment-HTML/look-2.png"
-                                            layout="responsive" alt="look" width="506" height="316" />
-                                        <span class="cart-wrap">
-                                            <span class="count" hidden [hidden]="productCatalog01.product2.qty <= 0"
-                                                [text]="productCatalog01.product2.qty"></span>
-                                            <amp-img layout="fixed"
-                                                src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/icon-cart.png"
-                                                alt="cart-icon" class="icon" width="27" height="27" />
-                                        </span>
-                                    </div>
-                                    <div class="catalog-body">
-                                        <div class="c-wrap">
-                                            <h3 class="c-title">Opulent Essence</h3>
-                                            <p class="c-amt">
-                                                <span class="rupee-sign">₹</span>
-                                                <span class="amount"
-                                                    [text]="(productCatalog01.product2.qty*productCatalog01.product2.price).toFixed(2)">1500</span>
-                                            </p>
-                                            <input hidden name='102'
-                                                [value]="productCatalog01.product2.variantId == 102 ? productCatalog01.product2.qty:1" />
-                                        </div>
-                                        <div class="c-wrap">
-                                            <p class="c-desc">is simply dummy text of the new age fashion industry.</p>
-                                            <div class="btn-wrap">
-                                                <div class="product-count">
-                                                    <div class="product-count-sign" tabindex="1" role on="tap:AMP.setState({
-                                                            productCatalog01 : {
-                                                                product2: {
-                                                                    qty: productCatalog01.product2.qty > 0 ? productCatalog01.product2.qty - 1 : 0
-                                                                }
-                                                            }
-                                                        })">
-                                                        <amp-img layout="fixed"
-                                                            src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/minsu-icon.png"
-                                                            alt="minus-icon" class="icon" width="13" height="13" />
-                                                    </div>
-                                                    <div class="product-count-value"
-                                                        [text]="productCatalog01.product2.qty">0</div>
-                                                    <div class="product-count-sign" tabindex="1" on="tap:AMP.setState({
-                                                            productCatalog01 :{
-                                                                product2: {
-                                                                    qty: productCatalog01.product2.qty < 5 ? productCatalog01.product2.qty + 1 : 5
-                                                                }
-                                                            }
-                                                        })">
-                                                        <amp-img layout="fixed"
-                                                            src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/plus-icon.png"
-                                                            alt="plus-icon" class="icon" width="13" height="13" />
-                                                    </div>
-                                                </div>
-                                                <button type="button" class="catalog-cta"
-                                                    on="tap:AMP.setState({productCatalog01 :{product2: {addedToCart:true}}})">
-                                                    ADD TO CART
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <input hidden name="amount" [value]='(
-                                    (productCatalog01.product1.qty * productCatalog01.product1.price) +
-                                    (productCatalog01.product2.qty * productCatalog01.product2.price) +
-                                    (productCatalog01.product3.qty * productCatalog01.product3.price) +
-                                    (productCatalog01.product4.qty * productCatalog01.product4.price) +
-                                    (productCatalog01.product5.qty * productCatalog01.product5.price)
-                                ).toFixed(2)' />
-                            </div>
-                        </div>
-                    </div>
-                    <!-- product section -->
-                    <div class="bs-sec typ-product">
-                        <div class="sec-head">
-                            <h3 class="sec-title">Product Suggestions</h3>
-                        </div>
-                        <div class="sec-body">
-                            <div class="container">
-                                <ul class="lyt-grid">
-                                    <li class="grid-item">
-                                        <div class="product-card">
-                                            <div class="img-wrap">
-                                                <!-- Change image src as per your requirements -->
-                                                <amp-img layout="responsive"
-                                                    src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Cart-Abandonment-HTML/product-3.png"
-                                                    alt="product" width="150" height="177" />
-                                            </div>
-                                            <button type="button" class="p-cart-icon"
-                                                on="tap:AMP.setState({productCatalog01 :{product3: {addedToCart:true, qty:1}}})">
-                                                <amp-img layout="fixed"
-                                                    src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/icon-cart.png"
-                                                    alt="cart-icon" class="icon" width="13" height="13"></amp-img>
-                                            </button>
-                                            <div class="product-info">
-                                                <div class="p-wrap">
-                                                    <h3 class="p-title">Product name</h3>
-                                                    <p class="p-amt"><span class="rupee-sign">₹</span>1500</p>
-                                                </div>
-                                                <p class="p-desc">Is simply dummy text of the new age fashion industry.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="grid-item">
-                                        <div class="product-card">
-                                            <div class="img-wrap">
-                                                <!-- Change image src as per your requirements -->
-                                                <amp-img layout="responsive"
-                                                    src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Cart-Abandonment-HTML/product-2.png"
-                                                    alt="product" width="150" height="177" />
-                                            </div>
-                                            <button type="button" class="p-cart-icon"
-                                                on="tap:AMP.setState({productCatalog01 :{product4: {addedToCart:true, qty:1}}})">
-                                                <amp-img layout="fixed"
-                                                    src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/icon-cart.png"
-                                                    alt="cart-icon" class="icon" width="13" height="13" />
-                                            </button>
-                                            <div class="product-info">
-                                                <div class="p-wrap">
-                                                    <h3 class="p-title">Product name</h3>
-                                                    <p class="p-amt"><span class="rupee-sign">₹</span>1500</p>
-                                                </div>
-                                                <p class="p-desc">Is simply dummy text of the new age fashion industry.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="grid-item">
-                                        <div class="product-card">
-                                            <div class="img-wrap">
-                                                <!-- Change image src as per your requirements -->
-                                                <amp-img layout="responsive"
-                                                    src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Cart-Abandonment-HTML/product-1.png"
-                                                    alt="product" width="150" height="177" />
-                                            </div>
-                                            <button type="button" class="p-cart-icon"
-                                                on="tap:AMP.setState({productCatalog01 :{product5: {addedToCart:true, qty:1}}})">
-                                                <amp-img layout="fixed"
-                                                    src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/icon-cart.png"
-                                                    alt="cart-icon" class="icon" width="13" height="13" />
-                                            </button>
-                                            <div class="product-info">
-                                                <div class="p-wrap">
-                                                    <h3 class="p-title">Product name</h3>
-                                                    <p class="p-amt"><span class="rupee-sign">₹</span>1500</p>
-                                                </div>
-                                                <p class="p-desc">Is simply dummy text of the new age fashion industry.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <div class="btn-wrap">
-                                    <a href="https://google.com" class="shop-cta">Shop now
-                                        <amp-img layout="fixed"
-                                            src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Cart-Abandonment-HTML/arrow.png"
-                                            alt="arrow" width="17" height="10"
-                                            style="margin-left: 10px; max-width: 17px" />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- product section -->
-                    <!-- footer section -->
-                    <footer class="cp-footer">
-                        <div class="container">
-                            <ul class="media-logo-list">
-                                <li class="logo-item">
-                                    <a href="https://www.google.co.in/" class="logo-link">
-                                        <amp-img layout="responsive"
-                                            src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Cart-Abandonment-HTML/logo-insta.png"
-                                            alt="instagram" class="media-logo" width="20" height="20"></amp-img>
-                                    </a>
-                                </li>
-                                <li class="logo-item">
-                                    <a href="https://www.google.co.in/" class="logo-link">
-                                        <amp-img layout="responsive"
-                                            src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Cart-Abandonment-HTML/logo-facebook.png"
-                                            alt="facebook" class="media-logo" width="20" height="20"></amp-img>
-                                    </a>
-                                </li>
-                                <li class="logo-item">
-                                    <a href="https://www.google.co.in/" class="logo-link">
-                                        <amp-img layout="responsive"
-                                            src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Cart-Abandonment-HTML/logo-x.png"
-                                            alt="x" class="media-logo" width="20" height="20"></amp-img>
-                                    </a>
-                                </li>
-                            </ul>
-                            <p class="f-desc">is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has
-                                been the industry's standard dummy </p>
-                                <p class="f-desc" style="margin-top: 20px;">To stop receiving these emails, <a href="https://www.google.com" style="color:#ffff;font-weight:bold;text-decoration:none;">unsubscribe here</a></p>
-                        </div>
-                    </footer>
-                    <!-- footer section -->
-                </div>
-                <div class="step2" hidden [hidden]="productCatalog01.currentStep != 2">
-                    <div class="container">
-                        <div class="bs-sec typ-bottom-padding-zero" [hidden]="
-                            (productCatalog01.product1.qty <= 0 &&
-                            productCatalog01.product2.qty <= 0 &&
-                            productCatalog01.product3.qty <= 0 &&
-                            productCatalog01.product4.qty <= 0 &&
-                            productCatalog01.product5.qty <= 0)
-                                    ">
-                            <div class="sec-head">
-                                <h3 class="sec-title typ-2">PRODUCTS</h3>
-                            </div>
-                            <div class="sec-body">
-                                <ul class="product-list">
-                                    <li class="product-item" [hidden]="productCatalog01.product1.qty == 0">
-                                        <div class="lhs">
-                                            <h3 class="p-name" [text]="productCatalog01.product1.title">Mystic Elixir
-                                            </h3>
-                                            <p class="p-desc"> is simply dummy text of the new age fashion industry.</p>
-                                            <p class="p-quality">Qty : <span
-                                                    [text]="productCatalog01.product1.qty"></span></p>
-                                        </div>
-                                        <div class="rhs">
-                                            <button class="delete-icon" on="tap:AMP.setState({
-                                                    productCatalog01 :{
-                                                        product1: {addedToCart:false, qty:0}
-                                                    }
-                                                })">
-                                                <amp-img
-                                                    src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/delete-icon.png"
-                                                    width="24" height="24" layout="fixed" alt="delete-icon">
-                                                </amp-img>
-                                            </button>
-                                            <p class="p-amt">₹ <span
-                                                    [text]="(productCatalog01.product1.qty*productCatalog01.product1.price).toFixed(2)"></span>
-                                            </p>
-                                        </div>
-                                    </li>
-                                    <li class="product-item" [hidden]="productCatalog01.product2.qty == 0">
-                                        <div class="lhs">
-                                            <h3 class="p-name" [text]="productCatalog01.product2.title">Mystic Elixir
-                                            </h3>
-                                            <p class="p-desc">is simply dummy text of the new age fashion industry.</p>
-                                            <p class="p-quality">Qty : <span
-                                                    [text]="productCatalog01.product2.qty"></span></p>
-                                        </div>
-                                        <div class="rhs">
-                                            <button class="delete-icon" on="tap:AMP.setState({
-                                                    productCatalog01 :{
-                                                        product2: {addedToCart:false, qty:0}
-                                                    }
-                                                })">
-                                                <amp-img
-                                                    src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/delete-icon.png"
-                                                    width="24" height="24" layout="fixed" alt="delete-icon">
-                                                </amp-img>
-                                            </button>
-                                            <p class="p-amt">₹ <span
-                                                    [text]="(productCatalog01.product2.qty*productCatalog01.product2.price).toFixed(2)"></span>
-                                            </p>
-                                        </div>
-                                    </li>
-                                    <li class="product-item" [hidden]="productCatalog01.product3.qty == 0">
-                                        <div class="lhs">
-                                            <h3 class="p-name" [text]="productCatalog01.product3.title">Product Name
-                                            </h3>
-                                            <p class="p-desc">is simply dummy text of the new age fashion industry.</p>
-                                            <p class="p-quality">Qty : <span
-                                                    [text]="productCatalog01.product3.qty"></span></p>
-                                        </div>
-                                        <div class="rhs">
-                                            <button class="delete-icon" on="tap:AMP.setState({
-                                                    productCatalog01 :{
-                                                        product3: {addedToCart:false, qty:0}
-                                                    }
-                                                })">
-                                                <amp-img
-                                                    src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/delete-icon.png"
-                                                    width="24" height="24" layout="fixed" alt="delete-icon">
-                                                </amp-img>
-                                            </button>
-                                            <p class="p-amt">₹ <span
-                                                    [text]="(productCatalog01.product3.qty*productCatalog01.product3.price).toFixed(2)"></span>
-                                            </p>
-                                        </div>
-                                    </li>
-                                    <li class="product-item" [hidden]="productCatalog01.product4.qty == 0">
-                                        <div class="lhs">
-                                            <h3 class="p-name" [text]="productCatalog01.product4.title">Product Name
-                                            </h3>
-                                            <p class="p-desc">is simply dummy text of the new age fashion industry.</p>
-                                            <p class="p-quality">Qty : <span
-                                                    [text]="productCatalog01.product4.qty"></span></p>
-                                        </div>
-                                        <div class="rhs">
-                                            <button class="delete-icon" on="tap:AMP.setState({
-                                                    productCatalog01 :{
-                                                        product4: {addedToCart:false, qty:0}
-                                                    }
-                                                })">
-                                                <amp-img
-                                                    src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/delete-icon.png"
-                                                    width="24" height="24" layout="fixed" alt="delete-icon">
-                                                </amp-img>
-                                            </button>
-                                            <p class="p-amt">₹ <span
-                                                    [text]="(productCatalog01.product4.qty*productCatalog01.product4.price).toFixed(2)"></span>
-                                            </p>
-                                        </div>
-                                    </li>
-                                    <li class="product-item" [hidden]="productCatalog01.product5.qty == 0">
-                                        <div class="lhs">
-                                            <h3 class="p-name" [text]="productCatalog01.product5.title">Product Name
-                                            </h3>
-                                            <p class="p-desc">is simply dummy text of the new age fashion industry.</p>
-                                            <p class="p-quality">Qty : <span
-                                                    [text]="productCatalog01.product5.qty"></span></p>
-                                        </div>
-                                        <div class="rhs">
-                                            <button class="delete-icon" on="tap:AMP.setState({
-                                                    productCatalog01 :{
-                                                        product5: {addedToCart:false, qty:0}
-                                                    }
-                                                })">
-                                                <amp-img
-                                                    src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/delete-icon.png"
-                                                    width="24" height="24" layout="fixed" alt="delete-icon">
-                                                </amp-img>
-                                            </button>
-                                            <p class="p-amt">₹ <span
-                                                    [text]="(productCatalog01.product5.qty*productCatalog01.product5.price).toFixed(2)"></span>
-                                            </p>
-                                        </div>
-                                    </li>
-                                    <li class="product-item typ-final">
-                                        <div class="lhs">
-                                            <h3 class="p-total">Amount Total</h3>
-                                        </div>
-                                        <div class="rhs">
-                                            <p class="p-amt p-total-amt">₹
-                                                <span [text]="(
-                                                    (
-                                                        (productCatalog01.product1.qty * productCatalog01.product1.price) +
-                                                        (productCatalog01.product2.qty * productCatalog01.product2.price) +
-                                                        (productCatalog01.product3.qty * productCatalog01.product3.price) +
-                                                        (productCatalog01.product4.qty * productCatalog01.product4.price) +
-                                                        (productCatalog01.product5.qty * productCatalog01.product5.price)
-                                                    ) * (100 - 0) / 100
-                                                ).toFixed(2) + ' '">0</span>
-                                            </p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="bs-sec">
-                            <div class="sec-head ">
-                                <h3 class="sec-title typ-2">ADD DETAILS</h3>
-                            </div>
-                            <div class="sec-body">
-                                <ul class="form-list">
-                                    <!-- First Name -->
-                                    <li class="form-item">
-                                        <input id="productCatalog01-first_name" required on="
-                                            change:AMP.setState({
-                                                productCatalog01: { first_name: event.value }
-                                            });
-                                            tap:AMP.setState({
-                                                formValidation: { first_name_invalid: event.target.validity.valueMissing }
-                                            })
-                                        " type="text" name="first_name" class="input" placeholder="First name" [value]="productCatalog01.first_name" [aria-invalid]="formValidation.first_name_invalid" aria-describedby="productCatalog01.first_name">
-                                        <div class="error-msg" visible-when-invalid="valueMissing" validation-for="productCatalog01-first_name" id="productCatalog01.first_name">
-                                            First name is required.
-                                        </div>
-                                    </li>
-                                    <!-- Last Name -->
-                                    <li class="form-item">
-                                        <input id="productCatalog01-last_name" required on="
-                                            change:AMP.setState({
-                                                productCatalog01: { last_name: event.value }
-                                            });
-                                            tap:AMP.setState({
-                                                formValidation: { last_name_invalid: event.target.validity.valueMissing }
-                                            })
-                                        " type="text" name="last_name" class="input" placeholder="Last name" [value]="productCatalog01.last_name" [aria-invalid]="formValidation.last_name_invalid" aria-describedby="formValidation.last_name_invalid">
-                                        <div class="error-msg" visible-when-invalid="valueMissing" validation-for="productCatalog01-last_name" id="formValidation.last_name_invalid">
-                                            Last name is required.
-                                        </div>
-                                    </li>
-                                    <!-- Phone Number -->
-                                    <li class="form-item">
-                                        <input id="productCatalog01-phoneNumber" required [pattern]="productCatalog01.currentStep==2 ? '\\d{10}' : '*'" on="
-                                            change:AMP.setState({
-                                                productCatalog01: { phoneNumber: event.value }
-                                            });
-                                            tap:AMP.setState({
-                                                formValidation: { phoneNumber_invalid: event.target.validity.valueMissing || event.target.validity.patternMismatch }
-                                            })
-                                        " maxlength="10" type="text" name="phoneNumber" class="input" placeholder="Phone Number" [value]="productCatalog01.phoneNumber" pattern="\d{10}" [aria-invalid]="formValidation.phoneNumber_invalid" aria-describedby="productCatalog01.phoneNumber">
-                                        <div class="error-msg" visible-when-invalid="valueMissing" validation-for="productCatalog01-phoneNumber" id="productCatalog01.phoneNumber">
-                                            Phone number is required.
-                                        </div>
-                                        <div class="error-msg" visible-when-invalid="patternMismatch" validation-for="productCatalog01-phoneNumber">
-                                            Please enter a valid phone number.
-                                        </div>
-                                    </li>
-                                    <!-- Email -->
-                                    <li class="form-item">
-                                        <input id="productCatalog01-email" required type="email" on="
-                                            change:AMP.setState({
-                                                productCatalog01: { email: event.value }
-                                            });
-                                            tap:AMP.setState({
-                                                formValidation: { email_invalid: event.target.validity.valueMissing || event.target.validity.typeMismatch }
-                                            })
-                                        " name="email" class="input" placeholder="E-mail" [value]="productCatalog01.email" [aria-invalid]="formValidation.email_invalid" aria-describedby="productCatalog01.email">
-                                        <div class="error-msg" visible-when-invalid="valueMissing" validation-for="productCatalog01-email" id="productCatalog01.email">
-                                            Email is required.
-                                        </div>
-                                        <div class="error-msg" visible-when-invalid="patternMismatch" validation-for="productCatalog01-email">
-                                            Please enter a valid Email.
-                                        </div>
-                                    </li>
-                                    <!-- Address -->
-                                    <li class="form-item typ-full">
-                                        <input id="productCatalog01-address" required on="
-                                            change:AMP.setState({
-                                                productCatalog01: { address: event.value }
-                                            });
-                                            tap:AMP.setState({
-                                                formValidation: { address_invalid: event.target.validity.valueMissing }
-                                            })
-                                        " name="address" class="input" placeholder="Address" [value]="productCatalog01.address" [aria-invalid]="formValidation.address_invalid" aria-describedby="productCatalog01.address">
-                                        <div class="error-msg" visible-when-invalid="valueMissing" validation-for="productCatalog01-address" id="productCatalog01.address">
-                                            Address is required.
-                                        </div>
-                                    </li>
-                                    <!-- Landmark -->
-                                    <li class="form-item">
-                                        <input id="productCatalog01-landmark" required on="
-                                            change:AMP.setState({
-                                                productCatalog01: { landmark: event.value }
-                                            });
-                                            tap:AMP.setState({
-                                                formValidation: { landmark_invalid: event.target.validity.valueMissing }
-                                            })
-                                        " name="landmark" class="input" placeholder="Landmark" [value]="productCatalog01.landmark" [aria-invalid]="formValidation.landmark_invalid" aria-describedby="productCatalog01.landmark">
-                                        <div class="error-msg" visible-when-invalid="valueMissing" validation-for="productCatalog01-landmark" id="productCatalog01.landmark">
-                                            Landmark is required.
-                                        </div>
-                                    </li>
-                                    <!-- Pincode -->
-                                    <li class="form-item">
-                                        <input id="productCatalog01-pincode" required on="
-                                            change:AMP.setState({
-                                                productCatalog01: { pincode: event.value }
-                                            });
-                                            tap:AMP.setState({
-                                                formValidation: { pincode_invalid: event.target.validity.valueMissing }
-                                            })
-                                        " name="pincode" class="input" placeholder="Pincode" [value]="productCatalog01.pincode" maxlength="6" type="number" [aria-invalid]="formValidation.pincode_invalid" aria-describedby="productCatalog01.pincode">
-                                        <div class="error-msg" visible-when-invalid="valueMissing" validation-for="productCatalog01-pincode" id="productCatalog01.pincode">
-                                            Pincode is required.
-                                        </div>
-                                    </li>
-                                    <!-- City -->
-                                    <li class="form-item">
-                                        <input id="productCatalog01-city" required on="
-                                            change:AMP.setState({
-                                                productCatalog01: { city: event.value }
-                                            });
-                                            tap:AMP.setState({
-                                                formValidation: { city_invalid: event.target.validity.valueMissing }
-                                            })
-                                        " type="text" name="city" class="input" placeholder="City" [value]="productCatalog01.city" [aria-invalid]="formValidation.city_invalid" aria-describedby="productCatalog01.city">
-                                        <div class="error-msg" visible-when-invalid="valueMissing" validation-for="productCatalog01-city" id="productCatalog01.city">
-                                            City is required.
-                                        </div>
-                                    </li>
-                                    <!-- State -->
-                                    <li class="form-item">
-                                        <input id="productCatalog01-state" required on="
-                                            change:AMP.setState({
-                                                productCatalog01: { state: event.value }
-                                            });
-                                            tap:AMP.setState({
-                                                formValidation: { state_invalid: event.target.validity.valueMissing }
-                                            })
-                                        " type="text" name="state" class="input" placeholder="State" [value]="productCatalog01.state" [aria-invalid]="formValidation.state_invalid" aria-describedby="productCatalog01.state">
-                                        <div class="error-msg" visible-when-invalid="valueMissing" validation-for="productCatalog01-state" id="productCatalog01.state">
-                                            State is required.
-                                        </div>
-                                    </li>
-                                    <!-- Payment Mode -->
-                                    <li class="form-item typ-full mt-32">
-                                        <label for="cod" class="field-wrap">
-                                            <input type="radio" checked="checked" id="cod" name="payment" required on="
-                                                change:AMP.setState({
-                                                    productCatalog01: { payment_mode: 'cod' }
-                                                })
-                                            " [value]="productCatalog01.payment_mode" class="user-valid valid" value="">
-                                            <span class="checkmark"></span>
-                                            Cash on Delivery
-                                        </label>
-                                        <label class="field-wrap" for="online">
-                                            <input type="radio" id="online" name="payment" on="
-                                                change:AMP.setState({
-                                                    productCatalog01: { payment_mode: 'online' }
-                                                })
-                                            " [value]="productCatalog01.payment_mode" class="user-valid valid" value="">
-                                            <span class="checkmark"></span>
-                                            Online
-                                        </label>
-                                    </li>
-                                    <!-- Submit Button -->
-                                    <li class="form-item typ-full">
-                                        <button class="form-btn" on="
-                                            tap:AMP.setState({
-                                                formValidation: {
-                                                    first_name_invalid: !productCatalog01.first_name,
-                                                    last_name_invalid: !productCatalog01.last_name,
-                                                    phoneNumber_invalid: !productCatalog01.phoneNumber || !/^\d{10}$/.test(productCatalog01.phoneNumber),
-                                                    email_invalid: !productCatalog01.email,
-                                                    address_invalid: !productCatalog01.address,
-                                                    landmark_invalid: !productCatalog01.landmark,
-                                                    pincode_invalid: !productCatalog01.pincode,
-                                                    city_invalid: !productCatalog01.city,
-                                                    state_invalid: !productCatalog01.state,
-                                                },
-                                                productCatalog01: { currentStep: 3 }
-                                            })
-                                        ">
-                                            Next
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="step3" hidden [hidden]="productCatalog01.currentStep != 3">
-                    <div class="modal-overlay">
-                        <div class="modal">
-                            <div class="modal-content">
-                                <div class="modal-head">
-                                    <span class="close">x</span>
-                                </div>
-                                <div class="modal-body">
-                                    <h3 class="m-title">THANKS for shopping</h3>
-                                    <p class="m-desc">
-                                        is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                                        been the
-                                        industry's standard dummy text ever since the 1500s
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="step4" hidden submit-error>
-                    <div class="modal-overlay">
-                        <div class="modal hidden">
-                            <div class="modal-content">
-                                <div class="modal-head">
-                                    <span class="close">x</span>
-                                </div>
-                                <div class="modal-body">
-                                    <h3 class="m-title">Error</h3>
-                                    <p class="m-desc">
-                                        is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                                        been the
-                                        industry's standard dummy text ever since the 1500s
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
-</body>
-</html>
-```
-
+  ```html
+  <!doctype html>
+  <html ⚡4email>
+  <head>
+      <meta charset="utf-8">
+      <script async src="https://cdn.ampproject.org/v0.js"></script>
+      <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+      <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+      <style amp4email-boilerplate>
+          body {
+              visibility: hidden
+          }
+      </style>
+      <style amp-custom>
+          * {
+              margin: 0;
+              padding: 0;
+          }
+          ul,
+          li {
+              list-style: none;
+          }
+          /* Change Theme */
+          body {
+              font-family: "Helvetica", arial, sans-serif;
+              font-weight: 400;
+              background-color: rgb(248, 250, 252);
+          }
+          /* Change Theme */
+          img {
+              width: 100%;
+              height: 100%;
+              object-fit: contain;
+          }
+          amp-img {
+              position: relative;
+          }
+          .main {
+              position: relative;
+              width: 100%;
+              max-width: 600px;
+              overflow: hidden;
+              margin: 0 auto;
+              background: #FFFFFF;
+          }
+          .container {
+              max-width: 85%;
+              margin: 0 auto;
+          }
+          @media only screen and (max-width: 400px) {
+              .container,
+              .main {
+                  max-width: 95%;
+              }
+          }
+          .cp-header {
+              padding: 0 30px;
+          }
+          .cp-header.typ-shadow {
+              box-shadow: 0px 4px 4px 0px #00000040;
+          }
+          .logo-wrap {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+          }
+          .logo-wrap .img-wrap {
+              width: 127px;
+              height: 58px;
+              margin: 8.5px 0;
+          }
+          .nav-list {
+              list-style: none;
+              display: flex;
+              align-items: center;
+          }
+          .nav-list .nav-item {
+              padding: 25px 19px;
+              border-left: 0.5px solid #919191;
+              display: flex;
+              align-items: center;
+          }
+          .nav-list .nav-item:last-child {
+              padding-right: 0;
+          }
+          .cart-icon {
+              border: 0;
+              outline: 0;
+              position: relative;
+              background-color: transparent;
+          }
+          .cart-icon.active .dot {
+              display: inline-block;
+          }
+          .dot {
+              width: 6px;
+              height: 6px;
+              background: #FF533F;
+              border-radius: 50%;
+              display: none;
+              position: absolute;
+              top: 2px;
+              right: 0px;
+              z-index: 1;
+          }
+          .call-icon {
+              width: 20px;
+              height: 20px;
+              margin-right: 5px;
+          }
+          .icon-text {
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 24px;
+              text-align: center;
+              color: #464646;
+          }
+          .cp-banner {
+              width: 100%;
+              max-height: 361px;
+              margin-bottom: 22px;
+          }
+          .cp-footer {
+              margin-top: 50px;
+              background: #1E1E1E;
+              padding: 32px 0 34px;
+          }
+          .media-logo-list {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-bottom: 20px;
+          }
+          .media-logo-list .logo-item {
+              padding: 6px 32px;
+              border: 1px solid #FFFFFF;
+          }
+          .media-logo-list .logo-item .logo-link {
+              display: inline-block;
+          }
+          .media-logo {
+              width: 20px;
+              height: 20px;
+              display: inline-block;
+          }
+          .f-desc {
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 20px;
+              text-align: center;
+              color: #FFFFFF;
+              margin: 0 auto;
+              max-width: 84%;
+              text-transform: capitalize;
+          }
+          .bs-sec {
+              padding: 28px 0;
+          }
+          .bs-sec.typ-product {
+              background: #F1F1F1;
+          }
+          .bs-sec .sec-title {
+              padding: 0 26px 12px;
+              text-transform: capitalize;
+              font-size: 20px;
+              font-weight: 400;
+              line-height: 24px;
+              text-align: center;
+              position: relative;
+              width: max-content;
+              margin: 0 auto;
+          }
+          .bs-sec .sec-title.typ-2 {
+              margin: 0;
+              padding: 0 0 2px;
+          }
+          /* .bs-sec .sec-title.typ-2:after{
+              display: none;
+          } */
+          .lyt-grid {
+              display: flex;
+              justify-content: space-between;
+              align-items: flex-start;
+              gap: 15px;
+              margin-top: 20px;
+          }
+          .lyt-grid .grid-item {
+              width: 33%;
+          }
+          .product-card {
+              padding: 5px;
+              position: relative;
+              background: #FFFFFF;
+          }
+          .product-card .img-wrap {
+              max-height: 177px;
+              max-width: 150px;
+              margin: 0 auto;
+              overflow: hidden;
+          }
+          .product-card .p-cart-icon {
+              background: #FFFFFF;
+              padding: 3px 5px;
+              border: 0;
+              outline: 0;
+              position: absolute;
+              top: 5px;
+              right: 5px;
+              cursor: pointer;
+          }
+          .product-card .p-wrap {
+              display: flex;
+              justify-content: space-between;
+              align-items: baseline;
+              margin: 5px 0;
+          }
+          .product-card .p-title {
+              width: 60%;
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 18px;
+              color: #252525;
+              padding-right: 5px;
+          }
+          .product-card .p-amt {
+              color: #252525;
+              font-size: 12px;
+              font-weight: 300;
+              line-height: 15px;
+              text-align: right;
+              font-style: italic;
+          }
+          .product-card .rupee-sign {
+              font-size: 10px;
+          }
+          .product-card .p-desc {
+              text-transform: capitalize;
+              font-size: 8px;
+              font-weight: 400;
+              line-height: 13px;
+              color: #909090;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              -webkit-line-clamp: 2;
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+          }
+          .btn-wrap {
+              text-align: right;
+          }
+          .shop-cta {
+              font-size: 12px;
+              font-weight: 400;
+              text-transform: capitalize;
+              line-height: 15px;
+              color: #000000;
+              text-decoration: none;
+              display: inline-block;
+              text-align: center;
+              margin-top: 15px;
+          }
+          .catalog-card {
+              margin-top: 30px;
+          }
+          .catalog-card .catalog-img {
+              max-width: 506px;
+              max-height: 316px;
+              position: relative;
+          }
+          .catalog-card .offer-band {
+              background: #1e1e1e;
+              text-align: center;
+              padding: 7px 20px;
+              font-size: 12px;
+              font-weight: 400;
+              line-height: 13px;
+              letter-spacing: 0.25em;
+              position: absolute;
+              top: 0;
+              left: 0;
+              z-index: 1;
+              width: 92%;
+              color: #fff;
+          }
+          .catalog-card .cart-wrap {
+              position: absolute;
+              bottom: 0;
+              right: 0;
+              padding: 8px 10px;
+              background: #fff;
+              z-index: 1;
+          }
+          .catalog-card .cart-wrap .count {
+              position: absolute;
+              top: 8px;
+              right: 8px;
+              width: 11px;
+              height: 11px;
+              background: #FF533F;
+              border-radius: 50%;
+              color: #FFFFFF;
+              font-size: 7px;
+              font-weight: 400;
+              line-height: 11px;
+              text-align: center;
+              z-index: 1;
+          }
+          .catalog-card .catalog-body {
+              background: #f1f1f1;
+              padding: 12px 14px 10px;
+          }
+          .catalog-card .c-wrap {
+              display: flex;
+              justify-content: space-between;
+              align-items: flex-start;
+          }
+          .catalog-card .c-title {
+              margin-bottom: 5px;
+              font-size: 20px;
+              font-weight: 400;
+              line-height: 24px;
+              color: #252525;
+              width: 50%;
+          }
+          .catalog-card .c-amt {
+              font-size: 22px;
+              font-style: italic;
+              font-weight: 400;
+              line-height: 15px;
+              text-align: right;
+          }
+          .catalog-card .rupee-sign {
+              font-size: 10px;
+          }
+          .catalog-card .c-desc {
+              font-size: 10px;
+              font-weight: 400;
+              line-height: 13px;
+              color: #545454;
+              width: 40%;
+              text-transform: capitalize;
+          }
+          .catalog-card .btn-wrap {
+              width: 60%;
+              display: flex;
+              justify-content: flex-end;
+          }
+          .catalog-card .catalog-cta {
+              font-size: 14px;
+              font-weight: 400;
+              text-transform: uppercase;
+              line-height: 20px;
+              color: #FFFFFF;
+              text-decoration: none;
+              background: #000000;
+              padding: 4px 34px;
+              display: inline-block;
+              text-align: center;
+              max-width: 167px;
+              border: none;
+              margin-left: 10px;
+              cursor: pointer;
+          }
+          .product-count {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              padding: 6px;
+              background: #FFF;
+              width: 60px;
+          }
+          .product-count .product-count-sign {
+              background: transparent;
+              border: 0;
+              outline: none;
+              cursor: pointer;
+          }
+          .product-count-value {
+              font-size: 12px;
+              font-weight: 400;
+              line-height: 15px;
+              text-align: center;
+          }
+          .input {
+              border: 0.5px solid #000000;
+              padding: 7px 10px;
+              font-family: "Helvetica", arial, sans-serif;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 24px;
+              color: #000000;
+              width: -webkit-fill-available;
+          }
+          .input::-webkit-input-placeholder,
+          .input::-moz-placeholder,
+          .input:-ms-input-placeholder,
+          .input:-moz-placeholder {
+              color: #919191;
+          }
+          @media only screen and (max-width: 480px) {
+              .cp-header {
+                  max-width: 100%;
+                  padding: 0 10px;
+              }
+              .logo-wrap .img-wrap {
+                  width: 101px;
+                  height: 48px;
+                  margin: 5.5px 0;
+              }
+              .nav-list .nav-item {
+                  padding: 15px 10px;
+              }
+              .call-icon {
+                  width: 18px;
+                  height: 18px;
+              }
+              .icon-text {
+                  font-size: 12px;
+                  line-height: 20px;
+              }
+              .lyt-grid {
+                  gap: 5px;
+              }
+              .product-card .p-title {
+                  font-size: 12px;
+                  line-height: 16px;
+              }
+              .product-card .p-amt {
+                  font-size: 10px;
+                  line-height: 16px;
+              }
+              .bs-sec .sec-title {
+                  padding: 0 20px 12px;
+                  font-size: 18px;
+                  line-height: 20px;
+              }
+              .catalog-card .catalog-cta {
+                  font-size: 10px;
+                  line-height: 14px;
+                  padding: 5px;
+              }
+          }
+          .form-list {
+              margin-top: 20px;
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-between;
+              gap: 10px;
+          }
+          .form-item {
+              width: 49%;
+              position: relative;
+              padding-bottom: 20px;
+          }
+          .form-item.typ-full {
+              width: 100%;
+          }
+          [visible-when-invalid]{
+              display: block;
+          }
+          .error-msg{
+              font-size: 10px;  
+              display: none;   
+              position: absolute;
+              bottom: 0; left: 0;       
+          }
+          .error-msg.visible{
+              display: block;   
+          }
+          .field-wrap {
+              display: block;
+              position: relative;
+              padding-left: 25px;
+              margin-bottom: 10px;
+              cursor: pointer;
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              user-select: none;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 24px;
+          }
+          .field-wrap input {
+              position: absolute;
+              opacity: 0;
+              cursor: pointer;
+          }
+          .checkmark {
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              left: 0;
+              height: 17px;
+              width: 17px;
+              background-color: #0B0B0B;
+              border-radius: 50%;
+          }
+          .field-wrap input:checked~.checkmark {
+              background-color: #0B0B0B;
+          }
+          .checkmark:after {
+              content: "";
+              position: absolute;            
+              display: block;
+          }
+          .field-wrap input:checked~.checkmark:after {
+             display: none;
+          }
+          .field-wrap .checkmark:after {
+              top: 2px;
+              left: 2px;
+              width: 13px;
+              height: 13px;
+              border-radius: 50%;
+              background: #FFFFFF;
+          }
+          .mt-32 {
+              margin-top: 32px;
+          }
+          .form-btn {
+              font-size: 20px;
+              font-weight: 400;
+              line-height: 24px;
+              text-align: center;
+              width: 100%;
+              background: #252525;
+              border: 0;
+              outline: none;
+              color: #FFF;
+              padding: 10px;
+              cursor: pointer;
+          }
+          .tab-3 {
+              position: relative;
+          }
+          .modal-overlay {
+              width: 100%;
+              height: 100%;
+              background-color: #000000;
+              padding: 100px 0;
+          }
+          .modal {
+              width: 75%;
+              margin: 40px auto;
+              z-index: 12;
+              background: #FFF;
+              padding: 70px 30px;
+              position: relative;
+          }
+          .close {
+              width: 27px;
+              height: 27px;
+              display: inline-block;
+              text-align: center;
+              background: #000000;
+              font-size: 13px;
+              color: #FFFFFF;
+              line-height: 27px;
+              border-radius: 50%;
+              position: absolute;
+              top: 6px;
+              right: 6px;
+              cursor: pointer;
+          }
+          .m-title {
+              font-size: 20px;
+              font-weight: 400;
+              line-height: 24px;
+              text-align: center;
+              margin-bottom: 20px;
+              color: #000000;
+              text-transform: uppercase;
+          }
+          .m-desc {
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 20px;
+              text-align: center;
+              color: #545454;
+              text-transform: capitalize;
+              max-width: 70%;
+              margin: 0 auto;
+          }
+          .product-list {
+              margin: 16px 0;
+          }
+          .product-list .product-item {
+              display: flex;
+              justify-content: space-between;
+              padding: 16px 0;
+              border-bottom: 1px solid #919191;
+          }
+          .product-list .product-item:last-child {
+              border: 0;
+              padding-bottom: 0;
+          }
+          .lhs {
+              width: 80%;
+          }
+          .rhs {
+              width: 20%;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              align-items: flex-end;
+          }
+          .product-item .p-name {
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 24px;
+              color: #000000;
+              margin-bottom: 6px;
+          }
+          .product-item .p-desc {
+              font-size: 10px;
+              font-weight: 400;
+              line-height: 13px;
+              color: #545454;
+              margin-bottom: 6px;
+          }
+          .product-item .p-quality {
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 24px;
+              color: #000000;
+          }
+          .product-item .delete-icon {
+              background: transparent;
+              outline: none;
+              border: 0;
+          }
+          .product-item .p-amt {
+              font-size: 22px;
+              font-style: italic;
+              font-weight: 300;
+              line-height: 24px;
+              color: #000000;
+          }
+          .product-item .p-total {
+              font-size: 20px;
+              font-weight: 400;
+              line-height: 24px;
+              color: #000000;
+          }
+          .typ-bottom-padding-zero {
+              padding-bottom: 0;
+          }
+          .disabled {
+              pointer-events: none;
+              cursor: not-allowed;
+              opacity: 0.7;
+          }
+          @media only screen and (max-width: 480px) {
+              .catalog-card .offer-band {
+                  padding: 7px;
+                  font-size: 10px;
+                  line-height: 10px;
+                  width: 96%;
+              }
+              .catalog-card .c-title {
+                  font-size: 16px;
+                  line-height: 18px;
+              }
+              .catalog-card .c-amt {
+                  font-size: 18px;
+                  line-height: 20px;
+              }
+              .catalog-card .c-desc {
+                  margin-bottom: 7px;
+              }
+              .catalog-card .c-wrap {
+                  flex-wrap: wrap;
+              }
+              .catalog-card .btn-wrap,
+              .catalog-card .c-desc {
+                  width: 100%;
+              }
+              .form-item {
+                  width: 100%;
+              }
+              .lhs,
+              .rhs {
+                  width: 50%;
+              }
+              .product-item .p-total,
+              .product-item .p-amt {
+                  font-size: 18px;
+                  line-height: 20px;
+              }
+          }
+      </style>
+  </head>
+  <body>
+      <div class="main">
+          <div id="ProductCatalogform" on="tap:AMP.setState({productCatalog01: {fuuid: 01 }})" role="tab" tabindex="1"
+              class="amp-html-block widget-container">
+              <form class="form-container" method="post" id="productCatalog01Form" enctype="multipart/form-data"
+                  action-xhr="https://example.com" custom-validation-reporting="show-all-on-submit" on="submit:AMP.setState({
+                      productCatalog01: {
+                          currentStep: productCatalog01.currentStep == 2 : productCatalog01.currentStep + 1, 
+                          submitting: true,
+                          editAddress: false
+                      }
+                  });
+                  submit-success:AMP.setState({
+                      productCatalog01: {
+                          submitting: false, 
+                          paymentUrl: productCatalog01.paymentUrl || event.response.url
+                      }
+                  });">
+                  <input hidden id="fuuid" name="fuuid" [value]="01" />
+                  <input hidden name="catalogType" value="STATIC" />
+                  <input hidden name="discountCouponCode" value="" />
+                  <amp-state id="productCatalog01">
+                      <script type="application/json">
+                          {
+                              "first_name": "",
+                              "last_name": "",
+                              "address": "",
+                              "landmark": "",
+                              "city": "",
+                              "country": "",
+                              "pincode": "",
+                              "phoneNumber": "",
+                              "email": "",
+                              "payment_mode": "",
+                              "isFirstNameValid": false,
+                              "isLastNameValid": false,
+                              "isPhoneNumberValid": false,
+                              "isEmailValid": false,
+                              "isPincodeValid": false,
+                              "isCityValid": false,
+                              "editAddress": false,        
+                              "paymentUrl": "",
+                              "product1": {
+                                  "id": 1,
+                                  "qty": 0,
+                                  "title": "Mystic Elixir",
+                                  "price": 1500,
+                                  "selectedVariantId": 0,
+                                  "addedToCart": false,
+                                  "variantId": 101,
+                                  "variantTitle": "Default Title",
+                                  "comparePrice": "null",
+                                  "variants": {
+                                      "101": {
+                                          "id": 101,
+                                          "price": 1500,
+                                          "title": "Default Title",
+                                          "comparePrice": "null"
+                                      }
+                                  }
+                              },
+                              "product2": {
+                                  "id": 2,
+                                  "qty": 0,
+                                  "title": "Opulent Essence",
+                                  "price": 1500,
+                                  "selectedVariantId": 0,
+                                  "addedToCart": false,
+                                  "variantId": 102,
+                                  "variantTitle": "Default Title",
+                                  "comparePrice": "null",
+                                  "variants": {
+                                      "102": {
+                                          "id": 102,
+                                          "price": 1500,
+                                          "title": "Default Title",
+                                          "comparePrice": "null"
+                                      }
+                                  }
+                              },
+                              "product3": {
+                                  "id": 3,
+                                  "qty": 0,
+                                  "title": "Product Name 3",
+                                  "price": 1500,
+                                  "selectedVariantId": 0,
+                                  "addedToCart": false,
+                                  "variantId": 103,
+                                  "variantTitle": "Default Title",
+                                  "comparePrice": "null",
+                                  "variants": {
+                                      "103": {
+                                          "id": 103,
+                                          "price": 1500,
+                                          "title": "Default Title",
+                                          "comparePrice": "null"
+                                      }
+                                  }
+                              },
+                              "product4": {
+                                  "id": 4,
+                                  "qty": 0,
+                                  "title": "Product Name 4",
+                                  "price": 1500,
+                                  "selectedVariantId": 0,
+                                  "addedToCart": false,
+                                  "variantId": 104,
+                                  "variantTitle": "Default Title",
+                                  "comparePrice": "null",
+                                  "variants": {
+                                      "104": {
+                                          "id": 104,
+                                          "price": 1500,
+                                          "title": "Default Title",
+                                          "comparePrice": "null"
+                                      }
+                                  }
+                              },
+                              "product5": {
+                                  "id": 5,
+                                  "qty": 0,
+                                  "title": "Product Name 5",
+                                  "price": 1500,
+                                  "selectedVariantId": 0,
+                                  "addedToCart": false,
+                                  "variantId": 105,
+                                  "variantTitle": "Default Title",
+                                  "comparePrice": "null",
+                                  "variants": {
+                                      "105": {
+                                          "id": 105,
+                                          "price": 1500,
+                                          "title": "Default Title",
+                                          "comparePrice": "null"
+                                      }
+                                  }
+                              },
+                              "currentStep": 1
+                          }
+                      </script>
+                  </amp-state>
+                  <!-- <h1 [text]="productCatalog01.currentStep"></h1> -->
+                  <header class="cp-header typ-shadow" [hidden]="productCatalog01.currentStep == 3">
+                      <div class="logo-wrap">
+                          <div class="img-wrap">
+                              <!-- Change Logo -->
+                              <amp-img layout="responsive"
+                                  src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Cart-Abandonment-HTML/logo.png"
+                                  alt="Logo" width="127" height="58" />
+                              <!-- Change Logo -->
+                          </div>
+                          <ul class="nav-list">
+                              <li class="nav-item">
+                                  <div class="cart-icon checkout-button"
+                                      [class]="productCatalog01.currentStep == 2 ? 'cart-icon active' : 'cart-icon'"
+                                      on="tap:AMP.setState({
+                                          productCatalog01 : {
+                                          currentStep:  2 ,
+                                          editAddress: true,
+                                          }
+                                      })"
+                                      >
+                                      <amp-img layout="fixed"
+                                          src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/icon-cart.png"
+                                          alt="cart-icon" class="icon" width="22" height="22" />
+                                      <span class="dot"></span>
+                                  </div>
+                              </li>
+                              <li class="nav-item">
+                                  <span class="icon-wrap">
+                                      <amp-img class="call-icon" layout="responsive"
+                                          src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Cart-Abandonment-HTML/call-icon.png"
+                                          alt="call icon" width="20" height="20" />
+                                  </span>
+                                  <p class="icon-text">9878725637</p>
+                              </li>
+                          </ul>
+                      </div>
+                  </header>
+                  <div class="step1" [hidden]="productCatalog01.currentStep != 1">
+                      <div class="bs-sec typ-look">
+                          <div class="sec-head">
+                              <h3 class="sec-title">PRODUCTS</h3>
+                          </div>
+                          <div class="sec-body">
+                              <div class="container">
+                                  <div class="catalog-card">
+                                      <div class="catalog-img">
+                                          <h3 class="offer-band">Get 20% off for your first purchase.</h3>
+                                          <!-- Change Product Image -->
+                                          <amp-img
+                                              src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Cart-Abandonment-HTML/look-1.png"
+                                              layout="responsive" alt="look" width="506" height="316" />
+                                          <!-- Change Product Image -->
+                                          <span class="cart-wrap">
+                                              <span class="count" hidden [hidden]="productCatalog01.product1.qty <= 0"
+                                                  [text]="productCatalog01.product1.qty"></span>
+                                              <amp-img layout="fixed"
+                                                  src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/icon-cart.png"
+                                                  alt="cart-icon" class="icon" width="27" height="27" />
+                                          </span>
+                                      </div>
+                                      <div class="catalog-body">
+                                          <div class="c-wrap">
+                                              <h3 class="c-title">Mystic Elixir</h3>
+                                              <p class="c-amt">
+                                                  <span class="rupee-sign">₹</span>
+                                                  <span class="amount"
+                                                      [text]="(productCatalog01.product1.qty*productCatalog01.product1.price).toFixed(2)">1500.00</span>
+                                              </p>
+                                              <input hidden name='101'
+                                                  [value]="productCatalog01.product1.variantId == 101 ? productCatalog01.product1.qty:1" />
+                                          </div>
+                                          <div class="c-wrap">
+                                              <p class="c-desc">is simply dummy text of the new age fashion industry.</p>
+                                              <div class="btn-wrap">
+                                                  <div class="product-count">
+                                                      <div class="product-count-sign" tabindex="1" role on="tap:AMP.setState({
+                                                          productCatalog01 : {
+                                                              product1: {
+                                                                  qty: productCatalog01.product1.qty > 0 ? productCatalog01.product1.qty - 1 : 0
+                                                              }
+                                                          }
+                                                      })">
+                                                          <amp-img layout="fixed"
+                                                              src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/minsu-icon.png"
+                                                              alt="minus-icon" class="icon" width="13" height="13" />
+                                                      </div>
+                                                      <div class="product-count-value"
+                                                          [text]="productCatalog01.product1.qty">0</div>
+                                                      <div class="product-count-sign" tabindex="1" on="tap:AMP.setState({
+                                                              productCatalog01 :{
+                                                                  product1: {
+                                                                      qty: productCatalog01.product1.qty < 5 ? productCatalog01.product1.qty + 1 : 5
+                                                                  }
+                                                              }
+                                                          })">
+                                                          <amp-img layout="fixed"
+                                                              src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/plus-icon.png"
+                                                              alt="plus-icon" class="icon" width="13" height="13" />
+                                                      </div>
+                                                  </div>
+                                                  <!-- Change CTA -->
+                                                  <button type="button" class="catalog-cta"
+                                                      on="tap:AMP.setState({productCatalog01 :{product1: {addedToCart:true}}})">
+                                                      ADD TO CART
+                                                  </button>
+                                                            <!-- Change CTA -->
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!-- Second product card -->
+                                  <div class="catalog-card">
+                                      <div class="catalog-img">
+                                          <h3 class="offer-band">Get 20% off for your first purchase.</h3>
+                                          <amp-img
+                                              src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Cart-Abandonment-HTML/look-2.png"
+                                              layout="responsive" alt="look" width="506" height="316" />
+                                          <span class="cart-wrap">
+                                              <span class="count" hidden [hidden]="productCatalog01.product2.qty <= 0"
+                                                  [text]="productCatalog01.product2.qty"></span>
+                                              <amp-img layout="fixed"
+                                                  src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/icon-cart.png"
+                                                  alt="cart-icon" class="icon" width="27" height="27" />
+                                          </span>
+                                      </div>
+                                      <div class="catalog-body">
+                                          <div class="c-wrap">
+                                              <h3 class="c-title">Opulent Essence</h3>
+                                              <p class="c-amt">
+                                                  <span class="rupee-sign">₹</span>
+                                                  <span class="amount"
+                                                      [text]="(productCatalog01.product2.qty*productCatalog01.product2.price).toFixed(2)">1500</span>
+                                              </p>
+                                              <input hidden name='102'
+                                                  [value]="productCatalog01.product2.variantId == 102 ? productCatalog01.product2.qty:1" />
+                                          </div>
+                                          <div class="c-wrap">
+                                              <p class="c-desc">is simply dummy text of the new age fashion industry.</p>
+                                              <div class="btn-wrap">
+                                                  <div class="product-count">
+                                                      <div class="product-count-sign" tabindex="1" role on="tap:AMP.setState({
+                                                              productCatalog01 : {
+                                                                  product2: {
+                                                                      qty: productCatalog01.product2.qty > 0 ? productCatalog01.product2.qty - 1 : 0
+                                                                  }
+                                                              }
+                                                          })">
+                                                          <amp-img layout="fixed"
+                                                              src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/minsu-icon.png"
+                                                              alt="minus-icon" class="icon" width="13" height="13" />
+                                                      </div>
+                                                      <div class="product-count-value"
+                                                          [text]="productCatalog01.product2.qty">0</div>
+                                                      <div class="product-count-sign" tabindex="1" on="tap:AMP.setState({
+                                                              productCatalog01 :{
+                                                                  product2: {
+                                                                      qty: productCatalog01.product2.qty < 5 ? productCatalog01.product2.qty + 1 : 5
+                                                                  }
+                                                              }
+                                                          })">
+                                                          <amp-img layout="fixed"
+                                                              src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/plus-icon.png"
+                                                              alt="plus-icon" class="icon" width="13" height="13" />
+                                                      </div>
+                                                  </div>
+                                                  <button type="button" class="catalog-cta"
+                                                      on="tap:AMP.setState({productCatalog01 :{product2: {addedToCart:true}}})">
+                                                      ADD TO CART
+                                                  </button>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <input hidden name="amount" [value]='(
+                                      (productCatalog01.product1.qty * productCatalog01.product1.price) +
+                                      (productCatalog01.product2.qty * productCatalog01.product2.price) +
+                                      (productCatalog01.product3.qty * productCatalog01.product3.price) +
+                                      (productCatalog01.product4.qty * productCatalog01.product4.price) +
+                                      (productCatalog01.product5.qty * productCatalog01.product5.price)
+                                  ).toFixed(2)' />
+                              </div>
+                          </div>
+                      </div>
+                      <!-- product section -->
+                      <div class="bs-sec typ-product">
+                          <div class="sec-head">
+                              <h3 class="sec-title">Product Suggestions</h3>
+                          </div>
+                          <div class="sec-body">
+                              <div class="container">
+                                  <ul class="lyt-grid">
+                                      <li class="grid-item">
+                                          <div class="product-card">
+                                              <div class="img-wrap">
+                                                  <!-- Change image src as per your requirements -->
+                                                  <amp-img layout="responsive"
+                                                      src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Cart-Abandonment-HTML/product-3.png"
+                                                      alt="product" width="150" height="177" />
+                                              </div>
+                                              <button type="button" class="p-cart-icon"
+                                                  on="tap:AMP.setState({productCatalog01 :{product3: {addedToCart:true, qty:1}}})">
+                                                  <amp-img layout="fixed"
+                                                      src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/icon-cart.png"
+                                                      alt="cart-icon" class="icon" width="13" height="13"></amp-img>
+                                              </button>
+                                              <div class="product-info">
+                                                  <div class="p-wrap">
+                                                      <h3 class="p-title">Product name</h3>
+                                                      <p class="p-amt"><span class="rupee-sign">₹</span>1500</p>
+                                                  </div>
+                                                  <p class="p-desc">Is simply dummy text of the new age fashion industry.
+                                                  </p>
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li class="grid-item">
+                                          <div class="product-card">
+                                              <div class="img-wrap">
+                                                  <!-- Change image src as per your requirements -->
+                                                  <amp-img layout="responsive"
+                                                      src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Cart-Abandonment-HTML/product-2.png"
+                                                      alt="product" width="150" height="177" />
+                                              </div>
+                                              <button type="button" class="p-cart-icon"
+                                                  on="tap:AMP.setState({productCatalog01 :{product4: {addedToCart:true, qty:1}}})">
+                                                  <amp-img layout="fixed"
+                                                      src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/icon-cart.png"
+                                                      alt="cart-icon" class="icon" width="13" height="13" />
+                                              </button>
+                                              <div class="product-info">
+                                                  <div class="p-wrap">
+                                                      <h3 class="p-title">Product name</h3>
+                                                      <p class="p-amt"><span class="rupee-sign">₹</span>1500</p>
+                                                  </div>
+                                                  <p class="p-desc">Is simply dummy text of the new age fashion industry.
+                                                  </p>
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li class="grid-item">
+                                          <div class="product-card">
+                                              <div class="img-wrap">
+                                                  <!-- Change image src as per your requirements -->
+                                                  <amp-img layout="responsive"
+                                                      src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Cart-Abandonment-HTML/product-1.png"
+                                                      alt="product" width="150" height="177" />
+                                              </div>
+                                              <button type="button" class="p-cart-icon"
+                                                  on="tap:AMP.setState({productCatalog01 :{product5: {addedToCart:true, qty:1}}})">
+                                                  <amp-img layout="fixed"
+                                                      src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/icon-cart.png"
+                                                      alt="cart-icon" class="icon" width="13" height="13" />
+                                              </button>
+                                              <div class="product-info">
+                                                  <div class="p-wrap">
+                                                      <h3 class="p-title">Product name</h3>
+                                                      <p class="p-amt"><span class="rupee-sign">₹</span>1500</p>
+                                                  </div>
+                                                  <p class="p-desc">Is simply dummy text of the new age fashion industry.
+                                                  </p>
+                                              </div>
+                                          </div>
+                                      </li>
+                                  </ul>
+                                  <div class="btn-wrap">
+                                      <a href="https://google.com" class="shop-cta">Shop now
+                                          <amp-img layout="fixed"
+                                              src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Cart-Abandonment-HTML/arrow.png"
+                                              alt="arrow" width="17" height="10"
+                                              style="margin-left: 10px; max-width: 17px" />
+                                      </a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- product section -->
+                      <!-- footer section -->
+                      <footer class="cp-footer">
+                          <div class="container">
+                              <ul class="media-logo-list">
+                                  <li class="logo-item">
+                                      <a href="https://www.google.co.in/" class="logo-link">
+                                          <amp-img layout="responsive"
+                                              src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Cart-Abandonment-HTML/logo-insta.png"
+                                              alt="instagram" class="media-logo" width="20" height="20"></amp-img>
+                                      </a>
+                                  </li>
+                                  <li class="logo-item">
+                                      <a href="https://www.google.co.in/" class="logo-link">
+                                          <amp-img layout="responsive"
+                                              src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Cart-Abandonment-HTML/logo-facebook.png"
+                                              alt="facebook" class="media-logo" width="20" height="20"></amp-img>
+                                      </a>
+                                  </li>
+                                  <li class="logo-item">
+                                      <a href="https://www.google.co.in/" class="logo-link">
+                                          <amp-img layout="responsive"
+                                              src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Cart-Abandonment-HTML/logo-x.png"
+                                              alt="x" class="media-logo" width="20" height="20"></amp-img>
+                                      </a>
+                                  </li>
+                              </ul>
+                              <p class="f-desc">is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                  has
+                                  been the industry's standard dummy </p>
+                                  <p class="f-desc" style="margin-top: 20px;">To stop receiving these emails, <a href="https://www.google.com" style="color:#ffff;font-weight:bold;text-decoration:none;">unsubscribe here</a></p>
+                          </div>
+                      </footer>
+                      <!-- footer section -->
+                  </div>
+                  <div class="step2" hidden [hidden]="productCatalog01.currentStep != 2">
+                      <div class="container">
+                          <div class="bs-sec typ-bottom-padding-zero" [hidden]="
+                              (productCatalog01.product1.qty <= 0 &&
+                              productCatalog01.product2.qty <= 0 &&
+                              productCatalog01.product3.qty <= 0 &&
+                              productCatalog01.product4.qty <= 0 &&
+                              productCatalog01.product5.qty <= 0)
+                                      ">
+                              <div class="sec-head">
+                                  <h3 class="sec-title typ-2">PRODUCTS</h3>
+                              </div>
+                              <div class="sec-body">
+                                  <ul class="product-list">
+                                      <li class="product-item" [hidden]="productCatalog01.product1.qty == 0">
+                                          <div class="lhs">
+                                              <h3 class="p-name" [text]="productCatalog01.product1.title">Mystic Elixir
+                                              </h3>
+                                              <p class="p-desc"> is simply dummy text of the new age fashion industry.</p>
+                                              <p class="p-quality">Qty : <span
+                                                      [text]="productCatalog01.product1.qty"></span></p>
+                                          </div>
+                                          <div class="rhs">
+                                              <button class="delete-icon" on="tap:AMP.setState({
+                                                      productCatalog01 :{
+                                                          product1: {addedToCart:false, qty:0}
+                                                      }
+                                                  })">
+                                                  <amp-img
+                                                      src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/delete-icon.png"
+                                                      width="24" height="24" layout="fixed" alt="delete-icon">
+                                                  </amp-img>
+                                              </button>
+                                              <p class="p-amt">₹ <span
+                                                      [text]="(productCatalog01.product1.qty*productCatalog01.product1.price).toFixed(2)"></span>
+                                              </p>
+                                          </div>
+                                      </li>
+                                      <li class="product-item" [hidden]="productCatalog01.product2.qty == 0">
+                                          <div class="lhs">
+                                              <h3 class="p-name" [text]="productCatalog01.product2.title">Mystic Elixir
+                                              </h3>
+                                              <p class="p-desc">is simply dummy text of the new age fashion industry.</p>
+                                              <p class="p-quality">Qty : <span
+                                                      [text]="productCatalog01.product2.qty"></span></p>
+                                          </div>
+                                          <div class="rhs">
+                                              <button class="delete-icon" on="tap:AMP.setState({
+                                                      productCatalog01 :{
+                                                          product2: {addedToCart:false, qty:0}
+                                                      }
+                                                  })">
+                                                  <amp-img
+                                                      src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/delete-icon.png"
+                                                      width="24" height="24" layout="fixed" alt="delete-icon">
+                                                  </amp-img>
+                                              </button>
+                                              <p class="p-amt">₹ <span
+                                                      [text]="(productCatalog01.product2.qty*productCatalog01.product2.price).toFixed(2)"></span>
+                                              </p>
+                                          </div>
+                                      </li>
+                                      <li class="product-item" [hidden]="productCatalog01.product3.qty == 0">
+                                          <div class="lhs">
+                                              <h3 class="p-name" [text]="productCatalog01.product3.title">Product Name
+                                              </h3>
+                                              <p class="p-desc">is simply dummy text of the new age fashion industry.</p>
+                                              <p class="p-quality">Qty : <span
+                                                      [text]="productCatalog01.product3.qty"></span></p>
+                                          </div>
+                                          <div class="rhs">
+                                              <button class="delete-icon" on="tap:AMP.setState({
+                                                      productCatalog01 :{
+                                                          product3: {addedToCart:false, qty:0}
+                                                      }
+                                                  })">
+                                                  <amp-img
+                                                      src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/delete-icon.png"
+                                                      width="24" height="24" layout="fixed" alt="delete-icon">
+                                                  </amp-img>
+                                              </button>
+                                              <p class="p-amt">₹ <span
+                                                      [text]="(productCatalog01.product3.qty*productCatalog01.product3.price).toFixed(2)"></span>
+                                              </p>
+                                          </div>
+                                      </li>
+                                      <li class="product-item" [hidden]="productCatalog01.product4.qty == 0">
+                                          <div class="lhs">
+                                              <h3 class="p-name" [text]="productCatalog01.product4.title">Product Name
+                                              </h3>
+                                              <p class="p-desc">is simply dummy text of the new age fashion industry.</p>
+                                              <p class="p-quality">Qty : <span
+                                                      [text]="productCatalog01.product4.qty"></span></p>
+                                          </div>
+                                          <div class="rhs">
+                                              <button class="delete-icon" on="tap:AMP.setState({
+                                                      productCatalog01 :{
+                                                          product4: {addedToCart:false, qty:0}
+                                                      }
+                                                  })">
+                                                  <amp-img
+                                                      src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/delete-icon.png"
+                                                      width="24" height="24" layout="fixed" alt="delete-icon">
+                                                  </amp-img>
+                                              </button>
+                                              <p class="p-amt">₹ <span
+                                                      [text]="(productCatalog01.product4.qty*productCatalog01.product4.price).toFixed(2)"></span>
+                                              </p>
+                                          </div>
+                                      </li>
+                                      <li class="product-item" [hidden]="productCatalog01.product5.qty == 0">
+                                          <div class="lhs">
+                                              <h3 class="p-name" [text]="productCatalog01.product5.title">Product Name
+                                              </h3>
+                                              <p class="p-desc">is simply dummy text of the new age fashion industry.</p>
+                                              <p class="p-quality">Qty : <span
+                                                      [text]="productCatalog01.product5.qty"></span></p>
+                                          </div>
+                                          <div class="rhs">
+                                              <button class="delete-icon" on="tap:AMP.setState({
+                                                      productCatalog01 :{
+                                                          product5: {addedToCart:false, qty:0}
+                                                      }
+                                                  })">
+                                                  <amp-img
+                                                      src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/delete-icon.png"
+                                                      width="24" height="24" layout="fixed" alt="delete-icon">
+                                                  </amp-img>
+                                              </button>
+                                              <p class="p-amt">₹ <span
+                                                      [text]="(productCatalog01.product5.qty*productCatalog01.product5.price).toFixed(2)"></span>
+                                              </p>
+                                          </div>
+                                      </li>
+                                      <li class="product-item typ-final">
+                                          <div class="lhs">
+                                              <h3 class="p-total">Amount Total</h3>
+                                          </div>
+                                          <div class="rhs">
+                                              <p class="p-amt p-total-amt">₹
+                                                  <span [text]="(
+                                                      (
+                                                          (productCatalog01.product1.qty * productCatalog01.product1.price) +
+                                                          (productCatalog01.product2.qty * productCatalog01.product2.price) +
+                                                          (productCatalog01.product3.qty * productCatalog01.product3.price) +
+                                                          (productCatalog01.product4.qty * productCatalog01.product4.price) +
+                                                          (productCatalog01.product5.qty * productCatalog01.product5.price)
+                                                      ) * (100 - 0) / 100
+                                                  ).toFixed(2) + ' '">0</span>
+                                              </p>
+                                          </div>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                          <div class="bs-sec">
+                              <div class="sec-head ">
+                                  <h3 class="sec-title typ-2">ADD DETAILS</h3>
+                              </div>
+                              <div class="sec-body">
+                                  <ul class="form-list">
+                                      <!-- First Name -->
+                                      <li class="form-item">
+                                          <input id="productCatalog01-first_name" required on="
+                                              change:AMP.setState({
+                                                  productCatalog01: { first_name: event.value }
+                                              });
+                                              tap:AMP.setState({
+                                                  formValidation: { first_name_invalid: event.target.validity.valueMissing }
+                                              })
+                                          " type="text" name="first_name" class="input" placeholder="First name" [value]="productCatalog01.first_name" [aria-invalid]="formValidation.first_name_invalid" aria-describedby="productCatalog01.first_name">
+                                          <div class="error-msg" visible-when-invalid="valueMissing" validation-for="productCatalog01-first_name" id="productCatalog01.first_name">
+                                              First name is required.
+                                          </div>
+                                      </li>
+                                      <!-- Last Name -->
+                                      <li class="form-item">
+                                          <input id="productCatalog01-last_name" required on="
+                                              change:AMP.setState({
+                                                  productCatalog01: { last_name: event.value }
+                                              });
+                                              tap:AMP.setState({
+                                                  formValidation: { last_name_invalid: event.target.validity.valueMissing }
+                                              })
+                                          " type="text" name="last_name" class="input" placeholder="Last name" [value]="productCatalog01.last_name" [aria-invalid]="formValidation.last_name_invalid" aria-describedby="formValidation.last_name_invalid">
+                                          <div class="error-msg" visible-when-invalid="valueMissing" validation-for="productCatalog01-last_name" id="formValidation.last_name_invalid">
+                                              Last name is required.
+                                          </div>
+                                      </li>
+                                      <!-- Phone Number -->
+                                      <li class="form-item">
+                                          <input id="productCatalog01-phoneNumber" required [pattern]="productCatalog01.currentStep==2 ? '\\d{10}' : '*'" on="
+                                              change:AMP.setState({
+                                                  productCatalog01: { phoneNumber: event.value }
+                                              });
+                                              tap:AMP.setState({
+                                                  formValidation: { phoneNumber_invalid: event.target.validity.valueMissing || event.target.validity.patternMismatch }
+                                              })
+                                          " maxlength="10" type="text" name="phoneNumber" class="input" placeholder="Phone Number" [value]="productCatalog01.phoneNumber" pattern="\d{10}" [aria-invalid]="formValidation.phoneNumber_invalid" aria-describedby="productCatalog01.phoneNumber">
+                                          <div class="error-msg" visible-when-invalid="valueMissing" validation-for="productCatalog01-phoneNumber" id="productCatalog01.phoneNumber">
+                                              Phone number is required.
+                                          </div>
+                                          <div class="error-msg" visible-when-invalid="patternMismatch" validation-for="productCatalog01-phoneNumber">
+                                              Please enter a valid phone number.
+                                          </div>
+                                      </li>
+                                      <!-- Email -->
+                                      <li class="form-item">
+                                          <input id="productCatalog01-email" required type="email" on="
+                                              change:AMP.setState({
+                                                  productCatalog01: { email: event.value }
+                                              });
+                                              tap:AMP.setState({
+                                                  formValidation: { email_invalid: event.target.validity.valueMissing || event.target.validity.typeMismatch }
+                                              })
+                                          " name="email" class="input" placeholder="E-mail" [value]="productCatalog01.email" [aria-invalid]="formValidation.email_invalid" aria-describedby="productCatalog01.email">
+                                          <div class="error-msg" visible-when-invalid="valueMissing" validation-for="productCatalog01-email" id="productCatalog01.email">
+                                              Email is required.
+                                          </div>
+                                          <div class="error-msg" visible-when-invalid="patternMismatch" validation-for="productCatalog01-email">
+                                              Please enter a valid Email.
+                                          </div>
+                                      </li>
+                                      <!-- Address -->
+                                      <li class="form-item typ-full">
+                                          <input id="productCatalog01-address" required on="
+                                              change:AMP.setState({
+                                                  productCatalog01: { address: event.value }
+                                              });
+                                              tap:AMP.setState({
+                                                  formValidation: { address_invalid: event.target.validity.valueMissing }
+                                              })
+                                          " name="address" class="input" placeholder="Address" [value]="productCatalog01.address" [aria-invalid]="formValidation.address_invalid" aria-describedby="productCatalog01.address">
+                                          <div class="error-msg" visible-when-invalid="valueMissing" validation-for="productCatalog01-address" id="productCatalog01.address">
+                                              Address is required.
+                                          </div>
+                                      </li>
+                                      <!-- Landmark -->
+                                      <li class="form-item">
+                                          <input id="productCatalog01-landmark" required on="
+                                              change:AMP.setState({
+                                                  productCatalog01: { landmark: event.value }
+                                              });
+                                              tap:AMP.setState({
+                                                  formValidation: { landmark_invalid: event.target.validity.valueMissing }
+                                              })
+                                          " name="landmark" class="input" placeholder="Landmark" [value]="productCatalog01.landmark" [aria-invalid]="formValidation.landmark_invalid" aria-describedby="productCatalog01.landmark">
+                                          <div class="error-msg" visible-when-invalid="valueMissing" validation-for="productCatalog01-landmark" id="productCatalog01.landmark">
+                                              Landmark is required.
+                                          </div>
+                                      </li>
+                                      <!-- Pincode -->
+                                      <li class="form-item">
+                                          <input id="productCatalog01-pincode" required on="
+                                              change:AMP.setState({
+                                                  productCatalog01: { pincode: event.value }
+                                              });
+                                              tap:AMP.setState({
+                                                  formValidation: { pincode_invalid: event.target.validity.valueMissing }
+                                              })
+                                          " name="pincode" class="input" placeholder="Pincode" [value]="productCatalog01.pincode" maxlength="6" type="number" [aria-invalid]="formValidation.pincode_invalid" aria-describedby="productCatalog01.pincode">
+                                          <div class="error-msg" visible-when-invalid="valueMissing" validation-for="productCatalog01-pincode" id="productCatalog01.pincode">
+                                              Pincode is required.
+                                          </div>
+                                      </li>
+                                      <!-- City -->
+                                      <li class="form-item">
+                                          <input id="productCatalog01-city" required on="
+                                              change:AMP.setState({
+                                                  productCatalog01: { city: event.value }
+                                              });
+                                              tap:AMP.setState({
+                                                  formValidation: { city_invalid: event.target.validity.valueMissing }
+                                              })
+                                          " type="text" name="city" class="input" placeholder="City" [value]="productCatalog01.city" [aria-invalid]="formValidation.city_invalid" aria-describedby="productCatalog01.city">
+                                          <div class="error-msg" visible-when-invalid="valueMissing" validation-for="productCatalog01-city" id="productCatalog01.city">
+                                              City is required.
+                                          </div>
+                                      </li>
+                                      <!-- State -->
+                                      <li class="form-item">
+                                          <input id="productCatalog01-state" required on="
+                                              change:AMP.setState({
+                                                  productCatalog01: { state: event.value }
+                                              });
+                                              tap:AMP.setState({
+                                                  formValidation: { state_invalid: event.target.validity.valueMissing }
+                                              })
+                                          " type="text" name="state" class="input" placeholder="State" [value]="productCatalog01.state" [aria-invalid]="formValidation.state_invalid" aria-describedby="productCatalog01.state">
+                                          <div class="error-msg" visible-when-invalid="valueMissing" validation-for="productCatalog01-state" id="productCatalog01.state">
+                                              State is required.
+                                          </div>
+                                      </li>
+                                      <!-- Payment Mode -->
+                                      <li class="form-item typ-full mt-32">
+                                          <label for="cod" class="field-wrap">
+                                              <input type="radio" checked="checked" id="cod" name="payment" required on="
+                                                  change:AMP.setState({
+                                                      productCatalog01: { payment_mode: 'cod' }
+                                                  })
+                                              " [value]="productCatalog01.payment_mode" class="user-valid valid" value="">
+                                              <span class="checkmark"></span>
+                                              Cash on Delivery
+                                          </label>
+                                          <label class="field-wrap" for="online">
+                                              <input type="radio" id="online" name="payment" on="
+                                                  change:AMP.setState({
+                                                      productCatalog01: { payment_mode: 'online' }
+                                                  })
+                                              " [value]="productCatalog01.payment_mode" class="user-valid valid" value="">
+                                              <span class="checkmark"></span>
+                                              Online
+                                          </label>
+                                      </li>
+                                      <!-- Submit Button -->
+                                      <li class="form-item typ-full">
+                                          <button class="form-btn" on="
+                                              tap:AMP.setState({
+                                                  formValidation: {
+                                                      first_name_invalid: !productCatalog01.first_name,
+                                                      last_name_invalid: !productCatalog01.last_name,
+                                                      phoneNumber_invalid: !productCatalog01.phoneNumber || !/^\d{10}$/.test(productCatalog01.phoneNumber),
+                                                      email_invalid: !productCatalog01.email,
+                                                      address_invalid: !productCatalog01.address,
+                                                      landmark_invalid: !productCatalog01.landmark,
+                                                      pincode_invalid: !productCatalog01.pincode,
+                                                      city_invalid: !productCatalog01.city,
+                                                      state_invalid: !productCatalog01.state,
+                                                  },
+                                                  productCatalog01: { currentStep: 3 }
+                                              })
+                                          ">
+                                              Next
+                                          </button>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="step3" hidden [hidden]="productCatalog01.currentStep != 3">
+                      <div class="modal-overlay">
+                          <div class="modal">
+                              <div class="modal-content">
+                                  <div class="modal-head">
+                                      <span class="close">x</span>
+                                  </div>
+                                  <div class="modal-body">
+                                      <h3 class="m-title">THANKS for shopping</h3>
+                                      <p class="m-desc">
+                                          is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                                          been the
+                                          industry's standard dummy text ever since the 1500s
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="step4" hidden submit-error>
+                      <div class="modal-overlay">
+                          <div class="modal hidden">
+                              <div class="modal-content">
+                                  <div class="modal-head">
+                                      <span class="close">x</span>
+                                  </div>
+                                  <div class="modal-body">
+                                      <h3 class="m-title">Error</h3>
+                                      <p class="m-desc">
+                                          is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                                          been the
+                                          industry's standard dummy text ever since the 1500s
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </body>
+  </html>
+  ```
 </Accordion>
 
 ## Scratch Card for Discount Template
@@ -7759,132 +7758,129 @@ This AMP template delivers a gamified experience within the email itself. It all
 <Image align="center" alt="Sample Scratch Card for Disvount Template" border={true} caption="Sample Scratch Card for Discount Template" src="https://files.readme.io/6c1580151c3f71e5c0e240e27b725ed9654d7fd990fbecae359e9c3217b6a57a-Scratch_Card_for_Discount_AMP.png" width="35% " />
 
 <Accordion title="My Accordion Title" icon="fa-info-circle">
+  ### Use Case Examples
 
-### Use Case Examples
+  * Launch surprise reward campaigns to boost conversions.
+  * Drive festive or seasonal promotions with a gamified touch.
+  * Encourage user engagement with loyalty program perks.
+  * Re-engage inactive users with a “Scratch To Unlock” coupon or deal.
 
-* Launch surprise reward campaigns to boost conversions.
-* Drive festive or seasonal promotions with a gamified touch.
-* Encourage user engagement with loyalty program perks.
-* Re-engage inactive users with a “Scratch To Unlock” coupon or deal.
+  ### Template Customization Options
 
-### Template Customization Options
+  * [Replace Logo](doc:ootb-email-templates#replace-logo)
+  * [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+  * [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
+  * [Update Links in Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
 
-* [Replace Logo](doc:ootb-email-templates#replace-logo)
-* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
-* [Update Links in Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+  ### Template Code
 
-### Template Code
-
-```html
-<!doctype html>
-  <html ⚡4email data-css-strict>
-  <head>
-  <meta charset="utf-8">
-  <script async src="https://cdn.ampproject.org/v0.js"></script>
-  <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script> 
-  <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script> 
-  <style amp4email-boilerplate> body { visibility: hidden } </style>
-  <style amp-custom> * { margin: 0; padding: 0; }
-  body { font-family: "Helvetica", arial, sans-serif; font-weight: 400; }
-  img { width: 100%; height: auto; object-fit: cover; }
-  .main { max-width: 600px; margin: 0 auto; background: url(https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Scratch%20Card/bg.png); background-repeat: no-repeat; background-position: center; padding: 40px 40px 60px; }
-  .hide { display: none; }
-  .show { display: block; }
-  .scratch-img-wrap { background: transparent; border: 0; outline: none; cursor: pointer; }
-  @media screen and (max-width: 600px) { .main { padding: 20px; }
-  .heading { font-size: 30px; line-height: 40px; }
-  .coupon { font-size: 24px; line-height: 32px; }
-  .scratch-img-wrap { width: 100%; height: auto; }
-  .scratch-code { padding: 15px 10px; } }
-  .promo { margin: 0 auto; position: relative; transform-style: preserve-3d; border-radius: 8px; border: 2px solid #d1d1d1; overflow: hidden; height: 120px; width: 450px; background-color: transparent; }
-  .promo .scratch { position: absolute; top: 0; right: 0; bottom: 0; left: 0; display: flex; flex-wrap: wrap; overflow: hidden; cursor: pointer }
-  .promo .scratch u { display: block; width: 10%; height: 10%; background: rgb(2, 0, 36); background: #e3e3e3; /* Golden color */ transform: rotate(0) translateY(0) scale(1.7); transition: transform 0s; transition-delay: 9999s; opacity: .99; }
-  .promo.auto .scratch u:nth-of-type(1n) { transition-delay: 2.25s }
-  .promo.auto .scratch u:nth-of-type(10n-11) { transition-delay: 0s }
-  .promo.auto .scratch u:nth-of-type(10n-8) { transition-delay: .25s }
-  .promo.auto .scratch u:nth-of-type(10n-10) { transition-delay: .5s }
-  .promo.auto .scratch u:nth-of-type(12n-9) { transition-delay: .75s }
-  .promo.auto .scratch u:nth-of-type(12n-12) { transition-delay: 1s }
-  .promo.auto .scratch u:nth-of-type(12n-7) { transition-delay: 1.25s }
-  .promo.auto .scratch u:nth-of-type(13n-13) { transition-delay: 1.5s }
-  .promo.auto .scratch u:nth-of-type(13n-6) { transition-delay: 1.75s }
-  .promo.auto .scratch u:nth-of-type(13n-14) { transition-delay: 2s }
-  .promo .scratch u:hover, .promo.auto .scratch u { transform: scale(0); transition-delay: 0s }
-  .offer { justify-content: center; text-align: center; margin-top: 25px; /* Center aligns the content */ color: white; /* Sets text color to white */ font-weight: bold; /* Makes "You Won!" text bold */ font-size: 20px; /* Adjust size if necessary */ }
-  .coupon-code { margin-top: 10px; /* Adds some space above the coupon code */ font-size: 24px; /* Adjust coupon code font size */ font-weight: bold; /* Makes the coupon code bold */ color: white; /* White text for the coupon code */ background-color: rgba(0, 0, 0, 0.7); /* Optional: add a semi-transparent background */ padding: 5px 10px; /* Add padding for better visibility */ border-radius: 4px; /* Rounded corners for the coupon box */ display: inline-block; /* Ensures proper alignment and box behavior */ }
-  .black-but { margin-top: 20px; padding: 10px; }
-  /* Additional Media Queries for smaller screens */ @media screen and (max-width: 600px) { .main { padding: 20px; }
-  .heading { font-size: 30px; line-height: 40px; }
-  .coupon { font-size: 24px; line-height: 32px; }
-  .scratch-img-wrap { width: 100%; height: auto; }
-  .scratch-code { padding: 15px 10px; } }
-  /* More media queries for smaller screens */ @media screen and (max-width: 400px) { .main { padding: 15px; }
-  .heading { font-size: 28px; line-height: 35px; }
-  .coupon { font-size: 22px; line-height: 30px; }
-  .scratch-img-wrap { width: 100%; height: auto; }
-  .coupon-code { font-size: 20px; padding: 4px 8px; }
-  .offer { font-size: 18px; }
-  .promo { width: 100%; height: auto; } }
-  /* Media queries for very small screens */ @media screen and (max-width: 300px) { .promo { width: 100%; height: auto; }
-  .offer { font-size: 16px; }
-  .coupon-code { font-size: 18px; padding: 3px 6px; } } 
-  </style>
-  </head>
-  <body>
-  <table border="0" cellpadding="0" cellspacing="0" class="main" role="presentation" width="100%">
-  <!-- header start--> 
-  <tbody>
-  <tr>
-  <td style="text-align: center; vertical-align: middle; margin-bottom: 40px;">
-  <!-- Logo Image--> 
-  <div class="logo" style="background: url(https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Scratch%20Card/logobg.png);background-repeat: no-repeat; background-position: center;">
-  <amp-img layout="fixed" alt="Logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" width="127" height="60" />
-  </div>
-  <!-- Logo Image--> 
-  </td>
-  </tr>
-  <tr>
-  <td style="text-align: center;">
-  <h2 class="heading" style="color:#ffffff; font-family: 'Poppins', Arial, sans-serif; font-size: 45px; font-weight: 700; line-height: 68px; margin-top: 20px;"> Mid-Season Sale</h2>
-  </td>
-  </tr>
-  <tr>
-  <!-- Banner Image --> 
-  <td>
-  <amp-img layout="responsive" alt="banner image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Scratch%20Card/offer.png" width="407" height="462" />
-  </td>
-  <!-- Banner Image --> 
-  </tr>
-  <tr>
-  <td style="text-align: center;">
-  <p class="coupon" style="color:#ffffff; font-family: 'Poppins', Arial, sans-serif; font-size: 34px; font-weight: 600; margin-bottom: 20px;"> SCRATCH TO SEE CODE</p>
-  </td>
-  </tr>
-  <!-- Footer Section --> 
-  <tr>
-  <td style="text-align: center;">
-  <div class="container" id="&#x201D;scratch-card-widget&#x201D;">
-  <div class="promo" [class]="auto == true ? 'promo auto' : 'promo'">
-  <div class="scratch"> <u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u> </div>
-  <div class="offer">
-  You Won! 🎉 
-  <div class="coupon-code">CODE1234</div>
-  </div>
-  </div>
-  <p><button class="black-but" type="button" on="tap:AMP.setState({auto: true})">Scratch at once</button> </p>
-  </div>
-  </td>
-  </tr>
-  <!-- Footer Section --> 
-  </tbody>
-  </table>
-  </body>
-  </html>
-```
-
-  
-</Accordion> 
+  ```html
+  <!doctype html>
+    <html ⚡4email data-css-strict>
+    <head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script> 
+    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script> 
+    <style amp4email-boilerplate> body { visibility: hidden } </style>
+    <style amp-custom> * { margin: 0; padding: 0; }
+    body { font-family: "Helvetica", arial, sans-serif; font-weight: 400; }
+    img { width: 100%; height: auto; object-fit: cover; }
+    .main { max-width: 600px; margin: 0 auto; background: url(https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Scratch%20Card/bg.png); background-repeat: no-repeat; background-position: center; padding: 40px 40px 60px; }
+    .hide { display: none; }
+    .show { display: block; }
+    .scratch-img-wrap { background: transparent; border: 0; outline: none; cursor: pointer; }
+    @media screen and (max-width: 600px) { .main { padding: 20px; }
+    .heading { font-size: 30px; line-height: 40px; }
+    .coupon { font-size: 24px; line-height: 32px; }
+    .scratch-img-wrap { width: 100%; height: auto; }
+    .scratch-code { padding: 15px 10px; } }
+    .promo { margin: 0 auto; position: relative; transform-style: preserve-3d; border-radius: 8px; border: 2px solid #d1d1d1; overflow: hidden; height: 120px; width: 450px; background-color: transparent; }
+    .promo .scratch { position: absolute; top: 0; right: 0; bottom: 0; left: 0; display: flex; flex-wrap: wrap; overflow: hidden; cursor: pointer }
+    .promo .scratch u { display: block; width: 10%; height: 10%; background: rgb(2, 0, 36); background: #e3e3e3; /* Golden color */ transform: rotate(0) translateY(0) scale(1.7); transition: transform 0s; transition-delay: 9999s; opacity: .99; }
+    .promo.auto .scratch u:nth-of-type(1n) { transition-delay: 2.25s }
+    .promo.auto .scratch u:nth-of-type(10n-11) { transition-delay: 0s }
+    .promo.auto .scratch u:nth-of-type(10n-8) { transition-delay: .25s }
+    .promo.auto .scratch u:nth-of-type(10n-10) { transition-delay: .5s }
+    .promo.auto .scratch u:nth-of-type(12n-9) { transition-delay: .75s }
+    .promo.auto .scratch u:nth-of-type(12n-12) { transition-delay: 1s }
+    .promo.auto .scratch u:nth-of-type(12n-7) { transition-delay: 1.25s }
+    .promo.auto .scratch u:nth-of-type(13n-13) { transition-delay: 1.5s }
+    .promo.auto .scratch u:nth-of-type(13n-6) { transition-delay: 1.75s }
+    .promo.auto .scratch u:nth-of-type(13n-14) { transition-delay: 2s }
+    .promo .scratch u:hover, .promo.auto .scratch u { transform: scale(0); transition-delay: 0s }
+    .offer { justify-content: center; text-align: center; margin-top: 25px; /* Center aligns the content */ color: white; /* Sets text color to white */ font-weight: bold; /* Makes "You Won!" text bold */ font-size: 20px; /* Adjust size if necessary */ }
+    .coupon-code { margin-top: 10px; /* Adds some space above the coupon code */ font-size: 24px; /* Adjust coupon code font size */ font-weight: bold; /* Makes the coupon code bold */ color: white; /* White text for the coupon code */ background-color: rgba(0, 0, 0, 0.7); /* Optional: add a semi-transparent background */ padding: 5px 10px; /* Add padding for better visibility */ border-radius: 4px; /* Rounded corners for the coupon box */ display: inline-block; /* Ensures proper alignment and box behavior */ }
+    .black-but { margin-top: 20px; padding: 10px; }
+    /* Additional Media Queries for smaller screens */ @media screen and (max-width: 600px) { .main { padding: 20px; }
+    .heading { font-size: 30px; line-height: 40px; }
+    .coupon { font-size: 24px; line-height: 32px; }
+    .scratch-img-wrap { width: 100%; height: auto; }
+    .scratch-code { padding: 15px 10px; } }
+    /* More media queries for smaller screens */ @media screen and (max-width: 400px) { .main { padding: 15px; }
+    .heading { font-size: 28px; line-height: 35px; }
+    .coupon { font-size: 22px; line-height: 30px; }
+    .scratch-img-wrap { width: 100%; height: auto; }
+    .coupon-code { font-size: 20px; padding: 4px 8px; }
+    .offer { font-size: 18px; }
+    .promo { width: 100%; height: auto; } }
+    /* Media queries for very small screens */ @media screen and (max-width: 300px) { .promo { width: 100%; height: auto; }
+    .offer { font-size: 16px; }
+    .coupon-code { font-size: 18px; padding: 3px 6px; } } 
+    </style>
+    </head>
+    <body>
+    <table border="0" cellpadding="0" cellspacing="0" class="main" role="presentation" width="100%">
+    <!-- header start--> 
+    <tbody>
+    <tr>
+    <td style="text-align: center; vertical-align: middle; margin-bottom: 40px;">
+    <!-- Logo Image--> 
+    <div class="logo" style="background: url(https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Scratch%20Card/logobg.png);background-repeat: no-repeat; background-position: center;">
+    <amp-img layout="fixed" alt="Logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" width="127" height="60" />
+    </div>
+    <!-- Logo Image--> 
+    </td>
+    </tr>
+    <tr>
+    <td style="text-align: center;">
+    <h2 class="heading" style="color:#ffffff; font-family: 'Poppins', Arial, sans-serif; font-size: 45px; font-weight: 700; line-height: 68px; margin-top: 20px;"> Mid-Season Sale</h2>
+    </td>
+    </tr>
+    <tr>
+    <!-- Banner Image --> 
+    <td>
+    <amp-img layout="responsive" alt="banner image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Scratch%20Card/offer.png" width="407" height="462" />
+    </td>
+    <!-- Banner Image --> 
+    </tr>
+    <tr>
+    <td style="text-align: center;">
+    <p class="coupon" style="color:#ffffff; font-family: 'Poppins', Arial, sans-serif; font-size: 34px; font-weight: 600; margin-bottom: 20px;"> SCRATCH TO SEE CODE</p>
+    </td>
+    </tr>
+    <!-- Footer Section --> 
+    <tr>
+    <td style="text-align: center;">
+    <div class="container" id="&#x201D;scratch-card-widget&#x201D;">
+    <div class="promo" [class]="auto == true ? 'promo auto' : 'promo'">
+    <div class="scratch"> <u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u> </div>
+    <div class="offer">
+    You Won! 🎉 
+    <div class="coupon-code">CODE1234</div>
+    </div>
+    </div>
+    <p><button class="black-but" type="button" on="tap:AMP.setState({auto: true})">Scratch at once</button> </p>
+    </div>
+    </td>
+    </tr>
+    <!-- Footer Section --> 
+    </tbody>
+    </table>
+    </body>
+    </html>
+  ```
+</Accordion>
 
 ## Spin and Win Template
 
@@ -7893,508 +7889,506 @@ This AMP template adds a fun, gamified interaction to your email by letting user
 <Image align="center" alt="Sample Spin and Win Template" border={true} caption="Sample Spin and Win Template" src="https://files.readme.io/594d05fecaa9eed2dbcebb6afc6d2a4ccf4afc92200373f4a5f94e9c72c40e42-Spin_and_Win_AMP.png" width="35% " />
 
 <Accordion title="My Accordion Title" icon="fa-info-circle">
-
-### Use Case Examples
-
-* Drive conversions during sales events or festivals with spin-to-win deals.
-* Run promotional campaigns that reward users with random offers.
-* Re-engage dormant users with a playful incentive.
-* Launch loyalty or referral-based programs with interactive rewards.
-
-### Template Customization Options
-
-* [Replace Logo](doc:ootb-email-templates#replace-logo)
-* [Replace Background](doc:ootb-email-templates#replace-background)
-* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
-* [Update Links in Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-* [Update Social Media and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
-
-### Template Code
-
-```html
-<html ⚡4email data-css-strict>
-
-  <head>
-  <meta charset="utf-8" />
-  <script async src="https://cdn.ampproject.org/v0.js"></script>
-  <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
-  <style amp4email-boilerplate>
-  body {
-  visibility: hidden;
-  }
-  </style>
-  <style amp-custom>
-  * {
-  margin: 0;
-  padding: 0;
-  }
-
-  body {
-  font-family: arial, sans-serif;
-  font-weight: 400;
-  margin: 0;
-  padding: 0;
-  background: #939393;
-  }
-
-  img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  }
-
-  .main {
-  font-family: Arial, sans-serif;
-  max-width: 600px;
-  margin: 0 auto;
-  background: #fe592c;
-  }
-
-  @media only screen and (max-width: 400px) {
-  .main {
-  max-width: 95%;
-  }
-  }
-
-  .header-container {
-  background: transparent url(https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/spinn/header-design.png);
-  background-size: contain;
-  background-repeat: repeat-x;
-  background-position: bottom;
-  padding-bottom: 18px;
-  }
-
-  .logo-wrap {
-  background-color: #ffffff;
-  padding: 20px 0;
-  }
-
-  .logo-wrap .img-wrap {
-  width: 100%;
-  max-width: 145px;
-  max-height: 74px;
-  margin: 0 auto;
-  }
-
-  .container,
-  .wrapper {
-  position: relative;
-  }
-
-  .main-content {
-  position: relative;
-  }
-
-  .common-wrap .orange-triangle {
-  width: 100%;
-  height: 360px;
-  background: #f34626;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transform: rotate(180deg);
-  }
-
-  .common-wrap .content-wrap {
-  max-width: 85%;
-  margin: 90px auto 0;
-  padding-bottom: 120px;
-  }
-
-  .top-content .title {
-  font-family: Arial, sans-serif;
-  font-size: 42px;
-  font-weight: 500;
-  color: #ffffff;
-  line-height: 46px;
-  text-align: center;
-  text-transform: none;
-  margin-bottom: 22px;
-  }
-
-  .top-content .sub-title {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 22px;
-  text-align: center;
-  color: #ffffff;
-  text-transform: none;
-  margin-bottom: 11px;
-  }
-
-  .top-content .desc {
-  font-family: Arial, sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 18px;
-  text-align: center;
-  text-transform: none;
-  color: #ffffff;
-  max-width: 70%;
-  margin: 0 auto 55px;
-  }
-
-  .wheel-spin-gif-box,
-  .wheel-spin-box {
-  max-width: 450px;
-  max-height: 450px;
-  position: relative;
-  overflow: hidden;
-  margin: 0 auto;
-  }
-
-  .ticker {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 0;
-  z-index: 2;
-  }
-
-  .btn-wrap {
-  text-align: center;
-  position: relative;
-  }
-
-  .spin-btn {
-  margin-top: -80px;
-  background: #ffffff;
-  box-shadow: 0px 3.29px 3.29px 0px #00000040;
-  width: 100%;
-  max-width: 242px;
-  height: auto;
-  max-height: 52px;
-  display: inline-block;
-  border-radius: 50px;
-  padding: 18px 20px;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 20px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: none;
-  color: #ffae97;
-  border: 0;
-  outline: none;
-  cursor: pointer;
-  position: absolute;
-  top: -25px;
-  left: 50%;
-  transform: translateX(-50%);
-  }
-
-  @media (max-width: 768px) {
-  .spin-btn {
-  max-width: 200px;
-
-  font-size: 16px;
-
-  padding: 16px 18px;
-
-  }
-  }
-
-  @media (max-width: 480px) {
-  .spin-btn {
-  max-width: 150px;
-
-  font-size: 14px;
-
-  padding: 12px 15px;
-
-  margin-top: -40px;
-
-  }
-  }
-
-  @media (max-width: 320px) {
-  .spin-btn {
-
-  max-width: 120px;
-
-  font-size: 12px;
-
-  padding: 10px 12px;
-
-  }
-  }
-
-
-  .spin-btn.typ-2 {
-  color: #FE592C;
-  }
-
-  .img-wrap {
-  width: 73px;
-  height: 93px;
-  }
-
-  .hidden {
-  display: none;
-  }
-
-  .yellow-wrap {
-  max-width: 401px;
-  min-height: 300px;
-  margin: 0 auto 14px;
-  }
-
-  .result-content {
-  font-size: 28px;
-  font-weight: 400;
-  line-height: 38px;
-  text-align: center;
-  color: #ffffff;
-  text-transform: none;
-  position: relative;
-  z-index: 1;
-  }
-
-  .cm-bold {
-  font-weight: 700;
-  display: block;
-  }
-
-  .footer {
-  border-top: 0.5px solid #ffff;
-  background: #ffff;
-  }
-
-  .media-logo-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  gap: 23px;
-  margin: 65px 0 17px;
-  }
-
-  .media-logo-list .logo-item {
-  width: 20px;
-  height: 20px;
-  }
-
-  .media-logo-list .logo-item .logo-link {
-  width: 100%;
-  height: 100%;
-  display: inline-block;
-  }
-
-  .f-desc {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  color: #939393;
-  text-align: center;
-  max-width: 80%;
-  margin: 0 auto;
-  padding-bottom: 27px;
-  text-transform: none;
-  }
-
-  .f-nav-list {
-  padding: 27px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  border-top: 0.5px solid #979797;
-  }
-
-  .f-nav-list .f-nav-item {
-  margin: 0 5px;
-  }
-
-  .f-nav-list .f-nav-item .f-nav-link {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  text-align: center;
-  color: #939393;
-  text-decoration: none;
-  }
-
-  @media only screen and (max-width: 480px) {
-  .logo-wrap {
-  padding: 25px 0;
-  }
-
-  .spin-btn {
-  max-width: 200px;
-  font-size: 14px;
-  line-height: 18px;
-  }
-
-  .top-content .desc {
-  margin: 0 auto 40px;
-  max-width: 80%;
-  }
-
-  .header-container {
-  background-size: auto;
-  }
-
-  .common-wrap .content-wrap {
-  max-width: 90%;
-  margin: 60px auto 0;
-  padding-bottom: 80px;
-  }
-
-  .top-content .title {
-  font-size: 30px;
-  line-height: 40px;
-  margin-bottom: 10px;
-  }
-
-  .f-desc {
-  line-height: 20px;
-  }
-
-  .logo-wrap .img-wrap {
-  width: 100%;
-  max-width: 130px;
-  max-height: 60px;
-  margin: 0 auto;
-  }
-  }
-  </style>
-  </head>
-
-  <body>
-  <amp-state id="step">
-  <script type="application/json">
-  {
-  "step": 1
-  }
-  </script>
-  </amp-state>
-  <div class="main">
-  <!-- header section -->
-  <header>
-  <div class="header-container">
-  <div class="logo-wrap">
-  <div class="img-wrap">
-  <amp-img layout="responsive"
-  src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" alt="Logo"
-  width="159" height="73" />
-  </div>
-  </div>
-  </div>
-  </header>
-  <!-- header section -->
-  <!-- main content section -->
-  <div class="main-content">
-  <div class="common-wrap">
-  <div class="orange-triangle"></div>
-  <div class="content-wrap">
-  <div class="top-content">
-  <h1 class="title">SPIN AND WIN</h1>
-  <h2 class="sub-title">Try your luck and grab an exclusive reward!</h2>
-  <p class="desc">
-  We’ve loaded up the wheel with rewards you’ll love — all you have to do is spin.
-  </p>
-  </div>
-  <div class="bottom-content">
-  <div class="wrapper">
-  <!--<div class="ticker">
-  <amp-img
-  layout="fixed"
-  src="./images/icon-arrow.png"
-  alt="ticker"
-  class="ticker-icon"
-  width="80"
-  height="50">
-  </amp-img>
-  </div> -->
-  <div class="step-1" [hidden]="step != 1">
-  <div class="wheel-spin-box">
-  <amp-img src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/spinn/wheel-start.png"
-  layout="responsive" width="450" height="450" role="button" tabindex="0" layout="responsive">
-  </amp-img>
-  </div>
-  </div>
-  <div class="step-2" hidden [hidden]="step != 2">
-  <div class="wheel-spin-gif-box">
-  <amp-img src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/spinn/spin-wheel.gif"
-  layout="responsive" width="450" height="450" role="button" tabindex="0" layout="responsive">
-  </amp-img>
-  </div>
-  </div>
-  <div class="step-3" hidden [hidden]="step != 3">
-  <div class="wheel-spin-box">
-  <amp-img src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/spinn/wheel-win.png"
-  layout="responsive" width="450" height="450" role="button" tabindex="0" layout="responsive">
-  </amp-img>
-  </div>
-  </div>
-  </div>
-
-  <!-- Result Section -->
-  <div class="result-wrapper step-4" hidden [hidden]="step != 4">
-  <div class="yellow-wrap">
-  <amp-img src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/spinn/result-tshirt.png"
-  width="490" height="350" layout="responsive" alt="result image">
-  </amp-img>
-  </div>
-  <h2 class="result-content">
-  Congratulations, you win
-  <span class="cm-bold">A Half white T-Shirt!</span>
-  </h2>
-  </div>
-  </div>
-  </div>
-  </div>
-  <div class="btn-wrap">
-  <button class="spin-btn typ-2" [hidden]="step != 1" on="tap:AMP.setState({ step: 2 })"> Spin the Wheel </button>
-  <button class="spin-btn typ-2" hidden [hidden]="step != 2" on="tap:AMP.setState({ step: 3 })">Stop the
-  Wheel</button>
-  <button class="spin-btn typ-2" hidden [hidden]="step != 3" on="tap:AMP.setState({ step: 4 })">Get now</button>
-  <a href="https://www.google.com" class="spin-btn typ-2" hidden [hidden]="step != 4"
-  on="tap:AMP.setState({ step: 4 })">Shop now</a>
-  </div>
-  </div>
-  <!-- main content section -->
-  <!-- footer start -->
-  <footer class="footer">
-  <ul class="media-logo-list">
-  <li class="logo-item">
-  <a href="https://www.google.co.in/" class="logo-link">
-  <amp-img layout="fixed" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/5c06fdefb77c4f6c94c17f953b0e98e4.png"
-  alt="instagram" class="media-logo" width="20" height="20"></amp-img>
-  </a>
-  </li>
-  <li class="logo-item">
-  <a href="https://www.google.co.in/" class="logo-link">
-  <amp-img layout="fixed"
-  src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/afb3cd0c5d954fca8702c0401e1bf97b.png" alt="facebook"
-  class="media-logo" width="20" height="20"></amp-img>
-  </a>
-  </li>
-  <li class="logo-item">
-  <a href="https://www.google.co.in/" class="logo-link">
-  <amp-img layout="fixed" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/8b474f3170b346318eade16ae1fc3f63.png"
-  alt="x" class="media-logo" width="20" height="20"></amp-img>
-  </a>
-  </li>
-  </ul>
-  <p class="f-desc">
-  For assistance, connect with us on social media or reach out to our support team at 
-  <a href="https://google.com" style="color: #939393">support@example.com</a>
-  </p>
-  <p class="f-desc">
-  To opt out of promotional emails like this, <a href="https://google.com"
-  style="color:#fe592c;font-weight:bold;text-decoration:none;">unsubscribe here</a>
-  </p>
-  </footer>
-  <!-- footer end -->
-  </div>
-  </body>
-
-  </html>
-```
-
+  ### Use Case Examples
+
+  * Drive conversions during sales events or festivals with spin-to-win deals.
+  * Run promotional campaigns that reward users with random offers.
+  * Re-engage dormant users with a playful incentive.
+  * Launch loyalty or referral-based programs with interactive rewards.
+
+  ### Template Customization Options
+
+  * [Replace Logo](doc:ootb-email-templates#replace-logo)
+  * [Replace Background](doc:ootb-email-templates#replace-background)
+  * [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+  * [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
+  * [Update Links in Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+  * [Update Social Media and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+
+  ### Template Code
+
+  ```html
+  <html ⚡4email data-css-strict>
+
+    <head>
+    <meta charset="utf-8" />
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+    <style amp4email-boilerplate>
+    body {
+    visibility: hidden;
+    }
+    </style>
+    <style amp-custom>
+    * {
+    margin: 0;
+    padding: 0;
+    }
+
+    body {
+    font-family: arial, sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    background: #939393;
+    }
+
+    img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+
+    .main {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fe592c;
+    }
+
+    @media only screen and (max-width: 400px) {
+    .main {
+    max-width: 95%;
+    }
+    }
+
+    .header-container {
+    background: transparent url(https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/spinn/header-design.png);
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-position: bottom;
+    padding-bottom: 18px;
+    }
+
+    .logo-wrap {
+    background-color: #ffffff;
+    padding: 20px 0;
+    }
+
+    .logo-wrap .img-wrap {
+    width: 100%;
+    max-width: 145px;
+    max-height: 74px;
+    margin: 0 auto;
+    }
+
+    .container,
+    .wrapper {
+    position: relative;
+    }
+
+    .main-content {
+    position: relative;
+    }
+
+    .common-wrap .orange-triangle {
+    width: 100%;
+    height: 360px;
+    background: #f34626;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: rotate(180deg);
+    }
+
+    .common-wrap .content-wrap {
+    max-width: 85%;
+    margin: 90px auto 0;
+    padding-bottom: 120px;
+    }
+
+    .top-content .title {
+    font-family: Arial, sans-serif;
+    font-size: 42px;
+    font-weight: 500;
+    color: #ffffff;
+    line-height: 46px;
+    text-align: center;
+    text-transform: none;
+    margin-bottom: 22px;
+    }
+
+    .top-content .sub-title {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: none;
+    margin-bottom: 11px;
+    }
+
+    .top-content .desc {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+    text-transform: none;
+    color: #ffffff;
+    max-width: 70%;
+    margin: 0 auto 55px;
+    }
+
+    .wheel-spin-gif-box,
+    .wheel-spin-box {
+    max-width: 450px;
+    max-height: 450px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    }
+
+    .ticker {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    z-index: 2;
+    }
+
+    .btn-wrap {
+    text-align: center;
+    position: relative;
+    }
+
+    .spin-btn {
+    margin-top: -80px;
+    background: #ffffff;
+    box-shadow: 0px 3.29px 3.29px 0px #00000040;
+    width: 100%;
+    max-width: 242px;
+    height: auto;
+    max-height: 52px;
+    display: inline-block;
+    border-radius: 50px;
+    padding: 18px 20px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    color: #ffae97;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    }
+
+    @media (max-width: 768px) {
+    .spin-btn {
+    max-width: 200px;
+
+    font-size: 16px;
+
+    padding: 16px 18px;
+
+    }
+    }
+
+    @media (max-width: 480px) {
+    .spin-btn {
+    max-width: 150px;
+
+    font-size: 14px;
+
+    padding: 12px 15px;
+
+    margin-top: -40px;
+
+    }
+    }
+
+    @media (max-width: 320px) {
+    .spin-btn {
+
+    max-width: 120px;
+
+    font-size: 12px;
+
+    padding: 10px 12px;
+
+    }
+    }
+
+
+    .spin-btn.typ-2 {
+    color: #FE592C;
+    }
+
+    .img-wrap {
+    width: 73px;
+    height: 93px;
+    }
+
+    .hidden {
+    display: none;
+    }
+
+    .yellow-wrap {
+    max-width: 401px;
+    min-height: 300px;
+    margin: 0 auto 14px;
+    }
+
+    .result-content {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 38px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: none;
+    position: relative;
+    z-index: 1;
+    }
+
+    .cm-bold {
+    font-weight: 700;
+    display: block;
+    }
+
+    .footer {
+    border-top: 0.5px solid #ffff;
+    background: #ffff;
+    }
+
+    .media-logo-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 23px;
+    margin: 65px 0 17px;
+    }
+
+    .media-logo-list .logo-item {
+    width: 20px;
+    height: 20px;
+    }
+
+    .media-logo-list .logo-item .logo-link {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    }
+
+    .f-desc {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #939393;
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+    padding-bottom: 27px;
+    text-transform: none;
+    }
+
+    .f-nav-list {
+    padding: 27px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    border-top: 0.5px solid #979797;
+    }
+
+    .f-nav-list .f-nav-item {
+    margin: 0 5px;
+    }
+
+    .f-nav-list .f-nav-item .f-nav-link {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: #939393;
+    text-decoration: none;
+    }
+
+    @media only screen and (max-width: 480px) {
+    .logo-wrap {
+    padding: 25px 0;
+    }
+
+    .spin-btn {
+    max-width: 200px;
+    font-size: 14px;
+    line-height: 18px;
+    }
+
+    .top-content .desc {
+    margin: 0 auto 40px;
+    max-width: 80%;
+    }
+
+    .header-container {
+    background-size: auto;
+    }
+
+    .common-wrap .content-wrap {
+    max-width: 90%;
+    margin: 60px auto 0;
+    padding-bottom: 80px;
+    }
+
+    .top-content .title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 10px;
+    }
+
+    .f-desc {
+    line-height: 20px;
+    }
+
+    .logo-wrap .img-wrap {
+    width: 100%;
+    max-width: 130px;
+    max-height: 60px;
+    margin: 0 auto;
+    }
+    }
+    </style>
+    </head>
+
+    <body>
+    <amp-state id="step">
+    <script type="application/json">
+    {
+    "step": 1
+    }
+    </script>
+    </amp-state>
+    <div class="main">
+    <!-- header section -->
+    <header>
+    <div class="header-container">
+    <div class="logo-wrap">
+    <div class="img-wrap">
+    <amp-img layout="responsive"
+    src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" alt="Logo"
+    width="159" height="73" />
+    </div>
+    </div>
+    </div>
+    </header>
+    <!-- header section -->
+    <!-- main content section -->
+    <div class="main-content">
+    <div class="common-wrap">
+    <div class="orange-triangle"></div>
+    <div class="content-wrap">
+    <div class="top-content">
+    <h1 class="title">SPIN AND WIN</h1>
+    <h2 class="sub-title">Try your luck and grab an exclusive reward!</h2>
+    <p class="desc">
+    We’ve loaded up the wheel with rewards you’ll love — all you have to do is spin.
+    </p>
+    </div>
+    <div class="bottom-content">
+    <div class="wrapper">
+    <!--<div class="ticker">
+    <amp-img
+    layout="fixed"
+    src="./images/icon-arrow.png"
+    alt="ticker"
+    class="ticker-icon"
+    width="80"
+    height="50">
+    </amp-img>
+    </div> -->
+    <div class="step-1" [hidden]="step != 1">
+    <div class="wheel-spin-box">
+    <amp-img src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/spinn/wheel-start.png"
+    layout="responsive" width="450" height="450" role="button" tabindex="0" layout="responsive">
+    </amp-img>
+    </div>
+    </div>
+    <div class="step-2" hidden [hidden]="step != 2">
+    <div class="wheel-spin-gif-box">
+    <amp-img src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/spinn/spin-wheel.gif"
+    layout="responsive" width="450" height="450" role="button" tabindex="0" layout="responsive">
+    </amp-img>
+    </div>
+    </div>
+    <div class="step-3" hidden [hidden]="step != 3">
+    <div class="wheel-spin-box">
+    <amp-img src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/spinn/wheel-win.png"
+    layout="responsive" width="450" height="450" role="button" tabindex="0" layout="responsive">
+    </amp-img>
+    </div>
+    </div>
+    </div>
+
+    <!-- Result Section -->
+    <div class="result-wrapper step-4" hidden [hidden]="step != 4">
+    <div class="yellow-wrap">
+    <amp-img src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/spinn/result-tshirt.png"
+    width="490" height="350" layout="responsive" alt="result image">
+    </amp-img>
+    </div>
+    <h2 class="result-content">
+    Congratulations, you win
+    <span class="cm-bold">A Half white T-Shirt!</span>
+    </h2>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="btn-wrap">
+    <button class="spin-btn typ-2" [hidden]="step != 1" on="tap:AMP.setState({ step: 2 })"> Spin the Wheel </button>
+    <button class="spin-btn typ-2" hidden [hidden]="step != 2" on="tap:AMP.setState({ step: 3 })">Stop the
+    Wheel</button>
+    <button class="spin-btn typ-2" hidden [hidden]="step != 3" on="tap:AMP.setState({ step: 4 })">Get now</button>
+    <a href="https://www.google.com" class="spin-btn typ-2" hidden [hidden]="step != 4"
+    on="tap:AMP.setState({ step: 4 })">Shop now</a>
+    </div>
+    </div>
+    <!-- main content section -->
+    <!-- footer start -->
+    <footer class="footer">
+    <ul class="media-logo-list">
+    <li class="logo-item">
+    <a href="https://www.google.co.in/" class="logo-link">
+    <amp-img layout="fixed" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/5c06fdefb77c4f6c94c17f953b0e98e4.png"
+    alt="instagram" class="media-logo" width="20" height="20"></amp-img>
+    </a>
+    </li>
+    <li class="logo-item">
+    <a href="https://www.google.co.in/" class="logo-link">
+    <amp-img layout="fixed"
+    src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/afb3cd0c5d954fca8702c0401e1bf97b.png" alt="facebook"
+    class="media-logo" width="20" height="20"></amp-img>
+    </a>
+    </li>
+    <li class="logo-item">
+    <a href="https://www.google.co.in/" class="logo-link">
+    <amp-img layout="fixed" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/8b474f3170b346318eade16ae1fc3f63.png"
+    alt="x" class="media-logo" width="20" height="20"></amp-img>
+    </a>
+    </li>
+    </ul>
+    <p class="f-desc">
+    For assistance, connect with us on social media or reach out to our support team at 
+    <a href="https://google.com" style="color: #939393">support@example.com</a>
+    </p>
+    <p class="f-desc">
+    To opt out of promotional emails like this, <a href="https://google.com"
+    style="color:#fe592c;font-weight:bold;text-decoration:none;">unsubscribe here</a>
+    </p>
+    </footer>
+    <!-- footer end -->
+    </div>
+    </body>
+
+    </html>
+  ```
 </Accordion>
 
 ## Quick Survey Form Template
@@ -8404,7 +8398,6 @@ This AMP template collects valuable user information and preferences for a more 
 <Image align="center" alt="Sample Customer Survey Form Template" border={true} caption="Sample Customer Survey Form Template" src="https://files.readme.io/73047359b602a87553b6b35c1c1a3431b7c98adfdd1a49a304c04ae15ec570d8-Customer_Survey_-1_AMP.png" width="25% " />
 
 <Accordion title="My Accordion Title" icon="fa-info-circle">
-  
   ### Use Case Examples
 
   * Gather customer preferences (for example, gender, favorite clothing items) to drive personalized product recommendations.
