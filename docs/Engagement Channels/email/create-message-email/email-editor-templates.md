@@ -215,9 +215,11 @@ You can perform the following template operations by navigating to the _Content 
 
 You can preview how your email displays in dark mode on a desktop or a mobile phone.
 
-> 📘 Note
->
-> Dark Mode is only available in the _Email with drag and drop_ editor.
+<Callout icon="📘" theme="info">
+  **Note**
+
+  Dark Mode is only available in the _Email with drag and drop_ editor.
+</Callout>
 
 Follow the steps to preview your template in Dark Mode:
 
@@ -233,13 +235,16 @@ Follow the steps to preview your template in Dark Mode:
 
 <Image align="center" alt={1440} border={true} src="https://files.readme.io/c6ed33f-Dark_Mode_Preview.gif" title="Preview Content in Dark Mode" className="border" />
 
-> 📘 Dark Mode Preview
->
-> Dark Mode support varies across email clients and devices. Test the mails on an email client with dark mode enabled for best results. The Dark Mode preview generates a generic dark mode color scheme when enabled.
->
-> Refer to the links below for dark mode email design tips:  
-> [5 Tips for Dark Mode Email Design](https://emaildesign.beefree.io/5-tips-for-dark-mode-email-design/)  
-> [The Ultimate Guide to Dark Mode for Email Marketers](https://www.litmus.com/blog/the-ultimate-guide-to-dark-mode-for-email-marketers/)
+<Callout icon="📘" theme="info">
+  **Dark Mode Preview**
+
+  Dark Mode support varies across email clients and devices. Test the mails on an email client with dark mode enabled for best results. The Dark Mode preview generates a generic dark mode color scheme when enabled.
+
+  Refer to the links below for dark mode email design tips:  
+
+  * [5 Tips for Dark Mode Email Design](https://emaildesign.beefree.io/5-tips-for-dark-mode-email-design/)  
+  * [The Ultimate Guide to Dark Mode for Email Marketers](https://www.litmus.com/blog/the-ultimate-guide-to-dark-mode-for-email-marketers/)
+</Callout>
 
 ## Inbox Previews with Code Analysis
 
@@ -254,11 +259,13 @@ Before we begin, check that you have enabled Inbox Previews. To enable the Inbox
 
 <Image align="center" alt={1646} border={true} src="https://files.readme.io/439b55a-Screenshot_2021-07-12_at_7.08.00_PM.png" title="View the Preview Report" className="border" />
 
-> 📘 Templates for Inbox Preview
->
-> Code Analysis with Inbox Preview is available for the [Custom HTML template](https://docs.clevertap.com/docs/email-editor-templates#custom-html-template) and [Rich Media Template](https://docs.clevertap.com/docs/email-editor-templates#rich-media-template).
+<Callout icon="📘" theme="info">
+  **Templates for Inbox Preview**
 
-7. Click _Fix issues_ in the editor link to fix the issues. You are redirected to the email editor.  
+  Code Analysis with Inbox Preview is available for the [Custom HTML template](https://docs.clevertap.com/docs/email-editor-templates#custom-html-template) and [Rich Media Template](https://docs.clevertap.com/docs/email-editor-templates#rich-media-template).
+</Callout>
+
+5. Click _Fix issues_ in the editor link to fix the issues. You are redirected to the email editor.  
    Rerun the preview tests to check that the previews are in order.
 
 ## Spam Report
@@ -273,4 +280,4 @@ Follow the steps to generate the spam report.
 4. Click the **Spam Report** tab.
 5. Click the **Generate Report** button. The display may take some time if you have selected multiple inboxes. We will render the results and send you a notification email to know when the preview is ready.
 
-<Image align="center" alt={1648} border={true} src="https://files.readme.io/9091e36-Screenshot_2021-07-12_at_7.07.10_PM.png" title="Generate Spam Report" className="border" />
+<Image align="center" alt={1648} border={true} caption="Generate Spam Report" title="Generate Spam Report" src="https://files.readme.io/9091e36-Screenshot_2021-07-12_at_7.07.10_PM.png" />
