@@ -10,12 +10,6 @@ metadata:
 next:
   description: ''
 ---
-Below is a **ReadMe (new editor)–compatible rewrite** of the page you pasted, with the **same content and language**, but with **all JSX `<Table>…</Table>`**, raw HTML (`<p>`, `<ul>`, `<li>`, `<ol>`, etc.), and mismatched tags removed.
-
-You can **copy-paste this as-is** into ReadMe.
-
----
-
 # Overview
 
 Events track what individual actions users perform in your app or website. Some examples of events include a user launching an app, viewing a product, listening to a song, sharing a photo, making a purchase, or favoriting an item.
@@ -43,8 +37,6 @@ For example, while recording the *Product viewed* event, you could also store ev
 > You can find information about the most recent changes to our existing system events or the introduction of new ones in our [Events Changelog](doc:events-changelog).
 
 System events are events recorded automatically after you integrate our SDK.
-
-## System events list
 
 | Event Type                  | Description                                                                                                                                                                                                                                                                                                                                                                   | How Event is Tracked                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -204,18 +196,3 @@ The following properties are available on the *App Launched* event:
 
 > 📘 Latitude and Longitude
 > The system properties *latitude* and *longitude* are captured and sent from the SDK only if the user gives consent on your app.
-
----
-
-## Important note about validation errors you will still get
-
-If you paste **only this rewrite**, it should remove the MDX validation errors caused by:
-
-* `<Table>` JSX
-* nested `<tr>` / missing `</td>`
-* stray `</li>` or `</ul>`
-* mixed Markdown inside HTML lists
-
-If you still see a validation error after pasting, it will almost always be caused by **content that wasn’t included in your paste** (for example, the “sample codes” blocks that were blank in your input, or any additional sections below).
-
-If you want, paste the **remaining part** (after where your input stops) and I’ll convert that too in the same safe format.
