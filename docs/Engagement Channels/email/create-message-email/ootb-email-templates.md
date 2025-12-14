@@ -10807,9 +10807,7 @@ This AMP template allows users to calculate the potential returns of their Syste
 
 <Image align="center" alt="Sample SIP Calculator Template" border={true} caption="Sample SIP Calculator Template" src="https://files.readme.io/0bfead2af5fe6db82b947443e276b647d357044f2beda009bb8660e29536044c-SIP_Calculator_AMP.png" width="35% " />
 
-<details>
-  <summary><b>Expand to know more about the template.</b></summary>
-
+<Accordion title="Expand to know more about the template.">
   ### Use Case Examples
 
   * Educate users about SIP benefits while promoting mutual fund products.
@@ -11363,7 +11361,7 @@ This AMP template allows users to calculate the potential returns of their Syste
 
   </html>
   ```
-</details>
+</Accordion>
 
 ## Insurance Premium Calculator Template
 
@@ -11371,9 +11369,7 @@ This AMP template empowers users to estimate insurance premiums based on paramet
 
 <Image align="center" alt="Sample Premium Calculator Template" border={true} caption="Sample Premium Calculator Template" src="https://files.readme.io/f95f0f21079c99d5fcff4395c0b5322e87a7bef9e74c8c4c6e0f127cc0381fe8-Insurance_Premium_Calculator.png" width="35% " />
 
-<details>
-  <summary>Expand to know more about the template.</summary>
-
+<Accordion title="Expand to know more about the template.">
   ### Use Case Examples
 
   * Promote insurance plans with embedded quote estimators.
@@ -11868,7 +11864,7 @@ This AMP template empowers users to estimate insurance premiums based on paramet
   </body>
   </html>
   ```
-</details>
+</Accordion>
 
 ## Product Recommendations Template
 
@@ -11876,9 +11872,7 @@ This AMP template dynamically showcases relevant products based on a user’s pa
 
 <Image align="center" alt="Sample Product Recommendations Template" border={true} caption="Sample Product Recommendations Template" src="https://files.readme.io/40e6d2bbef79979989ac846fb018ed1588439e65f7071c1781fc61d7001ebdb1-Product_Recommendations_AMP.png" width="25% " />
 
-<details>
-  <summary>Expand to know more about the template.</summary>
-
+<Accordion title="Expand to know more about the template.">
   ### Use Case Examples
 
   * Recommend products personalized to users’ past interactions or preferences.
@@ -12707,7 +12701,7 @@ This AMP template dynamically showcases relevant products based on a user’s pa
   </body>
   </html>
   ```
-</details>
+</Accordion>
 
 ## Show Recommendations
 
@@ -12715,8 +12709,7 @@ This AMP template introduces users to personalized product suggestions using int
 
 <Image align="center" alt="Sample Show Recommendations With and Without Notify Me CTA Templates" border={true} caption="Sample Show Recommendations With and Without Notify Me CTA Templates" src="https://files.readme.io/a301d644acdc9ddb7700612e3a2276f9401438bec493ecc47c758a47889d5c4a-Show_Recommendations_1__2_AMP.png" width="65% " />
 
-<details>
-  <summary><b>Expand to know more about the template.</b></summary>
+<Accordion title="Expand to know more about the template.">
 
   ### Use Case Examples
 
@@ -13934,7 +13927,7 @@ This AMP template introduces users to personalized product suggestions using int
   </body>
   </html>
   ```
-</details>
+</Accordion>
 
 ## Deals by Category Template
 
@@ -13944,9 +13937,8 @@ When clicked, each tile displays an offer, message, or interactive form, enablin
 
 <Image align="center" alt="Sample Deals by Category Template" border={true} caption="Sample Deals by Category Template" src="https://files.readme.io/c6b2e49e246d6a8d2fe8da10efbc2ee08a6b4f82823f4c561ab6c5aab588959c-Deals_by_Category_AMP.png" width="30% " />
 
-<details>
-  <summary><b>Expand to know more about the template.</b></summary>
-
+<Accordion title="Expand to know more about the template.">
+  
   ### Use Case Examples
 
   * Zodiac-based Offer Engagement: Display tailored offers by the user’s zodiac sign.
@@ -14484,7 +14476,7 @@ When clicked, each tile displays an offer, message, or interactive form, enablin
   </body>
   </html>
   ```
-</details>
+</Accordion>
 
 ## Click To Reveal
 
@@ -14492,8 +14484,7 @@ This AMP template allows users to engage with an email by clicking on an image t
 
 <Image align="center" alt="Sample Click to Reveal Template" border={true} caption="Sample Click to Reveal Template" src="https://files.readme.io/cb7e08c2ae7ea1224cf0ace234ed910ccaf65c29f80b935d20690747480e28d6-Click_to_Reveal_AMP.png" width="35% " />
 
-<details>
-  <summary><b>Expand to know more about the template.</b></summary>
+<Accordion title="Expand to know more about the template.">
 
   ### Use Case Examples
 
@@ -14832,7 +14823,7 @@ This AMP template allows users to engage with an email by clicking on an image t
 
   </html>
   ```
-</details>
+</Accordion>
 
 # Key Template Customization Options
 
