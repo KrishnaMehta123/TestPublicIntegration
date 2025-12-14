@@ -195,15 +195,23 @@ The following is the sample response sent by CleverTap to the providers upon par
 
 ```json
 {
-  "status": "partial_success",
-  "processed": 850,
-  "failed": 150,
-  "errors": [
-    {
-      "event_index": 5,
-      "error": "Invalid email format"
-    }
-  ]
+    "error": "2 event(s) failed to process",
+    "TOTAL_EVENTS": 4,
+    "PROCESSED_EVENTS": 2,
+    "UNPROCESSED_EVENTS": [
+        {
+            "type": "hard_bounce",
+            "email": "user1@clevertap.com",
+            "description": "User hard bounce",
+            "errorDescription": "invalid meta"
+        },
+        {
+            "email": "user2@clevertap.com",
+            "meta": "user2@clevertap.com|1568798080|1733728287|20241209|0|wzrk_default|-17006141|",
+            "description": "User soft bounce",
+            "errorDescription": "Could not map event to any bounce type"
+        }
+    ]
 }
 ```
 
@@ -211,9 +219,10 @@ The following is the sample error response:
 
 ```json
 {
-  "status": "error",
-  "message": "Mandatory parameter missing: meta",
-  "error_code": 400
+   "error": "invalid payload",
+    "TOTAL_EVENTS": 0,
+    "PROCESSED_EVENTS": 0,
+    "UNPROCESSED_EVENTS": []
 }
 ```
 
