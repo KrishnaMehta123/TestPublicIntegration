@@ -149,7 +149,7 @@ Adding Promotion Cards to your annotations enhances the impact of email marketin
 
 <Image align="center" border={true} caption="Single Image Layout" src="https://files.readme.io/4f32a4d939159fd3d44e0a3d4329515618705b4f0565f7464383812d17c14d1a-image.png" width="65% " />
 
-<Image align="center" border={true} caption="Carousel Image Layout" src="https://files.readme.io/0dcfcde9bdbc05e3e8b476417628beb88bff3e3301683ef8fb8445148ac4da4d-Carousel_Image_Layout.png" />
+<Image align="center" border={true} caption="Carousel Image Layout" src="https://files.readme.io/0dcfcde9bdbc05e3e8b476417628beb88bff3e3301683ef8fb8445148ac4da4d-Carousel_Image_Layout.png" width="67% " />
 
 ## Prerequisites
 
@@ -163,13 +163,12 @@ To annotate an email campaign with promotional cards, perform the following step
 1. [Create an email campaign](https://docs.clevertap.com/docs/create-message-email).
 2. [Define the message content](https://docs.clevertap.com/docs/create-message-email#define-the-message-content) from the Email Editor.
 3. Select the _Sender details_ tab.
-4. Select **Highlight with Gmail promotional annotations** and select **Promotion Cards**. A single promotion card (Single Image Layout) is displayed to the user by default. You can add more cards by clicking **Promotion Card** for Carousel Layout. The following options display for each promotion card:
+4. Select **Highlight with Gmail promotional annotations** and select **Promotion Cards**. A single promotion card (Single Image Layout) is displayed to the user by default. You can add more cards by clicking **Promotion Card** for Carousel Layout. The following options display for each promotion card:  
 
-  Annotate Email With Product Carousel Using Image URL Option
+   <Image align="center" border={true} caption="Annotate Email With Product Carousel Using Image URL Option" src="https://files.readme.io/ffda68725e844316f99a94057fc9e1dd4e190e94b8cbc90bf42b2aaa82d0c2fb-Annotate_Email_with_Promotion_Cards.png" />
 
-![](https://files.readme.io/577d56ec16b072b5ca0d4b53a877e5f3889f3dca5314ab93ad07f404c226a7f4-Upload_Image_for_Product_Carousel.png)  Annotate Email With Product Carousel Using Upload Image Option
-
-Add the required information.
+   <Image align="center" border={true} caption="Annotate Email With Product Carousel Using Upload Image Option" src="https://files.readme.io/577d56ec16b072b5ca0d4b53a877e5f3889f3dca5314ab93ad07f404c226a7f4-Upload_Image_for_Product_Carousel.png" />
+5. Add the required information.
 
 <Table align={["left","left","left"]}>
   <thead>
@@ -303,12 +302,14 @@ Add the required information.
 
 5. Click **Preview & Test** to preview the annotated email message.
 
-> 📘 Supported Inboxes
->
-> Single Image and Carousel annotations are supported only on the Gmail mobile apps (iOS and Android). They are not supported for:
->
-> * Gmail on desktop
-> * Users in the EU region (on any platform)
+<Callout icon="📘" theme="info">
+  **Supported Inboxes**
+
+  Single Image and Carousel annotations are supported only on the Gmail mobile apps (iOS and Android). They are not supported for:
+
+  * Gmail on desktop
+  * Users in the EU region (on any platform)
+</Callout>
 
 ## Image Specification for Promotion Cards
 
@@ -330,9 +331,11 @@ To display promotion cards in an email, ensure that your images meet the followi
 
 Create a unique Gmail testing account ending with [promotabtesting@gmail.com](mailto:promotabtesting@gmail.com) for your team. For example, _[mycompany.promotabtesting@gmail.com](mailto:mycompanypromotabtesting@gmail.com)_. This unique account will have a more aggressive email ranking and bundling to make testing easier and faster.
 
-> 📘 Testing Promotion Cards
->
-> For Promotion Cards to render, Google recommends a campaign with atleast 100 users.
+<Callout icon="📘" theme="info">
+  **Testing Promotion Cards**
+
+  For Promotion Cards to render, Google recommends a campaign with atleast 100 users.
+</Callout>
 
 # Troubleshooting
 
@@ -352,9 +355,11 @@ To resolve this issue:
 * Try restarting your device.
 * If the issue is still not resolved, try viewing the bundle on another device. For example, a tablet may have a different Gmail version and show the bundle differently.
 
-> 📘 Email Held Up
->
-> There is a chance your email could be in a holdback group. If none of the measures work, create a new account ending with _[promotabtesting@gmail.com](mailto:promotabtesting@gmail.com)_. For example, create _[mycompanypromotabtesting@gmail.com](mailto:mycompanypromotabtesting@gmail.com)_ and use that new account for testing.
+<Callout icon="📘" theme="info">
+  **Email Held Up**
+
+  There is a chance your email could be in a holdback group. If none of the measures work, create a new account ending with _[promotabtesting@gmail.com](mailto:promotabtesting@gmail.com)_. For example, create _[mycompanypromotabtesting@gmail.com](mailto:mycompanypromotabtesting@gmail.com)_ and use that new account for testing.
+</Callout>
 
 ### Email does not show up on the Promotions tab
 
