@@ -30,118 +30,118 @@ This HTML email template is designed to help you celebrate your user's special d
 
 <Image align="center" alt="Sample Birthday Template" border={true} caption="Sample Birthday Template" src="https://files.readme.io/c10b08d8ad83425b7524026133a40ae478093f2d6444dc41bad5ae1b936b0738-Birthday_HTML.png" width="25% " />
 
-<details>
-  <summary><b>Expand to know more about the template.</b></summary>
+<br />
 
-  ### Use Case Examples
+<Accordion title="Expand to know more about the template.">
 
-  * Send birthday wishes with a personalized message and special offer.
-  * Deliver exclusive discount codes or gift coupons.
-  * Encourage users to revisit your app, website, or store on their birthday.
-  * Reinforce brand loyalty by showing you remember important moments.
+### Use Case Examples
 
-  ### Template Customization Options
+* Send birthday wishes with a personalized message and special offer.
+* Deliver exclusive discount codes or gift coupons.
+* Encourage users to revisit your app, website, or store on their birthday.
+* Reinforce brand loyalty by showing you remember important moments.
 
-  * [Replace Logo](doc:ootb-email-templates#replace-logo)
-  * [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
-  * [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-  * [Update Links in Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-  * [Change Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-  * [Update Social Media and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+### Template Customization Options
 
-  (@amrita - remove PP from this section)
+* [Replace Logo](doc:ootb-email-templates#replace-logo)
+* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
+* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+* [Update Links in Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+* [Change Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+* [Update Social Media and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
 
-  ### Template Code
+### Template Code
 
-  ```html
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-  	<title></title>
-  	<style type="text/css">@font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Light.ttf\') format(\'woff\');             font-style: normal;             font-weight: 300;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Regular.ttf\') format(\'woff\');             font-style: normal;             font-weight: 400;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Medium.ttf\') format(\'woff\');             font-style: normal;             font-weight: 500;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-SemiBold.ttf\') format(\'woff\');             font-style: normal;             font-weight: 600;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Bold.ttf\') format(\'woff\');             font-style: normal;             font-weight: 700;         }          @media screen and (max-width: 480px) {             .container {                 max-width: 95% !important;             }                         .logo{                 width: 150px !important; height: 60px !important;             }             .offer-wrap{                 padding: 40px 15px !important;             }             .offer-title{                 font-size: 35px !important;                 line-height: 45px !important;             }             .cta{                 padding: 10px 25px !important;             }         }
-  	</style>
-  </head>
-  <body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" data-new-gr-c-s-loaded="14.1242.0" style="font-family: Jost, Arial, sans-serif; font-weight: 400; margin: 0px; padding: 0px; background: aliceblue; cursor: auto;">
-  <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 600px; margin: 0 auto; background-color: #FFFFFF;" width="100%"><!-- header start-->
-  	<tbody>
-  		<tr>
-  			<td align="center" class="container" style="display: block; padding: 24px 0; max-width: 90%; margin: 0 auto;">
-  			<div class="logo-wrap"><!-- Change logo src as per your requirements --><img alt="Logo" class="logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="width: 159px; height: 73px; object-fit: cover;" /></div>
-  			<!-- Change logo src as per your requirements --></td>
-  		</tr>
-  		<!-- header end-->
-  		<tr>
-  			<td style="text-align: center;">
-  			<div class="container" style="max-width: 80%; margin: 0 auto 30px;"><!-- Change banner as per your requirements --><img alt="banner" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Birthday/banner.png" style="width: 100%; height: 100%; object-fit: cover;" /> <!-- Change banner as per your requirements --></div>
-  			</td>
-  		</tr>
-  		<tr>
-  			<td align="center" style="padding: 37px 0 47px; background: #FFF1EE;">
-  			<div class="container" style="max-width: 80%; margin: 0 auto;">
-  			<h2 style="margin: 0 0 20px; font-family: 'Jost', Arial, sans-serif; font-size: 30px; font-weight: 400 !important; color: #252525; line-height: 43px; text-align: center; ">08-09-2024</h2>
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+	<style type="text/css">@font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Light.ttf\') format(\'woff\');             font-style: normal;             font-weight: 300;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Regular.ttf\') format(\'woff\');             font-style: normal;             font-weight: 400;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Medium.ttf\') format(\'woff\');             font-style: normal;             font-weight: 500;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-SemiBold.ttf\') format(\'woff\');             font-style: normal;             font-weight: 600;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Bold.ttf\') format(\'woff\');             font-style: normal;             font-weight: 700;         }          @media screen and (max-width: 480px) {             .container {                 max-width: 95% !important;             }                         .logo{                 width: 150px !important; height: 60px !important;             }             .offer-wrap{                 padding: 40px 15px !important;             }             .offer-title{                 font-size: 35px !important;                 line-height: 45px !important;             }             .cta{                 padding: 10px 25px !important;             }         }
+	</style>
+</head>
+<body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" data-new-gr-c-s-loaded="14.1242.0" style="font-family: Jost, Arial, sans-serif; font-weight: 400; margin: 0px; padding: 0px; background: aliceblue; cursor: auto;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 600px; margin: 0 auto; background-color: #FFFFFF;" width="100%"><!-- header start-->
+	<tbody>
+		<tr>
+			<td align="center" class="container" style="display: block; padding: 24px 0; max-width: 90%; margin: 0 auto;">
+			<div class="logo-wrap"><!-- Change logo src as per your requirements --><img alt="Logo" class="logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="width: 159px; height: 73px; object-fit: cover;" /></div>
+			<!-- Change logo src as per your requirements --></td>
+		</tr>
+		<!-- header end-->
+		<tr>
+			<td style="text-align: center;">
+			<div class="container" style="max-width: 80%; margin: 0 auto 30px;"><!-- Change banner as per your requirements --><img alt="banner" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Birthday/banner.png" style="width: 100%; height: 100%; object-fit: cover;" /> <!-- Change banner as per your requirements --></div>
+			</td>
+		</tr>
+		<tr>
+			<td align="center" style="padding: 37px 0 47px; background: #FFF1EE;">
+			<div class="container" style="max-width: 80%; margin: 0 auto;">
+			<h2 style="margin: 0 0 20px; font-family: 'Jost', Arial, sans-serif; font-size: 30px; font-weight: 400 !important; color: #252525; line-height: 43px; text-align: center; ">08-09-2024</h2>
 
-  			<p style="margin: 0; text-transform: none; font-family: 'Jost', Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 35px; text-align: center; color: #252525; "><strong>Happy Birthday, Emily!</strong></p>
+			<p style="margin: 0; text-transform: none; font-family: 'Jost', Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 35px; text-align: center; color: #252525; "><strong>Happy Birthday, Emily!</strong></p>
 
-  			<p style="margin: 0; text-transform: none; font-family: 'Jost', Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 35px; text-align: center; color: #252525; ">Celebrate your special day with a little something from us — an exclusive coupon code valid just for today. It’s our way of saying thanks for being part of our family.</p>
-  			</div>
-  			</td>
-  		</tr>
-  		<tr>
-  			<td align="center" class="offer-wrap" style="padding: 50px 0;">
-  			<div class="container" style="max-width: 80%; margin: 0 auto;">
-  			<h3 class="offer-title" style="margin: 0 0 16px; font-family: 'Jost', Arial, sans-serif; font-size: 45px; font-weight: 300; line-height: 53px; text-align: center; ">Get <span style="font-style: italic; color: #FDB4AC; font-weight: 600;">30% </span>Off<br />
-  			just for today!</h3>
+			<p style="margin: 0; text-transform: none; font-family: 'Jost', Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 35px; text-align: center; color: #252525; ">Celebrate your special day with a little something from us — an exclusive coupon code valid just for today. It’s our way of saying thanks for being part of our family.</p>
+			</div>
+			</td>
+		</tr>
+		<tr>
+			<td align="center" class="offer-wrap" style="padding: 50px 0;">
+			<div class="container" style="max-width: 80%; margin: 0 auto;">
+			<h3 class="offer-title" style="margin: 0 0 16px; font-family: 'Jost', Arial, sans-serif; font-size: 45px; font-weight: 300; line-height: 53px; text-align: center; ">Get <span style="font-style: italic; color: #FDB4AC; font-weight: 600;">30% </span>Off<br />
+			just for today!</h3>
 
-  			<h4 style="margin: 0 0 16px; text-transform: uppercase; color: #545454; font-family: 'Jost', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; text-align: center; ">USE CODE AT CHECKOUT: <strong>HAPPYBIRTHDAY</strong></h4>
+			<h4 style="margin: 0 0 16px; text-transform: uppercase; color: #545454; font-family: 'Jost', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; text-align: center; ">USE CODE AT CHECKOUT: <strong>HAPPYBIRTHDAY</strong></h4>
 
-  			<p style="margin: 0 0 23px; font-family: 'Jost', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 20px; color: #545454; text-align: center; text-transform: none;">Code valid only till February 15th 11:59pm</p>
+			<p style="margin: 0 0 23px; font-family: 'Jost', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 20px; color: #545454; text-align: center; text-transform: none;">Code valid only till February 15th 11:59pm</p>
 
-  			<a class="cta" href="#" style="display:inline-block; background-color: #EDACAA; font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400;line-height: 28px;text-align: center; color: #FFFFFF !important; text-transform: uppercase; border-radius: 25px; text-decoration: none; max-width: 233px; padding: 10px 63px;">shop now</a>
-  			</div>
-  			</td>
-  		</tr>
-  		<!-- footer start-->
-  		<tr>
-  			<td align="center" style="background: #FFF1EE;">
-  			<table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="margin: 0 auto;">
-  				<tbody>
-  					<tr>
-  						<td>
-  						<p style="color: #252525; font-size: 18px; font-weight: 400; line-height: 35px; text-align: center; margin: 43px auto 25px; text-transform: none; max-width: 80%;">For assistance, connect with us on social media or reach out to our support team at 
-  						<a data-renderer-mark="true" data-testid="link-with-safety" href="support@example.com" title="support@example.com">support@example.com</a>
-  						</p>
-  						</td>
-  					</tr>
-  					<tr>
-  						<td style="border-top: 1px solid #EDACAA; padding: 25px 0;">
-  						<table align="center" cellpadding="0" cellspacing="0" style="text-align: center;" width="100%">
-  							<tbody>
-  								<tr>
-  									<td style="padding: 0 15px; display: inline-block;">
-  									<a href="#" style="vertical-align: middle;display: inline-block; width: 26px; height: 26px;"><!-- Change image src as per your requirements --><img alt="instagram" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/72bce39c01ce48258457146cb33a7a23.png" style="width: 100%; height: 100%;" /></a>
-  									</td>
-  									<td style="padding: 0 15px; display: inline-block;">
-  									<a href="#" style="vertical-align: middle;display: inline-block; width: 26px; height: 26px;"><!-- Change image src as per your requirements --><img alt="facebook" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/26e39559cb10487f8aa6db321f7ddf71.png" style="width: 100%; height: 100%;" /></a>
-  									</td>
-  									<td style="padding: 0 15px; display: inline-block;">
-  									<a href="#" style="vertical-align: middle;display: inline-block; width: 26px; height: 26px;"><!-- Change image src as per your requirements --><img alt="x" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/166c4d889bea433bb8790b99791b7409.png" style="width: 100%; height: 100%;" /></a>
-  									</td>
-  								</tr>
-  							</tbody>
-  						</table>
-  						</td>
-  					</tr>
-  				</tbody>
-  			</table>
-  			</td>
-  		</tr>
-  		<!-- footer end-->
-  	</tbody>
-  </table>
-  <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></body>
-  </html>
-  ```
-</details>
+			<a class="cta" href="#" style="display:inline-block; background-color: #EDACAA; font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400;line-height: 28px;text-align: center; color: #FFFFFF !important; text-transform: uppercase; border-radius: 25px; text-decoration: none; max-width: 233px; padding: 10px 63px;">shop now</a>
+			</div>
+			</td>
+		</tr>
+		<!-- footer start-->
+		<tr>
+			<td align="center" style="background: #FFF1EE;">
+			<table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="margin: 0 auto;">
+				<tbody>
+					<tr>
+						<td>
+						<p style="color: #252525; font-size: 18px; font-weight: 400; line-height: 35px; text-align: center; margin: 43px auto 25px; text-transform: none; max-width: 80%;">For assistance, connect with us on social media or reach out to our support team at 
+						<a data-renderer-mark="true" data-testid="link-with-safety" href="support@example.com" title="support@example.com">support@example.com</a>
+						</p>
+						</td>
+					</tr>
+					<tr>
+						<td style="border-top: 1px solid #EDACAA; padding: 25px 0;">
+						<table align="center" cellpadding="0" cellspacing="0" style="text-align: center;" width="100%">
+							<tbody>
+								<tr>
+									<td style="padding: 0 15px; display: inline-block;">
+									<a href="#" style="vertical-align: middle;display: inline-block; width: 26px; height: 26px;"><!-- Change image src as per your requirements --><img alt="instagram" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/72bce39c01ce48258457146cb33a7a23.png" style="width: 100%; height: 100%;" /></a>
+									</td>
+									<td style="padding: 0 15px; display: inline-block;">
+									<a href="#" style="vertical-align: middle;display: inline-block; width: 26px; height: 26px;"><!-- Change image src as per your requirements --><img alt="facebook" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/26e39559cb10487f8aa6db321f7ddf71.png" style="width: 100%; height: 100%;" /></a>
+									</td>
+									<td style="padding: 0 15px; display: inline-block;">
+									<a href="#" style="vertical-align: middle;display: inline-block; width: 26px; height: 26px;"><!-- Change image src as per your requirements --><img alt="x" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/166c4d889bea433bb8790b99791b7409.png" style="width: 100%; height: 100%;" /></a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+		<!-- footer end-->
+	</tbody>
+</table>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></body>
+</html>
+```
+
+</Accordion>
 
 ## Feedback Template
 
