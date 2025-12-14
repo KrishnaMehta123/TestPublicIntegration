@@ -27,11 +27,10 @@ To annotate emails in an email campaign, perform the following steps:
 1. [Create an email campaign](https://docs.clevertap.com/docs/create-message-email).
 2. [Define the message content](https://docs.clevertap.com/docs/create-message-email#define-the-message-content) from the Email Editor.
 3. Click **Sender details**.
-4. To annotate your email, select **Highlight with Gmail promotional annotations**. The following options display:
+4. To annotate your email, select **Highlight with Gmail promotional annotations**. The following options display:  
 
-  Annotate Emails with Deal Annotation
-
-Add the required information.
+   <Image align="center" border={true} caption="Annotate Emails with Deal Annotation" src="https://files.readme.io/b9ccbce-Gmail_Promotional_Annotation_.png" />
+5. Add the required information.
 
 <Table align={["left","left","left"]}>
   <thead>
