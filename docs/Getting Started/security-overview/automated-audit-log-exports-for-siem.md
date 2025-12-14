@@ -21,7 +21,7 @@ CleverTap Audit Logs capture every security-relevant action in your account, inc
 
 Once Audit Logs are exported on a set schedule, they can be integrated with SIEM tools such as Splunk, IBM QRadar, or Azure Sentinel on your end for unified monitoring, threat detection, and compliance reporting.
 
-Audit Log exports are delivered once every 4 hours (based on your account’s time zone).
+Audit Log exports are delivered once every 4 hours (based on your account's time zone).
 
 > 📘 **Add-on Feature**
 >
@@ -31,7 +31,7 @@ Audit Log exports are delivered once every 4 hours (based on your account’s ti
 
 The SIEM integration for Audit Logs offers several key advantages that enhance security visibility, compliance, and operational efficiency.
 
-* **Continuous Security Monitoring**: Feed logs directly to SIEM tools for anomaly detection and incident investigation. 
+* **Continuous Security Monitoring**: Feed logs directly to SIEM tools for anomaly detection and incident investigation.
 * **Regulatory Compliance**: Retain detailed records to meet audit and governance requirements.
 * **Custom Retention Policies**: Maintain logs in your own bucket for the duration your organization requires.
 * **Centralized Insights**: Correlate user activity with infrastructure and application events.
@@ -43,45 +43,34 @@ Before setting up the export, check the following:
 * You have Admin access to your CleverTap account.
 * You have an existing cloud storage bucket in AWS S3, Google Cloud Storage, or Azure Blob Storage.
 * You can generate and provide access credentials (for example, AWS Access Key ID, Secret Access Key, GCP Service Account JSON, or Azure Connection String).
-* The destination bucket allows write permissions from CleverTap’s export service.
+* The destination bucket allows write permissions from CleverTap's export service.
 
 > 📘 **Secure Log Delivery for Compliance Tracking**
 >
-> Customers in BFSI or regulated sectors often require SIEM integrations for continuous compliance tracking. CleverTap’s export mechanism ensures secure and traceable delivery of log files to your environment.
+> Customers in BFSI or regulated sectors often require SIEM integrations for continuous compliance tracking. CleverTap's export mechanism ensures secure and traceable delivery of log files to your environment.
 
 # Set Up SIEM Export
-
 
 To configure automatic Audit Log exports, perform the following steps:
 
 1. Log in to your CleverTap dashboard.
-2. Go to *Settings > Partners*.
-3. Select *Export Center*.
+2. Go to _Settings > Partners_.
+3. Select _Export Center_.
 4. Click **Create Export**.
-5. Choose *Audit Logs* as the export type.
+5. Choose _Audit Logs_ as the export type.
 6. Select your destination platform:
 
    * AWS S3
    * Google Cloud Storage
    * Microsoft Azure Blob Storage
-7. Select an available bucket from the drop-down or add a new bucket using *Add*.
+7. Select an available bucket from the drop-down or add a new bucket using _Add_.
 8. Click **Save** to activate the export.
 
 Exports will automatically begin within 24 hours.
 
 The following image shows the SIEM export for the Audit Logs:
 
-<Image alt="SIEM Export for Audit Logs" align="center" border={true} src="https://files.readme.io/04275d38d7769d1d0b70296b58d4564cc5fa1f73497ebf21189c193c6518d0d6-2025-11-19_17-27-50_1.gif" />  SIEM Export for Audit Logs
-
-
-
-
-
-
-
-
-
-
+![](https://files.readme.io/04275d38d7769d1d0b70296b58d4564cc5fa1f73497ebf21189c193c6518d0d6-2025-11-19_17-27-50_1.gif)  SIEM Export for Audit Logs
 
 > 📘 **Support**
 >
@@ -94,7 +83,7 @@ CleverTap delivers Audit Logs with the following schedule and file structure.
 * **Delivery Frequency**: Once every 4 hours (starting from midnight as per account time zone).
 * **Delivery Mode**: Incremental batch files delivered securely to your configured bucket.
 * **File Format**: JSON (UTF-8 encoded).
-* **File Naming Convention**: audit/&lt;account-encoded&gt;/audit*<account-encoded>*<timestamp>.zip
+* **File Naming Convention**: `audit/{account-encoded}/audit_{account-encoded}_{timestamp}.zip`
 
 Each exported file includes the same fields visible in the Audit Logs dashboard:
 
@@ -114,6 +103,7 @@ The following security measures ensure your Audit Log exports remain protected t
 * All exports are HTTPS-encrypted during transit.
 * Credentials (access keys or tokens) are stored securely and used only for writing to your bucket.
 * Bucket permissions can be revoked at any time without affecting dashboard-level access.
+
 > 👍 **Security Tip**
 >
 > Always rotate access credentials periodically and restrict write access to a dedicated folder or prefix within your bucket.
