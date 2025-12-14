@@ -59,6 +59,47 @@ In the outgoing email SMTP payload, CleverTap sends the `X-CleverTap_META` key w
 To send callback events to CleverTap, customers must send a POST request to CleverTap's *Callback URL*. The following is a sample callback payload:
 The following table provides a brief description of the keys present in the callback payload:
 
+```json
+{
+  "version": "v2",
+  "events": {
+		"success": [
+      {
+        "type": "delivered",	//Indicates the message was delivered to the intended recipient
+        "email": "user5@example.com",	// Recipient email address
+        "meta": "user5@example.com|1568798080|1730714617|20241104|0|wzrk_default|-17005907|"
+      }
+    ],
+    "failed": [
+      {
+        "type": "unsubscribed", // Indicates the user has unsubscribed	
+        "email": "user1@example.com",		// User email address
+        "meta": "user1@example.com|1568798080|1730714617|20241104|0|wzrk_default|-17005907|",		
+        "description": "Hard bounce detected"		// Additional details of the failure reason
+      },
+      {
+        "type": "hard_bounce",
+        "email": "user3@example.com",
+        "meta": "user3@example.com|1568798080|1730799638|20241105|0|wzrk_default|-17005910|",
+        "description": "Hard bounce detected"
+      },
+      {
+        "type": "soft_bounce",
+        "email": "user5@example.com",
+        "meta": "usert5@example.com|1568798080|1730714617|20241104|0|wzrk_default|-17005905|",
+        "description": "Recipient Inbox Full"
+      },
+      {
+        "type": "spam",
+        "email": "user4@example.com",
+        "meta": "user4@example.com|1568798080|1730714617|20241104|0|wzrk_default|-17005904|",
+        "description": "Marked as spam"
+      }
+    ]
+  }
+}
+```
+
 <Table align={["left","left","left","left"]}>
   <thead>
     <tr>
