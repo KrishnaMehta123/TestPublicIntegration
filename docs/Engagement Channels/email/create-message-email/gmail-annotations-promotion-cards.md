@@ -5,12 +5,12 @@ excerpt: >-
   fingertips.
 deprecated: false
 hidden: true
+link:
+  new_tab: false
 metadata:
   title: ''
   description: ''
   robots: index
-next:
-  description: ''
 ---
 # Overview
 
@@ -102,7 +102,9 @@ Add the required information.
       </td>
 
       <td>
-        * Avoid using more than four words or full sentences in this space, as it competes with your subject line. When your email text space is full, the offer title truncates (for example, "...").<ul> <li> <p>Do not repurpose. Use promotional offerings to ensure clarity and simplicity. Do not utilize it for other actions such as <em>Open now</em>.</p> </li> <li> <p>Do not use run-on sentences. Avoid saying things such as <em>25% off, unless you’ve already purchased from us, in which case other ...</em> Long sentences are truncated.</p> </li> </ul>
+        • Avoid using more than four words or full sentences in this space, as it competes with your subject line. When your email text space is full, the offer title truncates (for example, "...").<br />
+        • Do not repurpose. Use promotional offerings to ensure clarity and simplicity. Do not utilize it for other actions such as *Open now*.<br />
+        • Do not use run-on sentences. Avoid saying things such as *25% off, unless you've already purchased from us, in which case other ...* Long sentences are truncated.
       </td>
     </tr>
 
@@ -130,7 +132,10 @@ Add the required information.
       </td>
 
       <td>
-        Using this feature allows an email to be previewed twice at the top in a bundle:<ul> <li>once when it is first sent.</li> <li>again within 3 days of the offer expiry.</li> </ul>When personalizing *Offer period*, specify the time and timezone. For example, *2018-12-30T23:59:59-0700*.
+        Using this feature allows an email to be previewed twice at the top in a bundle:<br />
+        • once when it is first sent.<br />
+        • again within 3 days of the offer expiry.<br />
+        When personalizing *Offer period*, specify the time and timezone. For example, *2018-12-30T23:59:59-0700*.
       </td>
     </tr>
   </tbody>
@@ -230,19 +235,13 @@ Add the required information.
       </td>
 
       <td>
-        Provide the unique image URL. Supported formats include PNG and JPEG. The image must meet the aspect ratio requirements based on whether you are creating a single promotional card or a carousel.
-        <ul>
-          <li>**For Single Image Layout**: Supported Aspect Ratio: 1.91:1 only.</li>
-          <li>**For Carousel Layout**:
-            <ul>
-              <li>Supported Aspect Ratios: 4:5, 1:1, or 1.91:1.</li>
-              <li>All images in a carousel must use the same aspect ratio for compatibility. For additional guidelines, refer to the [Google Documentation](https://developers.google.com/gmail/promotab/overview#microdata_1).</li>
-            </ul>
-          </li>
-        </ul>
-        For more information, refer to [Image Specification for Promotion Cards](doc:gmail-annotations-promotion-cards#image-specification-for-promotion-cards).  
-
-        * \*NOTE\*\*: Google recommends not using personalized elements or user-specific UTM parameters in carousel image URLs. Only static images must be used across all campaign users for annotations to render in the email.
+        Provide the unique image URL. Supported formats include PNG and JPEG. The image must meet the aspect ratio requirements based on whether you are creating a single promotional card or a carousel.<br />
+        • **For Single Image Layout**: Supported Aspect Ratio: 1.91:1 only.<br />
+        • **For Carousel Layout**:<br />
+        &nbsp;&nbsp;&nbsp;• Supported Aspect Ratios: 4:5, 1:1, or 1.91:1.<br />
+        &nbsp;&nbsp;&nbsp;• All images in a carousel must use the same aspect ratio for compatibility. For additional guidelines, refer to the [Google Documentation](https://developers.google.com/gmail/promotab/overview#microdata_1).<br /><br />
+        For more information, refer to [Image Specification for Promotion Cards](doc:gmail-annotations-promotion-cards#image-specification-for-promotion-cards).<br /><br />
+        **NOTE**: Google recommends not using personalized elements or user-specific UTM parameters in carousel image URLs. Only static images must be used across all campaign users for annotations to render in the email.
       </td>
 
       <td>
@@ -256,16 +255,11 @@ Add the required information.
       </td>
 
       <td>
-        You can upload images in PNG or JPEG format. The image must meet the aspect ratio requirements based on whether you are creating a single promotional card or a carousel. You can resize images using the cropper tool; the aspect ratio will be maintained based on the selected option.
-        <ul>
-          <li>**For Single Image Layout**: Supported Aspect Ratio: 1.91:1 only.</li>
-          <li>**For Carousel Layout**:
-            <ul>
-              <li>Supported Aspect Ratios: 4:5, 1:1, or 1.91:1.</li>
-              <li>All images in a carousel must use the same aspect ratio for compatibility. For additional guidelines, refer to the [Google Documentation](https://developers.google.com/gmail/promotab/overview#microdata_1).</li>
-            </ul>
-          </li>
-        </ul>
+        You can upload images in PNG or JPEG format. The image must meet the aspect ratio requirements based on whether you are creating a single promotional card or a carousel. You can resize images using the cropper tool; the aspect ratio will be maintained based on the selected option.<br />
+        • **For Single Image Layout**: Supported Aspect Ratio: 1.91:1 only.<br />
+        • **For Carousel Layout**:<br />
+        &nbsp;&nbsp;&nbsp;• Supported Aspect Ratios: 4:5, 1:1, or 1.91:1.<br />
+        &nbsp;&nbsp;&nbsp;• All images in a carousel must use the same aspect ratio for compatibility. For additional guidelines, refer to the [Google Documentation](https://developers.google.com/gmail/promotab/overview#microdata_1).<br /><br />
         For more information, refer to [Image Specification for Promotion Cards](doc:gmail-annotations-promotion-cards#image-specification-for-promotion-cards).
       </td>
 
@@ -336,7 +330,7 @@ Add the required information.
       </td>
 
       <td>
-        Provide the discount value, which represents the amount deducted from the original price. This field appears when you select the *Price* checkbox.\
+        Provide the discount value, which represents the amount deducted from the original price. This field appears when you select the *Price* checkbox.<br />
         For example, if the discount value is 25 and the original price is 100, the final price displayed will be $75.
       </td>
 
@@ -437,9 +431,9 @@ To resolve this issue:
 
 Gmail recommends the following to optimize your email annotations. 
 
-* **Leverage the Power of Visuals**\
+* **Leverage the Power of Visuals**  
   Gmail has observed improved results when emails feature captivating images that complement the message. Instead of text-only designs, focus on incorporating visually appealing elements. Avoid using images with text that gets cut off or reusing the same visuals across multiple campaigns.
-* **Concise Offer Descriptions**\
+* **Concise Offer Descriptions**  
   Gmail recommends concise and compelling offer descriptions. Avoid lengthy sentences or phrases, such as "Limited Time Offer: 50% Off All Accessories", or "Exclusive Deals on Summer Collection," as they might get clipped and compete with the subject line. Opt for clear, engaging language that encourages recipient engagement without repeating the subject line verbatim.
 
 For more information about annotating your email messages effectively, refer to Google's [Best Practices](https://developers.google.com/gmail/promotab/best-practices).
