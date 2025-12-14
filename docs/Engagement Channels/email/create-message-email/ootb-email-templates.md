@@ -3186,442 +3186,439 @@ A high-impact marketing email used to announce ongoing deals, highlight product 
 <Image align="center" alt="Sample Promotioanal Email Template" border={true} caption="Sample Promotional Email Template" src="https://files.readme.io/cf5f3dfc5d62e483db6d62e5d16182bf985ecbd41f621c31293191484681cb3b-Promotional_Email_HTML.png" width="25% " />
 
 <Accordion title="Expand to know more about the template.">
+  ### Use Case Examples
 
-### Use Case Examples
+  * Announce a limited-time festive discount.
+  * Promote newly launched products or collections.
+  * Re-engage users with a category-specific deal.
 
-* Announce a limited-time festive discount.
-* Promote newly launched products or collections.
-* Re-engage users with a category-specific deal.
+  ### Template Customization Options
 
-### Template Customization Options
+  * [Replace the Logo](doc:ootb-email-templates#replace-logo)
+  * [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+  * [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#call-to-actions-ctas)
+  * [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+  * [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+  * [Update the Privacy Policy](doc:ootb-email-templates#update-privacy-policy)
+  * [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
 
-* [Replace the Logo](doc:ootb-email-templates#replace-logo)
-* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#call-to-actions-ctas)
-* [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-* [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-* [Update the Privacy Policy](doc:ootb-email-templates#update-privacy-policy)
-* [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+  ### Template Code
 
-### Template Code
+  ```html
+  <!doctype html="">
+  <html lang="en">
 
-```html
-<!doctype html="">
-<html lang="en">
+  <head>
+      <title>Promotional</title>
+      <link href="https://fonts.googleapis.com" rel="preconnect" />
+      <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+      <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet" />
+      <style type="text/css">
+          @media screen and (max-width: 480px) {             .container {                 max-width: 100% !important;             }              .main {                 max-width: 90% !important;             }         }
+      </style>
+  </head>
 
-<head>
-    <title>Promotional</title>
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet" />
-    <style type="text/css">
-        @media screen and (max-width: 480px) {             .container {                 max-width: 100% !important;             }              .main {                 max-width: 90% !important;             }         }
-    </style>
-</head>
+  <body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" data-new-gr-c-s-loaded="14.1242.0" style="font-family: Jost, Arial, sans-serif; font-weight: 400; margin: 0px; padding: 0px; cursor: auto;">
+      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 600px; margin: 0 auto; background-color: #FFFFFF;" width="100%">
+          <!-- header start-->
+          <tbody>
+              <tr>
+                  <td style="text-align: center; position: relative; padding: 30px 0;">
+                      <!-- Change Logo Image src as per your requirements --><img alt="Logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="display: inline-block; width: 159px; height: 73px; object-fit: cover;" />
+                      <!-- Change Logo Image src as per your requirements -->
+                  </td>
+              </tr>
+              <!-- header end-->
+              <tr>
+                  <td style="background: #DFDCD1; padding: 34px 0;">
+                      <table border="0" cellpadding="0" cellspacing="0" style="max-width: 88%; margin: 0 auto;" width="100%">
+                          <tbody>
+                              <tr>
+                                  <td>
+                                      <div class="img-wrap" style="max-width: 112px; max-height: 112px; margin: 0 auto 10px;"><img alt="category image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/category-1.png" style="width: 100%; height: 100%; object-fit: cover;" /></div>
 
-<body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" data-new-gr-c-s-loaded="14.1242.0" style="font-family: Jost, Arial, sans-serif; font-weight: 400; margin: 0px; padding: 0px; cursor: auto;">
-    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 600px; margin: 0 auto; background-color: #FFFFFF;" width="100%">
-        <!-- header start-->
-        <tbody>
-            <tr>
-                <td style="text-align: center; position: relative; padding: 30px 0;">
-                    <!-- Change Logo Image src as per your requirements --><img alt="Logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="display: inline-block; width: 159px; height: 73px; object-fit: cover;" />
-                    <!-- Change Logo Image src as per your requirements -->
-                </td>
-            </tr>
-            <!-- header end-->
-            <tr>
-                <td style="background: #DFDCD1; padding: 34px 0;">
-                    <table border="0" cellpadding="0" cellspacing="0" style="max-width: 88%; margin: 0 auto;" width="100%">
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div class="img-wrap" style="max-width: 112px; max-height: 112px; margin: 0 auto 10px;"><img alt="category image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/category-1.png" style="width: 100%; height: 100%; object-fit: cover;" /></div>
+                                      <p style="font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 20px; text-align: center; text-transform: none; color: #464646; margin: 0;">Jackets</p>
+                                  </td>
+                                  <td>
+                                      <div class="img-wrap" style="max-width: 112px; max-height: 112px; margin: 0 auto 10px;"><img alt="category image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/category-2.png" style="width: 100%; height: 100%; object-fit: cover;" /></div>
 
-                                    <p style="font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 20px; text-align: center; text-transform: none; color: #464646; margin: 0;">Jackets</p>
-                                </td>
-                                <td>
-                                    <div class="img-wrap" style="max-width: 112px; max-height: 112px; margin: 0 auto 10px;"><img alt="category image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/category-2.png" style="width: 100%; height: 100%; object-fit: cover;" /></div>
+                                      <p style="font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 20px; text-align: center; text-transform: none; color: #464646; margin: 0;">Shirts</p>
+                                  </td>
+                                  <td>
+                                      <div class="img-wrap" style="max-width: 112px; max-height: 112px; margin: 0 auto 10px;"><img alt="category image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/category-3.png" style="width: 100%; height: 100%; object-fit: cover;" /></div>
 
-                                    <p style="font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 20px; text-align: center; text-transform: none; color: #464646; margin: 0;">Shirts</p>
-                                </td>
-                                <td>
-                                    <div class="img-wrap" style="max-width: 112px; max-height: 112px; margin: 0 auto 10px;"><img alt="category image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/category-3.png" style="width: 100%; height: 100%; object-fit: cover;" /></div>
+                                      <p style="font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 20px; text-align: center; text-transform: none; color: #464646; margin: 0;">Jeans</p>
+                                  </td>
+                                  <td>
+                                      <div class="img-wrap" style="max-width: 112px; max-height: 112px; margin: 0 auto 10px;"><img alt="category image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/category-4.png" style="width: 100%; height: 100%; object-fit: cover;" /></div>
 
-                                    <p style="font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 20px; text-align: center; text-transform: none; color: #464646; margin: 0;">Jeans</p>
-                                </td>
-                                <td>
-                                    <div class="img-wrap" style="max-width: 112px; max-height: 112px; margin: 0 auto 10px;"><img alt="category image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/category-4.png" style="width: 100%; height: 100%; object-fit: cover;" /></div>
+                                      <p style="font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 20px; text-align: center; text-transform: none; color: #464646; margin: 0;">T-shirts</p>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <!-- Banner Image -->
+              <tr>
+                  <td style="background: #FFFFFF;">
+                      <table border="0" cellpadding="0" cellspacing="0" style="max-width: 88%; margin: 0 auto;" width="100%">
+                          <tbody>
+                              <tr>
+                                  <td style="background: #DFDCD1"><img alt="banner image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/banner.png" style="width: 100%; height: 100%; max-height: 641px; object-fit: cover;" /></td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <!-- Banner Image -->
+              <tr>
+                  <td style="background: #DFDCD1; padding: 25px 0 36px;">
+                      <table border="0" cellpadding="0" cellspacing="0" style="max-width: 88%; margin: 0 auto;" width="100%">
+                          <tbody>
+                              <tr>
+                                  <td>
+                                      <h2 style="font-family: 'Jost', Arial, sans-serif; font-size: 32px; font-weight: 300; text-transform: uppercase; line-height: 52px; color: #000000; margin: 0; padding-bottom: 8px;">FLASH SALE LIVE — DON’T MISS OUT!</h2>
 
-                                    <p style="font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 20px; text-align: center; text-transform: none; color: #464646; margin: 0;">T-shirts</p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <!-- Banner Image -->
-            <tr>
-                <td style="background: #FFFFFF;">
-                    <table border="0" cellpadding="0" cellspacing="0" style="max-width: 88%; margin: 0 auto;" width="100%">
-                        <tbody>
-                            <tr>
-                                <td style="background: #DFDCD1"><img alt="banner image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/banner.png" style="width: 100%; height: 100%; max-height: 641px; object-fit: cover;" /></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <!-- Banner Image -->
-            <tr>
-                <td style="background: #DFDCD1; padding: 25px 0 36px;">
-                    <table border="0" cellpadding="0" cellspacing="0" style="max-width: 88%; margin: 0 auto;" width="100%">
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <h2 style="font-family: 'Jost', Arial, sans-serif; font-size: 32px; font-weight: 300; text-transform: uppercase; line-height: 52px; color: #000000; margin: 0; padding-bottom: 8px;">FLASH SALE LIVE — DON’T MISS OUT!</h2>
+                                      <p style="margin: 0; padding-bottom: 10px; font-family: 'Jost', Arial, sans-serif; text-transform: none; color: #464646; font-size: 10px; line-height: 20px; font-weight: 400;">Our flash sale is live — here’s your chance to avail the best of style at up to 50% off! Browse through items from our exclusive collection, where every piece of clothing tells a story. Go ahead, make a purchase, and
+                                          make a proud statement wherever you go!</p>
 
-                                    <p style="margin: 0; padding-bottom: 10px; font-family: 'Jost', Arial, sans-serif; text-transform: none; color: #464646; font-size: 10px; line-height: 20px; font-weight: 400;">Our flash sale is live — here’s your chance to avail the best of style at up to 50% off! Browse through items from our exclusive collection, where every piece of clothing tells a story. Go ahead, make a purchase, and
-                                        make a proud statement wherever you go!</p>
+                                      <a href="#" style="font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; text-transform: uppercase; line-height: 28px; color: #000000 !important; text-decoration: none; border: 1px solid #000000; padding: 7px; display: block; text-align: center; width: 100%;">Shop now</a>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <!-- banner section -->
+              <!-- looks section -->
+              <tr>
+                  <td style="padding: 66px 0 0;">
+                      <table border="0" cellpadding="0" cellspacing="0" style="max-width: 88%; margin: 0 auto;" width="100%">
+                          <tbody>
+                              <tr>
+                                  <td style="width: 50%; padding: 8px;"><img alt="looks image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/look-1.png" style="width: 100%; height: 100%; object-fit: cover;" /></td>
+                                  <td style="width: 50%; padding: 8px;"><img alt="looks image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/look-2.png" style="width: 100%; height: 100%; object-fit: cover;" /></td>
+                              </tr>
+                              <tr>
+                                  <td style="width: 50%; padding: 8px;"><img alt="looks image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/look-3.png" style="width: 100%; height: 100%; object-fit: cover;" /></td>
+                                  <td style="width: 50%; padding: 8px;"><img alt="looks image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/look-4.png" style="width: 100%; height: 100%; object-fit: cover;" /></td>
+                              </tr>
+                              <tr>
+                                  <td colspan="2" style="text-align: right;">
+                                      <a href="#" style="font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; text-transform: uppercase; line-height: 28px; color: #000000 !important; text-decoration: none; border: 1px solid #000000; padding: 7px 22px; display: block; text-align: center; display: inline-block; margin:8px 8px 50px ; max-width: 153px;">Shop now</a>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <!-- looks section -->
+              <!-- product section -->
+              <tr>
+                  <td style=" background: #DFDCD1;">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 90%; margin: 30px auto 50px; width: 100%;">
+                          <tbody>
+                              <tr>
+                                  <td colspan="3">
+                                      <h3 style="font-family: 'Jost', Arial, sans-serif;font-size: 32px;font-weight: 300;line-height: 52px; color: #000000; text-transform: uppercase; margin:0 0 10px;">PRODUCTS ON SALE</h3>
 
-                                    <a href="#" style="font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; text-transform: uppercase; line-height: 28px; color: #000000 !important; text-decoration: none; border: 1px solid #000000; padding: 7px; display: block; text-align: center; width: 100%;">Shop now</a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <!-- banner section -->
-            <!-- looks section -->
-            <tr>
-                <td style="padding: 66px 0 0;">
-                    <table border="0" cellpadding="0" cellspacing="0" style="max-width: 88%; margin: 0 auto;" width="100%">
-                        <tbody>
-                            <tr>
-                                <td style="width: 50%; padding: 8px;"><img alt="looks image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/look-1.png" style="width: 100%; height: 100%; object-fit: cover;" /></td>
-                                <td style="width: 50%; padding: 8px;"><img alt="looks image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/look-2.png" style="width: 100%; height: 100%; object-fit: cover;" /></td>
-                            </tr>
-                            <tr>
-                                <td style="width: 50%; padding: 8px;"><img alt="looks image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/look-3.png" style="width: 100%; height: 100%; object-fit: cover;" /></td>
-                                <td style="width: 50%; padding: 8px;"><img alt="looks image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/look-4.png" style="width: 100%; height: 100%; object-fit: cover;" /></td>
-                            </tr>
-                            <tr>
-                                <td colspan="2" style="text-align: right;">
-                                    <a href="#" style="font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; text-transform: uppercase; line-height: 28px; color: #000000 !important; text-decoration: none; border: 1px solid #000000; padding: 7px 22px; display: block; text-align: center; display: inline-block; margin:8px 8px 50px ; max-width: 153px;">Shop now</a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <!-- looks section -->
-            <!-- product section -->
-            <tr>
-                <td style=" background: #DFDCD1;">
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 90%; margin: 30px auto 50px; width: 100%;">
-                        <tbody>
-                            <tr>
-                                <td colspan="3">
-                                    <h3 style="font-family: 'Jost', Arial, sans-serif;font-size: 32px;font-weight: 300;line-height: 52px; color: #000000; text-transform: uppercase; margin:0 0 10px;">PRODUCTS ON SALE</h3>
+                                      <p style="font-family: 'Jost', Arial, sans-serif;font-size: 10px;font-weight: 400;line-height: 20px; color: #464646; text-transform: none; margin: 0 0 30px;">Browse through items from our exclusive collection.</p>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td style="vertical-align: top; width: 30%;">
+                                      <!-- product card -->
+                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #FFFFFF; margin: 0 5px 10px; padding: 5px;">
+                                          <tbody>
+                                              <tr>
+                                                  <td colspan="2">
+                                                      <div class="img-wrap">
+                                                          <!-- Change image src as per your requirements --><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/product-1.png" /></div>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td style="width: 60%; margin-bottom: 2px; vertical-align: middle;">
+                                                      <h4 style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #252525; margin: 0;padding-right: 5px;">Elegent Bloom Top</h4>
+                                                  </td>
+                                                  <td style="width: 20%; vertical-align: middle;">
+                                                      <p style="margin:0; color: #252525; font-family: 'Jost', Arial, sans-serif; font-size: 10px;font-weight: 300; line-height: 15px; text-align: right; font-style: italic;"><span class="rupee-sign">$</span>1500</p>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td colspan="2">
+                                                      <p class="desc" style="font-family: 'Jost', Arial, sans-serif;text-transform: none; font-size: 8px; font-weight: 400; line-height: 13px; color: #909090; margin: 0; ">Flowy design perfect for casual outings or brunch dates.</p>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td colspan="2">
+                                                      <a class="btn-link" href="#" style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 27px; text-transform: none; color: #0B0B0B !important; text-decoration: none; display: block; text-align: right;">Shop now <img alt="arrow" class="margin-left: 10px; max-width: 17px" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/arrow.png" /></a>
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </td>
+                                  <td style="vertical-align: middle; width: 30%;">
+                                      <!-- product card -->
+                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #FFFFFF; margin: 0 5px 10px; padding: 5px;">
+                                          <tbody>
+                                              <tr>
+                                                  <td colspan="2">
+                                                      <div class="img-wrap">
+                                                          <!-- Change image src as per your requirements --><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/product-2.png" /></div>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td style="width: 60%; margin-bottom: 2px; vertical-align: middle;">
+                                                      <h4 style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #252525; margin: 0;padding-right: 5px;">Luxe Slik Shirt</h4>
+                                                  </td>
+                                                  <td style="width: 20%; vertical-align: middle;">
+                                                      <p style="margin:0; color: #252525; font-family: 'Jost', Arial, sans-serif; font-size: 10px;font-weight: 300; line-height: 15px; text-align: right; font-style: italic;"><span class="rupee-sign">$</span>1500</p>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td colspan="2">
+                                                      <p class="desc" style="font-family: 'Jost', Arial, sans-serif;text-transform: none; font-size: 8px; font-weight: 400; line-height: 13px; color: #909090; margin: 0; ">Premium silk shirt for a polished and sophisticated look.</p>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td colspan="2">
+                                                      <a class="btn-link" href="#" style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 27px; text-transform: none; color: #0B0B0B !important; text-decoration: none; display: block; text-align: right;">Shop now <img alt="arrow" class="margin-left: 10px; max-width: 17px" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/arrow.png" /></a>
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </td>
+                                  <td style="vertical-align: middle; width: 30%;">
+                                      <!-- product card -->
+                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #FFFFFF; margin: 0 5px 10px; padding: 5px;">
+                                          <tbody>
+                                              <tr>
+                                                  <td colspan="2">
+                                                      <div class="img-wrap">
+                                                          <!-- Change image src as per your requirements --><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/product-3.png" /></div>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td style="width: 60%; margin-bottom: 2px; vertical-align: middle;">
+                                                      <h4 style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #252525; margin: 0;padding-right: 5px;">Classic White Blouse</h4>
+                                                  </td>
+                                                  <td style="width: 20%; vertical-align: middle;">
+                                                      <p style="margin:0; color: #252525; font-family: 'Jost', Arial, sans-serif; font-size: 10px;font-weight: 300; line-height: 15px; text-align: right; font-style: italic;"><span class="rupee-sign">$</span>1500</p>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td colspan="2">
+                                                      <p class="desc" style="font-family: 'Jost', Arial, sans-serif;text-transform: none; font-size: 8px; font-weight: 400; line-height: 13px; color: #909090; margin: 0; ">Effortlessly chic, this is a versatile must-have for any occasion.</p>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td colspan="2">
+                                                      <a class="btn-link" href="#" style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 27px; text-transform: none; color: #0B0B0B !important; text-decoration: none; display: block; text-align: right;">Shop now <img alt="arrow" class="margin-left: 10px; max-width: 17px" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/arrow.png" /></a>
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td colspan="3" style="text-align: right;">
+                                      <a display_text_og="VIEW%20ALL" href="#" href_og="%23" style="font-family: Jost, Arial, sans-serif; font-size: 14px; font-weight: 400; text-transform: uppercase; line-height: 20px; text-decoration: none; border: 1px solid rgb(0, 0, 0); padding: 4px 16px; display: inline-block; text-align: center; margin-top: 12px; color: rgb(0, 0, 0) !important;">VIEW ALL</a>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <!-- product section -->
+              <!-- review section -->
+              <tr>
+                  <td style=" background: #FFFFFF;">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 90%; margin: 38px auto 0; width: 100%;">
+                          <tbody>
+                              <tr>
+                                  <td colspan="3">
+                                      <h3 style="font-family: 'Jost', Arial, sans-serif;font-size: 32px;font-weight: 300;line-height: 52px; color: #000000; text-transform: uppercase; margin:0 0 10px;">REVIEWS FROM CUSTOMERS</h3>
 
-                                    <p style="font-family: 'Jost', Arial, sans-serif;font-size: 10px;font-weight: 400;line-height: 20px; color: #464646; text-transform: none; margin: 0 0 30px;">Browse through items from our exclusive collection.</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="vertical-align: top; width: 30%;">
-                                    <!-- product card -->
-                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #FFFFFF; margin: 0 5px 10px; padding: 5px;">
-                                        <tbody>
-                                            <tr>
-                                                <td colspan="2">
-                                                    <div class="img-wrap">
-                                                        <!-- Change image src as per your requirements --><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/product-1.png" /></div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="width: 60%; margin-bottom: 2px; vertical-align: middle;">
-                                                    <h4 style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #252525; margin: 0;padding-right: 5px;">Elegent Bloom Top</h4>
-                                                </td>
-                                                <td style="width: 20%; vertical-align: middle;">
-                                                    <p style="margin:0; color: #252525; font-family: 'Jost', Arial, sans-serif; font-size: 10px;font-weight: 300; line-height: 15px; text-align: right; font-style: italic;"><span class="rupee-sign">$</span>1500</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2">
-                                                    <p class="desc" style="font-family: 'Jost', Arial, sans-serif;text-transform: none; font-size: 8px; font-weight: 400; line-height: 13px; color: #909090; margin: 0; ">Flowy design perfect for casual outings or brunch dates.</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2">
-                                                    <a class="btn-link" href="#" style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 27px; text-transform: none; color: #0B0B0B !important; text-decoration: none; display: block; text-align: right;">Shop now <img alt="arrow" class="margin-left: 10px; max-width: 17px" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/arrow.png" /></a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                                <td style="vertical-align: middle; width: 30%;">
-                                    <!-- product card -->
-                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #FFFFFF; margin: 0 5px 10px; padding: 5px;">
-                                        <tbody>
-                                            <tr>
-                                                <td colspan="2">
-                                                    <div class="img-wrap">
-                                                        <!-- Change image src as per your requirements --><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/product-2.png" /></div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="width: 60%; margin-bottom: 2px; vertical-align: middle;">
-                                                    <h4 style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #252525; margin: 0;padding-right: 5px;">Luxe Slik Shirt</h4>
-                                                </td>
-                                                <td style="width: 20%; vertical-align: middle;">
-                                                    <p style="margin:0; color: #252525; font-family: 'Jost', Arial, sans-serif; font-size: 10px;font-weight: 300; line-height: 15px; text-align: right; font-style: italic;"><span class="rupee-sign">$</span>1500</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2">
-                                                    <p class="desc" style="font-family: 'Jost', Arial, sans-serif;text-transform: none; font-size: 8px; font-weight: 400; line-height: 13px; color: #909090; margin: 0; ">Premium silk shirt for a polished and sophisticated look.</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2">
-                                                    <a class="btn-link" href="#" style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 27px; text-transform: none; color: #0B0B0B !important; text-decoration: none; display: block; text-align: right;">Shop now <img alt="arrow" class="margin-left: 10px; max-width: 17px" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/arrow.png" /></a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                                <td style="vertical-align: middle; width: 30%;">
-                                    <!-- product card -->
-                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #FFFFFF; margin: 0 5px 10px; padding: 5px;">
-                                        <tbody>
-                                            <tr>
-                                                <td colspan="2">
-                                                    <div class="img-wrap">
-                                                        <!-- Change image src as per your requirements --><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/product-3.png" /></div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="width: 60%; margin-bottom: 2px; vertical-align: middle;">
-                                                    <h4 style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #252525; margin: 0;padding-right: 5px;">Classic White Blouse</h4>
-                                                </td>
-                                                <td style="width: 20%; vertical-align: middle;">
-                                                    <p style="margin:0; color: #252525; font-family: 'Jost', Arial, sans-serif; font-size: 10px;font-weight: 300; line-height: 15px; text-align: right; font-style: italic;"><span class="rupee-sign">$</span>1500</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2">
-                                                    <p class="desc" style="font-family: 'Jost', Arial, sans-serif;text-transform: none; font-size: 8px; font-weight: 400; line-height: 13px; color: #909090; margin: 0; ">Effortlessly chic, this is a versatile must-have for any occasion.</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2">
-                                                    <a class="btn-link" href="#" style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 27px; text-transform: none; color: #0B0B0B !important; text-decoration: none; display: block; text-align: right;">Shop now <img alt="arrow" class="margin-left: 10px; max-width: 17px" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/arrow.png" /></a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="3" style="text-align: right;">
-                                    <a display_text_og="VIEW%20ALL" href="#" href_og="%23" style="font-family: Jost, Arial, sans-serif; font-size: 14px; font-weight: 400; text-transform: uppercase; line-height: 20px; text-decoration: none; border: 1px solid rgb(0, 0, 0); padding: 4px 16px; display: inline-block; text-align: center; margin-top: 12px; color: rgb(0, 0, 0) !important;">VIEW ALL</a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <!-- product section -->
-            <!-- review section -->
-            <tr>
-                <td style=" background: #FFFFFF;">
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 90%; margin: 38px auto 0; width: 100%;">
-                        <tbody>
-                            <tr>
-                                <td colspan="3">
-                                    <h3 style="font-family: 'Jost', Arial, sans-serif;font-size: 32px;font-weight: 300;line-height: 52px; color: #000000; text-transform: uppercase; margin:0 0 10px;">REVIEWS FROM CUSTOMERS</h3>
+                                      <p style="font-family: 'Jost', Arial, sans-serif;font-size: 10px;font-weight: 400;line-height: 20px; color: #464646; text-transform: none; margin: 0 0 30px;">Hear what our customers have to say about our products</p>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td style="vertical-align: top; width: 30%; height: 100%;">
+                                      <!-- review card -->
+                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #DFDCD1; margin: 0 5px; padding: 10px;">
+                                          <tbody>
+                                              <tr>
+                                                  <td style="vertical-align: middle; width: 20%;"><img alt="client" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/client-1.png" style="object-fit: contain; border-radius: 50%;" /></td>
+                                                  <td style="vertical-align: middle; width: 80%;">
+                                                      <h4 style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; margin:0 0 0 8px; line-height: 24px; color: #252525;">Ramesh Joshi</h4>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td colspan="2">
+                                                      <ul style="list-style: none; margin:0 0 7px; padding: 0;">
+                                                          <li style="width: 16px; height: 16px; display: inline-block;"><img alt="full-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/full-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
+                                                          <li style="width: 16px; height: 16px; display: inline-block;"><img alt="full-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/full-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
+                                                          <li style="width: 16px; height: 16px; display: inline-block;"><img alt="full-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/full-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
+                                                          <li style="width: 16px; height: 16px; display: inline-block;"><img alt="full-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/full-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
+                                                          <li style="width: 16px; height: 16px; display: inline-block;"><img alt="empty-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/empty-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
+                                                      </ul>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td colspan="2">
+                                                      <p style="margin: 0 0 14px; color: #464646; font-family: 'Jost', Arial, sans-serif;                                         font-size: 10px;font-weight: 400;line-height: 15px;text-align: left; text-transform: none; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; min-height: 75px;">Absolutely love the quality! The fit is perfect, and the fabric feels amazing. I’ll definitely be shopping here again!</p>
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </td>
+                                  <td style="vertical-align: top; width: 30%; height: 100%;">
+                                      <!-- review card -->
+                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #DFDCD1; margin: 0 5px; padding: 10px;">
+                                          <tbody>
+                                              <tr>
+                                                  <td style="vertical-align: middle; width: 20%;"><img alt="client" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/client-2.png" style="object-fit: contain; border-radius: 50%;" /></td>
+                                                  <td style="vertical-align: middle; width: 80%;">
+                                                      <h4 style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; margin:0 0 0 8px; line-height: 24px; color: #252525;">Rina Roy</h4>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td colspan="2">
+                                                      <ul style="list-style: none; margin:0 0 7px; padding: 0;">
+                                                          <li style="width: 16px; height: 16px; display: inline-block;"><img alt="full-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/full-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
+                                                          <li style="width: 16px; height: 16px; display: inline-block;"><img alt="full-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/full-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
+                                                          <li style="width: 16px; height: 16px; display: inline-block;"><img alt="full-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/full-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
+                                                          <li style="width: 16px; height: 16px; display: inline-block;"><img alt="empty-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/empty-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
+                                                          <li style="width: 16px; height: 16px; display: inline-block;"><img alt="empty-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/empty-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
+                                                      </ul>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td colspan="2">
+                                                      <p style="margin: 0 0 14px; color: #464646; font-family: 'Jost', Arial, sans-serif;                                         font-size: 10px;font-weight: 400;line-height: 15px;text-align: left; text-transform: none; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; min-height: 75px;">Great selection and super fast delivery. The clothes look exactly like the pictures and fit beautifully. Highly recommend this brand!</p>
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </td>
+                                  <td style="vertical-align: top; width: 30%; height: 100%;">
+                                      <!-- review card -->
+                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #DFDCD1; margin: 0 5px; padding: 10px;">
+                                          <tbody>
+                                              <tr>
+                                                  <td style="vertical-align: middle; width: 20%;"><img alt="client" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/client-3.png" style="object-fit: contain; border-radius: 50%;" /></td>
+                                                  <td style="vertical-align: middle; width: 80%;">
+                                                      <h4 style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; margin:0 0 0 8px; line-height: 24px; color: #252525;">Ritika Joshi</h4>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td colspan="2">
+                                                      <ul style="list-style: none; margin:0 0 7px; padding: 0;">
+                                                          <li style="width: 16px; height: 16px; display: inline-block;"><img alt="full-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/full-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
+                                                          <li style="width: 16px; height: 16px; display: inline-block;"><img alt="full-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/full-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
+                                                          <li style="width: 16px; height: 16px; display: inline-block;"><img alt="full-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/full-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
+                                                          <li style="width: 16px; height: 16px; display: inline-block;"><img alt="full-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/full-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
+                                                          <li style="width: 16px; height: 16px; display: inline-block;"><img alt="full-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/full-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
+                                                      </ul>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td colspan="2">
+                                                      <p style="margin: 0 0 14px; color: #464646; font-family: 'Jost', Arial, sans-serif;                                         font-size: 10px;font-weight: 400;line-height: 15px;text-align: left; text-transform: none; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; min-height: 75px;">I’m so impressed with the customer service and the attention to detail in the packaging. The products exceeded my expectations!</p>
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td colspan="3">
+                                      <p style="font-family: 'Jost', Arial, sans-serif;font-size: 12px;font-weight: 400;line-height: 20px; color: #464646; text-transform: none; margin: 33px 5px 30px;">Discover timeless style and exceptional quality with our exclusive collection, designed to inspire confidence and individuality. From chic everyday essentials to statement pieces, our collection blends comfort, elegance,
+                                          and versatility. Embrace fashion that fits your lifestyle and celebrates your unique personality — because you deserve to look and feel your best.</p>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <!-- review section -->
+              <!-- footer start-->
+              <tr>
+                  <td align="center">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 90%; margin: 0 auto; background: #DFDCD1; padding: 25px 0 24px;">
+                          <tbody>
+                              <tr>
+                                  <td>
+                                      <p style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #1E1E1E; margin: 0 auto 26px; max-width: 70%;">For assistance, connect with us on social media or reach out to our support team at
+                                          <a data-renderer-mark="true" data-testid="link-with-safety" href="support@example.com" title="support@example.com">support@example.com</a>
+                                      </p>
+                                  </td>
+                              </tr>
+                              <!-- Privacy Policy -->
+                              <tr>
+                                  <td style="padding-bottom: 24px;">
+                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                          <tbody>
+                                              <tr>
+                                                  <td style="padding: 0 5px;">
+                                                      <a href="#" style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #1E1E1E !important; text-decoration: none;">Privacy</a>
+                                                  </td>
+                                                  <td style="padding: 0 5px;">
+                                                      <a href="#" style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #1E1E1E !important; text-decoration: none;">Account</a>
+                                                  </td>
+                                                  <td style="padding: 0 5px;">
+                                                      <a href="#" style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #1E1E1E !important; text-decoration: none;">Unsubscribe</a>
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </td>
+                              </tr>
+                              <!-- Privacy Policy -->
+                              <!-- Add Links -->
+                              <!-- Download Android Section -->
+                              <tr>
+                                  <td style="padding: 0;">
+                                      <table align="center" cellpadding="0" cellspacing="0" style="text-align: center;" width="100%">
+                                          <tbody>
+                                              <tr>
+                                                  <td style="padding: 7px 40px; display: inline-block; border: 1px solid #ffffff;">
+                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 20px; height: 20px; ">
+                                                          <!-- Change image src as per your requirements --><img alt="instagram" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/3c09a826b3cd4920aa1230c7df32f91b.png" style="width: 100%; height: 100%;" /></a>
+                                                  </td>
+                                                  <td style="padding: 7px 40px; display: inline-block; border: 1px solid #ffffff;">
+                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 20px; height: 20px;"><img alt="facebook" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/18c1b92ff17443f38388d771deef565a.png" style="width: 100%; height: 100%;" /></a>
+                                                  </td>
+                                                  <td style="padding: 7px 40px; display: inline-block; border: 1px solid #ffffff;">
+                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 20px; height: 20px;"><img alt="x" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/938da02c50734470bdcddd85a5217fc1.png" style="width: 100%; height: 100%;" /></a>
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </td>
+                              </tr>
+                              <!-- Download Android Section -->
+                              <!-- Add Links -->
+                              <tr>
+                                  <td>
+                                      <p style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #1E1E1E; padding-top:10px;">To opt out of promotional emails like this,
+                                          <a href="#" style="color:#1E1E1E;font-weight:bold;text-decoration:none;">unsubscribe here</a>
+                                      </p>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <!-- footer end-->
+          </tbody>
+      </table>
+  </body>
+  <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
 
-                                    <p style="font-family: 'Jost', Arial, sans-serif;font-size: 10px;font-weight: 400;line-height: 20px; color: #464646; text-transform: none; margin: 0 0 30px;">Hear what our customers have to say about our products</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="vertical-align: top; width: 30%; height: 100%;">
-                                    <!-- review card -->
-                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #DFDCD1; margin: 0 5px; padding: 10px;">
-                                        <tbody>
-                                            <tr>
-                                                <td style="vertical-align: middle; width: 20%;"><img alt="client" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/client-1.png" style="object-fit: contain; border-radius: 50%;" /></td>
-                                                <td style="vertical-align: middle; width: 80%;">
-                                                    <h4 style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; margin:0 0 0 8px; line-height: 24px; color: #252525;">Ramesh Joshi</h4>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2">
-                                                    <ul style="list-style: none; margin:0 0 7px; padding: 0;">
-                                                        <li style="width: 16px; height: 16px; display: inline-block;"><img alt="full-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/full-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
-                                                        <li style="width: 16px; height: 16px; display: inline-block;"><img alt="full-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/full-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
-                                                        <li style="width: 16px; height: 16px; display: inline-block;"><img alt="full-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/full-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
-                                                        <li style="width: 16px; height: 16px; display: inline-block;"><img alt="full-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/full-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
-                                                        <li style="width: 16px; height: 16px; display: inline-block;"><img alt="empty-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/empty-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2">
-                                                    <p style="margin: 0 0 14px; color: #464646; font-family: 'Jost', Arial, sans-serif;                                         font-size: 10px;font-weight: 400;line-height: 15px;text-align: left; text-transform: none; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; min-height: 75px;">Absolutely love the quality! The fit is perfect, and the fabric feels amazing. I’ll definitely be shopping here again!</p>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                                <td style="vertical-align: top; width: 30%; height: 100%;">
-                                    <!-- review card -->
-                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #DFDCD1; margin: 0 5px; padding: 10px;">
-                                        <tbody>
-                                            <tr>
-                                                <td style="vertical-align: middle; width: 20%;"><img alt="client" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/client-2.png" style="object-fit: contain; border-radius: 50%;" /></td>
-                                                <td style="vertical-align: middle; width: 80%;">
-                                                    <h4 style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; margin:0 0 0 8px; line-height: 24px; color: #252525;">Rina Roy</h4>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2">
-                                                    <ul style="list-style: none; margin:0 0 7px; padding: 0;">
-                                                        <li style="width: 16px; height: 16px; display: inline-block;"><img alt="full-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/full-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
-                                                        <li style="width: 16px; height: 16px; display: inline-block;"><img alt="full-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/full-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
-                                                        <li style="width: 16px; height: 16px; display: inline-block;"><img alt="full-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/full-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
-                                                        <li style="width: 16px; height: 16px; display: inline-block;"><img alt="empty-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/empty-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
-                                                        <li style="width: 16px; height: 16px; display: inline-block;"><img alt="empty-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/empty-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2">
-                                                    <p style="margin: 0 0 14px; color: #464646; font-family: 'Jost', Arial, sans-serif;                                         font-size: 10px;font-weight: 400;line-height: 15px;text-align: left; text-transform: none; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; min-height: 75px;">Great selection and super fast delivery. The clothes look exactly like the pictures and fit beautifully. Highly recommend this brand!</p>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                                <td style="vertical-align: top; width: 30%; height: 100%;">
-                                    <!-- review card -->
-                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #DFDCD1; margin: 0 5px; padding: 10px;">
-                                        <tbody>
-                                            <tr>
-                                                <td style="vertical-align: middle; width: 20%;"><img alt="client" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/client-3.png" style="object-fit: contain; border-radius: 50%;" /></td>
-                                                <td style="vertical-align: middle; width: 80%;">
-                                                    <h4 style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; margin:0 0 0 8px; line-height: 24px; color: #252525;">Ritika Joshi</h4>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2">
-                                                    <ul style="list-style: none; margin:0 0 7px; padding: 0;">
-                                                        <li style="width: 16px; height: 16px; display: inline-block;"><img alt="full-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/full-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
-                                                        <li style="width: 16px; height: 16px; display: inline-block;"><img alt="full-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/full-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
-                                                        <li style="width: 16px; height: 16px; display: inline-block;"><img alt="full-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/full-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
-                                                        <li style="width: 16px; height: 16px; display: inline-block;"><img alt="full-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/full-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
-                                                        <li style="width: 16px; height: 16px; display: inline-block;"><img alt="full-star" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Promotional/full-star.png" style="width: 100%; height: 100%; object-fit: contain;" /></li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2">
-                                                    <p style="margin: 0 0 14px; color: #464646; font-family: 'Jost', Arial, sans-serif;                                         font-size: 10px;font-weight: 400;line-height: 15px;text-align: left; text-transform: none; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; min-height: 75px;">I’m so impressed with the customer service and the attention to detail in the packaging. The products exceeded my expectations!</p>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="3">
-                                    <p style="font-family: 'Jost', Arial, sans-serif;font-size: 12px;font-weight: 400;line-height: 20px; color: #464646; text-transform: none; margin: 33px 5px 30px;">Discover timeless style and exceptional quality with our exclusive collection, designed to inspire confidence and individuality. From chic everyday essentials to statement pieces, our collection blends comfort, elegance,
-                                        and versatility. Embrace fashion that fits your lifestyle and celebrates your unique personality — because you deserve to look and feel your best.</p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <!-- review section -->
-            <!-- footer start-->
-            <tr>
-                <td align="center">
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 90%; margin: 0 auto; background: #DFDCD1; padding: 25px 0 24px;">
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <p style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #1E1E1E; margin: 0 auto 26px; max-width: 70%;">For assistance, connect with us on social media or reach out to our support team at
-                                        <a data-renderer-mark="true" data-testid="link-with-safety" href="support@example.com" title="support@example.com">support@example.com</a>
-                                    </p>
-                                </td>
-                            </tr>
-                            <!-- Privacy Policy -->
-                            <tr>
-                                <td style="padding-bottom: 24px;">
-                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
-                                        <tbody>
-                                            <tr>
-                                                <td style="padding: 0 5px;">
-                                                    <a href="#" style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #1E1E1E !important; text-decoration: none;">Privacy</a>
-                                                </td>
-                                                <td style="padding: 0 5px;">
-                                                    <a href="#" style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #1E1E1E !important; text-decoration: none;">Account</a>
-                                                </td>
-                                                <td style="padding: 0 5px;">
-                                                    <a href="#" style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #1E1E1E !important; text-decoration: none;">Unsubscribe</a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                            <!-- Privacy Policy -->
-                            <!-- Add Links -->
-                            <!-- Download Android Section -->
-                            <tr>
-                                <td style="padding: 0;">
-                                    <table align="center" cellpadding="0" cellspacing="0" style="text-align: center;" width="100%">
-                                        <tbody>
-                                            <tr>
-                                                <td style="padding: 7px 40px; display: inline-block; border: 1px solid #ffffff;">
-                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 20px; height: 20px; ">
-                                                        <!-- Change image src as per your requirements --><img alt="instagram" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/3c09a826b3cd4920aa1230c7df32f91b.png" style="width: 100%; height: 100%;" /></a>
-                                                </td>
-                                                <td style="padding: 7px 40px; display: inline-block; border: 1px solid #ffffff;">
-                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 20px; height: 20px;"><img alt="facebook" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/18c1b92ff17443f38388d771deef565a.png" style="width: 100%; height: 100%;" /></a>
-                                                </td>
-                                                <td style="padding: 7px 40px; display: inline-block; border: 1px solid #ffffff;">
-                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 20px; height: 20px;"><img alt="x" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/938da02c50734470bdcddd85a5217fc1.png" style="width: 100%; height: 100%;" /></a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                            <!-- Download Android Section -->
-                            <!-- Add Links -->
-                            <tr>
-                                <td>
-                                    <p style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #1E1E1E; padding-top:10px;">To opt out of promotional emails like this,
-                                        <a href="#" style="color:#1E1E1E;font-weight:bold;text-decoration:none;">unsubscribe here</a>
-                                    </p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <!-- footer end-->
-        </tbody>
-    </table>
-</body>
-<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
-
-</html>
-```
-
-
+  </html>
+  ```
 </Accordion>
 
 ## Referral Template
@@ -3631,200 +3628,197 @@ This growth marketing template is crafted to boost customer acquisition through 
 <Image align="center" alt="Sample Referral Email Template" border={true} caption="Sample Referral Email Template" src="https://files.readme.io/a1f9bf30cfa2d42ad1601583469806bddb6ec51fadb9ffa91819893d8ab3b13d-Referral_HTML.png" width="25% " />
 
 <Accordion title="Expand to know more about the template.">
+  ### Use Case Examples
 
-### Use Case Examples
+  Sends referral emails encouraging users to invite friends by offering incentives to referrers and referees.
 
-Sends referral emails encouraging users to invite friends by offering incentives to referrers and referees.
+  ### Template Customization Options
 
-### Template Customization Options
+  * [Replace the Logo](doc:ootb-email-templates#replace-logo)
+  * [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+  * [Update Call-To-Actions (CTAs)](ddoc:ootb-email-templates#call-to-actions-ctas)
+  * [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+  * [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+  * [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
 
-* [Replace the Logo](doc:ootb-email-templates#replace-logo)
-* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-* [Update Call-To-Actions (CTAs)](ddoc:ootb-email-templates#call-to-actions-ctas)
-* [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-* [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-* [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+  ### Template Code
 
-### Template Code
+  ```html
+  <!doctype html="">
+  <html lang="en">
 
-```html
-<!doctype html="">
-<html lang="en">
+  <head>
+      <title>Referral</title>
+      <style type="text/css">
+          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Regular.ttf\') format(\'woff\');             font-style: normal;             font-weight: 400;         }         @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Medium.ttf\') format(\'woff\');             font-style: normal;             font-weight: 500;         }          @font-face {             font-family: 'Poppins', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Fonts/Poppins-Regular.woff\') format(\'woff\');             font-style: normal;             font-weight: 400;         }          @media screen and (max-width: 480px) {             .container {                 max-width: 95% !important; margin-bottom: 20px !important; padding: 20px 10px !important;             }                         .logo{                 width: 145px !important; height: 55px !important;             }             .cta{                 padding: 10px 25px !important;             }             .sec-title{                 margin-bottom: 15px !important; font-size: 20px !important;              }             .b-desc{                 max-width: 100% !important;             }             .icon{                 width: 50px !important; height: 50px !important;             }             .content-wrap{                 margin-left: 10px !important;             }         }
+      </style>
+  </head>
 
-<head>
-    <title>Referral</title>
-    <style type="text/css">
-        @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Regular.ttf\') format(\'woff\');             font-style: normal;             font-weight: 400;         }         @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Medium.ttf\') format(\'woff\');             font-style: normal;             font-weight: 500;         }          @font-face {             font-family: 'Poppins', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Fonts/Poppins-Regular.woff\') format(\'woff\');             font-style: normal;             font-weight: 400;         }          @media screen and (max-width: 480px) {             .container {                 max-width: 95% !important; margin-bottom: 20px !important; padding: 20px 10px !important;             }                         .logo{                 width: 145px !important; height: 55px !important;             }             .cta{                 padding: 10px 25px !important;             }             .sec-title{                 margin-bottom: 15px !important; font-size: 20px !important;              }             .b-desc{                 max-width: 100% !important;             }             .icon{                 width: 50px !important; height: 50px !important;             }             .content-wrap{                 margin-left: 10px !important;             }         }
-    </style>
-</head>
+  <body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" data-new-gr-c-s-loaded="14.1242.0" style="font-family: Jost, Arial, sans-serif; font-weight: 400; margin: 0px; padding: 0px; background: rgb(5, 19, 32); cursor: auto;">
+      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 600px; margin: 0 auto; background-color: #F5F5F5;" width="100%">
+          <!-- header start-->
+          <tbody>
+              <tr>
+                  <td align="center" style="display: block; padding: 12px 0; max-width: 90%; margin: 0 auto;">
+                      <div class="logo-wrap">
+                          <!-- Change image src as per your requirements --><img alt="Logo" class="logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="width: 145px; height: 73px; object-fit: contain;" /></div>
+                  </td>
+              </tr>
+              <!-- header end-->
+              <tr>
+                  <td style="text-align: center;">
+                      <table border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 90%; margin: 0 auto 30px; background: #FFFFFF; padding: 20px;" width="100%">
+                          <tbody>
+                              <tr>
+                                  <td>
+                                      <!-- Change image src as per your requirements --><img alt="banner" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/referral/banner.png" style="width: 100%; height: 100%; object-fit: cover;" /></td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <h2 style="font-family: Jost, Arial;font-size: 24px;font-weight: 300;line-height: 35px;text-align: center; color: #858585; text-transform: none; margin: 18px 0;"><span style="font-weight: 500; color: #0B848C; display: block;">REFER YOUR FRIENDS,</span> EARN REWARDS !</h2>
 
-<body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" data-new-gr-c-s-loaded="14.1242.0" style="font-family: Jost, Arial, sans-serif; font-weight: 400; margin: 0px; padding: 0px; background: rgb(5, 19, 32); cursor: auto;">
-    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 600px; margin: 0 auto; background-color: #F5F5F5;" width="100%">
-        <!-- header start-->
-        <tbody>
-            <tr>
-                <td align="center" style="display: block; padding: 12px 0; max-width: 90%; margin: 0 auto;">
-                    <div class="logo-wrap">
-                        <!-- Change image src as per your requirements --><img alt="Logo" class="logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="width: 145px; height: 73px; object-fit: contain;" /></div>
-                </td>
-            </tr>
-            <!-- header end-->
-            <tr>
-                <td style="text-align: center;">
-                    <table border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 90%; margin: 0 auto 30px; background: #FFFFFF; padding: 20px;" width="100%">
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <!-- Change image src as per your requirements --><img alt="banner" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/referral/banner.png" style="width: 100%; height: 100%; object-fit: cover;" /></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h2 style="font-family: Jost, Arial;font-size: 24px;font-weight: 300;line-height: 35px;text-align: center; color: #858585; text-transform: none; margin: 18px 0;"><span style="font-weight: 500; color: #0B848C; display: block;">REFER YOUR FRIENDS,</span> EARN REWARDS !</h2>
+                                      <p style="color: #6F6F6F;font-family: 'Jost', Arial; font-size: 12px; font-weight: 400; line-height: 20.55px; text-align: center; margin: 0 0 18px;">Our referral program is simple. Invite your friends to sign up, and earn exciting rewards for every successful referral.</p>
+                                      <button class="cta" style="background: #0B848C; border: 0.82px solid #0B848C; font-family: 'Jost', Arial;                             font-size: 16px;font-weight: 400;line-height: 16.44px;text-align: center; color: #FFFFFF; vertical-align: middle; width: 100%; padding: 12px; border-radius: 5px; text-transform: none;">Refer Now</button>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <tr>
+                  <td align="center">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 90%; margin: 0 auto 31px; background: #FFFFFF; padding: 30px 20px;" width="100%">
+                          <tbody>
+                              <tr>
+                                  <td>
+                                      <h3 class="sec-title" style="margin: 0 0 20px; font-family: 'Poppins', Arial;font-size: 22px;font-weight: 400;line-height: 16.44px; text-align: center; text-transform: none; color: #0B848C;">Here&#39;s What You Get</h3>
 
-                                    <p style="color: #6F6F6F;font-family: 'Jost', Arial; font-size: 12px; font-weight: 400; line-height: 20.55px; text-align: center; margin: 0 0 18px;">Our referral program is simple. Invite your friends to sign up, and earn exciting rewards for every successful referral.</p>
-                                    <button class="cta" style="background: #0B848C; border: 0.82px solid #0B848C; font-family: 'Jost', Arial;                             font-size: 16px;font-weight: 400;line-height: 16.44px;text-align: center; color: #FFFFFF; vertical-align: middle; width: 100%; padding: 12px; border-radius: 5px; text-transform: none;">Refer Now</button>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td align="center">
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 90%; margin: 0 auto 31px; background: #FFFFFF; padding: 30px 20px;" width="100%">
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <h3 class="sec-title" style="margin: 0 0 20px; font-family: 'Poppins', Arial;font-size: 22px;font-weight: 400;line-height: 16.44px; text-align: center; text-transform: none; color: #0B848C;">Here&#39;s What You Get</h3>
+                                      <ul style="margin: 0; padding: 0; list-style: none;">
+                                          <li style="padding: 24px 0; border-bottom: 1px solid #7B7B7B;">
+                                              <div class="img-wrap" style="display: inline-block; width: 15%;"><img alt="ico1" class="icon" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/referral/benfit-1.png" style="width: 60px; height: 60px; object-fit: contain;" /></div>
 
-                                    <ul style="margin: 0; padding: 0; list-style: none;">
-                                        <li style="padding: 24px 0; border-bottom: 1px solid #7B7B7B;">
-                                            <div class="img-wrap" style="display: inline-block; width: 15%;"><img alt="ico1" class="icon" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/referral/benfit-1.png" style="width: 60px; height: 60px; object-fit: contain;" /></div>
+                                              <div class="content-wrap" style="display: inline-block; width: 80%;">
+                                                  <h3 class="b-title" style="font-family: Jost, Arial; font-size: 16px; font-weight: 400; line-height: 22.19px; color: #1E1E1E; text-align: left; text-transform: none; margin: 0 0 2px;">FLAT 20% OFF</h3>
 
-                                            <div class="content-wrap" style="display: inline-block; width: 80%;">
-                                                <h3 class="b-title" style="font-family: Jost, Arial; font-size: 16px; font-weight: 400; line-height: 22.19px; color: #1E1E1E; text-align: left; text-transform: none; margin: 0 0 2px;">FLAT 20% OFF</h3>
+                                                  <p class="b-desc" style="font-family: Jost, Arial; font-size: 14px; font-weight: 400; line-height: 18.08px; text-align: left; color: #6F6F6F; margin: 0; max-width: 80%;">Both you and your friend will get a flat 20% discount code once they sign up.</p>
+                                              </div>
+                                          </li>
+                                          <li style="padding: 24px 0; border-bottom: 1px solid #7B7B7B;">
+                                              <div class="img-wrap" style="display: inline-block; width: 15%;"><img alt="ico1" class="icon" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/referral/benfit-2.png" style="width: 60px; height: 60px; object-fit: contain;" /></div>
 
-                                                <p class="b-desc" style="font-family: Jost, Arial; font-size: 14px; font-weight: 400; line-height: 18.08px; text-align: left; color: #6F6F6F; margin: 0; max-width: 80%;">Both you and your friend will get a flat 20% discount code once they sign up.</p>
-                                            </div>
-                                        </li>
-                                        <li style="padding: 24px 0; border-bottom: 1px solid #7B7B7B;">
-                                            <div class="img-wrap" style="display: inline-block; width: 15%;"><img alt="ico1" class="icon" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/referral/benfit-2.png" style="width: 60px; height: 60px; object-fit: contain;" /></div>
+                                              <div class="content-wrap" style="display: inline-block; width: 80%;">
+                                                  <h3 class="b-title" style="font-family: Jost, Arial; font-size: 16px; font-weight: 400; line-height: 22.19px; color: #1E1E1E; text-align: left; text-transform: none; margin: 0 0 2px;">SPECIAL ACCESS</h3>
 
-                                            <div class="content-wrap" style="display: inline-block; width: 80%;">
-                                                <h3 class="b-title" style="font-family: Jost, Arial; font-size: 16px; font-weight: 400; line-height: 22.19px; color: #1E1E1E; text-align: left; text-transform: none; margin: 0 0 2px;">SPECIAL ACCESS</h3>
+                                                  <p class="b-desc" style="font-family: Jost, Arial; font-size: 14px; font-weight: 400; line-height: 18.08px; text-align: left; color: #6F6F6F; margin: 0; max-width: 75%;">Unlock exclusive collections and limited-edition items with every successful referral.</p>
+                                              </div>
+                                          </li>
+                                          <li style="padding: 24px 0; border-bottom: 1px solid #7B7B7B;">
+                                              <div class="img-wrap" style="display: inline-block; width: 15%;"><img alt="ico1" class="icon" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/referral/benfit-3.png" style="width: 60px; height: 60px; object-fit: contain;" /></div>
 
-                                                <p class="b-desc" style="font-family: Jost, Arial; font-size: 14px; font-weight: 400; line-height: 18.08px; text-align: left; color: #6F6F6F; margin: 0; max-width: 75%;">Unlock exclusive collections and limited-edition items with every successful referral.</p>
-                                            </div>
-                                        </li>
-                                        <li style="padding: 24px 0; border-bottom: 1px solid #7B7B7B;">
-                                            <div class="img-wrap" style="display: inline-block; width: 15%;"><img alt="ico1" class="icon" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/referral/benfit-3.png" style="width: 60px; height: 60px; object-fit: contain;" /></div>
+                                              <div class="content-wrap" style="display: inline-block; width: 80%;">
+                                                  <h3 class="b-title" style="font-family: Jost, Arial; font-size: 16px; font-weight: 400; line-height: 22.19px; color: #1E1E1E; text-align: left; text-transform: none; margin: 0 0 2px;">REFERRAL CREDITS</h3>
 
-                                            <div class="content-wrap" style="display: inline-block; width: 80%;">
-                                                <h3 class="b-title" style="font-family: Jost, Arial; font-size: 16px; font-weight: 400; line-height: 22.19px; color: #1E1E1E; text-align: left; text-transform: none; margin: 0 0 2px;">REFERRAL CREDITS</h3>
+                                                  <p class="b-desc" style="font-family: Jost, Arial; font-size: 14px; font-weight: 400; line-height: 18.08px; text-align: left; color: #6F6F6F; margin: 0; max-width: 88%;">Earn credits with every successful referral. Redeem them to save on your next purchase.</p>
+                                              </div>
+                                          </li>
+                                      </ul>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <!-- Referral copy link start-->
+              <tr>
+                  <td align="center">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 90%; margin: 0 auto 31px; background: #FFFFFF; padding: 30px 20px;" width="100%">
+                          <tbody>
+                              <tr>
+                                  <td>
+                                      <h3 class="sec-title" style="margin: 0 0 26px; font-family: 'Poppins', Arial;font-size: 22px;font-weight: 400;line-height: 16.44px; text-align: center; text-transform: none; color: #0B848C;">Your Referral Link</h3>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <input disabled="disabled" style="border: 0.82px solid #0B848C; background-color: #F5F5F5; padding: 10px; font-family: 'Jost', Arial; border-radius: 5px; font-size: 16px; font-weight: 500; line-height: 22.19px; text-align: left; width: 95%; margin-bottom: 22px;"
+                                      value="CLOTH@6374722#" />
+                                      <button class="cta" style="background: #0B848C; border: 0.82px solid #0B848C; font-family: 'Jost', Arial;                             font-size: 16px;font-weight: 400;line-height: 16.44px;text-align: center; color: #FFFFFF; vertical-align: middle; width: 100%; padding: 12px; border-radius: 5px;"><img alt="logo" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/referral/icon-copy.png" style="width: 17px; height: 17px; object-fit: cover; margin-right: 5px;" /> Copy</button>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <!-- Referral copy link end-->
+              <!-- start-->
+              <tr>
+                  <td align="center">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 90%; margin: 0 auto 31px; background: #FFFFFF; padding: 30px 20px;" width="100%">
+                          <tbody>
+                              <tr>
+                                  <td>
+                                      <h3 class="sec-title" style="margin: 0 0 26px; font-family: 'Poppins', Arial;font-size: 22px;font-weight: 400;line-height: 16.44px; text-align: center; text-transform: none; color: #0B848C;">About Our Referral Program</h3>
 
-                                                <p class="b-desc" style="font-family: Jost, Arial; font-size: 14px; font-weight: 400; line-height: 18.08px; text-align: left; color: #6F6F6F; margin: 0; max-width: 88%;">Earn credits with every successful referral. Redeem them to save on your next purchase.</p>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <!-- Referral copy link start-->
-            <tr>
-                <td align="center">
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 90%; margin: 0 auto 31px; background: #FFFFFF; padding: 30px 20px;" width="100%">
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <h3 class="sec-title" style="margin: 0 0 26px; font-family: 'Poppins', Arial;font-size: 22px;font-weight: 400;line-height: 16.44px; text-align: center; text-transform: none; color: #0B848C;">Your Referral Link</h3>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input disabled="disabled" style="border: 0.82px solid #0B848C; background-color: #F5F5F5; padding: 10px; font-family: 'Jost', Arial; border-radius: 5px; font-size: 16px; font-weight: 500; line-height: 22.19px; text-align: left; width: 95%; margin-bottom: 22px;"
-                                    value="CLOTH@6374722#" />
-                                    <button class="cta" style="background: #0B848C; border: 0.82px solid #0B848C; font-family: 'Jost', Arial;                             font-size: 16px;font-weight: 400;line-height: 16.44px;text-align: center; color: #FFFFFF; vertical-align: middle; width: 100%; padding: 12px; border-radius: 5px;"><img alt="logo" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/referral/icon-copy.png" style="width: 17px; height: 17px; object-fit: cover; margin-right: 5px;" /> Copy</button>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <!-- Referral copy link end-->
-            <!-- start-->
-            <tr>
-                <td align="center">
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 90%; margin: 0 auto 31px; background: #FFFFFF; padding: 30px 20px;" width="100%">
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <h3 class="sec-title" style="margin: 0 0 26px; font-family: 'Poppins', Arial;font-size: 22px;font-weight: 400;line-height: 16.44px; text-align: center; text-transform: none; color: #0B848C;">About Our Referral Program</h3>
+                                      <p style="margin: 0; text-transform: none; color: #4F4F4F; font-family: 'Jost', Arial;                             font-size: 12px;font-weight: 400;line-height: 19px;text-align: center;">Our referral program is our way of saying thank you for spreading the word. Invite your friends to join us, and enjoy exclusive rewards for every successful referral. There’s no limit to how much you can earn, so go
+                                          ahead and start referring now!</p>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <!-- end-->
+              <!-- footer start-->
+              <tr>
+                  <td align="center">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 90%; margin: 0 auto 10px; background: #FFFFFF; padding: 30px 20px 33px;" width="100%">
+                          <tbody>
+                              <tr>
+                                  <td>
+                                      <h3 class="sec-title" style="margin: 0 0 26px; font-family: 'Poppins', Arial;font-size: 22px;font-weight: 400;line-height: 16.44px; text-align: center; text-transform: none; color: #0B848C;">Share Your Referral Link</h3>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <table align="center" cellpadding="0" cellspacing="0" style="text-align: center;" width="100%">
+                                          <tbody>
+                                              <tr>
+                                                  <td style="display: inline-block; width: 30%">
+                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 100%; height: 33px;">
+                                                          <!-- Change image src as per your requirements --><img alt="instagram" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/a6727b3615374d8b851ca91fe6b8b1ff.png" style="width: 100%; height: 100%; object-fit: contain;" /></a>
+                                                  </td>
+                                                  <td style="padding: 0 16px; display: inline-block; width: 30%">
+                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 100%; height: 33px;">
+                                                          <!-- Change image src as per your requirements --><img alt="facebook" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/5871f7fb88f74a9bbfb1f11b4100143a.png" style="width: 100%; height: 100%;object-fit: contain;" /></a>
+                                                  </td>
+                                                  <td style="padding: 0; display: inline-block; width: 30%">
+                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 100%; height: 33px;">
+                                                          <!-- Change image src as per your requirements --><img alt="x" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/3b10f8de61954c88a374ee2687beb7dd.png" style="width: 100%; height: 100%; object-fit: contain;" /></a>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td>
+                                                      <p style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #1E1E1E; padding-top:10px;">To opt out of promotional emails like this,
+                                                          <a href="#" style="color:#1E1E1E;font-weight:bold;text-decoration:none;">unsubscribe here</a>
+                                                      </p>
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <!-- footer end-->
+          </tbody>
+      </table>
+  </body>
+  <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
 
-                                    <p style="margin: 0; text-transform: none; color: #4F4F4F; font-family: 'Jost', Arial;                             font-size: 12px;font-weight: 400;line-height: 19px;text-align: center;">Our referral program is our way of saying thank you for spreading the word. Invite your friends to join us, and enjoy exclusive rewards for every successful referral. There’s no limit to how much you can earn, so go
-                                        ahead and start referring now!</p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <!-- end-->
-            <!-- footer start-->
-            <tr>
-                <td align="center">
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 90%; margin: 0 auto 10px; background: #FFFFFF; padding: 30px 20px 33px;" width="100%">
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <h3 class="sec-title" style="margin: 0 0 26px; font-family: 'Poppins', Arial;font-size: 22px;font-weight: 400;line-height: 16.44px; text-align: center; text-transform: none; color: #0B848C;">Share Your Referral Link</h3>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <table align="center" cellpadding="0" cellspacing="0" style="text-align: center;" width="100%">
-                                        <tbody>
-                                            <tr>
-                                                <td style="display: inline-block; width: 30%">
-                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 100%; height: 33px;">
-                                                        <!-- Change image src as per your requirements --><img alt="instagram" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/a6727b3615374d8b851ca91fe6b8b1ff.png" style="width: 100%; height: 100%; object-fit: contain;" /></a>
-                                                </td>
-                                                <td style="padding: 0 16px; display: inline-block; width: 30%">
-                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 100%; height: 33px;">
-                                                        <!-- Change image src as per your requirements --><img alt="facebook" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/5871f7fb88f74a9bbfb1f11b4100143a.png" style="width: 100%; height: 100%;object-fit: contain;" /></a>
-                                                </td>
-                                                <td style="padding: 0; display: inline-block; width: 30%">
-                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 100%; height: 33px;">
-                                                        <!-- Change image src as per your requirements --><img alt="x" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/3b10f8de61954c88a374ee2687beb7dd.png" style="width: 100%; height: 100%; object-fit: contain;" /></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #1E1E1E; padding-top:10px;">To opt out of promotional emails like this,
-                                                        <a href="#" style="color:#1E1E1E;font-weight:bold;text-decoration:none;">unsubscribe here</a>
-                                                    </p>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <!-- footer end-->
-        </tbody>
-    </table>
-</body>
-<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
-
-</html>
-```
-
-  
+  </html>
+  ```
 </Accordion>
 
 ## Show Recommendations Template
@@ -3834,565 +3828,562 @@ This personalized content email template is designed to showcase relevant video 
 <Image align="center" alt="Sample Show Recommendations - Light & Dark Background Template" border={true} caption="Sample Show Recommendations - Light & Dark Background Template" src="https://files.readme.io/c4ccd5b6848ece16bb2e2967d9c264b7bf9d3766c87a1b4925a2046882751449-Show_Recommendations_-_White__Black.png" width="65% " />
 
 <Accordion title="Expand to know more about the template.">
+  ## Use Case Examples
 
-## Use Case Examples
+  * Suggest items based on browsing, cart, or purchase history
+  * Recommend articles, videos, or learning modules based on prior engagement or interests.
+  * Promote complementary or premium products to increase average order value
+  * Engage users post-transaction with related product or content recommendations.
+  * Bring users back by showcasing trending or personalized items based on past behavior.
+  * Tailor deals or discounts based on recommended categories or affinity tags.
+  * Delivers curated video, show, or episode suggestions to users to enhance discovery, engagement, and viewership based on recent behavior.
 
-* Suggest items based on browsing, cart, or purchase history
-* Recommend articles, videos, or learning modules based on prior engagement or interests.
-* Promote complementary or premium products to increase average order value
-* Engage users post-transaction with related product or content recommendations.
-* Bring users back by showcasing trending or personalized items based on past behavior.
-* Tailor deals or discounts based on recommended categories or affinity tags.
-* Delivers curated video, show, or episode suggestions to users to enhance discovery, engagement, and viewership based on recent behavior.
+  ### Template Customization Options
 
-### Template Customization Options
+  * [Replace the Logo](doc:ootb-email-templates#replace-logo)
+  * [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+  * [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#call-to-actions-ctas)
+  * [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+  * [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+  * [Update Social Media Links and Download Links](doc:ootb#update-social-media-links-and-download-links)
 
-* [Replace the Logo](doc:ootb-email-templates#replace-logo)
-* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#call-to-actions-ctas)
-* [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-* [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-* [Update Social Media Links and Download Links](doc:ootb#update-social-media-links-and-download-links)
+  ### Template Code
 
-### Template Code
+  ```html Light Background
+  <!doctype html="">
+  <html lang="en">
 
-```html Light Background
-<!doctype html="">
-<html lang="en">
+  <head>
+      <title>Show Recommendation</title>
+      <style type="text/css">
+          @font-face {             font-family: 'Poppins';             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Fonts/Poppins-Light.woff\') format(\'woff\');             font-style: normal;             font-weight: 300;         }          @font-face {             font-family: 'Poppins';             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Fonts/Poppins-Regular.woff\') format(\'woff\');             font-style: normal;             font-weight: 400;         }          @font-face {             font-family: 'Poppins';             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Fonts/Poppins-Medium.woff\') format(\'woff\');             font-style: normal;             font-weight: 500;         }          @media screen and (max-width: 480px) {             .container {                 max-width: 100% !important;             } 			.heading h2{ 				font-size: 18px !important; 				line-height: 24px !important; 			}             .borderSpan {                 width: 20% !important;             }         }
+      </style>
+  </head>
 
-<head>
-    <title>Show Recommendation</title>
-    <style type="text/css">
-        @font-face {             font-family: 'Poppins';             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Fonts/Poppins-Light.woff\') format(\'woff\');             font-style: normal;             font-weight: 300;         }          @font-face {             font-family: 'Poppins';             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Fonts/Poppins-Regular.woff\') format(\'woff\');             font-style: normal;             font-weight: 400;         }          @font-face {             font-family: 'Poppins';             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Fonts/Poppins-Medium.woff\') format(\'woff\');             font-style: normal;             font-weight: 500;         }          @media screen and (max-width: 480px) {             .container {                 max-width: 100% !important;             } 			.heading h2{ 				font-size: 18px !important; 				line-height: 24px !important; 			}             .borderSpan {                 width: 20% !important;             }         }
-    </style>
-</head>
+  <body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" style="background: rgb(221, 221, 221); font-family: Poppins, Arial, sans-serif; font-weight: 400; margin: 0px; padding: 0px; cursor: auto;">
+      <table border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 600px; margin: 0 auto; background-color: #FFFFFF;" width="100%">
+          <!-- header start-->
+          <tbody>
+              <tr>
+                  <td style="text-align: center; position: relative;">
+                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tbody>
+                              <tr>
+                                  <td style="width: 50%; vertical-align: middle;">
+                                      <div style="border-top: 1px solid #F04444;"> </div>
+                                  </td>
+                                  <td style="text-align: center; vertical-align: middle; padding: 20px">
+                                      <!-- Change image src as per your requirements --><img alt="Logo" class="logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="display: inline-block; width: 127px; height: 58px; object-fit: cover;" /></td>
+                                  <td style="width: 50%; vertical-align: middle;">
+                                      <div style="border-top: 1px solid #F04444;"> </div>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <!-- header end-->
+              <!-- banner section -->
+              <tr>
+                  <td><img alt="banner image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/show-recommendations/manager-running-from-detailed-group-employees.png" style="width: 100%; height: 100%; max-height: 361px; object-fit: cover;" /></td>
+              </tr>
+              <!-- banner section -->
+              <!-- new episod section -->
+              <tr>
+                  <td class="info-sec" style="text-align: center; padding: 40px 0px 20px;">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                          <tbody>
+                              <tr>
+                                  <td class="borderSpan" style="width: 15%; vertical-align: middle;">
+                                      <div style="border-top: 1px solid #F04444;"> </div>
+                                  </td>
+                                  <td class="heading" style="text-align: center;">
+                                      <h2 style="text-transform: uppercase; font-family: 'Poppins', Arial, sans-serif; font-size: 24px; font-weight: 400; line-height: 40px; margin: 0 auto;">CATCH UP WITH YOUR FAVORITES</h2>
+                                  </td>
+                                  <td class="borderSpan" style="width: 15%; vertical-align: middle;">
+                                      <div style="border-top: 1px solid #F04444;"> </div>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <tr>
+                  <td class="info-sec" style="text-align: center;">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                          <tbody>
+                              <tr>
+                                  <td style="width: 100%;padding: 0px 20px;">
+                                      <p style="margin: 0; text-transform: none; color: #6f6f6f; font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 25px; text-align: center; ">The wait is over! New episodes of <em data-renderer-mark="true">Black Mirror</em>, <em data-renderer-mark="true">Suits</em>, <em data-renderer-mark="true">Stranger Things</em>, and more are now streaming.</p>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <tr>
+                  <td class="info-sec" style="text-align: center;padding: 20px;">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                          <tbody>
+                              <tr>
+                                  <td style="width: auto; text-align: center; vertical-align: middle;">
+                                      <a class="btn-link" href="#" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; text-transform: none; line-height: 25px; color: #FFFFFF; text-decoration: none; background: #F04444; padding: 6px 7px; display: inline-block; text-align: center; border-radius: 20px;"><img alt="youtube" class="btn-img" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/show-recommendations/youtube.png" style="vertical-align: middle;" /> View All</a>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <!-- New Episod End-->
+              <!-- Weekly Recoomendatiom Start-->
+              <tr>
+                  <td class="info-sec" style="text-align: center;padding: 40px 0px 20px;">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                          <tbody>
+                              <tr>
+                                  <td class="borderSpan" style="width: 18%; vertical-align: middle;">
+                                      <div style="border-top: 1px solid #F04444;"> </div>
+                                  </td>
+                                  <td class="heading" style="text-align: center;">
+                                      <h2 style="text-transform: uppercase; font-family: 'Poppins', Arial, sans-serif; font-size: 24px; font-weight: 400; line-height: 40px; margin: 0 auto;">MORE SHOWS YOU’LL LIKE</h2>
+                                  </td>
+                                  <td class="borderSpan" style="width: 18%; vertical-align: middle;">
+                                      <div style="border-top: 1px solid #F04444;"> </div>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; margin-top: 20px;">
+                          <tbody>
+                              <tr>
+                                  <td style="vertical-align: top; width: 50%;">
+                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #FFFFFF; margin: 0px 0px 10px 10px; padding: 10px;">
+                                          <tbody>
+                                              <tr>
+                                                  <td colspan="2">
+                                                      <div class="product-img-wrap" style="width:100%; "><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/show-recommendations/dragons-fantasy-artificial-intelligence-image.png" style="width: 100%; height: 100%; object-fit: cover;"
+                                                          /></div>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td style="width: 100%; margin-bottom: 2px; vertical-align: middle;">
+                                                      <h4 class="p-title" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 15px; color: #000000; margin: 8px 0;padding-right: 5px;">Breaking Bad</h4>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td colspan="2">
+                                                      <p class="desc" style="font-family: 'Poppins', Arial, sans-serif;text-transform: none; font-size: 10px; font-weight: 400; line-height: 15px; color: #6f6f6f; margin: 0; ">A teacher turns to crime in desperate times</p>
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </td>
+                                  <td style="vertical-align: top; width: 50%;">
+                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #FFFFFF; margin: 0px 10px 10px 0px; padding: 10px;">
+                                          <tbody>
+                                              <tr>
+                                                  <td colspan="2">
+                                                      <div class="product-img-wrap" style="width:100%; "><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/show-recommendations/view-soccer-player-before-match.png" style="width: 100%; height: 100%; object-fit: cover;" /></div>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td style="width: 100%; margin-bottom: 2px; vertical-align: middle;">
+                                                      <h4 class="p-title" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 15px; color: #000000; margin: 5px 0;padding-right: 5px;">The Crown</h4>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td colspan="2">
+                                                      <p class="desc" style="font-family: 'Poppins', Arial, sans-serif;text-transform: none; font-size: 10px; font-weight: 400; line-height: 15px; color: #6f6f6f; margin: 0; ">The life and reign of Queen Elizabeth II</p>
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td style="vertical-align: top; width: 50%;">
+                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #FFFFFF; margin: 0px 0px 10px 10px; padding: 10px;">
+                                          <tbody>
+                                              <tr>
+                                                  <td colspan="2">
+                                                      <div class="product-img-wrap" style="width:100%; "><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/show-recommendations/door-leading-magical-world.png" style="width: 100%; height: 100%; object-fit: cover;" /></div>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td style="width: 100%; margin-bottom: 2px; vertical-align: middle;">
+                                                      <h4 class="p-title" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 15px; color: #000000; margin: 8px 0;padding-right: 5px;">Brooklyn Nine-Nine</h4>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td colspan="2">
+                                                      <p class="desc" style="font-family: 'Poppins', Arial, sans-serif;text-transform: none; font-size: 10px; font-weight: 400; line-height: 15px; color: #6f6f6f; margin: 0; ">Hilarious detectives solve crimes</p>
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </td>
+                                  <td style="vertical-align: top; width: 50%;">
+                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #FFFFFF; margin: 0px 10px 10px 0px; padding: 10px;">
+                                          <tbody>
+                                              <tr>
+                                                  <td colspan="2">
+                                                      <div class="product-img-wrap" style="width:100%; "><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/show-recommendations/door-leading-magical.png" style="width: 100%; height: 100%; object-fit: cover;" /></div>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td style="width: 100%; margin-bottom: 2px; vertical-align: middle;">
+                                                      <h4 class="p-title" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 15px; color: #000000; margin: 5px 0;padding-right: 5px;">White Collar</h4>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td colspan="2">
+                                                      <p class="desc" style="font-family: 'Poppins', Arial, sans-serif;text-transform: none; font-size: 10px; font-weight: 400; line-height: 15px; color: #6f6f6f; margin: 0; ">A con artist and FBI agent team up</p>
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <tr>
+                  <td class="info-btn" style="padding: 25px 20px 40px 20px; width:100%; text-align: center;">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                          <tbody>
+                              <tr>
+                                  <td style="width: 100%; text-align: center; vertical-align: middle;">
+                                      <a class="btn-link" href="#" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; text-transform: none; line-height: 25px; color: #FFFFFF; text-decoration: none; background: #d33c3c; padding: 7px 33px; display: inline-block; text-align: center; border-radius: 20px;">View All</a>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <!-- Weekly Recoomendatiom Start-->
+              <!-- footer start-->
+              <tr>
+                  <td align="center" colspan="2">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%; background: #ffffff; padding: 25px 0 25px;">
+                          <tbody>
+                              <tr>
+                                  <td style="padding: 30px 0px; border-top: 2px solid #d33c3c; border-bottom: 2px solid #d33c3c;">
+                                      <table align="center" cellpadding="0" cellspacing="0" style="text-align: center;" width="100%">
+                                          <tbody>
+                                              <tr>
+                                                  <td style="padding: 15px 15px; display: inline-block;">
+                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 30px; height: 30px; ">
+                                                          <!-- Change image src as per your requirements --><img alt="instagram" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/46e890761aa9484488a1d4b5b7e5e90a.png" style="width: 100%; height: 100%;" /></a>
+                                                  </td>
+                                                  <td style="padding: 15px 15px; display: inline-block; ">
+                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 30px; height: 30px;"><img alt="facebook" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/1ba99ae8ff9a4646a043bc4572c74c85.png" style="width: 100%; height: 100%;" /></a>
+                                                  </td>
+                                                  <td style="padding: 15px 15px; display: inline-block;">
+                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 30px; height: 30px;"><img alt="x" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/9fd609ff93f44ae98273362f7509d619.png" style="width: 100%; height: 100%;" /></a>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td class="footer-content" style="padding:0px 30px">
+                                                      <p style="text-transform: none; color: #4f4f4f; font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 25px; text-align: center; margin-bottom: 0px;">For assistance, connect with us on social media or reach out to our support team at
+                                                          <a data-renderer-mark="true" data-testid="link-with-safety" href="support@example.com" title="support@example.com">support@example.com</a>
+                                                      </p>
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td style="padding:10px 10px 0px; text-align:center;">
+                                      <p style="font-family: 'Poppins', Arial, sans-serif; text-transform: none; font-size: 14px; font-weight: 400; line-height: 20px; color: #4f4f4f; margin: 0; ">To opt out of promotional emails like this,
+                                          <a href="#" style="font-weight:bold;text-decoration:none; color:#d33c3c; margin: 0;">unsubscribe here</a>
+                                      </p>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <!-- footer end-->
+          </tbody>
+      </table>
+  </body>
+  <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
 
-<body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" style="background: rgb(221, 221, 221); font-family: Poppins, Arial, sans-serif; font-weight: 400; margin: 0px; padding: 0px; cursor: auto;">
-    <table border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 600px; margin: 0 auto; background-color: #FFFFFF;" width="100%">
-        <!-- header start-->
-        <tbody>
-            <tr>
-                <td style="text-align: center; position: relative;">
-                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                        <tbody>
-                            <tr>
-                                <td style="width: 50%; vertical-align: middle;">
-                                    <div style="border-top: 1px solid #F04444;"> </div>
-                                </td>
-                                <td style="text-align: center; vertical-align: middle; padding: 20px">
-                                    <!-- Change image src as per your requirements --><img alt="Logo" class="logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="display: inline-block; width: 127px; height: 58px; object-fit: cover;" /></td>
-                                <td style="width: 50%; vertical-align: middle;">
-                                    <div style="border-top: 1px solid #F04444;"> </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <!-- header end-->
-            <!-- banner section -->
-            <tr>
-                <td><img alt="banner image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/show-recommendations/manager-running-from-detailed-group-employees.png" style="width: 100%; height: 100%; max-height: 361px; object-fit: cover;" /></td>
-            </tr>
-            <!-- banner section -->
-            <!-- new episod section -->
-            <tr>
-                <td class="info-sec" style="text-align: center; padding: 40px 0px 20px;">
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                        <tbody>
-                            <tr>
-                                <td class="borderSpan" style="width: 15%; vertical-align: middle;">
-                                    <div style="border-top: 1px solid #F04444;"> </div>
-                                </td>
-                                <td class="heading" style="text-align: center;">
-                                    <h2 style="text-transform: uppercase; font-family: 'Poppins', Arial, sans-serif; font-size: 24px; font-weight: 400; line-height: 40px; margin: 0 auto;">CATCH UP WITH YOUR FAVORITES</h2>
-                                </td>
-                                <td class="borderSpan" style="width: 15%; vertical-align: middle;">
-                                    <div style="border-top: 1px solid #F04444;"> </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td class="info-sec" style="text-align: center;">
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                        <tbody>
-                            <tr>
-                                <td style="width: 100%;padding: 0px 20px;">
-                                    <p style="margin: 0; text-transform: none; color: #6f6f6f; font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 25px; text-align: center; ">The wait is over! New episodes of <em data-renderer-mark="true">Black Mirror</em>, <em data-renderer-mark="true">Suits</em>, <em data-renderer-mark="true">Stranger Things</em>, and more are now streaming.</p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td class="info-sec" style="text-align: center;padding: 20px;">
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                        <tbody>
-                            <tr>
-                                <td style="width: auto; text-align: center; vertical-align: middle;">
-                                    <a class="btn-link" href="#" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; text-transform: none; line-height: 25px; color: #FFFFFF; text-decoration: none; background: #F04444; padding: 6px 7px; display: inline-block; text-align: center; border-radius: 20px;"><img alt="youtube" class="btn-img" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/show-recommendations/youtube.png" style="vertical-align: middle;" /> View All</a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <!-- New Episod End-->
-            <!-- Weekly Recoomendatiom Start-->
-            <tr>
-                <td class="info-sec" style="text-align: center;padding: 40px 0px 20px;">
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                        <tbody>
-                            <tr>
-                                <td class="borderSpan" style="width: 18%; vertical-align: middle;">
-                                    <div style="border-top: 1px solid #F04444;"> </div>
-                                </td>
-                                <td class="heading" style="text-align: center;">
-                                    <h2 style="text-transform: uppercase; font-family: 'Poppins', Arial, sans-serif; font-size: 24px; font-weight: 400; line-height: 40px; margin: 0 auto;">MORE SHOWS YOU’LL LIKE</h2>
-                                </td>
-                                <td class="borderSpan" style="width: 18%; vertical-align: middle;">
-                                    <div style="border-top: 1px solid #F04444;"> </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; margin-top: 20px;">
-                        <tbody>
-                            <tr>
-                                <td style="vertical-align: top; width: 50%;">
-                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #FFFFFF; margin: 0px 0px 10px 10px; padding: 10px;">
-                                        <tbody>
-                                            <tr>
-                                                <td colspan="2">
-                                                    <div class="product-img-wrap" style="width:100%; "><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/show-recommendations/dragons-fantasy-artificial-intelligence-image.png" style="width: 100%; height: 100%; object-fit: cover;"
-                                                        /></div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="width: 100%; margin-bottom: 2px; vertical-align: middle;">
-                                                    <h4 class="p-title" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 15px; color: #000000; margin: 8px 0;padding-right: 5px;">Breaking Bad</h4>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2">
-                                                    <p class="desc" style="font-family: 'Poppins', Arial, sans-serif;text-transform: none; font-size: 10px; font-weight: 400; line-height: 15px; color: #6f6f6f; margin: 0; ">A teacher turns to crime in desperate times</p>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                                <td style="vertical-align: top; width: 50%;">
-                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #FFFFFF; margin: 0px 10px 10px 0px; padding: 10px;">
-                                        <tbody>
-                                            <tr>
-                                                <td colspan="2">
-                                                    <div class="product-img-wrap" style="width:100%; "><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/show-recommendations/view-soccer-player-before-match.png" style="width: 100%; height: 100%; object-fit: cover;" /></div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="width: 100%; margin-bottom: 2px; vertical-align: middle;">
-                                                    <h4 class="p-title" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 15px; color: #000000; margin: 5px 0;padding-right: 5px;">The Crown</h4>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2">
-                                                    <p class="desc" style="font-family: 'Poppins', Arial, sans-serif;text-transform: none; font-size: 10px; font-weight: 400; line-height: 15px; color: #6f6f6f; margin: 0; ">The life and reign of Queen Elizabeth II</p>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="vertical-align: top; width: 50%;">
-                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #FFFFFF; margin: 0px 0px 10px 10px; padding: 10px;">
-                                        <tbody>
-                                            <tr>
-                                                <td colspan="2">
-                                                    <div class="product-img-wrap" style="width:100%; "><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/show-recommendations/door-leading-magical-world.png" style="width: 100%; height: 100%; object-fit: cover;" /></div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="width: 100%; margin-bottom: 2px; vertical-align: middle;">
-                                                    <h4 class="p-title" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 15px; color: #000000; margin: 8px 0;padding-right: 5px;">Brooklyn Nine-Nine</h4>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2">
-                                                    <p class="desc" style="font-family: 'Poppins', Arial, sans-serif;text-transform: none; font-size: 10px; font-weight: 400; line-height: 15px; color: #6f6f6f; margin: 0; ">Hilarious detectives solve crimes</p>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                                <td style="vertical-align: top; width: 50%;">
-                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #FFFFFF; margin: 0px 10px 10px 0px; padding: 10px;">
-                                        <tbody>
-                                            <tr>
-                                                <td colspan="2">
-                                                    <div class="product-img-wrap" style="width:100%; "><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/show-recommendations/door-leading-magical.png" style="width: 100%; height: 100%; object-fit: cover;" /></div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="width: 100%; margin-bottom: 2px; vertical-align: middle;">
-                                                    <h4 class="p-title" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 15px; color: #000000; margin: 5px 0;padding-right: 5px;">White Collar</h4>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2">
-                                                    <p class="desc" style="font-family: 'Poppins', Arial, sans-serif;text-transform: none; font-size: 10px; font-weight: 400; line-height: 15px; color: #6f6f6f; margin: 0; ">A con artist and FBI agent team up</p>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td class="info-btn" style="padding: 25px 20px 40px 20px; width:100%; text-align: center;">
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                        <tbody>
-                            <tr>
-                                <td style="width: 100%; text-align: center; vertical-align: middle;">
-                                    <a class="btn-link" href="#" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; text-transform: none; line-height: 25px; color: #FFFFFF; text-decoration: none; background: #d33c3c; padding: 7px 33px; display: inline-block; text-align: center; border-radius: 20px;">View All</a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <!-- Weekly Recoomendatiom Start-->
-            <!-- footer start-->
-            <tr>
-                <td align="center" colspan="2">
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%; background: #ffffff; padding: 25px 0 25px;">
-                        <tbody>
-                            <tr>
-                                <td style="padding: 30px 0px; border-top: 2px solid #d33c3c; border-bottom: 2px solid #d33c3c;">
-                                    <table align="center" cellpadding="0" cellspacing="0" style="text-align: center;" width="100%">
-                                        <tbody>
-                                            <tr>
-                                                <td style="padding: 15px 15px; display: inline-block;">
-                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 30px; height: 30px; ">
-                                                        <!-- Change image src as per your requirements --><img alt="instagram" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/46e890761aa9484488a1d4b5b7e5e90a.png" style="width: 100%; height: 100%;" /></a>
-                                                </td>
-                                                <td style="padding: 15px 15px; display: inline-block; ">
-                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 30px; height: 30px;"><img alt="facebook" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/1ba99ae8ff9a4646a043bc4572c74c85.png" style="width: 100%; height: 100%;" /></a>
-                                                </td>
-                                                <td style="padding: 15px 15px; display: inline-block;">
-                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 30px; height: 30px;"><img alt="x" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/9fd609ff93f44ae98273362f7509d619.png" style="width: 100%; height: 100%;" /></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="footer-content" style="padding:0px 30px">
-                                                    <p style="text-transform: none; color: #4f4f4f; font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 25px; text-align: center; margin-bottom: 0px;">For assistance, connect with us on social media or reach out to our support team at
-                                                        <a data-renderer-mark="true" data-testid="link-with-safety" href="support@example.com" title="support@example.com">support@example.com</a>
-                                                    </p>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="padding:10px 10px 0px; text-align:center;">
-                                    <p style="font-family: 'Poppins', Arial, sans-serif; text-transform: none; font-size: 14px; font-weight: 400; line-height: 20px; color: #4f4f4f; margin: 0; ">To opt out of promotional emails like this,
-                                        <a href="#" style="font-weight:bold;text-decoration:none; color:#d33c3c; margin: 0;">unsubscribe here</a>
-                                    </p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <!-- footer end-->
-        </tbody>
-    </table>
-</body>
-<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+  </html>
+  ```
+  ```html Dark Background
+  <!doctype html="">
+  <html lang="en">
 
-</html>
-```
-```html Dark Background
-<!doctype html="">
-<html lang="en">
+  <head>
+      <title></title>
+      <style type="text/css">
+          @font-face {             font-family: 'Poppins', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Fonts/Poppins-Light.woff\') format(\'woff\');             font-style: normal;             font-weight: 300;         }          @font-face {             font-family: 'Poppins', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Fonts/Poppins-Regular.woff\') format(\'woff\');             font-style: normal;             font-weight: 400;         }          @font-face {             font-family: 'Poppins', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Fonts/Poppins-Medium.woff\') format(\'woff\');             font-style: normal;             font-weight: 500;         }          @media screen and (max-width: 480px) {             .container {                 max-width: 100% !important;             }    .heading h2{     font-size: 18px !important;     line-height: 24px !important;    }             .borderSpan {                 width: 20% !important;             }         }
+      </style>
+  </head>
 
-<head>
-    <title></title>
-    <style type="text/css">
-        @font-face {             font-family: 'Poppins', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Fonts/Poppins-Light.woff\') format(\'woff\');             font-style: normal;             font-weight: 300;         }          @font-face {             font-family: 'Poppins', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Fonts/Poppins-Regular.woff\') format(\'woff\');             font-style: normal;             font-weight: 400;         }          @font-face {             font-family: 'Poppins', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Fonts/Poppins-Medium.woff\') format(\'woff\');             font-style: normal;             font-weight: 500;         }          @media screen and (max-width: 480px) {             .container {                 max-width: 100% !important;             }    .heading h2{     font-size: 18px !important;     line-height: 24px !important;    }             .borderSpan {                 width: 20% !important;             }         }
-    </style>
-</head>
-
-<body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" style="background: rgb(0, 0, 0); font-family: Poppins, Arial, sans-serif; font-weight: 400; margin: 0px; padding: 0px; cursor: auto;">
-    <table border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 600px; margin: 0 auto; background-color: #000;" width="100%">
-        <!-- header start-->
-        <tbody>
-            <tr>
-                <td style="text-align: center; position: relative;">
-                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                        <tbody>
-                            <tr>
-                                <td style="width: 50%; vertical-align: middle;">
-                                    <div style="border-top: 1px solid #F04444;"> </div>
-                                </td>
-                                <td style="text-align: center; vertical-align: middle; padding: 20px">
-                                    <!-- Change image src as per your requirements --><img alt="Logo" class="logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/6b88dce76ef74ca5b9b17cc0a1dfcd13.png" style="display: inline-block; width: 127px; height: 58px; object-fit: cover;" /></td>
-                                <td style="width: 50%; vertical-align: middle;">
-                                    <div style="border-top: 1px solid #F04444;"> </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <!-- header end-->
-            <!-- banner section -->
-            <tr>
-                <td><img alt="banner image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/show-recommendations/manager-running-from-detailed-group-employees.png" style="width: 100%; height: 100%; max-height: 361px; object-fit: cover;" /></td>
-            </tr>
-            <!-- banner section -->
-            <!-- new episod section -->
-            <tr>
-                <td class="info-sec" style="text-align: center; padding: 40px 0px 20px;">
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                        <tbody>
-                            <tr>
-                                <td class="borderSpan" style="width: 15%; vertical-align: middle;">
-                                    <div style="border-top: 1px solid #F04444;"> </div>
-                                </td>
-                                <td class="heading" style="text-align: center;">
-                                    <h2 style="color:#fff;text-transform: uppercase; font-family: 'Poppins', Arial, sans-serif; font-size: 24px; font-weight: 400; line-height: 40px; margin: 0 auto;">CATCH UP WITH YOUR FAVORITEs</h2>
-                                </td>
-                                <td class="borderSpan" style="width: 15%; vertical-align: middle;">
-                                    <div style="border-top: 1px solid #F04444;"> </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td class="info-sec" style="text-align: center;">
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                        <tbody>
-                            <tr>
-                                <td style="width: 100%;padding: 0px 20px;">
-                                    <p style="color:#fff;margin: 0; text-transform: none;  font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 25px; text-align: center; ">The wait is over! New episodes of <em data-renderer-mark="true">Black Mirror</em>, <em data-renderer-mark="true">Suits</em>, <em data-renderer-mark="true">Stranger Things</em>, and more are now streaming.</p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td class="info-sec" style="text-align: center;padding: 20px;">
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                        <tbody>
-                            <tr>
-                                <td style="width: auto; text-align: center; vertical-align: middle;">
-                                    <a class="btn-link" href="#" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; text-transform: none; line-height: 25px; color: #FFFFFF; text-decoration: none; background: #F04444; padding: 6px 7px; display: inline-block; text-align: center; border-radius: 20px;"><img alt="youtube" class="btn-img" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/show-recommendations/youtube.png" style="vertical-align: middle;" /> View All</a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <!-- New Episod End-->
-            <!-- Weekly Recoomendatiom Start-->
-            <tr>
-                <td class="info-sec" style="text-align: center;padding: 40px 0px 20px;">
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                        <tbody>
-                            <tr>
-                                <td class="borderSpan" style="width: 18%; vertical-align: middle;">
-                                    <div style="border-top: 1px solid #F04444;"> </div>
-                                </td>
-                                <td class="heading" style="text-align: center;">
-                                    <h2 style="color:#fff;text-transform: uppercase; font-family: 'Poppins', Arial, sans-serif; font-size: 24px; font-weight: 400; line-height: 40px; margin: 0 auto;">MORE SHOWS YOU’LL LIKE</h2>
-                                </td>
-                                <td class="borderSpan" style="width: 18%; vertical-align: middle;">
-                                    <div style="border-top: 1px solid #F04444;"> </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; margin-top: 20px;">
-                        <tbody>
-                            <tr>
-                                <td style="vertical-align: top; width: 50%;">
-                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #000; margin: 0px 0px 10px 10px; padding: 10px;">
-                                        <tbody>
-                                            <tr>
-                                                <td colspan="2">
-                                                    <div class="product-img-wrap" style="width:100%; "><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/show-recommendations/dragons-fantasy-artificial-intelligence-image.png" style="width: 100%; height: 100%; object-fit: cover;"
-                                                        /></div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="width: 100%; margin-bottom: 2px; vertical-align: middle;">
-                                                    <h4 class="p-title" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 15px; color: #fff; margin: 8px 0;padding-right: 5px;">Breaking Bad</h4>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2">
-                                                    <p class="desc" style="font-family: 'Poppins', Arial, sans-serif;text-transform: none; font-size: 10px; font-weight: 400; line-height: 15px; color: #6f6f6f; margin: 0; ">A teacher turns to crime in desperate times</p>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                                <td style="vertical-align: top; width: 50%;">
-                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #000; margin: 0px 10px 10px 0px; padding: 10px;">
-                                        <tbody>
-                                            <tr>
-                                                <td colspan="2">
-                                                    <div class="product-img-wrap" style="width:100%; "><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/show-recommendations/view-soccer-player-before-match.png" style="width: 100%; height: 100%; object-fit: cover;" /></div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="width: 100%; margin-bottom: 2px; vertical-align: middle;">
-                                                    <h4 class="p-title" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 15px; color: #fff; margin: 5px 0;padding-right: 5px;">The Crown</h4>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2">
-                                                    <p class="desc" style="font-family: 'Poppins', Arial, sans-serif;text-transform: none; font-size: 10px; font-weight: 400; line-height: 15px; color: #6f6f6f; margin: 0; ">The life and reign of Queen Elizabeth II</p>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="vertical-align: top; width: 50%;">
-                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #000; margin: 0px 0px 10px 10px; padding: 10px;">
-                                        <tbody>
-                                            <tr>
-                                                <td colspan="2">
-                                                    <div class="product-img-wrap" style="width:100%; "><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/show-recommendations/door-leading-magical-world.png" style="width: 100%; height: 100%; object-fit: cover;" /></div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="width: 100%; margin-bottom: 2px; vertical-align: middle;">
-                                                    <h4 class="p-title" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 15px; color: #fff; margin: 8px 0;padding-right: 5px;">Brooklyn Nine-Nine</h4>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2">
-                                                    <p class="desc" style="font-family: 'Poppins', Arial, sans-serif;text-transform: none; font-size: 10px; font-weight: 400; line-height: 15px; color: #6f6f6f; margin: 0; ">Hilarious detectives solve crimes</p>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                                <td style="vertical-align: top; width: 50%;">
-                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #000; margin: 0px 10px 10px 0px; padding: 10px;">
-                                        <tbody>
-                                            <tr>
-                                                <td colspan="2">
-                                                    <div class="product-img-wrap" style="width:100%; "><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/show-recommendations/door-leading-magical.png" style="width: 100%; height: 100%; object-fit: cover;" /></div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="width: 100%; margin-bottom: 2px; vertical-align: middle;">
-                                                    <h4 class="p-title" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 15px; color: #fff; margin: 5px 0;padding-right: 5px;">White Collar</h4>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2">
-                                                    <p class="desc" style="font-family: 'Poppins', Arial, sans-serif;text-transform: none; font-size: 10px; font-weight: 400; line-height: 15px; color: #6f6f6f; margin: 0; ">A con artist and FBI agent team up</p>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td class="info-btn" style="padding: 25px 20px 40px 20px; width:100%; text-align: center;">
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                        <tbody>
-                            <tr>
-                                <td style="width: 100%; text-align: center; vertical-align: middle;">
-                                    <a class="btn-link" href="#" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; text-transform: none; line-height: 25px; color: #FFFFFF; text-decoration: none; background: #d33c3c; padding: 7px 33px; display: inline-block; text-align: center; border-radius: 20px;">View All</a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <!-- Weekly Recoomendatiom Start-->
-            <!-- footer start-->
-            <tr>
-                <td align="center" colspan="2">
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%; background: #000; padding: 25px 0 25px;">
-                        <tbody>
-                            <tr>
-                                <td style="padding: 30px 0px; border-top: 2px solid #fff; border-bottom: 2px solid #fff;">
-                                    <table align="center" cellpadding="0" cellspacing="0" style="text-align: center;" width="100%">
-                                        <tbody>
-                                            <tr>
-                                                <td style="padding: 15px 15px; display: inline-block;">
-                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 30px; height: 30px; ">
-                                                        <!-- Change image src as per your requirements --><img alt="instagram" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/3c09a826b3cd4920aa1230c7df32f91b.png" style="width: 100%; height: 100%;" /></a>
-                                                </td>
-                                                <td style="padding: 15px 15px; display: inline-block; ">
-                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 30px; height: 30px;"><img alt="facebook" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/18c1b92ff17443f38388d771deef565a.png" style="width: 100%; height: 100%;" /></a>
-                                                </td>
-                                                <td style="padding: 15px 15px; display: inline-block;">
-                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 30px; height: 30px;"><img alt="x" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/c6684e1db05c4ce4b7783b6181e11c89.png" style="width: 100%; height: 100%;" /></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="footer-content" style="padding:0px 30px">
-                                                    <p style="text-transform: none; color: #fff; font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 25px; text-align: center; margin-bottom: 0px;">For assistance, connect with us on social media or reach out to our support team at
-                                                        <a data-renderer-mark="true" data-testid="link-with-safety" href="support@example.com" style="color: #FFFFFF" title="support@example.com">support@example.com</a>
-                                                    </p>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="padding:10px 10px 0px; text-align:center;">
-                                    <p style="font-family: 'Poppins', Arial, sans-serif; text-transform: none; font-size: 14px; font-weight: 400; line-height: 20px; color: #fff; margin: 0; ">To opt out of promotional emails like this,
-                                        <a href="#" style="font-weight:bold;text-decoration:none; color:#d33c3c; margin: 0;">unsubscribe here</a>
-                                    </p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <!-- footer end-->
-        </tbody>
-    </table>
-</body>
-<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
-</html>
-```
-
-
+  <body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" style="background: rgb(0, 0, 0); font-family: Poppins, Arial, sans-serif; font-weight: 400; margin: 0px; padding: 0px; cursor: auto;">
+      <table border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 600px; margin: 0 auto; background-color: #000;" width="100%">
+          <!-- header start-->
+          <tbody>
+              <tr>
+                  <td style="text-align: center; position: relative;">
+                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tbody>
+                              <tr>
+                                  <td style="width: 50%; vertical-align: middle;">
+                                      <div style="border-top: 1px solid #F04444;"> </div>
+                                  </td>
+                                  <td style="text-align: center; vertical-align: middle; padding: 20px">
+                                      <!-- Change image src as per your requirements --><img alt="Logo" class="logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/6b88dce76ef74ca5b9b17cc0a1dfcd13.png" style="display: inline-block; width: 127px; height: 58px; object-fit: cover;" /></td>
+                                  <td style="width: 50%; vertical-align: middle;">
+                                      <div style="border-top: 1px solid #F04444;"> </div>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <!-- header end-->
+              <!-- banner section -->
+              <tr>
+                  <td><img alt="banner image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/show-recommendations/manager-running-from-detailed-group-employees.png" style="width: 100%; height: 100%; max-height: 361px; object-fit: cover;" /></td>
+              </tr>
+              <!-- banner section -->
+              <!-- new episod section -->
+              <tr>
+                  <td class="info-sec" style="text-align: center; padding: 40px 0px 20px;">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                          <tbody>
+                              <tr>
+                                  <td class="borderSpan" style="width: 15%; vertical-align: middle;">
+                                      <div style="border-top: 1px solid #F04444;"> </div>
+                                  </td>
+                                  <td class="heading" style="text-align: center;">
+                                      <h2 style="color:#fff;text-transform: uppercase; font-family: 'Poppins', Arial, sans-serif; font-size: 24px; font-weight: 400; line-height: 40px; margin: 0 auto;">CATCH UP WITH YOUR FAVORITEs</h2>
+                                  </td>
+                                  <td class="borderSpan" style="width: 15%; vertical-align: middle;">
+                                      <div style="border-top: 1px solid #F04444;"> </div>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <tr>
+                  <td class="info-sec" style="text-align: center;">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                          <tbody>
+                              <tr>
+                                  <td style="width: 100%;padding: 0px 20px;">
+                                      <p style="color:#fff;margin: 0; text-transform: none;  font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 25px; text-align: center; ">The wait is over! New episodes of <em data-renderer-mark="true">Black Mirror</em>, <em data-renderer-mark="true">Suits</em>, <em data-renderer-mark="true">Stranger Things</em>, and more are now streaming.</p>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <tr>
+                  <td class="info-sec" style="text-align: center;padding: 20px;">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                          <tbody>
+                              <tr>
+                                  <td style="width: auto; text-align: center; vertical-align: middle;">
+                                      <a class="btn-link" href="#" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; text-transform: none; line-height: 25px; color: #FFFFFF; text-decoration: none; background: #F04444; padding: 6px 7px; display: inline-block; text-align: center; border-radius: 20px;"><img alt="youtube" class="btn-img" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/show-recommendations/youtube.png" style="vertical-align: middle;" /> View All</a>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <!-- New Episod End-->
+              <!-- Weekly Recoomendatiom Start-->
+              <tr>
+                  <td class="info-sec" style="text-align: center;padding: 40px 0px 20px;">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                          <tbody>
+                              <tr>
+                                  <td class="borderSpan" style="width: 18%; vertical-align: middle;">
+                                      <div style="border-top: 1px solid #F04444;"> </div>
+                                  </td>
+                                  <td class="heading" style="text-align: center;">
+                                      <h2 style="color:#fff;text-transform: uppercase; font-family: 'Poppins', Arial, sans-serif; font-size: 24px; font-weight: 400; line-height: 40px; margin: 0 auto;">MORE SHOWS YOU’LL LIKE</h2>
+                                  </td>
+                                  <td class="borderSpan" style="width: 18%; vertical-align: middle;">
+                                      <div style="border-top: 1px solid #F04444;"> </div>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; margin-top: 20px;">
+                          <tbody>
+                              <tr>
+                                  <td style="vertical-align: top; width: 50%;">
+                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #000; margin: 0px 0px 10px 10px; padding: 10px;">
+                                          <tbody>
+                                              <tr>
+                                                  <td colspan="2">
+                                                      <div class="product-img-wrap" style="width:100%; "><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/show-recommendations/dragons-fantasy-artificial-intelligence-image.png" style="width: 100%; height: 100%; object-fit: cover;"
+                                                          /></div>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td style="width: 100%; margin-bottom: 2px; vertical-align: middle;">
+                                                      <h4 class="p-title" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 15px; color: #fff; margin: 8px 0;padding-right: 5px;">Breaking Bad</h4>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td colspan="2">
+                                                      <p class="desc" style="font-family: 'Poppins', Arial, sans-serif;text-transform: none; font-size: 10px; font-weight: 400; line-height: 15px; color: #6f6f6f; margin: 0; ">A teacher turns to crime in desperate times</p>
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </td>
+                                  <td style="vertical-align: top; width: 50%;">
+                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #000; margin: 0px 10px 10px 0px; padding: 10px;">
+                                          <tbody>
+                                              <tr>
+                                                  <td colspan="2">
+                                                      <div class="product-img-wrap" style="width:100%; "><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/show-recommendations/view-soccer-player-before-match.png" style="width: 100%; height: 100%; object-fit: cover;" /></div>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td style="width: 100%; margin-bottom: 2px; vertical-align: middle;">
+                                                      <h4 class="p-title" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 15px; color: #fff; margin: 5px 0;padding-right: 5px;">The Crown</h4>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td colspan="2">
+                                                      <p class="desc" style="font-family: 'Poppins', Arial, sans-serif;text-transform: none; font-size: 10px; font-weight: 400; line-height: 15px; color: #6f6f6f; margin: 0; ">The life and reign of Queen Elizabeth II</p>
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td style="vertical-align: top; width: 50%;">
+                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #000; margin: 0px 0px 10px 10px; padding: 10px;">
+                                          <tbody>
+                                              <tr>
+                                                  <td colspan="2">
+                                                      <div class="product-img-wrap" style="width:100%; "><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/show-recommendations/door-leading-magical-world.png" style="width: 100%; height: 100%; object-fit: cover;" /></div>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td style="width: 100%; margin-bottom: 2px; vertical-align: middle;">
+                                                      <h4 class="p-title" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 15px; color: #fff; margin: 8px 0;padding-right: 5px;">Brooklyn Nine-Nine</h4>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td colspan="2">
+                                                      <p class="desc" style="font-family: 'Poppins', Arial, sans-serif;text-transform: none; font-size: 10px; font-weight: 400; line-height: 15px; color: #6f6f6f; margin: 0; ">Hilarious detectives solve crimes</p>
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </td>
+                                  <td style="vertical-align: top; width: 50%;">
+                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #000; margin: 0px 10px 10px 0px; padding: 10px;">
+                                          <tbody>
+                                              <tr>
+                                                  <td colspan="2">
+                                                      <div class="product-img-wrap" style="width:100%; "><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/show-recommendations/door-leading-magical.png" style="width: 100%; height: 100%; object-fit: cover;" /></div>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td style="width: 100%; margin-bottom: 2px; vertical-align: middle;">
+                                                      <h4 class="p-title" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 15px; color: #fff; margin: 5px 0;padding-right: 5px;">White Collar</h4>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td colspan="2">
+                                                      <p class="desc" style="font-family: 'Poppins', Arial, sans-serif;text-transform: none; font-size: 10px; font-weight: 400; line-height: 15px; color: #6f6f6f; margin: 0; ">A con artist and FBI agent team up</p>
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <tr>
+                  <td class="info-btn" style="padding: 25px 20px 40px 20px; width:100%; text-align: center;">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                          <tbody>
+                              <tr>
+                                  <td style="width: 100%; text-align: center; vertical-align: middle;">
+                                      <a class="btn-link" href="#" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; text-transform: none; line-height: 25px; color: #FFFFFF; text-decoration: none; background: #d33c3c; padding: 7px 33px; display: inline-block; text-align: center; border-radius: 20px;">View All</a>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <!-- Weekly Recoomendatiom Start-->
+              <!-- footer start-->
+              <tr>
+                  <td align="center" colspan="2">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%; background: #000; padding: 25px 0 25px;">
+                          <tbody>
+                              <tr>
+                                  <td style="padding: 30px 0px; border-top: 2px solid #fff; border-bottom: 2px solid #fff;">
+                                      <table align="center" cellpadding="0" cellspacing="0" style="text-align: center;" width="100%">
+                                          <tbody>
+                                              <tr>
+                                                  <td style="padding: 15px 15px; display: inline-block;">
+                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 30px; height: 30px; ">
+                                                          <!-- Change image src as per your requirements --><img alt="instagram" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/3c09a826b3cd4920aa1230c7df32f91b.png" style="width: 100%; height: 100%;" /></a>
+                                                  </td>
+                                                  <td style="padding: 15px 15px; display: inline-block; ">
+                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 30px; height: 30px;"><img alt="facebook" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/18c1b92ff17443f38388d771deef565a.png" style="width: 100%; height: 100%;" /></a>
+                                                  </td>
+                                                  <td style="padding: 15px 15px; display: inline-block;">
+                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 30px; height: 30px;"><img alt="x" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/c6684e1db05c4ce4b7783b6181e11c89.png" style="width: 100%; height: 100%;" /></a>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td class="footer-content" style="padding:0px 30px">
+                                                      <p style="text-transform: none; color: #fff; font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 25px; text-align: center; margin-bottom: 0px;">For assistance, connect with us on social media or reach out to our support team at
+                                                          <a data-renderer-mark="true" data-testid="link-with-safety" href="support@example.com" style="color: #FFFFFF" title="support@example.com">support@example.com</a>
+                                                      </p>
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td style="padding:10px 10px 0px; text-align:center;">
+                                      <p style="font-family: 'Poppins', Arial, sans-serif; text-transform: none; font-size: 14px; font-weight: 400; line-height: 20px; color: #fff; margin: 0; ">To opt out of promotional emails like this,
+                                          <a href="#" style="font-weight:bold;text-decoration:none; color:#d33c3c; margin: 0;">unsubscribe here</a>
+                                      </p>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <!-- footer end-->
+          </tbody>
+      </table>
+  </body>
+  <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+  </html>
+  ```
 </Accordion>
 
 ## Product Listing Template
@@ -4404,238 +4395,236 @@ This product-focused promotional template showcases productsby category —men, 
 <br />
 
 <Accordion title="Expand to know more about the template.">
+  ### Use Case Examples
 
-### Use Case Examples
+  * Promote seasonal or new arrivals across different product categories.
+  * Highlight interest-based collections (for example, Men, Women, Kids, Pets).
+  * Encourage exploration through curated visual sections such as Trending Now, Recommended for You, or Back in Stock.
 
-* Promote seasonal or new arrivals across different product categories.
-* Highlight interest-based collections (for example, Men, Women, Kids, Pets).
-* Encourage exploration through curated visual sections such as Trending Now, Recommended for You, or Back in Stock.
+  ### Template Customization Options
 
-### Template Customization Options
+  * [Replace the Logo](doc:ootb-email-templates#replace-logo)
+  * [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+  * [Update Call-To-Actions (CTAs)](doc:ootb#call-to-actions-ctas)
+  * [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+  * [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+  * [Update the Privacy Policy](doc:ootb-email-templates#update-privacy-policy)
+  * [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
 
-* [Replace the Logo](doc:ootb-email-templates#replace-logo)
-* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-* [Update Call-To-Actions (CTAs)](doc:ootb#call-to-actions-ctas)
-* [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-* [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-* [Update the Privacy Policy](doc:ootb-email-templates#update-privacy-policy)
-* [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+  ### Template Code
 
-### Template Code
+  ```html
+  <!doctype html="">
+  <html lang="en">
 
-```html
-<!doctype html="">
-<html lang="en">
+  <head>
+      <title>What&#39;s in the store</title>
+      <link href="https://fonts.googleapis.com" rel="preconnect" />
+      <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+      <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet" />
+      <style type="text/css">
+          @media screen and (max-width: 480px) {             .main {                 max-width: 95% !important;                 margin: 0 auto 20px !important;             }             .product-title{                 margin: 0 10px 15px !important;             }             .shop-cta{                 padding: 5px 10px !important;             }             .order-wrap{                 padding: 15px 20px !important;             }         }
+      </style>
+  </head>
 
-<head>
-    <title>What&#39;s in the store</title>
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet" />
-    <style type="text/css">
-        @media screen and (max-width: 480px) {             .main {                 max-width: 95% !important;                 margin: 0 auto 20px !important;             }             .product-title{                 margin: 0 10px 15px !important;             }             .shop-cta{                 padding: 5px 10px !important;             }             .order-wrap{                 padding: 15px 20px !important;             }         }
-    </style>
-</head>
+  <body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" style="margin: 0px; padding: 0px; font-family: Jost, Arial, sans-serif; background-color: rgb(119, 67, 67); cursor: auto;">
+      <table border="0" cellpadding="0" cellspacing="0" style="font-family:'Jost', Arial, sans-serif; max-width: 600px; margin: 0 auto; background: #FFFFFF;" width="100%">
+          <tbody>
+              <tr>
+                  <td align="center" style="padding: 17px 0;"><img alt="Logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="display: block; max-width: 159px; width: 100%; height: auto;" /></td>
+              </tr>
+              <tr>
+                  <td align="center" style="background-color: #d66437; padding: 38px 25px 25px;">
+                      <h2 style="margin: 0; font-size: 36px; font-weight: 400; line-height: 45px; color: #FFFFFF; text-transform: uppercase;">WHAT’S NEW IN STORE</h2>
 
-<body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" style="margin: 0px; padding: 0px; font-family: Jost, Arial, sans-serif; background-color: rgb(119, 67, 67); cursor: auto;">
-    <table border="0" cellpadding="0" cellspacing="0" style="font-family:'Jost', Arial, sans-serif; max-width: 600px; margin: 0 auto; background: #FFFFFF;" width="100%">
-        <tbody>
-            <tr>
-                <td align="center" style="padding: 17px 0;"><img alt="Logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="display: block; max-width: 159px; width: 100%; height: auto;" /></td>
-            </tr>
-            <tr>
-                <td align="center" style="background-color: #d66437; padding: 38px 25px 25px;">
-                    <h2 style="margin: 0; font-size: 36px; font-weight: 400; line-height: 45px; color: #FFFFFF; text-transform: uppercase;">WHAT’S NEW IN STORE</h2>
+                      <p style="margin: 10px 0 0; font-size: 14px; font-weight: 400; line-height: 22px; color: #FFFFFF; text-transform: none;">Shop from the latest styles and trends</p>
+                  </td>
+              </tr>
+              <tr>
+                  <td align="center" style="background-color: #d66437;"><img alt="Banner" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/banner-image.png" style="display: block; max-width: 600px; width: 100%; height: auto;" /></td>
+              </tr>
+              <tr>
+                  <td align="center" class="order-wrap" style="background-color: #d66437; padding: 15px 35px;">
+                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tbody>
+                              <tr>
+                                  <td align="left" style="font-size: 14px; font-weight: 300; line-height: 20px; color: #FFFFFF;">Get <span style="font-weight: 500;">FREE Delivery</span> on all orders</td>
+                                  <td align="right">
+                                      <a class="shop-cta" href="#" style="max-width: 125px; display: inline-block; padding: 8px 30px; font-size: 12px; font-weight: 400; line-height: 24px; color: #000000; background-color: #FFFFFF; text-align: center; text-transform: uppercase; text-decoration: none;">Shop Now</a>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <!-- product section  -->
+              <tr>
+                  <td align="center" style="padding: 40px 0 34px;">
+                      <h3 style="margin: 0; font-size: 32px; font-weight: 400; line-height: 42px; color: #0d0d0d; text-transform: uppercase;">NEW PRODUCTS LAUNCHED</h3>
 
-                    <p style="margin: 10px 0 0; font-size: 14px; font-weight: 400; line-height: 22px; color: #FFFFFF; text-transform: none;">Shop from the latest styles and trends</p>
-                </td>
-            </tr>
-            <tr>
-                <td align="center" style="background-color: #d66437;"><img alt="Banner" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/banner-image.png" style="display: block; max-width: 600px; width: 100%; height: auto;" /></td>
-            </tr>
-            <tr>
-                <td align="center" class="order-wrap" style="background-color: #d66437; padding: 15px 35px;">
-                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                        <tbody>
-                            <tr>
-                                <td align="left" style="font-size: 14px; font-weight: 300; line-height: 20px; color: #FFFFFF;">Get <span style="font-weight: 500;">FREE Delivery</span> on all orders</td>
-                                <td align="right">
-                                    <a class="shop-cta" href="#" style="max-width: 125px; display: inline-block; padding: 8px 30px; font-size: 12px; font-weight: 400; line-height: 24px; color: #000000; background-color: #FFFFFF; text-align: center; text-transform: uppercase; text-decoration: none;">Shop Now</a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <!-- product section  -->
-            <tr>
-                <td align="center" style="padding: 40px 0 34px;">
-                    <h3 style="margin: 0; font-size: 32px; font-weight: 400; line-height: 42px; color: #0d0d0d; text-transform: uppercase;">NEW PRODUCTS LAUNCHED</h3>
+                      <p style="margin: 10px 0 0; font-size: 10px; font-weight: 400; line-height: 20px; color: #909090; text-transform: none;">Explore newly launched products from our collection.</p>
+                  </td>
+              </tr>
+              <!-- mens product -->
+              <tr>
+                  <td align="center">
+                      <table border="0" cellpadding="0" cellspacing="0" class="main" style="width: 100%; max-width: 85%; margin: 0 auto 30px;" width="100%">
+                          <tbody>
+                              <tr>
+                                  <td colspan="2">
+                                      <h2 class="product-title" style="margin: 0 10px 24px; font-family:'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 24px; color: #000000; text-transform: uppercase;">Men</h2>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td align="right" style="padding: 0 10px 29px;" width="50%"><img alt="Product Image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/men-product-1.png" style="display: block; max-width: 238px; width: 100%; height: auto;" />
+                                      <a href="#" style="font-size: 22px; font-weight: 300; line-height: 37px; color: #D66437; text-decoration: none; margin-top: 5px; display: inline-block;">Shop now <img alt="arrow" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/icon-arrow.png" style="max-width: 30px; height: 100%;" /></a>
+                                  </td>
+                                  <td align="right" style="padding: 0 10px 29px;" width="50%"><img alt="Product Image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/men-product-2.png" style="display: block; max-width: 238px; width: 100%; height: auto;" />
+                                      <a href="#" style="font-size: 22px; font-weight: 300; line-height: 37px; color: #D66437; text-decoration: none; margin-top: 5px; display: inline-block;">Shop now <img alt="arrow" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/icon-arrow.png" style="max-width: 30px; height: 100%;" /></a>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td align="right" style="padding: 0 10px 29px;" width="50%"><img alt="Product Image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/men-product-3.png" style="display: block; max-width: 238px; width: 100%; height: auto;" />
+                                      <a href="#" style="font-size: 22px; font-weight: 300; line-height: 37px; color: #D66437; text-decoration: none; margin-top: 5px; display: inline-block;">Shop now <img alt="arrow" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/icon-arrow.png" style="max-width: 30px; height: 100%;" /></a>
+                                  </td>
+                                  <td align="right" style="padding: 0 10px 29px;" width="50%"><img alt="Product Image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/men-product-4.png" style="display: block; max-width: 238px; width: 100%; height: auto;" />
+                                      <a href="#" style="font-size: 22px; font-weight: 300; line-height: 37px; color: #D66437; text-decoration: none; margin-top: 5px; display: inline-block;">Shop now <img alt="arrow" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/icon-arrow.png" style="max-width: 30px; height: 100%;" /></a>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <!-- mens product -->
+              <!-- women product -->
+              <tr>
+                  <td align="center">
+                      <table border="0" cellpadding="0" cellspacing="0" class="main" style="width: 100%; max-width: 85%; margin: 0 auto 30px;" width="100%">
+                          <tbody>
+                              <tr>
+                                  <td colspan="2">
+                                      <h2 class="product-title" style="margin: 0 10px 24px; font-family:'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 24px; color: #000000; text-transform: uppercase;">Women</h2>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td align="right" style="padding: 0 10px 29px;" width="50%"><img alt="Product Image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/women-product-1.png" style="display: block; max-width: 238px; width: 100%; height: auto;" />
+                                      <a href="#" style="font-size: 22px; font-weight: 300; line-height: 37px; color: #D66437; text-decoration: none; margin-top: 5px; display: inline-block;">Shop now <img alt="arrow" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/icon-arrow.png" style="max-width: 30px; height: 100%;" /></a>
+                                  </td>
+                                  <td align="right" style="padding: 0 10px 29px;" width="50%"><img alt="Product Image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/women-product-2.png" style="display: block; max-width: 238px; width: 100%; height: auto;" />
+                                      <a href="#" style="font-size: 22px; font-weight: 300; line-height: 37px; color: #D66437; text-decoration: none; margin-top: 5px; display: inline-block;">Shop now <img alt="arrow" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/icon-arrow.png" style="max-width: 30px; height: 100%;" /></a>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td align="right" style="padding: 0 10px 29px;" width="50%"><img alt="Product Image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/women-product-3.png" style="display: block; max-width: 238px; width: 100%; height: auto;" />
+                                      <a href="#" style="font-size: 22px; font-weight: 300; line-height: 37px; color: #D66437; text-decoration: none; margin-top: 5px; display: inline-block;">Shop now <img alt="arrow" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/icon-arrow.png" style="max-width: 30px; height: 100%;" /></a>
+                                  </td>
+                                  <td align="right" style="padding: 0 10px 29px;" width="50%"><img alt="Product Image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/women-product-4.png" style="display: block; max-width: 238px; width: 100%; height: auto;" />
+                                      <a href="#" style="font-size: 22px; font-weight: 300; line-height: 37px; color: #D66437; text-decoration: none; margin-top: 5px; display: inline-block;">Shop now <img alt="arrow" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/icon-arrow.png" style="max-width: 30px; height: 100%;" /></a>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <!-- women product -->
+              <!-- kids product -->
+              <tr>
+                  <td align="center">
+                      <table border="0" cellpadding="0" cellspacing="0" class="main" style="width: 100%; max-width: 85%; margin: 0 auto 30px;" width="100%">
+                          <tbody>
+                              <tr>
+                                  <td colspan="2">
+                                      <h2 class="product-title" style="margin: 0 10px 24px; font-family:'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 24px; color: #000000; text-transform: uppercase;">Kids</h2>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td align="right" style="padding: 0 10px 29px;" width="50%"><img alt="Product Image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/kid-product-1.png" style="display: block; max-width: 238px; width: 100%; height: auto;" />
+                                      <a href="#" style="font-size: 22px; font-weight: 300; line-height: 37px; color: #D66437; text-decoration: none; margin-top: 5px; display: inline-block;">Shop now <img alt="arrow" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/icon-arrow.png" style="max-width: 30px; height: 100%;" /></a>
+                                  </td>
+                                  <td align="right" style="padding: 0 10px 29px;" width="50%"><img alt="Product Image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/kid-product-2.png" style="display: block; max-width: 238px; width: 100%; height: auto;" />
+                                      <a href="#" style="font-size: 22px; font-weight: 300; line-height: 37px; color: #D66437; text-decoration: none; margin-top: 5px; display: inline-block;">Shop now <img alt="arrow" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/icon-arrow.png" style="max-width: 30px; height: 100%;" /></a>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td align="right" style="padding: 0 10px 29px;" width="50%"><img alt="Product Image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/kid-product-3.png" style="display: block; max-width: 238px; width: 100%; height: auto;" />
+                                      <a href="#" style="font-size: 22px; font-weight: 300; line-height: 37px; color: #D66437; text-decoration: none; margin-top: 5px; display: inline-block;">Shop now <img alt="arrow" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/icon-arrow.png" style="max-width: 30px; height: 100%;" /></a>
+                                  </td>
+                                  <td align="right" style="padding: 0 10px 29px;" width="50%"><img alt="Product Image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/kid-product-4.png" style="display: block; max-width: 238px; width: 100%; height: auto;" />
+                                      <a href="#" style="font-size: 22px; font-weight: 300; line-height: 37px; color: #D66437; text-decoration: none; margin-top: 5px; display: inline-block;">Shop now <img alt="arrow" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/icon-arrow.png" style="max-width: 30px; height: 100%;" /></a>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <!-- kids product -->
+              <!-- product section  -->
+              <!-- footer start  -->
+              <tr>
+                  <td align="center" style="border-top: 0.5px solid #D66437; padding: 39px 0; text-align: center;">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0">
+                          <tbody>
+                              <tr>
+                                  <td style="padding: 0 8px; display: inline-block;">
+                                      <a href="#"><img alt="Social Icon" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/31a2d71dbe3e4579bcfa0d74dfc3e34d.png" style="display: block; width: 34px; height: 34px;" /></a>
+                                  </td>
+                                  <td style="padding: 0 8px; display: inline-block;">
+                                      <a href="#"><img alt="Social Icon" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/28b65b9647964152a2a5f6e816e50bf9.png" style="display: block; width: 34px; height: 34px;" /></a>
+                                  </td>
+                                  <td style="padding: 0 8px; display: inline-block;">
+                                      <a href="#"><img alt="Social Icon" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/3ae087af1f3544b0885c0a3ec31c2419.png" style="display: block; width: 34px; height: 34px;" /></a>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td colspan="3">
+                                      <p style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #939393; text-align: center; max-width: 80%; margin: 34px auto 27px;">For assistance, connect with us on social media or reach out to our support team at
+                                          <a data-renderer-mark="true" data-testid="link-with-safety" href="support@example.com" title="support@example.com">support@example.com</a>
+                                      </p>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td colspan="3" style="border-top: 0.5px solid #979797; padding-top: 24px;padding-bottom:24px;">
+                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                          <tbody>
+                                              <tr>
+                                                  <td style="padding: 0 5px;">
+                                                      <a href="#" style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #939393 !important; text-decoration: none;">Privacy</a>
+                                                  </td>
+                                                  <td style="padding: 0 5px;">
+                                                      <a href="#" style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #939393 !important; text-decoration: none;">Account</a>
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td colspan="3" style="border-top: 0.5px solid #979797; padding-top: 24px;">
+                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                          <tbody>
+                                              <tr>
+                                                  <td style="padding: 0 5px;">
+                                                      <p class="f-desc" style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #939393; max-width: 80%; margin: 0 auto;">To opt out of promotional emails like this,
+                                                          <a href="#" style="color:#939393;text-decoration:none;font-weight:bold">unsubscribe here</a>
+                                                      </p>
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+      <!-- footer end  -->
+  </body>
+  <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
 
-                    <p style="margin: 10px 0 0; font-size: 10px; font-weight: 400; line-height: 20px; color: #909090; text-transform: none;">Explore newly launched products from our collection.</p>
-                </td>
-            </tr>
-            <!-- mens product -->
-            <tr>
-                <td align="center">
-                    <table border="0" cellpadding="0" cellspacing="0" class="main" style="width: 100%; max-width: 85%; margin: 0 auto 30px;" width="100%">
-                        <tbody>
-                            <tr>
-                                <td colspan="2">
-                                    <h2 class="product-title" style="margin: 0 10px 24px; font-family:'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 24px; color: #000000; text-transform: uppercase;">Men</h2>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td align="right" style="padding: 0 10px 29px;" width="50%"><img alt="Product Image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/men-product-1.png" style="display: block; max-width: 238px; width: 100%; height: auto;" />
-                                    <a href="#" style="font-size: 22px; font-weight: 300; line-height: 37px; color: #D66437; text-decoration: none; margin-top: 5px; display: inline-block;">Shop now <img alt="arrow" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/icon-arrow.png" style="max-width: 30px; height: 100%;" /></a>
-                                </td>
-                                <td align="right" style="padding: 0 10px 29px;" width="50%"><img alt="Product Image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/men-product-2.png" style="display: block; max-width: 238px; width: 100%; height: auto;" />
-                                    <a href="#" style="font-size: 22px; font-weight: 300; line-height: 37px; color: #D66437; text-decoration: none; margin-top: 5px; display: inline-block;">Shop now <img alt="arrow" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/icon-arrow.png" style="max-width: 30px; height: 100%;" /></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td align="right" style="padding: 0 10px 29px;" width="50%"><img alt="Product Image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/men-product-3.png" style="display: block; max-width: 238px; width: 100%; height: auto;" />
-                                    <a href="#" style="font-size: 22px; font-weight: 300; line-height: 37px; color: #D66437; text-decoration: none; margin-top: 5px; display: inline-block;">Shop now <img alt="arrow" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/icon-arrow.png" style="max-width: 30px; height: 100%;" /></a>
-                                </td>
-                                <td align="right" style="padding: 0 10px 29px;" width="50%"><img alt="Product Image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/men-product-4.png" style="display: block; max-width: 238px; width: 100%; height: auto;" />
-                                    <a href="#" style="font-size: 22px; font-weight: 300; line-height: 37px; color: #D66437; text-decoration: none; margin-top: 5px; display: inline-block;">Shop now <img alt="arrow" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/icon-arrow.png" style="max-width: 30px; height: 100%;" /></a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <!-- mens product -->
-            <!-- women product -->
-            <tr>
-                <td align="center">
-                    <table border="0" cellpadding="0" cellspacing="0" class="main" style="width: 100%; max-width: 85%; margin: 0 auto 30px;" width="100%">
-                        <tbody>
-                            <tr>
-                                <td colspan="2">
-                                    <h2 class="product-title" style="margin: 0 10px 24px; font-family:'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 24px; color: #000000; text-transform: uppercase;">Women</h2>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td align="right" style="padding: 0 10px 29px;" width="50%"><img alt="Product Image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/women-product-1.png" style="display: block; max-width: 238px; width: 100%; height: auto;" />
-                                    <a href="#" style="font-size: 22px; font-weight: 300; line-height: 37px; color: #D66437; text-decoration: none; margin-top: 5px; display: inline-block;">Shop now <img alt="arrow" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/icon-arrow.png" style="max-width: 30px; height: 100%;" /></a>
-                                </td>
-                                <td align="right" style="padding: 0 10px 29px;" width="50%"><img alt="Product Image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/women-product-2.png" style="display: block; max-width: 238px; width: 100%; height: auto;" />
-                                    <a href="#" style="font-size: 22px; font-weight: 300; line-height: 37px; color: #D66437; text-decoration: none; margin-top: 5px; display: inline-block;">Shop now <img alt="arrow" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/icon-arrow.png" style="max-width: 30px; height: 100%;" /></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td align="right" style="padding: 0 10px 29px;" width="50%"><img alt="Product Image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/women-product-3.png" style="display: block; max-width: 238px; width: 100%; height: auto;" />
-                                    <a href="#" style="font-size: 22px; font-weight: 300; line-height: 37px; color: #D66437; text-decoration: none; margin-top: 5px; display: inline-block;">Shop now <img alt="arrow" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/icon-arrow.png" style="max-width: 30px; height: 100%;" /></a>
-                                </td>
-                                <td align="right" style="padding: 0 10px 29px;" width="50%"><img alt="Product Image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/women-product-4.png" style="display: block; max-width: 238px; width: 100%; height: auto;" />
-                                    <a href="#" style="font-size: 22px; font-weight: 300; line-height: 37px; color: #D66437; text-decoration: none; margin-top: 5px; display: inline-block;">Shop now <img alt="arrow" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/icon-arrow.png" style="max-width: 30px; height: 100%;" /></a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <!-- women product -->
-            <!-- kids product -->
-            <tr>
-                <td align="center">
-                    <table border="0" cellpadding="0" cellspacing="0" class="main" style="width: 100%; max-width: 85%; margin: 0 auto 30px;" width="100%">
-                        <tbody>
-                            <tr>
-                                <td colspan="2">
-                                    <h2 class="product-title" style="margin: 0 10px 24px; font-family:'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 24px; color: #000000; text-transform: uppercase;">Kids</h2>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td align="right" style="padding: 0 10px 29px;" width="50%"><img alt="Product Image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/kid-product-1.png" style="display: block; max-width: 238px; width: 100%; height: auto;" />
-                                    <a href="#" style="font-size: 22px; font-weight: 300; line-height: 37px; color: #D66437; text-decoration: none; margin-top: 5px; display: inline-block;">Shop now <img alt="arrow" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/icon-arrow.png" style="max-width: 30px; height: 100%;" /></a>
-                                </td>
-                                <td align="right" style="padding: 0 10px 29px;" width="50%"><img alt="Product Image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/kid-product-2.png" style="display: block; max-width: 238px; width: 100%; height: auto;" />
-                                    <a href="#" style="font-size: 22px; font-weight: 300; line-height: 37px; color: #D66437; text-decoration: none; margin-top: 5px; display: inline-block;">Shop now <img alt="arrow" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/icon-arrow.png" style="max-width: 30px; height: 100%;" /></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td align="right" style="padding: 0 10px 29px;" width="50%"><img alt="Product Image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/kid-product-3.png" style="display: block; max-width: 238px; width: 100%; height: auto;" />
-                                    <a href="#" style="font-size: 22px; font-weight: 300; line-height: 37px; color: #D66437; text-decoration: none; margin-top: 5px; display: inline-block;">Shop now <img alt="arrow" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/icon-arrow.png" style="max-width: 30px; height: 100%;" /></a>
-                                </td>
-                                <td align="right" style="padding: 0 10px 29px;" width="50%"><img alt="Product Image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/kid-product-4.png" style="display: block; max-width: 238px; width: 100%; height: auto;" />
-                                    <a href="#" style="font-size: 22px; font-weight: 300; line-height: 37px; color: #D66437; text-decoration: none; margin-top: 5px; display: inline-block;">Shop now <img alt="arrow" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInSore/icon-arrow.png" style="max-width: 30px; height: 100%;" /></a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <!-- kids product -->
-            <!-- product section  -->
-            <!-- footer start  -->
-            <tr>
-                <td align="center" style="border-top: 0.5px solid #D66437; padding: 39px 0; text-align: center;">
-                    <table align="center" border="0" cellpadding="0" cellspacing="0">
-                        <tbody>
-                            <tr>
-                                <td style="padding: 0 8px; display: inline-block;">
-                                    <a href="#"><img alt="Social Icon" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/31a2d71dbe3e4579bcfa0d74dfc3e34d.png" style="display: block; width: 34px; height: 34px;" /></a>
-                                </td>
-                                <td style="padding: 0 8px; display: inline-block;">
-                                    <a href="#"><img alt="Social Icon" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/28b65b9647964152a2a5f6e816e50bf9.png" style="display: block; width: 34px; height: 34px;" /></a>
-                                </td>
-                                <td style="padding: 0 8px; display: inline-block;">
-                                    <a href="#"><img alt="Social Icon" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/3ae087af1f3544b0885c0a3ec31c2419.png" style="display: block; width: 34px; height: 34px;" /></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="3">
-                                    <p style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #939393; text-align: center; max-width: 80%; margin: 34px auto 27px;">For assistance, connect with us on social media or reach out to our support team at
-                                        <a data-renderer-mark="true" data-testid="link-with-safety" href="support@example.com" title="support@example.com">support@example.com</a>
-                                    </p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="3" style="border-top: 0.5px solid #979797; padding-top: 24px;padding-bottom:24px;">
-                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
-                                        <tbody>
-                                            <tr>
-                                                <td style="padding: 0 5px;">
-                                                    <a href="#" style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #939393 !important; text-decoration: none;">Privacy</a>
-                                                </td>
-                                                <td style="padding: 0 5px;">
-                                                    <a href="#" style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #939393 !important; text-decoration: none;">Account</a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="3" style="border-top: 0.5px solid #979797; padding-top: 24px;">
-                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
-                                        <tbody>
-                                            <tr>
-                                                <td style="padding: 0 5px;">
-                                                    <p class="f-desc" style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #939393; max-width: 80%; margin: 0 auto;">To opt out of promotional emails like this,
-                                                        <a href="#" style="color:#939393;text-decoration:none;font-weight:bold">unsubscribe here</a>
-                                                    </p>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <!-- footer end  -->
-</body>
-<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
-
-</html>
-```
-
+  </html>
+  ```
 </Accordion>
 
 ## Winback Email Template
@@ -4645,234 +4634,231 @@ This re-engagement email template is tailored to bring back inactive users who h
 <Image align="center" alt="Sample Winback Email Template" border={true} caption="Sample Winback Email Template" src="https://files.readme.io/5cb660d31245cc7ff0a9c2c11186ddc7fe3f00a8793c7d0d4282a893a75edfea-Winback_HTML.png" width="25% " />
 
 <Accordion title="Expand to know more about the template.">
+  ### Use Case Examples
 
+  Encourages churned or inactive users to return by offering a compelling incentive such as a discount or limited-time offer, paired with personalized product recommendations.
 
-### Use Case Examples
+  ### Template Customization Options
 
-Encourages churned or inactive users to return by offering a compelling incentive such as a discount or limited-time offer, paired with personalized product recommendations.
+  * [Replace the Logo](doc:ootb-email-templates#replace-logo)
+  * [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+  * [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#call-to-actions-ctas)
+  * [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+  * [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+  * [Update the Privacy Policy](doc:ootb-email-templates#update-privacy-policy)
+  * [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
 
-### Template Customization Options
+  ### Template Code
 
-* [Replace the Logo](doc:ootb-email-templates#replace-logo)
-* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#call-to-actions-ctas)
-* [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-* [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-* [Update the Privacy Policy](doc:ootb-email-templates#update-privacy-policy)
-* [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+  ```html
+  <!doctype html="">
+  <html lang="en">
 
-### Template Code
+  <head>
+      <title>WinBack</title>
+      <link href="https://fonts.googleapis.com" rel="preconnect" />
+      <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+      <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet" />
+      <style type="text/css">
+          @media screen and (max-width: 480px) {             .container {                 max-width: 100% !important;             }              .content {                 max-width: 90% !important;             }         }
+      </style>
+  </head>
 
-```html
-<!doctype html="">
-<html lang="en">
+  <body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" data-new-gr-c-s-loaded="14.1242.0" style="font-family: Jost, Arial, sans-serif; font-weight: 400; margin: 0px; padding: 0px; background: rgb(221, 221, 221); cursor: auto;">
+      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 600px; margin: 0 auto; background-color: #ffffff;" width="100%">
+          <!-- header start-->
+          <tbody>
+              <tr>
+                  <td align="center" style="display: block; padding: 26px 0; max-width: 78%; margin: 0 auto;border-bottom: 1px solid #DDB67C;">
+                      <div class="logo-wrap">
+                          <!-- Change image src as per your requirements --><img alt="Logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="width: 159px; height: 73px; object-fit: cover;" /></div>
+                  </td>
+              </tr>
+              <!-- header end-->
+              <tr>
+                  <td style="text-align: center;">
+                      <h1 class="banner-title" style="font-family: Jost, Arial; font-size: 50px; font-weight: 400; line-height: 70px; color: #525C46; text-transform: uppercase; margin: 25px 0 28px;">WE MISS YOU!</h1>
 
-<head>
-    <title>WinBack</title>
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet" />
-    <style type="text/css">
-        @media screen and (max-width: 480px) {             .container {                 max-width: 100% !important;             }              .content {                 max-width: 90% !important;             }         }
-    </style>
-</head>
+                      <div class="banner-img">
+                          <!-- Change image src as per your requirements --><img alt="banner" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Winback/product-banner.png" style="width: 100%; height: 100%; max-height: 663px; object-fit: cover;" /></div>
+                  </td>
+              </tr>
+              <tr>
+                  <td align="center" style="display: block; padding: 30px 0 64px; max-width: 78%; margin: 0 auto;">
+                      <h3 style="color: #525C46; font-family: 'Jost', Arial, sans-serif; font-size: 60px; font-weight: 400; line-height: 86px; text-transform: uppercase; margin: 0 0 17px;">30% OFF ON ALL PRODUCTS!</h3>
 
-<body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" data-new-gr-c-s-loaded="14.1242.0" style="font-family: Jost, Arial, sans-serif; font-weight: 400; margin: 0px; padding: 0px; background: rgb(221, 221, 221); cursor: auto;">
-    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 600px; margin: 0 auto; background-color: #ffffff;" width="100%">
-        <!-- header start-->
-        <tbody>
-            <tr>
-                <td align="center" style="display: block; padding: 26px 0; max-width: 78%; margin: 0 auto;border-bottom: 1px solid #DDB67C;">
-                    <div class="logo-wrap">
-                        <!-- Change image src as per your requirements --><img alt="Logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="width: 159px; height: 73px; object-fit: cover;" /></div>
-                </td>
-            </tr>
-            <!-- header end-->
-            <tr>
-                <td style="text-align: center;">
-                    <h1 class="banner-title" style="font-family: Jost, Arial; font-size: 50px; font-weight: 400; line-height: 70px; color: #525C46; text-transform: uppercase; margin: 25px 0 28px;">WE MISS YOU!</h1>
+                      <p style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 20px;color:#909090; text-align: center; margin: 0; margin-bottom: 31px;">Take advantage of this exclusive offer just for you and enjoy 30% off your next purchase. It’s the perfect time to treat yourself to something special!</p>
 
-                    <div class="banner-img">
-                        <!-- Change image src as per your requirements --><img alt="banner" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Winback/product-banner.png" style="width: 100%; height: 100%; max-height: 663px; object-fit: cover;" /></div>
-                </td>
-            </tr>
-            <tr>
-                <td align="center" style="display: block; padding: 30px 0 64px; max-width: 78%; margin: 0 auto;">
-                    <h3 style="color: #525C46; font-family: 'Jost', Arial, sans-serif; font-size: 60px; font-weight: 400; line-height: 86px; text-transform: uppercase; margin: 0 0 17px;">30% OFF ON ALL PRODUCTS!</h3>
+                      <a display_text_og="Shop%20Now" href="#" href_og="%23" style="background-color: rgb(172, 135, 99); font-family: Jost, Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 20px; text-align: center; text-transform: none; border-radius: 20px; text-decoration: none; max-width: 171px; padding: 10px 40px; color: rgb(255, 255, 255) !important;">Shop Now</a>
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      <div style="margin: 0 auto; width: 100%;">
+                          <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                              <tbody>
+                                  <tr>
+                                      <td style="width: 33%; vertical-align: top;">
+                                          <!-- product card -->
+                                          <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="margin-bottom: 15px; padding: 0 5px;">
+                                              <tbody>
+                                                  <tr>
+                                                      <td colspan="2">
+                                                          <div class="img-wrap">
+                                                              <!-- Change image src as per your requirements --><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Winback/product-1.png" style="width: -webkit-fill-available" /></div>
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td style="width: 60%; margin-bottom: 2px; vertical-align: top;">
+                                                          <h4 style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #252525; margin: 0;padding-right: 5px;">Radiance Boost Serum</h4>
+                                                      </td>
+                                                      <td style="width: 20%; vertical-align: top;">
+                                                          <p style="margin:0; color: #252525; font-family: 'Jost', Arial, sans-serif; font-size: 12px;font-weight: 300; line-height: 24px; text-align: right;"><span class="rupee-sign">$</span>1500</p>
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td colspan="2">
+                                                          <p class="desc" style="font-family: 'Jost', Arial, sans-serif;text-transform: none; font-size: 8px; font-weight: 400; line-height: 13px; color: #909090; margin: 0; ">Brighten and hydrate your skin with this powerful, glow-enhancing serum.</p>
+                                                      </td>
+                                                  </tr>
+                                              </tbody>
+                                          </table>
+                                      </td>
+                                      <td style="width: 33%; vertical-align: top;">
+                                          <!-- product card -->
+                                          <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="margin-bottom: 15px; padding: 0 5px;">
+                                              <tbody>
+                                                  <tr>
+                                                      <td colspan="2">
+                                                          <div class="img-wrap">
+                                                              <!-- Change image src as per your requirements --><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Winback/product-1.png" style="width: -webkit-fill-available" /></div>
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td style="width: 60%; margin-bottom: 2px; vertical-align: top;">
+                                                          <h4 style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #252525; margin: 0;padding-right: 5px;">Nourishing Repair Creeam</h4>
+                                                      </td>
+                                                      <td style="width: 20%; vertical-align: top;">
+                                                          <p style="margin:0; color: #252525; font-family: 'Jost', Arial, sans-serif; font-size: 12px;font-weight: 300; line-height: 24px; text-align: right;"><span class="rupee-sign">$</span>1500</p>
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td colspan="2">
+                                                          <p class="desc" style="font-family: 'Jost', Arial, sans-serif;text-transform: none; font-size: 8px; font-weight: 400; line-height: 13px; color: #909090; margin: 0; ">Rejuvenate and repair your skin with this rich, soothing cream.</p>
+                                                      </td>
+                                                  </tr>
+                                              </tbody>
+                                          </table>
+                                      </td>
+                                      <td style="width: 33%; vertical-align: top;">
+                                          <!-- product card -->
+                                          <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="margin-bottom: 15px; padding: 0 5px;">
+                                              <tbody>
+                                                  <tr>
+                                                      <td colspan="2">
+                                                          <div class="img-wrap">
+                                                              <!-- Change image src as per your requirements --><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Winback/product-1.png" style="width: -webkit-fill-available" /></div>
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td style="width: 60%; margin-bottom: 2px; vertical-align: top;">
+                                                          <h4 style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #252525; margin: 0;padding-right: 5px;">Pure Glow Face Mask</h4>
+                                                      </td>
+                                                      <td style="width: 20%; vertical-align: top;">
+                                                          <p style="margin:0; color: #252525; font-family: 'Jost', Arial, sans-serif; font-size: 12px;font-weight: 300; line-height: 24px; text-align: right;"><span class="rupee-sign">$</span>1500</p>
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td colspan="2">
+                                                          <p class="desc" style="font-family: 'Jost', Arial, sans-serif;text-transform: none; font-size: 8px; font-weight: 400; line-height: 13px; color: #909090; margin: 0; ">Deep cleanse and refresh with this revitalizing, skin-loving face mask.</p>
+                                                      </td>
+                                                  </tr>
+                                              </tbody>
+                                          </table>
+                                      </td>
+                                  </tr>
+                              </tbody>
+                          </table>
+                      </div>
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      <div style="max-width: 90%; margin: 0 auto; width: 100%; text-align: right;">
+                          <a class="btn-link" display_text_og="View%20All" href="#" href_og="%23" style="font-family: Jost, Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 15px; text-transform: none; text-decoration: none; color: rgb(172, 135, 99) !important;">View All</a>
+                      </div>
+                  </td>
+              </tr>
+              <!-- footer start-->
+              <tr>
+                  <td align="center" style="padding: 30px 0;">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style=" max-width: 78%; margin: 0 auto;">
+                          <tbody>
+                              <tr>
+                                  <td style="border-top: 1px solid #DDB67C; padding: 19px 0;">
+                                      <table align="center" cellpadding="0" cellspacing="0" style="text-align: center;" width="100%">
+                                          <tbody>
+                                              <tr>
+                                                  <td style="padding: 0 8px; display: inline-block;">
+                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 34px; height: 34px;">
+                                                          <!-- Change image src as per your requirements --><img alt="instagram" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/9bd25df479a646f7bdbc487361af4e73.png" style="width: 100%; height: 100%;" /></a>
+                                                  </td>
+                                                  <td style="padding: 0 8px; display: inline-block;">
+                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 34px; height: 34px;"><img alt="facebook" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/4caf5891eb8a4831a41d4894a47af5da.png" style="width: 100%; height: 100%;" /></a>
+                                                  </td>
+                                                  <td style="padding: 0 8px; display: inline-block;">
+                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 34px; height: 34px;"><img alt="x" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/5f782083c6c446ba832acd09adecb140.png" style="width: 100%; height: 100%;" /></a>
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td style="border-top: 1px solid #DDB67C;">
+                                      <p style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #909090; margin: 19px 0 21px;">For assistance, connect with us on social media or reach out to our support team at
+                                          <a data-renderer-mark="true" data-testid="link-with-safety" href="support@example.com" title="support@example.com">support@example.com</a>
+                                      </p>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                          <tbody>
+                                              <tr>
+                                                  <td style="padding: 0 5px;">
+                                                      <a href="#" style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #1E1E1E !important; text-decoration: none;">Privacy</a>
+                                                  </td>
+                                                  <td style="padding: 0 5px;">
+                                                      <a href="#" style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #1E1E1E !important; text-decoration: none;">Account</a>
+                                                  </td>
+                                                  <td style="padding: 0 5px;">
+                                                      <a href="#" style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #1E1E1E !important; text-decoration: none;">Unsubscribe</a>
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td style="border-top: 1px solid #DDB67C;">
+                                      <p style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #1E1E1E; padding-top:10px;">To opt out of promotional emails like this,
+                                          <a href="#" style="color:#1E1E1E;font-weight:bold;text-decoration:none;">unsubscribe here</a>
+                                      </p>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <!-- footer end-->
+          </tbody>
+      </table>
+  </body>
+  <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
 
-                    <p style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 20px;color:#909090; text-align: center; margin: 0; margin-bottom: 31px;">Take advantage of this exclusive offer just for you and enjoy 30% off your next purchase. It’s the perfect time to treat yourself to something special!</p>
-
-                    <a display_text_og="Shop%20Now" href="#" href_og="%23" style="background-color: rgb(172, 135, 99); font-family: Jost, Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 20px; text-align: center; text-transform: none; border-radius: 20px; text-decoration: none; max-width: 171px; padding: 10px 40px; color: rgb(255, 255, 255) !important;">Shop Now</a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div style="margin: 0 auto; width: 100%;">
-                        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
-                            <tbody>
-                                <tr>
-                                    <td style="width: 33%; vertical-align: top;">
-                                        <!-- product card -->
-                                        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="margin-bottom: 15px; padding: 0 5px;">
-                                            <tbody>
-                                                <tr>
-                                                    <td colspan="2">
-                                                        <div class="img-wrap">
-                                                            <!-- Change image src as per your requirements --><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Winback/product-1.png" style="width: -webkit-fill-available" /></div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td style="width: 60%; margin-bottom: 2px; vertical-align: top;">
-                                                        <h4 style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #252525; margin: 0;padding-right: 5px;">Radiance Boost Serum</h4>
-                                                    </td>
-                                                    <td style="width: 20%; vertical-align: top;">
-                                                        <p style="margin:0; color: #252525; font-family: 'Jost', Arial, sans-serif; font-size: 12px;font-weight: 300; line-height: 24px; text-align: right;"><span class="rupee-sign">$</span>1500</p>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td colspan="2">
-                                                        <p class="desc" style="font-family: 'Jost', Arial, sans-serif;text-transform: none; font-size: 8px; font-weight: 400; line-height: 13px; color: #909090; margin: 0; ">Brighten and hydrate your skin with this powerful, glow-enhancing serum.</p>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </td>
-                                    <td style="width: 33%; vertical-align: top;">
-                                        <!-- product card -->
-                                        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="margin-bottom: 15px; padding: 0 5px;">
-                                            <tbody>
-                                                <tr>
-                                                    <td colspan="2">
-                                                        <div class="img-wrap">
-                                                            <!-- Change image src as per your requirements --><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Winback/product-1.png" style="width: -webkit-fill-available" /></div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td style="width: 60%; margin-bottom: 2px; vertical-align: top;">
-                                                        <h4 style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #252525; margin: 0;padding-right: 5px;">Nourishing Repair Creeam</h4>
-                                                    </td>
-                                                    <td style="width: 20%; vertical-align: top;">
-                                                        <p style="margin:0; color: #252525; font-family: 'Jost', Arial, sans-serif; font-size: 12px;font-weight: 300; line-height: 24px; text-align: right;"><span class="rupee-sign">$</span>1500</p>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td colspan="2">
-                                                        <p class="desc" style="font-family: 'Jost', Arial, sans-serif;text-transform: none; font-size: 8px; font-weight: 400; line-height: 13px; color: #909090; margin: 0; ">Rejuvenate and repair your skin with this rich, soothing cream.</p>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </td>
-                                    <td style="width: 33%; vertical-align: top;">
-                                        <!-- product card -->
-                                        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="margin-bottom: 15px; padding: 0 5px;">
-                                            <tbody>
-                                                <tr>
-                                                    <td colspan="2">
-                                                        <div class="img-wrap">
-                                                            <!-- Change image src as per your requirements --><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Winback/product-1.png" style="width: -webkit-fill-available" /></div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td style="width: 60%; margin-bottom: 2px; vertical-align: top;">
-                                                        <h4 style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #252525; margin: 0;padding-right: 5px;">Pure Glow Face Mask</h4>
-                                                    </td>
-                                                    <td style="width: 20%; vertical-align: top;">
-                                                        <p style="margin:0; color: #252525; font-family: 'Jost', Arial, sans-serif; font-size: 12px;font-weight: 300; line-height: 24px; text-align: right;"><span class="rupee-sign">$</span>1500</p>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td colspan="2">
-                                                        <p class="desc" style="font-family: 'Jost', Arial, sans-serif;text-transform: none; font-size: 8px; font-weight: 400; line-height: 13px; color: #909090; margin: 0; ">Deep cleanse and refresh with this revitalizing, skin-loving face mask.</p>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div style="max-width: 90%; margin: 0 auto; width: 100%; text-align: right;">
-                        <a class="btn-link" display_text_og="View%20All" href="#" href_og="%23" style="font-family: Jost, Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 15px; text-transform: none; text-decoration: none; color: rgb(172, 135, 99) !important;">View All</a>
-                    </div>
-                </td>
-            </tr>
-            <!-- footer start-->
-            <tr>
-                <td align="center" style="padding: 30px 0;">
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style=" max-width: 78%; margin: 0 auto;">
-                        <tbody>
-                            <tr>
-                                <td style="border-top: 1px solid #DDB67C; padding: 19px 0;">
-                                    <table align="center" cellpadding="0" cellspacing="0" style="text-align: center;" width="100%">
-                                        <tbody>
-                                            <tr>
-                                                <td style="padding: 0 8px; display: inline-block;">
-                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 34px; height: 34px;">
-                                                        <!-- Change image src as per your requirements --><img alt="instagram" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/9bd25df479a646f7bdbc487361af4e73.png" style="width: 100%; height: 100%;" /></a>
-                                                </td>
-                                                <td style="padding: 0 8px; display: inline-block;">
-                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 34px; height: 34px;"><img alt="facebook" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/4caf5891eb8a4831a41d4894a47af5da.png" style="width: 100%; height: 100%;" /></a>
-                                                </td>
-                                                <td style="padding: 0 8px; display: inline-block;">
-                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 34px; height: 34px;"><img alt="x" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/5f782083c6c446ba832acd09adecb140.png" style="width: 100%; height: 100%;" /></a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="border-top: 1px solid #DDB67C;">
-                                    <p style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #909090; margin: 19px 0 21px;">For assistance, connect with us on social media or reach out to our support team at
-                                        <a data-renderer-mark="true" data-testid="link-with-safety" href="support@example.com" title="support@example.com">support@example.com</a>
-                                    </p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
-                                        <tbody>
-                                            <tr>
-                                                <td style="padding: 0 5px;">
-                                                    <a href="#" style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #1E1E1E !important; text-decoration: none;">Privacy</a>
-                                                </td>
-                                                <td style="padding: 0 5px;">
-                                                    <a href="#" style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #1E1E1E !important; text-decoration: none;">Account</a>
-                                                </td>
-                                                <td style="padding: 0 5px;">
-                                                    <a href="#" style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #1E1E1E !important; text-decoration: none;">Unsubscribe</a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="border-top: 1px solid #DDB67C;">
-                                    <p style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #1E1E1E; padding-top:10px;">To opt out of promotional emails like this,
-                                        <a href="#" style="color:#1E1E1E;font-weight:bold;text-decoration:none;">unsubscribe here</a>
-                                    </p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <!-- footer end-->
-        </tbody>
-    </table>
-</body>
-<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
-
-</html>
-```
-
+  </html>
+  ```
 </Accordion>
 
 ## Subscription Renewal Reminder Template
@@ -4882,192 +4868,190 @@ This confirmation or promotional email template is used to acknowledge new subsc
 <Image align="center" alt="Sample Subscription FRenewal Reminder Template" border={true} caption="Sample Subscription Renewal Reminder Template" src="https://files.readme.io/49d165aab9c413c00f0ce66cdb32f0db944fc50676c79d291f99187be4c1a8b1-Subscription_Renewal_Email_Template.png" width="25% " />
 
 <Accordion title="My Accordion Title">
+  ### Use Case Examples
 
-### Use Case Examples
+  Confirms a successful subscription or entices users to upgrade by highlighting plan benefits and encouraging exploration of exclusive features.
 
-Confirms a successful subscription or entices users to upgrade by highlighting plan benefits and encouraging exploration of exclusive features.
+  ### Template Customization Options
 
-### Template Customization Options
+  * [Replace the Logo](doc:ootb-email-templates#replace-logo)
+  * [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+  * [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#call-to-actions-ctas)
+  * [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+  * [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+  * [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
 
-* [Replace the Logo](doc:ootb-email-templates#replace-logo)
-* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#call-to-actions-ctas)
-* [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-* [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-* [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+  ### Template Code
 
-### Template Code
+  ```html
+  <!doctype html="">
+  <html lang="en">
 
-```html
-<!doctype html="">
-<html lang="en">
+  <head>
+      <title>Subscription Renewal</title>
+      <style type="text/css">
+          @font-face {             font-family: 'Jost', Arial;             src: url(\\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Light.ttf\\') format(\\'woff\\');             font-style: normal;             font-weight: 300;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Regular.ttf\\') format(\\'woff\\');             font-style: normal;             font-weight: 400;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Medium.ttf\\') format(\\'woff\\');             font-style: normal;             font-weight: 500;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-SemiBold.ttf\\') format(\\'woff\\');             font-style: normal;             font-weight: 600;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Bold.ttf\\') format(\\'woff\\');             font-style: normal;             font-weight: 700;         }                  @media screen and (max-width: 480px) {             .main {                 max-width: 100% !important;             }                        .header-wrap{                 padding: 15px 0 !important;             }             .logo {                 width: 130px !important;                 height: 50px !important;             }             .benefit-wrap{                 max-width: 100% !important;                 padding: 30px 10px !important;             }             .banner-title{                 font-size: 28px !important;                 line-height: 30px !important;             }             .banner-subtitle{                 font-size: 32px !important;                 line-height: 36px !important;                 margin: 15px 0 !important;             }             .banner-desc{                 line-height: 20px !important;             }             .amt{                 font-size: 22px !important;                 line-height: 24px !important;             }             .no-year{                 font-size: 13px !important;                 line-height: 16px !important;             }             .list{                 font-size: 12px !important;                 line-height: 18px !important;             }             .sec-title{                 margin: 0 0 30px !important;                 font-size: 18px !important;             }             .line{                 width: 26% !important;             }             .link{                 font-size: 8px !important;                 line-height: 12px !important;             }             .link img{                 width: 5px !important;                 height: 5px !important;             }             .cta{                 padding: 7px 14px !important;                 font-size: 12px !important;                 line-height: 18px !important;             }             .content-spacing{                 padding: 30px 25px 50px !important;             }         }          @media screen and (max-width: 360px) {             .line{                 width: 18% !important;             }         }
+      </style>
+  </head>
 
-<head>
-    <title>Subscription Renewal</title>
-    <style type="text/css">
-        @font-face {             font-family: 'Jost', Arial;             src: url(\\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Light.ttf\\') format(\\'woff\\');             font-style: normal;             font-weight: 300;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Regular.ttf\\') format(\\'woff\\');             font-style: normal;             font-weight: 400;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Medium.ttf\\') format(\\'woff\\');             font-style: normal;             font-weight: 500;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-SemiBold.ttf\\') format(\\'woff\\');             font-style: normal;             font-weight: 600;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Bold.ttf\\') format(\\'woff\\');             font-style: normal;             font-weight: 700;         }                  @media screen and (max-width: 480px) {             .main {                 max-width: 100% !important;             }                        .header-wrap{                 padding: 15px 0 !important;             }             .logo {                 width: 130px !important;                 height: 50px !important;             }             .benefit-wrap{                 max-width: 100% !important;                 padding: 30px 10px !important;             }             .banner-title{                 font-size: 28px !important;                 line-height: 30px !important;             }             .banner-subtitle{                 font-size: 32px !important;                 line-height: 36px !important;                 margin: 15px 0 !important;             }             .banner-desc{                 line-height: 20px !important;             }             .amt{                 font-size: 22px !important;                 line-height: 24px !important;             }             .no-year{                 font-size: 13px !important;                 line-height: 16px !important;             }             .list{                 font-size: 12px !important;                 line-height: 18px !important;             }             .sec-title{                 margin: 0 0 30px !important;                 font-size: 18px !important;             }             .line{                 width: 26% !important;             }             .link{                 font-size: 8px !important;                 line-height: 12px !important;             }             .link img{                 width: 5px !important;                 height: 5px !important;             }             .cta{                 padding: 7px 14px !important;                 font-size: 12px !important;                 line-height: 18px !important;             }             .content-spacing{                 padding: 30px 25px 50px !important;             }         }          @media screen and (max-width: 360px) {             .line{                 width: 18% !important;             }         }
-    </style>
-</head>
+  <body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" data-new-gr-c-s-loaded="14.1242.0" style="margin: 0px; padding: 0px; cursor: auto;">
+      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 600px; margin: 0 auto; background-color: #FFFFFF; font-family: 'Jost', Arial, sans-serif; font-weight: 400;" width="100%">
+          <!-- header start-->
+          <tbody>
+              <tr>
+                  <td class="header-wrap" style="text-align: center; position: relative; padding: 20px 0;">
+                      <!-- Change image src as per your requirements --><img alt="Logo" class="logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="display: inline-block; width: 150px; height: 80px; object-fit: contain;" /></td>
+              </tr>
+              <!-- header end-->
+              <!-- banner section -->
+              <tr>
+                  <td style=" background: #FF5252;"><img alt="banner image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Subscription/banner.png" style="width: 100%; height: 100%; object-fit: cover;" /></td>
+              </tr>
+              <tr>
+                  <td style="background: #FF5252; padding: 5px 20px 10px;">
+                      <h3 style="margin:0; font-family: 'Jost', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 27px; text-align: center; color: #FFFFFF; text-transform: uppercase;">YOUR PLAN ENDS ON FEB 15 2025</h3>
+                  </td>
+              </tr>
+              <!-- banner section -->
+              <tr>
+                  <td>
+                      <table border="0" cellpadding="0" cellspacing="0" class="main" style="max-width: 95%; margin: 0 auto;" width="100%">
+                          <tbody>
+                              <tr>
+                                  <td class="content-spacing" style="background: #FFFFFF; padding: 30px 36px 50px; text-align: center;">
+                                      <h2 class="banner-title" style="margin:0; font-size: 30px;font-weight: 600;line-height: 34px; text-transform: none;color: #000000;">Hi Emily,</h2>
 
-<body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" data-new-gr-c-s-loaded="14.1242.0" style="margin: 0px; padding: 0px; cursor: auto;">
-    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 600px; margin: 0 auto; background-color: #FFFFFF; font-family: 'Jost', Arial, sans-serif; font-weight: 400;" width="100%">
-        <!-- header start-->
-        <tbody>
-            <tr>
-                <td class="header-wrap" style="text-align: center; position: relative; padding: 20px 0;">
-                    <!-- Change image src as per your requirements --><img alt="Logo" class="logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="display: inline-block; width: 150px; height: 80px; object-fit: contain;" /></td>
-            </tr>
-            <!-- header end-->
-            <!-- banner section -->
-            <tr>
-                <td style=" background: #FF5252;"><img alt="banner image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Subscription/banner.png" style="width: 100%; height: 100%; object-fit: cover;" /></td>
-            </tr>
-            <tr>
-                <td style="background: #FF5252; padding: 5px 20px 10px;">
-                    <h3 style="margin:0; font-family: 'Jost', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 27px; text-align: center; color: #FFFFFF; text-transform: uppercase;">YOUR PLAN ENDS ON FEB 15 2025</h3>
-                </td>
-            </tr>
-            <!-- banner section -->
-            <tr>
-                <td>
-                    <table border="0" cellpadding="0" cellspacing="0" class="main" style="max-width: 95%; margin: 0 auto;" width="100%">
-                        <tbody>
-                            <tr>
-                                <td class="content-spacing" style="background: #FFFFFF; padding: 30px 36px 50px; text-align: center;">
-                                    <h2 class="banner-title" style="margin:0; font-size: 30px;font-weight: 600;line-height: 34px; text-transform: none;color: #000000;">Hi Emily,</h2>
+                                      <h3 class="banner-subtitle" style="color: #5F5F5F;  font-size: 40px; font-weight: 400; line-height: 58px; margin: 0 0 13px;">Renew your subscription</h3>
 
-                                    <h3 class="banner-subtitle" style="color: #5F5F5F;  font-size: 40px; font-weight: 400; line-height: 58px; margin: 0 0 13px;">Renew your subscription</h3>
+                                      <p class="banner-desc" style="color: #4F4F4F; text-transform: none; font-size: 14px;font-weight: 400;line-height: 27px;">Don’t let your plan expire! Continue enjoying uninterrupted access to free delivery and priority support. Renew your subscription now!</p>
 
-                                    <p class="banner-desc" style="color: #4F4F4F; text-transform: none; font-size: 14px;font-weight: 400;line-height: 27px;">Don’t let your plan expire! Continue enjoying uninterrupted access to free delivery and priority support. Renew your subscription now!</p>
+                                      <a class="cta" href="#" style="display: inline-block; text-transform: uppercase; text-decoration: none; padding: 7px 20px; background: #FF5252;font-size: 14px; font-weight: 400; line-height: 27px; text-align: center; color: #FFFFFF !important; box-shadow: 0px 4px 4px 0px #00000040;">Renew now</a>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      <table border="0" cellpadding="0" cellspacing="0" class="main" style="max-width: 95%; margin: 0 auto; background: #FFFFFF;" width="100%">
+                          <tbody>
+                              <tr>
+                                  <td><img alt="banner image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Subscription/benifit-img.png" style="width: 100%; height: 100%; object-fit: cover;" /></td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      <table border="0" cellpadding="0" cellspacing="0" class="benefit-wrap" style="max-width:95%; margin: 0 auto 40px; background: #FFFFFF; padding: 50px 0  60px;" width="100%">
+                          <tbody>
+                              <tr>
+                                  <td colspan="3">
+                                      <h2 class="sec-title" style="text-transform: uppercase; color: #000000; margin: 0 0 50px; font-size: 20px; font-weight: 400;  line-height: 20px; text-align: center;">want to switch plans?</h2>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td class="card" style="padding: 0 10px; width: 33%;">
+                                      <h3 class="amt" style="font-size: 28px; font-weight: 500; line-height: 27px; color: rgb(0, 0, 0); margin: 0px 0px 10px;">$99/ month</h3>
 
-                                    <a class="cta" href="#" style="display: inline-block; text-transform: uppercase; text-decoration: none; padding: 7px 20px; background: #FF5252;font-size: 14px; font-weight: 400; line-height: 27px; text-align: center; color: #FFFFFF !important; box-shadow: 0px 4px 4px 0px #00000040;">Renew now</a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <table border="0" cellpadding="0" cellspacing="0" class="main" style="max-width: 95%; margin: 0 auto; background: #FFFFFF;" width="100%">
-                        <tbody>
-                            <tr>
-                                <td><img alt="banner image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Subscription/benifit-img.png" style="width: 100%; height: 100%; object-fit: cover;" /></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <table border="0" cellpadding="0" cellspacing="0" class="benefit-wrap" style="max-width:95%; margin: 0 auto 40px; background: #FFFFFF; padding: 50px 0  60px;" width="100%">
-                        <tbody>
-                            <tr>
-                                <td colspan="3">
-                                    <h2 class="sec-title" style="text-transform: uppercase; color: #000000; margin: 0 0 50px; font-size: 20px; font-weight: 400;  line-height: 20px; text-align: center;">want to switch plans?</h2>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="card" style="padding: 0 10px; width: 33%;">
-                                    <h3 class="amt" style="font-size: 28px; font-weight: 500; line-height: 27px; color: rgb(0, 0, 0); margin: 0px 0px 10px;">$99/ month</h3>
+                                      <p class="no-year" style="font-size: 18px; font-weight: 400; line-height: 27px; color: #000000; text-transform: uppercase;">silver</p>
 
-                                    <p class="no-year" style="font-size: 18px; font-weight: 400; line-height: 27px; color: #000000; text-transform: uppercase;">silver</p>
+                                      <ul class="list" style="list-style: none; margin: 0; padding: 0; color: #6F6C6C; font-size: 14px; font-weight: 400; line-height: 27px;">
+                                          <li class="item" style="margin-bottom: 5px;">- Free delivery on orders above $50</li>
+                                          <li class="item" style="margin-bottom: 5px;">- Early access to sales</li>
+                                          <li class="item" style="margin-bottom: 5px;">- Flat 10% off</li>
+                                      </ul>
 
-                                    <ul class="list" style="list-style: none; margin: 0; padding: 0; color: #6F6C6C; font-size: 14px; font-weight: 400; line-height: 27px;">
-                                        <li class="item" style="margin-bottom: 5px;">- Free delivery on orders above $50</li>
-                                        <li class="item" style="margin-bottom: 5px;">- Early access to sales</li>
-                                        <li class="item" style="margin-bottom: 5px;">- Flat 10% off</li>
-                                    </ul>
+                                      <a class="link" href="#" style="font-size: 14px; font-weight: 400; line-height: 20px; text-transform: uppercase; color: #FF5252 !important; text-decoration: none; margin-top: 10px;display: inline-block;">Renew now <img src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Subscription/arrow.png" style="width: 15px; height: 10px;" /></a>
+                                  </td>
+                                  <td class="card" style="padding: 0 10px; width: 33%;">
+                                      <h2 class="amt" style="font-size: 28px; font-weight: 500; line-height: 27px;color: #000000; margin: 0 0 10px;">$199/ month</h2>
 
-                                    <a class="link" href="#" style="font-size: 14px; font-weight: 400; line-height: 20px; text-transform: uppercase; color: #FF5252 !important; text-decoration: none; margin-top: 10px;display: inline-block;">Renew now <img src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Subscription/arrow.png" style="width: 15px; height: 10px;" /></a>
-                                </td>
-                                <td class="card" style="padding: 0 10px; width: 33%;">
-                                    <h2 class="amt" style="font-size: 28px; font-weight: 500; line-height: 27px;color: #000000; margin: 0 0 10px;">$199/ month</h2>
+                                      <p class="no-year" style="font-size: 18px; font-weight: 400; line-height: 27px; color: #000000; text-transform: uppercase;">gold</p>
 
-                                    <p class="no-year" style="font-size: 18px; font-weight: 400; line-height: 27px; color: #000000; text-transform: uppercase;">gold</p>
+                                      <ul class="list" style="list-style: none; margin: 0; padding: 0; color: #6F6C6C; font-size: 14px; font-weight: 400; line-height: 27px;">
+                                          <li class="item" style="margin-bottom: 5px;">- Free delivery on orders above $25</li>
+                                          <li class="item" style="margin-bottom: 5px;">- Early access to sales</li>
+                                          <li class="item" style="margin-bottom: 5px;">- Flat 15% off</li>
+                                      </ul>
 
-                                    <ul class="list" style="list-style: none; margin: 0; padding: 0; color: #6F6C6C; font-size: 14px; font-weight: 400; line-height: 27px;">
-                                        <li class="item" style="margin-bottom: 5px;">- Free delivery on orders above $25</li>
-                                        <li class="item" style="margin-bottom: 5px;">- Early access to sales</li>
-                                        <li class="item" style="margin-bottom: 5px;">- Flat 15% off</li>
-                                    </ul>
+                                      <a class="link" href="#" style="font-size: 14px; font-weight: 400; line-height: 20px; text-transform: uppercase; color: #FF5252 !important; text-decoration: none; margin-top: 10px;display: inline-block;">REnew now <img src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Subscription/arrow.png" style="width: 15px; height: 10px;" /></a>
+                                  </td>
+                                  <td class="card" style="padding: 0 10px; width: 33%;">
+                                      <h2 class="amt" style="font-size: 28px; font-weight: 500; line-height: 27px;color: #000000; margin: 0 0 10px;">$299/ month</h2>
 
-                                    <a class="link" href="#" style="font-size: 14px; font-weight: 400; line-height: 20px; text-transform: uppercase; color: #FF5252 !important; text-decoration: none; margin-top: 10px;display: inline-block;">REnew now <img src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Subscription/arrow.png" style="width: 15px; height: 10px;" /></a>
-                                </td>
-                                <td class="card" style="padding: 0 10px; width: 33%;">
-                                    <h2 class="amt" style="font-size: 28px; font-weight: 500; line-height: 27px;color: #000000; margin: 0 0 10px;">$299/ month</h2>
+                                      <p class="no-year" style="font-size: 18px; font-weight: 400; line-height: 27px; color: #000000; text-transform: uppercase;">premium</p>
 
-                                    <p class="no-year" style="font-size: 18px; font-weight: 400; line-height: 27px; color: #000000; text-transform: uppercase;">premium</p>
+                                      <ul class="list" style="list-style: none; margin: 0; padding: 0; color: #6F6C6C; font-size: 14px; font-weight: 400; line-height: 27px;">
+                                          <li class="item" style="margin-bottom: 5px;">- Free delivery on all orders</li>
+                                          <li class="item" style="margin-bottom: 5px;">- Free one-day delivery</li>
+                                          <li class="item" style="margin-bottom: 5px;">- Flat 30% off</li>
+                                      </ul>
 
-                                    <ul class="list" style="list-style: none; margin: 0; padding: 0; color: #6F6C6C; font-size: 14px; font-weight: 400; line-height: 27px;">
-                                        <li class="item" style="margin-bottom: 5px;">- Free delivery on all orders</li>
-                                        <li class="item" style="margin-bottom: 5px;">- Free one-day delivery</li>
-                                        <li class="item" style="margin-bottom: 5px;">- Flat 30% off</li>
-                                    </ul>
+                                      <a class="link" display_text_og="RENIVEW%20NOW" href="#" href_og="%23" style="font-size: 14px; font-weight: 400; line-height: 20px; text-transform: uppercase; text-decoration: none; margin-top: 10px; display: inline-block; color: rgb(255, 82, 82) !important;">RENEW NOW</a>
 
-                                    <a class="link" display_text_og="RENIVEW%20NOW" href="#" href_og="%23" style="font-size: 14px; font-weight: 400; line-height: 20px; text-transform: uppercase; text-decoration: none; margin-top: 10px; display: inline-block; color: rgb(255, 82, 82) !important;">RENEW NOW</a>
+                                      <a class="link" href="#" style="font-size: 14px; font-weight: 400; line-height: 20px; text-transform: uppercase; color: #FF5252 !important; text-decoration: none; margin-top: 10px;display: inline-block;"><img src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Subscription/arrow.png" style="width: 15px; height: 10px;" /></a>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <!-- footer start-->
+              <tr>
+                  <td align="center" style="border-top: 9px solid #FF5252; padding-top: 40px;">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" class="footer-conatiner" role="presentation" style="max-width: 95%; margin: 0 auto; background: #FF5252; padding: 37px 0 39px; ">
+                          <tbody>
+                              <tr>
+                                  <td style="padding: 0;">
+                                      <table align="center" border="0" cellpadding="0" cellspacing="0" style="text-align: center;" width="100%">
+                                          <tbody>
+                                              <tr>
+                                                  <td class="line" style="width: 35%; height: 1px; background: #FFFFFF; display: inline-block; vertical-align: middle;"> </td>
+                                                  <td style="padding: 0 14px; display: inline-block;">
+                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 25px; height: 25px; ">
+                                                          <!-- Change image src as per your requirements --><img alt="instagram" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/3c09a826b3cd4920aa1230c7df32f91b.png" style="width: 100%; height: 100%;" /></a>
+                                                  </td>
+                                                  <td style="padding: 0 14px; display: inline-block;">
+                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 25px; height: 25px;"><img alt="facebook" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/18c1b92ff17443f38388d771deef565a.png" style="width: 100%; height: 100%;" /></a>
+                                                  </td>
+                                                  <td style="padding: 0 14px; display: inline-block;">
+                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 25px; height: 25px;"><img alt="x" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/a971a978e8544cbfb0a0f3456c21463e.png" style="width: 100%; height: 100%;" /></a>
+                                                  </td>
+                                                  <td class="line" style="width: 35%; height: 1px; background: #FFFFFF; display: inline-block; vertical-align: middle;"> </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <p style="font-size: 14px; font-weight: 400; line-height: 27px; text-align: center; color: #FFFFFF; margin: 31px auto 0; max-width: 73%; text-transform: none;">For assistance, connect with us on social media or reach out to our support team at
+                                          <a data-renderer-mark="true" data-testid="link-with-safety" href="support@example.com" style="color: #FFFFFF;" title="support@example.com">support@example.com</a>
+                                      </p>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <p style="font-size: 14px; font-weight: 400; line-height: 27px; text-align: center; color: #FFFFFF; margin: 31px auto 0; max-width: 73%; text-transform: none;">To opt out of promotional emails like this,
+                                          <a href="#" style="color:#fff;font-weight:bold;text-decoration:none;">unsubscribe here</a>
+                                      </p>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <!-- footer end-->
+          </tbody>
+      </table>
+  </body>
+  <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
 
-                                    <a class="link" href="#" style="font-size: 14px; font-weight: 400; line-height: 20px; text-transform: uppercase; color: #FF5252 !important; text-decoration: none; margin-top: 10px;display: inline-block;"><img src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Subscription/arrow.png" style="width: 15px; height: 10px;" /></a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <!-- footer start-->
-            <tr>
-                <td align="center" style="border-top: 9px solid #FF5252; padding-top: 40px;">
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" class="footer-conatiner" role="presentation" style="max-width: 95%; margin: 0 auto; background: #FF5252; padding: 37px 0 39px; ">
-                        <tbody>
-                            <tr>
-                                <td style="padding: 0;">
-                                    <table align="center" border="0" cellpadding="0" cellspacing="0" style="text-align: center;" width="100%">
-                                        <tbody>
-                                            <tr>
-                                                <td class="line" style="width: 35%; height: 1px; background: #FFFFFF; display: inline-block; vertical-align: middle;"> </td>
-                                                <td style="padding: 0 14px; display: inline-block;">
-                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 25px; height: 25px; ">
-                                                        <!-- Change image src as per your requirements --><img alt="instagram" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/3c09a826b3cd4920aa1230c7df32f91b.png" style="width: 100%; height: 100%;" /></a>
-                                                </td>
-                                                <td style="padding: 0 14px; display: inline-block;">
-                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 25px; height: 25px;"><img alt="facebook" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/18c1b92ff17443f38388d771deef565a.png" style="width: 100%; height: 100%;" /></a>
-                                                </td>
-                                                <td style="padding: 0 14px; display: inline-block;">
-                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 25px; height: 25px;"><img alt="x" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/a971a978e8544cbfb0a0f3456c21463e.png" style="width: 100%; height: 100%;" /></a>
-                                                </td>
-                                                <td class="line" style="width: 35%; height: 1px; background: #FFFFFF; display: inline-block; vertical-align: middle;"> </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p style="font-size: 14px; font-weight: 400; line-height: 27px; text-align: center; color: #FFFFFF; margin: 31px auto 0; max-width: 73%; text-transform: none;">For assistance, connect with us on social media or reach out to our support team at
-                                        <a data-renderer-mark="true" data-testid="link-with-safety" href="support@example.com" style="color: #FFFFFF;" title="support@example.com">support@example.com</a>
-                                    </p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p style="font-size: 14px; font-weight: 400; line-height: 27px; text-align: center; color: #FFFFFF; margin: 31px auto 0; max-width: 73%; text-transform: none;">To opt out of promotional emails like this,
-                                        <a href="#" style="color:#fff;font-weight:bold;text-decoration:none;">unsubscribe here</a>
-                                    </p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <!-- footer end-->
-        </tbody>
-    </table>
-</body>
-<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
-
-</html>
-```
-
+  </html>
+  ```
 </Accordion>
 
 ## Scratch Card Template
@@ -5077,87 +5061,85 @@ This is an interactive email template designed to gamify the user experience by 
 <Image align="center" alt="Sample Scratch Card Template" border={true} caption="Sample Scratch Card Template" src="https://files.readme.io/24e9bc9f41472d95c1db40a20c5b28651cfce5332851f800232fcea0b779782e-Scratch_Card_HTML.png" width="25% " />
 
 <Accordion title="Expand to know more about the template.">
+  ### Use Case Examples
 
-### Use Case Examples
+  * Engage users during festive or seasonal campaigns with surprise offers.
+  * Reactivate dormant users by giving them a chance to win a reward.
+  * Reward loyal customers with a fun, interactive coupon reveal.
+  * Launch a limited-time “scratch-to-win” contest to drive urgency and clicks.
 
-* Engage users during festive or seasonal campaigns with surprise offers.
-* Reactivate dormant users by giving them a chance to win a reward.
-* Reward loyal customers with a fun, interactive coupon reveal.
-* Launch a limited-time “scratch-to-win” contest to drive urgency and clicks.
+  ### Template Customization Options
 
-### Template Customization Options
+  * [Replace the Logo](doc:ootb-email-templates#replace-logo)
+  * [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+  * [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#call-to-actions-ctas)
+  * [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+  * [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+  * [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
 
-* [Replace the Logo](doc:ootb-email-templates#replace-logo)
-* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#call-to-actions-ctas)
-* [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-* [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-* [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+  ### Template Code
 
-### Template Code
+  ```html
+  <!doctype html="">
+  <html lang="en">
 
-```html
-<!doctype html="">
-<html lang="en">
+  <head>
+      <title>Scratch Card</title>
+      <link href="https://fonts.googleapis.com" rel="preconnect" />
+      <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet" />
+      <style type="text/css">
+          @media screen and (max-width: 480px) {             .container {                 max-width: 100% !important;             }             .heading{                 font-size: 38px !important;                 line-height: 60px !important;             }             .coupon{                 font-size: 24px !important;                 line-height: 60px !important;             }             .coupon-code{                 font-size: 32px !important;                 line-height: 46px !important;             }         }
+      </style>
+  </head>
 
-<head>
-    <title>Scratch Card</title>
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet" />
-    <style type="text/css">
-        @media screen and (max-width: 480px) {             .container {                 max-width: 100% !important;             }             .heading{                 font-size: 38px !important;                 line-height: 60px !important;             }             .coupon{                 font-size: 24px !important;                 line-height: 60px !important;             }             .coupon-code{                 font-size: 32px !important;                 line-height: 46px !important;             }         }
-    </style>
-</head>
+  <body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" data-new-gr-c-s-loaded="14.1242.0" style="font-family: 'Poppins', Arial, sans-serif; font-weight: 400; margin: 0; padding: 0;">
+      <table border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 600px; margin: 0 auto; background: url(https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Scratch%20Card/bg.png);background-repeat: no-repeat; background-position: center; "
+      width="100%">
+          <!-- header start-->
+          <tbody>
+              <tr>
+                  <td style="text-align: center; vertical-align: middle; padding: 40px;">
+                      <!-- Change image src as per your requirements -->
+                      <div class="logo" style="background: url(https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Scratch%20Card/logobg.png);background-repeat: no-repeat; background-position: center;"><img alt="Logo" class="logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="display: inline-block; width: 127px; height: 58px; object-fit: cover;" /></div>
+                  </td>
+              </tr>
+              <!-- header end-->
+              <!-- scrtach card start-->
+              <tr>
+                  <td class="product-sec" style="text-align: center; padding:0px 40px 40px 40px; display: block;">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; width: 100%;">
+                          <tbody>
+                              <tr>
+                                  <td style="text-align: center;">
+                                      <h2 class="heading" style="color:#ffffff; font-family: 'Poppins', Arial, sans-serif; font-size: 45px; font-weight: 700; line-height: 68px; margin: 0 auto; padding-bottom: 20px;">Mid-Season Sale</h2>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td style="padding:0px 10px;"><img alt="banner image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Scratch%20Card/offer.png" style="width: 100%; height: 100%; object-fit: cover;" /></td>
+                              </tr>
+                              <tr>
+                                  <td style="text-align: center;">
+                                      <p class="coupon" style="color:#ffffff; font-family: 'Poppins', Arial, sans-serif; font-size: 34px; font-weight: 600; line-height: 80px; margin: 0 auto; text-transform: uppercase; line-height: 44px;">Scratch to see code</p>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td style="text-align: center; padding-top: 20px;">
+                                      <a href="https://in1.dashboard.clevertap.com/redirect-to-login.html" style="display: inline-block; max-width: 90%; max-height: 150px; margin: 0 auto;"><img alt="Scratch card" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Scratch%20Card/Property%201%3DComponent%2068.png" style="width: 100%; height: 100%; object-fit: contain;" /></a>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <!-- scrtach card end-->
+          </tbody>
+      </table>
+  </body>
+  <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
 
-<body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" data-new-gr-c-s-loaded="14.1242.0" style="font-family: 'Poppins', Arial, sans-serif; font-weight: 400; margin: 0; padding: 0;">
-    <table border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 600px; margin: 0 auto; background: url(https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Scratch%20Card/bg.png);background-repeat: no-repeat; background-position: center; "
-    width="100%">
-        <!-- header start-->
-        <tbody>
-            <tr>
-                <td style="text-align: center; vertical-align: middle; padding: 40px;">
-                    <!-- Change image src as per your requirements -->
-                    <div class="logo" style="background: url(https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Scratch%20Card/logobg.png);background-repeat: no-repeat; background-position: center;"><img alt="Logo" class="logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="display: inline-block; width: 127px; height: 58px; object-fit: cover;" /></div>
-                </td>
-            </tr>
-            <!-- header end-->
-            <!-- scrtach card start-->
-            <tr>
-                <td class="product-sec" style="text-align: center; padding:0px 40px 40px 40px; display: block;">
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; width: 100%;">
-                        <tbody>
-                            <tr>
-                                <td style="text-align: center;">
-                                    <h2 class="heading" style="color:#ffffff; font-family: 'Poppins', Arial, sans-serif; font-size: 45px; font-weight: 700; line-height: 68px; margin: 0 auto; padding-bottom: 20px;">Mid-Season Sale</h2>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="padding:0px 10px;"><img alt="banner image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Scratch%20Card/offer.png" style="width: 100%; height: 100%; object-fit: cover;" /></td>
-                            </tr>
-                            <tr>
-                                <td style="text-align: center;">
-                                    <p class="coupon" style="color:#ffffff; font-family: 'Poppins', Arial, sans-serif; font-size: 34px; font-weight: 600; line-height: 80px; margin: 0 auto; text-transform: uppercase; line-height: 44px;">Scratch to see code</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="text-align: center; padding-top: 20px;">
-                                    <a href="https://in1.dashboard.clevertap.com/redirect-to-login.html" style="display: inline-block; max-width: 90%; max-height: 150px; margin: 0 auto;"><img alt="Scratch card" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Scratch%20Card/Property%201%3DComponent%2068.png" style="width: 100%; height: 100%; object-fit: contain;" /></a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <!-- scrtach card end-->
-        </tbody>
-    </table>
-</body>
-<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
-
-</html>
-```
-
+  </html>
+  ```
 </Accordion>
 
 ## Welcome Mailer Template
@@ -5167,367 +5149,365 @@ A warm onboarding email template greets new users, introduces your brand, and gu
 <Image align="center" alt="Sample Welcome Mailer Tempaltes" border={true} caption="Sample Welcome Mailer Templates" src="https://files.readme.io/2e474cae87b50fdc4ee57e01a596acebbc0617e48be7f189ebc6013d79575f20-Welcome_Email_1__2_HTML.png" width="65% " />
 
 <Accordion title="My Accordion Title" icon="fa-info-circle">
+  ### Use Case Examples
 
-### Use Case Examples
+  * Introduces new subscribers to the brand
+  * Highlights key benefits of your product and encourages first engagement or purchases.
 
-* Introduces new subscribers to the brand
-* Highlights key benefits of your product and encourages first engagement or purchases.
+  ### Template Customization Options
 
-### Template Customization Options
+  * [Replace the Logo](doc:ootb-email-templates#replace-logo)
+  * [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+  * [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#call-to-actions-ctas)
+  * [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+  * [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+  * [Update the Privacy Policy](doc:ootb-email-templates#update-privacy-policy)
+  * [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
 
-* [Replace the Logo](doc:ootb-email-templates#replace-logo)
-* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#call-to-actions-ctas)
-* [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-* [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-* [Update the Privacy Policy](doc:ootb-email-templates#update-privacy-policy)
-* [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+  ### Template Code
 
-### Template Code
+  ```html Variant 1
+  <!doctype html="">
+  <html lang="en">
 
-```html Variant 1
-<!doctype html="">
-<html lang="en">
+  <head>
+      <title></title>
+      <link href="https://fonts.googleapis.com" rel="preconnect" />
+      <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet" />
+      <style type="text/css">
+          * { 			margin: 0; 			padding: 0; 		}  		@media only screen and (max-width:480px) { 			.title { 				font-size: 26px !important; 				line-height: 36px !important; 				margin-top: 25px !important; 			}  			.sub-title { 				margin-top: 10px !important; 			}  			.f-desc { 				line-height: 20px; 			}  			.detail-block .d-desc { 				max-width: 90% !important; 			} 		}
+      </style>
+  </head>
 
-<head>
-    <title></title>
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet" />
-    <style type="text/css">
-        * { 			margin: 0; 			padding: 0; 		}  		@media only screen and (max-width:480px) { 			.title { 				font-size: 26px !important; 				line-height: 36px !important; 				margin-top: 25px !important; 			}  			.sub-title { 				margin-top: 10px !important; 			}  			.f-desc { 				line-height: 20px; 			}  			.detail-block .d-desc { 				max-width: 90% !important; 			} 		}
-    </style>
-</head>
+  <body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" data-new-gr-c-s-loaded="14.1242.0" style="cursor: auto;">
+      <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%; max-width: 600px; margin: 0 auto; background: #ffffff;" width="100%">
+          <tbody>
+              <tr>
+                  <td style=" padding: 17px 30px; border-bottom: 0.5px solid #979797; text-align: right;">
+                      <a class="btn" href="#" style="font-family:Poppins, Arial, sans-serif; padding: 5px 15px; background: #1DBF73; border-radius: 10px; font-size: 12px; line-height: 24px; vertical-align: middle; color: #000 !important; text-decoration: none; display: inline-block; font-weight: 400;">Get 30% OFF →</a>
+                  </td>
+              </tr>
+              <tr>
+                  <td style=" text-align: center; border-bottom: 0.5px solid #979797; position: relative;">
+                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tbody>
+                              <tr>
+                                  <td style="width: 50%; vertical-align: middle;">
+                                      <div style="border-top: 1px solid #1DBF73;"> </div>
+                                  </td>
+                                  <td style="width: auto; text-align: center; vertical-align: middle;">
+                                      <!-- Change Logo Image src as per your requirements --><img alt="Logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="display: inline-block; max-width: 146px; height: auto; background: #ffffff; padding: 0 10px; vertical-align: middle;"
+                                      />
+                                      <!-- Change Logo Image src as per your requirements -->
+                                  </td>
+                                  <td style="width: 50%; vertical-align: middle;">
+                                      <div style="border-top: 1px solid #1DBF73;"> </div>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      <h2 class="title" style=" font-family: Poppins, Arial, sans-serif; font-size: 36px; line-height: 45px; text-align: center; text-transform: uppercase; color: #000000; margin: 29px 30px 0;"><span class="cm-light" style="font-family: Poppins, Arial, sans-serif; font-weight: 300; display: block;">WELCOME!</span> WE’RE EXCITED TO HAVE YOU WITH US</h2>
 
-<body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" data-new-gr-c-s-loaded="14.1242.0" style="cursor: auto;">
-    <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%; max-width: 600px; margin: 0 auto; background: #ffffff;" width="100%">
-        <tbody>
-            <tr>
-                <td style=" padding: 17px 30px; border-bottom: 0.5px solid #979797; text-align: right;">
-                    <a class="btn" href="#" style="font-family:Poppins, Arial, sans-serif; padding: 5px 15px; background: #1DBF73; border-radius: 10px; font-size: 12px; line-height: 24px; vertical-align: middle; color: #000 !important; text-decoration: none; display: inline-block; font-weight: 400;">Get 30% OFF →</a>
-                </td>
-            </tr>
-            <tr>
-                <td style=" text-align: center; border-bottom: 0.5px solid #979797; position: relative;">
-                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                        <tbody>
-                            <tr>
-                                <td style="width: 50%; vertical-align: middle;">
-                                    <div style="border-top: 1px solid #1DBF73;"> </div>
-                                </td>
-                                <td style="width: auto; text-align: center; vertical-align: middle;">
-                                    <!-- Change Logo Image src as per your requirements --><img alt="Logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="display: inline-block; max-width: 146px; height: auto; background: #ffffff; padding: 0 10px; vertical-align: middle;"
-                                    />
-                                    <!-- Change Logo Image src as per your requirements -->
-                                </td>
-                                <td style="width: 50%; vertical-align: middle;">
-                                    <div style="border-top: 1px solid #1DBF73;"> </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <h2 class="title" style=" font-family: Poppins, Arial, sans-serif; font-size: 36px; line-height: 45px; text-align: center; text-transform: uppercase; color: #000000; margin: 29px 30px 0;"><span class="cm-light" style="font-family: Poppins, Arial, sans-serif; font-weight: 300; display: block;">WELCOME!</span> WE’RE EXCITED TO HAVE YOU WITH US</h2>
+                      <p class="sub-title" style="font-family: Poppins, Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 32px; text-align: center; margin: 20px 30px 40px; color: #4F4F4F;">Get ready to discover what we have in store for you.</p>
+                  </td>
+              </tr>
+              <tr>
+                  <td style="text-align: center;">
+                      <div class="banner-img-wrap">
+                          <!-- Change Banner Image src as per your requirements --><img alt="banner" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Screenshot%202024-09-03%20at%2011.54.02%E2%80%AFPM.png" style="width: 100%; height:100%;" />
+                          <!-- Change Banner Image src as per your requirements -->
+                      </div>
+                  </td>
+              </tr>
+              <tr>
+                  <td class="detail-block" style="padding: 70px 20px 30px; margin-bottom: 30px; text-align: center; background-color: #ffffff;">
+                      <h3 class="d-title" style="font-family:Poppins, Arial, sans-serif; font-size: 32px; font-weight: 400; line-height: 52px; text-align: center; margin-bottom: 18px; text-transform: uppercase; color: #0D0D0D;">LET’S GET STARTED</h3>
 
-                    <p class="sub-title" style="font-family: Poppins, Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 32px; text-align: center; margin: 20px 30px 40px; color: #4F4F4F;">Get ready to discover what we have in store for you.</p>
-                </td>
-            </tr>
-            <tr>
-                <td style="text-align: center;">
-                    <div class="banner-img-wrap">
-                        <!-- Change Banner Image src as per your requirements --><img alt="banner" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Screenshot%202024-09-03%20at%2011.54.02%E2%80%AFPM.png" style="width: 100%; height:100%;" />
-                        <!-- Change Banner Image src as per your requirements -->
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td class="detail-block" style="padding: 70px 20px 30px; margin-bottom: 30px; text-align: center; background-color: #ffffff;">
-                    <h3 class="d-title" style="font-family:Poppins, Arial, sans-serif; font-size: 32px; font-weight: 400; line-height: 52px; text-align: center; margin-bottom: 18px; text-transform: uppercase; color: #0D0D0D;">LET’S GET STARTED</h3>
+                      <p class="d-desc" style="font-family:Poppins, Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 30px; text-align: center; margin: 0 auto 24px; max-width: 70%; color: #4F4F4F;">Welcome aboard! Your journey with us starts now, and we&#39;re here to make it count. Get started by exploring our website to know more about what we stand for. Stay on top of what’s new, get access to exclusive deals, and much more.</p>
 
-                    <p class="d-desc" style="font-family:Poppins, Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 30px; text-align: center; margin: 0 auto 24px; max-width: 70%; color: #4F4F4F;">Welcome aboard! Your journey with us starts now, and we&#39;re here to make it count. Get started by exploring our website to know more about what we stand for. Stay on top of what’s new, get access to exclusive deals, and much more.</p>
+                      <a class="btn-cta" display_text_og="Learn%20More" href="#" href_og="%23" style="padding: 7px 43px; max-width: 182px; font-family: Poppins, Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 20px; text-align: center; background: rgb(29, 191, 115); outline: none; border: none; text-decoration: none; color: rgb(13, 13, 13) !important;">Learn More</a>
 
-                    <a class="btn-cta" display_text_og="Learn%20More" href="#" href_og="%23" style="padding: 7px 43px; max-width: 182px; font-family: Poppins, Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 20px; text-align: center; background: rgb(29, 191, 115); outline: none; border: none; text-decoration: none; color: rgb(13, 13, 13) !important;">Learn More</a>
+                      <div class="img-wrap" style="max-height: 368px; border-radius: 20px; margin-top: 50px;">
+                          <!-- Change image src as per your requirements --><img alt="product img" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/pro-1.png" style="border-radius: 20px;" /></div>
+                  </td>
+              </tr>
+              <tr>
+                  <td class="detail-block" style="padding: 70px 20px 30px; margin-bottom: 30px; text-align: center; background-color: #F0EEF6;">
+                      <h3 class="d-title" poppins="" style="font-family:">WHAT YOU CAN EXPECT</h3>
 
-                    <div class="img-wrap" style="max-height: 368px; border-radius: 20px; margin-top: 50px;">
-                        <!-- Change image src as per your requirements --><img alt="product img" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/pro-1.png" style="border-radius: 20px;" /></div>
-                </td>
-            </tr>
-            <tr>
-                <td class="detail-block" style="padding: 70px 20px 30px; margin-bottom: 30px; text-align: center; background-color: #F0EEF6;">
-                    <h3 class="d-title" poppins="" style="font-family:">WHAT YOU CAN EXPECT</h3>
+                      <p class="d-desc" style="font-family:Poppins, Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 30px; text-align: center; margin: 0 auto 24px; max-width: 70%; color: #4F4F4F;">As a member of our community, you&#39;re on your way to unlocking a host of benefits tailored just for you. Expect personalized content, early access to new features, exclusive discounts, and expert insights that will help you stay
+                          ahead of the curve.</p>
 
-                    <p class="d-desc" style="font-family:Poppins, Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 30px; text-align: center; margin: 0 auto 24px; max-width: 70%; color: #4F4F4F;">As a member of our community, you&#39;re on your way to unlocking a host of benefits tailored just for you. Expect personalized content, early access to new features, exclusive discounts, and expert insights that will help you stay
-                        ahead of the curve.</p>
+                      <a class="btn-cta" display_text_og="Learn%20More" href="#" href_og="%23" style="padding: 7px 43px; max-width: 182px; font-family: Poppins, Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 20px; text-align: center; background: rgb(29, 191, 115); outline: none; border: none; text-decoration: none; color: rgb(13, 13, 13) !important;">Learn More</a>
 
-                    <a class="btn-cta" display_text_og="Learn%20More" href="#" href_og="%23" style="padding: 7px 43px; max-width: 182px; font-family: Poppins, Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 20px; text-align: center; background: rgb(29, 191, 115); outline: none; border: none; text-decoration: none; color: rgb(13, 13, 13) !important;">Learn More</a>
+                      <div class="img-wrap" style="max-height: 368px; border-radius: 20px; margin-top: 50px;">
+                          <!-- Change image src as per your requirements --><img alt="product img" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/pro-2.png" style="border-radius: 20px;" /></div>
+                  </td>
+              </tr>
+              <tr>
+                  <td style="padding-top: 36px;">
+                      <table border="0" cellpadding="0" cellspacing="0" class="footer" style="background: #F7F7F7;" width="100%">
+                          <tbody>
+                              <tr>
+                                  <td colspan="5">
+                                      <h2 class="footer-title" style="font-family: Poppins, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 32px; text-align: center; color: #0D0D0D; text-transform: uppercase; margin:20px 0;">download OUR APP</h2>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td style="width: 30%; vertical-align: center; color: #979797">
+                                      <div style="border-top: 1px solid #979797;"> </div>
+                                  </td>
+                                  <td style="width: auto; text-align: center; vertical-align: bottom;">
+                                      <a class="btn-link" href="#" style="margin: 0 10px;">
+                                          <!-- Change image src as per your requirements --><img alt="Download on Android" class="btn-img" src="https://d2xdgxd31vfz2r.cloudfront.net/1645780864/assets/6a5367d7266744b5a2b3f9d42a2d1757.png" style="background: #F7F7F7; position: relative; z-index: 1; height: 45px"
+                                          /></a>
+                                  </td>
+                                  <td style="width: 5%; vertical-align: center;">
+                                      <div style="border-top: 1px solid #979797"> </div>
+                                  </td>
+                                  <td style="width: auto; text-align: center; vertical-align: bottom; color: #979797">
+                                      <a class="btn-link" href="#" style="margin: 0 10px;">
+                                          <!-- Change image src as per your requirements --><img alt="Download on Apple" class="btn-img" src="https://d2xdgxd31vfz2r.cloudfront.net/1645780864/assets/2b9962fdc2dc4ce5a20bde593965d5d4.png" style="background: #F7F7F7; position: relative; z-index: 1; height: 45px"
+                                          /></a>
+                                  </td>
+                                  <td style="width: 30%; vertical-align: center; color: #979797">
+                                      <div style="border-top: 1px solid #979797"> </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td colspan="5">
+                                      <p class="f-desc" style="font-family:Poppins, Arial, sans-serif; padding: 22px 0 33px; font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #939393; max-width: 80%; margin: 0 auto;">For assistance, reach out to our support team at
+                                          <a data-renderer-mark="true" data-testid="link-with-safety" href="support@example.com" title="support@example.com">support@example.com</a>
+                                      </p>
+                                  </td>
+                              </tr>
+                              <tr class="f-wrap">
+                                  <td colspan="5">
+                                      <ul class="f-nav-list" style="padding: 19px 0; list-style: none; text-align: center; border-top: 1px solid #979797">
+                                          <li class="f-nav-item" style=" margin: 0 5px;display: inline-block;">
+                                              <a class="f-nav-link" href="#" style="font-family: Poppins, Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #939393 !important; text-decoration: none;">Contact Us</a>
+                                          </li>
+                                          <li class="f-nav-item" style=" margin: 0 5px; display: inline-block;">
+                                              <a class="f-nav-link" href="#" style="font-family: Poppins, Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #939393 !important; text-decoration: none;">Terms of Use</a>
+                                          </li>
+                                          <li class="f-nav-item" style=" margin: 0 5px; display: inline-block;">
+                                              <a class="f-nav-link" href="#" style="font-family: Poppins, Arial, sans-serif; font-size: 14px;  font-weight: 400; line-height: 24px; color: #939393 !important; text-decoration: none;">Privacy Policy</a>
+                                          </li>
+                                      </ul>
+                                  </td>
+                              </tr>
+                              <!-- Unsubscribe Section-->
+                              <tr class="f-wrap">
+                                  <td colspan="5">
+                                      <hr style="border: none; border-top: 1px solid #939393; margin: 0 auto; max-width: 100%;" />
+                                      <p class="f-desc" style="font-family:Poppins, Arial, sans-serif; padding: 22px 0 33px; font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #939393; max-width: 80%; margin: 0 auto;">To opt out of promotional emails like this,
+                                          <a href="#" style="color:#1DBF73;text-decoration:none;font-weight:bold">unsubscribe here</a>
+                                      </p>
+                                  </td>
+                              </tr>
+                              <!-- Unsubscribe Section-->
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+      <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+  </body>
 
-                    <div class="img-wrap" style="max-height: 368px; border-radius: 20px; margin-top: 50px;">
-                        <!-- Change image src as per your requirements --><img alt="product img" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/pro-2.png" style="border-radius: 20px;" /></div>
-                </td>
-            </tr>
-            <tr>
-                <td style="padding-top: 36px;">
-                    <table border="0" cellpadding="0" cellspacing="0" class="footer" style="background: #F7F7F7;" width="100%">
-                        <tbody>
-                            <tr>
-                                <td colspan="5">
-                                    <h2 class="footer-title" style="font-family: Poppins, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 32px; text-align: center; color: #0D0D0D; text-transform: uppercase; margin:20px 0;">download OUR APP</h2>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="width: 30%; vertical-align: center; color: #979797">
-                                    <div style="border-top: 1px solid #979797;"> </div>
-                                </td>
-                                <td style="width: auto; text-align: center; vertical-align: bottom;">
-                                    <a class="btn-link" href="#" style="margin: 0 10px;">
-                                        <!-- Change image src as per your requirements --><img alt="Download on Android" class="btn-img" src="https://d2xdgxd31vfz2r.cloudfront.net/1645780864/assets/6a5367d7266744b5a2b3f9d42a2d1757.png" style="background: #F7F7F7; position: relative; z-index: 1; height: 45px"
-                                        /></a>
-                                </td>
-                                <td style="width: 5%; vertical-align: center;">
-                                    <div style="border-top: 1px solid #979797"> </div>
-                                </td>
-                                <td style="width: auto; text-align: center; vertical-align: bottom; color: #979797">
-                                    <a class="btn-link" href="#" style="margin: 0 10px;">
-                                        <!-- Change image src as per your requirements --><img alt="Download on Apple" class="btn-img" src="https://d2xdgxd31vfz2r.cloudfront.net/1645780864/assets/2b9962fdc2dc4ce5a20bde593965d5d4.png" style="background: #F7F7F7; position: relative; z-index: 1; height: 45px"
-                                        /></a>
-                                </td>
-                                <td style="width: 30%; vertical-align: center; color: #979797">
-                                    <div style="border-top: 1px solid #979797"> </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="5">
-                                    <p class="f-desc" style="font-family:Poppins, Arial, sans-serif; padding: 22px 0 33px; font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #939393; max-width: 80%; margin: 0 auto;">For assistance, reach out to our support team at
-                                        <a data-renderer-mark="true" data-testid="link-with-safety" href="support@example.com" title="support@example.com">support@example.com</a>
-                                    </p>
-                                </td>
-                            </tr>
-                            <tr class="f-wrap">
-                                <td colspan="5">
-                                    <ul class="f-nav-list" style="padding: 19px 0; list-style: none; text-align: center; border-top: 1px solid #979797">
-                                        <li class="f-nav-item" style=" margin: 0 5px;display: inline-block;">
-                                            <a class="f-nav-link" href="#" style="font-family: Poppins, Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #939393 !important; text-decoration: none;">Contact Us</a>
-                                        </li>
-                                        <li class="f-nav-item" style=" margin: 0 5px; display: inline-block;">
-                                            <a class="f-nav-link" href="#" style="font-family: Poppins, Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #939393 !important; text-decoration: none;">Terms of Use</a>
-                                        </li>
-                                        <li class="f-nav-item" style=" margin: 0 5px; display: inline-block;">
-                                            <a class="f-nav-link" href="#" style="font-family: Poppins, Arial, sans-serif; font-size: 14px;  font-weight: 400; line-height: 24px; color: #939393 !important; text-decoration: none;">Privacy Policy</a>
-                                        </li>
-                                    </ul>
-                                </td>
-                            </tr>
-                            <!-- Unsubscribe Section-->
-                            <tr class="f-wrap">
-                                <td colspan="5">
-                                    <hr style="border: none; border-top: 1px solid #939393; margin: 0 auto; max-width: 100%;" />
-                                    <p class="f-desc" style="font-family:Poppins, Arial, sans-serif; padding: 22px 0 33px; font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #939393; max-width: 80%; margin: 0 auto;">To opt out of promotional emails like this,
-                                        <a href="#" style="color:#1DBF73;text-decoration:none;font-weight:bold">unsubscribe here</a>
-                                    </p>
-                                </td>
-                            </tr>
-                            <!-- Unsubscribe Section-->
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
-</body>
+  </html>
+  ```
+  ```html Variant 2
+  <!DOCTYPE html>
+  <html lang="en">
 
-</html>
-```
-```html Variant 2
-<!DOCTYPE html>
-<html lang="en">
+  <head>
+      <title></title>
+      <link href="https://fonts.googleapis.com" rel="preconnect" />
+      <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet" />
+      <style type="text/css">
+          * {             margin: 0;             padding: 0;         }          @media only screen and (max-width:480px) {             .title {                 font-size: 26px !important;                 line-height: 36px !important;                 margin-top: 25px !important;             }              .sub-title {                 margin-top: 10px !important;             }              .bg-wrap {                 padding-top: 40px !important;             }              .product-card {                 padding-bottom: 40px !important;             }         }
+      </style>
+  </head>
 
-<head>
-    <title></title>
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet" />
-    <style type="text/css">
-        * {             margin: 0;             padding: 0;         }          @media only screen and (max-width:480px) {             .title {                 font-size: 26px !important;                 line-height: 36px !important;                 margin-top: 25px !important;             }              .sub-title {                 margin-top: 10px !important;             }              .bg-wrap {                 padding-top: 40px !important;             }              .product-card {                 padding-bottom: 40px !important;             }         }
-    </style>
-</head>
+  <body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" data-new-gr-c-s-loaded="14.1242.0" style="cursor: auto;">
+      <!-- Change Theme-->
+      <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%; max-width: 600px; margin: 0 auto; background: #ffffff;" width="100%">
+          <tbody>
+              <tr>
+                  <td style=" padding: 17px 30px; border-bottom: 0.5px solid #979797; text-align: right;">
+                      <a class="btn" href="#" style="font-family:'Poppins', Arial, sans-serif; padding: 5px 15px; background: #1DBF73; border-radius: 10px; font-size: 12px; line-height: 24px; vertical-align: middle; color: #000 !important; text-decoration: none; display: inline-block; font-weight: 400;">Get 30% OFF →</a>
+                  </td>
+              </tr>
+              <tr>
+                  <!-- Header Section-->
+                  <td style=" text-align: center; border-bottom: 0.5px solid #979797; position: relative;">
+                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tbody>
+                              <tr>
+                                  <td style="width: 50%; vertical-align: middle;">
+                                      <div style="border-top: 1px solid #1DBF73;"> </div>
+                                  </td>
+                                  <td style="width: auto; text-align: center; vertical-align: middle;">
+                                      <!-- “Logo Image” --><img alt="Logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="display: inline-block; max-width: 146px; height: auto; background: #ffffff; padding: 0 10px; vertical-align: middle;"
+                                      />
+                                      <!-- “Logo Image” -->
+                                  </td>
+                                  <td style="width: 50%; vertical-align: middle;">
+                                      <div style="border-top: 1px solid #1DBF73;"> </div>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+                  <!-- Header Section-->
+              </tr>
+              <tr>
+                  <td>
+                      <h2 class="title" style=" font-family: 'Poppins', Arial, sans-serif; font-size: 36px; line-height: 45px; text-align: center; text-transform: uppercase; color: #000000; margin: 29px 30px 0;"><span class="cm-light" style="font-family: 'Poppins', Arial, sans-serif; font-weight: 300; display: block;">WELCOME!</span> WE&#39;RE EXCITED TO HAVE YOU WITH US</h2>
 
-<body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" data-new-gr-c-s-loaded="14.1242.0" style="cursor: auto;">
-    <!-- Change Theme-->
-    <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%; max-width: 600px; margin: 0 auto; background: #ffffff;" width="100%">
-        <tbody>
-            <tr>
-                <td style=" padding: 17px 30px; border-bottom: 0.5px solid #979797; text-align: right;">
-                    <a class="btn" href="#" style="font-family:'Poppins', Arial, sans-serif; padding: 5px 15px; background: #1DBF73; border-radius: 10px; font-size: 12px; line-height: 24px; vertical-align: middle; color: #000 !important; text-decoration: none; display: inline-block; font-weight: 400;">Get 30% OFF →</a>
-                </td>
-            </tr>
-            <tr>
-                <!-- Header Section-->
-                <td style=" text-align: center; border-bottom: 0.5px solid #979797; position: relative;">
-                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                        <tbody>
-                            <tr>
-                                <td style="width: 50%; vertical-align: middle;">
-                                    <div style="border-top: 1px solid #1DBF73;"> </div>
-                                </td>
-                                <td style="width: auto; text-align: center; vertical-align: middle;">
-                                    <!-- “Logo Image” --><img alt="Logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="display: inline-block; max-width: 146px; height: auto; background: #ffffff; padding: 0 10px; vertical-align: middle;"
-                                    />
-                                    <!-- “Logo Image” -->
-                                </td>
-                                <td style="width: 50%; vertical-align: middle;">
-                                    <div style="border-top: 1px solid #1DBF73;"> </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-                <!-- Header Section-->
-            </tr>
-            <tr>
-                <td>
-                    <h2 class="title" style=" font-family: 'Poppins', Arial, sans-serif; font-size: 36px; line-height: 45px; text-align: center; text-transform: uppercase; color: #000000; margin: 29px 30px 0;"><span class="cm-light" style="font-family: 'Poppins', Arial, sans-serif; font-weight: 300; display: block;">WELCOME!</span> WE&#39;RE EXCITED TO HAVE YOU WITH US</h2>
+                      <p class="sub-title" style="font-family: 'Poppins', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 32px; text-align: center; margin: 20px 30px 40px; color: #4F4F4F;">Get ready to discover what we have in store for you.</p>
+                  </td>
+              </tr>
+              <tr>
+                  <td class="bg-wrap" style="padding-top: 46px; background: #F0EEF6;">
+                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tbody>
+                              <tr>
+                                  <td class="product-card" style="padding-bottom: 70px;">
+                                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                          <tbody>
+                                              <tr>
+                                                  <!-- First Product Image -->
+                                                  <td class="product-image" style="width: 40%;"><img alt="product image pexels 1" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/pexels-1_1.png" style="width: 100%; height: 100%;" /></td>
+                                                  <!-- First Product Image -->
+                                                  <td class="product-detail" style="width: 60%; padding: 0 30px; vertical-align: middle;">
+                                                      <h3 class="product-name" style="font-family: 'Poppins', Arial, sans-serif; font-size: 24px; font-weight: 400; line-height: 35px; color: #0D0D0D; margin-bottom: 10px; text-transform: uppercase;">LET&#39;S GET STARTED!</h3>
 
-                    <p class="sub-title" style="font-family: 'Poppins', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 32px; text-align: center; margin: 20px 30px 40px; color: #4F4F4F;">Get ready to discover what we have in store for you.</p>
-                </td>
-            </tr>
-            <tr>
-                <td class="bg-wrap" style="padding-top: 46px; background: #F0EEF6;">
-                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                        <tbody>
-                            <tr>
-                                <td class="product-card" style="padding-bottom: 70px;">
-                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                                        <tbody>
-                                            <tr>
-                                                <!-- First Product Image -->
-                                                <td class="product-image" style="width: 40%;"><img alt="product image pexels 1" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/pexels-1_1.png" style="width: 100%; height: 100%;" /></td>
-                                                <!-- First Product Image -->
-                                                <td class="product-detail" style="width: 60%; padding: 0 30px; vertical-align: middle;">
-                                                    <h3 class="product-name" style="font-family: 'Poppins', Arial, sans-serif; font-size: 24px; font-weight: 400; line-height: 35px; color: #0D0D0D; margin-bottom: 10px; text-transform: uppercase;">LET&#39;S GET STARTED!</h3>
+                                                      <p class="product-desc" style="font-family: 'Poppins', Arial, sans-serif; margin-bottom: 18px; font-size: 14px; font-weight: 400; line-height: 30px; color: #4f4f4f;">Welcome aboard! Your journey with us starts now, and we&#39;re here to make it count. Get started by exploring our website to know more about what we stand for. Stay on top of what&#39;s new, get access
+                                                          to exclusive deals, and much more.</p>
 
-                                                    <p class="product-desc" style="font-family: 'Poppins', Arial, sans-serif; margin-bottom: 18px; font-size: 14px; font-weight: 400; line-height: 30px; color: #4f4f4f;">Welcome aboard! Your journey with us starts now, and we&#39;re here to make it count. Get started by exploring our website to know more about what we stand for. Stay on top of what&#39;s new, get access
-                                                        to exclusive deals, and much more.</p>
+                                                      <a class="btn" href="#" style="font-family:'Poppins', Arial, sans-serif; padding: 5px 15px; background: #1DBF73; border-radius: 10px; font-size: 12px; line-height: 24px; vertical-align: middle; color: #000 !important; text-decoration: none; display: inline-block; font-weight: 400;">Learn More</a>
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td class="product-card" style="padding-bottom: 70px;">
+                                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                          <tbody>
+                                              <tr>
+                                                  <td class="product-detail" style="width: 60%; padding: 0 30px; vertical-align: middle;">
+                                                      <h3 class="product-name" style="font-family: 'Poppins', Arial, sans-serif; font-size: 24px; font-weight: 400; line-height: 35px; color: #0D0D0D; margin-bottom: 10px; text-transform: uppercase;">WHAT YOU CAN EXPECT</h3>
 
-                                                    <a class="btn" href="#" style="font-family:'Poppins', Arial, sans-serif; padding: 5px 15px; background: #1DBF73; border-radius: 10px; font-size: 12px; line-height: 24px; vertical-align: middle; color: #000 !important; text-decoration: none; display: inline-block; font-weight: 400;">Learn More</a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="product-card" style="padding-bottom: 70px;">
-                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                                        <tbody>
-                                            <tr>
-                                                <td class="product-detail" style="width: 60%; padding: 0 30px; vertical-align: middle;">
-                                                    <h3 class="product-name" style="font-family: 'Poppins', Arial, sans-serif; font-size: 24px; font-weight: 400; line-height: 35px; color: #0D0D0D; margin-bottom: 10px; text-transform: uppercase;">WHAT YOU CAN EXPECT</h3>
+                                                      <p class="product-desc" style="font-family: 'Poppins', Arial, sans-serif; margin-bottom: 18px; font-size: 14px; font-weight: 400; line-height: 30px; color: #4f4f4f;">As a member of our community, you&#39;re on your way to unlocking a host of benefits tailored just for you. Expect personalized content, early access to new features, exclusive discounts, and expert
+                                                          insights that will help you stay ahead of the curve.</p>
+                                                      <!-- Add Links -->
 
-                                                    <p class="product-desc" style="font-family: 'Poppins', Arial, sans-serif; margin-bottom: 18px; font-size: 14px; font-weight: 400; line-height: 30px; color: #4f4f4f;">As a member of our community, you&#39;re on your way to unlocking a host of benefits tailored just for you. Expect personalized content, early access to new features, exclusive discounts, and expert
-                                                        insights that will help you stay ahead of the curve.</p>
-                                                    <!-- Add Links -->
+                                                      <a class="btn" href="#" style="font-family:'Poppins', Arial, sans-serif; padding: 5px 15px; background: #1DBF73; border-radius: 10px; font-size: 12px; line-height: 24px; vertical-align: middle; color: #000 !important; text-decoration: none; display: inline-block; font-weight: 400;">Learn More</a>
+                                                      <!-- Add Links -->
+                                                  </td>
+                                                  <!-- Second Product Image -->
+                                                  <td class="product-image" style="text-align: right; width: 40%;"><img alt="product image pexels 2" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/pexels-2_1.png" style="width: 100%; height: 100%;" /></td>
+                                                  <!-- Second Product Image -->
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <tr>
+                  <td style="padding-top: 54px;">
+                      <table border="0" cellpadding="0" cellspacing="0" class="footer" style="background: #F7F7F7;" width="100%">
+                          <tbody>
+                              <tr>
+                                  <td colspan="5">
+                                      <h2 class="footer-title" style="font-family: 'Poppins', Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 32px; text-align: center; color: #0D0D0D; text-transform: uppercase; margin:20px 0;">DOWNLOAD OUR APP</h2>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td style="width: 30%; vertical-align: middle; color: #979797">
+                                      <div style="border-top: 1px solid #979797;"> </div>
+                                  </td>
+                                  <!-- Download Andoid Section-->
+                                  <td style="width: auto; text-align: center; vertical-align: middle;">
+                                      <a class="btn-link" href="#" style="margin: 0 10px;"><img alt="Download on Android" class="btn-img" src="https://d2xdgxd31vfz2r.cloudfront.net/1645780864/assets/6a5367d7266744b5a2b3f9d42a2d1757.png" style="background: #F7F7F7; position: relative; z-index: 1; height: 45px"
+                                          /></a>
+                                  </td>
+                                  <!-- Download Andoid Section-->
+                                  <td style="width: 5%; vertical-align: middle;">
+                                      <div style="border-top: 1px solid #979797"> </div>
+                                  </td>
+                                  <!-- Download Apple Section-->
+                                  <td style="width: auto; text-align: center; vertical-align: middle; color: #979797">
+                                      <a class="btn-link" href="#" style="margin: 0 10px;"><img alt="Download on Apple" class="btn-img" src="https://d2xdgxd31vfz2r.cloudfront.net/1645780864/assets/2b9962fdc2dc4ce5a20bde593965d5d4.png" style="background: #F7F7F7; position: relative; z-index: 1; height: 45px"
+                                          /></a>
+                                  </td>
+                                  <!-- Download Apple Section-->
+                                  <td style="width: 30%; vertical-align: middle; color: #979797">
+                                      <div style="border-top: 1px solid #979797"> </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td colspan="5">
+                                      <p class="f-desc" style="font-family:'Poppins', Arial, sans-serif; padding: 22px 0 33px; font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #939393; max-width: 80%; margin: 0 auto;">For assistance, reach out to our support team at support@example.com</p>
+                                  </td>
+                              </tr>
+                              <!-- Footer Section-->
+                              <tr class="f-wrap">
+                                  <td colspan="5">
+                                      <ul class="f-nav-list" style="padding: 19px 0; list-style: none; text-align: center; border-top: 1px solid #979797">
+                                          <li class="f-nav-item" style=" margin: 0 5px;display: inline-block;">
+                                              <!-- Contact Us-->
+                                              <a class="f-nav-link" href="#" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #939393 !important; text-decoration: none;">Contact Us</a>
+                                              <!-- Contact Us-->
+                                          </li>
+                                          <li class="f-nav-item" style=" margin: 0 5px; display: inline-block;">
+                                              <!-- Terms-->
+                                              <a class="f-nav-link" href="#" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #939393 !important; text-decoration: none;">Terms of Use</a>
+                                              <!-- Terms-->
+                                          </li>
+                                          <li class="f-nav-item" style=" margin: 0 5px; display: inline-block;">
+                                              <!-- Privacy Policy-->
+                                              <a class="f-nav-link" href="#" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px;  font-weight: 400; line-height: 24px; color: #939393 !important; text-decoration: none;">Privacy Policy</a>
+                                              <!-- Privacy Policy-->
+                                          </li>
+                                      </ul>
+                                  </td>
+                              </tr>
+                              <!-- Footer Section-->
+                              <!-- Unsubscribe Section-->
+                              <tr class="f-wrap">
+                                  <td colspan="5">
+                                      <hr style="border: none; border-top: 1px solid #939393; margin: 0 auto; max-width: 100%;" />
+                                      <p class="f-desc" style="font-family:'Poppins', Arial, sans-serif; padding: 22px 0 33px; font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #939393; max-width: 80%; margin: 0 auto;">To opt out of promotional emails like this,
+                                          <a href="#" style="color:#1DBF73;text-decoration:none;font-weight:bold">unsubscribe here</a>
+                                      </p>
+                                  </td>
+                              </tr>
+                              <!-- Unsubscribe Section-->
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+  </body>
+  <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
 
-                                                    <a class="btn" href="#" style="font-family:'Poppins', Arial, sans-serif; padding: 5px 15px; background: #1DBF73; border-radius: 10px; font-size: 12px; line-height: 24px; vertical-align: middle; color: #000 !important; text-decoration: none; display: inline-block; font-weight: 400;">Learn More</a>
-                                                    <!-- Add Links -->
-                                                </td>
-                                                <!-- Second Product Image -->
-                                                <td class="product-image" style="text-align: right; width: 40%;"><img alt="product image pexels 2" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/pexels-2_1.png" style="width: 100%; height: 100%;" /></td>
-                                                <!-- Second Product Image -->
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td style="padding-top: 54px;">
-                    <table border="0" cellpadding="0" cellspacing="0" class="footer" style="background: #F7F7F7;" width="100%">
-                        <tbody>
-                            <tr>
-                                <td colspan="5">
-                                    <h2 class="footer-title" style="font-family: 'Poppins', Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 32px; text-align: center; color: #0D0D0D; text-transform: uppercase; margin:20px 0;">DOWNLOAD OUR APP</h2>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="width: 30%; vertical-align: middle; color: #979797">
-                                    <div style="border-top: 1px solid #979797;"> </div>
-                                </td>
-                                <!-- Download Andoid Section-->
-                                <td style="width: auto; text-align: center; vertical-align: middle;">
-                                    <a class="btn-link" href="#" style="margin: 0 10px;"><img alt="Download on Android" class="btn-img" src="https://d2xdgxd31vfz2r.cloudfront.net/1645780864/assets/6a5367d7266744b5a2b3f9d42a2d1757.png" style="background: #F7F7F7; position: relative; z-index: 1; height: 45px"
-                                        /></a>
-                                </td>
-                                <!-- Download Andoid Section-->
-                                <td style="width: 5%; vertical-align: middle;">
-                                    <div style="border-top: 1px solid #979797"> </div>
-                                </td>
-                                <!-- Download Apple Section-->
-                                <td style="width: auto; text-align: center; vertical-align: middle; color: #979797">
-                                    <a class="btn-link" href="#" style="margin: 0 10px;"><img alt="Download on Apple" class="btn-img" src="https://d2xdgxd31vfz2r.cloudfront.net/1645780864/assets/2b9962fdc2dc4ce5a20bde593965d5d4.png" style="background: #F7F7F7; position: relative; z-index: 1; height: 45px"
-                                        /></a>
-                                </td>
-                                <!-- Download Apple Section-->
-                                <td style="width: 30%; vertical-align: middle; color: #979797">
-                                    <div style="border-top: 1px solid #979797"> </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="5">
-                                    <p class="f-desc" style="font-family:'Poppins', Arial, sans-serif; padding: 22px 0 33px; font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #939393; max-width: 80%; margin: 0 auto;">For assistance, reach out to our support team at support@example.com</p>
-                                </td>
-                            </tr>
-                            <!-- Footer Section-->
-                            <tr class="f-wrap">
-                                <td colspan="5">
-                                    <ul class="f-nav-list" style="padding: 19px 0; list-style: none; text-align: center; border-top: 1px solid #979797">
-                                        <li class="f-nav-item" style=" margin: 0 5px;display: inline-block;">
-                                            <!-- Contact Us-->
-                                            <a class="f-nav-link" href="#" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #939393 !important; text-decoration: none;">Contact Us</a>
-                                            <!-- Contact Us-->
-                                        </li>
-                                        <li class="f-nav-item" style=" margin: 0 5px; display: inline-block;">
-                                            <!-- Terms-->
-                                            <a class="f-nav-link" href="#" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #939393 !important; text-decoration: none;">Terms of Use</a>
-                                            <!-- Terms-->
-                                        </li>
-                                        <li class="f-nav-item" style=" margin: 0 5px; display: inline-block;">
-                                            <!-- Privacy Policy-->
-                                            <a class="f-nav-link" href="#" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px;  font-weight: 400; line-height: 24px; color: #939393 !important; text-decoration: none;">Privacy Policy</a>
-                                            <!-- Privacy Policy-->
-                                        </li>
-                                    </ul>
-                                </td>
-                            </tr>
-                            <!-- Footer Section-->
-                            <!-- Unsubscribe Section-->
-                            <tr class="f-wrap">
-                                <td colspan="5">
-                                    <hr style="border: none; border-top: 1px solid #939393; margin: 0 auto; max-width: 100%;" />
-                                    <p class="f-desc" style="font-family:'Poppins', Arial, sans-serif; padding: 22px 0 33px; font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #939393; max-width: 80%; margin: 0 auto;">To opt out of promotional emails like this,
-                                        <a href="#" style="color:#1DBF73;text-decoration:none;font-weight:bold">unsubscribe here</a>
-                                    </p>
-                                </td>
-                            </tr>
-                            <!-- Unsubscribe Section-->
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</body>
-<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
-
-</html>
-```
-
+  </html>
+  ```
 </Accordion>
 
 # AMP Templates
@@ -5539,699 +5519,12 @@ This AMP template is designed to promote a curated selection of new arrivals, tr
 <Image align="center" alt="Sample Product Listing Template" border={true} caption="Sample Product Listing Template" src="https://files.readme.io/3b422b68a566885f81d76d61157af681abbe2dad80105ae3e64ac39af27731cd-Product_Listing_AMP.png" width="25% " />
 
 <Accordion title="Expand to know more about the template.">
-
-### Use Case Examples
-
-* Highlight newly launched or trending products from your catalog.
-* Personalize the product showcase based on the user’s recent activity or preferences.
-* Run weekly or monthly What’s New campaigns for returning users.
-* Drive conversions by enabling users to click through to product pages without friction.
-
-### Template Customization Options
-
-* [Replace Logo](doc:ootb-email-templates#replace-logo)
-* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
-* [Update Links in Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-* [Change Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-* [Update Privacy Policy](doc:ootb-email-templates#update-privacy-policy)
-* [Update Social Media and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
-
-### Template Code
-
-```html
-<!doctype html>
-<html ⚡4email data-css-strict>
-<head>
-<meta charset="utf-8">
-<script async src="https://cdn.ampproject.org/v0.js"></script>
-<script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
-<script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
-<style amp4email-boilerplate>body{visibility:hidden}</style>
-<style amp-custom>
-*{
-margin: 0;
-padding: 0;
-}
-body {
-font-family: "Helvetica", arial, sans-serif;
-font-weight: 400;
-}
-img{
-width: 100%;
-height: 100%;
-object-fit: cover;
-}
-.main {
-width: 100%;
-max-width: 600px;
-overflow: hidden;
-margin: 0 auto;
-background: #FFFFFF;
-}
-@media only screen and (max-width: 400px) {
-body .main {
-max-width: 95%;
-}
-}
-.logo-wrap{
-padding: 17px 0;
-}
-.logo-wrap .img-wrap{
-max-width: 159px;
-max-height: 73px;
-margin: 0 auto;
-} 
-.footer{
-border-top: 0.5px solid #D66437;
-}
-.media-logo-list{
-display: flex;
-justify-content: center;
-align-items: center;
-list-style: none;
-gap: 16px;
-margin: 39px 0 34px;
-}
-.media-logo-list .logo-item{
-width: 34px;
-height: 34px;
-}
-.media-logo-list .logo-item .logo-link{
-width: 100%;
-height: 100%;
-display: inline-block;
-} 
-.f-desc{
-font-size: 14px;
-font-weight: 400;
-line-height: 24px;
-color: #939393;
-text-align: center; 
-max-width: 80%;
-margin: 0 auto 27px;
-}
-.f-nav-list{
-padding: 27px 0;
-display: flex;
-justify-content: center;
-align-items: center;
-list-style: none;
-border-top: 0.5px solid #979797;
-}
-.f-nav-list .f-nav-item {
-margin: 0 5px;
-}
-.f-nav-list .f-nav-item .f-nav-link{
-font-size: 14px;
-font-weight: 400;
-line-height: 24px;
-text-align: center;
-color: #939393;
-text-decoration: none; 
-}
-.banner {
-background: #d66437; 
-}
-.banner .top-wrap{
-padding: 38px 25px 25px;
-}
-.banner .title {
-margin-bottom: 10px;
-font-size: 36px;
-font-weight: 400;
-line-height: 45px;
-text-align: center;
-color: #fff;
-text-transform: uppercase;
-}
-.banner .desc {
-font-size: 14px;
-font-weight: 400;
-line-height: 22px;
-color: #fff;
-text-align: center;
-text-transform: none;
-}
-.banner .img-wrap {
-max-height: 377px;
-width: 100%;
-}
-.banner .cta-wrap {
-padding: 15px 35px;
-display: flex;
-justify-content: space-between;
-align-items: center;
-gap: 10px;
-}
-.banner .cta-desc {
-font-size: 14px;
-font-weight: 300;
-line-height: 20px;
-color: #fff;
-width: 50%;
-}
-.banner .cta-desc .cm-bold {
-font-weight: 500;
-}
-.banner .cta-btn {
-padding: 5px 35px;
-font-size: 12px;
-font-weight: 400;
-line-height: 24px;
-color: #000;
-text-align: center;
-text-transform: uppercase;
-max-width: 125px;
-background: #FFFFFF;
-outline: none;
-border: none;
-text-decoration: none; 
-}
-.product-wrap {
-padding: 40px 0 20px;
-max-width: 85%;
-margin: 0 auto;
-}
-.product-wrap .title {
-color: #0d0d0d;
-font-size: 32px;
-font-weight: 400;
-line-height: 52px;
-text-align: center;
-margin-bottom: 10px;
-}
-.product-wrap .desc {
-color: #909090;
-font-size: 10px;
-font-weight: 400;
-line-height: 20px;
-text-transform: none;
-text-align: center;
-margin-bottom: 28px;
-}
-.product-category{
-display: flex;
-justify-content: space-between;
-padding: 18px 0;
-}
-.category-wrap{
-width: 60%;
-}
-.category-search{
-text-align: right;
-width: 40%;
-}
-.product-list {
-padding: 0;
-display: flex;
-justify-content: space-between;
-align-items: flex-start;
-gap: 15px;
-flex-wrap: wrap;
-list-style: none;
-}
-.product-list .product-item {
-width: 48%;
-margin-bottom: 15px;
-}
-.product-card .img-wrap {
-max-width: 238px;
-max-height: 238px;
-margin-bottom: 10px;
-}
-.product-card .p-link {
-font-size: 22px;
-font-weight: 300;
-line-height: 37px;
-text-decoration: none;
-color: #D66437;
-display: flex;
-justify-content: flex-end;
-align-items: center;
-gap: 20px;
-}
-.product-card .p-link .icon {
-width: 30px;
-height: 14px;
-}
-.category-title{
-font-size: 20px;
-font-weight: 400;
-line-height: 24px;
-text-align: left;
-text-transform: uppercase;
-}
-.hide {
-display: none;
-}
-.show {
-display: block;
-}
-.custom-select{
-padding: 5px 12px;
-background: #FFFFFF;
-border: 1px solid #252525;
-font-size: 14px;
-font-weight: 400;
-line-height: 24px;
-text-align: left;
-}
-.custom-select option{
-font-size: 14px;
-font-weight: 400;
-line-height: 24px;
-text-align: left;
-padding: 5px 11px;
-}
-.custom-select option:disabled{display: none;}
-.custom-select option:hover,
-.custom-select option:focus,
-.custom-select option:active,
-.custom-select option:checked{ 
-color: #000000 ; background: #FFFFFF;
-}
-@media only screen and (max-width: 480px) {
-.logo-wrap .img-wrap {
-max-width: 130px;
-max-height: 60px;
-} 
-.banner .top-wrap {
-padding: 30px 25px 20px;
-}
-.banner .title {
-font-size: 28px;
-line-height: 38px;
-}
-.banner .cta-wrap {
-padding: 15px 25px;
-}
-.banner .cta-btn {
-padding: 5px 10px;
-}
-.product-list{
-gap: 10px
-}
-.product-list .product-item{
-margin-bottom: 20px;
-}
-.product-wrap{
-max-width: 100%;
-padding: 40px 10px 20px;
-}
-.product-wrap .title {
-font-size: 22px;
-line-height: 28px;
-}
-.product-wrap .desc{
-margin-bottom: 20px;
-}
-.product-card .p-link {
-font-size: 18px;
-line-height: 28px;
-gap: 10px;
-}
-.product-card .p-link .icon {
-width: 20px;
-height: 10px;
-}
-.media-logo-list {
-gap: 12px;
-margin: 29px 0 24px;
-}
-.f-nav-list {
-padding: 20px 0;
-}
-.f-desc{
-line-height: 20px;
-}
-}
-@media only screen and (max-width: 300px) {
-.product-wrap {
-padding: 40px 5px 20px;
-}
-}
-</style>
-</head>
-<body>
-<amp-state id="selectedCategory">
-<script type="application/json">
-{
-"value": "men"
-}
-</script>
-</amp-state>
-<div class="main">
-<header>
-<div class="logo-wrap">
-<div class="img-wrap">
-<!-- Change image src as per your requirements -->
-<!-- Change image src as per your requirements -->
-<amp-img layout="responsive" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" alt="Logo" width="159" height="73" />
-</div>
-</div>
-</header>
-<div class="banner">
-<div class="top-wrap">
-<h2 class="title">WHAT’S NEW IN STORE</h2>
-<p class="desc">Shop from the latest styles and trends</p>
-</div>
-<div class="img-wrap">
-<!-- Change image src as per your requirements -->
-<!-- Change image src as per your requirements -->
-<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/banner-image.png" alt="Banner" width="600" height="377"></amp-img>
-</div>
-<div class="cta-wrap">
-<p class="cta-desc">Get <span class="cm-bold">FREE Delivery</span> on all orders</p>
-<div class="cta-"> </div>
-<a href="https://www.google.co.in/" class="cta-btn">Shop Now</a>
-</div>
-</div>
-<div class="container">
-<div class="product-wrap">
-<h3 class="title">NEW PRODUCTS LAUNCHED</h3>
-<p class="desc">Explore newly launched products from our collection.</p>
-<div class="product-category">
-<div class="category-wrap">
-<h2 class="category-title" [text]="selectedCategory.value">men</h2>
-</div>
-<div class="category-search">
-<select class="custom-select" on="change:AMP.setState({selectedCategory: {value: event.value}})">
-<option value="explore" disabled selected [selected]="selectedCategory == 'explore'">Explore</option>
-<option value="men" [selected]="selectedCategory == 'men'">Men</option>
-<option value="women" [selected]="selectedCategory == 'women'">Women</option>
-<option value="kids" [selected]="selectedCategory == 'kids'">Kids</option>
-</select>
-</div>
-</div>
-<div class="category show" [class]="(selectedCategory.value == 'men') ? 'category show' : 'category hide'">
-<ul class="product-list">
-<li class="product-item">
-<div class="product-card">
-<div class="img-wrap">
-<!-- Change image src as per your requirements -->
-<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/men-product-1.png" alt="Product Image" width="238" height="238"></amp-img>
-</div>
-<a href="https://www.google.co.in/" class="p-link">
-Shop now 
-<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
-</a>
-</div>
-</li>
-<li class="product-item">
-<div class="product-card">
-<div class="img-wrap">
-<!-- Change image src as per your requirements -->
-<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/men-product-2.png" alt="Product Image" width="238" height="238"></amp-img>
-</div>
-<a href="https://www.google.co.in/" class="p-link">
-Shop now 
-<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
-</a>
-</div>
-</li>
-<li class="product-item">
-<div class="product-card">
-<div class="img-wrap">
-<!-- Change image src as per your requirements -->
-<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/men-product-3.png" alt="Product Image" width="238" height="238"></amp-img>
-</div>
-<a href="https://www.google.co.in/" class="p-link">
-Shop now 
-<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
-</a>
-</div>
-</li>
-<li class="product-item">
-<div class="product-card">
-<div class="img-wrap">
-<!-- Change image src as per your requirements -->
-<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/men-product-4.png" alt="Product Image" width="238" height="238"></amp-img>
-</div>
-<a href="https://www.google.co.in/" class="p-link">
-Shop now 
-<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
-</a>
-</div>
-</li>
-<li class="product-item">
-<div class="product-card">
-<div class="img-wrap">
-<!-- Change image src as per your requirements -->
-<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/men-product-5.png" alt="Product Image" width="238" height="238"></amp-img>
-</div>
-<a href="https://www.google.co.in/" class="p-link">
-Shop now 
-<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
-</a>
-</div>
-</li>
-<li class="product-item">
-<div class="product-card">
-<div class="img-wrap">
-<!-- Change image src as per your requirements -->
-<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/men-product-6.png" alt="Product Image" width="238" height="238"></amp-img>
-</div>
-<a href="https://www.google.co.in/" class="p-link">
-Shop now 
-<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
-</a>
-</div>
-</li>
-<li class="product-item">
-<div class="product-card">
-<div class="img-wrap">
-<!-- Change image src as per your requirements -->
-<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/men-product-7.png" alt="Product Image" width="238" height="238"></amp-img>
-</div>
-<a href="https://www.google.co.in/" class="p-link">
-Shop now 
-<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
-</a>
-</div>
-</li>
-<li class="product-item">
-<div class="product-card">
-<div class="img-wrap">
-<!-- Change image src as per your requirements -->
-<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/men-product-8.png" alt="Product Image" width="238" height="238"></amp-img>
-</div>
-<a href="https://www.google.co.in/" class="p-link">
-Shop now 
-<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
-</a>
-</div>
-</li>
-</ul>
-</div>
-<div class="category hide" [class]="(selectedCategory.value == 'women') ? 'category show' : 'category hide'">
-<ul class="product-list">
-<li class="product-item">
-<div class="product-card">
-<div class="img-wrap">
-<!-- Change image src as per your requirements -->
-<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/women-product-1.png" alt="Product Image" width="238" height="238"></amp-img>
-</div>
-<a href="https://www.google.co.in/" class="p-link">
-Shop now 
-<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
-</a>
-</div>
-</li>
-<li class="product-item">
-<div class="product-card">
-<div class="img-wrap">
-<!-- Change image src as per your requirements -->
-<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/women-product-2.png" alt="Product Image" width="238" height="238"></amp-img>
-</div>
-<a href="https://www.google.co.in/" class="p-link">
-Shop now 
-<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
-</a>
-</div>
-</li>
-<li class="product-item">
-<div class="product-card">
-<div class="img-wrap">
-<!-- Change image src as per your requirements -->
-<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/women-product-3.png" alt="Product Image" width="238" height="238"></amp-img>
-</div>
-<a href="https://www.google.co.in/" class="p-link">
-Shop now 
-<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
-</a>
-</div>
-</li>
-<li class="product-item">
-<div class="product-card">
-<div class="img-wrap">
-<!-- Change image src as per your requirements -->
-<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/women-product-4.png" alt="Product Image" width="238" height="238"></amp-img>
-</div>
-<a href="https://www.google.co.in/" class="p-link">
-Shop now 
-<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
-</a>
-</div>
-</li>
-<li class="product-item">
-<div class="product-card">
-<div class="img-wrap">
-<!-- Change image src as per your requirements -->
-<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/women-product-5.png" alt="Product Image" width="238" height="238"></amp-img>
-</div>
-<a href="https://www.google.co.in/" class="p-link">
-Shop now 
-<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
-</a>
-</div>
-</li>
-<li class="product-item">
-<div class="product-card">
-<div class="img-wrap">
-<!-- Change image src as per your requirements -->
-<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/women-product-6.png" alt="Product Image" width="238" height="238"></amp-img>
-</div>
-<a href="https://www.google.co.in/" class="p-link">
-Shop now 
-<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
-</a>
-</div>
-</li>
-<li class="product-item">
-<div class="product-card">
-<div class="img-wrap">
-<!-- Change image src as per your requirements -->
-<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/women-product-7.png" alt="Product Image" width="238" height="238"></amp-img>
-</div>
-<a href="https://www.google.co.in/" class="p-link">
-Shop now 
-<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
-</a>
-</div>
-</li>
-<li class="product-item">
-<div class="product-card">
-<div class="img-wrap">
-<!-- Change image src as per your requirements -->
-<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/women-product-8.png" alt="Product Image" width="238" height="238"></amp-img>
-</div>
-<a href="https://www.google.co.in/" class="p-link">
-Shop now 
-<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
-</a>
-</div>
-</li>
-</ul>
-</div>
-<div class="category hide" [class]="(selectedCategory.value == 'kids') ? 'category show' : 'category hide'">
-<ul class="product-list">
-<li class="product-item">
-<div class="product-card">
-<div class="img-wrap">
-<!-- Change image src as per your requirements -->
-<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/kid-product-1.png" alt="Product Image" width="238" height="238"></amp-img>
-</div>
-<a href="https://www.google.co.in/" class="p-link">
-Shop now 
-<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
-</a>
-</div>
-</li>
-<li class="product-item">
-<div class="product-card">
-<div class="img-wrap">
-<!-- Change image src as per your requirements -->
-<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/kid-product-2.png" alt="Product Image" width="238" height="238"></amp-img>
-</div>
-<a href="https://www.google.co.in/" class="p-link">
-Shop now 
-<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
-</a>
-</div>
-</li>
-<li class="product-item">
-<div class="product-card">
-<div class="img-wrap">
-<!-- Change image src as per your requirements -->
-<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/kid-product-3.png" alt="Product Image" width="238" height="238"></amp-img>
-</div>
-<a href="https://www.google.co.in/" class="p-link">
-Shop now 
-<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
-</a>
-</div>
-</li>
-<li class="product-item">
-<div class="product-card">
-<div class="img-wrap">
-<!-- Change image src as per your requirements -->
-<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/kid-product-4.png" alt="Product Image" width="238" height="238"></amp-img>
-</div>
-<a href="https://www.google.co.in/" class="p-link">
-Shop now 
-<amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
-</a>
-</div>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<footer class="footer">
-<ul class="media-logo-list">
-<li class="logo-item">
-<a href="https://www.google.co.in/" class="logo-link">
-<amp-img layout="responsive" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/31a2d71dbe3e4579bcfa0d74dfc3e34d.png" alt="instagram" class="media-logo" width="34" height="34"></amp-img>
-</a>
-</li>
-<li class="logo-item">
-<a href="https://www.google.co.in/" class="logo-link">
-<amp-img layout="responsive" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/28b65b9647964152a2a5f6e816e50bf9.png" alt="facebook" class="media-logo" width="34" height="34"></amp-img>
-</a>
-</li>
-<li class="logo-item">
-<a href="https://www.google.co.in/" class="logo-link">
-<amp-img layout="responsive" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/3ae087af1f3544b0885c0a3ec31c2419.png" alt="x" class="media-logo" width="34" height="34"></amp-img>
-</a>
-</li>
-</ul>
-<p class="f-desc">For assistance, connect with us on social media or reach out to our support team at support@example.com </p>
-<ul class="f-nav-list">
-<li class="f-nav-item">
-<a href="https://www.google.co.in/" class="f-nav-link">Privacy</a>
-</li>
-<li class="f-nav-item">
-<a href="https://www.google.co.in/" class="f-nav-link">Account</a>
-</li>
-<li class="f-nav-item">
-<a href="https://www.google.co.in/" class="f-nav-link">Unsubscribe</a>
-</li>
-</ul>
-<p class="f-desc">To opt out of promotional emails like this, <a href="https://google.com" style="text-decoration:none;color:#D66437;font-weight:bold">unsubscribe here</a></p>
-</footer>
-</div>
-</body>
-</html>
-```
-
-</Accordion>
-
-## Cart Abandonment Template
-
-This AMP email template is designed to help recover lost sales by reminding users about the products left in their shopping carts. With interactive AMP elements, users can view product details, scroll through images, and proceed to checkout, all within the email.
-
-<Image align="center" alt="Sample Cart Abandonment Template" border={true} caption="Sample Cart Abandonment Template" src="https://files.readme.io/95c18a7f9796b0566237c22f74af769ad410f5296f3b67f7d67b720b672e82c3-Cart_Anandonment_AMP.png" width="25% " />
-
-<details>
-  <summary><b>Expand to know more about the template.</b></summary>
-
   ### Use Case Examples
 
-  * Recover lost revenue by reminding users about items left in their shopping cart.
-  * Re-engage users with personalized product suggestions based on past purchases or browsing behavior.
-  * Promote urgency with limited-time offers or low stock alerts tied to abandoned items.
-  * Enhance the shopping experience by allowing users to interact with product carousels or resume checkout directly within the email
+  * Highlight newly launched or trending products from your catalog.
+  * Personalize the product showcase based on the user’s recent activity or preferences.
+  * Run weekly or monthly What’s New campaigns for returning users.
+  * Drive conversions by enabling users to click through to product pages without friction.
 
   ### Template Customization Options
 
@@ -6240,2014 +5533,2224 @@ This AMP email template is designed to help recover lost sales by reminding user
   * [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
   * [Update Links in Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
   * [Change Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+  * [Update Privacy Policy](doc:ootb-email-templates#update-privacy-policy)
+  * [Update Social Media and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
 
   ### Template Code
 
   ```html
-  Jump to
-
-  Confluence navigation
-  Side navigation
-  Page
-
-  Home
-
-  Recent
-
-  Spaces
-
-  Teams
-
-  Apps
-  Templates
-
-  Create
-  Search
-
-  9+
-
-
-
-  Customer Success
-
-  Shortcuts
-
-  Content
-
-
-  Search by title
-  Results will update as you type.
-
-  Show more below
-
-  Create
-
-  Blogs
-
-
-  Apps
-
-
-
-  Customer Success
-  /
-  Email AMP & HTML Templates
-
-
-
-
-
-  Share
-
-
-  Email AMP & HTML Templates
-
-
-  Owned by Shruti Awasthi
-
-  Last updated: Feb 12, 2025
-  1 min read
-
-  105 people viewed
-  Objective: These are prebuilt HTML and AMP email templates that are designed to empower marketers with versatile, user-friendly solutions for their communication needs. These templates are fully customizable to reflect unique branding and cover common use cases such as cart abandonment, subscription confirmations, welcome emails, festive promotions, newsletters, etc.. 
-
-  For ease of use, a detailed readme section is included to enable marketers to customize the templates on their own.
-
-  Table of Content:
-
-  Table A: HTML Templates:
-
-  S.no
-
-  Template Name
-
-  Read Me
-
-  HTML File
-
-  S.no
-
-  Template Name
-
-  Read Me
-
-  HTML File
-
-  1
-
-  Welcome Mailer
-
-  Welcome Mailer-1.pdf 
-  	
-  Welcome.html 
-
-  2
-
-  Welcome Mailer-Option 2 
-
-  Welcome Mailers-2.pdf 
-
-  Welcome Mailer 2.html 
-
-  3
-
-  What's in the Store ?
-
-  What's in the store.pdf 
-
-   Whats in Store.html 
-
-  4
-
-  First Purchase Incentive
-
-  First-Purchase-Incentive.pdf 
-
-   First Purchase.html 
-
-  5
-
-  Newsletter
-
-  Newsletter.pdf 
-
-   Newsletter.html 
-
-  6
-
-  Promotional Mailer
-
-  Promotional Template.pdf 
-
-   Promotional.html 
-
-  7
-
-  Cart Abandonment 
-
-  _Cart Abandonment(HTML).pdf 
-
-   Cart-Abandonment.html 
-
-  8
-
-  WinBack Mailer
-
-  WinBack.pdf
-
-   Winback.html 
-
-  9
-
-  Flash Sale
-
-  FlashSale Template.pdf 
-
-  FlashSale.html 
-
-  10
-
-  Scratch Card - Festive (Diwali)
-
-  Scratch Card-HTML.pdf 
-
-  Scratch Card - Festive.html  
-
-  11
-
-  Informative Mailer
-
-  Informative-Mailer.pdf 
-
-  Informative.html 
-
-  12
-
-  Subscription Renewal
-
-  Subscription - HTML Template.pdf 
-
-    Subscription.html 
-
-  13
-
-  Birthday Mailer
-
-  Birthday Template.pdf 
-
-   Birthday.html 
-
-  14
-
-  Anniversary Mailer
-
-  Anniversary Template.pdf 
-
-   Anniversary.html 
-
-  15
-
-  Loyalty Expiry
-
-  Loyalty Expiry Template.pdf 
-
-   Loyalty Expiry.html 
-
-  16
-
-  Loyalty Points
-
-  Loyalty Points Template.pdf 
-
-   Loyalty Points.html 
-
-  17
-
-  Feedback 
-
-  FeedBack HTML.pdf
-  	
-  Feedback.html 
-
-  18
-
-  Access to Early Sale
-
-  Access to Early Sales.pdf 
-
-  Access to Early Sales.html 
-
-  19
-
-  Account Verification
-
-  Accout Verification.pdf 
-
-  AccountVerification.html 
-
-  20
-
-  Order Placed
-
-  Order Placed HTML.pdf 
-
-  Order Placed.html 
-
-  21
-
-  Order Shipped
-
-  Order Shipped.pdf 
-
-  Order Shipped.html 
-
-  22
-
-  Order Delivered
-
-  Order Delivered.pdf 
-
-  Order Delivered.html 
-
-  23
-
-  Password Reset
-
-  Password Reset.pdf 
-
-  Password Reset.html  
-
-  24
-
-  Show Recommendation (White)
-
-  Show Recommendation(White).pdf 
-
-  Show Recommendation (White).html 
-
-  25
-
-  Show Recommendation (Black)
-
-  Show Recommendation (Black).pdf 
-
-  Show Recommendation Black.html 
-
-  26
-
-  Referral
-
-  Referral- HTML.pdf 
-
-  Referral.html 
-
-  Table B: AMP Templates:
-
-  S.no
-
-  Template Name
-
-  Read Me 
-
-  Code File
-
-  1
-
-  What's in the Store ?
-
-  What's in the store.pdf 
-
-  Whats in Store.html 
-
-  2
-
-  Cart Abandonment 
-
-  CART ABANDONMENT TEMPLATE-AMP.pdf 
-
-  Cart Abandonment AMP.html 
-
-  3
-
-  Diwali - GIF (Scratch Card) 
-
-  Scratch Card AMP Template.pdf 
-
-  Scratch- AMP.html 
-
-  4
-
-  Spin The Wheel 
-
-  Spin the wheel AMP.pdf 
-
-  Spin the Wheel.html 
-
-  5
-
-  AMP Form - Option 1
-
-  AMP Form Template 1.pdf 
-
-  AMP Form1.html 
-
-  6
-
-  AMP Form - Option 2
-
-  AMP Form Template 2.pdf 
-
-  AMP Form2.html 
-
-  7
-
-  AMP Form - Option 3
-
-  AMP Form Template 3.pdf 
-
-  Amp Form3.html 
-
-  8
-
-  EMI Calculator
-
-  EMI Calculator.pdf 
-
-  EMI Calculator.html 
-
-  9
-
-  SIP Calculator
-
-  SIP Calculator.pdf 
-
-  SIP Calculator.html 
-
-  10
-
-  Insurance Calculator
-
-  Insurance Calculator.pdf 
-
-  Insurance Calculator.html 
-
-  11
-
-  Relevant Products
-
-  Relevant Products - AMP.pdf 
-
-  Relevant Products.html 
-
-  12
-
-  Show Recommendations
-
-  Show Recommendations AMP.pdf 
-
-  Show Recommendations.html 
-
-  13
-
-  Show Recommendations with Notify Me
-
-  Show Recommendation With Notify Me AMP.pdf 
-
-  Show Recommendations - Notify Me.html 
-
-  14
-
-  Feedback 
-
-  Feedback Template AMP.pdf 
-
-  Feedback.html 
-
-  15
-
-  Zodiac
-
-  ZODIAC -  AMP.pdf 
-
-  Zodiac.html 
-
-  16
-
-  New Image on Click
-
-  New Image on click AMP.pdf 
-
-  New Image on Click.html 
-
-  Add label
-  Related content
-
-
-  Email Templates
-  Email Templates
-  Brendan Davies
-  More like this
-  NPS Sample Email Templates
-  NPS Sample Email Templates
-  Customer Success
-  Read with this
-  Expanded Out-of-the-box Email Template Library <WIP>
-  Expanded Out-of-the-box Email Template Library <WIP>
-  Product Universe
-  More like this
-  New OOTB Email Templates | UX Copy
-  New OOTB Email Templates | UX Copy
-  Product Universe
-  More like this
-  Scratch Card | Custom HTML InApp Template
-  Scratch Card | Custom HTML InApp Template
-  TSG Knowledge Base
-  Read with this
-  Stories In-App Custom HTML template
-  Stories In-App Custom HTML template
-  TSG Knowledge Base
-  Read with this
-
-  thumbs up
-
-  clapping hands
-
-  party popper
-
-  Be the first to add a reaction
-
-  Cart Abandonment AMP.html
-  html · 77 KB
-
   <!doctype html>
-  <html ⚡4email>
+  <html ⚡4email data-css-strict>
   <head>
-      <meta charset="utf-8">
-      <script async src="https://cdn.ampproject.org/v0.js"></script>
-      <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
-      <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
-      <style amp4email-boilerplate>
-          body {
-              visibility: hidden
-          }
-      </style>
-      <style amp-custom>
-          * {
-              margin: 0;
-              padding: 0;
-          }
-          ul,
-          li {
-              list-style: none;
-          }
-          /* Change Theme */
-          body {
-              font-family: "Helvetica", arial, sans-serif;
-              font-weight: 400;
-              background-color: rgb(248, 250, 252);
-          }
-          /* Change Theme */
-          img {
-              width: 100%;
-              height: 100%;
-              object-fit: contain;
-          }
-          amp-img {
-              position: relative;
-          }
-          .main {
-              position: relative;
-              width: 100%;
-              max-width: 600px;
-              overflow: hidden;
-              margin: 0 auto;
-              background: #FFFFFF;
-          }
-          .container {
-              max-width: 85%;
-              margin: 0 auto;
-          }
-          @media only screen and (max-width: 400px) {
-              .container,
-              .main {
-                  max-width: 95%;
-              }
-          }
-          .cp-header {
-              padding: 0 30px;
-          }
-          .cp-header.typ-shadow {
-              box-shadow: 0px 4px 4px 0px #00000040;
-          }
-          .logo-wrap {
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-          }
-          .logo-wrap .img-wrap {
-              width: 127px;
-              height: 58px;
-              margin: 8.5px 0;
-          }
-          .nav-list {
-              list-style: none;
-              display: flex;
-              align-items: center;
-          }
-          .nav-list .nav-item {
-              padding: 25px 19px;
-              border-left: 0.5px solid #919191;
-              display: flex;
-              align-items: center;
-          }
-          .nav-list .nav-item:last-child {
-              padding-right: 0;
-          }
-          .cart-icon {
-              border: 0;
-              outline: 0;
-              position: relative;
-              background-color: transparent;
-          }
-          .cart-icon.active .dot {
-              display: inline-block;
-          }
-          .dot {
-              width: 6px;
-              height: 6px;
-              background: #FF533F;
-              border-radius: 50%;
-              display: none;
-              position: absolute;
-              top: 2px;
-              right: 0px;
-              z-index: 1;
-          }
-          .call-icon {
-              width: 20px;
-              height: 20px;
-              margin-right: 5px;
-          }
-          .icon-text {
-              font-size: 14px;
-              font-weight: 400;
-              line-height: 24px;
-              text-align: center;
-              color: #464646;
-          }
-          .cp-banner {
-              width: 100%;
-              max-height: 361px;
-              margin-bottom: 22px;
-          }
-          .cp-footer {
-              margin-top: 50px;
-              background: #1E1E1E;
-              padding: 32px 0 34px;
-          }
-          .media-logo-list {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              margin-bottom: 20px;
-          }
-          .media-logo-list .logo-item {
-              padding: 6px 32px;
-              border: 1px solid #FFFFFF;
-          }
-          .media-logo-list .logo-item .logo-link {
-              display: inline-block;
-          }
-          .media-logo {
-              width: 20px;
-              height: 20px;
-              display: inline-block;
-          }
-          .f-desc {
-              font-size: 14px;
-              font-weight: 400;
-              line-height: 20px;
-              text-align: center;
-              color: #FFFFFF;
-              margin: 0 auto;
-              max-width: 84%;
-              text-transform: capitalize;
-          }
-          .bs-sec {
-              padding: 28px 0;
-          }
-          .bs-sec.typ-product {
-              background: #F1F1F1;
-          }
-          .bs-sec .sec-title {
-              padding: 0 26px 12px;
-              text-transform: capitalize;
-              font-size: 20px;
-              font-weight: 400;
-              line-height: 24px;
-              text-align: center;
-              position: relative;
-              width: max-content;
-              margin: 0 auto;
-          }
-          .bs-sec .sec-title.typ-2 {
-              margin: 0;
-              padding: 0 0 2px;
-          }
-          /* .bs-sec .sec-title.typ-2:after{
-              display: none;
-          } */
-          .lyt-grid {
-              display: flex;
-              justify-content: space-between;
-              align-items: flex-start;
-              gap: 15px;
-              margin-top: 20px;
-          }
-          .lyt-grid .grid-item {
-              width: 33%;
-          }
-          .product-card {
-              padding: 5px;
-              position: relative;
-              background: #FFFFFF;
-          }
-          .product-card .img-wrap {
-              max-height: 177px;
-              max-width: 150px;
-              margin: 0 auto;
-              overflow: hidden;
-          }
-          .product-card .p-cart-icon {
-              background: #FFFFFF;
-              padding: 3px 5px;
-              border: 0;
-              outline: 0;
-              position: absolute;
-              top: 5px;
-              right: 5px;
-              cursor: pointer;
-          }
-          .product-card .p-wrap {
-              display: flex;
-              justify-content: space-between;
-              align-items: baseline;
-              margin: 5px 0;
-          }
-          .product-card .p-title {
-              width: 60%;
-              font-size: 14px;
-              font-weight: 400;
-              line-height: 18px;
-              color: #252525;
-              padding-right: 5px;
-          }
-          .product-card .p-amt {
-              color: #252525;
-              font-size: 12px;
-              font-weight: 300;
-              line-height: 15px;
-              text-align: right;
-              font-style: italic;
-          }
-          .product-card .rupee-sign {
-              font-size: 10px;
-          }
-          .product-card .p-desc {
-              text-transform: capitalize;
-              font-size: 8px;
-              font-weight: 400;
-              line-height: 13px;
-              color: #909090;
-              overflow: hidden;
-              text-overflow: ellipsis;
-              -webkit-line-clamp: 2;
-              display: -webkit-box;
-              -webkit-box-orient: vertical;
-          }
-          .btn-wrap {
-              text-align: right;
-          }
-          .shop-cta {
-              font-size: 12px;
-              font-weight: 400;
-              text-transform: capitalize;
-              line-height: 15px;
-              color: #000000;
-              text-decoration: none;
-              display: inline-block;
-              text-align: center;
-              margin-top: 15px;
-          }
-          .catalog-card {
-              margin-top: 30px;
-          }
-          .catalog-card .catalog-img {
-              max-width: 506px;
-              max-height: 316px;
-              position: relative;
-          }
-          .catalog-card .offer-band {
-              background: #1e1e1e;
-              text-align: center;
-              padding: 7px 20px;
-              font-size: 12px;
-              font-weight: 400;
-              line-height: 13px;
-              letter-spacing: 0.25em;
-              position: absolute;
-              top: 0;
-              left: 0;
-              z-index: 1;
-              width: 92%;
-              color: #fff;
-          }
-          .catalog-card .cart-wrap {
-              position: absolute;
-              bottom: 0;
-              right: 0;
-              padding: 8px 10px;
-              background: #fff;
-              z-index: 1;
-          }
-          .catalog-card .cart-wrap .count {
-              position: absolute;
-              top: 8px;
-              right: 8px;
-              width: 11px;
-              height: 11px;
-              background: #FF533F;
-              border-radius: 50%;
-              color: #FFFFFF;
-              font-size: 7px;
-              font-weight: 400;
-              line-height: 11px;
-              text-align: center;
-              z-index: 1;
-          }
-          .catalog-card .catalog-body {
-              background: #f1f1f1;
-              padding: 12px 14px 10px;
-          }
-          .catalog-card .c-wrap {
-              display: flex;
-              justify-content: space-between;
-              align-items: flex-start;
-          }
-          .catalog-card .c-title {
-              margin-bottom: 5px;
-              font-size: 20px;
-              font-weight: 400;
-              line-height: 24px;
-              color: #252525;
-              width: 50%;
-          }
-          .catalog-card .c-amt {
-              font-size: 22px;
-              font-style: italic;
-              font-weight: 400;
-              line-height: 15px;
-              text-align: right;
-          }
-          .catalog-card .rupee-sign {
-              font-size: 10px;
-          }
-          .catalog-card .c-desc {
-              font-size: 10px;
-              font-weight: 400;
-              line-height: 13px;
-              color: #545454;
-              width: 40%;
-              text-transform: capitalize;
-          }
-          .catalog-card .btn-wrap {
-              width: 60%;
-              display: flex;
-              justify-content: flex-end;
-          }
-          .catalog-card .catalog-cta {
-              font-size: 14px;
-              font-weight: 400;
-              text-transform: uppercase;
-              line-height: 20px;
-              color: #FFFFFF;
-              text-decoration: none;
-              background: #000000;
-              padding: 4px 34px;
-              display: inline-block;
-              text-align: center;
-              max-width: 167px;
-              border: none;
-              margin-left: 10px;
-              cursor: pointer;
-          }
-          .product-count {
-              display: flex;
-              align-items: center;
-              justify-content: space-between;
-              padding: 6px;
-              background: #FFF;
-              width: 60px;
-          }
-          .product-count .product-count-sign {
-              background: transparent;
-              border: 0;
-              outline: none;
-              cursor: pointer;
-          }
-          .product-count-value {
-              font-size: 12px;
-              font-weight: 400;
-              line-height: 15px;
-              text-align: center;
-          }
-          .input {
-              border: 0.5px solid #000000;
-              padding: 7px 10px;
-              font-family: "Helvetica", arial, sans-serif;
-              font-size: 16px;
-              font-weight: 400;
-              line-height: 24px;
-              color: #000000;
-              width: -webkit-fill-available;
-          }
-          .input::-webkit-input-placeholder,
-          .input::-moz-placeholder,
-          .input:-ms-input-placeholder,
-          .input:-moz-placeholder {
-              color: #919191;
-          }
-          @media only screen and (max-width: 480px) {
-              .cp-header {
-                  max-width: 100%;
-                  padding: 0 10px;
-              }
-              .logo-wrap .img-wrap {
-                  width: 101px;
-                  height: 48px;
-                  margin: 5.5px 0;
-              }
-              .nav-list .nav-item {
-                  padding: 15px 10px;
-              }
-              .call-icon {
-                  width: 18px;
-                  height: 18px;
-              }
-              .icon-text {
-                  font-size: 12px;
-                  line-height: 20px;
-              }
-              .lyt-grid {
-                  gap: 5px;
-              }
-              .product-card .p-title {
-                  font-size: 12px;
-                  line-height: 16px;
-              }
-              .product-card .p-amt {
-                  font-size: 10px;
-                  line-height: 16px;
-              }
-              .bs-sec .sec-title {
-                  padding: 0 20px 12px;
-                  font-size: 18px;
-                  line-height: 20px;
-              }
-              .catalog-card .catalog-cta {
-                  font-size: 10px;
-                  line-height: 14px;
-                  padding: 5px;
-              }
-          }
-          .form-list {
-              margin-top: 20px;
-              display: flex;
-              flex-wrap: wrap;
-              justify-content: space-between;
-              gap: 10px;
-          }
-          .form-item {
-              width: 49%;
-              position: relative;
-              padding-bottom: 20px;
-          }
-          .form-item.typ-full {
-              width: 100%;
-          }
-          [visible-when-invalid]{
-              display: block;
-          }
-          .error-msg{
-              font-size: 10px;  
-              display: none;   
-              position: absolute;
-              bottom: 0; left: 0;       
-          }
-          .error-msg.visible{
-              display: block;   
-          }
-          .field-wrap {
-              display: block;
-              position: relative;
-              padding-left: 25px;
-              margin-bottom: 10px;
-              cursor: pointer;
-              -webkit-user-select: none;
-              -moz-user-select: none;
-              -ms-user-select: none;
-              user-select: none;
-              font-size: 16px;
-              font-weight: 400;
-              line-height: 24px;
-          }
-          .field-wrap input {
-              position: absolute;
-              opacity: 0;
-              cursor: pointer;
-          }
-          .checkmark {
-              position: absolute;
-              top: 50%;
-              transform: translateY(-50%);
-              left: 0;
-              height: 17px;
-              width: 17px;
-              background-color: #0B0B0B;
-              border-radius: 50%;
-          }
-          .field-wrap input:checked~.checkmark {
-              background-color: #0B0B0B;
-          }
-          .checkmark:after {
-              content: "";
-              position: absolute;            
-              display: block;
-          }
-          .field-wrap input:checked~.checkmark:after {
-             display: none;
-          }
-          .field-wrap .checkmark:after {
-              top: 2px;
-              left: 2px;
-              width: 13px;
-              height: 13px;
-              border-radius: 50%;
-              background: #FFFFFF;
-          }
-          .mt-32 {
-              margin-top: 32px;
-          }
-          .form-btn {
-              font-size: 20px;
-              font-weight: 400;
-              line-height: 24px;
-              text-align: center;
-              width: 100%;
-              background: #252525;
-              border: 0;
-              outline: none;
-              color: #FFF;
-              padding: 10px;
-              cursor: pointer;
-          }
-          .tab-3 {
-              position: relative;
-          }
-          .modal-overlay {
-              width: 100%;
-              height: 100%;
-              background-color: #000000;
-              padding: 100px 0;
-          }
-          .modal {
-              width: 75%;
-              margin: 40px auto;
-              z-index: 12;
-              background: #FFF;
-              padding: 70px 30px;
-              position: relative;
-          }
-          .close {
-              width: 27px;
-              height: 27px;
-              display: inline-block;
-              text-align: center;
-              background: #000000;
-              font-size: 13px;
-              color: #FFFFFF;
-              line-height: 27px;
-              border-radius: 50%;
-              position: absolute;
-              top: 6px;
-              right: 6px;
-              cursor: pointer;
-          }
-          .m-title {
-              font-size: 20px;
-              font-weight: 400;
-              line-height: 24px;
-              text-align: center;
-              margin-bottom: 20px;
-              color: #000000;
-              text-transform: uppercase;
-          }
-          .m-desc {
-              font-size: 14px;
-              font-weight: 400;
-              line-height: 20px;
-              text-align: center;
-              color: #545454;
-              text-transform: capitalize;
-              max-width: 70%;
-              margin: 0 auto;
-          }
-          .product-list {
-              margin: 16px 0;
-          }
-          .product-list .product-item {
-              display: flex;
-              justify-content: space-between;
-              padding: 16px 0;
-              border-bottom: 1px solid #919191;
-          }
-          .product-list .product-item:last-child {
-              border: 0;
-              padding-bottom: 0;
-          }
-          .lhs {
-              width: 80%;
-          }
-          .rhs {
-              width: 20%;
-              display: flex;
-              flex-direction: column;
-              justify-content: space-between;
-              align-items: flex-end;
-          }
-          .product-item .p-name {
-              font-size: 16px;
-              font-weight: 400;
-              line-height: 24px;
-              color: #000000;
-              margin-bottom: 6px;
-          }
-          .product-item .p-desc {
-              font-size: 10px;
-              font-weight: 400;
-              line-height: 13px;
-              color: #545454;
-              margin-bottom: 6px;
-          }
-          .product-item .p-quality {
-              font-size: 16px;
-              font-weight: 400;
-              line-height: 24px;
-              color: #000000;
-          }
-          .product-item .delete-icon {
-              background: transparent;
-              outline: none;
-              border: 0;
-          }
-          .product-item .p-amt {
-              font-size: 22px;
-              font-style: italic;
-              font-weight: 300;
-              line-height: 24px;
-              color: #000000;
-          }
-          .product-item .p-total {
-              font-size: 20px;
-              font-weight: 400;
-              line-height: 24px;
-              color: #000000;
-          }
-          .typ-bottom-padding-zero {
-              padding-bottom: 0;
-          }
-          .disabled {
-              pointer-events: none;
-              cursor: not-allowed;
-              opacity: 0.7;
-          }
-          @media only screen and (max-width: 480px) {
-              .catalog-card .offer-band {
-                  padding: 7px;
-                  font-size: 10px;
-                  line-height: 10px;
-                  width: 96%;
-              }
-              .catalog-card .c-title {
-                  font-size: 16px;
-                  line-height: 18px;
-              }
-              .catalog-card .c-amt {
-                  font-size: 18px;
-                  line-height: 20px;
-              }
-              .catalog-card .c-desc {
-                  margin-bottom: 7px;
-              }
-              .catalog-card .c-wrap {
-                  flex-wrap: wrap;
-              }
-              .catalog-card .btn-wrap,
-              .catalog-card .c-desc {
-                  width: 100%;
-              }
-              .form-item {
-                  width: 100%;
-              }
-              .lhs,
-              .rhs {
-                  width: 50%;
-              }
-              .product-item .p-total,
-              .product-item .p-amt {
-                  font-size: 18px;
-                  line-height: 20px;
-              }
-          }
-      </style>
+  <meta charset="utf-8">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+  <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+  <style amp4email-boilerplate>body{visibility:hidden}</style>
+  <style amp-custom>
+  *{
+  margin: 0;
+  padding: 0;
+  }
+  body {
+  font-family: "Helvetica", arial, sans-serif;
+  font-weight: 400;
+  }
+  img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  }
+  .main {
+  width: 100%;
+  max-width: 600px;
+  overflow: hidden;
+  margin: 0 auto;
+  background: #FFFFFF;
+  }
+  @media only screen and (max-width: 400px) {
+  body .main {
+  max-width: 95%;
+  }
+  }
+  .logo-wrap{
+  padding: 17px 0;
+  }
+  .logo-wrap .img-wrap{
+  max-width: 159px;
+  max-height: 73px;
+  margin: 0 auto;
+  } 
+  .footer{
+  border-top: 0.5px solid #D66437;
+  }
+  .media-logo-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 16px;
+  margin: 39px 0 34px;
+  }
+  .media-logo-list .logo-item{
+  width: 34px;
+  height: 34px;
+  }
+  .media-logo-list .logo-item .logo-link{
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  } 
+  .f-desc{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #939393;
+  text-align: center; 
+  max-width: 80%;
+  margin: 0 auto 27px;
+  }
+  .f-nav-list{
+  padding: 27px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  border-top: 0.5px solid #979797;
+  }
+  .f-nav-list .f-nav-item {
+  margin: 0 5px;
+  }
+  .f-nav-list .f-nav-item .f-nav-link{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: #939393;
+  text-decoration: none; 
+  }
+  .banner {
+  background: #d66437; 
+  }
+  .banner .top-wrap{
+  padding: 38px 25px 25px;
+  }
+  .banner .title {
+  margin-bottom: 10px;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 45px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  }
+  .banner .desc {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #fff;
+  text-align: center;
+  text-transform: none;
+  }
+  .banner .img-wrap {
+  max-height: 377px;
+  width: 100%;
+  }
+  .banner .cta-wrap {
+  padding: 15px 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  }
+  .banner .cta-desc {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  color: #fff;
+  width: 50%;
+  }
+  .banner .cta-desc .cm-bold {
+  font-weight: 500;
+  }
+  .banner .cta-btn {
+  padding: 5px 35px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
+  max-width: 125px;
+  background: #FFFFFF;
+  outline: none;
+  border: none;
+  text-decoration: none; 
+  }
+  .product-wrap {
+  padding: 40px 0 20px;
+  max-width: 85%;
+  margin: 0 auto;
+  }
+  .product-wrap .title {
+  color: #0d0d0d;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 52px;
+  text-align: center;
+  margin-bottom: 10px;
+  }
+  .product-wrap .desc {
+  color: #909090;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: none;
+  text-align: center;
+  margin-bottom: 28px;
+  }
+  .product-category{
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 0;
+  }
+  .category-wrap{
+  width: 60%;
+  }
+  .category-search{
+  text-align: right;
+  width: 40%;
+  }
+  .product-list {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+  flex-wrap: wrap;
+  list-style: none;
+  }
+  .product-list .product-item {
+  width: 48%;
+  margin-bottom: 15px;
+  }
+  .product-card .img-wrap {
+  max-width: 238px;
+  max-height: 238px;
+  margin-bottom: 10px;
+  }
+  .product-card .p-link {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 37px;
+  text-decoration: none;
+  color: #D66437;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  }
+  .product-card .p-link .icon {
+  width: 30px;
+  height: 14px;
+  }
+  .category-title{
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  text-transform: uppercase;
+  }
+  .hide {
+  display: none;
+  }
+  .show {
+  display: block;
+  }
+  .custom-select{
+  padding: 5px 12px;
+  background: #FFFFFF;
+  border: 1px solid #252525;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  }
+  .custom-select option{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  padding: 5px 11px;
+  }
+  .custom-select option:disabled{display: none;}
+  .custom-select option:hover,
+  .custom-select option:focus,
+  .custom-select option:active,
+  .custom-select option:checked{ 
+  color: #000000 ; background: #FFFFFF;
+  }
+  @media only screen and (max-width: 480px) {
+  .logo-wrap .img-wrap {
+  max-width: 130px;
+  max-height: 60px;
+  } 
+  .banner .top-wrap {
+  padding: 30px 25px 20px;
+  }
+  .banner .title {
+  font-size: 28px;
+  line-height: 38px;
+  }
+  .banner .cta-wrap {
+  padding: 15px 25px;
+  }
+  .banner .cta-btn {
+  padding: 5px 10px;
+  }
+  .product-list{
+  gap: 10px
+  }
+  .product-list .product-item{
+  margin-bottom: 20px;
+  }
+  .product-wrap{
+  max-width: 100%;
+  padding: 40px 10px 20px;
+  }
+  .product-wrap .title {
+  font-size: 22px;
+  line-height: 28px;
+  }
+  .product-wrap .desc{
+  margin-bottom: 20px;
+  }
+  .product-card .p-link {
+  font-size: 18px;
+  line-height: 28px;
+  gap: 10px;
+  }
+  .product-card .p-link .icon {
+  width: 20px;
+  height: 10px;
+  }
+  .media-logo-list {
+  gap: 12px;
+  margin: 29px 0 24px;
+  }
+  .f-nav-list {
+  padding: 20px 0;
+  }
+  .f-desc{
+  line-height: 20px;
+  }
+  }
+  @media only screen and (max-width: 300px) {
+  .product-wrap {
+  padding: 40px 5px 20px;
+  }
+  }
+  </style>
   </head>
   <body>
-      <div class="main">
-          <div id="ProductCatalogform" on="tap:AMP.setState({productCatalog01: {fuuid: 01 }})" role="tab" tabindex="1"
-              class="amp-html-block widget-container">
-              <form class="form-container" method="post" id="productCatalog01Form" enctype="multipart/form-data"
-                  action-xhr="https://example.com" custom-validation-reporting="show-all-on-submit" on="submit:AMP.setState({
-                      productCatalog01: {
-                          currentStep: productCatalog01.currentStep == 2 : productCatalog01.currentStep + 1, 
-                          submitting: true,
-                          editAddress: false
-                      }
-                  });
-                  submit-success:AMP.setState({
-                      productCatalog01: {
-                          submitting: false, 
-                          paymentUrl: productCatalog01.paymentUrl || event.response.url
-                      }
-                  });">
-                  <input hidden id="fuuid" name="fuuid" [value]="01" />
-                  <input hidden name="catalogType" value="STATIC" />
-                  <input hidden name="discountCouponCode" value="" />
-                  <amp-state id="productCatalog01">
-                      <script type="application/json">
-                          {
-                              "first_name": "",
-                              "last_name": "",
-                              "address": "",
-                              "landmark": "",
-                              "city": "",
-                              "country": "",
-                              "pincode": "",
-                              "phoneNumber": "",
-                              "email": "",
-                              "payment_mode": "",
-                              "isFirstNameValid": false,
-                              "isLastNameValid": false,
-                              "isPhoneNumberValid": false,
-                              "isEmailValid": false,
-                              "isPincodeValid": false,
-                              "isCityValid": false,
-                              "editAddress": false,        
-                              "paymentUrl": "",
-                              "product1": {
-                                  "id": 1,
-                                  "qty": 0,
-                                  "title": "Mystic Elixir",
-                                  "price": 1500,
-                                  "selectedVariantId": 0,
-                                  "addedToCart": false,
-                                  "variantId": 101,
-                                  "variantTitle": "Default Title",
-                                  "comparePrice": "null",
-                                  "variants": {
-                                      "101": {
-                                          "id": 101,
-                                          "price": 1500,
-                                          "title": "Default Title",
-                                          "comparePrice": "null"
-                                      }
-                                  }
-                              },
-                              "product2": {
-                                  "id": 2,
-                                  "qty": 0,
-                                  "title": "Opulent Essence",
-                                  "price": 1500,
-                                  "selectedVariantId": 0,
-                                  "addedToCart": false,
-                                  "variantId": 102,
-                                  "variantTitle": "Default Title",
-                                  "comparePrice": "null",
-                                  "variants": {
-                                      "102": {
-                                          "id": 102,
-                                          "price": 1500,
-                                          "title": "Default Title",
-                                          "comparePrice": "null"
-                                      }
-                                  }
-                              },
-                              "product3": {
-                                  "id": 3,
-                                  "qty": 0,
-                                  "title": "Product Name 3",
-                                  "price": 1500,
-                                  "selectedVariantId": 0,
-                                  "addedToCart": false,
-                                  "variantId": 103,
-                                  "variantTitle": "Default Title",
-                                  "comparePrice": "null",
-                                  "variants": {
-                                      "103": {
-                                          "id": 103,
-                                          "price": 1500,
-                                          "title": "Default Title",
-                                          "comparePrice": "null"
-                                      }
-                                  }
-                              },
-                              "product4": {
-                                  "id": 4,
-                                  "qty": 0,
-                                  "title": "Product Name 4",
-                                  "price": 1500,
-                                  "selectedVariantId": 0,
-                                  "addedToCart": false,
-                                  "variantId": 104,
-                                  "variantTitle": "Default Title",
-                                  "comparePrice": "null",
-                                  "variants": {
-                                      "104": {
-                                          "id": 104,
-                                          "price": 1500,
-                                          "title": "Default Title",
-                                          "comparePrice": "null"
-                                      }
-                                  }
-                              },
-                              "product5": {
-                                  "id": 5,
-                                  "qty": 0,
-                                  "title": "Product Name 5",
-                                  "price": 1500,
-                                  "selectedVariantId": 0,
-                                  "addedToCart": false,
-                                  "variantId": 105,
-                                  "variantTitle": "Default Title",
-                                  "comparePrice": "null",
-                                  "variants": {
-                                      "105": {
-                                          "id": 105,
-                                          "price": 1500,
-                                          "title": "Default Title",
-                                          "comparePrice": "null"
-                                      }
-                                  }
-                              },
-                              "currentStep": 1
-                          }
-                      </script>
-                  </amp-state>
-                  <!-- <h1 [text]="productCatalog01.currentStep"></h1> -->
-                  <header class="cp-header typ-shadow" [hidden]="productCatalog01.currentStep == 3">
-                      <div class="logo-wrap">
-                          <div class="img-wrap">
-                              <!-- Change Logo -->
-                              <amp-img layout="responsive"
-                                  src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Cart-Abandonment-HTML/logo.png"
-                                  alt="Logo" width="127" height="58" />
-                              <!-- Change Logo -->
-                          </div>
-                          <ul class="nav-list">
-                              <li class="nav-item">
-                                  <div class="cart-icon checkout-button"
-                                      [class]="productCatalog01.currentStep == 2 ? 'cart-icon active' : 'cart-icon'"
-                                      on="tap:AMP.setState({
-                                          productCatalog01 : {
-                                          currentStep:  2 ,
-                                          editAddress: true,
-                                          }
-                                      })"
-                                      >
-                                      <amp-img layout="fixed"
-                                          src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/icon-cart.png"
-                                          alt="cart-icon" class="icon" width="22" height="22" />
-                                      <span class="dot"></span>
-                                  </div>
-                              </li>
-                              <li class="nav-item">
-                                  <span class="icon-wrap">
-                                      <amp-img class="call-icon" layout="responsive"
-                                          src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Cart-Abandonment-HTML/call-icon.png"
-                                          alt="call icon" width="20" height="20" />
-                                  </span>
-                                  <p class="icon-text">9878725637</p>
-                              </li>
-                          </ul>
-                      </div>
-                  </header>
-                  <div class="step1" [hidden]="productCatalog01.currentStep != 1">
-                      <div class="bs-sec typ-look">
-                          <div class="sec-head">
-                              <h3 class="sec-title">PRODUCTS</h3>
-                          </div>
-                          <div class="sec-body">
-                              <div class="container">
-                                  <div class="catalog-card">
-                                      <div class="catalog-img">
-                                          <h3 class="offer-band">Get 20% off for your first purchase.</h3>
-                                          <!-- Change Product Image -->
-                                          <amp-img
-                                              src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Cart-Abandonment-HTML/look-1.png"
-                                              layout="responsive" alt="look" width="506" height="316" />
-                                          <!-- Change Product Image -->
-                                          <span class="cart-wrap">
-                                              <span class="count" hidden [hidden]="productCatalog01.product1.qty <= 0"
-                                                  [text]="productCatalog01.product1.qty"></span>
-                                              <amp-img layout="fixed"
-                                                  src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/icon-cart.png"
-                                                  alt="cart-icon" class="icon" width="27" height="27" />
-                                          </span>
-                                      </div>
-                                      <div class="catalog-body">
-                                          <div class="c-wrap">
-                                              <h3 class="c-title">Mystic Elixir</h3>
-                                              <p class="c-amt">
-                                                  <span class="rupee-sign">₹</span>
-                                                  <span class="amount"
-                                                      [text]="(productCatalog01.product1.qty*productCatalog01.product1.price).toFixed(2)">1500.00</span>
-                                              </p>
-                                              <input hidden name='101'
-                                                  [value]="productCatalog01.product1.variantId == 101 ? productCatalog01.product1.qty:1" />
-                                          </div>
-                                          <div class="c-wrap">
-                                              <p class="c-desc">is simply dummy text of the new age fashion industry.</p>
-                                              <div class="btn-wrap">
-                                                  <div class="product-count">
-                                                      <div class="product-count-sign" tabindex="1" role on="tap:AMP.setState({
-                                                          productCatalog01 : {
-                                                              product1: {
-                                                                  qty: productCatalog01.product1.qty > 0 ? productCatalog01.product1.qty - 1 : 0
-                                                              }
-                                                          }
-                                                      })">
-                                                          <amp-img layout="fixed"
-                                                              src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/minsu-icon.png"
-                                                              alt="minus-icon" class="icon" width="13" height="13" />
-                                                      </div>
-                                                      <div class="product-count-value"
-                                                          [text]="productCatalog01.product1.qty">0</div>
-                                                      <div class="product-count-sign" tabindex="1" on="tap:AMP.setState({
-                                                              productCatalog01 :{
-                                                                  product1: {
-                                                                      qty: productCatalog01.product1.qty < 5 ? productCatalog01.product1.qty + 1 : 5
-                                                                  }
-                                                              }
-                                                          })">
-                                                          <amp-img layout="fixed"
-                                                              src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/plus-icon.png"
-                                                              alt="plus-icon" class="icon" width="13" height="13" />
-                                                      </div>
-                                                  </div>
-                                                  <!-- Change CTA -->
-                                                  <button type="button" class="catalog-cta"
-                                                      on="tap:AMP.setState({productCatalog01 :{product1: {addedToCart:true}}})">
-                                                      ADD TO CART
-                                                  </button>
-                                                            <!-- Change CTA -->
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <!-- Second product card -->
-                                  <div class="catalog-card">
-                                      <div class="catalog-img">
-                                          <h3 class="offer-band">Get 20% off for your first purchase.</h3>
-                                          <amp-img
-                                              src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Cart-Abandonment-HTML/look-2.png"
-                                              layout="responsive" alt="look" width="506" height="316" />
-                                          <span class="cart-wrap">
-                                              <span class="count" hidden [hidden]="productCatalog01.product2.qty <= 0"
-                                                  [text]="productCatalog01.product2.qty"></span>
-                                              <amp-img layout="fixed"
-                                                  src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/icon-cart.png"
-                                                  alt="cart-icon" class="icon" width="27" height="27" />
-                                          </span>
-                                      </div>
-                                      <div class="catalog-body">
-                                          <div class="c-wrap">
-                                              <h3 class="c-title">Opulent Essence</h3>
-                                              <p class="c-amt">
-                                                  <span class="rupee-sign">₹</span>
-                                                  <span class="amount"
-                                                      [text]="(productCatalog01.product2.qty*productCatalog01.product2.price).toFixed(2)">1500</span>
-                                              </p>
-                                              <input hidden name='102'
-                                                  [value]="productCatalog01.product2.variantId == 102 ? productCatalog01.product2.qty:1" />
-                                          </div>
-                                          <div class="c-wrap">
-                                              <p class="c-desc">is simply dummy text of the new age fashion industry.</p>
-                                              <div class="btn-wrap">
-                                                  <div class="product-count">
-                                                      <div class="product-count-sign" tabindex="1" role on="tap:AMP.setState({
-                                                              productCatalog01 : {
-                                                                  product2: {
-                                                                      qty: productCatalog01.product2.qty > 0 ? productCatalog01.product2.qty - 1 : 0
-                                                                  }
-                                                              }
-                                                          })">
-                                                          <amp-img layout="fixed"
-                                                              src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/minsu-icon.png"
-                                                              alt="minus-icon" class="icon" width="13" height="13" />
-                                                      </div>
-                                                      <div class="product-count-value"
-                                                          [text]="productCatalog01.product2.qty">0</div>
-                                                      <div class="product-count-sign" tabindex="1" on="tap:AMP.setState({
-                                                              productCatalog01 :{
-                                                                  product2: {
-                                                                      qty: productCatalog01.product2.qty < 5 ? productCatalog01.product2.qty + 1 : 5
-                                                                  }
-                                                              }
-                                                          })">
-                                                          <amp-img layout="fixed"
-                                                              src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/plus-icon.png"
-                                                              alt="plus-icon" class="icon" width="13" height="13" />
-                                                      </div>
-                                                  </div>
-                                                  <button type="button" class="catalog-cta"
-                                                      on="tap:AMP.setState({productCatalog01 :{product2: {addedToCart:true}}})">
-                                                      ADD TO CART
-                                                  </button>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <input hidden name="amount" [value]='(
-                                      (productCatalog01.product1.qty * productCatalog01.product1.price) +
-                                      (productCatalog01.product2.qty * productCatalog01.product2.price) +
-                                      (productCatalog01.product3.qty * productCatalog01.product3.price) +
-                                      (productCatalog01.product4.qty * productCatalog01.product4.price) +
-                                      (productCatalog01.product5.qty * productCatalog01.product5.price)
-                                  ).toFixed(2)' />
-                              </div>
-                          </div>
-                      </div>
-                      <!-- product section -->
-                      <div class="bs-sec typ-product">
-                          <div class="sec-head">
-                              <h3 class="sec-title">Product Suggestions</h3>
-                          </div>
-                          <div class="sec-body">
-                              <div class="container">
-                                  <ul class="lyt-grid">
-                                      <li class="grid-item">
-                                          <div class="product-card">
-                                              <div class="img-wrap">
-                                                  <!-- Change image src as per your requirements -->
-                                                  <amp-img layout="responsive"
-                                                      src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Cart-Abandonment-HTML/product-3.png"
-                                                      alt="product" width="150" height="177" />
-                                              </div>
-                                              <button type="button" class="p-cart-icon"
-                                                  on="tap:AMP.setState({productCatalog01 :{product3: {addedToCart:true, qty:1}}})">
-                                                  <amp-img layout="fixed"
-                                                      src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/icon-cart.png"
-                                                      alt="cart-icon" class="icon" width="13" height="13"></amp-img>
-                                              </button>
-                                              <div class="product-info">
-                                                  <div class="p-wrap">
-                                                      <h3 class="p-title">Product name</h3>
-                                                      <p class="p-amt"><span class="rupee-sign">₹</span>1500</p>
-                                                  </div>
-                                                  <p class="p-desc">Is simply dummy text of the new age fashion industry.
-                                                  </p>
-                                              </div>
-                                          </div>
-                                      </li>
-                                      <li class="grid-item">
-                                          <div class="product-card">
-                                              <div class="img-wrap">
-                                                  <!-- Change image src as per your requirements -->
-                                                  <amp-img layout="responsive"
-                                                      src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Cart-Abandonment-HTML/product-2.png"
-                                                      alt="product" width="150" height="177" />
-                                              </div>
-                                              <button type="button" class="p-cart-icon"
-                                                  on="tap:AMP.setState({productCatalog01 :{product4: {addedToCart:true, qty:1}}})">
-                                                  <amp-img layout="fixed"
-                                                      src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/icon-cart.png"
-                                                      alt="cart-icon" class="icon" width="13" height="13" />
-                                              </button>
-                                              <div class="product-info">
-                                                  <div class="p-wrap">
-                                                      <h3 class="p-title">Product name</h3>
-                                                      <p class="p-amt"><span class="rupee-sign">₹</span>1500</p>
-                                                  </div>
-                                                  <p class="p-desc">Is simply dummy text of the new age fashion industry.
-                                                  </p>
-                                              </div>
-                                          </div>
-                                      </li>
-                                      <li class="grid-item">
-                                          <div class="product-card">
-                                              <div class="img-wrap">
-                                                  <!-- Change image src as per your requirements -->
-                                                  <amp-img layout="responsive"
-                                                      src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Cart-Abandonment-HTML/product-1.png"
-                                                      alt="product" width="150" height="177" />
-                                              </div>
-                                              <button type="button" class="p-cart-icon"
-                                                  on="tap:AMP.setState({productCatalog01 :{product5: {addedToCart:true, qty:1}}})">
-                                                  <amp-img layout="fixed"
-                                                      src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/icon-cart.png"
-                                                      alt="cart-icon" class="icon" width="13" height="13" />
-                                              </button>
-                                              <div class="product-info">
-                                                  <div class="p-wrap">
-                                                      <h3 class="p-title">Product name</h3>
-                                                      <p class="p-amt"><span class="rupee-sign">₹</span>1500</p>
-                                                  </div>
-                                                  <p class="p-desc">Is simply dummy text of the new age fashion industry.
-                                                  </p>
-                                              </div>
-                                          </div>
-                                      </li>
-                                  </ul>
-                                  <div class="btn-wrap">
-                                      <a href="https://google.com" class="shop-cta">Shop now
-                                          <amp-img layout="fixed"
-                                              src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Cart-Abandonment-HTML/arrow.png"
-                                              alt="arrow" width="17" height="10"
-                                              style="margin-left: 10px; max-width: 17px" />
-                                      </a>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <!-- product section -->
-                      <!-- footer section -->
-                      <footer class="cp-footer">
-                          <div class="container">
-                              <ul class="media-logo-list">
-                                  <li class="logo-item">
-                                      <a href="https://www.google.co.in/" class="logo-link">
-                                          <amp-img layout="responsive"
-                                              src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Cart-Abandonment-HTML/logo-insta.png"
-                                              alt="instagram" class="media-logo" width="20" height="20"></amp-img>
-                                      </a>
-                                  </li>
-                                  <li class="logo-item">
-                                      <a href="https://www.google.co.in/" class="logo-link">
-                                          <amp-img layout="responsive"
-                                              src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Cart-Abandonment-HTML/logo-facebook.png"
-                                              alt="facebook" class="media-logo" width="20" height="20"></amp-img>
-                                      </a>
-                                  </li>
-                                  <li class="logo-item">
-                                      <a href="https://www.google.co.in/" class="logo-link">
-                                          <amp-img layout="responsive"
-                                              src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Cart-Abandonment-HTML/logo-x.png"
-                                              alt="x" class="media-logo" width="20" height="20"></amp-img>
-                                      </a>
-                                  </li>
-                              </ul>
-                              <p class="f-desc">is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                  has
-                                  been the industry's standard dummy </p>
-                                  <p class="f-desc" style="margin-top: 20px;">To stop receiving these emails, <a href="https://www.google.com" style="color:#ffff;font-weight:bold;text-decoration:none;">unsubscribe here</a></p>
-                          </div>
-                      </footer>
-                      <!-- footer section -->
-                  </div>
-                  <div class="step2" hidden [hidden]="productCatalog01.currentStep != 2">
-                      <div class="container">
-                          <div class="bs-sec typ-bottom-padding-zero" [hidden]="
-                              (productCatalog01.product1.qty <= 0 &&
-                              productCatalog01.product2.qty <= 0 &&
-                              productCatalog01.product3.qty <= 0 &&
-                              productCatalog01.product4.qty <= 0 &&
-                              productCatalog01.product5.qty <= 0)
-                                      ">
-                              <div class="sec-head">
-                                  <h3 class="sec-title typ-2">PRODUCTS</h3>
-                              </div>
-                              <div class="sec-body">
-                                  <ul class="product-list">
-                                      <li class="product-item" [hidden]="productCatalog01.product1.qty == 0">
-                                          <div class="lhs">
-                                              <h3 class="p-name" [text]="productCatalog01.product1.title">Mystic Elixir
-                                              </h3>
-                                              <p class="p-desc"> is simply dummy text of the new age fashion industry.</p>
-                                              <p class="p-quality">Qty : <span
-                                                      [text]="productCatalog01.product1.qty"></span></p>
-                                          </div>
-                                          <div class="rhs">
-                                              <button class="delete-icon" on="tap:AMP.setState({
-                                                      productCatalog01 :{
-                                                          product1: {addedToCart:false, qty:0}
-                                                      }
-                                                  })">
-                                                  <amp-img
-                                                      src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/delete-icon.png"
-                                                      width="24" height="24" layout="fixed" alt="delete-icon">
-                                                  </amp-img>
-                                              </button>
-                                              <p class="p-amt">₹ <span
-                                                      [text]="(productCatalog01.product1.qty*productCatalog01.product1.price).toFixed(2)"></span>
-                                              </p>
-                                          </div>
-                                      </li>
-                                      <li class="product-item" [hidden]="productCatalog01.product2.qty == 0">
-                                          <div class="lhs">
-                                              <h3 class="p-name" [text]="productCatalog01.product2.title">Mystic Elixir
-                                              </h3>
-                                              <p class="p-desc">is simply dummy text of the new age fashion industry.</p>
-                                              <p class="p-quality">Qty : <span
-                                                      [text]="productCatalog01.product2.qty"></span></p>
-                                          </div>
-                                          <div class="rhs">
-                                              <button class="delete-icon" on="tap:AMP.setState({
-                                                      productCatalog01 :{
-                                                          product2: {addedToCart:false, qty:0}
-                                                      }
-                                                  })">
-                                                  <amp-img
-                                                      src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/delete-icon.png"
-                                                      width="24" height="24" layout="fixed" alt="delete-icon">
-                                                  </amp-img>
-                                              </button>
-                                              <p class="p-amt">₹ <span
-                                                      [text]="(productCatalog01.product2.qty*productCatalog01.product2.price).toFixed(2)"></span>
-                                              </p>
-                                          </div>
-                                      </li>
-                                      <li class="product-item" [hidden]="productCatalog01.product3.qty == 0">
-                                          <div class="lhs">
-                                              <h3 class="p-name" [text]="productCatalog01.product3.title">Product Name
-                                              </h3>
-                                              <p class="p-desc">is simply dummy text of the new age fashion industry.</p>
-                                              <p class="p-quality">Qty : <span
-                                                      [text]="productCatalog01.product3.qty"></span></p>
-                                          </div>
-                                          <div class="rhs">
-                                              <button class="delete-icon" on="tap:AMP.setState({
-                                                      productCatalog01 :{
-                                                          product3: {addedToCart:false, qty:0}
-                                                      }
-                                                  })">
-                                                  <amp-img
-                                                      src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/delete-icon.png"
-                                                      width="24" height="24" layout="fixed" alt="delete-icon">
-                                                  </amp-img>
-                                              </button>
-                                              <p class="p-amt">₹ <span
-                                                      [text]="(productCatalog01.product3.qty*productCatalog01.product3.price).toFixed(2)"></span>
-                                              </p>
-                                          </div>
-                                      </li>
-                                      <li class="product-item" [hidden]="productCatalog01.product4.qty == 0">
-                                          <div class="lhs">
-                                              <h3 class="p-name" [text]="productCatalog01.product4.title">Product Name
-                                              </h3>
-                                              <p class="p-desc">is simply dummy text of the new age fashion industry.</p>
-                                              <p class="p-quality">Qty : <span
-                                                      [text]="productCatalog01.product4.qty"></span></p>
-                                          </div>
-                                          <div class="rhs">
-                                              <button class="delete-icon" on="tap:AMP.setState({
-                                                      productCatalog01 :{
-                                                          product4: {addedToCart:false, qty:0}
-                                                      }
-                                                  })">
-                                                  <amp-img
-                                                      src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/delete-icon.png"
-                                                      width="24" height="24" layout="fixed" alt="delete-icon">
-                                                  </amp-img>
-                                              </button>
-                                              <p class="p-amt">₹ <span
-                                                      [text]="(productCatalog01.product4.qty*productCatalog01.product4.price).toFixed(2)"></span>
-                                              </p>
-                                          </div>
-                                      </li>
-                                      <li class="product-item" [hidden]="productCatalog01.product5.qty == 0">
-                                          <div class="lhs">
-                                              <h3 class="p-name" [text]="productCatalog01.product5.title">Product Name
-                                              </h3>
-                                              <p class="p-desc">is simply dummy text of the new age fashion industry.</p>
-                                              <p class="p-quality">Qty : <span
-                                                      [text]="productCatalog01.product5.qty"></span></p>
-                                          </div>
-                                          <div class="rhs">
-                                              <button class="delete-icon" on="tap:AMP.setState({
-                                                      productCatalog01 :{
-                                                          product5: {addedToCart:false, qty:0}
-                                                      }
-                                                  })">
-                                                  <amp-img
-                                                      src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/delete-icon.png"
-                                                      width="24" height="24" layout="fixed" alt="delete-icon">
-                                                  </amp-img>
-                                              </button>
-                                              <p class="p-amt">₹ <span
-                                                      [text]="(productCatalog01.product5.qty*productCatalog01.product5.price).toFixed(2)"></span>
-                                              </p>
-                                          </div>
-                                      </li>
-                                      <li class="product-item typ-final">
-                                          <div class="lhs">
-                                              <h3 class="p-total">Amount Total</h3>
-                                          </div>
-                                          <div class="rhs">
-                                              <p class="p-amt p-total-amt">₹
-                                                  <span [text]="(
-                                                      (
-                                                          (productCatalog01.product1.qty * productCatalog01.product1.price) +
-                                                          (productCatalog01.product2.qty * productCatalog01.product2.price) +
-                                                          (productCatalog01.product3.qty * productCatalog01.product3.price) +
-                                                          (productCatalog01.product4.qty * productCatalog01.product4.price) +
-                                                          (productCatalog01.product5.qty * productCatalog01.product5.price)
-                                                      ) * (100 - 0) / 100
-                                                  ).toFixed(2) + ' '">0</span>
-                                              </p>
-                                          </div>
-                                      </li>
-                                  </ul>
-                              </div>
-                          </div>
-                          <div class="bs-sec">
-                              <div class="sec-head ">
-                                  <h3 class="sec-title typ-2">ADD DETAILS</h3>
-                              </div>
-                              <div class="sec-body">
-                                  <ul class="form-list">
-                                      <!-- First Name -->
-                                      <li class="form-item">
-                                          <input id="productCatalog01-first_name" required on="
-                                              change:AMP.setState({
-                                                  productCatalog01: { first_name: event.value }
-                                              });
-                                              tap:AMP.setState({
-                                                  formValidation: { first_name_invalid: event.target.validity.valueMissing }
-                                              })
-                                          " type="text" name="first_name" class="input" placeholder="First name" [value]="productCatalog01.first_name" [aria-invalid]="formValidation.first_name_invalid" aria-describedby="productCatalog01.first_name">
-                                          <div class="error-msg" visible-when-invalid="valueMissing" validation-for="productCatalog01-first_name" id="productCatalog01.first_name">
-                                              First name is required.
-                                          </div>
-                                      </li>
-                                      <!-- Last Name -->
-                                      <li class="form-item">
-                                          <input id="productCatalog01-last_name" required on="
-                                              change:AMP.setState({
-                                                  productCatalog01: { last_name: event.value }
-                                              });
-                                              tap:AMP.setState({
-                                                  formValidation: { last_name_invalid: event.target.validity.valueMissing }
-                                              })
-                                          " type="text" name="last_name" class="input" placeholder="Last name" [value]="productCatalog01.last_name" [aria-invalid]="formValidation.last_name_invalid" aria-describedby="formValidation.last_name_invalid">
-                                          <div class="error-msg" visible-when-invalid="valueMissing" validation-for="productCatalog01-last_name" id="formValidation.last_name_invalid">
-                                              Last name is required.
-                                          </div>
-                                      </li>
-                                      <!-- Phone Number -->
-                                      <li class="form-item">
-                                          <input id="productCatalog01-phoneNumber" required [pattern]="productCatalog01.currentStep==2 ? '\\d{10}' : '*'" on="
-                                              change:AMP.setState({
-                                                  productCatalog01: { phoneNumber: event.value }
-                                              });
-                                              tap:AMP.setState({
-                                                  formValidation: { phoneNumber_invalid: event.target.validity.valueMissing || event.target.validity.patternMismatch }
-                                              })
-                                          " maxlength="10" type="text" name="phoneNumber" class="input" placeholder="Phone Number" [value]="productCatalog01.phoneNumber" pattern="\d{10}" [aria-invalid]="formValidation.phoneNumber_invalid" aria-describedby="productCatalog01.phoneNumber">
-                                          <div class="error-msg" visible-when-invalid="valueMissing" validation-for="productCatalog01-phoneNumber" id="productCatalog01.phoneNumber">
-                                              Phone number is required.
-                                          </div>
-                                          <div class="error-msg" visible-when-invalid="patternMismatch" validation-for="productCatalog01-phoneNumber">
-                                              Please enter a valid phone number.
-                                          </div>
-                                      </li>
-                                      <!-- Email -->
-                                      <li class="form-item">
-                                          <input id="productCatalog01-email" required type="email" on="
-                                              change:AMP.setState({
-                                                  productCatalog01: { email: event.value }
-                                              });
-                                              tap:AMP.setState({
-                                                  formValidation: { email_invalid: event.target.validity.valueMissing || event.target.validity.typeMismatch }
-                                              })
-                                          " name="email" class="input" placeholder="E-mail" [value]="productCatalog01.email" [aria-invalid]="formValidation.email_invalid" aria-describedby="productCatalog01.email">
-                                          <div class="error-msg" visible-when-invalid="valueMissing" validation-for="productCatalog01-email" id="productCatalog01.email">
-                                              Email is required.
-                                          </div>
-                                          <div class="error-msg" visible-when-invalid="patternMismatch" validation-for="productCatalog01-email">
-                                              Please enter a valid Email.
-                                          </div>
-                                      </li>
-                                      <!-- Address -->
-                                      <li class="form-item typ-full">
-                                          <input id="productCatalog01-address" required on="
-                                              change:AMP.setState({
-                                                  productCatalog01: { address: event.value }
-                                              });
-                                              tap:AMP.setState({
-                                                  formValidation: { address_invalid: event.target.validity.valueMissing }
-                                              })
-                                          " name="address" class="input" placeholder="Address" [value]="productCatalog01.address" [aria-invalid]="formValidation.address_invalid" aria-describedby="productCatalog01.address">
-                                          <div class="error-msg" visible-when-invalid="valueMissing" validation-for="productCatalog01-address" id="productCatalog01.address">
-                                              Address is required.
-                                          </div>
-                                      </li>
-                                      <!-- Landmark -->
-                                      <li class="form-item">
-                                          <input id="productCatalog01-landmark" required on="
-                                              change:AMP.setState({
-                                                  productCatalog01: { landmark: event.value }
-                                              });
-                                              tap:AMP.setState({
-                                                  formValidation: { landmark_invalid: event.target.validity.valueMissing }
-                                              })
-                                          " name="landmark" class="input" placeholder="Landmark" [value]="productCatalog01.landmark" [aria-invalid]="formValidation.landmark_invalid" aria-describedby="productCatalog01.landmark">
-                                          <div class="error-msg" visible-when-invalid="valueMissing" validation-for="productCatalog01-landmark" id="productCatalog01.landmark">
-                                              Landmark is required.
-                                          </div>
-                                      </li>
-                                      <!-- Pincode -->
-                                      <li class="form-item">
-                                          <input id="productCatalog01-pincode" required on="
-                                              change:AMP.setState({
-                                                  productCatalog01: { pincode: event.value }
-                                              });
-                                              tap:AMP.setState({
-                                                  formValidation: { pincode_invalid: event.target.validity.valueMissing }
-                                              })
-                                          " name="pincode" class="input" placeholder="Pincode" [value]="productCatalog01.pincode" maxlength="6" type="number" [aria-invalid]="formValidation.pincode_invalid" aria-describedby="productCatalog01.pincode">
-                                          <div class="error-msg" visible-when-invalid="valueMissing" validation-for="productCatalog01-pincode" id="productCatalog01.pincode">
-                                              Pincode is required.
-                                          </div>
-                                      </li>
-                                      <!-- City -->
-                                      <li class="form-item">
-                                          <input id="productCatalog01-city" required on="
-                                              change:AMP.setState({
-                                                  productCatalog01: { city: event.value }
-                                              });
-                                              tap:AMP.setState({
-                                                  formValidation: { city_invalid: event.target.validity.valueMissing }
-                                              })
-                                          " type="text" name="city" class="input" placeholder="City" [value]="productCatalog01.city" [aria-invalid]="formValidation.city_invalid" aria-describedby="productCatalog01.city">
-                                          <div class="error-msg" visible-when-invalid="valueMissing" validation-for="productCatalog01-city" id="productCatalog01.city">
-                                              City is required.
-                                          </div>
-                                      </li>
-                                      <!-- State -->
-                                      <li class="form-item">
-                                          <input id="productCatalog01-state" required on="
-                                              change:AMP.setState({
-                                                  productCatalog01: { state: event.value }
-                                              });
-                                              tap:AMP.setState({
-                                                  formValidation: { state_invalid: event.target.validity.valueMissing }
-                                              })
-                                          " type="text" name="state" class="input" placeholder="State" [value]="productCatalog01.state" [aria-invalid]="formValidation.state_invalid" aria-describedby="productCatalog01.state">
-                                          <div class="error-msg" visible-when-invalid="valueMissing" validation-for="productCatalog01-state" id="productCatalog01.state">
-                                              State is required.
-                                          </div>
-                                      </li>
-                                      <!-- Payment Mode -->
-                                      <li class="form-item typ-full mt-32">
-                                          <label for="cod" class="field-wrap">
-                                              <input type="radio" checked="checked" id="cod" name="payment" required on="
-                                                  change:AMP.setState({
-                                                      productCatalog01: { payment_mode: 'cod' }
-                                                  })
-                                              " [value]="productCatalog01.payment_mode" class="user-valid valid" value="">
-                                              <span class="checkmark"></span>
-                                              Cash on Delivery
-                                          </label>
-                                          <label class="field-wrap" for="online">
-                                              <input type="radio" id="online" name="payment" on="
-                                                  change:AMP.setState({
-                                                      productCatalog01: { payment_mode: 'online' }
-                                                  })
-                                              " [value]="productCatalog01.payment_mode" class="user-valid valid" value="">
-                                              <span class="checkmark"></span>
-                                              Online
-                                          </label>
-                                      </li>
-                                      <!-- Submit Button -->
-                                      <li class="form-item typ-full">
-                                          <button class="form-btn" on="
-                                              tap:AMP.setState({
-                                                  formValidation: {
-                                                      first_name_invalid: !productCatalog01.first_name,
-                                                      last_name_invalid: !productCatalog01.last_name,
-                                                      phoneNumber_invalid: !productCatalog01.phoneNumber || !/^\d{10}$/.test(productCatalog01.phoneNumber),
-                                                      email_invalid: !productCatalog01.email,
-                                                      address_invalid: !productCatalog01.address,
-                                                      landmark_invalid: !productCatalog01.landmark,
-                                                      pincode_invalid: !productCatalog01.pincode,
-                                                      city_invalid: !productCatalog01.city,
-                                                      state_invalid: !productCatalog01.state,
-                                                  },
-                                                  productCatalog01: { currentStep: 3 }
-                                              })
-                                          ">
-                                              Next
-                                          </button>
-                                      </li>
-                                  </ul>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="step3" hidden [hidden]="productCatalog01.currentStep != 3">
-                      <div class="modal-overlay">
-                          <div class="modal">
-                              <div class="modal-content">
-                                  <div class="modal-head">
-                                      <span class="close">x</span>
-                                  </div>
-                                  <div class="modal-body">
-                                      <h3 class="m-title">THANKS for shopping</h3>
-                                      <p class="m-desc">
-                                          is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                                          been the
-                                          industry's standard dummy text ever since the 1500s
-                                      </p>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="step4" hidden submit-error>
-                      <div class="modal-overlay">
-                          <div class="modal hidden">
-                              <div class="modal-content">
-                                  <div class="modal-head">
-                                      <span class="close">x</span>
-                                  </div>
-                                  <div class="modal-body">
-                                      <h3 class="m-title">Error</h3>
-                                      <p class="m-desc">
-                                          is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                                          been the
-                                          industry's standard dummy text ever since the 1500s
-                                      </p>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </form>
-          </div>
-      </div>
+  <amp-state id="selectedCategory">
+  <script type="application/json">
+  {
+  "value": "men"
+  }
+  </script>
+  </amp-state>
+  <div class="main">
+  <header>
+  <div class="logo-wrap">
+  <div class="img-wrap">
+  <!-- Change image src as per your requirements -->
+  <!-- Change image src as per your requirements -->
+  <amp-img layout="responsive" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" alt="Logo" width="159" height="73" />
+  </div>
+  </div>
+  </header>
+  <div class="banner">
+  <div class="top-wrap">
+  <h2 class="title">WHAT’S NEW IN STORE</h2>
+  <p class="desc">Shop from the latest styles and trends</p>
+  </div>
+  <div class="img-wrap">
+  <!-- Change image src as per your requirements -->
+  <!-- Change image src as per your requirements -->
+  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/banner-image.png" alt="Banner" width="600" height="377"></amp-img>
+  </div>
+  <div class="cta-wrap">
+  <p class="cta-desc">Get <span class="cm-bold">FREE Delivery</span> on all orders</p>
+  <div class="cta-"> </div>
+  <a href="https://www.google.co.in/" class="cta-btn">Shop Now</a>
+  </div>
+  </div>
+  <div class="container">
+  <div class="product-wrap">
+  <h3 class="title">NEW PRODUCTS LAUNCHED</h3>
+  <p class="desc">Explore newly launched products from our collection.</p>
+  <div class="product-category">
+  <div class="category-wrap">
+  <h2 class="category-title" [text]="selectedCategory.value">men</h2>
+  </div>
+  <div class="category-search">
+  <select class="custom-select" on="change:AMP.setState({selectedCategory: {value: event.value}})">
+  <option value="explore" disabled selected [selected]="selectedCategory == 'explore'">Explore</option>
+  <option value="men" [selected]="selectedCategory == 'men'">Men</option>
+  <option value="women" [selected]="selectedCategory == 'women'">Women</option>
+  <option value="kids" [selected]="selectedCategory == 'kids'">Kids</option>
+  </select>
+  </div>
+  </div>
+  <div class="category show" [class]="(selectedCategory.value == 'men') ? 'category show' : 'category hide'">
+  <ul class="product-list">
+  <li class="product-item">
+  <div class="product-card">
+  <div class="img-wrap">
+  <!-- Change image src as per your requirements -->
+  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/men-product-1.png" alt="Product Image" width="238" height="238"></amp-img>
+  </div>
+  <a href="https://www.google.co.in/" class="p-link">
+  Shop now 
+  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
+  </a>
+  </div>
+  </li>
+  <li class="product-item">
+  <div class="product-card">
+  <div class="img-wrap">
+  <!-- Change image src as per your requirements -->
+  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/men-product-2.png" alt="Product Image" width="238" height="238"></amp-img>
+  </div>
+  <a href="https://www.google.co.in/" class="p-link">
+  Shop now 
+  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
+  </a>
+  </div>
+  </li>
+  <li class="product-item">
+  <div class="product-card">
+  <div class="img-wrap">
+  <!-- Change image src as per your requirements -->
+  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/men-product-3.png" alt="Product Image" width="238" height="238"></amp-img>
+  </div>
+  <a href="https://www.google.co.in/" class="p-link">
+  Shop now 
+  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
+  </a>
+  </div>
+  </li>
+  <li class="product-item">
+  <div class="product-card">
+  <div class="img-wrap">
+  <!-- Change image src as per your requirements -->
+  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/men-product-4.png" alt="Product Image" width="238" height="238"></amp-img>
+  </div>
+  <a href="https://www.google.co.in/" class="p-link">
+  Shop now 
+  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
+  </a>
+  </div>
+  </li>
+  <li class="product-item">
+  <div class="product-card">
+  <div class="img-wrap">
+  <!-- Change image src as per your requirements -->
+  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/men-product-5.png" alt="Product Image" width="238" height="238"></amp-img>
+  </div>
+  <a href="https://www.google.co.in/" class="p-link">
+  Shop now 
+  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
+  </a>
+  </div>
+  </li>
+  <li class="product-item">
+  <div class="product-card">
+  <div class="img-wrap">
+  <!-- Change image src as per your requirements -->
+  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/men-product-6.png" alt="Product Image" width="238" height="238"></amp-img>
+  </div>
+  <a href="https://www.google.co.in/" class="p-link">
+  Shop now 
+  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
+  </a>
+  </div>
+  </li>
+  <li class="product-item">
+  <div class="product-card">
+  <div class="img-wrap">
+  <!-- Change image src as per your requirements -->
+  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/men-product-7.png" alt="Product Image" width="238" height="238"></amp-img>
+  </div>
+  <a href="https://www.google.co.in/" class="p-link">
+  Shop now 
+  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
+  </a>
+  </div>
+  </li>
+  <li class="product-item">
+  <div class="product-card">
+  <div class="img-wrap">
+  <!-- Change image src as per your requirements -->
+  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/men-product-8.png" alt="Product Image" width="238" height="238"></amp-img>
+  </div>
+  <a href="https://www.google.co.in/" class="p-link">
+  Shop now 
+  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
+  </a>
+  </div>
+  </li>
+  </ul>
+  </div>
+  <div class="category hide" [class]="(selectedCategory.value == 'women') ? 'category show' : 'category hide'">
+  <ul class="product-list">
+  <li class="product-item">
+  <div class="product-card">
+  <div class="img-wrap">
+  <!-- Change image src as per your requirements -->
+  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/women-product-1.png" alt="Product Image" width="238" height="238"></amp-img>
+  </div>
+  <a href="https://www.google.co.in/" class="p-link">
+  Shop now 
+  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
+  </a>
+  </div>
+  </li>
+  <li class="product-item">
+  <div class="product-card">
+  <div class="img-wrap">
+  <!-- Change image src as per your requirements -->
+  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/women-product-2.png" alt="Product Image" width="238" height="238"></amp-img>
+  </div>
+  <a href="https://www.google.co.in/" class="p-link">
+  Shop now 
+  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
+  </a>
+  </div>
+  </li>
+  <li class="product-item">
+  <div class="product-card">
+  <div class="img-wrap">
+  <!-- Change image src as per your requirements -->
+  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/women-product-3.png" alt="Product Image" width="238" height="238"></amp-img>
+  </div>
+  <a href="https://www.google.co.in/" class="p-link">
+  Shop now 
+  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
+  </a>
+  </div>
+  </li>
+  <li class="product-item">
+  <div class="product-card">
+  <div class="img-wrap">
+  <!-- Change image src as per your requirements -->
+  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/women-product-4.png" alt="Product Image" width="238" height="238"></amp-img>
+  </div>
+  <a href="https://www.google.co.in/" class="p-link">
+  Shop now 
+  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
+  </a>
+  </div>
+  </li>
+  <li class="product-item">
+  <div class="product-card">
+  <div class="img-wrap">
+  <!-- Change image src as per your requirements -->
+  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/women-product-5.png" alt="Product Image" width="238" height="238"></amp-img>
+  </div>
+  <a href="https://www.google.co.in/" class="p-link">
+  Shop now 
+  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
+  </a>
+  </div>
+  </li>
+  <li class="product-item">
+  <div class="product-card">
+  <div class="img-wrap">
+  <!-- Change image src as per your requirements -->
+  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/women-product-6.png" alt="Product Image" width="238" height="238"></amp-img>
+  </div>
+  <a href="https://www.google.co.in/" class="p-link">
+  Shop now 
+  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
+  </a>
+  </div>
+  </li>
+  <li class="product-item">
+  <div class="product-card">
+  <div class="img-wrap">
+  <!-- Change image src as per your requirements -->
+  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/women-product-7.png" alt="Product Image" width="238" height="238"></amp-img>
+  </div>
+  <a href="https://www.google.co.in/" class="p-link">
+  Shop now 
+  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
+  </a>
+  </div>
+  </li>
+  <li class="product-item">
+  <div class="product-card">
+  <div class="img-wrap">
+  <!-- Change image src as per your requirements -->
+  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/women-product-8.png" alt="Product Image" width="238" height="238"></amp-img>
+  </div>
+  <a href="https://www.google.co.in/" class="p-link">
+  Shop now 
+  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
+  </a>
+  </div>
+  </li>
+  </ul>
+  </div>
+  <div class="category hide" [class]="(selectedCategory.value == 'kids') ? 'category show' : 'category hide'">
+  <ul class="product-list">
+  <li class="product-item">
+  <div class="product-card">
+  <div class="img-wrap">
+  <!-- Change image src as per your requirements -->
+  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/kid-product-1.png" alt="Product Image" width="238" height="238"></amp-img>
+  </div>
+  <a href="https://www.google.co.in/" class="p-link">
+  Shop now 
+  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
+  </a>
+  </div>
+  </li>
+  <li class="product-item">
+  <div class="product-card">
+  <div class="img-wrap">
+  <!-- Change image src as per your requirements -->
+  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/kid-product-2.png" alt="Product Image" width="238" height="238"></amp-img>
+  </div>
+  <a href="https://www.google.co.in/" class="p-link">
+  Shop now 
+  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
+  </a>
+  </div>
+  </li>
+  <li class="product-item">
+  <div class="product-card">
+  <div class="img-wrap">
+  <!-- Change image src as per your requirements -->
+  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/kid-product-3.png" alt="Product Image" width="238" height="238"></amp-img>
+  </div>
+  <a href="https://www.google.co.in/" class="p-link">
+  Shop now 
+  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
+  </a>
+  </div>
+  </li>
+  <li class="product-item">
+  <div class="product-card">
+  <div class="img-wrap">
+  <!-- Change image src as per your requirements -->
+  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/kid-product-4.png" alt="Product Image" width="238" height="238"></amp-img>
+  </div>
+  <a href="https://www.google.co.in/" class="p-link">
+  Shop now 
+  <amp-img layout="responsive" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/WhatsInStore-AMP/icon-arrow.png" alt="arrow-icon" class="icon" width="30" height="14"></amp-img>
+  </a>
+  </div>
+  </li>
+  </ul>
+  </div>
+  </div>
+  </div>
+  <footer class="footer">
+  <ul class="media-logo-list">
+  <li class="logo-item">
+  <a href="https://www.google.co.in/" class="logo-link">
+  <amp-img layout="responsive" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/31a2d71dbe3e4579bcfa0d74dfc3e34d.png" alt="instagram" class="media-logo" width="34" height="34"></amp-img>
+  </a>
+  </li>
+  <li class="logo-item">
+  <a href="https://www.google.co.in/" class="logo-link">
+  <amp-img layout="responsive" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/28b65b9647964152a2a5f6e816e50bf9.png" alt="facebook" class="media-logo" width="34" height="34"></amp-img>
+  </a>
+  </li>
+  <li class="logo-item">
+  <a href="https://www.google.co.in/" class="logo-link">
+  <amp-img layout="responsive" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/3ae087af1f3544b0885c0a3ec31c2419.png" alt="x" class="media-logo" width="34" height="34"></amp-img>
+  </a>
+  </li>
+  </ul>
+  <p class="f-desc">For assistance, connect with us on social media or reach out to our support team at support@example.com </p>
+  <ul class="f-nav-list">
+  <li class="f-nav-item">
+  <a href="https://www.google.co.in/" class="f-nav-link">Privacy</a>
+  </li>
+  <li class="f-nav-item">
+  <a href="https://www.google.co.in/" class="f-nav-link">Account</a>
+  </li>
+  <li class="f-nav-item">
+  <a href="https://www.google.co.in/" class="f-nav-link">Unsubscribe</a>
+  </li>
+  </ul>
+  <p class="f-desc">To opt out of promotional emails like this, <a href="https://google.com" style="text-decoration:none;color:#D66437;font-weight:bold">unsubscribe here</a></p>
+  </footer>
+  </div>
   </body>
   </html>
   ```
-</details>
+</Accordion>
+
+## Cart Abandonment Template
+
+This AMP email template is designed to help recover lost sales by reminding users about the products left in their shopping carts. With interactive AMP elements, users can view product details, scroll through images, and proceed to checkout, all within the email.
+
+<Image align="center" alt="Sample Cart Abandonment Template" border={true} caption="Sample Cart Abandonment Template" src="https://files.readme.io/95c18a7f9796b0566237c22f74af769ad410f5296f3b67f7d67b720b672e82c3-Cart_Anandonment_AMP.png" width="25% " />
+
+<Accordion title="My Accordion Title" icon="fa-info-circle">
+
+### Use Case Examples
+
+* Recover lost revenue by reminding users about items left in their shopping cart.
+* Re-engage users with personalized product suggestions based on past purchases or browsing behavior.
+* Promote urgency with limited-time offers or low stock alerts tied to abandoned items.
+* Enhance the shopping experience by allowing users to interact with product carousels or resume checkout directly within the email
+
+### Template Customization Options
+
+* [Replace Logo](doc:ootb-email-templates#replace-logo)
+* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
+* [Update Links in Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+* [Change Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+
+### Template Code
+
+```html
+<!doctype html>
+<html ⚡4email>
+<head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+    <style amp4email-boilerplate>
+        body {
+            visibility: hidden
+        }
+    </style>
+    <style amp-custom>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul,
+        li {
+            list-style: none;
+        }
+        /* Change Theme */
+        body {
+            font-family: "Helvetica", arial, sans-serif;
+            font-weight: 400;
+            background-color: rgb(248, 250, 252);
+        }
+        /* Change Theme */
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        amp-img {
+            position: relative;
+        }
+        .main {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            overflow: hidden;
+            margin: 0 auto;
+            background: #FFFFFF;
+        }
+        .container {
+            max-width: 85%;
+            margin: 0 auto;
+        }
+        @media only screen and (max-width: 400px) {
+            .container,
+            .main {
+                max-width: 95%;
+            }
+        }
+        .cp-header {
+            padding: 0 30px;
+        }
+        .cp-header.typ-shadow {
+            box-shadow: 0px 4px 4px 0px #00000040;
+        }
+        .logo-wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo-wrap .img-wrap {
+            width: 127px;
+            height: 58px;
+            margin: 8.5px 0;
+        }
+        .nav-list {
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+        .nav-list .nav-item {
+            padding: 25px 19px;
+            border-left: 0.5px solid #919191;
+            display: flex;
+            align-items: center;
+        }
+        .nav-list .nav-item:last-child {
+            padding-right: 0;
+        }
+        .cart-icon {
+            border: 0;
+            outline: 0;
+            position: relative;
+            background-color: transparent;
+        }
+        .cart-icon.active .dot {
+            display: inline-block;
+        }
+        .dot {
+            width: 6px;
+            height: 6px;
+            background: #FF533F;
+            border-radius: 50%;
+            display: none;
+            position: absolute;
+            top: 2px;
+            right: 0px;
+            z-index: 1;
+        }
+        .call-icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+        .icon-text {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: center;
+            color: #464646;
+        }
+        .cp-banner {
+            width: 100%;
+            max-height: 361px;
+            margin-bottom: 22px;
+        }
+        .cp-footer {
+            margin-top: 50px;
+            background: #1E1E1E;
+            padding: 32px 0 34px;
+        }
+        .media-logo-list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .media-logo-list .logo-item {
+            padding: 6px 32px;
+            border: 1px solid #FFFFFF;
+        }
+        .media-logo-list .logo-item .logo-link {
+            display: inline-block;
+        }
+        .media-logo {
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+        }
+        .f-desc {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: center;
+            color: #FFFFFF;
+            margin: 0 auto;
+            max-width: 84%;
+            text-transform: capitalize;
+        }
+        .bs-sec {
+            padding: 28px 0;
+        }
+        .bs-sec.typ-product {
+            background: #F1F1F1;
+        }
+        .bs-sec .sec-title {
+            padding: 0 26px 12px;
+            text-transform: capitalize;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: center;
+            position: relative;
+            width: max-content;
+            margin: 0 auto;
+        }
+        .bs-sec .sec-title.typ-2 {
+            margin: 0;
+            padding: 0 0 2px;
+        }
+        /* .bs-sec .sec-title.typ-2:after{
+            display: none;
+        } */
+        .lyt-grid {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .lyt-grid .grid-item {
+            width: 33%;
+        }
+        .product-card {
+            padding: 5px;
+            position: relative;
+            background: #FFFFFF;
+        }
+        .product-card .img-wrap {
+            max-height: 177px;
+            max-width: 150px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .product-card .p-cart-icon {
+            background: #FFFFFF;
+            padding: 3px 5px;
+            border: 0;
+            outline: 0;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            cursor: pointer;
+        }
+        .product-card .p-wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin: 5px 0;
+        }
+        .product-card .p-title {
+            width: 60%;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+            color: #252525;
+            padding-right: 5px;
+        }
+        .product-card .p-amt {
+            color: #252525;
+            font-size: 12px;
+            font-weight: 300;
+            line-height: 15px;
+            text-align: right;
+            font-style: italic;
+        }
+        .product-card .rupee-sign {
+            font-size: 10px;
+        }
+        .product-card .p-desc {
+            text-transform: capitalize;
+            font-size: 8px;
+            font-weight: 400;
+            line-height: 13px;
+            color: #909090;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 2;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+        }
+        .btn-wrap {
+            text-align: right;
+        }
+        .shop-cta {
+            font-size: 12px;
+            font-weight: 400;
+            text-transform: capitalize;
+            line-height: 15px;
+            color: #000000;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            margin-top: 15px;
+        }
+        .catalog-card {
+            margin-top: 30px;
+        }
+        .catalog-card .catalog-img {
+            max-width: 506px;
+            max-height: 316px;
+            position: relative;
+        }
+        .catalog-card .offer-band {
+            background: #1e1e1e;
+            text-align: center;
+            padding: 7px 20px;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 13px;
+            letter-spacing: 0.25em;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 92%;
+            color: #fff;
+        }
+        .catalog-card .cart-wrap {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            padding: 8px 10px;
+            background: #fff;
+            z-index: 1;
+        }
+        .catalog-card .cart-wrap .count {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            width: 11px;
+            height: 11px;
+            background: #FF533F;
+            border-radius: 50%;
+            color: #FFFFFF;
+            font-size: 7px;
+            font-weight: 400;
+            line-height: 11px;
+            text-align: center;
+            z-index: 1;
+        }
+        .catalog-card .catalog-body {
+            background: #f1f1f1;
+            padding: 12px 14px 10px;
+        }
+        .catalog-card .c-wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .catalog-card .c-title {
+            margin-bottom: 5px;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #252525;
+            width: 50%;
+        }
+        .catalog-card .c-amt {
+            font-size: 22px;
+            font-style: italic;
+            font-weight: 400;
+            line-height: 15px;
+            text-align: right;
+        }
+        .catalog-card .rupee-sign {
+            font-size: 10px;
+        }
+        .catalog-card .c-desc {
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 13px;
+            color: #545454;
+            width: 40%;
+            text-transform: capitalize;
+        }
+        .catalog-card .btn-wrap {
+            width: 60%;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .catalog-card .catalog-cta {
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            line-height: 20px;
+            color: #FFFFFF;
+            text-decoration: none;
+            background: #000000;
+            padding: 4px 34px;
+            display: inline-block;
+            text-align: center;
+            max-width: 167px;
+            border: none;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        .product-count {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 6px;
+            background: #FFF;
+            width: 60px;
+        }
+        .product-count .product-count-sign {
+            background: transparent;
+            border: 0;
+            outline: none;
+            cursor: pointer;
+        }
+        .product-count-value {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 15px;
+            text-align: center;
+        }
+        .input {
+            border: 0.5px solid #000000;
+            padding: 7px 10px;
+            font-family: "Helvetica", arial, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #000000;
+            width: -webkit-fill-available;
+        }
+        .input::-webkit-input-placeholder,
+        .input::-moz-placeholder,
+        .input:-ms-input-placeholder,
+        .input:-moz-placeholder {
+            color: #919191;
+        }
+        @media only screen and (max-width: 480px) {
+            .cp-header {
+                max-width: 100%;
+                padding: 0 10px;
+            }
+            .logo-wrap .img-wrap {
+                width: 101px;
+                height: 48px;
+                margin: 5.5px 0;
+            }
+            .nav-list .nav-item {
+                padding: 15px 10px;
+            }
+            .call-icon {
+                width: 18px;
+                height: 18px;
+            }
+            .icon-text {
+                font-size: 12px;
+                line-height: 20px;
+            }
+            .lyt-grid {
+                gap: 5px;
+            }
+            .product-card .p-title {
+                font-size: 12px;
+                line-height: 16px;
+            }
+            .product-card .p-amt {
+                font-size: 10px;
+                line-height: 16px;
+            }
+            .bs-sec .sec-title {
+                padding: 0 20px 12px;
+                font-size: 18px;
+                line-height: 20px;
+            }
+            .catalog-card .catalog-cta {
+                font-size: 10px;
+                line-height: 14px;
+                padding: 5px;
+            }
+        }
+        .form-list {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 10px;
+        }
+        .form-item {
+            width: 49%;
+            position: relative;
+            padding-bottom: 20px;
+        }
+        .form-item.typ-full {
+            width: 100%;
+        }
+        [visible-when-invalid]{
+            display: block;
+        }
+        .error-msg{
+            font-size: 10px;  
+            display: none;   
+            position: absolute;
+            bottom: 0; left: 0;       
+        }
+        .error-msg.visible{
+            display: block;   
+        }
+        .field-wrap {
+            display: block;
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+        .field-wrap input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+        .checkmark {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            height: 17px;
+            width: 17px;
+            background-color: #0B0B0B;
+            border-radius: 50%;
+        }
+        .field-wrap input:checked~.checkmark {
+            background-color: #0B0B0B;
+        }
+        .checkmark:after {
+            content: "";
+            position: absolute;            
+            display: block;
+        }
+        .field-wrap input:checked~.checkmark:after {
+           display: none;
+        }
+        .field-wrap .checkmark:after {
+            top: 2px;
+            left: 2px;
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            background: #FFFFFF;
+        }
+        .mt-32 {
+            margin-top: 32px;
+        }
+        .form-btn {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: center;
+            width: 100%;
+            background: #252525;
+            border: 0;
+            outline: none;
+            color: #FFF;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .tab-3 {
+            position: relative;
+        }
+        .modal-overlay {
+            width: 100%;
+            height: 100%;
+            background-color: #000000;
+            padding: 100px 0;
+        }
+        .modal {
+            width: 75%;
+            margin: 40px auto;
+            z-index: 12;
+            background: #FFF;
+            padding: 70px 30px;
+            position: relative;
+        }
+        .close {
+            width: 27px;
+            height: 27px;
+            display: inline-block;
+            text-align: center;
+            background: #000000;
+            font-size: 13px;
+            color: #FFFFFF;
+            line-height: 27px;
+            border-radius: 50%;
+            position: absolute;
+            top: 6px;
+            right: 6px;
+            cursor: pointer;
+        }
+        .m-title {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #000000;
+            text-transform: uppercase;
+        }
+        .m-desc {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: center;
+            color: #545454;
+            text-transform: capitalize;
+            max-width: 70%;
+            margin: 0 auto;
+        }
+        .product-list {
+            margin: 16px 0;
+        }
+        .product-list .product-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 16px 0;
+            border-bottom: 1px solid #919191;
+        }
+        .product-list .product-item:last-child {
+            border: 0;
+            padding-bottom: 0;
+        }
+        .lhs {
+            width: 80%;
+        }
+        .rhs {
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        .product-item .p-name {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #000000;
+            margin-bottom: 6px;
+        }
+        .product-item .p-desc {
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 13px;
+            color: #545454;
+            margin-bottom: 6px;
+        }
+        .product-item .p-quality {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #000000;
+        }
+        .product-item .delete-icon {
+            background: transparent;
+            outline: none;
+            border: 0;
+        }
+        .product-item .p-amt {
+            font-size: 22px;
+            font-style: italic;
+            font-weight: 300;
+            line-height: 24px;
+            color: #000000;
+        }
+        .product-item .p-total {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #000000;
+        }
+        .typ-bottom-padding-zero {
+            padding-bottom: 0;
+        }
+        .disabled {
+            pointer-events: none;
+            cursor: not-allowed;
+            opacity: 0.7;
+        }
+        @media only screen and (max-width: 480px) {
+            .catalog-card .offer-band {
+                padding: 7px;
+                font-size: 10px;
+                line-height: 10px;
+                width: 96%;
+            }
+            .catalog-card .c-title {
+                font-size: 16px;
+                line-height: 18px;
+            }
+            .catalog-card .c-amt {
+                font-size: 18px;
+                line-height: 20px;
+            }
+            .catalog-card .c-desc {
+                margin-bottom: 7px;
+            }
+            .catalog-card .c-wrap {
+                flex-wrap: wrap;
+            }
+            .catalog-card .btn-wrap,
+            .catalog-card .c-desc {
+                width: 100%;
+            }
+            .form-item {
+                width: 100%;
+            }
+            .lhs,
+            .rhs {
+                width: 50%;
+            }
+            .product-item .p-total,
+            .product-item .p-amt {
+                font-size: 18px;
+                line-height: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div id="ProductCatalogform" on="tap:AMP.setState({productCatalog01: {fuuid: 01 }})" role="tab" tabindex="1"
+            class="amp-html-block widget-container">
+            <form class="form-container" method="post" id="productCatalog01Form" enctype="multipart/form-data"
+                action-xhr="https://example.com" custom-validation-reporting="show-all-on-submit" on="submit:AMP.setState({
+                    productCatalog01: {
+                        currentStep: productCatalog01.currentStep == 2 : productCatalog01.currentStep + 1, 
+                        submitting: true,
+                        editAddress: false
+                    }
+                });
+                submit-success:AMP.setState({
+                    productCatalog01: {
+                        submitting: false, 
+                        paymentUrl: productCatalog01.paymentUrl || event.response.url
+                    }
+                });">
+                <input hidden id="fuuid" name="fuuid" [value]="01" />
+                <input hidden name="catalogType" value="STATIC" />
+                <input hidden name="discountCouponCode" value="" />
+                <amp-state id="productCatalog01">
+                    <script type="application/json">
+                        {
+                            "first_name": "",
+                            "last_name": "",
+                            "address": "",
+                            "landmark": "",
+                            "city": "",
+                            "country": "",
+                            "pincode": "",
+                            "phoneNumber": "",
+                            "email": "",
+                            "payment_mode": "",
+                            "isFirstNameValid": false,
+                            "isLastNameValid": false,
+                            "isPhoneNumberValid": false,
+                            "isEmailValid": false,
+                            "isPincodeValid": false,
+                            "isCityValid": false,
+                            "editAddress": false,        
+                            "paymentUrl": "",
+                            "product1": {
+                                "id": 1,
+                                "qty": 0,
+                                "title": "Mystic Elixir",
+                                "price": 1500,
+                                "selectedVariantId": 0,
+                                "addedToCart": false,
+                                "variantId": 101,
+                                "variantTitle": "Default Title",
+                                "comparePrice": "null",
+                                "variants": {
+                                    "101": {
+                                        "id": 101,
+                                        "price": 1500,
+                                        "title": "Default Title",
+                                        "comparePrice": "null"
+                                    }
+                                }
+                            },
+                            "product2": {
+                                "id": 2,
+                                "qty": 0,
+                                "title": "Opulent Essence",
+                                "price": 1500,
+                                "selectedVariantId": 0,
+                                "addedToCart": false,
+                                "variantId": 102,
+                                "variantTitle": "Default Title",
+                                "comparePrice": "null",
+                                "variants": {
+                                    "102": {
+                                        "id": 102,
+                                        "price": 1500,
+                                        "title": "Default Title",
+                                        "comparePrice": "null"
+                                    }
+                                }
+                            },
+                            "product3": {
+                                "id": 3,
+                                "qty": 0,
+                                "title": "Product Name 3",
+                                "price": 1500,
+                                "selectedVariantId": 0,
+                                "addedToCart": false,
+                                "variantId": 103,
+                                "variantTitle": "Default Title",
+                                "comparePrice": "null",
+                                "variants": {
+                                    "103": {
+                                        "id": 103,
+                                        "price": 1500,
+                                        "title": "Default Title",
+                                        "comparePrice": "null"
+                                    }
+                                }
+                            },
+                            "product4": {
+                                "id": 4,
+                                "qty": 0,
+                                "title": "Product Name 4",
+                                "price": 1500,
+                                "selectedVariantId": 0,
+                                "addedToCart": false,
+                                "variantId": 104,
+                                "variantTitle": "Default Title",
+                                "comparePrice": "null",
+                                "variants": {
+                                    "104": {
+                                        "id": 104,
+                                        "price": 1500,
+                                        "title": "Default Title",
+                                        "comparePrice": "null"
+                                    }
+                                }
+                            },
+                            "product5": {
+                                "id": 5,
+                                "qty": 0,
+                                "title": "Product Name 5",
+                                "price": 1500,
+                                "selectedVariantId": 0,
+                                "addedToCart": false,
+                                "variantId": 105,
+                                "variantTitle": "Default Title",
+                                "comparePrice": "null",
+                                "variants": {
+                                    "105": {
+                                        "id": 105,
+                                        "price": 1500,
+                                        "title": "Default Title",
+                                        "comparePrice": "null"
+                                    }
+                                }
+                            },
+                            "currentStep": 1
+                        }
+                    </script>
+                </amp-state>
+                <!-- <h1 [text]="productCatalog01.currentStep"></h1> -->
+                <header class="cp-header typ-shadow" [hidden]="productCatalog01.currentStep == 3">
+                    <div class="logo-wrap">
+                        <div class="img-wrap">
+                            <!-- Change Logo -->
+                            <amp-img layout="responsive"
+                                src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Cart-Abandonment-HTML/logo.png"
+                                alt="Logo" width="127" height="58" />
+                            <!-- Change Logo -->
+                        </div>
+                        <ul class="nav-list">
+                            <li class="nav-item">
+                                <div class="cart-icon checkout-button"
+                                    [class]="productCatalog01.currentStep == 2 ? 'cart-icon active' : 'cart-icon'"
+                                    on="tap:AMP.setState({
+                                        productCatalog01 : {
+                                        currentStep:  2 ,
+                                        editAddress: true,
+                                        }
+                                    })"
+                                    >
+                                    <amp-img layout="fixed"
+                                        src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/icon-cart.png"
+                                        alt="cart-icon" class="icon" width="22" height="22" />
+                                    <span class="dot"></span>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <span class="icon-wrap">
+                                    <amp-img class="call-icon" layout="responsive"
+                                        src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Cart-Abandonment-HTML/call-icon.png"
+                                        alt="call icon" width="20" height="20" />
+                                </span>
+                                <p class="icon-text">9878725637</p>
+                            </li>
+                        </ul>
+                    </div>
+                </header>
+                <div class="step1" [hidden]="productCatalog01.currentStep != 1">
+                    <div class="bs-sec typ-look">
+                        <div class="sec-head">
+                            <h3 class="sec-title">PRODUCTS</h3>
+                        </div>
+                        <div class="sec-body">
+                            <div class="container">
+                                <div class="catalog-card">
+                                    <div class="catalog-img">
+                                        <h3 class="offer-band">Get 20% off for your first purchase.</h3>
+                                        <!-- Change Product Image -->
+                                        <amp-img
+                                            src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Cart-Abandonment-HTML/look-1.png"
+                                            layout="responsive" alt="look" width="506" height="316" />
+                                        <!-- Change Product Image -->
+                                        <span class="cart-wrap">
+                                            <span class="count" hidden [hidden]="productCatalog01.product1.qty <= 0"
+                                                [text]="productCatalog01.product1.qty"></span>
+                                            <amp-img layout="fixed"
+                                                src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/icon-cart.png"
+                                                alt="cart-icon" class="icon" width="27" height="27" />
+                                        </span>
+                                    </div>
+                                    <div class="catalog-body">
+                                        <div class="c-wrap">
+                                            <h3 class="c-title">Mystic Elixir</h3>
+                                            <p class="c-amt">
+                                                <span class="rupee-sign">₹</span>
+                                                <span class="amount"
+                                                    [text]="(productCatalog01.product1.qty*productCatalog01.product1.price).toFixed(2)">1500.00</span>
+                                            </p>
+                                            <input hidden name='101'
+                                                [value]="productCatalog01.product1.variantId == 101 ? productCatalog01.product1.qty:1" />
+                                        </div>
+                                        <div class="c-wrap">
+                                            <p class="c-desc">is simply dummy text of the new age fashion industry.</p>
+                                            <div class="btn-wrap">
+                                                <div class="product-count">
+                                                    <div class="product-count-sign" tabindex="1" role on="tap:AMP.setState({
+                                                        productCatalog01 : {
+                                                            product1: {
+                                                                qty: productCatalog01.product1.qty > 0 ? productCatalog01.product1.qty - 1 : 0
+                                                            }
+                                                        }
+                                                    })">
+                                                        <amp-img layout="fixed"
+                                                            src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/minsu-icon.png"
+                                                            alt="minus-icon" class="icon" width="13" height="13" />
+                                                    </div>
+                                                    <div class="product-count-value"
+                                                        [text]="productCatalog01.product1.qty">0</div>
+                                                    <div class="product-count-sign" tabindex="1" on="tap:AMP.setState({
+                                                            productCatalog01 :{
+                                                                product1: {
+                                                                    qty: productCatalog01.product1.qty < 5 ? productCatalog01.product1.qty + 1 : 5
+                                                                }
+                                                            }
+                                                        })">
+                                                        <amp-img layout="fixed"
+                                                            src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/plus-icon.png"
+                                                            alt="plus-icon" class="icon" width="13" height="13" />
+                                                    </div>
+                                                </div>
+                                                <!-- Change CTA -->
+                                                <button type="button" class="catalog-cta"
+                                                    on="tap:AMP.setState({productCatalog01 :{product1: {addedToCart:true}}})">
+                                                    ADD TO CART
+                                                </button>
+                                                          <!-- Change CTA -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Second product card -->
+                                <div class="catalog-card">
+                                    <div class="catalog-img">
+                                        <h3 class="offer-band">Get 20% off for your first purchase.</h3>
+                                        <amp-img
+                                            src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Cart-Abandonment-HTML/look-2.png"
+                                            layout="responsive" alt="look" width="506" height="316" />
+                                        <span class="cart-wrap">
+                                            <span class="count" hidden [hidden]="productCatalog01.product2.qty <= 0"
+                                                [text]="productCatalog01.product2.qty"></span>
+                                            <amp-img layout="fixed"
+                                                src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/icon-cart.png"
+                                                alt="cart-icon" class="icon" width="27" height="27" />
+                                        </span>
+                                    </div>
+                                    <div class="catalog-body">
+                                        <div class="c-wrap">
+                                            <h3 class="c-title">Opulent Essence</h3>
+                                            <p class="c-amt">
+                                                <span class="rupee-sign">₹</span>
+                                                <span class="amount"
+                                                    [text]="(productCatalog01.product2.qty*productCatalog01.product2.price).toFixed(2)">1500</span>
+                                            </p>
+                                            <input hidden name='102'
+                                                [value]="productCatalog01.product2.variantId == 102 ? productCatalog01.product2.qty:1" />
+                                        </div>
+                                        <div class="c-wrap">
+                                            <p class="c-desc">is simply dummy text of the new age fashion industry.</p>
+                                            <div class="btn-wrap">
+                                                <div class="product-count">
+                                                    <div class="product-count-sign" tabindex="1" role on="tap:AMP.setState({
+                                                            productCatalog01 : {
+                                                                product2: {
+                                                                    qty: productCatalog01.product2.qty > 0 ? productCatalog01.product2.qty - 1 : 0
+                                                                }
+                                                            }
+                                                        })">
+                                                        <amp-img layout="fixed"
+                                                            src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/minsu-icon.png"
+                                                            alt="minus-icon" class="icon" width="13" height="13" />
+                                                    </div>
+                                                    <div class="product-count-value"
+                                                        [text]="productCatalog01.product2.qty">0</div>
+                                                    <div class="product-count-sign" tabindex="1" on="tap:AMP.setState({
+                                                            productCatalog01 :{
+                                                                product2: {
+                                                                    qty: productCatalog01.product2.qty < 5 ? productCatalog01.product2.qty + 1 : 5
+                                                                }
+                                                            }
+                                                        })">
+                                                        <amp-img layout="fixed"
+                                                            src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/plus-icon.png"
+                                                            alt="plus-icon" class="icon" width="13" height="13" />
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="catalog-cta"
+                                                    on="tap:AMP.setState({productCatalog01 :{product2: {addedToCart:true}}})">
+                                                    ADD TO CART
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input hidden name="amount" [value]='(
+                                    (productCatalog01.product1.qty * productCatalog01.product1.price) +
+                                    (productCatalog01.product2.qty * productCatalog01.product2.price) +
+                                    (productCatalog01.product3.qty * productCatalog01.product3.price) +
+                                    (productCatalog01.product4.qty * productCatalog01.product4.price) +
+                                    (productCatalog01.product5.qty * productCatalog01.product5.price)
+                                ).toFixed(2)' />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- product section -->
+                    <div class="bs-sec typ-product">
+                        <div class="sec-head">
+                            <h3 class="sec-title">Product Suggestions</h3>
+                        </div>
+                        <div class="sec-body">
+                            <div class="container">
+                                <ul class="lyt-grid">
+                                    <li class="grid-item">
+                                        <div class="product-card">
+                                            <div class="img-wrap">
+                                                <!-- Change image src as per your requirements -->
+                                                <amp-img layout="responsive"
+                                                    src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Cart-Abandonment-HTML/product-3.png"
+                                                    alt="product" width="150" height="177" />
+                                            </div>
+                                            <button type="button" class="p-cart-icon"
+                                                on="tap:AMP.setState({productCatalog01 :{product3: {addedToCart:true, qty:1}}})">
+                                                <amp-img layout="fixed"
+                                                    src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/icon-cart.png"
+                                                    alt="cart-icon" class="icon" width="13" height="13"></amp-img>
+                                            </button>
+                                            <div class="product-info">
+                                                <div class="p-wrap">
+                                                    <h3 class="p-title">Product name</h3>
+                                                    <p class="p-amt"><span class="rupee-sign">₹</span>1500</p>
+                                                </div>
+                                                <p class="p-desc">Is simply dummy text of the new age fashion industry.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="grid-item">
+                                        <div class="product-card">
+                                            <div class="img-wrap">
+                                                <!-- Change image src as per your requirements -->
+                                                <amp-img layout="responsive"
+                                                    src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Cart-Abandonment-HTML/product-2.png"
+                                                    alt="product" width="150" height="177" />
+                                            </div>
+                                            <button type="button" class="p-cart-icon"
+                                                on="tap:AMP.setState({productCatalog01 :{product4: {addedToCart:true, qty:1}}})">
+                                                <amp-img layout="fixed"
+                                                    src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/icon-cart.png"
+                                                    alt="cart-icon" class="icon" width="13" height="13" />
+                                            </button>
+                                            <div class="product-info">
+                                                <div class="p-wrap">
+                                                    <h3 class="p-title">Product name</h3>
+                                                    <p class="p-amt"><span class="rupee-sign">₹</span>1500</p>
+                                                </div>
+                                                <p class="p-desc">Is simply dummy text of the new age fashion industry.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="grid-item">
+                                        <div class="product-card">
+                                            <div class="img-wrap">
+                                                <!-- Change image src as per your requirements -->
+                                                <amp-img layout="responsive"
+                                                    src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Cart-Abandonment-HTML/product-1.png"
+                                                    alt="product" width="150" height="177" />
+                                            </div>
+                                            <button type="button" class="p-cart-icon"
+                                                on="tap:AMP.setState({productCatalog01 :{product5: {addedToCart:true, qty:1}}})">
+                                                <amp-img layout="fixed"
+                                                    src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/icon-cart.png"
+                                                    alt="cart-icon" class="icon" width="13" height="13" />
+                                            </button>
+                                            <div class="product-info">
+                                                <div class="p-wrap">
+                                                    <h3 class="p-title">Product name</h3>
+                                                    <p class="p-amt"><span class="rupee-sign">₹</span>1500</p>
+                                                </div>
+                                                <p class="p-desc">Is simply dummy text of the new age fashion industry.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="btn-wrap">
+                                    <a href="https://google.com" class="shop-cta">Shop now
+                                        <amp-img layout="fixed"
+                                            src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Cart-Abandonment-HTML/arrow.png"
+                                            alt="arrow" width="17" height="10"
+                                            style="margin-left: 10px; max-width: 17px" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- product section -->
+                    <!-- footer section -->
+                    <footer class="cp-footer">
+                        <div class="container">
+                            <ul class="media-logo-list">
+                                <li class="logo-item">
+                                    <a href="https://www.google.co.in/" class="logo-link">
+                                        <amp-img layout="responsive"
+                                            src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Cart-Abandonment-HTML/logo-insta.png"
+                                            alt="instagram" class="media-logo" width="20" height="20"></amp-img>
+                                    </a>
+                                </li>
+                                <li class="logo-item">
+                                    <a href="https://www.google.co.in/" class="logo-link">
+                                        <amp-img layout="responsive"
+                                            src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Cart-Abandonment-HTML/logo-facebook.png"
+                                            alt="facebook" class="media-logo" width="20" height="20"></amp-img>
+                                    </a>
+                                </li>
+                                <li class="logo-item">
+                                    <a href="https://www.google.co.in/" class="logo-link">
+                                        <amp-img layout="responsive"
+                                            src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Cart-Abandonment-HTML/logo-x.png"
+                                            alt="x" class="media-logo" width="20" height="20"></amp-img>
+                                    </a>
+                                </li>
+                            </ul>
+                            <p class="f-desc">is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has
+                                been the industry's standard dummy </p>
+                                <p class="f-desc" style="margin-top: 20px;">To stop receiving these emails, <a href="https://www.google.com" style="color:#ffff;font-weight:bold;text-decoration:none;">unsubscribe here</a></p>
+                        </div>
+                    </footer>
+                    <!-- footer section -->
+                </div>
+                <div class="step2" hidden [hidden]="productCatalog01.currentStep != 2">
+                    <div class="container">
+                        <div class="bs-sec typ-bottom-padding-zero" [hidden]="
+                            (productCatalog01.product1.qty <= 0 &&
+                            productCatalog01.product2.qty <= 0 &&
+                            productCatalog01.product3.qty <= 0 &&
+                            productCatalog01.product4.qty <= 0 &&
+                            productCatalog01.product5.qty <= 0)
+                                    ">
+                            <div class="sec-head">
+                                <h3 class="sec-title typ-2">PRODUCTS</h3>
+                            </div>
+                            <div class="sec-body">
+                                <ul class="product-list">
+                                    <li class="product-item" [hidden]="productCatalog01.product1.qty == 0">
+                                        <div class="lhs">
+                                            <h3 class="p-name" [text]="productCatalog01.product1.title">Mystic Elixir
+                                            </h3>
+                                            <p class="p-desc"> is simply dummy text of the new age fashion industry.</p>
+                                            <p class="p-quality">Qty : <span
+                                                    [text]="productCatalog01.product1.qty"></span></p>
+                                        </div>
+                                        <div class="rhs">
+                                            <button class="delete-icon" on="tap:AMP.setState({
+                                                    productCatalog01 :{
+                                                        product1: {addedToCart:false, qty:0}
+                                                    }
+                                                })">
+                                                <amp-img
+                                                    src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/delete-icon.png"
+                                                    width="24" height="24" layout="fixed" alt="delete-icon">
+                                                </amp-img>
+                                            </button>
+                                            <p class="p-amt">₹ <span
+                                                    [text]="(productCatalog01.product1.qty*productCatalog01.product1.price).toFixed(2)"></span>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="product-item" [hidden]="productCatalog01.product2.qty == 0">
+                                        <div class="lhs">
+                                            <h3 class="p-name" [text]="productCatalog01.product2.title">Mystic Elixir
+                                            </h3>
+                                            <p class="p-desc">is simply dummy text of the new age fashion industry.</p>
+                                            <p class="p-quality">Qty : <span
+                                                    [text]="productCatalog01.product2.qty"></span></p>
+                                        </div>
+                                        <div class="rhs">
+                                            <button class="delete-icon" on="tap:AMP.setState({
+                                                    productCatalog01 :{
+                                                        product2: {addedToCart:false, qty:0}
+                                                    }
+                                                })">
+                                                <amp-img
+                                                    src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/delete-icon.png"
+                                                    width="24" height="24" layout="fixed" alt="delete-icon">
+                                                </amp-img>
+                                            </button>
+                                            <p class="p-amt">₹ <span
+                                                    [text]="(productCatalog01.product2.qty*productCatalog01.product2.price).toFixed(2)"></span>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="product-item" [hidden]="productCatalog01.product3.qty == 0">
+                                        <div class="lhs">
+                                            <h3 class="p-name" [text]="productCatalog01.product3.title">Product Name
+                                            </h3>
+                                            <p class="p-desc">is simply dummy text of the new age fashion industry.</p>
+                                            <p class="p-quality">Qty : <span
+                                                    [text]="productCatalog01.product3.qty"></span></p>
+                                        </div>
+                                        <div class="rhs">
+                                            <button class="delete-icon" on="tap:AMP.setState({
+                                                    productCatalog01 :{
+                                                        product3: {addedToCart:false, qty:0}
+                                                    }
+                                                })">
+                                                <amp-img
+                                                    src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/delete-icon.png"
+                                                    width="24" height="24" layout="fixed" alt="delete-icon">
+                                                </amp-img>
+                                            </button>
+                                            <p class="p-amt">₹ <span
+                                                    [text]="(productCatalog01.product3.qty*productCatalog01.product3.price).toFixed(2)"></span>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="product-item" [hidden]="productCatalog01.product4.qty == 0">
+                                        <div class="lhs">
+                                            <h3 class="p-name" [text]="productCatalog01.product4.title">Product Name
+                                            </h3>
+                                            <p class="p-desc">is simply dummy text of the new age fashion industry.</p>
+                                            <p class="p-quality">Qty : <span
+                                                    [text]="productCatalog01.product4.qty"></span></p>
+                                        </div>
+                                        <div class="rhs">
+                                            <button class="delete-icon" on="tap:AMP.setState({
+                                                    productCatalog01 :{
+                                                        product4: {addedToCart:false, qty:0}
+                                                    }
+                                                })">
+                                                <amp-img
+                                                    src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/delete-icon.png"
+                                                    width="24" height="24" layout="fixed" alt="delete-icon">
+                                                </amp-img>
+                                            </button>
+                                            <p class="p-amt">₹ <span
+                                                    [text]="(productCatalog01.product4.qty*productCatalog01.product4.price).toFixed(2)"></span>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="product-item" [hidden]="productCatalog01.product5.qty == 0">
+                                        <div class="lhs">
+                                            <h3 class="p-name" [text]="productCatalog01.product5.title">Product Name
+                                            </h3>
+                                            <p class="p-desc">is simply dummy text of the new age fashion industry.</p>
+                                            <p class="p-quality">Qty : <span
+                                                    [text]="productCatalog01.product5.qty"></span></p>
+                                        </div>
+                                        <div class="rhs">
+                                            <button class="delete-icon" on="tap:AMP.setState({
+                                                    productCatalog01 :{
+                                                        product5: {addedToCart:false, qty:0}
+                                                    }
+                                                })">
+                                                <amp-img
+                                                    src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/delete-icon.png"
+                                                    width="24" height="24" layout="fixed" alt="delete-icon">
+                                                </amp-img>
+                                            </button>
+                                            <p class="p-amt">₹ <span
+                                                    [text]="(productCatalog01.product5.qty*productCatalog01.product5.price).toFixed(2)"></span>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="product-item typ-final">
+                                        <div class="lhs">
+                                            <h3 class="p-total">Amount Total</h3>
+                                        </div>
+                                        <div class="rhs">
+                                            <p class="p-amt p-total-amt">₹
+                                                <span [text]="(
+                                                    (
+                                                        (productCatalog01.product1.qty * productCatalog01.product1.price) +
+                                                        (productCatalog01.product2.qty * productCatalog01.product2.price) +
+                                                        (productCatalog01.product3.qty * productCatalog01.product3.price) +
+                                                        (productCatalog01.product4.qty * productCatalog01.product4.price) +
+                                                        (productCatalog01.product5.qty * productCatalog01.product5.price)
+                                                    ) * (100 - 0) / 100
+                                                ).toFixed(2) + ' '">0</span>
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bs-sec">
+                            <div class="sec-head ">
+                                <h3 class="sec-title typ-2">ADD DETAILS</h3>
+                            </div>
+                            <div class="sec-body">
+                                <ul class="form-list">
+                                    <!-- First Name -->
+                                    <li class="form-item">
+                                        <input id="productCatalog01-first_name" required on="
+                                            change:AMP.setState({
+                                                productCatalog01: { first_name: event.value }
+                                            });
+                                            tap:AMP.setState({
+                                                formValidation: { first_name_invalid: event.target.validity.valueMissing }
+                                            })
+                                        " type="text" name="first_name" class="input" placeholder="First name" [value]="productCatalog01.first_name" [aria-invalid]="formValidation.first_name_invalid" aria-describedby="productCatalog01.first_name">
+                                        <div class="error-msg" visible-when-invalid="valueMissing" validation-for="productCatalog01-first_name" id="productCatalog01.first_name">
+                                            First name is required.
+                                        </div>
+                                    </li>
+                                    <!-- Last Name -->
+                                    <li class="form-item">
+                                        <input id="productCatalog01-last_name" required on="
+                                            change:AMP.setState({
+                                                productCatalog01: { last_name: event.value }
+                                            });
+                                            tap:AMP.setState({
+                                                formValidation: { last_name_invalid: event.target.validity.valueMissing }
+                                            })
+                                        " type="text" name="last_name" class="input" placeholder="Last name" [value]="productCatalog01.last_name" [aria-invalid]="formValidation.last_name_invalid" aria-describedby="formValidation.last_name_invalid">
+                                        <div class="error-msg" visible-when-invalid="valueMissing" validation-for="productCatalog01-last_name" id="formValidation.last_name_invalid">
+                                            Last name is required.
+                                        </div>
+                                    </li>
+                                    <!-- Phone Number -->
+                                    <li class="form-item">
+                                        <input id="productCatalog01-phoneNumber" required [pattern]="productCatalog01.currentStep==2 ? '\\d{10}' : '*'" on="
+                                            change:AMP.setState({
+                                                productCatalog01: { phoneNumber: event.value }
+                                            });
+                                            tap:AMP.setState({
+                                                formValidation: { phoneNumber_invalid: event.target.validity.valueMissing || event.target.validity.patternMismatch }
+                                            })
+                                        " maxlength="10" type="text" name="phoneNumber" class="input" placeholder="Phone Number" [value]="productCatalog01.phoneNumber" pattern="\d{10}" [aria-invalid]="formValidation.phoneNumber_invalid" aria-describedby="productCatalog01.phoneNumber">
+                                        <div class="error-msg" visible-when-invalid="valueMissing" validation-for="productCatalog01-phoneNumber" id="productCatalog01.phoneNumber">
+                                            Phone number is required.
+                                        </div>
+                                        <div class="error-msg" visible-when-invalid="patternMismatch" validation-for="productCatalog01-phoneNumber">
+                                            Please enter a valid phone number.
+                                        </div>
+                                    </li>
+                                    <!-- Email -->
+                                    <li class="form-item">
+                                        <input id="productCatalog01-email" required type="email" on="
+                                            change:AMP.setState({
+                                                productCatalog01: { email: event.value }
+                                            });
+                                            tap:AMP.setState({
+                                                formValidation: { email_invalid: event.target.validity.valueMissing || event.target.validity.typeMismatch }
+                                            })
+                                        " name="email" class="input" placeholder="E-mail" [value]="productCatalog01.email" [aria-invalid]="formValidation.email_invalid" aria-describedby="productCatalog01.email">
+                                        <div class="error-msg" visible-when-invalid="valueMissing" validation-for="productCatalog01-email" id="productCatalog01.email">
+                                            Email is required.
+                                        </div>
+                                        <div class="error-msg" visible-when-invalid="patternMismatch" validation-for="productCatalog01-email">
+                                            Please enter a valid Email.
+                                        </div>
+                                    </li>
+                                    <!-- Address -->
+                                    <li class="form-item typ-full">
+                                        <input id="productCatalog01-address" required on="
+                                            change:AMP.setState({
+                                                productCatalog01: { address: event.value }
+                                            });
+                                            tap:AMP.setState({
+                                                formValidation: { address_invalid: event.target.validity.valueMissing }
+                                            })
+                                        " name="address" class="input" placeholder="Address" [value]="productCatalog01.address" [aria-invalid]="formValidation.address_invalid" aria-describedby="productCatalog01.address">
+                                        <div class="error-msg" visible-when-invalid="valueMissing" validation-for="productCatalog01-address" id="productCatalog01.address">
+                                            Address is required.
+                                        </div>
+                                    </li>
+                                    <!-- Landmark -->
+                                    <li class="form-item">
+                                        <input id="productCatalog01-landmark" required on="
+                                            change:AMP.setState({
+                                                productCatalog01: { landmark: event.value }
+                                            });
+                                            tap:AMP.setState({
+                                                formValidation: { landmark_invalid: event.target.validity.valueMissing }
+                                            })
+                                        " name="landmark" class="input" placeholder="Landmark" [value]="productCatalog01.landmark" [aria-invalid]="formValidation.landmark_invalid" aria-describedby="productCatalog01.landmark">
+                                        <div class="error-msg" visible-when-invalid="valueMissing" validation-for="productCatalog01-landmark" id="productCatalog01.landmark">
+                                            Landmark is required.
+                                        </div>
+                                    </li>
+                                    <!-- Pincode -->
+                                    <li class="form-item">
+                                        <input id="productCatalog01-pincode" required on="
+                                            change:AMP.setState({
+                                                productCatalog01: { pincode: event.value }
+                                            });
+                                            tap:AMP.setState({
+                                                formValidation: { pincode_invalid: event.target.validity.valueMissing }
+                                            })
+                                        " name="pincode" class="input" placeholder="Pincode" [value]="productCatalog01.pincode" maxlength="6" type="number" [aria-invalid]="formValidation.pincode_invalid" aria-describedby="productCatalog01.pincode">
+                                        <div class="error-msg" visible-when-invalid="valueMissing" validation-for="productCatalog01-pincode" id="productCatalog01.pincode">
+                                            Pincode is required.
+                                        </div>
+                                    </li>
+                                    <!-- City -->
+                                    <li class="form-item">
+                                        <input id="productCatalog01-city" required on="
+                                            change:AMP.setState({
+                                                productCatalog01: { city: event.value }
+                                            });
+                                            tap:AMP.setState({
+                                                formValidation: { city_invalid: event.target.validity.valueMissing }
+                                            })
+                                        " type="text" name="city" class="input" placeholder="City" [value]="productCatalog01.city" [aria-invalid]="formValidation.city_invalid" aria-describedby="productCatalog01.city">
+                                        <div class="error-msg" visible-when-invalid="valueMissing" validation-for="productCatalog01-city" id="productCatalog01.city">
+                                            City is required.
+                                        </div>
+                                    </li>
+                                    <!-- State -->
+                                    <li class="form-item">
+                                        <input id="productCatalog01-state" required on="
+                                            change:AMP.setState({
+                                                productCatalog01: { state: event.value }
+                                            });
+                                            tap:AMP.setState({
+                                                formValidation: { state_invalid: event.target.validity.valueMissing }
+                                            })
+                                        " type="text" name="state" class="input" placeholder="State" [value]="productCatalog01.state" [aria-invalid]="formValidation.state_invalid" aria-describedby="productCatalog01.state">
+                                        <div class="error-msg" visible-when-invalid="valueMissing" validation-for="productCatalog01-state" id="productCatalog01.state">
+                                            State is required.
+                                        </div>
+                                    </li>
+                                    <!-- Payment Mode -->
+                                    <li class="form-item typ-full mt-32">
+                                        <label for="cod" class="field-wrap">
+                                            <input type="radio" checked="checked" id="cod" name="payment" required on="
+                                                change:AMP.setState({
+                                                    productCatalog01: { payment_mode: 'cod' }
+                                                })
+                                            " [value]="productCatalog01.payment_mode" class="user-valid valid" value="">
+                                            <span class="checkmark"></span>
+                                            Cash on Delivery
+                                        </label>
+                                        <label class="field-wrap" for="online">
+                                            <input type="radio" id="online" name="payment" on="
+                                                change:AMP.setState({
+                                                    productCatalog01: { payment_mode: 'online' }
+                                                })
+                                            " [value]="productCatalog01.payment_mode" class="user-valid valid" value="">
+                                            <span class="checkmark"></span>
+                                            Online
+                                        </label>
+                                    </li>
+                                    <!-- Submit Button -->
+                                    <li class="form-item typ-full">
+                                        <button class="form-btn" on="
+                                            tap:AMP.setState({
+                                                formValidation: {
+                                                    first_name_invalid: !productCatalog01.first_name,
+                                                    last_name_invalid: !productCatalog01.last_name,
+                                                    phoneNumber_invalid: !productCatalog01.phoneNumber || !/^\d{10}$/.test(productCatalog01.phoneNumber),
+                                                    email_invalid: !productCatalog01.email,
+                                                    address_invalid: !productCatalog01.address,
+                                                    landmark_invalid: !productCatalog01.landmark,
+                                                    pincode_invalid: !productCatalog01.pincode,
+                                                    city_invalid: !productCatalog01.city,
+                                                    state_invalid: !productCatalog01.state,
+                                                },
+                                                productCatalog01: { currentStep: 3 }
+                                            })
+                                        ">
+                                            Next
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="step3" hidden [hidden]="productCatalog01.currentStep != 3">
+                    <div class="modal-overlay">
+                        <div class="modal">
+                            <div class="modal-content">
+                                <div class="modal-head">
+                                    <span class="close">x</span>
+                                </div>
+                                <div class="modal-body">
+                                    <h3 class="m-title">THANKS for shopping</h3>
+                                    <p class="m-desc">
+                                        is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                                        been the
+                                        industry's standard dummy text ever since the 1500s
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="step4" hidden submit-error>
+                    <div class="modal-overlay">
+                        <div class="modal hidden">
+                            <div class="modal-content">
+                                <div class="modal-head">
+                                    <span class="close">x</span>
+                                </div>
+                                <div class="modal-body">
+                                    <h3 class="m-title">Error</h3>
+                                    <p class="m-desc">
+                                        is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                                        been the
+                                        industry's standard dummy text ever since the 1500s
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+```
+
+</Accordion>
 
 ## Scratch Card for Discount Template
 
@@ -8255,27 +7758,26 @@ This AMP template delivers a gamified experience within the email itself. It all
 
 <Image align="center" alt="Sample Scratch Card for Disvount Template" border={true} caption="Sample Scratch Card for Discount Template" src="https://files.readme.io/6c1580151c3f71e5c0e240e27b725ed9654d7fd990fbecae359e9c3217b6a57a-Scratch_Card_for_Discount_AMP.png" width="35% " />
 
-<details>
-  <summary><b>Expand to know more about the template.</b></summary>
+<Accordion title="My Accordion Title" icon="fa-info-circle">
 
-  ### Use Case Examples
+### Use Case Examples
 
-  * Launch surprise reward campaigns to boost conversions.
-  * Drive festive or seasonal promotions with a gamified touch.
-  * Encourage user engagement with loyalty program perks.
-  * Re-engage inactive users with a “Scratch To Unlock” coupon or deal.
+* Launch surprise reward campaigns to boost conversions.
+* Drive festive or seasonal promotions with a gamified touch.
+* Encourage user engagement with loyalty program perks.
+* Re-engage inactive users with a “Scratch To Unlock” coupon or deal.
 
-  ### Template Customization Options
+### Template Customization Options
 
-  * [Replace Logo](doc:ootb-email-templates#replace-logo)
-  * [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-  * [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
-  * [Update Links in Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+* [Replace Logo](doc:ootb-email-templates#replace-logo)
+* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
+* [Update Links in Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
 
-  ### Template Code
+### Template Code
 
-  ```html
-  <!doctype html>
+```html
+<!doctype html>
   <html ⚡4email data-css-strict>
   <head>
   <meta charset="utf-8">
@@ -8379,8 +7881,10 @@ This AMP template delivers a gamified experience within the email itself. It all
   </table>
   </body>
   </html>
-  ```
-</details>
+```
+
+  
+</Accordion> 
 
 ## Spin and Win Template
 
