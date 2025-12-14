@@ -247,7 +247,7 @@ This HTML template is designed to collect user input after a purchase, interacti
   </table>
   </body>
                                                                                                       <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
-</html>
+  </html>
   ```
 </Accordion>
 
@@ -392,8 +392,8 @@ This HTML template is crafted to convert new users into paying customers by offe
   		</tr>
   	</tbody>
   </table>
-	<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></body>
-</html>
+    <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></body>
+  </html>
   ```
 </Accordion>
 
@@ -659,7 +659,7 @@ The Flash Sale HTML template is optimized for high-conversion campaigns built ar
   	</tbody>
   </table>
     <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></body>
-	</html>
+    </html>
   ```
 </Accordion>
 
@@ -956,8 +956,8 @@ The Cart Abandonment HTML template is a re-engagement template designed to remin
   		<!-- footer end-->
   	</tbody>
   </table>
- <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></body>
-</html>
+  <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></body>
+  </html>
   ```
 </Accordion>
 
@@ -1233,7 +1233,7 @@ The Access to Early Sales HTML template is designed to give a sense of exclusivi
   	</tbody>
   </table>
   <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></body>
-</html>
+  </html>
   ```
 </Accordion>
 
@@ -1383,7 +1383,7 @@ A transactional HTML email template designed to verify user identity during acco
           </tbody>
       </table>
       </body>
-		</html>
+    	</html>
   ```
 </Accordion>
 
@@ -1506,7 +1506,7 @@ A relationship-nurturing HTML template designed to celebrate a customer’s anni
       </table>
       <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
      </body>
-		</html>
+    	</html>
   ```
 </Accordion>
 
@@ -1517,313 +1517,310 @@ A neutral, content-focused HTML template designed to communicate important updat
 <Image align="center" alt="Sample Informative Email Template" border={true} caption="Sample Informative Email Template" src="https://files.readme.io/b929cb18516c6bd42b772107850b0b63c010e4a85df006fe6f215042d50a8910-Informative_Email_Template_HTML.png" width="25% " />
 
 <Accordion title="Expand to know more about the template.">
+  ### Use Case Examples
 
-### Use Case Examples
+  * Announce policy updates or changes in terms of service.
+  * Notify users about new features, UI enhancements, or release rollouts.
+  * Share account-related communications such as billing reminders or operational changes.
+  * Ideal for transactional or compliance-driven engagement.
 
-* Announce policy updates or changes in terms of service.
-* Notify users about new features, UI enhancements, or release rollouts.
-* Share account-related communications such as billing reminders or operational changes.
-* Ideal for transactional or compliance-driven engagement.
+  ### Template Customization Options
 
-### Template Customization Options
+  * [Replace the Logo](doc:ootb-email-templates#replace-logo)
+  * [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+  * [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
+  * [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+  * [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+  * [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
 
-* [Replace the Logo](doc:ootb-email-templates#replace-logo)
-* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
-* [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-* [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-* [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+  ### Template Code
 
-### Template Code
+  ```html
+  <!doctype html="">
+  <html lang="en">
 
-```html
-<!doctype html="">
-<html lang="en">
+  <head>
+      <title>Informative</title>
+      <style type="text/css">
+          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Light.ttf\') format(\'woff\');             font-style: normal;             font-weight: 300;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Regular.ttf\') format(\'woff\');             font-style: normal;             font-weight: 400;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Medium.ttf\') format(\'woff\');             font-style: normal;             font-weight: 500;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-SemiBold.ttf\') format(\'woff\');             font-style: normal;             font-weight: 600;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Bold.ttf\') format(\'woff\');             font-style: normal;             font-weight: 700;         }          @media screen and (max-width: 480px) {             .container {max-width: 100% !important;}             .main {max-width: 90% !important;}             .faq-sec {padding: 10px !important;}             .product-sec{padding: 25px !important; text-align: justify !important;}             .border{width: 25% !important;}         }
+      </style>
+  </head>
 
-<head>
-    <title>Informative</title>
-    <style type="text/css">
-        @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Light.ttf\') format(\'woff\');             font-style: normal;             font-weight: 300;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Regular.ttf\') format(\'woff\');             font-style: normal;             font-weight: 400;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Medium.ttf\') format(\'woff\');             font-style: normal;             font-weight: 500;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-SemiBold.ttf\') format(\'woff\');             font-style: normal;             font-weight: 600;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Bold.ttf\') format(\'woff\');             font-style: normal;             font-weight: 700;         }          @media screen and (max-width: 480px) {             .container {max-width: 100% !important;}             .main {max-width: 90% !important;}             .faq-sec {padding: 10px !important;}             .product-sec{padding: 25px !important; text-align: justify !important;}             .border{width: 25% !important;}         }
-    </style>
-</head>
+  <body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" data-new-gr-c-s-loaded="14.1242.0" style="background: rgb(221, 221, 221); font-family: Jost, Arial, sans-serif; font-weight: 400; margin: 0px; padding: 0px; cursor: auto;">
+      <!-- Change Theme -->
+      <table border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 600px; margin: 0 auto; background-color: #FFFFFF;" width="100%">
+          <!-- header start-->
+          <tbody>
+              <tr>
+                  <td style="text-align: center; vertical-align: middle; padding: 20px">
+                      <!-- Change Logo Image src as per your requirements --><img alt="Logo" class="logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="display: inline-block; width: 127px; height: 58px; object-fit: cover;" />
+                      <!-- Change Logo Image src as per your requirements -->
+                  </td>
+              </tr>
+              <!-- header end-->
+              <!-- Banner Image -->
+              <tr>
+                  <td style="padding:0px 10px;"><img alt="banner image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/informative/banner.png" style="width: 100%; height: 100%; max-height: 361px; object-fit: cover;" /></td>
+              </tr>
+              <!-- Banner Image -->
+              <!-- Product section -->
+              <tr>
+                  <td class="product-sec" style="background: #DBCBB0; padding: 32px 46px; text-align: center; margin: 0px 10px; display: block;">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                          <tbody>
+                              <tr>
+                                  <td style="text-align: center;">
+                                      <h2 style="text-transform: none;font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 24px; margin: 0 auto;">QUARTERLY UPDATES</h2>
 
-<body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" data-new-gr-c-s-loaded="14.1242.0" style="background: rgb(221, 221, 221); font-family: Jost, Arial, sans-serif; font-weight: 400; margin: 0px; padding: 0px; cursor: auto;">
-    <!-- Change Theme -->
-    <table border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 600px; margin: 0 auto; background-color: #FFFFFF;" width="100%">
-        <!-- header start-->
-        <tbody>
-            <tr>
-                <td style="text-align: center; vertical-align: middle; padding: 20px">
-                    <!-- Change Logo Image src as per your requirements --><img alt="Logo" class="logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="display: inline-block; width: 127px; height: 58px; object-fit: cover;" />
-                    <!-- Change Logo Image src as per your requirements -->
-                </td>
-            </tr>
-            <!-- header end-->
-            <!-- Banner Image -->
-            <tr>
-                <td style="padding:0px 10px;"><img alt="banner image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/informative/banner.png" style="width: 100%; height: 100%; max-height: 361px; object-fit: cover;" /></td>
-            </tr>
-            <!-- Banner Image -->
-            <!-- Product section -->
-            <tr>
-                <td class="product-sec" style="background: #DBCBB0; padding: 32px 46px; text-align: center; margin: 0px 10px; display: block;">
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                        <tbody>
-                            <tr>
-                                <td style="text-align: center;">
-                                    <h2 style="text-transform: none;font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 24px; margin: 0 auto;">QUARTERLY UPDATES</h2>
+                                      <div style="border-bottom: 1px solid #252525; width: 80px; display: block; margin: 10px auto;"> </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="margin: 10px 0">
+                                          <tbody>
+                                              <tr>
+                                                  <td>
+                                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="padding: 10px; width: 100%;">
+                                                          <tbody>
+                                                              <tr>
+                                                                  <td>
+                                                                      <p style="margin: 0; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 24px; text-align: center; ">Stay in the loop with the latest updates from our company. From exciting launches to impactful milestones, here’s everything you need to know about how we’ve grown and evolved over the
+                                                                          last quarter.</p>
+                                                                  </td>
+                                                              </tr>
+                                                          </tbody>
+                                                      </table>
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <!-- product section -->
+              <!-- Information Section -->
+              <tr>
+                  <td class="information-sec" style="background: #DBCBB0; padding: 15px; text-align: center; margin: 20px 10px; display: block;">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                          <tbody>
+                              <tr>
+                                  <td style="text-align: center;">
+                                      <h2 style="text-transform: none;font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 24px; margin: 0 auto;">LATEST NEWS</h2>
 
-                                    <div style="border-bottom: 1px solid #252525; width: 80px; display: block; margin: 10px auto;"> </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="margin: 10px 0">
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="padding: 10px; width: 100%;">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>
-                                                                    <p style="margin: 0; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 24px; text-align: center; ">Stay in the loop with the latest updates from our company. From exciting launches to impactful milestones, here’s everything you need to know about how we’ve grown and evolved over the
-                                                                        last quarter.</p>
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <!-- product section -->
-            <!-- Information Section -->
-            <tr>
-                <td class="information-sec" style="background: #DBCBB0; padding: 15px; text-align: center; margin: 20px 10px; display: block;">
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                        <tbody>
-                            <tr>
-                                <td style="text-align: center;">
-                                    <h2 style="text-transform: none;font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 24px; margin: 0 auto;">LATEST NEWS</h2>
+                                      <div style="border-bottom: 1px solid #252525; width: 80px; display: block; margin: 10px auto;"> </div>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <!-- Information Section -->
+              <!-- Product Updates Section -->
+              <tr>
+                  <td class="information-sec" colspan="2" style="text-align: center; margin: 20px 10px; display: block;">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin-bottom: 15px;; width: 100%;">
+                          <tbody>
+                              <tr>
+                                  <td style="width: 65%; background: #ffffff;  text-align: left; vertical-align: middle;">
+                                      <div style="padding:40px 16px; background: #DBCBB0;">
+                                          <h2 style="text-transform: none; margin: 0;font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #252525;">LEADERSHIP ANNOUNCEMENT</h2>
 
-                                    <div style="border-bottom: 1px solid #252525; width: 80px; display: block; margin: 10px auto;"> </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <!-- Information Section -->
-            <!-- Product Updates Section -->
-            <tr>
-                <td class="information-sec" colspan="2" style="text-align: center; margin: 20px 10px; display: block;">
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin-bottom: 15px;; width: 100%;">
-                        <tbody>
-                            <tr>
-                                <td style="width: 65%; background: #ffffff;  text-align: left; vertical-align: middle;">
-                                    <div style="padding:40px 16px; background: #DBCBB0;">
-                                        <h2 style="text-transform: none; margin: 0;font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #252525;">LEADERSHIP ANNOUNCEMENT</h2>
+                                          <div style="background: #252525; width: 60px;height: 1px; display: block; margin: 6px 0px 10px 0px"> </div>
 
-                                        <div style="background: #252525; width: 60px;height: 1px; display: block; margin: 6px 0px 10px 0px"> </div>
+                                          <p style="margin: 0; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 20px; text-align: left; ">We’re excited to welcome [New CEO Name] as our new CEO, now set to lead us into an exciting new chapter.</p>
+                                      </div>
+                                  </td>
+                                  <td style="width: 35%; text-align: right; vertical-align: middle;">
+                                      <div class="look-img"><img alt="look" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/informative/product1.png" style="width:100%; height: 100%; object-fit: contain;" /></div>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <!-- Product Updates Section -->
+              <!-- Policy Changes Section -->
+              <tr>
+                  <td class="information-sec" colspan="2" style="text-align: center; margin: 20px 10px; display: block;">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin-bottom: 15px; width: 100%;">
+                          <tbody>
+                              <tr>
+                                  <td style="width: 35%; text-align: right; vertical-align: middle;">
+                                      <div class="look-img"><img alt="look" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/informative/product2.png" style="width:100%; height: 100%; object-fit: contain;" /></div>
+                                  </td>
+                                  <td style="width: 65%; background: #ffffff;  text-align: left; vertical-align: middle;">
+                                      <div style="padding:40px 16px; background: #DBCBB0;">
+                                          <h2 style="text-transform: none; margin: 0;font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #252525;">PRODUCT LAUNCH</h2>
 
-                                        <p style="margin: 0; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 20px; text-align: left; ">We’re excited to welcome [New CEO Name] as our new CEO, now set to lead us into an exciting new chapter.</p>
-                                    </div>
-                                </td>
-                                <td style="width: 35%; text-align: right; vertical-align: middle;">
-                                    <div class="look-img"><img alt="look" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/informative/product1.png" style="width:100%; height: 100%; object-fit: contain;" /></div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <!-- Product Updates Section -->
-            <!-- Policy Changes Section -->
-            <tr>
-                <td class="information-sec" colspan="2" style="text-align: center; margin: 20px 10px; display: block;">
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin-bottom: 15px; width: 100%;">
-                        <tbody>
-                            <tr>
-                                <td style="width: 35%; text-align: right; vertical-align: middle;">
-                                    <div class="look-img"><img alt="look" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/informative/product2.png" style="width:100%; height: 100%; object-fit: contain;" /></div>
-                                </td>
-                                <td style="width: 65%; background: #ffffff;  text-align: left; vertical-align: middle;">
-                                    <div style="padding:40px 16px; background: #DBCBB0;">
-                                        <h2 style="text-transform: none; margin: 0;font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #252525;">PRODUCT LAUNCH</h2>
+                                          <div style="background: #252525; width: 60px;height: 1px; width: 60px; display: block; margin: 6px 0px 10px 0px"> </div>
 
-                                        <div style="background: #252525; width: 60px;height: 1px; width: 60px; display: block; margin: 6px 0px 10px 0px"> </div>
+                                          <p style="margin: 0; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 20px; text-align: left; ">We’re thrilled to introduce [Product Name], designed to make your experience even better.</p>
+                                      </div>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <!-- Policy Changes Section -->
+              <!-- Periodic Updates Section -->
+              <tr>
+                  <td class="information-sec" colspan="2" style="text-align: center; margin: 20px 10px; display: block;">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin-bottom: 15px; width: 100%;">
+                          <tbody>
+                              <tr>
+                                  <td style="width: 65%; background: #ffffff;  text-align: left; vertical-align: middle;">
+                                      <div style="padding:40px 16px; background: #DBCBB0;">
+                                          <h2 style="text-transform: none; margin: 0;font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #252525;">NEW MILESTONE</h2>
 
-                                        <p style="margin: 0; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 20px; text-align: left; ">We’re thrilled to introduce [Product Name], designed to make your experience even better.</p>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <!-- Policy Changes Section -->
-            <!-- Periodic Updates Section -->
-            <tr>
-                <td class="information-sec" colspan="2" style="text-align: center; margin: 20px 10px; display: block;">
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin-bottom: 15px; width: 100%;">
-                        <tbody>
-                            <tr>
-                                <td style="width: 65%; background: #ffffff;  text-align: left; vertical-align: middle;">
-                                    <div style="padding:40px 16px; background: #DBCBB0;">
-                                        <h2 style="text-transform: none; margin: 0;font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #252525;">NEW MILESTONE</h2>
+                                          <div style="background: #252525; width: 60px;height: 1px; display: block; margin: 6px 0px 10px 0px"> </div>
 
-                                        <div style="background: #252525; width: 60px;height: 1px; display: block; margin: 6px 0px 10px 0px"> </div>
+                                          <p style="margin: 0; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 20px; text-align: left; ">We’ve hit an incredible milestone — our company now serves over 2 million customers worldwide!</p>
+                                      </div>
+                                  </td>
+                                  <td style="width: 35%; text-align: right; vertical-align: middle;">
+                                      <div class="look-img"><img alt="look" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/informative/product3.png" style="width:100%; height: 100%; object-fit: contain;" /></div>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <!-- Periodic Updates Section -->
+              <!-- Shop Now-->
+              <!-- Shop Now-->
+              <tr>
+                  <td>
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%;">
+                          <tbody>
+                              <tr>
+                                  <td style="width: 100%; text-align: center; vertical-align: middle;">
+                                      <a display_text_og="READ%20MORE" href="#" href_og="%23" style="font-family: Jost, Arial, sans-serif; font-size: 16px; font-weight: 400; text-transform: none; line-height: 24px; text-decoration: none; background: rgb(154, 119, 89); padding: 4px 34px; display: inline-block; text-align: center; max-width: 167px; color: rgb(255, 255, 255) !important;">READ MORE</a>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <!-- Footer Section -->
+              <tr>
+                  <td align="center" colspan="2" style="padding-top: 50px;">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%; background: #543F2D; padding: 25px 0 25px;">
+                          <tbody>
+                              <tr>
+                                  <td style="padding: 0;">
+                                      <table align="center" cellpadding="0" cellspacing="0" style="text-align: center;" width="100%">
+                                          <!-- Add Links -->
+                                          <!-- Download Android Section -->
+                                          <tbody>
+                                              <tr>
+                                                  <td class="border" style="width:36%;">
+                                                      <div style="display: block; border:1px solid #DBCBB0;"> </div>
+                                                  </td>
+                                                  <td style="padding: 10px 10px; display: inline-block;">
+                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 20px; height: 20px; ">
+                                                          <!-- Change image src as per your requirements --><img alt="instagram" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/3c09a826b3cd4920aa1230c7df32f91b.png" style="width: 100%; height: 100%;" /></a>
+                                                  </td>
+                                                  <td style="padding: 10px 10px; display: inline-block; ">
+                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 20px; height: 20px;"><img alt="facebook" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/18c1b92ff17443f38388d771deef565a.png" style="width: 100%; height: 100%;" /></a>
+                                                  </td>
+                                                  <td style="padding: 10px 10px; display: inline-block;">
+                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 20px; height: 20px;"><img alt="x" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/094eeb00e51f41b0a1ff5d845e6d3b2c.png" style="width: 100%; height: 100%;" /></a>
+                                                  </td>
+                                                  <td class="border" style="width:36%;">
+                                                      <div style="display: block; border:1px solid #DBCBB0;"> </div>
+                                                  </td>
+                                              </tr>
+                                              <!-- Download Android Section -->
+                                              <!-- Add Links -->
+                                          </tbody>
+                                      </table>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <!-- Footer Section -->
+              <!-- FAQS start-->
+              <tr>
+                  <td align="center" colspan="2" style="margin-top: 10px; display: block;">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%; background: #543F2D; padding: 25px 0 25px;">
+                          <tbody>
+                              <tr>
+                                  <td style="text-align: center;">
+                                      <h2 style="text-transform: none;font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 24px; margin: 0 auto; color:#ffffff">FAQ&#39;s</h2>
 
-                                        <p style="margin: 0; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 20px; text-align: left; ">We’ve hit an incredible milestone — our company now serves over 2 million customers worldwide!</p>
-                                    </div>
-                                </td>
-                                <td style="width: 35%; text-align: right; vertical-align: middle;">
-                                    <div class="look-img"><img alt="look" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/informative/product3.png" style="width:100%; height: 100%; object-fit: contain;" /></div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <!-- Periodic Updates Section -->
-            <!-- Shop Now-->
-            <!-- Shop Now-->
-            <tr>
-                <td>
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%;">
-                        <tbody>
-                            <tr>
-                                <td style="width: 100%; text-align: center; vertical-align: middle;">
-                                    <a display_text_og="READ%20MORE" href="#" href_og="%23" style="font-family: Jost, Arial, sans-serif; font-size: 16px; font-weight: 400; text-transform: none; line-height: 24px; text-decoration: none; background: rgb(154, 119, 89); padding: 4px 34px; display: inline-block; text-align: center; max-width: 167px; color: rgb(255, 255, 255) !important;">READ MORE</a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <!-- Footer Section -->
-            <tr>
-                <td align="center" colspan="2" style="padding-top: 50px;">
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%; background: #543F2D; padding: 25px 0 25px;">
-                        <tbody>
-                            <tr>
-                                <td style="padding: 0;">
-                                    <table align="center" cellpadding="0" cellspacing="0" style="text-align: center;" width="100%">
-                                        <!-- Add Links -->
-                                        <!-- Download Android Section -->
-                                        <tbody>
-                                            <tr>
-                                                <td class="border" style="width:36%;">
-                                                    <div style="display: block; border:1px solid #DBCBB0;"> </div>
-                                                </td>
-                                                <td style="padding: 10px 10px; display: inline-block;">
-                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 20px; height: 20px; ">
-                                                        <!-- Change image src as per your requirements --><img alt="instagram" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/3c09a826b3cd4920aa1230c7df32f91b.png" style="width: 100%; height: 100%;" /></a>
-                                                </td>
-                                                <td style="padding: 10px 10px; display: inline-block; ">
-                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 20px; height: 20px;"><img alt="facebook" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/18c1b92ff17443f38388d771deef565a.png" style="width: 100%; height: 100%;" /></a>
-                                                </td>
-                                                <td style="padding: 10px 10px; display: inline-block;">
-                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 20px; height: 20px;"><img alt="x" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/094eeb00e51f41b0a1ff5d845e6d3b2c.png" style="width: 100%; height: 100%;" /></a>
-                                                </td>
-                                                <td class="border" style="width:36%;">
-                                                    <div style="display: block; border:1px solid #DBCBB0;"> </div>
-                                                </td>
-                                            </tr>
-                                            <!-- Download Android Section -->
-                                            <!-- Add Links -->
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <!-- Footer Section -->
-            <!-- FAQS start-->
-            <tr>
-                <td align="center" colspan="2" style="margin-top: 10px; display: block;">
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%; background: #543F2D; padding: 25px 0 25px;">
-                        <tbody>
-                            <tr>
-                                <td style="text-align: center;">
-                                    <h2 style="text-transform: none;font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 24px; margin: 0 auto; color:#ffffff">FAQ&#39;s</h2>
+                                      <div style="border-bottom: 1px solid #DBCBB0; width: 80px; display: block; margin: 10px auto;"> </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td class="faq-sec" style="padding: 10px 100px;">
+                                      <table align="center" cellpadding="0" cellspacing="0" style="text-align: center;" width="100%">
+                                          <tbody>
+                                              <tr>
+                                                  <td style="background: #DBCBB0; padding: 10px; margin-bottom: 5px; display: block;">
+                                                      <p style="margin: 0; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; text-align: left; ">FAQ 1</p>
 
-                                    <div style="border-bottom: 1px solid #DBCBB0; width: 80px; display: block; margin: 10px auto;"> </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="faq-sec" style="padding: 10px 100px;">
-                                    <table align="center" cellpadding="0" cellspacing="0" style="text-align: center;" width="100%">
-                                        <tbody>
-                                            <tr>
-                                                <td style="background: #DBCBB0; padding: 10px; margin-bottom: 5px; display: block;">
-                                                    <p style="margin: 0; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; text-align: left; ">FAQ 1</p>
+                                                      <p style="margin: 0; color: #494949; font-family: 'Jost', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 20px; text-align: left; "><strong data-renderer-mark="true">What does the change in leadership mean for customers?</strong></p>
 
-                                                    <p style="margin: 0; color: #494949; font-family: 'Jost', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 20px; text-align: left; "><strong data-renderer-mark="true">What does the change in leadership mean for customers?</strong></p>
+                                                      <p style="margin: 0; color: #494949; font-family: 'Jost', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 20px; text-align: left; ">The new CEO brings fresh perspectives, ensuring a better experience for all customers</p>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td style="background: #DBCBB0; padding: 10px; margin-bottom: 5px; display: block;">
+                                                      <p style="margin: 0; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; text-align: left; ">FAQ 2</p>
 
-                                                    <p style="margin: 0; color: #494949; font-family: 'Jost', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 20px; text-align: left; ">The new CEO brings fresh perspectives, ensuring a better experience for all customers</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="background: #DBCBB0; padding: 10px; margin-bottom: 5px; display: block;">
-                                                    <p style="margin: 0; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; text-align: left; ">FAQ 2</p>
+                                                      <p style="margin: 0;  color: #494949; font-family: 'Jost', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 20px; text-align: left; "><strong data-renderer-mark="true">What makes [New Product Name] unique?</strong></p>
 
-                                                    <p style="margin: 0;  color: #494949; font-family: 'Jost', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 20px; text-align: left; "><strong data-renderer-mark="true">What makes [New Product Name] unique?</strong></p>
+                                                      <p style="margin: 0; color: #494949; font-family: 'Jost', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 20px; text-align: left; ">[New Product Name] offers cutting-edge features designed to streamline your experience. Learn more about it on our website.</p>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td style="background: #DBCBB0; padding: 10px; margin-bottom: 5px; display: block;">
+                                                      <p style="margin: 0; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; text-align: left; ">FAQ 3</p>
 
-                                                    <p style="margin: 0; color: #494949; font-family: 'Jost', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 20px; text-align: left; ">[New Product Name] offers cutting-edge features designed to streamline your experience. Learn more about it on our website.</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="background: #DBCBB0; padding: 10px; margin-bottom: 5px; display: block;">
-                                                    <p style="margin: 0; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; text-align: left; ">FAQ 3</p>
+                                                      <p style="margin: 0; color: #494949; font-family: 'Jost', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 20px; text-align: left; "><strong data-renderer-mark="true">How can I try out the new product?</strong></p>
 
-                                                    <p style="margin: 0; color: #494949; font-family: 'Jost', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 20px; text-align: left; "><strong data-renderer-mark="true">How can I try out the new product?</strong></p>
+                                                      <p style="margin: 0; color: #494949; font-family: 'Jost', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 20px; text-align: left; ">You can explore [New Product Name] by visiting our website or contacting our team for a demo.</p>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td style="background: #DBCBB0; padding: 10px; display: block;">
+                                                      <p style="margin: 0; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; text-align: left; ">FAQ 4</p>
 
-                                                    <p style="margin: 0; color: #494949; font-family: 'Jost', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 20px; text-align: left; ">You can explore [New Product Name] by visiting our website or contacting our team for a demo.</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="background: #DBCBB0; padding: 10px; display: block;">
-                                                    <p style="margin: 0; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; text-align: left; ">FAQ 4</p>
+                                                      <p style="margin: 0; color: #494949; font-family: 'Jost', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 20px; text-align: left; "><strong data-renderer-mark="true">How can I learn more about these updates?</strong></p>
 
-                                                    <p style="margin: 0; color: #494949; font-family: 'Jost', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 20px; text-align: left; "><strong data-renderer-mark="true">How can I learn more about these updates?</strong></p>
+                                                      <p style="margin: 0; color: #494949; font-family: 'Jost', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 20px; text-align: left; ">Simply click “READ MORE” to dive deeper into each update.</p>
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <!-- FAQS end-->
+              <tr>
+                  <td style="padding: 20px 0;">
+                      <p style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #494949;">To opt out of promotional emails like this,
+                          <a href="#" style="color:#543F2D;font-weight:bold;text-decoration:none;">unsubscribe here</a>
+                      </p>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+      <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+  </body>
 
-                                                    <p style="margin: 0; color: #494949; font-family: 'Jost', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 20px; text-align: left; ">Simply click “READ MORE” to dive deeper into each update.</p>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <!-- FAQS end-->
-            <tr>
-                <td style="padding: 20px 0;">
-                    <p style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #494949;">To opt out of promotional emails like this,
-                        <a href="#" style="color:#543F2D;font-weight:bold;text-decoration:none;">unsubscribe here</a>
-                    </p>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
-</body>
-
-</html>
-```
-
-  
+  </html>
+  ```
 </Accordion>
 
 ## Loyalty Points Update Template
@@ -1833,693 +1830,10 @@ These templates are designed to keep users informed about changes in their loyal
 <Image align="center" alt="Sample Loyalty Points Expiry & Loyalty Points Balance Template" border={true} caption="Sample Loyalty Points Expiry & Loyalty Points Balance Template" src="https://files.readme.io/a457c4956a48241012937ce59ab0e2d90559fd644fe14d7326d0fd8d345dcf6d-Loyalty_Points_Update_HTML.png" width="75% " />
 
 <Accordion title="Expand to know more about the template.">
-
-### Use Case Examples
-
-* Notify users when new points have been added to their account.
-* Alert users about points that are about to expire soon.
-
-### Template Customization Options
-
-* [Replace the Logo](doc:ootb-email-templates#replace-logo)
-* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
-* [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-* [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-* [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
-
-### Template Code
-
-```html Loyalty Point Expiry
-<!doctype html="">
-<html lang="en">
-
-<head>
-    <title>Loyalty Point Expiry</title>
-    <style type="text/css">
-        @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Light.ttf\') format(\'woff\');             font-style: normal;             font-weight: 300;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Regular.ttf\') format(\'woff\');             font-style: normal;             font-weight: 400;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Medium.ttf\') format(\'woff\');             font-style: normal;             font-weight: 500;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-SemiBold.ttf\') format(\'woff\');             font-style: normal;             font-weight: 600;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Bold.ttf\') format(\'woff\');             font-style: normal;             font-weight: 700;         }          @media screen and (max-width: 480px) {             .container {                 max-width: 100% !important;             }             .loyalty-sec{                 padding: 30px !important;             }             .footer-content{                 padding: 0px 30px !important;             }             .expiry-para{                 padding: 10px 20px !important;             }             .main-heading{                 font-size: 30px !important;                 line-height: 40px !important;             }         }
-    </style>
-</head>
-
-<body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" data-new-gr-c-s-loaded="14.1242.0" style="font-family: Jost, Arial, sans-serif; font-weight: 400; margin: 0px; padding: 0px; cursor: auto;">
-    <table border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 600px; margin: 0 auto; background-color: #F0EEF6; padding: 30px 0px 0px;" width="100%">
-        <!-- header start-->
-        <tbody>
-            <tr>
-                <td style="background: #ffffff; text-align: center; vertical-align: middle; padding: 20px; margin: 0px 30px; display: block;">
-                    <!-- Change image src as per your requirements --><img alt="Logo" class="logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="display: inline-block; width: 127px; height: 58px; object-fit: cover;" /></td>
-            </tr>
-            <!-- header end-->
-            <!-- Loyalty Point section -->
-            <tr>
-                <td class="loyalty-sec" style="background: #ffffff; padding: 30px; text-align: center; border-top: 0.5px solid #979797; margin: 0px 30px; display: block;">
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                        <tbody>
-                            <tr>
-                                <td style="text-align: center;">
-                                    <h2 class="main-heading" style="text-transform: uppercase;font-family: 'Jost', Arial, sans-serif; font-size: 40px; font-weight: 300; line-height: 50px; margin: 0 auto; color:#000000;">YOUR POINTS WILL EXPIRE SOON!</h2>
-
-                                    <p class="expiry-para" style="padding: 0px 80px; text-transform: none; color: #4f4f4f; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: center; ">You have 150 loyalty points that are set to expire on February 15 2025. Shop now to redeem them and save big!</p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <!-- Loyalty Point section -->
-            <!-- Information Section -->
-            <tr>
-                <td class="information-sec" style="border-top:3px solid #1DBF73;text-align: center;">
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                        <tbody>
-                            <tr>
-                                <td><img alt="look" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Loyalty-Exp/loyalty.png" style="width:100%; height: 100%; object-fit: contain;" /></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td style="background-color: #1DBF73; padding: 10px 30px; vertical-align: middle; text-align: left;">
-                    <a href="#" style="font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; text-transform: uppercase; line-height: 28px; color: #ffffff !important; text-decoration: none; display: inline-block; text-align: left; width: 100%;">Redeem Now <img alt="arrow" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Loyalty-Exp/Arrow.png" style="float:right; padding-top: 5px;" /></a>
-                </td>
-            </tr>
-            <!-- Information Section -->
-            <!-- footer start-->
-            <tr>
-                <td align="center" colspan="2">
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%; background: #ffffff; padding: 25px 0 25px;">
-                        <tbody>
-                            <tr>
-                                <td style="padding: 0;">
-                                    <table align="center" cellpadding="0" cellspacing="0" style="text-align: center;" width="100%">
-                                        <tbody>
-                                            <tr>
-                                                <td style="padding: 15px 15px; display: inline-block;">
-                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 30px; height: 30px; ">
-                                                        <!-- Change image src as per your requirements --><img alt="instagram" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/7c0f383a34174b419048c105abef1c6d.png" style="width: 100%; height: 100%;" /></a>
-                                                </td>
-                                                <td style="padding: 15px 15px; display: inline-block; ">
-                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 30px; height: 30px;"><img alt="facebook" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/9e433bfc71464f51ac6bf991cc15c61e.png" style="width: 100%; height: 100%;" /></a>
-                                                </td>
-                                                <td style="padding: 15px 15px; display: inline-block;">
-                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 30px; height: 30px;"><img alt="x" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/84960566b3bd48c49d86b17263d4cee8.png" style="width: 100%; height: 100%;" /></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="footer-content" style="padding:0px 100px">
-                                                    <p style="color: #4f4f4f; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; margin-bottom: 0px;">For assistance, connect with us on social media or reach out to our support team at
-                                                        <a data-renderer-mark="true" data-testid="link-with-safety" href="support@example.com" title="support@example.com">support@example.com</a>
-                                                    </p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="footer-content" style="padding:0px 100px">
-                                                    <p style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #1E1E1E; padding-top:10px;">This is a system-generated email. Please do not reply.</p>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <!-- footer end-->
-        </tbody>
-    </table>
-</body>
-<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
-</html>
-```
-```html Loyalty Points Balance
-<!doctype html="">
-<html lang="en">
-
-<head>
-    <title>Loyalty Point</title>
-    <style type="text/css">
-        @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Light.ttf\') format(\'woff\');             font-style: normal;             font-weight: 300;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Regular.ttf\') format(\'woff\');             font-style: normal;             font-weight: 400;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Medium.ttf\') format(\'woff\');             font-style: normal;             font-weight: 500;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-SemiBold.ttf\') format(\'woff\');             font-style: normal;             font-weight: 600;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Bold.ttf\') format(\'woff\');             font-style: normal;             font-weight: 700;         }          @media screen and (max-width: 480px) {             .container {                 max-width: 100% !important;             }             .loyalty-sec{                 padding: 30px !important;             }             .footer-content{                 padding: 0px 30px !important;             }             .main-heading{                 font-size: 30px !important;                 line-height: 40px !important;             }         }
-    </style>
-</head>
-
-<body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" data-new-gr-c-s-loaded="14.1242.0" style="font-family: Jost, Arial, sans-serif; font-weight: 400; margin: 0px; padding: 0px; cursor: auto;">
-    <table border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 600px; margin: 0 auto; background-color: #F0EEF6; padding: 30px;" width="100%">
-        <!-- header start-->
-        <tbody>
-            <tr>
-                <td style="background: #ffffff; text-align: center; vertical-align: middle; padding: 20px">
-                    <!-- Change image src as per your requirements --><img alt="Logo" class="logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="display: inline-block; width: 127px; height: 58px; object-fit: cover;" /></td>
-            </tr>
-            <!-- header end-->
-            <!-- Loyalty Point section -->
-            <tr>
-                <td class="loyalty-sec" style="background: #ffffff; padding: 30px 100px; text-align: center; border-top: 0.5px solid #979797;">
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                        <tbody>
-                            <tr>
-                                <td style="text-align: center;">
-                                    <h2 class="main-heading" style="text-transform: uppercase;font-family: 'Jost', Arial, sans-serif; font-size: 40px; font-weight: 300; line-height: 57px; margin: 0 auto; color:#000000;">YOUR POINTS BALANCE</h2>
-
-                                    <p style="margin-bottom: 20px; text-transform: none; color: #4f4f4f; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; ">Here is your current loyalty points balance. Shop now to redeem them and save big!</p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <!-- Loyalty Point section -->
-            <!-- Information Section -->
-            <tr>
-                <td class="information-sec" style="background: #1DBF73; padding: 15px; text-align: center;">
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <h3 style="margin: 0px; font-style:italic;text-transform: none; color: #ffffff; font-family: 'Jost', Arial, sans-serif; font-size: 40px; font-weight: 400; line-height: 57px; text-align: center; ">150</h3>
-
-                                    <p style="margin: 0px; text-transform: none; color: #ffffff; font-family: 'Jost', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; text-align: center; ">Current Points Balance</p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td class="information-sec" style="background: #ffffff; border:1px solid #1DBF73; margin-bottom: 20px; padding: 10px 25px; text-align: center;">
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                        <tbody>
-                            <tr>
-                                <td style="width: 50%; vertical-align: middle;">
-                                    <h4 class="p-title" style="margin:0px; text-transform: uppercase; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 300; line-height: 20px; color: #393939; text-align: left;">Expiry Date</h4>
-                                </td>
-                                <td style="width: 50%; vertical-align: middle;">
-                                    <p style="margin:0; color: #252525; font-family: 'Jost', Arial, sans-serif; font-size: 16px;font-weight: 500; line-height: 23px; text-align: right;">10/09/2024</p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td style="background: #ffffff; padding: 20px 0;"> </td>
-            </tr>
-            <tr>
-                <td class="information-sec" style="background: #ffffff; border-top:0.5px solid #979797; padding: 40px 25px; text-align: center;">
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                        <tbody>
-                            <tr>
-                                <td style="width: 100%; text-align: center; vertical-align: middle;">
-                                    <a display_text_og="REDEEM%20NOW" href="#" href_og="%23" style="font-family: Jost, Arial, sans-serif; font-size: 20px; font-weight: 400; text-transform: uppercase; line-height: 28px; text-decoration: none; background: rgb(29, 191, 115); padding: 9px 30px; display: inline-block; text-align: center; max-width: 182px; color: rgb(255, 255, 255) !important;">REDEEM NOW</a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <!-- Information Section -->
-            <!-- footer start-->
-            <tr>
-                <td align="center" colspan="2">
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background: #F0EEF6; padding: 25px 0 0px;">
-                        <tbody>
-                            <tr>
-                                <td style="padding: 0;">
-                                    <table align="center" cellpadding="0" cellspacing="0" style="text-align: center;" width="100%">
-                                        <tbody>
-                                            <tr>
-                                                <td style="padding: 15px 15px; display: inline-block;">
-                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 30px; height: 30px; ">
-                                                        <!-- Change image src as per your requirements --><img alt="instagram" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/7c0f383a34174b419048c105abef1c6d.png" style="width: 100%; height: 100%;" /></a>
-                                                </td>
-                                                <td style="padding: 15px 15px; display: inline-block; ">
-                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 30px; height: 30px;"><img alt="facebook" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/9e433bfc71464f51ac6bf991cc15c61e.png" style="width: 100%; height: 100%;" /></a>
-                                                </td>
-                                                <td style="padding: 15px 15px; display: inline-block;">
-                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 30px; height: 30px;"><img alt="x" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/84960566b3bd48c49d86b17263d4cee8.png" style="width: 100%; height: 100%;" /></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="footer-content" style="padding:0px 50px">
-                                                    <p style="text-transform: none; color: #4f4f4f; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; margin-bottom: 0px;">For assistance, connect with us on social media or reach out to our support team at
-                                                        <a data-renderer-mark="true" data-testid="link-with-safety" href="support@example.com" title="support@example.com">support@example.com</a>
-                                                    </p>
-
-                                                    <p style="text-transform: none; color: #4f4f4f; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; margin-bottom: 0px;"> </p>
-
-                                                    <p style="text-transform: none; color: #4f4f4f; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; margin-bottom: 0px;">This is a system-generated email. Please do not reply.</p>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <!-- footer end-->
-        </tbody>
-    </table>
-</body>
-<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
-
-</html>
-```
-
-</Accordion>
-
-## Newsletter Template
-
-This recurring email template is used to share curated content such as blogs, product updates, or brand stories.
-
-<Image align="center" alt="Sample Newstter Template" border={true} caption="Sample Newstter Template" src="https://files.readme.io/c9c1ca33c322799d0618933c8800ba0eef3fd29039ee56a4db8544d829feeee1-Newsletter_Template_HTML.png" width="25% " />
-
-<Accordion title="Expand to know more about the template.">
-
-### Use Case Examples
-
-* Keep users informed and engaged by providing valuable content in a consistent format.
-* Ideal for sharing thought leadership articles, community highlights, or monthly wrap-ups without a sales-heavy tone.
-
-### Template Customization Options
-
-* [Replace the Logo](doc:ootb-email-templates#replace-logo)
-* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
-* [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-* [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-* [Update the Privacy Policy](doc:ootb-email-templates#update-privacy-policy)
-* [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
-
-### Template Code
-
-```
-<!doctype html="">
-<html lang="en">
-
-<head>
-    <title>Newsletter</title>
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet" />
-    <style type="text/css">
-        /* *{             margin: 0;             padding: 0;         } */                  @media screen and (max-width: 480px) {             .main {                 max-width: 100% !important;             }             .container{                 max-width: 90% !important;             }         }
-    </style>
-</head>
-
-<body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" data-new-gr-c-s-loaded="14.1242.0" style="font-family: Jost, Arial, sans-serif; font-weight: 400; margin: 0px; cursor: auto;">
-    <table align="center" cellpadding="0" cellspacing="0" style="max-width: 600px; margin: 0 auto; background-color: #F5F5F5;" width="100%">
-        <!-- Main Product Section -->
-        <tbody>
-            <tr>
-                <td>
-                    <table align="center" cellpadding="0" cellspacing="0" class="container" style="max-width: 88%; margin: 38px auto;" width="100%">
-                        <!-- Logo -->
-                        <tbody>
-                            <tr>
-                                <td align="center" style="padding: 15px 0; background-color: #FFFFFF;"><img alt="Logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="max-width: 159px; max-height: 73px;" /></td>
-                            </tr>
-                            <!-- Banner Image -->
-                            <tr>
-                                <td align="center" style="background-color: #FFFFFF;"><img alt="banner" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Newsletter/banner.png" style="max-height: 307px; width: 100%; height: auto; object-fit: cover;" /></td>
-                            </tr>
-                            <!-- Banner Info -->
-                            <tr>
-                                <td style="padding: 32px 50px 15px; text-align: center; background-color: #FFFFFF;">
-                                    <h1 style="font-size: 36px; font-weight: 400; line-height: 45px; color: #1E1E1E; text-transform: uppercase; margin-bottom: 10px; margin-top: 0;">WELCOME TO OUR NEWSLETTER</h1>
-
-                                    <p style="margin-top:0; font-size: 14px; font-weight: 400; line-height: 20px; color: #909090; text-transform: none; margin-bottom: 24px; margin-top: 0;">Here’s what we’ve been up to this month! We’ve packed this newsletter with handy resources, updates on upcoming events, collaboration opportunities, and a whole lot more.</p>
-
-                                    <a display_text_og="LEARN%20MORE" href="#" href_og="%23" style="display: inline-block; padding: 8px 70px; font-size: 12px; font-weight: 400; line-height: 24px; color: rgb(255, 255, 255); text-decoration: none; text-transform: uppercase; background-color: rgb(28, 131, 138) !important;">LEARN MORE</a>
-                                </td>
-                            </tr>
-                            <!-- Product List -->
-                            <tr>
-                                <td style="padding-top: 33px;">
-                                    <h3 style=" margin-top: 0; text-align: center; font-size: 36px; font-weight: 400; line-height: 45px; text-transform: uppercase; padding: 30px 0 33px; margin: 0;background: #FFFFFF;">What&#39;s NEW</h3>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <table cellpadding="0" cellspacing="0" style="border-collapse: collapse;" width="100%">
-                                        <!-- Product 1 -->
-                                        <tbody>
-                                            <tr>
-                                                <td style="width: 50%;"><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Newsletter/product-1.png" style="max-width: 264px; height: auto; display: block;" /></td>
-                                                <td style="width: 50%; background-color: #FFFFFF; padding: 25px 30px;">
-                                                    <h3 style=" margin-top: 0; font-size: 20px; font-weight: 400; line-height: 52px; color: #0D0D0D; text-transform: uppercase; margin-bottom: 5px;">New launches</h3>
-
-                                                    <p style="margin-top:0; font-size: 14px; font-weight: 400; line-height: 20px; color: #909090; text-transform: none; margin-bottom: 5px;">Explore newly launched products from our collection. Click below to see what’s new. Use SAVE5 for a flat 5% off on any of these products.</p>
-
-                                                    <a display_text_og="LEARN%20MORE" href="#" href_og="%23" style="text-transform: uppercase; font-size: 16px; font-weight: 300; line-height: 37.75px; text-decoration: none; color: rgb(28, 131, 138) !important;">LEARN MORE</a>
-                                                </td>
-                                            </tr>
-                                            <!-- Product 2 -->
-                                            <tr>
-                                                <td style="width: 50%; background-color: #FFFFFF; padding: 25px 30px;">
-                                                    <h3 style=" margin-top: 0; font-size: 20px; font-weight: 400; line-height: 52px; color: #0D0D0D; text-transform: uppercase; margin-bottom: 5px;">EVENTS</h3>
-
-                                                    <p style="margin-top:0; font-size: 14px; font-weight: 400; line-height: 20px; color: #909090; text-transform: none; margin-bottom: 5px;">We&#39;ve organized three community meetups in January. Click below to see pictures and videos of these events.</p>
-
-                                                    <a display_text_og="LEARN%20MORE" href="#" href_og="%23" style="text-transform: uppercase; font-size: 16px; font-weight: 300; line-height: 37.75px; text-decoration: none; color: rgb(28, 131, 138) !important;">LEARN MORE</a>
-                                                </td>
-                                                <td style="width: 50%;"><img alt="product-2" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Newsletter/product-2.png" style="max-width: 264px; height: auto; display: block;" /></td>
-                                            </tr>
-                                            <!-- Product 3 -->
-                                            <tr>
-                                                <td style="width: 50%;"><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Newsletter/product-3.png" style="max-width: 264px; height: auto; display: block;" /></td>
-                                                <td style="width: 50%; background-color: #FFFFFF; padding: 25px 30px;">
-                                                    <h3 style=" margin-top: 0; font-size: 20px; font-weight: 400; line-height: 52px; color: #0D0D0D; text-transform: uppercase; margin-bottom: 5px;">Webinars</h3>
-
-                                                    <p style="margin-top:0; font-size: 14px; font-weight: 400; line-height: 20px; color: #909090; text-transform: none; margin-bottom: 5px;">We’ve conducted 12+ webinars in January, attended by 1500+ members. Click below for a summary of insights shared.</p>
-
-                                                    <a display_text_og="LEARN%20MORE" href="#" href_og="%23" style="text-transform: uppercase; font-size: 16px; font-weight: 300; line-height: 37.75px; text-decoration: none; color: rgb(28, 131, 138) !important;">LEARN MORE</a>
-                                                </td>
-                                            </tr>
-                                            <!-- Product 4 -->
-                                            <tr>
-                                                <td style="width: 50%; background-color: #FFFFFF; padding: 25px 30px;">
-                                                    <h3 style=" margin-top: 0; font-size: 20px; font-weight: 400; line-height: 52px; color: #0D0D0D; text-transform: uppercase; margin-bottom: 5px;">IN spotlight</h3>
-
-                                                    <p style="margin-top:0; font-size: 14px; font-weight: 400; line-height: 20px; color: #909090; text-transform: none; margin-bottom: 5px;">In January, we had a new star product that won the hearts of our customers! Click below to read more.</p>
-
-                                                    <a display_text_og="LEARN%20MORE" href="#" href_og="%23" style="text-transform: uppercase; font-size: 16px; font-weight: 300; line-height: 37.75px; text-decoration: none; color: rgb(28, 131, 138) !important;">LEARN MORE</a>
-                                                </td>
-                                                <td style="width: 50%;"><img alt="product-2" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Newsletter/product-4.png" style="max-width: 264px; height: auto; display: block;" /></td>
-                                            </tr>
-                                            <!-- Product 5 -->
-                                            <tr>
-                                                <td style="width: 50%;"><img alt="product-2" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Newsletter/product-5.png" style="max-width: 264px; height: auto; display: block;" /></td>
-                                                <td style="width: 50%; background-color: #FFFFFF; padding: 25px 30px;">
-                                                    <h3 style=" margin-top: 0; font-size: 20px; font-weight: 400; line-height: 52px; color: #0D0D0D; text-transform: uppercase; margin-bottom: 5px;">SUCCESSES</h3>
-
-                                                    <p style="margin-top:0; font-size: 14px; font-weight: 400; line-height: 20px; color: #909090; text-transform: none; margin-bottom: 5px;">We’re always happy to get feedback from our customers. Click below to read stories from happy customers.</p>
-
-                                                    <a display_text_og="LEARN%20MORE" href="#" href_og="%23" style="text-transform: uppercase; font-size: 16px; font-weight: 300; line-height: 37.75px; text-decoration: none; color: rgb(28, 131, 138) !important;">LEARN MORE</a>
-                                                </td>
-                                            </tr>
-                                            <!-- Product 6 -->
-                                            <tr>
-                                                <td style="width: 50%; background-color: #FFFFFF; padding: 25px 30px;">
-                                                    <h3 style=" margin-top: 0; font-size: 20px; font-weight: 400; line-height: 52px; color: #0D0D0D; text-transform: uppercase; margin-bottom: 5px;">TOOLS</h3>
-
-                                                    <p style="margin-top:0; font-size: 14px; font-weight: 400; line-height: 20px; color: #909090; text-transform: none; margin-bottom: 5px;">Here are some of the top productivity tools to streamline your workflow and save time. Click below to read more.</p>
-
-                                                    <a display_text_og="LEARN%20MORE" href="#" href_og="%23" style="text-transform: uppercase; font-size: 16px; font-weight: 300; line-height: 37.75px; text-decoration: none; color: rgb(28, 131, 138) !important;">LEARN MORE</a>
-                                                </td>
-                                                <td style="width: 50%;"><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Newsletter/product-6.png" style="max-width: 264px; height: auto; display: block;" /></td>
-                                            </tr>
-                                            <!-- Product 7 -->
-                                            <tr>
-                                                <td style="width: 50%;"><img alt="product-2" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Newsletter/product-7.png" style="max-width: 264px; height: auto; display: block;" /></td>
-                                                <td style="width: 50%; background-color: #FFFFFF; padding: 25px 30px;">
-                                                    <h3 style=" margin-top: 0; font-size: 20px; font-weight: 400; line-height: 52px; color: #0D0D0D; text-transform: uppercase; margin-bottom: 5px;">Latest trends</h3>
-
-                                                    <p style="margin-top:0; font-size: 14px; font-weight: 400; line-height: 20px; color: #909090; text-transform: none; margin-bottom: 5px;">Stay ahead with our exclusive deep dive into the top trends shaping this industry. Click below to read more.</p>
-
-                                                    <a display_text_og="LEARN%20MORE" href="#" href_og="%23" style="text-transform: uppercase; font-size: 16px; font-weight: 300; line-height: 37.75px; text-decoration: none; color: rgb(28, 131, 138) !important;">LEARN MORE</a>
-                                                </td>
-                                            </tr>
-                                            <!-- Product 8 -->
-                                            <tr>
-                                                <td style="width: 50%; background-color: #FFFFFF; padding: 25px 30px;">
-                                                    <h3 style=" margin-top: 0; font-size: 20px; font-weight: 400; line-height: 52px; color: #0D0D0D; text-transform: uppercase; margin-bottom: 5px;">trips & tricks</h3>
-
-                                                    <p style="margin-top:0; font-size: 14px; font-weight: 400; line-height: 20px; color: #909090; text-transform: none; margin-bottom: 5px;">Click below for some handy tips and tricks shared by our community members, curated to help you level up.</p>
-
-                                                    <a display_text_og="LEARN%20MORE" href="#" href_og="%23" style="text-transform: uppercase; font-size: 16px; font-weight: 300; line-height: 37.75px; text-decoration: none; color: rgb(28, 131, 138) !important;">LEARN MORE</a>
-                                                </td>
-                                                <td style="width: 50%;"><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Newsletter/product-8.png" style="max-width: 264px; height: auto; display: block;" /></td>
-                                            </tr>
-                                            <!-- Product 9 -->
-                                            <tr>
-                                                <td style="width: 50%;"><img alt="product-2" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Newsletter/product-9.png" style="max-width: 264px; height: auto; display: block;" /></td>
-                                                <td style="width: 50%; background-color: #FFFFFF; padding: 25px 30px;">
-                                                    <h3 style=" margin-top: 0; font-size: 20px; font-weight: 400; line-height: 52px; color: #0D0D0D; text-transform: uppercase; margin-bottom: 5px;">resources</h3>
-
-                                                    <p style="margin-top:0; font-size: 14px; font-weight: 400; line-height: 20px; color: #909090; text-transform: none; margin-bottom: 5px;">Need guidance? Browse our comprehensive library of articles, product guides, and tutorials. Click below to explore.</p>
-
-                                                    <a display_text_og="LEARN%20MORE" href="#" href_og="%23" style="text-transform: uppercase; font-size: 16px; font-weight: 300; line-height: 37.75px; text-decoration: none; color: rgb(28, 131, 138) !important;">LEARN MORE</a>
-                                                </td>
-                                            </tr>
-                                            <!-- Product 10 -->
-                                            <tr>
-                                                <td style="width: 50%; background-color: #FFFFFF; padding: 25px 30px;">
-                                                    <h3 style=" margin-top: 0; font-size: 20px; font-weight: 400; line-height: 52px; color: #0D0D0D; text-transform: uppercase; margin-bottom: 5px;">next up!</h3>
-
-                                                    <p style="margin-top:0; font-size: 14px; font-weight: 400; line-height: 20px; color: #909090; text-transform: none; margin-bottom: 5px;">We’re hard at work to bring you the best! Here’s a preview of what we’re launching soon. Click below to read more.</p>
-
-                                                    <a display_text_og="LEARN%20MORE" href="#" href_og="%23" style="text-transform: uppercase; font-size: 16px; font-weight: 300; line-height: 37.75px; text-decoration: none; color: rgb(28, 131, 138) !important;">LEARN MORE</a>
-                                                </td>
-                                                <td style="width: 50%;"><img alt="product-2" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Newsletter/product-10.png" style="max-width: 264px; height: auto; display: block;" /></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                            <!-- Footer Section -->
-                            <tr>
-                                <td style="padding: 45px 0 0; background-color: #F5F5F5;">
-                                    <table align="center" cellpadding="0" cellspacing="0" style="max-width: 80%; margin: 0 auto;" width="100%">
-                                        <tbody>
-                                            <tr>
-                                                <td style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #1E1E1E; padding-bottom: 21px;">For assistance, connect with us on social media or reach out to our support team at
-                                                    <a data-renderer-mark="true" data-testid="link-with-safety" href="support@example.com" title="support@example.com">support@example.com</a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <table align="center" cellpadding="0" cellspacing="0" style="padding: 0; margin-bottom: 29px; text-align: center;" width="100%">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td style="display: inline-block; margin: 0 5px;">
-                                                                    <a href="#" style="font-size: 14px; font-weight: 400; color: #1E1E1E !important; text-decoration: none;">Privacy</a>
-                                                                </td>
-                                                                <td style="display: inline-block; margin: 0 5px;">
-                                                                    <a href="#" style="font-size: 14px; font-weight: 400; color: #1E1E1E !important; text-decoration: none;">Account</a>
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="text-align: center;">
-                                                    <table align="center" cellpadding="0" cellspacing="0" style="text-align: center;" width="100%">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td style="display: inline-block; padding: 5px 39px; border: 1px solid #919191;">
-                                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 24px; height: 24px;"><img alt="instagram" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/37cf7640cb754509b9c3383d11c4d8c2.png" style="width: 100%; height: 100%;" /></a>
-                                                                </td>
-                                                                <td style="display: inline-block; padding: 5px 39px; border: 1px solid #919191;">
-                                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 24px; height: 24px;"><img alt="facebook" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/fae961ed063e42448b3c5e8daab1e691.png" style="width: 100%; height: 100%;" /></a>
-                                                                </td>
-                                                                <td style="display: inline-block; padding: 5px 39px; border: 1px solid #919191;">
-                                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 24px; height: 24px;"><img alt="x" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/2ccc2bf548f94ba5b2417039082cd06c.png" style="width: 100%; height: 100%;" /></a>
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #1E1E1E; padding-top: 21px;">
-                                                    <p style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #919191;">To opt out of promotional emails like this,
-                                                        <a href="#" style="color:#1C838A;text-decoration:none;font-weight:bold;">unsubscribe here</a>
-                                                    </p>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</body>
-<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
-
-</html>
-```
-
-  
-</Accordion>
-
-## Order Lifecycle Updates Template
-
-A set of transactional templates that provide customers with timely updates across the whole order journey, from placing the order to final delivery.
-
-<HTMLBlock>{`
-<style>
-  .tabs {
-    max-width: 520px;
-    margin: 1rem auto;
-    font-family: sans-serif;
-    border: 1px solid #ddd; /* block outline */
-    border-radius: 6px;
-    background: #fff;
-  }
-
-  .tab-labels {
-    display: flex;
-    justify-content: center;
-    gap: 0.5rem;
-    margin: 1rem 0 0.5rem;
-    flex-wrap: wrap;
-  }
-
-  .tab-labels label {
-    padding: 0.4rem 1rem;
-    cursor: pointer;
-    background: #f9f9f9;
-    border-radius: 4px 4px 0 0;
-    border: 1px solid #ccc;
-    border-bottom: none;
-    font-size: 0.85rem;
-    font-weight: 600;
-  }
-
-  .tab-labels label:hover {
-    background: #e0e0e0;
-  }
-
-  input[type="radio"] {
-    display: none;
-  }
-
-  .tab-content {
-    display: none;
-    padding: 0.75rem;
-    text-align: center;
-    background: #fff;
-    border-top: 1px solid #ddd;
-  }
-
-  input#tab1:checked ~ .tab-panels #content1,
-  input#tab2:checked ~ .tab-panels #content2,
-  input#tab3:checked ~ .tab-panels #content3 {
-    display: block;
-  }
-
-  .tab-panels img {
-    width: 50%;
-    height: auto;
-    margin: 0 auto;
-    border-radius: 4px;
-    border: 1px solid #ddd;
-    display: block;
-    cursor: pointer;
-  }
-
-  .image-caption {
-    font-size: 0.85rem;
-    color: #6b7c93;
-    font-style: italic;
-    margin-top: 0.4rem;
-    text-align: center;
-  }
-
-  @media (max-width: 600px) {
-    .tab-panels img {
-      width: 75%;
-    }
-  }
-
-  /* Lightbox modal styling */
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 100;
-    left: 0; top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.85);
-  }
-
-  .modal:target {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .modal img {
-    max-width: 90%;
-    max-height: 80vh;
-    border-radius: 6px;
-    border: 3px solid white;
-  }
-
-  .modal:target::before {
-    content: "✕";
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
-    font-size: 2rem;
-    color: white;
-    cursor: pointer;
-  }
-</style>
-
-<div class="tabs">
-  <input type="radio" name="tabs" id="tab1" checked>
-  <input type="radio" name="tabs" id="tab2">
-  <input type="radio" name="tabs" id="tab3">
-
-  <div class="tab-labels">
-    <label for="tab1">Order Confirmed</label>
-    <label for="tab2">Order Shipped</label>
-    <label for="tab3">Order Delivered</label>
-  </div>
-
-  <div class="tab-panels">
-    <div id="content1" class="tab-content">
-      <a href="#img1">
-        <img src="https://files.readme.io/0b3a7b4376e461cb0bf467bdfeb6c97e111f4b9c80eaa10fb7cb17e176356aaf-Order_Confirmed_HTML.png" alt="Order Confirmed">
-      </a>
-      <div class="image-caption">Order Confirmed</div>
-    </div>
-
-    <div id="content2" class="tab-content">
-      <a href="#img2">
-        <img src="https://files.readme.io/f1785a9a322e55a79f15e21844206cfb95dd3eea5420a0d5530f96320f5cea1a-Order_Shipped_HTML.png" alt="Order Shipped">
-      </a>
-      <div class="image-caption">Order Shipped</div>
-    </div>
-
-    <div id="content3" class="tab-content">
-      <a href="#img3">
-        <img src="https://files.readme.io/b5f7eee1c562f0d22e3694d0d6cf78c51240090d840a307bd2ca10019e66ecd9-Order_Delivered_HTML.png" alt="Order Delivered">
-      </a>
-      <div class="image-caption">Order Delivered</div>
-    </div>
-  </div>
-</div>
-
-<!-- Lightbox Modals -->
-<div id="img1" class="modal">
-  <a href="#"><img src="https://files.readme.io/0b3a7b4376e461cb0bf467bdfeb6c97e111f4b9c80eaa10fb7cb17e176356aaf-Order_Confirmed_HTML.png" alt="Zoom Order Confirmed"></a>
-</div>
-<div id="img2" class="modal">
-  <a href="#"><img src="https://files.readme.io/f1785a9a322e55a79f15e21844206cfb95dd3eea5420a0d5530f96320f5cea1a-Order_Shipped_HTML.png" alt="Zoom Order Shipped"></a>
-</div>
-<div id="img3" class="modal">
-  <a href="#"><img src="https://files.readme.io/b5f7eee1c562f0d22e3694d0d6cf78c51240090d840a307bd2ca10019e66ecd9-Order_Delivered_HTML.png" alt="Zoom Order Delivered"></a>
-</div>
-`}</HTMLBlock>
-
-<br />
-
-<details>
-  <summary><b>Expand to know more about the template.</b></summary>
-
   ### Use Case Examples
 
-  Keeps customers informed and reassured throughout their post-purchase experience. This includes order confirmation, shipment tracking, and successful delivery notifications to reduce uncertainty and improve satisfaction.
+  * Notify users when new points have been added to their account.
+  * Alert users about points that are about to expire soon.
 
   ### Template Customization Options
 
@@ -2528,19 +1842,18 @@ A set of transactional templates that provide customers with timely updates acro
   * [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
   * [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
   * [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-  * [Update the Privacy Policy](doc:ootb-email-templates#update-privacy-policy)
   * [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
 
   ### Template Code
 
-  ```html Order Confirmed
-  <!DOCTYPE html>
+  ```html Loyalty Point Expiry
+  <!doctype html="">
   <html lang="en">
 
   <head>
-      <title></title>
+      <title>Loyalty Point Expiry</title>
       <style type="text/css">
-          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Light.ttf\') format(\'woff\');             font-style: normal;             font-weight: 300;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Regular.ttf\') format(\'woff\');             font-style: normal;             font-weight: 400;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Medium.ttf\') format(\'woff\');             font-style: normal;             font-weight: 500;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-SemiBold.ttf\') format(\'woff\');             font-style: normal;             font-weight: 600;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Bold.ttf\') format(\'woff\');             font-style: normal;             font-weight: 700;         }          @media screen and (max-width: 480px) {             .container {                 max-width: 100% !important;             }             .box-table{                 margin: 10px 15px !important;                 padding: 20px 0px !important;             }             .imgConfirmation{                 width: 50px !important;             }             .content-sec {                 padding: 0px 10px !important;                 margin-top: 10px !important;             }             .footer-content{                 padding: 0px 10px !important;             }             .expiry-para{                 padding: 0px 10px !important;                 margin: 10px 0px !important;             }             .main-heading{                 font-size: 24px !important;                 line-height: 30px !important;                 padding: 0px 10px !important;             }             .shipping{                 padding: 0px 20px !important;             }             .track-btn{                 max-width: auto !important;                 width: auto !important;                 font-size: 16px !important;                 line-height: 24px !important;                 padding: 5px 25px !important;             }             .order-detail {                 font-size: 16px !important;                 line-height: 20px !important;                 margin-bottom: 0px !important;             }             .quantity {                 font-size: 10px !important;             }         }
+          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Light.ttf\') format(\'woff\');             font-style: normal;             font-weight: 300;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Regular.ttf\') format(\'woff\');             font-style: normal;             font-weight: 400;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Medium.ttf\') format(\'woff\');             font-style: normal;             font-weight: 500;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-SemiBold.ttf\') format(\'woff\');             font-style: normal;             font-weight: 600;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Bold.ttf\') format(\'woff\');             font-style: normal;             font-weight: 700;         }          @media screen and (max-width: 480px) {             .container {                 max-width: 100% !important;             }             .loyalty-sec{                 padding: 30px !important;             }             .footer-content{                 padding: 0px 30px !important;             }             .expiry-para{                 padding: 10px 20px !important;             }             .main-heading{                 font-size: 30px !important;                 line-height: 40px !important;             }         }
       </style>
   </head>
 
@@ -2549,249 +1862,209 @@ A set of transactional templates that provide customers with timely updates acro
           <!-- header start-->
           <tbody>
               <tr>
-                  <td style="text-align: center; vertical-align: middle; padding: 20px; margin: 0px 30px; display: block;">
+                  <td style="background: #ffffff; text-align: center; vertical-align: middle; padding: 20px; margin: 0px 30px; display: block;">
                       <!-- Change image src as per your requirements --><img alt="Logo" class="logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="display: inline-block; width: 127px; height: 58px; object-fit: cover;" /></td>
               </tr>
               <!-- header end-->
+              <!-- Loyalty Point section -->
               <tr>
-                  <td>
-                      <table align="center" border="0" cellpadding="0" cellspacing="0" class="box-table" role="presentation" style="padding: 50px 0px;box-shadow: 0px 1px 12px 0px #0000001A;margin: 0px 30px; display: block; background-color: #ffffff;;">
-                          <!-- Content section -->
+                  <td class="loyalty-sec" style="background: #ffffff; padding: 30px; text-align: center; border-top: 0.5px solid #979797; margin: 0px 30px; display: block;">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
                           <tbody>
                               <tr>
-                                  <td class="content-sec" style="background: #ffffff; padding: 0px 20px; text-align: center; display: block;margin-top: 30px;">
-                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                                          <tbody>
-                                              <tr>
-                                                  <td style="text-align: center;">
-                                                      <h4 class="main-heading" style="text-transform: none;font-family: 'Jost', Arial, sans-serif; font-size: 26px; font-weight: 600; line-height: 37px; margin: 0 auto; color:#40403B;">Order confirmed</h4>
+                                  <td style="text-align: center;">
+                                      <h2 class="main-heading" style="text-transform: uppercase;font-family: 'Jost', Arial, sans-serif; font-size: 40px; font-weight: 300; line-height: 50px; margin: 0 auto; color:#000000;">YOUR POINTS WILL EXPIRE SOON!</h2>
 
-                                                      <h4 class="main-heading" style="text-transform: none;font-family: 'Jost', Arial, sans-serif; font-size: 26px; font-weight: 400; line-height: 37px; margin: 0 auto; color:#40403B;">We hope you enjoyed shopping with us</h4>
-                                                  </td>
-                                              </tr>
-                                          </tbody>
-                                      </table>
+                                      <p class="expiry-para" style="padding: 0px 80px; text-transform: none; color: #4f4f4f; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: center; ">You have 150 loyalty points that are set to expire on February 15 2025. Shop now to redeem them and save big!</p>
                                   </td>
                               </tr>
-                              <tr>
-                                  <td class="content-sec" style="border-bottom: 1px solid #FFC645; background: #ffffff; padding: 0px 80px 20px; text-align: center; display: block;margin-top: 0px;">
-                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                                          <tbody>
-                                              <tr>
-                                                  <td style="text-align: center;">
-                                                      <p class="expiry-para" style="text-transform: none; color: #6f6f6f; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: center; ">We’re now working on getting your order ready.</p>
-                                                  </td>
-                                              </tr>
-                                          </tbody>
-                                      </table>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td class="content-sec" style="background: #ffffff; padding: 0px 20px; text-align: center; display: block;margin-top: 30px;">
-                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                                          <tbody>
-                                              <tr>
-                                                  <td style="text-align: center;">
-                                                      <h2 class="main-heading" style="text-transform: none;font-family: 'Jost', Arial, sans-serif; font-size: 26px; font-weight: 600; line-height: 37px; margin: 0 auto; color:#40403B;">Estimated Delivery on <strong data-renderer-mark="true">Feb 15 2025</strong></h2>
-
-                                                      <p class="expiry-para" style="margin-top: 10px;text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 28px; text-align: center; ">Your order ID is <span style="font-weight: 600;">898774</span></p>
-                                                  </td>
-                                              </tr>
-                                          </tbody>
-                                      </table>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td class="content-sec" style="background: #ffffff; padding: 0px 80px; text-align: center; display: block;margin-top: 0px;">
-                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                                          <tbody>
-                                              <tr>
-                                                  <td style="text-align: center;">
-                                                      <p class="expiry-para" style="text-transform: none; color: #6f6f6f; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: center; ">You’ll receive another email with tracking details once your order is shipped. Click below to view and make changes to your order.</p>
-                                                  </td>
-                                              </tr>
-                                          </tbody>
-                                      </table>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td>
-                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%;">
-                                          <tbody>
-                                              <tr>
-                                                  <td style="width: 100%; text-align: center; vertical-align: middle;">
-                                                      <a class="track-btn" display_text_og="View%20and%20Manage%20Order" href="#" href_og="%23" style="font-family: Jost, Arial, sans-serif; font-size: 20px; font-weight: 400; text-transform: none; line-height: 28px; text-decoration: none; background: rgb(255, 198, 69); padding: 12px 34px; display: inline-block; text-align: center; max-width: 80%; width: 100%; color: rgb(30, 30, 30) !important;">View and Manage Order</a>
-                                                  </td>
-                                              </tr>
-                                          </tbody>
-                                      </table>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td class="content-sec" style="border-bottom: 1px solid #FFC645; background: #ffffff; padding: 0px 20px; text-align: center; display: block;margin-top: 30px;">
-                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                                          <tbody>
-                                              <tr>
-                                                  <td style="text-align: center;">
-                                                      <h4 class="expiry-para" style="margin: 10px 0px;text-transform: none; color: #40403B; font-family: 'Jost', Arial, sans-serif; font-size: 22px; font-weight: 600; line-height: 37px; text-align: left; ">Items in Order</h4>
-                                                  </td>
-                                              </tr>
-                                          </tbody>
-                                      </table>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td class="content-sec" style="background: #ffffff; padding: 0px 20px; text-align: center; display: block;margin-top: 30px;">
-                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                                          <tbody>
-                                              <tr>
-                                                  <td style="width: 30%; vertical-align: top;"><img alt="look" class="imgConfirmation" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/order-placed/product.png" style="width:128px; height: 121px; object-fit: contain;" /></td>
-                                                  <td style="width: 60%; vertical-align: top;">
-                                                      <h4 class="order-detail" style="margin: 0px 0px 5px; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 500; line-height: 28px;text-align: left;">Nike sneakers</h4>
-
-                                                      <p style="margin:0; color: #6f6f6f; font-family: 'Jost', Arial, sans-serif; font-size: 14px;font-weight: 400; line-height: 22px; text-align: left;">Color: Black</p>
-
-                                                      <p style="margin:0; color: #6f6f6f; font-family: 'Jost', Arial, sans-serif; font-size: 14px;font-weight: 400; line-height: 22px; text-align: left;">Size: US M 10</p>
-
-                                                      <h4 class="order-detail" style="margin: 0px 0px 10px; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 28px;text-align: left;">$4000</h4>
-                                                  </td>
-                                                  <td style="width: 10%; vertical-align: top;">
-                                                      <p class="quantity" style="margin: 10px 0px;text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 22px; text-align: left; ">QTY 1</p>
-                                                  </td>
-                                              </tr>
-                                          </tbody>
-                                      </table>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td class="content-sec" style="border-bottom: 1px solid #FFC645; background: #ffffff; padding: 0px 20px; text-align: center; display: block;margin-top: 10px;">
-                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                                          <tbody>
-                                              <tr>
-                                                  <td style="text-align: center;">
-                                                      <h4 class="expiry-para" style="margin: 10px 0px;text-transform: none; color: #40403B; font-family: 'Jost', Arial, sans-serif; font-size: 22px; font-weight: 600; line-height: 37px; text-align: left; ">Billing Summary</h4>
-                                                  </td>
-                                              </tr>
-                                          </tbody>
-                                      </table>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td class="content-sec" style="border-bottom: 0.5px solid #969696; background: #ffffff; margin: 0px 20px; text-align: center; display: block;margin-top: 10px;">
-                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                                          <tbody>
-                                              <tr>
-                                                  <td style="width: 50%; vertical-align: middle;">
-                                                      <p class="expiry-para" style="margin: 10px 0px;text-transform: none; color: #6f6f6f; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: left; ">Sub total</p>
-                                                  </td>
-                                                  <td style="width: 50%; vertical-align: middle;">
-                                                      <h4 style="margin: 10px 0px; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 28px;text-align: right;">$4000</h4>
-                                                  </td>
-                                              </tr>
-                                          </tbody>
-                                      </table>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td class="content-sec" style="border-bottom: 0.5px solid #969696; background: #ffffff; margin: 0px 20px; text-align: center; display: block;margin-top: 10px;">
-                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                                          <tbody>
-                                              <tr>
-                                                  <td style="width: 50%; vertical-align: middle;">
-                                                      <p class="expiry-para" style="margin: 10px 0px;text-transform: none; color: #6f6f6f; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: left; ">Tax</p>
-                                                  </td>
-                                                  <td style="width: 50%; vertical-align: middle;">
-                                                      <h4 style="margin: 10px 0px; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 28px;text-align: right;">$200</h4>
-                                                  </td>
-                                              </tr>
-                                          </tbody>
-                                      </table>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td class="content-sec" style="border-bottom: 1px dashed #000000; background: #ffffff; padding: 0px 20px; text-align: center; display: block;margin-top: 10px;">
-                                      <table align="center" border="0" cellpadding="0" cellspacing="0" class="shipping" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                                          <tbody>
-                                              <tr>
-                                                  <td style="width: 50%; vertical-align: middle;">
-                                                      <p style="margin: 10px 0px;text-transform: none; color: #6f6f6f; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: left; ">Shipping charges</p>
-                                                  </td>
-                                                  <td style="width: 50%; vertical-align: middle;">
-                                                      <h4 style="margin: 10px 0px; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 28px;text-align: right;">$500</h4>
-                                                  </td>
-                                              </tr>
-                                          </tbody>
-                                      </table>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td class="content-sec" style="background: #ffffff; padding: 0px 20px; text-align: center; display: block;margin-top: 10px;">
-                                      <table align="center" border="0" cellpadding="0" cellspacing="0" class="shipping" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                                          <tbody>
-                                              <tr>
-                                                  <td style="width: 50%; vertical-align: middle;">
-                                                      <p class="expiry-para" style="margin: 10px 0px;text-transform: uppercase; color: #6f6f6f; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: left; ">Total</p>
-                                                  </td>
-                                                  <td style="width: 50%; vertical-align: middle;">
-                                                      <h4 style="margin: 10px 0px; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 28px;text-align: right;">$4700</h4>
-                                                  </td>
-                                              </tr>
-                                          </tbody>
-                                      </table>
-                                  </td>
-                              </tr>
-                              <!-- Content Point section -->
                           </tbody>
                       </table>
                   </td>
               </tr>
+              <!-- Loyalty Point section -->
+              <!-- Information Section -->
+              <tr>
+                  <td class="information-sec" style="border-top:3px solid #1DBF73;text-align: center;">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                          <tbody>
+                              <tr>
+                                  <td><img alt="look" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Loyalty-Exp/loyalty.png" style="width:100%; height: 100%; object-fit: contain;" /></td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <tr>
+                  <td style="background-color: #1DBF73; padding: 10px 30px; vertical-align: middle; text-align: left;">
+                      <a href="#" style="font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; text-transform: uppercase; line-height: 28px; color: #ffffff !important; text-decoration: none; display: inline-block; text-align: left; width: 100%;">Redeem Now <img alt="arrow" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Loyalty-Exp/Arrow.png" style="float:right; padding-top: 5px;" /></a>
+                  </td>
+              </tr>
+              <!-- Information Section -->
               <!-- footer start-->
               <tr>
                   <td align="center" colspan="2">
-                      <table align="center" border="0" cellpadding="0" cellspacing="0" class="box-table" role="presentation" style="box-shadow: 0px 1px 12px 0px #0000001A; margin: 30px 30px 30px; display: block; background: #ffffff; padding: 25px 0 25px;">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%; background: #ffffff; padding: 25px 0 25px;">
                           <tbody>
                               <tr>
                                   <td style="padding: 0;">
                                       <table align="center" cellpadding="0" cellspacing="0" style="text-align: center;" width="100%">
                                           <tbody>
                                               <tr>
+                                                  <td style="padding: 15px 15px; display: inline-block;">
+                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 30px; height: 30px; ">
+                                                          <!-- Change image src as per your requirements --><img alt="instagram" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/7c0f383a34174b419048c105abef1c6d.png" style="width: 100%; height: 100%;" /></a>
+                                                  </td>
+                                                  <td style="padding: 15px 15px; display: inline-block; ">
+                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 30px; height: 30px;"><img alt="facebook" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/9e433bfc71464f51ac6bf991cc15c61e.png" style="width: 100%; height: 100%;" /></a>
+                                                  </td>
+                                                  <td style="padding: 15px 15px; display: inline-block;">
+                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 30px; height: 30px;"><img alt="x" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/84960566b3bd48c49d86b17263d4cee8.png" style="width: 100%; height: 100%;" /></a>
+                                                  </td>
+                                              </tr>
+                                              <tr>
                                                   <td class="footer-content" style="padding:0px 100px">
-                                                      <p style="text-transform: none; color: #6f6f6f; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; text-align: center;">For assistance, connect with us on social media or reach out to our support team at
+                                                      <p style="color: #4f4f4f; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; margin-bottom: 0px;">For assistance, connect with us on social media or reach out to our support team at
                                                           <a data-renderer-mark="true" data-testid="link-with-safety" href="support@example.com" title="support@example.com">support@example.com</a>
                                                       </p>
                                                   </td>
                                               </tr>
                                               <tr>
+                                                  <td class="footer-content" style="padding:0px 100px">
+                                                      <p style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #1E1E1E; padding-top:10px;">This is a system-generated email. Please do not reply.</p>
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <!-- footer end-->
+          </tbody>
+      </table>
+  </body>
+  <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+  </html>
+  ```
+  ```html Loyalty Points Balance
+  <!doctype html="">
+  <html lang="en">
+
+  <head>
+      <title>Loyalty Point</title>
+      <style type="text/css">
+          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Light.ttf\') format(\'woff\');             font-style: normal;             font-weight: 300;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Regular.ttf\') format(\'woff\');             font-style: normal;             font-weight: 400;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Medium.ttf\') format(\'woff\');             font-style: normal;             font-weight: 500;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-SemiBold.ttf\') format(\'woff\');             font-style: normal;             font-weight: 600;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Bold.ttf\') format(\'woff\');             font-style: normal;             font-weight: 700;         }          @media screen and (max-width: 480px) {             .container {                 max-width: 100% !important;             }             .loyalty-sec{                 padding: 30px !important;             }             .footer-content{                 padding: 0px 30px !important;             }             .main-heading{                 font-size: 30px !important;                 line-height: 40px !important;             }         }
+      </style>
+  </head>
+
+  <body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" data-new-gr-c-s-loaded="14.1242.0" style="font-family: Jost, Arial, sans-serif; font-weight: 400; margin: 0px; padding: 0px; cursor: auto;">
+      <table border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 600px; margin: 0 auto; background-color: #F0EEF6; padding: 30px;" width="100%">
+          <!-- header start-->
+          <tbody>
+              <tr>
+                  <td style="background: #ffffff; text-align: center; vertical-align: middle; padding: 20px">
+                      <!-- Change image src as per your requirements --><img alt="Logo" class="logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="display: inline-block; width: 127px; height: 58px; object-fit: cover;" /></td>
+              </tr>
+              <!-- header end-->
+              <!-- Loyalty Point section -->
+              <tr>
+                  <td class="loyalty-sec" style="background: #ffffff; padding: 30px 100px; text-align: center; border-top: 0.5px solid #979797;">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                          <tbody>
+                              <tr>
+                                  <td style="text-align: center;">
+                                      <h2 class="main-heading" style="text-transform: uppercase;font-family: 'Jost', Arial, sans-serif; font-size: 40px; font-weight: 300; line-height: 57px; margin: 0 auto; color:#000000;">YOUR POINTS BALANCE</h2>
+
+                                      <p style="margin-bottom: 20px; text-transform: none; color: #4f4f4f; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; ">Here is your current loyalty points balance. Shop now to redeem them and save big!</p>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <!-- Loyalty Point section -->
+              <!-- Information Section -->
+              <tr>
+                  <td class="information-sec" style="background: #1DBF73; padding: 15px; text-align: center;">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                          <tbody>
+                              <tr>
+                                  <td>
+                                      <h3 style="margin: 0px; font-style:italic;text-transform: none; color: #ffffff; font-family: 'Jost', Arial, sans-serif; font-size: 40px; font-weight: 400; line-height: 57px; text-align: center; ">150</h3>
+
+                                      <p style="margin: 0px; text-transform: none; color: #ffffff; font-family: 'Jost', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; text-align: center; ">Current Points Balance</p>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <tr>
+                  <td class="information-sec" style="background: #ffffff; border:1px solid #1DBF73; margin-bottom: 20px; padding: 10px 25px; text-align: center;">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                          <tbody>
+                              <tr>
+                                  <td style="width: 50%; vertical-align: middle;">
+                                      <h4 class="p-title" style="margin:0px; text-transform: uppercase; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 300; line-height: 20px; color: #393939; text-align: left;">Expiry Date</h4>
+                                  </td>
+                                  <td style="width: 50%; vertical-align: middle;">
+                                      <p style="margin:0; color: #252525; font-family: 'Jost', Arial, sans-serif; font-size: 16px;font-weight: 500; line-height: 23px; text-align: right;">10/09/2024</p>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <tr>
+                  <td style="background: #ffffff; padding: 20px 0;"> </td>
+              </tr>
+              <tr>
+                  <td class="information-sec" style="background: #ffffff; border-top:0.5px solid #979797; padding: 40px 25px; text-align: center;">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                          <tbody>
+                              <tr>
+                                  <td style="width: 100%; text-align: center; vertical-align: middle;">
+                                      <a display_text_og="REDEEM%20NOW" href="#" href_og="%23" style="font-family: Jost, Arial, sans-serif; font-size: 20px; font-weight: 400; text-transform: uppercase; line-height: 28px; text-decoration: none; background: rgb(29, 191, 115); padding: 9px 30px; display: inline-block; text-align: center; max-width: 182px; color: rgb(255, 255, 255) !important;">REDEEM NOW</a>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              <!-- Information Section -->
+              <!-- footer start-->
+              <tr>
+                  <td align="center" colspan="2">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background: #F0EEF6; padding: 25px 0 0px;">
+                          <tbody>
+                              <tr>
+                                  <td style="padding: 0;">
+                                      <table align="center" cellpadding="0" cellspacing="0" style="text-align: center;" width="100%">
+                                          <tbody>
+                                              <tr>
                                                   <td style="padding: 15px 15px; display: inline-block;">
                                                       <a href="#" style="vertical-align: middle;display: inline-block; width: 30px; height: 30px; ">
-                                                          <!-- Change image src as per your requirements --><img alt="instagram" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/be621c25343741b1ac5640833e3b34f7.png" style="width: 100%; height: 100%;" /></a>
+                                                          <!-- Change image src as per your requirements --><img alt="instagram" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/7c0f383a34174b419048c105abef1c6d.png" style="width: 100%; height: 100%;" /></a>
                                                   </td>
                                                   <td style="padding: 15px 15px; display: inline-block; ">
-                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 30px; height: 30px;"><img alt="facebook" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/53caa3fd24c5413a91a6db136577fcf7.png" style="width: 100%; height: 100%;" /></a>
+                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 30px; height: 30px;"><img alt="facebook" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/9e433bfc71464f51ac6bf991cc15c61e.png" style="width: 100%; height: 100%;" /></a>
                                                   </td>
                                                   <td style="padding: 15px 15px; display: inline-block;">
-                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 30px; height: 30px;"><img alt="x" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/fa216fecba6741dea1d9d5452d498603.png" style="width: 100%; height: 100%;" /></a>
+                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 30px; height: 30px;"><img alt="x" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/84960566b3bd48c49d86b17263d4cee8.png" style="width: 100%; height: 100%;" /></a>
                                                   </td>
                                               </tr>
                                               <tr>
-                                                  <td class="content-sec" style="border-top: 1px solid #FFC645; background: #ffffff; padding: 20px 20px 0px; text-align: center; display: block;margin-top: 10px;">
-                                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                                                          <tbody>
-                                                              <tr>
-                                                                  <td style="padding: 0px 15px; display: inline-block;">
-                                                                      <a href="#" style="vertical-align: middle;display: inline-block; font-size: 14px; font-weight: 400; line-height: 24px; text-align: center;font-family: 'Jost', Arial, sans-serif;text-decoration: none;color:#1E1E1E; ">Privacy</a>
-                                                                  </td>
-                                                                  <td style="padding: 0px 15px; display: inline-block; ">
-                                                                      <a href="#" style="vertical-align: middle;display: inline-block; font-size: 14px; font-weight: 400; line-height: 24px; text-align: center;font-family: 'Jost', Arial, sans-serif;text-decoration: none;color:#1E1E1E;">Account</a>
-                                                                  </td>
-                                                              </tr>
-                                                          </tbody>
-                                                      </table>
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <td class="content-sec" style="border-top: 1px solid #FFC645; background: #ffffff; padding: 20px 20px 0px; text-align: center; display: block;margin-top: 20px;">
-                                                      <p style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #1E1E1E; padding-top:10px;">This is a system-generated email. Please do not reply.</p>
+                                                  <td class="footer-content" style="padding:0px 50px">
+                                                      <p style="text-transform: none; color: #4f4f4f; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; margin-bottom: 0px;">For assistance, connect with us on social media or reach out to our support team at
+                                                          <a data-renderer-mark="true" data-testid="link-with-safety" href="support@example.com" title="support@example.com">support@example.com</a>
+                                                      </p>
+
+                                                      <p style="text-transform: none; color: #4f4f4f; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; margin-bottom: 0px;"> </p>
+
+                                                      <p style="text-transform: none; color: #4f4f4f; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; margin-bottom: 0px;">This is a system-generated email. Please do not reply.</p>
                                                   </td>
                                               </tr>
                                           </tbody>
@@ -2810,224 +2083,250 @@ A set of transactional templates that provide customers with timely updates acro
 
   </html>
   ```
-  ```html Order Shipped
+</Accordion>
+
+## Newsletter Template
+
+This recurring email template is used to share curated content such as blogs, product updates, or brand stories.
+
+<Image align="center" alt="Sample Newstter Template" border={true} caption="Sample Newstter Template" src="https://files.readme.io/c9c1ca33c322799d0618933c8800ba0eef3fd29039ee56a4db8544d829feeee1-Newsletter_Template_HTML.png" width="25% " />
+
+<Accordion title="Expand to know more about the template.">
+  ### Use Case Examples
+
+  * Keep users informed and engaged by providing valuable content in a consistent format.
+  * Ideal for sharing thought leadership articles, community highlights, or monthly wrap-ups without a sales-heavy tone.
+
+  ### Template Customization Options
+
+  * [Replace the Logo](doc:ootb-email-templates#replace-logo)
+  * [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+  * [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
+  * [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+  * [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+  * [Update the Privacy Policy](doc:ootb-email-templates#update-privacy-policy)
+  * [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+
+  ### Template Code
+
+  ```
   <!doctype html="">
   <html lang="en">
 
   <head>
-      <title>Order Shipped</title>
+      <title>Newsletter</title>
+      <link href="https://fonts.googleapis.com" rel="preconnect" />
+      <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+      <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet" />
       <style type="text/css">
-          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Regular.ttf\') format(\'woff\');             font-style: normal;             font-weight: 400;         }         @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Medium.ttf\') format(\'woff\');             font-style: normal;             font-weight: 500;         }         @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-SemiBold.ttf\') format(\'woff\');             font-style: normal;             font-weight: 600;         }                  @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Bold.ttf\') format(\'woff\');             font-style: normal;             font-weight: 700;         }          @font-face {             font-family: 'Poppins', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Fonts/Poppins-Regular.woff\') format(\'woff\');             font-style: normal;             font-weight: 400;         }          @media screen and (max-width: 480px) {             .container {                margin-bottom: 20px !important;             }                         .logo{                 width: 145px !important; height: 55px !important;             }             .cta{                 padding: 10px 25px !important; margin: 30px 0 !important; font-size: 16px !important; line-height: 20px !important;             }             .content-wrap{                 max-width: 90% !important;             }             .title{                 font-size: 22px !important; line-height: 28px !important;             }             .border-line{                 width: 40% !important;             }             .desc{                 font-size: 12px !important; line-height: 18px !important; margin: 0 0 30px !important;             }         }
+          /* *{             margin: 0;             padding: 0;         } */                  @media screen and (max-width: 480px) {             .main {                 max-width: 100% !important;             }             .container{                 max-width: 90% !important;             }         }
       </style>
   </head>
 
-  <body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" data-new-gr-c-s-loaded="14.1242.0" style="font-family: Jost, Arial, sans-serif; font-weight: 400; margin: 0px; padding: 0px; cursor: auto;">
-      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 600px; margin: 0 auto; background-color: #F5F5F5;" width="100%">
-          <!-- header start-->
+  <body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" data-new-gr-c-s-loaded="14.1242.0" style="font-family: Jost, Arial, sans-serif; font-weight: 400; margin: 0px; cursor: auto;">
+      <table align="center" cellpadding="0" cellspacing="0" style="max-width: 600px; margin: 0 auto; background-color: #F5F5F5;" width="100%">
+          <!-- Main Product Section -->
           <tbody>
               <tr>
-                  <td align="center" style="display: block; padding: 12px 0; max-width: 90%; margin: 0 auto;">
-                      <div class="logo-wrap">
-                          <!-- Change image src as per your requirements --><img alt="Logo" class="logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="width: 145px; height: 73px; object-fit: contain;" /></div>
-                  </td>
-              </tr>
-              <!-- header end-->
-              <tr>
-                  <td style="text-align: center;">
-                      <table border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 92%; margin: 0 auto 20px; background: #FFFFFF;" width="100%">
+                  <td>
+                      <table align="center" cellpadding="0" cellspacing="0" class="container" style="max-width: 88%; margin: 38px auto;" width="100%">
+                          <!-- Logo -->
                           <tbody>
                               <tr>
-                                  <td align="center">
-                                      <div class="content-wrap" style="margin: 0 auto; max-width: 85%;">
-                                          <h2 class="title" style="font-family: 'Jost', Arial, sans-serif;font-size: 30px;font-weight: 500;line-height: 37px;text-align: center; color: #40403B; text-transform: none; margin: 43px 0 19px;">Order shipped</h2>
+                                  <td align="center" style="padding: 15px 0; background-color: #FFFFFF;"><img alt="Logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="max-width: 159px; max-height: 73px;" /></td>
+                              </tr>
+                              <!-- Banner Image -->
+                              <tr>
+                                  <td align="center" style="background-color: #FFFFFF;"><img alt="banner" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Newsletter/banner.png" style="max-height: 307px; width: 100%; height: auto; object-fit: cover;" /></td>
+                              </tr>
+                              <!-- Banner Info -->
+                              <tr>
+                                  <td style="padding: 32px 50px 15px; text-align: center; background-color: #FFFFFF;">
+                                      <h1 style="font-size: 36px; font-weight: 400; line-height: 45px; color: #1E1E1E; text-transform: uppercase; margin-bottom: 10px; margin-top: 0;">WELCOME TO OUR NEWSLETTER</h1>
 
-                                          <p class="desc" style="color: #6F6F6F;font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: center; margin: 0 auto; text-transform: none; max-width: 85%;">Great news — your order is on its way! You can track your order through the button below.</p>
-                                      </div>
+                                      <p style="margin-top:0; font-size: 14px; font-weight: 400; line-height: 20px; color: #909090; text-transform: none; margin-bottom: 24px; margin-top: 0;">Here’s what we’ve been up to this month! We’ve packed this newsletter with handy resources, updates on upcoming events, collaboration opportunities, and a whole lot more.</p>
+
+                                      <a display_text_og="LEARN%20MORE" href="#" href_og="%23" style="display: inline-block; padding: 8px 70px; font-size: 12px; font-weight: 400; line-height: 24px; color: rgb(255, 255, 255); text-decoration: none; text-transform: uppercase; background-color: rgb(28, 131, 138) !important;">LEARN MORE</a>
+                                  </td>
+                              </tr>
+                              <!-- Product List -->
+                              <tr>
+                                  <td style="padding-top: 33px;">
+                                      <h3 style=" margin-top: 0; text-align: center; font-size: 36px; font-weight: 400; line-height: 45px; text-transform: uppercase; padding: 30px 0 33px; margin: 0;background: #FFFFFF;">What&#39;s NEW</h3>
                                   </td>
                               </tr>
                               <tr>
-                                  <td align="center">
-                                      <table border="0" cellpadding="0" cellspacing="0" class="order-table" role="presentation" style="max-width: 92.4%; margin: 60px auto 25px;" width="100%">
+                                  <td>
+                                      <table cellpadding="0" cellspacing="0" style="border-collapse: collapse;" width="100%">
+                                          <!-- Product 1 -->
                                           <tbody>
                                               <tr>
-                                                  <td align="center" style="width: 67px;vertical-align: top;">
-                                                      <div class="line" style="width: 100%; height: 1px; border-top: 1px dashed #FFFFFF; display: block; margin: 19px 0;"> </div>
-                                                  </td>
-                                                  <td align="center" style="vertical-align: top; width: 39px; height: 39px;"><img alt="icon-tick" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/order-shipped/icon-tick.png" style="width: 100%; height: 100%; object-fit: contain;" /></td>
-                                                  <td align="center" style="vertical-align: top; width: 67px;">
-                                                      <div class="line" style="width: 100%; height: 1px; border-top: 1px dashed #FFC645; display: block; margin: 19px 0;"> </div>
-                                                  </td>
-                                                  <td align="center" style="vertical-align: top; width: 67px;">
-                                                      <div class="line" style="width: 100%; height: 1px; border-top: 1px dashed #FFC645; display: block; margin: 19px 0;"> </div>
-                                                  </td>
-                                                  <td align="center" style="vertical-align: top; width: 39px; height: 39px;"><img alt="icon-tick" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/order-shipped/icon-tick.png" style="width: 100%; height: 100%; object-fit: contain;" /></td>
-                                                  <td align="center" style="vertical-align: top; width: 67px;">
-                                                      <div class="line" style="width: 100%; height: 1px; border-top: 1px dashed #B2B2B2; display: block; margin: 19px 0;"> </div>
-                                                  </td>
-                                                  <td align="center" style="vertical-align: top; width: 67px;">
-                                                      <div class="line" style="width: 100%; height: 1px; border-top: 1px dashed #B2B2B2; display: block; margin: 19px 0;"> </div>
-                                                  </td>
-                                                  <td align="center" style="vertical-align: top; width: 39px; height: 39px;"><img alt="icon-empty" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/order-shipped/icon-empty.png" style="width: 100%; height: 100%; object-fit: contain;" /></td>
-                                                  <td align="center" style="vertical-align: top; width: 67px;">
-                                                      <div class="line" style="width: 100%; border-top: 1px dashed #FFFFFF; display: block; margin: 19px 0;"> </div>
+                                                  <td style="width: 50%;"><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Newsletter/product-1.png" style="max-width: 264px; height: auto; display: block;" /></td>
+                                                  <td style="width: 50%; background-color: #FFFFFF; padding: 25px 30px;">
+                                                      <h3 style=" margin-top: 0; font-size: 20px; font-weight: 400; line-height: 52px; color: #0D0D0D; text-transform: uppercase; margin-bottom: 5px;">New launches</h3>
+
+                                                      <p style="margin-top:0; font-size: 14px; font-weight: 400; line-height: 20px; color: #909090; text-transform: none; margin-bottom: 5px;">Explore newly launched products from our collection. Click below to see what’s new. Use SAVE5 for a flat 5% off on any of these products.</p>
+
+                                                      <a display_text_og="LEARN%20MORE" href="#" href_og="%23" style="text-transform: uppercase; font-size: 16px; font-weight: 300; line-height: 37.75px; text-decoration: none; color: rgb(28, 131, 138) !important;">LEARN MORE</a>
                                                   </td>
                                               </tr>
+                                              <!-- Product 2 -->
                                               <tr>
-                                                  <td align="center" colspan="3" style="vertical-align: top;">
-                                                      <h3 class="o-title" style="margin: 10px 0 5px; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 22px; text-transform: none;">Order confirmed</h3>
+                                                  <td style="width: 50%; background-color: #FFFFFF; padding: 25px 30px;">
+                                                      <h3 style=" margin-top: 0; font-size: 20px; font-weight: 400; line-height: 52px; color: #0D0D0D; text-transform: uppercase; margin-bottom: 5px;">EVENTS</h3>
 
-                                                      <p class="o-date" style="font-family: Poppins, Arial, sans-serif; font-size: 14px; font-weight: 400; margin: 0; line-height: 22px; color: #6F6F6F;">13-05-2024</p>
-                                                  </td>
-                                                  <td align="center" colspan="3" style="vertical-align: top;">
-                                                      <h3 class="o-title" style="margin: 10px 0 5px; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 22px; text-transform: none;">Order shipped</h3>
+                                                      <p style="margin-top:0; font-size: 14px; font-weight: 400; line-height: 20px; color: #909090; text-transform: none; margin-bottom: 5px;">We&#39;ve organized three community meetups in January. Click below to see pictures and videos of these events.</p>
 
-                                                      <p class="o-date" style="font-family: Poppins, Arial, sans-serif; font-size: 14px; font-weight: 400; margin: 0; line-height: 22px; color: #6F6F6F;">15-05-2024</p>
+                                                      <a display_text_og="LEARN%20MORE" href="#" href_og="%23" style="text-transform: uppercase; font-size: 16px; font-weight: 300; line-height: 37.75px; text-decoration: none; color: rgb(28, 131, 138) !important;">LEARN MORE</a>
                                                   </td>
-                                                  <td align="center" colspan="3" style="vertical-align: top;">
-                                                      <h3 class="o-title" style="margin: 10px 0 5px; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 22px; text-transform: none;">Estimated delivery</h3>
+                                                  <td style="width: 50%;"><img alt="product-2" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Newsletter/product-2.png" style="max-width: 264px; height: auto; display: block;" /></td>
+                                              </tr>
+                                              <!-- Product 3 -->
+                                              <tr>
+                                                  <td style="width: 50%;"><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Newsletter/product-3.png" style="max-width: 264px; height: auto; display: block;" /></td>
+                                                  <td style="width: 50%; background-color: #FFFFFF; padding: 25px 30px;">
+                                                      <h3 style=" margin-top: 0; font-size: 20px; font-weight: 400; line-height: 52px; color: #0D0D0D; text-transform: uppercase; margin-bottom: 5px;">Webinars</h3>
 
-                                                      <p class="o-date" style="font-family: Poppins, Arial, sans-serif; font-size: 14px; font-weight: 400; margin: 0; line-height: 22px; color: #6F6F6F;">17-05-2024</p>
+                                                      <p style="margin-top:0; font-size: 14px; font-weight: 400; line-height: 20px; color: #909090; text-transform: none; margin-bottom: 5px;">We’ve conducted 12+ webinars in January, attended by 1500+ members. Click below for a summary of insights shared.</p>
+
+                                                      <a display_text_og="LEARN%20MORE" href="#" href_og="%23" style="text-transform: uppercase; font-size: 16px; font-weight: 300; line-height: 37.75px; text-decoration: none; color: rgb(28, 131, 138) !important;">LEARN MORE</a>
                                                   </td>
+                                              </tr>
+                                              <!-- Product 4 -->
+                                              <tr>
+                                                  <td style="width: 50%; background-color: #FFFFFF; padding: 25px 30px;">
+                                                      <h3 style=" margin-top: 0; font-size: 20px; font-weight: 400; line-height: 52px; color: #0D0D0D; text-transform: uppercase; margin-bottom: 5px;">IN spotlight</h3>
+
+                                                      <p style="margin-top:0; font-size: 14px; font-weight: 400; line-height: 20px; color: #909090; text-transform: none; margin-bottom: 5px;">In January, we had a new star product that won the hearts of our customers! Click below to read more.</p>
+
+                                                      <a display_text_og="LEARN%20MORE" href="#" href_og="%23" style="text-transform: uppercase; font-size: 16px; font-weight: 300; line-height: 37.75px; text-decoration: none; color: rgb(28, 131, 138) !important;">LEARN MORE</a>
+                                                  </td>
+                                                  <td style="width: 50%;"><img alt="product-2" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Newsletter/product-4.png" style="max-width: 264px; height: auto; display: block;" /></td>
+                                              </tr>
+                                              <!-- Product 5 -->
+                                              <tr>
+                                                  <td style="width: 50%;"><img alt="product-2" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Newsletter/product-5.png" style="max-width: 264px; height: auto; display: block;" /></td>
+                                                  <td style="width: 50%; background-color: #FFFFFF; padding: 25px 30px;">
+                                                      <h3 style=" margin-top: 0; font-size: 20px; font-weight: 400; line-height: 52px; color: #0D0D0D; text-transform: uppercase; margin-bottom: 5px;">SUCCESSES</h3>
+
+                                                      <p style="margin-top:0; font-size: 14px; font-weight: 400; line-height: 20px; color: #909090; text-transform: none; margin-bottom: 5px;">We’re always happy to get feedback from our customers. Click below to read stories from happy customers.</p>
+
+                                                      <a display_text_og="LEARN%20MORE" href="#" href_og="%23" style="text-transform: uppercase; font-size: 16px; font-weight: 300; line-height: 37.75px; text-decoration: none; color: rgb(28, 131, 138) !important;">LEARN MORE</a>
+                                                  </td>
+                                              </tr>
+                                              <!-- Product 6 -->
+                                              <tr>
+                                                  <td style="width: 50%; background-color: #FFFFFF; padding: 25px 30px;">
+                                                      <h3 style=" margin-top: 0; font-size: 20px; font-weight: 400; line-height: 52px; color: #0D0D0D; text-transform: uppercase; margin-bottom: 5px;">TOOLS</h3>
+
+                                                      <p style="margin-top:0; font-size: 14px; font-weight: 400; line-height: 20px; color: #909090; text-transform: none; margin-bottom: 5px;">Here are some of the top productivity tools to streamline your workflow and save time. Click below to read more.</p>
+
+                                                      <a display_text_og="LEARN%20MORE" href="#" href_og="%23" style="text-transform: uppercase; font-size: 16px; font-weight: 300; line-height: 37.75px; text-decoration: none; color: rgb(28, 131, 138) !important;">LEARN MORE</a>
+                                                  </td>
+                                                  <td style="width: 50%;"><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Newsletter/product-6.png" style="max-width: 264px; height: auto; display: block;" /></td>
+                                              </tr>
+                                              <!-- Product 7 -->
+                                              <tr>
+                                                  <td style="width: 50%;"><img alt="product-2" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Newsletter/product-7.png" style="max-width: 264px; height: auto; display: block;" /></td>
+                                                  <td style="width: 50%; background-color: #FFFFFF; padding: 25px 30px;">
+                                                      <h3 style=" margin-top: 0; font-size: 20px; font-weight: 400; line-height: 52px; color: #0D0D0D; text-transform: uppercase; margin-bottom: 5px;">Latest trends</h3>
+
+                                                      <p style="margin-top:0; font-size: 14px; font-weight: 400; line-height: 20px; color: #909090; text-transform: none; margin-bottom: 5px;">Stay ahead with our exclusive deep dive into the top trends shaping this industry. Click below to read more.</p>
+
+                                                      <a display_text_og="LEARN%20MORE" href="#" href_og="%23" style="text-transform: uppercase; font-size: 16px; font-weight: 300; line-height: 37.75px; text-decoration: none; color: rgb(28, 131, 138) !important;">LEARN MORE</a>
+                                                  </td>
+                                              </tr>
+                                              <!-- Product 8 -->
+                                              <tr>
+                                                  <td style="width: 50%; background-color: #FFFFFF; padding: 25px 30px;">
+                                                      <h3 style=" margin-top: 0; font-size: 20px; font-weight: 400; line-height: 52px; color: #0D0D0D; text-transform: uppercase; margin-bottom: 5px;">trips & tricks</h3>
+
+                                                      <p style="margin-top:0; font-size: 14px; font-weight: 400; line-height: 20px; color: #909090; text-transform: none; margin-bottom: 5px;">Click below for some handy tips and tricks shared by our community members, curated to help you level up.</p>
+
+                                                      <a display_text_og="LEARN%20MORE" href="#" href_og="%23" style="text-transform: uppercase; font-size: 16px; font-weight: 300; line-height: 37.75px; text-decoration: none; color: rgb(28, 131, 138) !important;">LEARN MORE</a>
+                                                  </td>
+                                                  <td style="width: 50%;"><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Newsletter/product-8.png" style="max-width: 264px; height: auto; display: block;" /></td>
+                                              </tr>
+                                              <!-- Product 9 -->
+                                              <tr>
+                                                  <td style="width: 50%;"><img alt="product-2" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Newsletter/product-9.png" style="max-width: 264px; height: auto; display: block;" /></td>
+                                                  <td style="width: 50%; background-color: #FFFFFF; padding: 25px 30px;">
+                                                      <h3 style=" margin-top: 0; font-size: 20px; font-weight: 400; line-height: 52px; color: #0D0D0D; text-transform: uppercase; margin-bottom: 5px;">resources</h3>
+
+                                                      <p style="margin-top:0; font-size: 14px; font-weight: 400; line-height: 20px; color: #909090; text-transform: none; margin-bottom: 5px;">Need guidance? Browse our comprehensive library of articles, product guides, and tutorials. Click below to explore.</p>
+
+                                                      <a display_text_og="LEARN%20MORE" href="#" href_og="%23" style="text-transform: uppercase; font-size: 16px; font-weight: 300; line-height: 37.75px; text-decoration: none; color: rgb(28, 131, 138) !important;">LEARN MORE</a>
+                                                  </td>
+                                              </tr>
+                                              <!-- Product 10 -->
+                                              <tr>
+                                                  <td style="width: 50%; background-color: #FFFFFF; padding: 25px 30px;">
+                                                      <h3 style=" margin-top: 0; font-size: 20px; font-weight: 400; line-height: 52px; color: #0D0D0D; text-transform: uppercase; margin-bottom: 5px;">next up!</h3>
+
+                                                      <p style="margin-top:0; font-size: 14px; font-weight: 400; line-height: 20px; color: #909090; text-transform: none; margin-bottom: 5px;">We’re hard at work to bring you the best! Here’s a preview of what we’re launching soon. Click below to read more.</p>
+
+                                                      <a display_text_og="LEARN%20MORE" href="#" href_og="%23" style="text-transform: uppercase; font-size: 16px; font-weight: 300; line-height: 37.75px; text-decoration: none; color: rgb(28, 131, 138) !important;">LEARN MORE</a>
+                                                  </td>
+                                                  <td style="width: 50%;"><img alt="product-2" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/Newsletter/product-10.png" style="max-width: 264px; height: auto; display: block;" /></td>
                                               </tr>
                                           </tbody>
                                       </table>
                                   </td>
                               </tr>
+                              <!-- Footer Section -->
                               <tr>
-                                  <td>
-                                      <table border="0" cellpadding="0" cellspacing="0" class="order-table" role="presentation" style="margin: 35px auto 0;" width="100%">
+                                  <td style="padding: 45px 0 0; background-color: #F5F5F5;">
+                                      <table align="center" cellpadding="0" cellspacing="0" style="max-width: 80%; margin: 0 auto;" width="100%">
                                           <tbody>
                                               <tr>
-                                                  <td style=" text-align: left;">
-                                                      <h2 class="sec-title" style="padding: 0 20px 10px;margin: 0 0 28px; font-family: 'Jost', Arial, sans-serif; font-size: 22px; font-weight: 600; line-height: 37px; text-transform: none; color: #40403B; border-bottom: 1px solid #FFC645;">Items in Order</h2>
+                                                  <td style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #1E1E1E; padding-bottom: 21px;">For assistance, connect with us on social media or reach out to our support team at
+                                                      <a data-renderer-mark="true" data-testid="link-with-safety" href="support@example.com" title="support@example.com">support@example.com</a>
                                                   </td>
                                               </tr>
                                               <tr>
                                                   <td>
-                                                      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style=" max-width: 95%; margin: 0 auto;" width="100%">
+                                                      <table align="center" cellpadding="0" cellspacing="0" style="padding: 0; margin-bottom: 29px; text-align: center;" width="100%">
                                                           <tbody>
                                                               <tr>
-                                                                  <td style="width: 25%; vertical-align: top;"><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/order-shipped/product-1.png" style="width: 100%; height: 100%; object-fit: cover; border: 1px solid #FFC645;"
-                                                                      /></td>
-                                                                  <td style="width: 65%; vertical-align: top; padding: 0 15px;">
-                                                                      <h2 class="p-name" style="margin: 0 0 5px; text-transform: none; font-family: 'Jost',Arial, sans-serif; font-size: 20px; font-weight: 500; line-height: 28.9px; text-align: left; color: #000000;">Nike sneakers</h2>
-
-                                                                      <p class="p-desc" style="margin: 0 0 5px; text-transform: none; font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: left; color: #6F6F6F;">Color: Black</p>
-
-                                                                      <p class="p-desc" style="margin: 0 0 5px; text-transform: none; font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: left; color: #6F6F6F;">Size: US M 10</p>
-
-                                                                      <p class="p-amt" style="margin: 0; font-family: 'Jost', Arial; font-size: 20px; font-weight: 400; line-height: 28.9px; text-align: left; color: #000000">$4000</p>
+                                                                  <td style="display: inline-block; margin: 0 5px;">
+                                                                      <a href="#" style="font-size: 14px; font-weight: 400; color: #1E1E1E !important; text-decoration: none;">Privacy</a>
                                                                   </td>
-                                                                  <td style="width: 10%; vertical-align: top;"><span class="qty" style="text-transform: uppercase; font-family: 'Jost', Arial, sans-serif; font-size: 16px;font-weight: 400; line-height: 22px; text-align: center; color: #000000;">Qty 1</span></td>
+                                                                  <td style="display: inline-block; margin: 0 5px;">
+                                                                      <a href="#" style="font-size: 14px; font-weight: 400; color: #1E1E1E !important; text-decoration: none;">Account</a>
+                                                                  </td>
                                                               </tr>
                                                           </tbody>
                                                       </table>
                                                   </td>
                                               </tr>
-                                          </tbody>
-                                      </table>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td>
-                                      <table border="0" cellpadding="0" cellspacing="0" class="order-table" role="presentation" style="margin: 35px auto 0;" width="100%">
-                                          <tbody>
                                               <tr>
-                                                  <td style=" text-align: left;">
-                                                      <h2 class="sec-title" style="padding: 0 20px 10px;margin: 0; font-family: 'Jost', Arial, sans-serif; font-size: 22px; font-weight: 600; line-height: 37px; text-transform: none; color: #40403B; border-bottom: 1px solid #FFC645;">Billing Summary</h2>
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <td>
-                                                      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style=" max-width: 95%; margin: 0 auto;" width="100%">
+                                                  <td style="text-align: center;">
+                                                      <table align="center" cellpadding="0" cellspacing="0" style="text-align: center;" width="100%">
                                                           <tbody>
                                                               <tr>
-                                                                  <td style="width: 50%; vertical-align: middle; text-align: left; border-bottom: 1px solid #969696;">
-                                                                      <p class="p-subtotal" style="margin: 0; font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; color: #6F6F6F; text-transform: none; padding: 16px 0;">Sub total</p>
+                                                                  <td style="display: inline-block; padding: 5px 39px; border: 1px solid #919191;">
+                                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 24px; height: 24px;"><img alt="instagram" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/37cf7640cb754509b9c3383d11c4d8c2.png" style="width: 100%; height: 100%;" /></a>
                                                                   </td>
-                                                                  <td style="width: 50%; vertical-align: middle; text-align: right; border-bottom: 1px solid #969696;">
-                                                                      <p class="p-amt" style="margin: 0; font-family: 'Jost', Arial, sans-serif;                                                     font-size: 20px; font-weight: 400; line-height: 28.9px; color: #000000; padding: 16px 0;">$4000</p>
+                                                                  <td style="display: inline-block; padding: 5px 39px; border: 1px solid #919191;">
+                                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 24px; height: 24px;"><img alt="facebook" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/fae961ed063e42448b3c5e8daab1e691.png" style="width: 100%; height: 100%;" /></a>
                                                                   </td>
-                                                              </tr>
-                                                              <tr>
-                                                                  <td style="width: 50%; vertical-align: middle; text-align: left; border-bottom: 1px solid #969696;">
-                                                                      <p class="p-subtotal" style="margin: 0; font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; color: #6F6F6F; text-transform: none; padding: 16px 0;">Tax</p>
-                                                                  </td>
-                                                                  <td style="width: 50%; vertical-align: middle; text-align: right; border-bottom: 1px solid #969696;">
-                                                                      <p class="p-amt" style="margin: 0; font-family: 'Jost', Arial, sans-serif;                                                     font-size: 20px; font-weight: 400; line-height: 28.9px; color: #000000; padding: 16px 0;">$200</p>
-                                                                  </td>
-                                                              </tr>
-                                                              <tr>
-                                                                  <td style="width: 50%; vertical-align: middle; text-align: left; border-bottom: 1px solid #000000;">
-                                                                      <p class="p-subtotal" style="margin: 0; font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; color: #6F6F6F; text-transform: none; padding: 16px 0;">Shipping charges</p>
-                                                                  </td>
-                                                                  <td style="width: 50%; vertical-align: middle; text-align: right; border-bottom: 1px solid #000000;">
-                                                                      <p class="p-amt" style="margin: 0; font-family: 'Jost', Arial, sans-serif;                                                     font-size: 20px; font-weight: 400; line-height: 28.9px; color: #000000; padding: 16px 0;">$500</p>
-                                                                  </td>
-                                                              </tr>
-                                                              <tr>
-                                                                  <td style="width: 50%; vertical-align: middle; text-align: left;">
-                                                                      <p class="p-subtotal" style="margin: 0; font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; color: #6F6F6F; text-transform: uppercase; padding: 16px 0;">Total</p>
-                                                                  </td>
-                                                                  <td style="width: 50%; vertical-align: middle; text-align: right;">
-                                                                      <p class="p-amt" style="margin: 0; font-family: 'Jost', Arial, sans-serif;                                                     font-size: 20px; font-weight: 400; line-height: 28.9px; color: #000000; padding: 16px 0;">$4700</p>
+                                                                  <td style="display: inline-block; padding: 5px 39px; border: 1px solid #919191;">
+                                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 24px; height: 24px;"><img alt="x" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/2ccc2bf548f94ba5b2417039082cd06c.png" style="width: 100%; height: 100%;" /></a>
                                                                   </td>
                                                               </tr>
                                                           </tbody>
                                                       </table>
                                                   </td>
                                               </tr>
-                                          </tbody>
-                                      </table>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td>
-                                      <div class="order-details" style="margin: 55px auto 68px; max-width: 80%;">
-                                          <h3 class="o-title" style="margin: 0 0 10px; text-transform: none; color: #40403B; font-family: 'Jost'  Arial, sans-serif; font-size: 24px; font-weight: 600; line-height: 37px; text-align: center; ">Estimated Delivery on <strong data-renderer-mark="true">Feb 15 2025</strong></h3>
-
-                                          <p class="o-desc" style="font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 28.9px; color: #6F6F6F;">Your Order ID is <span style="color: #000000; text-align: center;">898774</span></p>
-                                          <button class="cta" style="background: #FFC645; border: 1px solid #FFC645; font-family: 'Jost', Arial, sans-serif; font-size: 20px;font-weight: 400;line-height: 28px;text-align: center; color: #1E1E1E !important; vertical-align: middle; width: 100%; padding: 12px; text-transform: none;">Track order</button>
-                                      </div>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-              <tr>
-                  <td style="text-align: center;">
-                      <table border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 92%; margin: 0 auto 30px; background: #FFFFFF;" width="100%">
-                          <tbody>
-                              <tr>
-                                  <td>
-                                      <p style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #6F6F6F; text-align: center; max-width: 70%; margin: 30px auto 26px; text-transform: none;">For assistance, connect with us on social media or reach out to our support team at
-                                          <a data-renderer-mark="true" data-testid="link-with-safety" href="support@example.com" title="support@example.com">support@example.com</a>
-                                      </p>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td style="padding: 0;">
-                                      <table align="center" cellpadding="0" cellspacing="0" style="text-align: center; padding-bottom: 52px; border-bottom: 1px solid #FFC645;" width="100%">
-                                          <tbody>
                                               <tr>
-                                                  <td style="padding: 0 8px; display: inline-block;">
-                                                      <a href="#"><img alt="Social Icon" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/be621c25343741b1ac5640833e3b34f7.png" style="display: block; width: 34px; height: 34px;" /></a>
-                                                  </td>
-                                                  <td style="padding: 0 8px; display: inline-block;">
-                                                      <a href="#"><img alt="Social Icon" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/53caa3fd24c5413a91a6db136577fcf7.png" style="display: block; width: 34px; height: 34px;" /></a>
-                                                  </td>
-                                                  <td style="padding: 0 8px; display: inline-block;">
-                                                      <a href="#"><img alt="Social Icon" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/fa216fecba6741dea1d9d5452d498603.png" style="display: block; width: 34px; height: 34px;" /></a>
+                                                  <td style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #1E1E1E; padding-top: 21px;">
+                                                      <p style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #919191;">To opt out of promotional emails like this,
+                                                          <a href="#" style="color:#1C838A;text-decoration:none;font-weight:bold;">unsubscribe here</a>
+                                                      </p>
                                                   </td>
                                               </tr>
                                           </tbody>
                                       </table>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td>
-                                      <p style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: center; color: #909090; text-transform: none;">This is a system-generated email. Please do not reply.</p>
                                   </td>
                               </tr>
                           </tbody>
@@ -3036,154 +2335,709 @@ A set of transactional templates that provide customers with timely updates acro
               </tr>
           </tbody>
       </table>
-      <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
   </body>
+  <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
 
   </html>
   ```
-  ```html Order Delivered
-  <!doctype html="">
-  <html lang="en">
+</Accordion>
 
-  <head>
-      <title>Order Delivered</title>
-      <style type="text/css">
-          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Regular.ttf\') format(\'woff\');             font-style: normal;             font-weight: 400;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-SemiBold.ttf\') format(\'woff\');             font-style: normal;             font-weight: 600;         }                  @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Bold.ttf\') format(\'woff\');             font-style: normal;             font-weight: 700;         }          @font-face {             font-family: \'Poppins\', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Fonts/Poppins-Regular.woff\') format(\'woff\');             font-style: normal;             font-weight: 400;         }          @media screen and (max-width: 480px) {             .container {                 max-width: 100% !important; margin-bottom: 20px !important;             }                         .logo{                 width: 145px !important; height: 55px !important;             }             .cta{                 padding: 10px 25px !important; margin: 30px 0 !important; font-size: 16px !important; line-height: 20px !important;             }             .content-wrap{                 max-width: 90% !important;             }             .title{                 font-size: 22px !important; line-height: 28px !important;             }             .border-line{                 width: 40% !important;             }             .desc{                 font-size: 12px !important; line-height: 18px !important; margin: 0 0 30px !important;             }         }
-      </style>
-  </head>
+## Order Lifecycle Updates Template
 
-  <body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1198.0" data-new-gr-c-s-loaded="14.1198.0" style="font-family: Jost, Arial, sans-serif; font-weight: 400; margin: 0px; padding: 0px; cursor: auto;">
-      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 600px; margin: 0 auto; background-color: #F5F5F5;" width="100%">
-          <!-- header start-->
-          <tbody>
-              <tr>
-                  <td align="center" style="display: block; padding: 12px 0; max-width: 90%; margin: 0 auto;">
-                      <div class="logo-wrap">
-                          <!-- Change image src as per your requirements --><img alt="Logo" class="logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="width: 145px; height: 73px; object-fit: contain;" /></div>
-                  </td>
-              </tr>
-              <!-- header end-->
-              <tr>
-                  <td style="text-align: center;">
-                      <table border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 92%; margin: 0 auto 20px; background: #FFFFFF; padding: 5px;" width="100%">
-                          <tbody>
-                              <tr>
-                                  <td>
-                                      <!-- Change image src as per your requirements --><img alt="banner" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/order-delivered/banner.png" style="width: 100%; height: 100%; object-fit: cover;" /></td>
-                              </tr>
-                              <tr>
-                                  <td align="center">
-                                      <div class="content-wrap" style="margin: 0 auto; max-width: 70%;">
-                                          <h2 class="title" style="font-family: 'Jost', Arial, sans-serif;font-size: 30px;font-weight: 600;line-height: 37px;text-align: center; color: #40403B; text-transform: none; margin: 29px 0 21px;">Order delivered<span class="border-line" style="display: block; width: 72%; height: 1px; background: #D3A94D; margin: 25px auto 0;"> </span></h2>
+A set of transactional templates that provide customers with timely updates across the whole order journey, from placing the order to final delivery.
 
-                                          <p class="desc" style="color: #6F6F6F;font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: center; margin: 0 0 40px; text-transform: none;">We hope you love your new items! Continue shopping to discover more of your favorites.</p>
-                                      </div>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td align="center">
-                                      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 92.4%; margin: 0 auto;" width="100%">
-                                          <tbody>
-                                              <tr>
-                                                  <td align="center" style="width: 67px;vertical-align: top;">
-                                                      <div class="line" style="width: 100%; height: 1px; border-top: 1px dashed #FFFFFF; display: block; margin: 19px 0;"> </div>
-                                                  </td>
-                                                  <td align="center" style="vertical-align: top; width: 39px; height: 39px;"><img alt="icon-tick" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/order-delivered/icon-tick.png" style="width: 100%; height: 100%; object-fit: contain;" /></td>
-                                                  <td align="center" style="vertical-align: top; width: 67px;">
-                                                      <div class="line" style="width: 100%; height: 1px; border-top: 1px dashed #FFC645; display: block; margin: 19px 0;"> </div>
-                                                  </td>
-                                                  <td align="center" style="vertical-align: top; width: 67px;">
-                                                      <div class="line" style="width: 100%; height: 1px; border-top: 1px dashed #FFC645; display: block; margin: 19px 0;"> </div>
-                                                  </td>
-                                                  <td align="center" style="vertical-align: top; width: 39px; height: 39px;"><img alt="icon-tick" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/order-delivered/icon-tick.png" style="width: 100%; height: 100%; object-fit: contain;" /></td>
-                                                  <td align="center" style="vertical-align: top; width: 67px;">
-                                                      <div class="line" style="width: 100%; height: 1px; border-top: 1px dashed #FFC645; display: block; margin: 19px 0;"> </div>
-                                                  </td>
-                                                  <td align="center" style="vertical-align: top; width: 67px;">
-                                                      <div class="line" style="width: 100%; height: 1px; border-top: 1px dashed #FFC645; display: block; margin: 19px 0;"> </div>
-                                                  </td>
-                                                  <td align="center" style="vertical-align: top; width: 39px; height: 39px;"><img alt="icon-tick" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/order-delivered/icon-tick.png" style="width: 100%; height: 100%; object-fit: contain;" /></td>
-                                                  <td align="center" style="vertical-align: top; width: 67px;">
-                                                      <div class="line" style="width: 100%; border-top: 1px dashed #FFFFFF; display: block; margin: 19px 0;"> </div>
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <td align="center" colspan="3" style="vertical-align: top;">
-                                                      <h3 class="o-title" style="margin: 10px 0 5px; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 22px; text-transform: none;">Order Confirmed</h3>
+<Tabs>
+  <Tab title="Order Confirmed">
 
-                                                      <p class="o-date" style="font-family: Poppins, Arial, sans-serif; font-size: 14px; font-weight: 400; margin: 0; line-height: 22px; color: #6F6F6F;">13-05-2024</p>
-                                                  </td>
-                                                  <td align="center" colspan="3" style="vertical-align: top;">
-                                                      <h3 class="o-title" style="margin: 10px 0 5px; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 22px; text-transform: none;">Order Shipped</h3>
+<Image align="center" border={true} caption="Sample Order Cofirmed Template" src="https://files.readme.io/0b3a7b4376e461cb0bf467bdfeb6c97e111f4b9c80eaa10fb7cb17e176356aaf-Order_Confirmed_HTML.png" width="35% " />
 
-                                                      <p class="o-date" style="font-family: Poppins, Arial, sans-serif; font-size: 14px; font-weight: 400; margin: 0; line-height: 22px; color: #6F6F6F;">15-05-2024</p>
-                                                  </td>
-                                                  <td align="center" colspan="3" style="vertical-align: top;">
-                                                      <h3 class="o-title" style="margin: 10px 0 5px; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 22px; text-transform: none;">Order Delivered</h3>
+  </Tab>
 
-                                                      <p class="o-date" style="font-family: Poppins, Arial, sans-serif; font-size: 14px; font-weight: 400; margin: 0; line-height: 22px; color: #6F6F6F;">17-05-2024</p>
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <td align="center" colspan="9">
-                                                      <button class="cta" style="background: #FFC645; border: 1px solid #FFC645; font-family: 'Jost' Arial, sans-serif; font-size: 20px;font-weight: 400;line-height: 28px;text-align: center; color: #1E1E1E !important; vertical-align: middle; width: 100%; padding: 12px; text-transform: none; margin: 75px 0 45px;">Continue Shopping</button>
-                                                  </td>
-                                              </tr>
-                                          </tbody>
-                                      </table>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-              <tr>
-                  <td style="text-align: center;">
-                      <table border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 92%; margin: 0 auto 30px; background: #FFFFFF;" width="100%">
-                          <tbody>
-                              <tr>
-                                  <td>
-                                      <p style="font-family: \'Poppins\', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #6F6F6F; text-align: center; max-width: 70%; margin: 30px auto 26px; text-transform: none;">For assistance, connect with us on social media or reach out to our support team at
-                                          <a data-renderer-mark="true" data-testid="link-with-safety" href="support@example.com" title="support@example.com">support@example.com</a>
-                                      </p>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td style="padding: 0;">
-                                      <table align="center" cellpadding="0" cellspacing="0" style="text-align: center; padding-bottom: 52px; border-bottom: 1px solid #FFC645;" width="100%">
-                                          <tbody>
-                                              <tr>
-                                                  <td style="padding: 0 8px; display: inline-block;">
-                                                      <a href="#"><img alt="Social Icon" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/be621c25343741b1ac5640833e3b34f7.png" style="display: block; width: 34px; height: 34px;" /></a>
-                                                  </td>
-                                                  <td style="padding: 0 8px; display: inline-block;">
-                                                      <a href="#"><img alt="Social Icon" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/53caa3fd24c5413a91a6db136577fcf7.png" style="display: block; width: 34px; height: 34px;" /></a>
-                                                  </td>
-                                                  <td style="padding: 0 8px; display: inline-block;">
-                                                      <a href="#"><img alt="Social Icon" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/fa216fecba6741dea1d9d5452d498603.png" style="display: block; width: 34px; height: 34px;" /></a>
-                                                  </td>
-                                              </tr>
-                                          </tbody>
-                                      </table>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td>
-                                      <p style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: center; color: #909090; text-transform: none;">This is a system-generated email. Please do not reply.</p>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-          </tbody>
-      </table>
-      <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
-  </body>
+<Tab title="Order Shipped">
 
-  </html>
-  ```
-</details>
+<Image align="center" border={true} caption="Order Shipped" src="https://files.readme.io/f1785a9a322e55a79f15e21844206cfb95dd3eea5420a0d5530f96320f5cea1a-Order_Shipped_HTML.png" width="40% " />
+
+    
+  </Tab>
+
+  <Tab title="Order Delivered">
+
+<Image align="center" border={true} caption="Order Delivered" src="https://files.readme.io/b5f7eee1c562f0d22e3694d0d6cf78c51240090d840a307bd2ca10019e66ecd9-Order_Delivered_HTML.png" width="40% " />
+
+  </Tab>
+</Tabs>
+
+<Accordion title="Expand to know more about the template.">
+
+### Use Case Examples
+
+Keeps customers informed and reassured throughout their post-purchase experience. This includes order confirmation, shipment tracking, and successful delivery notifications to reduce uncertainty and improve satisfaction.
+
+### Template Customization Options
+
+* [Replace the Logo](doc:ootb-email-templates#replace-logo)
+* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
+* [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+* [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+* [Update the Privacy Policy](doc:ootb-email-templates#update-privacy-policy)
+* [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+
+### Template Code
+
+```html Order Confirmed
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <style type="text/css">
+        @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Light.ttf\') format(\'woff\');             font-style: normal;             font-weight: 300;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Regular.ttf\') format(\'woff\');             font-style: normal;             font-weight: 400;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Medium.ttf\') format(\'woff\');             font-style: normal;             font-weight: 500;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-SemiBold.ttf\') format(\'woff\');             font-style: normal;             font-weight: 600;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Bold.ttf\') format(\'woff\');             font-style: normal;             font-weight: 700;         }          @media screen and (max-width: 480px) {             .container {                 max-width: 100% !important;             }             .box-table{                 margin: 10px 15px !important;                 padding: 20px 0px !important;             }             .imgConfirmation{                 width: 50px !important;             }             .content-sec {                 padding: 0px 10px !important;                 margin-top: 10px !important;             }             .footer-content{                 padding: 0px 10px !important;             }             .expiry-para{                 padding: 0px 10px !important;                 margin: 10px 0px !important;             }             .main-heading{                 font-size: 24px !important;                 line-height: 30px !important;                 padding: 0px 10px !important;             }             .shipping{                 padding: 0px 20px !important;             }             .track-btn{                 max-width: auto !important;                 width: auto !important;                 font-size: 16px !important;                 line-height: 24px !important;                 padding: 5px 25px !important;             }             .order-detail {                 font-size: 16px !important;                 line-height: 20px !important;                 margin-bottom: 0px !important;             }             .quantity {                 font-size: 10px !important;             }         }
+    </style>
+</head>
+
+<body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" data-new-gr-c-s-loaded="14.1242.0" style="font-family: Jost, Arial, sans-serif; font-weight: 400; margin: 0px; padding: 0px; cursor: auto;">
+    <table border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 600px; margin: 0 auto; background-color: #F0EEF6; padding: 30px 0px 0px;" width="100%">
+        <!-- header start-->
+        <tbody>
+            <tr>
+                <td style="text-align: center; vertical-align: middle; padding: 20px; margin: 0px 30px; display: block;">
+                    <!-- Change image src as per your requirements --><img alt="Logo" class="logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="display: inline-block; width: 127px; height: 58px; object-fit: cover;" /></td>
+            </tr>
+            <!-- header end-->
+            <tr>
+                <td>
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" class="box-table" role="presentation" style="padding: 50px 0px;box-shadow: 0px 1px 12px 0px #0000001A;margin: 0px 30px; display: block; background-color: #ffffff;;">
+                        <!-- Content section -->
+                        <tbody>
+                            <tr>
+                                <td class="content-sec" style="background: #ffffff; padding: 0px 20px; text-align: center; display: block;margin-top: 30px;">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                                        <tbody>
+                                            <tr>
+                                                <td style="text-align: center;">
+                                                    <h4 class="main-heading" style="text-transform: none;font-family: 'Jost', Arial, sans-serif; font-size: 26px; font-weight: 600; line-height: 37px; margin: 0 auto; color:#40403B;">Order confirmed</h4>
+
+                                                    <h4 class="main-heading" style="text-transform: none;font-family: 'Jost', Arial, sans-serif; font-size: 26px; font-weight: 400; line-height: 37px; margin: 0 auto; color:#40403B;">We hope you enjoyed shopping with us</h4>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="content-sec" style="border-bottom: 1px solid #FFC645; background: #ffffff; padding: 0px 80px 20px; text-align: center; display: block;margin-top: 0px;">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                                        <tbody>
+                                            <tr>
+                                                <td style="text-align: center;">
+                                                    <p class="expiry-para" style="text-transform: none; color: #6f6f6f; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: center; ">We’re now working on getting your order ready.</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="content-sec" style="background: #ffffff; padding: 0px 20px; text-align: center; display: block;margin-top: 30px;">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                                        <tbody>
+                                            <tr>
+                                                <td style="text-align: center;">
+                                                    <h2 class="main-heading" style="text-transform: none;font-family: 'Jost', Arial, sans-serif; font-size: 26px; font-weight: 600; line-height: 37px; margin: 0 auto; color:#40403B;">Estimated Delivery on <strong data-renderer-mark="true">Feb 15 2025</strong></h2>
+
+                                                    <p class="expiry-para" style="margin-top: 10px;text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 28px; text-align: center; ">Your order ID is <span style="font-weight: 600;">898774</span></p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="content-sec" style="background: #ffffff; padding: 0px 80px; text-align: center; display: block;margin-top: 0px;">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                                        <tbody>
+                                            <tr>
+                                                <td style="text-align: center;">
+                                                    <p class="expiry-para" style="text-transform: none; color: #6f6f6f; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: center; ">You’ll receive another email with tracking details once your order is shipped. Click below to view and make changes to your order.</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%;">
+                                        <tbody>
+                                            <tr>
+                                                <td style="width: 100%; text-align: center; vertical-align: middle;">
+                                                    <a class="track-btn" display_text_og="View%20and%20Manage%20Order" href="#" href_og="%23" style="font-family: Jost, Arial, sans-serif; font-size: 20px; font-weight: 400; text-transform: none; line-height: 28px; text-decoration: none; background: rgb(255, 198, 69); padding: 12px 34px; display: inline-block; text-align: center; max-width: 80%; width: 100%; color: rgb(30, 30, 30) !important;">View and Manage Order</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="content-sec" style="border-bottom: 1px solid #FFC645; background: #ffffff; padding: 0px 20px; text-align: center; display: block;margin-top: 30px;">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                                        <tbody>
+                                            <tr>
+                                                <td style="text-align: center;">
+                                                    <h4 class="expiry-para" style="margin: 10px 0px;text-transform: none; color: #40403B; font-family: 'Jost', Arial, sans-serif; font-size: 22px; font-weight: 600; line-height: 37px; text-align: left; ">Items in Order</h4>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="content-sec" style="background: #ffffff; padding: 0px 20px; text-align: center; display: block;margin-top: 30px;">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                                        <tbody>
+                                            <tr>
+                                                <td style="width: 30%; vertical-align: top;"><img alt="look" class="imgConfirmation" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/order-placed/product.png" style="width:128px; height: 121px; object-fit: contain;" /></td>
+                                                <td style="width: 60%; vertical-align: top;">
+                                                    <h4 class="order-detail" style="margin: 0px 0px 5px; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 500; line-height: 28px;text-align: left;">Nike sneakers</h4>
+
+                                                    <p style="margin:0; color: #6f6f6f; font-family: 'Jost', Arial, sans-serif; font-size: 14px;font-weight: 400; line-height: 22px; text-align: left;">Color: Black</p>
+
+                                                    <p style="margin:0; color: #6f6f6f; font-family: 'Jost', Arial, sans-serif; font-size: 14px;font-weight: 400; line-height: 22px; text-align: left;">Size: US M 10</p>
+
+                                                    <h4 class="order-detail" style="margin: 0px 0px 10px; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 28px;text-align: left;">$4000</h4>
+                                                </td>
+                                                <td style="width: 10%; vertical-align: top;">
+                                                    <p class="quantity" style="margin: 10px 0px;text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 22px; text-align: left; ">QTY 1</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="content-sec" style="border-bottom: 1px solid #FFC645; background: #ffffff; padding: 0px 20px; text-align: center; display: block;margin-top: 10px;">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                                        <tbody>
+                                            <tr>
+                                                <td style="text-align: center;">
+                                                    <h4 class="expiry-para" style="margin: 10px 0px;text-transform: none; color: #40403B; font-family: 'Jost', Arial, sans-serif; font-size: 22px; font-weight: 600; line-height: 37px; text-align: left; ">Billing Summary</h4>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="content-sec" style="border-bottom: 0.5px solid #969696; background: #ffffff; margin: 0px 20px; text-align: center; display: block;margin-top: 10px;">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                                        <tbody>
+                                            <tr>
+                                                <td style="width: 50%; vertical-align: middle;">
+                                                    <p class="expiry-para" style="margin: 10px 0px;text-transform: none; color: #6f6f6f; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: left; ">Sub total</p>
+                                                </td>
+                                                <td style="width: 50%; vertical-align: middle;">
+                                                    <h4 style="margin: 10px 0px; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 28px;text-align: right;">$4000</h4>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="content-sec" style="border-bottom: 0.5px solid #969696; background: #ffffff; margin: 0px 20px; text-align: center; display: block;margin-top: 10px;">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                                        <tbody>
+                                            <tr>
+                                                <td style="width: 50%; vertical-align: middle;">
+                                                    <p class="expiry-para" style="margin: 10px 0px;text-transform: none; color: #6f6f6f; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: left; ">Tax</p>
+                                                </td>
+                                                <td style="width: 50%; vertical-align: middle;">
+                                                    <h4 style="margin: 10px 0px; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 28px;text-align: right;">$200</h4>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="content-sec" style="border-bottom: 1px dashed #000000; background: #ffffff; padding: 0px 20px; text-align: center; display: block;margin-top: 10px;">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" class="shipping" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                                        <tbody>
+                                            <tr>
+                                                <td style="width: 50%; vertical-align: middle;">
+                                                    <p style="margin: 10px 0px;text-transform: none; color: #6f6f6f; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: left; ">Shipping charges</p>
+                                                </td>
+                                                <td style="width: 50%; vertical-align: middle;">
+                                                    <h4 style="margin: 10px 0px; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 28px;text-align: right;">$500</h4>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="content-sec" style="background: #ffffff; padding: 0px 20px; text-align: center; display: block;margin-top: 10px;">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" class="shipping" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                                        <tbody>
+                                            <tr>
+                                                <td style="width: 50%; vertical-align: middle;">
+                                                    <p class="expiry-para" style="margin: 10px 0px;text-transform: uppercase; color: #6f6f6f; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: left; ">Total</p>
+                                                </td>
+                                                <td style="width: 50%; vertical-align: middle;">
+                                                    <h4 style="margin: 10px 0px; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 28px;text-align: right;">$4700</h4>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- Content Point section -->
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- footer start-->
+            <tr>
+                <td align="center" colspan="2">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" class="box-table" role="presentation" style="box-shadow: 0px 1px 12px 0px #0000001A; margin: 30px 30px 30px; display: block; background: #ffffff; padding: 25px 0 25px;">
+                        <tbody>
+                            <tr>
+                                <td style="padding: 0;">
+                                    <table align="center" cellpadding="0" cellspacing="0" style="text-align: center;" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td class="footer-content" style="padding:0px 100px">
+                                                    <p style="text-transform: none; color: #6f6f6f; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; text-align: center;">For assistance, connect with us on social media or reach out to our support team at
+                                                        <a data-renderer-mark="true" data-testid="link-with-safety" href="support@example.com" title="support@example.com">support@example.com</a>
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding: 15px 15px; display: inline-block;">
+                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 30px; height: 30px; ">
+                                                        <!-- Change image src as per your requirements --><img alt="instagram" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/be621c25343741b1ac5640833e3b34f7.png" style="width: 100%; height: 100%;" /></a>
+                                                </td>
+                                                <td style="padding: 15px 15px; display: inline-block; ">
+                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 30px; height: 30px;"><img alt="facebook" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/53caa3fd24c5413a91a6db136577fcf7.png" style="width: 100%; height: 100%;" /></a>
+                                                </td>
+                                                <td style="padding: 15px 15px; display: inline-block;">
+                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 30px; height: 30px;"><img alt="x" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/fa216fecba6741dea1d9d5452d498603.png" style="width: 100%; height: 100%;" /></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="content-sec" style="border-top: 1px solid #FFC645; background: #ffffff; padding: 20px 20px 0px; text-align: center; display: block;margin-top: 10px;">
+                                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="padding: 0px 15px; display: inline-block;">
+                                                                    <a href="#" style="vertical-align: middle;display: inline-block; font-size: 14px; font-weight: 400; line-height: 24px; text-align: center;font-family: 'Jost', Arial, sans-serif;text-decoration: none;color:#1E1E1E; ">Privacy</a>
+                                                                </td>
+                                                                <td style="padding: 0px 15px; display: inline-block; ">
+                                                                    <a href="#" style="vertical-align: middle;display: inline-block; font-size: 14px; font-weight: 400; line-height: 24px; text-align: center;font-family: 'Jost', Arial, sans-serif;text-decoration: none;color:#1E1E1E;">Account</a>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="content-sec" style="border-top: 1px solid #FFC645; background: #ffffff; padding: 20px 20px 0px; text-align: center; display: block;margin-top: 20px;">
+                                                    <p style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #1E1E1E; padding-top:10px;">This is a system-generated email. Please do not reply.</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- footer end-->
+        </tbody>
+    </table>
+</body>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+
+</html>
+```
+```html Order Shipped
+<!doctype html="">
+<html lang="en">
+
+<head>
+    <title>Order Shipped</title>
+    <style type="text/css">
+        @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Regular.ttf\') format(\'woff\');             font-style: normal;             font-weight: 400;         }         @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Medium.ttf\') format(\'woff\');             font-style: normal;             font-weight: 500;         }         @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-SemiBold.ttf\') format(\'woff\');             font-style: normal;             font-weight: 600;         }                  @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Bold.ttf\') format(\'woff\');             font-style: normal;             font-weight: 700;         }          @font-face {             font-family: 'Poppins', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Fonts/Poppins-Regular.woff\') format(\'woff\');             font-style: normal;             font-weight: 400;         }          @media screen and (max-width: 480px) {             .container {                margin-bottom: 20px !important;             }                         .logo{                 width: 145px !important; height: 55px !important;             }             .cta{                 padding: 10px 25px !important; margin: 30px 0 !important; font-size: 16px !important; line-height: 20px !important;             }             .content-wrap{                 max-width: 90% !important;             }             .title{                 font-size: 22px !important; line-height: 28px !important;             }             .border-line{                 width: 40% !important;             }             .desc{                 font-size: 12px !important; line-height: 18px !important; margin: 0 0 30px !important;             }         }
+    </style>
+</head>
+
+<body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" data-new-gr-c-s-loaded="14.1242.0" style="font-family: Jost, Arial, sans-serif; font-weight: 400; margin: 0px; padding: 0px; cursor: auto;">
+    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 600px; margin: 0 auto; background-color: #F5F5F5;" width="100%">
+        <!-- header start-->
+        <tbody>
+            <tr>
+                <td align="center" style="display: block; padding: 12px 0; max-width: 90%; margin: 0 auto;">
+                    <div class="logo-wrap">
+                        <!-- Change image src as per your requirements --><img alt="Logo" class="logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="width: 145px; height: 73px; object-fit: contain;" /></div>
+                </td>
+            </tr>
+            <!-- header end-->
+            <tr>
+                <td style="text-align: center;">
+                    <table border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 92%; margin: 0 auto 20px; background: #FFFFFF;" width="100%">
+                        <tbody>
+                            <tr>
+                                <td align="center">
+                                    <div class="content-wrap" style="margin: 0 auto; max-width: 85%;">
+                                        <h2 class="title" style="font-family: 'Jost', Arial, sans-serif;font-size: 30px;font-weight: 500;line-height: 37px;text-align: center; color: #40403B; text-transform: none; margin: 43px 0 19px;">Order shipped</h2>
+
+                                        <p class="desc" style="color: #6F6F6F;font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: center; margin: 0 auto; text-transform: none; max-width: 85%;">Great news — your order is on its way! You can track your order through the button below.</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="order-table" role="presentation" style="max-width: 92.4%; margin: 60px auto 25px;" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td align="center" style="width: 67px;vertical-align: top;">
+                                                    <div class="line" style="width: 100%; height: 1px; border-top: 1px dashed #FFFFFF; display: block; margin: 19px 0;"> </div>
+                                                </td>
+                                                <td align="center" style="vertical-align: top; width: 39px; height: 39px;"><img alt="icon-tick" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/order-shipped/icon-tick.png" style="width: 100%; height: 100%; object-fit: contain;" /></td>
+                                                <td align="center" style="vertical-align: top; width: 67px;">
+                                                    <div class="line" style="width: 100%; height: 1px; border-top: 1px dashed #FFC645; display: block; margin: 19px 0;"> </div>
+                                                </td>
+                                                <td align="center" style="vertical-align: top; width: 67px;">
+                                                    <div class="line" style="width: 100%; height: 1px; border-top: 1px dashed #FFC645; display: block; margin: 19px 0;"> </div>
+                                                </td>
+                                                <td align="center" style="vertical-align: top; width: 39px; height: 39px;"><img alt="icon-tick" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/order-shipped/icon-tick.png" style="width: 100%; height: 100%; object-fit: contain;" /></td>
+                                                <td align="center" style="vertical-align: top; width: 67px;">
+                                                    <div class="line" style="width: 100%; height: 1px; border-top: 1px dashed #B2B2B2; display: block; margin: 19px 0;"> </div>
+                                                </td>
+                                                <td align="center" style="vertical-align: top; width: 67px;">
+                                                    <div class="line" style="width: 100%; height: 1px; border-top: 1px dashed #B2B2B2; display: block; margin: 19px 0;"> </div>
+                                                </td>
+                                                <td align="center" style="vertical-align: top; width: 39px; height: 39px;"><img alt="icon-empty" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/order-shipped/icon-empty.png" style="width: 100%; height: 100%; object-fit: contain;" /></td>
+                                                <td align="center" style="vertical-align: top; width: 67px;">
+                                                    <div class="line" style="width: 100%; border-top: 1px dashed #FFFFFF; display: block; margin: 19px 0;"> </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center" colspan="3" style="vertical-align: top;">
+                                                    <h3 class="o-title" style="margin: 10px 0 5px; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 22px; text-transform: none;">Order confirmed</h3>
+
+                                                    <p class="o-date" style="font-family: Poppins, Arial, sans-serif; font-size: 14px; font-weight: 400; margin: 0; line-height: 22px; color: #6F6F6F;">13-05-2024</p>
+                                                </td>
+                                                <td align="center" colspan="3" style="vertical-align: top;">
+                                                    <h3 class="o-title" style="margin: 10px 0 5px; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 22px; text-transform: none;">Order shipped</h3>
+
+                                                    <p class="o-date" style="font-family: Poppins, Arial, sans-serif; font-size: 14px; font-weight: 400; margin: 0; line-height: 22px; color: #6F6F6F;">15-05-2024</p>
+                                                </td>
+                                                <td align="center" colspan="3" style="vertical-align: top;">
+                                                    <h3 class="o-title" style="margin: 10px 0 5px; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 22px; text-transform: none;">Estimated delivery</h3>
+
+                                                    <p class="o-date" style="font-family: Poppins, Arial, sans-serif; font-size: 14px; font-weight: 400; margin: 0; line-height: 22px; color: #6F6F6F;">17-05-2024</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table border="0" cellpadding="0" cellspacing="0" class="order-table" role="presentation" style="margin: 35px auto 0;" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td style=" text-align: left;">
+                                                    <h2 class="sec-title" style="padding: 0 20px 10px;margin: 0 0 28px; font-family: 'Jost', Arial, sans-serif; font-size: 22px; font-weight: 600; line-height: 37px; text-transform: none; color: #40403B; border-bottom: 1px solid #FFC645;">Items in Order</h2>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style=" max-width: 95%; margin: 0 auto;" width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="width: 25%; vertical-align: top;"><img alt="product" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/order-shipped/product-1.png" style="width: 100%; height: 100%; object-fit: cover; border: 1px solid #FFC645;"
+                                                                    /></td>
+                                                                <td style="width: 65%; vertical-align: top; padding: 0 15px;">
+                                                                    <h2 class="p-name" style="margin: 0 0 5px; text-transform: none; font-family: 'Jost',Arial, sans-serif; font-size: 20px; font-weight: 500; line-height: 28.9px; text-align: left; color: #000000;">Nike sneakers</h2>
+
+                                                                    <p class="p-desc" style="margin: 0 0 5px; text-transform: none; font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: left; color: #6F6F6F;">Color: Black</p>
+
+                                                                    <p class="p-desc" style="margin: 0 0 5px; text-transform: none; font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: left; color: #6F6F6F;">Size: US M 10</p>
+
+                                                                    <p class="p-amt" style="margin: 0; font-family: 'Jost', Arial; font-size: 20px; font-weight: 400; line-height: 28.9px; text-align: left; color: #000000">$4000</p>
+                                                                </td>
+                                                                <td style="width: 10%; vertical-align: top;"><span class="qty" style="text-transform: uppercase; font-family: 'Jost', Arial, sans-serif; font-size: 16px;font-weight: 400; line-height: 22px; text-align: center; color: #000000;">Qty 1</span></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table border="0" cellpadding="0" cellspacing="0" class="order-table" role="presentation" style="margin: 35px auto 0;" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td style=" text-align: left;">
+                                                    <h2 class="sec-title" style="padding: 0 20px 10px;margin: 0; font-family: 'Jost', Arial, sans-serif; font-size: 22px; font-weight: 600; line-height: 37px; text-transform: none; color: #40403B; border-bottom: 1px solid #FFC645;">Billing Summary</h2>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style=" max-width: 95%; margin: 0 auto;" width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="width: 50%; vertical-align: middle; text-align: left; border-bottom: 1px solid #969696;">
+                                                                    <p class="p-subtotal" style="margin: 0; font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; color: #6F6F6F; text-transform: none; padding: 16px 0;">Sub total</p>
+                                                                </td>
+                                                                <td style="width: 50%; vertical-align: middle; text-align: right; border-bottom: 1px solid #969696;">
+                                                                    <p class="p-amt" style="margin: 0; font-family: 'Jost', Arial, sans-serif;                                                     font-size: 20px; font-weight: 400; line-height: 28.9px; color: #000000; padding: 16px 0;">$4000</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width: 50%; vertical-align: middle; text-align: left; border-bottom: 1px solid #969696;">
+                                                                    <p class="p-subtotal" style="margin: 0; font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; color: #6F6F6F; text-transform: none; padding: 16px 0;">Tax</p>
+                                                                </td>
+                                                                <td style="width: 50%; vertical-align: middle; text-align: right; border-bottom: 1px solid #969696;">
+                                                                    <p class="p-amt" style="margin: 0; font-family: 'Jost', Arial, sans-serif;                                                     font-size: 20px; font-weight: 400; line-height: 28.9px; color: #000000; padding: 16px 0;">$200</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width: 50%; vertical-align: middle; text-align: left; border-bottom: 1px solid #000000;">
+                                                                    <p class="p-subtotal" style="margin: 0; font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; color: #6F6F6F; text-transform: none; padding: 16px 0;">Shipping charges</p>
+                                                                </td>
+                                                                <td style="width: 50%; vertical-align: middle; text-align: right; border-bottom: 1px solid #000000;">
+                                                                    <p class="p-amt" style="margin: 0; font-family: 'Jost', Arial, sans-serif;                                                     font-size: 20px; font-weight: 400; line-height: 28.9px; color: #000000; padding: 16px 0;">$500</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width: 50%; vertical-align: middle; text-align: left;">
+                                                                    <p class="p-subtotal" style="margin: 0; font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; color: #6F6F6F; text-transform: uppercase; padding: 16px 0;">Total</p>
+                                                                </td>
+                                                                <td style="width: 50%; vertical-align: middle; text-align: right;">
+                                                                    <p class="p-amt" style="margin: 0; font-family: 'Jost', Arial, sans-serif;                                                     font-size: 20px; font-weight: 400; line-height: 28.9px; color: #000000; padding: 16px 0;">$4700</p>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="order-details" style="margin: 55px auto 68px; max-width: 80%;">
+                                        <h3 class="o-title" style="margin: 0 0 10px; text-transform: none; color: #40403B; font-family: 'Jost'  Arial, sans-serif; font-size: 24px; font-weight: 600; line-height: 37px; text-align: center; ">Estimated Delivery on <strong data-renderer-mark="true">Feb 15 2025</strong></h3>
+
+                                        <p class="o-desc" style="font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 28.9px; color: #6F6F6F;">Your Order ID is <span style="color: #000000; text-align: center;">898774</span></p>
+                                        <button class="cta" style="background: #FFC645; border: 1px solid #FFC645; font-family: 'Jost', Arial, sans-serif; font-size: 20px;font-weight: 400;line-height: 28px;text-align: center; color: #1E1E1E !important; vertical-align: middle; width: 100%; padding: 12px; text-transform: none;">Track order</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">
+                    <table border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 92%; margin: 0 auto 30px; background: #FFFFFF;" width="100%">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #6F6F6F; text-align: center; max-width: 70%; margin: 30px auto 26px; text-transform: none;">For assistance, connect with us on social media or reach out to our support team at
+                                        <a data-renderer-mark="true" data-testid="link-with-safety" href="support@example.com" title="support@example.com">support@example.com</a>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0;">
+                                    <table align="center" cellpadding="0" cellspacing="0" style="text-align: center; padding-bottom: 52px; border-bottom: 1px solid #FFC645;" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding: 0 8px; display: inline-block;">
+                                                    <a href="#"><img alt="Social Icon" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/be621c25343741b1ac5640833e3b34f7.png" style="display: block; width: 34px; height: 34px;" /></a>
+                                                </td>
+                                                <td style="padding: 0 8px; display: inline-block;">
+                                                    <a href="#"><img alt="Social Icon" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/53caa3fd24c5413a91a6db136577fcf7.png" style="display: block; width: 34px; height: 34px;" /></a>
+                                                </td>
+                                                <td style="padding: 0 8px; display: inline-block;">
+                                                    <a href="#"><img alt="Social Icon" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/fa216fecba6741dea1d9d5452d498603.png" style="display: block; width: 34px; height: 34px;" /></a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: center; color: #909090; text-transform: none;">This is a system-generated email. Please do not reply.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+</body>
+
+</html>
+```
+```html Order Delivered
+<!doctype html="">
+<html lang="en">
+
+<head>
+    <title>Order Delivered</title>
+    <style type="text/css">
+        @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Regular.ttf\') format(\'woff\');             font-style: normal;             font-weight: 400;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-SemiBold.ttf\') format(\'woff\');             font-style: normal;             font-weight: 600;         }                  @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Bold.ttf\') format(\'woff\');             font-style: normal;             font-weight: 700;         }          @font-face {             font-family: \'Poppins\', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Fonts/Poppins-Regular.woff\') format(\'woff\');             font-style: normal;             font-weight: 400;         }          @media screen and (max-width: 480px) {             .container {                 max-width: 100% !important; margin-bottom: 20px !important;             }                         .logo{                 width: 145px !important; height: 55px !important;             }             .cta{                 padding: 10px 25px !important; margin: 30px 0 !important; font-size: 16px !important; line-height: 20px !important;             }             .content-wrap{                 max-width: 90% !important;             }             .title{                 font-size: 22px !important; line-height: 28px !important;             }             .border-line{                 width: 40% !important;             }             .desc{                 font-size: 12px !important; line-height: 18px !important; margin: 0 0 30px !important;             }         }
+    </style>
+</head>
+
+<body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1198.0" data-new-gr-c-s-loaded="14.1198.0" style="font-family: Jost, Arial, sans-serif; font-weight: 400; margin: 0px; padding: 0px; cursor: auto;">
+    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 600px; margin: 0 auto; background-color: #F5F5F5;" width="100%">
+        <!-- header start-->
+        <tbody>
+            <tr>
+                <td align="center" style="display: block; padding: 12px 0; max-width: 90%; margin: 0 auto;">
+                    <div class="logo-wrap">
+                        <!-- Change image src as per your requirements --><img alt="Logo" class="logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="width: 145px; height: 73px; object-fit: contain;" /></div>
+                </td>
+            </tr>
+            <!-- header end-->
+            <tr>
+                <td style="text-align: center;">
+                    <table border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 92%; margin: 0 auto 20px; background: #FFFFFF; padding: 5px;" width="100%">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <!-- Change image src as per your requirements --><img alt="banner" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/order-delivered/banner.png" style="width: 100%; height: 100%; object-fit: cover;" /></td>
+                            </tr>
+                            <tr>
+                                <td align="center">
+                                    <div class="content-wrap" style="margin: 0 auto; max-width: 70%;">
+                                        <h2 class="title" style="font-family: 'Jost', Arial, sans-serif;font-size: 30px;font-weight: 600;line-height: 37px;text-align: center; color: #40403B; text-transform: none; margin: 29px 0 21px;">Order delivered<span class="border-line" style="display: block; width: 72%; height: 1px; background: #D3A94D; margin: 25px auto 0;"> </span></h2>
+
+                                        <p class="desc" style="color: #6F6F6F;font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: center; margin: 0 0 40px; text-transform: none;">We hope you love your new items! Continue shopping to discover more of your favorites.</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">
+                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 92.4%; margin: 0 auto;" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td align="center" style="width: 67px;vertical-align: top;">
+                                                    <div class="line" style="width: 100%; height: 1px; border-top: 1px dashed #FFFFFF; display: block; margin: 19px 0;"> </div>
+                                                </td>
+                                                <td align="center" style="vertical-align: top; width: 39px; height: 39px;"><img alt="icon-tick" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/order-delivered/icon-tick.png" style="width: 100%; height: 100%; object-fit: contain;" /></td>
+                                                <td align="center" style="vertical-align: top; width: 67px;">
+                                                    <div class="line" style="width: 100%; height: 1px; border-top: 1px dashed #FFC645; display: block; margin: 19px 0;"> </div>
+                                                </td>
+                                                <td align="center" style="vertical-align: top; width: 67px;">
+                                                    <div class="line" style="width: 100%; height: 1px; border-top: 1px dashed #FFC645; display: block; margin: 19px 0;"> </div>
+                                                </td>
+                                                <td align="center" style="vertical-align: top; width: 39px; height: 39px;"><img alt="icon-tick" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/order-delivered/icon-tick.png" style="width: 100%; height: 100%; object-fit: contain;" /></td>
+                                                <td align="center" style="vertical-align: top; width: 67px;">
+                                                    <div class="line" style="width: 100%; height: 1px; border-top: 1px dashed #FFC645; display: block; margin: 19px 0;"> </div>
+                                                </td>
+                                                <td align="center" style="vertical-align: top; width: 67px;">
+                                                    <div class="line" style="width: 100%; height: 1px; border-top: 1px dashed #FFC645; display: block; margin: 19px 0;"> </div>
+                                                </td>
+                                                <td align="center" style="vertical-align: top; width: 39px; height: 39px;"><img alt="icon-tick" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/order-delivered/icon-tick.png" style="width: 100%; height: 100%; object-fit: contain;" /></td>
+                                                <td align="center" style="vertical-align: top; width: 67px;">
+                                                    <div class="line" style="width: 100%; border-top: 1px dashed #FFFFFF; display: block; margin: 19px 0;"> </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center" colspan="3" style="vertical-align: top;">
+                                                    <h3 class="o-title" style="margin: 10px 0 5px; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 22px; text-transform: none;">Order Confirmed</h3>
+
+                                                    <p class="o-date" style="font-family: Poppins, Arial, sans-serif; font-size: 14px; font-weight: 400; margin: 0; line-height: 22px; color: #6F6F6F;">13-05-2024</p>
+                                                </td>
+                                                <td align="center" colspan="3" style="vertical-align: top;">
+                                                    <h3 class="o-title" style="margin: 10px 0 5px; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 22px; text-transform: none;">Order Shipped</h3>
+
+                                                    <p class="o-date" style="font-family: Poppins, Arial, sans-serif; font-size: 14px; font-weight: 400; margin: 0; line-height: 22px; color: #6F6F6F;">15-05-2024</p>
+                                                </td>
+                                                <td align="center" colspan="3" style="vertical-align: top;">
+                                                    <h3 class="o-title" style="margin: 10px 0 5px; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 22px; text-transform: none;">Order Delivered</h3>
+
+                                                    <p class="o-date" style="font-family: Poppins, Arial, sans-serif; font-size: 14px; font-weight: 400; margin: 0; line-height: 22px; color: #6F6F6F;">17-05-2024</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center" colspan="9">
+                                                    <button class="cta" style="background: #FFC645; border: 1px solid #FFC645; font-family: 'Jost' Arial, sans-serif; font-size: 20px;font-weight: 400;line-height: 28px;text-align: center; color: #1E1E1E !important; vertical-align: middle; width: 100%; padding: 12px; text-transform: none; margin: 75px 0 45px;">Continue Shopping</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">
+                    <table border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 92%; margin: 0 auto 30px; background: #FFFFFF;" width="100%">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p style="font-family: \'Poppins\', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #6F6F6F; text-align: center; max-width: 70%; margin: 30px auto 26px; text-transform: none;">For assistance, connect with us on social media or reach out to our support team at
+                                        <a data-renderer-mark="true" data-testid="link-with-safety" href="support@example.com" title="support@example.com">support@example.com</a>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0;">
+                                    <table align="center" cellpadding="0" cellspacing="0" style="text-align: center; padding-bottom: 52px; border-bottom: 1px solid #FFC645;" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding: 0 8px; display: inline-block;">
+                                                    <a href="#"><img alt="Social Icon" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/be621c25343741b1ac5640833e3b34f7.png" style="display: block; width: 34px; height: 34px;" /></a>
+                                                </td>
+                                                <td style="padding: 0 8px; display: inline-block;">
+                                                    <a href="#"><img alt="Social Icon" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/53caa3fd24c5413a91a6db136577fcf7.png" style="display: block; width: 34px; height: 34px;" /></a>
+                                                </td>
+                                                <td style="padding: 0 8px; display: inline-block;">
+                                                    <a href="#"><img alt="Social Icon" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/fa216fecba6741dea1d9d5452d498603.png" style="display: block; width: 34px; height: 34px;" /></a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p style="font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: center; color: #909090; text-transform: none;">This is a system-generated email. Please do not reply.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+</body>
+
+</html>
+```
+
+  
+</Accordion>
 
 ## Password Reset Template
 
@@ -3191,12 +3045,11 @@ A security-focused transactional email that helps users reset their passwords se
 
 <Image align="center" alt="Sample Password Reset Template" border={true} caption="Sample Password Reset Template" src="https://files.readme.io/3866006424ffc74a98cae2a7ec5859b8c519df5937adbb62de028e39ce311072-Password_Reset_HTML.png" width="25% " />
 
-<details>
-  <summary><b>Expand to know more about the template.</b></summary>
+<Accordion title="Expand to know more about the template.">
+  
+### Use Case Examples
 
-  ### Use Case Examples
-
-  Sends a reset password link to users who have forgotten or initiated a reset request, ensuring account access is restored with minimal friction.
+Sends a reset password link to users who have forgotten or initiated a reset request, ensuring account access is restored with minimal friction.
 
   ### Template Customization Options
 
@@ -3335,7 +3188,7 @@ A security-focused transactional email that helps users reset their passwords se
 
   </html>
   ```
-</details>
+</Accordion>
 
 ## Promotional Template
 
