@@ -1528,316 +1528,313 @@ A neutral, content-focused HTML template designed to communicate important updat
 
 <Image align="center" alt="Sample Informative Email Template" border={true} caption="Sample Informative Email Template" src="https://files.readme.io/b929cb18516c6bd42b772107850b0b63c010e4a85df006fe6f215042d50a8910-Informative_Email_Template_HTML.png" width="25% " />
 
-<details>
-  <summary><b>Expand to know more about the template.</b></summary>
+<Accordion title="Expand to know more about the template.">
 
-  ### Use Case Examples
+### Use Case Examples
 
-  * Announce policy updates or changes in terms of service.
-  * Notify users about new features, UI enhancements, or release rollouts.
-  * Share account-related communications such as billing reminders or operational changes.
-  * Ideal for transactional or compliance-driven engagement.
+* Announce policy updates or changes in terms of service.
+* Notify users about new features, UI enhancements, or release rollouts.
+* Share account-related communications such as billing reminders or operational changes.
+* Ideal for transactional or compliance-driven engagement.
 
-  ### Template Customization Options
+### Template Customization Options
 
-  * [Replace the Logo](doc:ootb-email-templates#replace-logo)
-  * [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-  * [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
-  * [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-  * [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
-  * [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+* [Replace the Logo](doc:ootb-email-templates#replace-logo)
+* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
+* [Update Links in the Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+* [Change the Theme or Background Color](doc:ootb-email-templates#change-theme-or-background-color)
+* [Update Social Media Links and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
 
-  (@amrita removed PP)
+### Template Code
 
-  ### Template Code
+```
+<!doctype html="">
+<html lang="en">
 
-  ```html
-  <!doctype html="">
-  <html lang="en">
+<head>
+    <title>Informative</title>
+    <style type="text/css">
+        @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Light.ttf\') format(\'woff\');             font-style: normal;             font-weight: 300;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Regular.ttf\') format(\'woff\');             font-style: normal;             font-weight: 400;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Medium.ttf\') format(\'woff\');             font-style: normal;             font-weight: 500;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-SemiBold.ttf\') format(\'woff\');             font-style: normal;             font-weight: 600;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Bold.ttf\') format(\'woff\');             font-style: normal;             font-weight: 700;         }          @media screen and (max-width: 480px) {             .container {max-width: 100% !important;}             .main {max-width: 90% !important;}             .faq-sec {padding: 10px !important;}             .product-sec{padding: 25px !important; text-align: justify !important;}             .border{width: 25% !important;}         }
+    </style>
+</head>
 
-  <head>
-      <title>Informative</title>
-      <style type="text/css">
-          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Light.ttf\') format(\'woff\');             font-style: normal;             font-weight: 300;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Regular.ttf\') format(\'woff\');             font-style: normal;             font-weight: 400;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Medium.ttf\') format(\'woff\');             font-style: normal;             font-weight: 500;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-SemiBold.ttf\') format(\'woff\');             font-style: normal;             font-weight: 600;         }          @font-face {             font-family: 'Jost', Arial;             src: url(\'https://devopsden.s3.ap-south-1.amazonaws.com/Attributics/Jost/Jost-Bold.ttf\') format(\'woff\');             font-style: normal;             font-weight: 700;         }          @media screen and (max-width: 480px) {             .container {max-width: 100% !important;}             .main {max-width: 90% !important;}             .faq-sec {padding: 10px !important;}             .product-sec{padding: 25px !important; text-align: justify !important;}             .border{width: 25% !important;}         }
-      </style>
-  </head>
+<body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" data-new-gr-c-s-loaded="14.1242.0" style="background: rgb(221, 221, 221); font-family: Jost, Arial, sans-serif; font-weight: 400; margin: 0px; padding: 0px; cursor: auto;">
+    <!-- Change Theme -->
+    <table border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 600px; margin: 0 auto; background-color: #FFFFFF;" width="100%">
+        <!-- header start-->
+        <tbody>
+            <tr>
+                <td style="text-align: center; vertical-align: middle; padding: 20px">
+                    <!-- Change Logo Image src as per your requirements --><img alt="Logo" class="logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="display: inline-block; width: 127px; height: 58px; object-fit: cover;" />
+                    <!-- Change Logo Image src as per your requirements -->
+                </td>
+            </tr>
+            <!-- header end-->
+            <!-- Banner Image -->
+            <tr>
+                <td style="padding:0px 10px;"><img alt="banner image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/informative/banner.png" style="width: 100%; height: 100%; max-height: 361px; object-fit: cover;" /></td>
+            </tr>
+            <!-- Banner Image -->
+            <!-- Product section -->
+            <tr>
+                <td class="product-sec" style="background: #DBCBB0; padding: 32px 46px; text-align: center; margin: 0px 10px; display: block;">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                        <tbody>
+                            <tr>
+                                <td style="text-align: center;">
+                                    <h2 style="text-transform: none;font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 24px; margin: 0 auto;">QUARTERLY UPDATES</h2>
 
-  <body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1242.0" data-new-gr-c-s-loaded="14.1242.0" style="background: rgb(221, 221, 221); font-family: Jost, Arial, sans-serif; font-weight: 400; margin: 0px; padding: 0px; cursor: auto;">
-      <!-- Change Theme -->
-      <table border="0" cellpadding="0" cellspacing="0" class="container" role="presentation" style="max-width: 600px; margin: 0 auto; background-color: #FFFFFF;" width="100%">
-          <!-- header start-->
-          <tbody>
-              <tr>
-                  <td style="text-align: center; vertical-align: middle; padding: 20px">
-                      <!-- Change Logo Image src as per your requirements --><img alt="Logo" class="logo" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/d4a286654d114089ac42fa2fa815ac3e.png" style="display: inline-block; width: 127px; height: 58px; object-fit: cover;" />
-                      <!-- Change Logo Image src as per your requirements -->
-                  </td>
-              </tr>
-              <!-- header end-->
-              <!-- Banner Image -->
-              <tr>
-                  <td style="padding:0px 10px;"><img alt="banner image" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/informative/banner.png" style="width: 100%; height: 100%; max-height: 361px; object-fit: cover;" /></td>
-              </tr>
-              <!-- Banner Image -->
-              <!-- Product section -->
-              <tr>
-                  <td class="product-sec" style="background: #DBCBB0; padding: 32px 46px; text-align: center; margin: 0px 10px; display: block;">
-                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                          <tbody>
-                              <tr>
-                                  <td style="text-align: center;">
-                                      <h2 style="text-transform: none;font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 24px; margin: 0 auto;">QUARTERLY UPDATES</h2>
+                                    <div style="border-bottom: 1px solid #252525; width: 80px; display: block; margin: 10px auto;"> </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="margin: 10px 0">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="padding: 10px; width: 100%;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <p style="margin: 0; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 24px; text-align: center; ">Stay in the loop with the latest updates from our company. From exciting launches to impactful milestones, here’s everything you need to know about how we’ve grown and evolved over the
+                                                                        last quarter.</p>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- product section -->
+            <!-- Information Section -->
+            <tr>
+                <td class="information-sec" style="background: #DBCBB0; padding: 15px; text-align: center; margin: 20px 10px; display: block;">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
+                        <tbody>
+                            <tr>
+                                <td style="text-align: center;">
+                                    <h2 style="text-transform: none;font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 24px; margin: 0 auto;">LATEST NEWS</h2>
 
-                                      <div style="border-bottom: 1px solid #252525; width: 80px; display: block; margin: 10px auto;"> </div>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td>
-                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="margin: 10px 0">
-                                          <tbody>
-                                              <tr>
-                                                  <td>
-                                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="padding: 10px; width: 100%;">
-                                                          <tbody>
-                                                              <tr>
-                                                                  <td>
-                                                                      <p style="margin: 0; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 24px; text-align: center; ">Stay in the loop with the latest updates from our company. From exciting launches to impactful milestones, here’s everything you need to know about how we’ve grown and evolved over the
-                                                                          last quarter.</p>
-                                                                  </td>
-                                                              </tr>
-                                                          </tbody>
-                                                      </table>
-                                                  </td>
-                                              </tr>
-                                          </tbody>
-                                      </table>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-              <!-- product section -->
-              <!-- Information Section -->
-              <tr>
-                  <td class="information-sec" style="background: #DBCBB0; padding: 15px; text-align: center; margin: 20px 10px; display: block;">
-                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin: 0 auto; width: 100%;">
-                          <tbody>
-                              <tr>
-                                  <td style="text-align: center;">
-                                      <h2 style="text-transform: none;font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 24px; margin: 0 auto;">LATEST NEWS</h2>
+                                    <div style="border-bottom: 1px solid #252525; width: 80px; display: block; margin: 10px auto;"> </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- Information Section -->
+            <!-- Product Updates Section -->
+            <tr>
+                <td class="information-sec" colspan="2" style="text-align: center; margin: 20px 10px; display: block;">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin-bottom: 15px;; width: 100%;">
+                        <tbody>
+                            <tr>
+                                <td style="width: 65%; background: #ffffff;  text-align: left; vertical-align: middle;">
+                                    <div style="padding:40px 16px; background: #DBCBB0;">
+                                        <h2 style="text-transform: none; margin: 0;font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #252525;">LEADERSHIP ANNOUNCEMENT</h2>
 
-                                      <div style="border-bottom: 1px solid #252525; width: 80px; display: block; margin: 10px auto;"> </div>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-              <!-- Information Section -->
-              <!-- Product Updates Section -->
-              <tr>
-                  <td class="information-sec" colspan="2" style="text-align: center; margin: 20px 10px; display: block;">
-                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin-bottom: 15px;; width: 100%;">
-                          <tbody>
-                              <tr>
-                                  <td style="width: 65%; background: #ffffff;  text-align: left; vertical-align: middle;">
-                                      <div style="padding:40px 16px; background: #DBCBB0;">
-                                          <h2 style="text-transform: none; margin: 0;font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #252525;">LEADERSHIP ANNOUNCEMENT</h2>
+                                        <div style="background: #252525; width: 60px;height: 1px; display: block; margin: 6px 0px 10px 0px"> </div>
 
-                                          <div style="background: #252525; width: 60px;height: 1px; display: block; margin: 6px 0px 10px 0px"> </div>
+                                        <p style="margin: 0; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 20px; text-align: left; ">We’re excited to welcome [New CEO Name] as our new CEO, now set to lead us into an exciting new chapter.</p>
+                                    </div>
+                                </td>
+                                <td style="width: 35%; text-align: right; vertical-align: middle;">
+                                    <div class="look-img"><img alt="look" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/informative/product1.png" style="width:100%; height: 100%; object-fit: contain;" /></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- Product Updates Section -->
+            <!-- Policy Changes Section -->
+            <tr>
+                <td class="information-sec" colspan="2" style="text-align: center; margin: 20px 10px; display: block;">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin-bottom: 15px; width: 100%;">
+                        <tbody>
+                            <tr>
+                                <td style="width: 35%; text-align: right; vertical-align: middle;">
+                                    <div class="look-img"><img alt="look" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/informative/product2.png" style="width:100%; height: 100%; object-fit: contain;" /></div>
+                                </td>
+                                <td style="width: 65%; background: #ffffff;  text-align: left; vertical-align: middle;">
+                                    <div style="padding:40px 16px; background: #DBCBB0;">
+                                        <h2 style="text-transform: none; margin: 0;font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #252525;">PRODUCT LAUNCH</h2>
 
-                                          <p style="margin: 0; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 20px; text-align: left; ">We’re excited to welcome [New CEO Name] as our new CEO, now set to lead us into an exciting new chapter.</p>
-                                      </div>
-                                  </td>
-                                  <td style="width: 35%; text-align: right; vertical-align: middle;">
-                                      <div class="look-img"><img alt="look" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/informative/product1.png" style="width:100%; height: 100%; object-fit: contain;" /></div>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-              <!-- Product Updates Section -->
-              <!-- Policy Changes Section -->
-              <tr>
-                  <td class="information-sec" colspan="2" style="text-align: center; margin: 20px 10px; display: block;">
-                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin-bottom: 15px; width: 100%;">
-                          <tbody>
-                              <tr>
-                                  <td style="width: 35%; text-align: right; vertical-align: middle;">
-                                      <div class="look-img"><img alt="look" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/informative/product2.png" style="width:100%; height: 100%; object-fit: contain;" /></div>
-                                  </td>
-                                  <td style="width: 65%; background: #ffffff;  text-align: left; vertical-align: middle;">
-                                      <div style="padding:40px 16px; background: #DBCBB0;">
-                                          <h2 style="text-transform: none; margin: 0;font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #252525;">PRODUCT LAUNCH</h2>
+                                        <div style="background: #252525; width: 60px;height: 1px; width: 60px; display: block; margin: 6px 0px 10px 0px"> </div>
 
-                                          <div style="background: #252525; width: 60px;height: 1px; width: 60px; display: block; margin: 6px 0px 10px 0px"> </div>
+                                        <p style="margin: 0; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 20px; text-align: left; ">We’re thrilled to introduce [Product Name], designed to make your experience even better.</p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- Policy Changes Section -->
+            <!-- Periodic Updates Section -->
+            <tr>
+                <td class="information-sec" colspan="2" style="text-align: center; margin: 20px 10px; display: block;">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin-bottom: 15px; width: 100%;">
+                        <tbody>
+                            <tr>
+                                <td style="width: 65%; background: #ffffff;  text-align: left; vertical-align: middle;">
+                                    <div style="padding:40px 16px; background: #DBCBB0;">
+                                        <h2 style="text-transform: none; margin: 0;font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #252525;">NEW MILESTONE</h2>
 
-                                          <p style="margin: 0; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 20px; text-align: left; ">We’re thrilled to introduce [Product Name], designed to make your experience even better.</p>
-                                      </div>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-              <!-- Policy Changes Section -->
-              <!-- Periodic Updates Section -->
-              <tr>
-                  <td class="information-sec" colspan="2" style="text-align: center; margin: 20px 10px; display: block;">
-                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 100%; margin-bottom: 15px; width: 100%;">
-                          <tbody>
-                              <tr>
-                                  <td style="width: 65%; background: #ffffff;  text-align: left; vertical-align: middle;">
-                                      <div style="padding:40px 16px; background: #DBCBB0;">
-                                          <h2 style="text-transform: none; margin: 0;font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #252525;">NEW MILESTONE</h2>
+                                        <div style="background: #252525; width: 60px;height: 1px; display: block; margin: 6px 0px 10px 0px"> </div>
 
-                                          <div style="background: #252525; width: 60px;height: 1px; display: block; margin: 6px 0px 10px 0px"> </div>
+                                        <p style="margin: 0; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 20px; text-align: left; ">We’ve hit an incredible milestone — our company now serves over 2 million customers worldwide!</p>
+                                    </div>
+                                </td>
+                                <td style="width: 35%; text-align: right; vertical-align: middle;">
+                                    <div class="look-img"><img alt="look" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/informative/product3.png" style="width:100%; height: 100%; object-fit: contain;" /></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- Periodic Updates Section -->
+            <!-- Shop Now-->
+            <!-- Shop Now-->
+            <tr>
+                <td>
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%;">
+                        <tbody>
+                            <tr>
+                                <td style="width: 100%; text-align: center; vertical-align: middle;">
+                                    <a display_text_og="READ%20MORE" href="#" href_og="%23" style="font-family: Jost, Arial, sans-serif; font-size: 16px; font-weight: 400; text-transform: none; line-height: 24px; text-decoration: none; background: rgb(154, 119, 89); padding: 4px 34px; display: inline-block; text-align: center; max-width: 167px; color: rgb(255, 255, 255) !important;">READ MORE</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- Footer Section -->
+            <tr>
+                <td align="center" colspan="2" style="padding-top: 50px;">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%; background: #543F2D; padding: 25px 0 25px;">
+                        <tbody>
+                            <tr>
+                                <td style="padding: 0;">
+                                    <table align="center" cellpadding="0" cellspacing="0" style="text-align: center;" width="100%">
+                                        <!-- Add Links -->
+                                        <!-- Download Android Section -->
+                                        <tbody>
+                                            <tr>
+                                                <td class="border" style="width:36%;">
+                                                    <div style="display: block; border:1px solid #DBCBB0;"> </div>
+                                                </td>
+                                                <td style="padding: 10px 10px; display: inline-block;">
+                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 20px; height: 20px; ">
+                                                        <!-- Change image src as per your requirements --><img alt="instagram" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/3c09a826b3cd4920aa1230c7df32f91b.png" style="width: 100%; height: 100%;" /></a>
+                                                </td>
+                                                <td style="padding: 10px 10px; display: inline-block; ">
+                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 20px; height: 20px;"><img alt="facebook" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/18c1b92ff17443f38388d771deef565a.png" style="width: 100%; height: 100%;" /></a>
+                                                </td>
+                                                <td style="padding: 10px 10px; display: inline-block;">
+                                                    <a href="#" style="vertical-align: middle;display: inline-block; width: 20px; height: 20px;"><img alt="x" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/094eeb00e51f41b0a1ff5d845e6d3b2c.png" style="width: 100%; height: 100%;" /></a>
+                                                </td>
+                                                <td class="border" style="width:36%;">
+                                                    <div style="display: block; border:1px solid #DBCBB0;"> </div>
+                                                </td>
+                                            </tr>
+                                            <!-- Download Android Section -->
+                                            <!-- Add Links -->
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- Footer Section -->
+            <!-- FAQS start-->
+            <tr>
+                <td align="center" colspan="2" style="margin-top: 10px; display: block;">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%; background: #543F2D; padding: 25px 0 25px;">
+                        <tbody>
+                            <tr>
+                                <td style="text-align: center;">
+                                    <h2 style="text-transform: none;font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 24px; margin: 0 auto; color:#ffffff">FAQ&#39;s</h2>
 
-                                          <p style="margin: 0; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 20px; text-align: left; ">We’ve hit an incredible milestone — our company now serves over 2 million customers worldwide!</p>
-                                      </div>
-                                  </td>
-                                  <td style="width: 35%; text-align: right; vertical-align: middle;">
-                                      <div class="look-img"><img alt="look" src="https://d1qzvqecfo5h8o.cloudfront.net/images/67Z-875-RR7Z/informative/product3.png" style="width:100%; height: 100%; object-fit: contain;" /></div>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-              <!-- Periodic Updates Section -->
-              <!-- Shop Now-->
-              <!-- Shop Now-->
-              <tr>
-                  <td>
-                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%;">
-                          <tbody>
-                              <tr>
-                                  <td style="width: 100%; text-align: center; vertical-align: middle;">
-                                      <a display_text_og="READ%20MORE" href="#" href_og="%23" style="font-family: Jost, Arial, sans-serif; font-size: 16px; font-weight: 400; text-transform: none; line-height: 24px; text-decoration: none; background: rgb(154, 119, 89); padding: 4px 34px; display: inline-block; text-align: center; max-width: 167px; color: rgb(255, 255, 255) !important;">READ MORE</a>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-              <!-- Footer Section -->
-              <tr>
-                  <td align="center" colspan="2" style="padding-top: 50px;">
-                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%; background: #543F2D; padding: 25px 0 25px;">
-                          <tbody>
-                              <tr>
-                                  <td style="padding: 0;">
-                                      <table align="center" cellpadding="0" cellspacing="0" style="text-align: center;" width="100%">
-                                          <!-- Add Links -->
-                                          <!-- Download Android Section -->
-                                          <tbody>
-                                              <tr>
-                                                  <td class="border" style="width:36%;">
-                                                      <div style="display: block; border:1px solid #DBCBB0;"> </div>
-                                                  </td>
-                                                  <td style="padding: 10px 10px; display: inline-block;">
-                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 20px; height: 20px; ">
-                                                          <!-- Change image src as per your requirements --><img alt="instagram" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/3c09a826b3cd4920aa1230c7df32f91b.png" style="width: 100%; height: 100%;" /></a>
-                                                  </td>
-                                                  <td style="padding: 10px 10px; display: inline-block; ">
-                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 20px; height: 20px;"><img alt="facebook" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/18c1b92ff17443f38388d771deef565a.png" style="width: 100%; height: 100%;" /></a>
-                                                  </td>
-                                                  <td style="padding: 10px 10px; display: inline-block;">
-                                                      <a href="#" style="vertical-align: middle;display: inline-block; width: 20px; height: 20px;"><img alt="x" src="https://d3eqyohhnb5anr.cloudfront.net/1722578176/assets/094eeb00e51f41b0a1ff5d845e6d3b2c.png" style="width: 100%; height: 100%;" /></a>
-                                                  </td>
-                                                  <td class="border" style="width:36%;">
-                                                      <div style="display: block; border:1px solid #DBCBB0;"> </div>
-                                                  </td>
-                                              </tr>
-                                              <!-- Download Android Section -->
-                                              <!-- Add Links -->
-                                          </tbody>
-                                      </table>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-              <!-- Footer Section -->
-              <!-- FAQS start-->
-              <tr>
-                  <td align="center" colspan="2" style="margin-top: 10px; display: block;">
-                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%; background: #543F2D; padding: 25px 0 25px;">
-                          <tbody>
-                              <tr>
-                                  <td style="text-align: center;">
-                                      <h2 style="text-transform: none;font-family: 'Jost', Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 24px; margin: 0 auto; color:#ffffff">FAQ&#39;s</h2>
+                                    <div style="border-bottom: 1px solid #DBCBB0; width: 80px; display: block; margin: 10px auto;"> </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="faq-sec" style="padding: 10px 100px;">
+                                    <table align="center" cellpadding="0" cellspacing="0" style="text-align: center;" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td style="background: #DBCBB0; padding: 10px; margin-bottom: 5px; display: block;">
+                                                    <p style="margin: 0; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; text-align: left; ">FAQ 1</p>
 
-                                      <div style="border-bottom: 1px solid #DBCBB0; width: 80px; display: block; margin: 10px auto;"> </div>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td class="faq-sec" style="padding: 10px 100px;">
-                                      <table align="center" cellpadding="0" cellspacing="0" style="text-align: center;" width="100%">
-                                          <tbody>
-                                              <tr>
-                                                  <td style="background: #DBCBB0; padding: 10px; margin-bottom: 5px; display: block;">
-                                                      <p style="margin: 0; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; text-align: left; ">FAQ 1</p>
+                                                    <p style="margin: 0; color: #494949; font-family: 'Jost', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 20px; text-align: left; "><strong data-renderer-mark="true">What does the change in leadership mean for customers?</strong></p>
 
-                                                      <p style="margin: 0; color: #494949; font-family: 'Jost', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 20px; text-align: left; "><strong data-renderer-mark="true">What does the change in leadership mean for customers?</strong></p>
+                                                    <p style="margin: 0; color: #494949; font-family: 'Jost', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 20px; text-align: left; ">The new CEO brings fresh perspectives, ensuring a better experience for all customers</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="background: #DBCBB0; padding: 10px; margin-bottom: 5px; display: block;">
+                                                    <p style="margin: 0; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; text-align: left; ">FAQ 2</p>
 
-                                                      <p style="margin: 0; color: #494949; font-family: 'Jost', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 20px; text-align: left; ">The new CEO brings fresh perspectives, ensuring a better experience for all customers</p>
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <td style="background: #DBCBB0; padding: 10px; margin-bottom: 5px; display: block;">
-                                                      <p style="margin: 0; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; text-align: left; ">FAQ 2</p>
+                                                    <p style="margin: 0;  color: #494949; font-family: 'Jost', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 20px; text-align: left; "><strong data-renderer-mark="true">What makes [New Product Name] unique?</strong></p>
 
-                                                      <p style="margin: 0;  color: #494949; font-family: 'Jost', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 20px; text-align: left; "><strong data-renderer-mark="true">What makes [New Product Name] unique?</strong></p>
+                                                    <p style="margin: 0; color: #494949; font-family: 'Jost', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 20px; text-align: left; ">[New Product Name] offers cutting-edge features designed to streamline your experience. Learn more about it on our website.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="background: #DBCBB0; padding: 10px; margin-bottom: 5px; display: block;">
+                                                    <p style="margin: 0; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; text-align: left; ">FAQ 3</p>
 
-                                                      <p style="margin: 0; color: #494949; font-family: 'Jost', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 20px; text-align: left; ">[New Product Name] offers cutting-edge features designed to streamline your experience. Learn more about it on our website.</p>
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <td style="background: #DBCBB0; padding: 10px; margin-bottom: 5px; display: block;">
-                                                      <p style="margin: 0; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; text-align: left; ">FAQ 3</p>
+                                                    <p style="margin: 0; color: #494949; font-family: 'Jost', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 20px; text-align: left; "><strong data-renderer-mark="true">How can I try out the new product?</strong></p>
 
-                                                      <p style="margin: 0; color: #494949; font-family: 'Jost', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 20px; text-align: left; "><strong data-renderer-mark="true">How can I try out the new product?</strong></p>
+                                                    <p style="margin: 0; color: #494949; font-family: 'Jost', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 20px; text-align: left; ">You can explore [New Product Name] by visiting our website or contacting our team for a demo.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="background: #DBCBB0; padding: 10px; display: block;">
+                                                    <p style="margin: 0; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; text-align: left; ">FAQ 4</p>
 
-                                                      <p style="margin: 0; color: #494949; font-family: 'Jost', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 20px; text-align: left; ">You can explore [New Product Name] by visiting our website or contacting our team for a demo.</p>
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <td style="background: #DBCBB0; padding: 10px; display: block;">
-                                                      <p style="margin: 0; text-transform: none; color: #000000; font-family: 'Jost', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; text-align: left; ">FAQ 4</p>
+                                                    <p style="margin: 0; color: #494949; font-family: 'Jost', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 20px; text-align: left; "><strong data-renderer-mark="true">How can I learn more about these updates?</strong></p>
 
-                                                      <p style="margin: 0; color: #494949; font-family: 'Jost', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 20px; text-align: left; "><strong data-renderer-mark="true">How can I learn more about these updates?</strong></p>
+                                                    <p style="margin: 0; color: #494949; font-family: 'Jost', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 20px; text-align: left; ">Simply click “READ MORE” to dive deeper into each update.</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- FAQS end-->
+            <tr>
+                <td style="padding: 20px 0;">
+                    <p style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #494949;">To opt out of promotional emails like this,
+                        <a href="#" style="color:#543F2D;font-weight:bold;text-decoration:none;">unsubscribe here</a>
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+</body>
+```
 
-                                                      <p style="margin: 0; color: #494949; font-family: 'Jost', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 20px; text-align: left; ">Simply click “READ MORE” to dive deeper into each update.</p>
-                                                  </td>
-                                              </tr>
-                                          </tbody>
-                                      </table>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
-              <!-- FAQS end-->
-              <tr>
-                  <td style="padding: 20px 0;">
-                      <p style="font-size: 14px; font-weight: 400; line-height: 24px; text-align: center; color: #494949;">To opt out of promotional emails like this,
-                          <a href="#" style="color:#543F2D;font-weight:bold;text-decoration:none;">unsubscribe here</a>
-                      </p>
-                  </td>
-              </tr>
-          </tbody>
-      </table>
-      <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
-  </body>
-
-  </html>
-  ```
-</details>
+  
+</Accordion>
 
 ## Loyalty Points Update Template
 
