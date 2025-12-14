@@ -7892,30 +7892,28 @@ This AMP template adds a fun, gamified interaction to your email by letting user
 
 <Image align="center" alt="Sample Spin and Win Template" border={true} caption="Sample Spin and Win Template" src="https://files.readme.io/594d05fecaa9eed2dbcebb6afc6d2a4ccf4afc92200373f4a5f94e9c72c40e42-Spin_and_Win_AMP.png" width="35% " />
 
-<details>
-  <summary><b>Expand to know more about the template.</b></summary>
+<Accordion title="My Accordion Title" icon="fa-info-circle">
 
-  ### Use Case Examples
+### Use Case Examples
 
-  * Drive conversions during sales events or festivals with spin-to-win deals.
-  * Run promotional campaigns that reward users with random offers.
-  * Re-engage dormant users with a playful incentive.
-  * Launch loyalty or referral-based programs with interactive rewards.
+* Drive conversions during sales events or festivals with spin-to-win deals.
+* Run promotional campaigns that reward users with random offers.
+* Re-engage dormant users with a playful incentive.
+* Launch loyalty or referral-based programs with interactive rewards.
 
-  ### Template Customization Options
+### Template Customization Options
 
-  * [Replace Logo](doc:ootb-email-templates#replace-logo)
-  * [Replace Background](doc:ootb-email-templates#replace-background)
-  * [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
-  * [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
-  * [Update Links in Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
-  * [Update Social Media and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
+* [Replace Logo](doc:ootb-email-templates#replace-logo)
+* [Replace Background](doc:ootb-email-templates#replace-background)
+* [Update Banner/Product Images](doc:ootb-email-templates#update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](doc:ootb-email-templates#update-call-to-actions-ctas)
+* [Update Links in Header/Footer](doc:ootb-email-templates#update-links-in-headerfooter)
+* [Update Social Media and Download Links](doc:ootb-email-templates#update-social-media-links-and-download-links)
 
-  ### Template Code
+### Template Code
 
-  ```html
-  <!DOCTYPE html>
-  <html ⚡4email data-css-strict>
+```html
+<html ⚡4email data-css-strict>
 
   <head>
   <meta charset="utf-8" />
@@ -8395,8 +8393,9 @@ This AMP template adds a fun, gamified interaction to your email by letting user
   </body>
 
   </html>
-  ```
-</details>
+```
+
+</Accordion>
 
 ## Quick Survey Form Template
 
@@ -8404,9 +8403,8 @@ This AMP template collects valuable user information and preferences for a more 
 
 <Image align="center" alt="Sample Customer Survey Form Template" border={true} caption="Sample Customer Survey Form Template" src="https://files.readme.io/73047359b602a87553b6b35c1c1a3431b7c98adfdd1a49a304c04ae15ec570d8-Customer_Survey_-1_AMP.png" width="25% " />
 
-<details>
-  <summary><b>Expand to know more about the template.</b></summary>
-
+<Accordion title="My Accordion Title" icon="fa-info-circle">
+  
   ### Use Case Examples
 
   * Gather customer preferences (for example, gender, favorite clothing items) to drive personalized product recommendations.
@@ -9744,7 +9742,7 @@ This AMP template collects valuable user information and preferences for a more 
   </body>
   </html>
   ```
-</details>
+</Accordion>
 
 ## Feedback Form Template
 
