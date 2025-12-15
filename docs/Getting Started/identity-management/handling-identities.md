@@ -100,5 +100,5 @@ If the app is required to be GDPR compliant or if you do not want to use the Goo
 
 When creating the CleverTap ID using the custom identifier, the format is the following: 
 
-* \_\_h<unique id> for Android
-* \-h<unique id> for iOS
+* `\_\_h<unique id>` for Android
+* `\-h<unique id>` for iOS
