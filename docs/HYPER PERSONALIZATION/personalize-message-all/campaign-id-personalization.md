@@ -35,8 +35,6 @@ Campaign ID personalization is a feature that associates distinct campaign IDs w
               style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 `}</HTMLBlock>
 
-<br />
-
 # Use Cases
 
 The following are some of the use cases that this feature solves:
