@@ -20,58 +20,57 @@ The **Brand Kit** helps ensure consistency across all generated assets, includin
 
 The following are the benefits of using a Brand Kit for your assets:
 
-* Automatic application of brand-specific colors, typography, and button styles. 
-* Consistent look and feel across all content and visuals.
-* Faster approvals and campaign iterations. 
-* Easy scaling of campaigns while preserving brand recognition.
-* Smarter content reuse with Campaign Lookback, enabling AI to learn from past campaign language and styles.
+* Ensures automatic application of brand-specific colors, typography, and styles, maintaining a consistent look and feel across all content and visuals.
+* Reduces back-and-forth during reviews by enforcing brand rules upfront, ensuring faster approvals and on-brand creative output.
+* Scales campaign creation across regions and teams without diluting brand identity.
+* Smarter content reuse with Campaign Lookback (for content only), enabling the AI to learn from past campaign tone and messaging patterns.
 * Reduced dependency on the Copy and Design teams, enabling faster campaign iterations.
-
-> 📘 **Modifying Brand Kit**
->
-> Any updates made to a Brand Kit apply automatically across AI Copywriter and Designer Agent once published.
 
 # Accessing Brand Kit
 
-You can access and manage Brand Kits from the Content Manager section of your account. Only users with CMS Brand Kit access can view or edit Brand Kits. Brand Kit permissions are managed through CMS role-based access control (RBAC) as follows:
+You can access and manage Brand Kits from the Content Manager section of your account. Only users with CMS Brand Kit access can view or edit Brand Kits. Brand Kit permissions are managed through CMS Role-Based Access Control (RBAC) as follows:
 
-| Role Type                                                 | Default Access | Description                                                                                                    |
-| --------------------------------------------------------- | -------------- | -------------------------------------------------------------------------------------------------------------- |
-| Admin                                                     | Read and Write | Full control to create, edit, clone, or delete Brand Kits. Changes apply across all AI tools once published.   |
-| System Roles                                              | Read-only      | Can view Brand Kits but cannot edit or create new ones.                                                        |
-| Custom Roles (for example, Content Manager, Content Head) | Configurable   | Access can be customized based on organizational needs. Admins can enable or restrict Create/Edit permissions. |
+| Role Type                                              | Default Access | Description                                                                                                    |
+| ------------------------------------------------------ | -------------- | -------------------------------------------------------------------------------------------------------------- |
+| Admin                                                  | Read and Write | Full control to create, edit, clone, or delete Brand Kits. Changes apply across all AI tools once published.   |
+| System Roles (for example, Admin, Marketing Manager)   | Read-only      | Can view Brand Kits but cannot edit or create new ones.                                                        |
+| Custom Roles (for example, Content Executive, Analyst) | Configurable   | Access can be customized based on organizational needs. Admins can enable or restrict Create/Edit permissions. |
 
 ## Brand Kit Access in Teams
 
-Team-based Brand Kit access is currently available in Private Beta and visible only to accounts with Teams enabled. For more information on how Teams works, refer to [Teams Setup](https://docs.clevertap.com/docs/teams-setup). 
+Teams is a separate feature currently available in Private Beta. Team-based Brand Kit access is visible only to accounts where Teams is enabled. When **Teams** is not enabled, all users in the account can view every available Brand Kit. For more information on how Teams works, refer to [Teams Setup](https://docs.clevertap.com/docs/teams-setup).
 
-| User Scenario                       | Brand Kit Visibility                                       | Description                                                                                                                                                                                                                       |
-| ----------------------------------- | ---------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Team A user (Teams enabled)**     | Team A kits + kit with all teams access                    | Can access Brand Kits assigned to their team, as well as any kit with all teams access available across the account.                                                                                                              |
-| **Team B user (Teams not enabled)** | Kit with all teams access                                  | Can view and use only the global Brand Kits configured at the account level.                                                                                                                                                      |
-| **Admin user**                      | Kits for their logged-in team + kits with all teams access | Admins can view all Brand Kits assigned to the team they are currently logged in with, along with any kits that have all teams access. Admins cannot view kits exclusive to other teams unless logged in with that specific team. |
+Refer to the following table for more details:
+
+| **Scenario**                      | **Brand Kits Available** | **Description**                                                                                                                                                                            |
+| --------------------------------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Team A user**                   | 4 kits                   | Team A has 1 team-specific Brand Kit and there are 3 Brand Kits with all Teams access. The user sees all 4 brand kits.                                                                     |
+| **Team B user**                   | 4 kits                   | Team B has 1 team-specific Brand Kit and there are 3 Brand Kits with all Teams access. The user sees all 4 brand kits.                                                                     |
+| **Admin (logged in with Team A)** | 4 kits                   | Admins see Brand Kits assigned to the team they’re logged in with (Team A) plus all kits with all Teams access. To view kits assigned to another team, the admin must switch to that team. |
+
+<Callout icon="📘" theme="info">
+  **Brand Kit Precedence**
+
+  When generating or editing images or content, the selected Brand Kit always takes precedence over text prompts. If a prompt conflicts with the Brand Kit’s settings (for example, color codes, or tone), AI prioritizes the Brand Kit.
+
+  For example, if your Brand Kit specifies that the phrase “Risk-free” should not be used, even if a user includes it in the prompt, the AI will automatically avoid it in the generated output. This ensures all generated assets stay on-brand and aligned with your company’s approved guidelines.
+</Callout>
 
 # Create Brand Kit
 
-Admins and content owners define elements such as logos, brand colors, button styles, and content guidelines to ensure that every AI-generated asset aligns with your brand identity.
+Admins and content team members who have access to Brand Kit define elements such as logos, brand colors, button styles, and content guidelines to ensure that every AI-generated asset aligns with your brand identity.
 
 To create a new Brand Kit, perform the following steps:
 
-1. Go to *Content Manager* > *Brand Kit* and click **Add Brand Kit**. 
+1. Go to _Content Manager_ > _Brand Kit_ and click **Add Brand Kit**.
 
-<Image alt="Add Brand Kit" align="center" border={true} src="https://files.readme.io/ff5a845b1c5609c09b13c0208e9c02c23ba4279706f9364e99f3915a9471763b-Screenshot_2025-12-03_at_1.12.58PM.png">
-  Add Brand Kit
-</Image>
+<Image align="center" alt="Add Brand Kit" border={true} caption="Add Brand Kit" src="https://files.readme.io/ff5a845b1c5609c09b13c0208e9c02c23ba4279706f9364e99f3915a9471763b-Screenshot_2025-12-03_at_1.12.58PM.png" />
 
-2. Enter the brand details such as *Setup, Content Guidelines, and Image Guidelines* and click **Create**.
+2. Enter the brand details such as _Setup, Content Guidelines, and Image Guidelines_ and click **Create**.
 
-<Image alt="Create Brand Kit" align="center" width="65% " border={true} src="https://files.readme.io/548eaa09b6a7d5a205a8c05c4ece1c0231da09853628eabe8baae985c62757b9-image.png">
-  Enter Brand Kit Details
-</Image>
+<Image align="center" alt="Create Brand Kit" border={true} caption="Enter Brand Kit Details" src="https://files.readme.io/548eaa09b6a7d5a205a8c05c4ece1c0231da09853628eabe8baae985c62757b9-image.png" width="65% " />
 
-## Brand Kit Fields
-
-Refer to the following table for details on the brand kit fields:
+Enter the following Brand Kit details:
 
 <Table align={["left","left","left","left"]}>
   <thead>
@@ -109,7 +108,7 @@ Refer to the following table for details on the brand kit fields:
       </td>
 
       <td>
-        This is the only mandatory field. All other fields are optional.
+        Character Limit: 150
       </td>
     </tr>
 
@@ -123,11 +122,13 @@ Refer to the following table for details on the brand kit fields:
       </td>
 
       <td>
-        When turned on, this prevents users from editing brand settings in campaign flows. Locking ensures brand consistency across global teams and eliminates off-brand variations.
+        When enabled, this prevents users from editing brand settings when creating a campaign. Locking ensures brand consistency across global teams and eliminates off-brand variations.
       </td>
 
       <td>
-        If you want every AI-generated image or content asset to strictly follow brand guidelines, you can lock the Brand Kit. Prompts that conflict with brand settings will automatically use the brand-defined option. For example, if your Brand Kit defines a red primary color and a user’s prompt requests a blue background, the AI will use red. Only admins can unlock or update a locked kit.
+        * If you want to prevent users from overriding brand settings, you can lock the Brand Kit.
+        * When prompts include details that conflict with your Brand Kit, the AI will give precedence to the Brand Kit settings.
+        * Only users with Brand Kit access can unlock or update a locked kit.
       </td>
     </tr>
 
@@ -159,11 +160,13 @@ Refer to the following table for details on the brand kit fields:
       </td>
 
       <td>
-        Controls how much creative variation the AI introduces based on insights from your past campaigns. A higher creativity level allows the AI to draw broader inspiration from previous messaging and design styles, while lower levels maintain closer alignment with your brand kit settings.
+        Controls the level of reliance on past campaign references versus creative freshness in AI-generated output. Set it _High_ for more creative experimentation, or _Low_ for outputs that stay tightly within your Brand Kit.
       </td>
 
       <td>
-        * \*Low:**AI adheres closely to your Brand Kit (safe, consistent).<br />**&#x4D;edium:**Balanced — allows small creative deviations for variety.<br />**&#x48;igh:\*\* Gives AI more freedom to explore alternate tones or visuals.
+        * **Low**: Stays very close to your Brand Kit.
+        * **Medium**: Allows small creative tweaks to add variety.
+        * **High**: Provides the AI with the freedom to explore various tones and visuals.
       </td>
     </tr>
 
@@ -199,7 +202,9 @@ Refer to the following table for details on the brand kit fields:
       </td>
 
       <td>
-        Example: “Use active voice, prefer ‘affordable’ over ‘cheap,’ avoid gendered or racial terms.”
+        Content and Image Guidelines each have a 500-character limit.
+
+        **Example**: “Use active voice, prefer ‘affordable’ over ‘cheap,’ avoid gendered or racial terms.”
       </td>
     </tr>
 
@@ -217,7 +222,8 @@ Refer to the following table for details on the brand kit fields:
       </td>
 
       <td>
-        You can upload via **URL** or select from the **Content Manager**. Supported file types: `.png`, `.jpeg`, `.jpg`, `.pdf` (Max size: 2 MB per file).
+        * You can select a file from the **Content Manager**. You can also add images to the content manager from the device storage.
+        * **Supported file types**: `.png`, `.jpeg`, `.jpg`, `.pdf` (Max size: 2 MB per file).
       </td>
     </tr>
 
@@ -253,7 +259,8 @@ Refer to the following table for details on the brand kit fields:
       </td>
 
       <td>
-        Default: Black (#000000). Used for CTAs or highlights in campaign visuals.
+        * Default: Black (#000000).
+        * Used for CTAs or highlights in campaign visuals.
       </td>
     </tr>
 
@@ -271,18 +278,20 @@ Refer to the following table for details on the brand kit fields:
       </td>
 
       <td>
-        Example: “Use minimal design, clean layouts, and product-first focus. Avoid excessive gradients or heavy shadows.”
+        **Example**: “Use minimal design, clean layouts, and product-first focus. Avoid excessive gradients or heavy shadows.”
       </td>
     </tr>
   </tbody>
 </Table>
 
-> 📘 Note
->
-> * Maximum **10 Brand Kits** can be configured per account.
-> * Each Brand Kit is stored at the **account level** and applies across all channels once enabled.
-> * Create separate Brand Kits for each brand, sub-brand, or seasonal campaign.
-> * Use meaningful kit names. For example, Diwali Offers, Luxe Collection, and so on.
+<Callout icon="📘" theme="info">
+  **Note**
+
+  * Maximum **10 Brand Kits** can be configured per account.
+  * Each Brand Kit is stored at the **account level** and applies across all AI generated content once enabled.
+  * Any updates made to a Brand Kit apply automatically across AI Copywriter and Designer Agent once published.
+  * Create separate Brand Kits for each brand, region, or business unit. Use clear, meaningful names to help teams quickly identify the right kit when creating campaigns, for example, InstantMart, Insurance, or Ticket Booking.
+</Callout>
 
 # Manage Brand Kits
 
@@ -296,43 +305,28 @@ From the **Brand Kit** page, you can:
 
 To edit an existing Brand Kit, perform the following steps:
 
-1. Click ![](https://files.readme.io/213881709f49a2867e2c7698fc0b3ecf1f750323d98d98a4431a8425b1413af7-ellipses_icon.png) icon and select *Edit*. 
+1. Click ![](https://files.readme.io/213881709f49a2867e2c7698fc0b3ecf1f750323d98d98a4431a8425b1413af7-ellipses_icon.png) icon and select _Edit_.
 
-<Image alt="Edit Brand Kit" align="center" width="80% " border={true} src="https://files.readme.io/111ba1fbe586d322e7c3d314792991e6aecfec6f837694d1d0a543b1057f0628-Edit_Brand_Kit.png">
-  Edit Brand Kit Details
-</Image>
+<Image align="center" alt="Edit Brand Kit" border={true} caption="Edit Brand Kit Details" src="https://files.readme.io/111ba1fbe586d322e7c3d314792991e6aecfec6f837694d1d0a543b1057f0628-Edit_Brand_Kit.png" width="80% " />
 
 2. Modify the required details and click **Save**.
 
-<Image alt="Edit Setup" align="center" width="65% " border={true} src="https://files.readme.io/92e5631734e738d49ea5da226e1ef5da88c46e55c592ec8258f1ca17eb6540f7-image.png">
-  Edit Brand Kit
-</Image>
-
-> 📘 **Brand Kit Precedence**
->
-> When generating or editing images or content, the selected Brand Kit always takes precedence over text prompts. If a prompt conflicts with the Brand Kit’s settings (for example, color codes, borders, or tone), AI prioritizes the Brand Kit.
->
-> For example, if your Brand Kit specifies a red border and the prompt requests a blue one, the generated image uses red, maintaining your brand consistency.
+<Image align="center" alt="Edit Setup" border={true} caption="Edit Brand Kit" src="https://files.readme.io/92e5631734e738d49ea5da226e1ef5da88c46e55c592ec8258f1ca17eb6540f7-image.png" width="65% " />
 
 # Best Practices for Defining Brand Kit Guidelines
 
 Use the Instructions field to clearly express what your brand stands for and how your content should feel. These guidelines enable the AI to select the appropriate tone, wording, and visual direction for all generated content.
 
-> 📘 Note
->
-> Content and Image Guidelines each have a 500-character limit.
-
 Follow these best practices listed below when defining your Brand Kit guidelines:
 
-* Define your core brand traits, such as trustworthy, friendly, premium, or bold, so the AI understands the tone to maintain.
-* Specify how your brand communicates (simple, direct, conversational, formal, and so on), not exact copy examples.
-* Explain the type of content your brand prefers, for example, informative, inspiring, actionable, playful, and so on.
+* Define your brand’s tone and communication style. Describe how your brand should sound and feel (for example, trustworthy, conversational, premium, inspiring, and so on). This helps the AI maintain consistent tonality across all content and imagery.
+* Add clear instructions for copy and image generation. The more details you provide, the more accurately the AI can generate brand-aligned content and images.
 * Clarify visual intent for images, such as mood, color direction, and overall feel (for example, clean, modern, high-contrast).
 * Note any boundaries or must-avoid areas, including regulatory or compliance requirements.
 
 ## Sample Instructions
 
-These are example instruction sets you can pre-fill in the Instructions field under *Content Guidelines* and *Image Guidelines* in the Brand Kit. This helps AI understand the preferred tone, style, and visual direction of the brand.
+These are example instruction sets you can pre-fill in the Instructions field under _Content Guidelines_ and _Image Guidelines_ in the Brand Kit. This helps AI understand the preferred tone, style, and visual direction of the brand.
 
 | Industry                         | Content Guidelines                                                                                                                                                                    | Image Guidelines                                                                                                                                                           |
 | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -347,7 +341,7 @@ These are example instruction sets you can pre-fill in the Instructions field un
 
 ### Can I edit or clone a Brand Kit later?
 
-Yes. You can edit all fields or clone a kit to create a new variant with similar settings.
+Yes. If you have access to edit the Brand Kit, then you can edit all fields or clone a kit to create a new variant with similar settings.
 
 ### How many Brand Kits can I create?
 
@@ -357,13 +351,9 @@ You can create up to **10 Brand Kits** per account.
 
 Yes. You can assign it to a single team or make it Global, so all teams can use it. Teams feature is in Private Beta. For more information, refer to Teams.
 
-### Can I edit Brand Kits later?
-
-Yes. All fields, including name, team, and brand assets, are editable during Edit Mode.
-
 ### What happens if I lock a Brand Kit?
 
-Locked kits ensure that all AI-generated visuals and content adhere to brand rules. Users cannot override these settings in campaign flows.
+Locking a Brand Kit prevents users from editing or overriding its settings during campaign creation or image generation flow. When unlocked, users can make temporary, campaign-level edits (like adjusting colors or buttons). These changes apply only to that campaign and do not modify the Brand Kit itself. Whether locked or unlocked, Brand Kit settings always take precedence over prompt inputs or AI variations.
 
 ### What happens if I try to create something outside the Brand Kit settings?
 
