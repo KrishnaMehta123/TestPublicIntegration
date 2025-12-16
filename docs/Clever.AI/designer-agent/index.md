@@ -76,7 +76,7 @@ To generate an image using prompts:
    * Enter follow-up prompts in the same chat thread to refine the image.
    * To edit an existing image, go to the Message Editor, click **Upload**, and select the image. Click ![](https://files.readme.io/3dd08bfdc757b30950b16c701f01b8970b5ddec566c161e93cb3c1081ee73e60-Edit_icon.png) and describe the change you want to make (for example, Change CTA text from "Watch Live" to “Watch Now”). Each refinement creates a new version saved in your Threads history, allowing you to revisit or reuse past iterations.
 
-* <Image align="center" alt="Edit Generated Image" border={true} caption="Edit Generated Image" src="https://files.readme.io/01e7233196e05a2a68213836230306770b3d994a7555e64bdfbfb041c577dde2-Edit_Generated_Image.gif" />
+<Image align="center" border={true} caption="Edit Generated Image" src="https://files.readme.io/56e6f65f6ee6b65114011d2bd974fc24f168fc111754f3e6141a771a6a0773d1-2025-12-15_17-34-36_2.gif" />
 
 > 📘 Why detailed prompts matter?
 >
