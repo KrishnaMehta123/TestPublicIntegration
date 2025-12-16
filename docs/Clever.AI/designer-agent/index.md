@@ -87,25 +87,22 @@ To generate an image using prompts:
 To generate an image using a reference image, perform the following steps:
 
 1. Open your Push Notification campaign editor.
-2. For Android, click **![](https://files.readme.io/935fb6454c1119d8ecbbcb60baaa21dd7d7fbd62688f5c4fc3a5590b17a9c46e-Clever_AI_icon.png)Generate with AI** for the _Expanded image_ or _Large icon_ fields. For iOS, click **![](https://files.readme.io/de594698e41f816505d7fb2148204b4ce6f2f581d952289e89b9d9022fe5015d-Clever_AI_icon.png)Generate with AI**  for the _Rich media_ field.
-3. Click **Generate Image**. The Generate Image window opens.
-4. Click ![](https://files.readme.io/7c39b5787600b7ac069bc4f2f78a6f3f0304bd3c3cc04eef082aa945c714fdf8-Plus_Icon.png) to select an existing banner from CMS.
-
-<Image align="center" alt="Generate Image Using Reference Image" border={true} caption="Generate Image Using Reference Image" src="https://files.readme.io/e321224127b1de1ff8feae54767ad33433f1ef8bf704571e3418a72d4f777fc2-2025-11-28_14-49-17_1.gif" />
-
-5. You can also browse and select an image from your AI-generated images folder in the CMS. Click **Upload** and **Edit**.
+2. Go to the Message Editor, click **Upload** to upload the image, and select the image. Click **Edit**.
 
 <Image align="center" alt="Edit Image" border={true} caption="Edit Image" src="https://files.readme.io/feba778dbafdf0bb11dd24ae8038992f84b7b7f97547fff534d2152026ac4d7c-image.png" />
 
-6. In the prompt field, describe the updates or new campaign details you want to apply.  Once you select an image, you can:
-   * **Change text**: For example, update offer amounts, taglines, or call-to-action text.
-   * **Change background**: Modify colors, replace backgrounds, or adjust contrast for seasonal themes.
-   * **Replace visual elements**: Swap product photos, icons, or logos.
-   * **Adjust layout**: Realign elements, add or remove visual sections, or reposition branding.
-   * **Add highlights or effects**: Emphasize key offers or add simple visual effects, such as a glow or drop shadows. For example, if you want to use 30% Off banner as a reference and update it for Holi with bright color accents and festive treats.
-7. Click **Brand Kit** to view or switch to another kit if needed.
-8. Click **Generate**. It analyzes your reference image and applies the prompt instructions you provide. A new image is generated that maintains the layout and design consistency of your requirements.
-9. Review the generated image and click **Insert** to add it to your campaign.
+3. Click ![](https://files.readme.io/7c39b5787600b7ac069bc4f2f78a6f3f0304bd3c3cc04eef082aa945c714fdf8-Plus_Icon.png) to select the reference image from CMS.
+4. In the prompt field, describe the updates or new campaign details you want to apply.  Once you select an image, you can:
+
+* **Change text**: For example, update offer amounts, taglines, or call-to-action text.
+* **Change background**: Modify colors, replace backgrounds, or adjust contrast for seasonal themes.
+* **Replace visual elements**: Swap product photos, icons, or logos.
+* **Adjust layout**: Realign elements, add or remove visual sections, or reposition branding.
+* **Add highlights or effects**: Emphasize key offers or add simple visual effects, such as a glow or drop shadows. For example, if you want to use 30% Off banner as a reference and update it for Holi with bright color accents and festive treats.
+
+5. Click **Brand Kit** to view or switch to another kit if needed.
+6. Click **Generate**. It analyzes your reference image and applies the prompt instructions you provide. A new image is generated that maintains the layout and design consistency of your requirements.
+7. Review the generated image and click **Insert** to add it to your campaign.
 
 ## Use Secondary Image to Update Primary Image
 
