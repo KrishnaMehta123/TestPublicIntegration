@@ -28,9 +28,7 @@ You can access and review Audit Logs from the CleverTap dashboard. To view the l
 3. Apply the date range to filter and view the logs for a specific period.
 4. Use **Download All Logs** to export logs in CSV format.
 
-<Image alt="Audit Logs in CleverTap" align="center" border={true} src="https://files.readme.io/b7b52012580073a2eda9b79f2782a4b035a9e8e03f53454e6a5d55c9ef4a7974-image.png">
-  Audit Logs at CleverTap
-</Image>
+<Image align="center" alt="Audit Logs in CleverTap" border={true} caption="Audit Logs at CleverTap" src="https://files.readme.io/b7b52012580073a2eda9b79f2782a4b035a9e8e03f53454e6a5d55c9ef4a7974-image.png" />
 
 The Audit Logs dashboard displays a structured table of activities. The logs show which user performed an action, what resource the action affected, and where the action originated.
 
@@ -44,7 +42,7 @@ Each log entry includes the following fields:
 | **Email**       | The email address of the user who performed the action.                |
 | **Action**      | The type of action performed, such as Login, Campaign, or Export.      |
 | **Action ID**   | The unique identifier of the impacted resource, such as a Campaign ID. |
-| **Description** | A descriptive message about the action, such as *Saved Campaign*.      |
+| **Description** | A descriptive message about the action, such as _Saved Campaign_.      |
 | **IP Address**  | The IP address where the action originated.                            |
 
 The following are examples of recorded activity:
@@ -60,7 +58,7 @@ Audit Logs record activities across multiple categories to provide complete visi
 * [Authentication Logs](doc:audit-logs#authentication-logs)
 * [Role and Permission Changes](doc:audit-logs#role-and-permission-changes)
 * [Privileged and Sensitive Activities](doc:audit-logs#privileged-and-sensitive-activities)
-* [System and Integration Events](<doc: audit-logs#system-and-integration-events>)
+* [System and Integration Events](doc:audit-logs#system-and-integration-events)
 
 ### Authentication Logs
 
