@@ -14,7 +14,7 @@ next:
 ---
 Stay updated with CleverTap's latest feature releases, cutting-edge feature enhancements, and performance enhancements to help you optimize your experience.
 
-View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/release-notes-2024). 
+View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/release-notes-2024).
 
 <ClickableTilesForWhatsNew />
 
@@ -153,6 +153,12 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
 # 2025
 
 ## December
+
+<HTMLBlock>{`
+
+`}</HTMLBlock>
+
+<br />
 
 <HTMLBlock>{`
 <div class="release-note article" data-category="security-project-settings" id="pii-tokenization">
@@ -669,18 +675,24 @@ Protect Data End to End</strong>: Keep payloads encrypted on the device and decr
 <div class="release-note article" data-category="analytics" id="ai-powered-nps-feedback-analysis">
   <div class="release-note-header">
     <div class="anchor-link-icon">
-      <a href="#ai-powered-nps-feedback-analysis"><i class="fa-light fa-anchor"></i></a>
+      <a href="#ai-powered-nps-feedback-analysis">
+        <i class="fa-light fa-anchor" />
+      </a>
     </div>
+
     <div>
-      <img src="https://files.readme.io/f57aa9f8ef374b2652d21d86c7251de0e10d2f8661a4828202bcced4cb299d5f-Analytics.svg" alt="Analytics" class="release-note-heading-icon"/>
+      <img src="https://files.readme.io/f57aa9f8ef374b2652d21d86c7251de0e10d2f8661a4828202bcced4cb299d5f-Analytics.svg" alt="Analytics" class="release-note-heading-icon" />
     </div>
+
     <h3 class="release-note-heading">AI-Powered NPS Feedback Analysis</h3>
     <div class="badge enhancement">ENHANCEMENT</div>
     <div class="badge private-beta">PRIVATE BETA</div>
   </div>
+
   <div class="release-note-body">
     <p>The NPS Board now offers AI-powered insights that transform raw feedback into actionable sentiment analysis. Beyond numeric scores, you can instantly understand what customers feel and why, helping your teams act faster on key feedback themes.</p>
     <p>With this enhancement, you can:</p>
+
     <p>
       <ul>
         <li>Generate instant AI summaries of NPS responses, highlighting key insights.</li>
@@ -689,9 +701,11 @@ Protect Data End to End</strong>: Keep payloads encrypted on the device and decr
         <li>Track sentiment trends over time using daily, weekly, or monthly intervals..</li>
       </ul>
     </p>
+
     <p>For more information, refer to <a href="https://docs.clevertap.com/docs/nps-board-1" target="_blank">NPS Board</a>.</p>
   </div>
-  <hr/>
+
+  <hr />
 </div>
 
 <HTMLBlock>{`
@@ -999,21 +1013,27 @@ src="https://files.readme.io/01053ed2e833c5e6bb242a86b84f304b7499ff0b0a26f422c3c
 <div class="release-note article" data-category="Campaigns" id="Improved-Limits-in-Campaigns-and-Journeys">
   <div class="release-note-header">
     <div class="anchor-link-icon">
-      <a href="#Improved-Limits-in-Campaigns-and-Journeys"><i class="fa-light fa-anchor"></i></a>
+      <a href="#Improved-Limits-in-Campaigns-and-Journeys">
+        <i class="fa-light fa-anchor" />
+      </a>
     </div>
+
     <div>
-      <img src="https://files.readme.io/370216d2a5ec47fd419bc47a95762d51295730db345b40f825b3de7115e6e667-Campaigns.svg" alt="Campaigns" class="release-note-heading-icon"/>
+      <img src="https://files.readme.io/370216d2a5ec47fd419bc47a95762d51295730db345b40f825b3de7115e6e667-Campaigns.svg" alt="Campaigns" class="release-note-heading-icon" />
     </div>
+
     <h3 class="release-note-heading">Improved Limits in Campaigns and Journeys</h3>
     <div class="badge enhancement">ENHANCEMENT</div>
     <div class="badge private-beta">PRIVATE BETA</div>
   </div>
+
   <div class="release-note-body">
     <p>You can now cap the total number of times a user ever receives a specific Campaign or Journey message. This new lifetime limit option is available alongside existing choices to send every time or at intervals.</p>
     <p>Enhanced Limits help marketers reduce message fatigue, enforce governance, and protect customer experience by preventing over-saturation of onboarding, promotional, or reminder messages.</p>
     <p>For more information, refer to <a href="https://docs.clevertap.com/docs/notification-delivery-options-1#limits-for-engagements" target="_blank">Limits for Engagements</a>.</p>
   </div>
-  <hr/>
+
+  <hr />
 </div>
 
 <HTMLBlock>{`
