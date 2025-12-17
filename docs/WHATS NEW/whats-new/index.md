@@ -170,7 +170,7 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
   <div class="release-note-body">
     <p>You can now create and manage WhatsApp Direct message templates faster with new cloning and rich editing options. These enhancements help you maintain consistency across WhatsApp Business Accounts (WABAs) and reduce time spent recreating or reformatting templates.</p>
 
-    <p>With these updates, you can:</p>
+    <p>With these enhancements, you can:</p>
     <p>
       <ul>
         <li>Clone templates easily by duplicating any existing template within the same or another WABA configured with WhatsApp Direct. All fields are pre-filled, so you can rename, edit content, and resubmit for approval without rebuilding the template.</li>
