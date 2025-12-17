@@ -173,44 +173,43 @@ Create a manifest file to map your custom events to CleverTap Events. The follow
 
 ```json
 {
-    "fileName": "events.csv",
-    "type": "event",
-    "columns": {
-        "event_name": {
-            "ctName": "evtName",
-                "dataType": "STRING"
-        },
-		"time_stamp": {
-			"ctName": "ts",
-      			"dataType": "INTEGER"
-		},
-		"identity": {
-			"ctName": "identity",
-      			"dataType": "STRING"
-		},
-		"cookie_id": {
-			"ctName": "objectId",
-      			"dataType": "STRING"
-		},
-		"item_name": {
-			"ctName": "Name",
-      			"dataType": "STRING"
-		},
-		"item_price": {
-			"ctName": "Price",
-      			"dataType": "FLOAT"
-		},
-		"item_delivery_date": {
-			"ctName": "DeliveryDate",
-      			"dataType": "STRING"
-		},
+  "fileName": "events.csv",
+  "type": "event",
+  "columns": {
+    "event_name": {
+      "ctName": "evtName",
+      "dataType": "STRING"
+    },
+    "time_stamp": {
+      "ctName": "ts",
+      "dataType": "INTEGER"
+    },
+    "identity": {
+      "ctName": "identity",
+      "dataType": "STRING"
+    },
+    "cookie_id": {
+      "ctName": "objectId",
+      "dataType": "STRING"
+    },
+    "item_name": {
+      "ctName": "Name",
+      "dataType": "STRING"
+    },
+    "item_price": {
+      "ctName": "Price",
+      "dataType": "FLOAT"
+    },
+    "item_delivery_date": {
+      "ctName": "DeliveryDate",
+      "dataType": "STRING"
+    },
     "status_delivered": {
       "ctName": "DeliveryStatus",
-            "dataType": "BOOLEAN"
+      "dataType": "BOOLEAN"
     }
-},
-    "clientEmail": "admin@clientdomain.com"
-  
+  },
+  "clientEmail": "admin@clientdomain.com"
 }
 ```
 
