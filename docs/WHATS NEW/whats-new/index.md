@@ -155,15 +155,15 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
 ## December
 
 <HTMLBlock>{`
-<div class="release-note article" data-category="campaigns" id="whatsApp-template-cloning-and-enhanced-editing">
+<div class="release-note article" data-category="campaigns" id="whatsapp-template-cloning-and-enhanced-editing">
   <div class="release-note-header">
     <div class="anchor-link-icon">
-      <a href="#whatsApp-template-cloning-and-enhanced-editing"><i class="fa-light fa-anchor"></i></a>
+      <a href="#whatsapp-template-cloning-and-enhanced-editing"><i class="fa-light fa-anchor"></i></a>
     </div>
     <div>
       <img src="https://files.readme.io/370216d2a5ec47fd419bc47a95762d51295730db345b40f825b3de7115e6e667-Campaigns.svg" alt="Campaigns" class="release-note-heading-icon"/>
    </div>
-    <h3 class="release-note-heading">Improved Notification Controls for Android Push</h3>
+    <h3 class="release-note-heading">WhatsApp Template Cloning and Enhanced Editing</h3>
 <div class="badge enhancement">ENHANCEMENT</div>
     <div class="badge beta">BETA</div>
   </div>
