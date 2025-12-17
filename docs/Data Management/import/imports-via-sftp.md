@@ -16,7 +16,7 @@ You can import user and event data from third-party SFTP clients, such as BigQue
 
 > 📘 File Upload Encryption
 >
-> To upload encrypted file to CleverTap using SFTP, refer to [File Upload Encryption](https://staging.docs.user.clevertap.net/docs/file-upload-encryption).
+> To upload encrypted file to CleverTap using SFTP, refer to [File Upload Encryption](doc:file-upload-encryption).
 
 # Prerequisites
 
@@ -369,10 +369,12 @@ A. The following are some of the reasons for invalid manifest errors when workin
 | **Invalid Client Email ID**  | Ensure the client's email ID is valid. The client does not receive an error notification email if the email ID is invalid.                                                                                                                                       |
 | **Invalid Event Type**       | Ensure you specify the event type in the manifest as either _EVENT_ or _PROFILE_.                                                                                                                                                                                |
 | **Invalid File Format**      | Ensure the events file name is specified in the manifest and provided in _.csv_ format.                                                                                                                                                                          |
-| **Invalid Date Time Format** | Ensure the date time format is valid. For more information, refer to [Supported Date Time Format](https://staging.docs.dev.clevertap.net/docs/imports-via-sftp#supported-date-time-format).                                                                      |
+| **Invalid Date Time Format** | Ensure the date time format is valid. For more information, refer to [Supported Date Time Format](doc:imports-via-sftp#supported-date-time-format).                                                                                                              |
 
 > 📘 Note
 >
 > No email is sent for invalid JSON or invalid email in the manifest file.
 
 For more information about JSON syntax in manifest files, refer to [Manifest File for Events](doc:imports-via-sftp#manifest-file-for-events) and [Manifest File for Profiles](imports-via-sftp#manifest-file-for-profiles).
+
+<br />
