@@ -225,51 +225,51 @@ Create a manifest file to map the details of your user profiles to CleverTap Pro
 
 ```json
 {
-	"fileName": "profiles.csv",
-	"type": "profile",
-	"columns": {
-		"time_stamp": {
-			"ctName": "ts",
-      			"dataType": "INTEGER"   
-		},
-		"identity": {
-			"ctName": "identity",
-       			"dataType": "STRING"
-		},
-		"cookie_id": {
-			"ctName": "objectId",
-       			"dataType": "STRING"
-		},
-		"id_name": {
-			"ctName": "Name",
-       			"dataType": "STRING"
-		},
-		"id_email": {
-			"ctName": "Email",
-       			"dataType": "STRING"
-		},
-		"id_phone" : {
-			"ctName": "Phone",
-       			"dataType": "STRING"
-		},
-		"is_married": {
-			"ctName": "Married",
-       			"dataType": "BOOLEAN"
-		},
-		"age": {
-			"ctName": "Age",
-       			"dataType": "INTEGER"
-	  },
+  "fileName": "profiles.csv",
+  "type": "profile",
+  "columns": {
+    "time_stamp": {
+      "ctName": "ts",
+      "dataType": "INTEGER"
+    },
+    "identity": {
+      "ctName": "identity",
+      "dataType": "STRING"
+    },
+    "cookie_id": {
+      "ctName": "objectId",
+      "dataType": "STRING"
+    },
+    "id_name": {
+      "ctName": "Name",
+      "dataType": "STRING"
+    },
+    "id_email": {
+      "ctName": "Email",
+      "dataType": "STRING"
+    },
+    "id_phone": {
+      "ctName": "Phone",
+      "dataType": "STRING"
+    },
+    "is_married": {
+      "ctName": "Married",
+      "dataType": "BOOLEAN"
+    },
+    "age": {
+      "ctName": "Age",
+      "dataType": "INTEGER"
+    },
     "MSG-SMS": {
       "ctName": "MSG-sms",
-            "dataType": "BOOLEAN"
+      "dataType": "BOOLEAN"
     },
     "MSG-DNDSMS": {
       "ctName": "MSG-dndSMS",
-            "dataType": "BOOLEAN"
+      "dataType": "BOOLEAN"
     }
-},
-    "clientEmail": "admin@clientdomain.com"
+  },
+  "clientEmail": "admin@clientdomain.com"
 }
 ```
 
