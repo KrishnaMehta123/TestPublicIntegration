@@ -78,7 +78,7 @@ To add a provider, perform the following steps:
       </td>
 
       <td>
-        <li> This is a mandatory field. </li> <li> Enter the nickname for the Email Provider to uniquely identify it. </li>
+        <ul><li> This is a mandatory field. </li> <li> Enter the nickname for the Email Provider to uniquely identify it. </li></ul>
       </td>
     </tr>
 
@@ -88,7 +88,7 @@ To add a provider, perform the following steps:
       </td>
 
       <td>
-        <li> This is a mandatory field. </li> <li> Callback URL is used to get the bounce, rejection, and subscription information from the Email Partner to CleverTap. </li> <li> It is a read-only field that is pre-populated with CleverTap's callback URL. </li>
+        <ul><li> This is a mandatory field. </li> <li> Callback URL is used to get the bounce, rejection, and subscription information from the Email Partner to CleverTap. </li> <li> It is a read-only field that is pre-populated with CleverTap's callback URL. </li></ul>
       </td>
     </tr>
 
@@ -98,7 +98,7 @@ To add a provider, perform the following steps:
       </td>
 
       <td>
-        <li> This is a mandatory field. </li> <li> This is the address of the email server. In this case, it is the domain name (e.g., [http://smtp.sendgrid.com](http://smtp.sendgrid.com)) that directs to the server responsible for sending emails. </li>
+        <ul><li> This is a mandatory field. </li> <li> This is the address of the email server. In this case, it is the domain name (e.g., [http://smtp.sendgrid.com](http://smtp.sendgrid.com)) that directs to the server responsible for sending emails. </li></ul>
       </td>
     </tr>
 
@@ -108,7 +108,7 @@ To add a provider, perform the following steps:
       </td>
 
       <td>
-        <li> This is a mandatory field. </li> <li> This is the specific gate on the email server through which communication occurs. For example, 587. </li>
+        <ul><li> This is a mandatory field. </li> <li> This is the specific gate on the email server through which communication occurs. For example, 587. </li></ul>
       </td>
     </tr>
 
@@ -118,7 +118,7 @@ To add a provider, perform the following steps:
       </td>
 
       <td>
-        <li> This is a mandatory field. </li> <li> You get this key while setting up the provider dashboard. For more on finding the API key for CleverTap's default service provider, refer to the [Creating API Key ](https://www.twilio.com/docs/sendgrid/ui/account-and-settings/api-keys#creating-an-api-key) section </li>
+        <ul><li> This is a mandatory field. </li> <li> You get this key while setting up the provider dashboard. For more on finding the API key for CleverTap's default service provider, refer to the [Creating API Key ](https://www.twilio.com/docs/sendgrid/ui/account-and-settings/api-keys#creating-an-api-key)  section </li></ul>
       </td>
     </tr>
 
@@ -128,7 +128,7 @@ To add a provider, perform the following steps:
       </td>
 
       <td>
-        <li> This is a mandatory field. </li> <li> Enter the default email address you want to use for sending your email campaigns.</li> <li> The email address will be pre-populated under the *From Email Address* field as a default value when creating an Email campaign. If you want to personalize the *From Address*  field for your email campaign, refer to  [sender details](doc:create-message-sender-details#sender-details) </li>
+        <ul><li> This is a mandatory field. </li> <li> Enter the default email address you want to use for sending your email campaigns.</li> <li> The email address will be pre-populated under the *From Email Address* field as a default value when creating an Email campaign. If you want to personalize the *From Address*  field for your email campaign, refer to  [sender details](doc:create-message-sender-details#sender-details)  </li></ul>
       </td>
     </tr>
 
@@ -138,7 +138,7 @@ To add a provider, perform the following steps:
       </td>
 
       <td>
-        <li> This is a mandatory field. </li> <li> Enter the default email address to which you want your users to reply to the campaign. </li> <li> The email address will be used to pre-populate the  *Reply-to Email Address* field as a default value when creating an Email campaign. If you want to personalize the *Reply-to Email Address* field, refer to [sender details](doc:create-message-sender-details#sender-details) .</li>
+        <ul><li> This is a mandatory field. </li> <li> Enter the default email address to which you want your users to reply to the campaign. </li> <li> The email address will be used to pre-populate the  *Reply-to Email Address* field as a default value when creating an Email campaign. If you want to personalize the *Reply-to Email Address* field, refer to [sender details](doc:create-message-sender-details#sender-details)  .</li></ul>
       </td>
     </tr>
 
@@ -148,7 +148,7 @@ To add a provider, perform the following steps:
       </td>
 
       <td>
-        <li> Select *System* from the dropdown to use a pre-built preference center with a sample preview. </li>  <li>Select *Custom URL* to add your hosted unsubscription page URL. </li> <li> Select *None* if you want to manage the email preferences directly on your own. </li>  For more information, [Manage Email Preferences](doc:manage-email-preferences#configure-email-preference-center).
+        <ul><li> Select *System* from the dropdown to use a pre-built preference center with a sample preview. </li>  <li>Select *Custom URL* to add your hosted unsubscription page URL. </li> <li> Select *None* if you want to manage the email preferences directly on your own. </li></ul>  For more information, [Manage Email Preferences](doc:manage-email-preferences#configure-email-preference-center).
       </td>
     </tr>
   </tbody>
