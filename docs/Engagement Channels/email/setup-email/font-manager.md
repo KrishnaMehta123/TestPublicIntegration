@@ -14,9 +14,11 @@ next:
 
 This feature enables you to add and manage custom fonts and use them in your email campaigns. It simplifies font management across the _Drag & Drop_ and _Rich Media_ editors.
 
-> 📘 Feature Availability
->
-> The feature is available to customers on the Advanced and Cutting Edge plans.
+<Callout icon="📘" theme="info">
+  #### Feature Availability
+
+  The feature is available to customers on the Advanced and Cutting Edge plans.
+</Callout>
 
 # Add Custom Font
 
@@ -153,6 +155,8 @@ You can edit your custom font and update the font details.
 
 The updated custom font is now available for both the _Drag & Drop_ and _Rich Media editors_. When making changes to the custom font, an email alert is sent to the user updating the custom font and also to the account admin.
 
-> 🚧 Delete or Edit Custom Font
->
-> Editing or deleting custom fonts does not impact running, scheduled, and draft engagements. The modifications take effect for the campaigns created subsequent to your changes.
+<Callout icon="🚧" theme="warn">
+  #### Delete or Edit Custom Font
+
+  Editing or deleting custom fonts does not impact running, scheduled, and draft engagements. The modifications take effect for the campaigns created subsequent to your changes.
+</Callout>
