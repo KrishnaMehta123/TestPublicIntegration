@@ -492,7 +492,8 @@ You can perform different actions on a custom preference center. To manage the c
 3. Perform one of the following actions:
    * **Preview**: Allows you to preview the appearance and functionality of the custom preference center.
    * **Publish**: Allows you to use the custom preference page when setting up the email provider.
-   * **Edit**: Allows you to modify the content and layout of the custom page. When you edit an unpublished custom preference center, you need to save it and then publish it from the _Email Preference Center_. The changes are saved and published when you edit an already published customer preference center.\ <br />
+   * **Edit**: Allows you to modify the content and layout of the custom page. When you edit an unpublished custom preference center, you need to save it and then publish it from the _Email Preference Center_. The changes are saved and published when you edit an already published customer preference center. <br />
+
      <Callout icon="📘" theme="info">
        #### Edit Published Custom Preference Center
 
