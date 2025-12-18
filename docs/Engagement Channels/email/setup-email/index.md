@@ -40,119 +40,17 @@ To add a provider, perform the following steps:
    <Image align="center" border={true} caption="Add Provider" src="https://files.readme.io/9206de0-Plus_provider.png" />
 3. Add the following provider details:
 
-<Table align={["left","left"]}>
-  <thead>
-    <tr>
-      <th>
-        Column
-      </th>
-
-      <th>
-        Description
-      </th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr>
-      <td>
-        Provider
-      </td>
-
-      <td>
-        Select your
-
-        _Email Provider_
-
-        from the dropdown list. Select
-
-        _SMPT_
-
-        if the provider is not listed
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Nickname
-      </td>
-
-      <td>
-        <ul><li> This is a mandatory field. </li> <li> Enter the nickname for the Email Provider to uniquely identify it. </li></ul>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Callback URL
-      </td>
-
-      <td>
-        <ul><li> This is a mandatory field. </li> <li> Callback URL is used to get the bounce, rejection, and subscription information from the Email Partner to CleverTap. </li> <li> It is a read-only field that is pre-populated with CleverTap's callback URL. </li></ul>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Host
-      </td>
-
-      <td>
-        <ul><li> This is a mandatory field. </li> <li> This is the address of the email server. In this case, it is the domain name (e.g., [http://smtp.sendgrid.com](http://smtp.sendgrid.com)) that directs to the server responsible for sending emails. </li></ul>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Port
-      </td>
-
-      <td>
-        <ul><li> This is a mandatory field. </li> <li> This is the specific gate on the email server through which communication occurs. For example, 587. </li></ul>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        API Key
-      </td>
-
-      <td>
-        <ul><li> This is a mandatory field. </li> <li> You get this key while setting up the provider dashboard. For more on finding the API key for CleverTap's default service provider, refer to the [Creating API Key ](https://www.twilio.com/docs/sendgrid/ui/account-and-settings/api-keys#creating-an-api-key)  section </li></ul>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Default From Address
-      </td>
-
-      <td>
-        <ul><li> This is a mandatory field. </li> <li> Enter the default email address you want to use for sending your email campaigns.</li> <li> The email address will be pre-populated under the *From Email Address* field as a default value when creating an Email campaign. If you want to personalize the *From Address*  field for your email campaign, refer to  [sender details](doc:create-message-sender-details#sender-details)  </li></ul>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Default Reply Address
-      </td>
-
-      <td>
-        <ul><li> This is a mandatory field. </li> <li> Enter the default email address to which you want your users to reply to the campaign. </li> <li> The email address will be used to pre-populate the  *Reply-to Email Address* field as a default value when creating an Email campaign. If you want to personalize the *Reply-to Email Address* field, refer to [sender details](doc:create-message-sender-details#sender-details)  .</li></ul>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Email Preference Center
-      </td>
-
-      <td>
-        <ul><li> Select *System* from the dropdown to use a pre-built preference center with a sample preview. </li>  <li>Select *Custom URL* to add your hosted unsubscription page URL. </li> <li> Select *None* if you want to manage the email preferences directly on your own. </li></ul>  For more information, [Manage Email Preferences](doc:manage-email-preferences#configure-email-preference-center).
-      </td>
-    </tr>
-  </tbody>
-</Table>
+| Column                  | Description                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| :---------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Provider                | Select your _Email Provider_ from the dropdown list. Select _SMPT_ if the provider is not listed                                                                                                                                                                                                                                                                                                                                                   |
+| Nickname                | <ul><li> This is a mandatory field. </li> <li> Enter the nickname for the Email Provider to uniquely identify it. </li></ul>                                                                                                                                                                                                                                                                                                                       |
+| Callback URL            | <ul><li> This is a mandatory field. </li> <li> Callback URL is used to get the bounce, rejection, and subscription information from the Email Partner to CleverTap. </li> <li> It is a read-only field that is pre-populated with CleverTap's callback URL. </li></ul>                                                                                                                                                                             |
+| Host                    | <ul><li> This is a mandatory field. </li> <li> This is the address of the email server. In this case, it is the domain name (e.g., [http://smtp.sendgrid.com](http://smtp.sendgrid.com)) that directs to the server responsible for sending emails. </li></ul>                                                                                                                                                                                     |
+| Port                    | <ul><li> This is a mandatory field. </li> <li> This is the specific gate on the email server through which communication occurs. For example, 587. </li></ul>                                                                                                                                                                                                                                                                                      |
+| API Key                 | <ul><li> This is a mandatory field. </li> <li> You get this key while setting up the provider dashboard. For more on finding the API key for CleverTap's default service provider, refer to the [Creating API Key ](https://www.twilio.com/docs/sendgrid/ui/account-and-settings/api-keys#creating-an-api-key)  section </li></ul>                                                                                                                 |
+| Default From Address    | <ul><li> This is a mandatory field. </li> <li> Enter the default email address you want to use for sending your email campaigns.</li> <li> The email address will be pre-populated under the *From Email Address* field as a default value when creating an Email campaign. If you want to personalize the *From Address*  field for your email campaign, refer to  [sender details](doc:create-message-sender-details#sender-details)  </li></ul> |
+| Default Reply Address   | <ul><li> This is a mandatory field. </li> <li> Enter the default email address to which you want your users to reply to the campaign. </li> <li> The email address will be used to pre-populate the  *Reply-to Email Address* field as a default value when creating an Email campaign. If you want to personalize the *Reply-to Email Address* field, refer to [sender details](doc:create-message-sender-details#sender-details)  .</li></ul>    |
+| Email Preference Center | <ul><li> Select *System* from the dropdown to use a pre-built preference center with a sample preview. </li>  <li>Select *Custom URL* to add your hosted unsubscription page URL. </li> <li> Select *None* if you want to manage the email preferences directly on your own. </li></ul>  For more information, [Manage Email Preferences](doc:manage-email-preferences#configure-email-preference-center).                                         |
 
 3. Click **Save**.
 4. (Optional) Click **Send Test Email** to check if the provider has been set up correctly and can send emails.
