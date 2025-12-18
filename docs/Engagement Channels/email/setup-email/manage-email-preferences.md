@@ -36,11 +36,19 @@ To configure the Email Preference Center:
 
 <Image align="center" alt="Provider Configuration Added" border={true} caption="Provider Configuration Added" src="https://files.readme.io/ce4ff5a-image.png" />
 
-> 📘 Advanced Setup
->
-> You can also preview the _Email Preference Center_  by navigating to _Channels_> _Email_. Select the _Advanced Setup_ tab.
->
-> <Image align="center" alt="Email Preference Center" border={true} caption="Email Preference Center" src="https://files.readme.io/f4ae755-image.png" />
+<br />
+
+<br />
+
+<br />
+
+<Callout icon="📘" theme="info">
+  **Advanced Setup**
+
+  You can also preview the _Email Preference Center_  by navigating to _Channels_> _Email_. Select the _Advanced Setup_ tab.
+
+  <Image align="center" alt="Email Preference Center" border={true} caption="Email Preference Center" src="https://files.readme.io/f4ae755-image.png" />
+</Callout>
 
 # Manage User Preferences for Email Campaigns
 
