@@ -36,12 +36,6 @@ To configure the Email Preference Center:
 
 <Image align="center" alt="Provider Configuration Added" border={true} caption="Provider Configuration Added" src="https://files.readme.io/ce4ff5a-image.png" />
 
-<br />
-
-<br />
-
-<br />
-
 <Callout icon="📘" theme="info">
   **Advanced Setup**
 
