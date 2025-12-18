@@ -20,9 +20,11 @@ CleverTap's Email Preference Center feature allows you to customize user communi
 
 When setting up the email provider, you can choose between using CleverTap's _Email Preference Center_ page or your custom subscription management page URL. To ensure a consistent and user-friendly experience, CleverTap's Unsubscribe page or Email Preference Center is displayed in the same language as the user's browser language. However, the subscription group names and descriptions appear exactly as defined under _Settings_ > _Setup_ > _[Subscription Groups](doc:group-unsubscribe)_. Currently, CleverTap supports the following languages: French, English, Spanish and Hindi.
 
-> 📘 Note
->
-> Ensure that the language of the subscription group names and descriptions is consistent with the browser language of your user base for seamless user experience.
+<Callout icon="📘" theme="info">
+  #### Note
+
+  Ensure that the language of the subscription group names and descriptions is consistent with the browser language of your user base for seamless user experience.
+</Callout>
 
 To configure the Email Preference Center:
 
@@ -36,11 +38,13 @@ To configure the Email Preference Center:
 
 <Image align="center" alt="Provider Configuration Added" border={true} caption="Provider Configuration Added" src="https://files.readme.io/ce4ff5a-image.png" />
 
-> 📘 Advanced Setup
->
-> You can also preview the _Email Preference Center_  by navigating to _Channels_> _Email_. Select the _Advanced Setup_ tab.
->
-> <Image align="center" alt="Email Preference Center" border={true} caption="Email Preference Center" src="https://files.readme.io/f4ae755-image.png" />
+<Callout icon="📘" theme="info">
+  #### Advanced Setup
+
+  You can also preview the _Email Preference Center_  by navigating to _Channels_> _Email_. Select the _Advanced Setup_ tab.
+
+  <Image align="center" alt="Email Preference Center" border={true} caption="Email Preference Center" src="https://files.readme.io/f4ae755-image.png" />
+</Callout>
 
 # Manage User Preferences for Email Campaigns
 
