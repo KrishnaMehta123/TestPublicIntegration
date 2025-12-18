@@ -222,11 +222,9 @@ To enable or disable the inbox preview, perform the following steps:
 3. Select a client from the list.
 4. Click on the ellipsis and click **Enable** or **Disable**.
 
-<Callout icon="📘" theme="info">
-  **Multi-select**
-
-  You can also select multiple clients, then enable or disable previews by clicking **Enable in inbox previews** or **Disable in inbox previews**.
-</Callout>
+> 📘 Multi-select
+>
+> You can also select multiple clients, then enable or disable previews by clicking **Enable in inbox previews** or **Disable in inbox previews**.
 
 <Image align="center" border={true} caption="Enable or Disable Inbox Previews" src="https://files.readme.io/49e8f2d-Enable_an_inbox_preview.png" />
 
