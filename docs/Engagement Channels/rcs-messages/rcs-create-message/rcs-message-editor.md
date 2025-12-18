@@ -18,18 +18,14 @@ Templates can be created once and reused across multiple campaigns, improving co
 
 To access the RCS Message Editor:
 
-1. In the SMS Campaign Builder, go to the **Provider** dropdown, select **RCS Message Provider**. 
+1. In the SMS Campaign Builder, go to the **Provider** dropdown, select **RCS Message Provider**.
 
-<Image alt="RCS Provider in Campaigns" align="center" border={true} src="https://files.readme.io/673259e63b9e14c1c1b924d2b886b044c917653d677612a5aab7e79df18664a8-provider_in_campaign_RCS.png">
-  RCS Provider in Campaigns
-</Image>
+<Image align="center" alt="RCS Provider in Campaigns" border={true} caption="RCS Provider in Campaigns" src="https://files.readme.io/673259e63b9e14c1c1b924d2b886b044c917653d677612a5aab7e79df18664a8-provider_in_campaign_RCS.png" />
 
 2. Navigate to the **What** section in the SMS Campaign Builder.
 3. Choose a **Message Type** and click **Go to Editor**.
 
-<Image alt="Go To Editor" align="center" border={true} src="https://files.readme.io/7218b693676d558492e8b0c7c0f59764c2bcb5f2d1207676ca15aade0d2d705f-What_section_RCS.png">
-  Go To Editor
-</Image>
+<Image align="center" alt="Go To Editor" border={true} caption="Go To Editor" src="https://files.readme.io/7218b693676d558492e8b0c7c0f59764c2bcb5f2d1207676ca15aade0d2d705f-What_section_RCS.png" />
 
 The RCS Message Template selection screen will appear, where you can create or edit templates for your campaign.
 
@@ -65,24 +61,24 @@ CleverTap provides three types of RCS templates. Each supports text, personaliza
 
 A simple, text-only format. Useful for alerts, reminders, and announcements.
 
-* **Media Support**: No  
-* **Interactive Buttons**: Yes  
+* **Media Support**: No
+* **Interactive Buttons**: Yes
 * **Personalization**: Supported via placeholders
 
 ### [Rich Card Template](doc:rcs-message-editor#rich-card-template-1)
 
 A more visual format that allows an image or video, along with a title, body text, and buttons.
 
-* **Media Support**: Yes  
-* **Interactive Buttons**: Yes  
+* **Media Support**: Yes
+* **Interactive Buttons**: Yes
 * **Personalization**: Supported in title and body
 
 ### [Carousel Template](doc:rcs-message-editor#carousel-template-1)
 
 A scrollable format featuring multiple rich cards. Each card can contain its own media, title, body, and buttons.
 
-* **Media Support**: Yes (per card)  
-* **Interactive Buttons**: Yes (up to two per card)  
+* **Media Support**: Yes (per card)
+* **Interactive Buttons**: Yes (up to two per card)
 * **Personalization**: Supported per card
 
 Each template supports up to three buttons (or two per card in the carousel format). These buttons can open a URL, dial a number, or send a quick reply. The way you configure these buttons depends on whether you are working with an approved or free-form template.
@@ -111,16 +107,16 @@ A fixed link for all users.
 
 **Use Case**: Direct all recipients to a general landing page.
 
-* **Button Text**: The label shown on the button (e.g., "Visit Website").  
-  * Approved templates: Pre-filled and not editable.  
+* **Button Text**: The label shown on the button (e.g., "Visit Website").
+  * Approved templates: Pre-filled and not editable.
   * Free-form templates: Enter a clear, actionable label.
 
 * **URL**: The destination web link (e.g., `https://example.com/sale`).
-  * Approved templates: Predefined and locked. 
+  * Approved templates: Predefined and locked.
   * Free-form templates: Enter the full URL manually.
 
-* **Postback**: A value triggered when the button is clicked, used for tracking clicks or triggering automation.  
-  * Approved templates: Predefined  
+* **Postback**: A value triggered when the button is clicked, used for tracking clicks or triggering automation.
+  * Approved templates: Predefined
   * Free-form templates: Enter a value like `static_sale_click`.
 
 #### Dynamic URL
@@ -129,15 +125,15 @@ A personalized link that varies per recipient.
 
 **Use Case**: Redirect each user to their own dashboard, cart, or offer page.
 
-* **Button Text**: The clickable label (e.g., "View My Offer").  
-  * Approved templates: Pre-filled and locked.  
+* **Button Text**: The clickable label (e.g., "View My Offer").
+  * Approved templates: Pre-filled and locked.
   * Free-form templates: Enter this manually.
 
-* **URL**: Constructed from a fixed prefix and a dynamic suffix (e.g., `https://example.com/user/{{user_id}}`). 
-  * Approved templates: Prefix is fixed; suffix is entered during campaign setup.  
+* **URL**: Constructed from a fixed prefix and a dynamic suffix (e.g., `https://example.com/user/{{user_id}}`).
+  * Approved templates: Prefix is fixed; suffix is entered during campaign setup.
   * Free-form templates: Define both parts using personalization tokens.
 
-* **Postback**: Used to identify which user clicked the button. 
+* **Postback**: Used to identify which user clicked the button.
   * Free-form templates: Enter a value such as `dynamic_offer_click_{{user_id}}`.
 
 #### Link Tracking
@@ -146,15 +142,15 @@ A URL configured with tracking parameters to measure engagement.
 
 **Use Case**: Track user clicks and optimize campaigns.
 
-* **Button Text**: The visible label (e.g., "Learn More").  
-  * Approved templates: Pre-filled and locked. 
+* **Button Text**: The visible label (e.g., "Learn More").
+  * Approved templates: Pre-filled and locked.
   * Free-form templates: Enter a descriptive label.
 
-* **URL**: A tracking-enabled link (e.g., `https://example.com?utm_source=rcs`).  
-  * Approved templates: Locked  
+* **URL**: A tracking-enabled link (e.g., `https://example.com?utm_source=rcs`).
+  * Approved templates: Locked
   * Free-form templates: Input manually
 
-* **Postback**: A value used to log the click action.  
+* **Postback**: A value used to log the click action.
   * Free-form templates: Use values such as `link_tracking_click_offer`.
 
 ### Dialer Button
@@ -163,15 +159,15 @@ This button opens the user’s phone app with a predefined phone number.
 
 **Use Case**: Let users immediately contact your sales, support, or service team.
 
-* **Button Text**: The label on the button (e.g., "Call Support").  
-  * Approved templates: Predefined.  
+* **Button Text**: The label on the button (e.g., "Call Support").
+  * Approved templates: Predefined.
   * Free-form templates: Enter a clear and direct label.
 
-* **Phone Number**: The number to be dialed (e.g., `+1800123456`). 
-  * Approved templates: Predefined and uneditable.  
+* **Phone Number**: The number to be dialed (e.g., `+1800123456`).
+  * Approved templates: Predefined and uneditable.
   * Free-form templates: Enter the number manually in international format.
 
-* **Postback**: Triggers a log when the button is tapped, indicating that a call was initiated.  
+* **Postback**: Triggers a log when the button is tapped, indicating that a call was initiated.
   * Free-form templates: Optional but recommended (e.g., `call_support_attempt`).
 
 ### Quick Reply Button
@@ -180,14 +176,14 @@ This button sends a short, predefined response back to your system when the user
 
 **Use Case**: Collect fast, structured responses (e.g., “Yes”, “No”, “Remind me later”).
 
-* **Button Text**: The visible text on the button (e.g., "Yes, I'm interested").  
-  * Approved templates: Predefined.  
+* **Button Text**: The visible text on the button (e.g., "Yes, I'm interested").
+  * Approved templates: Predefined.
   * Free-form templates: Enter this manually.
 
-* **Reply Text**: The message content sent back to your system (can be the same as the button text or different).  
+* **Reply Text**: The message content sent back to your system (can be the same as the button text or different).
   * Free-form templates: Define this clearly (e.g., `"Reply Text": "User is interested"`).
 
-* **Postback**: Helps you identify which quick reply the user selected.  
+* **Postback**: Helps you identify which quick reply the user selected.
   * Free-form templates: Enter a unique identifier (e.g., `interest_yes_reply`).
 
 ## Template Types
@@ -211,16 +207,16 @@ The Text template allows you to send a simple message with optional buttons. It 
 
 This template is ideal for transactional or informational messages that require no media and need quick delivery.
 
-* One-time passwords (OTPs) or verification codes  
-* Account notifications or payment reminders  
-* Quick updates without images  
+* One-time passwords (OTPs) or verification codes
+* Account notifications or payment reminders
+* Quick updates without images
 
 **Supported Features**:
 
 The Text template offers basic personalization and interactivity while maintaining a lightweight format.
 
-* Media: Not supported  
-* Buttons: Up to 3 (URL Redirect, Dialer, Quick Reply)  
+* Media: Not supported
+* Buttons: Up to 3 (URL Redirect, Dialer, Quick Reply)
 * Personalization: Yes, using placeholders like `{{1}}`, `{{2}}`
 
 #### Message Text
@@ -234,14 +230,14 @@ This is the main body of the message that users will receive. Depending on your 
 * **Free-form Templates**:
   * You can enter the full text message manually.
   * Use placeholders for dynamic values if needed (e.g., `{{user_name}}`, `{{product_name}}`).
-  * RCS supports basic formatting such as **bold** and *italics*, where available.
+  * RCS supports basic formatting such as **bold** and _italics_, where available.
 
 #### Custom Key-Value Pairs (@deepak if supported)
 
-* Used to provide values for placeholders dynamically.  
-* **Preset Key**: Select a predefined placeholder name (e.g., `{{user_name}}`)  
-* **Value Field**: Input the actual value to replace it (e.g., `Emma`)  
-* **Add KV Pair Button**: Lets you add additional key-value pairs  
+* Used to provide values for placeholders dynamically.
+* **Preset Key**: Select a predefined placeholder name (e.g., `{{user_name}}`)
+* **Value Field**: Input the actual value to replace it (e.g., `Emma`)
+* **Add KV Pair Button**: Lets you add additional key-value pairs
 * This feature helps personalize messages at scale
 
 #### Buttons
@@ -259,16 +255,16 @@ Rich Cards add media, titles, and longer body messages to your campaign, along w
 
 Use Rich Cards when you want to combine images or video with text to better highlight offers, products, or updates.
 
-* Promotions or discount offers  
-* Product spotlights or new feature announcements  
-* Event reminders with RSVP buttons  
+* Promotions or discount offers
+* Product spotlights or new feature announcements
+* Event reminders with RSVP buttons
 
 **Supported Features**:
 
 This template supports multimedia content and personalization, making it ideal for marketing or promotional use cases.
 
-* Media: Yes (image or video)  
-* Buttons: Up to 3  
+* Media: Yes (image or video)
+* Buttons: Up to 3
 * Personalization: Yes, in both Title and Body
 
 #### Template Name
@@ -338,14 +334,14 @@ Carousel templates allow you to create a scrollable series of rich cards, each w
 
 **Use Cases**:
 
-* Product or service galleries  
-* Multi-offer campaigns  
-* Feature comparisons  
+* Product or service galleries
+* Multi-offer campaigns
+* Feature comparisons
 
 **Supported Features**:
 
-* Media: Yes (per card)  
-* Buttons: Up to 2 per card  
+* Media: Yes (per card)
+* Buttons: Up to 2 per card
 * Personalization: Yes (individually on each card)
 
 #### Media per Card
