@@ -14,7 +14,7 @@ next:
 ---
 # Overview
 
-CleverTap allows you to attach files directly to your email campaigns and journeys. This helps marketers share downloadable content such as brochures, onboarding kits, and so on without redirecting users to external URLs. 
+CleverTap allows you to attach files directly to your email campaigns and journeys. This helps marketers share downloadable content such as brochures, onboarding kits, and so on without redirecting users to external URLs.
 
 Here are some of the common cases:
 
@@ -32,101 +32,29 @@ Here are some of the common cases:
 
 CleverTap supports uploading images and PDFs using flexible upload methods to help you include documents or media in your emails. Before uploading attachments, make sure your files meet the supported format and size limits outlined below:
 
-<Table>
-  <thead>
-    <tr>
-      <th>
-        Attribute
-      </th>
-
-      <th>
-        Value
-      </th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr>
-      <td>
-        Supported file extensions
-      </td>
-
-      <td>
-        The following are the supported file types for attachments: 
-
-        `.pdf`
-
-        , 
-
-        `.doc`
-
-        , 
-
-        `.docx`
-
-        , .
-
-        `ics`
-
-        , 
-
-        `.jpg`
-
-        , 
-
-        `.png`
-
-        , and 
-
-        `.jpeg`
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Max number of files
-      </td>
-
-      <td>
-        Up to 10 attachments per email
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Max file size
-      </td>
-
-      <td>
-        <ul><li>2 MB per document (`.pdf`, `.doc`, `.docx`, .`ics`)</li><li>1 MB per image (`.jpg`, `.png`, and `.jpeg`)</li></ul>
-      </td>
-    </tr>
-  </tbody>
-</Table>
+| Attribute                 | Value                                                                                                                      |
+| ------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| Supported file extensions | The following are the supported file types for attachments: `.pdf`, `.doc`, `.docx`,  `.ics`, `.jpg`, `.png`, and `.jpeg`  |
+| Max number of files       | Up to 10 attachments per email                                                                                             |
+| Max file size             | <ul><li>2 MB per document (`.pdf`, `.doc`, `.docx`, .`ics`)</li><li>1 MB per image (`.jpg`, `.png`, and `.jpeg`)</li></ul> |
 
 # Add Attachments to Email
 
-You can add attachments to your email directly from the **Content Manager**, **What** section of the campaign builder, or **Email engagement node** of the journey builder.  
+You can add attachments to your email directly from the **Content Manager**, **What** section of the campaign builder, or **Email engagement node** of the journey builder.
 
-From the campaign creation setup, select **Attachments** from the *What* section, select one of the following options, and click **Attach**:
+From the campaign creation setup, select **Attachments** from the _What_ section, select one of the following options, and click **Attach**:
 
-* **File URL**: Paste a publicly accessible HTTPS URL pointing to the file. Also, provide a friendly display name for the file, such as *Monthly Report.pdf*.  After uploading, you can rename the file by hovering over the uploaded attachment and clicking the ![](https://files.readme.io/42a29cd4fe23c9ab89b9e3f19c62f7896517787823c9b86827530e2ee9266a0b-Rename_icon.png) icon. The display name provided here (for example, *Monthly Report.pdf*) is visible to the end user in their inbox. Attachments are **not stored in CMS automatically** when uploaded via this option.
+* **File URL**: Paste a publicly accessible HTTPS URL pointing to the file. Also, provide a friendly display name for the file, such as _Monthly Report.pdf_.  After uploading, you can rename the file by hovering over the uploaded attachment and clicking the ![](https://files.readme.io/42a29cd4fe23c9ab89b9e3f19c62f7896517787823c9b86827530e2ee9266a0b-Rename_icon.png) icon. The display name provided here (for example, _Monthly Report.pdf_) is visible to the end user in their inbox. Attachments are **not stored in CMS automatically** when uploaded via this option.
 
-  <Image alt="Attach Files via Files URL" align="center" border={true} src="https://files.readme.io/8f8cb6b88c9106711de6ffe8e1e6c8cc72665c6fa37542336a8126688306401d-Attach_Files_via_URL.gif">
-    Attach Files via Files URL
-  </Image>
+  <Image align="center" alt="Attach Files via Files URL" border={true} caption="Attach Files via Files URL" src="https://files.readme.io/8f8cb6b88c9106711de6ffe8e1e6c8cc72665c6fa37542336a8126688306401d-Attach_Files_via_URL.gif" />
 * **Device Storage**: Click to open your file browser and select the file you want to upload. Attachments are **not stored in CMS automatically** when uploaded via this option.
 
-  <Image alt="Attach Files via Device Storage" align="center" border={true} src="https://files.readme.io/fb71219a6004ddb399ce79bd6582106269af7a31314eecf4058e6b18294083ab-Attach_File_via_Device_Storage.gif">
-    Attach Files via Device Storage
-  </Image>
+  <Image align="center" alt="Attach Files via Device Storage" border={true} caption="Attach Files via Device Storage" src="https://files.readme.io/fb71219a6004ddb399ce79bd6582106269af7a31314eecf4058e6b18294083ab-Attach_File_via_Device_Storage.gif" />
 * **Content Manager**: Click **Browse** to attach previously uploaded assets to the email campaign.
 
-  <Image alt="Attach Files via Content Manager" align="center" border={true} src="https://files.readme.io/960462938a0e3f3acd65abf846eaa10fd7ac803adc83c48ed9725f4a82d0ff20-Attach_FIles_via_Content_Manager.gif">
-    Attach Files via Content Manager
-  </Image>
+  <Image align="center" alt="Attach Files via Content Manager" border={true} caption="Attach Files via Content Manager" src="https://files.readme.io/960462938a0e3f3acd65abf846eaa10fd7ac803adc83c48ed9725f4a82d0ff20-Attach_FIles_via_Content_Manager.gif" />
 
-  The attached files and their file names and types are displayed under the *Preview* section on the right. The files are validated for size, extension, and name during this time. You can **rename** a file uploaded by clicking the ![](https://files.readme.io/b79e2947976e8baefc1fba973c0a391d91528b5b933eb4e3a4eb7190ed62be37-Rename_icon.png) icon next to the file name and entering a display-friendly name. The display name provided here is visible to the end user in their inbox. You can remove any file by clicking the ![](https://files.readme.io/77cb7f4c433c6442788e32e4d6ec56906e305942d35b0c7c5e7f9f4a4c8949ad-70a339a-delete_all_icon.jpg) icon next to the uploaded file.\ <br />
+  The attached files and their file names and types are displayed under the _Preview_ section on the right. The files are validated for size, extension, and name during this time. You can **rename** a file uploaded by clicking the ![](https://files.readme.io/b79e2947976e8baefc1fba973c0a391d91528b5b933eb4e3a4eb7190ed62be37-Rename_icon.png) icon next to the file name and entering a display-friendly name. The display name provided here is visible to the end user in their inbox. You can remove any file by clicking the ![](https://files.readme.io/77cb7f4c433c6442788e32e4d6ec56906e305942d35b0c7c5e7f9f4a4c8949ad-70a339a-delete_all_icon.jpg) icon next to the uploaded file.\ <br />
 
   > 🚧 Maximum File Size Upload
   >
@@ -135,7 +63,7 @@ From the campaign creation setup, select **Attachments** from the *What* section
   > * 30MB for SendGrid
   > * 24MB for Infobip
 
-Once you have attached your files, add all the *Sender Details*. If you add CC/BCC recipients under *Sender Details*, they receive the same attachments as the primary recipient.
+Once you have attached your files, add all the _Sender Details_. If you add CC/BCC recipients under _Sender Details_, they receive the same attachments as the primary recipient.
 
 > 📘 Private Beta
 >
@@ -143,8 +71,6 @@ Once you have attached your files, add all the *Sender Details*. If you add CC/B
 
 # Errors
 
-CleverTap does not track attachment downloads or opens by the user. Failure to add attachments during campaign send results in the email not being delivered. In such cases, a **Notification Failed** event is triggered, and a **soft bounce** is recorded with the error type as *Attachment errors*. However, the user is **not unsubscribed** from future emails. The error appears under the *Errors* tab of the Campaign *Stats* page.
+CleverTap does not track attachment downloads or opens by the user. Failure to add attachments during campaign send results in the email not being delivered. In such cases, a **Notification Failed** event is triggered, and a **soft bounce** is recorded with the error type as _Attachment errors_. However, the user is **not unsubscribed** from future emails. The error appears under the _Errors_ tab of the Campaign _Stats_ page.
 
-<Image alt="Email Attachment Errors" align="center" border={true} src="https://files.readme.io/6fb0e04c57b85a2861be36ee9cc5313fff2dbfc31d29c506d71a566ca296e227-Email_Attachment_Errors_Stats.png">
-  Email Attachment Errors
-</Image>
+<Image align="center" alt="Email Attachment Errors" border={true} caption="Email Attachment Errors" src="https://files.readme.io/6fb0e04c57b85a2861be36ee9cc5313fff2dbfc31d29c506d71a566ca296e227-Email_Attachment_Errors_Stats.png" />
