@@ -144,7 +144,7 @@ To configure any third-party ESP using the Generic HTTP provider in your CleverT
       </td>
 
       <td>
-        <ul><li> This field is available only if the feature is enabled for your account.</li><li>Enter the default email address to which you want your users to reply to the campaign. </li> <li> The email address will be used to pre-populate the  *Reply-to Email Address* field as a default value when creating an Email campaign.</li><br /> **Note**: Adding _Default Reply-to Email Address_ for your email campaigns is currently in Private Beta. For more information,  refer to [Sender Details](doc:create-message-sender-details#sender-details).</ul>
+        <ul><li> This field is available only if the feature is enabled for your account.</li><li>Enter the default email address to which you want your users to reply to the campaign. </li> <li> The email address will be used to pre-populate the  *Reply-to Email Address* field as a default value when creating an Email campaign.</li></ul><br /> **Note**: Adding *Default Reply-to Email Address* for your email campaigns is currently in Private Beta. For more information,  refer to [Sender Details](doc:create-message-sender-details#sender-details).
       </td>
     </tr>
 
@@ -385,7 +385,7 @@ You can use the following dynamic replacements within your payload. At send time
       <td>
         A dynamic replacement parameter replaced by CleverTap with the CC recipient email addresses.
 
-        * *Note**: Adding CC recipients to email campaign is currently in Private Beta. CleverTap recommends using the `$$cc` field only if your account has CC support enabled for email campaigns. If the feature is not enabled or CC recipients are not configured during campaign setup, CleverTap still includes the key in the payload with a blank value. For more information, refer to [CC/BCC](doc:create-message-email#ccbcc).
+        * _Note_*: Adding CC recipients to email campaign is currently in Private Beta. CleverTap recommends using the `$$cc` field only if your account has CC support enabled for email campaigns. If the feature is not enabled or CC recipients are not configured during campaign setup, CleverTap still includes the key in the payload with a blank value. For more information, refer to [CC/BCC](doc:create-message-email#ccbcc).
       </td>
 
       <td>
@@ -401,7 +401,7 @@ You can use the following dynamic replacements within your payload. At send time
       <td>
         A dynamic replacement parameter replaced by CleverTap with the BCC recipient email addresses.
 
-        * *Note**: Adding BCC recipients to email campaign is currently in Private Beta. CleverTap recommends using the `$$cc` field only if your account has CC support enabled for email campaigns. If the feature is not enabled or CC recipients are not configured during campaign setup, CleverTap still includes the key in the payload with a blank value. For more information, refer to [CC/BCC](doc:create-message-email#ccbcc).
+        * _Note_*: Adding BCC recipients to email campaign is currently in Private Beta. CleverTap recommends using the `$$cc` field only if your account has CC support enabled for email campaigns. If the feature is not enabled or CC recipients are not configured during campaign setup, CleverTap still includes the key in the payload with a blank value. For more information, refer to [CC/BCC](doc:create-message-email#ccbcc).
       </td>
 
       <td>
@@ -445,7 +445,7 @@ You can use the following dynamic replacements within your payload. At send time
       <td>
         A dynamic replacement parameter replaced by CleverTap with the AMP version of the email.
 
-        * *Note**: AMP for Email is available only with Email Booster Max/Advanced Email add-on. Contact your Customer Success Manager to upgrade your plan.
+        * _Note_*: AMP for Email is available only with Email Booster Max/Advanced Email add-on. Contact your Customer Success Manager to upgrade your plan.
       </td>
 
       <td>
