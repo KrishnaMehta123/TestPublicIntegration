@@ -20,11 +20,9 @@ CleverTap's Email Preference Center feature allows you to customize user communi
 
 When setting up the email provider, you can choose between using CleverTap's _Email Preference Center_ page or your custom subscription management page URL. To ensure a consistent and user-friendly experience, CleverTap's Unsubscribe page or Email Preference Center is displayed in the same language as the user's browser language. However, the subscription group names and descriptions appear exactly as defined under _Settings_ > _Setup_ > _[Subscription Groups](doc:group-unsubscribe)_. Currently, CleverTap supports the following languages: French, English, Spanish and Hindi.
 
-<Callout icon="📘" theme="info">
-  **Note**
-
-  Ensure that the language of the subscription group names and descriptions is consistent with the browser language of your user base for seamless user experience.
-</Callout>
+> 📘 Note
+>
+> Ensure that the language of the subscription group names and descriptions is consistent with the browser language of your user base for seamless user experience.
 
 To configure the Email Preference Center:
 
@@ -155,7 +153,7 @@ If users encounter these error messages, they must ensure the following:
 
 * Ensure the internet connection is stable.
 * Disable any ad blockers, as they might interfere with the retrieval process.
-* Ensure that Javascript is enabled in the browser settings.
+* Ensure that JavaScript is enabled in the browser settings.
 
 If the issue persists, contact our Customer Success Team for further assistance.
 
