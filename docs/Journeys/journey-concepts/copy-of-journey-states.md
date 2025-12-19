@@ -1,5 +1,5 @@
 ---
-title: Copy of Journey States
+title: Journey States
 excerpt: >-
   Learn about different Journey States in CleverTap, which provide insights into
   user engagement and behavior throughout their interaction with your
