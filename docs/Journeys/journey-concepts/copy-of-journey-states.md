@@ -5,7 +5,7 @@ excerpt: >-
   user engagement and behavior throughout their interaction with your
   application.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
