@@ -164,7 +164,7 @@ Enter the following Brand Kit details:
       </td>
 
       <td>
-        * **Low**: Stays very close to your Brand Kit.
+        * **Low**: Stays very close to your past campaigns.
         * **Medium**: Allows small creative tweaks to add variety.
         * **High**: Provides the AI with the freedom to explore various tones and visuals.
       </td>
