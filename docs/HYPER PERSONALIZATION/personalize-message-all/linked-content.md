@@ -12,23 +12,25 @@ next:
 ---
 # Overview
 
-Linked content allows you to personalize your messages with rich and contextual data that is available outside of the CleverTap platform. It helps you send messages with send-time personalization. 
+Linked content allows you to personalize your messages with rich and contextual data that is available outside of the CleverTap platform. It helps you send messages with send-time personalization.
 
 For example, you deliver food across different geographies, and you want to personalize offers to each user based on the weather of their location. The location can come from CleverTap personalization, and the weather information can come from a third-party API that provides the current weather. If you want to add more information, you can opt for any source, such as third-party tools and in-house software, to include in your message.
 
 In a user scenario, you could have three users: one in New York, where it is snowing; one in San Francisco, where it is cloudy; and one in Miami, where it is sunny. You can add conditions in your messages to deliver messages according to the weather and location where the message will be something, such as:
 
-* New York user - Since this user is probably staying in a cold region, you can send an offer to order piping hot food. 
-* San Francisco user - Since it is the weekend, this user may go out in the evening, so you send an offer for a dinner reservation at a nearby restaurant. 
-* Miami user - Since it is always sunny, you send an offer for a nearby barbeque restaurant. 
+* New York user - Since this user is probably staying in a cold region, you can send an offer to order piping hot food.
+* San Francisco user - Since it is the weekend, this user may go out in the evening, so you send an offer for a dinner reservation at a nearby restaurant.
+* Miami user - Since it is always sunny, you send an offer for a nearby barbeque restaurant.
 
 This send-time personalization can help you cater to end-user requirements at send time and significantly increase your open rates.
 
-> 📘 Note
->
-> You can create *Linked Content* using *Liquid Tags.* For more information, refer to [Liquid Tags](https://docs.clevertap.com/docs/liquid-tags) before you begin.
+<Callout icon="📘" theme="info">
+  #### Note
 
-You can use *Linked Content* with the following engagement channels:
+  You can create _Linked Content_ using _Liquid Tags._ For more information, refer to [Liquid Tags](https://docs.clevertap.com/docs/liquid-tags) before you begin.
+</Callout>
+
+You can use _Linked Content_ with the following engagement channels:
 
 * Email
 * Mobile Push
@@ -66,21 +68,21 @@ You can get the data for send-time personalization from different APIs. API name
 
 To. create API names:
 
-1. Select *Settings* > *Setup* > *Linked Content*. The *Linked Content* page displays.
-2. Click the **+ Linked Content** button to call a new API. To edit the linked content, click the ellipsis menu, then click the edit icon. 
-3. Enter a name for the API. 
+1. Select _Settings_ > _Setup_ > _Linked Content_. The _Linked Content_ page displays.
+2. Click the **+ Linked Content** button to call a new API. To edit the linked content, click the ellipsis menu, then click the edit icon.
+3. Enter a name for the API.
 
-<Image title="Create API Names" alt={1163} align="center" width="smart" border={true} src="https://files.readme.io/65c4783-Linked_Content_API_Create.png">
-  Create API Names
-</Image>
+<Image align="center" alt={1163} border={true} caption="Create API Names" title="Create API Names" src="https://files.readme.io/65c4783-Linked_Content_API_Create.png" width="smart" />
 
 4. Enter all the relevant details, such as the access key and query parameters.
 
-> 📘 Tip
->
-> The API parameters are available with the API provider. Refer to their website or contact their support for API details.
+<Callout icon="📘" theme="info">
+  #### Tip
 
-5. Click the **Test Linked Content** link. 
+  The API parameters are available with the API provider. Refer to their website or contact their support for API details.
+</Callout>
+
+5. Click the **Test Linked Content** link.
 6. Enter the required details to test the API. If the input is correct, you will see a success message. The test response appears in the JSON response box. The following is an example response for the API name you entered:
 
 ```json
@@ -126,113 +128,99 @@ To. create API names:
 }
 ```
 
-> 📘 Note
->
-> The response format is always JSON.
+<Callout icon="📘" theme="info">
+  #### Note
 
-7. You can choose to add each API object manually or click *Auto-fill Objects* with the API response. All the objects are listed with their label names. If required, you can change the label names here. These labels are available at the time of campaign creation.
+  The response format is always JSON.
+</Callout>
 
-<Image title="Add API Objects" alt={1192} align="center" width="smart" border={true} src="https://files.readme.io/8174ccf-Dynamic_Content_API.png">
-  Add API Objects
-</Image>
+7. You can choose to add each API object manually or click _Auto-fill Objects_ with the API response. All the objects are listed with their label names. If required, you can change the label names here. These labels are available at the time of campaign creation.
 
-8. Click **Test and save changes** to save all the API changes. 
+<Image align="center" alt={1192} border={true} caption="Add API Objects" title="Add API Objects" src="https://files.readme.io/8174ccf-Dynamic_Content_API.png" width="smart" />
 
-> 📘 Encoding Error
->
-> If you encounter encoding errors in your API response due to non-English characters, add the `charset=utf-8` parameter to your endpoint.
->
-> <Image align="center" className="border" border={true} src="https://files.readme.io/cc268ec-image.png" />
+8. Click **Test and save changes** to save all the API changes.
+
+<Callout icon="📘" theme="info">
+  #### Encoding Error
+
+  If you encounter encoding errors in your API response due to non-English characters, add the `charset=utf-8` parameter to your endpoint.
+
+  <Image align="center" border={true} width="75% " src="https://files.readme.io/cc268ec-image.png" className="border" />
+</Callout>
 
 # Personalize Linked Content URL
 
 You can dynamically generate URLs that contain parameters based on the user's preferences or interactions. For example, if there is an API that fetches information for a particular city. Instead of setting up multiple Linked Content endpoint URLs to fetch weather updates from different locations, we can set up a single endpoint URL by personalizing the endpoint URL. In this case, the endpoint URL will be as follows: `https://api.example.com/weather-management?location-name={{locname}}&location-weather={{locweather}}`
 
-<Image alt="Example for Linked Content URL Personalization" align="center" border={true} src="https://files.readme.io/7dab31c-Example_for_Linked_Content_URL_Personalization.png">
-  Example for Linked Content URL Personalization
-</Image>
+<Image align="center" alt="Example for Linked Content URL Personalization" border={true} caption="Example for Linked Content URL Personalization" src="https://files.readme.io/7dab31c-Example_for_Linked_Content_URL_Personalization.png" />
 
 The endpoint URL consists of the following parameters:
 
 * **Path Parameter**: These parameters help specify variable parts of the URL path, allowing APIs to target specific resources or actions dynamically based on the values provided within the URL path itself. Path parameter, when present in the endpoint URL, becomes a mandatory parameter. So, you can include the path parameter as shown in the following image:
 
-<Image alt="Path Parameter Example" align="center" border={true} src="https://files.readme.io/1c6e77f-Example_for_Path_Parameters.png">
-  Path Parameter Example
-</Image>
+<Image align="center" alt="Path Parameter Example" border={true} caption="Path Parameter Example" src="https://files.readme.io/1c6e77f-Example_for_Path_Parameters.png" />
 
-* Query Parameters: Query parameters are key-value pairs appended to the end of a URL that provides additional information to an API endpoint. They are used to modify the behavior or content returned by the server. Query parameters are separated from the base URL by a question mark (?), and multiple parameters are separated by an ampersand (&). If we refer to the following image, the query parameters will be: `articletopic` and `user`.
+* **Query Parameters**: Query parameters are key-value pairs appended to the end of a URL that provides additional information to an API endpoint. They are used to modify the behavior or content returned by the server. Query parameters are separated from the base URL by a question mark (?), and multiple parameters are separated by an ampersand (&). If we refer to the following image, the query parameters will be: `articletopic` and `user`.
 
-<Image alt="Query Parameters Example" align="center" border={true} src="https://files.readme.io/70cddc9-image.png">
-  Query Parameters Example
-</Image>
+<Image align="center" alt="Query Parameters Example" border={true} caption="Query Parameters Example" src="https://files.readme.io/70cddc9-image.png" />
 
 In the above image, only the values are personalized in the query parameters. You can even personalize the keys in the query parameters. For example, a user is accessing a movie recommendation API, and the API allows for personalized queries based on the user's preferences and location. In this case, the endpoint URL can be `https://movie-recommendation-api.com/recommendations?{{genrename}}={{genre}}&{{location}}={{place}}`. So, the keys and values change based on user input or data stored in a user profile, allowing the API to deliver personalized recommendations tailored to the individual's genre preference and location.
 
-<Image alt="Personalize Both Keys and Values in Query Parameters" align="center" border={true} src="https://files.readme.io/2fab433-Personalize_Both_Keys_and_Values_in_Query_Parameters.png">
-  Personalize Both Keys and Values in Query Parameters
-</Image>
+<Image align="center" alt="Personalize Both Keys and Values in Query Parameters" border={true} caption="Personalize Both Keys and Values in Query Parameters" src="https://files.readme.io/2fab433-Personalize_Both_Keys_and_Values_in_Query_Parameters.png" />
 
 # Map APIs
 
-The APIs must be mapped to the campaign from the *What* section. After the APIs are mapped, you can use them in the email body using [liquid tags](https://docs.clevertap.com/docs/liquid-tags). The sample scenario below shows how to create an email campaign using liquid tags and linked content.
+The APIs must be mapped to the campaign from the _What_ section. After the APIs are mapped, you can use them in the email body using [liquid tags](https://docs.clevertap.com/docs/liquid-tags). The sample scenario below shows how to create an email campaign using liquid tags and linked content.
 
-1. [Create an Email Campaign](https://docs.clevertap.com/docs/create-message-email).  
-2. Select the *New email with rich media* template. 
-3. From the [What](https://docs.clevertap.com/docs/email#section-step-4-define-the-what) section, click ![](https://files.readme.io/d946c02-personalization_icon.png) icon. The *Personalization Setup* window displays. 
+1. [Create an Email Campaign](https://docs.clevertap.com/docs/create-message-email).
+2. Select the _New email with rich media_ template.
+3. From the [What](https://docs.clevertap.com/docs/email#section-step-4-define-the-what) section, click ![](https://files.readme.io/d946c02-personalization_icon.png) icon. The _Personalization Setup_ window displays.
 
-<Image title="Create Personalized Email" alt={2876} align="center" border={true} src="https://files.readme.io/17bef81-Click_Personalization_icon.png">
-  Create Personalized Email
-</Image>
+<Image align="center" alt={2876} border={true} caption="Create Personalized Email" title="Create Personalized Email" src="https://files.readme.io/17bef81-Click_Personalization_icon.png" />
 
-4. Select your APIs from the list under the *Linked Content* tab. 
+4. Select your APIs from the list under the _Linked Content_ tab.
 
-<Image title="Select APIs from Linked Content" alt={1896} align="center" border={true} src="https://files.readme.io/e1a6472-Linked_Content.png">
-  Select APIs from Linked Content
-</Image>
+<Image align="center" alt={1896} border={true} caption="Select APIs from Linked Content" title="Select APIs from Linked Content" src="https://files.readme.io/e1a6472-Linked_Content.png" />
 
-5. Map the API parameters to the user and event properties, or add custom parameters. Here, we map the query parameter that fetches weather information based on the user location with the help of the profile property *Location*. This means that each user is sent an offer based on their location. 
+5. Map the API parameters to the user and event properties, or add custom parameters. Here, we map the query parameter that fetches weather information based on the user location with the help of the profile property _Location_. This means that each user is sent an offer based on their location.
 
-<Image title="Map Linked Content" alt={1898} align="center" width="smart" border={true} src="https://files.readme.io/6011741-Map_Linked_Content.png">
-  Map Linked Content
-</Image>
+<Image align="center" alt={1898} border={true} caption="Map Linked Content" title="Map Linked Content" src="https://files.readme.io/6011741-Map_Linked_Content.png" width="smart" />
 
 > 📘 Mapping Custom Fields
 >
 > You can also use liquid tags for personalization when mapping customer properties for an External Trigger Campaign. You can access this feature only if you have External Trigger enabled for your account.
 >
-> <Image alt="Mapping Custom Fields Using Liquid Tags" align="center" border={true} src="https://files.readme.io/1bcf690-Mapping_Custom_Fields.gif">
->   Mapping Custom Fields Using Liquid Tags
-> </Image>
+> <Image align="center" alt="Mapping Custom Fields Using Liquid Tags" border={true} caption="Mapping Custom Fields Using Liquid Tags" src="https://files.readme.io/1bcf690-Mapping_Custom_Fields.gif" />
 
-6. Click **Apply** to save the mapping. 
+6. Click **Apply** to save the mapping.
 
-We are now ready to start writing Linked Content. 
+We are now ready to start writing Linked Content.
 
 # Use Labels
 
-You can write linked content with labels. There are two types of labels that you can use in your linked content. 
+You can write linked content with labels. There are two types of labels that you can use in your linked content.
 
 * Custom Labels - These are labels you can create yourself. For example, a password or authorization key.
-* System Labels - These are default labels you can use to analyze API responses. 
+* System Labels - These are default labels you can use to analyze API responses.
 
 ## Custom Labels
 
-The API response will provide you with a set of object labels. However, if you want additional personalization, you can create custom labels during the creation and editing of [APIs](https://docs.clevertap.com/docs/linked-content#section-create-edit-namespaces). These will not be part of the API response.  
+The API response will provide you with a set of object labels. However, if you want additional personalization, you can create custom labels during the creation and editing of [APIs](https://docs.clevertap.com/docs/linked-content#section-create-edit-namespaces). These will not be part of the API response.
 
 ## System Labels
 
-These are CleverTap labels that are available by default. You can use them to gauge the health of your API and check whether the responses are received correctly. 
+These are CleverTap labels that are available by default. You can use them to gauge the health of your API and check whether the responses are received correctly.
 
-| System Labels      | Description                                                                                               |
-| :----------------- | :-------------------------------------------------------------------------------------------------------- |
-| raw                | This is a raw API response.                                                                               |
-| JSON               | This is the raw response parsed as JSON.                                                                  |
-| http\_status\_code | This is the HTTP status code to identify errors, such as, 404 (not found), 401 (unauthorized), and so on. |
-| headers            | These are response headers.                                                                               |
+| System Labels    | Description                                                                                               |
+| :--------------- | :-------------------------------------------------------------------------------------------------------- |
+| raw              | This is a raw API response.                                                                               |
+| JSON             | This is the raw response parsed as JSON.                                                                  |
+| http_status_code | This is the HTTP status code to identify errors, such as, 404 (not found), 401 (unauthorized), and so on. |
+| headers          | These are response headers.                                                                               |
 
 # Arrays in API
 
-The response from an API may have arrays with nested JSON. 
+The response from an API may have arrays with nested JSON.
 
 ```json Example Response
 "restaurants_info": [
@@ -278,12 +266,12 @@ Leonelli Focacceria e Pasticceria Good
 
 # Create Message
 
-After you have created and saved the APIs, use the linked content in your campaigns. It is recommended that you familiarize yourself with [Liquid Tags](https://docs.clevertap.com/docs/liquid-tags) before you start writing Linked Content.\
+After you have created and saved the APIs, use the linked content in your campaigns. It is recommended that you familiarize yourself with [Liquid Tags](https://docs.clevertap.com/docs/liquid-tags) before you start writing Linked Content.  
 The syntax for writing linked content is `Linked.APIName.label`. In our previous user scenario, we had three users, one in New York, where it was snowing, one in San Francisco, where it was cloudy, and one in Miami, where it was sunny. You can add conditions in your messages to deliver messages according to the weather and zip code. So, you can plan the following message:
 
-* New York user - Since this user is probably staying in, you send an offer for ordering piping hot food. 
-* San Francisco user - Since it is the weekend, this user may go out in the evening, so you send an offer for a dinner reservation at a nearby restaurant. 
-* Miami user - Since it is always sunny, you send an offer for a nearby barbecue restaurant. 
+* New York user - Since this user is probably staying in, you send an offer for ordering piping hot food.
+* San Francisco user - Since it is the weekend, this user may go out in the evening, so you send an offer for a dinner reservation at a nearby restaurant.
+* Miami user - Since it is always sunny, you send an offer for a nearby barbecue restaurant.
 
 The following is what a written personalized linked content for your users may look like:
 
@@ -345,11 +333,9 @@ Use the coupon code (EXOTIC).These are the top 5 restaurants near you:          
 {% endif %}
 ```
 
-Add some personalizations from our editor, then send out the email. For additional information on how to personalize your email, refer to [Create an Email Campaign](https://docs.clevertap.com/docs/create-message-email). 
+Add some personalizations from our editor, then send out the email. For additional information on how to personalize your email, refer to [Create an Email Campaign](https://docs.clevertap.com/docs/create-message-email).
 
-<Image title="Create Email Campaign using Linked Content" alt={1107} align="center" width="60% " border={true} src="https://files.readme.io/eebe749-linked_content_email_example_split.png">
-  Create an Email Campaign using Linked Content
-</Image>
+<Image align="center" alt={1107} border={true} caption="Create an Email Campaign using Linked Content" title="Create Email Campaign using Linked Content" src="https://files.readme.io/eebe749-linked_content_email_example_split.png" width="60% " />
 
 # Using Personalization in Linked Content Response
 
@@ -412,16 +398,16 @@ Hallo {{Profile.name | default:"Namefailed"}}! Jetzt kannst du bis zu {{Profile.
 
 ### Solution
 
-When using message translation, personalized parameters such as \{\{}} placeholders often remain unchanged in translated messages and notifications. This results in the German version of the message not being fully personalized when delivered to the user. 
+When using message translation, personalized parameters such as \{\{}} placeholders often remain unchanged in translated messages and notifications. This results in the German version of the message not being fully personalized when delivered to the user.
 
-With this feature, CleverTap dynamically resolves all placeholders within translated content before the message is delivered, ensuring a fully personalized experience in the user's preferred language. 
+With this feature, CleverTap dynamically resolves all placeholders within translated content before the message is delivered, ensuring a fully personalized experience in the user's preferred language.
 
 ### How it works
 
 This is how the above-mentioned use case is achieved:
 
-1. When the bank sends him the same promotional message, Linked Content fetches the German message from the translation service. 
-2. All personalization placeholders are dynamically replaced using real-time user data, such as `Profile.name, Event["offerPercentage"]`, and so on. 
+1. When the bank sends him the same promotional message, Linked Content fetches the German message from the translation service.
+2. All personalization placeholders are dynamically replaced using real-time user data, such as `Profile.name, Event["offerPercentage"]`, and so on.
 3. If a placeholder is invalid or unsupported (for example, prefixed with @), it is either left as-is or flagged as an error.
 4. The fully personalized message is delivered in the user’s preferred language, here, German:
 
