@@ -14,7 +14,7 @@ CleverTap supports sending SMS through a wide range of popular service providers
 The following providers are fully integrated and available across Journeys, Campaigns, and other messaging workflows.
 
 * [8x8](doc:8x8-sms)
-* [BulkSMS](doc:bulksms)
+* [BulkSMS](doc:generic-sms)
 * [Exotel](doc:exotel)
 * [ICS Mobile](doc:ics-mobile)
 * [Infobip](https://docs.clevertap.com/docs/infobip-sms)
@@ -22,13 +22,13 @@ The following providers are fully integrated and available across Journeys, Camp
 * [MSG91](doc:msg91)
 * [Netcore](doc:netcore)
 * [Nexmo/Voynage](doc:nexmo)
-* [Nimbus](doc:nimbus-sms)
+* [Nimbus](doc:generic-sms)
 * [OneXtel](doc:onextel-sms)
 * [Plivo](doc:generic-sms)
 * [Route Mobile](doc:route-mobile-sms)
 * [Sinch](doc:sinch-sms)
-* [SMSINDIAHUB](doc:smsindiahub)
-* [TextLocal](doc:textlocal)
+* [SMSINDIAHUB](doc:generic-sms)
+* [TextLocal](doc:generic-sms)
 * [Times Mobile](doc:times-mobile)
 * [Twilio](doc:twilio)
 
