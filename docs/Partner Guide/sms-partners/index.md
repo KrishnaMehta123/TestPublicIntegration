@@ -10,7 +10,7 @@ metadata:
 next:
   description: ''
 ---
-CleverTap supports sending SMS through a wide range of popular service providers.\
+CleverTap supports sending SMS through a wide range of popular service providers.  
 The following providers are fully integrated and available across Journeys, Campaigns, and other messaging workflows.
 
 * [8x8](doc:8x8-sms)
@@ -24,7 +24,7 @@ The following providers are fully integrated and available across Journeys, Camp
 * [Nexmo/Voynage](doc:nexmo)
 * [Nimbus](doc:nimbus-sms)
 * [OneXtel](doc:onextel-sms)
-* [Plivo](doc:plivo)
+* [Plivo](doc:generic-sms)
 * [Route Mobile](doc:route-mobile-sms)
 * [Sinch](doc:sinch-sms)
 * [SMSINDIAHUB](doc:smsindiahub)
