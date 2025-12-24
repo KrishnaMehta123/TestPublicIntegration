@@ -16,11 +16,13 @@ next:
 
 You can personalize the message for every user based on specific user property or event property values. For more information on user profile properties and events (dynamic replacements), refer to [User Profiles](https://docs.clevertap.com/docs/user-profiles) and [Events](https://docs.clevertap.com/docs/events#event-properties).
 
-> 📘 Live Campaigns with Delay > 24 hours
->
-> You can apply event personalization to Live Action and Date time campaigns with a delay greater than 24 hours. For example, airlines can now personalize flight check-in reminders by sending them reminders 24-48 hours before departure. Additionally, they can engage users with personalized messaging related to flight experience, hotel bookings, or cab services based on destination from booking details, even beyond the 24-hour window. However, you cannot apply event personalization for Live Inaction campaigns with a delay greater than 24 hours.
->
-> This is a Private Beta feature. To learn how to implement the same on the CleverTap dashboard, refer to Video Tutorial.
+<Callout icon="📘" theme="info">
+  #### Live Campaigns with Delay > 24 hours
+
+  You can apply event personalization to Live Action and Date time campaigns with a delay greater than 24 hours. For example, airlines can now personalize flight check-in reminders by sending them reminders 24-48 hours before departure. Additionally, they can engage users with personalized messaging related to flight experience, hotel bookings, or cab services based on destination from booking details, even beyond the 24-hour window. However, you cannot apply event personalization for Live Inaction campaigns with a delay greater than 24 hours.
+
+  This is a Private Beta feature. To learn how to implement the same on the CleverTap dashboard, refer to Video Tutorial.
+</Callout>
 
 # Inline Personalization
 
