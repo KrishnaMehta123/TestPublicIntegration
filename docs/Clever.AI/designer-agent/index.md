@@ -12,13 +12,11 @@ next:
 ---
 # Overview
 
-**Designer Agent** helps you instantly create, edit, or refine images for your Push Notification campaign, all within CleverTap, without the need for external design tools. It combines advanced AI capabilities with your Brand Kit to generate on-brand, campaign-ready visuals quickly and efficiently. This makes it easier for teams to design creative images directly in the campaign editor, reducing dependency on design teams and accelerating go-to-market time.
+**Designer Agent** helps you instantly create, edit, or refine images for your Push Notification campaign, all within CleverTap, without the need for external design tools. It combines advanced AI capabilities with your [Brand Kit](https://docs.clevertap.com/docs/brand-kit) to generate on-brand, campaign-ready visuals quickly and efficiently. This makes it easier for teams to design creative images directly in the campaign editor, reducing dependency on design teams and accelerating go-to-market time.
 
 > 📘 Private Beta
 >
 > This feature is released in Private Beta and is enabled for select customers only. To enable this feature, contact your Customer Success Manager.
->
-> Designer Agent is available in Push Notifications, for accounts where push templates are enabled. This feature will soon be expanded to other messaging channels.
 
 # How Designer Agent Works
 
@@ -56,7 +54,7 @@ To generate an image using prompts:
 
 <Image align="center" border={true} caption="Image Settings" src="https://files.readme.io/de22a44d0c1d4fe360efac8ee163fa4677f6dd663e01ab39bdf324a6fc30a98d-image.png" />
 
-6. Click **Primary Kit** to view your brand’s style, button colors, brand colors, and so on, for your image. Click **Apply**. Click **Secondary Kit** to configure a custom kit for the current image. For more information on setting it up, refer to [Brand Kits](https://docs.clevertap.com/docs/brand-kit) .
+6. Click on your Brand Kit to view your brand’s style, button colors, brand colors, and so on, for your image. Click **Apply to this Thread**. You can also select other kits, or configure a custom kit for the current image. For more information on setting it up, refer to [Brand Kits](https://docs.clevertap.com/docs/brand-kit).
 
 <Image align="center" border={true} caption="Brand Kits" src="https://files.readme.io/a5b3f89da995732024b828934b34a14f56a8567b828d1fd984541e3834a71ff3-image.png" />
 
