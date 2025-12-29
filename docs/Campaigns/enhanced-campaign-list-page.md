@@ -33,11 +33,9 @@ The campaign listing page in CleverTap helps you manage all your campaigns effic
               style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 `}</HTMLBlock>
 
-<br />
-
 # Campaigns Operations
 
-You can perform different actions on the campaigns from the _All Campaigns_ page, including filtering, labeling, editing, archiving, stopping, cloning, and analyzing performance. The following sections briefly discuss each operation.
+You can perform different actions on the campaigns from the _All Campaigns_ page, including filtering, labeling, editing, archiving, stopping, cloning, and analyzing performance. The following sections provide a brief overview of each operation.
 
 ## Filter Campaigns
 
