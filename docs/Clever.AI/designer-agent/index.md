@@ -50,27 +50,9 @@ To generate an image using prompts:
 
 <Image align="center" border={true} caption="Image Generated using Text to Image Option" src="https://files.readme.io/3686d1c1d24a170e204e82e473e7a1cc1fc4e5a4ce2cfdf4d8df292c81af7e1e-image.png" />
 
-5. Click ![](https://files.readme.io/bdbfd957c9ccc6dff7284d71450e4414281705ac5d8337c238198a6d7cc896ee-Image_Settings_Icon.png) to select the _File format_ (JPEG or PNG). The Ratio/Size (that is, 1:1) is auto-selected and non-editable. The aspect ratio and size are automatically aligned with Push OS specifications (for example, 1:1 for Large Icon and 3:2 for Expanded Image) to ensure compatibility.
-
-<Image align="center" border={true} caption="Image Settings" src="https://files.readme.io/de22a44d0c1d4fe360efac8ee163fa4677f6dd663e01ab39bdf324a6fc30a98d-image.png" />
-
-6. Click on your Brand Kit to view your brand’s style, button colors, brand colors, and so on, for your image. Click **Apply to this Thread**. You can also select other kits, or configure a custom kit for the current image. For more information on setting it up, refer to [Brand Kits](https://docs.clevertap.com/docs/brand-kit).
-
-<Image align="center" border={true} caption="Brand Kits" src="https://files.readme.io/a5b3f89da995732024b828934b34a14f56a8567b828d1fd984541e3834a71ff3-image.png" />
-
-<Callout icon="📘" theme="info">
-  **Brand Kits**
-
-  * Brand Kit names reflect the Brand Kits configured in your account.
-  * If a brand kit is locked, it cannot be edited within the campaign flow.
-  * Any changes made to BrandKit through campaign flow only apply to **that thread**.
-  * If a prompt conflicts with your Brand Kit’s defined elements, such as brand colors, button styles, or tone, the AI will prioritize the Brand Kit settings. For example, If your Brand Kit specifies yellow and green as primary brand colors and the prompt requests purple, the generated image will use purple, with yellow and green as the dominant colors.
-
-  This ensures consistent, on-brand visuals across all AI-generated assets, regardless of the prompt details. For more information on setting up and using brand kits, refer to <Anchor label="Brand Kit" target="_blank" href="https://docs.clevertap.com/docs/brand-kit">Brand Kit</Anchor>.
-</Callout>
-
-7. Click **Generate**. Review the generated image and click **Insert** to add the image to your campaign.
-8. After inserting the image, you can edit or refine the image directly within the editor:
+5. Click **Generate**. Review the generated image and click **Insert** to add the image to your campaign.
+6. Click **Brand Kit** to apply your brand’s predefined colors, tones, and layout.
+7. After inserting the image, you can edit or refine the image directly within the editor:
    * Enter follow-up prompts in the same chat thread to refine the image.
    * To edit an existing image, go to the Message Editor, click **Upload**, and select the image. Click ![](https://files.readme.io/3dd08bfdc757b30950b16c701f01b8970b5ddec566c161e93cb3c1081ee73e60-Edit_icon.png) and describe the change you want to make (for example, Change CTA text from "Watch Live" to “Watch Now”). Each refinement creates a new version saved in your Threads history, allowing you to revisit or reuse past iterations.
 
@@ -135,6 +117,40 @@ Refer to the following example prompt:
 6. Click **Brand Kit** to apply your brand’s predefined colors, tones, and layout.
 7. Click **Generate**. It analyzes both images and adjusts the primary to match the secondary in tone, layout, and design style.
 8. Review the generated image in the preview panel and click **Insert** to add it to your campaign. To make refinements, use follow-up prompts.
+
+# Image Settings and Brand Kit
+
+Designer Agent gives you the options to adjust and filter your generated image. The Image Settings menu lets you adjust your file format and Brand Kit lets you apply brand styling to your generated image.
+
+<Image align="center" border={true} caption="Filters and Brand Kit" src="https://files.readme.io/e9ed262d61bf5bd0306ece9643bc83d334764bd900810dbd0be24885be32ffe9-2025-12-29_15-54-14.png" />
+
+## Image Settings
+
+Click ![](https://files.readme.io/bdbfd957c9ccc6dff7284d71450e4414281705ac5d8337c238198a6d7cc896ee-Image_Settings_Icon.png) to open Image Settings. Here, you can:
+
+* Select the _File format_ between JPEG or PNG.
+* View the Aspect ratio and size, which are auto-selected and non-editable. The aspect ratio and size are automatically aligned with Push OS specifications (for example, 1:1 for Large Icon and 3:2 for Expanded Image) to ensure compatibility.
+
+<Image align="center" border={true} caption="Image Settings" src="https://files.readme.io/de22a44d0c1d4fe360efac8ee163fa4677f6dd663e01ab39bdf324a6fc30a98d-image.png" />
+
+## Brand Kit
+
+Click on Brand Kit to view your brand’s style, button colors, brand colors, and so on, for your image. Click **Apply to this Thread**. You can also select other kits, or configure a custom kit for the current image. The applied Brand Kit ensures that all generated visuals remain consistent with your brand identity.
+
+<Image align="center" border={true} caption="Brand Kits" src="https://files.readme.io/a5b3f89da995732024b828934b34a14f56a8567b828d1fd984541e3834a71ff3-image.png" />
+
+<Callout icon="📘" theme="info">
+  **Note**
+
+  * Brand Kit names reflect the Brand Kits configured in your account.
+  * If a brand kit is locked, it cannot be edited within the campaign flow.
+  * Any changes made to BrandKit through campaign flow only apply to **that thread**.
+  * If a prompt conflicts with your Brand Kit’s defined elements, such as brand colors, button styles, or tone, the AI will prioritize the Brand Kit settings. For example, If your Brand Kit specifies yellow and green as primary brand colors and the prompt requests purple, the generated image will use purple, with yellow and green as the dominant colors.
+
+  This ensures consistent, on-brand visuals across all AI-generated assets, regardless of the prompt details.
+</Callout>
+
+For more information on setting up and using brand kits, refer to <Anchor label="Brand Kit" target="_blank" href="https://docs.clevertap.com/docs/brand-kit">Brand Kit</Anchor>.
 
 # Manage Generated Images
 
