@@ -88,24 +88,24 @@ You can customize the following properties to control the look, behavior, and vi
 
 Define what happens when users tap the container.
 
-| Action Type            | Description                                                                                                                                                                             |
-| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **No Action**          | No behavior is triggered when the container is tapped.                                                                                                                                  |
-| **Close Notification** | Closes the in-app message.                                                                                                                                                              |
-| **Open URL**           | Opens a specified URL link.                                                                                                                                                             |
-| **Key–Value Pair**     | Adds a key-value pair for tracking or personalization.                                                                                                                                  |
-| **App Function**       | Triggers app-level functions such as requesting push permission or app rating. For more information, refer to [App Functions](doc:user.clevertap.net/docs/in-app-editor#app-functions). |
+| Action Type            | Description                                                                                                                                                                   |
+| ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **No Action**          | No behavior is triggered when the container is tapped.                                                                                                                        |
+| **Close Notification** | Closes the in-app message.                                                                                                                                                    |
+| **Open URL**           | Opens a specified URL link.                                                                                                                                                   |
+| **Key–Value Pair**     | Adds a key-value pair for tracking or personalization.                                                                                                                        |
+| **App Function**       | Triggers app-level functions such as requesting push permission or app rating. For more information, refer to [App Functions](https://docs.clevertap.com/docs/app-functions). |
 
 #### Background
 
 Apply a background color or image to your design. You can do the following:
 
 * Choose a **solid color** using a color picker or hex code.
-* **Upload an image** directly from your system and add **alt text** for accessibility and search. For more information on images, refer to [Image Size and Aspect Ratios](<docs: advanced-in-app-builder#size-and-aspect-ratios>).
+* **Upload an image** directly from your system and add **alt text** for accessibility and search. For more information on images, refer to [Image Size and Aspect Ratios](https://docs.clevertap.com/docs/getting-started?isFramePreview=true#image-size-and-aspect-ratios).
 
 #### Font and Text
 
-Control how text appears within your container. For more information, refer to [Custom Fonts](docs:advanced-in-app-builder#custom-fonts).
+Control how text appears within your container. For more information, refer to [Custom Fonts](https://docs.clevertap.com/docs/getting-started?isFramePreview=true#custom-fonts).
 
 #### Border Radius
 
