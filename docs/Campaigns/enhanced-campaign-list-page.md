@@ -24,7 +24,7 @@ The campaign listing page in CleverTap helps you manage all your campaigns effic
                 box-shadow: 0 15px 40px rgba(63,58,79,.3);
                 overflow: hidden;
                 min-width:320px"><iframe
-              src="https://clevertap.portal.trainn.co/share/w1c4vyUbl1udzJF5IvEJNQ/embed?autoplay=false"
+              src="https://clevertap.portal.trainn.co/share/IxERY2ZCSp5Yw6TXXa2XxA/embed?autoplay=false"
               frameborder="0"
               webkitallowfullscreen
               mozallowfullscreen
