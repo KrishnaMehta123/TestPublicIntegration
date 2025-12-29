@@ -69,9 +69,12 @@ To generate an image using a reference image, perform the following steps:
 1. Open your Push Notification campaign editor.
 2. Go to the Message Editor, click **Upload** to upload the image, and select the image. Click **Edit**.
 
-<Image align="center" alt="Edit Image" border={true} caption="Edit Image" src="https://files.readme.io/feba778dbafdf0bb11dd24ae8038992f84b7b7f97547fff534d2152026ac4d7c-image.png" />
+<Image align="center" alt="Edit Image" border={true} caption="Edit Image" src="https://files.readme.io/09d578da61806d6c14058d856ab0276845a2abb2a4d59c3037015170e645c450-2025-12-29_16-25-52.png" />
 
 3. Click ![](https://files.readme.io/7c39b5787600b7ac069bc4f2f78a6f3f0304bd3c3cc04eef082aa945c714fdf8-Plus_Icon.png) to select the reference image from CMS.
+
+<Image align="center" border={true} caption="Add Files" src="https://files.readme.io/d0accba648f5764ac22a3d6204de20fa2cb7e56221a3ac7616223bb91856acdc-2025-12-29_16-22-22.png" />
+
 4. In the prompt field, describe the updates or new campaign details you want to apply.  Once you select an image, you can:
 
 * **Change text**: For example, update offer amounts, taglines, or call-to-action text.
@@ -142,12 +145,9 @@ Click on Brand Kit to view your brand’s style, button colors, brand colors, an
 <Callout icon="📘" theme="info">
   **Note**
 
-  * Brand Kit names reflect the Brand Kits configured in your account.
-  * If a brand kit is locked, it cannot be edited within the campaign flow.
-  * Any changes made to BrandKit through campaign flow only apply to **that thread**.
-  * If a prompt conflicts with your Brand Kit’s defined elements, such as brand colors, button styles, or tone, the AI will prioritize the Brand Kit settings. For example, If your Brand Kit specifies yellow and green as primary brand colors and the prompt requests purple, the generated image will use purple, with yellow and green as the dominant colors.
-
-  This ensures consistent, on-brand visuals across all AI-generated assets, regardless of the prompt details.
+  * Locked kits can’t be edited within the campaign flow.
+  * Any changes made to BrandKit through campaign flow only apply to the **current thread**.
+  * If a prompt conflicts with Brand Kit settings (for example, brand colors or tone), the AI automatically follows the Brand Kit settings to maintain consistency.
 </Callout>
 
 For more information on setting up and using brand kits, refer to <Anchor label="Brand Kit" target="_blank" href="https://docs.clevertap.com/docs/brand-kit">Brand Kit</Anchor>.
