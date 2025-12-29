@@ -12,6 +12,29 @@ Campaigns promote products through various media types and are designed with spe
 
 The campaign listing page in CleverTap helps you manage all your campaigns efficiently. It allows you to filter them, edit columns, view performance, organize using labels, and more. This guide walks you through all key operations on the new campaigns page.
 
+# Video Tutorial
+
+<HTMLBlock>{`
+<div
+              style="
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                border-radius: 0;
+                box-shadow: 0 15px 40px rgba(63,58,79,.3);
+                overflow: hidden;
+                min-width:320px"><iframe
+              src="https://clevertap.portal.trainn.co/share/w1c4vyUbl1udzJF5IvEJNQ/embed?autoplay=false"
+              frameborder="0"
+              webkitallowfullscreen
+              mozallowfullscreen
+              allowfullscreen
+              allow="autoplay; fullscreen"
+              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+`}</HTMLBlock>
+
+<br />
+
 # Campaigns Operations
 
 You can perform different actions on the campaigns from the _All Campaigns_ page, including filtering, labeling, editing, archiving, stopping, cloning, and analyzing performance. The following sections briefly discuss each operation.
