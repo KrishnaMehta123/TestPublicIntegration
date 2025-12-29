@@ -101,11 +101,11 @@ Define what happens when users tap the container.
 Apply a background color or image to your design. You can do the following:
 
 * Choose a **solid color** using a color picker or hex code.
-* **Upload an image** directly from your system and add **alt text** for accessibility and search. For more information on images, refer to [Image Size and Aspect Ratios](https://docs.clevertap.com/docs/getting-started?isFramePreview=true#image-size-and-aspect-ratios).
+* **Upload an image** directly from your system and add **alt text** for accessibility and search. For more information on images, refer to [Image Size and Aspect Ratios](https://docs.clevertap.com/docs/advanced-in-app-builder#image-size-and-aspect-ratios).
 
 #### Font and Text
 
-Control how text appears within your container. For more information, refer to [Custom Fonts](https://docs.clevertap.com/docs/getting-started?isFramePreview=true#custom-fonts).
+Control how text appears within your container. For more information, refer to [Custom Fonts](https://docs.clevertap.com/docs/advanced-in-app-builder#custom-fonts).
 
 #### Border Radius
 
