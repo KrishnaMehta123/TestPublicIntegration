@@ -852,7 +852,18 @@ next:
             <div class="category">Customer Relationship Management</div>
         </div>
     </div>
- </a>   
+</a>   
+    <a href="https://docs.clevertap.com/docs/swipe-pages">
+    <div class="integration-card">
+        <div class="logo-container">
+            <img src="https://files.readme.io/8350ba1a2b9d505475589a006cdaf87dd89758e86e7b0d89f1b811f55109bf80-Swipe_pages_.jpeg" alt="Swipe Pages" class="logo">
+        </div>
+        <div class="content">
+            <div class="name">Swipe Pages</div>
+            <div class="category">Customer Relationship Management</div>
+        </div>
+      </div>
+</a> 
      <a href="https://docs.clevertap.com/docs/zoho-form-via-zapier">
     <div class="integration-card">
         <div class="logo-container">
