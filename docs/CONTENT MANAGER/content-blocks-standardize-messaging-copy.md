@@ -237,7 +237,7 @@ Before using Content Blocks, refer to these essential guidelines for supported p
 
       <td>
         You can add event personalization tags.
-        **Note**: Event Personalization for Content Blocks is currently in **Private Beta**. For more information, refer to <Anchor label="Event Personalization" target="_blank" href="https://docs.clevertap.com/docs/personalize-message-all?isFramePreview=true#personalize-content-blocks-using-event-personalization">Event Personalization</Anchor>.
+        **Note**: Event Personalization for Content Blocks is currently in **Private Beta**. 
       </td>
     </tr>
 
@@ -252,7 +252,7 @@ Before using Content Blocks, refer to these essential guidelines for supported p
 
       <td>
         You can add reminder personalization tags.  
-        **Note**: Reminder personalization for Content Blocks is currently in **Private Beta**. For more information, refer to <Anchor label="Reminder Personalization" target="_blank" href="https://docs.clevertap.com/docs/personalize-message-all?isFramePreview=true#personalize-content-blocks-using-reminder-personalization">Reminder Personalization</Anchor>.
+        **Note**: Reminder personalization for Content Blocks is currently in **Private Beta**. 
       </td>
     </tr>
 
