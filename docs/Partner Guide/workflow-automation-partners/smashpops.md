@@ -141,7 +141,7 @@ Consider an example where you want to track game interactions in CleverTap as ev
 
    1. Select _CleverTap_ from the _App_ dropdown.
    2. Select _Upload Event_ from the Action event dropdown.
-   3. Select _Account_ to connect the CleverTap account. The Zapier window opens. Enter all the required details to connect to the CleverTap account. Enter the same passcode you obtained during the [Create a Passcode on CleverTap Dashboard](doc:smashpops#create-a-passcode-on-the-clevertap-dashboard) step.
+   3. Select _Account_ to connect the CleverTap account. The Zapier window opens. Enter all the required details to connect to the CleverTap account. Enter the same passcode you obtained during the [Create Passcode on CleverTap Dashboard](doc:smashpops#create-passcode-on-clevertap-dashboard) step.
    4. Click **Continue** after your account is successfully connected.
 
 <Image align="center" alt="Select the Action for Zap" border={true} caption="Select the Action for Zap" src="https://files.readme.io/6134aee716977c0b32583899e754ac14e80ea3375ec98bed30ee418e64f6428f-4ea42b86-ce46-4fd0-9dde-09becd5626dd.png" width="75% " />
