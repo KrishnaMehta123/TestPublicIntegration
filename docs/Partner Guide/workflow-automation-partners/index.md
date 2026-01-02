@@ -21,6 +21,7 @@ CleverTap currently supports the following partner platforms:
 * [DataChannel](doc:datachannel)
 * [n8n](doc:n8n)
 * [Pipedream](doc:pipedream)
-* [Sheetlabs](doc:sheetlabs)
 * [SheetDB](doc:sheetdb)
+* [Sheetlabs](doc:sheetlabs)
+* [Smashpops](doc:smashpops)
 * [Zapier](doc:zapier)
