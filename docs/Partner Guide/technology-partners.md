@@ -4084,7 +4084,18 @@ next:
             <div class="category">Workflow Automation</div>
         </div>
     </div>
- </a>
+</a>
+ <a href="https://docs.clevertap.com/docs/sheetdb">
+    <div class="integration-card">
+        <div class="logo-container">
+            <img src="https://files.readme.io/f5fe97a86c27e955081ae67da59024d0282370f2ee7cf6a6f4708e431de6240d-sheetdb.io.png" alt="SheetDB" class="logo">
+        </div>
+        <div class="content">
+            <div class="name">SheetDB</div>
+            <div class="category">Workflow Automation</div>
+         </div>
+    </div>
+</a>
 <a href="https://docs.clevertap.com/docs/sheetlabs">
     <div class="integration-card">
         <div class="logo-container">
@@ -4096,13 +4107,13 @@ next:
          </div>
     </div>
 </a>
- <a href="https://docs.clevertap.com/docs/sheetdb">
+<a href="https://docs.clevertap.com/docs/smashpops">
     <div class="integration-card">
         <div class="logo-container">
-            <img src="https://files.readme.io/f5fe97a86c27e955081ae67da59024d0282370f2ee7cf6a6f4708e431de6240d-sheetdb.io.png" alt="SheetDB" class="logo">
+            <img src="https://files.readme.io/cb48640086300861d82b9aa9cca212d5a5522f3ad858b21865b9d750972e63c4-smashpops_logo.png" alt="Smashpops" class="logo">
         </div>
         <div class="content">
-            <div class="name">SheetDB</div>
+            <div class="name">Smashpops</div>
             <div class="category">Workflow Automation</div>
          </div>
     </div>
