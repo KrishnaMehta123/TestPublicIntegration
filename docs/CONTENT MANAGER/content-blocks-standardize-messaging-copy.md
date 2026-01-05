@@ -75,7 +75,7 @@ To create a content block, perform the following steps:
 
 2. Click **New** and select the type of Content Block type (Text or HTML).
 
-<Image align="center" alt="Content Block Editor" border={true} caption="Content Block Editor" src="https://files.readme.io/146b27fd5bf641b86d98f13c20f3ad666eb5f0f349274d97f51e56f6d54fcea8-2026-01-05_11-21-23.png" />
+<Image align="center" alt="Content Block Editor" border={true} caption="Content Block Editor" src="https://files.readme.io/8cea635e345d656087e823412ee92f089e8d5bb16eda6ceff2cde603577df2e6-Screenshot_2026-01-05_at_4.17.02_PM.png" />
 
 3. Click **\{\{}}**from the editor to <Anchor label="nest content blocks" target="_blank" href="docs:nesting-considerations">nest content blocks</Anchor> within another content block and select an available content block.
 
