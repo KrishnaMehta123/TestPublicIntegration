@@ -34,7 +34,7 @@ Configure how user data is mapped and imported from Snowflake into CleverTap. Th
 
 The mapping process consists of the following three steps:
 
-1. [Map identity](https:/doc:map-data-for-snowflake-import)  to specify how incoming user records from Snowflake are matched to user profiles in CleverTap.
+1. [Map identity](https://docs.clevertap.com/update/docs/map-data-for-snowflake-import)  to specify how incoming user records from Snowflake are matched to user profiles in CleverTap.
 2. [Select a timestamp column](doc:map-data-for-snowflake-import#define-updated-on-timestamp) to fetch only newly added or updated records.
 3. [Map Snowflake columns](doc:map-data-for-snowflake-import#map-user-profile-properties-from-snowflake) to CleverTap user properties.
 
