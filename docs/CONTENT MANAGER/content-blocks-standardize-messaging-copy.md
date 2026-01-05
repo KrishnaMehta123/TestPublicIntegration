@@ -77,17 +77,17 @@ To create a content block, perform the following steps:
 
 <Image align="center" alt="Content Block Editor" border={true} caption="Content Block Editor" src="https://files.readme.io/146b27fd5bf641b86d98f13c20f3ad666eb5f0f349274d97f51e56f6d54fcea8-2026-01-05_11-21-23.png" />
 
-4. Click **\{\{}}**from the editor to <Anchor label="nest content blocks" target="_blank" href="docs:nesting-considerations">nest content blocks</Anchor> within another content block and select an available content block.
+3. Click **\{\{}}**from the editor to <Anchor label="nest content blocks" target="_blank" href="docs:nesting-considerations">nest content blocks</Anchor> within another content block and select an available content block.
 
 <Image align="center" alt="Nest Multiple Content Blocks" border={true} caption="Nest Multiple Content Blocks" src="https://files.readme.io/444e1b6e3fa2349d38e754650d5bedb0d0cab2645f0d5eaf92a6eabc05f12902-image.png" />
 
-5. From the editor, click **\{\{}}**  to use <Anchor label="inline personalization" target="_blank" href="https://docs.clevertap.com/docs/personalize-message-all#inline-personalization">inline personalization</Anchor> and <Anchor label="Conditional Tags" target="_blank" href="https://docs.clevertap.com/docs/liquid-tags">Conditional Tags</Anchor> to personalize the _Content Block_.
-6. Click **Preview** to preview the content block.
+4. From the editor, click **\{\{}}**  to use <Anchor label="inline personalization" target="_blank" href="https://docs.clevertap.com/docs/personalize-message-all#inline-personalization">inline personalization</Anchor> and <Anchor label="Conditional Tags" target="_blank" href="https://docs.clevertap.com/docs/liquid-tags">Conditional Tags</Anchor> to personalize the _Content Block_.
+5. Click **Preview** to preview the content block.
 
 <Image align="center" alt="Preview content block" border={true} caption="Preview Content Block" src="https://files.readme.io/d4862eae25783ab2d1facd6210a58e93c59bed9a9f2c8cc864681ff955e80b85-image.png" />
 
-7. Click **Save** to save your _Content Block_.
-8. Enter a name for your Content Block.
+6. Click **Save** to save your _Content Block_.
+7. Enter a name for your Content Block.
 
 <Callout icon="📘" theme="info">
   #### Content Block Specification
@@ -107,8 +107,8 @@ To create a content block, perform the following steps:
     * Any edits to the main or child content block will reflect in the nested content block.
 </Callout>
 
-9. From the list of labels, select the appropriate labels to organize and identify your content block.
-10. Click **Done**.
+8. From the list of labels, select the appropriate labels to organize and identify your content block.
+9. Click **Done**.
 
 # Preview Content Block
 
