@@ -135,8 +135,8 @@ You can use Content Blocks in **Campaigns**, **Journeys**, and **Reminders** to 
 
 You can use Content Blocks in two ways when creating your message:
 
-* Insert Content Blocks Directly in a Message 
-* Use Content Blocks with Liquid Tags 
+* [Insert Content Blocks Directly in a Message](https://docs.clevertap.com/docs/content-blocks-standardize-messaging-copy?isFramePreview=true#insert-content-blocks-directly-in-a-message)
+* [Use Content Blocks with Liquid Tags](https://docs.clevertap.com/docs/content-blocks-standardize-messaging-copy?isFramePreview=true#use-content-blocks-with-liquid-tags)
 
 ## Insert Content Blocks Directly in a Message
 
@@ -244,7 +244,7 @@ Before using Content Blocks, refer to these essential guidelines for supported p
 
       <td>
         You can add event personalization tags.
-        **Note**: Event Personalization for Content Blocks is currently in **Private Beta**. 
+        **Note**: Event Personalization for Content Blocks is currently in **Private Beta**.
       </td>
     </tr>
 
@@ -259,7 +259,7 @@ Before using Content Blocks, refer to these essential guidelines for supported p
 
       <td>
         You can add reminder personalization tags.  
-        **Note**: Reminder personalization for Content Blocks is currently in **Private Beta**. 
+        **Note**: Reminder personalization for Content Blocks is currently in **Private Beta**.
       </td>
     </tr>
 
@@ -287,7 +287,7 @@ Before using Content Blocks, refer to these essential guidelines for supported p
       </td>
 
       <td>
-        -
+        * <br />
       </td>
     </tr>
 
@@ -301,7 +301,7 @@ Before using Content Blocks, refer to these essential guidelines for supported p
       </td>
 
       <td>
-        -
+        * <br />
       </td>
     </tr>
   </tbody>
