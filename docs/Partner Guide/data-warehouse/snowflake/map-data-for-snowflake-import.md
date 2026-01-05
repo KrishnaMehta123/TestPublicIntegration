@@ -115,7 +115,7 @@ Configure how event data is mapped and imported from Snowflake into CleverTap. T
 
 The mapping process consists of the following five steps:
 
-1. [Map identity](doc:map-data-for-snowflake-import#map-identity-1) to associate event data with user profiles in CleverTap.
+1. [Map identity](https://docs.clevertap.com/update/docs/map-data-for-snowflake-import) to associate event data with user profiles in CleverTap.
 2. [Select a timestamp column](doc:map-data-for-snowflake-import#define-updated-on-timestamp-1) to fetch only newly added or updated rows.
 3. [Define when each event occurred](doc:map-data-for-snowflake-import#map-created-on-timestamp)  using a created-on timestamp.
 4. [Choose how events are named](doc:map-data-for-snowflake-import#choose-event-naming-method) (from a column or a static value).
