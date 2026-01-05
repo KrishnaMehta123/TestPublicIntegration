@@ -15,7 +15,7 @@ next:
 ---
 # Overview
 
-After [configuring import](doc:create-snowflake-import), this step lets you map your Snowflake columns to CleverTap’s user profiles or events. This ensures each row of data updates the correct fields in CleverTap. 
+After [configuring import](doc:create-snowflake-import), this step lets you map your Snowflake columns to CleverTap’s user profiles or events. This ensures each row of data updates the correct fields in CleverTap.
 
 * [**User Profile Data**](doc:map-data-for-snowflake-import#user-profile-data): Map user-specific fields such as `email`, `first_name`, `last_name`, or any other attribute from the Snowflake database, to the user profile fields in CleverTap.
 * [**Event Properties**](doc:map-data-for-snowflake-import#event-data): Map event-specific columns such as `add_to_cart`, `product_viewed`, `purchased` to CleverTap event properties.
@@ -28,15 +28,13 @@ Use the toggle to switch between User Profile Data and Event Data mapping option
 
 # User Profile Data
 
-Configure how user data is mapped and imported from Snowflake into CleverTap. This step ensures that user profiles are correctly identified, updated, and enriched with relevant attributes. 
+Configure how user data is mapped and imported from Snowflake into CleverTap. This step ensures that user profiles are correctly identified, updated, and enriched with relevant attributes.
 
-<Image alt="User Profile Data" align="center" border={true} src="https://files.readme.io/d1d1ea0c76ba66d3c3b4cb6ef1ad073b88b9324056fc8cbd9f4db557c837bc38-User_Profile_Data.png">
-  User Profile Data
-</Image>
+<Image align="center" alt="User Profile Data" border={true} caption="User Profile Data" src="https://files.readme.io/d1d1ea0c76ba66d3c3b4cb6ef1ad073b88b9324056fc8cbd9f4db557c837bc38-User_Profile_Data.png" />
 
 The mapping process consists of the following three steps:
 
-1. [Map identity](doc:map-data-for-snowflake-import#map-identity)  to specify how incoming user records from Snowflake are matched to user profiles in CleverTap.
+1. [Map identity](https://docs.clevertap.com/update/docs/map-data-for-snowflake-import)  to specify how incoming user records from Snowflake are matched to user profiles in CleverTap.
 2. [Select a timestamp column](doc:map-data-for-snowflake-import#define-updated-on-timestamp) to fetch only newly added or updated records.
 3. [Map Snowflake columns](doc:map-data-for-snowflake-import#map-user-profile-properties-from-snowflake) to CleverTap user properties.
 
@@ -49,7 +47,7 @@ This step specifies how incoming user records from Snowflake are matched to user
   * If a matching profile does not exist, CleverTap creates a new profile and generates a corresponding CleverTap ID.
 * **[CleverTap ID](https://docs.clevertap.com/docs/user-profiles#identifiers)**: A system-generated unique identifier assigned to each user profile in CleverTap. The maximum length allowed is 1024 characters. When using CleverTap ID:
   * The ID must be provided when making profile updates.
-  * If a profile with the same ID exists, CleverTap updates or adds properties to the existing profile. 
+  * If a profile with the same ID exists, CleverTap updates or adds properties to the existing profile.
 
 > 🚧 Identity Field Validation Rules
 >
@@ -60,14 +58,14 @@ This step specifies how incoming user records from Snowflake are matched to user
 
 Define the **Updated On** field to ensure CleverTap imports only new or updated rows since the last sync, optimizing performance and avoiding duplicate processing.
 
-1. **Select a Timestamp Column**\
+1. **Select a Timestamp Column**  
    Select a column that tracks when each row was added or updated. The following column types are supported:
    * `NUMERIC`
    * `DATE`
    * `TIMESTAMP`
    * `TIMESTAMP_WITH_TIMEZONE`
 
-2. **Configure the Date Format**\
+2. **Configure the Date Format**  
    Specify how CleverTap should interpret the timestamp values:
 
    * If the column type is `NUMERIC`, choose one of the following:
@@ -80,13 +78,13 @@ Define the **Updated On** field to ensure CleverTap imports only new or updated 
 
 This step maps Snowflake columns to CleverTap user properties, ensuring seamless data import and accurate user profile updates. To do so, perform the following steps:
 
-1. **Select a Column**\
+1. **Select a Column**  
    Choose a column from your Snowflake database that contains user-related information, such as `email`, `name`, `Customer Type`, or `Wallet Balance`.
 
-2. **Assign a User Property**\
+2. **Assign a User Property**  
    Map the selected column to a corresponding CleverTap user property.
 
-   * Select from available system properties (for example, `email_id` maps to *Email*).
+   * Select from available system properties (for example, `email_id` maps to _Email_).
    * If the desired property isn’t listed, enter a new name to create a custom property.
 
 > 📘 **System Properties**
@@ -97,7 +95,7 @@ This step maps Snowflake columns to CleverTap user properties, ensuring seamless
 >   * **MSG Properties** (e.g., MSG-Email, MSG-SMS): Accepts only `"0"`, `"1"`, `"true"`, or `"false"`
 >   * **Property Names**: Cannot include these characters: `%`, `>`, `<`, `!`, `|`, `&`, `.`, `:`, `;`, `$`, `'`, `"`, `\`, `#`
 
-3. **Choose a Data Type**\
+3. **Choose a Data Type**  
    Select the appropriate data type for the column. Use the table below to determine when and how each type should be used:
 
 | **Data Type** | **When to Select**                           | **Example Values**                                   | Validation                                                                                                                                        |
@@ -113,9 +111,7 @@ This step maps Snowflake columns to CleverTap user properties, ensuring seamless
 
 Configure how event data is mapped and imported from Snowflake into CleverTap. This setup ensures event records are accurately linked to user profiles, timestamped correctly, and enriched with event-specific properties.
 
-<Image alt="Event Data" align="center" border={true} src="https://files.readme.io/80338755cccb4898f5cf092170a96ffcde306da1e9a0f6e54a2e17568a81a04b-Event_Data.png">
-  Event Data
-</Image>
+<Image align="center" alt="Event Data" border={true} caption="Event Data" src="https://files.readme.io/80338755cccb4898f5cf092170a96ffcde306da1e9a0f6e54a2e17568a81a04b-Event_Data.png" />
 
 The mapping process consists of the following five steps:
 
@@ -134,25 +130,25 @@ This step specifies how incoming event records from Snowflake are matched to use
 
 > 🚧 **Identity Field Validation Rules**
 >
-> * Disallowed values: `undefined`, `null`, `na`, `n/a`, `0`, `nil`, `-1`, `infinity`, `-infinity`, `inf`, `-inf`, `nan`, `-nan`, `empty`, `xxxxxx`  
+> * Disallowed values: `undefined`, `null`, `na`, `n/a`, `0`, `nil`, `-1`, `infinity`, `-infinity`, `inf`, `-inf`, `nan`, `-nan`, `empty`, `xxxxxx`
 > * Values exceeding 1024 characters are marked as errors.
 
 ## Define Updated On Timestamp
 
 This field ensures CleverTap imports only newly added or updated event records since the last sync.
 
-1. **Select a Timestamp Column**\
+1. **Select a Timestamp Column**  
    Choose a column that indicates when a row was last added or updated. Supported types:
    * `NUMERIC`
    * `DATE`
    * `TIMESTAMP`
    * `TIMESTAMP_WITH_TIMEZONE`
 
-2. **Configure the Date Format**  
+2. **Configure the Date Format**
    * If the column type is `NUMERIC`, choose:
      * **Epoch Seconds** (for example, `1640995200`)
      * **Epoch Milliseconds** (for example, `1640995200000`)
-   * If the column type is **DATE**, **TIMESTAMP**, or **TIMESTAMP\_WITH\_TIMEZONE**, CleverTap automatically processes the timestamp without requiring a format selection.
+   * If the column type is **DATE**, **TIMESTAMP**, or **TIMESTAMP_WITH_TIMEZONE**, CleverTap automatically processes the timestamp without requiring a format selection.
 
 ## Map Created On Timestamp
 
@@ -165,17 +161,17 @@ For more information, refer to [Supported Date Format](doc:map-data-for-snowflak
 
 > 📘 Validation Rules for Timestamp
 >
-> * If this field is not mapped, CleverTap uses the system timestamp, which may misrepresent actual event timing.  
+> * If this field is not mapped, CleverTap uses the system timestamp, which may misrepresent actual event timing.
 > * Invalid formats or data types will cause import errors.
 
 ## Choose Event Naming Method
 
 Specify how CleverTap should assign names to imported events.
 
-* **Event from Column**\
+* **Event from Column**  
   Import different event types using a column that contains event names. Ideal for dynamic event tables.
 
-* **Specific Event**\
+* **Specific Event**  
   Assign a single static event name for all imported records. Best for importing a consistent event type.
 
 > 📘 Validations Rules for Event Naming
@@ -187,10 +183,10 @@ Specify how CleverTap should assign names to imported events.
 
 This step maps columns to CleverTap event properties, providing context and detail to each event.
 
-1. **Select a Column**\
+1. **Select a Column**  
    Choose a column with event-related details like `category`, `price`, or `transactionID`.
 
-2. **Enter Event Property**\
+2. **Enter Event Property**  
    Assign a name for the corresponding CleverTap event property.
 
 You can use existing property names or enter new ones to create custom event properties.
@@ -200,7 +196,7 @@ You can use existing property names or enter new ones to create custom event pro
 > * System event properties and `Charged: Item|Properties` cannot be imported.
 > * Event property names must not contain: `%`, `>`, `<`, `!`, `|`, `&`, `.`, `:`, `;`, `$`, `'`, `"`, `\`, `#`
 
-3. **Select Data Type**\
+3. **Select Data Type**  
    Choose the appropriate data type based on your column values:
 
 | **Data Type** | **When to Select**                            | **Example Values**          | **Validation**                                                                                                                                |
@@ -227,7 +223,7 @@ If the selected column is of `Date` datatype, then you do not need to provide th
 
 After completing your mapping configuration, CleverTap strongly recommends performing a Dry Run to simulate the import and validate your settings, without affecting your CleverTap account. This step helps identify potential errors early and ensures your mapping is accurate.
 
-Click **Perform Dry Run** after completing your mapping configuration. CleverTap will do the following: 
+Click **Perform Dry Run** after completing your mapping configuration. CleverTap will do the following:
 
 1. Connects to your Snowflake database.
 2. Retrieve random samples from your mapped data.
@@ -251,7 +247,7 @@ The dry run results display comprehensive information about your mapping validat
 
 ## Validation Outcomes
 
-After mapping data fields from Snowflake to CleverTap, the system runs a validation check to assess configuration accuracy, data quality, and identity alignment. The outcomes are categorized as follows: 
+After mapping data fields from Snowflake to CleverTap, the system runs a validation check to assess configuration accuracy, data quality, and identity alignment. The outcomes are categorized as follows:
 
 * **Successful Validation**: Indicates that the mapping and sample records meet CleverTap’s data structure and formatting requirements.
   * User profile data or event data from the Snowflake database was validated successfully.
@@ -270,7 +266,7 @@ After mapping data fields from Snowflake to CleverTap, the system runs a validat
 
 ## Sync User Profile and Event Data (Optional)
 
-Syncing user profiles and event data allows you to push the selected random data from the Snowflake database to CleverTap. For user profiles and events, if the profile is not present in CleverTap, a new profile is created, and user properties are captured against this profile. 
+Syncing user profiles and event data allows you to push the selected random data from the Snowflake database to CleverTap. For user profiles and events, if the profile is not present in CleverTap, a new profile is created, and user properties are captured against this profile.
 
 > 🚧 Event Data Sync During Dry Run
 >
