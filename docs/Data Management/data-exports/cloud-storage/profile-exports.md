@@ -16,9 +16,11 @@ next:
 
 Profile Exports allow you to securely export user profile data from CleverTap to external cloud storage platforms such as Amazon S3, Google Cloud Storage, or Microsoft Azure. You can configure export to centralize customer data, integrate with existing analytics workflows, and ensure the data warehouse platform always has the latest profile information.
 
-> 📘 Private Beta
->
-> This feature is a private beta release. Reach out to your Customer Success Manager for access.
+<Callout icon="📘" theme="info">
+  #### Private Beta
+
+  This feature is a private beta release. Reach out to your Customer Success Manager for access.
+</Callout>
 
 With Profile Exports, you can:
 
@@ -73,10 +75,12 @@ However, if you have an existing profile exports created with the legacy flow, p
 2. Verify the new export runs successfully and produces the expected output.
 3. Update your data warehouse systems to process files from the new export location.
 
-> 📘 Migration from Legacy Exports
->
-> * Legacy exports continue to run without interruption. You can view and edit legacy exports using the Switch to legacy option.
-> * You cannot migrate legacy exports to the new flow directly. You must stop the legacy export and create a new export using the enhanced flow.
+<Callout icon="📘" theme="info">
+  #### Migration from Legacy Exports
+
+  * Legacy exports continue to run without interruption. You can view and edit legacy exports using the Switch to legacy option.
+  * You cannot migrate legacy exports to the new flow directly. You must stop the legacy export and create a new export using the enhanced flow.
+</Callout>
 
 ## Configure Storage & File Details
 
@@ -93,7 +97,7 @@ In this section, you will define the destination, folder organization, file form
    * **Split by data type**: Creates top‑level folders such as `events/` and `profile/`. Profile exports will be stored under `profile/`.  
      _Preview:_ `/{bucket-name}/profile/file.csv.gz`
    * **Split by export run date**: Partitions files by the export run date so each day’s data lands in its own folder. This is ideal for date-based ingestion pipelines.  
-     _Preview:_ `/{bucket-name}/20251003/file.csv.gz`
+     _Preview:_ `/{bucket-name}/2025-10-03/file.csv.gz`
    * **Split by export unique ID**: Creates a sub-folder using the unique export ID assigned to each export configuration.  
      _Preview:_ `/{bucket-name}/1761650178/`
    * **Custom**:  Build your own folder structure using dynamic variables. Click \{\{}} to insert variables and use `/` to create subfolders.  
@@ -107,15 +111,17 @@ In this section, you will define the destination, folder organization, file form
 
      * `{{Instance-id}}`: Database identifier for your account (typically 0–23).
 
-     * `{{Date}}`: Export run date in `yyyymmdd`.  
+     * `{{Date}}`: Export run date in `yyyy-mm-dd`.  
        _Example_: `{{date}}/run-{{export-id}}`  
-       _Preview_: `/{bucket-name}/20251003/run-1761650178/file.csv.gz`\ <br />
+       _Preview_: `/{bucket-name}/2025-10-03/run-1761650178/file.csv.gz`\ <br />
 
-   > 📘 Note
-   >
-   > Use forward slashes (/) to create sub-folders. You can include letters (a-z, A-Z), numbers (0-9), slashes (/), hyphens (-), and underscore (_).
+   <Callout icon="📘" theme="info">
+     #### Note
 
-![](https://files.readme.io/a77ce23417eb8525f39e6d8cad5e0bb24e209b8b6b3e5e6ea4c0a6575606ac6e-Set_Up_Sub-Folder_Structure.png)  Set Up Sub-Folder Structure
+     Use forward slashes (/) to create sub-folders. You can include letters (a-z, A-Z), numbers (0-9), slashes (/), hyphens (-), and underscore (_).
+   </Callout>
+
+<Image align="center" border={true} caption="Set Up Sub-Folder Structure" src="https://files.readme.io/a77ce23417eb8525f39e6d8cad5e0bb24e209b8b6b3e5e6ea4c0a6575606ac6e-Set_Up_Sub-Folder_Structure.png" />
 
 3. **Select File Format**  
    Select the file format for your exported data. To minimize post-processing, select the format that your downstream platforms can process most efficiently.  
@@ -126,26 +132,31 @@ In this section, you will define the destination, folder organization, file form
 * **Parquet**: A compressed, column-based format designed for analytics and large-scale data storage.
 * **XML**: A structured format suited for systems that need nested data.
 
-> 📘 Note
->
-> * Parquet files are saved as .parquet by default (without additional compression). If compression is enabled, they are saved as .parquet.gz.
-> * CSV, JSON, and XML files are automatically compressed using Gzip and saved as .gz files.
+<Callout icon="📘" theme="info">
+  #### Note
+
+  * Parquet files are saved as .parquet by default (without additional compression). If compression is enabled, they are saved as .parquet.gz.
+  * CSV, JSON, and XML files are automatically compressed using Gzip and saved as .gz files.
+</Callout>
 
 4. **Define File Name Convention**  
    Define how each file is named inside the innermost folder created by _Sub folder structure_. If you select _Default_, CleverTap applies a standard structure. If you select _Custom_, the input field and dynamic variable picker are enabled. Ensure that required variables are included and correctly separated. The _Preview_ shows the exact filename based on your input.
    * **Default file name**: The default format is `<account‑id>-<export request id>-<timestamp>-<database id>.<format>.gz`. For example, `100000000-1761651721-1761651721-0.csv.gz`.
-   * **Custom**:  Create a custom filename using supported dynamic variables. Click **\{\{ }}** to insert variables and combine them with fixed text. For example, the custom file name convention `profiles-{{date}}-{{export-id}}.csv.gz` resolves to `profiles-20251003-1761651721.csv.gz`). By default, the timestamp and instance ID are always appended to the end of the filename to ensure that the content is not overridden.  
+   * **Custom**:  Create a custom filename using supported dynamic variables. Click **\{\{ }}** to insert variables and combine them with fixed text. For example, the custom file name convention `profiles-{{date}}-{{export-id}}.csv.gz` resolves to `profiles-2025-10-03-1761651721.csv.gz`). By default, the timestamp and instance ID are always appended to the end of the filename to ensure that the content is not overridden.  
      The following are the supported variables:
      * `{{Account-id}}`: Your unique CleverTap account identifier.
      * `{{Export-id}}`: Unique export ID assigned to each export run.
      * `{{Timestamp}}`: Epoch timestamp when the export runs.
      * `{{Instance-id}}`: Database identifier for your CleverTap account (typically 0–23).
-     * `{{Date}}`: Export run date in `yyyymmdd`.
-       > 📘 Note
-       >
-       > Use forward slashes (/) to create sub-folders. You can include letters (a-z, A-Z), numbers (0-9), slashes (/), hyphens (-), and underscore (_).
+     * `{{Date}}`: Export run date in `yyyy-mm-dd`.
 
-![](https://files.readme.io/574aeb96345953e27aee4ff4e007b9362d967255ef41270d87e97b98a5e36ca5-Define_File_Name_Convention.png)  Select File Format and Define File Name
+       <Callout icon="📘" theme="info">
+         #### Note
+
+         Use forward slashes (/) to create sub-folders. You can include letters (a-z, A-Z), numbers (0-9), slashes (/), hyphens (-), and underscore (_).
+       </Callout>
+
+<Image align="center" alt="Select File Format and Define File Name" border={true} caption="Select File Format and Define File Name" src="https://files.readme.io/574aeb96345953e27aee4ff4e007b9362d967255ef41270d87e97b98a5e36ca5-Define_File_Name_Convention.png" />
 
 5. Click **Next** to choose user identifiers.
 
@@ -166,9 +177,11 @@ Choose which user identifiers to include in the export and how they appear in th
 
    <Image align="center" alt="Select Identity" border={true} caption="Select Identity" src="https://files.readme.io/1a28ae6ee64add0430f7cbc2338843b9ff4dd7633e0bf6330e72fc70f9c97f40-Select_Identity.gif" />
 
-   > 📘 **Note**
-   >
-   > The order in which you select identifiers sets the initial priority. You can fine-tune priority under _Values to export_ and _Fallback order_. Ensure **Phone** values use E.164 format (for example, `+15551234567`) to avoid downstream validation issues.
+   <Callout icon="📘" theme="info">
+     #### Note
+
+     The order in which you select identifiers sets the initial priority. You can fine-tune priority under _Values to export_ and _Fallback order_. Ensure **Phone** values use E.164 format (for example, `+15551234567`) to avoid downstream validation issues.
+   </Callout>
 
 2. **Define Export Preference**  
    Choose how identifier values are written and define priority. Drag to reorder or enter position numbers.
@@ -203,12 +216,14 @@ Configure which properties to include in the export, as well as how they are lab
 
    <Image align="center" alt="Include Device Attributes" border={true} caption="Include Device Attributes" src="https://files.readme.io/89080e6460bd1d6639605ff0ef7e5df35c8962418f704967ceeaa796c115892d-Include_Device_Attributes.png" />
 
-   > 📘 Device Token Missing
-   >
-   > If a profile has no device token, the token column appears blank.
+   <Callout icon="📘" theme="info">
+     #### Device Token Missing
+
+     If a profile has no device token, the token column appears blank.
+   </Callout>
 
 2. **Add Communication Preferences**.  
-   Include the [user's opt-in/opt-out status](doc:gdpr#right-to-marketing-opt-out) across messaging channels. Select one or more options from the dropdown: MSG-push, MSG-push-all (push subscription status across all devices), `MSG-email`, `MSG-sms`, `MSG-whatsapp`, and `[subscriptionGroups](doc:group-unsubscribe#subscription-groups)` (subscription group preferences for messaging channels). Selecting multiple items adds multiple columns. If a profile has no value for a selected item, the corresponding column appears blank.
+   Include the [user's opt-in/opt-out status](doc:gdpr#right-to-marketing-opt-out) across messaging channels. Select one or more options from the dropdown: `MSG-push`, `MSG-webpush`, `MSG-email`, `MSG-sms`, `MSG-whatsapp`, and `[subscriptionGroups](doc:group-unsubscribe#subscription-groups) ` (subscription group preferences for messaging channels). Selecting multiple items adds multiple columns. If a profile has no value for a selected item, the corresponding column appears blank.
 
    <Image align="center" alt="Export Communication Preferences" border={true} caption="Export Communication Preferences" src="https://files.readme.io/c494bcc5ab5779790e9c9a66457dd15674f31428997d95de5ddcbebf1ae7380c-Export_Communication_Preferences.gif" />
 
@@ -216,39 +231,45 @@ Configure which properties to include in the export, as well as how they are lab
    Choose which profile properties to export:
 
    * **All user properties**: Exports all system and custom user properties. For more information, refer to [User Properties](doc:user-profiles#user-properties).
-   * **System properties**: Exports only CleverTap system properties such as **Name**, **Gender**, **DOB**, and so on. For more information, refer to [System Properties](doc:user-profiles#system-properties).
+   * **System properties**: Exports only CleverTap system properties such as **Name**, **Gender**, **DOB**, **Email**, **Phone**, and **Photo**. For more information, refer to [System Properties](doc:user-profiles#system-properties).
    * **Selected properties**: Pick specific fields from your schema (for example, **Email**, **Phone**, **Customer Type**). For more information, refer to [Custom Properties](doc:user-profiles#custom-properties).
 
    <Image align="center" alt="Select User Properties to Export" border={true} caption="Select User Properties to Export" src="https://files.readme.io/86580e1c39e195008221ca0c636d54717b94ff958c0e31dbf96c245927e65742-Select_User_Properties_to_Export.gif" />
 
-   > 📘 Note
-   >
-   > You must select at least one user property. You cannot select the Identity and CleverTap ID configured in _Step 2: Select User Identifiers_.
+   <Callout icon="📘" theme="info">
+     #### Note
+
+     You must select at least one user property. You cannot select the Identity and CleverTap ID configured in _Step 2: Select User Identifiers_.
+   </Callout>
 
 4. **Rename & Reorder Properties**:  
    Customize the column names and the order of selected properties. Use the _Selected properties_ dropdown to rename or reorder the selected properties (for example, change `Phone` to `Phone Number`).
 
    <Image align="center" alt="Rename and Reorder User Properties to Export" border={true} caption="Rename and Reorder User Properties to Export" src="https://files.readme.io/785878c2969967e4229143efedd2b4d61283bdfc8ddea7b09da7af3186c61043-Rename__Reorder_Properties.gif" />
 
-> 📘 Points to Consider
->
-> * Renaming only affects the column header in the export; it does not change the original property name.
-> * Use the search bar to find specific fields.
-> * Drag rows to rearrange columns, or use the Reorder button to set the export sequence.
-> * If a property is missing for a profile, the column still appears but remains blank.
-> * Reordering does not impact data collection or internal storage — it only affects the file structure.
-> * If two or more properties have the same name, then the property present last in the order will only be exported. So avoid having two properties with the same name
+<Callout icon="📘" theme="info">
+  #### Points to Consider
+
+  * Renaming only affects the column header in the export; it does not change the original property name.
+  * Use the search bar to find specific fields.
+  * Drag rows to rearrange columns, or use the Reorder button to set the export sequence.
+  * If a property is missing for a profile, the column still appears but remains blank.
+  * Reordering does not impact data collection or internal storage — it only affects the file structure.
+  * If two or more properties have the same name, then the property present last in the order will only be exported. So avoid having two properties with the same name
+</Callout>
 
 5. **Manage Schema Updates**  
    Control how new properties are handled in future export creation. This option appears only when you choose to export all properties in the previous step.
    * **Add new properties at the end**: Automatically append any new properties (system or custom) as new columns at the end of the export file. For example, if you later add a property named **loyalty_tier**. It will be included as a new column at the end of the next export and onwards.
    * **Lock current schema**: Keep the file structure fixed. New properties are excluded until manually added. For example, if you add **loyalty_tier**, it will not appear in the export until you update the schema configuration.
 
-![](https://files.readme.io/e9dd4ed68144deefe6f7f3e9bdc3bd0ad7e28688f97466f55b662c6148f5ca0e-Manage_Schema_Updates.png)  Manage Schema Updates
+<Image align="center" alt="Manage Schema Updates" border={true} caption="Manage Schema Updates" src="https://files.readme.io/e9dd4ed68144deefe6f7f3e9bdc3bd0ad7e28688f97466f55b662c6148f5ca0e-Manage_Schema_Updates.png" />
 
-> 📘 Tip
->
-> Choose _Add new properties at the end_ if you want to capture all user data automatically. Choose _Lock current schema_ if your downstream pipelines require a fixed schema structure.
+<Callout icon="📘" theme="info">
+  #### Tip
+
+  Choose _Add new properties at the end_ if you want to capture all user data automatically. Choose _Lock current schema_ if your downstream pipelines require a fixed schema structure.
+</Callout>
 
 6. Click **Preview** to review the complete data structure and click **Next** to configure the export schedule.
 
@@ -287,383 +308,433 @@ Exported profile files follow this consistent column order:
 3. **Communication Preferences**: MSG-push, MSG-push-all, MSG-email, MSG-sms, MSG-whatsapp, subscriptionGroups (if selected).
 4. **User Properties**: System and custom properties in the order you define.
 
-### Sample JSON & XML Export
+<Tabs>
+  <Tab title="Sample JSON">
+    ```
+    {
+      "identity": "XXXXXXX",
+      "all_identities": [
+      "XXXXXXX"
+    ],
+      "clevertapId": "__g1234567890",
+      "clevertapIds": "[__g1234567890,Ne22k5-xQ90sN1aebRkzjiV65JN6Cwdc]",
+      "device": {
+      "token": "XXXXXXX"
+    },
+      "MSG-push": "XXXXXXX",
+      "MSG-push-all": "XXXXXXX",
+      "MSG-email": "XXXXXXX",
+      "MSG-sms": "XXXXXXX",
+      "MSG-whatsapp": "XXXXXXX",
+      "subscriptionGroups": {
+      "group1": "Subscribed",
+      "group2": "Unsubscribed",
+      "group3": "Subscribed"
+    },
+      "Email": "XXXXXXX",
+      "Phone": "XXXXXXX",
+      "Name": "XXXXXXX",
+      "Gender": "XXXXXXX",
+      "DOB": "XXXXXXX",
+      "Photo": "XXXXXXX",
+      "Favouties Game": "XXXXXXX",
+      "Designation": "XXXXXXX",
+      "Blood Group": "XXXXXXX"
+    }
+    ```
 
-```json
-{
-  "identity": "XXXXXXX",
-  "all_identities": [
-  "XXXXXXX"
-],
-  "clevertapId": "__g1234567890",
-  "clevertapIds": "[__g1234567890,Ne22k5-xQ90sN1aebRkzjiV65JN6Cwdc]",
-  "device": {
-  "token": "XXXXXXX"
-},
-  "MSG-push": "XXXXXXX",
-  "MSG-push-all": "XXXXXXX",
-  "MSG-email": "XXXXXXX",
-  "MSG-sms": "XXXXXXX",
-  "MSG-whatsapp": "XXXXXXX",
-  "subscriptionGroups": {
-  "group1": "Subscribed",
-  "group2": "Unsubscribed",
-  "group3": "Subscribed"
-},
-  "Email": "XXXXXXX",
-  "Phone": "XXXXXXX",
-  "Name": "XXXXXXX",
-  "Gender": "XXXXXXX",
-  "DOB": "XXXXXXX",
-  "Photo": "XXXXXXX",
-  "Favouties Game": "XXXXXXX",
-  "Designation": "XXXXXXX",
-  "Blood Group": "XXXXXXX"
-}
-```
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<root>
-    <Profile>
-        <identity>XXXXXXX</identity>
-        <profileIdentities>
-            <entry>
-                <key>all_identities</key>
-                <value>[XXXXXXX]</value>
-            </entry>
-            <entry>
-                <key>clevertapId</key>
-                <value>__g1234567890</value>
-            </entry>
-            <entry>
-                <key>clevertapIds</key>
-                <value>[__g1234567890,Ne22k5-xQ90sN1aebRkzjiV65JN6Cwdc]</value>
-            </entry>
-        </profileIdentities>
-        <device>
-            <entry>
-                <key>token</key>
-                <value>XXXXXXX</value>
-            </entry>
-        </device>
-        <commPrefs>
-            <entry>
-                <key>MSG-push</key>
-                <value>XXXXXXX</value>
-            </entry>
-            <entry>
-                <key>MSG-push-all</key>
-                <value>XXXXXXX</value>
-            </entry>
-            <entry>
-                <key>MSG-email</key>
-                <value>XXXXXXX</value>
-            </entry>
-            <entry>
-                <key>MSG-sms</key>
-                <value>XXXXXXX</value>
-            </entry>
-            <entry>
-                <key>MSG-whatsapp</key>
-                <value>XXXXXXX</value>
-            </entry>
-            <entry>
-                <key>subscriptionGroups</key>
-                <value>
-                {
-                      "group1": "Subscribed",
-                      "group2": "Unsubscribed",
-                      "group3": "Subscribed"
-                }
-                </value>
-            </entry>
-        </commPrefs>
-        <profileProps>
-            <entry>
-                <key>Email</key>
-                <value>XXXXXXX</value>
-            </entry>
-            <entry>
-                <key>Phone</key>
-                <value>XXXXXXX</value>
-            </entry>
-            <entry>
-                <key>Name</key>
-                <value>XXXXXXX</value>
-            </entry>
-            <entry>
-                <key>Gender</key>
-                <value>XXXXXXX</value>
-            </entry>
-            <entry>
-                <key>DOB</key>
-                <value>XXXXXXX</value>
-            </entry>
-            <entry>
-                <key>Photo</key>
-                <value>XXXXXXX</value>
-            </entry>
-            <entry>
-                <key>Favouties Game</key>
-                <value>XXXXXXX</value>
-            </entry>
-            <entry>
-                <key>Designation</key>
-                <value>XXXXXXX</value>
-            </entry>
-            <entry>
-                <key>Blood Group</key>
-                <value>XXXXXXX</value>
-            </entry>
-        </profileProps>
-    </Profile>
-</root>
-```
+    <br />
+  </Tab>
 
-### Sample CSV Export
+  <Tab title="Sample XML">
+    ```
+    <?xml version="1.0" encoding="UTF-8"?>
+    <root>
+        <Profile>
+            <identity>XXXXXXX</identity>
+            <profileIdentities>
+                <entry>
+                    <key>all_identities</key>
+                    <value>[XXXXXXX]</value>
+                </entry>
+                <entry>
+                    <key>clevertapId</key>
+                    <value>__g1234567890</value>
+                </entry>
+                <entry>
+                    <key>clevertapIds</key>
+                    <value>[__g1234567890,Ne22k5-xQ90sN1aebRkzjiV65JN6Cwdc]</value>
+                </entry>
+            </profileIdentities>
+            <device>
+                <entry>
+                    <key>token</key>
+                    <value>XXXXXXX</value>
+                </entry>
+            </device>
+            <commPrefs>
+                <entry>
+                    <key>MSG-push</key>
+                    <value>XXXXXXX</value>
+                </entry>
+                <entry>
+                    <key>MSG-push-all</key>
+                    <value>XXXXXXX</value>
+                </entry>
+                <entry>
+                    <key>MSG-email</key>
+                    <value>XXXXXXX</value>
+                </entry>
+                <entry>
+                    <key>MSG-sms</key>
+                    <value>XXXXXXX</value>
+                </entry>
+                <entry>
+                    <key>MSG-whatsapp</key>
+                    <value>XXXXXXX</value>
+                </entry>
+                <entry>
+                    <key>subscriptionGroups</key>
+                    <value>
+                    {
+                          "group1": "Subscribed",
+                          "group2": "Unsubscribed",
+                          "group3": "Subscribed"
+                    }
+                    </value>
+                </entry>
+            </commPrefs>
+            <profileProps>
+                <entry>
+                    <key>Email</key>
+                    <value>XXXXXXX</value>
+                </entry>
+                <entry>
+                    <key>Phone</key>
+                    <value>XXXXXXX</value>
+                </entry>
+                <entry>
+                    <key>Name</key>
+                    <value>XXXXXXX</value>
+                </entry>
+                <entry>
+                    <key>Gender</key>
+                    <value>XXXXXXX</value>
+                </entry>
+                <entry>
+                    <key>DOB</key>
+                    <value>XXXXXXX</value>
+                </entry>
+                <entry>
+                    <key>Photo</key>
+                    <value>XXXXXXX</value>
+                </entry>
+                <entry>
+                    <key>Favouties Game</key>
+                    <value>XXXXXXX</value>
+                </entry>
+                <entry>
+                    <key>Designation</key>
+                    <value>XXXXXXX</value>
+                </entry>
+                <entry>
+                    <key>Blood Group</key>
+                    <value>XXXXXXX</value>
+                </entry>
+            </profileProps>
+        </Profile>
+    </root>
+    ```
 
-<Table align={["left","left","left","left","left","left","left","left","left","left","left","left","left","left","left","left","left","left","left","left"]}>
-  <thead>
-    <tr>
-      <th>
-        identity
-      </th>
+    <br />
+  </Tab>
 
-      <th>
-        all_identities
-      </th>
+  <Tab title="Sample CSV">
+    <Table align={["left","left","left","left","left","left","left","left","left","left","left","left","left","left","left","left","left","left","left","left"]}>
+      <thead>
+        <tr>
+          <th style={{ textAlign: "left" }}>
+            identity
+          </th>
 
-      <th>
-        clevertapId
-      </th>
+          <th style={{ textAlign: "left" }}>
+            all\_identities
+          </th>
 
-      <th>
-        clevertapIds
-      </th>
+          <th style={{ textAlign: "left" }}>
+            clevertapId
+          </th>
 
-      <th>
-        device
-      </th>
+          <th style={{ textAlign: "left" }}>
+            clevertapIds
+          </th>
 
-      <th>
-        MSG-push
-      </th>
+          <th style={{ textAlign: "left" }}>
+            device
+          </th>
 
-      <th>
-        MSG-push-all
-      </th>
+          <th style={{ textAlign: "left" }}>
+            MSG-push
+          </th>
 
-      <th>
-        MSG-email
-      </th>
+          <th style={{ textAlign: "left" }}>
+            MSG-push-all
+          </th>
 
-      <th>
-        MSG-sms
-      </th>
+          <th style={{ textAlign: "left" }}>
+            MSG-email
+          </th>
 
-      <th>
-        MSG-whatsapp
-      </th>
+          <th style={{ textAlign: "left" }}>
+            MSG-sms
+          </th>
 
-      <th>
-        subscriptionGroups
-      </th>
+          <th style={{ textAlign: "left" }}>
+            MSG-whatsapp
+          </th>
 
-      <th>
-        Email
-      </th>
+          <th style={{ textAlign: "left" }}>
+            subscriptionGroups
+          </th>
 
-      <th>
-        Phone
-      </th>
+          <th style={{ textAlign: "left" }}>
+            Email
+          </th>
 
-      <th>
-        Name
-      </th>
+          <th style={{ textAlign: "left" }}>
+            Phone
+          </th>
 
-      <th>
-        Gender
-      </th>
+          <th style={{ textAlign: "left" }}>
+            Name
+          </th>
 
-      <th>
-        DOB
-      </th>
+          <th style={{ textAlign: "left" }}>
+            Gender
+          </th>
 
-      <th>
-        Photo
-      </th>
+          <th style={{ textAlign: "left" }}>
+            DOB
+          </th>
 
-      <th>
-        Favouties Game
-      </th>
+          <th style={{ textAlign: "left" }}>
+            Photo
+          </th>
 
-      <th>
-        Designation
-      </th>
+          <th style={{ textAlign: "left" }}>
+            Favouties Game
+          </th>
 
-      <th>
-        Blood Group
-      </th>
-    </tr>
-  </thead>
+          <th style={{ textAlign: "left" }}>
+            Designation
+          </th>
 
-  <tbody>
-    <tr>
-      <td>
-        XXXXXXX
-      </td>
+          <th style={{ textAlign: "left" }}>
+            Blood Group
+          </th>
+        </tr>
+      </thead>
 
-      <td>
-        [ "XXXXXXX" ]
-      </td>
+      <tbody>
+        <tr>
+          <td style={{ textAlign: "left" }}>
+            XXXXXXX
+          </td>
 
-      <td>
-        * _g1234567890
-      </td>
+          <td style={{ textAlign: "left" }}>
+            \[ "XXXXXXX" ]
+          </td>
 
-      <td>
-        [__g1234567890,Ne22k5-xQ90sN1aebRkzjiV65JN6Cwdc]
-      </td>
+          <td style={{ textAlign: "left" }}>
+            * \_g1234567890
+          </td>
 
-      <td>
-        \{"token":"XXXXXXX"}
-      </td>
+          <td style={{ textAlign: "left" }}>
+            \[\_\_g1234567890,Ne22k5-xQ90sN1aebRkzjiV65JN6Cwdc]
+          </td>
 
-      <td>
-        XXXXX
-      </td>
+          <td style={{ textAlign: "left" }}>
+            \{"token":"XXXXXXX"}
+          </td>
 
-      <td>
-        XXXXX
-      </td>
+          <td style={{ textAlign: "left" }}>
+            XXXXX
+          </td>
 
-      <td>
-        XXXXX
-      </td>
+          <td style={{ textAlign: "left" }}>
+            XXXXX
+          </td>
 
-      <td>
-        XXXXX
-      </td>
+          <td style={{ textAlign: "left" }}>
+            XXXXX
+          </td>
 
-      <td>
-        XXXXX
-      </td>
+          <td style={{ textAlign: "left" }}>
+            XXXXX
+          </td>
 
-      <td>
-        \{  
-        "group1":"Subscribed",  "group2":"Unsubscribed",  
-        "group3": "Subscribed"  
-        }
-      </td>
+          <td style={{ textAlign: "left" }}>
+            XXXXX
+          </td>
 
-      <td>
-        XXXXX
-      </td>
+          <td style={{ textAlign: "left" }}>
+            \{\
+            "group1":"Subscribed",  "group2":"Unsubscribed",\
+            "group3": "Subscribed"\
+            }
+          </td>
 
-      <td>
-        XXXXX
-      </td>
+          <td style={{ textAlign: "left" }}>
+            XXXXX
+          </td>
 
-      <td>
-        XXXXX
-      </td>
+          <td style={{ textAlign: "left" }}>
+            XXXXX
+          </td>
 
-      <td>
-        XXXXX
-      </td>
+          <td style={{ textAlign: "left" }}>
+            XXXXX
+          </td>
 
-      <td>
-        XXXXX
-      </td>
+          <td style={{ textAlign: "left" }}>
+            XXXXX
+          </td>
 
-      <td>
-        XXXXX
-      </td>
+          <td style={{ textAlign: "left" }}>
+            XXXXX
+          </td>
 
-      <td>
-        XXXXX
-      </td>
+          <td style={{ textAlign: "left" }}>
+            XXXXX
+          </td>
 
-      <td>
-        XXXXX
-      </td>
+          <td style={{ textAlign: "left" }}>
+            XXXXX
+          </td>
 
-      <td>
-        XXXXX
-      </td>
-    </tr>
-  </tbody>
-</Table>
+          <td style={{ textAlign: "left" }}>
+            XXXXX
+          </td>
 
-### Sample Parquet Export
+          <td style={{ textAlign: "left" }}>
+            XXXXX
+          </td>
+        </tr>
+      </tbody>
+    </Table>
 
-<Table align={["left","left","left","left","left"]}>
-  <thead>
-    <tr>
-      <th>
-        identity
-      </th>
+    <br />
+  </Tab>
 
-      <th>
-        profileIdentities
-      </th>
+  <Tab title="Schema for Parquet File">
+    ```
+    [
+      {
+        "column_name": "identity",
+        "column_type": "VARCHAR",
+        "nullValue": "YES",
+        "key": null,
+        "defaultValue": null,
+        "extra": null
+      },
+      {
+        "column_name": "device",
+        "column_type": "MAP(VARCHAR, STRUCT(member0 BOOLEAN, member1 INTEGER, member2 BIGINT, member3 FLOAT, member4 DOUBLE, member5 VARCHAR))",
+        "nullValue": "YES",
+        "key": null,
+        "defaultValue": null,
+        "extra": null
+      },
+      {
+        "column_name": "commPrefs",
+        "column_type": "MAP(VARCHAR, STRUCT(member0 BOOLEAN, member1 INTEGER, member2 BIGINT, member3 FLOAT, member4 DOUBLE, member5 VARCHAR, member6 MAP(VARCHAR, STRUCT(member0 BOOLEAN, member1 INTEGER, member2 BIGINT, member3 FLOAT, member4 DOUBLE, member5 VARCHAR))))",
+        "nullValue": "YES",
+        "key": null,
+        "defaultValue": null,
+        "extra": null
+      },
+      {
+        "column_name": "profileProps",
+        "column_type": "MAP(VARCHAR, STRUCT(member0 BOOLEAN, member1 INTEGER, member2 BIGINT, member3 FLOAT, member4 DOUBLE, member5 VARCHAR))",
+        "nullValue": "YES",
+        "key": null,
+        "defaultValue": null,
+        "extra": null
+      }
+    ]
+    ```
+  </Tab>
 
-      <th>
-        device
-      </th>
+  <Tab title="Sample Parquet File">
+    <Table align={["left","left","left","left","left"]}>
+      <thead>
+        <tr>
+          <th style={{ textAlign: "left" }}>
+            identity
+          </th>
 
-      <th>
-        commPrefs
-      </th>
+          <th style={{ textAlign: "left" }}>
+            profileIdentities
+          </th>
 
-      <th>
-        profileProps
-      </th>
-    </tr>
-  </thead>
+          <th style={{ textAlign: "left" }}>
+            device
+          </th>
 
-  <tbody>
-    <tr>
-      <td>
-        XXXXXXX
-      </td>
+          <th style={{ textAlign: "left" }}>
+            commPrefs
+          </th>
 
-      <td>
-        \{"all_identities":\{"member0":"[XXXX,XXXX]","member1":null},  
-        "clevertapId":\{"member0":"XXXXXX","member1":null},  
-        "clevertapIds":\{"member0":null,"member1":["XXXXX"]}}
-      </td>
+          <th style={{ textAlign: "left" }}>
+            profileProps
+          </th>
+        </tr>
+      </thead>
 
-      <td>
-        [\{token: \{  
-        'member0': "XXXXXX", 'member1': "XXXXXX", 'member2': "XXXXXX", 'member3': "XXXXXX", 'member4': "XXXXXX", 'member5': "XXXXXX", 'member6': "XXXXXX"  
-        }}]
-      </td>
+      <tbody>
+        <tr>
+          <td style={{ textAlign: "left" }}>
+            XXXXXXX
+          </td>
 
-      <td>
-        [\{  
-        MSG-push: \{  
-        'member0': "XXXXXX", 'member1': "XXXXXX", 'member2': "XXXXXX", 'member3': "XXXXXX", 'member4': "XXXXXX", 'member5': "XXXXXX", 'member6': "XXXXXX"  
-        },  
-        MSG-push-all: \{  
-        'member0': "XXXXXX", 'member1': "XXXXXX", 'member2':"XXXXXX", 'member3': "XXXXXX", 'member4': "XXXXXX", 'member5': "XXXXXX", 'member6': "XXXXXX"  
-        }  
-        }]
-      </td>
+          <td style={{ textAlign: "left" }}>
+            \{"all\_identities":\{"member0":"\[XXXX,XXXX]","member1":null},
+            "clevertapId":\{"member0":"XXXXXX","member1":null},
+            "clevertapIds":\{"member0":null,"member1":\["XXXXX"]}}
+          </td>
 
-      <td>
-        [\{  
-        Email: \{  
-        'member0': "XXXXXX",'member1': "XXXXXX", 'member2': "XXXXXX", 'member3': "XXXXXX", 'member4': "XXXXXX", 'member5': "XXXXXX", 'member6': "XXXXXX"  
-        },  
-        Phone: \{  
-        'member0': "XXXXXX", 'member1': "XXXXXX", 'member2': "XXXXXX", 'member3': "XXXXXX", 'member4': "XXXXXX", 'member5': "XXXXXX", 'member6': "XXXXXX"  
-        }  
-        }]
-      </td>
-    </tr>
-  </tbody>
-</Table>
+          <td style={{ textAlign: "left" }}>
+            \[\{token: \{
+            'member0': "XXXXXX", 'member1': "XXXXXX", 'member2': "XXXXXX", 'member3': "XXXXXX", 'member4': "XXXXXX", 'member5': "XXXXXX", 'member6': "XXXXXX"
+            }}]
+          </td>
+
+          <td style={{ textAlign: "left" }}>
+            \[\{
+            MSG-push: \{
+            'member0': "XXXXXX", 'member1': "XXXXXX", 'member2': "XXXXXX", 'member3': "XXXXXX", 'member4': "XXXXXX", 'member5': "XXXXXX", 'member6': "XXXXXX"
+            },
+            MSG-push-all: \{
+            'member0': "XXXXXX", 'member1': "XXXXXX", 'member2':"XXXXXX", 'member3': "XXXXXX", 'member4': "XXXXXX", 'member5': "XXXXXX", 'member6': "XXXXXX"
+            }
+            }]
+          </td>
+
+          <td style={{ textAlign: "left" }}>
+            \[\{
+            Email: \{
+            'member0': "XXXXXX",'member1': "XXXXXX", 'member2': "XXXXXX", 'member3': "XXXXXX", 'member4': "XXXXXX", 'member5': "XXXXXX", 'member6': "XXXXXX"
+            },
+            Phone: \{
+            'member0': "XXXXXX", 'member1': "XXXXXX", 'member2': "XXXXXX", 'member3': "XXXXXX", 'member4': "XXXXXX", 'member5': "XXXXXX", 'member6': "XXXXXX"
+            }
+            }]
+          </td>
+        </tr>
+      </tbody>
+    </Table>
+  </Tab>
+</Tabs>
 
 # Manage Export
 
@@ -673,12 +744,7 @@ This section outlines how to track the status of your data exports, stop them wh
 
 Stop a running export by hovering over the export and clicking **Stop**. The export status on the _Export center_ page is displayed as **Stopped**.
 
-![](https://files.readme.io/925d13fe3d81e2d20983b0beb6b1772daad788c46b3e74ee6b99ebda0e38da6e-Stop_Export.png) Stop Export
-
-### Filter & Search Exports
-
-Use the filter bar to narrow down exports by **Partner** (S3, GCP, Azure), Data type (profile/event), **Status** (active, stopped, failed), and **Frequency** (one‑time, recurring). You can also search by export request ID or name.
-![](https://files.readme.io/10ce99261935856c41e06cbcf9153637975303b753ed7a45bee6aaae562daad3-Filter_Exports.png)  Filter Exports
+<Image align="center" border={true} caption="Stop Export" src="https://files.readme.io/3dd0385254e9a5a9afbe298f9772424c280a0f7c81bfe1f1e20829274a5069dd-Stop_export.png" />
 
 ### Export Status
 
@@ -787,4 +853,4 @@ If your export fails, follow these steps to troubleshoot the issue:
 ### What other ways can I export data from CleverTap?
 
 * [**Export via API**](https://developer.clevertap.com/docs/upload-user-profiles-api) (see API Overview).
-* [**Find People**](doc:find-people#download-users): Download the profile data directly from the CleverTap dashboard through _Segments_ > _Find People_ > **View Details** > download under **Total users**.
+* [**Find People**](doc:find-people#download-users): Download the profile data directly from the CleverTap dashboard through _Segments_ → _Find People_ → **View Details** → download under **Total users**.
