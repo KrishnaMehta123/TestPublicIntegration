@@ -14,41 +14,33 @@ next:
 
 Create a campaign to deliver your Webhook. To create a new campaign
 
-1. From the CleverTap dashboard, select *Campaigns*.
+1. From the CleverTap dashboard, select _Campaigns_.
 2. Click **+ Campaign**.
-3. From the *Messaging Channels* list, select **Webhooks**. 
+3. From the _Messaging Channels_ list, select **Webhooks**.
 
-<Image title="Create a New Webhook Campaign" alt="Create a New Webhook Campaign " align="center" border={true} src="https://files.readme.io/6b3a7dc269d3b42bc2f7127119a31cdabf307f4c3413166a50e52bd468691968-google_adds.png">
-  Create a New Webhook Campaign
-</Image>
+<Image align="center" alt="Create a New Webhook Campaign " border={true} caption="Create a New Webhook Campaign" title="Create a New Webhook Campaign" src="https://files.readme.io/6b3a7dc269d3b42bc2f7127119a31cdabf307f4c3413166a50e52bd468691968-google_adds.png" />
 
-<Image title="Webhook Campaign Configuration" alt={2760} align="center" border={true} src="https://files.readme.io/cfb9567-Webhook_campaign.png">
-  Webhook Setup
-</Image>
+<Image align="center" alt={2760} border={true} caption="Webhook Setup" title="Webhook Campaign Configuration" src="https://files.readme.io/cfb9567-Webhook_campaign.png" />
 
-Define all the sections to publish the campaign. 
+Define all the sections to publish the campaign.
 
 ## Start Campaign Setup
 
-The *Start here* section displays the setup information. 
+The _Start here_ section displays the setup information.
 
 This section has the following parts:
 
-* **Qualification criteria**: Deliver the notification based on Past behavior/Custom list, Live Behavior, or [External Trigger](doc:external-trigger). 
+* **Qualification criteria**: Deliver the notification based on Past behavior/Custom list, Live Behavior, or [External Trigger](doc:external-trigger).
 * **Webhook**: Select from the available Webhooks. Alternatively, you may create a new webhook.
-* **Set a goal**: You can track your campaign conversion by setting up a goal. Setting a goal allows you to measure your campaign effectively against what you want to achieve with the campaign. This selection is optional. Define the conversion period by selecting the *Conversion Time*. You can define your conversion goal further by filtering an event by event properties. For more information on event properties, refer to [Events](https://docs.clevertap.com/docs/events). 
+* **Set a goal**: You can track your campaign conversion by setting up a goal. Setting a goal allows you to measure your campaign effectively against what you want to achieve with the campaign. This selection is optional. Define the conversion period by selecting the _Conversion Time_. You can define your conversion goal further by filtering an event by event properties. For more information on event properties, refer to [Events](https://docs.clevertap.com/docs/events).
 
-<Image title="Enable Goal Conversion Tracking" alt={919} align="center" border={true} src="https://files.readme.io/7d83483-Push_notification_set_goal_track_conversion.png">
-  Enable Conversion Tracking
-</Image>
+<Image align="center" alt={919} border={true} caption="Enable Conversion Tracking" title="Enable Goal Conversion Tracking" src="https://files.readme.io/7d83483-Push_notification_set_goal_track_conversion.png" />
 
 ## Define the Audience
 
-You need to indicate the target audience for your Webhook campaign. You can target your Webhook campaign to a new user segment by clicking on the **Target segment** section. Here, you can create a new ad-hoc segment or use a previously saved user segment from the *segment* list. 
+You need to indicate the target audience for your Webhook campaign. You can target your Webhook campaign to a new user segment by clicking on the **Target segment** section. Here, you can create a new ad-hoc segment or use a previously saved user segment from the _segment_ list.
 
-<Image title="Define the Campaign Target Audience" alt={2672} align="center" border={true} src="https://files.readme.io/7884aa0-webhooks_who.png">
-  Define the Target Audience
-</Image>
+<Image align="center" alt={2672} border={true} caption="Define the Target Audience" title="Define the Campaign Target Audience" src="https://files.readme.io/7884aa0-webhooks_who.png" />
 
 You can create the target based on past user behavior and/or user properties, or live (ongoing) user behavior (the latter is useful to send out real-time, triggered Webhook campaigns).
 
@@ -56,7 +48,7 @@ You can create the target based on past user behavior and/or user properties, or
 >
 > We recommend creating a Past Behavior campaign for all campaigns where the delay is greater than 24 hours for a live inaction campaign.
 
-For instance, you can create a live *Inaction within time* campaign that targets users as soon as they add a product to their cart but do not finish transacting within 10 minutes, the golden window within which most users transact on online platforms.
+For instance, you can create a live _Inaction within time_ campaign that targets users as soon as they add a product to their cart but do not finish transacting within 10 minutes, the golden window within which most users transact on online platforms.
 
 ### Deliver Action Based Webhook Notifications
 
@@ -71,25 +63,27 @@ You can also target users basis their past behavior. For past behavior campaigns
 
 ### Filter by User Properties
 
-Using the *With user properties* filter in the *Who* section, you can segment your campaign to only reach users who meet specific criteria. 
+Using the _With user properties_ filter in the _Who_ section, you can segment your campaign to only reach users who meet specific criteria.
 
 For example, you can send webhook notifications only for female users who live in the United States. The image below represents a sample target segment that is filtered using specific user properties to target the required audience.
 
-<Image title="Filer by User Properties" alt={2202} align="center" border={true} src="https://files.readme.io/9289ee7-Screenshot_2021-10-26_at_2.53.00_PM.png">
-  Target Audience Based on User Properties
-</Image>
+<Image align="center" alt={2202} border={true} caption="Target Audience Based on User Properties" title="Filer by User Properties" src="https://files.readme.io/9289ee7-Screenshot_2021-10-26_at_2.53.00_PM.png" />
 
 ### Control Group
 
 You can define the control group to compare and measure the results of your campaign. For more information on control groups, see [Control Groups](doc:control-groups).
 
-<Image title="Control Group and Target Cap" alt="Define Control Group" align="center" src="https://files.readme.io/b4eb37d-Control_Group_and_Target_Cap.png">
-  Define Control Group
-</Image>
+<Callout icon="📘" theme="info">
+  **Note**
+
+  The control group for Webhook campaigns is enabled only if the **Webhook Delivered** system event is available for your account. To enable the Webhook Delivered event, contact your Customer Success Manager.
+</Callout>
+
+<Image align="center" alt="Define Control Group" border={false} caption="Define Control Group" title="Control Group and Target Cap" src="https://files.readme.io/b4eb37d-Control_Group_and_Target_Cap.png" />
 
 ### Targeting Cap
 
-Sometimes, you want to send a message to only a subset of the qualifying audience (*Target Reach*) for a campaign or avoid sending it if the number of qualified users exceeds the specified number.
+Sometimes, you want to send a message to only a subset of the qualifying audience (_Target Reach_) for a campaign or avoid sending it if the number of qualified users exceeds the specified number.
 
 A relevant use case is a limited offer where you want to send a fixed number of coupon codes you want to distribute. If the total reach for your campaign exceeds the number of coupon codes you can distribute, you can limit the number of users who will receive the message to exactly the number of coupons you want to distribute.
 
@@ -103,41 +97,31 @@ A relevant use case is a limited offer where you want to send a fixed number of 
 
 ## Define the Webhook Content
 
-Now, you can set up the *What* which is the Webhook campaign content. Click *Go To Editor* to create your message. 
+Now, you can set up the _What_ which is the Webhook campaign content. Click _Go To Editor_ to create your message.
 
-<Image title="Webhook Editor" alt={1048} align="center" border={true} src="https://files.readme.io/6dfb26c-Webhook_what_without_options.png">
-  Webhook Editor
-</Image>
+<Image align="center" alt={1048} border={true} caption="Webhook Editor" title="Webhook Editor" src="https://files.readme.io/6dfb26c-Webhook_what_without_options.png" />
 
 ### Webhook Editor
 
 From the Webhook Editor:
 
-1. Add query parameters in the URL key-value pairs section. 
+1. Add query parameters in the URL key-value pairs section.
 2. Select the content type (JSON or plain text).
-3. Add the webhook content to send or receive the data. 
+3. Add the webhook content to send or receive the data.
 
-<Image title="Setup Webhook Content" alt={1425} align="center" border={true} src="https://files.readme.io/a1faeb5-Webhook_Editor_What.png">
-  Webhook Setup
-</Image>
+<Image align="center" alt={1425} border={true} caption="Webhook Setup" title="Setup Webhook Content" src="https://files.readme.io/a1faeb5-Webhook_Editor_What.png" />
 
-You can either use *Profile Variables & custom key value pairs* or *Custom Body*. You have the option to send/receive an email, identity, objectId (CleverTap ID), profileData (custom profile variables), event properties (applicable only for Live behavior), and push\_token for each user.  
+You can either use _Profile Variables & custom key value pairs_ or _Custom Body_. You have the option to send/receive an email, identity, objectId (CleverTap ID), profileData (custom profile variables), event properties (applicable only for Live behavior), and push_token for each user.
 
-<Image title="Create Webhook Content" alt={839} align="center" border={true} src="https://files.readme.io/5589ea5-Create_Webhook_Content.png">
-  Define the Webhook Content
-</Image>
+<Image align="center" alt={839} border={true} caption="Define the Webhook Content" title="Create Webhook Content" src="https://files.readme.io/5589ea5-Create_Webhook_Content.png" />
 
-You can also choose a custom payload. 
+You can also choose a custom payload.
 
-<Image title="Configure Custom Payload" alt={1672} align="center" border={true} src="https://files.readme.io/dead0f2-webhooks_custom_json.png">
-  Custom Payload in Webhook
-</Image>
+<Image align="center" alt={1672} border={true} caption="Custom Payload in Webhook" title="Configure Custom Payload" src="https://files.readme.io/dead0f2-webhooks_custom_json.png" />
 
 The preview for your payload is displayed on the right side of the pane.
 
-<Image title="Payload Preview" alt={2832} align="center" border={true} src="https://files.readme.io/ae38cd3-webhooks_preview.png">
-  Preview Webhook Payload
-</Image>
+<Image align="center" alt={2832} border={true} caption="Preview Webhook Payload" title="Payload Preview" src="https://files.readme.io/ae38cd3-webhooks_preview.png" />
 
 #### Sample Payload
 
@@ -220,12 +204,12 @@ The following are the two types of response formats sent by CleverTap when creat
 
 #### Broadcast Message:
 
-A message is termed as *Broadcast* when the following four conditions are met:
+A message is termed as _Broadcast_ when the following four conditions are met:
 
-* User selects *JSON* from the *Webhook content format* dropdown
-* User selects *Profile variables& custom key value pairs* as the message body
+* User selects _JSON_ from the _Webhook content format_ dropdown
+* User selects _Profile variables& custom key value pairs_ as the message body
 * Webhook URL does not include any personalization component
-* Key-value pairs do not include any liquid tags. However, the message still qualifies as a broadcast message if the key-value pairs use *@Personalization*.
+* Key-value pairs do not include any liquid tags. However, the message still qualifies as a broadcast message if the key-value pairs use _@Personalization_.
 
 For broadcast messages, the payload includes an array of profile variables. The following is a sample webhook payload containing all possible fields for profile variables. The `targetId` corresponds to the webhook campaign ID for which you receive the payload.
 
@@ -305,29 +289,25 @@ The messages other than broadcast messages are termed Non-broadcast messages. Th
 
 ## Define the Campaign Schedule
 
-Each webhook campaign needs to be scheduled for a specific timeline. To define the schedule for your webhook campaign, you need to specify the *Start date and time* and *End date and time*. You also have the option to start a campaign immediately by selecting *Now*.  
+Each webhook campaign needs to be scheduled for a specific timeline. To define the schedule for your webhook campaign, you need to specify the _Start date and time_ and _End date and time_. You also have the option to start a campaign immediately by selecting _Now_.
 
-Besides, you can also define a delay (by seconds, minutes, hours, or days) once a user qualifies for the target segment. Once you define the schedule and click *Done*; the campaign will be triggered and terminated as per the defined timings.
+Besides, you can also define a delay (by seconds, minutes, hours, or days) once a user qualifies for the target segment. Once you define the schedule and click _Done_; the campaign will be triggered and terminated as per the defined timings.
 
-<Image title="Define the Campaign Schedule" alt={1886} align="center" border={true} src="https://files.readme.io/b635c3a-webhook_when.png">
-  Define the Campaign Schedule
-</Image>
+<Image align="center" alt={1886} border={true} caption="Define the Campaign Schedule" title="Define the Campaign Schedule" src="https://files.readme.io/b635c3a-webhook_when.png" />
 
 <br />
 
 ### Delivery preferences
 
-Global frequency caps operate on a per-channel basis and let you specify the message cadence, dwell time between messages, and throttle limits (delivery rates). To control the maximum number of messages users receive for a given channel of communication, select *Global campaign limits*. And, to control the delivery rates for your campaigns, select *Global throttle limits*. For more information about *Global campaign limits* and *Global throttle limits*, refer to [Messaging Frequency Caps](doc:messaging-frequency-caps).
+Global frequency caps operate on a per-channel basis and let you specify the message cadence, dwell time between messages, and throttle limits (delivery rates). To control the maximum number of messages users receive for a given channel of communication, select _Global campaign limits_. And, to control the delivery rates for your campaigns, select _Global throttle limits_. For more information about _Global campaign limits_ and _Global throttle limits_, refer to [Messaging Frequency Caps](doc:messaging-frequency-caps).
 
-For both Past Behavior and Live Campaigns, you can also set the *Do Not Disturb* (DND) hours during which notifications from the campaign are prevented from going out, either by discarding them or delaying delivery until after DND hours are complete, such as 9 PM to 9 AM.
+For both Past Behavior and Live Campaigns, you can also set the _Do Not Disturb_ (DND) hours during which notifications from the campaign are prevented from going out, either by discarding them or delaying delivery until after DND hours are complete, such as 9 PM to 9 AM.
 
-For Past Behavior Campaigns, if you want your campaign to adapt delivery times according to the user’s timezone, check the *Timezone* checkbox. For more information, refer to [Delivery in User’s Timezone](doc:notification-delivery-options).
+For Past Behavior Campaigns, if you want your campaign to adapt delivery times according to the user’s timezone, check the _Timezone_ checkbox. For more information, refer to [Delivery in User’s Timezone](doc:notification-delivery-options).
 
 Since past behavior campaigns can have scheduled times, you have the option to stop a campaign delivery after a certain cut-off time or even deliver at the specified time in the user’s timezone. For more information, refer to [Delivery in User’s Timezone](doc:notification-delivery-options).
 
-<Image alt="Delivery Preferences" align="center" border={true} src="https://files.readme.io/8180abf-Webhook_Delivery_Preferences.png">
-  Delivery Preferences
-</Image>
+<Image align="center" alt="Delivery Preferences" border={true} caption="Delivery Preferences" src="https://files.readme.io/8180abf-Webhook_Delivery_Preferences.png" />
 
 > 📘 DND Feature Not Supported in Journeys
 >
@@ -337,6 +317,4 @@ Since past behavior campaigns can have scheduled times, you have the option to s
 
 After previewing the appearance of your overall campaign, finalize your campaign by clicking **Publish Campaign.**
 
-<Image title="Publish Campaign" alt={1193} align="center" border={true} src="https://files.readme.io/b521e92-campaign_Publish.png">
-  Publish the Campaign
-</Image>
+<Image align="center" alt={1193} border={true} caption="Publish the Campaign" title="Publish Campaign" src="https://files.readme.io/b521e92-campaign_Publish.png" />
