@@ -4,7 +4,7 @@ excerpt: >-
   Learn how to send and test personalized In-App campaigns from the CleverTap
   dashboard.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
