@@ -12,8 +12,6 @@ metadata:
 next:
   description: ''
 ---
-<br />
-
 # Overview
 
 Funnels are a series of actions that a user performs in a particular order. They show users' progress through defined paths in your app and identify where they drop off between steps.
