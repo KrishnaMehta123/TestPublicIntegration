@@ -161,7 +161,7 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
       <a href="#redesign-of-campaign-listing-page"><i class="fa-light fa-anchor"></i></a>
     </div>
     <div>
-      <img src="https://files.readme.io/4e7076b-campaigns.svg" alt="Campaigns" class="release-note-heading-icon"/>
+      <img src="https://files.readme.io/370216d2a5ec47fd419bc47a95762d51295730db345b40f825b3de7115e6e667-Campaigns.svg" alt="Campaigns" class="release-note-heading-icon"/>
     </div>
     <h3 class="release-note-heading">Redesign of Campaign Listing Page</h3>
     <div class="badge enhancement">ENHANCEMENT</div>
