@@ -177,11 +177,11 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
     <p>With this enhancement, you can:</p>
 
     <ul>
-      <li>Experience faster page load times</li>
-      <li>Configure columns by adding, removing, or reordering fields</li>
-      <li>View campaign channels and engagement rate formulas upfront</li>
-      <li>Filter Bulletin and API campaigns separately</li>
-      <li>Adjust stats duration with advanced filters</li>
+      <li>Experience faster page load times for a smoother workflow.</li>
+      <li>Configure columns by adding, removing, or reordering fields to suit your view.</li>
+      <li>View campaign channels and engagement rate formulas upfront for quick insights.</li>
+      <li>Filter Bulletin and API campaigns separately for better navigation.</li>
+      <li>Adjust stats duration easily with advanced filtering options.</li>
     </ul>
 
     <p>
