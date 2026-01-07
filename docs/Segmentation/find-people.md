@@ -4,7 +4,7 @@ excerpt: >-
   Understand how to find users and their segments using Find People feature in
   CleverTap.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
