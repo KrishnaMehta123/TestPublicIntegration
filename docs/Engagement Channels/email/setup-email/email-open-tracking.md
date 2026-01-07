@@ -1,5 +1,6 @@
 ---
 title: Setup
+excerpt: Understand how to set up Email as a channel for your marketing campaigns.
 deprecated: false
 hidden: true
 metadata:
@@ -30,10 +31,9 @@ Once you have integrated an email service provider with CleverTap, you can set u
 To add a provider, perform the following steps:
 
 1. From the dashboard, navigate to _Settings_ > _Engage_ > _Channels_ > _Email_.
-2. Click **+ Provider** to add a provider.
+2. Click **+ Provider** to add a provider.  
 
-![](https://files.readme.io/9206de0-Plus_provider.png "Click +Provider")  Add Provider
-
+   <Image align="center" border={true} caption="Add Provider" src="https://files.readme.io/9206de0-Plus_provider.png" />
 3. Add the following provider details:
 
 <Table align={["left","left"]}>
@@ -155,9 +155,9 @@ To add a provider, perform the following steps:
 
 ## Provider Operations
 
-This section describes actions for the available email service providers.
+This section describes actions for the available email service providers.  
 
-![](https://files.readme.io/36c908a-Email_Operations.png "Email Provider Operations") Provider Operations
+<Image align="center" border={true} caption="Provider Operations" src="https://files.readme.io/36c908a-Email_Operations.png" />
 
 ### Archive Service Providers
 
@@ -222,7 +222,9 @@ To enable or disable the inbox preview, perform the following steps:
 >
 > You can also select multiple clients, then enable or disable previews by clicking **Enable in inbox previews** or **Disable in inbox previews**.
 
-![](https://files.readme.io/49e8f2d-Enable_an_inbox_preview.png "Enable or Disable Inbox Preview") Enable or Disable Inbox Previews
+<Image align="center" border={true} caption="Enable or Disable Inbox Previews" src="https://files.readme.io/49e8f2d-Enable_an_inbox_preview.png" />
+
+ 
 
 The _Previews_ tab lists the available email inboxes. For example, a mobile device that runs Gmail on Android 8 or a computer that runs Apple Mail 10 on an OS X 10.10 operating system.
 
