@@ -545,7 +545,7 @@ Exported profile files follow this consistent column order:
           </td>
 
           <td style={{ textAlign: "left" }}>
-            * \_g1234567890
+            \_g1234567890
           </td>
 
           <td style={{ textAlign: "left" }}>
