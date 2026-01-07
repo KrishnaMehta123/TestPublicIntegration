@@ -225,7 +225,7 @@ Configure which properties to include in the export, as well as how they are lab
    Choose which profile properties to export:
 
    * **All user properties**: Exports all system and custom user properties. For more information, refer to [User Properties](doc:user-profiles#user-properties).
-   * **System properties**: Exports only CleverTap system properties such as **Name**, **Gender**, **DOB**, **Email**, **Phone**, and **Photo**. For more information, refer to [System Properties](doc:user-profiles#system-properties).
+   * **System properties**: Exports only CleverTap system properties such as **Name**, **Gender**, **DOB**, **Email**, **Phone**, and **Photo**. For more information, refer to [System Properties](https://docs.clevertap.com/docs/user-profiles#system-user-properties).
 
      <Callout icon="📘" theme="info">
        **Note**
