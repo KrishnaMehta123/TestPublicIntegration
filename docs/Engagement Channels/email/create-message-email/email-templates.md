@@ -36,8 +36,8 @@ Basic Templates provide a library of pre-built email templates that help you qui
 
 Basic Templates include the following template types:
 
-* **Email with rich media**: Rich Media templates include [out-of-the-box templates](doc:ootb-email.templates) for use cases, such as product announcements, feature highlights, or promotional campaigns, and also allow you to [build templates from scratch](doc:email-editor-templates#rich-media-template). These templates are designed for advanced template customization using HTML and are optimized for visually rich emails, featuring layouts that accommodate images, text, and call-to-action elements. You can customize the layout and content to suit your campaign requirements. You can also add personalization by using the **@** and **\{\{}}** icons. For more information about personalization, refer to [Personalize Message](doc:personalize-message-email).
-* **Email with drag-and-drop**: These include out-of-the-box drag-and-drop templates for use cases such as Welcome emails, promotional, or offer-based emails. Drag-and-drop templates are ideal for no-code email creation. You can start with an existing template or [create one from scratch](doc:email-editor-templates#drag-and-drop-template), and visually customize it by adding, removing, or rearranging elements such as text, images, buttons, and dividers.
+* **Email with rich media**: Rich Media templates include [out-of-the-box templates](doc:ootb-email-templates) for use cases, such as product announcements, feature highlights, or promotional campaigns, and also allow you to [build templates from scratch](doc:email-templates#rich-media-template). These templates are designed for advanced template customization using HTML and are optimized for visually rich emails, featuring layouts that accommodate images, text, and call-to-action elements. You can customize the layout and content to suit your campaign requirements. You can also add personalization by using the **@** and **\{\{}}** icons. For more information about personalization, refer to [Personalize Message](doc:personalize-message-email).
+* **Email with drag-and-drop**: These include out-of-the-box drag-and-drop templates for use cases such as Welcome emails, promotional, or offer-based emails. Drag-and-drop templates are ideal for no-code email creation. You can start with an existing template or [create one from scratch](doc:email-templates#drag-and-drop-template), and visually customize it by adding, removing, or rearranging elements such as text, images, buttons, and dividers.
 
 You can filter Basic Templates to narrow down and view templates based on the following: _Industry_ (for example, Food Delivery), _Goal_ (for example, Referral), or _Type_ (for example, HTML). This makes it easier to browse the template library and quickly find the most relevant template for your campaign.
 
@@ -267,7 +267,7 @@ Before we begin, check that you have enabled Inbox Previews. For enabling the In
 <Callout icon="📘" theme="info">
   #### Templates for Inbox Preview
 
-  Code Analysis with Inbox Preview is available for the [Custom HTML template](https://docs.clevertap.com/docs/email-editor-templates#custom-html-template) and [Rich Media Template](https://docs.clevertap.com/docs/email-editor-templates#rich-media-template).
+  Code Analysis with Inbox Preview is available for the [Custom HTML template](doc:email-templates#custom-html-template) and [Rich Media Template](doc:email-templates#rich-media-template).
 </Callout>
 
 8. Click the _Fix issues_ in the editor link to fix the issues. You are redirected to the email editor.  
