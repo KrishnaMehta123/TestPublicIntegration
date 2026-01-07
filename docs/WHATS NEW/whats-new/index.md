@@ -150,6 +150,50 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
 </div>
 `}</HTMLBlock>
 
+# 2026
+
+## January
+
+<HTMLBlock>{`
+<div class="release-note article" data-category="campaigns" id="redesign-of-campaign-listing-page">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#redesign-of-campaign-listing-page"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/4e7076b-campaigns.svg" alt="Campaigns" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">Redesign of Campaign Listing Page</h3>
+    <div class="badge enhancement">ENHANCEMENT</div>
+    <div class="badge private-beta">PRIVATE BETA</div>
+  </div>
+
+  <div class="release-note-body">
+    <p>
+      You can now experience the redesigned Campaign Listing page, built for faster performance and improved usability.
+      This enhancement streamlines campaign management and brings key insights to the forefront.
+    </p>
+
+    <p>With this enhancement, you can:</p>
+
+    <ul>
+      <li>Experience faster page load times</li>
+      <li>Configure columns by adding, removing, or reordering fields</li>
+      <li>View campaign channels and engagement rate formulas upfront</li>
+      <li>Filter Bulletin and API campaigns separately</li>
+      <li>Adjust stats duration with advanced filters</li>
+    </ul>
+
+    <p>
+      For more information, refer to
+      <a href="https://docs.clevertap.com/docs/enhanced-campaign-list-page" target="_blank">Campaign Overview</a>.
+    </p>
+  </div>
+
+  <hr/>
+</div>
+`}</HTMLBlock>
+
 # 2025
 
 ## December
