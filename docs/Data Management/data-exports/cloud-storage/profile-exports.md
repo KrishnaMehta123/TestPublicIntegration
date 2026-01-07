@@ -315,8 +315,8 @@ Exported profile files follow this consistent column order:
       "all_identities": "[XXXXXXX]",
       "clevertapId": "__g1234567890",
       "clevertapIds": ["__g1234567890","Ne22k5-xQ90sN1aebRkzjiV65JN6Cwdc"],
-      "token": "XXXXXXX",
-			"subscriptionGroups": {
+        "token": "XXXXXXX",
+"subscriptionGroups": {
       "group1": "Subscribed",
       "group2": "Unsubscribed",
       "group3": "Subscribed"
@@ -326,7 +326,6 @@ Exported profile files follow this consistent column order:
       "MSG-email": "XXXXXXX",
       "MSG-sms": "XXXXXXX",
       "MSG-whatsapp": "XXXXXXX",
-      
       "Email": "XXXXXXX",
       "Phone": "XXXXXXX",
       "Name": "XXXXXXX",
