@@ -186,7 +186,7 @@ Choose which user identifiers to include in the export and how they appear in th
    * **Export all values**: Exports all selected identifiers in the **identity** column, listed in order of priority. Missing values are omitted. Select this option when reconciliation, deduplication, or identity joins are required downstream.
 
 3. **(Optional) Select Account-Defined User Identity**  
-   Turn ON the toggle to add **all_identities**, which exports all [account-defined identifiers](doc:developer-go-live-checklist#define) (**Identity**, **Email**, **Phone**) for each profile. If a user does not have a value for one or more of these identifiers, those values are omitted from the list.  
+   Turn ON the toggle to add **all_identities**, which exports all [account-defined identifiers](https://developer.clevertap.com/docs/developer-go-live-checklist) (**Identity**, **Email**, **Phone**) for each profile. If a user does not have a value for one or more of these identifiers, those values are omitted from the list.  
    _Example:_ If a profile has identities user_123, user_456, and email [user@example.com](mailto:user@example.com), the output will be:
 
 4. **Select CleverTap ID**  
@@ -225,7 +225,8 @@ Configure which properties to include in the export, as well as how they are lab
    Choose which profile properties to export:
 
    * **All user properties**: Exports all system and custom user properties. For more information, refer to [User Properties](doc:user-profiles#user-properties).
-   * **System properties**: Exports only CleverTap system properties such as **Name**, **Gender**, **DOB**, **Email**, **Phone**, and **Photo**. For more information, refer to [System Properties](doc:user-profiles#system-properties).   
+   * **System properties**: Exports only CleverTap system properties such as **Name**, **Gender**, **DOB**, **Email**, **Phone**, and **Photo**. For more information, refer to [System Properties](doc:user-profiles#system-properties).
+
      <Callout icon="📘" theme="info">
        **Note**
 
@@ -468,8 +469,8 @@ Exported profile files follow this consistent column order:
           <th style={{ textAlign: "left" }}>
             token
           </th>
-          
-					<th style={{ textAlign: "left" }}>
+
+          <th style={{ textAlign: "left" }}>
             subscriptionGroups
           </th>
 
@@ -552,11 +553,11 @@ Exported profile files follow this consistent column order:
           <td style={{ textAlign: "left" }}>
             XXXXXXX
           </td>
-          
+
           <td style={{ textAlign: "left" }}>
-            \{\
-            "group1":"Subscribed",  "group2":"Unsubscribed",\
-            "group3": "Subscribed"\
+            \{
+            "group1":"Subscribed",  "group2":"Unsubscribed",
+            "group3": "Subscribed"
             }
           </td>
 
@@ -625,47 +626,47 @@ Exported profile files follow this consistent column order:
   <Tab title="Schema for Parquet File">
     ```
     [
-  {
+    {
     "column_name": "identity",
     "column_type": "VARCHAR",
     "nullValue": "YES",
     "key": null,
     "defaultValue": null,
     "extra": null
-  },
-  {
+    },
+    {
     "column_name": "profileIdentities",
     "column_type": "MAP(VARCHAR, STRUCT(member0 VARCHAR, member1 VARCHAR[]))",
     "nullValue": "YES",
     "key": null,
     "defaultValue": null,
     "extra": null
-  },
-  {
+    },
+    {
     "column_name": "device",
     "column_type": "MAP(VARCHAR, STRUCT(member0 BOOLEAN, member1 INTEGER, member2 BIGINT, member3 FLOAT, member4 DOUBLE, member5 VARCHAR))",
     "nullValue": "YES",
     "key": null,
     "defaultValue": null,
     "extra": null
-  },
-  {
+    },
+    {
     "column_name": "commPrefs",
     "column_type": "MAP(VARCHAR, STRUCT(member0 BOOLEAN, member1 INTEGER, member2 BIGINT, member3 FLOAT, member4 DOUBLE, member5 VARCHAR, member6 MAP(VARCHAR, STRUCT(member0 BOOLEAN, member1 INTEGER, member2 BIGINT, member3 FLOAT, member4 DOUBLE, member5 VARCHAR))))",
     "nullValue": "YES",
     "key": null,
     "defaultValue": null,
     "extra": null
-  },
-  {
+    },
+    {
     "column_name": "profileProps",
     "column_type": "MAP(VARCHAR, STRUCT(member0 BOOLEAN, member1 INTEGER, member2 BIGINT, member3 FLOAT, member4 DOUBLE, member5 VARCHAR))",
     "nullValue": "YES",
     "key": null,
     "defaultValue": null,
     "extra": null
-  }
-]
+    }
+    ]
     ```
   </Tab>
 
