@@ -38,17 +38,17 @@ Creating effective WhatsApp templates requires adherence to certain guidelines. 
 
 > 📘 Template Category Selection
 >
-> CleverTap BSP (Whatsapp Direct) users can select categories during template creation for Meta review, ensuring content alignment. This feature is specific to CleverTap BSP.\
+> CleverTap BSP (Whatsapp Direct) users can select categories during template creation for Meta review, ensuring content alignment. This feature is specific to CleverTap BSP.  
 > However, for external providers, template creation occurs in their WhatsApp provider's dashboards. Hence, template category selection is not available during template configuration in the CleverTap dashboard for external providers.
 
 WhatsApp templates are divided into various categories, each serving specific communication needs. Understanding these categories and their ideal use cases is crucial for effective messaging.
 
 ## Marketing Categories
 
- WhatsApp provides the most flexible marketing templates. These templates enable businesses to achieve various goals, from generating awareness to driving sales. 
+WhatsApp provides the most flexible marketing templates. These templates enable businesses to achieve various goals, from generating awareness to driving sales.
 
 * **Awareness:** Introduce new products or services.
-* **Sales:**&#x50;romote general offers, coupons, or sales events.
+* **Sales:**Promote general offers, coupons, or sales events.
 * **Retargeting:** Re-engage customers who visit your website or app.
 
 ## Utility Categories
@@ -58,7 +58,38 @@ Utility templates are triggered by a user action or request. They must include d
 * **Opt-In Management on WhatsApp:** Confirm opt-in or opt-out preferences.
 * **Order Management:** Confirm, update, or cancel orders with specific details.
 * **Account Alerts or Updates:** Send important account updates and alerts.
-* **Feedback Surveys :**&#x43;ollect feedback on orders or interactions.
+* **Feedback Surveys :**Collect feedback on orders or interactions.
+
+## Template Library
+
+For WhatsApp Direct, Template Library provides out-of-the-box WhatsApp template structures that are predefined for common messaging use cases. These templates help you quickly create WhatsApp messages without starting from scratch.
+
+The templates include predefined components such as structure, placeholders, and formatting. You can customize the content and configure supported fields as required before saving the template. For more information on WhatsApp message templates and their structure, refer to <Anchor label="Meta’s documentation" target="_blank" href="https://developers.facebook.com/documentation/business-messaging/whatsapp/templates/template-library">Meta’s documentation</Anchor>.
+
+<Image align="center" border={true} caption="Template Library" src="https://files.readme.io/c404fffa2a64aed639553bdd7275d6ab5becd10cd4282d26d4a6ce7dc6603095-Template_Library.png" />
+
+### Create a Template Using Template Library
+
+To create a template using the Template Library, follow these steps:
+
+1. From the dashboard, navigate to _Account_ > _Settings_ > _Engage_ > _Channels_ > _WhatsApp_.
+2. Select the Provider Type as **WhatsApp Direct**.
+3. Select the required _WABA account_.
+
+   <Image align="center" border={true} caption="Template Library for WhatsApp Direct" src="https://files.readme.io/91937bfeeb0acabce941f938bfcd1ce1a37fb6aab529899177d1d23819ed9cd4-template_library_1.png" />
+4. Navigate to the Templates tab and click **+ Template**.
+
+   <Image align="center" border={true} caption="Add Template" src="https://files.readme.io/312b97383f56970489d51c0f1805d081feac7f6875fb3ab6983572dc0d01b44c-template_library_3.png" />
+5. In Select Template Type, click **Template Library**.
+
+After you select a template, CleverTap opens the template editor with the predefined content populated.
+
+* The template structure, category, and components are populated based on the selected template.
+* All available language variants are displayed for selection.
+* Placeholders and formatting are populated by default.
+* You can update sample values and the Template Name in CleverTap.
+
+Proceed using the same editor flow described in Create WhatsApp Template.
 
 ## Support for Authentication Templates
 
@@ -81,26 +112,24 @@ Basic Templates are designed for simplicity and quick setup. Use them when sendi
 
 The following are some of the use cases that can be addressed with basic templates:
 
-* **Order Confirmation:**\
+* **Order Confirmation:**  
   Example Template: "Dear \{\{1}}, your order \{\{2}} has been confirmed. Track your package via \{\{3}}."
-* **Service Updates**:\
+* **Service Updates**:  
   Example Template: "Hello \{\{1}}, we've made improvements to our service. Stay tuned for enhanced experiences."
-* **General Announcements:**\
+* **General Announcements:**  
   Example: Template: "Exciting news, \{\{1}}! Explore our latest offerings and promotions. Don't miss out!."
 
 Learn how to [create Basic Templates](doc:whatsapp-message-templates#basic-templates-1) on the CleverTap dashboard.
 
 ## Limited-Time Offer Templates
 
-Limited-time Offer templates are designed for time-sensitive promotions to create a sense of urgency. These templates are ideal for flash sales, special discounts, or any offers that require immediate attention and action from your customers. 
+Limited-time Offer templates are designed for time-sensitive promotions to create a sense of urgency. These templates are ideal for flash sales, special discounts, or any offers that require immediate attention and action from your customers.
 
 > 📘 Availability
 >
 > These Templates are only available with Marketing Category Templates.
 
-<Image alt="Limited Time Offer Message Components" align="center" width="50% " border={true} src="https://files.readme.io/cd2ade8-LTO_sample.png">
-  Limited-Time Offer Message Components
-</Image>
+<Image align="center" alt="Limited Time Offer Message Components" border={true} caption="Limited-Time Offer Message Components" src="https://files.readme.io/cd2ade8-LTO_sample.png" width="50% " />
 
 LTO templates include the following components:
 
@@ -114,7 +143,7 @@ LTO templates include the following components:
 
 > 🚧 Support for Limited-Time Offer (LTO) Templates in Utility Category
 >
-> Limited-Time Offer (LTO) Templates are not supported in the *Utility* category by WhatsApp. Be aware of this restriction when planning your campaigns. You can explore other categories for optimal template utilization.
+> Limited-Time Offer (LTO) Templates are not supported in the _Utility_ category by WhatsApp. Be aware of this restriction when planning your campaigns. You can explore other categories for optimal template utilization.
 
 ### Use Cases
 
@@ -122,9 +151,7 @@ The following are some of the use cases that can be addressed with Limited Time 
 
 * **Flash Sales or Exclusive Discounts**
 
-<Image alt="Flash Sale" align="center" width="45% " border={true} src="https://files.readme.io/5932e3b-B1g1.png">
-  Flash Sale
-</Image>
+<Image align="center" alt="Flash Sale" border={true} caption="Flash Sale" src="https://files.readme.io/5932e3b-B1g1.png" width="45% " />
 
 Learn how to [create Limited Time Offer Templates](doc:whatsapp-message-templates#limited-time-offer-templates-1) on the CleverTap dashboard.
 
@@ -132,9 +159,7 @@ Learn how to [create Limited Time Offer Templates](doc:whatsapp-message-template
 
 Carousel templates enable businesses to craft a single text message that features up to 10 dynamic carousel cards. This enables the recipients to scroll horizontally through a series of engaging content.
 
-<Image alt="Carousel Template" align="center" width="78% " border={true} src="https://files.readme.io/f710556-WhatsApp_carousel_graphic_2x.png">
-  Carousel Template
-</Image>
+<Image align="center" alt="Carousel Template" border={true} caption="Carousel Template" src="https://files.readme.io/f710556-WhatsApp_carousel_graphic_2x.png" width="78% " />
 
 The Carousel template comprises the following components:
 
@@ -156,7 +181,7 @@ The following are some of the use cases that can be addressed using the Carousel
   * **Financial Education Series**: Offer a carousel of educational content on personal finance or investing topics. Each card covers a different financial concept or tip, empowering users to make informed financial decisions.
 * **Food Delivery Services**
   * **Menu Highlights**: Showcase popular dishes, meal combos, or new menu additions in a carousel format. Each card features appealing images, descriptions, and prices, enticing users to explore and order.
-  * **Specialty Cuisine Showcase**: Present a carousel featuring various cuisine types or specialty dishes. Each card highlights a unique culinary experience with images, ingredients, and chef recommendations, inspiring users to try something new.\
+  * **Specialty Cuisine Showcase**: Present a carousel featuring various cuisine types or specialty dishes. Each card highlights a unique culinary experience with images, ingredients, and chef recommendations, inspiring users to try something new.  
     Learn how to  [create Carousel Templates](whatsapp-message-templates#carousel-templates) on the CleverTap dashboard.
 
 # Create WhatsApp Template
@@ -174,37 +199,29 @@ Creating WhatsApp templates is simple with CleverTap. The steps vary depending o
 
 ## Basic Templates
 
- To create a Basic template in CleverTap, follow these steps:
+To create a Basic template in CleverTap, follow these steps:
 
-1. From the dashboard, navigate to *Account > Settings > Engage > Channels > WhatsApp*. 
-2. Select the *Provider Type* as  **WhatsApp Direct** for CleverTap BSP or **WhatsApp Connect** for external BSPs.
+1. From the dashboard, navigate to _Account > Settings > Engage > Channels > WhatsApp_.
+2. Select the _Provider Type_ as  **WhatsApp Direct** for CleverTap BSP or **WhatsApp Connect** for external BSPs.
 
-   <Image alt="Select WhatsApp Provider" align="center" border={true} src="https://files.readme.io/f2f65ee-image.png">
-     Select WhatsApp Provider
-   </Image>
+   <Image align="center" alt="Select WhatsApp Provider" border={true} caption="Select WhatsApp Provider" src="https://files.readme.io/f2f65ee-image.png" />
 3. Select the appropriate WABA account or provider to add templates.
 
-<Image title="image.png" alt={1894} align="center" border={true} src="https://files.readme.io/c423fd6-image.png">
-  Select the WABA account
-</Image>
+<Image align="center" alt={1894} border={true} caption="Select the WABA account" title="image.png" src="https://files.readme.io/c423fd6-image.png" />
 
-4. Navigate to the *Templates* tab and click **+ Template**.
+4. Navigate to the _Templates_ tab and click **+ Template**.
 
-<Image alt="Create a Template" align="center" border={true} src="https://files.readme.io/c7bb73b-image.png">
-  Create a Template
-</Image>
+<Image align="center" alt="Create a Template" border={true} caption="Create a Template" src="https://files.readme.io/c7bb73b-image.png" />
 
-5. Select the appropriate category & *Basic* Template
+5. Select the appropriate category & _Basic_ Template
 
-<Image alt="Basic Template" align="center" border={true} src="https://files.readme.io/a897039c1b36cb5710105a4148261f7a612b87ba21c161f9991fafbc93b2348c-Basic_template_-_whatsapp.png">
-  Basic Template
-</Image>
+<Image align="center" alt="Basic Template" border={true} caption="Basic Template" src="https://files.readme.io/a897039c1b36cb5710105a4148261f7a612b87ba21c161f9991fafbc93b2348c-Basic_template_-_whatsapp.png" />
 
-6. Once you select the Template type and Category, you will land on the Template editor. 
-7. Enter the *Template Name*, and configure headers and body as follows:
+6. Once you select the Template type and Category, you will land on the Template editor.
+7. Enter the _Template Name_, and configure headers and body as follows:
 
 * For header: Select text, image, video, document, or location.
-* For body text formatting: Select ![](https://files.readme.io/0e722c2b9160829fc9724e9497c493c9b3792fa7036998afc43dd3be1c26356b-EMOJI_icon.png) to insert emojis and select **B** for bold, *I* for italics, and **S** for strikethrough.
+* For body text formatting: Select ![](https://files.readme.io/0e722c2b9160829fc9724e9497c493c9b3792fa7036998afc43dd3be1c26356b-EMOJI_icon.png) to insert emojis and select **B** for bold, _I_ for italics, and **S** for strikethrough.
 * (Optional) Add footer text.
 * Add the buttons and enter the required information:
   * **Copy Code buttons**: You can include only 1 copy code button. When tapped, the code is copied to the customer's clipboard.
@@ -215,42 +232,34 @@ Creating WhatsApp templates is simple with CleverTap. The steps vary depending o
 * **Quick Reply buttons**: You can add up to five quick reply buttons. Brands commonly use these buttons to enable users to swiftly respond to WhatsApp messages without typing.
 * **Marketing Opt-out button** : You can add 1 marketing opt-out button. This button sends an unsubscription keyword in quick reply format, making it easy for end-users to opt-out. Brands need to handle these unsubscription flows properly to ensure end-users opt out when they tap this button.
 
-8. Click **Save Template** to save the message template.  
+8. Click **Save Template** to save the message template.
 
 ## Limited-Time Offer Templates
 
- To create a Limited-Time Offer template in CleverTap, follow these steps:
+To create a Limited-Time Offer template in CleverTap, follow these steps:
 
-1. From the dashboard, navigate to *Account > Settings > Engage > Channels > WhatsApp*.
+1. From the dashboard, navigate to _Account > Settings > Engage > Channels > WhatsApp_.
 
-2. Choose the *Provider Type*  as **WhatsApp Direct** for CleverTap BSP or **WhatsApp Connect** for external BSPs.
+2. Choose the _Provider Type_  as **WhatsApp Direct** for CleverTap BSP or **WhatsApp Connect** for external BSPs.
 
-   <Image alt="Select WhatsApp Provider" align="center" border={true} src="https://files.readme.io/ebaed56-image.png">
-     Select WhatsApp Provider
-   </Image>
+   <Image align="center" alt="Select WhatsApp Provider" border={true} caption="Select WhatsApp Provider" src="https://files.readme.io/ebaed56-image.png" />
 
 3. Select the WABA account or provider to add templates.
 
-   <Image title="image.png" alt={1894} align="center" border={true} src="https://files.readme.io/c423fd6-image.png">
-     Select WABA account
-   </Image>
+   <Image align="center" alt={1894} border={true} caption="Select WABA account" title="image.png" src="https://files.readme.io/c423fd6-image.png" />
 
-4. Select the *Templates* tab and click **+Template**.
+4. Select the _Templates_ tab and click **+Template**.
 
-   <Image alt="Create a Template" align="center" border={true} src="https://files.readme.io/fb10d89-temp.png">
-     Create a Template
-   </Image>
+   <Image align="center" alt="Create a Template" border={true} caption="Create a Template" src="https://files.readme.io/fb10d89-temp.png" />
 
-5. Select the *Limited Time Offer* template. ***Limited Time Offer* templates are only available with Marketing category.**
+5. Select the _Limited Time Offer_ template. **_Limited Time Offer_ templates are only available with Marketing category.**
 
-<Image alt="Limited Time Offer Template" align="center" border={true} src="https://files.readme.io/7ae3368f72f02188974a65293630b8f06670cd2dbb292bc4e3f38a3010cbbf9f-Basic_template_-_whatsapp.png">
-  Limited Time Offer Template
-</Image>
+<Image align="center" alt="Limited Time Offer Template" border={true} caption="Limited Time Offer Template" src="https://files.readme.io/7ae3368f72f02188974a65293630b8f06670cd2dbb292bc4e3f38a3010cbbf9f-Basic_template_-_whatsapp.png" />
 
-6. Enter the *Template Name* and configure headers and body as follows:
+6. Enter the _Template Name_ and configure headers and body as follows:
 
 * For header: Select image or video.
-* For body text formatting: Select ![](https://files.readme.io/0e722c2b9160829fc9724e9497c493c9b3792fa7036998afc43dd3be1c26356b-EMOJI_icon.png) to insert emojis and select **B** for bold, *I* for italics, and **S** for strikethrough.
+* For body text formatting: Select ![](https://files.readme.io/0e722c2b9160829fc9724e9497c493c9b3792fa7036998afc43dd3be1c26356b-EMOJI_icon.png) to insert emojis and select **B** for bold, _I_ for italics, and **S** for strikethrough.
 * If required, add the buttons and fill in the required information.
   * **Copy Code buttons:** You can include only 1 copy code button. When tapped, the code is copied to the customer's clipboard.
   * **Visit Website CTA buttons:**  You can add up to 2 buttons, giving customers three choices:
@@ -262,59 +271,49 @@ Creating WhatsApp templates is simple with CleverTap. The steps vary depending o
 
 7. Configure the Limited-Time Offer (LTO) component according to your specific requirements. The LTO component includes two essential components:
 
-* **Offer Title:** Utilize this section to create a captivating heading for your promotional offer. 
+* **Offer Title:** Utilize this section to create a captivating heading for your promotional offer.
 * **Offer Expiry Timer:** This field is optional. If selected, the template will display the time remaining for the offer's expiration, dynamically updating to reflect the time left for the offer to conclude.
 
-<Image alt="Select Offer Expiration Timer" align="center" border={true} src="https://files.readme.io/f3c7941-image.png">
-  Select Offer Expiration Timer
-</Image>
+<Image align="center" alt="Select Offer Expiration Timer" border={true} caption="Select Offer Expiration Timer" src="https://files.readme.io/f3c7941-image.png" />
 
 8. Click **Save Template** to save the message template.
 
 ## Carousel Templates
 
- To create a carousel template, follow these steps:
+To create a carousel template, follow these steps:
 
-1. From the dashboard, navigate to *Account > Settings > Engage > Channels > WhatsApp*.
+1. From the dashboard, navigate to _Account > Settings > Engage > Channels > WhatsApp_.
 
-2. Choose the *Provider Type*  as **WhatsApp Direct** for CleverTap BSP or **WhatsApp Connect** for external BSPs.
+2. Choose the _Provider Type_  as **WhatsApp Direct** for CleverTap BSP or **WhatsApp Connect** for external BSPs.
 
-   <Image alt="Select WhatsApp Provider" align="center" border={true} src="https://files.readme.io/ebaed56-image.png">
-     Select WhatsApp Provider
-   </Image>
+   <Image align="center" alt="Select WhatsApp Provider" border={true} caption="Select WhatsApp Provider" src="https://files.readme.io/ebaed56-image.png" />
 
 3. Select the WABA account or provider to add templates.
 
-   <Image title="image.png" alt={1894} align="center" border={true} src="https://files.readme.io/c423fd6-image.png">
-     Select WABA account
-   </Image>
+   <Image align="center" alt={1894} border={true} caption="Select WABA account" title="image.png" src="https://files.readme.io/c423fd6-image.png" />
 
-4. Select the *Templates* tab and click **+Template**.
+4. Select the _Templates_ tab and click **+Template**.
 
-   <Image alt="Create a Template" align="center" border={true} src="https://files.readme.io/c4ddc53-temp.png">
-     Create a Template
-   </Image>
+   <Image align="center" alt="Create a Template" border={true} caption="Create a Template" src="https://files.readme.io/c4ddc53-temp.png" />
 
-5. Select the *Carousel Template*.
+5. Select the _Carousel Template_.
 
-<Image alt="Carousel Template" align="center" border={true} src="https://files.readme.io/484ec0953f1b5124e82b0bc555974d13a22eca2f09f592c9a30e66dab1b097b7-Basic_template_-_whatsapp.png">
-  Carousel Template
-</Image>
+<Image align="center" alt="Carousel Template" border={true} caption="Carousel Template" src="https://files.readme.io/484ec0953f1b5124e82b0bc555974d13a22eca2f09f592c9a30e66dab1b097b7-Basic_template_-_whatsapp.png" />
 
-6. Enter the *Template Name* and configure the overall body as follows:
+6. Enter the _Template Name_ and configure the overall body as follows:
    1. For the Message bubble, enter the context of your campaign (maximum 1024 characters)
    2. For the Header, select the media type either **Image** or **Video**.
    3. Under the **Button** field, add the button (maximum of 2) per your use case and select the on-click operation (such as Visit Website, Call Phone Number, or Quick reply) for the buttons.
    4. You can add up to 10 cards as per your use case.
    5. For the Card body:
       1. Upload the media file (image/video) based on your selected media type.
-      2. Enter the body text under the *Body* field (maximum 160 characters).
+      2. Enter the body text under the _Body_ field (maximum 160 characters).
       3. Enter the button text for the buttons based on the on-click actions you define. For example, if you add a button with the click action of Visit Website, you can add a button text - **Shop Now**.
       4. Click **Submit**.
 
 # Template Approval Process
 
-Once you have created your template, you can submit it for approval. It can take up to 24 hours to approve the template. After META approves your template, a notification appears in your WhatsApp Manager, and we email your Business Manager admins. In addition, we change the status of your template on the CleverTap dashboard. 
+Once you have created your template, you can submit it for approval. It can take up to 24 hours to approve the template. After META approves your template, a notification appears in your WhatsApp Manager, and we email your Business Manager admins. In addition, we change the status of your template on the CleverTap dashboard.
 
 After the status is updated to approved, you can send messages to your users. Click the refresh button to view the latest status of your template.
 
@@ -322,42 +321,40 @@ After the status is updated to approved, you can send messages to your users. Cl
 
 You can edit a template and add or remove a language or other information. However, note that:
 
-* Templates can be edited only once every 24 hours. 
+* Templates can be edited only once every 24 hours.
 * You cannot edit a template that is being reviewed.
 * If you edit a template, then all the campaigns and journeys using this template will be stopped.
 
-If you delete a template, all the campaigns and journeys using this template will be stopped. 
+If you delete a template, all the campaigns and journeys using this template will be stopped.
 
 ### Edit, Delete or Refresh WhatsApp Message Templates
 
 To edit or delete an existing template:
 
-1. Navigate to *Settings > Channels > WhatsApp Direct > Templates*.
+1. Navigate to _Settings > Channels > WhatsApp Direct > Templates_.
 2. Select any template and click the ellipsis icon adjacent to it.
 3. Click **Overview** and then perform the desired operation.
 
-<Image alt="Template Overview" align="center" width="45% " border={true} src="https://files.readme.io/7a3fd5009c604579074bea635ccbc8cb67a189db737bc48b55bf964bc5f75cb7-Template_operations_-_WhatsApp.png">
-  Template Overview
-</Image>
+<Image align="center" alt="Template Overview" border={true} caption="Template Overview" src="https://files.readme.io/7a3fd5009c604579074bea635ccbc8cb67a189db737bc48b55bf964bc5f75cb7-Template_operations_-_WhatsApp.png" width="45% " />
 
 4. Similarly, select **Refresh Status** from the ellipsis menu to refresh the approval status of an existing template.
 
 ### Clone WhatsApp Message Templates
 
-Template cloning allows you to reuse an existing WhatsApp template without recreating it from scratch. You can clone a template to the same WhatsApp Business Account (WABA) or to a different WABA, as long as it is configured with *WhatsApp Direct*.  The cloned template is created as a new template under the selected WABA and follows the standard template approval process described in the [Template Approval Process](doc:whatsapp-message-templates#template-approval-process) section.
+Template cloning allows you to reuse an existing WhatsApp template without recreating it from scratch. You can clone a template to the same WhatsApp Business Account (WABA) or to a different WABA, as long as it is configured with _WhatsApp Direct_.  The cloned template is created as a new template under the selected WABA and follows the standard template approval process described in the [Template Approval Process](doc:whatsapp-message-templates#template-approval-process) section.
 
 To clone an existing template:
 
-1. Navigate to *Settings > Channels > WhatsApp*. Ensure the *Provider Type* is set to *WhatsApp Direct* and select the WABA account that contains the template you want to clone.
+1. Navigate to _Settings > Channels > WhatsApp_. Ensure the _Provider Type_ is set to _WhatsApp Direct_ and select the WABA account that contains the template you want to clone.
 2. Go to the **Templates** tab.
 3. From the list of templates, select the template you want to reuse and click the ![](https://files.readme.io/01a229fb7482b62579be2f4fe48a5b7ca09a75f00687b65530ce4b00eb7623c2-ellipsis.png) icon adjacent to it.
-4. Click **Clone**. The *Clone Template* editor opens with the original template details pre-populated.
-5. In the *Clone Template* editor:
+4. Click **Clone**. The _Clone Template_ editor opens with the original template details pre-populated.
+5. In the _Clone Template_ editor:
    * Enter a new **Template Name**. The name must be unique within the target WABA.
    * Under **Select WABA**, choose the WABA that will hold the cloned template. You can select the same WABA or a different WABA configured under WhatsApp Direct.
    * Review and, if required, edit the template content:
-     * Update the *Header*, *Body*, *Footer*, *Buttons*, *language*, and *Sample content* as needed.
-     * The *Template type* (for example, Basic, Limited-Time Offer, or Carousel) cannot be changed for the cloned template. To use a different template type, create a new template instead of cloning.
+     * Update the _Header_, _Body_, _Footer_, _Buttons_, _language_, and _Sample content_ as needed.
+     * The _Template type_ (for example, Basic, Limited-Time Offer, or Carousel) cannot be changed for the cloned template. To use a different template type, create a new template instead of cloning.
 6. When you have finished reviewing and updating the cloned template, click **Done** to submit it.
 
 ### Import Templates
@@ -368,21 +365,17 @@ To clone an existing template:
 
 CleverTap allows you to easily import templates from your WhatsApp Business Manager Account to streamline managing your WhatsApp templates. Follow the steps below to import them directly into the CleverTap dashboard with a few clicks:
 
-1. Go to the CleverTap dashboard and navigate to ***Settings*** > ***Channels*** > ***WhatsApp***.
-2. From the list of available providers, select the appropriate provider's nickname. 
-3. Click the **Templates** tab and select **Import Templates**. The *Import Template* button is visible only for CleverTap BSP. Clicking it will open a window for importing templates.
+1. Go to the CleverTap dashboard and navigate to _**Settings**_ > _**Channels**_ > _**WhatsApp**_.
+2. From the list of available providers, select the appropriate provider's nickname.
+3. Click the **Templates** tab and select **Import Templates**. The _Import Template_ button is visible only for CleverTap BSP. Clicking it will open a window for importing templates.
 
-<Image alt="Import Template " align="center" border={true} src="https://files.readme.io/8afb1f1-import_temp.png">
-  Import Template 
-</Image>
+<Image align="center" alt="Import Template " border={true} caption="Import Template" src="https://files.readme.io/8afb1f1-import_temp.png" />
 
-The *Import Template* window opens.
+The _Import Template_ window opens.
 
-<Image alt="Import WhatsApp Templates " align="center" width="60% " border={true} src="https://files.readme.io/d629f40-2023-09-25_17-21-03.jpg">
-  Replace or add new WhatsApp Templates 
-</Image>
+<Image align="center" alt="Import WhatsApp Templates " border={true} caption="Replace or add new WhatsApp Templates" src="https://files.readme.io/d629f40-2023-09-25_17-21-03.jpg" width="60% " />
 
-4. Click *Import*. Select this option to replace all existing templates on your CleverTap dashboard. This action will delete all current templates and import the latest approved templates from the Meta dashboard. This ensures CleverTap has the most up-to-date templates with their respective content and statuses.
+4. Click _Import_. Select this option to replace all existing templates on your CleverTap dashboard. This action will delete all current templates and import the latest approved templates from the Meta dashboard. This ensures CleverTap has the most up-to-date templates with their respective content and statuses.
 5. Click **Continue** to replace or add templates.  The CleverTap dashboard shows the new templates. Your previous templates are mailed to your email account.
 
 > 📘 Impact of Template Import on Failing WhatsApp Campaigns
@@ -392,35 +385,29 @@ The *Import Template* window opens.
 > To address campaign failures resulting from template-related errors, please follow the below steps:
 >
 > 1. Identify the specific campaign or journey that is encountering the error.
-> 2. Access the *What* section of the campaign or the specific journey node.
+> 2. Access the _What_ section of the campaign or the specific journey node.
 > 3. Edit the campaign or journey and select the specific imported templates.
 > 4. Save and publish the changes, and check that the campaigns and journeys use the updated templates.
 
 > 📘 Track Button Clicks
 >
-> Check the URL defined to track the button clicks in the META dashboard. For example, *ct1.io.//\{\{1}}*. This URL will be imported with the template in the CleverTap dashboard. This link cannot be updated later.
+> Check the URL defined to track the button clicks in the META dashboard. For example, _ct1.io.//\{\{1}}_. This URL will be imported with the template in the CleverTap dashboard. This link cannot be updated later.
 
 # Testing a Message Template
 
 You can send a test message using the saved templates from the CleverTap dashboard as follows:
 
-1. From the Templates tab, click the ellipsis below the required template and click **Send Test**. 
+1. From the Templates tab, click the ellipsis below the required template and click **Send Test**.
 
-<Image alt="Select Send Test!" align="center" width="40% " border={true} src="https://files.readme.io/983d0c3db08032192f20811606b8bf5d142a3b901ceb7651c180af0a154af8c6-Template_operations_-_WhatsApp.png">
-  Select Send Test!
-</Image>
+<Image align="center" alt="Select Send Test!" border={true} caption="Select Send Test!" src="https://files.readme.io/983d0c3db08032192f20811606b8bf5d142a3b901ceb7651c180af0a154af8c6-Template_operations_-_WhatsApp.png" width="40% " />
 
-2. Select the test profiles or manually enter the mobile number to whom you want to send the message and click **Send Test**.  
+2. Select the test profiles or manually enter the mobile number to whom you want to send the message and click **Send Test**.
 
-<Image title="Preview the Template Message" alt={1304} align="center" border={true} src="https://files.readme.io/fbf00f7-test_template.png">
-  Preview and Test
-</Image>
+<Image align="center" alt={1304} border={true} caption="Preview and Test" title="Preview the Template Message" src="https://files.readme.io/fbf00f7-test_template.png" />
 
-The success or failure response is displayed on the dashboard. If the message is not delivered, you can copy the response payload and share it with the CleverTap team to debug the issue, as shown in the following figure. 
+The success or failure response is displayed on the dashboard. If the message is not delivered, you can copy the response payload and share it with the CleverTap team to debug the issue, as shown in the following figure.
 
-<Image title="Test the Message" alt="send test rendering sample" align="center" width="80%" border={true} src="https://files.readme.io/878b541-send_test_rendering.jpg">
-  Test Template
-</Image>
+<Image align="center" alt="send test rendering sample" border={true} caption="Test Template" title="Test the Message" src="https://files.readme.io/878b541-send_test_rendering.jpg" width="80%" />
 
 # FAQs
 
