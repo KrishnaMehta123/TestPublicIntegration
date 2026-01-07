@@ -191,7 +191,7 @@ Choose which user identifiers to include in the export and how they appear in th
 
 4. **Select CleverTap ID**  
    Select this option to include the following in your export:
-   * **clevertapId**: A unique, system-generated identifier assigned to each user profile. For more information, refer to [CleverTap ID](https://developer.clevertap.com/docs/user-profiles#clevertap-id).
+   * **clevertapId**: A unique, system-generated identifier assigned to each user profile. For more information, refer to [CleverTap ID](https://docs.clevertap.com/docs/user-profiles#user-profile-data-model).
    * **clevertapIds**: A list of all historical CleverTap IDs associated with the profile, useful for tracking users across devices and merged profiles.
 
 5. **Preview Output**  
