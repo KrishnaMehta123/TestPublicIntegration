@@ -471,13 +471,17 @@ Exported profile files follow this consistent column order:
           <th style={{ textAlign: "left" }}>
             device
           </th>
-
-          <th style={{ textAlign: "left" }}>
-            MSG-push
+          
+					<th style={{ textAlign: "left" }}>
+            subscriptionGroups
           </th>
 
           <th style={{ textAlign: "left" }}>
-            MSG-push-all
+            MSG-webpush
+          </th>
+
+          <th style={{ textAlign: "left" }}>
+            MSG-push
           </th>
 
           <th style={{ textAlign: "left" }}>
@@ -490,10 +494,6 @@ Exported profile files follow this consistent column order:
 
           <th style={{ textAlign: "left" }}>
             MSG-whatsapp
-          </th>
-
-          <th style={{ textAlign: "left" }}>
-            subscriptionGroups
           </th>
 
           <th style={{ textAlign: "left" }}>
@@ -555,32 +555,32 @@ Exported profile files follow this consistent column order:
           <td style={{ textAlign: "left" }}>
             \{"token":"XXXXXXX"}
           </td>
-
-          <td style={{ textAlign: "left" }}>
-            XXXXX
-          </td>
-
-          <td style={{ textAlign: "left" }}>
-            XXXXX
-          </td>
-
-          <td style={{ textAlign: "left" }}>
-            XXXXX
-          </td>
-
-          <td style={{ textAlign: "left" }}>
-            XXXXX
-          </td>
-
-          <td style={{ textAlign: "left" }}>
-            XXXXX
-          </td>
-
+          
           <td style={{ textAlign: "left" }}>
             \{\
             "group1":"Subscribed",  "group2":"Unsubscribed",\
             "group3": "Subscribed"\
             }
+          </td>
+
+          <td style={{ textAlign: "left" }}>
+            XXXXX
+          </td>
+
+          <td style={{ textAlign: "left" }}>
+            XXXXX
+          </td>
+
+          <td style={{ textAlign: "left" }}>
+            XXXXX
+          </td>
+
+          <td style={{ textAlign: "left" }}>
+            XXXXX
+          </td>
+
+          <td style={{ textAlign: "left" }}>
+            XXXXX
           </td>
 
           <td style={{ textAlign: "left" }}>
