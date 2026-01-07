@@ -41,7 +41,7 @@ Basic Templates include the following template types:
 
 You can filter Basic Templates to narrow down and view templates based on the following: _Industry_ (for example, Food Delivery), _Goal_ (for example, Referral), or _Type_ (for example, HTML). This makes it easier to browse the template library and quickly find the most relevant template for your campaign.
 
-<Image align="center" border={true} caption="Filter Basic Templates" src="https://files.readme.io/1a47deacc49ac2ac63e91f5f723362694b4774b4e96d2e09cdb6d5a6c142e4e9-Filter_Bssic_Templates.gif" />
+<Image align="center" border={true} caption="Filter Basic Templates" src="https://files.readme.io/ea332ac1a3e33ffe2ce1b84ee1616f4740953b618037d7e16b03c65c471a24ce-Filter_Basic_Templates.gif" />
 
 ## Rich Media Template
 
