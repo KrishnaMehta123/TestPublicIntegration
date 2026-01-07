@@ -378,7 +378,7 @@ Exported profile files follow this consistent column order:
                     }
                     </value>
               </entry>
-							<entry>
+              <entry>
                     <key>MSG-webpush</key>
                     <value>XXXXXXX</value>
                 </entry>
@@ -550,7 +550,7 @@ Exported profile files follow this consistent column order:
           </td>
 
           <td style={{ textAlign: "left" }}>
-            \XXXXXXX
+            XXXXXXX
           </td>
           
           <td style={{ textAlign: "left" }}>
