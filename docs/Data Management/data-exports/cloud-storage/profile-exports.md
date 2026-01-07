@@ -223,9 +223,9 @@ Configure which properties to include in the export, as well as how they are lab
    </Callout>
 
 2. **Add Communication Preferences**.  
-   Include the [user's opt-in/opt-out status](doc:gdpr#right-to-marketing-opt-out) across messaging channels. Select one or more options from the dropdown: `MSG-push`, `MSG-webpush`, `MSG-email`, `MSG-sms`, `MSG-whatsapp`, and `[subscriptionGroups](doc:group-unsubscribe#subscription-groups) ` (subscription group preferences for messaging channels). Selecting multiple items adds multiple columns. If a profile has no value for a selected item, the corresponding column appears blank.
+   Include the [user's opt-in/opt-out status](doc:gdpr#right-to-marketing-opt-out) across messaging channels. Select one or more options from the dropdown: `MSG-push`, `MSG-webpush`, `MSG-email`, `MSG-sms`, `MSG-whatsapp`, and `[subscriptionGroups](doc:group-unsubscribe#subscription-groups)` (subscription group preferences for messaging channels). Selecting multiple items adds multiple columns. If a profile has no value for a selected item, the corresponding column appears blank.
 
-   <Image align="center" alt="Export Communication Preferences" border={true} caption="Export Communication Preferences" src="https://files.readme.io/c494bcc5ab5779790e9c9a66457dd15674f31428997d95de5ddcbebf1ae7380c-Export_Communication_Preferences.gif" />
+   <Image align="center" border={true} caption="Export Communication Preferences" src="https://files.readme.io/ad426b7e1132a4d3186a695cb0c5f1134cc1b3255de2a72ba2b6a70f556477ef-profile_export_1.png" />
 
 3. **Select User Properties**  
    Choose which profile properties to export:
@@ -253,7 +253,7 @@ Configure which properties to include in the export, as well as how they are lab
   * Renaming only affects the column header in the export; it does not change the original property name.
   * Use the search bar to find specific fields.
   * Drag rows to rearrange columns, or use the Reorder button to set the export sequence.
-  * If a property is missing for a profile, the column still appears but remains blank.
+  * If a property is missing for a profile, the column still appears but remains blank and the Key in the JSON file will be removed.
   * Reordering does not impact data collection or internal storage — it only affects the file structure.
   * If two or more properties have the same name, then the property present last in the order will only be exported. So avoid having two properties with the same name
 </Callout>
@@ -762,7 +762,7 @@ Follow these best practices to ensure your profile exports are reliable, organiz
 * **Use Clear File Naming Conventions**  
   Create descriptive file names using dynamic date variables to help identify and process exports chronologically.
 * **Structure Folders by Date**  
-  Organize exports using date-based folders (e.g., YYYYMMDD or \{\{Date}}) to simplify processing in your data pipelines.
+  Organize exports using date-based folders (e.g., yyyy-mm-dd or \{\{Date}}) to simplify processing in your data pipelines.
 * **Enable Incremental Exports**  
   Use incremental exports for large datasets to minimize processing time, enhance performance, and reduce storage costs.
 * **Manage Schema Carefully**
