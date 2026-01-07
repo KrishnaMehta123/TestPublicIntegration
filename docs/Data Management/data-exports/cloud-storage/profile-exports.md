@@ -369,12 +369,22 @@ Exported profile files follow this consistent column order:
                 </entry>
             </device>
             <commPrefs>
-                <entry>
-                    <key>MSG-push</key>
+              <entry>
+                    <key>subscriptionGroups</key>
+                    <value>
+                    {
+                          "group1": "Subscribed",
+                          "group2": "Unsubscribed",
+                          "group3": "Subscribed"
+                    }
+                    </value>
+              </entry>
+							<entry>
+                    <key>MSG-webpush</key>
                     <value>XXXXXXX</value>
                 </entry>
                 <entry>
-                    <key>MSG-push-all</key>
+                    <key>MSG-push</key>
                     <value>XXXXXXX</value>
                 </entry>
                 <entry>
@@ -389,15 +399,6 @@ Exported profile files follow this consistent column order:
                     <key>MSG-whatsapp</key>
                     <value>XXXXXXX</value>
                 </entry>
-                <entry>
-                    <key>subscriptionGroups</key>
-                    <value>
-                    {
-                          "group1": "Subscribed",
-                          "group2": "Unsubscribed",
-                          "group3": "Subscribed"
-                    }
-                    </value>
                 </entry>
             </commPrefs>
             <profileProps>
@@ -466,7 +467,7 @@ Exported profile files follow this consistent column order:
           </th>
 
           <th style={{ textAlign: "left" }}>
-            device
+            token
           </th>
           
 					<th style={{ textAlign: "left" }}>
@@ -550,7 +551,7 @@ Exported profile files follow this consistent column order:
           </td>
 
           <td style={{ textAlign: "left" }}>
-            \{"token":"XXXXXXX"}
+            \XXXXXXX
           </td>
           
           <td style={{ textAlign: "left" }}>
@@ -625,39 +626,47 @@ Exported profile files follow this consistent column order:
   <Tab title="Schema for Parquet File">
     ```
     [
-      {
-        "column_name": "identity",
-        "column_type": "VARCHAR",
-        "nullValue": "YES",
-        "key": null,
-        "defaultValue": null,
-        "extra": null
-      },
-      {
-        "column_name": "device",
-        "column_type": "MAP(VARCHAR, STRUCT(member0 BOOLEAN, member1 INTEGER, member2 BIGINT, member3 FLOAT, member4 DOUBLE, member5 VARCHAR))",
-        "nullValue": "YES",
-        "key": null,
-        "defaultValue": null,
-        "extra": null
-      },
-      {
-        "column_name": "commPrefs",
-        "column_type": "MAP(VARCHAR, STRUCT(member0 BOOLEAN, member1 INTEGER, member2 BIGINT, member3 FLOAT, member4 DOUBLE, member5 VARCHAR, member6 MAP(VARCHAR, STRUCT(member0 BOOLEAN, member1 INTEGER, member2 BIGINT, member3 FLOAT, member4 DOUBLE, member5 VARCHAR))))",
-        "nullValue": "YES",
-        "key": null,
-        "defaultValue": null,
-        "extra": null
-      },
-      {
-        "column_name": "profileProps",
-        "column_type": "MAP(VARCHAR, STRUCT(member0 BOOLEAN, member1 INTEGER, member2 BIGINT, member3 FLOAT, member4 DOUBLE, member5 VARCHAR))",
-        "nullValue": "YES",
-        "key": null,
-        "defaultValue": null,
-        "extra": null
-      }
-    ]
+  {
+    "column_name": "identity",
+    "column_type": "VARCHAR",
+    "nullValue": "YES",
+    "key": null,
+    "defaultValue": null,
+    "extra": null
+  },
+  {
+    "column_name": "profileIdentities",
+    "column_type": "MAP(VARCHAR, STRUCT(member0 VARCHAR, member1 VARCHAR[]))",
+    "nullValue": "YES",
+    "key": null,
+    "defaultValue": null,
+    "extra": null
+  },
+  {
+    "column_name": "device",
+    "column_type": "MAP(VARCHAR, STRUCT(member0 BOOLEAN, member1 INTEGER, member2 BIGINT, member3 FLOAT, member4 DOUBLE, member5 VARCHAR))",
+    "nullValue": "YES",
+    "key": null,
+    "defaultValue": null,
+    "extra": null
+  },
+  {
+    "column_name": "commPrefs",
+    "column_type": "MAP(VARCHAR, STRUCT(member0 BOOLEAN, member1 INTEGER, member2 BIGINT, member3 FLOAT, member4 DOUBLE, member5 VARCHAR, member6 MAP(VARCHAR, STRUCT(member0 BOOLEAN, member1 INTEGER, member2 BIGINT, member3 FLOAT, member4 DOUBLE, member5 VARCHAR))))",
+    "nullValue": "YES",
+    "key": null,
+    "defaultValue": null,
+    "extra": null
+  },
+  {
+    "column_name": "profileProps",
+    "column_type": "MAP(VARCHAR, STRUCT(member0 BOOLEAN, member1 INTEGER, member2 BIGINT, member3 FLOAT, member4 DOUBLE, member5 VARCHAR))",
+    "nullValue": "YES",
+    "key": null,
+    "defaultValue": null,
+    "extra": null
+  }
+]
     ```
   </Tab>
 
@@ -707,10 +716,10 @@ Exported profile files follow this consistent column order:
 
           <td style={{ textAlign: "left" }}>
             \[\{
-            MSG-push: \{
+            subscriptionGroups: \{
             'member0': "XXXXXX", 'member1': "XXXXXX", 'member2': "XXXXXX", 'member3': "XXXXXX", 'member4': "XXXXXX", 'member5': "XXXXXX", 'member6': "XXXXXX"
             },
-            MSG-push-all: \{
+            MSG-webpush: \{
             'member0': "XXXXXX", 'member1': "XXXXXX", 'member2':"XXXXXX", 'member3': "XXXXXX", 'member4': "XXXXXX", 'member5': "XXXXXX", 'member6': "XXXXXX"
             }
             }]
@@ -774,15 +783,6 @@ Follow these best practices to ensure your profile exports are reliable, organiz
   * For GCP exports, a 403 error often indicates that the service account key is invalid.
 
 # FAQs
-
-### Do CleverTap data exports allow special characters?
-
-Yes, CleverTap data exports allow the following special characters:
-
-* Supports Unicode (UTF-8) character encoding.
-* Replaces Whitespace, Tab, Slash, and null (\0) with a hyphen.
-* Replaces control characters with `?`.
-* Supports emoji characters; some emojis (UTF-16) may not render properly.
 
 ### Can I run a one-time Profiles export if a recurring Profiles export is active?
 
