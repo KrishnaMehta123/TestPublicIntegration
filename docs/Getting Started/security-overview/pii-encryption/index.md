@@ -267,7 +267,7 @@ No. CleverTap handles encryption at the infrastructure level to ensure minimal l
 
 ### How does masking interact with encryption?
 
-If a property is both encrypted and masked, encryption always prevails. Encrypted values remain protected even if masking is also applied. For more information, refer to [PII Masking](doc:masking).
+If a property is both encrypted and masked, encryption always prevails. Encrypted values remain protected even if masking is also applied. For more information, refer to [PII Masking](https://docs.clevertap.com/docs/pii-masking).
 
 ### Who can view encrypted or masked values?
 
