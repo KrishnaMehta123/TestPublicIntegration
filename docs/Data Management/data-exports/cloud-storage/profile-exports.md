@@ -16,12 +16,6 @@ next:
 
 Profile Exports allow you to securely export user profile data from CleverTap to external cloud storage platforms such as Amazon S3, Google Cloud Storage, or Microsoft Azure. You can configure export to centralize customer data, integrate with existing analytics workflows, and ensure the data warehouse platform always has the latest profile information.
 
-<Callout icon="📘" theme="info">
-  #### Private Beta
-
-  This feature is a private beta release. Reach out to your Customer Success Manager for access.
-</Callout>
-
 With Profile Exports, you can:
 
 * **Export to Multiple Cloud Storage Platforms**: Send profile data to Amazon S3, Google Cloud Storage, or Microsoft Azure blob storage.
