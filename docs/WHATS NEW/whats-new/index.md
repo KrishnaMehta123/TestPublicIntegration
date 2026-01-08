@@ -155,6 +155,35 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
 ## January
 
 <HTMLBlock>{`
+<div class="release-note article" data-category="data-and-integrations" id="profile-export-for-cloud-storage">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#profile-export-for-cloud-storage"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/bf86621cc6be2995b3a9323ccfcaae0e172d6da76b2bfedc7983c5be75eb179d-Partners_Icon_Outlined.svg" alt="data-and-integrations" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">Profile Export for Cloud Storage</h3>
+    <div class="badge enhancement">ENHANCEMENT</div>
+  </div>
+  <div class="release-note-body">
+    <p>Introducing Profile Export for S3, GCP, and Azure, an upgrade that improves how profile data is exported from CleverTap to cloud storage destinations. This enhancement provides you with greater control over the export structure and schema, helping to keep data lakes organized and downstream pipelines stable.</p>
+    <p>With this enhancement, you can:</p>
+    <p>
+      <ul>
+        <li>Keep exports organized and easy to consume with custom subfolders, your own file naming, and Parquet output (with no additional compression), ensuring clean storage and predictable ingestion.</li>
+        <li>Match exports to your audience and identity strategy with flexible identifier selection (Email, Phone, CleverTap ID, or a custom identity property). You can also include Communication Preferences, with the option to export Subscription Groups alongside other preference flags, reducing downstream remapping and errors.</li>
+        <li>Protect downstream pipelines from unexpected changes by selecting the exact profile properties you want to export, renaming and ordering them for consistency, and enabling schema locking to prevent newly added properties from disrupting existing flows.</li>
+        <li>Automate daily delivery with recurring exports (every 24 hours) and choose whether each run is incremental or a full dataset refresh, based on the requirements of your team.</li>
+      </ul>
+    </p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/profile-exports" target="_blank">Profile Exports.</a></p>
+</div>
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
 <div class="release-note article" data-category="campaigns" id="redesign-of-campaign-listing-page">
   <div class="release-note-header">
     <div class="anchor-link-icon">
