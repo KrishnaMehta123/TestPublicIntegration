@@ -16,15 +16,15 @@ next:
 
 The following table describes the different types of product releases:
 
-| Release                                                        | Description                                                                                                                            |
-| :------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------- |
-| ![](https://files.readme.io/bbc3552-PrivateBeta.svg)           | This release is rolled out to a selected set of customers as an early preview for use case validation and feedback.                    |
-| ![BETA](https://files.readme.io/7776b09-Beta.svg)              | This release is made available to a wider set of customers to test out deeper use cases and feedback.                                  |
-| ![New Feature](https://files.readme.io/c30bf56-NewFeature.svg) | This is a new functionality in the product, expanding its capabilities or solving new use cases.                                       |
-| ![Enhancement](https://files.readme.io/7f99f23-Tags-1.svg)     | Improvements or upgrades to existing product capabilities focused on increasing performance, usability, or adding minor functionality. |
-| ![Update](https://files.readme.io/0c15d9f-Tags.svg)            | Updates to existing product capabilities, such as bug fixes, performance improvements, security enhancement, and so on.                |
+| Release                                              | Description                                                                                                                            |
+| :--------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------- |
+| ![](https://files.readme.io/bbc3552-PrivateBeta.svg) | This release is rolled out to a selected set of customers as an early preview for use case validation and feedback.                    |
+| ![](https://files.readme.io/7776b09-Beta.svg)        | This release is made available to a wider set of customers to test out deeper use cases and feedback.                                  |
+| ![](https://files.readme.io/c30bf56-NewFeature.svg)  | This is a new functionality in the product, expanding its capabilities or solving new use cases.                                       |
+| ![](https://files.readme.io/7f99f23-Tags-1.svg)      | Improvements or upgrades to existing product capabilities focused on increasing performance, usability, or adding minor functionality. |
+| ![](https://files.readme.io/0c15d9f-Tags.svg)        | Updates to existing product capabilities, such as bug fixes, performance improvements, security enhancement, and so on.                |
 
-\*Any new feature, enhancement, or update without a Beta or Private Beta tag is considered a General Availability (GA) release.
+*Any new feature, enhancement, or update without a Beta or Private Beta tag is considered a General Availability (GA) release.
 
 # 2024
 
@@ -34,15 +34,13 @@ The following table describes the different types of product releases:
 
 We are excited to introduce Content Blocks in CleverTap’s Content Manager. Content Blocks are reusable snippets for standardized elements, such as footers, logos, or disclaimers.
 
-<Image alt="Footer Standardization with Content Blocks" align="center" border={true} src="https://files.readme.io/686373549b6ac569fd3abb3ab7bafddabdd0b37236d60ce08b551e2a559309e1-image.png">
-  Footer Standardization with Content Blocks
-</Image>
+<Image align="center" alt="Footer Standardization with Content Blocks" border={true} caption="Footer Standardization with Content Blocks" src="https://files.readme.io/686373549b6ac569fd3abb3ab7bafddabdd0b37236d60ce08b551e2a559309e1-image.png" />
 
-These blocks are designed to simplify the reuse of content across email campaigns, saving you valuable time. They help you maintain consistent messaging and standardize your brand communication. 
+These blocks are designed to simplify the reuse of content across email campaigns, saving you valuable time. They help you maintain consistent messaging and standardize your brand communication.
 
 For more information, refer to [Content Blocks](doc:content-blocks) and [Content Block APIs](https://developer.clevertap.com/docs/content-blocks-api).
 
-### Store Outgoing Messages Using Message Archiving ![BETA](https://files.readme.io/7776b09-Beta.svg)
+### Store Outgoing Messages Using Message Archiving ![](https://files.readme.io/7776b09-Beta.svg)
 
 Message Archiving now supports Google Cloud Platform (GCP), allowing customers to store copies of outgoing messages across different channels in real-time directly in their GCP bucket. The feature is in Public Beta and available to all CleverTap customers using AWS S3 buckets, Azure Blob, and GCP buckets.
 
@@ -64,17 +62,15 @@ For more information, refer to [Triggers for Campaign Delivery](https://docs.cle
 
 ### Analyze Notifications Sent Using Journeys Labels ![](https://files.readme.io/7f99f23-Tags-1.svg)
 
-You can now use Journey labels in the *Analytics* section to analyze the *Notifications Sent* event. You can now easily track and derive insights from notifications sent through Journeys tagged with specific labels.
+You can now use Journey labels in the _Analytics_ section to analyze the _Notifications Sent_ event. You can now easily track and derive insights from notifications sent through Journeys tagged with specific labels.
 
-<Image alt="Analyze Journey Performance Using Journey Labels" align="center" border={true} src="https://files.readme.io/7f26df255f646c42fcdfbb0a6760afa7be9495d671c751f7d2d28431e2000008-Analyze_Journey_Performance_Using_Journey_Label.png">
-  Analyze Journey Performance Using Journey Labels
-</Image>
+<Image align="center" alt="Analyze Journey Performance Using Journey Labels" border={true} caption="Analyze Journey Performance Using Journey Labels" src="https://files.readme.io/7f26df255f646c42fcdfbb0a6760afa7be9495d671c751f7d2d28431e2000008-Analyze_Journey_Performance_Using_Journey_Label.png" />
 
 For more information, refer to [Assign Label to Journeys](doc:journeys-list#assign-label-to-journeys).
 
 ### Enhanced Entry Timelines in Journey Setup ![](https://files.readme.io/7f99f23-Tags-1.svg)
 
-CleverTap has redesigned *Journey Entry Timelines* to remove redundancies and improve usability. Also, the error handling has been improved to manage scenarios such as incorrect date or day of recurrence inputs.
+CleverTap has redesigned _Journey Entry Timelines_ to remove redundancies and improve usability. Also, the error handling has been improved to manage scenarios such as incorrect date or day of recurrence inputs.
 
 These enhancements ensure a smoother, more intuitive Journey setup process for all CleverTap users.
 
@@ -98,7 +94,7 @@ For more information, refer to [AppsFlyer OneLink Integration](doc:appsflyer-one
 
 ### Campaign ID Personalization for Email ![](https://files.readme.io/bbc3552-PrivateBeta.svg)
 
-Campaign ID Personalization is now available in both the *Email HTML (Rich Media) Editor* and *Drag & Drop Editor*, giving you more flexibility when personalizing email campaigns. You can create unique links and track engagements more accurately.
+Campaign ID Personalization is now available in both the _Email HTML (Rich Media) Editor_ and _Drag & Drop Editor_, giving you more flexibility when personalizing email campaigns. You can create unique links and track engagements more accurately.
 
 With Campaign ID Personalization, you can:
 
@@ -110,7 +106,7 @@ For more information, refer to [Campaign ID Personalization](doc:personalize-mes
 
 ### Event Personalization Beyond 24 Hours for Email ![](https://files.readme.io/bbc3552-PrivateBeta.svg)
 
-You can now apply Event Personalization to *Live Action* and *Date Time* campaigns with a delay of more than 24 hours. Create highly personalized Email campaigns based on event properties broadening the window for event-triggered communications to create custom-tailored notifications, driving better targeting and relevance.
+You can now apply Event Personalization to _Live Action_ and _Date Time_ campaigns with a delay of more than 24 hours. Create highly personalized Email campaigns based on event properties broadening the window for event-triggered communications to create custom-tailored notifications, driving better targeting and relevance.
 
 For more information, refer to [Personalize Message ](doc:personalize-message-email).
 
@@ -121,7 +117,7 @@ We are excited to offer a more secure and streamlined way to connect to your web
 Enhance your Webhook security and efficiency with:
 
 * **OAuth 2.0 Authentication:** Robust security for webhook connections.
-* **Flexible Grant Types:** Support for *Password Credentials* and *Client Credentials.*
+* **Flexible Grant Types:** Support for _Password Credentials_ and _Client Credentials._
 
 For more information, refer to [OAuth 2.0](doc:setup-webhooks#oauth-20).
 
@@ -133,9 +129,9 @@ Existing Amazon SES integrations that are using SMTP can now switch to HTTP by u
 
 For more information, refer to [Amazon Simple Email Service (SES)](https://docs.clevertap.com/docs/amazon-simple-email-service).
 
-### Support for Azure Blob in Message Archiving ![BETA](https://files.readme.io/7776b09-Beta.svg)
+### Support for Azure Blob in Message Archiving ![](https://files.readme.io/7776b09-Beta.svg)
 
-Message Archiving now supports Azure Blob. It allows customers to store copies of outgoing messages across different channels in real-time. The feature is in Public Beta and available to all CleverTap customers using AWS S3 buckets and Azure Blob. 
+Message Archiving now supports Azure Blob. It allows customers to store copies of outgoing messages across different channels in real-time. The feature is in Public Beta and available to all CleverTap customers using AWS S3 buckets and Azure Blob.
 
 For more information, refer to [Message Archiving](doc:message-archiving).
 
@@ -149,9 +145,7 @@ We are excited to announce that CleverTap now supports TikTok as a remarketing c
 >
 > TikTok Remarketing is currently released in Private Beta. For early access, contact your Customer Success Manager or Account Manager.
 
-<Image alt="TikTok Remarketing" align="center" width="100% " border={true} src="https://files.readme.io/8989db3a6e9d984763aac232b75f7cee3e0cf1b269109c2653bf85970623f078-image.png">
-  TikTok Remarketing
-</Image>
+<Image align="center" alt="TikTok Remarketing" border={true} caption="TikTok Remarketing" src="https://files.readme.io/8989db3a6e9d984763aac232b75f7cee3e0cf1b269109c2653bf85970623f078-image.png" width="100% " />
 
 Maximize your reach with targeted TikTok ads by:
 
@@ -185,17 +179,15 @@ For more information, refer to [Gupshup](doc:gupshup).
 
 ### Compare Trends Across Time ![](https://files.readme.io/bbc3552-PrivateBeta.svg)
 
-You can now compare an event across different time periods. For example, a user can display the count of users for the *Charged* event for Week 1 and Week 2 in the same chart. The trend line for Week 2 will be displayed as a dotted line so that it is easy to distinguish it from the Week 1 trend line. It helps create a visual comparison to quickly spot trends and differences across time frames.
+You can now compare an event across different time periods. For example, a user can display the count of users for the _Charged_ event for Week 1 and Week 2 in the same chart. The trend line for Week 2 will be displayed as a dotted line so that it is easy to distinguish it from the Week 1 trend line. It helps create a visual comparison to quickly spot trends and differences across time frames.
 
-<Image alt="Compare Trends in different time periods" align="center" border={true} src="https://files.readme.io/a105d0d551ff34f815b22214179e27afbc372155fd0719d07a83baf0bca32217-trends_compare.gif">
-  Compare Trends Between Different Time Periods
-</Image>
+<Image align="center" alt="Compare Trends in different time periods" border={true} caption="Compare Trends Between Different Time Periods" src="https://files.readme.io/a105d0d551ff34f815b22214179e27afbc372155fd0719d07a83baf0bca32217-trends_compare.gif" />
 
 For more information, refer to [Compare Trends Between Time Periods.](https://docs.clevertap.com/docs/trends-v2#compare-trends-between-time-periods)
 
 ### Notification Failed Event for Email Analytics ![](https://files.readme.io/bbc3552-PrivateBeta.svg)
 
-Announcing a significant enhancement to our Email Analytics: the *Notification Failed* event that gives you more deeper insights into campaign errors. With this update, CleverTap captures a *Notification Failed* event, along with the reason for failure, enabling better targeting and resolution.
+Announcing a significant enhancement to our Email Analytics: the _Notification Failed_ event that gives you more deeper insights into campaign errors. With this update, CleverTap captures a _Notification Failed_ event, along with the reason for failure, enabling better targeting and resolution.
 
 * **Improved Targeting:** Target users through alternate channels when errors occur. For example, if users encounter soft bounce errors, you can re-target them via other channels.
 * **Cleaner Email List:** Unsubscribe users with persistent errors to maintain an accurate and engaged subscriber base.
@@ -222,9 +214,7 @@ For more information, refer to the documentation links below:
 
 The updated DND feature sends notifications delayed by DND at their original scheduled time instead of right after the DND period ends. For example, a message was scheduled for 10 AM but was postponed due to a DND setup between Friday at 9 PM and Monday at 9 AM. The message will now be sent on Tuesday at 10 AM and not immediately after DND ends at 9 AM on Monday. This ensures a more controlled and user-friendly notification delivery experience.
 
-<Image alt="DND in Journeys" align="center" border={true} src="https://files.readme.io/6484ade9dd9a326b59d5028ee3e318bccc100934a463a0294fd65492907ba7ea-DND_in_Journeys.png">
-  DND in Journeys
-</Image>
+<Image align="center" alt="DND in Journeys" border={true} caption="DND in Journeys" src="https://files.readme.io/6484ade9dd9a326b59d5028ee3e318bccc100934a463a0294fd65492907ba7ea-DND_in_Journeys.png" />
 
 For more information, refer to [DND and Timezone](https://docs.clevertap.com/docs/dnd-in-journeys#dnd-and-timezone).
 
@@ -232,24 +222,20 @@ For more information, refer to [DND and Timezone](https://docs.clevertap.com/doc
 
 You can now set throttling limits from the Journey Setup. This allows smoother regulation of message delivery rates during large-scale engagements.
 
-<Image alt="Set Up Throttle Limits from Journeys" align="center" border={true} src="https://files.readme.io/a952feef88184d47da95cbeb1d8d8b7aef29b46eb2886a34a49c59bfba54c0a6-Set_Up_Throttle_Limits_from_Journeys.gif">
-  Set Up Throttle Limits from Journeys
-</Image>
+<Image align="center" alt="Set Up Throttle Limits from Journeys" border={true} caption="Set Up Throttle Limits from Journeys" src="https://files.readme.io/a952feef88184d47da95cbeb1d8d8b7aef29b46eb2886a34a49c59bfba54c0a6-Set_Up_Throttle_Limits_from_Journeys.gif" />
 
 With this enhancement, you can:
 
 * Control message delivery rates directly within the Journey, ensuring more efficient communication.
 * Prevent system overload and maintain optimal app and web performance, even during high-volume campaigns.
 
-For more information, refer to [Throttling in Journeys](doc:throttling-in-journeys#throttling-in-journeys).
+For more information, refer to [Throttling in Journeys](doc:messaging-frequency-caps#throttle).
 
 ### Introducing Folders in Content Manager ![](https://files.readme.io/bbc3552-PrivateBeta.svg)
 
 We are excited to introduce the addition of folders to the Content Manager. This enhancement is designed to streamline file management, providing a more efficient organization of files.
 
-<Image alt="Caption: Manage Content Folders in Files" align="center" border={true} src="https://files.readme.io/03a1110c2de7b3575d14e09ae17df33348f6ead9fac4854bbb44a40486e95ec7-image-20241003-153613.png">
-  Manage Content Folders in Files
-</Image>
+<Image align="center" alt="Caption: Manage Content Folders in Files" border={true} caption="Manage Content Folders in Files" src="https://files.readme.io/03a1110c2de7b3575d14e09ae17df33348f6ead9fac4854bbb44a40486e95ec7-image-20241003-153613.png" />
 
 With the new folders feature, you can now have:
 
@@ -264,9 +250,7 @@ For more information, refer to [Organize Files Using Folders](doc:content-manage
 
 We are excited to introduce an enhanced Push Notification Editor that allows customers to effortlessly add emojis directly. You can access all personalization options from below the text field. This makes it easier and faster to create engaging messages.
 
-<Image alt="Emoji Support Within Push Editor" align="center" border={true} src="https://files.readme.io/62c28fee13c67880b112d93ff1062defd40c27cf4f9fc0b9d751cbc1acddd269-image-20241008-155442.png">
-  Emoji Support Within Push Editor
-</Image>
+<Image align="center" alt="Emoji Support Within Push Editor" border={true} caption="Emoji Support Within Push Editor" src="https://files.readme.io/62c28fee13c67880b112d93ff1062defd40c27cf4f9fc0b9d751cbc1acddd269-image-20241008-155442.png" />
 
 For more information, refer to [Create Push Campaign](doc:create-message-push#push-editor).
 
@@ -298,13 +282,13 @@ Key Features:
 
 For more information, refer to [Auto Append Link Parameters](doc:auto-append-link-parameters).
 
-### Introducing Real-time Message Archiving ![BETA](https://files.readme.io/7776b09-Beta.svg)
+### Introducing Real-time Message Archiving ![](https://files.readme.io/7776b09-Beta.svg)
 
-CleverTap recently released Message Archiving, which allows customers to store copies of outgoing messages across different channels in real-time to their AWS S3 bucket. Key benefits include enhanced compliance evidence, improved trust and transparency, and minimal setup and maintenance. The feature is in Public Beta and available to all CleverTap customers using S3 buckets. 
+CleverTap recently released Message Archiving, which allows customers to store copies of outgoing messages across different channels in real-time to their AWS S3 bucket. Key benefits include enhanced compliance evidence, improved trust and transparency, and minimal setup and maintenance. The feature is in Public Beta and available to all CleverTap customers using S3 buckets.
 
 For more information, refer to [Message Archiving](doc:message-archiving).
 
-### Uncover True Growth Drivers with CleverTap and AppTrove Integration ![New Feature](https://files.readme.io/c30bf56-NewFeature.svg)
+### Uncover True Growth Drivers with CleverTap and AppTrove Integration ![](https://files.readme.io/c30bf56-NewFeature.svg)
 
 We're thrilled to announce our latest integration with **AppTrove by Trackier**, a leading attribution platform that takes your marketing strategy to the next level! With this integration, you can now seamlessly transfer the attribution data for all your organic and non-organic app installations to CleverTap.
 
@@ -317,7 +301,7 @@ Key Benefits:
 
 For more information, refer to [AppTrove](doc:clevertap.com/docs/apptrove).
 
-### Transform Your Email Template Creation with CleverTap and Taxi for Email Integration ![New Feature](https://files.readme.io/c30bf56-NewFeature.svg)
+### Transform Your Email Template Creation with CleverTap and Taxi for Email Integration ![](https://files.readme.io/c30bf56-NewFeature.svg)
 
 We're excited to announce our integration with **Taxi for Email**, a leading CMS platform for email marketers. Customers can now add their Taxi for Email email templates to CleverTap with just a single click. Marketing teams can now create high-quality emails quickly and accelerate time-to-market.
 
@@ -329,7 +313,7 @@ Key Benefits:
 
 For more information, refer to [Taxi for Email](doc:taxi-for-email).
 
-### Link Events to User Properties ![BETA](https://files.readme.io/7776b09-Beta.svg)
+### Link Events to User Properties ![](https://files.readme.io/7776b09-Beta.svg)
 
 We are excited to introduce the Link Events to User Properties feature in Public Beta. This feature enables you to trigger campaigns and actions based on changes in user properties. For example, in a gaming app, you can engage users whenever they complete a game level.
 
@@ -348,15 +332,13 @@ For more details, refer to [Create Linked Event for User Property](doc:schema-cr
 
 Unveiling the fresh new look of CleverTap Analytics! With enhanced user experience and updated visualization in CleverTap Trends, customers can quickly uncover valuable insights. Additionally, we now provide CSV export and the ability to compare date ranges.
 
-<Image alt="vNext Trends" align="center" border={true} src="https://files.readme.io/c0c5526d697e0b45b74c968ff830f17802a2ace2153488965ca9603fece1cc99-vNext_Trends.png">
-  Trend Analysis
-</Image>
+<Image align="center" alt="vNext Trends" border={true} caption="Trend Analysis" src="https://files.readme.io/c0c5526d697e0b45b74c968ff830f17802a2ace2153488965ca9603fece1cc99-vNext_Trends.png" />
 
 For more information, refer to [Trends](doc:trends-v2).
 
 ## August
 
-### File Variables in Product Experiences NextGen ![New Feature](https://files.readme.io/c30bf56-NewFeature.svg)
+### File Variables in Product Experiences NextGen ![](https://files.readme.io/c30bf56-NewFeature.svg)
 
 The all-new Product Experiences comes with another exciting feature: File Type Variables. It is available to all customers with the CleverTap SDK 7.0.0 and a paid PE add-on. With File Type Variables, customers can remotely control any file asset in their Application or Web page and run A/B Tests.
 
@@ -364,15 +346,13 @@ File Variables are linked to CleverTap CMS, which helps manage and re-use custom
 
 ### WhatsApp Carousel Templates Support For Generic Providers ![](https://files.readme.io/7f99f23-Tags-1.svg)
 
-CleverTap now supports WhatsApp Carousel templates for Generic providers. This feature empowers you to create rich, interactive messages that enhance customer engagement. 
+CleverTap now supports WhatsApp Carousel templates for Generic providers. This feature empowers you to create rich, interactive messages that enhance customer engagement.
 
 **What are Carousel Templates?**
 
 Carousel templates allow businesses to send a single text message with up to 10 dynamic carousel cards. Recipients can scroll horizontally through engaging content, providing a seamless navigation experience through various cards featuring interactive media and information.
 
-<Image alt="WhatsApp Carousel Templates" align="center" width="80% " border={true} src="https://files.readme.io/25ac047-WhatsApp_carousel_graphic_2x.png">
-  WhatsApp Carousel Templates
-</Image>
+<Image align="center" alt="WhatsApp Carousel Templates" border={true} caption="WhatsApp Carousel Templates" src="https://files.readme.io/25ac047-WhatsApp_carousel_graphic_2x.png" width="80% " />
 
 The new WhatsApp Carousel templates can be used across various domains, such as:
 
@@ -392,7 +372,7 @@ For more information, refer to [Gmail Promotional Annotations](doc:gmail-promoti
 
 ### New Journey Paths in WhatsApp and SMS Journey Nodes ![](https://files.readme.io/7f99f23-Tags-1.svg)
 
-We are thrilled to announce that customers can now utilize *Viewed* and *Clicked* paths with WhatsApp node in Journeys. The enhancement also introduces a new *Delivered* path for SMS node in Journeys. 
+We are thrilled to announce that customers can now utilize _Viewed_ and _Clicked_ paths with WhatsApp node in Journeys. The enhancement also introduces a new _Delivered_ path for SMS node in Journeys.
 
 This enhancement enables all CleverTap customers to create targeted follow-up engagements based on user interactions with SMS and WhatsApp notifications.
 
@@ -413,10 +393,10 @@ Key Benefits:
 * **Analyze Emotions**: Easily assess and adjust the emotional tone of your email content to align with your goals.
 * **Optimize Campaigns**: Test multiple versions of auto-generated text to enhance engagement and improve open rates.
 
-The feature is available to customers only on the **Cutting Edge Plan**. For more information, refer to: 
+The feature is available to customers only on the **Cutting Edge Plan**. For more information, refer to:
 
-* [Campaign creation](doc:scribe-email#create-an-email-campaign-using-scribe) 
-* [Sample Prompt Syntaxes](doc:scribe-sample-syntax-for-email-campaigns) 
+* [Campaign creation](doc:scribe-email#create-an-email-campaign-using-scribe)
+* [Sample Prompt Syntaxes](doc:scribe-sample-syntax-for-email-campaigns)
 
 ### Introducing DND for Webhook Channel ![](https://files.readme.io/7f99f23-Tags-1.svg)
 
@@ -430,19 +410,17 @@ The Webhook currently supports the Do Not Disturb (DND) feature only in Campaign
 
 The Linked Content URL Personalization Enhancement, previously in Private Beta, is now available to all customers. This feature allows you to personalize URLs within your campaigns, enhancing user experience with more relevant and engaging content. For more information, refer to [Linked Content](doc:linked-content#personalize-linked-content-url).
 
-### Seamless Personalization with the All-New Visual Editor ![New Feature](https://files.readme.io/c30bf56-NewFeature.svg)
+### Seamless Personalization with the All-New Visual Editor ![](https://files.readme.io/c30bf56-NewFeature.svg)
 
 We are thrilled to announce the launch of our revolutionary Visual Editor, designed to transform native website elements directly from the CleverTap dashboard without requiring any development effort.
 
 **Current Challenge and Solution**
 
-Customers often rely on technical support to personalize website content. With CleverTap's Visual Editor, users can now create personalized web experiences easily through a simple interface. 
+Customers often rely on technical support to personalize website content. With CleverTap's Visual Editor, users can now create personalized web experiences easily through a simple interface.
 
 Simply paste the Website URL into the editor, select elements to personalize, and publish changes in real time.
 
-<Image alt="Visual Editor" align="center" width="80% " border={true} src="https://files.readme.io/bac5f5a-point_and_click_template_1.jpg">
-  Visual Editor
-</Image>
+<Image align="center" alt="Visual Editor" border={true} caption="Visual Editor" src="https://files.readme.io/bac5f5a-point_and_click_template_1.jpg" width="80% " />
 
 Key Benefits:
 
@@ -451,9 +429,9 @@ Key Benefits:
 
 For more information, refer to [Visual Editor](doc:web-native-display-editor#visual-editor).
 
-### Custom Font Support For Enhanced Email Design ![New Feature](https://files.readme.io/c30bf56-NewFeature.svg)
+### Custom Font Support For Enhanced Email Design ![](https://files.readme.io/c30bf56-NewFeature.svg)
 
-The Custom Font Support feature, previously in Private Beta, is now available to all customers. This feature allows you to upload and use custom fonts in campaigns and user journeys. 
+The Custom Font Support feature, previously in Private Beta, is now available to all customers. This feature allows you to upload and use custom fonts in campaigns and user journeys.
 
 The feature is available to customers on the Advanced and Cutting Edge plans. For more information, refer to [Font Manager](doc:setup-email#font-manager).
 
@@ -465,22 +443,20 @@ We are excited to announce our enhanced web pop-ups, which allow customers to de
 
 We're thrilled to introduce a series of enhancements to our mobile In-App campaigns. These enhancements help boost engagement and provide enhanced control over user experience.
 
-Previously available only in Private Beta, this feature is now accessible to all users.\
+Previously available only in Private Beta, this feature is now accessible to all users.  
 Key Enhancements:
 
 * **Priority levels (1 to 10)** for In-App messages ensure structured control for campaigns. Ensures enhanced visibility.
 * **Improved Frequency Caps Control** offers customers more flexibility over campaign frequency limits. This latest update provides independent control at both Global and Campaign levels.
 * **Advanced Display Trigger Rules** allow triggering In-App campaigns on the Nth occurrence of an event for personalized communication. This is ideal for scenarios such as gaming milestones and ensuring messages at specific events.
 
-<Image alt="In-App Message Delivery Preferences" align="center" width="80% " border={true} src="https://files.readme.io/2df482a-image.png">
-  In-App Message Delivery Preferences
-</Image>
+<Image align="center" alt="In-App Message Delivery Preferences" border={true} caption="In-App Message Delivery Preferences" src="https://files.readme.io/2df482a-image.png" width="80% " />
 
 For more details, refer to [Delivery Preferences (In-App)](doc:create-message-inapp#delivery-preferences).
 
 ### Enhanced Recurring User Profile Export for Streamlined Data Management ![](https://files.readme.io/bbc3552-PrivateBeta.svg)
 
-Previously, exporting recurring profile data from the point of integration to a run date led to duplication and higher storage needs. The new method uses scheduled transfers to manage resources more effectively and streamlines the workflow. We start with a full data export on the first run, followed by incremental updates that transfer only new or changed data. 
+Previously, exporting recurring profile data from the point of integration to a run date led to duplication and higher storage needs. The new method uses scheduled transfers to manage resources more effectively and streamlines the workflow. We start with a full data export on the first run, followed by incremental updates that transfer only new or changed data.
 
 Currently, this feature is in Private Beta and will be available to everyone after the first week of September. This means that the profile exports will include only required incremental updates.
 
@@ -508,27 +484,23 @@ We are excited to announce enhancements to the CleverTap Hosted Email Preference
 * Easy Management: Manage everything directly from the CleverTap dashboard.
 * Real-Time Preview: Preview your customizations side-by-side instantly.
 
-<Image alt="CleverTap Hosted Email Preference Center" align="center" border={true} src="https://files.readme.io/e457f73-2024-07-31_11-13-50_1.gif">
-  CleverTap Hosted Email Preference Center
-</Image>
+<Image align="center" alt="CleverTap Hosted Email Preference Center" border={true} caption="CleverTap Hosted Email Preference Center" src="https://files.readme.io/e457f73-2024-07-31_11-13-50_1.gif" />
 
 This feature is currently in Private Beta. For more details, refer to [Manage Custom Email Preference Center](https://docs.clevertap.com/docs/manage-custom-email-preference-center).
 
 ## July
 
-### Multi-Button Templates and Limited Time Offer Templates Now Supported with Gupshup ![Update](https://files.readme.io/0c15d9f-Tags.svg)
+### Multi-Button Templates and Limited Time Offer Templates Now Supported with Gupshup ![](https://files.readme.io/0c15d9f-Tags.svg)
 
 CleverTap now supports Multi-Button CTAs and Limited Time Offer (LTO) WhatsApp templates for Gupshup. Customers using Gupshup as their WhatsApp provider can now leverage these templates in their campaigns, enjoying the same benefits previously available to CleverTap BSP and generic WhatsApp customers.
 
-<Image alt="WhatsApp" align="center" width="100% " src="https://files.readme.io/1fd2637-WhatsApp.webp">
-  Multi Button / Limited Time Offer
-</Image>
+<Image align="center" alt="WhatsApp" border={false} caption="Multi Button / Limited Time Offer" src="https://files.readme.io/1fd2637-WhatsApp.webp" width="100% " />
 
 This enhancement allows for more dynamic and engaging messaging, providing customers with versatile options to enhance their campaigns and drive better engagement. For template details and detailed use cases, refer to this [blog](https://clevertap.com/blog/lead-the-way-in-conversational-messaging-with-whatsapps-new-cutting-edge-templates/). For steps on how to use these templates in campaigns, refer to [WhatsApp Templates](doc:whatsapp-message-templates#whatsapp-template-types).
 
 ## June
 
-### CleverTap-Hosted Email Preference Center for Enhanced User Experience ![New Feature](https://files.readme.io/c30bf56-NewFeature.svg)
+### CleverTap-Hosted Email Preference Center for Enhanced User Experience ![](https://files.readme.io/c30bf56-NewFeature.svg)
 
 CleverTap’s Email Preference Center feature, previously in Private Beta, is now available to all users.
 
@@ -536,12 +508,12 @@ CleverTap’s Email Preference Center feature, previously in Private Beta, is no
 
 * **Seamless No Code User Experience**: Enhanced user experience with our intuitive, ready-to-use Email Preference Center, hosted and managed within CleverTap. Say goodbye to navigating external platforms!
 * **"Global Unsubscribe" Made Easy**: Effortless opt-out of all subscriptions with a single click on the landing page. You also have the option to return to the preference center to modify specific preferences.
-* **Focused "Group Unsubscribe"**: Direct users to a dedicated page displaying only the subscription groups associated with the campaign upon clicking on the *Unsubscribe* link. They can easily opt-out or unsubscribe from all groups if needed.
+* **Focused "Group Unsubscribe"**: Direct users to a dedicated page displaying only the subscription groups associated with the campaign upon clicking on the _Unsubscribe_ link. They can easily opt-out or unsubscribe from all groups if needed.
 * **Effortless Integration**: Easily insert group unsubscribe/email preference center links in the drag-and-drop editor using the "Special Links" dropdown, and use replacement tags in the custom HTML editor.
 
 For more information, refer to [Manage Email Preferences](doc:manage-email-preferences).
 
-### Unveiling External Trigger: Elevate User Engagement with Personalized Non-Promotional Alerts ![BETA](https://files.readme.io/7776b09-Beta.svg)
+### Unveiling External Trigger: Elevate User Engagement with Personalized Non-Promotional Alerts ![](https://files.readme.io/7776b09-Beta.svg)
 
 We are thrilled to introduce External Trigger in Public Beta for CleverTap customers. With this feature, our customers can send critical, timely, non-promotional alerts based on business events, all managed directly within the CleverTap dashboard. This eliminates the need for extensive development efforts.
 
@@ -552,9 +524,7 @@ We are thrilled to introduce External Trigger in Public Beta for CleverTap custo
 * **Streamlined Campaign Management**: Create and manage campaign content directly from the CleverTap dashboard.
 * **Dynamic Personalization**: Insert personalization parameters dynamically into messages.
 
-<Image alt="External Trigger Campaigns" align="center" border={true} src="https://files.readme.io/cb5bbce-image-20240613-102654.png">
-  External Trigger Campaigns
-</Image>
+<Image align="center" alt="External Trigger Campaigns" border={true} caption="External Trigger Campaigns" src="https://files.readme.io/cb5bbce-image-20240613-102654.png" />
 
 For more information, refer to [External Trigger](doc:external-trigger).
 
@@ -574,28 +544,24 @@ For more information, refer to [One-Click Unsubscribe](doc:one-click-unsubscribe
 
 We are excited to announce a significant enhancement to the Journey Stats tab. This enhancement features a new section that displays each node’s performance in a tabular structure. You can now view and compare the performance metrics of individual nodes side by side, providing a clear and comprehensive understanding of their effectiveness.
 
-<Image alt="Engagement Stats" align="center" border={true} src="https://files.readme.io/af6a4ed-Engagement_Stats-20240618-095619.gif">
-  Engagement Stats
-</Image>
+<Image align="center" alt="Engagement Stats" border={true} caption="Engagement Stats" src="https://files.readme.io/af6a4ed-Engagement_Stats-20240618-095619.gif" />
 
 **Key Benefits**
 
-* **Improved Insights**: Easily compare the performance of individual nodes to identify high-performing and underperforming areas. 
-* **Enhanced Decision-Making**: Make more informed, data-driven decisions to optimize each node within the journey. 
+* **Improved Insights**: Easily compare the performance of individual nodes to identify high-performing and underperforming areas.
+* **Enhanced Decision-Making**: Make more informed, data-driven decisions to optimize each node within the journey.
 * **Increased Efficiency**: Save time by accessing all relevant performance data in a single, easy-to-read table.
 
 For more information, refer to [Engagement Stats](doc:engagement-stats).
 
-### WhatsApp Carousel Templates Support For CleverTap BSP ![New Feature](https://files.readme.io/c30bf56-NewFeature.svg)
+### WhatsApp Carousel Templates Support For CleverTap BSP ![](https://files.readme.io/c30bf56-NewFeature.svg)
 
-CleverTap now supports WhatsApp Carousel templates. This feature empowers you to create rich, interactive messages that enhance customer engagement. 
+CleverTap now supports WhatsApp Carousel templates. This feature empowers you to create rich, interactive messages that enhance customer engagement.
 
-**What are Carousel Templates?**\
+**What are Carousel Templates?**  
 Carousel templates allow businesses to send a single text message with up to 10 dynamic carousel cards. Recipients can scroll horizontally through engaging content, providing a seamless navigation experience through various cards featuring interactive media and information.
 
-<Image alt="WhatsApp Carousel Templates" align="center" width="80% " border={true} src="https://files.readme.io/25ac047-WhatsApp_carousel_graphic_2x.png">
-  WhatsApp Carousel Templates
-</Image>
+<Image align="center" alt="WhatsApp Carousel Templates" border={true} caption="WhatsApp Carousel Templates" src="https://files.readme.io/25ac047-WhatsApp_carousel_graphic_2x.png" width="80% " />
 
 The new WhatsApp Carousel templates in CleverTap BSP can be used across various domains, such as:
 
@@ -622,7 +588,7 @@ With this support, CleverTap customers can now:
 
 ## May
 
-### One-Click Unsubscribe for Enhanced Deliverability & User Experience ![New Feature](https://files.readme.io/c30bf56-NewFeature.svg)
+### One-Click Unsubscribe for Enhanced Deliverability & User Experience ![](https://files.readme.io/c30bf56-NewFeature.svg)
 
 We are pleased to announce that CleverTap's One-Click Unsubscribe feature for email is now generally available. This functionality is enabled by default to ensure compliance and ease of use. However, customers with a custom setup for one-click unsubscribe (list-unsubscribe headers) via their ESP can disable this feature from the CleverTap dashboard if they prefer to use their own setup.
 
@@ -643,9 +609,9 @@ Custom Key-Value Pairs in CleverTap's App Inbox, previously available in Private
 
 For more information, refer to:
 
-* [App Inbox](doc:create-message-app-inbox#custom-key-value-pairs) 
-* [Push Notification + App Inbox](doc:create-message-push#custom-key-value-pair) 
-* [Create Campaign API - App Inbox](https://developer.clevertap.com/docs/create-campaign-api#body-parameters---target-user-events--properties) 
+* [App Inbox](doc:create-message-app-inbox#custom-key-value-pairs)
+* [Push Notification + App Inbox](doc:create-message-push#custom-key-value-pair)
+* [Create Campaign API - App Inbox](https://developer.clevertap.com/docs/create-campaign-api#body-parameters---target-user-events--properties)
 
 ### Hyper-personalized Experiences With Support For Personalization In Email Test Campaigns ![](https://files.readme.io/bbc3552-PrivateBeta.svg)
 
@@ -655,11 +621,11 @@ For more information, refer to [Send Test Personalization](doc:send-test-persona
 
 ### Variant-specific Conversion and Revenue Analytics for Effective Experimentation ![](https://files.readme.io/7f99f23-Tags-1.svg)
 
-With this enhancement, you can now accurately measure the performance of each variant by considering the conversion metrics and target group revenue. 
+With this enhancement, you can now accurately measure the performance of each variant by considering the conversion metrics and target group revenue.
 
- CleverTap allows you to analyze variant-specific conversions and revenues in A/B and multivariate tests directly from the dashboard and reports for campaigns and journeys.
+CleverTap allows you to analyze variant-specific conversions and revenues in A/B and multivariate tests directly from the dashboard and reports for campaigns and journeys.
 
- For more information, refer to [Conversion Performance](doc:push-campaign-stats#conversion-performance).
+For more information, refer to [Conversion Performance](doc:push-campaign-stats#conversion-performance).
 
 ### One-Click Unsubscribe For Enhanced Deliverability and User Unsubscription Experience  ![](https://files.readme.io/bbc3552-PrivateBeta.svg)
 
@@ -667,29 +633,23 @@ CleverTap now supports One-Click Unsubscribe for emails to ensure compliance wit
 
 The following images show how you can unsubscribe with just a single click from inbox or email body:
 
-<Image alt="One-Click Unsubscribe from Inbox" align="center" border={true} src="https://files.readme.io/f012ff2-image-20240412-053706.png">
-  One-Click Unsubscribe from Inbox
-</Image>
+<Image align="center" alt="One-Click Unsubscribe from Inbox" border={true} caption="One-Click Unsubscribe from Inbox" src="https://files.readme.io/f012ff2-image-20240412-053706.png" />
 
-<Image alt="One-Click Unsubscribe from Email Body" align="center" border={true} src="https://files.readme.io/0fa115b-image-20240412-053756.png">
-  One-Click Unsubscribe from Email Body
-</Image>
+<Image align="center" alt="One-Click Unsubscribe from Email Body" border={true} caption="One-Click Unsubscribe from Email Body" src="https://files.readme.io/0fa115b-image-20240412-053756.png" />
 
-This functionality is now available in Private Beta for a few customers using Sendgrid as their ESP. It will be available for other providers soon. 
+This functionality is now available in Private Beta for a few customers using Sendgrid as their ESP. It will be available for other providers soon.
 
 For more information, refer to[ One-Click Unsubscribe](https://docs.clevertap.com/docs/one-click-unsubscribe).
 
-### Hyper-personalized Experiences With Support For Personalization In Test Messages![Enhancement](https://files.readme.io/7f99f23-Tags-1.svg)
+### Hyper-personalized Experiences With Support For Personalization In Test Messages![](https://files.readme.io/7f99f23-Tags-1.svg)
 
 Introducing support for personalizing test messages! You can now view personalized content on devices using test or internal profiles before launching campaigns. With this feature, you also receive response details that help you gain deeper insights and debug potential errors. It provides seamless support for various personalization features such as @Personalization, Liquid Tags, Linked Content, and Constant Event Property.
 
-<Image alt="Send Personalized Campaigns to Test Profiles" align="center" border={true} src="https://files.readme.io/68feacf-send-test-personalization-push-20240412-045513.gif">
-  Send Personalized Campaigns to Test Profiles
-</Image>
+<Image align="center" alt="Send Personalized Campaigns to Test Profiles" border={true} caption="Send Personalized Campaigns to Test Profiles" src="https://files.readme.io/68feacf-send-test-personalization-push-20240412-045513.gif" />
 
 Currently available on the Push Notification channel in Campaigns & Journeys and will be made available on other channels soon. For more information, refer to  [Send Test Personalization](https://docs.clevertap.com/docs/send-test-personalization-for-push).
 
-### Introducing the New Image Interstitial Editor for In-App Messages ![New Feature](https://files.readme.io/c30bf56-NewFeature.svg)
+### Introducing the New Image Interstitial Editor for In-App Messages ![](https://files.readme.io/c30bf56-NewFeature.svg)
 
 We're excited to announce the release of our Image Interstitial Editor, which is now available for advanced and cutting-edge plans!
 
@@ -697,9 +657,7 @@ Earlier, crafting custom In-App messages was a multi-step process involving desi
 
 Using CleverTap's Image interstitial editor, customers can effortlessly create customizable In-App messages directly from images and clickable CTAs without any development effort. This streamlines engagement for game announcements, feedback requests, promotional offers, and more.
 
-<Image alt="Image Interstitial Template" align="center" border={true} src="https://files.readme.io/f5ccae3-animation-updated_1_1.gif">
-  Image Interstitial Template
-</Image>
+<Image align="center" alt="Image Interstitial Template" border={true} caption="Image Interstitial Template" src="https://files.readme.io/f5ccae3-animation-updated_1_1.gif" />
 
 Key Highlights:
 
@@ -710,27 +668,25 @@ Key Highlights:
 
 For more information, refer to [Image Interstitial Template](https://docs.clevertap.com/docs/in-app-editor#image-interstitial).
 
-### Multi-button CTA and Limited Time Offer Templates for Urgency and User Interactivity ![New Feature](https://files.readme.io/c30bf56-NewFeature.svg)
+### Multi-button CTA and Limited Time Offer Templates for Urgency and User Interactivity ![](https://files.readme.io/c30bf56-NewFeature.svg)
 
-CleverTap now supports Multi-Button CTA and Limited Time Offer (LTO) WhatsApp templates, empowering users to create dynamic, interactive, and time-sensitive messages. 
+CleverTap now supports Multi-Button CTA and Limited Time Offer (LTO) WhatsApp templates, empowering users to create dynamic, interactive, and time-sensitive messages.
 
 Multi-Button CTA templates supports adding up to 10 CTAs (1 Copy Code, 2 redirection CTA, 1 Call Phone, and 5 Quick Reply Buttons) allowing various engagement options in a single notification. LTO templates display expiration dates and countdown timers, creating urgency, driving action, and boosting conversions.
 
-<Image alt="Multi Button CTAs and Limited Time Offer Templates" align="center" width="70% " border={true} src="https://files.readme.io/8a92907-LTO_sample.png">
-  Multi Button CTAs and Limited Time Offer Templates
-</Image>
+<Image align="center" alt="Multi Button CTAs and Limited Time Offer Templates" border={true} caption="Multi Button CTAs and Limited Time Offer Templates" src="https://files.readme.io/8a92907-LTO_sample.png" width="70% " />
 
 This feature is available to all CleverTap BSP and Generic WhatsApp provider customers. For more information, refer to [Sample payloads for Multi-button CTAs and Limited Time Offer](https://docs.clevertap.com/docs/generic-whatsapp#payload-samples-for-template-message).
 
 ## March
 
-### Gmail Carousel Annotations for Improved Email Discoverability and Engagement ![New Feature](https://files.readme.io/c30bf56-NewFeature.svg)
+### Gmail Carousel Annotations for Improved Email Discoverability and Engagement ![](https://files.readme.io/c30bf56-NewFeature.svg)
 
-In addition to Deal annotations released earlier, CleverTap has added a new feature called Product Carousel Annotations to their Gmail Promotional Annotations. With this feature, you can display up to **10 images** in a carousel format to make your promotions more attractive. 
+In addition to Deal annotations released earlier, CleverTap has added a new feature called Product Carousel Annotations to their Gmail Promotional Annotations. With this feature, you can display up to **10 images** in a carousel format to make your promotions more attractive.
 
 Currently, this feature is released in Private Beta. For more information, refer to [Gmail Promotional Annotations](https://docs.clevertap.com/docs/gmail-promotional-annotations-product-carousel#annotate-with-product-carousel).
 
-### Enhanced Quick Reply Autoresponder For Streamlined Automated Conversations ![Enhancement](https://files.readme.io/7f99f23-Tags-1.svg)
+### Enhanced Quick Reply Autoresponder For Streamlined Automated Conversations ![](https://files.readme.io/7f99f23-Tags-1.svg)
 
 We're excited to introduce significant improvements to our WhatsApp Quick Reply Autoresponders, offering customers more flexibility and control over automated conversations. We now have more configurations and precise time controls that cater to customer needs:
 
@@ -742,7 +698,7 @@ These updates are available to all CleverTap WhatsApp customers. For more inform
 
 ## February
 
-### Discontinuation of Xiaomi Push Service ![Update](https://files.readme.io/0c15d9f-Tags.svg)
+### Discontinuation of Xiaomi Push Service ![](https://files.readme.io/0c15d9f-Tags.svg)
 
 Xiaomi Corporation made a significant announcement recently, notifying users about discontinuing the Xiaomi Push service beyond Mainland China due to operational concerns. This change will impact the App Push Notifications sent to Xiaomi devices via Xiaomi Push Service (XPS). Starting March 31, 2024, App Push on Xiaomi devices will be directed through the FCM service instead.
 
@@ -751,17 +707,15 @@ Action Required:
 * Upgrade your app to CleverTap Android SDK v6.1.0 or above and promptly discontinue the use of the XPS SDK. The CleverTap Android SDK is expected to be released on February 20, 2024.
 * Utilize our proprietary technology, [RenderMax™](https://docs.clevertap.com/docs/rendermax), to enhance your push notification campaigns on Xiaomi devices.
 
- For more information, refer to [Discontinuation of Xiaomi Push Service](https://developer.clevertap.com/docs/discontinuation-of-xiaomi-push-service).
+For more information, refer to [Discontinuation of Xiaomi Push Service](https://developer.clevertap.com/docs/discontinuation-of-xiaomi-push-service).
 
 ### Introducing Product Experiences NextGen ![](https://files.readme.io/bbc3552-PrivateBeta.svg)
 
 Product Experiences NextGen elevates our offering with a sleeker UI, enhanced user controls, and improved functionality. Here are its two new powerful capabilities:
 
-* **Remote Config**: This feature eliminates the need for multiple updates on the app stores. It enables you to customize, manage, and configure your applications remotely with minimal development effort. You can swiftly adjust app design, user experience, and workflow for all users or specific user segments. 
+* **Remote Config**: This feature eliminates the need for multiple updates on the app stores. It enables you to customize, manage, and configure your applications remotely with minimal development effort. You can swiftly adjust app design, user experience, and workflow for all users or specific user segments.
 
-<Image alt="Product Experiences NextGen" align="center" width="85% " border={true} src="https://files.readme.io/f4f17b8-Product-Experiences-P-B_1.gif">
-  Product Experiences NextGen
-</Image>
+<Image align="center" alt="Product Experiences NextGen" border={true} caption="Product Experiences NextGen" src="https://files.readme.io/f4f17b8-Product-Experiences-P-B_1.gif" width="85% " />
 
 * **Product A/B tests**: This feature allows you to experiment with different versions of your app's UI or functionality. After a detailed analysis of your A/B Tests, you can seamlessly deploy the most successful version based on the key performance indicators (KPIs).
 
@@ -779,13 +733,11 @@ Key Enhancements:
 * **Improved Frequency Caps Controls**: This enhancement offers customers greater flexibility over campaign frequency limits, allowing for more granular control. This latest update provides independent control at both Global and Campaign levels.
 * **Advanced Display Trigger Rules**: Effortlessly trigger In-App campaigns on the Nth occurrence of an event, unlocking personalized communication. Ideal for scenarios such as gaming milestones, and ensuring messages at specific events.
 
-<Image alt="In-App Delivery Preferences" align="center" width="80% " border={true} src="https://files.readme.io/6d21640-campaign_frequency_limits.png">
-  In-App Delivery Preferences
-</Image>
+<Image align="center" alt="In-App Delivery Preferences" border={true} caption="In-App Delivery Preferences" src="https://files.readme.io/6d21640-campaign_frequency_limits.png" width="80% " />
 
 These features are currently in Private Beta, exclusively available to a select group of customers. For more details, refer to [Delivery preferences (In-App)](https://docs.clevertap.com/docs/create-message-inapp#delivery-preferences).
 
-### Identity Personalization for Creating More Contextual User Experiences ![Enhancement](https://files.readme.io/7f99f23-Tags-1.svg)
+### Identity Personalization for Creating More Contextual User Experiences ![](https://files.readme.io/7f99f23-Tags-1.svg)
 
 Introducing Identity Personalization, a capability that enables CleverTap customers to **seamlessly leverage user identity values**—such as email ID, phone number, and user ID and **contextualize their campaigns**. You can easily use identity, email, and phone fields from within the @ Personalization and Liquid Tags for **flexible campaign creation**.
 
@@ -793,7 +745,7 @@ You can leverage this feature **across all messaging channels, spanning both Cam
 
 For more information, refer to [ Identity Personalization](https://docs.clevertap.com/docs/personalize-message-all#identity-personalization).
 
-### Elevate User Experience with Linked Content URL Personalization ![Enhancement](https://files.readme.io/7f99f23-Tags-1.svg)
+### Elevate User Experience with Linked Content URL Personalization ![](https://files.readme.io/7f99f23-Tags-1.svg)
 
 CleverTap's Linked Content URL Personalization feature empowers marketers to **personalize the endpoint URL** within Linked Content, allowing customers **to tailor message content** from third-party data sources for individual users based on their user attributes. You can **easily personalize the endpoint URL** using User Profile, Event Property, and Message Property **during Linked Content setup**. Also, it helps ensure a consistent and personalized user experience by **seamlessly integrating** Linked Content Personalization across all engagement channels, including Campaigns and Journeys.
 
