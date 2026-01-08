@@ -14,7 +14,7 @@ next:
 
 The _Custom Boards_ is a feature in CleverTap that allows you to create and customize your board. CleverTap provides a set of default boards, such as the [Today View](doc:today-view), [Mobile App View](doc:mobile-app-view), [Uninstalls View](doc:uninstalls-view), [Revenue View ](doc:revenue-view), [NPS view](doc:nps-board), which you can use to analyze user activity in your application.
 
-Each custom board you create is composed of Tiles, which are widgets you can pin to the board to track the metrics of your interest. You can pin Tiles and track the metrics using one of the following features: [funnels](doc:funnels) and [trends](doc:trends).
+Each custom board you create is composed of Tiles, which are widgets you can pin to the board to track the metrics of your interest. You can pin Tiles and track the metrics using one of the following features: [Funnels](doc:funnels) and [Trends](doc:trends).
 
 > 📘 Private Beta
 >
