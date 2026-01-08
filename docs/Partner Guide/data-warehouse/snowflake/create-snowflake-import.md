@@ -42,6 +42,6 @@ To begin importing from Snowflake to CleverTap, perform the following steps:
 >
 > Previewing results is solely for validation purposes and does not import any data into CleverTap.
 
-Once you validate your data using _Preview Results_, click **Next** to move on to the mapping step. In this step, map **event data** or **user profile data** from your Snowflake database to ensure accurate data with the datatype is transformed before pushing it to CleverTap. For detailed instructions, refer to <Anchor label="Map Data for Snowflake Import" target="_blank" href="https://docs.clevertap.com/docs/map-data-for-snowflake-import">Map Data for Snowflake Import</Anchor>.
+Once you validate your data using _Preview Results_, click **Next** to move on to the mapping step. In this step, map **event data** or **user profile data** from your Snowflake database to ensure accurate data with the datatype is transformed before pushing it to CleverTap. For detailed instructions, refer to <Anchor label="Map Data for Snowflake Import" target="_blank" href="doc:map-data-for-snowflake-import">Map Data for Snowflake Import</Anchor>.
 
 <br />
