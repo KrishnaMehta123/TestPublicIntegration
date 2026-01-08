@@ -531,7 +531,7 @@ Protect Data End to End</strong>: Keep payloads encrypted on the device and decr
       <a href="#bulk-upload-for-geofences"><i class="fa-light fa-anchor"></i></a>
     </div>
     <div>
-      <img src="https://files.readme.io/0ed57ff4730974458d74d2a34ec4cf285aa5e84f59075a6b32550b9d1fd60ae8-Content_Manager.svg" alt="Data & Integrations" class="release-note-heading-icon"/>
+      <img src="https://files.readme.io/0ed57ff4730974458d74d2a34ec4cf285aa5e84f59075a6b32550b9d1fd60ae8-Content_Manager.svg" alt="Content Manager" class="release-note-heading-icon"/>
     </div>
     <h3 class="release-note-heading">Bulk Upload for Geofences</h3>
     <div class="badge enhancement">ENHANCEMENT</div>
