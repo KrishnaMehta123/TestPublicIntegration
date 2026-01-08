@@ -525,7 +525,7 @@ Protect Data End to End</strong>: Keep payloads encrypted on the device and decr
 `}</HTMLBlock>
 
 <HTMLBlock>{`
-<div class="release-note article" data-category="data-and-integrations" id="bulk-upload-for-geofences">
+<div class="release-note article" data-category="content-manager" id="bulk-upload-for-geofences">
   <div class="release-note-header">
     <div class="anchor-link-icon">
       <a href="#bulk-upload-for-geofences"><i class="fa-light fa-anchor"></i></a>
