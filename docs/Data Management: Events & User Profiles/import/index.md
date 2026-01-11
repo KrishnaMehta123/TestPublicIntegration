@@ -61,7 +61,7 @@ The _Imports_ section explains how to bring external user data into CleverTap, i
   <a href="https://docs.clevertap.com/docs/imports-via-api" class="integration-card">
     <div class="name">API</div>
   </a>
-  <a href="https://staging.docs.user.clevertap.net/docs/csv-upload" class="integration-card">
+  <a href="https://docs.clevertap.com/docs/csv-upload" class="integration-card">
     <div class="name">CSV Upload</div>
   </a>
 <a href="https://staging.docs.dev.clevertap.net/docs/imports-via-sftp" class="integration-card">
