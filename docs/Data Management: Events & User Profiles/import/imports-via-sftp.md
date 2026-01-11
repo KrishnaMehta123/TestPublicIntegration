@@ -1,5 +1,5 @@
 ---
-title: Imports via SFTP
+title: SFTP
 excerpt: ''
 deprecated: false
 hidden: false
