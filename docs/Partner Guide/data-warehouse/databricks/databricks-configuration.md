@@ -29,28 +29,27 @@ Configuring Databricks with CleverTap enables seamless data import, ensuring syn
 
   This section is intended for users who already have a configured Databricks workspace and are familiar with the CleverTap dashboard.
 
-## Prerequisites
+  ## Prerequisites
 
   Before you begin, ensure you have the following details:
 
-* Host
-* HTTP Path
-* Personal Access Token (PAT)
-* Catalog
-* Schema
-* Port
+  * Host
+  * HTTP Path
+  * Personal Access Token (PAT)
+  * Catalog
+  * Schema
+  * Port
 
-## Configure Databricks Credentials in CleverTap
+  ## Configure Databricks Credentials in CleverTap
 
   To set up the Databricks credentials in CleverTap, perform the following steps:
 
-1. Go to *CleverTap Dashboard > Settings > Partners > Databricks*.
-2. Enter the following details: *Host*, *HTTP Path*, *Personal Access Token (PAT)*, and *Catalog*.
-3. Enter *Schema* and *Port* (defaults to `443` if not provided).
-4. Click **Test Connection** and **Save**.
+  1. Go to *CleverTap Dashboard > Settings > Partners > Databricks*.
+  2. Enter the following details: *Host*, *HTTP Path*, *Personal Access Token (PAT)*, and *Catalog*.
+  3. Enter *Schema* and *Port* (defaults to `443` if not provided).
+  4. Click **Test Connection** and **Save**.
 
   After setting up the configuration, you can [import](doc:data-warehouse-import) data between Databricks and CleverTap.
-
 </details>
 
 # Prerequisites for Integration
@@ -119,8 +118,8 @@ Run the following command in the Databricks SQL UI or via the REST API (settings
 
 Create or identify the Databricks identity you will use with CleverTap, then generate a Personal Access Token (PAT).
 
-1. In Databricks, go to *Settings* from your profile.
-2. Under *User*, select *Developer*.
+1. In Databricks, go to _Settings_ from your profile.
+2. Under _User_, select _Developer_.
 3. In **Access Tokens**, click **Manage**.
 4. Click **Generate New Token**, then click **Generate**.
 5. Copy the token value and click **Done**.
@@ -209,32 +208,32 @@ You have already prepared your Databricks environment and gathered the required 
 
 ![](https://files.readme.io/d272d6e1260af455b54f219aa305af9d54e268051ba7a3901a686a2b2405a47a-databricks.png)  Connection Details for Databricks
 
-1. To connect Databricks with CleverTap, go to *Settings > Partners > Databricks* and select **Add Database**. To create or retrieve details from your Databricks workspace, refer to [Create a new Catalog, SQL Warehouse, User/Principal, and Schema](doc:databricks-integration#create-new-databricks-setup) or [Use existing Databricks credentials](doc:databricks-integration#use-existing-databricks-credentials) and configure the following:\
-   \| Field                       | Description                                                                                                                  |\
-   \| --------------------------- \| ---------------------------------------------------------------------------------------------------------------------------- \|\
-   \| Connection name             | A unique name that you will use further to identify your configuration while setting up imports.                             |\
-   \| Host                        | The Databricks workspace host (domain only; no protocol). Refer to [Obtain Your Databricks Host]().                          |\
-   \| Port                        | HTTPS port used to reach Databricks. If a port is specified, CleverTap uses it; otherwise, the connection defaults to `443`. |\
-   \| HTTP Path                   | The HTTP path of the target SQL Warehouse/endpoint in Databricks.                                                            |\
-   \| Personal Access Token (PAT) | The token used by CleverTap to authenticate to Databricks. Refer to [Create or Retrieve a PAT]().                            |\
-   \| Catalog                     | The Unity Catalog used for CleverTap data operations.                                                                        |\
-   \| Schema                      | The specific schema within the catalog that will contain tables created by CleverTap.                                        |
+1. To connect Databricks with CleverTap, go to _Settings > Partners > Databricks_ and select **Add Database**. To create or retrieve details from your Databricks workspace, refer to [Create a new Catalog, SQL Warehouse, User/Principal, and Schema](doc:databricks-integration#create-new-databricks-setup) or [Use existing Databricks credentials](doc:databricks-integration#use-existing-databricks-credentials) and configure the following:  
+   | Field                       | Description                                                                                                                  |  
+   | --------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |  
+   | Connection name             | A unique name that you will use further to identify your configuration while setting up imports.                             |  
+   | Host                        | The Databricks workspace host (domain only; no protocol). Refer to [Obtain Your Databricks Host]().                          |  
+   | Port                        | HTTPS port used to reach Databricks. If a port is specified, CleverTap uses it; otherwise, the connection defaults to `443`. |  
+   | HTTP Path                   | The HTTP path of the target SQL Warehouse/endpoint in Databricks.                                                            |  
+   | Personal Access Token (PAT) | The token used by CleverTap to authenticate to Databricks. Refer to [Create or Retrieve a PAT]().                            |  
+   | Catalog                     | The Unity Catalog used for CleverTap data operations.                                                                        |  
+   | Schema                      | The specific schema within the catalog that will contain tables created by CleverTap.                                        |
 
 2. Click **Test Connection** or **Save** to start the import after adding the details:
    * **Test Connection**: Verifies if the workspace, HTTP Path, token, and privileges are correct. A successful test confirms the connection; a failure prompts you to review your settings.
    * **Save**: Saves the connection details, enabling you to proceed with the data import process.
 
-3. After saving the Databricks Connection, *[Create Import](doc:data-warehouse-import)* from the *Import Connections* dashboard.
+3. After saving the Databricks Connection, _[Create Import](doc:data-warehouse-import)_ from the _Import Connections_ dashboard.
 
 # FAQs
 
 ### How can I delete a connection that has running imports?
 
-Go to *Import Connections*, select the connection, click **Delete**, review the list of running imports, and confirm **Delete**. This will result in stopping all the imports that were running before deleting the connection.
+Go to _Import Connections_, select the connection, click **Delete**, review the list of running imports, and confirm **Delete**. This will result in stopping all the imports that were running before deleting the connection.
 
 ### How can I filter import connections?
 
-Use the **Filter** option on *Import Connections* to refine displayed databases:
+Use the **Filter** option on _Import Connections_ to refine displayed databases:
 
 * **Connected On**: Select a date range to view connections created within that timeframe.
 * **Connected By**: Filter by email IDs of users who created the connections.
