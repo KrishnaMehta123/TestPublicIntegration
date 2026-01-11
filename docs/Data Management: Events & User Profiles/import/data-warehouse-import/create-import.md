@@ -25,7 +25,7 @@ To begin importing to CleverTap, perform the following steps:
 1. Go to _Settings_ > _Partners_ > _Import center_ and click **Create Import**.
 2. Select a data warehouse from the _Create Import_ popup.
 
-<Image align="center" border={false} caption="Create Import" src="https://files.readme.io/07103251de32c0594d888e539dfe3e672881b3422588003fad0a749e4b740538-create_import_12.png" />
+<Image align="center" border={true} caption="Create Import" src="https://files.readme.io/07103251de32c0594d888e539dfe3e672881b3422588003fad0a749e4b740538-create_import_12.png" />
 
 3. Under _Configure Import_, add the following details:
 
