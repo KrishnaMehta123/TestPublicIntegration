@@ -1,4 +1,4 @@
-- api
+- imports-via-api
 - csv-upload
 - imports-via-sftp
 - data-warehouse-import
