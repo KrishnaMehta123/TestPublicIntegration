@@ -12,7 +12,7 @@ next:
 ---
 # Overview
 
-The *Imports* section explains how to bring external user data into CleverTap, including user profiles, past events, and historical records. It highlights the different import options available, such as bulk uploads, API-based imports, and partner integrations, giving you flexibility in how you sync data from other systems into your CleverTap account.
+The _Imports_ section explains how to bring external user data into CleverTap, including user profiles, past events, and historical records. It highlights the different import options available, such as bulk uploads, API-based imports, and partner integrations, giving you flexibility in how you sync data from other systems into your CleverTap account.
 
 <HTMLBlock>{`
 <style>
