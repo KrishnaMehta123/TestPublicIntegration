@@ -18,7 +18,7 @@ With data warehouse integrations, you can use your warehouse as the system of re
 
 # Supported Warehouses
 
-CleverTap currently supports exporting data to the following data warehouses. Use the linked documentation to configure and manage exports based on your requirements.
+CleverTap currently supports the following data warehouses. Use the linked documentation to configure connections and manage data imports and exports.
 
 <HTMLBlock>{`
 <style>
