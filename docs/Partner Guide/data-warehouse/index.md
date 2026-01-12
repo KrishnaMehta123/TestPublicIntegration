@@ -16,9 +16,29 @@ A data warehouse is a centralized platform used to store, process, and analyze d
 
 With data warehouse integrations, you can use your warehouse as the system of record while leveraging CleverTap to drive personalized and timely customer engagement.
 
-# Supported Warehouses
+# Key Benefits
 
-CleverTap currently supports the following data warehouses. Use the linked documentation to configure connections and manage data imports and exports.
+The following sections outline the benefits of using CleverTap with a data warehouse for both importing and exporting data. These capabilities help you maintain a centralized data strategy while enabling targeted engagement and comprehensive analytics.
+
+## Import Data into CleverTap
+
+Importing data from a data warehouse into CleverTap allows you to use centrally managed data to enrich user profiles, create precise segments, and activate analytical insights for engagement across channels.
+
+* **Unified Customer Profiles**
+  Enrich CleverTap user profiles with attributes, transactional data, and analytical outputs stored in your data warehouse to maintain a consistent customer view across systems.
+
+* **Advanced Segmentation Using Warehouse Data**
+  Create audience segments in CleverTap using historical, aggregated, or model-driven data from the warehouse, enabling more precise targeting.
+
+* **Activation of Business and Analytical Insights**
+  Use insights such as customer tiers, propensity scores, or lifecycle states generated in the warehouse as inputs for campaigns and journeys in CleverTap.
+
+* **Warehouse as the System of Record**
+  Keep the data warehouse as the primary source of truth while using CleverTap for engagement execution, reducing data duplication and simplifying governance.
+
+## Supported Warehouse Exports
+
+body
 
 <HTMLBlock>{`
 <style>
@@ -72,31 +92,10 @@ CleverTap currently supports the following data warehouses. Use the linked docum
 <a href="https://docs.clevertap.com/docs/bigquery-configuration" class="integration-card">
     <div class="name">BigQuery</div>
   </a>
-  <a href="https://docs.clevertap.com/docs/redshift-configuration" class="integration-card">
-    <div class="name">Redshift</div>
-  </a>
 </div>
 `}</HTMLBlock>
 
-# Key Benefits
-
-The following sections outline the benefits of using CleverTap with a data warehouse for both importing and exporting data. These capabilities help you maintain a centralized data strategy while enabling targeted engagement and comprehensive analytics.
-
-## Import Data into CleverTap
-
-Importing data from a data warehouse into CleverTap allows you to use centrally managed data to enrich user profiles, create precise segments, and activate analytical insights for engagement across channels.
-
-* **Unified Customer Profiles**
-  Enrich CleverTap user profiles with attributes, transactional data, and analytical outputs stored in your data warehouse to maintain a consistent customer view across systems.
-
-* **Advanced Segmentation Using Warehouse Data**
-  Create audience segments in CleverTap using historical, aggregated, or model-driven data from the warehouse, enabling more precise targeting.
-
-* **Activation of Business and Analytical Insights**
-  Use insights such as customer tiers, propensity scores, or lifecycle states generated in the warehouse as inputs for campaigns and journeys in CleverTap.
-
-* **Warehouse as the System of Record**
-  Keep the data warehouse as the primary source of truth while using CleverTap for engagement execution, reducing data duplication and simplifying governance.
+<br />
 
 ## Quick Start Guide for Imports
 
