@@ -1,6 +1,5 @@
 - bigquery
 - databricks
-- data-export-to-gcp
 - export-format
 - microsoft-azure
 - status-alerts-for-exports
