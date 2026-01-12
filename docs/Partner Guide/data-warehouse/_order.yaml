@@ -5,7 +5,6 @@
 - data-export-to-gcp
 - export-format
 - microsoft-azure
-- nexla
 - status-alerts-for-exports
 - snowflake
 - redshift-configuration
