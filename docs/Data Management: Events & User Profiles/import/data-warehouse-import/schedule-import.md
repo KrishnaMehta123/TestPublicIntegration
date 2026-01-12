@@ -18,7 +18,7 @@ next:
 
 * [**Repeat Intervals**](doc:schedule-import#repeat-intervals): Configure automated recurring imports at defined intervals (for example, every _N_ minutes, hours, or days) to ensure continuous and consistent data synchronization.
 * [**Custom Schedule**](doc:schedule-import#custom-schedule): Schedule imports on specific days of the week or specific dates of the month to align with weekly or monthly cycles.
-* [**Manually Trigger**](doc:frequency#manually-trigger): Run imports on demand, either immediately, at a specified future date, or without a schedule for manual triggering when needed.
+* [**Manually Trigger**](doc:schedule-import#custom-schedule): Run imports on demand, either immediately, at a specified future date, or without a schedule for manual triggering when needed.
 
 Regardless of the selected schedule, the initial import retrieves all available records. Subsequent imports fetch only the new or updated records since the previous run.
 
