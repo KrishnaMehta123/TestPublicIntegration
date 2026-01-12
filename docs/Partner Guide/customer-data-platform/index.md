@@ -17,6 +17,7 @@ CleverTap integrates with the following Customer Data Platforms, so you can send
 * [HighTouch](doc:hightouch)
 * [mParticle Export](doc:mparticle-export)
 * [mParticle Import (Audience)](doc:mparticle-import-audience)
+* Nexla
 * [RudderStack](https://developer.clevertap.com/docs/rudderstack)
 * [Segment Export](doc:segmentcom)
 * [Treasure Data](doc:treasuredata-cdp)
