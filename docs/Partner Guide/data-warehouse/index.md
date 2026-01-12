@@ -36,7 +36,7 @@ Importing data from a data warehouse into CleverTap allows you to use centrally 
 * **Warehouse as the System of Record**
   Keep the data warehouse as the primary source of truth while using CleverTap for engagement execution, reducing data duplication and simplifying governance.
 
-## Supported Warehouse Exports
+## Supported Warehouse Imports
 
 body
 
