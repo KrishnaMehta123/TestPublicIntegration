@@ -76,22 +76,6 @@ With data warehouse integrations, you can use your warehouse as the system of re
 </div>
 `}</HTMLBlock>
 
-<br />
-
-<Cards>
-  <Card title="Big Query" href="https://docs.clevertap.com/docs/bigquery">
-    Serverless data warehouse for analytics at scale.
-  </Card>
-
-  <Card title="Databricks" href="https://docs.clevertap.com/docs/databricks-configuration">
-    Unified analytics platform that combines data engineering and BI.
-  </Card>
-
-  <Card title="Snowflake" href="https://docs.clevertap.com/docs/snowflake-configuration" target="_blank">
-    Cloud data warehouse for structured and semi-structured analytics.
-  </Card>
-</Cards>
-
 # Key Benefits
 
 ## Import Data into CleverTap
