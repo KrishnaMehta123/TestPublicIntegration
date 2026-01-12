@@ -1,7 +1,6 @@
 - bigquery
 - databricks
 - export-format
-- microsoft-azure
 - status-alerts-for-exports
 - snowflake
 - redshift-configuration
