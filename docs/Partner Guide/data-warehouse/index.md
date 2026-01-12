@@ -177,9 +177,9 @@ Exporting data from CleverTap to a data warehouse allows you to analyze engageme
 * **Cross-Team Data Accessibility**
   Make CleverTap engagement data available to analytics, data science, and reporting teams without requiring access to the CleverTap dashboard.
 
-##
+## Supported Warehouse Exports
 
-<br />
+CleverTap supports exporting data to the following data warehouses. Use the linked documentation to configure exports, create export jobs, and manage export status from the CleverTap dashboard.
 
 <HTMLBlock>{`
 <style>
