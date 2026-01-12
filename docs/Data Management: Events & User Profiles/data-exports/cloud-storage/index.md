@@ -79,5 +79,5 @@ This section outlines the storage platforms supported for file-based exports.
 >
 > CleverTap supports two distinct export flows, depending on your data requirements and integration needs:
 >
-> * [**Profile and User Exports (Legacy)**](doc:event-and-profile-exports): Supports exporting both events and user profiles.
+> * [**Profile and User Exports (Legacy)**](doc:profile-and-events-legacy): Supports exporting both events and user profiles.
 > * [**Profile Exports**](doc:profile-exports): The newer, enhanced export flow that supports exporting user profiles only with improved flexibility and structure.
