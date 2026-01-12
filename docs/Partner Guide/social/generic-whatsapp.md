@@ -23,7 +23,7 @@ CleverTap supports any WhatsApp provider via integration. CleverTap has recently
 
 > 📘 For WhatsApp BSPs
 >
-> Providers who wish to pursue the partnership must follow the integration steps outlined in this document and send an email to [integrations@clevertap.com](mailto:integrations@clevertap.com) or [partner-integrations@clevertap.com](partner-integrations@clevertap.com) to include their names in the supported provider's list.
+> Providers who wish to pursue the partnership must follow the integration steps outlined in this document and send an email to [integrations@clevertap.com](mailto:integrations@clevertap.com) or [partner-integrations@clevertap.com](mailto:partner-integrations@clevertap.com) to include their names in the supported provider's list.
 
 ## Supported Business Service Providers
 
