@@ -173,25 +173,58 @@ Exporting data from CleverTap to a data warehouse enables comprehensive analysis
 * **Cross-Team Data Accessibility**
   Make CleverTap engagement data available to analytics, data science, and reporting teams without requiring access to the CleverTap dashboard.
 
-# Supported Capabilities
-
-CleverTap data warehouse integrations support the following capabilities:
-
-* Import user attributes, events, and analytical outputs into CleverTap
-* Export engagement, campaign, and system events from CleverTap
-* Support one-time and recurring data synchronization
-* Maintain identity consistency across CleverTap and warehouse systems
+##
 
 <br />
 
-<br />
+<HTMLBlock>{`
+<style>
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1rem;
+    padding: 0 1rem;
+    max-width: 100%;
+    margin: 0 auto;
+  }
 
-<br />
+  .integration-card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1.5rem 1rem; /* add top & bottom padding */
+  min-height: 64px; /* ensures consistent tile height */
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.2s ease-in-out;
+  text-decoration: none;
+}
 
-CleverTap allows you to export data via partners:
+  .integration-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  }
 
-* <Anchor label="BigQuery" target="_blank" href="doc:bigquery">BigQuery</Anchor>
-* [Databricks](doc:databricks-configuration)
-* [Snowflake](doc:snowflake-configuration)
+  .icon {
+    width: 24px;
+    height: 24px;
+    stroke: #2b2e33;
+    flex-shrink: 0;
+  }
+
+  .name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2b2e33;
+  }
+</style>
+
+<div class="grid">
+  <a href="https://docs.clevertap.com/docs/snowflake-export" class="integration-card">
+    <div class="name">Snowflake</div>
+  </a>
+</div>
+`}</HTMLBlock>
 
 <br />
