@@ -19,4 +19,4 @@ CleverTap allows you to export data via partners:
 * [Google Cloud Platform](doc:data-export-to-gcp)
 * [Microsoft Azure](https://docs.clevertap.com/docs/microsoft-azure)
 * [Nexla](doc:nexla)
-* Snowflake
+* [Snowflake](doc:snowflake-configuration)
