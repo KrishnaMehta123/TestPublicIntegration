@@ -117,7 +117,7 @@ The Profiles file has the following fields:
 | <p>ObjectId/Identity/guid</p> | <ul><li>This field is mandatory.</li><li>Uniquely identifies the user.</li></ul>                                                                                                                                                  |
 | <p>ts</p>                     | <ul><li>This field is optional.</li><li>Indicates the timestamp of the file upload. </li><li>If this information is not given in the file, it indicates the timestamp when CleverTap when CleverTap processed the file.</li></ul> |
 
-The following is an example of a profile CSV file: \<@deepak, do we need to add whatsapp and email flags here ? we also need to update the MSG-dndsms flag to MSG-dndPhone>
+The following is an example of a profile CSV file:
 
 | time_stamp | identity                                      | cookie_id        | id_name     | id_email                                  | id_phone      | id_phone.operation | is_married | age | Playlist | Playlist.operation | MSG-SMS | MSG-DNDSMS |
 | :--------- | :-------------------------------------------- | :--------------- | :---------- | :---------------------------------------- | :------------ | :----------------- | :--------- | :-- | :------- | :----------------- | :------ | :--------- |
