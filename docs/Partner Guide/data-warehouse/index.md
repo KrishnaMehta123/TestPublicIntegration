@@ -36,7 +36,7 @@ Importing data from a data warehouse into CleverTap allows you to use centrally 
 * **Warehouse as the System of Record**
   Keep the data warehouse as the primary source of truth while using CleverTap for engagement execution, reducing data duplication and simplifying governance.
 
-## Supported Warehouse Imports
+### Supported Warehouse Imports
 
 CleverTap supports importing data from the following data warehouses. Use the linked documentation to configure warehouse connections, create import jobs, and manage the ingestion of data into CleverTap. Each supported warehouse enables you to import user attributes, events, and analytical data according to your integration and data model requirements.
 
@@ -95,9 +95,7 @@ CleverTap supports importing data from the following data warehouses. Use the li
 </div>
 `}</HTMLBlock>
 
-<br />
-
-## Quick Start Guide for Imports
+### Quick Start Guide for Imports
 
 The following steps provide a high-level flow for importing data from a data warehouse into CleverTap. Each step links to detailed documentation to help you configure the import, map data correctly, schedule runs, and monitor import activity.
 
@@ -176,7 +174,7 @@ Exporting data from CleverTap to a data warehouse allows you to analyze engageme
 * **Cross-Team Data Accessibility**
   Make CleverTap engagement data available to analytics, data science, and reporting teams without requiring access to the CleverTap dashboard.
 
-## Supported Warehouse Exports
+### Supported Warehouse Exports
 
 CleverTap supports exporting data to the following data warehouses. Use the linked documentation to configure export connections, create export jobs, and manage how data is sent from CleverTap. Each supported warehouse enables you to export engagement, campaign, and system event data tailored to your reporting and analytics requirements.
 
