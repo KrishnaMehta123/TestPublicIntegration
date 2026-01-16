@@ -65,9 +65,11 @@ You can either specify one of the following types of headers:
 
 When using the GET method, parameters are passed via the _Request Query Parameters_ section. This section allows you to define dynamic values that CleverTap sends into the query string of your HTTP endpoint.
 
-> 🚧 Note
->
-> Do not use dynamic placeholders such as `$$HTML` or any large body content in the query string of the request. Including such content can significantly increase the URL length and may lead to request failures.
+<Callout icon="🚧" theme="warn">
+  #### Note
+
+  Do not use dynamic placeholders such as `$$HTML` or any large body content in the query string of the request. Including such content can significantly increase the URL length and may lead to request failures.
+</Callout>
 
 <Image align="center" alt="Provider Setup for Generic HTTP - GET Method " border={true} caption="Provider Setup for Generic HTTP - GET Method" src="https://files.readme.io/f3c8d0c524630d0d2bf5239af9aba583eb2e1e168427b24aef2926499b819239-image.png" width="65% " />
 
@@ -147,9 +149,11 @@ If your provider supports batching, structure your payload as shown below. In th
 }
 ```
 
-> 📘 Batch Size Limit
->
-> CleverTap supports a maximum batch size of 1000 records in a single request.
+<Callout icon="📘" theme="info">
+  #### Batch Size Limit
+
+  CleverTap supports a maximum batch size of 1000 records in a single request.
+</Callout>
 
 ## System Dynamic Replacements
 
@@ -617,6 +621,8 @@ The following is the sample response sent by CleverTap to the provider upon proc
 }
 ```
 
-> 📘 Retry Mechanism for Errors
->
-> In case of HTTP 5XX errors, we recommend retrying after 10 minutes with exponential backoff as CleverTap does not deduplicate requests.
+<Callout icon="📘" theme="info">
+  #### Retry Mechanism for Errors
+
+  In case of HTTP 5XX errors, we recommend retrying after 10 minutes with exponential backoff as CleverTap does not deduplicate requests.
+</Callout>
