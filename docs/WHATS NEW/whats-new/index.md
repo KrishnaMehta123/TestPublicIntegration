@@ -228,6 +228,36 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
 ## December
 
 <HTMLBlock>{`
+<div class="release-note article" data-category="campaigns" id="branded-domains-for-email-tracking">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#branded-domains-for-email-tracking"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/370216d2a5ec47fd419bc47a95762d51295730db345b40f825b3de7115e6e667-Campaigns.svg" alt="Campaigns" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">Branded Domains for Email Tracking</h3>
+    <div class="badge enhancement">ENHANCEMENT</div>
+    <div class="badge private-beta">PRIVATE BETA</div> 
+  </div>
+  <div class="release-note-body">
+    <p>You can now use your custom domain for email link tracking and open-tracking pixel. This ensures all tracked links reflect your brand instead of a default CleverTap domain. </p>
+    <p>This feature helps with the following:</p>
+    <p>
+      <ul>
+        <li>Improves deliverability by aligning tracking domains with your SPF/DKIM authentication.</li>
+        <li>Tracks email opens and clicks more reliably using branded links.</li>
+        <li>Keeps campaigns running with automatic fallback if a custom domain becomes unverified.</li>
+<li>Manages branded domains centrally from a single place in your dashboard.</li>
+      </ul>
+    </p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/branded-domain" target="_blank">Branded Domains</a>.</p>
+</div>
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
 <div class="release-note article" data-category="campaigns" id="template-import-for-whatsApp-connect-providers">
   <div class="release-note-header">
     <div class="anchor-link-icon">
