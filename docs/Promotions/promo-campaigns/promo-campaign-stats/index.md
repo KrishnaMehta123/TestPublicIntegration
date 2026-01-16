@@ -5,7 +5,7 @@ excerpt: >-
   into user engagement, reward distribution, and redemption trends through KPIs
   and time-based charts.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
