@@ -4,7 +4,7 @@ excerpt: >-
   Review reward distribution issues in Promo campaigns to understand error
   patterns and root causes.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
