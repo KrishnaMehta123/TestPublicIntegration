@@ -1,5 +1,5 @@
 - bigquery-configuration
-- bigquery-export
+- bigquery
 - databricks
 - export-format
 - status-alerts-for-exports
