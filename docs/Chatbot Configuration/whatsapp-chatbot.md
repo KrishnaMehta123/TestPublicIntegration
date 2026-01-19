@@ -1,7 +1,7 @@
 ---
 title: WhatsApp Chatbot
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
