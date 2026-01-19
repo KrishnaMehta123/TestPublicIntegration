@@ -155,6 +155,37 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
 ## January
 
 <HTMLBlock>{`
+<div class="release-note article" data-category="promotions" id="promo-campaign-analytics">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#promo-campaign-analytics"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/c65a9fbb8af21c3a8f01c546faa2089d52a3bf54c2efecc740879b1ea681242e-Property_1Selected.svg" alt="Promotions" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">Promo Campaign Analytics</h3>
+    <div class="badge enhancement">ENHANCEMENT</div>
+    <div class="badge beta">BETA</div> 
+  </div>
+  <div class="release-note-body">
+    <p>Introducing Promo Campaign Analytics, a powerful new way to measure the performance of your Promo Campaigns across rewards, engagement, and errors. This helps you evaluate campaign effectiveness, identify high-performing reward types, and optimize ROI through improved visibility into user engagement and system performance. Promo Analytics provides you with complete visibility into what’s working, what’s failing, and why, enabling you to optimize campaign performance with confidence.</p>
+    <p>With Promo Campaign Analytics, you can:</p>
+    <p>
+      <ul>
+        <li>Track Rewards Distributed, Points/Coupons/Vouchers issued, and Redemptions through clear KPIs.</li>
+        <li>Visualize time-based trends using interactive charts aggregated by day, week, or month.</li>
+        <li>View reward-type–specific metrics for Loyalty Points, Coupons (Discount & Cashback), Partner Vouchers, and Custom Rewards.</li>
+        <li>Identify errors in reward distributions across all reward types.</li>
+<li>Understand failures caused by limits, configuration issues, exhausted codes, or system errors.</li>
+      </ul>
+    </p>
+    <p>For more information, refer to <a href=" https://docs.clevertap.com/docs/promo-campaign-stats" target="_blank">Promo Campaign Analytics</a>.</p>
+</div>
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
 <div class="release-note article" data-category="data-and-integrations" id="profile-export-for-cloud-storage">
   <div class="release-note-header">
     <div class="anchor-link-icon">
