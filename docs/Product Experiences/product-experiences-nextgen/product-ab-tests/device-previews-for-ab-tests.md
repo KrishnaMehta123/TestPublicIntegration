@@ -51,7 +51,7 @@ For more information, refer to [Mark a user profile as a Test Profile](https://d
 5. Select the variant for the selected device and click **Save**.
 
 <Callout icon="📘" theme="info">
-  Note
+  #### Note
 
   You can mark multiple devices on the same user profile. Only devices marked as test devices appear in the **Test Devices** selector during A/B test setup.
 
