@@ -70,7 +70,7 @@ Prediction Status refers to the current state or progress of a prediction within
       </td>
 
       <td>
-        The prediction is created and visible on the dashboard but not yet running. To begin generating insights, you need to click _Activate_. Once activated, the prediction moves to the _Processing_ status.
+        The prediction is created and visible on the dashboard, but not yet running. To begin generating insights, you need to click _Activate_. Once activated, the prediction moves to the _Processing_ status.
       </td>
     </tr>
 
