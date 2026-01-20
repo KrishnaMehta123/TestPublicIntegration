@@ -88,7 +88,7 @@ To modify or stop an active test session:
    * **Delete** – to remove the device from the preview.
 
 <Callout icon="📘" theme="info">
-  Note
+  #### Note
 
   Stopping a preview only removes the device from device list. It does not affect your published A/B test configuration.
 </Callout>
