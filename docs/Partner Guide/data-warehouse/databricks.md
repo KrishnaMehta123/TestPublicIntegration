@@ -100,8 +100,6 @@ To get your Databricks data in CleverTap, you first need to create a Unity Catal
    SHOW CATALOGS;
    ```
 
-**Expected Output**
-
 ### Create SQL Warehouse
 
 CleverTap executes queries through a Databricks SQL Warehouse. Create a dedicated warehouse for CleverTap to avoid contention with other workloads.
@@ -147,8 +145,6 @@ After creating the catalog, you must create a schema to organize CleverTap-relat
    -- Verify schema creation
    SHOW SCHEMAS;
    ```
-
-**Expected Output**
 
 ## Use Existing Databricks Credentials
 
