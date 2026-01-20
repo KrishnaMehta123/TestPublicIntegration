@@ -103,11 +103,14 @@ To modify or stop an active test session:
 
 # FAQs
 
-**Can I run multiple tests in Test Mode?**
+### Can I run multiple tests in Test Mode?
+
 Yes. You can now preview and test multiple A/B experiments simultaneously.
 
-**Do test devices affect production users?**
+### Do test devices affect production users?
+
 No. Only registered test devices get variant changes.
 
-**Can I remove the test device later?**
+### Can I remove the test device later?
+
 Yes. Remove the device by editing Device Previews.
