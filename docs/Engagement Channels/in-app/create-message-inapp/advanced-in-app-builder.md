@@ -172,7 +172,7 @@ You can use the following media for your content:
 | **JPEG**    | Best for photos and detailed images.            |
 | **PNG**     | Ideal for transparent or high-quality graphics. |
 | **GIF**     | Use for lightweight animations.                 |
-| **Video:**  | Use for short videos (up to 50 MB).             |
+| **Video**   | Use for short videos (up to 50 MB).             |
 
 <Callout icon="📘" theme="info">
   #### Best Practices
