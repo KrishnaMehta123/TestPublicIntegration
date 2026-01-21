@@ -248,10 +248,6 @@ The generator currently supports **JPEG** and **PNG** formats.
 
 ### What if I don't want any user to override my brand guidelines?
 
-You can lock your Brand Kit from the BrandKit section.
-
-### What if I want to make sure no one overrides my brand guidelines?
-
 Brand guidelines are automatically applied to every generated image, whether your Brand Kit is locked or not. However, if you want to prevent anyone from changing or overriding these settings during image generation, you can lock the Brand Kit from the BrandKit section. When locked, the selected kit’s styles (colors, buttons, etc.) are automatically applied to every generated image, and cannot be overridden in the campaign flow. For more information, refer to [Brand Kit](https://docs.clevertap.com/docs/brand-kit).
 
 # Additional Resources
