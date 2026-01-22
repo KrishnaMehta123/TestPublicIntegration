@@ -16,9 +16,11 @@ next:
 
 Configuring Snowflake with CleverTap enables seamless data import and export, ensuring synchronization and access to relevant information for analysis, personalized engagement, and data-driven growth.
 
-> 📘 Private Beta
->
-> SnowFlake is a private beta release. Contact your Customer Success Manager for access.
+<Callout icon="📘" theme="info">
+  #### Private Beta
+
+  SnowFlake is a Private Beta release. Contact your Customer Success Manager for access.
+</Callout>
 
 # Quick Start Guide for Existing Users
 
@@ -65,9 +67,11 @@ If you are setting up Snowflake for the first time, ensure you have the followin
   * Permissions: The user should have read/write access to the specified database and schema.
   * Authentication Method:  
     Choose from the following: Password Authentication and Key Pair Authentication.
-    > 📘 Key Pair Authentication
-    >
-    > If your organization requires Key Rotation, refer to [Snowflake's Key Rotation Guide](https://docs.snowflake.com/en/user-guide/key-pair-auth#rotating-keys).
+    <Callout icon="📘" theme="info">
+      #### Key Pair Authentication
+
+      If your organization requires Key Rotation, refer to [Snowflake's Key Rotation Guide](https://docs.snowflake.com/en/user-guide/key-pair-auth#rotating-keys).
+    </Callout>
 
 # Set Up Snowflake for Integration
 
@@ -105,15 +109,45 @@ To get your Snowflake data in CleverTap, you first need to create a database. Fo
 
 **Expected Output**
 
+```sql
++--------------+------------------+
+
+| name         | created_on       |
+
++--------------+------------------+
+
+| CLEVERTAP_DB | 2025-02-20 12:00 |
+
++--------------+------------------+
+```
+
 ### Create Warehouse
 
 To avoid conflicts with other operations in your cluster, CleverTap recommends that you create a new warehouse just for CleverTap loads. An X-Small warehouse is large enough for most CleverTap customers when they first configure their Snowflake.
 
 Run the following command to create a warehouse:
 
-> 📘 Note
->
-> To avoid extra costs, set `AUTO_SUSPEND` to ~10 minutes on the Snowflake dashboard (or 600 if using SQL) and enable `AUTO_RESUME`.  This ensures efficient usage since Snowflake charges on a [per-second billing model](https://docs.snowflake.com/en/user-guide/warehouses-considerations#automating-warehouse-suspension).
+```sql
+-- Create a warehouse for query execution
+
+CREATE WAREHOUSE CLEVERTAP_WH WITH  
+
+WAREHOUSE_SIZE = 'XSMALL'  
+
+AUTO_SUSPEND = 600  
+
+AUTO_RESUME = TRUE;
+
+-- Verify warehouse creation
+
+SHOW WAREHOUSES;
+```
+
+<Callout icon="📘" theme="info">
+  #### Note
+
+  To avoid extra costs, set `AUTO_SUSPEND` to ~10 minutes on the Snowflake dashboard (or 600 if using SQL) and enable `AUTO_RESUME`.  This ensures efficient usage since Snowflake charges on a [per-second billing model](https://docs.snowflake.com/en/user-guide/warehouses-considerations#automating-warehouse-suspension).
+</Callout>
 
 ### Create Role
 
