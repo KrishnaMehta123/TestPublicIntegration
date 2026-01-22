@@ -292,7 +292,9 @@ To connect Snowflake with CleverTap, go to _Settings > Partners_ > Snowflake fro
 
 Enter the _Database Details_ in the integration setup form. To create or retrieve details from your Snowflake account, refer to [create a new Database, Warehouse, User, and Role](doc:snowflake-configuration#create-role)  or [use existing Snowflake credentials](doc:snowflake-configuration#use-existing-snowflake-credentials).
 
-![](https://files.readme.io/c87f29fe4e49eae0b16f46fe7c154934edc8cc4b947601c23f5e6e4174ccddef-snowflake_databse_details.png)  Database Details
+<Image border={false} src="https://files.readme.io/c87f29fe4e49eae0b16f46fe7c154934edc8cc4b947601c23f5e6e4174ccddef-snowflake_databse_details.png" />
+
+  
 
 | Field                | Description                                                                                                         |
 | -------------------- | ------------------------------------------------------------------------------------------------------------------- |
@@ -321,12 +323,14 @@ To generate a Key for Key Pair Authentication, perform the following steps:
    2. Follow [Snowflake’s key pair setup instructions](https://docs.snowflake.com/en/user-guide/key-pair-auth.html) to attach the public key to the database user.
 4. (Optional) Rotate keys using CleverTap's **Regenerate Key** option if your IT policies require periodic key changes. Using the _Edit_ option, go to the same section and click **Regenerate Key** on the CleverTap dashboard. Attach the newly generated public key to your Snowflake database user as an additional RSA key. For more information about this, refer to [Snowflake Key Rotation document](https://docs.snowflake.com/en/user-guide/key-pair-auth.html#rotating-keys).
 
-> 📘 Saving Regenerated Key
->
-> * Once you save the connection with the new key, the previous key will no longer be used.
-> * If you generate a new key but close the edit form without saving, CleverTap will continue using the existing key, and the newly generated key will be deleted.
-> * If the new key is not attached to the Snowflake user before saving, imports and exports may fail.
-> * For detailed guidance on setting up and managing key pair authentication in Snowflake, refer to [Snowflake’s Key Pair Authentication Documentation](https://docs.snowflake.com/en/user-guide/key-pair-auth.html).
+<Callout icon="📘" theme="info">
+  #### Saving Regenerated Key
+
+  * Once you save the connection with the new key, the previous key will no longer be used.
+  * If you generate a new key but close the edit form without saving, CleverTap will continue using the existing key, and the newly generated key will be deleted.
+  * If the new key is not attached to the Snowflake user before saving, imports and exports may fail.
+  * For detailed guidance on setting up and managing key pair authentication in Snowflake, refer to [Snowflake’s Key Pair Authentication Documentation](https://docs.snowflake.com/en/user-guide/key-pair-auth.html).
+</Callout>
 
 ![](https://files.readme.io/c8b490bb84fc69169cb1dd26c268ba5288416467daa9b1b6f252cec89b0e32e1-snowflake_user_credentials_key.png)  User Credentials - Key
 
