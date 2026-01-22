@@ -67,6 +67,7 @@ If you are setting up Snowflake for the first time, ensure you have the followin
   * Permissions: The user should have read/write access to the specified database and schema.
   * Authentication Method:  
     Choose from the following: Password Authentication and Key Pair Authentication.
+
     <Callout icon="📘" theme="info">
       #### Key Pair Authentication
 
@@ -292,9 +293,7 @@ To connect Snowflake with CleverTap, go to _Settings > Partners_ > Snowflake fro
 
 Enter the _Database Details_ in the integration setup form. To create or retrieve details from your Snowflake account, refer to [create a new Database, Warehouse, User, and Role](doc:snowflake-configuration#create-role)  or [use existing Snowflake credentials](doc:snowflake-configuration#use-existing-snowflake-credentials).
 
-<Image border={false} src="https://files.readme.io/c87f29fe4e49eae0b16f46fe7c154934edc8cc4b947601c23f5e6e4174ccddef-snowflake_databse_details.png" />
-
-  
+<Image align="center" border={true} caption="Database Details" src="https://files.readme.io/c87f29fe4e49eae0b16f46fe7c154934edc8cc4b947601c23f5e6e4174ccddef-snowflake_databse_details.png" />
 
 | Field                | Description                                                                                                         |
 | -------------------- | ------------------------------------------------------------------------------------------------------------------- |
@@ -332,7 +331,9 @@ To generate a Key for Key Pair Authentication, perform the following steps:
   * For detailed guidance on setting up and managing key pair authentication in Snowflake, refer to [Snowflake’s Key Pair Authentication Documentation](https://docs.snowflake.com/en/user-guide/key-pair-auth.html).
 </Callout>
 
-![](https://files.readme.io/c8b490bb84fc69169cb1dd26c268ba5288416467daa9b1b6f252cec89b0e32e1-snowflake_user_credentials_key.png)  User Credentials - Key
+<Image align="center" border={true} caption="User Credentials - Key" src="https://files.readme.io/c8b490bb84fc69169cb1dd26c268ba5288416467daa9b1b6f252cec89b0e32e1-snowflake_user_credentials_key.png" />
+
+  User Credentials - Key
 
 5. Click **Test Connection** or **Save** to start the import or export after adding the details:
    * **Test Connection**: Verifies if the database credentials and setup are correct. A successful test confirms the connection, while a failure prompts you to review your settings.
