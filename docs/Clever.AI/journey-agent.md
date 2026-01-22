@@ -7,7 +7,7 @@ metadata:
 ---
 # Overview
 
-Journey Agent allows you to create customer journeys using natural language prompts. Describe your goal, for example, “Create a re-engagement journey for inactive users”, and the system automatically converts it into a structured journey workflow.
+Journey Agent lets you create customer journeys using natural-language prompts. Describe your goal, for example, “Create a re-engagement journey for inactive users”, and the system automatically converts it into a structured journey workflow.
 
 <Callout icon="📘" theme="info">
   #### Private Beta
@@ -28,7 +28,17 @@ Creating a journey using Journey Agent includes the following four key stages:
 
 <Image align="center" border={true} caption="Journey Agent" src="https://files.readme.io/f1f588e1e1b372711dd2e462d76616677d404ca2063b6580e19422ca7f2ba1c4-Journey_Using_Prompts_-_Overview.gif" />
 
-# Create Journey Using Prompts
+# Ways to Create Journeys
+
+You can create journeys using one of the following methods:
+
+* **Build with AI (AskAI)**: Create journeys using plain-language prompts.
+* **Build With System Template**: Select from pre-built, goal-based templates.
+* **Build Manually**: Design a custom journey from scratch using the visual builder.
+
+Each method is described in the sections below.
+
+## Build Journey with AI
 
 To create a journey using prompts, perform the following steps:
 
@@ -55,11 +65,37 @@ To create a journey using prompts, perform the following steps:
   * Test with a smaller audience before full rollout.
 </Callout>
 
+## Build Journey With System Template
+
+You can also create journeys using pre-designed templates categorized by goals such as onboarding, retention, and re-engagement. Templates provide a quick starting point and can be customized as needed.
+
+To create a journey using a template:
+
+1. From the **Journeys** page, click **+ Journey**.
+2. Select a template from the _Templates Gallery_ and click **Start Building** to modify it as per your requirements.
+
+   <Image align="center" border={true} caption="Build Journey Using System Template" src="https://files.readme.io/b0b78f5940aa49d32b15d1525748ce18a181f17ccd25c42b98080197906e946d-Build_Using_System_Templates.gif" />
+3. Click **Publish** to activate your journey.
+
+## Build Manually
+
+You can create journeys manually using the **Journey Builder**. This method allows you to add triggers, actions, delays, and conditions from scratch. For more information, refer to [Create A Journey](doc:create-a-journey).
+
+# Add Visuals and Brand Consistency
+
+Journey Agent supports integration with CleverTap’s creative tools to help you maintain consistent branding across all messages:
+
+* **Brand Kits**: Apply pre-defined visual assets, color palettes, and typography to maintain brand consistency across campaign messages. For more information, refer to [Brand Kits](doc:brand-kit).
+
+  <Image align="center" border={true} caption="Applying Brand Kit to Journeys" src="https://files.readme.io/cf626c650bbc751eb77e7581bb25a7496049962ea6c3bdac6d4dec55146782db-Brnad_Kits.png" />
+
+* **Designer Agent**: Automatically generate or optimize creative assets using AI suggestions based on your campaign type.  For more information, refer to [Designer Agent](doc:designer-agent).
+
 # FAQs
 
 ### How is my data used and sent to OpenAI?
 
-Your data is never used to train OpenAI models, and is deleted by OpenAI within 30 days. To generate AI output through CleverTap AI features that leverage OpenAI, CleverTap sends your prompt along with event names, event properties, user properties, segment names or IDs, or any other relevant input to OpenAI. The input sent to OpenAI by CleverTap does not identify you or your users unless you choose to include identifiable information in your prompt. CleverTap provides no warranties regarding the AI-generated content, including the output. For more information, refer to [OpenAI’s Enterprise Privacy Policy](https://openai.com/enterprise-privacy).
+Your data is never used to train OpenAI models, and is deleted by OpenAI within 30 days. To generate AI output using CleverTap AI features that leverage OpenAI, CleverTap sends your prompt along with event names, event properties, user properties, segment names or IDs, and any other relevant inputs to OpenAI. The input sent to OpenAI by CleverTap does not identify you or your users unless you choose to include identifiable information in your prompt. CleverTap provides no warranties regarding the AI-generated content, including the output. For more information, refer to [OpenAI’s Enterprise Privacy Policy](https://openai.com/enterprise-privacy).
 
 ### Is there a limit to the thread history?
 
