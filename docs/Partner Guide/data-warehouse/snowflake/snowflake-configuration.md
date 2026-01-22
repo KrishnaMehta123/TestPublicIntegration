@@ -183,6 +183,25 @@ To ensure proper access control, assign a role specifically for CleverTap integr
 
 To manage access securely, create a dedicated user for the CleverTap configuration by executing the following SQL query:
 
+```sql
+
+-- Create a dedicated user for CleverTap integration
+
+CREATE USER CleverTap_USER WITH DEFAULT_ROLE = CLEVERTAP_ROLE DEFAULT_WAREHOUSE = CLEVERTAP_WH PASSWORD = '<YOUR_PASSWORD>';
+
+
+Change
+25 of 49
+
+Copy
+
+Copy
+
+-- Grant the role to the user
+
+GRANT ROLE CLEVERTAP_ROLE TO USER ClEVERTAP_USER;
+```
+
 ### Create Schema (for exports)
 
 After creating the database, you must create a schema to organize CleverTap-related objects. This step is required only to export data from CleverTap to Snowflake. To do so, perform the following steps:
