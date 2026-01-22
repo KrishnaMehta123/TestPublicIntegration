@@ -333,7 +333,7 @@ To generate a Key for Key Pair Authentication, perform the following steps:
 
 <Image align="center" border={true} caption="User Credentials - Key" src="https://files.readme.io/c8b490bb84fc69169cb1dd26c268ba5288416467daa9b1b6f252cec89b0e32e1-snowflake_user_credentials_key.png" />
 
-  User Credentials - Key
+User Credentials - Key
 
 5. Click **Test Connection** or **Save** to start the import or export after adding the details:
    * **Test Connection**: Verifies if the database credentials and setup are correct. A successful test confirms the connection, while a failure prompts you to review your settings.
@@ -348,7 +348,9 @@ The unique identifier for your Snowflake user account. Find your Snowflake _User
 2. Set or reset the user password, ensuring it complies with Snowflake password policies.
 3. Enter the username and password under the _User Credentials_ section on the CleverTap dashboard.
 
-![](https://files.readme.io/6bce82ac0999297f38bdb32d599e99de9748da8d01b395290aa1c36fcdf49a62-snowflake_user_credentials_-_password.png)  User Credentials - Password
+<Image align="center" border={false} caption="User Credentials - Password" src="https://files.readme.io/6bce82ac0999297f38bdb32d599e99de9748da8d01b395290aa1c36fcdf49a62-snowflake_user_credentials_-_password.png" />
+
+  
 
 # FAQs
 
