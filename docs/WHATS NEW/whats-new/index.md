@@ -182,7 +182,7 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
       </ul>
     </p>
 
-    <p>For more information, refer to <a href="https://developer.clevertap.com/docs/scim-user-provisioning-using-api" target="_blank">SCIM User Provisioning using API</a> and <a href=\"https://developer.clevertap.com/docs/scim-user-provisioning-using-idp" target=\"_blank\"> SCIM User Provisioning using IdP</p>.
+    <p>For more information, refer to <a href="https://developer.clevertap.com/docs/scim-user-provisioning-using-api" target="_blank">SCIM User Provisioning using API</a> and <a href=\"https://developer.clevertap.com/docs/scim-user-provisioning-using-idp" target=\"_blank\"> SCIM User Provisioning using IdP.</p>
   </div>
   <hr/>
 </div>
