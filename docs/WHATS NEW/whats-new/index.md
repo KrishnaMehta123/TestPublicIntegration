@@ -175,8 +175,8 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
     <p>With SCIM, you can:</p>
     <p>
       <ul>
-        <li>Provision users automatically into CleverTap as soon as they are added to your identity system..</li>
-        <li><strong>Revoke access immediately when users leave, critical for BFSI and regulated environments.</li>
+        <li>Provision users automatically into CleverTap as soon as they are added to your identity system.</li>
+        <li>Revoke access immediately when users leave, critical for BFSI and regulated environments.</li>
         <li>Keep user roles, access levels, and statuses always in sync with your corporate directory.</li>
         <li>Reduce human error, support audits, and align with enterprise access governance policies.</li>
       </ul>
@@ -184,7 +184,6 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
 
     <p>For more information, refer to <a href="https://developer.clevertap.com/docs/scim-user-provisioning-using-api" target="_blank">SCIM User Provisioning Using API</a>and<a href=\"https://developer.clevertap.com/docs/scim-user-provisioning-using-idp" target=\"_blank\"> SCIM User Provisioning Using IdP.</p>
   </div>
-
   <hr/>
 </div>
 `}</HTMLBlock>
