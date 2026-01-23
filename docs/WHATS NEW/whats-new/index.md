@@ -155,6 +155,43 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
 ## January
 
 <HTMLBlock>{`
+<div class="release-note article" data-category="security-and-project-settings" id="scim-support-for-automated-user-lifecycle-management">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#scim-support-for-automated-user-lifecycle-management"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+     <img src="https://files.readme.io/01053ed2e833c5e6bb242a86b84f304b7499ff0b0a26f422c3cc846d70530658-Settings.svg" alt="Settings" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">SCIM Support for Automated User Lifecycle Management</h3>
+    <div class="badge new-feature">NEW FEATURE</div>
+  </div>
+
+  <div class="release-note-body">
+
+    <p>You can now automate user provisioning and de-provisioning in CleverTap with SCIM (System for Cross-domain Identity Management). SCIM simplifies onboarding, offboarding, and lifecycle management by ensuring that users always have the right access. CleverTap supports SCIM configuration via both APIs and Identity Providers (IdPs), giving you flexibility based on your IT and security setup.
+</p>
+
+    <p>With SCIM, you can:</p>
+    <p>
+      <ul>
+        <li>Provision users automatically into CleverTap as soon as they are added to your identity system..</li>
+        <li><strong>Revoke access immediately when users leave, critical for BFSI and regulated environments.</li>
+        <li>Keep user roles, access levels, and statuses always in sync with your corporate directory.</li>
+        <li>Reduce human error, support audits, and align with enterprise access governance policies.</li>
+      </ul>
+    </p>
+
+    <p>For more information, refer to <a href="https://developer.clevertap.com/docs/scim-user-provisioning-using-api" target="_blank">SCIM User Provisioning Using API</a>and<a href=\"https://developer.clevertap.com/docs/scim-user-provisioning-using-idp" target=\"_blank\"> SCIM User Provisioning Using IdP.</p>
+  </div>
+
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<br />
+
+<HTMLBlock>{`
 <div class="release-note article" data-category="promotions" id="promo-campaign-analytics">
   <div class="release-note-header">
     <div class="anchor-link-icon">
