@@ -189,8 +189,6 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
 </div>
 `}</HTMLBlock>
 
-<br />
-
 <HTMLBlock>{`
 <div class="release-note article" data-category="promotions" id="promo-campaign-analytics">
   <div class="release-note-header">
