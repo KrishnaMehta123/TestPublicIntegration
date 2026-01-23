@@ -226,7 +226,7 @@ src="https://files.readme.io/01053ed2e833c5e6bb242a86b84f304b7499ff0b0a26f422c3c
     <div class="anchor-link-icon">
       <a href="#cross-project-cloning-for-engagements"><i class="fa-light fa-anchor"></i></a>
     </div>
-    <div><img src="https://files.readme.io/51dc269788d03bb7bc0482fbc020414bedd96b6c778ac37b71884095493b93c8-Journeys.svg" alt="Journeys" /></div>
+    <div><img src="https://files.readme.io/51dc269788d03bb7bc0482fbc020414bedd96b6c778ac37b71884095493b93c8-Journeys.svg" alt="Journeys" class="release-note-heading-icon"/>
     <h3 class="release-note-heading">Cross-Project Cloning for Engagements</h3>
     <div class="badge enhancement">ENHANCEMENT</div>
   </div>
