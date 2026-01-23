@@ -161,7 +161,8 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
       <a href="#scim-support-for-automated-user-lifecycle-management"><i class="fa-light fa-anchor"></i></a>
     </div>
     <div>
-     <img src="https://files.readme.io/01053ed2e833c5e6bb242a86b84f304b7499ff0b0a26f422c3cc846d70530658-Settings.svg" alt="Settings" class="release-note-heading-icon"/>
+      <img 
+src="https://files.readme.io/01053ed2e833c5e6bb242a86b84f304b7499ff0b0a26f422c3cc846d70530658-Settings.svg" alt="Settings" class="release-note-heading-icon"/>
     </div>
     <h3 class="release-note-heading">SCIM Support for Automated User Lifecycle Management</h3>
     <div class="badge new-feature">NEW FEATURE</div>
