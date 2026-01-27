@@ -24,7 +24,7 @@ Before you begin, ensure you have the following:
 
 # Data Warehouse Sources
 
-This section provides an overview of the data warehouse platforms that CleverTap supports for direct data ingestion.
+This section lists the data warehouse platforms that CleverTap supports for data ingestion.
 
 <HTMLBlock>{`
 <style>
