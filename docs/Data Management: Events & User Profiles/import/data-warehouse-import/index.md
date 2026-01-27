@@ -12,9 +12,7 @@ next:
 ---
 # Overview
 
-The Data Warehouse section introduces the native integrations that enable you to bring large volumes of data from your enterprise warehouse into CleverTap.
-
-This document provides an overview of the supported warehouse partners and the associated workflows for configuring imports, mapping fields, and scheduling automated data pipelines.
+The Data Warehouse section introduces the integrations that enable you to bring large volumes of data from your warehouse into CleverTap. It also provides an overview of the supported warehouse partners and the associated workflows for configuring imports, mapping fields, and scheduling automated data pipelines.
 
 # Data Warehouse Sources
 
