@@ -14,6 +14,15 @@ next:
 
 The Data Warehouse section introduces the integrations that enable you to bring large volumes of data from your warehouse into CleverTap. It also provides an overview of the supported warehouse partners and the associated workflows for configuring imports, mapping fields, and scheduling automated data pipelines.
 
+# Prerequisites
+
+Before you begin, ensure you have the following:
+
+* A data warehouse account integrated with CleverTap.
+* Necessary permissions to create and manage imports.
+* Access to the data warehouse database with correctly configured data.
+* Identified data to be imported (**User Profile Data** or **Event Data**).
+
 # Data Warehouse Sources
 
 This section provides an overview of the data warehouse platforms that CleverTap supports for direct data ingestion.
@@ -69,15 +78,6 @@ This section provides an overview of the data warehouse platforms that CleverTap
   </a>
 </div>
 `}</HTMLBlock>
-
-# Prerequisites
-
-Before you begin, ensure you have the following:
-
-* A data warehouse account integrated with CleverTap.
-* Necessary permissions to create and manage imports.
-* Access to the data warehouse database with correctly configured data.
-* Identified data to be imported (**User Profile Data** or **Event Data**).
 
 # Quick Start Guide for Data Warehouse Import
 
