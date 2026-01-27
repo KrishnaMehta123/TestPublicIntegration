@@ -78,8 +78,8 @@ If you are setting up Snowflake for the first time, ensure you have the followin
 
 You can set up Snowflake using one of the following ways:
 
-* For new users who need to provision Snowflake resources from scratch: [Create a new Database, Warehouse, User, and Role](doc:snowflake-configuration#create-role)
-* For users who already have configured resources in Snowflake: [Use existing Snowflake Credentials](doc:snowflake-configuration#use-existing-snowflake-credentials)
+* For new users who need to provision Snowflake resources from scratch: [Create a new Database, Warehouse, User, and Role](doc:snowflake#create-role)
+* For users who already have configured resources in Snowflake: [Use existing Snowflake Credentials](doc:snowflake#use-existing-snowflake-credentials)
 
 ## Create New Snowflake Setup
 
@@ -87,11 +87,11 @@ If you do not already have a Database, Warehouse, User, and Role configured in S
 
 To create each resource, perform the following steps:
 
-1. [Create a Database](doc:snowflake-configuration#create-database)
-2. [Create a Warehouse](doc:snowflake-configuration#create-warehouse)
-3. [Create a User](doc:snowflake-configuration#create-user)
-4. [Create a Schema ](doc:snowflake-configuration#create-schema): Required only to export data from CleverTap to Snowflake.
-5. [Create a Role](doc:snowflake-configuration#create-role)
+1. [Create a Database](doc:snowflake#create-database)
+2. [Create a Warehouse](doc:snowflake#create-warehouse)
+3. [Create a User](doc:snowflake#create-user)
+4. [Create a Schema ](doc:snowflake#create-schema): Required only to export data from CleverTap to Snowflake.
+5. [Create a Role](doc:snowflake#create-role)
 
 ### Create Database
 
@@ -230,11 +230,11 @@ Expected Output
 
 If you already have Snowflake set up, perform the following steps to find each detail on the Snowflake dashboard.
 
-* [Obtain Your Snowflake Account Identifier](https://docs.clevedoc:snowflake-configuration#obtain-your-snowflake-account-identifier)
-* [Find Existing Database](doc:snowflake-configuration#find-existing-database)
-* [Find Existing Warehouse](doc:snowflake-configuration#find-existing-warehouse)
-* [Find and Assign Existing Role](doc:snowflake-configuration#find-and-assign-existing-role)
-* [Find Existing Schema](doc:snowflake-configuration#find-existing-schema) (for exports)
+* [Obtain Your Snowflake Account Identifier](doc:snowflake#obtain-your-snowflake-account-identifier)
+* [Find Existing Database](doc:snowflake#find-existing-database)
+* [Find Existing Warehouse](doc:snowflake#find-existing-warehouse)
+* [Find and Assign Existing Role](doc:snowflake#find-and-assign-existing-role)
+* [Find Existing Schema](doc:snowflake#find-existing-schema) (for exports)
 
 ### Obtain Your Snowflake Account Identifier
 
@@ -286,12 +286,12 @@ To find existing schemas in a specific database that are needed for CleverTap ex
 
 To connect Snowflake with CleverTap, go to _Settings > Partners_ > Snowflake from the CleverTap dashboard and select **Add Database** and configure the following:
 
-* [Database Details](doc:snowflake-configuration#database-details)
+* [Database Details](doc:snowflake#database-details)
 * [User Details](doc:snowflake-configuration#user-details)
 
 ## Database Details
 
-Enter the _Database Details_ in the integration setup form. To create or retrieve details from your Snowflake account, refer to [create a new Database, Warehouse, User, and Role](doc:snowflake-configuration#create-role)  or [use existing Snowflake credentials](doc:snowflake-configuration#use-existing-snowflake-credentials).
+Enter the _Database Details_ in the integration setup form. To create or retrieve details from your Snowflake account, refer to [create a new Database, Warehouse, User, and Role](doc:snowflake#create-role)  or [use existing Snowflake credentials](doc:snowflake#use-existing-snowflake-credentials).
 
 <Image align="center" border={true} caption="Database Details" src="https://files.readme.io/c87f29fe4e49eae0b16f46fe7c154934edc8cc4b947601c23f5e6e4174ccddef-snowflake_databse_details.png" />
 
@@ -308,8 +308,8 @@ Enter the _Database Details_ in the integration setup form. To create or retriev
 
 Provide the **Username** and the corresponding credentials (Password or Key) during setup in the CleverTap dashboard. CleverTap supports the following two authentication methods:
 
-* [Key Pair Authentication](doc:snowflake-configuration#key-pair-authentication) [Recommended]
-* [Password Authentication](doc:snowflake-configuration#password-authentication)
+* [Key Pair Authentication](doc:snowflake#key-pair-authentication) [Recommended]
+* [Password Authentication](doc:snowflake#password-authentication)
 
 ### Key Pair Authentication [Recommended]
 
