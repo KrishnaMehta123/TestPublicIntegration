@@ -61,17 +61,14 @@ This section provides an overview of the data warehouse platforms that CleverTap
   }
 </style>
 <div class="grid">
-  <a href="https://docs.clevertap.com/docs/snowflake-configuration" class="integration-card">
+  <a href="https://docs.clevertap.com/docs/snowflake" class="integration-card">
     <div class="name">Snowflake</div>
   </a>
   <a href="https://docs.clevertap.com/docs/databricks-configuration" class="integration-card">
     <div class="name">Databricks</div>
   </a>
-<a href="https://docs.clevertap.com/docs/bigquery-configuration" class="integration-card">
+<a href="https://docs.clevertap.com/docs/bigquery" class="integration-card">
     <div class="name">BigQuery</div>
-  </a>
-  <a href="https://docs.clevertap.com/docs/redshift-configuration" class="integration-card">
-    <div class="name">Redshift</div>
   </a>
 </div>
 `}</HTMLBlock>
