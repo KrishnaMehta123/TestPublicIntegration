@@ -68,7 +68,7 @@ The _Imports_ section explains how to bring external user data into CleverTap, i
     <div class="name">SFTP</div>
   </a>
 <a href="https://docs.clevertap.com/docs/data-warehouse-import" class="integration-card">
-    <div class="name">Data Warehouse Import</div>
+    <div class="name">Data Warehouse</div>
   </a>
 </div>
 `}</HTMLBlock>
