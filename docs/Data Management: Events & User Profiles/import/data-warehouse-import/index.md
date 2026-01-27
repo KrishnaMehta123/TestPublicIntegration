@@ -1,5 +1,5 @@
 ---
-title: Data Warehouse Import
+title: Data Warehouse
 excerpt: ''
 deprecated: false
 hidden: true
