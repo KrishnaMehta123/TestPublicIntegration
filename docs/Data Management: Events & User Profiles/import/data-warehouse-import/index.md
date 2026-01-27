@@ -21,7 +21,6 @@ Before you begin, ensure you have the following:
 * A data warehouse account integrated with CleverTap.
 * Necessary permissions to create and manage imports.
 * Access to the data warehouse database with correctly configured data.
-* Identified data to be imported (**User Profile Data** or **Event Data**).
 
 # Data Warehouse Sources
 
