@@ -80,7 +80,7 @@ This section lists the data warehouse platforms that CleverTap supports for data
 
 # Quick Start Guide for Data Warehouse Import
 
-This section serves as a technical reference for users who have previously configured an Import and require a brief procedural overview before contacting support. It outlines the essential steps involved in setting up and executing a Data Warehouse Import.
+This section outlines the essential steps involved in setting up and executing a Data Warehouse Import.
 
 <HTMLBlock>{`
 <style>
