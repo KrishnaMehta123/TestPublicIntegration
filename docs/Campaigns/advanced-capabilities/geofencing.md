@@ -1,7 +1,7 @@
 ---
 title: Geofencing Campaign
 excerpt: Send messages to your users based on their location.
-deprecated: false
+deprecated: true
 hidden: true
 metadata:
   title: ''
