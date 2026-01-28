@@ -18,7 +18,7 @@ You can personalize the message for every user based on specific user property o
 
 # Inline Personalization
 
-To invoke the personalization menu, type the _@_ or the _{}_ symbol in the title or the text fields while creating a message.
+To invoke the personalization menu, type the _@_ or the _{'{}'}_  symbol in the title or the text fields while creating a message.
 
 You can also add dynamic replacements in the title and body. Notice a preview as displayed below.
 
