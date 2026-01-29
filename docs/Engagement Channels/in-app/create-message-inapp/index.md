@@ -265,7 +265,7 @@ The campaign is triggered after a specified delay once the user meets the qualif
 <Callout icon="📘" theme="info">
   Private Beta
 
-  File Upload Encryption is available in Private Beta. To enable this feature, contact your Customer Success Manager or raise a support ticket.
+  In-App Delay is available in Private Beta. To enable this feature, contact your Customer Success Manager or raise a support ticket.
 </Callout>
 
 <Image align="center" alt="In-App Delay" border={true} caption="In-App Delay" src="https://files.readme.io/53ef58cd405aacea6c1136cc7a5ff8f0a67abc4f4d42b998ee79882f1025b195-image.png" />
