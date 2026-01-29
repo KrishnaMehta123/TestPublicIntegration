@@ -16,21 +16,21 @@ Integrating Snowflake with CleverTap allows you to automatically export user eng
 
 1. **[Configure Snowflake Connection](doc:snowflake-export#configure-snowflake)**: Set up and authenticate your Snowflake database within the CleverTap dashboard.
 2. **[Create Export](doc:snowflake-export#create-export)**: Use the configured connection to define and initiate a data export from CleverTap to Snowflake.
-3. **[Export Table Creation](doc:snowflake-export#export-table-creation)**: CleverTap automatically creates a table in Snowflake for each export, following a standardized naming convention. 
+3. **[Export Table Creation](doc:snowflake-export#export-table-creation)**: CleverTap automatically creates a table in Snowflake for each export, following a standardized naming convention.
    > 📘 Private Beta
    >
    > CleverTap's integration with Snowflake is currently in Private Beta. Contact your Customer Success Manager for access.
 
 # Configure Snowflake
 
-To connect your Snowflake account with CleverTap, click *Settings* > Partners > *Snowflake*, and click **Add Database**. Provide the required configuration details in the following sections:
+To connect your Snowflake account with CleverTap, click _Settings_ > Partners > _Snowflake_, and click **Add Database**. Provide the required configuration details in the following sections:
 
 * [Database Details](doc:snowflake-configuration#database-details): Specify the Snowflake account name, warehouse, and Database to which CleverTap should export data.
 * [User Details](doc:snowflake-configuration#user-details): Enter the credentials and roles for the Snowflake user authorized to access the target schema and tables.
 
 > 📘 Note:
 >
-> These permissions must be granted before configuring the connection in the CleverTap dashboard. Without the required access, exports may fail due to insufficient privileges.\
+> These permissions must be granted before configuring the connection in the CleverTap dashboard. Without the required access, exports may fail due to insufficient privileges.  
 > For more details on role-based access control in Snowflake, refer to the [Snowflake Access Control Overview](https://docs.snowflake.com/en/user-guide/security-access-control-overview) and [Snowflake Configuration on CleverTap](doc:snowflake-configuration).
 
 # Create Export
@@ -39,27 +39,23 @@ Once the Snowflake database is successfully connected to CleverTap, you can begi
 
 To initiate exporting from Snowflake to CleverTap, perform the following steps:
 
-1. Go to *Settings* > *Partners* > *Export centre* and click **Create Export**. 
+1. Go to _Settings_ > _Partners_ > _Export centre_ and click **Create Export**.
 
-   <Image alt="Snowflake Export" align="center" border={true} src="https://files.readme.io/2afc1f06fc2738e08ea73fa668408dc0f395b0f5d82f99478b8f0c5eef71eccc-Snowflake_export.png">
-     Snowflake Export
-   </Image>
-2. Select **Snowflake** from the *Create Export* window.
-3. Under *Export Details*, select the *Snowflake connection name* from the dropdown and add the following details:  
+   <Image align="center" alt="Snowflake Export" border={true} caption="Snowflake Export" src="https://files.readme.io/2afc1f06fc2738e08ea73fa668408dc0f395b0f5d82f99478b8f0c5eef71eccc-Snowflake_export.png" />
+2. Select **Snowflake** from the _Create Export_ window.
+3. Under _Export Details_, select the _Snowflake connection name_ from the dropdown and add the following details:
 
-   <Image alt="Export Details" align="center" border={true} src="https://files.readme.io/2d58093bc83439a27c12cebe3bdd622748c102b57a536e24d29de38d144e10e6-Export_details.png">
-     Export Details
-   </Image>
+   <Image align="center" alt="Export Details" border={true} caption="Export Details" src="https://files.readme.io/2d58093bc83439a27c12cebe3bdd622748c102b57a536e24d29de38d144e10e6-Export_details.png" />
 
    * **DATA TYPE & IDENTIFIER PRIORITY**: Select the events from the available options to export. For more information, refer to [Export Details](doc:snowflake-export#export-details).
-     * **Fallback Priority order for identities**: Select priority for user identities when exporting data. User Identifiers will be exported based on the selected priority. For more information, refer to the [Configure Identity Priority for Data Exports](doc:snowflake-export#configure-identity-priority-for-data-exports) section. 
+     * **Fallback Priority order for identities**: Select priority for user identities when exporting data. User Identifiers will be exported based on the selected priority. For more information, refer to the [Configure Identity Priority for Data Exports](doc:snowflake-export#configure-identity-priority-for-data-exports) section.
    * **Frequency**: Select from one of the following options:
      * **One time**: Triggers a single export for the selected export type. You can export data for a specific day, a date range, the current month, the previous month, and similar periods.
        > 📘 Note:
        >
        > You can export data up to the last 60 days. If you require data beyond this range, contact your Customer Success Manager or [CleverTap Support](https://help.clevertap.com/hc/en-us/requests/new).
      * **Recurring**: Set up a recurring export that exports all the new events captured in the last window. You can export data as frequently as every 4 hours and once every 24 hours.
-4. Click **Export**. The *Snowflake export has initiated* message displays at the top of the Exports page.
+4. Click **Export**. The _Snowflake export has initiated_ message displays at the top of the Exports page.
 
 CleverTap processes the export, and you can now refer to the newly created export for Snowflake. The status for each export is displayed as **PENDING** as soon as the export is created. The status changes to **RUNNING** after the processing starts. In the case of a one-time export, the status changes to **DONE** when the export is complete.
 
@@ -102,25 +98,25 @@ This section outlines how to track the status of your data exports, stop or edit
 > * You cannot modify exports marked as **DONE** or **STOPPED**.
 > * Export changes for Live Data Streaming take 10-15 minutes to take effect.
 
-* **Filter by Export Details**: To filter by [export details](doc:snowflake-export#export-details), click **Filter**. You can filter exports by *Partner*, *Type*, *Status*, or *Frequency*.  To clear the filter, click **Reset**.
+* **Filter by Export Details**: To filter by [export details](doc:snowflake-export#export-details), click **Filter**. You can filter exports by _Partner_, _Type_, _Status_, or _Frequency_.  To clear the filter, click **Reset**.
 
 # Configure Identity Priority for Data Exports
 
-The export file includes an identity column with the user's Identity, Phone Number, or Email values. These values are set based on the identities configured in the CleverTap dashboard under the *Settings* > *User Identity* page. This feature lets you prioritize the identifier you want to export in the identity column. 
+The export file includes an identity column with the user's Identity, Phone Number, or Email values. These values are set based on the identities configured in the CleverTap dashboard under the _Settings_ > _User Identity_ page. This feature lets you prioritize the identifier you want to export in the identity column.
 
-Let us understand how the prioritization works based on the identities selected in the *User Identity* page:
+Let us understand how the prioritization works based on the identities selected in the _User Identity_ page:
 
-* If you select only *Identity*, the export file includes the identity value. If the identity column is unavailable, it is empty.\
+* If you select only _Identity_, the export file includes the identity value. If the identity column is unavailable, it is empty.  
   ![](https://files.readme.io/aad1f81-image.png)
-* If you select multiple identifiers, you must set the priorities on the *Export* page. For instance, you set Priority 1 to *Identity* and Priority 2 to *Email ID*. When exporting data, the export prioritizes the Identity value for the identity column. If it is absent, the Email ID is exported under the identity column of the export file. If both are missing, the column remains empty. 
+* If you select multiple identifiers, you must set the priorities on the _Export_ page. For instance, you set Priority 1 to _Identity_ and Priority 2 to _Email ID_. When exporting data, the export prioritizes the Identity value for the identity column. If it is absent, the Email ID is exported under the identity column of the export file. If both are missing, the column remains empty.
 
 > 📘 Key Points to Remember
 >
 > * If you change the identity later, the export works according to the set priority. To prioritize the modified identities, edit your export.
 
-To prioritize user identity for exports: 
+To prioritize user identity for exports:
 
-1. Go to *Partners* > *Exports*. 
+1. Go to _Partners_ > _Exports_.
 2. Hover over the required Snowflake export. Click the **Edit** button.
 3. Under **Fallback priority order for identifiers**, set up the priority 1, 2, and 3 for the required identities from the dropdown list.
 4. Click **Update export**.
@@ -129,252 +125,34 @@ To prioritize user identity for exports:
 
 When creating an export, you can choose the type of event data you want to include. This allows you to tailor the export to your analytical or reporting needs. The following options are available:
 
-* **All Events**: Export data for all defined events, including *System* and *Custom* events.
+* **All Events**: Export data for all defined events, including _System_ and _Custom_ events.
 * **Selected Events**: Select the specific events to export from the dropdown.
-* **Engagement Events**: Export the following engagement events:
+* **Engagement Events**: Export the following engagement events:  
 
-  <Table align={["left","left"]}>
-    <thead>
-      <tr>
-        <th style={{ textAlign: "left" }}>
-          CleverTap Event Name
-        </th>
+  <br />
 
-        <th style={{ textAlign: "left" }}>
-          <p>Description</p>
-        </th>
-      </tr>
-    </thead>
-
-    <tbody>
-      <tr>
-        <td style={{ textAlign: "left" }}>
-          Notification Sent
-        </td>
-
-        <td style={{ textAlign: "left" }}>
-          <ul><li>The event is tracked when the notification is successfully sent from CleverTap to the communication channel you select for your campaign. </li><li>This event is always recorded, even if the user does not open or click the message. </li><li>This event is recorded for Email, Mobile Push, SMS, and Web Push campaigns. </li><li>This event is available on the Event dashboard but not on the User Profile.</li></ul>
-        </td>
-      </tr>
-
-      <tr>
-        <td style={{ textAlign: "left" }}>
-          Notification Viewed
-        </td>
-
-        <td style={{ textAlign: "left" }}>
-          <ul><li>The event is tracked when a user views an email, in-app, or web notification sent from CleverTap.</li><li>The event is available for Email, Web Push, In-App, Web Popup, and App Inbox.</li></ul>
-        </td>
-      </tr>
-
-      <tr>
-        <td style={{ textAlign: "left" }}>
-          Notification Clicked
-        </td>
-
-        <td style={{ textAlign: "left" }}>
-          <p>The event is tracked when a user clicks on a Mobile Push, In-App, Email, Web Popup, or Web Push message sent via the CleverTap dashboard or through the campaign API.</p>
-        </td>
-      </tr>
-
-      <tr>
-        <td style={{ textAlign: "left" }}>
-          Push Impressions
-        </td>
-
-        <td style={{ textAlign: "left" }}>
-          <ul><li>After the Push Impression is implemented in the SDK, the toggle must be turned on from the CleverTap dashboard.</li><li>This event is recorded whenever a push notification sent via CleverTap is delivered to the user’s device.</li><li>The funnels on the Push campaign statistics page reflect the count for this event.</li></ul>
-        </td>
-      </tr>
-
-      <tr>
-        <td style={{ textAlign: "left" }}>
-          Notification Replied
-        </td>
-
-        <td style={{ textAlign: "left" }}>
-          <p>This event is tracked when the brand receives a reply from the user for WhatsApp.</p>
-        </td>
-      </tr>
-
-      <tr>
-        <td style={{ textAlign: "left" }}>
-          Push Unregistered
-        </td>
-
-        <td style={{ textAlign: "left" }}>
-          <ul><li>This debug event is tracked when an existing mobile push token is removed for a profile.</li><li>The event is tracked for a profile when:<ul><li>A user logs out of the device, and another user logs in. Applicable only if the onUserLogin() method is implemented.</li><li>When a push token is removed using the `pushFcmRegisterationId("token",false)` method. Applicable only for Android.</li></ul></li></ul>
-        </td>
-      </tr>
-
-      <tr>
-        <td style={{ textAlign: "left" }}>
-          Control Group
-        </td>
-
-        <td style={{ textAlign: "left" }}>
-          <p>The event is tracked when a campaign is activated with a Control group.</p>
-        </td>
-      </tr>
-
-      <tr>
-        <td style={{ textAlign: "left" }}>
-          Channel Unsubscribed
-        </td>
-
-        <td style={{ textAlign: "left" }}>
-          <ul><li><p>The event is raised when an email is not acknowledged.</p></li><li><p>The following are the event properties:</p><ul><li>Campaign ID: This is the ID of<br />the campaign from which users are updating subscriptions.<br />Campaign Type: Currently only email.</li><li>Group: Group name from which the user unsubscribed/resubscribed.</li><li>Identity: The user identity/email address.</li><li>Variant Type: Valid values are bounced, dropped, and spam. Email IDs that bounce, drop or marked as spam are opted out from future emails</li><li>Subscription Type: Account level and profile level. Profile level signifies that the user who qualified for the communication is opted out. Account level signifies that all users with the email address are opted out from future communications.</li><li>Reason: Reason which was given by the email provider for the type of the error. For example: "smtp;550 5.1.1 The email account that you tried to reach does not exist. Please try double-checking the recipient's email address for typos or unnecessary spaces."</li></ul></li></ul>
-        </td>
-      </tr>
-
-      <tr>
-        <td style={{ textAlign: "left" }}>
-          Reachable By
-        </td>
-
-        <td style={{ textAlign: "left" }}>
-          <p>The event is tracked for a profile when:</p><ul><li>Push token is added/changed.</li><li>Email ID is added/changed.</li><li>Phone number is added/changed.</li></ul>
-        </td>
-      </tr>
-
-      <tr>
-        <td style={{ textAlign: "left" }}>
-          Notification Delivered
-        </td>
-
-        <td style={{ textAlign: "left" }}>
-          <p>The event is tracked when the WhatsApp provider confirms that the notification has reached the end user (double-tick of WhatsApp).</p>
-        </td>
-      </tr>
-
-      <tr>
-        <td style={{ textAlign: "left" }}>
-          AB Experiment Rendered
-        </td>
-
-        <td style={{ textAlign: "left" }}>
-          <p>The event is tracked when you are using the Product A/B Tests feature and the variant reaches the device.</p>
-        </td>
-      </tr>
-
-      <tr>
-        <td style={{ textAlign: "left" }}>
-          AB Experiment Stopped
-        </td>
-
-        <td style={{ textAlign: "left" }}>
-          <p>The event is tracked when you are using the Product A/B Tests feature and the AB experiment is stopped.</p>
-        </td>
-      </tr>
-
-      <tr>
-        <td style={{ textAlign: "left" }}>
-          AB Experiment Rolled Out
-        </td>
-
-        <td style={{ textAlign: "left" }}>
-          <p>The event is tracked when you are using the Product A/B Tests feature and the winner variant is sent to all the devices.</p>
-        </td>
-      </tr>
-
-      <tr>
-        <td style={{ textAlign: "left" }}>
-          Geocluster Entered
-        </td>
-
-        <td style={{ textAlign: "left" }}>
-          <p>The event is tracked when you enable the geofence feature and your device enters a geofence.</p>
-        </td>
-      </tr>
-
-      <tr>
-        <td style={{ textAlign: "left" }}>
-          Geocluster Exited
-        </td>
-
-        <td style={{ textAlign: "left" }}>
-          <p>The event is tracked when you enable the geofence feature and your device exits a geofence.</p>
-        </td>
-      </tr>
-
-      <tr>
-        <td style={{ textAlign: "left" }}>
-          Partner Sync
-        </td>
-
-        <td style={{ textAlign: "left" }}>
-          Event marking synchronization with a third-party partner system.
-        </td>
-      </tr>
-
-      <tr>
-        <td style={{ textAlign: "left" }}>
-          Reply Sent
-        </td>
-
-        <td style={{ textAlign: "left" }}>
-          <p>The event is tracked against the user profile of the end-user when an agent (CleverTap user) replies to a WhatsApp message from the end user.</p>
-        </td>
-      </tr>
-
-      <tr>
-        <td style={{ textAlign: "left" }}>
-          App Uninstalled
-        </td>
-
-        <td style={{ textAlign: "left" }}>
-          <ul><li><p>The event is tracked when the user uninstalls the application.</p></li><li><p>There are three cases when this event is tracked multiple times for a single user:</p><ul><li>The first case is when a user installs your app, uninstalls it, and then reinstalls it. </li><li>The second case is when a user clears the app's memory. </li><li>The third case is when a user installs your app on multiple devices.</li></ul></li></ul>
-        </td>
-      </tr>
-
-      <tr>
-        <td style={{ textAlign: "left" }}>
-          Webhook Delivered
-        </td>
-
-        <td style={{ textAlign: "left" }}>
-          <p>The event is tracked when a webhook campaign is delivered successfully.</p>
-        </td>
-      </tr>
-
-      <tr>
-        <td style={{ textAlign: "left" }}>
-          State Transitioned
-        </td>
-
-        <td style={{ textAlign: "left" }}>
-          <ul><li>The event is tracked whenever a user transitions from one state to another or from an unmapped state to one of the states in the lifecycle optimization framework.</li></ul>
-        </td>
-      </tr>
-
-      <tr>
-        <td style={{ textAlign: "left" }}>
-          UTM Visited
-        </td>
-
-        <td style={{ textAlign: "left" }}>
-          <ul><li>The event is tracked when a user clicks on a link from a marketing campaign that has a UTM parameter defined on it.</li><li>The event is also tracked when a CleverTap-integrated attribution platform, such as Branch or Apsalar, sends this information to CleverTap.</li></ul>
-        </td>
-      </tr>
-
-      <tr>
-        <td style={{ textAlign: "left" }}>
-          AB Test Enter
-        </td>
-
-        <td style={{ textAlign: "left" }}>
-          Triggered when a user enters an A/B test group.
-        </td>
-      </tr>
-
-      <tr>
-        <td style={{ textAlign: "left" }}>
-          AB Test Exit
-        </td>
-
-        <td style={{ textAlign: "left" }}>
-          Triggered when a user exits an A/B test group.
-        </td>
-      </tr>
-    </tbody>
-  </Table>
+  | CleverTap Event Name     | <p>Description</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+  | :----------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+  | Notification Sent        | <ul><li>The event is tracked when the notification is successfully sent from CleverTap to the communication channel you select for your campaign. </li><li>This event is always recorded, even if the user does not open or click the message. </li><li>This event is recorded for Email, Mobile Push, SMS, and Web Push campaigns. </li><li>This event is available on the Event dashboard but not on the User Profile.</li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+  | Notification Viewed      | <ul><li>The event is tracked when a user views an email, in-app, or web notification sent from CleverTap.</li><li>The event is available for Email, Web Push, In-App, Web Popup, and App Inbox.</li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+  | Notification Clicked     | <p>The event is tracked when a user clicks on a Mobile Push, In-App, Email, Web Popup, or Web Push message sent via the CleverTap dashboard or through the campaign API.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+  | Push Impressions         | <ul><li>After the Push Impression is implemented in the SDK, the toggle must be turned on from the CleverTap dashboard.</li><li>This event is recorded whenever a push notification sent via CleverTap is delivered to the user’s device.</li><li>The funnels on the Push campaign statistics page reflect the count for this event.</li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+  | Notification Replied     | <p>This event is tracked when the brand receives a reply from the user for WhatsApp.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+  | Push Unregistered        | <ul><li>This debug event is tracked when an existing mobile push token is removed for a profile.</li><li>The event is tracked for a profile when:<ul><li>A user logs out of the device, and another user logs in. Applicable only if the onUserLogin() method is implemented.</li><li>When a push token is removed using the `pushFcmRegisterationId("token",false)` method. Applicable only for Android.</li></ul></li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+  | Control Group            | <p>The event is tracked when a campaign is activated with a Control group.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+  | Channel Unsubscribed     | <ul><li><p>The event is raised when an email is not acknowledged.</p></li><li><p>The following are the event properties:</p><ul><li>Campaign ID: This is the ID of<br />the campaign from which users are updating subscriptions.<br />Campaign Type: Currently only email.</li><li>Group: Group name from which the user unsubscribed/resubscribed.</li><li>Identity: The user identity/email address.</li><li>Variant Type: Valid values are bounced, dropped, and spam. Email IDs that bounce, drop or marked as spam are opted out from future emails</li><li>Subscription Type: Account level and profile level. Profile level signifies that the user who qualified for the communication is opted out. Account level signifies that all users with the email address are opted out from future communications.</li><li>Reason: Reason which was given by the email provider for the type of the error. For example: "smtp;550 5.1.1 The email account that you tried to reach does not exist. Please try double-checking the recipient's email address for typos or unnecessary spaces."</li></ul></li></ul> |
+  | Reachable By             | <p>The event is tracked for a profile when:</p><ul><li>Push token is added/changed.</li><li>Email ID is added/changed.</li><li>Phone number is added/changed.</li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+  | Notification Delivered   | <p>The event is tracked when the WhatsApp provider confirms that the notification has reached the end user (double-tick of WhatsApp).</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+  | AB Experiment Rendered   | <p>The event is tracked when you are using the Product A/B Tests feature and the variant reaches the device.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+  | AB Experiment Stopped    | <p>The event is tracked when you are using the Product A/B Tests feature and the AB experiment is stopped.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+  | AB Experiment Rolled Out | <p>The event is tracked when you are using the Product A/B Tests feature and the winner variant is sent to all the devices.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+  | Geocluster Entered       | <p>The event is tracked when you enable the geofence feature and your device enters a geofence.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+  | Geocluster Exited        | <p>The event is tracked when you enable the geofence feature and your device exits a geofence.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+  | Partner Sync             | Event marking synchronization with a third-party partner system.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+  | Reply Sent               | <p>The event is tracked against the user profile of the end-user when an agent (CleverTap user) replies to a WhatsApp message from the end user.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+  | App Uninstalled          | <ul><li><p>The event is tracked when the user uninstalls the application.</p></li><li><p>There are three cases when this event is tracked multiple times for a single user:</p><ul><li>The first case is when a user installs your app, uninstalls it, and then reinstalls it. </li><li>The second case is when a user clears the app's memory. </li><li>The third case is when a user installs your app on multiple devices.</li></ul></li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+  | Webhook Delivered        | <p>The event is tracked when a webhook campaign is delivered successfully.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+  | State Transitioned       | <ul><li>The event is tracked whenever a user transitions from one state to another or from an unmapped state to one of the states in the lifecycle optimization framework.</li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+  | UTM Visited              | <ul><li>The event is tracked when a user clicks on a link from a marketing campaign that has a UTM parameter defined on it.</li><li>The event is also tracked when a CleverTap-integrated attribution platform, such as Branch or Apsalar, sends this information to CleverTap.</li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+  | AB Test Enter            | Triggered when a user enters an A/B test group.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+  | AB Test Exit             | Triggered when a user exits an A/B test group.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
