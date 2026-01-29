@@ -90,7 +90,7 @@ To create each resource, perform the following steps:
 1. [Create a Database](doc:snowflake#create-database)
 2. [Create a Warehouse](doc:snowflake#create-warehouse)
 3. [Create a Role](doc:snowflake#create-role)
-4. [Create a Schema ](doc:snowflake#create-schema): Required only to export data from CleverTap to Snowflake.
+4. [Create a Schema ](doc:snowflake#create-schema): Mandatory for exporting data and optional for importing data.
 5. [Create a User](doc:snowflake#create-user)
 
 ### Create Database
@@ -108,23 +108,9 @@ To get your Snowflake data in CleverTap, you first need to create a database. Fo
    SHOW DATABASES;
    ```
 
-**Expected Output**
-
-```sql
-+--------------+------------------+
-
-| name         | created_on       |
-
-+--------------+------------------+
-
-| CLEVERTAP_DB | 2025-02-20 12:00 |
-
-+--------------+------------------+
-```
-
 ### Create Warehouse
 
-To avoid conflicts with other operations in your cluster, CleverTap recommends that you create a new warehouse just for CleverTap loads. An X-Small warehouse is large enough for most CleverTap customers when they first configure their Snowflake.
+To avoid conflicts with other operations in your cluster, CleverTap recommends creating a new warehouse specifically for CleverTap loads. An X-Small warehouse is large enough for most CleverTap customers when they first configure their Snowflake.
 
 Run the following command to create a warehouse:
 
@@ -150,60 +136,7 @@ SHOW WAREHOUSES;
   To avoid extra costs, set `AUTO_SUSPEND` to ~10 minutes on the Snowflake dashboard (or 600 if using SQL) and enable `AUTO_RESUME`.  This ensures efficient usage since Snowflake charges on a [per-second billing model](https://docs.snowflake.com/en/user-guide/warehouses-considerations#automating-warehouse-suspension).
 </Callout>
 
-### Create Role
-
-To ensure proper access control, assign a role specifically for CleverTap integration:
-
-1. Create a role for CleverTap integration:
-   ```sql SQL
-   CREATE ROLE CLEVERTAP_ROLE;
-   ```
-2. Grant necessary privileges as follows
-   * **For importing data to CleverTap**:
-   ```sql SQL
-   -- Grant required privileges
-   GRANT USAGE ON DATABASE CLEVERTAP_DB TO ROLE CLEVERTAP_ROLE;
-   GRANT USAGE ON WAREHOUSE CLEVERTAP_WH TO ROLE CLEVERTAP_ROLE;
-   GRANT ALL PRIVILEGES ON SCHEMA CLEVERTAP_DB.PUBLIC TO ROLE CLEVERTAP_ROLE;
-   GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA CLEVERTAP_DB.PUBLIC TO ROLE CLEVERTAP_ROLE;
-   GRANT SELECT, INSERT, UPDATE, DELETE ON FUTURE TABLES IN SCHEMA CLEVERTAP_DB.PUBLIC TO ROLE CLEVERTAP_ROLE;
-   ```
-   * **For exporting data from CleverTap**:  
-     To enable export functionality, CleverTap requires write access to the schema where export tables are created. If you are using the `PUBLIC` schema, the permissions listed above are sufficient.  
-     However, if you are using a custom schema, replace the`<schema name>` with the actual schema name and grant the following privileges:
-   ```sql
-   -- Grant required privileges
-   GRANT USAGE ON DATABASE CLEVERTAP_DB TO ROLE CLEVERTAP_ROLE;
-   GRANT USAGE ON WAREHOUSE CLEVERTAP_WH TO ROLE CLEVERTAP_ROLE;
-   GRANT USAGE ON SCHEMA CLEVERTAP_DB.<schema_name> TO ROLE CLEVERTAP_ROLE;
-   GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA CLEVERTAP_DB.<schema name> TO ROLE CLEVERTAP_ROLE;
-   GRANT SELECT, INSERT, UPDATE, DELETE ON FUTURE TABLES IN SCHEMA CLEVERTAP_DB.<schema name> TO ROLE CLEVERTAP_ROLE;
-   ```
-
-### Create User
-
-To manage access securely, create a dedicated user for the CleverTap configuration by executing the following SQL query:
-
-```sql
-
--- Create a dedicated user for CleverTap integration
-
-CREATE USER CleverTap_USER WITH DEFAULT_ROLE = CLEVERTAP_ROLE DEFAULT_WAREHOUSE = CLEVERTAP_WH PASSWORD = '<YOUR_PASSWORD>';
-
-
-Change
-25 of 49
-
-Copy
-
-Copy
-
--- Grant the role to the user
-
-GRANT ROLE CLEVERTAP_ROLE TO USER ClEVERTAP_USER;
-```
-
-### Create Schema (for exports)
+### Create Schema 
 
 After creating the database, you must create a schema to organize CleverTap-related objects. This step is required only to export data from CleverTap to Snowflake. To do so, perform the following steps:
 
@@ -224,7 +157,52 @@ After creating the database, you must create a schema to organize CleverTap-rela
    SHOW SCHEMAS IN DATABASE CLEVERTAP_DB;
    ```
 
-Expected Output
+### Create Role
+
+To ensure proper access control, assign a role specifically for CleverTap integration:
+
+1. Create a role for CleverTap integration:
+   ```sql SQL
+   CREATE ROLE CLEVERTAP_ROLE;
+   ```
+2. Grant necessary privileges as follows
+   * **Using Public Schema**:
+   ```sql SQL
+   -- Grant required privileges
+   GRANT USAGE ON DATABASE CLEVERTAP_DB TO ROLE CLEVERTAP_ROLE;
+   GRANT USAGE ON WAREHOUSE CLEVERTAP_WH TO ROLE CLEVERTAP_ROLE;
+   GRANT ALL PRIVILEGES ON SCHEMA CLEVERTAP_DB.PUBLIC TO ROLE CLEVERTAP_ROLE;
+   GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA CLEVERTAP_DB.PUBLIC TO ROLE CLEVERTAP_ROLE;
+   GRANT SELECT, INSERT, UPDATE, DELETE ON FUTURE TABLES IN SCHEMA CLEVERTAP_DB.PUBLIC TO ROLE CLEVERTAP_ROLE;
+   ```
+   * **Using Other Schema**:  
+     If you are using the `PUBLIC` schema, the permission listed above is sufficient.  
+     However, if you are using a custom schema, replace the`<schema name>` with the actual schema name and grant the following privileges:
+   ```sql
+   -- Grant required privileges
+   GRANT USAGE ON DATABASE CLEVERTAP_DB TO ROLE CLEVERTAP_ROLE;
+   GRANT USAGE ON WAREHOUSE CLEVERTAP_WH TO ROLE CLEVERTAP_ROLE;
+   GRANT USAGE ON SCHEMA CLEVERTAP_DB.<schema_name> TO ROLE CLEVERTAP_ROLE;
+   GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA CLEVERTAP_DB.<schema name> TO ROLE CLEVERTAP_ROLE;
+   GRANT SELECT, INSERT, UPDATE, DELETE ON FUTURE TABLES IN SCHEMA CLEVERTAP_DB.<schema name> TO ROLE CLEVERTAP_ROLE;
+   ```
+
+### Create User
+
+To manage access securely, create a dedicated user for the CleverTap configuration by executing the following SQL query:
+
+```sql
+
+-- Create a dedicated user for CleverTap integration
+
+CREATE USER CleverTap_USER WITH DEFAULT_ROLE = CLEVERTAP_ROLE DEFAULT_WAREHOUSE = CLEVERTAP_WH;
+
+-- Grant the role to the user
+
+GRANT ROLE CLEVERTAP_ROLE TO USER ClEVERTAP_USER;
+```
+
+<br />
 
 ## Use Existing Snowflake Credentials
 
