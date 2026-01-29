@@ -38,16 +38,17 @@ Configuring Snowflake with CleverTap enables seamless data import and export, en
   * Snowflake Account Identifier
   * Warehouse
   * Database
-  * Role
-  * User with necessary permissions
+  * Role (Optional)
+  * Schema (Mandatory for exports)
+	* Username
 
   ## Configure Snowflake Credentials in CleverTap
 
   To set up the Snowflake credentials in CleverTap, perform the following steps:
 
   1. Go to *CleverTap Dashboard > Settings > Partners > Snowflake*.
-  2. Enter the following details: *Database*, *User*, and *Warehouse*.
-  3. Select the Authentication Method: **Password** or **Key Pair**.
+  2. Enter the following details: **Account Identifier, Warehouse, Database, Role, Schema and Username**.
+  3. Generate the key pair and assign it to your user.
   4. Click **Test Connection** and **Save**
 
   After setting up the configuration, you can [import](doc:snowflake-import) or [export ](doc:snowflake-export) data from Snowflake into CleverTap.
