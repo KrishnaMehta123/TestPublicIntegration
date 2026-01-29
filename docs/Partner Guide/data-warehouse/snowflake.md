@@ -40,7 +40,7 @@ Configuring Snowflake with CleverTap enables seamless data import and export, en
   * Database
   * Role (Optional)
   * Schema (Mandatory for exports)
-	* Username
+  * Username
 
   ## Configure Snowflake Credentials in CleverTap
 
