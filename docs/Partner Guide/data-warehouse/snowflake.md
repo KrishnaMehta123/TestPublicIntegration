@@ -78,20 +78,20 @@ If you are setting up Snowflake for the first time, ensure you have the followin
 
 You can set up Snowflake using one of the following ways:
 
-* For new users who need to provision Snowflake resources from scratch: [Create a new Database, Warehouse, User, and Role](doc:snowflake#create-role)
-* For users who already have configured resources in Snowflake: [Use existing Snowflake Credentials](doc:snowflake#use-existing-snowflake-credentials)
+* For new users who need to provision Snowflake resources from scratch: [Create a new Database, Warehouse, Role, Schema, and User](doc:snowflake#create-role).
+* For users who already have configured resources in Snowflake: [Use Existing Snowflake Credentials](doc:snowflake#use-existing-snowflake-credentials)
 
 ## Create New Snowflake Setup
 
-If you do not already have a Database, Warehouse, User, and Role configured in Snowflake, you must create them before proceeding. These components are required to ensure CleverTap can securely access, store, and process your data.
+If you do not already have a Database, Warehouse, Role, Schema, and User configured in Snowflake, you must create them before proceeding. These components are required to ensure CleverTap can securely access, store, and process your data.
 
 To create each resource, perform the following steps:
 
 1. [Create a Database](doc:snowflake#create-database)
 2. [Create a Warehouse](doc:snowflake#create-warehouse)
-3. [Create a User](doc:snowflake#create-user)
+3. [Create a Role](doc:snowflake#create-role)
 4. [Create a Schema ](doc:snowflake#create-schema): Required only to export data from CleverTap to Snowflake.
-5. [Create a Role](doc:snowflake#create-role)
+5. [Create a User](doc:snowflake#create-user)
 
 ### Create Database
 
