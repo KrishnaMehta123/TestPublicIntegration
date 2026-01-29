@@ -66,8 +66,7 @@ If you are setting up Snowflake for the first time, ensure you have the followin
   * Database and Schema: Ensure a database and schema are available (existing or newly created)
 * **Snowflake User Account Requirements**:
   * Permissions: The user should have read/write access to the specified database and schema.
-  * Authentication Method:  
-    Choose from the following: Password Authentication and Key Pair Authentication.
+  * Authentication Method: Key Pair Authentication.
 
     <Callout icon="📘" theme="info">
       #### Key Pair Authentication
