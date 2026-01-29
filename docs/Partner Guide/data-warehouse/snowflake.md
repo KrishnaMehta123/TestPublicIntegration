@@ -1,5 +1,5 @@
 ---
-title: Snowflake Configuration
+title: Snowflake
 excerpt: >-
   Learn how configuring Snowflake with CleverTap enables data sync for
   personalized engagement and growth.
