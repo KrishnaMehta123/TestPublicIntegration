@@ -19,13 +19,13 @@ Configuring Snowflake with CleverTap enables seamless data import and export, en
 <Callout icon="📘" theme="info">
   #### Private Beta
 
-  SnowFlake is a Private Beta release. Contact your Customer Success Manager for access.
+  Snowflake is a Private Beta release. Contact your Customer Success Manager for access.
 </Callout>
 
 # Quick Start Guide for Existing Users
 
 <details>
-  <summary>Expand for quick setup if your Snowflake workspace is already configured</summary>
+  <summary><b>Expand for quick setup if you have previously configured a Snowflake workspace.</b></summary>
 
   <hr />
 
