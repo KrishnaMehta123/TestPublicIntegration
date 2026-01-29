@@ -1,5 +1,6 @@
 - bigquery
 - bigquery-export
 - snowflake
+- snowflake-export
 - snowflake-overview
 - export-format
