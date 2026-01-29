@@ -51,7 +51,7 @@ Configuring Snowflake with CleverTap enables seamless data import and export, en
   3. Generate the key pair and assign it to your user.
   4. Click **Test Connection** and **Save**
 
-  After setting up the configuration, you can [import](doc:snowflake-import) or [export ](doc:snowflake-export) data from Snowflake into CleverTap.
+  After setting up the configuration, you can [import](doc:data-warehouse#quick-start-guide-for-imports) or [export](doc:snowflake-export) data from Snowflake into CleverTap.
 </details>
 
 # Prerequisites for Integration
