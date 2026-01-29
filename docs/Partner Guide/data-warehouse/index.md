@@ -83,14 +83,11 @@ CleverTap supports importing data from the following data warehouses. Use the li
   }
 </style>
 <div class="grid">
-  <a href="https://docs.clevertap.com/docs/snowflake-configuration" class="integration-card">
-    <div class="name">Snowflake</div>
-  </a>
-  <a href="https://docs.clevertap.com/docs/databricks-configuration" class="integration-card">
-    <div class="name">Databricks</div>
-  </a>
-<a href="https://docs.clevertap.com/docs/bigquery-configuration" class="integration-card">
+	<a href="https://docs.clevertap.com/docs/bigquery" class="integration-card">
     <div class="name">BigQuery</div>
+  </a>
+  <a href="https://docs.clevertap.com/docs/snowflake" class="integration-card">
+    <div class="name">Snowflake</div>
   </a>
 </div>
 `}</HTMLBlock>
@@ -222,8 +219,11 @@ CleverTap supports exporting data to the following data warehouses. Use the link
 </style>
 
 <div class="grid">
-  <a href="https://docs.clevertap.com/docs/snowflake-export" class="integration-card">
+  <a href="https://docs.clevertap.com/docs/bigquery-export" class="integration-card">
+    <div class="name">BigQuery</div>
+	<a href="https://docs.clevertap.com/docs/snowflake-export" class="integration-card">
     <div class="name">Snowflake</div>
+  </a>
   </a>
 </div>
 `}</HTMLBlock>
