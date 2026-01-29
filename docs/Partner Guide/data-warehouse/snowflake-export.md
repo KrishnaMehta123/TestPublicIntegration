@@ -17,9 +17,11 @@ Integrating Snowflake with CleverTap allows you to automatically export user eng
 1. **[Configure Snowflake Connection](doc:snowflake-export#configure-snowflake)**: Set up and authenticate your Snowflake database within the CleverTap dashboard.
 2. **[Create Export](doc:snowflake-export#create-export)**: Use the configured connection to define and initiate a data export from CleverTap to Snowflake.
 3. **[Export Table Creation](doc:snowflake-export#export-table-creation)**: CleverTap automatically creates a table in Snowflake for each export, following a standardized naming convention.
-   > 📘 Private Beta
-   >
-   > CleverTap's integration with Snowflake is currently in Private Beta. Contact your Customer Success Manager for access.
+   <Callout icon="📘" theme="info">
+     #### Private Beta
+
+     CleverTap's integration with Snowflake is currently in Private Beta. Contact your Customer Success Manager for access.
+   </Callout>
 
 # Configure Snowflake
 
@@ -28,10 +30,12 @@ To connect your Snowflake account with CleverTap, click _Settings_ > Partners > 
 * [Database Details](doc:snowflake-configuration#database-details): Specify the Snowflake account name, warehouse, and Database to which CleverTap should export data.
 * [User Details](doc:snowflake-configuration#user-details): Enter the credentials and roles for the Snowflake user authorized to access the target schema and tables.
 
-> 📘 Note:
->
-> These permissions must be granted before configuring the connection in the CleverTap dashboard. Without the required access, exports may fail due to insufficient privileges.  
-> For more details on role-based access control in Snowflake, refer to the [Snowflake Access Control Overview](https://docs.snowflake.com/en/user-guide/security-access-control-overview) and [Snowflake Configuration on CleverTap](doc:snowflake-configuration).
+<Callout icon="📘" theme="info">
+  #### Note
+
+  These permissions must be granted before configuring the connection in the CleverTap dashboard. Without the required access, exports may fail due to insufficient privileges.  
+  For more details on role-based access control in Snowflake, refer to the [Snowflake Access Control Overview](https://docs.snowflake.com/en/user-guide/security-access-control-overview) and [Snowflake Configuration on CleverTap](doc:snowflake-configuration).
+</Callout>
 
 # Create Export
 
@@ -51,13 +55,15 @@ To initiate exporting from Snowflake to CleverTap, perform the following steps:
      * **Fallback Priority order for identities**: Select priority for user identities when exporting data. User Identifiers will be exported based on the selected priority. For more information, refer to the [Configure Identity Priority for Data Exports](doc:snowflake-export#configure-identity-priority-for-data-exports) section.
    * **Frequency**: Select from one of the following options:
      * **One time**: Triggers a single export for the selected export type. You can export data for a specific day, a date range, the current month, the previous month, and similar periods.
-       > 📘 Note:
-       >
-       > You can export data up to the last 60 days. If you require data beyond this range, contact your Customer Success Manager or [CleverTap Support](https://help.clevertap.com/hc/en-us/requests/new).
+       <Callout icon="📘" theme="info">
+         #### Note:
+
+         You can export data up to the last 60 days. If you require data beyond this range, contact your Customer Success Manager or [CleverTap Support](https://help.clevertap.com/hc/en-us/requests/new).
+       </Callout>
      * **Recurring**: Set up a recurring export that exports all the new events captured in the last window. You can export data as frequently as every 4 hours and once every 24 hours.
 4. Click **Export**. The _Snowflake export has initiated_ message displays at the top of the Exports page.
 
-CleverTap processes the export, and you can now refer to the newly created export for Snowflake. The status for each export is displayed as **PENDING** as soon as the export is created. The status changes to **RUNNING** after the processing starts. In the case of a one-time export, the status changes to **DONE** when the export is complete.
+CleverTap processes the export, and you can now refer to the newly created Snowflake export. The status for each export is set to **PENDING** as soon as it is created. The status changes to **RUNNING** after the processing starts. For a one-time export, the status changes to **DONE** when the export completes.
 
 # Export Table Creation
 
@@ -118,12 +124,12 @@ To prioritize user identity for exports:
 
 1. Go to _Partners_ > _Exports_.
 2. Hover over the required Snowflake export. Click the **Edit** button.
-3. Under **Fallback priority order for identifiers**, set up the priority 1, 2, and 3 for the required identities from the dropdown list.
+3. Under **Fallback priority order for identifiers**, set up priorities 1, 2, and 3 for the required identities from the dropdown list.
 4. Click **Update export**.
 
 # Export Details
 
-When creating an export, you can choose the type of event data you want to include. This allows you to tailor the export to your analytical or reporting needs. The following options are available:
+When creating an export, you can choose which event data to include. This allows you to tailor the export to your analytical or reporting needs. The following options are available:
 
 * **All Events**: Export data for all defined events, including _System_ and _Custom_ events.
 * **Selected Events**: Select the specific events to export from the dropdown.
