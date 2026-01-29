@@ -234,6 +234,11 @@ If you need to check for existing databases in your Snowflake account, follow th
 2. Select the **Databases** tab from the left panel to view a list of all available databases.
 3. Alternatively, run the following SQL command to retrieve the database names:
 
+```sql
+
+SHOW DATABASES;
+```
+
 ### Find Existing Warehouse
 
 Instead of creating a new warehouse, you can use an existing one by retrieving the name:
@@ -241,6 +246,10 @@ Instead of creating a new warehouse, you can use an existing one by retrieving t
 1. Log in to Snowflake and open the **Snowflake Web UI**.
 2. Select the **Warehouses** tab from the left panel to view a list of all available warehouses.
 3. Alternatively, run the following SQL command to retrieve the warehouse names:
+
+```sql
+SHOW WAREHOUSE;
+```
 
 ### Find and Assign Existing Role
 
@@ -251,7 +260,11 @@ To verify or assign a role to a user, perform the following steps:
 3. Select the CleverTap user and go to the _Privileges_ section.
 4. Check the assigned roles and update if necessary using the following SQL command:
 
-### Find existing Schema
+```sql
+GRANT ROLE clevertap_role TO USER clevertap_user;
+```
+
+### Find Existing Schema
 
 To find existing schemas in a specific database that are needed for CleverTap exports, perform the following steps:
 
@@ -259,6 +272,9 @@ To find existing schemas in a specific database that are needed for CleverTap ex
 2. Select the **Databases** tab on the left panel and select the desired database.
 3. Select the **Schemas** tab to view all available schemas within that database.
 4. Alternatively, run the following SQL command to retrieve the schema names:
+
+```sql
+```
 
 # Set Up CleverTap Dashboard for Integration
 
@@ -269,36 +285,104 @@ To connect Snowflake with CleverTap, go to _Settings > Partners_ > Snowflake fro
 
 ## Database Details
 
-Enter the _Database Details_ in the integration setup form. To create or retrieve details from your Snowflake account, refer to [create a new Database, Warehouse, User, and Role](doc:snowflake#create-role)  or [use existing Snowflake credentials](doc:snowflake#use-existing-snowflake-credentials).
+Enter the _Database Details_ in the integration setup form. To create or retrieve details from your Snowflake account, refer to [create a new Database, Warehouse, Role, Schema, and  User](doc:snowflake#create-role)  or [use existing Snowflake credentials](doc:snowflake#use-existing-snowflake-credentials).
 
-<Image align="center" border={true} caption="Database Details" src="https://files.readme.io/c87f29fe4e49eae0b16f46fe7c154934edc8cc4b947601c23f5e6e4174ccddef-snowflake_databse_details.png" />
+<Image align="center" border={true} caption="Database Details" src="https://files.readme.io/0aeeba6d87998bc40e049a6f7fb26b588db7c17043f39310c8d74a62a0a6c413-Add_Database.png" />
 
-| Field                | Description                                                                                                         |
-| -------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| Connection name      | A unique name which you will use further to identify your configuration while setting up imports or exports.        |
-| Account Identifier   | The unique identifier for your Snowflake account. It usually follows the format:`<organization_name>-<account_id>`. |
-| Role                 | The Snowflake role CleverTap uses to connect to the database.                                                       |
-| Warehouse            | The compute warehouse for processing queries.                                                                       |
-| Database             | The name of the Snowflake database being integrated.                                                                |
-| Schema (for exports) | The specific schema within the database that contains the data to be exported into CleverTap.                       |
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Field
+      </th>
+
+      <th>
+        Description
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        Connection name
+      </td>
+
+      <td>
+        A unique name that you will use further to identify your configuration while setting up imports or exports.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Account Identifier
+      </td>
+
+      <td>
+        The unique identifier for your Snowflake account. It usually follows the format:`<organization_name>-<account_id>`.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Role
+      </td>
+
+      <td>
+        The Snowflake role CleverTap uses to connect to the database.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Warehouse
+      </td>
+
+      <td>
+        The compute warehouse for processing queries.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Database
+      </td>
+
+      <td>
+        The name of the Snowflake database being integrated.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Schema 
+      </td>
+
+      <td>
+        * Mandatory for exporting and optional for importing data from CleverTap.
+        * The specific schema within the database that contains the data to be exported into CleverTap.
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 ## User Details
 
-Provide the **Username** and the corresponding credentials (Password or Key) during setup in the CleverTap dashboard. CleverTap supports the following two authentication methods:
+Provide the **Username** and generate the **Key** during setup in the CleverTap dashboard.
 
-* [Key Pair Authentication](doc:snowflake#key-pair-authentication) [Recommended]
-* [Password Authentication](doc:snowflake#password-authentication)
-
-### Key Pair Authentication [Recommended]
+### Key Pair Authentication
 
 To generate a Key for Key Pair Authentication, perform the following steps:
 
 1. Select **Key** as your authentication method.
 2. Click **Generate Key** to display the public key.
-3. Add this public key to your Snowflake database user:
-   1. Log in to Snowflake and go to _Users > Public Keys_.
-   2. Follow [Snowflake’s key pair setup instructions](https://docs.snowflake.com/en/user-guide/key-pair-auth.html) to attach the public key to the database user.
-4. (Optional) Rotate keys using CleverTap's **Regenerate Key** option if your IT policies require periodic key changes. Using the _Edit_ option, go to the same section and click **Regenerate Key** on the CleverTap dashboard. Attach the newly generated public key to your Snowflake database user as an additional RSA key. For more information about this, refer to [Snowflake Key Rotation document](https://docs.snowflake.com/en/user-guide/key-pair-auth.html#rotating-keys).
+3. Add this public key to your Snowflake database user using the following SQL command:  
+   <br />
+   ```sql
+   ALTER USER ClEVERTAP_USER SET RSA_PUBLIC_KEY='MIIBIjANBgkqh...';
+   ```
+   <br />
+4. (Optional) Rotate keys using CleverTap's **Regenerate Key** option if your IT policies require periodic key changes. Using the _Edit_ option, go to the same section and click **Regenerate Key** on the CleverTap dashboard. Attach the newly generated public key to your Snowflake database user as an additional RSA key. For more information about this, refer to [Snowflake Key Rotation document](https://docs.snowflake.com/en/user-guide/key-pair-auth#configuring-key-pair-rotation).
 
 <Callout icon="📘" theme="info">
   #### Saving Regenerated Key
@@ -309,22 +393,11 @@ To generate a Key for Key Pair Authentication, perform the following steps:
   * For detailed guidance on setting up and managing key pair authentication in Snowflake, refer to [Snowflake’s Key Pair Authentication Documentation](https://docs.snowflake.com/en/user-guide/key-pair-auth.html).
 </Callout>
 
-<Image align="center" border={true} caption="User Credentials - Key" src="https://files.readme.io/c8b490bb84fc69169cb1dd26c268ba5288416467daa9b1b6f252cec89b0e32e1-snowflake_user_credentials_key.png" />
+<Image align="center" border={true} caption="Generate Key" src="https://files.readme.io/565fd2e94eeaea795ae6e8252fffe0b4f5bdaebba53ad862ac52ced3f67c0da9-User_Credentials.png" />
 
 5. Click **Test Connection** or **Save** to start the import or export after adding the details:
    * **Test Connection**: Verifies if the database credentials and setup are correct. A successful test confirms the connection, while a failure prompts you to review your settings.
    * **Save**: Saves the connection details, enabling you to proceed with the data import or export process.
-6. After saving the Snowflake Connection, _[create Import](doc:snowflake-import)_ from the _Import Connections_ dashboard or _[Create Export](doc:snowflake-export)_ from the _Export Connections_ .
-
-### Password Authentication
-
-The unique identifier for your Snowflake user account. Find your Snowflake _Username_ and _Password_ in your Snowflake account details.
-
-1. Log in to the **Snowflake** dashboard and go to _Users_ under the _Security_ tab.
-2. Set or reset the user password, ensuring it complies with Snowflake password policies.
-3. Enter the username and password under the _User Credentials_ section on the CleverTap dashboard.
-
-<Image align="center" border={true} caption="User Credentials - Password" src="https://files.readme.io/6bce82ac0999297f38bdb32d599e99de9748da8d01b395290aa1c36fcdf49a62-snowflake_user_credentials_-_password.png" />
 
 # FAQs
 
@@ -342,3 +415,16 @@ Use the **Filter** option on _Import Connections_ to refine displayed databases:
 ### How can I whitelist IPs for CleverTap integration?
 
 To ensure seamless communication between CleverTap and your systems, whitelist the required IP ranges. To access the list of IPs to whitelist for export integrations, refer to [CleverTap IP Ranges](https://developer.clevertap.com/docs/clevertap-ip-ranges#ip-ranges).
+
+# Next Steps
+
+<Cards>
+  <Card title="Import Data to CleverTap" href="#https://docs.clevertap.com/docs/data-warehouse#quick-start-guide-for-imports">
+   
+  </Card>
+
+  <Card title="Export Data to CleverTap" href="#https://docs.clevertap.com/docs/data-warehouse#quick-start-guide-for-imports">
+
+  </Card>
+
+</Cards>
