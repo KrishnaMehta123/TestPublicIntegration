@@ -136,7 +136,7 @@ SHOW WAREHOUSES;
   To avoid extra costs, set `AUTO_SUSPEND` to ~10 minutes on the Snowflake dashboard (or 600 if using SQL) and enable `AUTO_RESUME`.  This ensures efficient usage since Snowflake charges on a [per-second billing model](https://docs.snowflake.com/en/user-guide/warehouses-considerations#automating-warehouse-suspension).
 </Callout>
 
-### Create Schema 
+### Create Schema
 
 After creating the database, you must create a schema to organize CleverTap-related objects. This step is required only to export data from CleverTap to Snowflake. To do so, perform the following steps:
 
@@ -355,7 +355,7 @@ Enter the _Database Details_ in the integration setup form. To create or retriev
 
     <tr>
       <td>
-        Schema 
+        Schema
       </td>
 
       <td>
@@ -376,7 +376,7 @@ To generate a Key for Key Pair Authentication, perform the following steps:
 
 1. Select **Key** as your authentication method.
 2. Click **Generate Key** to display the public key.
-3. Add this public key to your Snowflake database user using the following SQL command:  
+3. Add this public key to your Snowflake database user using the following SQL command:
    <br />
    ```sql
    ALTER USER ClEVERTAP_USER SET RSA_PUBLIC_KEY='MIIBIjANBgkqh...';
@@ -419,12 +419,7 @@ To ensure seamless communication between CleverTap and your systems, whitelist t
 # Next Steps
 
 <Cards>
-  <Card title="Import Data to CleverTap" href="#https://docs.clevertap.com/docs/data-warehouse#quick-start-guide-for-imports">
-   
-  </Card>
+  <Card title="Import Data to CleverTap" href="https://docs.clevertap.com/docs/data-warehouse#quick-start-guide-for-imports" />
 
-  <Card title="Export Data to CleverTap" href="#https://docs.clevertap.com/docs/data-warehouse#quick-start-guide-for-imports">
-
-  </Card>
-
+  <Card title="Export Data to CleverTap" href="https://docs.clevertap.com/docs/data-warehouse#quick-start-guide-for-imports" />
 </Cards>
