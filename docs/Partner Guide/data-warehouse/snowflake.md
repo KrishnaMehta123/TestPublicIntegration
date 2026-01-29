@@ -421,5 +421,5 @@ To ensure seamless communication between CleverTap and your systems, whitelist t
 <Cards>
   <Card title="Import Data to CleverTap" href="https://docs.clevertap.com/docs/data-warehouse#quick-start-guide-for-imports" />
 
-  <Card title="Export Data to CleverTap" href="https://docs.clevertap.com/docs/data-warehouse#quick-start-guide-for-imports" />
+  <Card title="Export Data to CleverTap" href="https://docs.clevertap.com/docs/snowflake-export" />
 </Cards>
