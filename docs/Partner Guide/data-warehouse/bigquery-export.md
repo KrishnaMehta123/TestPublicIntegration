@@ -1,5 +1,5 @@
 ---
-title: BigQuery
+title: BigQuery Export
 excerpt: Data Warehousing and Analytics Platform
 deprecated: false
 hidden: false
