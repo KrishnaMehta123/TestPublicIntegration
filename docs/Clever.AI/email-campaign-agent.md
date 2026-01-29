@@ -86,10 +86,4 @@ From the **All Threads** view, you can:
   For subsequent edits, you need not restart a session. You can type your next instruction directly in the chat. For example: _“Make the background blue and add a 50% OFF badge in the corner.”_ The AI will update the existing template while maintaining your brand styling and earlier visual tone.
 </Callout>
 
-# Additional Resources
-
-(@Shreejith: We will add the following doc links here later
-
-* Brand Kit
-* Designer Agent
-* Clever.AI Terms of Use)
+<br />
