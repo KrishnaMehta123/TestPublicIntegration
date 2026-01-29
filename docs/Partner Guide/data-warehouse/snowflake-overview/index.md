@@ -14,7 +14,7 @@ next:
 ---
 # Overview
 
-[Snowflake](https://docs.snowflake.com/en/user-guide) is a cloud-based data platform designed for storing, processing, and analyzing data. It integrates the functions of a data warehouse, data lake, and data-sharing platform. Snowflake runs on cloud providers such as AWS, Azure, and Google Cloud and enables businesses to consolidate data from multiple sources and perform analytics efficiently.  
+[Snowflake](https://docs.snowflake.com/en/user-guide) is a cloud-based data platform designed for storing, processing, and analyzing data. It integrates the functions of a data warehouse, data lake, and data-sharing platform. Snowflake runs on cloud providers such as AWS, Azure, and Google Cloud and enables businesses to consolidate data from multiple sources and perform analytics efficiently.
 
 > 📘 Private Beta
 >
@@ -26,20 +26,20 @@ next:
 
 # Key Benefits
 
- The following are the key benefits of integrating Snowflake with CleverTap:  
+The following are the key benefits of integrating Snowflake with CleverTap:
 
-* **Unified Data Sync**\
-  Import data from Snowflake into CleverTap to create a complete customer view. Data-sharing ensures you access the most current information without creating duplicates.  
-* **Real-Time Engagement**\
-  Use live data from Snowflake to enable real-time triggers and workflows in CleverTap for timely and relevant campaigns.  
-* **Improved Segmentation**\
-  Use data from Snowflake to create customer segments in CleverTap based on attributes such as demographics, transaction history, or predictive scores.  
-* **Collaboration Across Teams**\
-  Data-sharing allows teams or partners to provide insights directly to CleverTap, ensuring consistent data usage across campaigns.  
-* **No Data Duplication**\
-  You can access shared data in Snowflake without creating separate copies. This ensures consistency, reduces storage needs, and improves performance.  
-* **Scalability**\
-  Snowflake handles large and growing datasets efficiently, allowing the integration to scale as your business grows.  
+* **Unified Data Sync**  
+  Import data from Snowflake into CleverTap to create a complete customer view. Data-sharing ensures you access the most current information without creating duplicates.
+* **Real-Time Engagement**  
+  Use live data from Snowflake to enable real-time triggers and workflows in CleverTap for timely and relevant campaigns.
+* **Improved Segmentation**  
+  Use data from Snowflake to create customer segments in CleverTap based on attributes such as demographics, transaction history, or predictive scores.
+* **Collaboration Across Teams**  
+  Data-sharing allows teams or partners to provide insights directly to CleverTap, ensuring consistent data usage across campaigns.
+* **No Data Duplication**  
+  You can access shared data in Snowflake without creating separate copies. This ensures consistency, reduces storage needs, and improves performance.
+* **Scalability**  
+  Snowflake handles large and growing datasets efficiently, allowing the integration to scale as your business grows.
 
 # Resources
 
