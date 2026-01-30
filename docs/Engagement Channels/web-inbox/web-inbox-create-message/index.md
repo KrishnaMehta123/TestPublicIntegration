@@ -14,44 +14,36 @@ next:
 
 To create a new campaign:
 
-1. From the dashboard, select *Campaigns*.
+1. From the dashboard, select _Campaigns_.
 2. Click **+ Campaign**.
-3. From the *Messaging Channels* list, select **Web Inbox** 
+3. From the _Messaging Channels_ list, select **Web Inbox**
 
-<Image title="Click +Campaign to Create a New Web Inbox Campaign" alt="Create a New Web Inbox Campaign" align="center" width="smart" border={true} src="https://files.readme.io/74fcf43c62cc23757f5aac2b13909710759667fe55d7621e7fdf7adea825a7c2-web_inboc_l.png">
-  Create a New Web Inbox Campaign
-</Image>
+<Image align="center" alt="Create a New Web Inbox Campaign" border={true} caption="Create a New Web Inbox Campaign" title="Click +Campaign to Create a New Web Inbox Campaign" src="https://files.readme.io/74fcf43c62cc23757f5aac2b13909710759667fe55d7621e7fdf7adea825a7c2-web_inboc_l.png" width="smart" />
 
 The Campaign page displays.
 
-<Image title="Expand all sections" alt={2532} align="center" width="80%" border={true} src="https://files.readme.io/5627a89-web_inbox_1.png">
-  Web Inbox Campaign Setup
-</Image>
+<Image align="center" alt={2532} border={true} caption="Web Inbox Campaign Setup" title="Expand all sections" src="https://files.readme.io/5627a89-web_inbox_1.png" width="80%" />
 
-Define all the sections and publish the campaign. 
+Define all the sections and publish the campaign.
 
 ## Start Campaign
 
-The *Start here* section displays the setup information. 
+The _Start here_ section displays the setup information.
 
 This section has the following parts:
 
-* **Set a goal**: Tracks your campaign conversions by setting a goal. This step is optional, but it helps you measure how effectively your campaign meets its goal.\
-  You can define your conversion goal by selecting the *Event* and specifying the *Conversion Time*. The *Conversion Time* field accepts any numeric value along with a time unit such as Minutes, Hours, Days, Weeks, or Months. This allows you to define conversion windows such as 10 days, 72 hours, or 2 months. The value can range from a minimum of 1 minute to a maximum of 5 months.\
-  For example, if you set the conversion time to 5 Minutes, the system counts conversions within 5 minutes of the goal event.\
-  Your campaign goal can be as broad or as specific as you want. For example, you can answer questions such as: *How many users were influenced to purchase an X amount?* or *How many first-time visitors purchased red shoes worth at least X and blue jackets worth at least Y?*
+* **Set a goal**: Tracks your campaign conversions by setting a goal. This step is optional, but it helps you measure how effectively your campaign meets its goal.  
+  You can define your conversion goal by selecting the _Event_ and specifying the _Conversion Time_. The _Conversion Time_ field accepts any numeric value along with a time unit such as Minutes, Hours, Days, Weeks, or Months. This allows you to define conversion windows such as 10 days, 72 hours, or 2 months. The value can range from a minimum of 1 minute to a maximum of 5 months.  
+  For example, if you set the conversion time to 5 Minutes, the system counts conversions within 5 minutes of the goal event.  
+  Your campaign goal can be as broad or as specific as you want. For example, you can answer questions such as: _How many users were influenced to purchase an X amount?_ or _How many first-time visitors purchased red shoes worth at least X and blue jackets worth at least Y?_
 
-<Image alt="Set Conversion Time" align="center" width="75% " border={true} src="https://files.readme.io/d960f90056d978b5c9f8832e66c2b3c15b6e387d3caa38ea6bc0b138c57d6b29-Conversion_Tracking.png">
-  Set Conversion Time
-</Image>
+<Image align="center" alt="Set Conversion Time" border={true} caption="Set Conversion Time" src="https://files.readme.io/d960f90056d978b5c9f8832e66c2b3c15b6e387d3caa38ea6bc0b138c57d6b29-Conversion_Tracking.png" width="75% " />
 
 ## Define the Audience
 
 You must indicate the target audience for your campaign. You can specify your target audience from the Target segment section. Here, you can create a new segment or use a previously saved user segment from the segment list.
 
-<Image title="Define the Target Audience" alt={964} align="center" border={true} src="https://files.readme.io/a92d833-campaign_Who_Live_segment.png">
-  Define the Target Audience
-</Image>
+<Image align="center" alt={964} border={true} caption="Define the Target Audience" title="Define the Target Audience" src="https://files.readme.io/a92d833-campaign_Who_Live_segment.png" />
 
 Campaigns can be configured based on the following types of user interactions:
 
@@ -66,17 +58,15 @@ You can trigger a web inbox message based on an action. For example, a web inbox
 
 ### Filter Users Based on Past Behavior
 
-You can also target users basis their past behavior. For example, you might want to target customers who have purchased a specific product in the past. 
+You can also target users basis their past behavior. For example, you might want to target customers who have purchased a specific product in the past.
 
 ### Filter by User Properties
 
-Using the *With user properties* filter in the *Who* section, you can segment your campaign only to reach users who meet specific criteria. 
+Using the _With user properties_ filter in the _Who_ section, you can segment your campaign only to reach users who meet specific criteria.
 
 For example, you can send unique notifications to your customers based on their type of membership or subscription status.
 
-<Image title="Filter on Past Behaviour and User Properties" alt={2088} align="center" border={true} src="https://files.readme.io/f83ae62-Who_-Web_Inbox.png">
-  Define the Target Audience
-</Image>
+<Image align="center" alt={2088} border={true} caption="Define the Target Audience" title="Filter on Past Behaviour and User Properties" src="https://files.readme.io/f83ae62-Who_-Web_Inbox.png" />
 
 The following table explains the various property types:
 
@@ -118,11 +108,11 @@ The following table explains the various property types:
       </td>
 
       <td>
-        Demographics filters include *Age* and *Gender*.
+        Demographics filters include _Age_ and _Gender_.
       </td>
 
       <td>
-        Age = 25 to 40 years\
+        Age = 25 to 40 years  
         Gender = Female
       </td>
     </tr>
@@ -133,12 +123,12 @@ The following table explains the various property types:
       </td>
 
       <td>
-        User's coarse location. Filters include *Country*, *Region*, and *City*. CleverTap's SDK can automatically detect this from the user's IP address.
+        User's coarse location. Filters include _Country_, _Region_, and _City_. CleverTap's SDK can automatically detect this from the user's IP address.
       </td>
 
       <td>
-        Country = United States\
-        State = California\
+        Country = United States  
+        State = California  
         City = San Francisco
       </td>
     </tr>
@@ -163,7 +153,7 @@ The following table explains the various property types:
       </td>
 
       <td>
-        Reachability filters include *Has email address*, *Has phone number*, *Unsubscribed email*, and *Unsubscribed SMS*.
+        Reachability filters include _Has email address_, _Has phone number_, _Unsubscribed email_, and _Unsubscribed SMS_.
       </td>
 
       <td>
@@ -177,34 +167,30 @@ To know more about what segments can be used, refer to [Segments](doc:segmentati
 
 ### Calculate Estimated Reach
 
-The Estimated Reach option allows you to preview how many users meet your targeting criteria in an online trigger campaign before publishing it. This helps you validate audience size and adjust filters to ensure the campaign reaches the intended users. 
+The Estimated Reach option allows you to preview how many users meet your targeting criteria in an online trigger campaign before publishing it. This helps you validate audience size and adjust filters to ensure the campaign reaches the intended users.
 
-Estimated Reach is particularly useful when you select the *Filter on past behavior and user properties* option. You can view both the estimated user count and device count. 
+Estimated Reach is particularly useful when you select the _Filter on past behavior and user properties_ option. You can view both the estimated user count and device count.
 
-To calculate the estimated reach, perform the steps below: 
+To calculate the estimated reach, perform the steps below:
 
-1. Select **Filter on past behavior and user properties**. 
-2. Click **Calculate** in the right panel. The result shows the estimated number of users or devices for that segment. You can view the following: 
-   * **Total Users**: The number of users that match the filters. 
-   * **Breakdown by Platform and Devices**: The users count on Android, iOS, or both, and on different devices. 
-   * **Visual Indicator**: A chart summarizing the share by operating system.\
-     The estimate, based on the latest available event data, updates each time you apply or modify filters. It reflects stored event data and is not a real-time count. This helps you plan and refine your audience before sending the campaign. 
+1. Select **Filter on past behavior and user properties**.
+2. Click **Calculate** in the right panel. The result shows the estimated number of users or devices for that segment. You can view the following:
+   * **Total Users**: The number of users that match the filters.
+   * **Breakdown by Platform and Devices**: The users count on Android, iOS, or both, and on different devices.
+   * **Visual Indicator**: A chart summarizing the share by operating system.  
+     The estimate, based on the latest available event data, updates each time you apply or modify filters. It reflects stored event data and is not a real-time count. This helps you plan and refine your audience before sending the campaign.
 
-<Image alt="Calculate Estimate Reach" align="center" width="85% " border={true} src="https://files.readme.io/44bb9f5c34466e181b1934a67365951c488221905a4373e546dfa48b7b152db8-2025-09-08_16-57-15_1.gif">
-  Calculate Estimate Reach
-</Image>
+<Image align="center" border={true} caption="Calculate Estimate Reach" src="https://files.readme.io/5534637cde6215f3d14c020094192ee1767abc6249310327207fd1da977afed9-2026-01-30_19-12-06_1.gif" width="85% " />
 
 ### Control Group
 
 You can define the control group to compare and measure your campaign results. For more information, refer to [Control Groups](doc:control-groups).
 
-<Image title="Control Group and Target Cap" alt="Define Control Group" align="center" border={true} src="https://files.readme.io/2feef06-Control_Group_and_Target_Cap.png">
-  Define Control Group
-</Image>
+<Image align="center" alt="Define Control Group" border={true} caption="Define Control Group" title="Control Group and Target Cap" src="https://files.readme.io/2feef06-Control_Group_and_Target_Cap.png" />
 
 ### Targeting Cap
 
-You can limit the number of users receiving the notification. 
+You can limit the number of users receiving the notification.
 
 A relevant use case is a limited offer where you want to distribute a fixed number of coupon codes. If the total reach for your campaign exceeds the number of coupon codes you can distribute, you can limit the number of users who will receive the message. This way, you ensure it aligns precisely with the number of coupons you want to distribute.
 
@@ -217,15 +203,13 @@ A relevant use case is a limited offer where you want to distribute a fixed numb
 You can create the following types of messages for your web inbox campaigns:
 
 * Single Message
-* A/B Test 
+* A/B Test
 * Split Delivery
 * By User Property
 
-Click *Go To Editor* to create your message. 
+Click _Go To Editor_ to create your message.
 
-<Image title="Web Inbox Editor" alt={1986} align="center" border={true} src="https://files.readme.io/7692186-editor_web_inbox.png">
-  Web Inbox Single Message Editor
-</Image>
+<Image align="center" alt={1986} border={true} caption="Web Inbox Single Message Editor" title="Web Inbox Editor" src="https://files.readme.io/7692186-editor_web_inbox.png" />
 
 ### Single Message
 
@@ -241,53 +225,45 @@ With split delivery, you can decide what percentage of your audience receives ea
 
 ### By User Property
 
-If you would like to send different message variants to your target audience based on the user properties they possess, this campaign type is your best bet. You can send up to 50 message variants to different users based on a user property. A good example would be when you want to send a localized update to people based on their preferred language. Similar to creating A/B test variants, click **+ Variant** to add multiple variants based on a user property value. 
+If you would like to send different message variants to your target audience based on the user properties they possess, this campaign type is your best bet. You can send up to 50 message variants to different users based on a user property. A good example would be when you want to send a localized update to people based on their preferred language. Similar to creating A/B test variants, click **+ Variant** to add multiple variants based on a user property value.
 
 ## Web Inbox Templates
 
-<Image title="Select from Web Inbox Templates" alt={1576} align="center" border={true} src="https://files.readme.io/e2f5c41-templates.png">
-  Web Inbox Templates
-</Image>
+<Image align="center" alt={1576} border={true} caption="Web Inbox Templates" title="Select from Web Inbox Templates" src="https://files.readme.io/e2f5c41-templates.png" />
 
 Marketers get instant access to ready-to-use message templates for creating engaging web inbox campaigns. CleverTap supports three types of templates:
 
-* Text Only 
+* Text Only
 * Tex and Icon
-* Text, Icon, and Image 
+* Text, Icon, and Image
 
 ## Text Only
 
-As the name suggests, the Text Only template primarily allows you to create and send text messages to your website users under the website's notification tray. 
+As the name suggests, the Text Only template primarily allows you to create and send text messages to your website users under the website's notification tray.
 
-You can craft the *Title* and *Description* fields as per your creativity to make the messages more engaging and personalized for better conversions. 
+You can craft the _Title_ and _Description_ fields as per your creativity to make the messages more engaging and personalized for better conversions.
 
 You also get the option to add a link and buttons for your web inbox message. You can also define the on-click actions for the buttons in the web inbox message for enhanced engagement.
 
-Additionally, you can also assign a category to your message from all the categories you have defined in *Settings*.  For example, if the message to be sent is promotional, you can assign it to the *Promotions* category. Learn more about assigning the categories in the *[Setup](doc:web-inbox-setup#web-inbox-window-configuration)* section.
+Additionally, you can also assign a category to your message from all the categories you have defined in _Settings_.  For example, if the message to be sent is promotional, you can assign it to the _Promotions_ category. Learn more about assigning the categories in the _[Setup](doc:web-inbox-setup#web-inbox-window-configuration)_ section.
 
-You can configure the number of days (or hours) to keep the web inbox message on the user's device by setting the *time to live*.
+You can configure the number of days (or hours) to keep the web inbox message on the user's device by setting the _time to live_.
 
-<Image title="Web Inbox Text Only Template" alt={2550} align="center" border={true} src="https://files.readme.io/6945bd9-Web_inbox_text_only.png">
-  Create a Web Inbox Message
-</Image>
+<Image align="center" alt={2550} border={true} caption="Create a Web Inbox Message" title="Web Inbox Text Only Template" src="https://files.readme.io/6945bd9-Web_inbox_text_only.png" />
 
 ## Text and Icon
 
-The *Text and Icon* template is similar to the *Text Only* template with an additional option of adding an Icon to the message. Adding an icon helps you make your web notification visually appealing. 
+The _Text and Icon_ template is similar to the _Text Only_ template with an additional option of adding an Icon to the message. Adding an icon helps you make your web notification visually appealing.
 
 You can either upload the icon image directly or enter the URL of a hosted icon image.
 
-<Image title="Web Inbox Text with Image template" alt={2552} align="center" border={true} src="https://files.readme.io/13093fc-web_inbox_text_with_image.png">
-  Text with Icon Template
-</Image>
+<Image align="center" alt={2552} border={true} caption="Text with Icon Template" title="Web Inbox Text with Image template" src="https://files.readme.io/13093fc-web_inbox_text_with_image.png" />
 
 ## Text Icon and Image
 
 This template is similar to the Text and Icon Template. As the name suggests, this template allows you to add an image along with the text and icon in your web inbox message. Adding an image primarily makes your web inbox messages visually appealing and increases the chances of conversions. Overall, it helps you improve engagement rates. The remaining configurations and layout are similar to the other two templates.
 
-<Image title="Text with Icon and Image Template for Web Inbox " alt={2552} align="center" border={true} src="https://files.readme.io/0f13277-web_inbox_icon_and_image_with_text.png">
-  Text with Icon and Image Template
-</Image>
+<Image align="center" alt={2552} border={true} caption="Text with Icon and Image Template" title="Text with Icon and Image Template for Web Inbox " src="https://files.readme.io/0f13277-web_inbox_icon_and_image_with_text.png" />
 
 > 🚧 Choosing the Right TTL
 >
@@ -307,15 +283,13 @@ The supported media types include:
 
 ### Preview
 
-You can click *Preview* to view the overall appearance of your web inbox message in a new tab.
+You can click _Preview_ to view the overall appearance of your web inbox message in a new tab.
 
 ## Define the Campaign Schedule
 
-<Image title="Define the Campaign Schedule" alt={1680} align="center" width="80%" border={true} src="https://files.readme.io/9641c0e-web_inbox_when.png">
-  Define the Campaign Schedule
-</Image>
+<Image align="center" alt={1680} border={true} caption="Define the Campaign Schedule" title="Define the Campaign Schedule" src="https://files.readme.io/9641c0e-web_inbox_when.png" width="80%" />
 
-You can set up the *When* to schedule the campaign start and end using the following options:
+You can set up the _When_ to schedule the campaign start and end using the following options:
 
 Live campaigns can be set up on a specific event:
 
@@ -327,7 +301,7 @@ Live campaigns can be set up on a specific event:
 
 In certain scenarios, you might not want a campaign to run actively on a particular day and time. In such cases, you can set the frequency for that particular campaign.
 
-Finally, you can specify how often users receive the campaign: Bypass global campaign limits by selecting the *Exclude from campaign limits* option from the dropdown or choosing the appropriate cadence on how often to send your campaign.
+Finally, you can specify how often users receive the campaign: Bypass global campaign limits by selecting the _Exclude from campaign limits_ option from the dropdown or choosing the appropriate cadence on how often to send your campaign.
 
 You can choose from any of the following:
 
@@ -336,9 +310,7 @@ You can choose from any of the following:
 * Once per day
 * Once per user for the duration of this campaign
 
-<Image title="Changes Based on Segment Selection" alt={1298} align="center" border={true} src="https://files.readme.io/bf4c04a-DP.png">
-  Delivery Preferences
-</Image>
+<Image align="center" alt={1298} border={true} caption="Delivery Preferences" title="Changes Based on Segment Selection" src="https://files.readme.io/bf4c04a-DP.png" />
 
 ## Publish Campaign
 
@@ -347,4 +319,4 @@ After testing and once you are satisfied with the appearance of your campaign, f
 1. Click **Continue** to view your campaign summary. The overview page displays.
 2. View your campaign summary and click **Publish Campaign**.
 
-<Image title="Publish Campaign" alt={1193} align="center" className="border" border={true} src="https://files.readme.io/b521e92-campaign_Publish.png" />
+<Image align="center" alt={1193} border={true} src="https://files.readme.io/b521e92-campaign_Publish.png" title="Publish Campaign" className="border" />
