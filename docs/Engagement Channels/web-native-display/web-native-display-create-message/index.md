@@ -14,44 +14,36 @@ next:
 
 Create a campaign to deliver your message. To create a new campaign:
 
-1. From the dashboard, select *Campaigns*.
+1. From the dashboard, select _Campaigns_.
 2. Click **+ Campaign**.
-3. From the *Messaging Channels* list, select **Web Native Display**. 
+3. From the _Messaging Channels_ list, select **Web Native Display**.
 
-<Image title="Campaign Button Lists All Channels" alt="Create a New Web Native Display Campaign " align="center" width="100%" border={true} src="https://files.readme.io/ac7b4145ee4a38653f8d6396877635b15938e5196c86e28529838a8466711659-native.png">
-  Create a New Web Native Display Campaign
-</Image>
+<Image align="center" alt="Create a New Web Native Display Campaign " border={true} caption="Create a New Web Native Display Campaign" title="Campaign Button Lists All Channels" src="https://files.readme.io/ac7b4145ee4a38653f8d6396877635b15938e5196c86e28529838a8466711659-native.png" width="100%" />
 
-The *Campaign* page displays.
+The _Campaign_ page displays.
 
-<Image title="Expand Each Section" alt={1472} align="center" width="80%" border={true} src="https://files.readme.io/aecb9e8-Native_display_web.png">
-  Web Native Display Campaign Setup
-</Image>
+<Image align="center" alt={1472} border={true} caption="Web Native Display Campaign Setup" title="Expand Each Section" src="https://files.readme.io/aecb9e8-Native_display_web.png" width="80%" />
 
-Define all the sections and publish the campaign. 
+Define all the sections and publish the campaign.
 
 # Start Campaign
 
-The *Start here* section displays the setup information. 
+The _Start here_ section displays the setup information.
 
 This section has the following parts:
 
-* **Set a goal**: Tracks your campaign conversions by setting a goal. This step is optional, but it helps you measure how effectively your campaign meets its goal.\
-  You can define your conversion goal by selecting the *Event* and specifying the *Conversion Time*. The *Conversion Time* field accepts any numeric value along with a time unit such as Minutes, Hours, Days, Weeks, or Months. This allows you to define conversion windows such as 10 days, 72 hours, or 2 months. The value can range from a minimum of 1 minute to a maximum of 5 months.\
-  For example, if you set the conversion time to 5 Minutes, the system counts conversions within 5 minutes of the goal event.\
-  Your campaign goal can be as broad or as specific as you want. For example, you can answer questions such as: *How many users were influenced to purchase an X amount?* or *How many first-time visitors purchased red shoes worth at least X and blue jackets worth at least Y?*
+* **Set a goal**: Tracks your campaign conversions by setting a goal. This step is optional, but it helps you measure how effectively your campaign meets its goal.  
+  You can define your conversion goal by selecting the _Event_ and specifying the _Conversion Time_. The _Conversion Time_ field accepts any numeric value along with a time unit such as Minutes, Hours, Days, Weeks, or Months. This allows you to define conversion windows such as 10 days, 72 hours, or 2 months. The value can range from a minimum of 1 minute to a maximum of 5 months.  
+  For example, if you set the conversion time to 5 Minutes, the system counts conversions within 5 minutes of the goal event.  
+  Your campaign goal can be as broad or as specific as you want. For example, you can answer questions such as: _How many users were influenced to purchase an X amount?_ or _How many first-time visitors purchased red shoes worth at least X and blue jackets worth at least Y?_
 
-<Image alt="Set Conversion Time" align="center" width="75% " border={true} src="https://files.readme.io/d960f90056d978b5c9f8832e66c2b3c15b6e387d3caa38ea6bc0b138c57d6b29-Conversion_Tracking.png">
-  Set Conversion Time
-</Image>
+<Image align="center" alt="Set Conversion Time" border={true} caption="Set Conversion Time" src="https://files.readme.io/d960f90056d978b5c9f8832e66c2b3c15b6e387d3caa38ea6bc0b138c57d6b29-Conversion_Tracking.png" width="75% " />
 
 # Define the Audience
 
-You must indicate the target audience for your campaign. You can specify your target audience from the *Target segment* section. Here, you can create a new segment or use a previously saved user segment from the *segment* list. 
+You must indicate the target audience for your campaign. You can specify your target audience from the _Target segment_ section. Here, you can create a new segment or use a previously saved user segment from the _segment_ list.
 
-<Image title="Define the Target Segment" alt={964} align="center" border={true} src="https://files.readme.io/f1fee47-campaign_Who_Live_segment.png">
-  Define the Target Audience
-</Image>
+<Image align="center" alt={964} border={true} caption="Define the Target Audience" title="Define the Target Segment" src="https://files.readme.io/f1fee47-campaign_Who_Live_segment.png" />
 
 ## Segment
 
@@ -59,22 +51,20 @@ If you want to create an ad-hoc segment, you can select a type of segment on whi
 
 ## Deliver Action-Based Web Native Display Campaign
 
-You can trigger a web native display campaign based on an action. Users receive this campaign when they perform an action on the website. For example, creating a campaign that displays a personalized contextual banner with images of fitness equipment for users who have shown interest in the fitness category.\
-It makes the web experience more contextual and increases conversion. 
+You can trigger a web native display campaign based on an action. Users receive this campaign when they perform an action on the website. For example, creating a campaign that displays a personalized contextual banner with images of fitness equipment for users who have shown interest in the fitness category.  
+It makes the web experience more contextual and increases conversion.
 
 ## Filter Users Based on Past Behavior
 
-You can also target users basis their past behavior. For example, you might want to create a personalized campaign for a set of customers who have purchased a specific product in the past. 
+You can also target users basis their past behavior. For example, you might want to create a personalized campaign for a set of customers who have purchased a specific product in the past.
 
 ## Filter by User Properties
 
-Using the *With user properties* filter in the *Who* section, you can segment your campaign to only reach users who meet specific criteria. 
+Using the _With user properties_ filter in the _Who_ section, you can segment your campaign to only reach users who meet specific criteria.
 
 For example, you can create a web native display campaign specifically for female users who live in the United States. The image below represents a sample target segment that is filtered using specific user properties to target the required audience.
 
-<Image title="Filter by User Properties" alt={2202} align="center" border={true} src="https://files.readme.io/d3dca2d-user_prop.png">
-  Filter by User Properties
-</Image>
+<Image align="center" alt={2202} border={true} caption="Filter by User Properties" title="Filter by User Properties" src="https://files.readme.io/d3dca2d-user_prop.png" />
 
 The following table explains the various property types:
 
@@ -116,11 +106,11 @@ The following table explains the various property types:
       </td>
 
       <td>
-        Demographics filters include *Age* and *Gender*.
+        Demographics filters include _Age_ and _Gender_.
       </td>
 
       <td>
-        Age = 25 to 40 years\
+        Age = 25 to 40 years  
         Gender = Female
       </td>
     </tr>
@@ -131,12 +121,12 @@ The following table explains the various property types:
       </td>
 
       <td>
-        User's coarse location. Filters include *Country*, *Region*, and *City*. CleverTap's SDK can automatically detect this from the user's IP address.
+        User's coarse location. Filters include _Country_, _Region_, and _City_. CleverTap's SDK can automatically detect this from the user's IP address.
       </td>
 
       <td>
-        Country = United States\
-        State = California\
+        Country = United States  
+        State = California  
         City = San Francisco
       </td>
     </tr>
@@ -147,7 +137,7 @@ The following table explains the various property types:
       </td>
 
       <td>
-        Reachability filters include *Has email address*, *Has phone number*, *Unsubscribed email*, and *Unsubscribed SMS*.
+        Reachability filters include _Has email address_, _Has phone number_, _Unsubscribed email_, and _Unsubscribed SMS_.
       </td>
 
       <td>
@@ -161,7 +151,7 @@ The following table explains the various property types:
       </td>
 
       <td>
-        App fields filters include *App Version*, *Device Make*, *Device Model*, *OS Version*, and CleverTap *SDK Version*. This information is sent by CleverTap's SDK for each device that has your app which means a single user can have multiple devices associated with their user profile.
+        App fields filters include _App Version_, _Device Make_, _Device Model_, _OS Version_, and CleverTap _SDK Version_. This information is sent by CleverTap's SDK for each device that has your app which means a single user can have multiple devices associated with their user profile.
       </td>
 
       <td>
@@ -175,30 +165,27 @@ To know more about what segments can be used, see [Segments](doc:segmentation).
 
 ### Calculate Estimated Reach
 
-The Estimated Reach option allows you to preview how many users meet your targeting criteria in an online trigger campaign before publishing it. This helps you validate audience size and adjust filters to ensure the campaign reaches the intended users. 
+The Estimated Reach option allows you to preview how many users meet your targeting criteria in an online trigger campaign before publishing it. This helps you validate audience size and adjust filters to ensure the campaign reaches the intended users.
 
-Estimated Reach is particularly useful when you select the *Filter on past behavior and user properties* option. You can view both the estimated user count and device count. 
+Estimated Reach is particularly useful when you select the _Filter on past behavior and user properties_ option. You can view both the estimated user count and device count.
 
-To calculate the estimated reach, perform the steps below: 
+To calculate the estimated reach, perform the steps below:
 
-1. Select **Filter on past behavior and user properties**. 
-2. Click **Calculate** in the right panel. The result shows the estimated number of users or devices for that segment. You can view the following: 
-   * **Total Users**: The number of users that match the filters. 
-   * **Breakdown by Platform and Devices**: The users count on Android, iOS, or both, and on different devices. 
-   * **Visual Indicator**: A chart summarizing the share by operating system.\
-     The estimate, based on the latest available event data, updates each time you apply or modify filters. It reflects stored event data and is not a real-time count. This helps you plan and refine your audience before sending the campaign. 
+1. Select **Filter on past behavior and user properties**.
+2. Click **Calculate** in the right panel. The result shows the estimated number of users or devices for that segment. You can view the following:
 
-<Image alt="Calculate Estimate Reach" align="center" width="85% " border={true} src="https://files.readme.io/44bb9f5c34466e181b1934a67365951c488221905a4373e546dfa48b7b152db8-2025-09-08_16-57-15_1.gif">
-  Calculate Estimate Reach
-</Image>
+   * **Total Users**: The number of users that match the filters.
+   * **Breakdown by Platform and Devices**: The users count on Android, iOS, or both, and on different devices.
+   * **Visual Indicator**: A chart summarizing the share by operating system.  
+     The estimate, based on the latest available event data, updates each time you apply or modify filters. It reflects stored event data and is not a real-time count. This helps you plan and refine your audience before sending the campaign.
+
+   <Image align="center" border={true} caption="Calculate Estimate Reach" src="https://files.readme.io/a34b885db0925d4500afc66d9bf16625538ae763e0b4cf5fc2922b8ec8c5d680-2026-01-30_19-12-06_1.gif" width="85% " />
 
 ## Control Group
 
 You can define the control group to compare and measure the results of your campaign. For more information, refer to [Control Groups](doc:control-groups).
 
-<Image title="Define Control Group" alt={825} align="center" border={true} src="https://files.readme.io/99861e7-control_group.png">
-  Set Control Group
-</Image>
+<Image align="center" alt={825} border={true} caption="Set Control Group" title="Define Control Group" src="https://files.readme.io/99861e7-control_group.png" />
 
 # Message Types
 
@@ -225,9 +212,7 @@ When you create multiple variants for a campaign, you can also auto-copy what is
 
 With split delivery, you can decide what percentage of your audience receives each message variant for the duration of the campaign. You can test up to three message variants.
 
-<Image title="Split Delivery for Web Native Display Campaigns" alt={577} align="center" border={true} src="https://files.readme.io/73d579a-campaign_split_delivery.png">
-  Split Delivery for Web Native Display Campaigns
-</Image>
+<Image align="center" alt={577} border={true} caption="Split Delivery for Web Native Display Campaigns" title="Split Delivery for Web Native Display Campaigns" src="https://files.readme.io/73d579a-campaign_split_delivery.png" />
 
 ### Split Delivery to Live User Segments
 
@@ -255,9 +240,7 @@ The delivery preferences for Live campaigns can be set as follows:
 * End Date and Time
 * Set Delay
 
-<Image title="Define the Campaign Schedule" alt={974} align="center" border={true} src="https://files.readme.io/0637733-Campaign_When_Live_segment.png">
-  Define Campaign Schedule
-</Image>
+<Image align="center" alt={974} border={true} caption="Define Campaign Schedule" title="Define the Campaign Schedule" src="https://files.readme.io/0637733-Campaign_When_Live_segment.png" />
 
 # Delivery preferences
 
@@ -265,18 +248,16 @@ The delivery preferences for Live campaigns can be set as follows:
 
 The Web Native Display Priority dropdown allows you to set priority levels from 1 (lowest) to 100 (highest), with 1 being the default priority. Configuring campaign priority helps prevent conflicts, especially when multiple campaigns are configured with the same triggers
 
-<Image alt="Web Campaign Priority" align="center" border={true} src="https://files.readme.io/8ddc4d3b4bb6ff04292959addb68b176d1c9ac5df14120317518c2f8c6dcf711-image.png">
-  Web Campaign Priority
-</Image>
+<Image align="center" alt="Web Campaign Priority" border={true} caption="Web Campaign Priority" src="https://files.readme.io/8ddc4d3b4bb6ff04292959addb68b176d1c9ac5df14120317518c2f8c6dcf711-image.png" />
 
 #### Campaign Priority Handling
 
-Web Native Display campaigns allow users to create multiple campaigns targeting the same webpage elements or events. When multiple campaigns target the same elements, conflicts may arise. To resolve these conflicts, CleverTap uses **Priority** to determine how different campaigns are rendered. 
+Web Native Display campaigns allow users to create multiple campaigns targeting the same webpage elements or events. When multiple campaigns target the same elements, conflicts may arise. To resolve these conflicts, CleverTap uses **Priority** to determine how different campaigns are rendered.
 
 Web Native Display campaigns are classified based on how rendering is handled:
 
 * Rendering Handled by CleverTap
-* Rendering Handled by Customer 
+* Rendering Handled by Customer
 
 #### Rendering handled by CleverTap
 
@@ -287,7 +268,7 @@ The following templates fall under this category:
 * Carousels
 * Banners
 * Custom HTML
-* Visual Editor 
+* Visual Editor
   * Element Based Changes
 
 > 📘 Visual Editor Campaign Behavior
@@ -304,43 +285,39 @@ Priority kicks in when an element selector (a CSS-based identifier such as a div
 Visual Editor campaigns introduce complexity as they can affect multiple selectors at once. Refer to the below examples of how priorities are resolved:
 
 <details>
+  <summary>Example 1: Overlapping Visual Editor Campaigns</summary>
 
-<summary>Example 1: Overlapping Visual Editor Campaigns</summary>
-
-* **Setup:**
-  * **VE Campaign 1 (Priority: 1):** Updates the homepage headline text “Welcome to Our Store".
-  * **VE Campaign 2 (Priority: 2):** Updates both the headline text and the description.
-* **Outcome:**
-  * VE Campaign 2 executes entirely due to its higher priority. The headline text "Welcome to Our Store" and description are updated.
-* **Conclusion:**
-  * A campaign is executed entirely or not at all.
-
+  * **Setup:**
+    * **VE Campaign 1 (Priority: 1):** Updates the homepage headline text “Welcome to Our Store".
+    * **VE Campaign 2 (Priority: 2):** Updates both the headline text and the description.
+  * **Outcome:**
+    * VE Campaign 2 executes entirely due to its higher priority. The headline text "Welcome to Our Store" and description are updated.
+  * **Conclusion:**
+    * A campaign is executed entirely or not at all.
 </details>
 
 <details>
+  <summary>Example 2: Mixed Campaign Priorities</summary>
 
-<summary>Example 2: Mixed Campaign Priorities</summary>
-
-* **Setup:**
-  * **VE Campaign 1 (Priority: 1):** Updates the headline text "Welcome to Our Store".
-  * **VE Campaign 2 (Priority: 3):** Updates both the headline text and the description.
-  * **Banner Campaign 3 (Priority: 2):** Replaces the headline text with a promotional banner.
-* **Outcome:**
-  * VE Campaign 2, having the highest priority, is executed entirely. The headline text "Welcome to Our Store" and description are updated.
-* **Conclusion:**
-  * If campaigns target common nodes, they are grouped and selected based on priority.
-
+  * **Setup:**
+    * **VE Campaign 1 (Priority: 1):** Updates the headline text "Welcome to Our Store".
+    * **VE Campaign 2 (Priority: 3):** Updates both the headline text and the description.
+    * **Banner Campaign 3 (Priority: 2):** Replaces the headline text with a promotional banner.
+  * **Outcome:**
+    * VE Campaign 2, having the highest priority, is executed entirely. The headline text "Welcome to Our Store" and description are updated.
+  * **Conclusion:**
+    * If campaigns target common nodes, they are grouped and selected based on priority.
 </details>
 
 ### Rendering Handled by Customer
 
-These campaigns do not perform DOM updates directly. Instead, CleverTap pushes `CustomEvents` to the webpage, which customers can listen for and act upon as needed. Thus, CleverTap only provides data for rendering. 
+These campaigns do not perform DOM updates directly. Instead, CleverTap pushes `CustomEvents` to the webpage, which customers can listen for and act upon as needed. Thus, CleverTap only provides data for rendering.
 
 The following campaign types use   `customEvent` to trigger client-side actions:
 
 * Key-Value Pair (KV Pair)
 * Visual Editor
-  * JSON-Based Campaigns 
+  * JSON-Based Campaigns
 * JSON
 
 Campaign execution is determined based on the event name associated with each campaign.
@@ -359,43 +336,37 @@ When multiple campaigns trigger events with the same name, only the event from t
 Refer to the below examples of how priorities are resolved for such campaigns:
 
 <details>
+  <summary>Example 1: Conflicting KV Pair Topics</summary>
 
-<summary>Example 1: Conflicting KV Pair Topics</summary>
-
-* **Setup:** 
-  * Two KV Pair campaigns share the same topic.
-* **Outcome:**
-  * Only the campaign with the highest priority is executed. The other campaign is ignored.
-* **Conclusion**
-  * Only one campaign can propagate an event per topic.
-
+  * **Setup:**
+    * Two KV Pair campaigns share the same topic.
+  * **Outcome:**
+    * Only the campaign with the highest priority is executed. The other campaign is ignored.
+  * **Conclusion**
+    * Only one campaign can propagate an event per topic.
 </details>
 
 <details>
+  <summary>Example 2: Unique KV Pair Topics</summary>
 
-<summary>Example 2: Unique KV Pair Topics</summary>
-
-* **Setup:** 
-  * Multiple KV Pair campaigns use different topics.
-* **Outcome:** 
-  * All campaigns are executed simultaneously without conflict.
-* **Conclusion**
-  * Topics act as unique identifiers and each topic is treated independently. 
-
+  * **Setup:**
+    * Multiple KV Pair campaigns use different topics.
+  * **Outcome:**
+    * All campaigns are executed simultaneously without conflict.
+  * **Conclusion**
+    * Topics act as unique identifiers and each topic is treated independently.
 </details>
 
 <details>
+  <summary>Example 3: Conflicting Visual Editor and JSON-Based Campaigns</summary>
 
-<summary>Example 3: Conflicting Visual Editor and JSON-Based Campaigns</summary>
-
-* **Setup:** 
-  * One Visual Editor campaign and one JSON-based campaign trigger similar `CustomEvents`.
-* **Outcome:** 
-  * Both campaigns are executed, as they are under different events (`CT_web_native_display` and `CT_web_native_display_json`).
-* **Conclusion:**
-  * JSON and Visual Editor campaigns do not compete with each other.
-  * If a JSON and Visual Editor campaign run simultaneously, both will be executed since they are under different events. Only when multiple JSON-based or Visual Editor-based campaigns run does priority determine which one is executed.
-
+  * **Setup:**
+    * One Visual Editor campaign and one JSON-based campaign trigger similar `CustomEvents`.
+  * **Outcome:**
+    * Both campaigns are executed, as they are under different events (`CT_web_native_display` and `CT_web_native_display_json`).
+  * **Conclusion:**
+    * JSON and Visual Editor campaigns do not compete with each other.
+    * If a JSON and Visual Editor campaign run simultaneously, both will be executed since they are under different events. Only when multiple JSON-based or Visual Editor-based campaigns run does priority determine which one is executed.
 </details>
 
 ### Campaign Frequency Limits and Display Rules
@@ -406,38 +377,34 @@ This feature provides additional flexibility by allowing you to control how ofte
 >
 > The Campaign Frequency Limits and Display Rules for Web Native Display is supported on CleverTap Web SDK version **1.13.3** and newer.
 
-Example:\
+Example:  
 Consider a scenario where you want to configure a Web Native Display campaign to:
 
 * Display once per session
 * Display thrice per week
 * Show a maximum of five times throughout its duration
-* Trigger when a user performs a specific action multiple times (such as *adding to cart* three times in a session)
+* Trigger when a user performs a specific action multiple times (such as _adding to cart_ three times in a session)
 
 In this case, the message will be delivered once per session and thrice per week but will stop showing once the user has received it five times. Additionally, for event-based triggers, the message can be configured to appear exactly when the user performs the action a specified number of times. In this case, the message will be delivered exactly when the user completes adding to cart thrice in one session. Alternatively, you can select **every** or **exactly** display conditions based on your business requirements.
 
-<Image alt="Campaign frequency limits and display rules" align="center" border={true} src="https://files.readme.io/743efab0ed196318073f00fb21490968b53bffc1d2e3b187e1ade40546b5ef2f-web_pop-up.png">
-  Campaign frequency limits and display rules
-</Image>
+<Image align="center" alt="Campaign frequency limits and display rules" border={true} caption="Campaign frequency limits and display rules" src="https://files.readme.io/743efab0ed196318073f00fb21490968b53bffc1d2e3b187e1ade40546b5ef2f-web_pop-up.png" />
 
 > 📘 Display Rules for Time-Based Frequency
 >
-> * If the Times in Frequency is set in days or weeks, the message is displayed according to the calendar day or week. 
+> * If the Times in Frequency is set in days or weeks, the message is displayed according to the calendar day or week.
 > * However, if the frequency is set in days or weeks, the message delivery is not considered as per the calendar week. For example, if a campaign is set to display 5 times in a week, it will be shown up to 5 times over the last 7 days.
 > * For this functionality to work, SDK version on your website must be `2.0.0` or above.
 > * If SDK version on your website is lower than `2.0.0`, then:
 >   * For display when trigger occurs, users will not qualify if value entered is above 1.
->   * *exactly* operator will work the same as *every* operator.
->   * The *Deliver up to* setting will not be enforced and the campaign will be delivered every time the user qualifies.
+>   * _exactly_ operator will work the same as _every_ operator.
+>   * The _Deliver up to_ setting will not be enforced and the campaign will be delivered every time the user qualifies.
 
 ### Set frequency
 
-From the *Delivery preferences* section, select the days and the time frame to deliver the message.\
-Click *Apply to all* to copy the choices from the selected day to all other days. 
+From the _Delivery preferences_ section, select the days and the time frame to deliver the message.  
+Click _Apply to all_ to copy the choices from the selected day to all other days.
 
-<Image title="Set up Delivery Preferences" alt={1085} align="center" border={true} src="https://files.readme.io/f4ad363-delivery_preferences.png">
-  Set Campaign Delivery Preferences
-</Image>
+<Image align="center" alt={1085} border={true} caption="Set Campaign Delivery Preferences" title="Set up Delivery Preferences" src="https://files.readme.io/f4ad363-delivery_preferences.png" />
 
 # Publish Campaign
 
@@ -446,6 +413,4 @@ After testing and once you are satisfied with the appearance of your campaign, f
 1. Click **Continue** to view your campaign summary. The overview page displays.
 2. View your campaign summary, then click **Publish Campaign**.
 
-<Image title="Publish Campaign" alt={1193} align="center" border={true} src="https://files.readme.io/b521e92-campaign_Publish.png">
-  Publish Campaign
-</Image>
+<Image align="center" alt={1193} border={true} caption="Publish Campaign" title="Publish Campaign" src="https://files.readme.io/b521e92-campaign_Publish.png" />
