@@ -5,7 +5,7 @@ excerpt: >-
   reward them at each level, and regularly re-evaluate eligibility using
   configurable expiry and downgrade rules.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
