@@ -78,12 +78,13 @@ To calculate the estimated reach, perform the steps below:
 
 1. Select **Filter on past behavior and user properties**.
 2. Click **Calculate** in the right panel. The result shows the estimated number of users or devices for that segment. You can view the following:
+
    * **Total Users**: The number of users that match the filters.
    * **Breakdown by Platform and Devices**: The users count on Android, iOS, or both, and on different devices.
    * **Visual Indicator**: A chart summarizing the share by operating system.  
      The estimate, based on the latest available event data, updates each time you apply or modify filters. It reflects stored event data and is not a real-time count. This helps you plan and refine your audience before sending the campaign.
 
-<Image align="center" alt="Calculate Estimate Reach" border={true} caption="Calculate Estimate Reach" src="https://files.readme.io/44bb9f5c34466e181b1934a67365951c488221905a4373e546dfa48b7b152db8-2025-09-08_16-57-15_1.gif" width="85% " />
+   <Image align="center" border={true} caption="Calculate Estimate Reach" src="https://files.readme.io/c7fb19b46f0830539259a17c8953d052983a56d887de3f953b0d01bc88d92eaf-2026-01-30_19-12-06_1.gif" width="85% " />
 
 ### Control Group
 
