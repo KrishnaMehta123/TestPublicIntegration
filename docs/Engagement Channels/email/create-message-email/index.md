@@ -12,51 +12,43 @@ next:
 ---
 ## Create a New Campaign
 
-Create a campaign to deliver your message.\
+Create a campaign to deliver your message.  
 To create a new campaign:
 
-1. From the dashboard, select *Campaigns*.
+1. From the dashboard, select _Campaigns_.
 2. Click **+ Campaign**.
-3. From the *Messaging Channels* list, select the messaging channel.
+3. From the _Messaging Channels_ list, select the messaging channel.
 
-<Image title="Select Messaging Channel" alt="Select Messaging Channel" align="center" width="smart" border={true} src="https://files.readme.io/ed10fa95546bc3dda0943fad7f9f0f2dd1ae39190c4b0cdfc02db1d617c13403-3.png">
-  Select Messaging Channel
-</Image>
+<Image align="center" alt="Select Messaging Channel" border={true} caption="Select Messaging Channel" title="Select Messaging Channel" src="https://files.readme.io/ed10fa95546bc3dda0943fad7f9f0f2dd1ae39190c4b0cdfc02db1d617c13403-3.png" width="smart" />
 
-The *Campaign* page displays.
+The _Campaign_ page displays.
 
-<Image title="Campaign Creation Page" alt={1404} align="center" width="80%" border={true} src="https://files.readme.io/a805f56-Campaign_Creation_Page.jpg">
-  Create Campaign
-</Image>
+<Image align="center" alt={1404} border={true} caption="Create Campaign" title="Campaign Creation Page" src="https://files.readme.io/a805f56-Campaign_Creation_Page.jpg" width="80%" />
 
-Define all the sections and publish the campaign. 
+Define all the sections and publish the campaign.
 
 ## Start Campaign Setup
 
-The *Start here* section displays the setup information. 
+The _Start here_ section displays the setup information.
 
 This section has the following parts:
 
-* Qualification criteria: Deliver the notification by Past behavior/Custom list, Live behavior, or  [External trigger](doc:external-trigger-1). For more information about segmenting users, refer to [Segments](doc:segmentation). 
+* Qualification criteria: Deliver the notification by Past behavior/Custom list, Live behavior, or  [External trigger](doc:external-trigger-1). For more information about segmenting users, refer to [Segments](doc:segmentation).
 * Email Service Provider: Select a provider.
-* **Set a goal**: Tracks your campaign conversions by setting a goal. This step is optional, but it helps you measure how effectively your campaign meets its goal.\
-  You can define your conversion goal by selecting the *Event* and specifying the *Conversion Time*. The *Conversion Time* field accepts any numeric value along with a time unit such as Minutes, Hours, Days, Weeks, or Months. This allows you to define conversion windows such as 10 days, 72 hours, or 2 months. The value can range from a minimum of 1 minute to a maximum of 5 months.\
-  For example, if you set the conversion time to 5 Minutes, the system counts conversions within 5 minutes of the goal event.\
-  Your campaign goal can be as broad or as specific as you want. For example, you can answer questions such as: *How many users were influenced to purchase an X amount?* or *How many first-time visitors purchased red shoes worth at least X and blue jackets worth at least Y?*
+* **Set a goal**: Tracks your campaign conversions by setting a goal. This step is optional, but it helps you measure how effectively your campaign meets its goal.  
+  You can define your conversion goal by selecting the _Event_ and specifying the _Conversion Time_. The _Conversion Time_ field accepts any numeric value along with a time unit such as Minutes, Hours, Days, Weeks, or Months. This allows you to define conversion windows such as 10 days, 72 hours, or 2 months. The value can range from a minimum of 1 minute to a maximum of 5 months.  
+  For example, if you set the conversion time to 5 Minutes, the system counts conversions within 5 minutes of the goal event.  
+  Your campaign goal can be as broad or as specific as you want. For example, you can answer questions such as: _How many users were influenced to purchase an X amount?_ or _How many first-time visitors purchased red shoes worth at least X and blue jackets worth at least Y?_
 
-<Image alt="Set Conversion Time" align="center" width="75% " border={true} src="https://files.readme.io/d960f90056d978b5c9f8832e66c2b3c15b6e387d3caa38ea6bc0b138c57d6b29-Conversion_Tracking.png">
-  Set Conversion Time
-</Image>
+<Image align="center" alt="Set Conversion Time" border={true} caption="Set Conversion Time" src="https://files.readme.io/d960f90056d978b5c9f8832e66c2b3c15b6e387d3caa38ea6bc0b138c57d6b29-Conversion_Tracking.png" width="75% " />
 
 ## Define the Audience
 
-You must indicate the target audience for your campaign. You can specify your target audience from the  *Target segment* section. Here, you can create a new segment or use a previously saved user segment from the *segment* list. 
+You must indicate the target audience for your campaign. You can specify your target audience from the  _Target segment_ section. Here, you can create a new segment or use a previously saved user segment from the _segment_ list.
 
-For Past Behavior segments, you also calculate the estimated reach. 
+For Past Behavior segments, you also calculate the estimated reach.
 
-<Image title="Define the Audience of your Campaign" alt={1168} align="center" width="80%" border={true} src="https://files.readme.io/030202d-Push_notification_editor_Who.png">
-  Define - Who
-</Image>
+<Image align="center" alt={1168} border={true} caption="Define - Who" title="Define the Audience of your Campaign" src="https://files.readme.io/030202d-Push_notification_editor_Who.png" width="80%" />
 
 ### Segment
 
@@ -66,9 +58,9 @@ If you want to create an ad-hoc segment, you can select a type of segment on whi
 >
 > We recommend creating a Past Behavior campaign for all campaigns where the delay is greater than 24 hours for a live inaction campaign.
 
-For instance, you can create a live *Inaction within time* campaign that targets users as soon as they add a product to their cart but do not finish transacting within 10 minutes; that is the golden window within which most users transact on iOS and Android app platforms.
+For instance, you can create a live _Inaction within time_ campaign that targets users as soon as they add a product to their cart but do not finish transacting within 10 minutes; that is the golden window within which most users transact on iOS and Android app platforms.
 
-On this basis, you would then set up the *Who* by sending this campaign to all users who qualify or limit the users who qualify under *Estimated reach*. 
+On this basis, you would then set up the _Who_ by sending this campaign to all users who qualify or limit the users who qualify under _Estimated reach_.
 
 ### Deliver Action Based Messages
 
@@ -80,13 +72,11 @@ You can also target users based on their past user behavior. For past behavior c
 
 ### Filter by User Properties
 
-Using the *With user properties* filter in the *Who* section, you can segment your campaign to only reach users who meet specific criteria. 
+Using the _With user properties_ filter in the _Who_ section, you can segment your campaign to only reach users who meet specific criteria.
 
-For example, you can send a push notification to English-speaking female users who live in the United States. 
+For example, you can send a push notification to English-speaking female users who live in the United States.
 
-<Image title="Filter with User Properties" alt={486} align="center" border={true} src="https://files.readme.io/3d4faa2-Filter_By_User_Properties.png">
-  Filter by User Properties
-</Image>
+<Image align="center" alt={486} border={true} caption="Filter by User Properties" title="Filter with User Properties" src="https://files.readme.io/3d4faa2-Filter_By_User_Properties.png" />
 
 To know more about what segments can be used, see [Segments](doc:segmentation).
 
@@ -96,34 +86,31 @@ You can also hold a property constant across the selected events.  For more info
 
 ### Calculate Estimated Reach
 
-The Estimated Reach option allows you to preview how many users meet your targeting criteria in an online trigger campaign before publishing it. This helps you validate audience size and adjust filters to ensure the campaign reaches the intended users. 
+The Estimated Reach option allows you to preview how many users meet your targeting criteria in an online trigger campaign before publishing it. This helps you validate audience size and adjust filters to ensure the campaign reaches the intended users.
 
-Estimated Reach is particularly useful when you select the *Filter on past behavior and user properties* option. You can view both the estimated user count and device count. 
+Estimated Reach is particularly useful when you select the _Filter on past behavior and user properties_ option. You can view both the estimated user count and device count.
 
-To calculate the estimated reach, perform the steps below: 
+To calculate the estimated reach, perform the steps below:
 
-1. Select **Filter on past behavior and user properties**. 
-2. Click **Calculate** in the right panel. The result shows the estimated number of users or devices for that segment. You can view the following: 
-   * **Total Users**: The number of users that match the filters. 
-   * **Breakdown by Platform and Devices**: The users count on Android, iOS, or both, and on different devices. 
-   * **Visual Indicator**: A chart summarizing the share by operating system.\
-     The estimate, based on the latest available event data, updates each time you apply or modify filters. It reflects stored event data and is not a real-time count. This helps you plan and refine your audience before sending the campaign. 
+1. Select **Filter on past behavior and user properties**.
+2. Click **Calculate** in the right panel. The result shows the estimated number of users or devices for that segment. You can view the following:
 
-<Image alt="Calculate Estimate Reach" align="center" width="85% " border={true} src="https://files.readme.io/44bb9f5c34466e181b1934a67365951c488221905a4373e546dfa48b7b152db8-2025-09-08_16-57-15_1.gif">
-  Calculate Estimate Reach
-</Image>
+   * **Total Users**: The number of users that match the filters.
+   * **Breakdown by Platform and Devices**: The users count on Android, iOS, or both, and on different devices.
+   * **Visual Indicator**: A chart summarizing the share by operating system.  
+     The estimate, based on the latest available event data, updates each time you apply or modify filters. It reflects stored event data and is not a real-time count. This helps you plan and refine your audience before sending the campaign.
+
+   <Image align="center" border={true} caption="Calculate Estimate Reach" src="https://files.readme.io/d1b6fd3f6f84cfe6c16f30989a460c16f81bb12f3172da4a2ffa26ec1b513aef-2026-01-30_19-12-06_1.gif" width="85% " />
 
 ### Control Group
 
-You can define a control group to compare and measure the results of your campaign. For more information on control groups, see [Control Groups](doc:control-groups). 
+You can define a control group to compare and measure the results of your campaign. For more information on control groups, see [Control Groups](doc:control-groups).
 
-<Image alt="Control Group" align="center" width="75% " border={true} src="https://files.readme.io/c1847be-Email_Control_Group.png">
-  Control Group
-</Image>
+<Image align="center" alt="Control Group" border={true} caption="Control Group" src="https://files.readme.io/c1847be-Email_Control_Group.png" width="75% " />
 
 ### Targeting Cap
 
-You can limit the number of users receiving the message. 
+You can limit the number of users receiving the message.
 
 A relevant use case is a limited offer where you want to distribute a fixed number of coupon codes. If the total reach for your campaign exceeds the number of coupon codes you can distribute, then you can limit the number of users who will receive the message to precisely the number of coupons you want to distribute.
 
@@ -131,31 +118,25 @@ A relevant use case is a limited offer where you want to distribute a fixed numb
 >
 > Ensure that you set up a limit of 100 or more, regardless of the qualified user segment size. If the limit specified is less than 100, an error occurs.
 
-<Image alt="Target Cap" align="center" border={true} src="https://files.readme.io/af07d3a-Set_Target_Segment_Cap_.png">
-  Target Cap
-</Image>
+<Image align="center" alt="Target Cap" border={true} caption="Target Cap" src="https://files.readme.io/af07d3a-Set_Target_Segment_Cap_.png" />
 
-This section explains the campaign creation flow when you are determining who to send your message to. Under the *Estimated Reach* section, select the option to limit the delivery of the messages to a specified number.\
-The campaign limits can also be configured using the following options: 
+This section explains the campaign creation flow when you are determining who to send your message to. Under the _Estimated Reach_ section, select the option to limit the delivery of the messages to a specified number.  
+The campaign limits can also be configured using the following options:
 
-* **All target segment users**: Select this option to send the campaign to all the target segment users. You can also prevent sending out unwanted campaigns by *Don't send the campaign if target segment exceeds* checkbox and entering the value for the number of users. When selecting this option, a campaign does not run if the number of qualified users exceeds the safety limit. The campaign creator receives an email alert for further action.
+* **All target segment users**: Select this option to send the campaign to all the target segment users. You can also prevent sending out unwanted campaigns by _Don't send the campaign if target segment exceeds_ checkbox and entering the value for the number of users. When selecting this option, a campaign does not run if the number of qualified users exceeds the safety limit. The campaign creator receives an email alert for further action.
 * **Only**: Select this option to limit the number of users for each run of a campaign.
 
-For triggered campaigns based on live user segments, the users receive a message as they qualify until the total quantity specified has been delivered, after which the campaign ends. For campaigns based on *Past Behavior Segments*, we randomly select the users who receive the message.
+For triggered campaigns based on live user segments, the users receive a message as they qualify until the total quantity specified has been delivered, after which the campaign ends. For campaigns based on _Past Behavior Segments_, we randomly select the users who receive the message.
 
 ### Override Communication Preferences for Email
 
-You must use this option only when you want to send critical emails of a non-promotional nature, such as privacy policy updates, legal/regulatory information, and downtime/outage-related updates to customers. To do so, select *Send email to users who have opted out of your emails* to send the emails to all qualified users, including those who have opted out (i.e., unsubscribed from email campaigns). 
+You must use this option only when you want to send critical emails of a non-promotional nature, such as privacy policy updates, legal/regulatory information, and downtime/outage-related updates to customers. To do so, select _Send email to users who have opted out of your emails_ to send the emails to all qualified users, including those who have opted out (i.e., unsubscribed from email campaigns).
 
-<Image alt="Override Communication Preferences for Emails" align="center" width="85% " border={true} src="https://files.readme.io/af08a90-image.png">
-  Override Communication Preferences for Emails
-</Image>
+<Image align="center" alt="Override Communication Preferences for Emails" border={true} caption="Override Communication Preferences for Emails" src="https://files.readme.io/af08a90-image.png" width="85% " />
 
 Once you select this option, you are prompted to confirm that this email is in compliance with spam regulations.
 
-<Image alt="Compliance Confirmation Prompt" align="center" width="75% " border={true} src="https://files.readme.io/37c60cd-Compliance_Confirmation_Prompt.png">
-  Compliance Confirmation Prompt
-</Image>
+<Image align="center" alt="Compliance Confirmation Prompt" border={true} caption="Compliance Confirmation Prompt" src="https://files.readme.io/37c60cd-Compliance_Confirmation_Prompt.png" width="75% " />
 
 As you cannot unsubscribe from this type of email, it is advisable to refrain from including unsubscribe links in these emails. If you still choose to use the unsubscribe links, clicking on the link results in the user being unsubscribed only from promotional emails. If the user is marked unsubscribed at the Email Service Provider's end, this email would still not be delivered to the end user. Therefore, this feature is most effective when using CleverTap’s [Handling Unsubscribes](doc:handling-unsubscribes) method instead of adding ESP-specific unsubscribe links to your emails.
 
@@ -167,45 +148,35 @@ As you cannot unsubscribe from this type of email, it is advisable to refrain fr
 
 Select the subscription groups to exclude from your campaign. For more information, refer to [unsubscribe subscription groups in campaigns](https://docs.clevertap.com/docs/group-unsubscribe)
 
-<Image title="Select Subscription Group to Exclude or Include" alt={926} align="center" width="smart" border={true} src="https://files.readme.io/b69404c-Email_subscription_group_include_exclude.png">
-  Select Subscription Groups
-</Image>
+<Image align="center" alt={926} border={true} caption="Select Subscription Groups" title="Select Subscription Group to Exclude or Include" src="https://files.readme.io/b69404c-Email_subscription_group_include_exclude.png" width="smart" />
 
 ### Include Selected Subscription Groups
 
-Subscription groups allow users to select the content they want to receive, reducing unsubscription rates and fostering strong brand-user relationships. This approach enhances user satisfaction and builds a more personalized connection with your audience. 
+Subscription groups allow users to select the content they want to receive, reducing unsubscription rates and fostering strong brand-user relationships. This approach enhances user satisfaction and builds a more personalized connection with your audience.
 
-Select the groups you want to include in your campaign from the *Select Subscription Groups* list. This allows you to target users who have subscribed to all the groups you selected for the campaign.
+Select the groups you want to include in your campaign from the _Select Subscription Groups_ list. This allows you to target users who have subscribed to all the groups you selected for the campaign.
 
-<Image alt="Select Subscription Groups" align="center" border={true} src="https://files.readme.io/18f16e4-Email_Control_Group1.png">
-  Select Subscription Groups
-</Image>
+<Image align="center" alt="Select Subscription Groups" border={true} caption="Select Subscription Groups" src="https://files.readme.io/18f16e4-Email_Control_Group1.png" />
 
 ## Define the Message Content
 
-Now, you can set up the *What* which is the email campaign content where you have four different options. Click *Go To Editor* to create your message. 
+Now, you can set up the _What_ which is the email campaign content where you have four different options. Click _Go To Editor_ to create your message.
 
-<Image title="Select Message Type of the Email Campaign" alt={959} align="center" border={true} src="https://files.readme.io/56de1b4-Email_editor.png">
-  Select Message Type
-</Image>
+<Image align="center" alt={959} border={true} caption="Select Message Type" title="Select Message Type of the Email Campaign" src="https://files.readme.io/56de1b4-Email_editor.png" />
 
 ### Email Editor
 
-Select the templates and create a message. You can also get inbox previews and spam reports for your email message before you send out the campaign. For more information on the Email editor, see [Email Editor](https://docs.clevertap.com/docs/email-editor-templates). 
+Select the templates and create a message. You can also get inbox previews and spam reports for your email message before you send out the campaign. For more information on the Email editor, see [Email Editor](https://docs.clevertap.com/docs/email-editor-templates).
 
-<Image title="Select the Email Editor Type" alt={1121} align="center" border={true} src="https://files.readme.io/e63eee8-Email_editor_main.png">
-  Select Email Editor
-</Image>
+<Image align="center" alt={1121} border={true} caption="Select Email Editor" title="Select the Email Editor Type" src="https://files.readme.io/e63eee8-Email_editor_main.png" />
 
 ### Sender Details
 
-After setting up the content of your campaign in the *What* section, you can configure how your email appears to recipients. This helps ensure that the email adheres to best practices for deliverability and compliance.
+After setting up the content of your campaign in the _What_ section, you can configure how your email appears to recipients. This helps ensure that the email adheres to best practices for deliverability and compliance.
 
-<Image alt="Sender Details" align="center" width="65% " border={true} src="https://files.readme.io/2f21ba5-image.png">
-  Sender Details
-</Image>
+<Image align="center" alt="Sender Details" border={true} caption="Sender Details" src="https://files.readme.io/2f21ba5-image.png" width="65% " />
 
-The *Sender Details* section encompasses the following:
+The _Sender Details_ section encompasses the following:
 
 * From: This is a mandatory field. This name is displayed as the sender of the email. It is important as it helps recipients recognize the sender, thereby increasing the likelihood of them opening the email.
 * Subject: This is a mandatory field. It is crucial for grabbing the recipient's attention and giving them a reason to open the email.
@@ -223,14 +194,12 @@ The *Sender Details* section encompasses the following:
 This feature allows users to send a copy of their email campaigns to additional recipients directly from the CleverTap dashboard. Using this feature, brands can ensure that key stakeholders receive necessary email communications simultaneously, facilitating better tracking, compliance, and customer relationship management. Here are some of the use cases:
 
 * E-commerce, Travel, and Hotel brands often need to send email campaigns to their customers and sellers while keeping the respective account managers informed. In this case, the marketers can use the CC feature to copy account managers on all relevant communications, ensuring they stay updated and can provide timely support.
-* In the case of the Real estate industry, the realtors can use the CC feature to copy agents or brokers when sending emails to high-intent users to ensure these agents can track and nurture those prospects toward making a purchase. 
+* In the case of the Real estate industry, the realtors can use the CC feature to copy agents or brokers when sending emails to high-intent users to ensure these agents can track and nurture those prospects toward making a purchase.
 * FinTech companies can use the BCC feature to discretely send emails to their legal team, ensuring that all communications comply with legal standards without the primary recipient's awareness.
 
 You can add up to a total of 20 CC and BCC recipients to your campaign.
 
-<Image alt="Adding CC/BCC Recipients to Email Campaigns" align="center" width="65% " border={true} src="https://files.readme.io/2452c86-Adding_CC_BCC_recipients.png">
-  Adding CC/BCC Recipients to Email Campaigns
-</Image>
+<Image align="center" alt="Adding CC/BCC Recipients to Email Campaigns" border={true} caption="Adding CC/BCC Recipients to Email Campaigns" src="https://files.readme.io/2452c86-Adding_CC_BCC_recipients.png" width="65% " />
 
 > 📘 Key Points to Remember
 >
@@ -239,7 +208,7 @@ You can add up to a total of 20 CC and BCC recipients to your campaign.
 
 ### Preview & Test
 
-After setting up the content of your campaign in the *What* section, you have the option to send a test email notification to any CleverTap user profile you have marked as a *Test profile*.\
+After setting up the content of your campaign in the _What_ section, you have the option to send a test email notification to any CleverTap user profile you have marked as a _Test profile_.  
 Click the **Preview & Test** button from the message editor to test a message.
 
 You can also check view [Inbox Previews](https://docs.clevertap.com/docs/email-editor-templates#inbox-previews-with-code-analysis) and [Spam Report](https://docs.clevertap.com/docs/email-editor-templates#spam-report).
@@ -249,7 +218,7 @@ You can also check view [Inbox Previews](https://docs.clevertap.com/docs/email-e
 You can create the following types of messages:
 
 * Single Message
-* A/B Test 
+* A/B Test
 * Split Delivery
 * By User Property
 
@@ -271,7 +240,7 @@ With split delivery, you can decide what percentage of your audience receives ea
 
 ##### Split Delivery to Past Behavior Segments
 
-For campaigns sent to *Past Behavior Segments* (grouping of users based on what they have done in the past), you have two options: launch the A/B test to a percentage of your target audience or send out an absolute number of messages. In either case, we deliver the variants equally to the test audience.
+For campaigns sent to _Past Behavior Segments_ (grouping of users based on what they have done in the past), you have two options: launch the A/B test to a percentage of your target audience or send out an absolute number of messages. In either case, we deliver the variants equally to the test audience.
 
 For example:
 
@@ -303,11 +272,11 @@ Deciding on a test audience for A/B testing triggered campaigns requires some es
 
 If you would like to send different message variants to your target audience based on the user properties they possess, this campaign type is your best bet. A good example would be when you want to send a localized update to people based on their preferred language.
 
-Similar to creating A/B test variants, you can use the + button to add multiple variants based on a user property value. In the example below, we have used the *Customer Type* user property so users with different customer type property values will receive corresponding copies of the campaign based on their different levels (Silver, Gold, or Platinum).
+Similar to creating A/B test variants, you can use the + button to add multiple variants based on a user property value. In the example below, we have used the _Customer Type_ user property so users with different customer type property values will receive corresponding copies of the campaign based on their different levels (Silver, Gold, or Platinum).
 
 ## Define the Campaign Schedule
 
-You can set up the *When* to schedule the campaign start and end using the options below:
+You can set up the _When_ to schedule the campaign start and end using the options below:
 
 Past behavior campaigns can be scheduled to run:
 
@@ -323,15 +292,13 @@ Live campaigns can be set up on a specific event:
 
 ### Delivery preferences
 
-Global campaign limits are limits you can apply to determine how many messages each app user receives per day. If you want to override these settings for an important campaign, you can click on the *Don’t apply global campaign limits to this campaign* checkbox.
+Global campaign limits are limits you can apply to determine how many messages each app user receives per day. If you want to override these settings for an important campaign, you can click on the _Don’t apply global campaign limits to this campaign_ checkbox.
 
-You can also *Do Not Disturb* (DND) hours during which notifications from this push campaign are prevented from going out, either by discarding them or delaying delivery after DND hours are complete, such as 9 PM to 9 AM.
+You can also _Do Not Disturb_ (DND) hours during which notifications from this push campaign are prevented from going out, either by discarding them or delaying delivery after DND hours are complete, such as 9 PM to 9 AM.
 
 Since past behavior campaigns can have scheduled times, you have the option to stop a campaign delivery after a certain cut-off time, or even deliver at the specified time in the user’s timezone. For more information, refer to [Notification delivery options](doc:notification-delivery-options).
 
-<Image title="Select Campaign Start/End Date and Time" alt={1196} align="center" border={true} src="https://files.readme.io/a1f9337-campaign_when_PBS.png">
-  Define - When
-</Image>
+<Image align="center" alt={1196} border={true} caption="Define - When" title="Select Campaign Start/End Date and Time" src="https://files.readme.io/a1f9337-campaign_when_PBS.png" />
 
 > 📘 Recurring Day
 >
@@ -344,6 +311,4 @@ After testing and once you are satisfied with the appearance of your campaign, f
 1. Click **Continue** to view your campaign summary. The overview page displays.
 2. View your campaign summary, then click **Publish Campaign**.
 
-<Image title="Publish the Campaign" alt={1193} align="center" border={true} src="https://files.readme.io/b521e92-campaign_Publish.png">
-  Publish Campaign
-</Image>
+<Image align="center" alt={1193} border={true} caption="Publish Campaign" title="Publish the Campaign" src="https://files.readme.io/b521e92-campaign_Publish.png" />
