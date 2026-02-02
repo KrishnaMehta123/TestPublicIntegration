@@ -14,7 +14,7 @@ next:
 
 CleverTap’s data warehouse integration enables you to seamlessly import data into CleverTap for customer engagement and export engagement data from CleverTap to data warehouses for analytics and reporting. This helps you unify customer data, activate advanced insights, and connect marketing performance with business outcomes.
 
-By integrating CleverTap with your data warehouse, you can use the data warehouse as the system of record for analytics and governance, while leveraging CleverTap to deliver personalized, cross-channel customer experiences that improve engagement, retention, and revenue outcomes.
+By integrating CleverTap with your data warehouse, you can use the data warehouse as the system of record for analytics and governance while leveraging CleverTap to deliver personalized, cross-channel customer experiences that improve engagement, retention, and revenue.
 
 # Import Data into CleverTap
 
