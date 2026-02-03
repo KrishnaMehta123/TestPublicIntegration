@@ -116,7 +116,7 @@ Navigate to the email Provider _Setup_ page and select _System_ from the _Email 
 
   If you have not selected any subscription groups from the *When* section during campaign creation but have configured them under *Settings* > *Setup* > *Subscription Groups*, users can manage their email preferences using the  *[Manage Preferences](manage-email-preferences#manage-preferences-from-the-email-center)*  option. In this case, if you add the *Group Unsubscribe* link, the user is unsubscribed from all the emails when they click this link.
 
-  > 📘 Recommendation
+  > 📘#### Recommendation
   >
   > As part of email best pratices, CleverTap strongly recommends incorporating subscription groups for campaigns to guarantee that your content resonates with the intended audience. This ensures that they receive the information that matters most to them.
 
