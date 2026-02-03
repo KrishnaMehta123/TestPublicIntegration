@@ -174,7 +174,7 @@ To view the list of all recorded transactions:
         <ul>
           <li>**API Transactions (Credit/Debit)**: The description is determined by user input in the API payload.</li>
           <li>**Manual Adjustments (Dashboard)**: The description is set by the user while adjusting points.</li>
-          <li>**System-Generated Transactions**: The following standard descriptions are automatically applied based on the transaction types\:</li>
+          <li>**System-Generated Transactions**: The following standard descriptions are automatically applied based on the transaction types:</li>
 
           <ul>
             <li>*Points earned from campaign*: Applied to credit transactions originating from promotional campaigns.</li>
