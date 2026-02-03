@@ -50,62 +50,56 @@ You can watch the following video to learn more about Notify.
 
 Notify is ideal for delivering critical transactional messages across multiple touchpoints. The following use cases show how Notify enables real-time communication to enhance user experience, strengthen security, and ensure operational clarity:
 
-* **OTP Delivery for Login/Authentication**\
+* **OTP Delivery for Login/Authentication**  
   Send time-sensitive OTPs to users to verify identity or enable secure login. For example, a user tries logging into a banking app and receives a 6-digit OTP on their registered email.
-* **Order Confirmation and Receipts**\
-  Confirm purchases or bookings immediately by sending transactional messages with order summaries.\
+* **Order Confirmation and Receipts**  
+  Confirm purchases or bookings immediately by sending transactional messages with order summaries.  
   For example:
   * After placing an order on an online grocery app, the user receives an email confirming the order with itemized billing details.
   * A travel booking site sends an order summary via email after successful payment.
-* **Payment Success and Failure Notifications**\
+* **Payment Success and Failure Notifications**  
   Inform users in real time about the status of their transactions to prevent confusion and avoid duplicate payments. For example:
   * A credit card user receives an email notification confirming the successful payment.
   * In case of a failed transaction, the user receives an email stating that the payment was unsuccessful and providing guidance on the next steps or retrying.
-* **Account and Password Reset Links**\
+* **Account and Password Reset Links**  
   Send secure password reset or account recovery links to users requesting access recovery. For example:
   * When users click **Forgot Password** on a social media platform, they immediately receive an email with a password reset link that expires in 10 minutes.
   * Users trying to change their email addresses are sent a verification link to the new email for confirmation.
-* **Security Notifications**\
-    Alert users instantly about critical changes to their account to detect and prevent unauthorized access. For example, when a user logs in from a new device, the system sends an email to notify the user.
+* **Security Notifications**  
+  Alert users instantly about critical changes to their account to detect and prevent unauthorized access. For example, when a user logs in from a new device, the system sends an email to notify the user.
 
 # Create Notify Campaign
 
-Trigger transactional messages in real time based on specific user actions. For example, when a user completes a bill payment, you can trigger a confirmation email using the *Payment Success* event.
+Trigger transactional messages in real time based on specific user actions. For example, when a user completes a bill payment, you can trigger a confirmation email using the _Payment Success_ event.
 
 To create a Notify campaign, perform the following steps:
 
-1. Go to *Notify*  from the CleverTap dashboard and click **Create Notify Campaign**. The *Setup* popup opens.
+1. Go to _Notify_  from the CleverTap dashboard and click **Create Notify Campaign**. The _Setup_ popup opens.
 
-<Image alt="Create Notify Campaign" align="center" border={true} src="https://files.readme.io/5a157b0ef34c4ab306de7ee2991dc9f10983a49cc2f8746ee8dd928d809e11f8-2025-07-16_11-54-42_1.gif">
-  Create Notify Campaign
-</Image>
+<Image align="center" alt="Create Notify Campaign" border={true} caption="Create Notify Campaign" src="https://files.readme.io/5a157b0ef34c4ab306de7ee2991dc9f10983a49cc2f8746ee8dd928d809e11f8-2025-07-16_11-54-42_1.gif" />
 
-2. Enter the campaign **Name** and click **Continue**. The *Channel Setup* page opens.
+2. Enter the campaign **Name** and click **Continue**. The _Channel Setup_ page opens.
 
-3. Select the provider from the dropdown under *Provider Configuration*. You can also add a new service provider by clicking **Add Provider**. For more information, refer to [Email Provider Setup](doc:email_providers_operations).
+3. Select the provider from the dropdown under _Provider Configuration_. You can also add a new service provider by clicking **Add Provider**. For more information, refer to [Email Provider Setup](doc:email_providers_operations).
 
-4. Click **Create Message** under *Content* to create your campaign message as follows:
+4. Click **Create Message** under _Content_ to create your campaign message as follows:
    1. Select an email template or create your own template for your Notify message.
-   2. Draft a message and enter the *Sender Details*. For more information, refer to [Email Editor](doc:create-message-email). You can personalize messages in two ways:
+   2. Draft a message and enter the _Sender Details_. For more information, refer to [Email Editor](doc:create-message-email). You can personalize messages in two ways:
       * **User Property Personalization**: Uses profile properties for personalization, for example, `{{Profile.name | default:"Shopper"}}`.
-      * **Notify API Parameter Personalization**: Uses a key from the `notifyFields` object in the API payload, for example, `{{Notify.orderID | default:"Order number not available"}}`.\
+      * **Notify API Parameter Personalization**: Uses a key from the `notifyFields` object in the API payload, for example, `{{Notify.orderID | default:"Order number not available"}}`.  
         When the campaign is triggered via API, CleverTap pulls the value from the object in your payload and injects it into the message. This enables you to personalize email order details based on real-time values. For more information, refer to [Notify API](https://developer.clevertap.com/docs/notify-api).
 
-<Image alt="Personalization Keys for Notify" align="center" border={true} src="https://files.readme.io/d2a6a0502bef5fe08749d2cbf79e61a4d55a86e27adba01a8fe0ded77cf132b1-Personalized_Notify_Campaign.png">
-  Personalization Keys for Notify
-</Image>
+<Image align="center" alt="Personalization Keys for Notify" border={true} caption="Personalization Keys for Notify" src="https://files.readme.io/d2a6a0502bef5fe08749d2cbf79e61a4d55a86e27adba01a8fe0ded77cf132b1-Personalized_Notify_Campaign.png" />
 
 > 📘 Anonymous Profile
 >
 > When the recipient profile does not exist on the dashboard, the message is still sent. But delivery or engagement metrics are not tracked for such profiles.
 
-5. Click **Done** to return to the *Channel Setup* screen. You can choose to edit your Notify message or review the content layout using Preview before generating the Notify ID without sending a test message.
+5. Click **Done** to return to the _Channel Setup_ screen. You can choose to edit your Notify message or review the content layout using Preview before generating the Notify ID without sending a test message.
 6. Click **Preview & Test** to check how your message renders and appears in the recipient's inbox. You can use this option to send a test message to an internal recipient for validation. Test messages display the default values defined during campaign creation.
 7. After creating an Email campaign, Click **Generate** to create the transaction ID or script required to trigger your Notify campaign. Once generated, copy the ID/script and use it in the [Notify API](https://developer.clevertap.com/docs/notify-api) request to launch the campaign.
 
-<Image alt="Generate " align="center" width="40% " border={true} src="https://files.readme.io/12a2419d5f1c686d3fae52451ee37403f7f28cec60b98fc42aea6ac37e206b35-image.png">
-  Generate Notify ID
-</Image>
+<Image align="center" alt="Generate " border={true} caption="Generate Notify ID" src="https://files.readme.io/12a2419d5f1c686d3fae52451ee37403f7f28cec60b98fc42aea6ac37e206b35-image.png" width="40% " />
 
 > 📘 No Frequency Cap or DND Limits
 >
@@ -113,15 +107,13 @@ To create a Notify campaign, perform the following steps:
 
 # Manage Notify Campaign
 
-After creating a Notify campaign, you can view and manage all your Notify campaigns from the *Notify* page. From this page, you can perform the following actions:
+After creating a Notify campaign, you can view and manage all your Notify campaigns from the _Notify_ page. From this page, you can perform the following actions:
 
 * [View Notify Campaign](doc:notify#view-notify-campaign)
 * [Filter Notify Campaign](doc:notify#filter-notify-campaigns)
 * [Edit Columns](doc:notify#edit-columns)
 
-<Image alt="View Notify" align="center" border={true} src="https://files.readme.io/97c92d38c9a611f9502dce7ca84ab18837a8f36ab46285e6a812dd49897cff8a-2025-07-16_16-08-34_1.gif">
-  View Notify Campaign
-</Image>
+<Image align="center" alt="View Notify" border={true} caption="View Notify Campaign" src="https://files.readme.io/97c92d38c9a611f9502dce7ca84ab18837a8f36ab46285e6a812dd49897cff8a-2025-07-16_16-08-34_1.gif" />
 
 | Column Name             | Description                                                                                                |
 | :---------------------- | :--------------------------------------------------------------------------------------------------------- |
@@ -136,39 +128,33 @@ After creating a Notify campaign, you can view and manage all your Notify campai
 
 ## View Notify Campaign
 
-Click any campaign from the *Notify* page to view it. The Notify campaign opens with the following three tabs:
+Click any campaign from the _Notify_ page to view it. The Notify campaign opens with the following three tabs:
 
-<Image alt="View Notify" align="center" border={true} src="https://files.readme.io/807cb7803e5ef42e59d982ab4395a3048d73840087e4874590214fc484d967ef-image.png">
-  View Notify
-</Image>
+<Image align="center" alt="View Notify" border={true} caption="View Notify" src="https://files.readme.io/807cb7803e5ef42e59d982ab4395a3048d73840087e4874590214fc484d967ef-image.png" />
 
 * **Overview**: Displays a summary of the campaign setup, including the selected email provider and message.
 * **API Details**: Displays the Notify ID and a sample JSON for your Notify API request. You need to modify the values and keys to match your campaign-specific requirements. Use this tab to copy the Notify ID or setup details to trigger the message via the Notify API.
 
-<Image alt="API Details" align="center" border={true} src="https://files.readme.io/2e14f4c1e1fab9ba142e7b93d613efe266eb6fef8bf852f70853763d35d9ce53-image.png">
-  API Details
-</Image>
+<Image align="center" alt="API Details" border={true} caption="API Details" src="https://files.readme.io/2e14f4c1e1fab9ba142e7b93d613efe266eb6fef8bf852f70853763d35d9ce53-image.png" />
 
 * **Stats**: Displays a comprehensive view of your Notify campaign performance, helping you track requests, message delivery, user engagement, and any errors encountered. For more information, refer to [Notify Stats](doc:notify#stats).
 
 ## Edit Notify Campaign
 
-You can edit the campaign content for a *Running* or *Draft* Notify campaign. For the *Running* campaigns, all changes apply to the subsequent API requests.
+You can edit the campaign content for a _Running_ or _Draft_ Notify campaign. For the _Running_ campaigns, all changes apply to the subsequent API requests.
 
 ## Filter Notify Campaigns
 
-Use the **Filters** panel on the Notify dashboard to narrow results and quickly find the campaigns you need. 
+Use the **Filters** panel on the Notify dashboard to narrow results and quickly find the campaigns you need.
 
 You can toggle between **Active** and **Archived** campaigns:
 
 * **Active**: Includes campaigns in Running, Draft, or Stopped states.
 * **Archived**: Includes campaigns that are no longer active but are available for reference. To make changes, such as Edit, Clone, or Stop, you must unarchive the campaign.
 
-You can filter campaigns by: *Status*, *Time Period*, and *Created By*.
+You can filter campaigns by: _Status_, _Time Period_, and _Created By_.
 
-<Image alt="Filter Notify Campaigns" align="center" border={true} src="https://files.readme.io/8186102ccc8369ae2c64b214b60d6260bfe4ce65be9f26a41794030718c0a839-image.png">
-  Filter Notify Campaigns
-</Image>
+<Image align="center" alt="Filter Notify Campaigns" border={true} caption="Filter Notify Campaigns" src="https://files.readme.io/8186102ccc8369ae2c64b214b60d6260bfe4ce65be9f26a41794030718c0a839-image.png" />
 
 ### Status
 
@@ -188,17 +174,15 @@ Filter campaigns by creator email ID. The default view shows campaigns created b
 
 ## Edit Columns
 
-The *Edit Columns* option allows you to customize the layout of your Notify campaign list page by choosing which columns to display and in what sequence. This makes it easier to focus on the most relevant information based on your workflow.
+The _Edit Columns_ option allows you to customize the layout of your Notify campaign list page by choosing which columns to display and in what sequence. This makes it easier to focus on the most relevant information based on your workflow.
 
-<Image alt="Edit Column Order" align="center" width="75% " border={true} src="https://files.readme.io/29d2d3f46af3ec59f2803f74f7a5050167fed51fce3fe25c2b3ce66eaad3d0a4-2025-07-16_16-11-38_1.gif">
-  Edit Column Order
-</Image>
+<Image align="center" alt="Edit Column Order" border={true} caption="Edit Column Order" src="https://files.readme.io/29d2d3f46af3ec59f2803f74f7a5050167fed51fce3fe25c2b3ce66eaad3d0a4-2025-07-16_16-11-38_1.gif" width="75% " />
 
 # Stats
 
 The **Stats** tab provides a comprehensive view of your Notify campaign performance, helping you track requests, message delivery, user engagement, and any errors encountered. This data is vital for understanding message flow health, diagnosing issues, and optimizing delivery outcomes.
 
-The *Stats* section can be classified into two parts:
+The _Stats_ section can be classified into two parts:
 
 * [Request-Level Stats](doc:notify#request-level-stats)
 * [Channel Performance](doc:notify#channel-performance)
@@ -219,17 +203,13 @@ The **Trend** section, below the metric cards, displays a request timeline, help
 
 Use the date range selector to filter stats for a specific time window and export the data for audits or internal analysis.
 
-<Image alt="Request-Level Stats" align="center" border={true} src="https://files.readme.io/b93a1b1365899978747cd2e7a67132b08a6e71e0e20509c4c17c1383d2601522-2025-07-16_16-34-29_1.gif">
-  Request-Level Stats
-</Image>
+<Image align="center" alt="Request-Level Stats" border={true} caption="Request-Level Stats" src="https://files.readme.io/b93a1b1365899978747cd2e7a67132b08a6e71e0e20509c4c17c1383d2601522-2025-07-16_16-34-29_1.gif" />
 
 ## Channel Performance
 
-The *Channels* section provides a detailed breakdown of channel-specific performance, helping you understand how recipients interact with transactional messages post-delivery. 
+The _Channels_ section provides a detailed breakdown of channel-specific performance, helping you understand how recipients interact with transactional messages post-delivery.
 
-<Image alt="Channel-wise Performance" align="center" border={true} src="https://files.readme.io/ef00347e4433aa3e205007696649510a23b7fce0ab661c7a42db80f4456fb9fe-2025-07-16_16-29-33_1.gif">
-  Channel Performance
-</Image>
+<Image align="center" alt="Channel-wise Performance" border={true} caption="Channel Performance" src="https://files.readme.io/ef00347e4433aa3e205007696649510a23b7fce0ab661c7a42db80f4456fb9fe-2025-07-16_16-29-33_1.gif" />
 
 ### Trends
 
@@ -244,12 +224,12 @@ Each metric provides insight into user engagement and message effectiveness for 
 
 ### Errors
 
-The *Errors* section provides visibility into issues while delivering the email to the user. Common error types include soft bounces, hard bounces, and provider-related errors.
+The _Errors_ section provides visibility into issues while delivering the email to the user. Common error types include soft bounces, hard bounces, and provider-related errors.
 
 * **Total Errors**: Total number of delivery errors.
 * **Total Email Errors**: Total number of errors during email delivery, such as soft bounce, hard bounce.
 * **Total Unclassified Errors**: Total number of errors that do not fall into known error categories.
 
-<Image alt="Error Insights" align="center" border={true} src="https://files.readme.io/20c186d0646cffa76239b82865d44e3a6edaf7907e1c653bfe47bff63facc644-image.png">
-  Email Campaign Errors
-</Image>
+<Image align="center" border={true} caption="Email Campaign Errors" src="https://files.readme.io/47f7269750211e103d0c18a84996da02928167eb0ee15618a99c0f6c4695ead9-image.png" />
+
+<br />
