@@ -49,11 +49,14 @@ The _New Preference Center_ page opens with the [CleverTap Preference Center](do
  (function () {
 		 var wzrk = document.createElement('script');
 		 wzrk.type = 'text/javascript';
-		 wzrk.async = true;
-     wzrk.src = 'https://d2r1yp2w7bby2u.cloudfront.net/js/clevertap.min.js';		 
-     var s = document.getElementsByTagName('script')[0];
-		 s.parentNode.insertBefore(wzrk, s);
-  })();
+     			wzrk.async = true;
+     			wzrk.src = 'https://' + clevertap.region + '-unsubscribe.clevertap-pages.com/sdk.js';
+      		wzrk.onerror = function() {
+        	wzrk_email_fetched_failed({ error: 'Failed to load SDK' });
+      		};
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wzrk, s);
+    })();
 </script>
 ```
 ```javascript Singapore
@@ -63,11 +66,14 @@ The _New Preference Center_ page opens with the [CleverTap Preference Center](do
  (function () {
  var wzrk = document.createElement('script');
  wzrk.type = 'text/javascript';
- wzrk.async = true;
- wzrk.src = 'https://d2r1yp2w7bby2u.cloudfront.net/js/clevertap.min.js'; 
- var s = document.getElementsByTagName('script')[0];
- s.parentNode.insertBefore(wzrk, s);
-  })();
+      wzrk.async = true;
+      wzrk.src = 'https://' + clevertap.region + '-unsubscribe.clevertap-pages.com/sdk.js';
+      wzrk.onerror = function() {
+        wzrk_email_fetched_failed({ error: 'Failed to load SDK' });
+      };
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wzrk, s);
+    })();
 </script>
 ```
 ```javascript United States
@@ -77,11 +83,14 @@ The _New Preference Center_ page opens with the [CleverTap Preference Center](do
  (function () {
  var wzrk = document.createElement('script');
  wzrk.type = 'text/javascript';
- wzrk.async = true;
- wzrk.src = 'https://d2r1yp2w7bby2u.cloudfront.net/js/clevertap.min.js'; 
- var s = document.getElementsByTagName('script')[0];
- s.parentNode.insertBefore(wzrk, s);
-  })();
+      wzrk.async = true;
+      wzrk.src = 'https://' + clevertap.region + '-unsubscribe.clevertap-pages.com/sdk.js';
+      wzrk.onerror = function() {
+        wzrk_email_fetched_failed({ error: 'Failed to load SDK' });
+      };
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wzrk, s);
+    })();
 </script>
 ```
 ```javascript Indonesia
@@ -91,11 +100,14 @@ The _New Preference Center_ page opens with the [CleverTap Preference Center](do
  (function () {
  var wzrk = document.createElement('script');
  wzrk.type = 'text/javascript';
- wzrk.async = true;
- wzrk.src = 'https://d2r1yp2w7bby2u.cloudfront.net/js/clevertap.min.js'; 
- var s = document.getElementsByTagName('script')[0];
- s.parentNode.insertBefore(wzrk, s);
-  })();
+      wzrk.async = true;
+      wzrk.src = 'https://' + clevertap.region + '-unsubscribe.clevertap-pages.com/sdk.js';
+      wzrk.onerror = function() {
+        wzrk_email_fetched_failed({ error: 'Failed to load SDK' });
+      };
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wzrk, s);
+    })();
 </script>
 ```
 ```javascript Middle East (UAE)
@@ -105,11 +117,14 @@ The _New Preference Center_ page opens with the [CleverTap Preference Center](do
  (function () {
  var wzrk = document.createElement('script');
  wzrk.type = 'text/javascript';
- wzrk.async = true;
- wzrk.src = 'https://d2r1yp2w7bby2u.cloudfront.net/js/clevertap.min.js'; 
- var s = document.getElementsByTagName('script')[0];
- s.parentNode.insertBefore(wzrk, s);
-  })();
+      wzrk.async = true;
+      wzrk.src = 'https://' + clevertap.region + '-unsubscribe.clevertap-pages.com/sdk.js';
+      wzrk.onerror = function() {
+        wzrk_email_fetched_failed({ error: 'Failed to load SDK' });
+      };
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wzrk, s);
+    })();
 </script>
 ```
 ```javascript Europe (default region)
@@ -119,11 +134,14 @@ The _New Preference Center_ page opens with the [CleverTap Preference Center](do
  (function () {
  var wzrk = document.createElement('script');
  wzrk.type = 'text/javascript';
- wzrk.async = true;
- wzrk.src = 'https://d2r1yp2w7bby2u.cloudfront.net/js/clevertap.min.js'; 
- var s = document.getElementsByTagName('script')[0];
- s.parentNode.insertBefore(wzrk, s);
-  })();
+      wzrk.async = true;
+      wzrk.src = 'https://' + clevertap.region + '-unsubscribe.clevertap-pages.com/sdk.js';
+      wzrk.onerror = function() {
+        wzrk_email_fetched_failed({ error: 'Failed to load SDK' });
+      };
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wzrk, s);
+    })();
 </script>
 ```
 
@@ -174,11 +192,14 @@ The following is a sample code for creating a preference center:
  (function () {
 		 var wzrk = document.createElement('script');
 		 wzrk.type = 'text/javascript';
-		 wzrk.async = true;
-     wzrk.src = 'https://d2r1yp2w7bby2u.cloudfront.net/js/clevertap.min.js';		 
-     var s = document.getElementsByTagName('script')[0];
-		 s.parentNode.insertBefore(wzrk, s);
-  })();
+      wzrk.async = true;
+      wzrk.src = 'https://' + clevertap.region + '-unsubscribe.clevertap-pages.com/sdk.js';
+      wzrk.onerror = function() {
+        wzrk_email_fetched_failed({ error: 'Failed to load SDK' });
+      };
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wzrk, s);
+    })();
 </script>
 <style>
     .row {
