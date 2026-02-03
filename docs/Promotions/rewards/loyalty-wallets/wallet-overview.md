@@ -174,12 +174,12 @@ To view the list of all recorded transactions:
         <ul>
           <li>**API Transactions (Credit/Debit)**: The description is determined by user input in the API payload.</li>
           <li>**Manual Adjustments (Dashboard)**: The description is set by the user while adjusting points.</li>
-          <li>**System-Generated Transactions**: The following standard descriptions are applied based on the following transaction types\:</li>
+          <li>**System-Generated Transactions**: The following standard descriptions are automatically applied based on the transaction types\:</li>
 
           <ul>
-            <li>*Points earned from campaign*: for credit transactions from campaigns.</li>
-            <li>*Points earned for redeeming \{Coupon Code} coupon*: for cashback coupon redemptions.</li>
-            <li>*Expired points*: for points that have expired.</li>
+            <li>*Points earned from campaign*: Applied to credit transactions originating from promotional campaigns.</li>
+            <li>*Points earned for redeeming \{Coupon Code} coupon*: Applied when users redeem cashback coupons.</li>
+            <li>*Expired points*: Applied when loyalty points have expired.</li>
           </ul>
         </ul>
       </td>
@@ -206,3 +206,5 @@ To view the list of all recorded transactions:
     </tr>
   </tbody>
 </Table>
+
+<br />
