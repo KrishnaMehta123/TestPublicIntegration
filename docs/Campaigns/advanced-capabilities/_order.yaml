@@ -3,6 +3,7 @@
 - recommended-delay
 - regex
 - best-time
+- time-in-user-property
 - constant-property
 - conversations
 - image-specifications
@@ -10,4 +11,3 @@
 - geofencing-campaign
 - geofencing
 - branded-domain
-- time-in-user-property
