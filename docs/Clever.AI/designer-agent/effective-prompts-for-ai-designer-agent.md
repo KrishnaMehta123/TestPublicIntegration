@@ -67,7 +67,7 @@ The following are some useful tips when adding visual and emotional details to y
 
 The following sample prompts show how detailed prompts improve image quality, tone, and brand consistency. You can experiment with more prompts to find a suitable message tone and style for your brand. Browse the sample prompts by industry:
 
-<Cards columns={5}>
+<Cards columns={3}>
   <Card title="E-Commerce" href="#e-commerce" icon="fa-shopping-cart">
     Personalization & Offers
   </Card>
