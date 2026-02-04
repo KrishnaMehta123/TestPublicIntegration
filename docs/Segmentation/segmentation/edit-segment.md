@@ -26,13 +26,13 @@ Segment Edits aims for the following:
 * Ensure consistency across campaigns and journeys using shared PBS segments.
 * Minimize errors caused by cloning or duplicating segment definitions.
 
-Suppose a marketer uses a Past Behavior Segment called _High-Value App Users_ in multiple Campaigns and Journeys. After new engagement rules are introduced, the marketer edits the segment to include users who have completed three or more transactions to better target repeat purchasers.
+Suppose a marketer uses a Past Behavior Segment called _High-Value App Users_ in multiple Campaigns and Journeys. After new engagement rules are introduced, the marketer edits the segment to include users who have completed three or more transactions to target repeat purchasers better.
 
-As a result, all Campaigns and Journeys using this segment automatically apply the updated rules in the next segment computation cycle.
+As a result, all Campaigns and Journeys that use this segment automatically apply the updated rules in the next segment-computation cycle.
 
 # Edit a Segment
 
-Editing a segment enables you to refine existing audience definitions without having to start from scratch. You can use this option when you want to adjust targeting rules, update filters, or align segment criteria with new campaign goals, all while preserving linked dependencies and historical context.
+Editing a segment allows you to refine existing audience definitions without starting from scratch. You can use this option to adjust targeting rules, update filters, or align segment criteria with new campaign goals, while preserving linked dependencies and historical context.
 
 The following are the steps to edit a segment:
 
