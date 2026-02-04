@@ -12,13 +12,13 @@ metadata:
 
 The _Edit Segment_ feature allows users to modify existing Past Behaviour Segments (PBS) directly within the CleverTap dashboard. This capability enhances operational efficiency by allowing edits to be made once and reflected across all associated entities, such as Campaigns, Journeys, and Product experiences, without the need to recreate or clone segments.
 
-<Callout icon="📘" theme="info">
-  **Private Beta**
+<Callout icon="📘">
+  **Note**
 
-  Currently, this feature is released in Private Beta. To gain access, contact your Customer Success Manager.
+  Editing is currently supported only for Past Behaviour Segments (PBS).
 </Callout>
 
-This feature introduces support for segment modification, simplifying segment management across multiple use cases.
+This feature introduces segment modification support to simplify segment management across multiple use cases.
 
 Segment Edits aims for the following:
 
@@ -29,12 +29,6 @@ Segment Edits aims for the following:
 Suppose a marketer uses a Past Behavior Segment called _High-Value App Users_ in multiple Campaigns and Journeys. After new engagement rules are introduced, the marketer edits the segment to include users who have completed three or more transactions to target repeat purchasers better.
 
 As a result, all Campaigns and Journeys that use this segment automatically apply the updated rules in the next segment-computation cycle.
-
-<Callout icon="📘" theme="info">
-  **Note**
-
-  Editing is currently supported only for Past Behaviour Segments (PBS).
-</Callout>
 
 # Edit a Segment
 
