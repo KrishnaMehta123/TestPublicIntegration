@@ -67,27 +67,11 @@ The following are some useful tips when adding visual and emotional details to y
 
 The following sample prompts show how detailed prompts improve image quality, tone, and brand consistency. You can experiment with more prompts to find a suitable message tone and style for your brand. Browse the sample prompts by industry:
 
-<Cards columns={3}>
-  <Card title="E-Commerce" href="#e-commerce" icon="fa-shopping-cart">
-    Personalization & Offers
-  </Card>
-
-  <Card title="OTT" href="#ott" icon="fa-tv">
-    Content & Engagement
-  </Card>
-
-  <Card title="Fintech" href="#fintech" icon="fa-wallet">
-    Finance & Portfolios
-  </Card>
-
-  <Card title="Food Delivery" href="#food-delivery" icon="fa-utensils">
-    Menu & Recommendations
-  </Card>
-
-  <Card title="Gaming" href="#gaming" icon="fa-gamepad">
-    Rewards & Items
-  </Card>
-</Cards>
+* [E-Commerce](https://docs.clevertap.com/docs/effective-prompts-for-ai-designer-agent#e-commerce)
+* [OTT](https://docs.clevertap.com/docs/effective-prompts-for-ai-designer-agent#ott)
+* [FinTech](https://docs.clevertap.com/docs/effective-prompts-for-ai-designer-agent#fintech)
+* [Food Delivery](https://docs.clevertap.com/docs/effective-prompts-for-ai-designer-agent#food-delivery)
+* [Gaming](https://docs.clevertap.com/docs/effective-prompts-for-ai-designer-agent#gaming)
 
 ## E-Commerce
 
