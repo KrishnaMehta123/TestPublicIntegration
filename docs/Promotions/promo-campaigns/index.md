@@ -42,7 +42,7 @@ The following is the set of features designed to help you build, manage, and opt
 
 Find answers to the following common questions about using ̉Promo Campaigns:
 
-## Can I target both live actions and past behavior in a single campaign?
+### Can I target both live actions and past behavior in a single campaign?
 
 No, each campaign supports only one type of segmentation: Past Behavior, Live Actions, or Custom Lists.
 
