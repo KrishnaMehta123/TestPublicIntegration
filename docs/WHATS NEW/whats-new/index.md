@@ -152,7 +152,114 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
 
 # 2026
 
-## January
+## January 
+
+<HTMLBlock>{`
+<div class="release-note article" data-category="campaigns" id="delivery-delay-for-in-app-messages">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#delivery-delay-for-in-app-messages"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/370216d2a5ec47fd419bc47a95762d51295730db345b40f825b3de7115e6e667-Campaigns.svg" alt="Campaigns" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">Delivery Delay for In-App Messages</h3>
+    <div class="badge enhancement">ENHANCEMENT</div>
+    <div class="badge private-beta">PRIVATE BETA</div> 
+  </div>
+  <div class="release-note-body">
+    <p>You can now delay displaying In-App messages using delivery preferences. Instead of showing messages immediately at app launch, you can delay delivery by up to 20 minutes, to ensure messages appear at the right moment.</p>
+    <p>This enhancement helps reduce disruption and improve engagement for the In-App messages without requiring any developer effort. This feature is now available on Android SDK v7.7.1+ and iOS SDK v7.4.0+ for select customers.</p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/create-message-inapp#in-app-delay" target="_blank">In-App Delay</a>.</p>
+</div>
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
+<div class="release-note article" data-category="product-experiences" id="product-experiences-a/b-test-updates">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#product-experiences-a/b-test-updates"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/d7de531a1060998537a4e71a078198cf28076d99e1aed3e3c1bdcb5509e29d95-Product_experiences.svg" alt="Product Experiences" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">Product Experiences A/B Test Updates</h3>
+    <div class="badge enhancement">ENHANCEMENT</div>
+    <div class="badge private-beta">PRIVATE BETA</div> 
+  </div>
+  <div class="release-note-body">
+    <p>A/B testing in Product Experiences can now help you perform more accurate and flexible pre-launch validations. With this enhancement, teams can now test A/B variants at the device level and run multiple A/B tests simultaneously before publishing A/B Tests.</p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/device-previews-for-ab-tests" target="_blank">Device Previews for A/B Tests</a>.</p>
+</div>
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
+<div class="release-note article" data-category="campaigns" id="personalized-cta-button-text-for-in-app-messages">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#personalized-cta-button-text-for-in-app-messages"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/370216d2a5ec47fd419bc47a95762d51295730db345b40f825b3de7115e6e667-Campaigns.svg" alt="Campaigns" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">Personalized CTA Button Text for In-App Messages</h3>
+    <div class="badge enhancement">ENHANCEMENT</div>
+    <div class="badge private-beta">PRIVATE BETA</div> 
+  </div>
+  <div class="release-note-body">
+    <p>You can now personalize CTA button text across all In-App message templates using user preferences and Liquid Tags. This ensures CTAs adapt to each user’s context and attributes.</p>
+    <p>With this enhancement, you can increase engagement and drive better conversions through more relevant and localized CTAs.</p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/preview-and-send-in-app" target="_blank">Inline Personalization in In-Apps</a>.</p>
+</div>
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
+<div class="release-note article" data-category="campaigns" id="rich-media-support-for-the-advanced-in-app-builder-and-web-pop-ups">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#rich-media-support-for-the-advanced-in-app-builder-and-web-pop-ups"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/370216d2a5ec47fd419bc47a95762d51295730db345b40f825b3de7115e6e667-Campaigns.svg" alt="Campaigns" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">Rich Media Support for the Advanced In-App Builder and Web Pop-ups</h3>
+    <div class="badge enhancement">ENHANCEMENT</div>
+  </div>
+  <div class="release-note-body">
+    <p>In-Apps created with the Advanced In-App Builder now support rich media formats, such as videos, GIFs, and images, allowing you to create more dynamic and immersive In-App experiences. Web Pop-ups also support embedding rich media. You can now upload and embed media alongside text and buttons directly within the builder, without additional setup.</p>
+    <p>This enhancement empowers teams to craft visually engaging content that drives user interaction and brand engagement.</p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/advanced-in-app-builder" target="_blank">Advanced In-App Builder</a>.</p>
+</div>
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
+<div class="release-note article" data-category="campaigns" id="preview-and-test-all-in-app-message-templates">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#preview-and-test-all-in-app-message-templates"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/370216d2a5ec47fd419bc47a95762d51295730db345b40f825b3de7115e6e667-Campaigns.svg" alt="Campaigns" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">Preview and Test All In-App Message Templates</h3>
+    <div class="badge enhancement">ENHANCEMENT</div>
+    <div class="badge private-beta">PRIVATE BETA</div> 
+  </div>
+  <div class="release-note-body">
+    <p>You can now preview and test all In-App message templates, including messages built using Advanced In-App Builder and Custom HTML, directly from the CleverTap dashboard. Instead of sending test messages, you can now preview personalized messages using user or event properties, or enter custom values to view exactly how messages render. This enhancement ensures faster validation, fewer personalization errors, and a consistent preview experience across all In-App templates.</p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/preview-and-send-in-app" target="_blank">Preview and Test In-App Messages</a>.</p>
+</div>
+  <hr/>
+</div>
+`}</HTMLBlock>
 
 <HTMLBlock>{`
 <div class="release-note article" data-category="security-and-project-settings" id="scim-support-for-automated-user-lifecycle-management">
