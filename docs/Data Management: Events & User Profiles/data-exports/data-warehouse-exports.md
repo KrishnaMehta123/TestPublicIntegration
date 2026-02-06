@@ -61,5 +61,8 @@ The Data Warehouse Exports section introduces the workflow that delivers CleverT
   <a href="https://docs.clevertap.com/docs/snowflake-export" class="integration-card">
     <div class="name">Snowflake</div>
   </a>
+	<a href="https://docs.clevertap.com/docs/bigquery-export" class="integration-card">
+    <div class="name">BigQuery</div>
+  </a>
 </div>
 `}</HTMLBlock>
