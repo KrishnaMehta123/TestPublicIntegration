@@ -234,7 +234,7 @@ The following stats for each engagement node are displayed:
   When an engagement node has multiple Campaign IDs, all metrics (such as Sent, Delivered, Clicks, Engagement, and Conversion goals) represent combined data across those IDs.
 </Callout>
 
-You can also view the campaign stats for each engagement node by hovering over the engagement and then clicking the <Image border={true} src="https://files.readme.io/ae4f09b7b09fc99539e01a77b22398ea2804e432ef51a052a5d491d9d3cba7b2-Screenshot_2025-07-02_at_1.13.57_PM.png" className="border" />icon. To learn more about the stats of each messaging channel, refer to the _Stats_ document for each channel.
+You can also view the campaign stats for each engagement node by hovering over the engagement and then clicking the <Image border={false} src="https://files.readme.io/ae4f09b7b09fc99539e01a77b22398ea2804e432ef51a052a5d491d9d3cba7b2-Screenshot_2025-07-02_at_1.13.57_PM.png" />icon. To learn more about the stats of each messaging channel, refer to the _Stats_ document for each channel.
 
 <Image align="center" alt="Campaign Stats" border={true} caption="Campaign Stats" src="https://files.readme.io/a905ed06f6f180f2f88974da68b2aa66e741ba0a94e293aaabcee3c6ac5a47a3-Enagagement_Stats_-_Push_Message.png" />
 
