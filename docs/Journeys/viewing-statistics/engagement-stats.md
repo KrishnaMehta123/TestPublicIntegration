@@ -23,7 +23,7 @@ For instance, a lifecycle marketing team may iterate on a welcome journey to imp
 To view engagement stats:
 
 1. Go to **Journeys**. Click the desired Journey and click **Engagement Stats**.
-2. Select the version from the Version dropdown to view the stats for the specific version of the Journey.  
+2. Select the version from the Version dropdown to view the stats for the specific version of the Journey.
 
    <Image align="center" border={true} caption="Engagement Stats" src="https://files.readme.io/00c1e1c053af5d35460237f787d23b81147f79409fab5103a42ab95e4c3c8de0-image.png" />
 
@@ -290,3 +290,7 @@ To download the engagement stats CSV:
 2. Click the <Image border={false} src="https://files.readme.io/dc353d489783c14e9f6fbb342fbbe86b1f4fa7da36ec311e770d3be748d4d8d9-download_icon_png.png" /> icon at the top of the table.
 
 The CSV file downloads automatically. All the columns displayed on the screen are included in the CSV file.
+
+<Image align="center" alt="CSV Download" border={true} caption="CSV Download" src="https://files.readme.io/fec36241e587da05591fcd56ead415eb1f5a57de3a2646f00fe7dc01fa24c1ba-Download_CSV.png" />
+
+For Journey engagement nodes with multiple paths, the downloaded CSV includes combined stats across all associated Campaign IDs.
