@@ -12,7 +12,9 @@ next:
 ---
 # Overview
 
-Integrating Snowflake with CleverTap allows you to automatically export user engagement and campaign interaction data from the CleverTap dashboard into your Snowflake data warehouse. This helps unify behavioral data with internal sources, such as CRM, transactions, and support logs, for richer insights and more intelligent decision-making. This document provides step-by-step instructions to help you configure and manage exports tailored to your business needs. To export data from CleverTap to Snowflake, perform the following steps:
+Integrating Snowflake with CleverTap enables you to automatically export user engagement and campaign interaction data from the CleverTap dashboard into your Snowflake data warehouse. This integration enables deeper analysis of engagement, behavioral, and campaign performance alongside business metrics such as revenue, retention, and support outcomes. Use this for long-term reporting, attribution, and cross-team analytics access.
+
+This document provides step-by-step instructions to help you configure and manage exports tailored to your business needs. To export data from CleverTap to Snowflake, perform the following steps:
 
 1. **[Configure Snowflake Connection](doc:snowflake-export#configure-snowflake)**: Set up and authenticate your Snowflake database within the CleverTap dashboard.
 2. **[Create Export](doc:snowflake-export#create-export)**: Use the configured connection to define and initiate a data export from CleverTap to Snowflake.
@@ -24,36 +26,20 @@ Integrating Snowflake with CleverTap allows you to automatically export user eng
      CleverTap's integration with Snowflake is currently in Private Beta. Contact your Customer Success Manager for access.
    </Callout>
 
-# Configure Snowflake
-
-To connect your Snowflake account with CleverTap, click _Settings_ > Partners > _Snowflake_, and click **Add Database**. Provide the required configuration details in the following sections:
-
-* [Database Details](doc:snowflake#database-details): Specify the Snowflake account name, warehouse, and Database to which CleverTap should export data.
-* [User Details](doc:snowflake#user-details): Enter the credentials and roles for the Snowflake user authorized to access the target schema and tables.
-
-<Callout icon="📘" theme="info">
-  #### Note
-
-  These permissions must be granted before configuring the connection in the CleverTap dashboard. Without the required access, exports may fail due to insufficient privileges.  
-  For more details on role-based access control in Snowflake, refer to the [Snowflake Access Control Overview](https://docs.snowflake.com/en/user-guide/security-access-control-overview) and [Snowflake Configuration on CleverTap](doc:snowflake).
-</Callout>
-
 # Create Export
 
-Once the Snowflake database is successfully connected to CleverTap, you can begin setting up data exports. Creating an export involves selecting the target Snowflake connection, defining the export scope (such as event types and filters), and specifying how frequently data should be sent.
+Once the Snowflake database is successfully connected to CleverTap, you can begin setting up data exports. To create an export, you need to select the target Snowflake connection, define the scope of the export (which includes the identity preferences and event selections), and specify the frequency at which the data should be sent.
 
 To initiate exporting from Snowflake to CleverTap, perform the following steps:
 
 1. Go to _Settings_ > _Partners_ > _Export centre_ and click **Create Export**.
-
-   <Image align="center" alt="Snowflake Export" border={true} caption="Snowflake Export" src="https://files.readme.io/2afc1f06fc2738e08ea73fa668408dc0f395b0f5d82f99478b8f0c5eef71eccc-Snowflake_export.png" />
 2. Select **Snowflake** from the _Create Export_ window.
-3. Under _Export Details_, select the _Snowflake connection name_ from the dropdown and add the following details:
+3. Choose the previously configured _Snowflake connection name_ and select the required information based on your business use case.
 
    <Image align="center" alt="Export Details" border={true} caption="Export Details" src="https://files.readme.io/2d58093bc83439a27c12cebe3bdd622748c102b57a536e24d29de38d144e10e6-Export_details.png" />
 
-   * **DATA TYPE & IDENTIFIER PRIORITY**: Select the events from the available options to export. For more information, refer to [Export Details](doc:snowflake-export#export-details).
-     * **Fallback Priority order for identities**: Select priority for user identities when exporting data. User Identifiers will be exported based on the selected priority. For more information, refer to the [Configure Identity Priority for Data Exports](doc:snowflake-export#configure-identity-priority-for-data-exports) section.
+   * **DATA TYPE**: Select all the events, engagement events, or your specific set of events that you want to export to your Snowflake. For more information on the events available under _All Events_ and _Engagement Events_, refer to [Export Details](doc:snowflake-export#export-details).
+   * **IDENTIFIER PRIORITY**: User Identifiers are exported based on the selected priority. For more information, refer to [Configure Identity Priority for Data Exports](doc:snowflake-export#configure-identity-priority-for-data-exports).
    * **Frequency**: Select from one of the following options:
      * **One time**: Triggers a single export for the selected export type. You can export data for a specific day, a date range, the current month, the previous month, and similar periods.
 
@@ -65,50 +51,9 @@ To initiate exporting from Snowflake to CleverTap, perform the following steps:
      * **Recurring**: Set up a recurring export that exports all the new events captured in the last window. You can export data as frequently as every 4 hours and once every 24 hours.
 4. Click **Export**. The _Snowflake export has initiated_ message displays at the top of the Exports page.
 
-CleverTap processes the export, and you can now refer to the newly created Snowflake export. The status for each export is set to **PENDING** as soon as it is created. The status changes to **RUNNING** after the processing starts. For a one-time export, the status changes to **DONE** when the export completes.
+You can now refer to the newly created Snowflake export on the listing page. The status for each recurring export is set to **PENDING** as soon as it is created. The status changes to **RUNNING** when processing starts and back to **PENDING** as soon as it is completed.
 
-# Export Table Creation
-
-CleverTap generates a corresponding table in the configured Snowflake account when a data export is created. Each table follows a consistent naming convention that allows easy identification and traceability of exports.
-
-```
-Clevertap_<App_Project_ID>_<ExportID>
-```
-
-### Sample Table Structure
-
-Each export table follows a standardized schema, ensuring consistency in structure and interpretation across all exported datasets.
-
-| Column           | Type            | Description                                                                                                                                                 |
-| ---------------- | --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| App [Project Id] | `VARCHAR`       | Unique identifier for the CleverTap project (App ID).                                                                                                       |
-| Export ID        | `VARCHAR`       | Unique ID representing the export batch.                                                                                                                    |
-| Timestamp        | `TIMESTAMP_NTC` | The event timestamp is recorded in the `yyyy-MM-dd HH:mm:ss.SSS` format. The timestamp reflects the time zone configured at the account level in CleverTap. |
-| CleverTap ID     | `VARCHAR`       | It is a system-generated, unique ID for each profile                                                                                                        |
-| Identity         | `VARCHAR`       | Primary identifier based on the configured priority (for example, Identity, Email).                                                                         |
-| All Identities   | `VARIANT`       | JSON object containing all associated user identifiers.                                                                                                     |
-| Event Name       | `VARCHAR`       | The name of the exported event, which was triggered by the user                                                                                             |
-| DeviceInfo       | `VARIANT`       | JSON object capturing device attributes (OS, model, browser, etc.).                                                                                         |
-| Control Group    | `VARCHAR`       | Indicates if the user is part of a control group for experimentation.                                                                                       |
-| Event Properties | `VARIANT`       | JSON object with additional custom properties associated with the event.                                                                                    |
-
-# Manage Export
-
-This section outlines how to track the status of your data exports, stop or edit them when needed, and filter them efficiently based on your requirements.
-
-* **Stop Export**: Stop a running export by hovering over the export. Click **Stop**. You are navigated back to the Exports page, and the export status will be displayed as **Stopped**.
-* **Edit Export**: Edit a Live Data Streaming and Recurring export in the **Running** and **Pending**(awaiting next run) state. Hover over the required export and click **Edit**. Edit the export details and click **Update export**.
-
-<Callout icon="📘" theme="info">
-  #### Points to Remember
-
-  * In case of running exports, any configurations changes will apply starting with the next scheduled run.
-  * You cannot edit a One-time export, regardless of their status (RUNNING, PENDING, DONE, or STOPPED).
-  * You cannot modify exports marked as **DONE** or **STOPPED**.
-  * Export changes for Live Data Streaming take 10-15 minutes to take effect.
-</Callout>
-
-* **Filter by Export Details**: To filter by [export details](doc:snowflake-export#export-details), click **Filter**. You can filter exports by _Partner_, _Type_, _Status_, or _Frequency_.  To clear the filter, click **Reset**.
+For a one-time export, the status changes to **DONE** when the export completes.
 
 # Configure Identity Priority for Data Exports
 
@@ -116,14 +61,15 @@ The export file includes an identity column with the user's Identity, Phone Numb
 
 Let us understand how the prioritization works based on the identities selected in the _User Identity_ page:
 
-* If you select only _Identity_, the export file includes the identity value. If the identity column is unavailable, it is empty.  
+* If you select only _Identity_, the export file includes the identity value. If the identity column is unavailable, it is empty.
+
   <Image border={true} src="https://files.readme.io/aad1f81-image.png" className="border" />
 * If you select multiple identifiers, you must set the priorities on the _Export_ page. For instance, you set Priority 1 to _Identity_ and Priority 2 to _Email ID_. When exporting data, the export prioritizes the Identity value for the identity column. If it is absent, the Email ID is exported under the identity column of the export file. If both are missing, the column remains empty.
 
 <Callout icon="📘" theme="info">
   #### Key Points to Remember
 
-  * If you change the identity later, the export works according to the set priority. To prioritize the modified identities, edit your export.
+  If you change the identity later, the export works according to the set priority. To prioritize the modified identities, edit your export.
 </Callout>
 
 To prioritize user identity for exports:
@@ -168,3 +114,28 @@ When creating an export, you can choose which event data to include. This allows
   | UTM Visited              | <ul><li>The event is tracked when a user clicks on a link from a marketing campaign that has a UTM parameter defined on it.</li><li>The event is also tracked when a CleverTap-integrated attribution platform, such as Branch or Apsalar, sends this information to CleverTap.</li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
   | AB Test Enter            | Triggered when a user enters an A/B test group.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
   | AB Test Exit             | Triggered when a user exits an A/B test group.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+
+### Table Name Structure
+
+CleverTap generates a corresponding table in the configured Snowflake account when a data export is created. Each table follows a consistent naming convention that allows easy identification and traceability of exports.
+
+```
+Clevertap_<App_Project_ID>_<ExportID>
+```
+
+Each export table follows a standardized schema, ensuring consistency in structure and interpretation across all exported datasets.
+
+| Column           | Type            | Description                                                                                                                                                 |
+| ---------------- | --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| App [Project Id] | `VARCHAR`       | Unique identifier for the CleverTap project (App ID).                                                                                                       |
+| Export ID        | `VARCHAR`       | Unique ID representing the export batch.                                                                                                                    |
+| Timestamp        | `TIMESTAMP_NTC` | The event timestamp is recorded in the `yyyy-MM-dd HH:mm:ss.SSS` format. The timestamp reflects the time zone configured at the account level in CleverTap. |
+| CleverTap ID     | `VARCHAR`       | It is a system-generated, unique ID for each profile                                                                                                        |
+| Identity         | `VARCHAR`       | Primary identifier based on the configured priority (for example, Identity, Email).                                                                         |
+| All Identities   | `VARIANT`       | JSON object containing all associated user identifiers.                                                                                                     |
+| Event Name       | `VARCHAR`       | The name of the exported event, which was triggered by the user                                                                                             |
+| DeviceInfo       | `VARIANT`       | JSON object capturing device attributes (OS, model, browser, etc.).                                                                                         |
+| Control Group    | `VARCHAR`       | Indicates if the user is part of a control group for experimentation.                                                                                       |
+| Event Properties | `VARIANT`       | JSON object with additional custom properties associated with the event.                                                                                    |
+
+<br />
