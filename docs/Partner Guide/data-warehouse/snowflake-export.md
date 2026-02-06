@@ -17,6 +17,7 @@ Integrating Snowflake with CleverTap allows you to automatically export user eng
 1. **[Configure Snowflake Connection](doc:snowflake-export#configure-snowflake)**: Set up and authenticate your Snowflake database within the CleverTap dashboard.
 2. **[Create Export](doc:snowflake-export#create-export)**: Use the configured connection to define and initiate a data export from CleverTap to Snowflake.
 3. **[Export Table Creation](doc:snowflake-export#export-table-creation)**: CleverTap automatically creates a table in Snowflake for each export, following a standardized naming convention.
+
    <Callout icon="📘" theme="info">
      #### Private Beta
 
@@ -27,14 +28,14 @@ Integrating Snowflake with CleverTap allows you to automatically export user eng
 
 To connect your Snowflake account with CleverTap, click _Settings_ > Partners > _Snowflake_, and click **Add Database**. Provide the required configuration details in the following sections:
 
-* [Database Details](doc:snowflake-configuration#database-details): Specify the Snowflake account name, warehouse, and Database to which CleverTap should export data.
-* [User Details](doc:snowflake-configuration#user-details): Enter the credentials and roles for the Snowflake user authorized to access the target schema and tables.
+* [Database Details](doc:snowflake#database-details): Specify the Snowflake account name, warehouse, and Database to which CleverTap should export data.
+* [User Details](doc:snowflake#user-details): Enter the credentials and roles for the Snowflake user authorized to access the target schema and tables.
 
 <Callout icon="📘" theme="info">
   #### Note
 
   These permissions must be granted before configuring the connection in the CleverTap dashboard. Without the required access, exports may fail due to insufficient privileges.  
-  For more details on role-based access control in Snowflake, refer to the [Snowflake Access Control Overview](https://docs.snowflake.com/en/user-guide/security-access-control-overview) and [Snowflake Configuration on CleverTap](doc:snowflake-configuration).
+  For more details on role-based access control in Snowflake, refer to the [Snowflake Access Control Overview](https://docs.snowflake.com/en/user-guide/security-access-control-overview) and [Snowflake Configuration on CleverTap](doc:snowflake).
 </Callout>
 
 # Create Export
@@ -55,8 +56,9 @@ To initiate exporting from Snowflake to CleverTap, perform the following steps:
      * **Fallback Priority order for identities**: Select priority for user identities when exporting data. User Identifiers will be exported based on the selected priority. For more information, refer to the [Configure Identity Priority for Data Exports](doc:snowflake-export#configure-identity-priority-for-data-exports) section.
    * **Frequency**: Select from one of the following options:
      * **One time**: Triggers a single export for the selected export type. You can export data for a specific day, a date range, the current month, the previous month, and similar periods.
+
        <Callout icon="📘" theme="info">
-         #### Note:
+         #### Note
 
          You can export data up to the last 60 days. If you require data beyond this range, contact your Customer Success Manager or [CleverTap Support](https://help.clevertap.com/hc/en-us/requests/new).
        </Callout>
@@ -97,12 +99,14 @@ This section outlines how to track the status of your data exports, stop or edit
 * **Stop Export**: Stop a running export by hovering over the export. Click **Stop**. You are navigated back to the Exports page, and the export status will be displayed as **Stopped**.
 * **Edit Export**: Edit a Live Data Streaming and Recurring export in the **Running** and **Pending**(awaiting next run) state. Hover over the required export and click **Edit**. Edit the export details and click **Update export**.
 
-> 📘 Points to Remember
->
-> * In case of running exports, any configurations changes will apply starting with the next scheduled run.
-> * You cannot edit a One-time export, regardless of their status (RUNNING, PENDING, DONE, or STOPPED).
-> * You cannot modify exports marked as **DONE** or **STOPPED**.
-> * Export changes for Live Data Streaming take 10-15 minutes to take effect.
+<Callout icon="📘" theme="info">
+  #### Points to Remember
+
+  * In case of running exports, any configurations changes will apply starting with the next scheduled run.
+  * You cannot edit a One-time export, regardless of their status (RUNNING, PENDING, DONE, or STOPPED).
+  * You cannot modify exports marked as **DONE** or **STOPPED**.
+  * Export changes for Live Data Streaming take 10-15 minutes to take effect.
+</Callout>
 
 * **Filter by Export Details**: To filter by [export details](doc:snowflake-export#export-details), click **Filter**. You can filter exports by _Partner_, _Type_, _Status_, or _Frequency_.  To clear the filter, click **Reset**.
 
@@ -113,12 +117,14 @@ The export file includes an identity column with the user's Identity, Phone Numb
 Let us understand how the prioritization works based on the identities selected in the _User Identity_ page:
 
 * If you select only _Identity_, the export file includes the identity value. If the identity column is unavailable, it is empty.  
-  ![](https://files.readme.io/aad1f81-image.png)
+  <Image border={true} src="https://files.readme.io/aad1f81-image.png" className="border" />
 * If you select multiple identifiers, you must set the priorities on the _Export_ page. For instance, you set Priority 1 to _Identity_ and Priority 2 to _Email ID_. When exporting data, the export prioritizes the Identity value for the identity column. If it is absent, the Email ID is exported under the identity column of the export file. If both are missing, the column remains empty.
 
-> 📘 Key Points to Remember
->
-> * If you change the identity later, the export works according to the set priority. To prioritize the modified identities, edit your export.
+<Callout icon="📘" theme="info">
+  #### Key Points to Remember
+
+  * If you change the identity later, the export works according to the set priority. To prioritize the modified identities, edit your export.
+</Callout>
 
 To prioritize user identity for exports:
 
@@ -133,7 +139,7 @@ When creating an export, you can choose which event data to include. This allows
 
 * **All Events**: Export data for all defined events, including _System_ and _Custom_ events.
 * **Selected Events**: Select the specific events to export from the dropdown.
-* **Engagement Events**: Export the following engagement events:  
+* **Engagement Events**: Export the following engagement events:
 
   <br />
 
