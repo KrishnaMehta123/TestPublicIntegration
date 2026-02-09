@@ -284,6 +284,7 @@ When configuring import mapping in CleverTap, keep the following best practices 
 * **Consistent Formats**: Keep date and time formats uniform in your selected data warehouse. If you choose Date type, ensure the column’s format (YYYY-MM-DD, etc.) matches what you set in CleverTap. Inconsistent formats will cause parsing errors.
 * **Leverage Dry Runs**: Always run the Dry Run feature before the actual import. This is like previewing a snowball before throwing it – it catches mapping issues so you can fix them without affecting live data.
 * **Limit Data to What’s Needed**: Import only the columns you use in CleverTap. Avoid mapping extraneous fields or properties. This makes the process faster and reduces risk.
+* **Upload Anonymous Profiles**: Use the Device ID as the CleverTap ID to upload anonymous user data to CleverTap.
 * **Security and Access**: Use a dedicated data warehouse user with minimal permissions for the integration. Grant only read access to the tables/columns you need.
 * **Naming Conventions**: Use consistent names for properties and events. Avoid special characters in property keys (CleverTap does not allow the following characters: `%`, `<`, `>`, `!`, `|`, `&`, `:`, `;`, `$`, `'`, `"`, `\`, `#`). If needed, map such keys to valid property names in CleverTap.
 * **Segmentation of Data**: Consider filtering your data warehouse data to exclude obsolete or inactive users/events before import. This keeps your CleverTap instance clean and focused on relevant customers.
