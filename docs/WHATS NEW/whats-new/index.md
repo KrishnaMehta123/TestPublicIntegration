@@ -155,16 +155,16 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
 ## February
 
 <HTMLBlock>{`
-<div class="release-note article" data-category="security-and-project-settings" id="api-encryption">
+<div class="release-note article" data-category="security-project-settings" id="api-encryption">
   <div class="release-note-header">
     <div class="anchor-link-icon">
       <a href="#api-encryption"><i class="fa-light fa-anchor"></i></a>
     </div>
     <div>
-      <img src="https://files.readme.io/8d6f2c2f9f8b4a6e9a7c2f1a1b2c3d4e-Security.svg" alt="Security & Project Settings" class="release-note-heading-icon"/>
+      <img src="https://files.readme.io/01053ed2e833c5e6bb242a86b84f304b7499ff0b0a26f422c3cc846d70530658-Settings.svg" alt="Settings" class="release-note-heading-icon"/>
     </div>
     <h3 class="release-note-heading">API Encryption</h3>
-    <div class="badge new-feature">NEW FEATURE</div>
+<div class="badge new-feature">NEW FEATURE</div>
   </div>
 
   <div class="release-note-body">
