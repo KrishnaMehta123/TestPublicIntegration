@@ -269,11 +269,13 @@ After mapping data fields from the data warehouse to CleverTap, the system runs 
 
 ## Sync User Profile and Event Data (Optional)
 
-Syncing user profiles and event data allows you to push the selected random data from the data warehouse's database to CleverTap. For user profiles and events, if the profile is not present in CleverTap, a new profile is created, and user properties are captured against this profile.
+Syncing user profiles and event data lets you push selected random data from the data warehouse to CleverTap. For user profiles and events, if the profile is not present in CleverTap, a new profile is created, and user properties are captured against this profile.
 
-> 🚧 Event Data Sync During Dry Run
->
-> When performing the dry run of event data, syncing may result in duplicate events. To maintain data integrity, avoid syncing events unless absolutely necessary.
+<Callout icon="🚧" theme="warn">
+  #### Event Data Sync During Dry Run
+
+  When performing the dry run of event data, syncing may result in duplicate events. To maintain data integrity, avoid syncing events unless absolutely necessary.
+</Callout>
 
 # Best Practices for Mapping
 
