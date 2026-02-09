@@ -168,7 +168,7 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
   </div>
 
   <div class="release-note-body">
-    <p>You can now secure sensitive API data with payload-level PII Encryption for API (In-Transit). This feature encrypts API request and response payloads end-to-end using Hybrid Public Key Encryption (HPKE), adding an extra layer of protection beyond HTTPS/TLS—without changing existing APIs, schemas, limits, or response formats.</p>
+    <p>You can now secure sensitive API data with payload-level Encryption. This feature encrypts API request and response payloads end-to-end using Hybrid Public Key Encryption (HPKE), adding an extra layer of protection beyond HTTPS/TLS, without changing existing APIs, schemas, limits, or response formats.</p>
 
     <p>With API Encryption, you can:</p>
     <p>
