@@ -14,7 +14,7 @@ next:
 ---
 # Overview
 
-**Schedule an Import** enables you to control how often data is imported from your database into CleverTap. By configuring a schedule, you ensure your CleverTap data stays up-to-date with the warehouse, aligning with your operational and analytical needs. This document covers the following three scheduling options and how to configure each, along with their ideal use cases and best practices:e
+**Schedule an Import** enables you to control how often data is imported from your database into CleverTap. By configuring a schedule, you ensure your CleverTap data stays up to date with the warehouse, aligning with your operational and analytical needs. This document covers the following three scheduling options and how to configure each, along with their ideal use cases and best practices:e
 
 * [**Repeat Intervals**](doc:schedule-import#repeat-intervals): Configure automated recurring imports at defined intervals (for example, every _N_ minutes, hours, or days) to ensure continuous and consistent data synchronization.
 * [**Custom Schedule**](doc:schedule-import#custom-schedule): Schedule imports on specific days of the week or specific dates of the month to align with weekly or monthly cycles.
