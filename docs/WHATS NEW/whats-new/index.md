@@ -152,7 +152,7 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
 
 # 2026
 
-## January
+## February
 
 <HTMLBlock>{`
 <div class="release-note article" data-category="security-and-project-settings" id="api-encryption">
@@ -186,7 +186,7 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
 </div>
 `}</HTMLBlock>
 
-<br />
+## January
 
 <HTMLBlock>{`
 <div class="release-note article" data-category="campaigns" id="delivery-delay-for-in-app-messages">
