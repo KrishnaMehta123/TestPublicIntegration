@@ -279,8 +279,8 @@ Syncing user profiles and event data allows you to push the selected random data
 
 When configuring import mapping in CleverTap, keep the following best practices and tips in mind to make the most of these features:
 
-* **Validate Data Upfront**: Clean and verify your source data before import. For example, ensure Email addresses are well-formed and active to avoid future bounces. Check phone numbers and dates so you do not run into errors during the Dry Run.
-* **Use Incremental Timestamps**: Always map an “updated at” or timestamp column so you can do incremental updates.
+* **Validate Data Upfront**: Clean and verify your source data before import. For example, ensure Email addresses are well-formed and active to avoid future bounces. Check phone numbers and dates to avoid errors during the Dry Run.
+* **Use Incremental Timestamps**: Always map an “updated at” or timestamp column to "UPDATED ON" so you can do incremental updates.
 * **Consistent Formats**: Keep date and time formats uniform in your selected data warehouse. If you choose Date type, ensure the column’s format (YYYY-MM-DD, etc.) matches what you set in CleverTap. Inconsistent formats will cause parsing errors.
 * **Leverage Dry Runs**: Always run the Dry Run feature before the actual import. This is like previewing a snowball before throwing it – it catches mapping issues so you can fix them without affecting live data.
 * **Limit Data to What’s Needed**: Import only the columns you use in CleverTap. Avoid mapping extraneous fields or properties. This makes the process faster and reduces risk.
@@ -290,4 +290,4 @@ When configuring import mapping in CleverTap, keep the following best practices 
 
 By understanding these options and best practices, you can ensure your data warehouse-to-CleverTap imports run smoothly and keep your customer data accurate and up-to-date.
 
-In the next step, **Schedule** the import by choosing **Repeat Intervals**, or a **Custom Schedule**, or opting for **Manual Triggering**. For detailed instructions, refer to [Schedule Import](doc:schedule-snowflake-import).
+In the next step, **Schedule** the import by choosing **Repeat Intervals**, or a **Custom Schedule**, or opting for **Manual Triggering**. For detailed instructions, refer to [Schedule Import](doc:schedule-import).
