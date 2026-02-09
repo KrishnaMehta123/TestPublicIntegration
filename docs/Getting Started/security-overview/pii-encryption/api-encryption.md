@@ -41,11 +41,11 @@ API Encryption protects data in transit by encrypting API payloads before they l
 
 This section explains how CleverTap protects API requests using hybrid encryption, combining the speed of symmetric encryption with the security of public key cryptography.
 
-1. [Customer Encrypts the Payload with an Ephemeral Key](doc:api-encryption-in-transit#customer-encrypts-the-payload-with-an-ephemeral-key)
-2. [Customer Sends the Encrypted Request](doc:api-encryption-in-transit#customer-sends-the-encrypted-request)
-3. [CleverTap Processes the Encrypted Request](doc:api-encryption-in-transit#clevertap-processes-the-encrypted-request)
-4. [CleverTap Encrypts the API Response](doc:api-encryption-in-transit#clevertap-encrypts-the-api-response)
-5. [Customer Decrypts the API Response](doc:api-encryption-in-transit#customer-decrypts-the-api-response)
+1. [Customer Encrypts the Payload with an Ephemeral Key](doc:api-encryption#customer-encrypts-the-payload-with-an-ephemeral-key)
+2. [Customer Sends the Encrypted Request](doc:api-encryption#customer-sends-the-encrypted-request)
+3. [CleverTap Processes the Encrypted Request](doc:api-encryption#clevertap-processes-the-encrypted-request)
+4. [CleverTap Encrypts the API Response](doc:api-encryption#clevertap-encrypts-the-api-response)
+5. [Customer Decrypts the API Response](doc:api-encryption#customer-decrypts-the-api-response)
 
 The following image shows the API encryption workflow:
 
@@ -63,7 +63,7 @@ At the end of this step, the following happens:
 * The one-time key is further encrypted by CleverTap's public key.
 * The plaintext payload is no longer exposed and is ready for secure transmission.
 
-This step ensures sensitive data is protected before it leaves the customer’s environment, laying the foundation for payload-level security in the encryption workflow. For more information on the keys, refer to [Key Management](doc:api-encryption-in-transit#key-management).
+This step ensures sensitive data is protected before it leaves the customer’s environment, laying the foundation for payload-level security in the encryption workflow. For more information on the keys, refer to [Key Management](doc:api-encryption#key-management).
 
 <Callout icon="📘" theme="info">
   **Header-Based Encryption Control**
@@ -73,7 +73,7 @@ This step ensures sensitive data is protected before it leaves the customer’s 
   * **Content-Type**: `application/octet-stream+hpke`
   * **Accept**: `application/octet-stream+hpke`
 
-    For more information, refer to [API Encryption (In-Transit) - Integration and Reference](https://staging.docs.dev.clevertap.net/docs/api-encryption-in-transit-integration-and-reference).
+    For more information on the API Encryption reference, refer to [API Encryption](https://developer.clevertap.com/docs/api-encryption).
 </Callout>
 
 ## Customer Sends the Encrypted Request
@@ -156,7 +156,7 @@ All existing API constraints remain unchanged, including the following:
 * Batch size and ingestion limits
 * Timeout behavior
 
-API Encryption functions strictly as an additional security layer. For more information, refer to [API Encryption (In-Transit) - Integration and Reference](https://staging.docs.dev.clevertap.net/docs/api-encryption-in-transit-integration-and-reference).
+API Encryption functions strictly as an additional security layer. For more information, refer to [API Encryption (In-Transit) - Integration and Reference](https://developer.clevertap.com/docs/api-encryption).
 
 # Frequently Asked Questions
 
