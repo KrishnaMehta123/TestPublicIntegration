@@ -156,7 +156,7 @@ All existing API constraints remain unchanged, including the following:
 * Batch size and ingestion limits
 * Timeout behavior
 
-API Encryption functions strictly as an additional security layer. For more information, refer to [API Encryption (In-Transit) - Integration and Reference](https://developer.clevertap.com/docs/api-encryption).
+API Encryption functions strictly as an additional security layer. For more information, refer to [API Encryption](https://developer.clevertap.com/docs/api-encryption).
 
 # Frequently Asked Questions
 
