@@ -14,16 +14,18 @@ next:
 ---
 # Overview
 
-After [configuring import](doc:create-snowflake-import), this step lets you map your data warehouse columns to CleverTap’s user profiles or events. This ensures each row of data updates the correct fields in CleverTap.
+After [configuring import](doc:create-import), this step lets you map your data warehouse columns to CleverTap’s user profiles or events. This ensures each row of data updates the correct fields in CleverTap.
 
-* [**User Profile Data**](doc:map-data-for-snowflake-import#user-profile-data): Map user-specific fields such as `email`, `first_name`, `last_name`, or any other attribute from the database, to the user profile fields in CleverTap.
-* [**Event Properties**](doc:map-data-for-snowflake-import#event-data): Map event-specific columns such as `add_to_cart`, `product_viewed`, `purchased` to CleverTap event properties.
+* [**User Profile Data**](doc:map-data-for-import#user-profile-data): Map user-specific fields such as `email`, `first_name`, `last_name`, or any other attribute from the database, to the user profile fields in CleverTap.
+* [**Event Properties**](doc:map-data-for-import#event-data): Map event-specific columns such as `add_to_cart`, `product_viewed`, `purchased` to CleverTap event properties.
 
 Use the toggle to switch between User Profile Data and Event Data mapping options.
 
-> 📘 Switch Mapping Options
->
-> Switching between mapping options clears any existing field selections and mappings configured in the current option.
+<Callout icon="📘" theme="info">
+  #### Switch Mapping Options
+
+  Switching between mapping options clears any existing field selections and mappings configured in the current option.
+</Callout>
 
 # User Profile Data
 
@@ -33,9 +35,9 @@ Configure how user data is mapped and imported from the data warehouse into Clev
 
 The mapping process consists of the following three steps:
 
-1. [Map identity](doc:map-data-for-snowflake-import#map-identity)  to specify how incoming user records from data warehouses are matched to user profiles in CleverTap.
-2. [Select a timestamp column](doc:map-data-for-snowflake-import#define-updated-on-timestamp) to fetch only newly added or updated records.
-3. [Map Snowflake columns](doc:map-data-for-snowflake-import#map-user-profile-properties-from-snowflake) to CleverTap user properties.
+1. [Map identity](doc:map-data-for-import#map-identity)  to specify how incoming user records from data warehouses are matched to user profiles in CleverTap.
+2. [Select a timestamp column](doc:map-data-for-import#define-updated-on-timestamp) to fetch only newly added or updated records.
+3. [Map Snowflake columns](doc:map-data-for-import#map-user-profile-properties) to CleverTap user properties.
 
 ## Map Identity
 
@@ -45,26 +47,28 @@ This step specifies how incoming user records from data warehouses are matched t
   * If a profile with the same identity exists, CleverTap updates or adds properties to the existing profile.
   * If a matching profile does not exist, CleverTap creates a new profile and generates a corresponding CleverTap ID.
 * **[CleverTap ID](https://docs.clevertap.com/docs/user-profiles#identifiers)**: A system-generated unique identifier assigned to each user profile in CleverTap. The maximum length allowed is 1024 characters. When using CleverTap ID:
-  * The ID must be provided when making profile updates.
-  * If a profile with the same ID exists, CleverTap updates or adds properties to the existing profile.
+  * The ID must be provided when updating the profile.
+  * If a profile with the same ID exists, CleverTap updates or adds properties to it.
 
-> 🚧 Identity Field Validation Rules
->
-> * Identity/CleverTap ID values cannot be: `undefined`, `null`, `na`, `n/a`, `0`, `nil`, `-1`, `infinity`, `-infinity`, `inf`, `-inf`, `nan`, `-nan`, `empty`, or `xxxxxx`.
-> * Values exceeding 1024 characters will be marked as errors.
+<Callout icon="🚧" theme="warn">
+  #### Identity Field Validation Rules
+
+  * Identity/CleverTap ID values cannot be: `undefined`, `null`, `na`, `n/a`, `0`, `nil`, `-1`, `infinity`, `-infinity`, `inf`, `-inf`, `nan`, `-nan`, `empty`, or `xxxxxx`.
+  * Values exceeding 1024 characters will be marked as errors.
+</Callout>
 
 ## Define Updated On Timestamp
 
 Define the **Updated On** field to ensure CleverTap imports only new or updated rows since the last sync, optimizing performance and avoiding duplicate processing.
 
-1. **Select a Timestamp Column**\
+1. **Select a Timestamp Column**  
    Select a column that tracks when each row was added or updated. The following column types are supported:
    * `NUMERIC`
    * `DATE`
    * `TIMESTAMP`
    * `TIMESTAMP_WITH_TIMEZONE`
 
-2. **Configure the Date Format**\
+2. **Configure the Date Format**  
    Specify how CleverTap should interpret the timestamp values:
 
    * If the column type is `NUMERIC`, choose one of the following:
@@ -77,13 +81,13 @@ Define the **Updated On** field to ensure CleverTap imports only new or updated 
 
 This step maps data warehouse columns to CleverTap user properties, ensuring seamless data import and accurate user profile updates. To do so, perform the following steps:
 
-1. **Select a Column**\
+1. **Select a Column**  
    Choose a column from your database that contains user-related information, such as `email`, `name`, `Customer Type`, or `Wallet Balance`.
 
-2. **Assign a User Property**\
+2. **Assign a User Property**  
    Map the selected column to a corresponding CleverTap user property.
 
-   * Select from available system properties (for example, `email_id` maps to *Email*).
+   * Select from available system properties (for example, `email_id` maps to _Email_).
    * If the desired property isn’t listed, enter a new name to create a custom property.
 
 > 📘 **System Properties**
@@ -94,7 +98,7 @@ This step maps data warehouse columns to CleverTap user properties, ensuring sea
 >   * **MSG Properties** (e.g., MSG-Email, MSG-SMS): Accepts only `"0"`, `"1"`, `"true"`, or `"false"`
 >   * **Property Names**: Cannot include these characters: `%`, `>`, `<`, `!`, `|`, `&`, `.`, `:`, `;`, `$`, `'`, `"`, `\`, `#`
 
-3. **Choose a Data Type**\
+3. **Choose a Data Type**  
    Select the appropriate data type for the column. Use the table below to determine when and how each type should be used:
 
 | **Data Type** | **When to Select**                           | **Example Values**                                   | Validation                                                                                                                                        |
@@ -114,15 +118,15 @@ Configure how event data is mapped and imported from the data warehouse into Cle
 
 The mapping process consists of the following five steps:
 
-1. [Map identity](doc:map-data-for-snowflake-import#map-identity-1) to associate event data with user profiles in CleverTap.
-2. [Select a timestamp column](doc:map-data-for-snowflake-import#define-updated-on-timestamp-1) to fetch only newly added or updated rows.
-3. [Define when each event occurred](doc:map-data-for-snowflake-import#map-created-on-timestamp)  using a created-on timestamp.
-4. [Choose how events are named](doc:map-data-for-snowflake-import#choose-event-naming-method) (from a column or a static value).
-5. [Map Snowflake columns to CleverTap event properties](doc:map-data-for-snowflake-import#map-event-properties-from-snowflake).
+1. [Map identity](doc:map-data-for-import#map-identity-1) to associate event data with user profiles in CleverTap.
+2. [Select a timestamp column](doc:map-data-for-import#define-updated-on-timestamp-1) to fetch only newly added or updated rows.
+3. [Define when each event occurred](doc:map-data-for-import#map-created-on-timestamp)  using a created-on timestamp.
+4. [Choose how events are named](doc:map-data-for-import#choose-event-naming-method) (from a column or a static value).
+5. [Map Snowflake columns to CleverTap event properties](doc:map-data-for-import#map-event-properties).
 
 ## Map Identity
 
-This step specifies how incoming event records from the data warehouse are matched to user profiles in CleverTap using either a unique identity field (e.g., email, phone, or user ID) or the system-generated CleverTap ID.
+This step specifies how incoming event records from the data warehouse are matched to user profiles in CleverTap using either a unique identity field (for example, email, phone, or user ID) or the system-generated CleverTap ID.
 
 * **[Identity](https://docs.clevertap.com/docs/user-profiles#identifiers)**: Matches events to user profiles using a unique field. The maximum length allowed is 1024 characters.
 * **[CleverTap ID](https://docs.clevertap.com/docs/user-profiles#identifiers)**: Matches records using CleverTap’s system-generated ID.
@@ -136,7 +140,7 @@ This step specifies how incoming event records from the data warehouse are match
 
 This field ensures CleverTap imports only newly added or updated event records since the last sync.
 
-1. **Select a Timestamp Column**\
+1. **Select a Timestamp Column**  
    Choose a column that indicates when a row was last added or updated. Supported types:
    * `NUMERIC`
    * `DATE`
@@ -147,7 +151,7 @@ This field ensures CleverTap imports only newly added or updated event records s
    * If the column type is `NUMERIC`, choose:
      * **Epoch Seconds** (for example, `1640995200`)
      * **Epoch Milliseconds** (for example, `1640995200000`)
-   * If the column type is **DATE**, **TIMESTAMP**, or **TIMESTAMP\_WITH\_TIMEZONE**, CleverTap automatically processes the timestamp without requiring a format selection.
+   * If the column type is **DATE**, **TIMESTAMP**, or **TIMESTAMP_WITH_TIMEZONE**, CleverTap automatically processes the timestamp without requiring a format selection.
 
 ## Map Created On Timestamp
 
@@ -160,17 +164,17 @@ For more information, refer to [Supported Date Format](doc:map-data-for-snowflak
 
 > 📘 Validation Rules for Timestamp
 >
-> * If this field is not mapped, CleverTap uses the system timestamp, which may misrepresent actual event timing.
+> * If this field is not mapped, CleverTap uses the current account timestamp to store the event data against the user profile.
 > * Invalid formats or data types will cause import errors.
 
 ## Choose Event Naming Method
 
 Specify how CleverTap should assign names to imported events.
 
-* **Event from Column**\
+* **Event from Column**  
   Import different event types using a column that contains event names. Ideal for dynamic event tables.
 
-* **Specific Event**\
+* **Specific Event**  
   Assign a single static event name for all imported records. Best for importing a consistent event type.
 
 > 📘 Validations Rules for Event Naming
@@ -182,10 +186,10 @@ Specify how CleverTap should assign names to imported events.
 
 This step maps columns to CleverTap event properties, providing context and detail to each event.
 
-1. **Select a Column**\
+1. **Select a Column**  
    Choose a column with event-related details like `category`, `price`, or `transactionID`.
 
-2. **Enter Event Property**\
+2. **Enter Event Property**  
    Assign a name for the corresponding CleverTap event property.
 
 You can use existing property names or enter new ones to create custom event properties.
@@ -195,7 +199,7 @@ You can use existing property names or enter new ones to create custom event pro
 > * System event properties and `Charged: Item|Properties` cannot be imported.
 > * Event property names must not contain: `%`, `>`, `<`, `!`, `|`, `&`, `.`, `:`, `;`, `$`, `'`, `"`, `\`, `#`
 
-3. **Select Data Type**\
+3. **Select Data Type**  
    Choose the appropriate data type based on your column values:
 
 | **Data Type** | **When to Select**                            | **Example Values**          | **Validation**                                                                                                                                |
@@ -275,7 +279,7 @@ Syncing user profiles and event data allows you to push the selected random data
 
 When configuring import mapping in CleverTap, keep the following best practices and tips in mind to make the most of these features:
 
-* **Validate Data Upfront**: Clean and verify your source data before import. For example, ensure Email addresses are well-formed and active to avoid bounces in the future. Check phone numbers and dates so you don’t hit errors during the Dry Run.
+* **Validate Data Upfront**: Clean and verify your source data before import. For example, ensure Email addresses are well-formed and active to avoid future bounces. Check phone numbers and dates so you do not run into errors during the Dry Run.
 * **Use Incremental Timestamps**: Always map an “updated at” or timestamp column so you can do incremental updates.
 * **Consistent Formats**: Keep date and time formats uniform in your selected data warehouse. If you choose Date type, ensure the column’s format (YYYY-MM-DD, etc.) matches what you set in CleverTap. Inconsistent formats will cause parsing errors.
 * **Leverage Dry Runs**: Always run the Dry Run feature before the actual import. This is like previewing a snowball before throwing it – it catches mapping issues so you can fix them without affecting live data.
