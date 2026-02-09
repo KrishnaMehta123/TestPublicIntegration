@@ -152,7 +152,41 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
 
 # 2026
 
-## January 
+## January
+
+<HTMLBlock>{`
+<div class="release-note article" data-category="security-and-project-settings" id="api-encryption">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#api-encryption"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/8d6f2c2f9f8b4a6e9a7c2f1a1b2c3d4e-Security.svg" alt="Security & Project Settings" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">API Encryption</h3>
+    <div class="badge new-feature">NEW FEATURE</div>
+  </div>
+
+  <div class="release-note-body">
+    <p>You can now secure sensitive API data with payload-level PII Encryption for API (In-Transit). This feature encrypts API request and response payloads end-to-end using Hybrid Public Key Encryption (HPKE), adding an extra layer of protection beyond HTTPS/TLS—without changing existing APIs, schemas, limits, or response formats.</p>
+
+    <p>With API Encryption, you can:</p>
+    <p>
+      <ul>
+        <li>Encrypt API requests and responses end-to-end while in transit to prevent exposure of sensitive PII.</li>
+        <li>Adopt encryption incrementally with header-based, per-request control and zero downtime.</li>
+        <li>Retain full ownership of private keys, which never leave your environment.</li>
+        <li>Meet security and regulatory requirements for compliance-driven industries.</li>
+      </ul>
+    </p>
+<p>For more information, refer to <a href="https://docs.clevertap.com/docs/api-encryption" target="_blank">API Encryption</a> and <a href=\"https://developer.clevertap.com/docs/api-encryption" target=\"_blank\"> API Encryption - Reference.</p>
+  </div>
+
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<br />
 
 <HTMLBlock>{`
 <div class="release-note article" data-category="campaigns" id="delivery-delay-for-in-app-messages">
