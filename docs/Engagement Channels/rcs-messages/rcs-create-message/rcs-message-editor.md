@@ -33,7 +33,7 @@ The RCS Message Template selection screen will appear, where you can create or e
 
 CleverTap supports two modes for working with RCS templates, depending on your region and the regulatory requirements enforced by telecom carriers and campaign compliance guidelines.
 
-### Approved Templates (For Indian Users)
+### Approved Templates 
 
 In regions where template approval is required, RCS templates must be created and submitted in advance. Once approved:
 
@@ -43,7 +43,7 @@ In regions where template approval is required, RCS templates must be created an
 
 When using an approved template in the editor, you will see fields pre-filled with static content or placeholderCleverTap supports two modes for working with RCS templates, depending on your region and the regulatory requirements enforced by telecom carriers and campaign compliance guidelines.s. Your role is to supply the appropriate values for those placeholders during campaign setup.
 
-### Free-form Templates (outside India)
+### Free-form Templates 
 
 In regions where template approval is not required, you can build templates directly in the editor. These templates allow full flexibility:
 
