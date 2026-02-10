@@ -31,7 +31,7 @@ The RCS Message Template selection screen will appear, where you can create or e
 
 ## Template Creation Modes
 
-CleverTap supports two modes for working with RCS templates, depending on your region and the regulatory requirements enforced by telecom carriers and campaign compliance guidelines.
+CleverTap supports two modes for working with RCS templates, based on your telecom carrier and campaign regulations:
 
 ### Approved Templates 
 
