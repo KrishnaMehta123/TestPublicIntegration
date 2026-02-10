@@ -24,7 +24,7 @@ This document helps you write prompts that get precise, visually accurate, and o
   Currently, this feature is released in Private Beta. If you want to access this feature, contact your Customer Success Manager.
 </Callout>
 
-Review AI-generated images for brand and legal compliance before publishing. Avoid including any confidential or personal information in your prompts. For more legal and compliance related details, refer to [FAQs](https://docs.clevertap.com/docs/getting-started?isFramePreview=true#faqs).
+Review AI-generated images for brand and legal compliance before publishing. Avoid including any confidential or personal information in your prompts. For more legal and compliance related details, refer to [FAQs](https://docs.clevertap.com/docs/designer-agent#faqs).
 
 # Writing Effective Prompts
 
