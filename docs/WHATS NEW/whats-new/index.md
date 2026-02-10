@@ -166,7 +166,7 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
   </div>
   <div class="release-note-body">
     <p>When multiple paths converge at a journey engagement node, the node now displays all associated campaign IDs. This ensures accurate analytics, user discovery, and reporting across Analytics, Find People, and user downloads.</p>
-    <p>With this enhancement, you can: <li>Analyze users reached through specific journey paths. </li><li>Search for users using campaign-based filters in Find People.</li><li>Download user lists for reporting.</li><li>Reconcile Journey node statistics with Analytics data.</li></p>
+    <p>With this enhancement, you can: <ul><li>Analyze users reached through specific journey paths. </li><li>Search for users using campaign-based filters in Find People.</li><li>Download user lists for reporting.</li><li>Reconcile Journey node statistics with Analytics data.</li></ul></p>
     <p>For more information, refer to <a href="https://docs.clevertap.com/docs/engagement-stats" target="_blank">Engagement Stats</a>.
   </div>
   <hr/>
