@@ -155,6 +155,25 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
 ## February
 
 <HTMLBlock>{`
+<div class="release-note article" data-category="journeys" id="journey-tracking-with-multiple-campaign-ids">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#journey-tracking-with-multiple-campaign-ids"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div><img src="https://files.readme.io/51dc269788d03bb7bc0482fbc020414bedd96b6c778ac37b71884095493b93c8-Journeys.svg" alt="Journeys" /></div>
+    <h3 class="release-note-heading">Journey Tracking with Multiple Campaign IDs</h3>
+    <div class="badge enhancement">ENHANCEMENT</div>
+  </div>
+  <div class="release-note-body">
+    <p>When multiple paths converge at a journey engagement node, the node now displays all associated campaign IDs. This ensures accurate analytics, user discovery, and reporting across Analytics, Find People, and user downloads.</p>
+    <p>With this enhancement, you can: <li>Analyze users reached through specific journey paths. </li><li>Search for users using campaign-based filters in Find People.</li><li>Download user lists for reporting.</li><li>Reconcile Journey node statistics with Analytics data.</li></p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/engagement-stats" target="_blank">Engagement Stats</a>.
+  </div>
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
 <div class="release-note article" data-category="security-project-settings" id="api-encryption">
   <div class="release-note-header">
     <div class="anchor-link-icon">
