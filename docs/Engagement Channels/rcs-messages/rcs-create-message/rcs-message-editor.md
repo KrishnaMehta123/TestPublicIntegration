@@ -35,7 +35,7 @@ CleverTap supports two modes for working with RCS templates, based on your telec
 
 ### Approved Templates 
 
-In regions where template approval is required, RCS templates must be [created](doc:rcs-setup#create-template) and submitted in advance. Once approved:
+For carriers where template approval is required, RCS templates must be [created](doc:rcs-setup#create-template) and submitted in advance. Once approved:
 
 * Template content and button fields are locked.
 * Only dynamic placeholder values (e.g., `{{1}}`, `{{2}}`) can be filled at the campaign level.
