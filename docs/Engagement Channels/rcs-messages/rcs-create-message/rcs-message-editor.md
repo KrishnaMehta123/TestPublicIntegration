@@ -45,11 +45,10 @@ When using an approved template in the editor, you will see fields pre-filled wi
 
 ### Free-form Templates 
 
-In regions where template approval is not required, you can build templates directly in the editor. These templates allow full flexibility:
+For carriers where template approval is not required, you can build templates directly in the editor. These templates allow full flexibility:
 
 * You define all text, media, button behavior, and placeholders.
 * There are no locked fields.
-* You are responsible for entering all information correctly.
 
 This documentation explains every component clearly to support both workflows.
 
