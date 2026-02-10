@@ -232,7 +232,7 @@ This is the main body of the message that users will receive. Depending on your 
   * Use placeholders for dynamic values if needed (e.g., `{{user_name}}`, `{{product_name}}`).
   * RCS supports basic formatting such as **bold** and _italics_, where available.
 
-#### Custom Key-Value Pairs (@deepak if supported)
+#### Custom Key-Value Pairs 
 
 * Used to provide values for placeholders dynamically.
 * **Preset Key**: Select a predefined placeholder name (e.g., `{{user_name}}`)
