@@ -29,22 +29,26 @@ Before you start using the Visual Editor, ensure the following prerequisites are
 
 * **Web SDK v1.13.1** and above support the Visual Editor. To check your Web SDK version, use the `clevertap.getSDKVersion` method.
 * Ensure that the Content Security Policy (CSP) value for `frame-ancestors` contains `self`. Without this configuration, the Visual Editor will not work.
+* Check that the following header is set on your website to enable the required functionality:
+
+```
+* Cross-Origin-Opener-Policy: same-origin-allow-popups
+  Cross-Origin-Embedder-Policy: unsafe-none
+```
+
+<br />
 
 ### Access Visual Editor
 
-To get started, from the *What* section in the Web Native Display campaign builder, select your message type and click **Go to Editor**:
+To get started, from the _What_ section in the Web Native Display campaign builder, select your message type and click **Go to Editor**:
 
-1. Go to *Advanced Personalization*  and select **Visual Editor**.
+1. Go to _Advanced Personalization_  and select **Visual Editor**.
 
-<Image alt="Visual Editor" align="center" border={true} src="https://files.readme.io/cf837f4296717228fbaddc0af9eedff07cfed6313eed05e7f15f25b361a76718-2025-03-23_16-00-49.png">
-  Visual Editor
-</Image>
+<Image align="center" alt="Visual Editor" border={true} caption="Visual Editor" src="https://files.readme.io/cf837f4296717228fbaddc0af9eedff07cfed6313eed05e7f15f25b361a76718-2025-03-23_16-00-49.png" />
 
-2. Enter the webpage URL you want to personalize and click **Continue**. The web page loads within the editor in a new tab. 
+2. Enter the webpage URL you want to personalize and click **Continue**. The web page loads within the editor in a new tab.
 
-<Image alt="Define Webpage URL" align="center" border={true} src="https://files.readme.io/4abc617-url.jpg">
-  Enter Webpage URL
-</Image>
+<Image align="center" alt="Define Webpage URL" border={true} caption="Enter Webpage URL" src="https://files.readme.io/4abc617-url.jpg" />
 
 3. After the website loads in the editor, hover over the elements to highlight them. Click any element to open the inline editor menu to edit the specific element. The dropdown menu appears with the following options:
    * [Edit Element](https://docs.clevertap.com/docs/advanced-personalization#edit-element)
@@ -54,85 +58,61 @@ To get started, from the *What* section in the Web Native Display campaign build
    * [Add JSON](https://docs.clevertap.com/docs/advanced-personalization#add-json)
    * [Track Clicks](https://docs.clevertap.com/docs/advanced-personalization#track-clicks)
 
-<Image alt="Select Editor" align="center" border={true} src="https://files.readme.io/c85e7610925b65d319ebf070ed33a4b47eb7c0b36ae450b31738ba8ee6c57257-2025-03-23_16-20-39.png">
-  Select Editor
-</Image>
+<Image align="center" alt="Select Editor" border={true} caption="Select Editor" src="https://files.readme.io/c85e7610925b65d319ebf070ed33a4b47eb7c0b36ae450b31738ba8ee6c57257-2025-03-23_16-20-39.png" />
 
 #### Edit Element
 
 The edit element feature allows you to modify various aspects of the element, such as color, margin, font, text style, etc.
 
-<Image alt="Edit Element" align="center" border={true} src="https://files.readme.io/3231a766c38ad64153087bb63af20bb25b558e22093c2471a89a07be9fd2e1a6-2025-03-23_18-00-18_1.gif">
-  Edit Element
-</Image>
+<Image align="center" alt="Edit Element" border={true} caption="Edit Element" src="https://files.readme.io/3231a766c38ad64153087bb63af20bb25b558e22093c2471a89a07be9fd2e1a6-2025-03-23_18-00-18_1.gif" />
 
-Visual Editor supports user-level personalization using profile and event properties. Click the \{\{ }} icon in the editor to use liquid scripting. 
+Visual Editor supports user-level personalization using profile and event properties. Click the \{\{ }} icon in the editor to use liquid scripting.
 
-<Image alt="Personalisation in Visual Editor" align="center" width="100% " border={true} src="https://files.readme.io/7e5f40fde7c193e6a6b079495333c7bf5c334800d94a15ed0f427544055336b8-2025-03-23_18-09-19.png">
-  Personalization in Visual Editor
-</Image>
+<Image align="center" alt="Personalisation in Visual Editor" border={true} caption="Personalization in Visual Editor" src="https://files.readme.io/7e5f40fde7c193e6a6b079495333c7bf5c334800d94a15ed0f427544055336b8-2025-03-23_18-09-19.png" width="100% " />
 
 #### Edit HTML
 
 You can change the Editor by selecting **Edit HTML** from the dropdown. The HTML editor allows you to modify the selected element's HTML according to your use case.
 
-<Image alt="Custom HTML" align="center" border={true} src="https://files.readme.io/09dc96c7fe21166f3b80ceee4d606c3db0692aee614fc9fb66dba731fb405a16-html.png">
-  HTML Editor
-</Image>
+<Image align="center" alt="Custom HTML" border={true} caption="HTML Editor" src="https://files.readme.io/09dc96c7fe21166f3b80ceee4d606c3db0692aee614fc9fb66dba731fb405a16-html.png" />
 
 #### Hide
 
 The Hide option allows you to hide a particular element. You can hide it for desktop, mobile, all devices, or none.
 
-<Image alt="Hide on devices" align="center" src="https://files.readme.io/a9e28e12650d4a6755b4539c5003b90d74146ada8b29e987cc21264cfc990f37-2025-03-23_17-52-26.png">
-  Hide on devices
-</Image>
+<Image align="center" alt="Hide on devices" caption="Hide on devices" src="https://files.readme.io/a9e28e12650d4a6755b4539c5003b90d74146ada8b29e987cc21264cfc990f37-2025-03-23_17-52-26.png" />
 
 #### Insert Element
 
 This feature allows you to insert a new element to your webpage. You can configure its position and margin or duplicate an existing element.
 
-<Image alt="Insert Element" align="center" border={true} src="https://files.readme.io/d89ea5257531e0beaa999ec0240337c4b123cb9da42b62e0288e09b2e45f694c-2025-03-23_17-54-16.png">
-  Insert Element
-</Image>
+<Image align="center" alt="Insert Element" border={true} caption="Insert Element" src="https://files.readme.io/d89ea5257531e0beaa999ec0240337c4b123cb9da42b62e0288e09b2e45f694c-2025-03-23_17-54-16.png" />
 
 #### Add JSON
 
 You can change the Editor by selecting **Add JSON** in the dropdown. The JSON editor allows you to define custom behavior or personalization logic.
 
-<Image alt="Add JSON" align="center" border={true} src="https://files.readme.io/fb3067387607ece0ce6ff232203fb840e00723a64555cae98c97127a22a53a2a-l.png">
-  Add JSON
-</Image>
+<Image align="center" alt="Add JSON" border={true} caption="Add JSON" src="https://files.readme.io/fb3067387607ece0ce6ff232203fb840e00723a64555cae98c97127a22a53a2a-l.png" />
 
 #### Track Clicks
 
-The Click Tracking feature allows element-wise tracking. Click **Track Clicks**, add a name, and click **Save** to start tracking. This name will be added as a value of the `wzrk_c2a` property in the Notification Clicked event. You can view the Click Tracking data under *Dashboard* > *Analytics* > *Events*. For more information, refer to [Events](https://docs.clevertap.com/docs/events).
+The Click Tracking feature allows element-wise tracking. Click **Track Clicks**, add a name, and click **Save** to start tracking. This name will be added as a value of the `wzrk_c2a` property in the Notification Clicked event. You can view the Click Tracking data under _Dashboard_ > _Analytics_ > _Events_. For more information, refer to [Events](https://docs.clevertap.com/docs/events).
 
-<Image alt="Track Clicks" align="center" border={true} src="https://files.readme.io/0b2e587c69925bd3ef26c3528c53f5f6f84bfca007bebeb4c9f86e59fd1eac09-2025-03-23_17-49-02.png">
-  Track Clicks
-</Image>
+<Image align="center" alt="Track Clicks" border={true} caption="Track Clicks" src="https://files.readme.io/0b2e587c69925bd3ef26c3528c53f5f6f84bfca007bebeb4c9f86e59fd1eac09-2025-03-23_17-49-02.png" />
 
-4. Preview and edit your website as it appears on desktop and mobile devices using the *Device Toggle*.
+4. Preview and edit your website as it appears on desktop and mobile devices using the _Device Toggle_.
 
-<Image alt="Mobile View" align="center" border={true} src="https://files.readme.io/b2dc3a6daaa8bd3d07eb59676c835fafee7d17bd118aece7592010fd7037ee48-2025-03-23_16-42-07_1.gif">
-  Mobile View
-</Image>
+<Image align="center" alt="Mobile View" border={true} caption="Mobile View" src="https://files.readme.io/b2dc3a6daaa8bd3d07eb59676c835fafee7d17bd118aece7592010fd7037ee48-2025-03-23_16-42-07_1.gif" />
 
 5. Use the dropdown menu to adjust screen sizes and test responsiveness.
 
-<Image alt="Web Size" align="center" width="100% " border={true} src="https://files.readme.io/e83e2b0506a6544ae5a677cefd8600276b1284beaec04d0bd43161445c411a6b-2025-03-23_16-44-30.png">
-  Web Resolution
-</Image>
+<Image align="center" alt="Web Size" border={true} caption="Web Resolution" src="https://files.readme.io/e83e2b0506a6544ae5a677cefd8600276b1284beaec04d0bd43161445c411a6b-2025-03-23_16-44-30.png" width="100% " />
 
-<Image alt="Mobile Size" align="center" width="100% " border={true} src="https://files.readme.io/11942134a1cbf707b76db0af2cb7af5270b9dc263423a0f588cf575deb7ddd21-2025-03-23_16-46-17.png">
-  Mobile Resolution
-</Image>
+<Image align="center" alt="Mobile Size" border={true} caption="Mobile Resolution" src="https://files.readme.io/11942134a1cbf707b76db0af2cb7af5270b9dc263423a0f588cf575deb7ddd21-2025-03-23_16-46-17.png" width="100% " />
 
-6. Toggle the **Browse mode** to make the webpage interactive inside the editor. 
+6. Toggle the **Browse mode** to make the webpage interactive inside the editor.
 
-<Image alt="Browse Mode" align="center" border={true} src="https://files.readme.io/ae9ad6940d17b173d542a5fae23011f6de87ab02e3d3b0ac9c11242d9e1b2349-image.png">
-  Browse Mode
-</Image>
+<Image align="center" alt="Browse Mode" border={true} caption="Browse Mode" src="https://files.readme.io/ae9ad6940d17b173d542a5fae23011f6de87ab02e3d3b0ac9c11242d9e1b2349-image.png" />
 
 7. Click **Changelog** to view a summary of all changes made during the session. Clicking on each changelog automatically highlights the corresponding changed element. You can long press the view button to compare the original version with your latest changes. Click the delete button to delete a specific change or click **Clear All** to delete all changes.
 
@@ -140,9 +120,7 @@ The Click Tracking feature allows element-wise tracking. Click **Track Clicks**,
 >
 > Deleted changes cannot be restored.
 
-<Image alt="Changelog" align="center" border={true} src="https://files.readme.io/ce3132c035dd478c70249e369cf07ba363c7291174433351d3df598be2ecc172-2025-03-23_16-49-38.png">
-  Changelog
-</Image>
+<Image align="center" alt="Changelog" border={true} caption="Changelog" src="https://files.readme.io/ce3132c035dd478c70249e369cf07ba363c7291174433351d3df598be2ecc172-2025-03-23_16-49-38.png" />
 
 8. Click the **Preview** button at the top right corner to preview the HTML changes in a new tab.
 9. Click **Save** to apply your changes.
@@ -156,24 +134,18 @@ For custom use cases, two new advanced web personalization templates are now ava
 
 > 📘 Note
 >
-> * CleverTap offers Custom Templates as a part of the *Advanced Web Personalization* paid add-on.
+> * CleverTap offers Custom Templates as a part of the _Advanced Web Personalization_ paid add-on.
 
-<Image alt="Custom Templates in Advanced Personalization" align="center" border={true} src="https://files.readme.io/ff74e3ce480f8412fdc48492526b73dea436a23a87c0ee3d3380c2fdea4fcf6b-image.png">
-  Custom Templates in Advanced Personalization
-</Image>
+<Image align="center" alt="Custom Templates in Advanced Personalization" border={true} caption="Custom Templates in Advanced Personalization" src="https://files.readme.io/ff74e3ce480f8412fdc48492526b73dea436a23a87c0ee3d3380c2fdea4fcf6b-image.png" />
 
 ### Custom HTML Template
 
 Custom HTML Template allows you to add dynamic content to your website to achieve advanced use cases such as modifying website layouts. By adding HTML, CSS, and JavaScript code directly within a built-in code editor, marketers can enable product recommendations, reorder elements, and display personalized offers based on user behavior.
 
-<Image alt="Custom HTML Template" align="center" width="100% " border={true} src="https://files.readme.io/ae36756a6fd85690fe69e291a16681da46f26fde4e0902fafbc458b30ccda044-Custom_HTML_template.png">
-  Custom HTML Template
-</Image>
+<Image align="center" alt="Custom HTML Template" border={true} caption="Custom HTML Template" src="https://files.readme.io/ae36756a6fd85690fe69e291a16681da46f26fde4e0902fafbc458b30ccda044-Custom_HTML_template.png" width="100% " />
 
 ### Custom JSON Template
 
 Custom JSON Template lets you send JSON data from CleverTap to your target user's website, allowing you to render advanced personalization use cases.
 
-<Image alt="Custom JSON Template" align="center" width="100% " border={true} src="https://files.readme.io/941447672dae7eb8100e84c6edf5afb30e871a7b81da8632ce12bdb852455d17-image.png">
-  Custom JSON Template
-</Image>
+<Image align="center" alt="Custom JSON Template" border={true} caption="Custom JSON Template" src="https://files.readme.io/941447672dae7eb8100e84c6edf5afb30e871a7b81da8632ce12bdb852455d17-image.png" width="100% " />
