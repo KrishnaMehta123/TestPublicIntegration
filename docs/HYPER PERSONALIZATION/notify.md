@@ -19,7 +19,7 @@ Notify is CleverTap’s transactional messaging solution built for time-sensitiv
 
 > 📘 Private Beta
 >
-> Notify is currently released in Private Beta for the Email channel with SendGrid as the email service provider. To enable this feature, contact your Customer Success Manager.
+> Notify is currently in Private Beta for the Email channel. The feature is currently available for SendGrid and Infobip (with the Advanced Email Add-on) providers. To enable this feature, contact your Customer Success Manager.
 
 # Video Tutorial
 
