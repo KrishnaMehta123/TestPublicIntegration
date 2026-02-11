@@ -36,8 +36,6 @@ Before you start using the Visual Editor, ensure the following prerequisites are
   Cross-Origin-Embedder-Policy: unsafe-none
 ```
 
-<br />
-
 ### Access Visual Editor
 
 To get started, from the _What_ section in the Web Native Display campaign builder, select your message type and click **Go to Editor**:
