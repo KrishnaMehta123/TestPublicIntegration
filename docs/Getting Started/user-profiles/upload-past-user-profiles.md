@@ -10,19 +10,13 @@ metadata:
 next:
   description: ''
 ---
-## Overview
+# Overview
 
 This section covers how identified user profiles are treated in the CleverTap dashboard.
 
 # Already Identified User
 
-When already identified users visit your app or website from another device or browser, CleverTap creates new profiles for such users. Once they identify with their identities on the app or website through login for example, CleverTap merges the newly created profile with the already present user profile and all the events that were recorded on the new profile before the user identification is blacklisted. 
-
-These events are shown with a gray background on the user profile. Even though the profiles are merged together, they are stored in two separate memory locations in CleverTap.
-
-<Image title="Upload Past User Profiles" alt={837} align="center" border={true} src="https://files.readme.io/cebe9ee-1_Upload_Past_User_Profiles.png">
-  View Already Identified Users
-</Image>
+When previously identified users visit your app or website from another device or browser, CleverTap creates a new anonymous profile for them. Once they identify themselves (for example, by logging in), CleverTap merges the anonymous profile into the existing identified profile. Any anonymous events generated are transferred into the identified profile and become available for segmentation, funnels, and engagement targeting.
 
 # Existing Profiles
 
@@ -30,4 +24,4 @@ If a user has an existing profile stored in your CleverTap account and if the us
 
 Once the user shares her identity (e.g., email, mobile phone number, or Google advertising ID) to the anonymous profile for example while login, then this profile gets merged with the user's original profile but the events captured before passing the identity are saved in an orphan profile with only a CleverTap ID and no email, mobile phone number, and other useful properties.
 
-In this case, there is no use in qualifying orphan profiles in campaigns or journeys. However, to keep clear data as to how many profiles have been created on the CleverTap dashboard, we include the orphan profiles in the *Find People* count but these profiles are not included when downloaded.
+In this case, there is no use in qualifying orphan profiles in campaigns or journeys. However, to keep clear data as to how many profiles have been created on the CleverTap dashboard, we include the orphan profiles in the _Find People_ count but these profiles are not included when downloaded.
