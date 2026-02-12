@@ -176,11 +176,11 @@ Exported report files follow this naming convention: _\{ReportName}_\{Timestamp}
 The existing schedule for the reports is displayed on the _Subscribe_ tab. To edit or delete a subscription to a report,
 
 1. Click **Subscribe to Reports** on the campaign list page. The Campaign Summary Emails pane appears.
-2. Select the _Subscriptions_ tab and click the ![](https://files.readme.io/394983a901844f1518d88ea2bf7a337445f1848952c21fe510ba4315f63a3f68-ellipses_icon.png) icon to edit or delete a report subscription.  
+2. Select the _Subscriptions_ tab and click the ![](https://files.readme.io/394983a901844f1518d88ea2bf7a337445f1848952c21fe510ba4315f63a3f68-ellipses_icon.png) icon to edit or delete a report subscription.
 
    <Image align="center" border={true} caption="Edit or Delete Report Subscription" src="https://files.readme.io/95f9da4-Edit_subscriptions.gif" width="75% " />
 
-  Edit or Delete a Report Subscription
+Edit or Delete a Report Subscription
 
 # Campaign Report Data
 
@@ -343,6 +343,7 @@ However, the Campaign Name appears as a column in your report only if you select
 | Open Rate (Unique)                      |                   | Yes            | Yes                     |                 | Average percentage of users who opened the email during the selected time period. Calculated as `[(Unique Viewed/Unique Delivered)* 100]`.<br /><strong>Note</strong>: For Email campaigns, Unique stats are currently available in Private Beta.                                                                                                                                                                                                    |
 | CTR (Total)                             |                   | Yes            | Yes                     |                 | The percentage of email views where at least one link was clicked. Calculated as `[(Total Clicked/Total Viewed) * 100]`.<br /><strong>Note</strong>: For Email campaigns, this is currently available in Private Beta.                                                                                                                                                                                                                               |
 | CTR (Unique)                            |                   | Yes            | Yes                     |                 | The percentage of unique email views where at least one link was clicked. Calculated as `[(Unique Clicked/Unique Viewed) * 100]`<br /><strong>Note</strong>: For Email campaigns, this is currently available in Private Beta.                                                                                                                                                                                                                       |
+| Clicked Without Cancel                  |                   | Yes            | Yes                     |                 | Total clicks on the CTA, except for the Close CTA.                                                                                                                                                                                                                                                                                                                                                                                                   |
 
 > 📘 **Conversion Tracking Rules**
 >
