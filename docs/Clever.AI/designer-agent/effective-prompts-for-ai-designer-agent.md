@@ -50,7 +50,7 @@ Specify the structure of your image, where to place text, logos, or visual empha
 > Use soft, festive lighting that evokes the spirit of Diwali celebrations. The scene should evoke a sense of luxury and invitation.
 > Include elegant home décor items, and the overall tone should be celebratory, warm, and of high quality. Place the HomeStay logo in the top-right corner. Display the featured décor items prominently in the center or foreground. Add a ‘Shop Now’ call-to-action button at the bottom of the image.
 
-<Image align="center" border={true} caption="Sample Image" src="https://files.readme.io/e12a8df3a66883fdf22a7271be1d687916f20bbb69ab442029d2e592b4a7a300-image.png" />
+<Image align="center" border={true} caption="Sample Image" src="https://files.readme.io/e9161ad5cd4a04aaec0e328b2d276174a7c22b01cc2fd98661da2cfd3bc6f71d-image.png" />
 
 ## **Prompt Tips**
 
@@ -83,7 +83,7 @@ The following sample prompts show how detailed prompts improve image quality, to
 
 **Result:**
 
-<Image align="center" border={true} caption="E-Commerce Example" src="https://files.readme.io/0eace22aaea1c327abe0647c89ca0b8affbb02c93e030df81602d237fc390f48-image.png" />
+<Image align="center" border={true} caption="E-Commerce Example" src="https://files.readme.io/fd89bc42f9d527d5901cc3512ece9c060ebf2a65c60c7d47e9b35358d997936c-image.png" />
 
 ## OTT
 
@@ -96,7 +96,7 @@ The following sample prompts show how detailed prompts improve image quality, to
 
 **Result:**
 
-<Image align="center" alt="OTT" border={true} caption="OTT Example" src="https://files.readme.io/5487678107d20a434f829934aad00b24aaec558175883a0dd85ddf146623022c-image.png" />
+<Image align="center" border={true} caption="OTT Example" src="https://files.readme.io/e06469f220ac3077786a2a2117c45fad9a23055cd742e993425d61dbda7f2765-image.png" />
 
 ## FinTech
 
@@ -111,7 +111,7 @@ The following sample prompts show how detailed prompts improve image quality, to
 
 **Result:**
 
-<Image align="center" border={true} caption="FinTech Example" src="https://files.readme.io/58b91a8b136ea02403b634a86d8e2a5a2d11a5eb7389ed48c85a78c7a6332370-14cd225222c3583dea5d8ab998cd8cceafe9e1b5974a9f9e8f7c87e7eb15852d-2025-12-15_16-53-34.png" />
+<Image align="center" border={true} caption="FinTech Example" src="https://files.readme.io/54f3b1b3cb08b7239df9508a181dde86ab6a98f6e2e38b2f35a26e433e145992-image.png" />
 
 ## Food Delivery
 
@@ -125,7 +125,7 @@ The following sample prompts show how detailed prompts improve image quality, to
 
 **Result:**
 
-<Image align="center" border={true} caption="Food Delivery Example" src="https://files.readme.io/586562e960c30377b8bad2daad72ec57b2ed36a383e1043feabc4d9f5f5aeff0-4b71430df7cd28bdc0cf8c5e50c4aebd7c52710ad9425f78250784010284eb47-2025-12-15_16-50-39.png" />
+<Image align="center" border={true} caption="Food Delivery Example" src="https://files.readme.io/280b041825365c4cb8fa9cc77bbb00d15629d1c5f8e5ada9a3de7b4b1f1b69cc-image.png" />
 
 ## Gaming
 
@@ -141,7 +141,7 @@ The following sample prompts show how detailed prompts improve image quality, to
 
 **Result:**
 
-<Image align="center" alt="Gaming" border={true} src="https://files.readme.io/3c8304277fa32df069800dc4910beae591f778e0ab099e1bc7ccde76d280ae96-newg.png" className="border" />
+<Image align="center" border={true} caption="Gaming Example" src="https://files.readme.io/295f26fb92cee8792178e07c64018cf06aaa17aca58e5ed632bf86169db858fd-image.png" />
 
 # Ways to Generate Images with AI
 
