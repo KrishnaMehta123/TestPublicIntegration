@@ -4,7 +4,7 @@ excerpt: >-
   Learn how to analyze event data across multiple dimensions using interactive
   tables and visualizations to uncover patterns, trends, and insights.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
