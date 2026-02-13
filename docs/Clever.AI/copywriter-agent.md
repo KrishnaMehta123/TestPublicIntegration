@@ -2,7 +2,7 @@
 title: Copywriter Agent
 excerpt: 'Learn how to generate Push Notification message copies with AI. '
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
