@@ -92,7 +92,7 @@ You can also configure a custom kit for the current thread. This helps align gen
 
 You can customize how the content must be written using **Content Settings**.
 
-1. Click the <Image width="50% " src="https://files.readme.io/24934bf75abfbb60b6e472ec6eada7c29619243e8bc94c147b88ae0c6b0bc1e6-image.png"/> icon in the Ask AI window to configure the following options:
+1. Click the Content Settings icon in the Ask AI window to configure the following options:
 
 * **Language**: Choose the language for the generated copy.
 * **Script**: Select the writing system used for the selected language (for example, if your selected language is Hindi, choose Devanagari script for `नमस्ते` or Latin script for `Namaste`.)
