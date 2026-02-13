@@ -46,9 +46,12 @@ To generate an image using prompts:
 1. Open your **Push Notification** campaign editor.
 2. For Android, click **![](https://files.readme.io/935fb6454c1119d8ecbbcb60baaa21dd7d7fbd62688f5c4fc3a5590b17a9c46e-Clever_AI_icon.png)Generate with AI** for the _Expanded image_ or _Large icon_ fields. For iOS, click **![](https://files.readme.io/de594698e41f816505d7fb2148204b4ce6f2f581d952289e89b9d9022fe5015d-Clever_AI_icon.png)Generate with AI**  for the _Rich media_ field.
 3. Click **Generate Image**. The _Generate Image_ window opens.
+
+<Image align="center" border={true} caption="Generate Image" src="https://files.readme.io/4f188bb8397d2efeda3b344678039942a81cebee7bc75d216cdeb879b123ecd7-2026-02-09_20-50-10.png" />
+
 4. Describe the image you want in the prompt field at the bottom. For example, refer to the below sample image for an OTT platform to promote an upcoming Premier League football match:
 
-<Image align="center" border={true} caption="Image Generated using Text to Image Option" src="https://files.readme.io/3686d1c1d24a170e204e82e473e7a1cc1fc4e5a4ce2cfdf4d8df292c81af7e1e-image.png" />
+<Image align="center" alt="Generate Image" border={true} caption="Image Generated Using Text to Image Option" src="https://files.readme.io/36f39a978330cfb65027a4ea70fe248e359d668dcfbef99f7303472a5ae48bc2-new_prompt.png" />
 
 5. Click **Generate**. Review the generated image and click **Insert** to add the image to your campaign.
 6. Click **Brand Kit** to apply your brand’s predefined colors, tones, and layout.
@@ -56,7 +59,7 @@ To generate an image using prompts:
    * Enter follow-up prompts in the same chat thread to refine the image.
    * To edit an existing image, go to the Message Editor, click **Upload**, and select the image. Click ![](https://files.readme.io/3dd08bfdc757b30950b16c701f01b8970b5ddec566c161e93cb3c1081ee73e60-Edit_icon.png) and describe the change you want to make (for example, Change CTA text from "Watch Live" to “Watch Now”). Each refinement creates a new version saved in your Threads history, allowing you to revisit or reuse past iterations.
 
-<Image align="center" border={true} caption="Edit Generated Image" src="https://files.readme.io/56e6f65f6ee6b65114011d2bd974fc24f168fc111754f3e6141a771a6a0773d1-2025-12-15_17-34-36_2.gif" />
+<Image align="center" alt="Edit Generated Image" border={true} caption="Edit Generated Image" src="https://files.readme.io/bea61b26c9d2065fc3f485c9a2241d97d0a0c5caaebe02f21e04f9ad3fe5dda1-2026-02-09_21-07-49_1.gif" />
 
 > 📘 Why detailed prompts matter?
 >
@@ -154,13 +157,13 @@ For more information on setting up and using brand kits, refer to <Anchor label=
 
 # Manage Generated Images
 
-All AI Generated images can be accessed via [Threads](https://docs.clevertap.com/docs/designer-agent#threads)  and [AI Generated Images Folder](https://docs.clevertap.com/docs/designer-agent#ai-generated-images-folder).
+All AI Generated images can be accessed via [Threads](https://docs.clevertap.com/docs/designer-agent#threads)  and [AI Images Folder](https://docs.clevertap.com/docs/designer-agent#ai-images-folder).
 
 ## Threads
 
-Once you start generating images, it automatically saves your sessions under the ![](https://files.readme.io/a973e47e78d9cb32bf7c2372bc46d90fdb6f8eb16dd6ebaa77a63c2b385438c8-Threads_icon.png) tab. Each session is stored as a **thread**, which captures your prompts, refinements, and generated outputs, helping you resume from where you left off without losing context.
+Once you start generating images, CleverTap automatically saves your sessions under the Threads ![](https://files.readme.io/a973e47e78d9cb32bf7c2372bc46d90fdb6f8eb16dd6ebaa77a63c2b385438c8-Threads_icon.png) tab. Each session is stored as a thread, which captures your prompts, refinements, and generated outputs, helping you resume from where you left off without losing context. 
 
-<Image align="center" border={false} caption="All Threads" src="https://files.readme.io/82ae5a722aeb6d03bf7f543afdbab7666281ece777de4920eb08b689e9ac7987-image.png" />
+<Image align="center" alt="All Threads" border={true} caption="All Threads" src="https://files.readme.io/578138997ae8cab3a120b6620c8ffa213754422f824d207339dc050aee418b72-new_threads_ai_.png" />
 
 ### How Threads Work
 
@@ -185,11 +188,17 @@ From the **All Threads** view, you can:
   For subsequent edits, you need not restart a session. You can type your next instruction directly in the chat. For example: _“Make the background blue and add a 50% OFF badge in the corner.”_ The AI will update the existing image while maintaining your brand styling and earlier visual tone.
 </Callout>
 
-## AI Generated Images Folder
+## AI Images Folder
 
-All AI-generated images are automatically stored in your _CMS_, under the **AI Generated Images** folder for your account. This allows you to reuse, manage, or download previously created visuals without needing to regenerate them.
+All AI generated images are automatically stored in your _CMS_, under the **AI Images** folder for your account. This allows you to reuse, manage, or download previously created visuals without needing to regenerate them.
 
-<Image align="center" alt="AI Generated Images Folder" border={true} caption="AI Generated Images Folder" src="https://files.readme.io/c7bd10e224147810623d972c5b4c9854c17e9d267de86e3a17db5fa22d64eeaa-brand.png" />
+<Image align="center" alt="AI Generated Images Folder" border={true} caption="AI Images Folder" src="https://files.readme.io/e11b078ebf2be9b89f11911847723625a7f51dc11bb2c7f37600a4ba7499ee22-2026-02-12_14-07-06.png" />
+
+<Callout icon="📘" theme="info">
+  **Note**
+
+  The AI Images folder is system-managed and cannot be renamed, moved, or deleted. Images stored in this folder can be download and reused in campaigns, but cannot be renamed or moved to a different folder.
+</Callout>
 
 # Best Practices for Writing Prompts
 
@@ -207,6 +216,14 @@ The following best practices will help you with writing more detailed prompts:
 The Designer Agent relies on the clarity of your description to produce accurate, high-quality visuals. The more specific you are about theme, colors, layout, and mood, the better the output aligns with your campaign goals.
 
 For more information, refer to [Generate On-Brand Images with Effective Prompts](https://docs.clevertap.com/docs/effective-prompts-for-ai-designer-agent).
+
+<Callout icon="📘" theme="info">
+  **Image Generation Limit**
+
+  AI image generation is capped at 100 images per account per month. The quota refreshes monthly and applies across all users within the account. Once the limit is reached, image generation will be disabled until the next reset.
+
+  To enable image generation after limit is reached, contact your Customer Success Manager.
+</Callout>
 
 # FAQs
 
