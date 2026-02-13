@@ -76,7 +76,7 @@ To generate an image using a reference image, perform the following steps:
 
 3. Click ![](https://files.readme.io/7c39b5787600b7ac069bc4f2f78a6f3f0304bd3c3cc04eef082aa945c714fdf8-Plus_Icon.png) to select the reference image from CMS.
 
-<Image align="center" border={true} caption="Add Files" src="https://files.readme.io/d0accba648f5764ac22a3d6204de20fa2cb7e56221a3ac7616223bb91856acdc-2025-12-29_16-22-22.png" />
+<Image align="center" border={true} caption="Add files" src="https://files.readme.io/4c370ab0cf5d595703f2a633f7f1fcfa9773a310dd443377126d696cf28a998c-2026-02-09_20-50-10.png" />
 
 4. In the prompt field, describe the updates or new campaign details you want to apply.  Once you select an image, you can:
 
@@ -137,7 +137,7 @@ Click ![](https://files.readme.io/bdbfd957c9ccc6dff7284d71450e4414281705ac5d8337
 * Select the _File format_ between JPEG or PNG.
 * View the Aspect ratio and size, which are auto-selected and non-editable. The aspect ratio and size are automatically aligned with Push OS specifications (for example, 1:1 for Large Icon and 3:2 for Expanded Image) to ensure compatibility.
 
-<Image align="center" border={true} caption="Image Settings" src="https://files.readme.io/de22a44d0c1d4fe360efac8ee163fa4677f6dd663e01ab39bdf324a6fc30a98d-image.png" />
+<Image align="center" alt="Image Studio" border={true} caption="Image Settings" src="https://files.readme.io/e3fd193097782f1476d41eaa5b9d24d434bef4ced9dee216e1a111ed6f306309-new_image_setting.png" />
 
 ## Brand Kit
 
