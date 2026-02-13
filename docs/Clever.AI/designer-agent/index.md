@@ -49,7 +49,7 @@ To generate an image using prompts:
 
 <Image align="center" border={true} caption="Generate Image" src="https://files.readme.io/4f188bb8397d2efeda3b344678039942a81cebee7bc75d216cdeb879b123ecd7-2026-02-09_20-50-10.png" />
 
-4. Apply a Brand Kit to ensure brand consistency, and customize the Image Settings to align with your campaign goals.
+4. Apply a [Brand Kit](https://docs.clevertap.com/docs/designer-agent#brand-kit) to ensure brand consistency, and customize the [Image Settings](https://docs.clevertap.com/docs/designer-agent#image-settings) to align with your campaign goals.
 5. Describe the image you want in the prompt field at the bottom. For example, refer to the below sample image for an OTT platform to promote an upcoming Premier League football match:
 
 <Image align="center" alt="Generate Image" border={true} caption="Image Generated Using Text to Image Option" src="https://files.readme.io/36f39a978330cfb65027a4ea70fe248e359d668dcfbef99f7303472a5ae48bc2-new_prompt.png" />
@@ -128,7 +128,7 @@ Refer to the following example prompt:
 
 Designer Agent gives you the options to adjust and filter your generated image. The Image Settings menu lets you adjust your file format and Brand Kit lets you apply brand styling to your generated image.
 
-<Image align="center" border={true} caption="Filters and Brand Kit" src="https://files.readme.io/e9ed262d61bf5bd0306ece9643bc83d334764bd900810dbd0be24885be32ffe9-2025-12-29_15-54-14.png" />
+<Image align="center" border={true} caption="Filters and Brand Kit" src="https://files.readme.io/72447108dace31d4682966d0d8cc7b601c93c3ad35acaad56324e906df5702f1-new_bk_is.png" />
 
 ## Image Settings
 
@@ -143,7 +143,7 @@ Click ![](https://files.readme.io/bdbfd957c9ccc6dff7284d71450e4414281705ac5d8337
 
 Click on Brand Kit to view your brand’s style, button colors, brand colors, and so on, for your image. Click **Apply to this Thread**. You can also select other kits, or configure a custom kit for the current image. The applied Brand Kit ensures that all generated visuals remain consistent with your brand identity.
 
-<Image align="center" border={true} caption="Brand Kits" src="https://files.readme.io/a5b3f89da995732024b828934b34a14f56a8567b828d1fd984541e3834a71ff3-image.png" />
+<Image align="center" border={true} caption="Brand Kits" src="https://files.readme.io/db9286fa0b51cb88d550af4507656e148594263ee0078c735a414bde81aa4685-new_new_bk.png" />
 
 <Callout icon="📘" theme="info">
   **Note**
@@ -161,7 +161,7 @@ All AI Generated images can be accessed via [Threads](https://docs.clevertap.com
 
 ## Threads
 
-Once you start generating images, CleverTap automatically saves your sessions under the Threads ![](https://files.readme.io/a973e47e78d9cb32bf7c2372bc46d90fdb6f8eb16dd6ebaa77a63c2b385438c8-Threads_icon.png) tab. Each session is stored as a thread, which captures your prompts, refinements, and generated outputs, helping you resume from where you left off without losing context. 
+Once you start generating images, CleverTap automatically saves your sessions under the Threads ![](https://files.readme.io/a973e47e78d9cb32bf7c2372bc46d90fdb6f8eb16dd6ebaa77a63c2b385438c8-Threads_icon.png) tab. Each session is stored as a thread, which captures your prompts, refinements, and generated outputs, helping you resume from where you left off without losing context.
 
 <Image align="center" alt="All Threads" border={true} caption="All Threads" src="https://files.readme.io/578138997ae8cab3a120b6620c8ffa213754422f824d207339dc050aee418b72-new_threads_ai_.png" />
 
