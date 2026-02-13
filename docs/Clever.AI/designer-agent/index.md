@@ -49,15 +49,15 @@ To generate an image using prompts:
 
 <Image align="center" border={true} caption="Generate Image" src="https://files.readme.io/4f188bb8397d2efeda3b344678039942a81cebee7bc75d216cdeb879b123ecd7-2026-02-09_20-50-10.png" />
 
-4. Describe the image you want in the prompt field at the bottom. For example, refer to the below sample image for an OTT platform to promote an upcoming Premier League football match:
+4. Apply a Brand Kit to ensure brand consistency, and customize the Image Settings to align with your campaign goals.
+5. Describe the image you want in the prompt field at the bottom. For example, refer to the below sample image for an OTT platform to promote an upcoming Premier League football match:
 
 <Image align="center" alt="Generate Image" border={true} caption="Image Generated Using Text to Image Option" src="https://files.readme.io/36f39a978330cfb65027a4ea70fe248e359d668dcfbef99f7303472a5ae48bc2-new_prompt.png" />
 
-5. Click **Generate**. Review the generated image and click **Insert** to add the image to your campaign.
-6. Click **Brand Kit** to apply your brand’s predefined colors, tones, and layout.
+6. Click **Generate**. Review the generated image and click **Insert** to add the image to your campaign.
 7. After inserting the image, you can edit or refine the image directly within the editor:
    * Enter follow-up prompts in the same chat thread to refine the image.
-   * To edit an existing image, go to the Message Editor, click **Upload**, and select the image. Click ![](https://files.readme.io/3dd08bfdc757b30950b16c701f01b8970b5ddec566c161e93cb3c1081ee73e60-Edit_icon.png) and describe the change you want to make (for example, Change CTA text from "Watch Live" to “Watch Now”). Each refinement creates a new version saved in your Threads history, allowing you to revisit or reuse past iterations.
+   * To edit an existing image, go to the Message Editor, click **Upload**, and select the image. Click ![](https://files.readme.io/3dd08bfdc757b30950b16c701f01b8970b5ddec566c161e93cb3c1081ee73e60-Edit_icon.png) and describe the change you want to make (for example, Change CTA text from "Live Now" to “Watch Live”). Each refinement creates a new version saved in your Threads history, allowing you to revisit or reuse past iterations.
 
 <Image align="center" alt="Edit Generated Image" border={true} caption="Edit Generated Image" src="https://files.readme.io/bea61b26c9d2065fc3f485c9a2241d97d0a0c5caaebe02f21e04f9ad3fe5dda1-2026-02-09_21-07-49_1.gif" />
 
