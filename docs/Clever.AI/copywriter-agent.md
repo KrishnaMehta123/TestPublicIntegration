@@ -36,7 +36,7 @@ The Copywriter Agent is embedded within the Push Notification Message Editor. Th
 
 # Generate Copy Using a Prompt
 
-To guide tone, style, and language, make sure the correct [Brand Kits](https://staging.docs.user.clevertap.net/update/docs/copywriter-agent?isFramePreview=true#brand-kits) and [Content Settings](https://staging.docs.user.clevertap.net/update/docs/copywriter-agent?isFramePreview=true#content-settings) are selected.
+To guide tone, style, and language, make sure the correct [Brand Kits](https://docs.clevertap.com/docs/copywriter-agent#brand-kits) and [Content Settings](https://docs.clevertap.com/docs/copywriter-agent#content-settings) are selected.
 
 To generate copy using Copywriter Agent:
 
@@ -67,7 +67,7 @@ To generate copy using Copywriter Agent:
 
 # Brand Kit and Content Settings
 
-The Copywriter Agent provides controls to guide the style and tone of the generated copy, using [Brand Kits](https://staging.docs.user.clevertap.net/update/docs/copywriter-agent?isFramePreview=true#brand-kits) and [Content Settings](https://staging.docs.user.clevertap.net/update/docs/copywriter-agent?isFramePreview=true#content-settings).
+The Copywriter Agent provides controls to guide the style and tone of the generated copy, using [Brand Kits](https://docs.clevertap.com/docs/copywriter-agent#brand-kits) and [Content Settings](https://docs.clevertap.com/docs/copywriter-agent#content-settings).
 
 <Image align="center" border={true} caption="Core Brand and Content Settings" src="https://files.readme.io/e9ed262d61bf5bd0306ece9643bc83d334764bd900810dbd0be24885be32ffe9-2025-12-29_15-54-14.png" />
 
