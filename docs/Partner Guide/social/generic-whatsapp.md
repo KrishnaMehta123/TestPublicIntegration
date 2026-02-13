@@ -1788,6 +1788,44 @@ Freeform message API payload has the user information about the targetted users,
 
 CleverTap sends the following payload to validate the Messaging endpoint and API credentials saved in the dashboard. We expect success response within a second to save the endpoint.
 
+```json
+{
+    "body": {
+        "payloadVersion": 0.1,
+        "wabaNumber": "9199XXXXXXXX",
+        "to": "9189XXXXXXXX",
+        "isTemplate": true,
+        "template": {
+            "namespace": "whatsapp:hsm:technology:generic:verify",
+            "languageCode": "en"
+        },
+        "components": [
+            {
+                "type": "body",
+                "body": {
+                    "text": "1 code: 2.Valid for 3 minutes.",
+                    "parameters": [
+                        {
+                            "type": "text",
+                            "text": "1"
+                        },
+                        {
+                            "type": "text",
+                            "text": "2"
+                        },
+                        {
+                            "type": "text",
+                            "text": "3"
+                        }
+                    ]
+                }
+            }
+        ],
+        "msgId": "0|0|0|0"
+    }
+}
+```
+
 If the format is incorrect, we throw an error showing the API request and response we received from the endpoint.
 
 ### Error Objects
