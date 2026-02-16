@@ -155,6 +155,37 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
 ## February
 
 <HTMLBlock>{`
+<div class="release-note article" data-category="analytics" id="cohorts-v2">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#cohorts-v2"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/f57aa9f8ef374b2652d21d86c7251de0e10d2f8661a4828202bcced4cb299d5f-Analytics.svg" alt="Analytics" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">Cohorts 2.0</h3>
+    <div class="badge enhancement">ENHANCEMENT</div>
+    <div class="badge private-beta">BETA</div> 
+  </div>
+  <div class="release-note-body">
+    <p>Cohorts 2.0 introduces a redesigned approach to analyze user behavior over time. It helps you group users into time-based cohorts and tracks retention, frequency, and re-engagement across days, weeks, or months. This makes it easier to understand long-term engagement, identify drop-off points, and evaluate lifecycle performance so you can optimize retention strategies with greater confidence.</p>
+    <p>With Cohorts 2.0, you can:</p>
+<p>
+      <ul>
+        <li>Build flexible cohort analyses using configurable start and return events to define user lifecycle stages.</li>
+        <li>Measure different engagement patterns with multiple analysis types, including exact-day retention, cumulative retention, and return frequency.</li>
+        <li>Compare retention behavior across segments, properties, and regions to identify high and low-performing cohorts.</li>
+        <li>Analyze both retention rates and value-based metrics, such as total events, events per user, or aggregated event properties.</li>
+<li>Visualize cohort performance using detailed cohort tables and interactive trend lines for clearer comparisons over time.</li>
+      </ul>
+    </p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/cohorts-v2" target="_blank">Cohorts 2.0</a>.</p>
+</div>
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
 <div class="release-note article" data-category="journeys" id="journey-tracking-with-multiple-campaign-ids">
   <div class="release-note-header">
     <div class="anchor-link-icon">
