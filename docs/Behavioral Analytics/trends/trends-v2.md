@@ -1,5 +1,5 @@
 ---
-title: Trends Beta
+title: Trends 2.0
 excerpt: >-
   Learn to use the new and improved visualization of your data using Trends to
   gain deeper insights and make informed decisions.
