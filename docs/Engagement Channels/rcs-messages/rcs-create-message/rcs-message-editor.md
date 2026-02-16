@@ -33,7 +33,7 @@ The RCS Message Template selection screen will appear, where you can create or e
 
 CleverTap supports two modes for working with RCS templates, based on your telecom carrier and campaign regulations:
 
-### Approved Templates 
+### Approved Templates
 
 For carriers where template approval is required, RCS templates must be [created](doc:rcs-setup#create-template) and submitted in advance. Once approved:
 
@@ -43,7 +43,7 @@ For carriers where template approval is required, RCS templates must be [created
 
 When using an approved template in the editor, you will see fields pre-filled with static content or placeholderCleverTap supports two modes for working with RCS templates, depending on your region and the regulatory requirements enforced by telecom carriers and campaign compliance guidelines.s. Your role is to supply the appropriate values for those placeholders during campaign setup.
 
-### Free-form Templates 
+### Free-form Templates
 
 For carriers where template approval is not required, you can build templates directly in the editor. These templates allow full flexibility:
 
@@ -231,7 +231,7 @@ This is the main body of the message that users will receive. Depending on your 
   * Use placeholders for dynamic values if needed (e.g., `{{user_name}}`, `{{product_name}}`).
   * RCS supports basic formatting such as **bold** and _italics_, where available.
 
-#### Custom Key-Value Pairs 
+#### Custom Key-Value Pairs
 
 * Used to provide values for placeholders dynamically.
 * **Preset Key**: Select a predefined placeholder name (e.g., `{{user_name}}`)
