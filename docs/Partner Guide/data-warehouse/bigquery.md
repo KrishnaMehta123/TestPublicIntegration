@@ -1,5 +1,5 @@
 ---
-title: BigQuery Configuration
+title: BigQuery
 excerpt: ''
 deprecated: false
 hidden: true
