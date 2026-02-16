@@ -155,6 +155,37 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
 ## February
 
 <HTMLBlock>{`
+<div class="release-note article" data-category="analytics" id="pivots-v2">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#pivots-v2"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/f57aa9f8ef374b2652d21d86c7251de0e10d2f8661a4828202bcced4cb299d5f-Analytics.svg" alt="Analytics" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">Pivots 2.0</h3>
+    <div class="badge enhancement">ENHANCEMENT</div>
+    <div class="badge private-beta">BETA</div> 
+  </div>
+  <div class="release-note-body">
+    <p>Pivots 2.0 introduces a redesigned analytics experience that helps teams explore user behavior through interactive tables and visualizations. It enables you to break down large volumes of event data across events, segments, properties, and time to quickly identify patterns, trends, and outliers, without writing complex queries. Pivots 2.0 makes your analysis faster and more intuitive, helping you move from raw data to actionable insights with greater clarity and confidence.</p>
+    <p>With Pivots 2.0, you can:</p>
+<p>
+      <ul>
+        <li>Build flexible pivot analyses to explore user behavior across multiple dimensions and time ranges.</li>
+        <li>Analyze both frequency-based metrics and value-based event properties to measure engagement, revenue, or consumption.</li>
+        <li>Compare metrics using interactive tables, heatmaps, and charts to spot trends and anomalies at a glance.</li>
+        <li>Export pivot analysis results in CSV format for offline analysis, reporting, or sharing with external systems.</li>
+<li>Bookmark frequently used analyses to revisit key insights without rebuilding queries.</li>
+      </ul>
+    </p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/pivots-v2" target="_blank">Pivots 2.0</a>.</p>
+</div>
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
 <div class="release-note article" data-category="analytics" id="cohorts-v2">
   <div class="release-note-header">
     <div class="anchor-link-icon">
