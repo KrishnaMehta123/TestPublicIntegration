@@ -4,7 +4,7 @@ excerpt: >-
   Learn to use the new and improved visualization of your data using Trends to
   gain deeper insights and make informed decisions.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: Trends Vnext
   description: ''
