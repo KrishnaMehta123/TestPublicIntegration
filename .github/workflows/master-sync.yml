@@ -3,7 +3,7 @@ name: Sync to Public Repo
 on:
   push:
     branches:
-      - krishna-changes
+      - main
 
 jobs:
   sync:
@@ -22,4 +22,4 @@ jobs:
           git config --global credential.helper store
           echo "https://x-access-token:${PAT}@github.com" > ~/.git-credentials
           git remote add public https://github.com/KrishnaMehta123/TestPublicIntegration.git
-          git push public krishna-changes:main --force
+          git push public main:main --force
