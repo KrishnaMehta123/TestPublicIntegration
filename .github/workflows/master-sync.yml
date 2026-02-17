@@ -12,9 +12,14 @@ jobs:
       - name: Checkout source repo
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Full history for a complete mirror
+          fetch-depth: 0
+          persist-credentials: false
 
       - name: Push to public repo
+        env:
+          PAT: ${{ secrets.TARGET_REPO_PAT }}
         run: |
-          git remote add public https://x-access-token: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@github.com/KrishnaMehta123/TestPublicIntegration.git
+          git config --global credential.helper store
+          echo "https://x-access-token:${PAT}@github.com" > ~/.git-credentials
+          git remote add public https://github.com/KrishnaMehta123/TestPublicIntegration.git
           git push public krishna-changes:main --force
