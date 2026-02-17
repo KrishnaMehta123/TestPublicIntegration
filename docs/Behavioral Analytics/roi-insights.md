@@ -4,7 +4,7 @@ excerpt: >-
   Learn how to configure, analyze, and interpret ROI Insights for your campaigns
   from the CleverTap dashboard.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
