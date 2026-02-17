@@ -17,4 +17,4 @@ jobs:
       - name: Push to public repo
         run: |
           git remote add public https://x-access-token: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@github.com/KrishnaMehta123/TestPublicIntegration.git
-          git push public main --force
+          git push public krishna-changes:main --force
