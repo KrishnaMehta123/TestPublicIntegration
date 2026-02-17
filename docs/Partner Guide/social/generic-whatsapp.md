@@ -2051,7 +2051,7 @@ BSPs must add  CleverTap's message status callback URL at their end and forward 
                }
 ```
 ```json Failure Delivery Payload
-{"paytloadVersion":"0.1",
+{"payloadVersion":"0.1",
 "statuses": [{
                "msgId": "25596363|1639561857|20220227|25596363",
                "status": "failed",
